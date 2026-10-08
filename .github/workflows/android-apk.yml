@@ -14,7 +14,7 @@ on:
         default: false
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: madarij-apk-${{ github.ref }}-${{ github.event_name }}
@@ -27,33 +27,6 @@ jobs:
     steps:
       - name: Checkout native source
         uses: actions/checkout@v4
-      - name: Import supplied home image into native resources (one-time)
-        env:
-          HOME_ART_URL: "https://pikaso.cdnpk.net/private/production/5680660263/3703969015.jpg?token=exp=1791849600~hmac=3213b437091046568059ccf5785e039dbd9d1c2e13910cdeddd2b2780d01c6fa"
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 -m pip install -q Pillow
-          python3 - <<'PY'
-          import io
-          import os
-          from urllib.request import urlopen
-          from PIL import Image
-          url = os.environ["HOME_ART_URL"]
-          with urlopen(url, timeout=70) as response:
-              source = response.read()
-          img = Image.open(io.BytesIO(source)).convert("RGB")
-          assert img.width >= 900 and img.height >= 1300, "Incorrect uploaded home image"
-          img.save("app/src/main/res/drawable-nodpi/reference_home.webp", "WEBP", quality=85, method=6)
-          print(f"Imported user image: {img.width}x{img.height}")
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add app/src/main/res/drawable-nodpi/reference_home.webp
-          if ! git diff --cached --quiet; then
-            git commit -m 'assets: replace main screen artwork with supplied book scene'
-            git push origin HEAD:main
-          fi
       - name: Java 17
         uses: actions/setup-java@v4
         with:

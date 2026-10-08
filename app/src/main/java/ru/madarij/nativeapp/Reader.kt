@@ -413,7 +413,7 @@ fun Reader(
     }
     if (chapterPanel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
         androidx.activity.compose.BackHandler { chapterPanel = false }
-        CompositionLocalProvider(LocalContentColor provides BookColors.text) {
+        CompositionLocalProvider(LocalContentColor provides MaterialTheme.colorScheme.onBackground) {
             Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }

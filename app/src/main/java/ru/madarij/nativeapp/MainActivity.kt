@@ -201,7 +201,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     else {
                         val readerToReader = initialState.destination.route?.startsWith("read/") == true && targetState.destination.route?.startsWith("read/") == true
                         if (readerToReader) {
-                            EnterTransition.None
+                            fadeIn(tween(170, easing = FastOutSlowInEasing)) +
+                                slideInHorizontally(tween(240, easing = FastOutSlowInEasing)) { it / 22 }
                         } else {
                             fadeIn(tween(230, easing = FastOutSlowInEasing)) +
                                 slideInHorizontally(tween(280, easing = FastOutSlowInEasing)) { it / 12 } +
@@ -214,7 +215,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     else {
                         val readerToReader = initialState.destination.route?.startsWith("read/") == true && targetState.destination.route?.startsWith("read/") == true
                         if (readerToReader) {
-                            ExitTransition.None
+                            fadeOut(tween(170, easing = FastOutSlowInEasing)) +
+                                slideOutHorizontally(tween(240, easing = FastOutSlowInEasing)) { -it / 22 }
                         } else {
                             fadeOut(tween(190, easing = FastOutSlowInEasing)) +
                                 slideOutHorizontally(tween(230, easing = FastOutSlowInEasing)) { -it / 18 } +
