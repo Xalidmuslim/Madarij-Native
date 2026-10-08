@@ -1,0 +1,61 @@
+name: Madarij Native APK
+
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout native source
+        uses: actions/checkout@v4
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+      - name: Install Android compile SDK
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Development signing for test-only builds
+        shell: bash
+        run: |
+          set -euo pipefail
+          chmod +x gradlew
+          mkdir -p development-signing
+          keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+      - name: Unit tests and build Android APKs
+        run: ./gradlew testDebugUnitTest assembleDebug assembleRelease -PpremiumPreview=true --stacktrace --no-daemon
+      - name: Verify compiled APKs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s app/build/outputs/apk/debug/app-debug.apk
+          test -s app/build/outputs/apk/release/app-release.apk
+          unzip -t app/build/outputs/apk/debug/app-debug.apk
+          unzip -t app/build/outputs/apk/release/app-release.apk
+      - name: Upload installable test APK
+        uses: actions/upload-artifact@v4
+        id: apk
+        with:
+          name: Madarij-Native-APK
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
+          retention-days: 30
+      - name: APK download link
+        env:
+          APK_URL: ${{ steps.apk.outputs.artifact-url }}
+        run: echo "[Download Madarij APK archive]($APK_URL)" >> "$GITHUB_STEP_SUMMARY"
