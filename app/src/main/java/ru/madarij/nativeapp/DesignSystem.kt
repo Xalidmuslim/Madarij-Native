@@ -155,7 +155,7 @@ internal fun MadarijTopBar(
 
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth().background(BookColors.secondaryBackground)) {
+    Column(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
         HorizontalDivider(color = BookColors.gold.copy(alpha = .16f))
         Row(Modifier.fillMaxWidth().heightIn(min = 56.dp).padding(horizontal = AppSpacing.xs, vertical = AppSpacing.xs),
             verticalAlignment = Alignment.CenterVertically) {
@@ -167,7 +167,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     NavigationGlyph(if(destination == "contents") "toc" else destination, selected = active, modifier = Modifier.size(21.dp))
                     Spacer(Modifier.height(AppSpacing.xs))
                     Text(label, style = MaterialTheme.typography.labelSmall.copy(fontSize = 9.sp),
-                        color = if (active) BookColors.gold else BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                        color = if (active) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 }
             }
         }
@@ -421,8 +421,8 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
 internal fun ThemeSelector(selected: String, change: (String) -> Unit) {
     Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
         listOf("light" to "Светлая", "sepia" to "Тёплая", "dark" to "Тёмная", "system" to "Системная").forEach { (key, label) ->
-            val paper = when (key) { "light" -> Color(0xFFFAF6EF); "sepia" -> BookColors.parchment; else -> BookColors.secondaryBackground }
-            val ink = if (key in listOf("light", "sepia")) BookColors.ink else BookColors.text
+            val paper = when (key) { "light" -> Color(0xFFFAF6EF); "sepia", "system" -> BookColors.parchment; else -> BookColors.nightCard }
+            val ink = if (key == "dark") BookColors.nightText else BookColors.ink
             val frame = RoundedCornerShape(AppRadius.small)
             Column(Modifier.width(82.dp).clip(frame).border(1.dp,
                 if (selected == key) BookColors.gold else BookColors.gold.copy(alpha = .12f), frame)

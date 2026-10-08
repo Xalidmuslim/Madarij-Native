@@ -71,13 +71,14 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
         val viewport = maxHeight
         val pageHeight = viewport.coerceAtLeast(600.dp) * maxOf(1f, androidx.compose.ui.platform.LocalDensity.current.fontScale / 1.15f)
         Image(painterResource(R.drawable.reference_home), null, Modifier.matchParentSize(), contentScale = ContentScale.Crop, alignment = Alignment.TopCenter)
-        Box(Modifier.matchParentSize().background(Brush.verticalGradient(listOf(Color.Transparent, BookColors.background.copy(alpha = .15f), BookColors.background.copy(alpha = .65f)))))
+        Box(Modifier.matchParentSize().background(Brush.verticalGradient(listOf(Color(0x10000000), Color(0x0C000000), MaterialTheme.colorScheme.background.copy(alpha = .72f)))))
+        Box(Modifier.fillMaxWidth().height(WindowInsets.statusBars.asPaddingValues().calculateTopPadding()).background(MaterialTheme.colorScheme.background))
         LazyColumn(contentPadding = PaddingValues(horizontal = 16.dp, vertical = 0.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
         item {
             Column(Modifier.fillMaxWidth().height(pageHeight).statusBarsPadding().padding(top = 28.dp, bottom = 14.dp)) {
                 Box(Modifier.fillMaxWidth()) {
                     Column(Modifier.fillMaxWidth(.88f)) {
-                        Text("Степени\nидущих", style = MaterialTheme.typography.headlineMedium.copy(fontFamily = BookSerif, fontWeight = androidx.compose.ui.text.font.FontWeight.Normal, fontSize = 48.sp, lineHeight = 48.sp), color = BookColors.text)
+                        Text("Степени\nидущих", style = MaterialTheme.typography.headlineMedium.copy(fontFamily = BookSerif, fontWeight = androidx.compose.ui.text.font.FontWeight.Normal, fontSize = 48.sp, lineHeight = 48.sp), color = Color(0xFFF7EAD6))
                         Text("Ибн аль-Каййим\nаль-Джаузийя", Modifier.padding(top = 12.dp), style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif, fontSize = 20.sp, lineHeight = 25.sp), color = BookColors.lightGold)
                     }
                     IconButton(onClick = { navigate("settings") }, modifier = Modifier.align(Alignment.TopEnd)) { SettingsWheel(Modifier.size(23.dp)) }

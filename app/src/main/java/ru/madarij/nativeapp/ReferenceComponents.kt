@@ -13,6 +13,7 @@ import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -50,11 +51,11 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 @Composable internal fun BookTextSlider(value: Float, onValueChange: (Float)->Unit, onFinished: ()->Unit, modifier: Modifier = Modifier, range: ClosedFloatingPointRange<Float> = 14f..36f) {
     Slider(value = value, onValueChange = onValueChange, onValueChangeFinished = onFinished,
         valueRange = range, modifier = modifier,
-        thumb = { Box(Modifier.size(18.dp).background(BookColors.lightGold,CircleShape)) },
+        thumb = { Box(Modifier.size(18.dp).background(MaterialTheme.colorScheme.primary,CircleShape)) },
         track = {
             Canvas(Modifier.fillMaxWidth().height(3.dp)) {
-                drawRoundRect(BookColors.muted.copy(alpha = .35f),cornerRadius = CornerRadius(size.height))
-                drawRoundRect(BookColors.lightGold,size = Size(size.width*((value-range.start)/(range.endInclusive-range.start)).coerceIn(0f,1f),size.height),cornerRadius = CornerRadius(size.height))
+                drawRoundRect(MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = .35f),cornerRadius = CornerRadius(size.height))
+                drawRoundRect(MaterialTheme.colorScheme.primary,size = Size(size.width*((value-range.start)/(range.endInclusive-range.start)).coerceIn(0f,1f),size.height),cornerRadius = CornerRadius(size.height))
             }
         })
 }
@@ -76,9 +77,9 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 @Composable internal fun ChapterTopicRow(title: String, onClick: () -> Unit) {
     Column {
         TextButton(onClick = onClick,modifier = Modifier.fillMaxWidth(),contentPadding = PaddingValues(horizontal = 8.dp,vertical = 12.dp)) {
-            NavigationGlyph("notes",modifier = Modifier.size(22.dp),tint = BookColors.text)
+            NavigationGlyph("notes",modifier = Modifier.size(22.dp),tint = MaterialTheme.colorScheme.onSurface)
             Spacer(Modifier.width(14.dp))
-            Text(title,Modifier.weight(1f),style = MaterialTheme.typography.bodyMedium,color = BookColors.text,textAlign = androidx.compose.ui.text.style.TextAlign.Start)
+            Text(title,Modifier.weight(1f),style = MaterialTheme.typography.bodyMedium,color = MaterialTheme.colorScheme.onSurface,textAlign = androidx.compose.ui.text.style.TextAlign.Start)
             Text("›",style = MaterialTheme.typography.titleMedium,color = BookColors.muted)
         }
         HorizontalDivider(color = BookColors.gold.copy(alpha = .12f))
@@ -87,6 +88,8 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 
 @Composable internal fun DarkSheetSystemBars() {
     val view = androidx.compose.ui.platform.LocalView.current
+    val currentColors = MaterialTheme.colorScheme
+    val lightSystemBars = currentColors.background != BookColors.nightBackground
     androidx.compose.runtime.SideEffect {
         view.post {
             var parent: android.view.ViewParent? = view as? android.view.ViewParent
@@ -94,11 +97,11 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
             while (parent != null && parent !is androidx.compose.ui.window.DialogWindowProvider) parent = parent.parent
             (parent as? androidx.compose.ui.window.DialogWindowProvider)?.window?.let { window ->
                 androidx.core.view.WindowCompat.getInsetsController(window, window.decorView).apply {
-                    isAppearanceLightStatusBars = false
-                    isAppearanceLightNavigationBars = false
+                    isAppearanceLightStatusBars = lightSystemBars
+                    isAppearanceLightNavigationBars = lightSystemBars
                 }
                 @Suppress("DEPRECATION")
-                window.navigationBarColor = android.graphics.Color.rgb(25,24,20)
+                window.navigationBarColor = currentColors.background.toArgb()
                 if(android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
             }
         }
