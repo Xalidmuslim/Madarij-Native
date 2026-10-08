@@ -13,7 +13,6 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -50,7 +49,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route.orEmpty()
     val isReader = route.startsWith("read/")
-    val colors = if (isReader) bookReaderColors(settings, isSystemInDarkTheme()) else bookDarkColors()
+    val colors = bookReaderColors(settings, false)
 
     MaterialTheme(
         colorScheme = colors,
@@ -83,8 +82,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 // from showing through the moving composables on some Android devices.
                 window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
                 WindowCompat.getInsetsController(window, window.decorView).apply {
-                    isAppearanceLightStatusBars = false
-                    isAppearanceLightNavigationBars = false
+                    isAppearanceLightStatusBars = settings.theme != "dark"
+                    isAppearanceLightNavigationBars = settings.theme != "dark"
                 }
             }
         }
@@ -161,8 +160,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 )
             },
             bottomBar = {
-                Column(Modifier.background(BookColors.secondaryBackground).navigationBarsPadding()) {
-                    MaterialTheme(colorScheme = bookDarkColors()) {
+                Column(Modifier.background(colors.surface).navigationBarsPadding()) {
+                    MaterialTheme(colorScheme = colors) {
                     MadarijBottomBar(tabs, selectedTab) { destination ->
                         when {
                             destination == "home" -> nav.navigate("home") {
