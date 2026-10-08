@@ -58,20 +58,12 @@ fun Reader(
     vm: BookViewModel, chapter: Chapter, settings: ReadingSettings, anchor: String? = null, query: String = "", forceTop: Boolean = false,
     onStudy: (String) -> Unit = {}, onOpenParagraph: (String) -> Unit = {}, onBack: () -> Unit = {}, navigate: (String) -> Unit
 ) {
-    var controlsVisible by rememberSaveable(chapter.id) { mutableStateOf(true) }
-    var controlInteraction by remember { mutableIntStateOf(0) }
     var resizing by remember { mutableStateOf(false) }
     var draftFontSize by remember { mutableFloatStateOf(settings.russianSize) }
     val readerSettings = settings.copy(russianSize = draftFontSize)
     LaunchedEffect(settings.russianSize) { if (!resizing) draftFontSize = settings.russianSize }
     var chapterPanel by rememberSaveable(chapter.id) { mutableStateOf(false) }
     var chapterTab by rememberSaveable(chapter.id) { mutableIntStateOf(0) }
-    LaunchedEffect(controlsVisible, controlInteraction, resizing, chapterPanel) {
-        if (controlsVisible && !resizing && !chapterPanel) {
-            delay(4500)
-            controlsVisible = false
-        }
-    }
     val context = LocalContext.current
     val actionScope = rememberCoroutineScope()
     val listState = rememberLazyListState()
@@ -220,8 +212,8 @@ fun Reader(
         }
     }
     Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
-        MaterialTheme(colorScheme = bookDarkColors()) {
-        Box(Modifier.fillMaxWidth().background(BookColors.background).statusBarsPadding()) {
+        MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
+        Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.background).statusBarsPadding()) {
             Box(Modifier.fillMaxWidth().heightIn(min = 54.dp)) {
                 Row(
                     Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 2.dp),
@@ -230,12 +222,21 @@ fun Reader(
                 ) {
                     ReaderControl("‹") { onBack() }
                     Column(Modifier.weight(1f).clickable { chapterPanel = true },horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("Том ${chapter.volume}",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = BookColors.text)
-                        Text(chapterStructure?.title ?: chapter.title,style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = BookColors.text,maxLines = 1,overflow = TextOverflow.Ellipsis)
+                        Text("Том ${chapter.volume}",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
+                        Text(chapterStructure?.title ?: chapter.title,style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 1,overflow = TextOverflow.Ellipsis)
                     }
                     IconButton(onClick = { newBookmark(currentParagraph) }) {
                         NavigationGlyph("bookmarks", selected = true, modifier = Modifier.size(22.dp))
                     }
+                    ReaderFontControl(
+                        value = draftFontSize,
+                        onChange = { draftFontSize = it; resizing = true },
+                        onCommit = {
+                            draftFontSize = it
+                            resizing = false
+                            vm.settings(settings.copy(russianSize = it))
+                        }
+                    )
                     Box {
                         ReaderControl("⋯") { menu = true }
                         DropdownMenu(menu, { menu = false }) {
@@ -277,7 +278,7 @@ fun Reader(
             label = "reader-content-fade"
         )
         Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-            if (MaterialTheme.colorScheme.surface != BookColors.card) Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .45f else 1f)
+            if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .45f else 1f)
             LazyColumn(
                 state = listState,
                 modifier = Modifier
@@ -293,7 +294,7 @@ fun Reader(
             ) {
             item(key = "heading") {
                 Column(Modifier.fillMaxWidth()) {
-                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: chapter.title, chapterStructure?.subtitle, MaterialTheme.colorScheme.surface == BookColors.card)
+                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: chapter.title, chapterStructure?.subtitle, settings.theme == "dark")
                     if(query.isNotBlank()) Text("Найденный текст: «$query»",Modifier.padding(horizontal = 24.dp,vertical = 8.dp),style = MaterialTheme.typography.labelMedium,color = MaterialTheme.colorScheme.primary)
                 }
             }
@@ -301,7 +302,7 @@ fun Reader(
                 val terms = termsByParagraph[p.id].orEmpty()
                 val isNote = p.role in listOf("editor_note", "edition_note")
                 var expanded by rememberSaveable(p.id) { mutableStateOf(anchor == p.id && isNote) }
-                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = 24.dp).combinedClickable(onClick = { controlsVisible = !controlsVisible; controlInteraction++ }, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = 24.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     topicsByParagraph[p.id]?.let { topic ->
                         Column(
                             Modifier.fillMaxWidth().padding(top = 5.dp, bottom = 7.dp),
@@ -408,30 +409,15 @@ fun Reader(
             }
             }
         }
-        androidx.compose.animation.AnimatedVisibility(visible = controlsVisible,
-            enter = androidx.compose.animation.fadeIn(tween(if (settings.reducedMotion) 0 else AppMotion.fast)),
-            exit = androidx.compose.animation.fadeOut(tween(if (settings.reducedMotion) 0 else AppMotion.fast))) {
-            MaterialTheme(colorScheme = bookDarkColors()) {
-                Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 5.dp).clip(RoundedCornerShape(24.dp)).background(BookColors.secondaryBackground)
-                    .padding(horizontal = 4.dp),
-                    verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-                    ReaderControl("A−") { controlInteraction++; vm.settings(settings.copy(russianSize = (settings.russianSize - 1f).coerceAtLeast(14f))) }
-                    BookTextSlider(value = draftFontSize, onValueChange = { resizing = true; draftFontSize = it; controlInteraction++ },
-                        onFinished = { vm.settings(settings.copy(russianSize = draftFontSize)); resizing = false; controlInteraction++ },
-                        modifier = Modifier.weight(1f))
-                    ReaderControl("A+") { controlInteraction++; vm.settings(settings.copy(russianSize = (settings.russianSize + 1f).coerceAtMost(36f))) }
-                }
-            }
-        }
         SnackbarHost(snackbar)
     }
-    if (chapterPanel) MaterialTheme(colorScheme = bookDarkColors()) {
+    if (chapterPanel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
         androidx.activity.compose.BackHandler { chapterPanel = false }
         CompositionLocalProvider(LocalContentColor provides BookColors.text) {
-            Column(Modifier.fillMaxSize().background(BookColors.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
+            Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }
-                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = BookColors.text,maxLines = 2,overflow = TextOverflow.Ellipsis)
+                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 2,overflow = TextOverflow.Ellipsis)
                     IconButton(onClick = { newBookmark(currentParagraph) }) { NavigationGlyph("bookmarks",selected = true,modifier = Modifier.size(21.dp)) }
                 }
                 Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
@@ -448,8 +434,6 @@ fun Reader(
                             onOpenParagraph(id)
                         } else listState.scrollToItem(if (index >= 0) index + 1 else 0)
                         chapterPanel = false
-                        controlsVisible = true
-                        controlInteraction++
                     }
                 }
                 LazyColumn(modifier = Modifier.weight(1f), contentPadding = PaddingValues(bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
@@ -483,7 +467,7 @@ fun Reader(
             }
         }
     }
-    if (panel) MaterialTheme(colorScheme = bookDarkColors()) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = BookColors.card, contentColor = BookColors.text, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
+    if (panel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.onSurface, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
     selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
     if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(chapter.id, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
     if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(chapter.id, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
