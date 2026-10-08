@@ -53,9 +53,11 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
         valueRange = range, modifier = modifier,
         thumb = { Box(Modifier.size(18.dp).background(MaterialTheme.colorScheme.primary,CircleShape)) },
         track = {
+            val trackTint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = .35f)
+            val accentTint = MaterialTheme.colorScheme.primary
             Canvas(Modifier.fillMaxWidth().height(3.dp)) {
-                drawRoundRect(MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = .35f),cornerRadius = CornerRadius(size.height))
-                drawRoundRect(MaterialTheme.colorScheme.primary,size = Size(size.width*((value-range.start)/(range.endInclusive-range.start)).coerceIn(0f,1f),size.height),cornerRadius = CornerRadius(size.height))
+                drawRoundRect(trackTint,cornerRadius = CornerRadius(size.height))
+                drawRoundRect(accentTint,size = Size(size.width*((value-range.start)/(range.endInclusive-range.start)).coerceIn(0f,1f),size.height),cornerRadius = CornerRadius(size.height))
             }
         })
 }
