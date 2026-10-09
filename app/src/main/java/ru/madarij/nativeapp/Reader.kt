@@ -228,15 +228,10 @@ fun Reader(
                     IconButton(onClick = { newBookmark(currentParagraph) }) {
                         NavigationGlyph("bookmarks", selected = true, modifier = Modifier.size(22.dp))
                     }
-                    ReaderFontControl(
-                        value = draftFontSize,
-                        onChange = { draftFontSize = it; resizing = true },
-                        onCommit = {
-                            draftFontSize = it
-                            resizing = false
-                            vm.settings(settings.copy(russianSize = it))
-                        }
-                    )
+                    TextButton(onClick = { panel = true }, modifier = Modifier.width(42.dp),
+                        contentPadding = PaddingValues(0.dp)) {
+                        Text("Aa", color = MaterialTheme.colorScheme.primary, fontSize = 16.sp)
+                    }
                     Box {
                         ReaderControl("⋯") { menu = true }
                         DropdownMenu(menu, { menu = false }) {
@@ -265,29 +260,11 @@ fun Reader(
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
-        var readerContentVisible by remember(chapter.id) { mutableStateOf(false) }
-        LaunchedEffect(chapter.id, ready) {
-            if (ready) {
-                withFrameNanos { }
-                readerContentVisible = true
-            }
-        }
-        val readerContentAlpha by animateFloatAsState(
-            targetValue = if (readerContentVisible) 1f else 0f,
-            animationSpec = tween(165),
-            label = "reader-content-fade"
-        )
         Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
             if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .45f else 1f)
             LazyColumn(
                 state = listState,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .then(swipeModifier)
-                    .graphicsLayer {
-                        alpha = readerContentAlpha
-                        translationX = (1f - readerContentAlpha) * 10f
-                    },
+                modifier = Modifier.fillMaxSize().then(swipeModifier),
                 contentPadding = PaddingValues(top = 0.dp, bottom = 28.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
@@ -407,6 +384,43 @@ fun Reader(
                     }
                 }
             }
+            }
+        }
+        if (!chapterPanel) {
+            Row(Modifier.fillMaxWidth().background(BookColors.leather)
+                    .navigationBarsPadding().padding(horizontal = 8.dp, vertical = 4.dp),
+                verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
+                TextButton(onClick = {
+                    val next = (draftFontSize - 1f).coerceAtLeast(14f)
+                    draftFontSize = next
+                    vm.settings(settings.copy(russianSize = next))
+                }, contentPadding = PaddingValues(2.dp)) {
+                    Text("A−", color = BookColors.lightGold, fontSize = 16.sp)
+                }
+                Slider(value = draftFontSize, onValueChange = { draftFontSize = it; resizing = true },
+                    onValueChangeFinished = {
+                        resizing = false
+                        vm.settings(settings.copy(russianSize = draftFontSize))
+                    }, modifier = Modifier.weight(1f),
+                    valueRange = 14f..36f,
+                    colors = SliderDefaults.colors(thumbColor = BookColors.lightGold,
+                        activeTrackColor = BookColors.lightGold,
+                        inactiveTrackColor = Color(0xFF705644)))
+                TextButton(onClick = {
+                    val next = (draftFontSize + 1f).coerceAtMost(36f)
+                    draftFontSize = next
+                    vm.settings(settings.copy(russianSize = next))
+                }, contentPadding = PaddingValues(2.dp)) {
+                    Text("A+", color = BookColors.lightGold, fontSize = 16.sp)
+                }
+                IconButton(onClick = { chapterPanel = true }, modifier = Modifier.size(36.dp)) {
+                    NavigationGlyph("toc", modifier = Modifier.size(22.dp), tint = BookColors.lightGold)
+                }
+                TextButton(onClick = {
+                    vm.settings(settings.copy(theme = if (settings.theme == "dark") "sepia" else "dark"))
+                }, modifier = Modifier.size(36.dp), contentPadding = PaddingValues(0.dp)) {
+                    Text("☾", color = BookColors.lightGold, fontSize = 23.sp)
+                }
             }
         }
         SnackbarHost(snackbar)

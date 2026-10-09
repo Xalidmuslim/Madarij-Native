@@ -142,32 +142,63 @@ internal fun MadarijTopBar(
     showTextSettings: Boolean, onTextSettings: () -> Unit, onBookmarks: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
-        Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),verticalAlignment = Alignment.CenterVertically) {
-            TextButton(onClick = onBack,modifier = Modifier.size(44.dp),contentPadding = PaddingValues(0.dp)) { Text("‹",style = MaterialTheme.typography.headlineSmall) }
-            Text(title,Modifier.weight(1f),style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal,fontSize = 21.sp),textAlign = TextAlign.Center,maxLines = 2,overflow = TextOverflow.Ellipsis)
-            if(title == "Оглавление") IconButton(onClick = onBookmarks) { NavigationGlyph("bookmarks",selected = true,modifier = Modifier.size(21.dp)) }
-            else if(showSearch) IconButton(onClick = onSearch) { NavigationGlyph("search",modifier = Modifier.size(21.dp)) }
-            else Spacer(Modifier.width(44.dp))
+        if (title == "Оглавление") {
+            Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f)) {
+                    Text(title, style = MaterialTheme.typography.headlineLarge.copy(
+                        fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
+                        color = BookColors.ink)
+                    if (subtitle != null) Text(subtitle,
+                        style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+                }
+                IconButton(onClick = onSearch) {
+                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = BookColors.ink)
+                }
+                TextButton(onClick = onTextSettings, modifier = Modifier.width(44.dp),
+                    contentPadding = PaddingValues(0.dp)) {
+                    Text("Aa", color = BookColors.gold, fontSize = 17.sp)
+                }
+            }
+        } else {
+            Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                TextButton(onClick = onBack, modifier = Modifier.size(44.dp),
+                    contentPadding = PaddingValues(0.dp)) {
+                    Text("‹", style = MaterialTheme.typography.headlineSmall)
+                }
+                Text(title, Modifier.weight(1f),
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        fontFamily = BookSerif, fontWeight = FontWeight.Normal, fontSize = 20.sp),
+                    textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
+                if (showSearch) IconButton(onClick = onSearch) {
+                    NavigationGlyph("search", modifier = Modifier.size(21.dp))
+                } else Spacer(Modifier.width(44.dp))
+            }
         }
-        HorizontalDivider(color = BookColors.gold.copy(alpha = .12f))
+        HorizontalDivider(color = BookColors.gold.copy(alpha = .15f))
     }
 }
-
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-        HorizontalDivider(color = BookColors.gold.copy(alpha = .16f))
-        Row(Modifier.fillMaxWidth().heightIn(min = 56.dp).padding(horizontal = AppSpacing.xs, vertical = AppSpacing.xs),
+    Column(Modifier.fillMaxWidth().background(BookColors.leather)) {
+        HorizontalDivider(color = BookColors.lightGold.copy(alpha = .22f))
+        Row(Modifier.fillMaxWidth().heightIn(min = 58.dp).padding(horizontal = 3.dp, vertical = 3.dp),
             verticalAlignment = Alignment.CenterVertically) {
             items.forEach { (destination, label) ->
                 val active = selected == destination
-                Column(Modifier.weight(1f).heightIn(min = 48.dp).clip(RoundedCornerShape(AppRadius.small))
-                    .clickable { onSelect(destination) }.padding(vertical = AppSpacing.xs),
-                    horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
-                    NavigationGlyph(if(destination == "contents") "toc" else destination, selected = active, modifier = Modifier.size(21.dp))
-                    Spacer(Modifier.height(AppSpacing.xs))
-                    Text(label, style = MaterialTheme.typography.labelSmall.copy(fontSize = 9.sp),
-                        color = if (active) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Column(Modifier.weight(1f).heightIn(min = 51.dp)
+                    .clip(RoundedCornerShape(12.dp)).clickable { onSelect(destination) }
+                    .padding(vertical = 5.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center) {
+                    NavigationGlyph(if (destination == "contents") "toc" else destination,
+                        selected = active, modifier = Modifier.size(22.dp),
+                        tint = if (active) BookColors.lightGold else Color(0xFFB9A793))
+                    Spacer(Modifier.height(3.dp))
+                    Text(label, style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
+                        color = if (active) BookColors.lightGold else Color(0xFFB9A793),
+                        maxLines = 1, overflow = TextOverflow.Ellipsis)
                 }
             }
         }

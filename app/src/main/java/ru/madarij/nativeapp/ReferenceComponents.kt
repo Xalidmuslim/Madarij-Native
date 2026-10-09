@@ -63,16 +63,25 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 }
 
 @Composable internal fun ReaderFrontispiece(ordinal: Int, title: String, subtitle: String?, dark: Boolean) {
-    Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-        Box(Modifier.fillMaxWidth().aspectRatio(2f)) {
-            Image(painterResource(R.drawable.reference_chapter), null, Modifier.matchParentSize(),contentScale = ContentScale.Crop, alignment = Alignment.TopCenter, alpha = if(dark) .4f else 1f)
-            Surface(color = Color(0xFF9D713E), contentColor = BookColors.parchment, shape = CircleShape, border = androidx.compose.foundation.BorderStroke(1.dp,BookColors.lightGold), modifier = Modifier.align(Alignment.TopCenter).padding(top = 18.dp).size(46.dp)) {
-                Box(contentAlignment = Alignment.Center) { Text("$ordinal",style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif)) }
-            }
+    Column(Modifier.fillMaxWidth().padding(start = 22.dp, end = 22.dp, top = 17.dp, bottom = 10.dp),
+        horizontalAlignment = Alignment.Start) {
+        Surface(shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
+            color = MaterialTheme.colorScheme.primary.copy(alpha = .075f),
+            border = androidx.compose.foundation.BorderStroke(.6.dp, MaterialTheme.colorScheme.primary.copy(alpha = .24f))) {
+            Text("Раздел $ordinal", Modifier.padding(horizontal = 11.dp, vertical = 4.dp),
+                style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
         }
-        Text(title, Modifier.fillMaxWidth().padding(horizontal = 24.dp),style = MaterialTheme.typography.headlineMedium.copy(fontFamily = BookSerif,fontWeight = androidx.compose.ui.text.font.FontWeight.Normal,fontSize = 28.sp,lineHeight = 34.sp),textAlign = androidx.compose.ui.text.style.TextAlign.Center,color = MaterialTheme.colorScheme.onSurface)
-        if(!subtitle.isNullOrBlank()) Text(subtitle.replace(" · название для навигации",""),Modifier.padding(horizontal = 24.dp,vertical = 10.dp),style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),textAlign = androidx.compose.ui.text.style.TextAlign.Center,color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Spacer(Modifier.height(10.dp))
+        Spacer(Modifier.height(12.dp))
+        Text(title, Modifier.fillMaxWidth(),
+            style = MaterialTheme.typography.headlineLarge.copy(
+                fontFamily = BookSerif, fontSize = 30.sp, lineHeight = 35.sp),
+            color = MaterialTheme.colorScheme.onSurface)
+        if (!subtitle.isNullOrBlank()) Text(subtitle.replace(" · название для навигации", ""),
+            Modifier.padding(top = 8.dp),
+            style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Spacer(Modifier.height(16.dp))
+        HorizontalDivider(color = BookColors.gold.copy(alpha = .34f), thickness = .7.dp)
     }
 }
 

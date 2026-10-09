@@ -4,12 +4,13 @@ import androidx.compose.ui.graphics.Color
 import ru.madarij.nativeapp.data.ReadingSettings
 
 internal object BookColors {
-    val background = Color(0xFFF2E5CC)
-    val secondaryBackground = Color(0xFFEBDDCA)
-    val card = Color(0xFFF9F0DF)
-    val gold = Color(0xFF805B35)
-    val lightGold = Color(0xFFE2BF89)
-    val parchment = Color(0xFFF4E8D1)
+    val background = Color(0xFFF4E6CF)
+    val secondaryBackground = Color(0xFFEADAC0)
+    val card = Color(0xFFF9EDD9)
+    val gold = Color(0xFF79512C)
+    val lightGold = Color(0xFFCCA166)
+    val leather = Color(0xFF2A1A12)
+    val parchment = Color(0xFFF5E8D2)
     val ink = Color(0xFF372B21)
     val text = Color(0xFF372B21)
     val muted = Color(0xFF786953)

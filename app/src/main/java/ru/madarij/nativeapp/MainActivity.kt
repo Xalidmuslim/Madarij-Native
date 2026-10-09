@@ -82,7 +82,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 // from showing through the moving composables on some Android devices.
                 window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
                 WindowCompat.getInsetsController(window, window.decorView).apply {
-                    isAppearanceLightStatusBars = settings.theme != "dark"
+                    isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
                     isAppearanceLightNavigationBars = settings.theme != "dark"
                 }
             }
@@ -160,7 +160,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 )
             },
             bottomBar = {
-                Column(Modifier.background(colors.surface).navigationBarsPadding()) {
+                if (!isReader) Column(Modifier.background(BookColors.leather).navigationBarsPadding()) {
                     MaterialTheme(colorScheme = colors) {
                     MadarijBottomBar(tabs, selectedTab) { destination ->
                         when {
@@ -196,46 +196,11 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 navController = nav,
                 startDestination = "home",
                 modifier = Modifier.fillMaxSize().background(if (isReader) colors.background else Color.Transparent),
-                enterTransition = {
-                    if (reduceMotion) EnterTransition.None
-                    else {
-                        val readerToReader = initialState.destination.route?.startsWith("read/") == true && targetState.destination.route?.startsWith("read/") == true
-                        if (readerToReader) {
-                            fadeIn(tween(170, easing = FastOutSlowInEasing)) +
-                                slideInHorizontally(tween(240, easing = FastOutSlowInEasing)) { it / 22 }
-                        } else {
-                            fadeIn(tween(230, easing = FastOutSlowInEasing)) +
-                                slideInHorizontally(tween(280, easing = FastOutSlowInEasing)) { it / 12 } +
-                                scaleIn(tween(280, easing = FastOutSlowInEasing), initialScale = .992f)
-                        }
-                    }
-                },
-                exitTransition = {
-                    if (reduceMotion) ExitTransition.None
-                    else {
-                        val readerToReader = initialState.destination.route?.startsWith("read/") == true && targetState.destination.route?.startsWith("read/") == true
-                        if (readerToReader) {
-                            fadeOut(tween(170, easing = FastOutSlowInEasing)) +
-                                slideOutHorizontally(tween(240, easing = FastOutSlowInEasing)) { -it / 22 }
-                        } else {
-                            fadeOut(tween(190, easing = FastOutSlowInEasing)) +
-                                slideOutHorizontally(tween(230, easing = FastOutSlowInEasing)) { -it / 18 } +
-                                scaleOut(tween(230, easing = FastOutSlowInEasing), targetScale = .996f)
-                        }
-                    }
-                },
-                popEnterTransition = {
-                    if (reduceMotion) EnterTransition.None
-                    else fadeIn(tween(230, easing = FastOutSlowInEasing)) +
-                        slideInHorizontally(tween(280, easing = FastOutSlowInEasing)) { -it / 12 } +
-                        scaleIn(tween(280, easing = FastOutSlowInEasing), initialScale = .992f)
-                },
-                popExitTransition = {
-                    if (reduceMotion) ExitTransition.None
-                    else fadeOut(tween(190, easing = FastOutSlowInEasing)) +
-                        slideOutHorizontally(tween(230, easing = FastOutSlowInEasing)) { it / 18 } +
-                        scaleOut(tween(230, easing = FastOutSlowInEasing), targetScale = .996f)
-                }
+                // Keep one stable parchment background throughout navigation; no translated old screen.
+                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(130)) },
+                exitTransition = { ExitTransition.None },
+                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(130)) },
+                popExitTransition = { ExitTransition.None }
             ) {
                 composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
                 composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }
