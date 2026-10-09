@@ -214,6 +214,10 @@ fun Reader(
     Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
         MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
         Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.background).statusBarsPadding()) {
+            if (settings.theme != "dark") {
+                Image(painterResource(R.drawable.reference_paper), null,
+                    Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .22f)
+            }
             Box(Modifier.fillMaxWidth().heightIn(min = 54.dp)) {
                 Row(
                     Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 2.dp),
@@ -261,7 +265,7 @@ fun Reader(
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
         Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-            if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .45f else 1f)
+            if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .22f else .38f)
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize().then(swipeModifier),
@@ -279,7 +283,7 @@ fun Reader(
                 val terms = termsByParagraph[p.id].orEmpty()
                 val isNote = p.role in listOf("editor_note", "edition_note")
                 var expanded by rememberSaveable(p.id) { mutableStateOf(anchor == p.id && isNote) }
-                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = 24.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = if (settings.textWidth < .85f) 16.dp else 28.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     topicsByParagraph[p.id]?.let { topic ->
                         Column(
                             Modifier.fillMaxWidth().padding(top = 5.dp, bottom = 7.dp),
@@ -397,15 +401,13 @@ fun Reader(
                 }, contentPadding = PaddingValues(2.dp)) {
                     Text("A−", color = BookColors.lightGold, fontSize = 16.sp)
                 }
-                Slider(value = draftFontSize, onValueChange = { draftFontSize = it; resizing = true },
-                    onValueChangeFinished = {
+                BookTextSlider(value = draftFontSize,
+                    onValueChange = { draftFontSize = it; resizing = true },
+                    onFinished = {
                         resizing = false
                         vm.settings(settings.copy(russianSize = draftFontSize))
-                    }, modifier = Modifier.weight(1f),
-                    valueRange = 14f..36f,
-                    colors = SliderDefaults.colors(thumbColor = BookColors.lightGold,
-                        activeTrackColor = BookColors.lightGold,
-                        inactiveTrackColor = Color(0xFF705644)))
+                    },
+                    modifier = Modifier.weight(1f), range = 14f..36f, tint = BookColors.lightGold)
                 TextButton(onClick = {
                     val next = (draftFontSize + 1f).coerceAtMost(36f)
                     draftFontSize = next
@@ -414,7 +416,7 @@ fun Reader(
                     Text("A+", color = BookColors.lightGold, fontSize = 16.sp)
                 }
                 IconButton(onClick = { chapterPanel = true }, modifier = Modifier.size(36.dp)) {
-                    NavigationGlyph("toc", modifier = Modifier.size(22.dp), tint = BookColors.lightGold)
+                    NavigationGlyph("contents", modifier = Modifier.size(22.dp), tint = BookColors.lightGold)
                 }
                 TextButton(onClick = {
                     vm.settings(settings.copy(theme = if (settings.theme == "dark") "sepia" else "dark"))

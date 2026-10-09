@@ -69,7 +69,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
 
     Box(Modifier.fillMaxSize().background(BookColors.parchment)) {
         Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
-            contentScale = ContentScale.FillBounds, alpha = .50f)
+            contentScale = ContentScale.FillBounds, alpha = .27f)
         LazyColumn(
             contentPadding = PaddingValues(start = 14.dp, end = 14.dp, bottom = 12.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -137,7 +137,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                         contentColor = Color(0xFFF8E7CE)),
                     elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
                 ) {
-                    NavigationGlyph("toc", selected = true, modifier = Modifier.size(23.dp),
+                    NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
                         tint = BookColors.lightGold)
                     Spacer(Modifier.width(11.dp))
                     Text("Продолжить чтение", Modifier.weight(1f),
@@ -194,19 +194,24 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
 @Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 86.dp),
+        modifier = modifier.heightIn(min = 76.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
         onClick = onClick
     ) {
+        Image(painterResource(R.drawable.reference_paper), null,
+            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .15f)
         Column(
-            Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 10.dp),
-            verticalArrangement = Arrangement.spacedBy(3.dp)
+            Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 8.dp),
+            verticalArrangement = Arrangement.spacedBy(2.dp)
         ) {
-            AppActionGlyph(glyph)
-            Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurface)
-            Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2)
+            NavigationGlyph(glyph, selected = true, modifier = Modifier.size(25.dp), tint = BookColors.gold)
+            Text(title, style = MaterialTheme.typography.titleSmall.copy(fontSize = 14.sp),
+                color = MaterialTheme.colorScheme.onSurface, maxLines = 1)
+            Text(subtitle, style = MaterialTheme.typography.bodySmall.copy(fontSize = 11.sp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1,
+                overflow = TextOverflow.Ellipsis)
         }
     }
 }

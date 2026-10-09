@@ -48,13 +48,14 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Composable internal fun BookTextSlider(value: Float, onValueChange: (Float)->Unit, onFinished: ()->Unit, modifier: Modifier = Modifier, range: ClosedFloatingPointRange<Float> = 14f..36f) {
+@Composable internal fun BookTextSlider(value: Float, onValueChange: (Float)->Unit, onFinished: ()->Unit, modifier: Modifier = Modifier, range: ClosedFloatingPointRange<Float> = 14f..36f, tint: Color? = null) {
+    val activeTint = tint ?: MaterialTheme.colorScheme.primary
     Slider(value = value, onValueChange = onValueChange, onValueChangeFinished = onFinished,
         valueRange = range, modifier = modifier,
-        thumb = { Box(Modifier.size(18.dp).background(MaterialTheme.colorScheme.primary,CircleShape)) },
+        thumb = { Box(Modifier.size(18.dp).background(activeTint, CircleShape)) },
         track = {
             val trackTint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = .35f)
-            val accentTint = MaterialTheme.colorScheme.primary
+            val accentTint = activeTint
             Canvas(Modifier.fillMaxWidth().height(3.dp)) {
                 drawRoundRect(trackTint,cornerRadius = CornerRadius(size.height))
                 drawRoundRect(accentTint,size = Size(size.width*((value-range.start)/(range.endInclusive-range.start)).coerceIn(0f,1f),size.height),cornerRadius = CornerRadius(size.height))

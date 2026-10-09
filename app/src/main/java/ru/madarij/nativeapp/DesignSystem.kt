@@ -192,7 +192,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     .padding(vertical = 5.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center) {
-                    NavigationGlyph(if (destination == "contents") "toc" else destination,
+                    NavigationGlyph(destination,
                         selected = active, modifier = Modifier.size(22.dp),
                         tint = if (active) BookColors.lightGold else Color(0xFFB9A793))
                     Spacer(Modifier.height(3.dp))
