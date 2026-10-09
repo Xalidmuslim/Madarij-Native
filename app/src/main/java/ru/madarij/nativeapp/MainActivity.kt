@@ -12,11 +12,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.*
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Color
@@ -80,10 +83,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 // Keep the native window behind Compose the same colour as the active theme.
                 // During reader-to-reader slide transitions this prevents a black rectangle/frame
                 // from showing through the moving composables on some Android devices.
-                window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
+                window.setBackgroundDrawable(ColorDrawable((if (route == "home") BookColors.leather else colors.background).toArgb()))
+                @Suppress("DEPRECATION")
+                window.navigationBarColor = BookColors.leather.toArgb()
+                if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
                 WindowCompat.getInsetsController(window, window.decorView).apply {
                     isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
-                    isAppearanceLightNavigationBars = settings.theme != "dark"
+                    isAppearanceLightNavigationBars = false
                 }
             }
         }
@@ -142,7 +148,12 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         val reduceMotion = settings.reducedMotion || !android.animation.ValueAnimator.areAnimatorsEnabled()
 
         Box(Modifier.fillMaxSize().background(colors.background)) {
-            Soft3DBackdrop(Modifier.matchParentSize(), calm = isReader)
+            // One continuous paper image behind all non-home pages and behind the status bar.
+            // Never reuse the home illustration as a navigation backdrop.
+            if (route != "home" && settings.theme != "dark") {
+                Image(painterResource(R.drawable.reference_paper), null,
+                    Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
+            }
             Scaffold(
             containerColor = Color.Transparent,
             contentWindowInsets = WindowInsets(0, 0, 0, 0),
@@ -160,7 +171,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 )
             },
             bottomBar = {
-                if (!isReader) Column(Modifier.background(BookColors.leather).navigationBarsPadding()) {
+                Column(Modifier.background(BookColors.leather).navigationBarsPadding()) {
                     MaterialTheme(colorScheme = colors) {
                     MadarijBottomBar(tabs, selectedTab) { destination ->
                         when {
@@ -189,18 +200,19 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 Modifier
                     .fillMaxSize()
                     .padding(padding)
-                    .background(if (isReader) colors.background else Color.Transparent)
+                    .background(Color.Transparent)
                     .clipToBounds()
             ) {
             NavHost(
                 navController = nav,
                 startDestination = "home",
-                modifier = Modifier.fillMaxSize().background(if (isReader) colors.background else Color.Transparent),
+                modifier = Modifier.fillMaxSize().background(Color.Transparent),
                 // Keep one stable parchment background throughout navigation; no translated old screen.
-                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(130)) },
-                exitTransition = { ExitTransition.None },
-                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(130)) },
-                popExitTransition = { ExitTransition.None }
+                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(135)) },
+                // Do not keep the previous screen's pixels behind the next one.
+                exitTransition = { if (reduceMotion) ExitTransition.None else fadeOut(tween(1)) },
+                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(135)) },
+                popExitTransition = { if (reduceMotion) ExitTransition.None else fadeOut(tween(1)) }
             ) {
                 composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
                 composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }

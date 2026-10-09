@@ -2,6 +2,7 @@ package ru.madarij.nativeapp
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -17,6 +18,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -181,30 +184,45 @@ internal fun MadarijTopBar(
 }
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth().background(BookColors.leather)) {
-        HorizontalDivider(color = BookColors.lightGold.copy(alpha = .22f))
-        Row(Modifier.fillMaxWidth().heightIn(min = 58.dp).padding(horizontal = 3.dp, vertical = 3.dp),
-            verticalAlignment = Alignment.CenterVertically) {
+    Box(Modifier.fillMaxWidth().height(66.dp).background(BookColors.leather)) {
+        Image(
+            painter = painterResource(R.drawable.navigation_leather),
+            contentDescription = null,
+            modifier = Modifier.matchParentSize(),
+            contentScale = ContentScale.FillBounds
+        )
+        Row(
+            Modifier.fillMaxSize().padding(horizontal = 8.dp, vertical = 7.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             items.forEach { (destination, label) ->
                 val active = selected == destination
-                Column(Modifier.weight(1f).heightIn(min = 51.dp)
-                    .clip(RoundedCornerShape(12.dp)).clickable { onSelect(destination) }
-                    .padding(vertical = 5.dp),
+                Column(
+                    Modifier.weight(1f).fillMaxHeight()
+                        .clip(RoundedCornerShape(10.dp))
+                        .clickable { onSelect(destination) }
+                        .padding(vertical = 1.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Center) {
-                    NavigationGlyph(destination,
-                        selected = active, modifier = Modifier.size(22.dp),
-                        tint = if (active) BookColors.lightGold else Color(0xFFB9A793))
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    NavigationGlyph(
+                        destination, selected = active,
+                        modifier = Modifier.size(22.dp),
+                        tint = if (active) BookColors.lightGold else Color(0xFFB9A793)
+                    )
                     Spacer(Modifier.height(3.dp))
-                    Text(label, style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
+                    Text(
+                        label,
+                        style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
                         color = if (active) BookColors.lightGold else Color(0xFFB9A793),
-                        maxLines = 1, overflow = TextOverflow.Ellipsis)
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
                 }
             }
         }
     }
 }
-
 @Composable
 internal fun AppActionGlyph(kind: String, modifier: Modifier = Modifier) {
     Soft3DIconPuck(kind, modifier)

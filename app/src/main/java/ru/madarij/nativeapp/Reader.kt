@@ -211,13 +211,9 @@ fun Reader(
             }
         }
     }
-    Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
+    Column(Modifier.fillMaxSize().background(Color.Transparent)) {
         MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
-        Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.background).statusBarsPadding()) {
-            if (settings.theme != "dark") {
-                Image(painterResource(R.drawable.reference_paper), null,
-                    Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .22f)
-            }
+        Box(Modifier.fillMaxWidth().background(Color.Transparent).statusBarsPadding()) {
             Box(Modifier.fillMaxWidth().heightIn(min = 54.dp)) {
                 Row(
                     Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 2.dp),
@@ -264,8 +260,7 @@ fun Reader(
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
-        Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-            if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .22f else .38f)
+        Box(Modifier.weight(1f).fillMaxWidth().background(Color.Transparent)) {
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize().then(swipeModifier),
@@ -388,41 +383,6 @@ fun Reader(
                     }
                 }
             }
-            }
-        }
-        if (!chapterPanel) {
-            Row(Modifier.fillMaxWidth().background(BookColors.leather)
-                    .navigationBarsPadding().padding(horizontal = 8.dp, vertical = 4.dp),
-                verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
-                TextButton(onClick = {
-                    val next = (draftFontSize - 1f).coerceAtLeast(14f)
-                    draftFontSize = next
-                    vm.settings(settings.copy(russianSize = next))
-                }, contentPadding = PaddingValues(2.dp)) {
-                    Text("A−", color = BookColors.lightGold, fontSize = 16.sp)
-                }
-                BookTextSlider(value = draftFontSize,
-                    onValueChange = { draftFontSize = it; resizing = true },
-                    onFinished = {
-                        resizing = false
-                        vm.settings(settings.copy(russianSize = draftFontSize))
-                    },
-                    modifier = Modifier.weight(1f), range = 14f..36f, tint = BookColors.lightGold)
-                TextButton(onClick = {
-                    val next = (draftFontSize + 1f).coerceAtMost(36f)
-                    draftFontSize = next
-                    vm.settings(settings.copy(russianSize = next))
-                }, contentPadding = PaddingValues(2.dp)) {
-                    Text("A+", color = BookColors.lightGold, fontSize = 16.sp)
-                }
-                IconButton(onClick = { chapterPanel = true }, modifier = Modifier.size(36.dp)) {
-                    NavigationGlyph("contents", modifier = Modifier.size(22.dp), tint = BookColors.lightGold)
-                }
-                TextButton(onClick = {
-                    vm.settings(settings.copy(theme = if (settings.theme == "dark") "sepia" else "dark"))
-                }, modifier = Modifier.size(36.dp), contentPadding = PaddingValues(0.dp)) {
-                    Text("☾", color = BookColors.lightGold, fontSize = 23.sp)
-                }
             }
         }
         SnackbarHost(snackbar)
