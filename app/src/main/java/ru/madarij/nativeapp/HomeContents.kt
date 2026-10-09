@@ -76,7 +76,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
         ) {
             item {
                 Box(Modifier.fillMaxWidth().height(236.dp).clip(RoundedCornerShape(bottomStart = 12.dp, bottomEnd = 12.dp))) {
-                    Image(painterResource(R.drawable.reference_home), null, Modifier.matchParentSize(),
+                    Image(painterResource(R.drawable.library_hero), null, Modifier.matchParentSize(),
                         contentScale = ContentScale.Crop, alignment = Alignment.TopCenter)
                     Box(Modifier.matchParentSize().background(Brush.horizontalGradient(
                         listOf(Color(0xB91A100A), Color(0x401B120C), Color.Transparent))))
