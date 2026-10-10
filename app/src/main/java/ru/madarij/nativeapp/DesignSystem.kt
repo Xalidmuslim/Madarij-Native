@@ -220,11 +220,18 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    NavigationGlyph(
-                        destination, selected = active,
-                        modifier = Modifier.size(22.dp),
-                        tint = labelColor
-                    )
+                    Box(Modifier.size(23.dp), contentAlignment = Alignment.Center) {
+                        NavigationGlyph(
+                            destination, selected = active,
+                            modifier = Modifier.offset(y = 1.dp).size(22.dp),
+                            tint = Color(0xFF573922)
+                        )
+                        NavigationGlyph(
+                            destination, selected = active,
+                            modifier = Modifier.size(22.dp),
+                            tint = labelColor
+                        )
+                    }
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
