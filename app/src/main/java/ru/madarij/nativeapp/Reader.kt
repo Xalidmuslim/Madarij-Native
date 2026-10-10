@@ -264,7 +264,7 @@ fun Reader(
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize().then(swipeModifier),
-                contentPadding = PaddingValues(top = 0.dp, bottom = 28.dp),
+                contentPadding = PaddingValues(top = 0.dp, bottom = 122.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
             ) {

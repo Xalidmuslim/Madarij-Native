@@ -80,7 +80,7 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
         }
         Text(when {loading -> "Поиск…";error.isNotBlank() -> error;query.isBlank() -> "Ищите в русском и арабском тексте. Огласовки и регистр не влияют на поиск.";else -> "Найдено: $found"},Modifier.padding(vertical=12.dp),style=MaterialTheme.typography.bodyMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)
         if(filter=="ayat" || filter=="hadith") Text("Фильтр находит упоминания по словам исходного текста. Он не заменяет проверку цитаты и её атрибуции.",Modifier.padding(bottom=12.dp),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
-        if(!loading) LazyColumn(state=state,modifier=Modifier.weight(1f),contentPadding=PaddingValues(bottom=20.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+        if(!loading) LazyColumn(state=state,modifier=Modifier.weight(1f),contentPadding=PaddingValues(bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
             if(query.isNotBlank() && found==0 && error.isBlank()) item { InfoCard("Ничего не найдено","Попробуйте более короткое слово, другую форму или фильтр «Всё».") }
             items(results,key={"p:${it.id}"}) { p ->
                 val c=chapters.find { it.id==p.chapterId }
@@ -111,7 +111,7 @@ private fun textDirectionStyle()=androidx.compose.ui.text.TextStyle(textDirectio
 @Composable
 internal fun BookmarksScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Bookmark?>(null)};var title by remember {mutableStateOf("")};var note by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
-    LazyColumn(contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
         item { Text("${bookmarks.size} сохранённых мест", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
         if(bookmarks.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Найти закладку")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
         if(bookmarks.isEmpty()) item {InfoCard("Сохраните важное место","В меню чтения можно добавить закладку главы. Для отдельного абзаца включите «Действия с абзацами».")}
@@ -138,7 +138,7 @@ private fun BookmarkExcerpt(vm: BookViewModel, bookmark: Bookmark) {
 @Composable
 internal fun NotesScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val notes by vm.notes.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Note?>(null)};var text by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
-    LazyColumn(contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
         item {ScreenHeading("Мои заметки","Личные записи рядом с текстом")}
         if(notes.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Поиск по заметкам")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
         if(notes.isEmpty()) item {InfoCard("Ваши мысли рядом с книгой","Добавьте заметку через меню главы или действия с абзацами. Также можно записать размышление во вкладке изучения.")}
@@ -152,7 +152,7 @@ internal fun ProgressScreen(vm:BookViewModel,open:(String,String?)->Unit,navigat
     val chapters by vm.chapters.collectAsStateWithLifecycle();val read by vm.read.collectAsStateWithLifecycle();val history by vm.history.collectAsStateWithLifecycle();val context=LocalContext.current;val repo=remember {LearningRepository(context.applicationContext)};val attempts by repo.attempts.collectAsStateWithLifecycle(emptyMap());var questionChapters by remember {mutableStateOf<Map<String,String>>(emptyMap())}
     LaunchedEffect(chapters) {questionChapters=repo.questions.mapNotNull {q -> vm.repository.dao.paragraph(q.sourceParagraphId)?.let {q.id to it.chapterId}}.toMap()}
     val studied=questionChapters.filter {it.key in attempts}.values.toSet();val due=attempts.count {it.value.due<=System.currentTimeMillis()};val minutes=history.sumOf {it.seconds}/60
-    LazyColumn(contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
         item {ScreenHeading("Первый том", "Чтение и понимание учитываются отдельно")}
         item {InfoCard("Прочитано ${read.size} из ${chapters.size}","${if(chapters.isEmpty()) 0 else read.size*100/chapters.size}% разделов отмечено прочитанными. Отметка меняется вручную.")}
         item {InfoCard("Изучение · ${studied.size} разделов","Отвечено на ${attempts.size} из ${repo.questions.size} вопросов; назначено повторений: $due. Попытка ответа означает работу с вопросом, а не полное усвоение главы.")}
@@ -168,7 +168,7 @@ internal fun ProgressScreen(vm:BookViewModel,open:(String,String?)->Unit,navigat
 
 @Composable
 internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(horizontal=16.dp,vertical=12.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp, top=12.dp, end=16.dp, bottom=124.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
         item { ScreenHeading("Ещё", "Инструменты и личные материалы") }
         listOf(
             "study" to ("Изучение" to "Проверки, задания и повторение"),
@@ -199,7 +199,7 @@ internal fun MoreScreen(navigate:(String)->Unit) {
 internal fun AboutScreen() {
     val context=LocalContext.current;var edition by remember {mutableStateOf<JSONObject?>(null)}
     LaunchedEffect(context) {edition=withContext(Dispatchers.IO) {runCatching {JSONObject(context.assets.open("corpus.json").bufferedReader().use {it.readText()}).getJSONObject("edition")}.getOrNull()}}
-    LazyColumn(contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {
         item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Первый том")}
         item {InfoCard("Автор","Ибн Каййим аль-Джаузийя (1292–1350). Книга посвящена ступеням духовного пути и построена вокруг осмысления слов суры «Аль-Фатиха».")}
         item {InfoCard("Русский перевод","Первый том литературно сверён с содержащимся в корпусе арабским текстом: обработаны все 644 авторских блока, страницы 3–610. Русский текст отредактирован по смыслу, терминологии и литературной форме. Отдельная хадисоведческая, источниковедческая и богословская проверка цитат и атрибуций ещё не завершена; поэтому это не окончательное критическое издание.")}

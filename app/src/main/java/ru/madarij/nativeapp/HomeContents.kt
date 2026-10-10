@@ -75,7 +75,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
             .background(Brush.verticalGradient(listOf(Color.Transparent, Color.Transparent,
                 BookColors.parchment.copy(alpha = .16f), BookColors.parchment))))
         LazyColumn(
-            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 12.dp),
+            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 116.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             item {
@@ -274,7 +274,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         })
     }.filter { it.items.isNotEmpty() }
 
-    LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+    LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 Box(Modifier.weight(1f).clip(RoundedCornerShape(14.dp)).background(BookColors.secondaryBackground).padding(4.dp)) {

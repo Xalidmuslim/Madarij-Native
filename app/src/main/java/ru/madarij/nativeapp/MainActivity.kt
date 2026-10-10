@@ -44,6 +44,31 @@ internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Bo
     "read/${Uri.encode(id)}?paragraph=${Uri.encode(paragraph.orEmpty())}&query=${Uri.encode(query)}&top=$top"
 
 @Composable
+private fun BookRouteSurface(
+    texture: Int,
+    dark: Boolean,
+    content: @Composable () -> Unit
+) {
+    // The opaque paper is composed first. This prevents the previous screen,
+    // especially the library hero image, from showing through during navigation.
+    Box(
+        Modifier.fillMaxSize().background(
+            if (dark) BookColors.nightBackground else BookColors.parchment
+        )
+    ) {
+        if (!dark) {
+            Image(
+                painter = painterResource(texture),
+                contentDescription = null,
+                modifier = Modifier.matchParentSize(),
+                contentScale = ContentScale.FillBounds
+            )
+        }
+        content()
+    }
+}
+
+@Composable
 fun BookApp(vm:BookViewModel=viewModel()) {
     val settings by vm.settings.collectAsStateWithLifecycle()
     val chapters by vm.chapters.collectAsStateWithLifecycle()
@@ -56,10 +81,9 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         theme = if (settings.theme == "dark") "dark" else "sepia", paperTone = "warm"
     )
     val colors = bookReaderColors(appearance, false)
-    val paperTexture = when {
-        !isReader -> R.drawable.reference_paper
-        settings.paperTone == "sage" -> R.drawable.paper_sage
-        settings.paperTone == "light" -> R.drawable.paper_light
+    val readerPaperTexture = when (settings.paperTone) {
+        "sage" -> R.drawable.paper_sage
+        "light" -> R.drawable.paper_light
         else -> R.drawable.reference_paper
     }
 
@@ -83,21 +107,24 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 vm.settings(settings.copy(theme = "sepia", paperTone = "warm", russianFont = "book", russianSize = 18f, lineHeight = 1.5f))
         }
 
-        SideEffect {
+        // Window flags must not be reset on every Compose recomposition.
+        // Recreating the window drawable for each frame caused extra invalidation.
+        LaunchedEffect(isReader, settings.brightness, settings.theme, route == "home") {
             (context as? Activity)?.window?.let { window ->
                 val attr = window.attributes
-                attr.screenBrightness = if (isReader || route == "settings") settings.brightness else -1f
-                window.attributes = attr
-                // Keep the native window behind Compose the same colour as the active theme.
-                // During reader-to-reader slide transitions this prevents a black rectangle/frame
-                // from showing through the moving composables on some Android devices.
-                window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
+                val wantedBrightness = if (isReader || route == "settings") settings.brightness else -1f
+                if (attr.screenBrightness != wantedBrightness) {
+                    attr.screenBrightness = wantedBrightness
+                    window.attributes = attr
+                }
+                val windowPaper = if (settings.theme == "dark") BookColors.nightBackground else BookColors.parchment
+                window.setBackgroundDrawable(ColorDrawable(windowPaper.toArgb()))
                 @Suppress("DEPRECATION")
                 window.navigationBarColor = android.graphics.Color.TRANSPARENT
                 if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
                 WindowCompat.getInsetsController(window, window.decorView).apply {
                     isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
-                    isAppearanceLightNavigationBars = true
+                    isAppearanceLightNavigationBars = settings.theme != "dark"
                 }
             }
         }
@@ -155,10 +182,10 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         val navigate:(String)->Unit = { nav.navigate(it) { launchSingleTop = true } }
 
         Box(Modifier.fillMaxSize().background(colors.background)) {
-            // One continuous paper image behind all non-home pages and behind the status bar.
-            // Never reuse the home illustration as a navigation backdrop.
+            // One stationary book-paper layer behind the status bar and floating navigation.
+            // Every destination draws its own OPAQUE page, never previous-route pixels.
             if (settings.theme != "dark") {
-                Image(painterResource(paperTexture), null,
+                Image(painterResource(R.drawable.reference_paper), null,
                     Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
             }
             Scaffold(
@@ -189,7 +216,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             NavHost(
                 navController = nav,
                 startDestination = "home",
-                modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(bottom = 102.dp).background(Color.Transparent),
+                modifier = Modifier.fillMaxSize(), // Full-height content sits BEHIND the floating navigation.
                 // Keep one stable parchment background throughout navigation; no translated old screen.
                 enterTransition = { EnterTransition.None },
                 exitTransition = { ExitTransition.None },
@@ -197,16 +224,16 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 popExitTransition = { ExitTransition.None }
             ) {
                 composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }
-                composable("search") { SearchScreen(vm,openReader) }
-                composable("bookmarks") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("notes") { NotesScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("progress") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("more") { MoreScreen(navigate) }
-                composable("settings") { SettingsPanel(settings,vm::settings) }
-                composable("about") { AboutScreen() }
-                composable("backup") { BackupScreen(vm) }
-                composable("glossary") { GlossaryScreen(openSource) }
+                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { SearchScreen(vm,openReader) } }
+                composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("progress") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("more") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { MoreScreen(navigate) } }
+                composable("settings") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { SettingsPanel(settings,vm::settings) } }
+                composable("about") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { AboutScreen() } }
+                composable("backup") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { BackupScreen(vm) } }
+                composable("glossary") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { GlossaryScreen(openSource) } }
                 composable(
                     "study?chapter={chapter}&review={review}",
                     arguments=listOf(
@@ -214,11 +241,11 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("review") { type=NavType.BoolType; defaultValue=false }
                     )
                 ) { e ->
-                    StudyScreen(
+                    BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { StudyScreen(
                             vm, openSource,
                             initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
                             initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
-                        )
+                        ) }
                 }
                 composable(
                     "read/{id}?paragraph={paragraph}&query={query}&top={top}",
@@ -230,7 +257,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
                     if(chapter==null) InfoCard("Подготовка книги","Раздел загружается…")
-                    else Reader(
+                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark") { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
@@ -241,13 +268,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navigate={ id ->
                             nav.navigate(readerRoute(id, top = true)) { popUpTo(e.destination.id) { inclusive=true } }
                         }
-                    )
+                    ) }
                 }
             }
             Box(
                 Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                     .navigationBarsPadding()
-                    .padding(horizontal = 24.dp).padding(top = 8.dp, bottom = 19.dp)
+                    .padding(horizontal = 15.dp).padding(bottom = 12.dp)
             ) {
 MadarijBottomBar(tabs, selectedTab) { destination ->
     when {

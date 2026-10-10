@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 26
-        versionName = "1.26-light-sage-performance"
+        versionCode = 27
+        versionName = "1.27-opaque-route-floating-nav"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
