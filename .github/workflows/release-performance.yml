@@ -3,7 +3,7 @@ name: Madarij Optimized Release R8 + Android QA
 on:
   push:
     branches:
-      - codex/madarij-v139-reader-toc-layout
+      - codex/madarij-v140-reed-pen-handwriting
   workflow_dispatch:
 
 permissions:
@@ -37,6 +37,9 @@ jobs:
 
       - name: Install compile SDK 36
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Prepare licensed Russian handwriting font
+        run: python3 tools/prepare_handwriting_font.py
 
       - name: Install Pillow for pre-rendered static paper assets
         run: python3 -m pip install --user Pillow==11.3.0

@@ -9,6 +9,8 @@ import androidx.compose.foundation.background
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -39,7 +41,15 @@ import ru.madarij.nativeapp.data.*
 import java.util.Date
 
 @Composable
-internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navigate: (String) -> Unit, reminder: KnowledgeReminder, reducedMotion: Boolean) {
+internal fun HomeScreen(
+    vm: BookViewModel,
+    open: (String, String?) -> Unit,
+    navigate: (String) -> Unit,
+    reminder: KnowledgeReminder,
+    reducedMotion: Boolean,
+    inkFinished: Boolean,
+    onInkFinished: () -> Unit
+) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val last by vm.last.collectAsStateWithLifecycle()
@@ -112,12 +122,17 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                         Column(Modifier.weight(1f).clickable {
                             open(reminder.chapterId, reminder.paragraphId)
                         }) {
-                            SandAssembledText(
+                            ReedPenWritingText(
                                 text = reminder.text,
-                                style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif,
-                                    fontSize = 16.sp, lineHeight = 21.sp),
-                                color = BookColors.ink,
-                                reducedMotion = reducedMotion
+                                style = MaterialTheme.typography.bodyLarge.copy(
+                                    fontFamily = FontFamily(Font(R.font.marck_script)),
+                                    fontWeight = FontWeight.Normal,
+                                    fontSize = 20.sp, lineHeight = 26.sp
+                                ),
+                                color = Color(0xFF62452F),
+                                reducedMotion = reducedMotion,
+                                animate = !inkFinished,
+                                onFinished = onInkFinished
                             )
                             Text("Из книги · том 1, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
                                 style = MaterialTheme.typography.labelSmall, color = BookColors.muted)

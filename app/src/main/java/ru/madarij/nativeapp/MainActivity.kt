@@ -139,6 +139,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         // Selected once for each new app launch, preserved across navigation/rotation.
         val knowledgeReminderIndex = rememberSaveable { KnowledgeReminders.nextForLaunch(context.applicationContext) }
         val knowledgeReminder = KnowledgeReminders.items[knowledgeReminderIndex]
+        // Persist across navigation: never replay the pen when returning Home.
+        var knowledgeInkFinished by rememberSaveable { mutableStateOf(false) }
         LaunchedEffect(Unit) {
             // Fresh installation defaults only; existing preferences are retained.
             if (!java.io.File(context.filesDir, "datastore/reading_settings.preferences_pb").exists())
@@ -228,7 +230,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 popEnterTransition = { EnterTransition.None },
                 popExitTransition = { ExitTransition.None }
             ) {
-                composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate,knowledgeReminder,settings.reducedMotion) } }
+                composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate,knowledgeReminder,settings.reducedMotion,
+                        knowledgeInkFinished, { knowledgeInkFinished = true }) } }
                 composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
                 composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Поиск", subtitle = "По всему первому тому", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SearchScreen(vm,openReader) } }
                 composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Закладки", subtitle = "Сохранённые места", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }

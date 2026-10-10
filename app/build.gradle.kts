@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 39
-        versionName = "1.39-reader-contents-layout"
+        versionCode = 40
+        versionName = "1.40-reed-pen-handwriting"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -59,12 +59,18 @@ val generateBookTextures by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_book_textures.py")
 }
+// The OFL-licensed Cyrillic handwriting face is verified against the official
+// Google Fonts Git object hash, then packaged as an Android font resource.
+val prepareHandwritingFont by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/prepare_handwriting_font.py")
+}
 val verifyKnowledgeReminders by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/check_home_reminders.py")
 }
 tasks.matching { it.name == "preBuild" }.configureEach {
-    dependsOn(generateBookTextures, verifyKnowledgeReminders)
+    dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareHandwritingFont)
 }
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
