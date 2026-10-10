@@ -10,6 +10,10 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.*
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -45,18 +49,25 @@ internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Bo
 
 @Composable
 private fun BookRouteSurface(
-    texture: Int,
+    texture: Int?,
     dark: Boolean,
+    animate: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    // The opaque paper is composed first. This prevents the previous screen,
-    // especially the library hero image, from showing through during navigation.
+    // Draw an OPAQUE page immediately. Unlike a NavHost crossfade, this never
+    // blends two different paper images or exposes the previous destination.
+    // A subtle paper-coloured wash then fades away by redrawing only one Canvas
+    // instead of an expensive offscreen graphicsLayer of the entire screen.
+    val reveal = remember { Animatable(if (animate) 0.26f else 0f) }
+    LaunchedEffect(Unit) {
+        if (animate) reveal.animateTo(0f, tween(135, easing = FastOutSlowInEasing))
+    }
     Box(
         Modifier.fillMaxSize().background(
             if (dark) BookColors.nightBackground else BookColors.parchment
         )
     ) {
-        if (!dark) {
+        if (!dark && texture != null) {
             Image(
                 painter = painterResource(texture),
                 contentDescription = null,
@@ -65,6 +76,14 @@ private fun BookRouteSurface(
             )
         }
         content()
+        if (animate) {
+            Canvas(Modifier.matchParentSize()) {
+                drawRect(
+                    color = if (dark) BookColors.nightBackground else BookColors.parchment,
+                    alpha = reveal.value
+                )
+            }
+        }
     }
 }
 
@@ -76,11 +95,15 @@ fun BookApp(vm:BookViewModel=viewModel()) {
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route.orEmpty()
     val isReader = route.startsWith("read/")
-    // Reading background is independent of the visual theme used for menu screens.
-    val appearance = if (isReader) settings else settings.copy(
-        theme = if (settings.theme == "dark") "dark" else "sepia", paperTone = "warm"
-    )
-    val colors = bookReaderColors(appearance, false)
+    // Fix: keep the APP-WIDE theme stable while entering/leaving Reader.
+    // Only the Reader route uses the selected paperTone. This avoids a complete
+    // MaterialTheme recomposition of the nav bar and every preserved screen.
+    val colors = remember(settings.theme) {
+        bookReaderColors(
+            settings.copy(theme = if (settings.theme == "dark") "dark" else "sepia", paperTone = "warm"),
+            false
+        )
+    }
     val readerPaperTexture = when (settings.paperTone) {
         "sage" -> R.drawable.paper_sage
         "light" -> R.drawable.paper_light
@@ -232,17 +255,17 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 popEnterTransition = { EnterTransition.None },
                 popExitTransition = { ExitTransition.None }
             ) {
-                composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
-                composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { SearchScreen(vm,openReader) } }
-                composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
-                composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
-                composable("progress") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
-                composable("more") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { MoreScreen(navigate) } }
-                composable("settings") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { SettingsPanel(settings,vm::settings) } }
-                composable("about") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { AboutScreen() } }
-                composable("backup") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { BackupScreen(vm) } }
-                composable("glossary") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { GlossaryScreen(openSource) } }
+                composable("home") { BookRouteSurface(null, settings.theme == "dark", animate = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { SearchScreen(vm,openReader) } }
+                composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("progress") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("more") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { MoreScreen(navigate) } }
+                composable("settings") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { SettingsPanel(settings,vm::settings) } }
+                composable("about") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { AboutScreen() } }
+                composable("backup") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { BackupScreen(vm) } }
+                composable("glossary") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { GlossaryScreen(openSource) } }
                 composable(
                     "study?chapter={chapter}&review={review}",
                     arguments=listOf(
@@ -250,7 +273,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("review") { type=NavType.BoolType; defaultValue=false }
                     )
                 ) { e ->
-                    BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { StudyScreen(
+                    BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", animate = !settings.reducedMotion) { StudyScreen(
                             vm, openSource,
                             initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
                             initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
@@ -266,7 +289,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
                     if(chapter==null) InfoCard("Подготовка книги","Раздел загружается…")
-                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark") { Reader(
+                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark", animate = !settings.reducedMotion) { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
@@ -277,7 +300,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navigate={ id ->
                             nav.navigate(readerRoute(id, top = true)) { popUpTo(e.destination.id) { inclusive=true } }
                         }
-                    ) }
+                    ) } }
                 }
             }
             Box(
