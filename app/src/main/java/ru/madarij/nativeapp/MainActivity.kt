@@ -36,6 +36,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // Start bitmap decoding concurrently with composition, never on the UI thread.
+        BookImagePreloader.preload(applicationContext)
         setContent { BookApp() }
     }
 }
@@ -65,12 +67,7 @@ private fun BookRouteSurface(
         )
     ) {
         if (!dark && texture != null) {
-            Image(
-                painter = painterResource(texture),
-                contentDescription = null,
-                modifier = Modifier.matchParentSize(),
-                contentScale = ContentScale.FillBounds
-            )
+            PreloadedBookImage(texture, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
         Column(Modifier.fillMaxSize()) {
             if (title != null) MadarijTopBar(
@@ -185,12 +182,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         }
 
         Box(Modifier.fillMaxSize().background(colors.background)) {
-            // One stationary book-paper layer behind the status bar and floating navigation.
-            // Every destination draws its own OPAQUE page, never previous-route pixels.
-            if (settings.theme != "dark") {
-                Image(painterResource(R.drawable.reference_paper), null,
-                    Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
-            }
+            // Destination already owns an opaque paper layer under the floating bar.
+            // The redundant root bitmap used to double full-screen GPU overdraw.
             Scaffold(
             containerColor = Color.Transparent,
             contentWindowInsets = WindowInsets(0, 0, 0, 0),

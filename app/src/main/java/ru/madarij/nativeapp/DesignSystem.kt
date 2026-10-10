@@ -188,12 +188,9 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
         .clip(RoundedCornerShape(19.dp))
         .background(BookColors.leather)
         .border(.7.dp, BookColors.lightGold.copy(alpha = .43f), RoundedCornerShape(19.dp))) {
-        Image(
-            painter = painterResource(R.drawable.navigation_leather),
-            contentDescription = null,
+        PreloadedBookImage(R.drawable.navigation_leather,
             modifier = Modifier.matchParentSize(),
-            contentScale = ContentScale.FillBounds
-        )
+            contentScale = ContentScale.FillBounds)
         Row(
             Modifier.fillMaxSize().padding(horizontal = 8.dp, vertical = 7.dp),
             verticalAlignment = Alignment.CenterVertically
@@ -498,8 +495,8 @@ internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
                 verticalArrangement = Arrangement.spacedBy(7.dp)
             ) {
                 Box(Modifier.fillMaxWidth().height(72.dp).clip(RoundedCornerShape(9.dp))) {
-                    Image(painterResource(drawable), contentDescription = null,
-                        modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                    PreloadedBookImage(drawable, modifier = Modifier.matchParentSize(),
+                        contentScale = ContentScale.Crop)
                     Text("Степени\nидущих", Modifier.align(Alignment.CenterStart).padding(start = 6.dp),
                         style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif),
                         color = BookColors.ink)

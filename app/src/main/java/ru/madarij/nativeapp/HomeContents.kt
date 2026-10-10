@@ -75,7 +75,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     // BookRouteSurface paints the aged-paper sheet once beneath this screen.
     // A solid beige HomeScreen layer previously concealed that book texture.
     Box(Modifier.fillMaxSize()) {
-        Image(painterResource(R.drawable.library_hero), null,
+        PreloadedBookImage(R.drawable.library_hero,
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)
         Box(Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp)
