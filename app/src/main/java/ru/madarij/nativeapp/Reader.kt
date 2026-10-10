@@ -476,7 +476,8 @@ fun Reader(
 
 @Composable
 private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingSettings, arabic: Boolean) {
-    if (block.title.isNullOrBlank()) {
+    val sourceTitle = block.title?.takeIf { it.isNotBlank() }
+    if (sourceTitle == null) {
         // The source has a section break but no heading. Rendering the word
         // "РАЗДЕЛ" alone looked like an unnamed new chapter. Keep the actual
         // textual boundary as a modest book ornament without inventing a title.
@@ -505,8 +506,8 @@ private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingS
             else Text(block.label.uppercase(),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary)
-            if (arabic) ArabicText(block.title, settings)
-            else Text(block.title, style = MaterialTheme.typography.titleMedium,
+            if (arabic) ArabicText(sourceTitle, settings)
+            else Text(sourceTitle, style = MaterialTheme.typography.titleMedium,
                 fontFamily = russianFamily(settings),
                 color = MaterialTheme.colorScheme.onSurface)
         }
