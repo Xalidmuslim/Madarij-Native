@@ -107,21 +107,30 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 vm.settings(settings.copy(theme = "sepia", paperTone = "warm", russianFont = "book", russianSize = 18f, lineHeight = 1.5f))
         }
 
-        // Window flags must not be reset on every Compose recomposition.
-        // Recreating the window drawable for each frame caused extra invalidation.
-        LaunchedEffect(isReader, settings.brightness, settings.theme, route == "home") {
+        // The window background is stable across navigation. Replacing its drawable
+        // while opening or closing pages can cause a device-dependent flash.
+        LaunchedEffect(settings.theme) {
             (context as? Activity)?.window?.let { window ->
-                val attr = window.attributes
-                val wantedBrightness = if (isReader || route == "settings") settings.brightness else -1f
-                if (attr.screenBrightness != wantedBrightness) {
-                    attr.screenBrightness = wantedBrightness
-                    window.attributes = attr
-                }
-                val windowPaper = if (settings.theme == "dark") BookColors.nightBackground else BookColors.parchment
-                window.setBackgroundDrawable(ColorDrawable(windowPaper.toArgb()))
+                window.setBackgroundDrawable(ColorDrawable(
+                    (if (settings.theme == "dark") BookColors.nightBackground else BookColors.parchment).toArgb()
+                ))
                 @Suppress("DEPRECATION")
                 window.navigationBarColor = android.graphics.Color.TRANSPARENT
                 if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
+            }
+        }
+        LaunchedEffect(isReader, route == "settings", settings.brightness) {
+            (context as? Activity)?.window?.let { window ->
+                val attr = window.attributes
+                val wanted = if (isReader || route == "settings") settings.brightness else -1f
+                if (attr.screenBrightness != wanted) {
+                    attr.screenBrightness = wanted
+                    window.attributes = attr
+                }
+            }
+        }
+        LaunchedEffect(settings.theme, route == "home") {
+            (context as? Activity)?.window?.let { window ->
                 WindowCompat.getInsetsController(window, window.decorView).apply {
                     isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
                     isAppearanceLightNavigationBars = settings.theme != "dark"
