@@ -85,17 +85,27 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
             item {
                 Box(Modifier.fillMaxWidth().height(258.dp)) {
                     Row(Modifier.fillMaxWidth().statusBarsPadding()
-                        .padding(start = 18.dp, end = 8.dp, top = 16.dp)) {
+                        .padding(start = 22.dp, end = 12.dp, top = 16.dp)) {
                         Column(Modifier.weight(1f)) {
                             Text("Степени\nидущих",
                                 style = MaterialTheme.typography.headlineLarge.copy(fontFamily = BookSerif,
                                     fontWeight = androidx.compose.ui.text.font.FontWeight.Normal,
-                                    fontSize = 44.sp, lineHeight = 42.sp),
-                                color = Color(0xFFF7E9D4))
-                            Text("Ибн аль-Каййим\nаль-Джаузийя", Modifier.padding(top = 8.dp),
+                                    fontSize = 46.sp, lineHeight = 43.sp),
+                                color = Color(0xFFFFEDD0))
+                            Row(Modifier.widthIn(max = 210.dp).padding(top = 9.dp, bottom = 7.dp),
+                                verticalAlignment = Alignment.CenterVertically) {
+                                HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
+                                    color = Color(0xFFC79C64).copy(alpha = .65f))
+                                Text("❖", Modifier.padding(horizontal = 6.dp),
+                                    fontFamily = BookSerif, fontSize = 11.sp,
+                                    color = Color(0xFFEAC28B))
+                                HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
+                                    color = Color(0xFFC79C64).copy(alpha = .65f))
+                            }
+                            Text("Ибн аль-Каййим\nаль-Джаузийя",
                                 style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif,
                                     fontSize = 18.sp, lineHeight = 22.sp),
-                                color = Color(0xFFE9BD7C))
+                                color = Color(0xFFEFC489))
                         }
                         TextButton(onClick = { navigate("settings") },
                             modifier = Modifier.size(42.dp),
@@ -111,7 +121,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                     .background(BookColors.card)
                     .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Row(Modifier.padding(horizontal = 17.dp, vertical = 11.dp),
+                    Row(Modifier.padding(horizontal = 18.dp, vertical = 13.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(Modifier.weight(1f)) {
                             Text(excerpt,
@@ -149,7 +159,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                                 tint = BookColors.lightGold)
                             Spacer(Modifier.width(11.dp))
                             Text("Продолжить чтение", Modifier.weight(1f),
-                                style = MaterialTheme.typography.titleSmall,
+                                style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif, fontSize = 17.sp),
                                 color = Color(0xFFF8E7CE))
                             Text("›", style = MaterialTheme.typography.headlineSmall,
                                 color = Color(0xFFF8E7CE))
@@ -158,8 +168,8 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 }
             }
             item {
-                Text("Быстрый доступ", Modifier.padding(start = 16.dp, top = 2.dp),
-                    style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif),
+                Text("Быстрый доступ", Modifier.padding(start = 16.dp, top = 4.dp, bottom = 2.dp),
+                    style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif, fontSize = 24.sp, lineHeight = 29.sp),
                     color = BookColors.ink)
             }
             item {
@@ -204,24 +214,41 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
 }
 
 @Composable
+private fun AntiqueHomeIcon(glyph: String) {
+    Box(Modifier.size(35.dp), contentAlignment = Alignment.Center) {
+        NavigationGlyph(glyph, selected = true,
+            modifier = Modifier.offset(y = 1.dp).size(30.dp), tint = Color(0xFF755034))
+        NavigationGlyph(glyph, selected = true,
+            modifier = Modifier.offset(y = (-.5).dp).size(30.dp), tint = Color(0xFFBA8D52))
+    }
+}
+
+@Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 72.dp),
+        modifier = modifier.heightIn(min = 73.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
         onClick = onClick
     ) {
-        Column(
-            Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 6.dp),
-            verticalArrangement = Arrangement.spacedBy(2.dp)
+        Row(
+            Modifier.fillMaxWidth().padding(horizontal = 9.dp, vertical = 9.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
-            NavigationGlyph(glyph, selected = true, modifier = Modifier.size(24.dp), tint = BookColors.gold)
-            Text(title, style = MaterialTheme.typography.titleSmall.copy(fontSize = 14.sp),
-                color = MaterialTheme.colorScheme.onSurface, maxLines = 1)
-            Text(subtitle, style = MaterialTheme.typography.bodySmall.copy(fontSize = 11.sp),
-                color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1,
-                overflow = TextOverflow.Ellipsis)
+            AntiqueHomeIcon(glyph)
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp)) {
+                Text(title,
+                    style = MaterialTheme.typography.titleSmall.copy(
+                        fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp),
+                    color = BookColors.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Text(subtitle,
+                    style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp, lineHeight = 13.sp),
+                    color = BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            }
+            Text("›", fontFamily = BookSerif, fontSize = 20.sp,
+                color = BookColors.gold.copy(alpha = .86f))
         }
     }
 }

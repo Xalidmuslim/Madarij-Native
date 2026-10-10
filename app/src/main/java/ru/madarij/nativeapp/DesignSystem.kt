@@ -228,7 +228,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
-                        style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
+                        style = MaterialTheme.typography.labelSmall.copy(fontFamily = BookSerif, fontSize = 11.sp),
                         color = labelColor,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis

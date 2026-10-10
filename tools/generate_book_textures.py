@@ -13,6 +13,10 @@ def source(name):
     return Image.open(src).convert("RGB")
 paper=source("reference_paper.webp")
 hero=source("library_hero.webp")
+# Subtle amber colour grading, retaining the original composition.
+hero=ImageEnhance.Color(hero).enhance(.85)
+hero=ImageEnhance.Contrast(hero).enhance(.94)
+hero=Image.blend(hero,Image.new("RGB",hero.size,(67,42,25)),.055)
 w,h=hero.size
 alpha=Image.new("L",(w,h),255)
 px=alpha.load()
@@ -35,10 +39,10 @@ p=card.load()
 for y in range(h):
     for x in range(w):
         distance=min(x,y,w-1-x,h-1-y)
-        shade=max(0,int(8*(1-distance/24)**1.6)) if distance<24 else 0
-        if y<24 or y>h-24:
-            fold=(math.sin(x/37+math.sin(x/83))+math.sin(x/19)*.4)
-            shade+=max(0,int(fold*1.5))
+        shade=max(0,int(10*(1-distance/31)**1.5)) if distance<31 else 0
+        if y<30 or y>h-30:
+            fold=(math.sin(x/38+math.sin(x/87))+math.sin(x/21)*.43)
+            shade+=max(0,int(fold*1.7))
         r,g,b=p[x,y]
         p[x,y]=(max(0,r-shade),max(0,g-shade),max(0,b-shade))
 card.save(D/"card_paper.webp","WEBP",quality=74,method=6)
