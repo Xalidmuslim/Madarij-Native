@@ -79,7 +79,8 @@ internal fun ReedPenWritingText(
                         if (lineTop > 0f) addRect(Rect(0f, 0f, size.width, lineTop))
                         if (x > 0f) addRect(Rect(0f, lineTop, x, lineBottom))
                     }
-                    clipPath(visibleInk) { drawContent() }
+                    val contentScope = this
+                    clipPath(visibleInk) { contentScope.drawContent() }
                 }
             },
             onTextLayout = {
