@@ -14,7 +14,7 @@ data class ReadingSettings(
     val showNotes: Boolean = true, val textWidth: Float = 1f, val alignment: String = "start", val arabicFont: String = "naskh", val brightness: Float = -1f, val reducedMotion: Boolean = false
 ) {
     fun bounded() = copy(
-        theme = theme.takeIf { it in setOf("system", "light", "dark", "sepia") } ?: "system",
+        theme = theme.takeIf { it in setOf("system", "light", "dark", "sepia", "sage") } ?: "system",
         russianSize = russianSize.finiteOr(16f).coerceIn(14f, 36f),
         arabicSize = arabicSize.finiteOr(26f).coerceIn(20f, 44f),
         lineHeight = lineHeight.finiteOr(1.6f).coerceIn(1.3f, 2.2f),

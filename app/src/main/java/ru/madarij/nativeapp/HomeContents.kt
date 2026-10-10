@@ -67,9 +67,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
         }
     }
 
-    Box(Modifier.fillMaxSize().background(BookColors.parchment)) {
-        Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
-            contentScale = ContentScale.FillBounds, alpha = .27f)
+    Box(Modifier.fillMaxSize()) {
         Image(painterResource(R.drawable.library_hero), null,
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)

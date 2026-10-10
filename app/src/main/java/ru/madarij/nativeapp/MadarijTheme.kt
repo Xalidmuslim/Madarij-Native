@@ -39,7 +39,11 @@ internal fun bookDarkColors() = darkColorScheme(
 @Suppress("UNUSED_PARAMETER")
 internal fun bookReaderColors(settings: ReadingSettings, systemDark: Boolean): ColorScheme {
     if (settings.theme == "dark") return bookDarkColors()
-    val paper = if (settings.theme == "light") Color(0xFFFAF6EF) else BookColors.parchment
+    val paper = when (settings.theme) {
+        "sage" -> Color(0xFFE9E7D1)
+        "light" -> Color(0xFFFAF1E0)
+        else -> BookColors.parchment
+    }
     return lightColorScheme(
         primary=BookColors.gold, onPrimary=Color.White,
         primaryContainer=Color(0xFFEAD8B8), onPrimaryContainer=BookColors.ink,
@@ -49,7 +53,8 @@ internal fun bookReaderColors(settings: ReadingSettings, systemDark: Boolean): C
         tertiaryContainer=Color(0xFFEDDFC6), onTertiaryContainer=BookColors.ink,
         background=paper, onBackground=BookColors.ink,
         surface=paper, onSurface=BookColors.ink,
-        surfaceVariant=Color(0xFFEFE0C4), onSurfaceVariant=BookColors.muted,
+        surfaceVariant=if (settings.theme == "sage") Color(0xFFDDDEC7) else Color(0xFFEFE0C4),
+        onSurfaceVariant=BookColors.muted,
         surfaceContainer=paper, surfaceContainerHigh=Color(0xFFEFE0C4),
         surfaceContainerHighest=Color(0xFFEAD8B8),
         outline=Color(0xFFAF9774), outlineVariant=Color(0xFFD6C4A5)

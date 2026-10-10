@@ -22,6 +22,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
@@ -52,7 +53,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route.orEmpty()
     val isReader = route.startsWith("read/")
-    val colors = bookReaderColors(settings, false)
+    val isDarkReader = isReader && settings.theme == "dark"
+    val colors = bookReaderColors(if (isReader) settings else settings.copy(theme = "sepia"), false)
 
     MaterialTheme(
         colorScheme = colors,
@@ -88,8 +90,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 window.navigationBarColor = colors.background.toArgb()
                 if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
                 WindowCompat.getInsetsController(window, window.decorView).apply {
-                    isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
-                    isAppearanceLightNavigationBars = settings.theme != "dark"
+                    isAppearanceLightStatusBars = !isDarkReader && route != "home"
+                    isAppearanceLightNavigationBars = !isDarkReader
                 }
             }
         }
@@ -148,11 +150,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         val reduceMotion = settings.reducedMotion || !android.animation.ValueAnimator.areAnimatorsEnabled()
 
         Box(Modifier.fillMaxSize().background(colors.background)) {
-            // One continuous paper image behind all non-home pages and behind the status bar.
-            // Never reuse the home illustration as a navigation backdrop.
-            if (settings.theme != "dark") {
-                Image(painterResource(R.drawable.reference_paper), null,
-                    Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
+            // Exactly one opaque, stationary page beneath every destination.
+            // The page is NOT part of navigation animations and cannot reveal old content.
+            if (!isDarkReader) {
+                val wallpaper = if (isReader && settings.theme == "sage") R.drawable.reader_sage
+                                else R.drawable.reader_light
+                Image(painterResource(wallpaper), null, Modifier.matchParentSize(),
+                    contentScale = ContentScale.FillBounds)
             }
             Scaffold(
             containerColor = Color.Transparent,
@@ -183,24 +187,23 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 navController = nav,
                 startDestination = "home",
                 modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(bottom = 86.dp).background(Color.Transparent),
-                // Keep one stable parchment background throughout navigation; no translated old screen.
-                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
-                // Do not keep the previous screen's pixels behind the next one.
+                // Never crossfade two full screens: it caused doubled hero images and black flashes.
+                enterTransition = { EnterTransition.None },
                 exitTransition = { ExitTransition.None },
-                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
+                popEnterTransition = { EnterTransition.None },
                 popExitTransition = { ExitTransition.None }
             ) {
-                composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }
-                composable("search") { SearchScreen(vm,openReader) }
-                composable("bookmarks") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("notes") { NotesScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("progress") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("more") { MoreScreen(navigate) }
-                composable("settings") { SettingsPanel(settings,vm::settings) }
-                composable("about") { AboutScreen() }
-                composable("backup") { BackupScreen(vm) }
-                composable("glossary") { GlossaryScreen(openSource) }
+                composable("home") { BookPageEnter(reduceMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("contents") { BookPageEnter(reduceMotion) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("search") { BookPageEnter(reduceMotion) { SearchScreen(vm,openReader) } }
+                composable("bookmarks") { BookPageEnter(reduceMotion) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("notes") { BookPageEnter(reduceMotion) { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("progress") { BookPageEnter(reduceMotion) { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("more") { BookPageEnter(reduceMotion) { MoreScreen(navigate) } }
+                composable("settings") { BookPageEnter(reduceMotion) { SettingsPanel(settings,vm::settings) } }
+                composable("about") { BookPageEnter(reduceMotion) { AboutScreen() } }
+                composable("backup") { BookPageEnter(reduceMotion) { BackupScreen(vm) } }
+                composable("glossary") { BookPageEnter(reduceMotion) { GlossaryScreen(openSource) } }
                 composable(
                     "study?chapter={chapter}&review={review}",
                     arguments=listOf(
@@ -208,11 +211,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("review") { type=NavType.BoolType; defaultValue=false }
                     )
                 ) { e ->
+                    BookPageEnter(reduceMotion) {
                     StudyScreen(
                         vm, openSource,
                         initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
                         initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
                     )
+                    }
                 }
                 composable(
                     "read/{id}?paragraph={paragraph}&query={query}&top={top}",
@@ -222,6 +227,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("top") {type=NavType.BoolType;defaultValue=false}
                     )
                 ) { e ->
+                    BookPageEnter(reduceMotion) {
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
                     if(chapter==null) InfoCard("Подготовка книги","Раздел загружается…")
                     else Reader(
@@ -239,12 +245,14 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                             nav.navigate(readerRoute(id, top = true)) { popUpTo(e.destination.id) { inclusive=true } }
                         }
                     )
+                    }
                 }
             }
             Box(
                 Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                     .navigationBarsPadding()
-                    .padding(horizontal = 12.dp, vertical = 9.dp)
+                    // Outer pixels are transparent: the ONE page background remains visible.
+                    .padding(horizontal = 15.dp, vertical = 13.dp)
             ) {
 MadarijBottomBar(tabs, selectedTab) { destination ->
     when {
@@ -272,4 +280,18 @@ MadarijBottomBar(tabs, selectedTab) { destination ->
         }
     }
     }
+}
+
+
+/** Fade only the new page content, never the old route or the shared paper background. */
+@Composable
+private fun BookPageEnter(reducedMotion: Boolean, content: @Composable () -> Unit) {
+    var appeared by remember { mutableStateOf(false) }
+    val opacity by androidx.compose.animation.core.animateFloatAsState(
+        targetValue = if (appeared || reducedMotion) 1f else 0f,
+        animationSpec = tween(durationMillis = 160),
+        label = "book-page-content"
+    )
+    LaunchedEffect(Unit) { appeared = true }
+    Box(Modifier.fillMaxSize().graphicsLayer { alpha = opacity }) { content() }
 }

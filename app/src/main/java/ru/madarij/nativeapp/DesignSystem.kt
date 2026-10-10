@@ -401,13 +401,14 @@ internal fun SettingSwitch(label: String, checked: Boolean, change: (Boolean) ->
 
 @Composable
 private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> Unit) {
-    Surface(
-        color = MaterialTheme.colorScheme.surface,
-        shape = RoundedCornerShape(AppRadius.medium),
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .42f)),
-        shadowElevation = 0.dp
-    ) {
-        Column(Modifier.fillMaxWidth().padding(horizontal = 15.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+    val shape = RoundedCornerShape(AppRadius.medium)
+    Box(Modifier.fillMaxWidth().clip(shape)
+        .background(MaterialTheme.colorScheme.surface)
+        .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .42f), shape)) {
+        Image(painterResource(R.drawable.reader_light), null, Modifier.matchParentSize(),
+            contentScale = ContentScale.FillBounds, alpha = .20f)
+        Column(Modifier.fillMaxWidth().padding(horizontal = 15.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
             content()
         }
@@ -430,8 +431,11 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
     LazyColumn(contentPadding = PaddingValues(horizontal=16.dp,vertical=10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             SettingsGroup("Оформление") {
-                Text("Тема", style = MaterialTheme.typography.labelLarge)
-                ThemeSelector(value.theme) { update(value.copy(theme = it)) }
+                Text("Фон чтения", style = MaterialTheme.typography.labelLarge)
+                ReadingBackgroundSelector(value.theme) { update(value.copy(theme = it)) }
+                SettingSwitch("Ночной режим чтения", value.theme == "dark", {
+                    update(value.copy(theme = if (it) "dark" else "light"))
+                })
                 Text("Русский шрифт", style = MaterialTheme.typography.labelLarge)
                 Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { listOf("sans" to "Стандартный", "book" to "Книжный", "serif" to "С засечками").forEach { (key,label) -> FilterChip(value.russianFont == key, { update(value.copy(russianFont = key)) }, { Text(label) }) } }
                 ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}", value.russianSize, 14f..36f) { update(value.copy(russianSize = it)) }
@@ -475,20 +479,31 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
 }
 
 @Composable
-internal fun ThemeSelector(selected: String, change: (String) -> Unit) {
-    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-        listOf("light" to "Светлая", "sepia" to "Тёплая", "dark" to "Тёмная", "system" to "Системная").forEach { (key, label) ->
-            val paper = when (key) { "light" -> Color(0xFFFAF6EF); "sepia", "system" -> BookColors.parchment; else -> BookColors.nightCard }
-            val ink = if (key == "dark") BookColors.nightText else BookColors.ink
-            val frame = RoundedCornerShape(AppRadius.small)
-            Column(Modifier.width(82.dp).clip(frame).border(1.dp,
-                if (selected == key) BookColors.gold else BookColors.gold.copy(alpha = .12f), frame)
-                .clickable { change(key) }.padding(AppSpacing.sm), horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-                Box(Modifier.fillMaxWidth().height(58.dp).clip(RoundedCornerShape(6.dp)).background(paper).padding(7.dp)) {
-                    Text("Степени\nидущих", style = MaterialTheme.typography.labelSmall.copy(fontFamily = FontFamily.Serif), color = ink)
+internal fun ReadingBackgroundSelector(selected: String, change: (String) -> Unit) {
+    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        listOf(
+            Triple("light", "Светлая", R.drawable.reader_light),
+            Triple("sage", "Мягкий шалфей", R.drawable.reader_sage)
+        ).forEach { (key, label, background) ->
+            val active = selected == key || (key == "light" && selected in listOf("sepia", "system"))
+            val shape = RoundedCornerShape(14.dp)
+            Column(
+                Modifier.weight(1f).clip(shape).background(MaterialTheme.colorScheme.surface)
+                    .border(if (active) 1.5.dp else .7.dp,
+                        if (active) BookColors.gold else BookColors.gold.copy(alpha = .28f), shape)
+                    .clickable { change(key) }.padding(6.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                Box(Modifier.fillMaxWidth().height(88.dp).clip(RoundedCornerShape(9.dp))) {
+                    Image(painterResource(background), null, Modifier.matchParentSize(),
+                        contentScale = ContentScale.FillBounds)
+                    Text("Степени\nидущих", Modifier.padding(11.dp),
+                        style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),
+                        color = Color(0xFF40372C))
                 }
-                Text(label, style = MaterialTheme.typography.labelSmall, maxLines = 1)
+                Text(label, style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurface, maxLines = 1)
             }
         }
     }
