@@ -127,7 +127,7 @@ internal fun HomeScreen(
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontFamily = FontFamily(Font(R.font.marck_script)),
                                     fontWeight = FontWeight.Normal,
-                                    fontSize = 20.sp, lineHeight = 26.sp
+                                    fontSize = 22.sp, lineHeight = 31.sp
                                 ),
                                 color = Color(0xFF62452F),
                                 reducedMotion = reducedMotion,
