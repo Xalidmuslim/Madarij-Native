@@ -339,7 +339,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             }
         }
         if (toolsVisible) {
-        item { Text("Том 1 · ${chapters.size} разделов · ${read.size} прочитано", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        item { Text("Том 1 · ${LogicalReadingSections.roots(chapters).size} смысловых разделов · ${chapters.size} фрагментов", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
         last?.let { position ->
             item {
                 Soft3DSagePanel(
@@ -420,7 +420,10 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             if (group.id in openedGroups || query.isNotBlank()) group.items.forEach { chapter ->
                 item(key = "chapter:${chapter.chapterId}") {
                     val expanded = chapter.chapterId in openedChapters || query.isNotBlank()
-                    val ordinal = chapters.indexOfFirst { it.id == chapter.chapterId } + 1
+                    val readingMembers = LogicalReadingSections.members(chapters, chapter.chapterId)
+                    val sectionStartId = readingMembers.firstOrNull()?.id ?: chapter.chapterId
+                    val isPageContinuation = sectionStartId != chapter.chapterId
+                    val ordinal = LogicalReadingSections.roots(chapters).indexOfFirst { it.id == sectionStartId } + 1
                     val light = true
                     val ink = if (light) BookColors.ink else BookColors.text
                     val shape = RoundedCornerShape(17.dp)
@@ -429,13 +432,16 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(33.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
-                                    Text("$ordinal", style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = Color(0xFFFFF3DC))
+                                    Text(if (isPageContinuation) "↳" else "$ordinal",
+                                        style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
+                                        color = Color(0xFFFFF3DC))
                                 }
-                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(chapter.chapterId,chapter.entryParagraphId) }) {
+                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(sectionStartId, null) }) {
+                                    if (isPageContinuation) Text("ПРОДОЛЖЕНИЕ ТЕКСТА", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                                     Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 16.sp, lineHeight = 20.sp), color = ink)
                                     if(chapter.topics.isNotEmpty()) Text("${if(expanded) "⌄" else "›"} Содержание · ${chapter.topics.size}", style = MaterialTheme.typography.labelSmall, color = ink.copy(alpha = .7f))
                                 }
-                                TextButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
+                                TextButton(onClick = { open(sectionStartId, null) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
                             }
                             val percent = percents[chapter.chapterId] ?: 0
                             if(percent > 0) LinearProgressIndicator(progress = {percent / 100f}, modifier = Modifier.fillMaxWidth().height(1.dp), color = BookColors.gold, trackColor = Color.Transparent)
