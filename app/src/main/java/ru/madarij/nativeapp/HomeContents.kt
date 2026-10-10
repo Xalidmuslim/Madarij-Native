@@ -33,6 +33,8 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import ru.madarij.nativeapp.data.*
 import java.util.Date
 
@@ -59,9 +61,11 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     var excerpt by remember { mutableStateOf("") }
     LaunchedEffect(chapters.firstOrNull()?.id) {
         chapters.firstOrNull()?.id?.let { id ->
-            val text = vm.repository.dao.paragraphs(id).firstOrNull {
-                it.role !in listOf("editor_note", "edition_note") && it.ru.length > 80
-            }?.ru.orEmpty()
+            val text = withContext(Dispatchers.IO) {
+                vm.repository.dao.paragraphs(id).firstOrNull {
+                    it.role !in listOf("editor_note", "edition_note") && it.ru.length > 80
+                }?.ru.orEmpty()
+            }
             val sentences = Regex("[^.!?]+[.!?]").findAll(text).map { it.value.trim() }.take(2).toList()
             excerpt = sentences.getOrNull(1) ?: sentences.firstOrNull() ?: text
         }
@@ -236,14 +240,17 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     val savedIds = remember(bookmarks) { bookmarks.map { it.chapterId }.toSet() }
 
     LaunchedEffect(positions, read) {
-        val result = mutableMapOf<String, Int>()
-        positions.forEach { p ->
-            val paragraphs = vm.repository.dao.paragraphs(p.chapterId)
-            val ordinal = paragraphs.indexOfFirst { it.id == p.paragraphId }
-            result[p.chapterId] = if (paragraphs.isEmpty()) 0 else ((ordinal + 1) * 100 / paragraphs.size).coerceIn(0, 99)
+        percents = withContext(Dispatchers.IO) {
+            val result = mutableMapOf<String, Int>()
+            positions.forEach { p ->
+                val paragraphs = vm.repository.dao.paragraphs(p.chapterId)
+                val ordinal = paragraphs.indexOfFirst { it.id == p.paragraphId }
+                result[p.chapterId] = if (paragraphs.isEmpty()) 0 else
+                    ((ordinal + 1) * 100 / paragraphs.size).coerceIn(0, 99)
+            }
+            read.forEach { result[it.chapterId] = 100 }
+            result
         }
-        read.forEach { result[it.chapterId] = 100 }
-        percents = result
     }
     LaunchedEffect(groups, last?.chapterId) {
         if (groups.isNotEmpty() && !initialized) {
