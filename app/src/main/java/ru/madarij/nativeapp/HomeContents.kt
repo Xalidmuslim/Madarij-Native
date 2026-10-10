@@ -156,8 +156,10 @@ internal fun HomeScreen(
                     shadowElevation = 0.dp
                 ) {
                     Box(Modifier.fillMaxSize()) {
-                        PreloadedBookImage(R.drawable.cta_leather,
-                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                        // Use the SAME static leather-with-gilt-border resource as bottom navigation.
+                        // No extra full-screen layer or additional bitmap decoding.
+                        PreloadedBookImage(R.drawable.navigation_leather,
+                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
                         Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
                             verticalAlignment = Alignment.CenterVertically) {
                             NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
@@ -233,8 +235,11 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
         warm = true,
         onClick = onClick
     ) {
+        // Soft3DPanel is a BoxScope; Center anchors the ENTIRE icon/text/arrow
+        // row inside each aged-paper card instead of placing it at the top.
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 9.dp, vertical = 9.dp),
+            Modifier.align(Alignment.Center).fillMaxWidth()
+                .padding(horizontal = 9.dp, vertical = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
