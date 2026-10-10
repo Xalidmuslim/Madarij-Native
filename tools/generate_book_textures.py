@@ -66,4 +66,16 @@ leather_crop=ImageOps.fit(leather_crop,(860,120),method=Image.Resampling.LANCZOS
 leather_crop=ImageEnhance.Contrast(leather_crop).enhance(.80)
 leather_crop=Image.blend(leather_crop,Image.new("RGB",leather_crop.size,(45,28,20)),.30)
 leather_crop.save(D/"cta_leather.webp","WEBP",quality=75,method=6)
-print("Generated: library_hero.webp, card_paper.webp, paper_sage.webp, cta_leather.webp")
+# Transparent icons from the approved 8-item generated bronze/leather artwork.
+# Atlas is shipped as a single authored asset in tools/assets; individual tiny
+# drawables are generated at build time so Compose can use cached painterResource.
+atlas=Image.open(ROOT/"tools/assets/antique_icons_atlas.webp").convert("RGBA")
+assert atlas.size == (432,216), f"Unexpected antique icon atlas: {atlas.size}"
+antique=("home","contents","bookmarks","search","study","glossary","notes","more")
+for index,name in enumerate(antique):
+    x=(index%4)*108
+    y=(index//4)*108
+    icon=atlas.crop((x,y,x+108,y+108))
+    assert icon.getchannel("A").getbbox() is not None, name
+    icon.save(D/f"book_icon_{name}.webp","WEBP",quality=79,method=6,exact=True)
+print("Generated: library_hero, card_paper, paper_sage, cta_leather and 8 antique book icons")

@@ -215,12 +215,8 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
 
 @Composable
 private fun AntiqueHomeIcon(glyph: String) {
-    Box(Modifier.size(35.dp), contentAlignment = Alignment.Center) {
-        NavigationGlyph(glyph, selected = true,
-            modifier = Modifier.offset(y = 1.dp).size(30.dp), tint = Color(0xFF755034))
-        NavigationGlyph(glyph, selected = true,
-            modifier = Modifier.offset(y = (-0.5f).dp).size(30.dp), tint = Color(0xFFBA8D52))
-    }
+    // The user's generated brass-and-leather icon, not doubled vector outlines.
+    AntiqueBookIcon(glyph, Modifier.size(35.dp))
 }
 
 @Composable

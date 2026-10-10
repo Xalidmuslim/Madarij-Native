@@ -220,18 +220,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Box(Modifier.size(23.dp), contentAlignment = Alignment.Center) {
-                        NavigationGlyph(
-                            destination, selected = active,
-                            modifier = Modifier.offset(y = 1.dp).size(22.dp),
-                            tint = Color(0xFF573922)
-                        )
-                        NavigationGlyph(
-                            destination, selected = active,
-                            modifier = Modifier.size(22.dp),
-                            tint = labelColor
-                        )
-                    }
+                    AntiqueBookIcon(destination, modifier = Modifier.size(25.dp))
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
@@ -313,6 +302,12 @@ internal fun highlight(text: String, query: String, color: Color): AnnotatedStri
 
 @Composable
 internal fun NavigationGlyph(kind: String, selected: Boolean = false, modifier: Modifier = Modifier, tint: Color? = null) {
+    // Use the same icon family throughout home, bottom navigation and controls.
+    // Retain original vector drawing for any unrecognised functional glyph.
+    if (AntiqueBookIcons.drawable(kind) != null) {
+        AntiqueBookIcon(kind, modifier)
+        return
+    }
     val color = tint ?: if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
     val accent = tint ?: MaterialTheme.colorScheme.secondary
     Canvas(modifier) {

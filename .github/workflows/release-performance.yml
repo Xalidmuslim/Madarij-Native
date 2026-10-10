@@ -3,7 +3,7 @@ name: Madarij Optimized Release R8 + Android QA
 on:
   push:
     branches:
-      - codex/madarij-v136-reference-library-home
+      - codex/madarij-v137-generated-book-icons
   workflow_dispatch:
 
 permissions:
