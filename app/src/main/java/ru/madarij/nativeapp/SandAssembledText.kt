@@ -73,7 +73,7 @@ internal fun SandAssembledText(
             onTextLayout = { if (lastLayout.value == null) lastLayout.value = it }
         )
         val layout = lastLayout.value
-        if (!reducedMotion && progress.value in .02f.. .985f && layout != null && text.isNotEmpty()) {
+        if (!reducedMotion && progress.value > .02f && progress.value < .985f && layout != null && text.isNotEmpty()) {
             Canvas(Modifier.matchParentSize()) {
                 val index = floor(position).toInt().coerceIn(0, text.length - 1)
                 val rect = layout.getBoundingBox(index)
