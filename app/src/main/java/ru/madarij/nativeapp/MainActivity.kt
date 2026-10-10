@@ -264,6 +264,7 @@ MadarijBottomBar(tabs, selectedTab) { destination ->
             launchSingleTop=true; restoreState=true
         }
     }
+}
 
             }
             }
