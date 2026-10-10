@@ -109,9 +109,9 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 val shape = RoundedCornerShape(17.dp)
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
-                    .border(1.dp, BookColors.gold.copy(alpha = .33f), shape)) {
+                    .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Row(Modifier.padding(horizontal = 17.dp, vertical = 12.dp),
+                    Row(Modifier.padding(horizontal = 17.dp, vertical = 11.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(Modifier.weight(1f)) {
                             Text(excerpt,
@@ -125,27 +125,36 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                         IconButton(onClick = { navigate("bookmarks") },
                             modifier = Modifier.size(30.dp)) {
                             NavigationGlyph("bookmarks", selected = true,
-                                modifier = Modifier.size(20.dp), tint = BookColors.gold)
+                                modifier = Modifier.size(18.dp), tint = BookColors.gold)
                         }
                     }
                 }
             }
             item {
-                Button(
+                Surface(
                     onClick = { (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it, null) } },
                     enabled = chapters.isNotEmpty(),
                     modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp).height(48.dp),
                     shape = RoundedCornerShape(15.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = BookColors.leather,
-                        contentColor = Color(0xFFF8E7CE)),
-                    elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
+                    color = BookColors.leather,
+                    contentColor = Color(0xFFF8E7CE),
+                    shadowElevation = 0.dp
                 ) {
-                    NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
-                        tint = BookColors.lightGold)
-                    Spacer(Modifier.width(11.dp))
-                    Text("Продолжить чтение", Modifier.weight(1f),
-                        style = MaterialTheme.typography.titleSmall)
-                    Text("›", style = MaterialTheme.typography.headlineSmall)
+                    Box(Modifier.fillMaxSize()) {
+                        PreloadedBookImage(R.drawable.cta_leather,
+                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                        Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
+                            verticalAlignment = Alignment.CenterVertically) {
+                            NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
+                                tint = BookColors.lightGold)
+                            Spacer(Modifier.width(11.dp))
+                            Text("Продолжить чтение", Modifier.weight(1f),
+                                style = MaterialTheme.typography.titleSmall,
+                                color = Color(0xFFF8E7CE))
+                            Text("›", style = MaterialTheme.typography.headlineSmall,
+                                color = Color(0xFFF8E7CE))
+                        }
+                    }
                 }
             }
             item {
@@ -182,7 +191,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                         if (index > 0) VerticalDivider(Modifier.height(37.dp),
                             color = BookColors.gold.copy(alpha = .28f))
                         Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
-                            Text(number, fontFamily = BookSerif, fontSize = 21.sp, color = BookColors.gold)
+                            Text(number, fontFamily = BookSerif, fontSize = 19.sp, color = BookColors.gold)
                             Text(label, style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                         }
                     }
@@ -197,17 +206,17 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
 @Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 76.dp),
+        modifier = modifier.heightIn(min = 72.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
         onClick = onClick
     ) {
         Column(
-            Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 8.dp),
+            Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 6.dp),
             verticalArrangement = Arrangement.spacedBy(2.dp)
         ) {
-            NavigationGlyph(glyph, selected = true, modifier = Modifier.size(25.dp), tint = BookColors.gold)
+            NavigationGlyph(glyph, selected = true, modifier = Modifier.size(24.dp), tint = BookColors.gold)
             Text(title, style = MaterialTheme.typography.titleSmall.copy(fontSize = 14.sp),
                 color = MaterialTheme.colorScheme.onSurface, maxLines = 1)
             Text(subtitle, style = MaterialTheme.typography.bodySmall.copy(fontSize = 11.sp),

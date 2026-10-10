@@ -194,15 +194,15 @@ internal fun MadarijTopBar(
 }
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Box(Modifier.fillMaxWidth().height(66.dp)
-        .clip(RoundedCornerShape(19.dp))
+    Box(Modifier.fillMaxWidth().height(62.dp)
+        .clip(RoundedCornerShape(18.dp))
         .background(BookColors.leather)
-        .border(.7.dp, BookColors.lightGold.copy(alpha = .43f), RoundedCornerShape(19.dp))) {
+        .border(.6.dp, BookColors.lightGold.copy(alpha = .34f), RoundedCornerShape(18.dp))) {
         PreloadedBookImage(R.drawable.navigation_leather,
             modifier = Modifier.matchParentSize(),
             contentScale = ContentScale.FillBounds)
         Row(
-            Modifier.fillMaxSize().padding(horizontal = 8.dp, vertical = 7.dp),
+            Modifier.fillMaxSize().padding(horizontal = 8.dp, vertical = 5.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             items.forEach { (destination, label) ->

@@ -3,7 +3,7 @@ name: Madarij Optimized Release R8 + Android QA
 on:
   push:
     branches:
-      - codex/madarij-v134-light-motion-warm-sage
+      - codex/madarij-v135-book-art-direction
   workflow_dispatch:
 
 permissions:

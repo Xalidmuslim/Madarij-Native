@@ -29,15 +29,16 @@ result.save(D/"library_hero.webp","WEBP",quality=83,method=6)
 # Static quiet-center folded-paper frame used by existing card components.
 w,h=600,300
 card=ImageOps.fit(paper,(w,h),method=Image.Resampling.LANCZOS)
-card=ImageEnhance.Color(card).enhance(.7)
-card=Image.blend(card,Image.new("RGB",(w,h),(249,238,219)),.38)
+card=ImageEnhance.Color(card).enhance(.60)
+card=Image.blend(card,Image.new("RGB",(w,h),(250,240,222)),.45)
 p=card.load()
 for y in range(h):
     for x in range(w):
         distance=min(x,y,w-1-x,h-1-y)
-        shade=max(0,int(10*(1-distance/20)**1.5)) if distance<20 else 0
-        if y<32 or y>h-32:
-            shade+=max(0,int(math.sin(x/29+math.sin(x/83))*2))
+        shade=max(0,int(8*(1-distance/24)**1.6)) if distance<24 else 0
+        if y<24 or y>h-24:
+            fold=(math.sin(x/37+math.sin(x/83))+math.sin(x/19)*.4)
+            shade+=max(0,int(fold*1.5))
         r,g,b=p[x,y]
         p[x,y]=(max(0,r-shade),max(0,g-shade),max(0,b-shade))
 card.save(D/"card_paper.webp","WEBP",quality=74,method=6)
@@ -53,4 +54,12 @@ gray=ImageEnhance.Brightness(gray).enhance(.99)
 warm=ImageOps.colorize(gray,black=(176,163,135),white=(253,249,235))
 warm=Image.blend(warm,Image.new("RGB",warm.size,(245,241,228)),.12)
 warm.save(D/"paper_sage.webp","WEBP",quality=83,method=6)
-print("Generated: library_hero.webp, card_paper.webp, paper_sage.webp")
+# The primary reading action uses just the leather material without the nav frame.
+leather=source("navigation_leather.webp")
+lw,lh=leather.size
+leather_crop=leather.crop((int(lw*.16),int(lh*.24),int(lw*.84),int(lh*.76)))
+leather_crop=ImageOps.fit(leather_crop,(860,120),method=Image.Resampling.LANCZOS)
+leather_crop=ImageEnhance.Contrast(leather_crop).enhance(.80)
+leather_crop=Image.blend(leather_crop,Image.new("RGB",leather_crop.size,(45,28,20)),.30)
+leather_crop.save(D/"cta_leather.webp","WEBP",quality=75,method=6)
+print("Generated: library_hero.webp, card_paper.webp, paper_sage.webp, cta_leather.webp")

@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 34
-        versionName = "1.34-native-soft-motion-warm-sage"
+        versionCode = 35
+        versionName = "1.35-antique-book-art-direction"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
