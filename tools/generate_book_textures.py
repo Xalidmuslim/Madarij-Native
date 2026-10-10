@@ -42,9 +42,12 @@ for y in range(h):
         p[x,y]=(max(0,r-shade),max(0,g-shade),max(0,b-shade))
 card.save(D/"card_paper.webp","WEBP",quality=74,method=6)
 # Old paper fibers preserved, warm desaturated sage-ivory instead of cold green.
-gray=ImageOps.grayscale(source("paper_sage.webp"))
-gray=ImageEnhance.Contrast(gray).enhance(.65)
-warm=ImageOps.colorize(gray,black=(199,193,179),white=(251,248,233))
-warm=Image.blend(warm,Image.new("RGB",warm.size,(241,239,229)),.62)
+# Use the visibly fibrous antique page rather than the nearly flat old sage.
+# Keep aged corners but avoid cold green. This texture has no runtime cost.
+size=source("paper_sage.webp").size
+gray=ImageOps.grayscale(paper.resize(size,Image.Resampling.LANCZOS))
+gray=ImageEnhance.Contrast(gray).enhance(1.12)
+warm=ImageOps.colorize(gray,black=(190,181,153),white=(255,252,238))
+warm=Image.blend(warm,Image.new("RGB",warm.size,(241,240,229)),.28)
 warm.save(D/"paper_sage.webp","WEBP",quality=76,method=6)
 print("Generated: library_hero.webp, card_paper.webp, paper_sage.webp")
