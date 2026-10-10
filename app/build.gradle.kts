@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 37
-        versionName = "1.37-generated-antique-icons"
+        versionCode = 38
+        versionName = "1.38-knowledge-sand-reminders"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -59,7 +59,13 @@ val generateBookTextures by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_book_textures.py")
 }
-tasks.matching { it.name == "preBuild" }.configureEach { dependsOn(generateBookTextures) }
+val verifyKnowledgeReminders by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/check_home_reminders.py")
+}
+tasks.matching { it.name == "preBuild" }.configureEach {
+    dependsOn(generateBookTextures, verifyKnowledgeReminders)
+}
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "-m", "tools.content_gate", "app/src/main/assets/corpus.json")

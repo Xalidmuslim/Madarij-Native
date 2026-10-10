@@ -39,7 +39,7 @@ import ru.madarij.nativeapp.data.*
 import java.util.Date
 
 @Composable
-internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navigate: (String) -> Unit) {
+internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navigate: (String) -> Unit, reminder: KnowledgeReminder, reducedMotion: Boolean) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val last by vm.last.collectAsStateWithLifecycle()
@@ -57,20 +57,6 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     val minutes = history.filter { it.date == today }.sumOf { it.seconds } / 60
     val percent = if (chapters.isEmpty()) 0 else read.size * 100 / chapters.size
     val lastTitle = chapters.find { it.id == last?.chapterId }?.let(groups::findTitle)
-
-    // Do not drop and reinsert the quotation when HOME is restored.
-    var excerpt by rememberSaveable { mutableStateOf("") }
-    LaunchedEffect(chapters.firstOrNull()?.id) {
-        if (excerpt.isBlank()) chapters.firstOrNull()?.id?.let { id ->
-            val text = withContext(Dispatchers.IO) {
-                vm.repository.dao.paragraphs(id).firstOrNull {
-                    it.role !in listOf("editor_note", "edition_note") && it.ru.length > 80
-                }?.ru.orEmpty()
-            }
-            val sentences = Regex("[^.!?]+[.!?]").findAll(text).map { it.value.trim() }.take(2).toList()
-            excerpt = sentences.getOrNull(1) ?: sentences.firstOrNull() ?: text
-        }
-    }
 
     // BookRouteSurface paints the aged-paper sheet once beneath this screen.
     // A solid beige HomeScreen layer previously concealed that book texture.
@@ -115,7 +101,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                     }
                 }
             }
-            if (excerpt.isNotBlank()) item {
+            item(key = "knowledge-reminder") {
                 val shape = RoundedCornerShape(17.dp)
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
@@ -123,13 +109,17 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                     Row(Modifier.padding(horizontal = 18.dp, vertical = 13.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Column(Modifier.weight(1f)) {
-                            Text(excerpt,
+                        Column(Modifier.weight(1f).clickable {
+                            open(reminder.chapterId, reminder.paragraphId)
+                        }) {
+                            SandAssembledText(
+                                text = reminder.text,
                                 style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif,
                                     fontSize = 16.sp, lineHeight = 21.sp),
                                 color = BookColors.ink,
-                                maxLines = 6, overflow = TextOverflow.Ellipsis)
-                            Text("Из первого раздела книги", Modifier.padding(top = 8.dp),
+                                reducedMotion = reducedMotion
+                            )
+                            Text("Из книги · том 1, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
                                 style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                         }
                         IconButton(onClick = { navigate("bookmarks") },
