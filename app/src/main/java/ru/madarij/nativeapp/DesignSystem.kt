@@ -189,7 +189,7 @@ internal fun MadarijTopBar(
 }
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Box(Modifier.fillMaxWidth().height(68.dp)
+    Box(Modifier.fillMaxWidth().height(66.dp)
         .clip(RoundedCornerShape(19.dp))
         .background(BookColors.leather)
         .border(.7.dp, BookColors.lightGold.copy(alpha = .43f), RoundedCornerShape(19.dp))) {
@@ -430,8 +430,10 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
     LazyColumn(contentPadding = PaddingValues(horizontal=16.dp,vertical=10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             SettingsGroup("Оформление") {
-                Text("Тема", style = MaterialTheme.typography.labelLarge)
-                ThemeSelector(value.theme) { update(value.copy(theme = it)) }
+                Text("Фон чтения", style = MaterialTheme.typography.labelLarge)
+                ReadingPaperSelector(value.theme) { update(value.copy(theme = it)) }
+                SettingSwitch("Ночной режим", value.theme == "dark",
+                    { update(value.copy(theme = if (it) "dark" else "light")) })
                 Text("Русский шрифт", style = MaterialTheme.typography.labelLarge)
                 Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { listOf("sans" to "Стандартный", "book" to "Книжный", "serif" to "С засечками").forEach { (key,label) -> FilterChip(value.russianFont == key, { update(value.copy(russianFont = key)) }, { Text(label) }) } }
                 ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}", value.russianSize, 14f..36f) { update(value.copy(russianSize = it)) }
@@ -475,20 +477,33 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
 }
 
 @Composable
-internal fun ThemeSelector(selected: String, change: (String) -> Unit) {
-    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-        listOf("light" to "Светлая", "sepia" to "Тёплая", "dark" to "Тёмная", "system" to "Системная").forEach { (key, label) ->
-            val paper = when (key) { "light" -> Color(0xFFFAF6EF); "sepia", "system" -> BookColors.parchment; else -> BookColors.nightCard }
-            val ink = if (key == "dark") BookColors.nightText else BookColors.ink
-            val frame = RoundedCornerShape(AppRadius.small)
-            Column(Modifier.width(82.dp).clip(frame).border(1.dp,
-                if (selected == key) BookColors.gold else BookColors.gold.copy(alpha = .12f), frame)
-                .clickable { change(key) }.padding(AppSpacing.sm), horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-                Box(Modifier.fillMaxWidth().height(58.dp).clip(RoundedCornerShape(6.dp)).background(paper).padding(7.dp)) {
-                    Text("Степени\nидущих", style = MaterialTheme.typography.labelSmall.copy(fontFamily = FontFamily.Serif), color = ink)
+internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
+    val options = listOf(
+        Triple("light", "Светлая", R.drawable.paper_light),
+        Triple("sage", "Мягкий шалфей", R.drawable.paper_sage)
+    )
+    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        options.forEach { (key, label, drawable) ->
+            val active = (if (selected == "sage") "sage" else "light") == key
+            val frame = RoundedCornerShape(13.dp)
+            Column(
+                Modifier.weight(1f).clip(frame)
+                    .border(if (active) 1.5.dp else .7.dp,
+                        if (active) BookColors.gold else BookColors.gold.copy(alpha = .27f), frame)
+                    .clickable { change(key) }.padding(7.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(7.dp)
+            ) {
+                Box(Modifier.fillMaxWidth().height(84.dp).clip(RoundedCornerShape(9.dp))) {
+                    Image(painterResource(drawable), contentDescription = null,
+                        modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                    Text("Степени\nидущих", Modifier.align(Alignment.CenterStart).padding(start = 12.dp),
+                        style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif),
+                        color = BookColors.ink)
                 }
-                Text(label, style = MaterialTheme.typography.labelSmall, maxLines = 1)
+                Text(label, style = MaterialTheme.typography.labelMedium,
+                    color = if (active) BookColors.gold else MaterialTheme.colorScheme.onSurface,
+                    maxLines = 1)
             }
         }
     }

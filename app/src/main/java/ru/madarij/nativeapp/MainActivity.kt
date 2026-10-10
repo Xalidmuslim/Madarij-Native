@@ -12,6 +12,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.*
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -31,6 +33,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
+import ru.madarij.nativeapp.data.ReadingSettings
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -45,6 +48,23 @@ internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Bo
     "read/${Uri.encode(id)}?paragraph=${Uri.encode(paragraph.orEmpty())}&query=${Uri.encode(query)}&top=$top"
 
 @Composable
+private fun ParchmentRoute(texture: Int, dark: Boolean, content: @Composable () -> Unit) {
+    // The opaque page is drawn immediately, so the previous screen cannot bleed through.
+    Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
+        if (!dark) Image(painterResource(texture), contentDescription = null,
+            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
+        var revealed by remember { mutableStateOf(false) }
+        LaunchedEffect(Unit) { revealed = true }
+        val opacity by animateFloatAsState(
+            targetValue = if (revealed) 1f else 0f,
+            animationSpec = tween(durationMillis = 135),
+            label = "book-page-content"
+        )
+        Box(Modifier.fillMaxSize().graphicsLayer { alpha = opacity }) { content() }
+    }
+}
+
+@Composable
 fun BookApp(vm:BookViewModel=viewModel()) {
     val settings by vm.settings.collectAsStateWithLifecycle()
     val chapters by vm.chapters.collectAsStateWithLifecycle()
@@ -52,7 +72,15 @@ fun BookApp(vm:BookViewModel=viewModel()) {
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route.orEmpty()
     val isReader = route.startsWith("read/")
-    val colors = bookReaderColors(settings, false)
+    val colors = bookReaderColors(
+        if (isReader || settings.theme == "dark") settings else settings.copy(theme = "sepia"),
+        false
+    )
+    val paperTexture = when {
+        isReader && settings.theme == "sage" -> R.drawable.paper_sage
+        isReader -> R.drawable.paper_light
+        else -> R.drawable.reference_paper
+    }
 
     MaterialTheme(
         colorScheme = colors,
@@ -85,7 +113,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 // from showing through the moving composables on some Android devices.
                 window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
                 @Suppress("DEPRECATION")
-                window.navigationBarColor = colors.background.toArgb()
+                window.navigationBarColor = android.graphics.Color.TRANSPARENT
                 if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
                 WindowCompat.getInsetsController(window, window.decorView).apply {
                     isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
@@ -151,7 +179,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             // One continuous paper image behind all non-home pages and behind the status bar.
             // Never reuse the home illustration as a navigation backdrop.
             if (settings.theme != "dark") {
-                Image(painterResource(R.drawable.reference_paper), null,
+                Image(painterResource(paperTexture), null,
                     Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
             }
             Scaffold(
@@ -184,23 +212,22 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 startDestination = "home",
                 modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(bottom = 86.dp).background(Color.Transparent),
                 // Keep one stable parchment background throughout navigation; no translated old screen.
-                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
-                // Do not keep the previous screen's pixels behind the next one.
+                enterTransition = { EnterTransition.None },
                 exitTransition = { ExitTransition.None },
-                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
+                popEnterTransition = { EnterTransition.None },
                 popExitTransition = { ExitTransition.None }
             ) {
                 composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }
-                composable("search") { SearchScreen(vm,openReader) }
-                composable("bookmarks") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("notes") { NotesScreen(vm) {id,p -> openReader(id,p,"")} }
-                composable("progress") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
-                composable("more") { MoreScreen(navigate) }
-                composable("settings") { SettingsPanel(settings,vm::settings) }
-                composable("about") { AboutScreen() }
-                composable("backup") { BackupScreen(vm) }
-                composable("glossary") { GlossaryScreen(openSource) }
+                composable("contents") { ParchmentRoute(paperTexture, settings.theme == "dark") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("search") { ParchmentRoute(paperTexture, settings.theme == "dark") { SearchScreen(vm,openReader) } }
+                composable("bookmarks") { ParchmentRoute(paperTexture, settings.theme == "dark") { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("notes") { ParchmentRoute(paperTexture, settings.theme == "dark") { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("progress") { ParchmentRoute(paperTexture, settings.theme == "dark") { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("more") { ParchmentRoute(paperTexture, settings.theme == "dark") { MoreScreen(navigate) } }
+                composable("settings") { ParchmentRoute(paperTexture, settings.theme == "dark") { SettingsPanel(settings,vm::settings) } }
+                composable("about") { ParchmentRoute(paperTexture, settings.theme == "dark") { AboutScreen() } }
+                composable("backup") { ParchmentRoute(paperTexture, settings.theme == "dark") { BackupScreen(vm) } }
+                composable("glossary") { ParchmentRoute(paperTexture, settings.theme == "dark") { GlossaryScreen(openSource) } }
                 composable(
                     "study?chapter={chapter}&review={review}",
                     arguments=listOf(
@@ -208,11 +235,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("review") { type=NavType.BoolType; defaultValue=false }
                     )
                 ) { e ->
-                    StudyScreen(
-                        vm, openSource,
-                        initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
-                        initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
-                    )
+                    ParchmentRoute(paperTexture, settings.theme == "dark") {
+                        StudyScreen(
+                            vm, openSource,
+                            initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
+                            initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
+                        )
+                    }
                 }
                 composable(
                     "read/{id}?paragraph={paragraph}&query={query}&top={top}",
@@ -224,7 +253,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
                     if(chapter==null) InfoCard("Подготовка книги","Раздел загружается…")
-                    else Reader(
+                    else ParchmentRoute(paperTexture, settings.theme == "dark") { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
@@ -239,12 +268,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                             nav.navigate(readerRoute(id, top = true)) { popUpTo(e.destination.id) { inclusive=true } }
                         }
                     )
+                    }
                 }
             }
             Box(
                 Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                     .navigationBarsPadding()
-                    .padding(horizontal = 12.dp, vertical = 9.dp)
+                    .padding(horizontal = 18.dp, vertical = 11.dp)
             ) {
 MadarijBottomBar(tabs, selectedTab) { destination ->
     when {
