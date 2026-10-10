@@ -219,7 +219,7 @@ private fun AntiqueHomeIcon(glyph: String) {
         NavigationGlyph(glyph, selected = true,
             modifier = Modifier.offset(y = 1.dp).size(30.dp), tint = Color(0xFF755034))
         NavigationGlyph(glyph, selected = true,
-            modifier = Modifier.offset(y = (-.5).dp).size(30.dp), tint = Color(0xFFBA8D52))
+            modifier = Modifier.offset(y = (-0.5f).dp).size(30.dp), tint = Color(0xFFBA8D52))
     }
 }
 
