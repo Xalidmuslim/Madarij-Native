@@ -66,7 +66,9 @@ fun Reader(
     var chapterTab by rememberSaveable(chapter.id) { mutableIntStateOf(0) }
     val context = LocalContext.current
     val actionScope = rememberCoroutineScope()
-    val listState = rememberLazyListState()
+    // A chapter transition must never inherit the previous chapter's end-of-list
+    // position. Otherwise the 'Отметить прочитанным' footer flashes briefly.
+    val listState = remember(chapter.id) { androidx.compose.foundation.lazy.LazyListState() }
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle()
@@ -364,7 +366,9 @@ fun Reader(
                     }
                 }
             }
-            item(key = "end") {
+            // The completion footer only exists after the new chapter's content
+            // and scroll position have both been restored. Mark-read logic is kept.
+            if (loaded && ready && visible.isNotEmpty()) item(key = "end") {
                 Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                     HorizontalDivider()
                     Text("Конец раздела", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -425,7 +429,7 @@ fun Reader(
                             val own = bookmarks.filter { it.chapterId == chapter.id }
                             if (own.isEmpty()) item { Text("Закладок в этом разделе пока нет.") }
                             items(own, key = { it.id }) { bookmark ->
-                                OutlinedCard(onClick = { revealParagraph(bookmark.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
+                                AgedPaperCard(onClick = { revealParagraph(bookmark.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
                                     Column(Modifier.padding(AppSpacing.lg)) { Text(bookmark.title); if (bookmark.note.isNotBlank()) Text(bookmark.note) }
                                 }
                             }
@@ -433,7 +437,7 @@ fun Reader(
                         2 -> {
                             if (notes.isEmpty()) item { Text("Заметок в этом разделе пока нет.") }
                             items(notes, key = { it.id }) { note ->
-                                OutlinedCard(onClick = { revealParagraph(note.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
+                                AgedPaperCard(onClick = { revealParagraph(note.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
                                     Text(note.text, Modifier.padding(AppSpacing.lg))
                                 }
                             }
@@ -563,9 +567,10 @@ private fun ReaderRichTextBlock(
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.fillMaxWidth().padding(top = 6.dp)
                 )
-                is ReaderRichSegment.Poetry -> Surface(
+                is ReaderRichSegment.Poetry -> AgedPaperCard(
                     shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp),
-                    color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = .46f),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = .46f)),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
@@ -596,11 +601,12 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
             Modifier.width(4.dp).fillMaxHeight().defaultMinSize(minHeight = 64.dp)
                 .background(MaterialTheme.colorScheme.primary, androidx.compose.foundation.shape.RoundedCornerShape(4.dp))
         )
-        Surface(
+        AgedPaperCard(
             modifier = Modifier.weight(1f),
             shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
-            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .15f),
-            border = androidx.compose.foundation.BorderStroke(.7.dp,MaterialTheme.colorScheme.primary.copy(alpha = .3f))
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .15f)),
+            border = androidx.compose.foundation.BorderStroke(.7.dp,MaterialTheme.colorScheme.primary.copy(alpha = .3f)),
+            elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
         ) {
             Column(Modifier.padding(horizontal = 14.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 Text(segment.label, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)

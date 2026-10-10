@@ -66,9 +66,10 @@ internal fun chapterArt(ordinal: Int): Int = when ((ordinal - 1).mod(9)) {
 @Composable internal fun ReaderFrontispiece(ordinal: Int, title: String, subtitle: String?, dark: Boolean) {
     Column(Modifier.fillMaxWidth().padding(start = 22.dp, end = 22.dp, top = 17.dp, bottom = 10.dp),
         horizontalAlignment = Alignment.Start) {
-        Surface(shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
-            color = MaterialTheme.colorScheme.primary.copy(alpha = .075f),
-            border = androidx.compose.foundation.BorderStroke(.6.dp, MaterialTheme.colorScheme.primary.copy(alpha = .24f))) {
+        AgedPaperCard(shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
+            colors = androidx.compose.material3.CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary.copy(alpha = .075f)),
+            border = androidx.compose.foundation.BorderStroke(.6.dp, MaterialTheme.colorScheme.primary.copy(alpha = .24f)),
+            elevation = androidx.compose.material3.CardDefaults.cardElevation(defaultElevation = 0.dp)) {
             Text("Раздел $ordinal", Modifier.padding(horizontal = 11.dp, vertical = 4.dp),
                 style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
         }

@@ -408,11 +408,11 @@ internal fun SettingSwitch(label: String, checked: Boolean, change: (Boolean) ->
 
 @Composable
 private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> Unit) {
-    Surface(
-        color = MaterialTheme.colorScheme.surface,
+    AgedPaperCard(
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         shape = RoundedCornerShape(AppRadius.medium),
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .42f)),
-        shadowElevation = 0.dp
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 15.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
@@ -469,10 +469,11 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
             }
         }
         item {
-            Surface(
-                color = MaterialTheme.colorScheme.primaryContainer,
+            AgedPaperCard(
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
                 shape = RoundedCornerShape(AppRadius.large),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .18f))
+                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .18f)),
+                elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
             ) {
                 Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement=Arrangement.spacedBy(8.dp), horizontalAlignment=Alignment.CenterHorizontally) {
                     Text("Предпросмотр",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)

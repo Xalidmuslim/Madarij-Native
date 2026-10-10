@@ -3,7 +3,7 @@ name: Madarij Optimized Release R8 + Android QA
 on:
   push:
     branches:
-      - codex/madarij-v132-paper-visual-fixes
+      - codex/madarij-v133-reader-no-flash-paper-cards
   workflow_dispatch:
 
 permissions:

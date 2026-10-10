@@ -285,10 +285,18 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                Box(Modifier.weight(1f).clip(RoundedCornerShape(14.dp)).background(BookColors.secondaryBackground).padding(4.dp)) {
-                    Box(Modifier.fillMaxWidth().clip(RoundedCornerShape(11.dp)).background(BookColors.lightGold).padding(vertical = 8.dp), contentAlignment = Alignment.Center) {
-                        Text("Том 1", style = MaterialTheme.typography.labelLarge, color = BookColors.ink)
-                    }
+                // Single parchment label: the previous two stacked Boxes
+                // formed an unwanted double contour around 'Том 1'.
+                Box(
+                    Modifier.weight(1f).heightIn(min = 43.dp)
+                        .clip(RoundedCornerShape(14.dp))
+                        .background(BookColors.card)
+                        .border(.7.dp, BookColors.gold.copy(alpha = .30f), RoundedCornerShape(14.dp)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                    Text("Том 1", style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
+                        color = BookColors.ink)
                 }
                 IconButton(onClick = { toolsVisible = !toolsVisible }) { NavigationGlyph("search", selected = toolsVisible, modifier = Modifier.size(21.dp)) }
             }
@@ -380,6 +388,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     val ink = if (light) BookColors.ink else BookColors.text
                     val shape = RoundedCornerShape(17.dp)
                     Box(Modifier.fillMaxWidth().clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
+                        PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(33.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
