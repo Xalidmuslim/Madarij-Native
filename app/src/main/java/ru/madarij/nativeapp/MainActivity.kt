@@ -10,6 +10,9 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.*
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -20,6 +23,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
@@ -49,6 +53,7 @@ internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Bo
 private fun BookRouteSurface(
     texture: Int?,
     dark: Boolean,
+    motionEnabled: Boolean = true,
     title: String? = null,
     subtitle: String? = null,
     showSearch: Boolean = true,
@@ -58,9 +63,16 @@ private fun BookRouteSurface(
     onTextSettings: () -> Unit = {},
     content: @Composable () -> Unit
 ) {
-    // The complete page is static and opaque from its very first frame.
-    // Do not apply translationY, alpha, overlays or graphicsLayer to text.
-    // They caused a visible frame-by-frame movement on every destination.
+    // The paper background remains fully opaque on the first frame.
+    // Only the text/controls receive a tiny 130ms opacity polish; no translated
+    // text, crossfading of old screens or additional full-screen paper layers.
+    var entryShown by remember { mutableStateOf(false) }
+    LaunchedEffect(motionEnabled) { entryShown = true }
+    val entranceAlpha by animateFloatAsState(
+        targetValue = if (!motionEnabled || entryShown) 1f else .88f,
+        animationSpec = tween(durationMillis = 130, easing = FastOutSlowInEasing),
+        label = "paper-content-entrance"
+    )
     Box(
         Modifier.fillMaxSize().background(
             if (dark) BookColors.nightBackground else BookColors.parchment
@@ -69,7 +81,12 @@ private fun BookRouteSurface(
         if (!dark && texture != null) {
             PreloadedBookImage(texture, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
-        Column(Modifier.fillMaxSize()) {
+        // Tear down the temporary alpha layer once the transition completes,
+        // avoiding extra GPU compositing during reading and scrolling.
+        val transientEffect = if (entranceAlpha < .999f)
+            Modifier.graphicsLayer { alpha = entranceAlpha }
+        else Modifier
+        Column(Modifier.fillMaxSize().then(transientEffect)) {
             if (title != null) MadarijTopBar(
                 title = title, subtitle = subtitle, canBack = false,
                 onBack = onBack, showSearch = showSearch,
@@ -207,17 +224,17 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 popEnterTransition = { EnterTransition.None },
                 popExitTransition = { ExitTransition.None }
             ) {
-                composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
-                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
-                composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Поиск", subtitle = "По всему первому тому", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SearchScreen(vm,openReader) } }
-                composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Закладки", subtitle = "Сохранённые места", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
-                composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Мои заметки", subtitle = "Личные записи", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
-                composable("progress") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Прогресс", subtitle = "Чтение и усвоение", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
-                composable("more") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Ещё", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { MoreScreen(navigate) } }
-                composable("settings") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Настройки", subtitle = "Текст, тема и чтение", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SettingsPanel(settings,vm::settings) } }
-                composable("about") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "О книге", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { AboutScreen() } }
-                composable("backup") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Резервная копия", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BackupScreen(vm) } }
-                composable("glossary") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Словарь", subtitle = "Термины и контекст", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { GlossaryScreen(openSource) } }
+                composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Поиск", subtitle = "По всему первому тому", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SearchScreen(vm,openReader) } }
+                composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Закладки", subtitle = "Сохранённые места", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Мои заметки", subtitle = "Личные записи", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
+                composable("progress") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Прогресс", subtitle = "Чтение и усвоение", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ProgressScreen(vm,{id,p -> openReader(id,p,"")},navigate) } }
+                composable("more") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Ещё", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { MoreScreen(navigate) } }
+                composable("settings") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Настройки", subtitle = "Текст, тема и чтение", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SettingsPanel(settings,vm::settings) } }
+                composable("about") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "О книге", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { AboutScreen() } }
+                composable("backup") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Резервная копия", subtitle = "", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BackupScreen(vm) } }
+                composable("glossary") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Словарь", subtitle = "Термины и контекст", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { GlossaryScreen(openSource) } }
                 composable(
                     "study?chapter={chapter}&review={review}",
                     arguments=listOf(
@@ -225,7 +242,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         navArgument("review") { type=NavType.BoolType; defaultValue=false }
                     )
                 ) { e ->
-                    BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", title = "Изучение", subtitle = "Проверки, задания и повторение", onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { StudyScreen(
+                    BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Изучение", subtitle = "Проверки, задания и повторение", onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { StudyScreen(
                             vm, openSource,
                             initialChapterId=e.arguments?.getString("chapter")?.takeIf {it.isNotEmpty()},
                             initialTab=if(e.arguments?.getBoolean("review")==true) 3 else if(!e.arguments?.getString("chapter").isNullOrEmpty()) 1 else 0
@@ -240,8 +257,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     )
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
-                    if(chapter==null) BookRouteSurface(readerPaperTexture, settings.theme == "dark") { }
-                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark") { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
+                    if(chapter==null) BookRouteSurface(readerPaperTexture, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { }
+                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),

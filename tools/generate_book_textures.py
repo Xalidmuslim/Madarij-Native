@@ -46,8 +46,11 @@ card.save(D/"card_paper.webp","WEBP",quality=74,method=6)
 # Keep aged corners but avoid cold green. This texture has no runtime cost.
 size=source("paper_sage.webp").size
 gray=ImageOps.grayscale(paper.resize(size,Image.Resampling.LANCZOS))
-gray=ImageEnhance.Contrast(gray).enhance(1.12)
-warm=ImageOps.colorize(gray,black=(190,181,153),white=(255,252,238))
-warm=Image.blend(warm,Image.new("RGB",warm.size,(241,240,229)),.28)
-warm.save(D/"paper_sage.webp","WEBP",quality=76,method=6)
+# Restore the antique fibers, worn corners and creases which were too faint.
+# Slightly warmer ivory-sage, desaturated and brighter than the warm parchment.
+gray=ImageEnhance.Contrast(gray).enhance(1.47)
+gray=ImageEnhance.Brightness(gray).enhance(.99)
+warm=ImageOps.colorize(gray,black=(176,163,135),white=(253,249,235))
+warm=Image.blend(warm,Image.new("RGB",warm.size,(245,241,228)),.12)
+warm.save(D/"paper_sage.webp","WEBP",quality=83,method=6)
 print("Generated: library_hero.webp, card_paper.webp, paper_sage.webp")
