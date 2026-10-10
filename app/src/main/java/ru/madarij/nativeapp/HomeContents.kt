@@ -355,7 +355,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             item(key = "group:${group.id}") {
                 val expanded = group.id in openedGroups || query.isNotBlank()
                 val count = group.items.count { it.chapterId in readIds }
-                Card(
+                AgedPaperCard(
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .90f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
@@ -398,7 +398,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 }
 
                 if (chapter.chapterId in openedChapters || query.isNotBlank()) items(chapter.topics, key = { "topic:${chapter.chapterId}:${it.paragraphId}:${it.title}" }) { topic ->
-                    Card(
+                    AgedPaperCard(
                         onClick = { open(chapter.chapterId, topic.paragraphId) },
                         modifier = Modifier.fillMaxWidth().padding(start = 20.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),
