@@ -97,7 +97,12 @@ internal fun Soft3DPanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
         .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground)
+            Image(painterResource(R.drawable.reference_paper), null,
+                Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .23f)
+        content()
+    }
 }
 
 @Composable
@@ -184,7 +189,10 @@ internal fun MadarijTopBar(
 }
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Box(Modifier.fillMaxWidth().height(66.dp).background(BookColors.leather)) {
+    Box(Modifier.fillMaxWidth().height(68.dp)
+        .clip(RoundedCornerShape(19.dp))
+        .background(BookColors.leather)
+        .border(.7.dp, BookColors.lightGold.copy(alpha = .43f), RoundedCornerShape(19.dp))) {
         Image(
             painter = painterResource(R.drawable.navigation_leather),
             contentDescription = null,

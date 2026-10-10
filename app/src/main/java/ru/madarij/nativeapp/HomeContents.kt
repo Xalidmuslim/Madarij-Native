@@ -70,16 +70,18 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     Box(Modifier.fillMaxSize().background(BookColors.parchment)) {
         Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
             contentScale = ContentScale.FillBounds, alpha = .27f)
+        Image(painterResource(R.drawable.library_hero), null,
+            Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
+            contentScale = ContentScale.Crop, alignment = Alignment.Center)
+        Box(Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp)
+            .background(Brush.verticalGradient(listOf(Color.Transparent, Color.Transparent,
+                BookColors.parchment.copy(alpha = .16f), BookColors.parchment))))
         LazyColumn(
-            contentPadding = PaddingValues(start = 14.dp, end = 14.dp, bottom = 12.dp),
+            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 12.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             item {
-                Box(Modifier.fillMaxWidth().height(236.dp).clip(RoundedCornerShape(bottomStart = 12.dp, bottomEnd = 12.dp))) {
-                    Image(painterResource(R.drawable.library_hero), null, Modifier.matchParentSize(),
-                        contentScale = ContentScale.Crop, alignment = Alignment.TopCenter)
-                    Box(Modifier.matchParentSize().background(Brush.horizontalGradient(
-                        listOf(Color(0xB91A100A), Color(0x401B120C), Color.Transparent))))
+                Box(Modifier.fillMaxWidth().height(258.dp)) {
                     Row(Modifier.fillMaxWidth().statusBarsPadding()
                         .padding(start = 18.dp, end = 8.dp, top = 16.dp)) {
                         Column(Modifier.weight(1f)) {
@@ -103,7 +105,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
             }
             if (excerpt.isNotBlank()) item {
                 val shape = RoundedCornerShape(17.dp)
-                Box(Modifier.fillMaxWidth().clip(shape)
+                Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
                     .border(1.dp, BookColors.gold.copy(alpha = .33f), shape)) {
                     Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
@@ -131,7 +133,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 Button(
                     onClick = { (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it, null) } },
                     enabled = chapters.isNotEmpty(),
-                    modifier = Modifier.fillMaxWidth().height(48.dp),
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp).height(48.dp),
                     shape = RoundedCornerShape(15.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = BookColors.leather,
                         contentColor = Color(0xFFF8E7CE)),
@@ -146,30 +148,30 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 }
             }
             item {
-                Text("Быстрый доступ", Modifier.padding(start = 2.dp, top = 2.dp),
+                Text("Быстрый доступ", Modifier.padding(start = 16.dp, top = 2.dp),
                     style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif),
                     color = BookColors.ink)
             }
             item {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     HomeAction("Содержание", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
                     HomeAction("Поиск", "По всему тому", "search", Modifier.weight(1f)) { navigate("search") }
                 }
             }
             item {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     HomeAction("Изучение", "Проверки и задания", "study", Modifier.weight(1f)) { navigate("study") }
                     HomeAction("Словарь", "Термины и контекст", "glossary", Modifier.weight(1f)) { navigate("glossary") }
                 }
             }
             item {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     HomeAction("Закладки", "Сохранено · ${bookmarks.size}", "bookmarks", Modifier.weight(1f)) { navigate("bookmarks") }
                     HomeAction("Заметки", "Личные записи · ${notes.size}", "notes", Modifier.weight(1f)) { navigate("notes") }
                 }
             }
             item {
-                Row(Modifier.fillMaxWidth().padding(vertical = 5.dp),
+                Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 5.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     listOf(
                         "${read.size}" to "Прочитано",

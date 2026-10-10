@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 23
-        versionName = "1.23-parchment-navigation"
+        versionCode = 24
+        versionName = "1.24-floating-antique-book"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {

@@ -83,13 +83,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 // Keep the native window behind Compose the same colour as the active theme.
                 // During reader-to-reader slide transitions this prevents a black rectangle/frame
                 // from showing through the moving composables on some Android devices.
-                window.setBackgroundDrawable(ColorDrawable((if (route == "home") BookColors.leather else colors.background).toArgb()))
+                window.setBackgroundDrawable(ColorDrawable(colors.background.toArgb()))
                 @Suppress("DEPRECATION")
-                window.navigationBarColor = BookColors.leather.toArgb()
+                window.navigationBarColor = colors.background.toArgb()
                 if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
                 WindowCompat.getInsetsController(window, window.decorView).apply {
                     isAppearanceLightStatusBars = settings.theme != "dark" && route != "home"
-                    isAppearanceLightNavigationBars = false
+                    isAppearanceLightNavigationBars = settings.theme != "dark"
                 }
             }
         }
@@ -150,7 +150,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         Box(Modifier.fillMaxSize().background(colors.background)) {
             // One continuous paper image behind all non-home pages and behind the status bar.
             // Never reuse the home illustration as a navigation backdrop.
-            if (route != "home" && settings.theme != "dark") {
+            if (settings.theme != "dark") {
                 Image(painterResource(R.drawable.reference_paper), null,
                     Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
             }
@@ -170,31 +170,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     onBookmarks = { navigate("bookmarks") }
                 )
             },
-            bottomBar = {
-                Column(Modifier.background(BookColors.leather).navigationBarsPadding()) {
-                    MaterialTheme(colorScheme = colors) {
-                    MadarijBottomBar(tabs, selectedTab) { destination ->
-                        when {
-                            destination == "home" -> nav.navigate("home") {
-                                popUpTo(nav.graph.startDestinationId) { inclusive=false; saveState=false }
-                                launchSingleTop=true; restoreState=false
-                            }
-                            destination == "contents" && shouldOpenContentsRoot(route) -> {
-                                if(!nav.popBackStack("contents",false)) nav.navigate("contents") {
-                                    popUpTo(nav.graph.startDestinationId) { inclusive=false; saveState=false }
-                                    launchSingleTop=true; restoreState=false
-                                }
-                            }
-                            destination == "contents" -> Unit
-                            else -> nav.navigate(destination) {
-                                popUpTo(nav.graph.startDestinationId) { saveState=true }
-                                launchSingleTop=true; restoreState=true
-                            }
-                        }
-                    }
-                    }
-                }
-            }
+            bottomBar = {}
         ) { padding ->
             Box(
                 Modifier
@@ -206,13 +182,13 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             NavHost(
                 navController = nav,
                 startDestination = "home",
-                modifier = Modifier.fillMaxSize().background(Color.Transparent),
+                modifier = Modifier.fillMaxSize().navigationBarsPadding().padding(bottom = 86.dp).background(Color.Transparent),
                 // Keep one stable parchment background throughout navigation; no translated old screen.
-                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(135)) },
+                enterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
                 // Do not keep the previous screen's pixels behind the next one.
-                exitTransition = { if (reduceMotion) ExitTransition.None else fadeOut(tween(1)) },
-                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(135)) },
-                popExitTransition = { if (reduceMotion) ExitTransition.None else fadeOut(tween(1)) }
+                exitTransition = { ExitTransition.None },
+                popEnterTransition = { if (reduceMotion) EnterTransition.None else fadeIn(tween(160)) },
+                popExitTransition = { ExitTransition.None }
             ) {
                 composable("home") { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate) }
                 composable("contents") { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } }
@@ -264,6 +240,31 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         }
                     )
                 }
+            }
+            Box(
+                Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
+                    .navigationBarsPadding()
+                    .padding(horizontal = 12.dp, vertical = 9.dp)
+            ) {
+MadarijBottomBar(tabs, selectedTab) { destination ->
+    when {
+        destination == "home" -> nav.navigate("home") {
+            popUpTo(nav.graph.startDestinationId) { inclusive=false; saveState=false }
+            launchSingleTop=true; restoreState=false
+        }
+        destination == "contents" && shouldOpenContentsRoot(route) -> {
+            if(!nav.popBackStack("contents",false)) nav.navigate("contents") {
+                popUpTo(nav.graph.startDestinationId) { inclusive=false; saveState=false }
+                launchSingleTop=true; restoreState=false
+            }
+        }
+        destination == "contents" -> Unit
+        else -> nav.navigate(destination) {
+            popUpTo(nav.graph.startDestinationId) { saveState=true }
+            launchSingleTop=true; restoreState=true
+        }
+    }
+
             }
             }
         }
