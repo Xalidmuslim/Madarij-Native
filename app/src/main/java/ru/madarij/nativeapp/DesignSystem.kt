@@ -97,12 +97,7 @@ internal fun Soft3DPanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
         .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
-        if (MaterialTheme.colorScheme.background != BookColors.nightBackground)
-            Image(painterResource(R.drawable.reference_paper), null,
-                Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .23f)
-        content()
-    }
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
 }
 
 @Composable
@@ -205,6 +200,11 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
         ) {
             items.forEach { (destination, label) ->
                 val active = selected == destination
+                val labelColor by androidx.compose.animation.animateColorAsState(
+                    targetValue = if (active) BookColors.lightGold else Color(0xFFB9A793),
+                    animationSpec = androidx.compose.animation.core.tween(110),
+                    label = "tab-color"
+                )
                 Column(
                     Modifier.weight(1f).fillMaxHeight()
                         .clip(RoundedCornerShape(10.dp))
@@ -216,13 +216,13 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     NavigationGlyph(
                         destination, selected = active,
                         modifier = Modifier.size(22.dp),
-                        tint = if (active) BookColors.lightGold else Color(0xFFB9A793)
+                        tint = labelColor
                     )
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
                         style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
-                        color = if (active) BookColors.lightGold else Color(0xFFB9A793),
+                        color = labelColor
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
@@ -431,9 +431,11 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
         item {
             SettingsGroup("Оформление") {
                 Text("Фон чтения", style = MaterialTheme.typography.labelLarge)
-                ReadingPaperSelector(value.theme) { update(value.copy(theme = it)) }
+                ReadingPaperSelector(value.paperTone) { newTone ->
+                    update(value.copy(paperTone = newTone, theme = if (value.theme == "dark") "sepia" else value.theme))
+                }
                 SettingSwitch("Ночной режим", value.theme == "dark",
-                    { update(value.copy(theme = if (it) "dark" else "light")) })
+                    { update(value.copy(theme = if (it) "dark" else "sepia")) })
                 Text("Русский шрифт", style = MaterialTheme.typography.labelLarge)
                 Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { listOf("sans" to "Стандартный", "book" to "Книжный", "serif" to "С засечками").forEach { (key,label) -> FilterChip(value.russianFont == key, { update(value.copy(russianFont = key)) }, { Text(label) }) } }
                 ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}", value.russianSize, 14f..36f) { update(value.copy(russianSize = it)) }
@@ -479,25 +481,26 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
 @Composable
 internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
     val options = listOf(
-        Triple("light", "Светлая", R.drawable.paper_light),
-        Triple("sage", "Мягкий шалфей", R.drawable.paper_sage)
+        Triple("warm", "Тёплый", R.drawable.reference_paper),
+        Triple("light", "Светлый", R.drawable.paper_light),
+        Triple("sage", "Светлый шалфей", R.drawable.paper_sage)
     )
-    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
         options.forEach { (key, label, drawable) ->
-            val active = (if (selected == "sage") "sage" else "light") == key
+            val active = selected == key
             val frame = RoundedCornerShape(13.dp)
             Column(
                 Modifier.weight(1f).clip(frame)
                     .border(if (active) 1.5.dp else .7.dp,
                         if (active) BookColors.gold else BookColors.gold.copy(alpha = .27f), frame)
-                    .clickable { change(key) }.padding(7.dp),
+                    .clickable { change(key) }.padding(5.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(7.dp)
             ) {
-                Box(Modifier.fillMaxWidth().height(84.dp).clip(RoundedCornerShape(9.dp))) {
+                Box(Modifier.fillMaxWidth().height(72.dp).clip(RoundedCornerShape(9.dp))) {
                     Image(painterResource(drawable), contentDescription = null,
                         modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
-                    Text("Степени\nидущих", Modifier.align(Alignment.CenterStart).padding(start = 12.dp),
+                    Text("Степени\nидущих", Modifier.align(Alignment.CenterStart).padding(start = 6.dp),
                         style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif),
                         color = BookColors.ink)
                 }

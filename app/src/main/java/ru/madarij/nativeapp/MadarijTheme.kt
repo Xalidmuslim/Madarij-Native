@@ -39,9 +39,9 @@ internal fun bookDarkColors() = darkColorScheme(
 @Suppress("UNUSED_PARAMETER")
 internal fun bookReaderColors(settings: ReadingSettings, systemDark: Boolean): ColorScheme {
     if (settings.theme == "dark") return bookDarkColors()
-    val paper = when (settings.theme) {
-        "light" -> Color(0xFFF6EBD9)
-        "sage" -> Color(0xFFE3E6D3)
+    val paper = when (settings.paperTone) {
+        "light" -> Color(0xFFF7EFE4)
+        "sage" -> Color(0xFFEBECE0)
         else -> BookColors.parchment
     }
     return lightColorScheme(

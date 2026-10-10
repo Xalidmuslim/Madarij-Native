@@ -68,8 +68,6 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     }
 
     Box(Modifier.fillMaxSize().background(BookColors.parchment)) {
-        Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
-            contentScale = ContentScale.FillBounds, alpha = .27f)
         Image(painterResource(R.drawable.library_hero), null,
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)
@@ -108,8 +106,6 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
                     .border(1.dp, BookColors.gold.copy(alpha = .33f), shape)) {
-                    Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(),
-                        contentScale = ContentScale.FillBounds, alpha = .28f)
                     Row(Modifier.padding(horizontal = 17.dp, vertical = 12.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(Modifier.weight(1f)) {
@@ -202,8 +198,6 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
         warm = true,
         onClick = onClick
     ) {
-        Image(painterResource(R.drawable.reference_paper), null,
-            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .15f)
         Column(
             Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 8.dp),
             verticalArrangement = Arrangement.spacedBy(2.dp)
@@ -378,7 +372,6 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     val ink = if (light) BookColors.ink else BookColors.text
                     val shape = RoundedCornerShape(17.dp)
                     Box(Modifier.fillMaxWidth().clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
-                        Image(painterResource(R.drawable.reference_paper), null, Modifier.matchParentSize(), contentScale = ContentScale.FillBounds, alpha = .20f)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(33.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {

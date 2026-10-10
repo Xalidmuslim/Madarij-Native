@@ -11,10 +11,12 @@ private val Context.settingsStore by preferencesDataStore("reading_settings")
 data class ReadingSettings(
     val theme: String = "system", val russianSize: Float = 16f, val arabicSize: Float = 26f,
     val lineHeight: Float = 1.6f, val russianFont: String = "sans", val showArabic: Boolean = false,
-    val showNotes: Boolean = true, val textWidth: Float = 1f, val alignment: String = "start", val arabicFont: String = "naskh", val brightness: Float = -1f, val reducedMotion: Boolean = false
+    val showNotes: Boolean = true, val textWidth: Float = 1f, val alignment: String = "start", val arabicFont: String = "naskh", val brightness: Float = -1f, val reducedMotion: Boolean = false,
+    val paperTone: String = "warm"
 ) {
     fun bounded() = copy(
         theme = theme.takeIf { it in setOf("system", "light", "dark", "sepia", "sage") } ?: "system",
+        paperTone = paperTone.takeIf { it in setOf("warm", "light", "sage") } ?: "warm",
         russianSize = russianSize.finiteOr(16f).coerceIn(14f, 36f),
         arabicSize = arabicSize.finiteOr(26f).coerceIn(20f, 44f),
         lineHeight = lineHeight.finiteOr(1.6f).coerceIn(1.3f, 2.2f),
@@ -28,6 +30,7 @@ data class ReadingSettings(
 private fun Float.finiteOr(default: Float) = if (isFinite()) this else default
 class SettingsRepository(private val context: Context) {
     private val theme = stringPreferencesKey("theme")
+    private val paperToneKey = stringPreferencesKey("paperTone")
     private val russian = floatPreferencesKey("russianSize")
     private val arabic = floatPreferencesKey("arabicSize")
     private val line = floatPreferencesKey("lineHeight")
@@ -44,7 +47,8 @@ class SettingsRepository(private val context: Context) {
     }.map {
         ReadingSettings(it[theme] ?: "system", it[russian] ?: 16f, it[arabic] ?: 26f,
             it[line] ?: 1.6f, it[font] ?: "sans", it[showArabic] ?: false,
-            it[showNotes] ?: true, it[width] ?: 1f, it[alignment] ?: "start", it[arabicFont] ?: "naskh", it[brightness] ?: -1f, it[motion] ?: false).bounded()
+            it[showNotes] ?: true, it[width] ?: 1f, it[alignment] ?: "start", it[arabicFont] ?: "naskh", it[brightness] ?: -1f, it[motion] ?: false,
+            it[paperToneKey] ?: when (it[theme]) { "sage" -> "sage"; "light" -> "light"; else -> "warm" }).bounded()
     }
     suspend fun update(value: ReadingSettings) {
         val v = value.bounded()
@@ -53,6 +57,7 @@ class SettingsRepository(private val context: Context) {
             it[line] = v.lineHeight; it[font] = v.russianFont; it[showArabic] = v.showArabic
             it[arabicFont] = v.arabicFont; it[brightness] = v.brightness; it[motion] = v.reducedMotion
             it[showNotes] = v.showNotes; it[width] = v.textWidth; it[alignment] = v.alignment
+            it[paperToneKey] = v.paperTone
         }
     }
 }
