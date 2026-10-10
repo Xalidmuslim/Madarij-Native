@@ -222,7 +222,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     Text(
                         label,
                         style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
-                        color = labelColor
+                        color = labelColor,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )

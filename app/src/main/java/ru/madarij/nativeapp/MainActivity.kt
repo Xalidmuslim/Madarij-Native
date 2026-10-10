@@ -247,7 +247,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             Box(
                 Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                     .navigationBarsPadding()
-                    .padding(horizontal = 24.dp, top = 8.dp, bottom = 19.dp)
+                    .padding(horizontal = 24.dp).padding(top = 8.dp, bottom = 19.dp)
             ) {
 MadarijBottomBar(tabs, selectedTab) { destination ->
     when {
