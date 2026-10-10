@@ -156,8 +156,9 @@ internal fun HomeScreen(
                     shadowElevation = 0.dp
                 ) {
                     Box(Modifier.fillMaxSize()) {
-                        PreloadedBookImage(R.drawable.cta_leather,
-                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                        // Match the bottom floating bar's EXACT leather and gold edge.
+                        PreloadedBookImage(R.drawable.navigation_leather,
+                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
                         Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
                             verticalAlignment = Alignment.CenterVertically) {
                             NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
@@ -234,12 +235,15 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
         onClick = onClick
     ) {
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 9.dp, vertical = 9.dp),
+            // Fill the card's minimum height: without fillMaxSize this Row was
+            // measured at the top of its 73dp container.
+            Modifier.fillMaxSize().padding(horizontal = 9.dp, vertical = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
             AntiqueHomeIcon(glyph)
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp),
+                horizontalAlignment = Alignment.Start) {
                 Text(title,
                     style = MaterialTheme.typography.titleSmall.copy(
                         fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp),
