@@ -1,7 +1,7 @@
 package ru.madarij.nativeapp
 
 import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.*
@@ -20,6 +20,13 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import kotlin.math.floor
 import kotlin.math.sin
+
+/** Natural, unhurried pen cadence for a Cyrillic quote card.
+ * Real phrases take 5.5–12 seconds; each letter's advance stays uniform.
+ * Pure for regression checks, without a clock or device dependency.
+ */
+internal fun reedPenDurationMillis(charCount: Int): Int =
+    (charCount.coerceAtLeast(0) * 58).coerceIn(5500, 12000)
 
 /**
  * A compact, fully native reed-pen handwriting reveal.
@@ -47,8 +54,8 @@ internal fun ReedPenWritingText(
             ink.snapTo(0f)
             ink.animateTo(
                 1f, animationSpec = tween(
-                    durationMillis = (1700 + text.length * 9).coerceIn(2200, 3900),
-                    easing = FastOutSlowInEasing
+                    durationMillis = reedPenDurationMillis(text.length),
+                    easing = LinearEasing
                 )
             )
         }
@@ -64,9 +71,11 @@ internal fun ReedPenWritingText(
             modifier = Modifier.fillMaxWidth().drawWithContent {
                 val amount = ink.value.coerceIn(0f, 1f)
                 val layout = measured
-                if (amount >= 0.9999f || layout == null || text.isEmpty()) {
+                if (amount >= 0.9999f || text.isEmpty()) {
                     drawContent()
-                } else if (amount > 0f) {
+                } else if (layout != null && amount > 0f) {
+                    // The first layout pass may not have bounds yet.
+                    // Never flash a fully visible quotation before the pen starts.
                     val position = (amount * text.length).coerceIn(0f, text.length.toFloat())
                     val charIndex = floor(position).toInt().coerceIn(0, text.length - 1)
                     val fraction = (position - charIndex).coerceIn(0f, 1f)
