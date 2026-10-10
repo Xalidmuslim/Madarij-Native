@@ -58,9 +58,10 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     val percent = if (chapters.isEmpty()) 0 else read.size * 100 / chapters.size
     val lastTitle = chapters.find { it.id == last?.chapterId }?.let(groups::findTitle)
 
-    var excerpt by remember { mutableStateOf("") }
+    // Do not drop and reinsert the quotation when HOME is restored.
+    var excerpt by rememberSaveable { mutableStateOf("") }
     LaunchedEffect(chapters.firstOrNull()?.id) {
-        chapters.firstOrNull()?.id?.let { id ->
+        if (excerpt.isBlank()) chapters.firstOrNull()?.id?.let { id ->
             val text = withContext(Dispatchers.IO) {
                 vm.repository.dao.paragraphs(id).firstOrNull {
                     it.role !in listOf("editor_note", "edition_note") && it.ru.length > 80
@@ -71,7 +72,9 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
         }
     }
 
-    Box(Modifier.fillMaxSize().background(BookColors.parchment)) {
+    // BookRouteSurface paints the aged-paper sheet once beneath this screen.
+    // A solid beige HomeScreen layer previously concealed that book texture.
+    Box(Modifier.fillMaxSize()) {
         Image(painterResource(R.drawable.library_hero), null,
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)
