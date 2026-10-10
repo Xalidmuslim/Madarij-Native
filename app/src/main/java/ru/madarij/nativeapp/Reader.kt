@@ -77,7 +77,6 @@ fun Reader(
     val groups = rememberStructure()
     val chapterGroup = groups.find { g -> g.items.any { it.chapterId == chapter.id } }
     val chapterStructure = chapterGroup?.items?.find { it.chapterId == chapter.id }
-    val topicsByParagraph = remember(chapterStructure) { chapterStructure?.topics?.associateBy { it.paragraphId }.orEmpty() }
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
     val learning = remember { LearningRepository(context.applicationContext) }
     val termsByParagraph = remember(learning) { learning.terms.groupBy { it.sourceParagraphId } }
@@ -225,7 +224,14 @@ fun Reader(
                     ReaderControl("‹") { onBack() }
                     Column(Modifier.weight(1f).clickable { chapterPanel = true },horizontalAlignment = Alignment.CenterHorizontally) {
                         Text("Том ${chapter.volume}",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
-                        Text(chapterStructure?.title ?: chapter.title,style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 1,overflow = TextOverflow.Ellipsis)
+                        // Full editorial title belongs in the frontispiece / chapter
+                        // contents. In this compact toolbar its ellipsis looked like
+                        // a broken text transfer during scrolling.
+                        Text("Раздел ${chapterIndex + 1}",
+                            style = MaterialTheme.typography.labelMedium.copy(
+                                fontFamily = BookSerif, fontWeight = FontWeight.Normal),
+                            color = MaterialTheme.colorScheme.onSurface)
+
                     }
                     IconButton(onClick = { newBookmark(currentParagraph) }) {
                         NavigationGlyph("bookmarks", selected = true, modifier = Modifier.size(22.dp))
@@ -262,11 +268,19 @@ fun Reader(
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
-        Box(Modifier.weight(1f).fillMaxWidth().background(Color.Transparent)) {
+        // The floating bottom bar overlays the paper image, but must NOT cover
+        // actual reading text. Reserve its 62dp height, its outer 4dp gap, the
+        // system gesture inset and a small breathing gap in the reader viewport.
+        // The paper texture still extends behind the floating navigation.
+        val readerBottomInset = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
+        Box(
+            Modifier.weight(1f).fillMaxWidth().background(Color.Transparent)
+                .padding(bottom = readerBottomInset + 76.dp)
+        ) {
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize().then(swipeModifier),
-                contentPadding = PaddingValues(top = 0.dp, bottom = 122.dp),
+                contentPadding = PaddingValues(top = 8.dp, bottom = 22.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
             ) {
@@ -281,24 +295,9 @@ fun Reader(
                 val isNote = p.role in listOf("editor_note", "edition_note")
                 var expanded by rememberSaveable(p.id) { mutableStateOf(anchor == p.id && isNote) }
                 Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = if (settings.textWidth < .85f) 16.dp else 28.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    topicsByParagraph[p.id]?.let { topic ->
-                        Column(
-                            Modifier.fillMaxWidth().padding(top = 5.dp, bottom = 7.dp),
-                            verticalArrangement = Arrangement.spacedBy(3.dp)
-                        ) {
-                            Text(
-                                if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА",
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.primary
-                            )
-                            Text(
-                                topic.title,
-                                style = MaterialTheme.typography.titleMedium,
-                                fontFamily = russianFamily(settings),
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
-                        }
-                    }
+                    // Editorial TOC headings belong to "Содержание раздела", not
+                    // to the author's continuous prose. Source section markers
+                    // are rendered from the real book text by splitReaderText().
                     if (isNote) {
                         Soft3DPanel(
                             modifier = Modifier.fillMaxWidth(),
@@ -397,7 +396,10 @@ fun Reader(
             Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }
-                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 2,overflow = TextOverflow.Ellipsis)
+                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),
+                        style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,
+                            fontWeight = FontWeight.Normal),
+                        color = MaterialTheme.colorScheme.onSurface, softWrap = true)
                     IconButton(onClick = { newBookmark(currentParagraph) }) { NavigationGlyph("bookmarks",selected = true,modifier = Modifier.size(21.dp)) }
                 }
                 Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
