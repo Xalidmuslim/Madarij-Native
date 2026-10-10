@@ -68,21 +68,33 @@ fun Reader(
     val actionScope = rememberCoroutineScope()
     // A chapter transition must never inherit the previous chapter's end-of-list
     // position. Otherwise the 'Отметить прочитанным' footer flashes briefly.
-    val listState = remember(chapter.id) { androidx.compose.foundation.lazy.LazyListState() }
     val chapters by vm.chapters.collectAsStateWithLifecycle()
+    val members = remember(chapters, chapter.id) {
+        LogicalReadingSections.members(chapters, chapter.id).ifEmpty { listOf(chapter) }
+    }
+    val memberIds = remember(members) { members.map { it.id } }
+    val sectionKey = remember(memberIds) { memberIds.joinToString("|") }
+    val sectionRoot = members.first()
+    val sectionId = sectionRoot.id
+    val logicalChapters = remember(chapters) { LogicalReadingSections.roots(chapters) }
+    val chapterIndex = logicalChapters.indexOfFirst { it.id == sectionId }
+    val listState = remember(sectionId) { androidx.compose.foundation.lazy.LazyListState() }
     val read by vm.read.collectAsStateWithLifecycle()
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle()
-    val notesFlow = remember(chapter.id) { vm.repository.dao.notes(chapter.id) }
-    val notes by notesFlow.collectAsStateWithLifecycle(emptyList())
+    val allNotes by vm.notes.collectAsStateWithLifecycle()
+    val notes = remember(allNotes, memberIds) { allNotes.filter { it.chapterId in memberIds } }
     val groups = rememberStructure()
-    val chapterGroup = groups.find { g -> g.items.any { it.chapterId == chapter.id } }
-    val chapterStructure = chapterGroup?.items?.find { it.chapterId == chapter.id }
+    val chapterGroup = groups.find { g -> g.items.any { it.chapterId == sectionId } }
+    val chapterStructure = chapterGroup?.items?.find { it.chapterId == sectionId }
+    val sectionTopics = remember(groups, memberIds) {
+        groups.flatMap { it.items }.filter { it.chapterId in memberIds }.flatMap { it.topics }
+    }
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
     val learning = remember { LearningRepository(context.applicationContext) }
     val termsByParagraph = remember(learning) { learning.terms.groupBy { it.sourceParagraphId } }
-    var paragraphs by remember(chapter.id) { mutableStateOf<List<Paragraph>>(emptyList()) }
-    var loaded by remember(chapter.id) { mutableStateOf(false) }
-    var ready by remember(chapter.id) { mutableStateOf(false) }
+    var paragraphs by remember(sectionKey) { mutableStateOf<List<Paragraph>>(emptyList()) }
+    var loaded by remember(sectionKey) { mutableStateOf(false) }
+    var ready by remember(sectionKey) { mutableStateOf(false) }
     var anchorConsumed by rememberSaveable(chapter.id, anchor) { mutableStateOf(false) }
     var matchRevealed by rememberSaveable(chapter.id, anchor, query) { mutableStateOf(false) }
     var loadingError by remember(chapter.id) { mutableStateOf("") }
@@ -108,18 +120,22 @@ fun Reader(
     val displayRussian = remember(paragraphs, query) { if (query.isBlank()) buildReaderDisplayRussian(paragraphs) else paragraphs.associate { it.id to it.ru } }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
     fun savePosition() {
-        if (ready) currentParagraph?.let { vm.savePosition(chapter.id, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
+        if (ready) currentParagraph?.let { vm.savePosition(sectionId, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
     }
     fun recordTime() {
         if (activeSince[0] > 0L) {
             val now = SystemClock.elapsedRealtime()
             val seconds = ((now - activeSince[0]) / 1000).toInt()
-            if (seconds > 0 && ready) currentParagraph?.let { vm.recordReading(chapter.id, it.id, seconds) }
+            if (seconds > 0 && ready) currentParagraph?.let { vm.recordReading(sectionId, it.id, seconds) }
             activeSince[0] = now
         }
     }
-    LaunchedEffect(chapter.id, retry) {
-        try { paragraphs = vm.repository.dao.paragraphs(chapter.id); loaded = true; loadingError = "" }
+    LaunchedEffect(sectionKey, retry) {
+        try {
+            paragraphs = members.flatMap { vm.repository.dao.paragraphs(it.id) }
+            loaded = true
+            loadingError = ""
+        }
         catch (e: kotlinx.coroutines.CancellationException) { throw e }
         catch (_: Exception) { loadingError = "Не удалось открыть текст. Повторите загрузку." }
     }
@@ -131,6 +147,7 @@ fun Reader(
                 listState.scrollToItem(0, 0)
             } else {
                 val old = vm.repository.dao.position(chapter.id)
+                    ?: vm.repository.dao.position(sectionId)
                 val target = if (anchor != null && !anchorConsumed) anchor else old?.paragraphId
                 val found = visible.indexOfFirst { it.id == target }
                 if (found >= 0) listState.scrollToItem(found + 1, if (target == anchor && !anchorConsumed) 0 else old?.offset ?: 0)
@@ -160,18 +177,17 @@ fun Reader(
     LaunchedEffect(chapter.id, ready) { if (ready) while (true) { delay(30_000); recordTime() } }
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
     fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + (if (settings.showArabic && p.ar.isNotBlank()) p.ar + "\n\n" else "") + p.ru
-    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapter.title}\nЛитературная сверка завершена · проверка источников отдельно\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
+    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\nЛитературная сверка завершена · проверка источников отдельно\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
     fun copy(text: String) { (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText(chapter.title, text)); message = "Текст скопирован" }
     fun share(text: String) { context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_SUBJECT, chapter.title); putExtra(Intent.EXTRA_TEXT, text) }, "Поделиться текстом")) }
-    fun newBookmark(paragraph: Paragraph?) { bookmarkAnchor = paragraph?.id; val existing=bookmarks.find {it.chapterId==chapter.id && it.paragraphId==paragraph?.id};bookmarkTitle = existing?.title ?: chapter.title; bookmarkNote = existing?.note.orEmpty(); bookmarkDialog = true }
+    fun newBookmark(paragraph: Paragraph?) { bookmarkAnchor = paragraph?.id; val existing=bookmarks.find {it.chapterId==(paragraph?.chapterId ?: sectionId) && it.paragraphId==paragraph?.id};bookmarkTitle = existing?.title ?: (chapterStructure?.title ?: sectionRoot.title); bookmarkNote = existing?.note.orEmpty(); bookmarkDialog = true }
     fun newNote(paragraph: Paragraph?) { noteAnchor = paragraph?.id; noteText = ""; noteDialog = true }
     val progress by remember(visible) { derivedStateOf { if (visible.isEmpty()) 0 else ((listState.firstVisibleItemIndex.toFloat() / visible.size) * 100).toInt().coerceIn(0, 100) } }
-    val chapterIndex = chapters.indexOfFirst { it.id == chapter.id }
     val density = androidx.compose.ui.platform.LocalDensity.current
     val backGestureInset = with(density) { 48.dp.toPx() }
     val swipeThreshold = with(density) { 56.dp.toPx() }
     val swipeLockDistance = with(density) { 9.dp.toPx() }
-    val swipeModifier = Modifier.pointerInput(chapter.id, chapters, backGestureInset, swipeThreshold, swipeLockDistance) {
+    val swipeModifier = Modifier.pointerInput(sectionId, logicalChapters, backGestureInset, swipeThreshold, swipeLockDistance) {
         awaitEachGesture {
             val down = awaitFirstDown(requireUnconsumed = false)
             var totalX = 0f
@@ -204,7 +220,7 @@ fun Reader(
                     ReaderPageSwipe.PREVIOUS -> chapterIndex - 1
                     null -> -1
                 }
-                chapters.getOrNull(targetIndex)?.let { target ->
+                logicalChapters.getOrNull(targetIndex)?.let { target ->
                     savePosition()
                     recordTime()
                     navigate(target.id)
@@ -227,7 +243,7 @@ fun Reader(
                         // Full editorial title belongs in the frontispiece / chapter
                         // contents. In this compact toolbar its ellipsis looked like
                         // a broken text transfer during scrolling.
-                        Text("Раздел ${chapterIndex + 1}",
+                        Text(chapterStructure?.title ?: "Смысловой раздел ${chapterIndex + 1}",
                             style = MaterialTheme.typography.labelMedium.copy(
                                 fontFamily = BookSerif, fontWeight = FontWeight.Normal),
                             color = MaterialTheme.colorScheme.onSurface)
@@ -286,7 +302,8 @@ fun Reader(
             ) {
             item(key = "heading") {
                 Column(Modifier.fillMaxWidth()) {
-                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: chapter.title, chapterStructure?.subtitle, settings.theme == "dark")
+                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: sectionRoot.title,
+                        LogicalReadingSections.pageRange(sectionId), settings.theme == "dark")
                     if(query.isNotBlank()) Text("Найденный текст: «$query»",Modifier.padding(horizontal = 24.dp,vertical = 8.dp),style = MaterialTheme.typography.labelMedium,color = MaterialTheme.colorScheme.primary)
                 }
             }
@@ -371,18 +388,18 @@ fun Reader(
                 Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                     HorizontalDivider()
                     Text("Конец раздела", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    val isRead = read.any { it.chapterId == chapter.id }
-                    Button(onClick = { if (isRead) vm.markUnread(chapter.id) else vm.markRead(chapter.id) }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary, contentColor = MaterialTheme.colorScheme.onTertiary), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp), elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)) { Text(if (isRead) "Прочитано ✓ · Снять отметку" else "Отметить прочитанным") }
+                    val isRead = members.all { member -> read.any { it.chapterId == member.id } }
+                    Button(onClick = { members.forEach { if (isRead) vm.markUnread(it.id) else vm.markRead(it.id) } }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary, contentColor = MaterialTheme.colorScheme.onTertiary), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp), elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)) { Text(if (isRead) "Прочитано ✓ · Снять отметку" else "Отметить прочитанным") }
                     OutlinedButton(onClick = { savePosition(); onStudy(chapter.id) }, modifier = Modifier.fillMaxWidth()) { Text("Проверить понимание") }
                     Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { TextButton(onClick = { newBookmark(null) }) { Text("Закладка") }; TextButton(onClick = { newNote(null) }) { Text("Заметка") }; TextButton(onClick = { copy(fullChapter()) }) { Text("Копировать") }; TextButton(onClick = { share(fullChapter()) }) { Text("Поделиться") } }
                     notes.filter { it.paragraphId == null }.forEach { Text("Моя заметка · ${it.text}", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.primary) }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = { savePosition(); recordTime(); chapters.getOrNull(chapterIndex - 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex > 0) { Text("← Предыдущий") }
-                        OutlinedButton(onClick = { savePosition(); recordTime(); chapters.getOrNull(chapterIndex + 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex >= 0 && chapterIndex < chapters.lastIndex) { Text("Следующий →") }
+                        OutlinedButton(onClick = { savePosition(); recordTime(); logicalChapters.getOrNull(chapterIndex - 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex > 0) { Text("← Предыдущий") }
+                        OutlinedButton(onClick = { savePosition(); recordTime(); logicalChapters.getOrNull(chapterIndex + 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex >= 0 && chapterIndex < logicalChapters.lastIndex) { Text("Следующий →") }
                     }
-                    if (chapterStructure?.topics?.isNotEmpty() == true) {
+                    if (sectionTopics.isNotEmpty()) {
                         Text("Темы этого раздела", style = MaterialTheme.typography.titleSmall)
-                        chapterStructure.topics.forEach { topic -> TextButton(onClick = { savePosition(); onOpenParagraph(topic.paragraphId) }, modifier = Modifier.fillMaxWidth()) { Text(topic.title, Modifier.fillMaxWidth(), maxLines = 2, overflow = TextOverflow.Ellipsis) } }
+                        sectionTopics.forEach { topic -> TextButton(onClick = { savePosition(); onOpenParagraph(topic.paragraphId) }, modifier = Modifier.fillMaxWidth()) { Text(topic.title, Modifier.fillMaxWidth(), maxLines = 2, overflow = TextOverflow.Ellipsis) } }
                     }
                 }
             }
@@ -396,7 +413,7 @@ fun Reader(
             Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }
-                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),
+                    Text(chapterStructure?.title ?: sectionRoot.title, Modifier.weight(1f),
                         style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,
                             fontWeight = FontWeight.Normal),
                         color = MaterialTheme.colorScheme.onSurface, softWrap = true)
@@ -422,13 +439,13 @@ fun Reader(
                     when (chapterTab) {
                         0 -> {
                             item { ChapterTopicRow("Начало раздела") { revealParagraph(null) } }
-                            items(chapterStructure?.topics.orEmpty(), key = { it.paragraphId + it.title }) { topic ->
+                            items(sectionTopics, key = { it.paragraphId + it.title }) { topic ->
                                 ChapterTopicRow(topic.title) { revealParagraph(topic.paragraphId) }
                             }
-                            if (chapterStructure?.topics.isNullOrEmpty()) item { Text("В этом разделе нет отдельных подразделов.", color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                            if (sectionTopics.isEmpty()) item { Text("В этом разделе нет отдельных подразделов.", color = MaterialTheme.colorScheme.onSurfaceVariant) }
                         }
                         1 -> {
-                            val own = bookmarks.filter { it.chapterId == chapter.id }
+                            val own = bookmarks.filter { it.chapterId in memberIds }
                             if (own.isEmpty()) item { Text("Закладок в этом разделе пока нет.") }
                             items(own, key = { it.id }) { bookmark ->
                                 AgedPaperCard(onClick = { revealParagraph(bookmark.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
@@ -451,8 +468,8 @@ fun Reader(
     }
     if (panel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.onSurface, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
     selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
-    if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(chapter.id, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
-    if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(chapter.id, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
+    if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(paragraphs.firstOrNull { it.id == noteAnchor }?.chapterId ?: sectionId, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
+    if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(paragraphs.firstOrNull { it.id == bookmarkAnchor }?.chapterId ?: sectionId, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
     if (sourceDialog) AlertDialog(onDismissRequest = { sourceDialog = false }, title = { Text("Источник раздела") }, text = { SelectionContainer { Text(chapter.source.ifBlank { "Источник требует редакционной сверки." }) } }, confirmButton = { TextButton(onClick = { sourceDialog = false }) { Text("Закрыть") } })
     termDialog?.let { term -> AlertDialog(onDismissRequest = { termDialog = null }, title = { Text(term.transcript) }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { ArabicText(term.ar, settings); Text(term.definition); Text("Пояснение редакции к этому фрагменту", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }, confirmButton = { TextButton(onClick = { val id = term.sourceParagraphId; termDialog = null; onOpenParagraph(id) }) { Text("Исходный контекст") } }, dismissButton = { TextButton(onClick = { termDialog = null }) { Text("Закрыть") } }) }
 }
