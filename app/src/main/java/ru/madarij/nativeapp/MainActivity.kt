@@ -121,7 +121,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         LaunchedEffect(Unit) {
             // Fresh installation defaults only; existing preferences are retained.
             if (!java.io.File(context.filesDir, "datastore/reading_settings.preferences_pb").exists())
-                vm.settings(settings.copy(theme = "sepia", paperTone = "warm", russianFont = "book", russianSize = 18f, lineHeight = 1.5f))
+                vm.settings(settings.copy(theme = "sepia", paperTone = "warm", russianFont = "sans", russianSize = 18f, lineHeight = 1.5f))
         }
 
         // The window background is stable across navigation. Replacing its drawable
@@ -240,8 +240,8 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     )
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
-                    if(chapter==null) InfoCard("Подготовка книги","Раздел загружается…")
-                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark", ) { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
+                    if(chapter==null) BookRouteSurface(readerPaperTexture, settings.theme == "dark") { }
+                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark") { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
@@ -258,7 +258,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             Box(
                 Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                     .navigationBarsPadding()
-                    .padding(horizontal = 15.dp).padding(bottom = 12.dp)
+                    .padding(horizontal = 15.dp).padding(bottom = 4.dp)
             ) {
 MadarijBottomBar(tabs, selectedTab) { destination ->
     when {

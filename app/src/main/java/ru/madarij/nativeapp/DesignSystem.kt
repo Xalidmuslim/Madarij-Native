@@ -97,7 +97,12 @@ internal fun Soft3DPanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
         .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
+        content()
+    }
 }
 
 @Composable
@@ -110,7 +115,12 @@ internal fun Soft3DSagePanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.secondaryContainer)
         .border(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .3f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
+        content()
+    }
 }
 
 @Composable

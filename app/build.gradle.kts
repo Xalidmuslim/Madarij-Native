@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 31
-        versionName = "1.31-native-performance-r8"
+        versionCode = 32
+        versionName = "1.32-paper-refinement-r8"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -55,6 +55,11 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.7")
     testImplementation("junit:junit:4.13.2")
 }
+val generateBookTextures by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/generate_book_textures.py")
+}
+tasks.matching { it.name == "preBuild" }.configureEach { dependsOn(generateBookTextures) }
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "-m", "tools.content_gate", "app/src/main/assets/corpus.json")

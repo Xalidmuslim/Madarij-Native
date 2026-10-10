@@ -3,7 +3,7 @@ name: Madarij Optimized Release R8 + Android QA
 on:
   push:
     branches:
-      - codex/madarij-v131-native-performance-release
+      - codex/madarij-v132-paper-visual-fixes
   workflow_dispatch:
 
 permissions:
@@ -38,6 +38,8 @@ jobs:
       - name: Install compile SDK 36
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
 
+      - name: Install Pillow for pre-rendered static paper assets
+        run: python3 -m pip install --user Pillow==11.3.0
       - name: Development signature for isolated Release QA
         shell: bash
         run: |

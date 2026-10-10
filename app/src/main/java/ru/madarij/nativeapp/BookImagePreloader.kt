@@ -35,7 +35,8 @@ internal object BookImagePreloader {
         R.drawable.library_hero,
         R.drawable.navigation_leather,
         R.drawable.paper_light,
-        R.drawable.paper_sage
+        R.drawable.paper_sage,
+        R.drawable.card_paper
     )
 
     fun preload(context: Context) {

@@ -40,6 +40,8 @@ jobs:
           packages: platform-tools
       - name: Install Android compile SDK
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Install Pillow for pre-rendered static paper assets
+        run: python3 -m pip install --user Pillow==11.3.0
       - name: Development signing for test-only builds
         shell: bash
         run: |

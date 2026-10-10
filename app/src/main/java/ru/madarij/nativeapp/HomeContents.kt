@@ -78,9 +78,6 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
         PreloadedBookImage(R.drawable.library_hero,
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)
-        Box(Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp)
-            .background(Brush.verticalGradient(listOf(Color.Transparent, Color.Transparent,
-                BookColors.parchment.copy(alpha = .16f), BookColors.parchment))))
         LazyColumn(
             contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 116.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -113,6 +110,7 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
                     .border(1.dp, BookColors.gold.copy(alpha = .33f), shape)) {
+                    PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                     Row(Modifier.padding(horizontal = 17.dp, vertical = 12.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(Modifier.weight(1f)) {
