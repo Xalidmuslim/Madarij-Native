@@ -165,7 +165,9 @@ internal fun HomeScreen(
                             NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
                                 tint = BookColors.lightGold)
                             Spacer(Modifier.width(11.dp))
-                            Text("Продолжить чтение", Modifier.weight(1f),
+                            // Optical centering: BookSerif glyphs sit 2dp below the Row's
+                            // geometric centre due to the font's baseline metrics.
+                            Text("Продолжить чтение", Modifier.weight(1f).offset(y = (-2).dp),
                                 style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif, fontSize = 17.sp),
                                 color = Color(0xFFF8E7CE))
                             Text("›", style = MaterialTheme.typography.headlineSmall,
