@@ -13,6 +13,6 @@ class ReaderNavigationSourceTest {
         val source = File("src/main/java/ru/madarij/nativeapp/Reader.kt").readText()
         assertTrue(!source.contains("topicsByParagraph[p.id]"))
         assertTrue(source.contains("ReaderFrontispiece(chapterIndex + 1"))
-        assertTrue(source.contains("chapterStructure?.topics.orEmpty()"))
+        assertTrue(source.contains("items(sectionTopics, key ="))
     }
 }
