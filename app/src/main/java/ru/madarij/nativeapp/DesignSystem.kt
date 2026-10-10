@@ -200,11 +200,11 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
         ) {
             items.forEach { (destination, label) ->
                 val active = selected == destination
-                val labelColor by androidx.compose.animation.animateColorAsState(
+                val labelColor = androidx.compose.animation.animateColorAsState(
                     targetValue = if (active) BookColors.lightGold else Color(0xFFB9A793),
                     animationSpec = androidx.compose.animation.core.tween(110),
                     label = "tab-color"
-                )
+                ).value
                 Column(
                     Modifier.weight(1f).fillMaxHeight()
                         .clip(RoundedCornerShape(10.dp))
