@@ -476,20 +476,39 @@ fun Reader(
 
 @Composable
 private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingSettings, arabic: Boolean) {
-    Column(
-        Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 5.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        if (arabic) ArabicText(block.label, settings, Modifier.heightIn(min = 28.dp))
-        else Text(block.label.uppercase(), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-        block.title?.let { title ->
-            if (arabic) ArabicText(title, settings)
-            else Text(
-                title,
-                style = MaterialTheme.typography.titleMedium,
-                fontFamily = russianFamily(settings),
-                color = MaterialTheme.colorScheme.onSurface
+    if (block.title.isNullOrBlank()) {
+        // The source has a section break but no heading. Rendering the word
+        // "РАЗДЕЛ" alone looked like an unnamed new chapter. Keep the actual
+        // textual boundary as a modest book ornament without inventing a title.
+        Row(
+            Modifier.fillMaxWidth().padding(vertical = 11.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            HorizontalDivider(
+                Modifier.weight(1f), thickness = .65.dp,
+                color = BookColors.gold.copy(alpha = .28f)
             )
+            Text("❖", Modifier.padding(horizontal = 10.dp),
+                fontFamily = BookSerif,
+                color = BookColors.gold.copy(alpha = .8f))
+            HorizontalDivider(
+                Modifier.weight(1f), thickness = .65.dp,
+                color = BookColors.gold.copy(alpha = .28f)
+            )
+        }
+    } else {
+        Column(
+            Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 5.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            if (arabic) ArabicText(block.label, settings, Modifier.heightIn(min = 28.dp))
+            else Text(block.label.uppercase(),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary)
+            if (arabic) ArabicText(block.title, settings)
+            else Text(block.title, style = MaterialTheme.typography.titleMedium,
+                fontFamily = russianFamily(settings),
+                color = MaterialTheme.colorScheme.onSurface)
         }
     }
 }
