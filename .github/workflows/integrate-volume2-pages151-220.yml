@@ -1,0 +1,57 @@
+name: Integrate third 70-page volume two translation batch
+
+on:
+  push:
+    branches: [codex/madarij-v151-volume2-pages151-220-draft]
+    paths:
+      - .github/workflows/integrate-volume2-pages151-220.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bilingual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: Generate 151–220 bilingual text without changing earlier chapters
+        run: |
+          python3 -m py_compile tools/integrate_volume2_pages151_220.py
+          python3 tools/integrate_volume2_pages151_220.py
+          python3 tools/validate_volume2_preview.py
+      - name: Validate sequential numbering and 70 original source anchors
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("app/src/main/assets/volume2-preview.json").read_text())
+          toc=json.loads(Path("app/src/main/assets/volume2-structure.json").read_text())
+          chapters=data["chapters"]
+          assert len(chapters)==4
+          assert [len(c["paragraphs"]) for c in chapters[1:]]==[70,70,70]
+          assert [p["id"] for p in chapters[3]["paragraphs"]] == [
+              f"madarij-v2-p{x:03d}-draft" for x in range(151,221)]
+          assert all(p["ar"].strip() and p["ru"].strip() and p["role"]=="author"
+                     for c in chapters for p in c["paragraphs"])
+          assert len(toc["groups"])==4
+          assert {c["id"] for c in chapters} == {
+              i["chapterId"] for group in toc["groups"] for i in group["items"]
+          }
+          assert data["translation_completeness"]=="preliminary_russian_pages_3_to_220"
+          assert data["translation_independently_verified"] is False
+          assert data["publication_ready"] is False
+          print("PASS: all 70 newly translated pages; earlier IDs intact; four reader groups")
+          PY
+      - name: Commit bilingual draft assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-151-220/review-report.json
+          git diff --cached --check
+          git commit -m "content(v2): integrate pages 151–220 into bilingual Android reader"
+          git push origin HEAD:codex/madarij-v151-volume2-pages151-220-draft
