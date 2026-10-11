@@ -1,0 +1,18 @@
+{
+  "print_edition": "Nabil bin Nassar al-Sindi, Dar Ataat al-Ilm / Dar Ibn Hazm, 2019",
+  "source_pdf": "https://d1.islamhouse.com/data/ar/ih_books/single-03/ar-Madarij-alSalikee-02.pdf",
+  "source_text": "https://maknoon.org/ai/view.php?bk=madarej_2&p={page}",
+  "pages_expected": 659,
+  "pages_retrieved": 659,
+  "missing_pages": [],
+  "empty_body_pages_to_review": [],
+  "arabic_characters": 414246,
+  "pages_with_separated_editorial_notes": 636,
+  "arabic_pages_visually_verified": 0,
+  "translated_pages": 0,
+  "hadith_verified_pages": 0,
+  "quran_verified_pages": 0,
+  "status": "source_inventory_only",
+  "publishable": false,
+  "note": "Physical page endings are not author paragraph boundaries; do not concatenate blindly. Editorial notes are not included in Arabic author body. Manual collation with source PDF required."
+}
