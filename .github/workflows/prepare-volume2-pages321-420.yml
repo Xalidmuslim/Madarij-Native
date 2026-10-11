@@ -1,0 +1,23 @@
+name: Prepare original Arabic pages 321-420
+on:
+  push:
+    branches: [codex/madarij-v153-volume2-pages321-420-100page-batch]
+    paths: [.github/workflows/prepare-volume2-pages321-420.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - run: python3 tools/prepare_arabic_volume2_pages321_420.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/volume2-batch-321-420/original-arabic/
+          git diff --cached --check
+          git commit -m "research(v2): extract 100 Arabic body pages 321-420 in ten batches"
+          git push origin HEAD:codex/madarij-v153-volume2-pages321-420-100page-batch
