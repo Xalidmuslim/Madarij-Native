@@ -100,6 +100,112 @@
           ]
         }
       ]
+    },
+    {
+      "id": "v2-navigation-p011-p080",
+      "title": "Том 2 · страницы 11–80",
+      "provenance": "editorial_navigation_preliminary",
+      "items": [
+        {
+          "chapterId": "madarij-v2-p011-p080-translation-preview",
+          "title": "Дальнейшие ступени: предопределение, поклонение и припоминание",
+          "subtitle": "70 страниц предварительного перевода",
+          "entryParagraphId": "madarij-v2-p011-draft",
+          "entryNote": "Русский перевод предварительный; аяты, хадисы и богословские термины ещё не прошли независимую сверку.",
+          "topics": [
+            {
+              "paragraphId": "madarij-v2-p011-draft",
+              "title": "Второй взгляд: природные свойства",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p012-draft",
+              "title": "Третий взгляд: сторонники принуждения",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p014-draft",
+              "title": "Четвёртый взгляд: отрицатели предопределения",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p015-draft",
+              "title": "Пятый взгляд: мудрость предопределения",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p020-draft",
+              "title": "Шестой взгляд: единобожие",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p025-draft",
+              "title": "Седьмой взгляд: содействие и оставление без помощи",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p031-draft",
+              "title": "Восьмой взгляд: имена и атрибуты Аллаха",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p037-draft",
+              "title": "Девятый взгляд: проявления веры",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p044-draft",
+              "title": "О милосердии к согрешившим",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p045-draft",
+              "title": "Об осознании слабости и бессилия",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p047-draft",
+              "title": "Об униженности и нужде в Господе",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p051-draft",
+              "title": "О любви, поклонении и стремлении к Аллаху",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p055-draft",
+              "title": "Стоянка возвращения к Аллаху (инаба)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p059-draft",
+              "title": "О восполнении упущенного и верности завету",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p061-draft",
+              "title": "О борьбе со страстями",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p068-draft",
+              "title": "Стоянка припоминания и размышления (тазаккур)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p074-draft",
+              "title": "О пользе наставления",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p080-draft",
+              "title": "О сокращении мирских ожиданий",
+              "provenance": "editorial_navigation_preliminary"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
