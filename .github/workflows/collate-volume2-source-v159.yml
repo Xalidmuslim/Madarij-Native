@@ -1,0 +1,61 @@
+name: Source-faithfulness corrections, ten substantial Russian page expansions
+on:
+  push:
+    branches: [codex/madarij-v159-source-faithfulness-review]
+    paths: [.github/workflows/collate-volume2-source-v159.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: RED demonstrate omitted substantive details before fix
+        run: |
+          set +e
+          python3 -m unittest tools/test_volume2_faithfulness_v159.py > /tmp/v159-red.log 2>&1
+          ec=$?
+          set -e
+          tail -25 /tmp/v159-red.log
+          if [ "$ec" -eq 0 ]; then echo 'Regression failed to reproduce any pre-existing omissions'; exit 1; fi
+          echo "PASS expected RED: at least one substantive omission detected"
+      - name: Replace only ten Russian page drafts with exact source guards
+        run: |
+          python3 -m py_compile tools/apply_volume2_faithfulness_v159.py
+          python3 tools/apply_volume2_faithfulness_v159.py
+      - name: GREEN detailed regression + complete source alignment
+        run: |
+          python3 -m unittest -v tools/test_volume2_faithfulness_v159.py
+          python3 tools/validate_volume2_preview.py
+      - name: Rebuild all 657-page issue index
+        run: |
+          python3 tools/audit_volume2_quran.py
+          python3 tools/build_volume2_page_review_register.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          base=Path("research/volume2-scholarly-audit")
+          report=json.loads((base/"faithfulness-corrections-v159-result.json").read_text())
+          v=json.loads(Path("app/src/main/assets/volume2-preview.json").read_text())
+          pg=json.loads((base/"page-by-page-reconciliation-register.json").read_text())
+          assert report["pages_corrected"]==10
+          assert report["russian_characters_added"]>6500
+          assert pg["printed_pages_registered"]==657
+          assert pg["fully_independently_verified_pages"]==0
+          assert not v["publication_ready"] and not v["translation_independently_verified"]
+          assert len(v["chapters"])==9 and sum(len(c["paragraphs"]) for c in v["chapters"])==676
+          print('PASS only ten Russian page corrections, Arabic preserved and no unsupported review status')
+          PY
+      - name: Publish source revisions and transparent publication blockers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json research/volume2-scholarly-audit/
+          git diff --cached --check
+          git commit -m "fix(volume2): correct ten substantive Russian omissions preserving full Arabic corpus and unverified status"
+          git push origin HEAD:codex/madarij-v159-source-faithfulness-review
