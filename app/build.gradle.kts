@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 57
-        versionName = "1.57-volume2-pages3-659-editorial-audit"
+        versionCode = 58
+        versionName = "1.58-volume2-pages3-659-translation-collation"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -31,10 +31,10 @@ android {
             // A debug APK has a new signing key in each CI run. Use a distinct
             // application ID so the user's installed reader and its Room data
             // are never uninstalled or overwritten to try the preview.
-            applicationIdSuffix = ".preview157"
+            applicationIdSuffix = ".preview158"
         }
         release {
-            applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".editorial157"
+            applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".collation158"
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
