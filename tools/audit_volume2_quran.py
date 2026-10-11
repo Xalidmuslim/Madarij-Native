@@ -120,7 +120,7 @@ lines+=["","## Что не пройдено","",
 "","Канонический арабский текст: https://github.com/asim/quran-json-arabic/blob/main/README.md",
 "Проверено пять идентификаторов хадисных первоисточников; полный иснад-аудит остальных передач не проводился.",
 "Все совпадения и несовпадения арабского текста с Кораном являются машинными подсказками и требуют визуальной проверки. За доказанные ошибки перевода их принимать нельзя.",
-"См. hadith-spot-checks.json и precise-edits.json.",,
+"См. hadith-spot-checks.json и precise-edits.json.",
 "","**Никакой автоматически пройденный тест не повышает публикационный статус черновика.**"]
 (out/"README.md").write_text("\n".join(lines)+"\n",encoding="utf8")
 print(json.dumps(summary,ensure_ascii=False,indent=2))
