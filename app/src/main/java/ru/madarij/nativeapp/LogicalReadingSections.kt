@@ -43,7 +43,8 @@ internal object LogicalReadingSections {
         "madarij-v2-p003-views-of-sin",
         "madarij-v2-p011-p080-translation-preview",
         "madarij-v2-p081-p150-translation-preview",
-        "madarij-v2-p151-p220-translation-preview"
+        "madarij-v2-p151-p220-translation-preview",
+        "madarij-v2-p221-p320-translation-preview"
     )
     private val pages: Map<String, Pair<Int,Int>> = mapOf(
         "madarij-v1-opening-001-section" to (3 to 21),
@@ -79,7 +80,8 @@ internal object LogicalReadingSections {
         "madarij-v2-p003-views-of-sin" to (3 to 10),
         "madarij-v2-p011-p080-translation-preview" to (11 to 80),
         "madarij-v2-p081-p150-translation-preview" to (81 to 150),
-        "madarij-v2-p151-p220-translation-preview" to (151 to 220)
+        "madarij-v2-p151-p220-translation-preview" to (151 to 220),
+        "madarij-v2-p221-p320-translation-preview" to (221 to 320)
     )
     fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter { it.id in starts }
     fun members(chapters: List<Chapter>, requestedId: String): List<Chapter> {
