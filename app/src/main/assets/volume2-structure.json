@@ -2,15 +2,15 @@
   "groups": [
     {
       "id": "v2-navigation-preview",
-      "title": "Взгляды на грех · начало второго тома",
+      "title": "Взгляды на грех · второй том, страницы 3–6",
       "provenance": "editorial_preview_unverified",
       "items": [
         {
           "chapterId": "madarij-v2-p003-views-of-sin",
           "title": "О взглядах людей на грех",
-          "subtitle": "Начало второго тома · предварительный перевод, стр. 3",
+          "subtitle": "Начало второго тома · предварительный перевод страниц 3–6",
           "entryParagraphId": "madarij-v2-p003-a",
-          "entryNote": "Только ознакомительный фрагмент; перевод ещё не проходил независимую сверку.",
+          "entryNote": "Предварительный перевод, страницы 3–6. Арабский текст сверяется с изданием 2019 года. Сноски учёного-редактора и хадисоведческие оценки требуют отдельной проверки.",
           "topics": [
             {
               "paragraphId": "madarij-v2-p003-a",
@@ -21,6 +21,41 @@
               "paragraphId": "madarij-v2-p003-b",
               "title": "Значение этого раздела",
               "provenance": "editorial_navigation"
+            },
+            {
+              "paragraphId": "madarij-v2-p004-01",
+              "title": "Первый взгляд: животная природа и удовлетворение страстей",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p004-02",
+              "title": "Пример собачьей души",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p004-p005-03",
+              "title": "Пример осла и дурного учёного · страницы 4–5",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p005-04",
+              "title": "Хищная и гневливая душа",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p005-05",
+              "title": "Пример мышиной души",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p005-06",
+              "title": "Упоминание сглаза · требует проверки хадиса",
+              "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p006-01",
+              "title": "Разъяснение автора о сглазе и защите",
+              "provenance": "editorial_navigation_unreviewed"
             }
           ]
         }
