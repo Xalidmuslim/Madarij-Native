@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - codex/madarij-v144-calligraphy-reed-pen
+      - codex/madarij-v145-volume2-bilingual-preview
   workflow_dispatch:
 
 permissions:
