@@ -23,7 +23,7 @@ class LogicalReadingSectionsTest {
     }
     @Test fun unknownChapterReturnsEmpty() {
         assertTrue(LogicalReadingSections.members(testChapters(), "unknown").isEmpty())
-        assertEquals(31, LogicalReadingSections.starts.size)
+        assertEquals(32, LogicalReadingSections.starts.size)
     }
     @Test fun previewVolumeDoesNotMergeWithFirstVolume() {
         val chapters = testChapters() + Chapter(
