@@ -5,6 +5,7 @@ on:
       - codex/madarij-v151-volume2-pages151-220-draft
     paths:
       - .github/workflows/prepare-volume2-pages151-220.yml
+      - tools/prepare_arabic_volume2_pages151_220.py
   workflow_dispatch:
 permissions:
   contents: write
