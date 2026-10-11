@@ -381,6 +381,16 @@ fun Reader(
                             }
                         }
                     }
+                    if (chapter.volume == 2 && p.id == "madarij-v2-p005-06") {
+                        Text(
+                            "Примечание редакции приложения: здесь передано высказывание о сглазе. " +
+                                "Оценка достоверности связанного с ним хадиса является предметом разногласий. " +
+                                "Его нельзя без дополнительной проверки обозначать как безусловно достоверный.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(top = 3.dp)
+                        )
+                    }
                     notesByParagraph[p.id].orEmpty().forEach { note ->
                         AgedPaperCard(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp)) { Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) { Text("Моя заметка", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary); Text(note.text, style = MaterialTheme.typography.bodyMedium) } }
                     }
