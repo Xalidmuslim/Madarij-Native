@@ -2,15 +2,15 @@
   "groups": [
     {
       "id": "v2-navigation-preview",
-      "title": "Взгляды на грех · второй том, страницы 3–6",
+      "title": "Второй том · страницы 3–10",
       "provenance": "editorial_preview_unverified",
       "items": [
         {
           "chapterId": "madarij-v2-p003-views-of-sin",
           "title": "О взглядах людей на грех",
-          "subtitle": "Начало второго тома · предварительный перевод страниц 3–6",
+          "subtitle": "Предварительный русский перевод страниц 3–10",
           "entryParagraphId": "madarij-v2-p003-a",
-          "entryNote": "Предварительный перевод, страницы 3–6. Арабский текст сверяется с изданием 2019 года. Сноски учёного-редактора и хадисоведческие оценки требуют отдельной проверки.",
+          "entryNote": "Фрагмент второго тома, страницы 3–10. Перевод предварителен и не проходил независимую богословскую проверку.",
           "topics": [
             {
               "paragraphId": "madarij-v2-p003-a",
@@ -56,6 +56,46 @@
               "paragraphId": "madarij-v2-p006-01",
               "title": "Разъяснение автора о сглазе и защите",
               "provenance": "editorial_navigation_unreviewed"
+            },
+            {
+              "paragraphId": "madarij-v2-p007-a",
+              "title": "Авторское правовое суждение о причинении вреда сглазом",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p007-c",
+              "title": "Возмездие и компенсация: исторический правовой контекст",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p008-b",
+              "title": "Аят 6:38 и уподобление нравов животных",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p008-p009-d",
+              "title": "Сновидение Пророка перед событиями при Ухуде",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p009-a",
+              "title": "Сновидение Умара ибн аль-Хаттаба",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p009-b",
+              "title": "Образ человека, замечающего чужие недостатки",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p010-a",
+              "title": "Образы павлина, верблюда и других животных",
+              "provenance": "editorial_navigation_draft"
+            },
+            {
+              "paragraphId": "madarij-v2-p010-d",
+              "title": "Благородство лошадей и овец",
+              "provenance": "editorial_navigation_draft"
             }
           ]
         }
