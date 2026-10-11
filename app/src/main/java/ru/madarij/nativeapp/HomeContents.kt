@@ -364,7 +364,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             val sectionCount = LogicalReadingSections.roots(chapters).count { it.volume == selectedVolume }
             Text("Том $selectedVolume · $sectionCount смысловых разделов · $count фрагментов",
                 style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            if (selectedVolume == 2) Text("Ознакомительный фрагмент. Полный перевод и независимая сверка ещё не завершены.",
+            if (selectedVolume == 2) Text("Предварительный перевод тома 2: страницы 3–150. Страницы 151–659 и независимая сверка пока не готовы.",
                 style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
         }
         last?.let { position ->
