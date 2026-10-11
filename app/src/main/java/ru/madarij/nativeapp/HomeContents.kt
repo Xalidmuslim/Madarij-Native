@@ -156,8 +156,10 @@ internal fun HomeScreen(
                     shadowElevation = 0.dp
                 ) {
                     Box(Modifier.fillMaxSize()) {
-                        PreloadedBookImage(R.drawable.cta_leather,
-                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.Crop)
+                        // Share the exact embossed leather frame of the floating
+                        // navigation rather than introducing a competing texture.
+                        PreloadedBookImage(R.drawable.navigation_leather,
+                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
                         Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
                             verticalAlignment = Alignment.CenterVertically) {
                             NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
@@ -233,8 +235,10 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
         warm = true,
         onClick = onClick
     ) {
+        // Filling the existing card's minimum-height viewport fixes the previous
+        // top-biased placement; icon and both text lines are vertically centered.
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 9.dp, vertical = 9.dp),
+            Modifier.fillMaxSize().padding(horizontal = 10.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
