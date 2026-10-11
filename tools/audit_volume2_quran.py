@@ -15,7 +15,7 @@ def norm(t):
  t="".join(c for c in t if not unicodedata.combining(c) and not ("\u06d6"<=c<="\u06ed"))
  for a,b in (("ٱ","ا"),("أ","ا"),("إ","ا"),("آ","ا"),("ى","ي"),("ة","ه"),("ؤ","و"),("ئ","ي"),("ـ","")):t=t.replace(a,b)
  t=t.translate(str.maketrans("٠١٢٣٤٥٦٧٨٩","0123456789"))
- return " ".join(re.sub(r"[^\u0621-\u064a]+"," ",t).split())
+ return "".join(re.findall(r"[\u0621-\u064a]+",t))
 def save(file,data):
  (out/file).write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
 url="https://raw.githubusercontent.com/asim/quran-json-arabic/main/dist/quran.json"
@@ -63,6 +63,9 @@ for p in pgr:
    preceding=p["ar"][:x.start()]
    spans=list(re.finditer(r"\{([^{}\n]{5,500})\}",preceding))
    quote=spans[-1].group(1) if spans and x.start()-spans[-1].end()<90 else ""
+   if quote and re.search(r"[٠-٩0-9]",quote):
+    item["source_embedded_numbers"]=True
+    issues.append({"page":n,"id":p["id"],"type":"EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE","ref":item["ref"]})
    if not quote:item["status"]="REFERENCE_WITHOUT_NEARBY_QUOTE"
    else:
     full=norm(" ".join(verse[(sur,k)] for k in range(n1,n2+1)))
