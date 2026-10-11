@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "id": "v2-navigation-preview",
+      "title": "Взгляды на грех · начало второго тома",
+      "provenance": "editorial_preview_unverified",
+      "items": [
+        {
+          "chapterId": "madarij-v2-p003-views-of-sin",
+          "title": "О взглядах людей на грех",
+          "subtitle": "Начало второго тома · предварительный перевод, стр. 3",
+          "entryParagraphId": "madarij-v2-p003-a",
+          "entryNote": "Только ознакомительный фрагмент; перевод ещё не проходил независимую сверку.",
+          "topics": [
+            {
+              "paragraphId": "madarij-v2-p003-a",
+              "title": "Двенадцать взглядов на грех",
+              "provenance": "editorial_navigation"
+            },
+            {
+              "paragraphId": "madarij-v2-p003-b",
+              "title": "Значение этого раздела",
+              "provenance": "editorial_navigation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
