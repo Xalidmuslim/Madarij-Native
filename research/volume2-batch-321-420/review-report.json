@@ -1,0 +1,29 @@
+{
+  "translated_pages": 100,
+  "first_printed_page": 321,
+  "last_printed_page": 420,
+  "russian_characters": 117040,
+  "arabic_characters": 89691,
+  "missing_pages": [],
+  "previous_chapters_untouched": true,
+  "volume1_untouched": true,
+  "cross_page_boundary_joins": [
+    324,
+    330,
+    336,
+    345,
+    349,
+    355,
+    359,
+    360,
+    383,
+    388,
+    396,
+    404,
+    415
+  ],
+  "original_arabic_source_sha256": "f80c21f10b7bbf9c7b8d155d559a82388878541a7890fabf28418e83eeddc807",
+  "independent_page_checks_passed": 0,
+  "religious_citations_verified": false,
+  "publication_ready": false
+}
