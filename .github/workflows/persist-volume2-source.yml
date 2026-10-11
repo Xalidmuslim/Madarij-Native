@@ -1,0 +1,53 @@
+name: Persist volume 2 Arabic source and review queues
+on:
+  push:
+    branches:
+      - codex/madarij-v146-volume2-arabic-source-audit
+    paths:
+      - .github/workflows/persist-volume2-source.yml
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download successful 659-page research artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p research/volume2-source
+          gh run download 38123952699 --repo "${{ github.repository }}" --name Madarij-V2-Arabic-Source-Audit --dir research/volume2-source
+      - name: Validate corpus and prepare review queues
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("research/volume2-source")
+          report=json.loads((root/"source_audit.json").read_text())
+          pages=[json.loads(line) for line in (root/"arabic_pages.jsonl").read_text().splitlines()]
+          assert report["pages_expected"] == 659
+          assert report["pages_retrieved"] == 659
+          assert not report["missing_pages"]
+          assert len(pages) == 659
+          assert [p["printed_page"] for p in pages] == list(range(1,660))
+          assert sum(bool(p.get("arabic_body")) for p in pages) >= 650
+          assert not any("الصفحة 3" in p.get("arabic_body","") for p in pages)
+          print("Complete source verified: 659 printed pages")
+          PY
+          python3 tools/build_volume2_translation_queue.py --source research/volume2-source/arabic_pages.jsonl --output research/volume2-translation-review
+      - name: Commit original text and strictly unpublished review queue
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/volume2-source/arabic_pages.jsonl research/volume2-source/source_audit.json research/volume2-translation-review/
+          git commit -m "data(v2): preserve 659 printed source pages and 3210 review candidates; no translation approvals"
+          git push origin HEAD:codex/madarij-v146-volume2-arabic-source-audit
