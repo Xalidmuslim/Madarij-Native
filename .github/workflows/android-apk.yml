@@ -43,7 +43,7 @@ jobs:
       - name: Verify source alignment and paragraph boundaries of draft volume 2
         run: python3 tools/validate_volume2_preview.py
       - name: Test volume-2 corrections and previous repairs
-        run: python3 -m unittest -v tools/test_volume2_pages003_005.py tools/test_volume2_pages006_009.py tools/test_volume2_collation_4pages.py
+        run: python3 -m unittest -v tools/test_volume2_pages003_005.py tools/test_volume2_pages006_009.py tools/test_volume2_pages010_012.py tools/test_volume2_collation_4pages.py
       - name: Prepare licensed Russian handwriting font
         run: python3 tools/prepare_handwriting_font.py
 
@@ -83,6 +83,7 @@ jobs:
           assert 'по приводимому им выражению' not in p['madarij-v2-p005-06']['ru']
           assert 'дозволено убить его таким же способом' in p['madarij-v2-p007-c']['ru']
           assert 'вправе убить виновного' in p['madarij-v2-p007-d']['ru']
+          assert 'питающее подобно питающемуся' in p['madarij-v2-p010-e']['ru']
           assert not x['publication_ready']
           print('PASS: verified volume-2 pages 3-5 in packaged APK')
           PY
