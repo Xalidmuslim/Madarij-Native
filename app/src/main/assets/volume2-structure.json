@@ -312,6 +312,97 @@
           ]
         }
       ]
+    },
+    {
+      "id": "v2-navigation-p151-p220",
+      "title": "Том 2 · страницы 151–220",
+      "provenance": "editorial_navigation_preliminary",
+      "items": [
+        {
+          "chapterId": "madarij-v2-p151-p220-translation-preview",
+          "title": "Смирение, страх, надежда и отрешённость от мирского",
+          "subtitle": "70 страниц предварительного перевода",
+          "entryParagraphId": "madarij-v2-p151-draft",
+          "entryNote": "Перевод предварительный. Аяты и хадисы, арабская транскрипция и значения богословских терминов требуют независимой проверки.",
+          "topics": [
+            {
+              "paragraphId": "madarij-v2-p151-draft",
+              "title": "Продолжение разбора музыкальных собраний",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p152-draft",
+              "title": "Три правила оценки духовного слушания",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p158-draft",
+              "title": "Терпение, благодарность и подмена поклонения",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p162-draft",
+              "title": "Степени слушания",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p169-draft",
+              "title": "Стоянка печали (хузн)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p173-draft",
+              "title": "Разбор трёх степеней печали",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p179-draft",
+              "title": "Стоянка страха (хауф)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p181-draft",
+              "title": "Различия страха и благоговейного трепета",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p188-draft",
+              "title": "Любовь, страх и надежда",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p189-draft",
+              "title": "Стоянка сострадательного опасения (ишфак)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p193-draft",
+              "title": "Стоянка смирения (хушу)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p201-draft",
+              "title": "Молитва без должной сосредоточенности",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p206-draft",
+              "title": "Мнения о действительности такой молитвы",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p209-draft",
+              "title": "Стоянка смиренного покоя (ихбат)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p218-draft",
+              "title": "Стоянка отрешённости от мирского (зухд)",
+              "provenance": "editorial_navigation_preliminary"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
