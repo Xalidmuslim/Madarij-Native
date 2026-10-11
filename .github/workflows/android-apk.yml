@@ -40,6 +40,8 @@ jobs:
           packages: platform-tools
       - name: Install Android compile SDK
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Verify source alignment and paragraph boundaries of draft volume 2
+        run: python3 tools/validate_volume2_preview.py
       - name: Prepare licensed Russian handwriting font
         run: python3 tools/prepare_handwriting_font.py
 
