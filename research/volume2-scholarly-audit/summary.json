@@ -1,0 +1,23 @@
+{
+  "arabic_printed_pages": 659,
+  "russian_draft_printed_pages": 657,
+  "paragraphs": 676,
+  "arabic_pages_matched_exactly_to_source": 649,
+  "arabic_quran_references_tested": 378,
+  "citation_statuses": {
+    "CHECK_QUOTE_MISMATCH": 152,
+    "QUOTE_VARIANT_REQUIRES_REVIEW": 58,
+    "EXACT_AFTER_ARABIC_NORMALIZATION": 160,
+    "REFERENCE_WITHOUT_NEARBY_QUOTE": 7,
+    "QUOTE_TOO_SHORT": 1
+  },
+  "issue_counts": {
+    "CHECK_QUOTE_MISMATCH": 152,
+    "EDITORIAL_COMMENT_IN_AUTHOR_TEXT": 94
+  },
+  "independently_semantically_reviewed_pages": 0,
+  "independently_authenticated_hadith": 0,
+  "quran_verification_scope": "Automated Arabic quote and reference checks only, NOT verified Russian translations or tafsir",
+  "publication_ready": false,
+  "quran_data_source": "https://raw.githubusercontent.com/asim/quran-json-arabic/main/dist/quran.json"
+}
