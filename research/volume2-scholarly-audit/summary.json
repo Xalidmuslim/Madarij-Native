@@ -14,10 +14,12 @@
   "issue_counts": {
     "CHECK_QUOTE_MISMATCH": 154,
     "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE": 94,
-    "EDITORIAL_COMMENT_IN_AUTHOR_TEXT": 94
+    "EDITORIAL_COMMENT_IN_AUTHOR_TEXT": 91
   },
   "independently_semantically_reviewed_pages": 0,
   "independently_authenticated_hadith": 0,
+  "hadith_primary_source_spot_checks": 5,
+  "curated_editorial_insertions_separated_from_author_text": 7,
   "quran_verification_scope": "Automated Arabic quote and reference checks only, NOT verified Russian translations or tafsir",
   "publication_ready": false,
   "quran_data_source": "https://raw.githubusercontent.com/asim/quran-json-arabic/main/dist/quran.json"
