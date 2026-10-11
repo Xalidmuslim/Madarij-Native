@@ -1,0 +1,43 @@
+{
+  "volume": 2,
+  "edition": "Набиль ибн Нассар ас-Синди, Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019",
+  "pages": [
+    4,
+    5
+  ],
+  "entries": [
+    {
+      "page": 4,
+      "type": "quranic_allusion",
+      "phrase": "إن تحمل عليه يلهث أو تتركه يلهث",
+      "source": "Коран 7:176",
+      "source_url": "https://quran.com/ar/7:176",
+      "source_match": "confirmed_same_arabic_phrase",
+      "grading": "not_applicable",
+      "note_ru": "Это аллюзия на аят, а не полный дословный перевод аята. Требуется обозначить её как отсылку."
+    },
+    {
+      "page": 5,
+      "type": "quranic_allusion",
+      "phrase": "الحمار يحمل أسفارا",
+      "source": "Коран 62:5",
+      "source_url": "https://quran.com/ar/62:5",
+      "source_match": "confirmed_quranic_metaphor",
+      "grading": "not_applicable",
+      "note_ru": "Отсылка к аяту о несущем книги осле, а не дословная цитата всего аята."
+    },
+    {
+      "page": 5,
+      "type": "hadith",
+      "phrase": "إن العين لتدخل الرجل القبر والجمل القدر",
+      "source": "Ибн Ади, аль-Камиль; Абу Нуайм, Хильят аль-аулия",
+      "source_url": "https://dorar.net/h/d0pMoTR9?osoul=1",
+      "source_match": "found_in_hadith_database",
+      "grading": "disputed_dont_label_sahih_without_attribution",
+      "note_ru": "У аль-Альбани оценка хасан (Сахих аль-джами 4144; ас-Сильсиля ас-сахиха 1249); в других оценках имеются возражения по иснаду. Сохранять точную атрибуцию и не выдавать спорную оценку за единогласную."
+    }
+  ],
+  "ready_to_publish": false,
+  "hadith_scholar_verified": false,
+  "editorial_status": "source_crosscheck_partial"
+}
