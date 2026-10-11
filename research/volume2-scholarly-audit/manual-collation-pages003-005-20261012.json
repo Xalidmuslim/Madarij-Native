@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "codex/madarij-v158-ar-ru-translation-collation",
+  "source_commit": "c7b0e6700bebcd7ff92dda51ac7e0a5b8ece18ba",
+  "edition": "Nabil ibn Nassar al-Sindi, 2019, volume 2",
+  "methods": "Full paragraph comparison on pages 3-5 against repository's edition-matched electronic Arabic transcript; supporting 2019 text publication, Quran and hadith reference indexes. Printed images NOT inspected.",
+  "prior_fixes_preserved": [
+    448,
+    463,
+    507,
+    622
+  ],
+  "reviewed_printed_pages": [
+    {
+      "page": 3,
+      "paragraph_ids": [
+        "madarij-v2-p003-a",
+        "madarij-v2-p003-b"
+      ],
+      "findings": [
+        "Original source begins with a section heading that was missing from the app's bilingual paragraph."
+      ],
+      "edits": [
+        "Restore heading in Arabic and Russian in p003-a."
+      ],
+      "quran": "No explicit quotations.",
+      "hadith": "No attributed prophetic report.",
+      "pending": [
+        "Compare printed 2019 scan and notes. Other editions differ on the 12-versus-13 list of views; retain the selected edition's 12."
+      ]
+    },
+    {
+      "page": 4,
+      "paragraph_ids": [
+        "madarij-v2-p004-01",
+        "madarij-v2-p004-02",
+        "madarij-v2-p004-p005-03"
+      ],
+      "findings": [
+        "Russian text obscured the tongue-out image in the Quran 7:176 allusion; the Arabic contains يلهث in both clauses."
+      ],
+      "edits": [
+        "Restore protruding tongue and panting in both clauses of p004-02."
+      ],
+      "quran": "Verse allusion 7:176 cross-checked with Quran.com; no new explicit author quotation added.",
+      "hadith": "No explicit attributed prophetic report.",
+      "pending": [
+        "Inspect page-break visually in the print scan."
+      ]
+    },
+    {
+      "page": 5,
+      "paragraph_ids": [
+        "madarij-v2-p004-p005-03",
+        "madarij-v2-p005-04",
+        "madarij-v2-p005-05",
+        "madarij-v2-p005-06"
+      ],
+      "findings": [
+        "Editorial formulation 'по приводимому им выражению' was embedded in the author's prose; Arabic speaks directly of the evil eye."
+      ],
+      "edits": [
+        "Restore direct author voice in p005-06 without attributing the saying to the Prophet."
+      ],
+      "quran": "Allusions to 7:175-176 and 62:5; not independent quotations.",
+      "hadith": "Phrase العين تدخل الرجل القبر والجمل القدر found in Abu Nuaym Hilyat al-Awliya 7/90; al-Albani assesses one route hasan (Silsila Sahiha 1249), while other routes have criticized narrators and divergent verdicts.",
+      "pending": [
+        "Independent sanad/variant analysis before declaring hadith verified; inspect print scan."
+      ]
+    }
+  ],
+  "scan_verified_pages": 0,
+  "complete_scholarly_certifications": 0,
+  "continuation_next_page": 6,
+  "publication_ready": false,
+  "references": [
+    "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j2-60",
+    "https://quran.com/ar/al-araf/176",
+    "https://dorar.net/h/JYESbqoz?osoul=1",
+    "https://dorar.net/h/nI9S9pG4?osoul=1"
+  ]
+}

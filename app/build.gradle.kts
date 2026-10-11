@@ -31,7 +31,7 @@ android {
             // A debug APK has a new signing key in each CI run. Use a distinct
             // application ID so the user's installed reader and its Room data
             // are never uninstalled or overwritten to try the preview.
-            applicationIdSuffix = ".preview158"
+            applicationIdSuffix = ".qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
         }
         release {
             applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".collation158"

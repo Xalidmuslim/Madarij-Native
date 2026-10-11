@@ -42,6 +42,8 @@ jobs:
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - name: Verify source alignment and paragraph boundaries of draft volume 2
         run: python3 tools/validate_volume2_preview.py
+      - name: Test volume-2 corrections and previous repairs
+        run: python3 -m unittest -v tools/test_volume2_pages003_005.py tools/test_volume2_collation_4pages.py
       - name: Prepare licensed Russian handwriting font
         run: python3 tools/prepare_handwriting_font.py
 
@@ -54,6 +56,8 @@ jobs:
           chmod +x gradlew
           mkdir -p development-signing
           keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+      - name: Run Android unit tests
+        run: ./gradlew :app:testDebugUnitTest --no-daemon --stacktrace
       - name: Fast build of native Android debug APK
         run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
       - name: Verify installable debug APK
@@ -64,6 +68,22 @@ jobs:
           test -s "$APK"
           unzip -t "$APK" >/dev/null
           "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
+      - name: Verify revised bilingual text is in APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          unzip -p app/build/outputs/apk/debug/app-debug.apk assets/volume2-preview.json > /tmp/volume2-apk.json
+          python3 - <<'PY'
+          import json
+          with open('/tmp/volume2-apk.json',encoding='utf-8') as f: x=json.load(f)
+          p={v['id']:v for c in x['chapters'] for v in c['paragraphs']}
+          assert len(p)==676 and len(x['chapters'])==9
+          assert p['madarij-v2-p003-a']['ar'].startswith('فصل في مشاهد الخلق في المعصية')
+          assert 'высовывает язык' in p['madarij-v2-p004-02']['ru']
+          assert 'по приводимому им выражению' not in p['madarij-v2-p005-06']['ru']
+          assert not x['publication_ready']
+          print('PASS: verified volume-2 pages 3-5 in packaged APK')
+          PY
       - name: Upload installable debug APK
         uses: actions/upload-artifact@v4
         id: apk
