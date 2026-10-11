@@ -89,6 +89,8 @@ summary={
  "issue_counts":dict(Counter(x["type"] for x in issues)),
  "independently_semantically_reviewed_pages":0,
  "independently_authenticated_hadith":0,
+ "hadith_primary_source_spot_checks":5,
+ "curated_editorial_insertions_separated_from_author_text":7,
  "quran_verification_scope":"Automated Arabic quote and reference checks only, NOT verified Russian translations or tafsir",
  "publication_ready":False,
  "quran_data_source":url
@@ -116,6 +118,9 @@ lines+=["","## Что не пройдено","",
 "3. Полная проверка хадисных иснадов, их версий и степени достоверности.",
 "4. Независимая религиозная, литературная и визуальная проверка приложения.",
 "","Канонический арабский текст: https://github.com/asim/quran-json-arabic/blob/main/README.md",
+"Проверено пять идентификаторов хадисных первоисточников; полный иснад-аудит остальных передач не проводился.",
+"Все совпадения и несовпадения арабского текста с Кораном являются машинными подсказками и требуют визуальной проверки. За доказанные ошибки перевода их принимать нельзя.",
+"См. hadith-spot-checks.json и precise-edits.json.",,
 "","**Никакой автоматически пройденный тест не повышает публикационный статус черновика.**"]
 (out/"README.md").write_text("\n".join(lines)+"\n",encoding="utf8")
 print(json.dumps(summary,ensure_ascii=False,indent=2))
