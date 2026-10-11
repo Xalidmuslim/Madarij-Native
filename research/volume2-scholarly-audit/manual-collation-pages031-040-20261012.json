@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-12",
+  "edition": "Nabil ibn Nassar al-Sindi, Dar Ataat al-Ilm / Dar Ibn Hazm, 2019, volume 2",
+  "base_branch": "codex/madarij-v158-volume2-manual-pages021-030-20261012",
+  "working_branch": "codex/madarij-v158-volume2-manual-pages031-040-20261012",
+  "scope": "Sequential direct Arabic/Russian paragraph comparison pages 31–40 using Maknoon text matching 2019 edition and the actual Android bundled bilingual JSON. Printed page photos NOT inspected. Quran 16:97 and 39:10 references checked against Quran.com; remaining independent source verification pending.",
+  "sources": {
+    "edition_page": "https://maknoon.org/ai/view.php?bk=madarej_2&p={page}",
+    "quran_16_97": "https://quran.com/16/97",
+    "quran_39_10": "https://quran.com/39/10",
+    "quran_5_118": "https://quran.com/5/118",
+    "source_arabic_transcript": "research/volume2-source/arabic_pages.jsonl",
+    "changed_android_content": "app/src/main/assets/volume2-preview.json",
+    "changed_draft_russian": "research/volume2-batch-11-80/russian-pages-031-040.json"
+  },
+  "pages": [
+    {
+      "printed_page": 31,
+      "paragraph_ids": [
+        "madarij-v2-p031-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open_issues": [
+        "Check edition's theological terminology names/attributes against scan"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 32,
+      "paragraph_ids": [
+        "madarij-v2-p032-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [
+        "6:91, 39:67, 45:21, 23:115–116 inspected in electronic author context; full independent mushaf apparatus review remains"
+      ],
+      "open_issues": [
+        "Print-scan verification of verse breaks"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 33,
+      "paragraph_ids": [
+        "madarij-v2-p033-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open_issues": [
+        "Independent theological review of implications of divine names and attributes"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 34,
+      "paragraph_ids": [
+        "madarij-v2-p034-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Rendered أعظم فرح يخطر بالبال as «величайшей радостью, какую только можно себе представить»; former draft weakened rhetorical superlative"
+      ],
+      "quran_notes": [
+        "5:118 wording checked against Quran.com"
+      ],
+      "open_issues": [
+        "Print-scan punctuation and doctrinal editorial review"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 35,
+      "paragraph_ids": [
+        "madarij-v2-p035-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [
+        "7:180 retained"
+      ],
+      "open_issues": [
+        "Review distinct categories of دعاء with subject-matter expert"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 36,
+      "paragraph_ids": [
+        "madarij-v2-p036-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Removed «Поэт сказал:» absent from author body; printed editor footnote identifies al-Buhturi but editorial attribution must not be inserted into author prose"
+      ],
+      "quran_notes": [],
+      "open_issues": [
+        "Independent source verification of poetic couplet; distinguish editor attribution to al-Buhturi"
+      ],
+      "other": [
+        "Theological explanatory parentheticals associated with divine attributes retained for now, pending separate terminology/annotation decision"
+      ]
+    },
+    {
+      "printed_page": 37,
+      "paragraph_ids": [
+        "madarij-v2-p037-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open_issues": [
+        "Independent theological reading of causality argument and page-boundary to p.38"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 38,
+      "paragraph_ids": [
+        "madarij-v2-p038-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Restored entire 16:97 canonical text in Android Arabic citation; removed stray tail «يَعْمَلُونَ (٩٦)» from 16:96 and restored «كَانُوا يَعْمَلُونَ» ending absent in transcribed extract",
+        "Removed spurious «(٩)» immediately preceding Qur'an 39:10 quotation"
+      ],
+      "quran_notes": [
+        "16:97 compared wordwise against Quran.com Arabic; 39:10 start compared against Quran.com"
+      ],
+      "open_issues": [
+        "Compare actual 2019 print scan of both quotations; original OCR/electronic source preserved independently"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 39,
+      "paragraph_ids": [
+        "madarij-v2-p039-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Removed added «по мнению автора» from the author's own statement والصحيح",
+        "Removed added «по описанию автора» from direct author description of hearts"
+      ],
+      "quran_notes": [
+        "16:30 and 11:3 quotation boundaries require print scan; verse 16:30 electronic segment starts on p.38 and resumes on p.39"
+      ],
+      "open_issues": [
+        "Recheck author/verse boundary in original print; distinguish abridged quotation from damaged OCR"
+      ],
+      "other": []
+    },
+    {
+      "printed_page": 40,
+      "paragraph_ids": [
+        "madarij-v2-p040-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_hadith_attributions_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open_issues": [
+        "Critical hadith/athar attribution: printed editor says «لم أقف عليه من قول ابن عباس» about quoted dictum and notes related Hasan al-Basri report; claimed Ibn Abbas attribution unverified. Do NOT silently rewrite what Ibn al-Qayyim attributed, do NOT certify sanad. Require separated editor/translator note before publication.",
+        "Continue argument and next passage p.41"
+      ],
+      "other": []
+    }
+  ],
+  "stats": {
+    "electronically_compared_pages": 10,
+    "changed_paragraphs": [
+      34,
+      36,
+      38,
+      39
+    ],
+    "distinct_changed_paragraphs": 4,
+    "textual_edits": 6,
+    "quran_arabic_quotes_fixed": 2,
+    "print_scans_checked": 0,
+    "fully_scholarly_verified_pages": 0,
+    "next_sequential_page": 41
+  },
+  "integrity": {
+    "original_arabic_research_transcript_untouched": true,
+    "volume1_untouched": true,
+    "arabic_in_app_changed_only_page38": true,
+    "existing_count_676_and_9_sections_preserved": true,
+    "prior_changes_3_30_preserved": true,
+    "prior_repairs_448_463_507_622_preserved": true,
+    "independent_verification_flags_not_changed": true
+  },
+  "apk_built": false,
+  "publication_ready": false
+}
