@@ -1,0 +1,56 @@
+{
+  "book": "مدارج السالكين في منازل السائرين — Степени идущих",
+  "volume": 2,
+  "source_edition": "Набиль ибн Нассар ас-Синди; Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019",
+  "source_url": "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j2-60",
+  "source_page": 3,
+  "total_printed_pages": 659,
+  "translation_completeness": "opening_excerpt_only",
+  "translation_independently_verified": false,
+  "publication_ready": false,
+  "editorial_footnotes_imported": false,
+  "note": "Only a short author-text excerpt; transcription punctuation normalized and footnote markers omitted. Unverified self-checked Russian draft, not a complete or certified translation. Divergent editions are not mixed.",
+  "edition": {
+    "draft": true,
+    "author_text_rights": "public_domain",
+    "translation_rights": "own_draft_not_independently_checked",
+    "structure_verified": false,
+    "rights_status": "pending_editorial_review"
+  },
+  "expected_chapter_ids": [
+    "madarij-v2-p003-views-of-sin"
+  ],
+  "chapters": [
+    {
+      "id": "madarij-v2-p003-views-of-sin",
+      "volume": 2,
+      "order": 0,
+      "title": "О взглядах на грех",
+      "source": "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j2-60 · том 2 · печатная стр. 3",
+      "expected_paragraph_ids": [
+        "madarij-v2-p003-a",
+        "madarij-v2-p003-b"
+      ],
+      "paragraphs": [
+        {
+          "id": "madarij-v2-p003-a",
+          "order": 0,
+          "ar": "وهي اثنا عشر مشهدًا: مشهد الحيوانية وقضاء الشهوة، ومشهد اقتضاء رسوم الطبيعة ولوازم الخلقة، ومشهد الجبر، ومشهد القدر، ومشهد الحكمة، ومشهد التوفيق والخذلان، ومشهد التوحيد، ومشهد الأسماء والصفات، ومشهد الإيمان وتعدد شواهده، ومشهد العجز والضعف، ومشهد الذلّ والافتقار، ومشهد المحبة والعبودية؛ فالأربعة الأولى للمنحرفين، والثمانية البواقي لأهل الاستقامة، وأعلاها المشهد العاشر.",
+          "ru": "Всего таких взглядов двенадцать: взгляд, при котором грех объясняется животной природой и удовлетворением страсти; взгляд, связывающий его с природными свойствами и особенностями человеческого устройства; взгляд принуждения; взгляд предопределения; взгляд мудрости; взгляд содействия [Аллаха] и оставления без помощи; взгляд единобожия; взгляд имён и атрибутов [Аллаха]; взгляд веры и многочисленных свидетельств о ней; взгляд бессилия и слабости; взгляд униженности и нужды [в Аллахе]; взгляд любви и поклонения. Первые четыре присущи уклонившимся от прямого пути, остальные восемь — людям, следующим прямому пути. Наивысшим из них назван десятый взгляд.",
+          "role": "author",
+          "status": "draft_self_checked",
+          "source": "Том 2 · стр. 3 · авторский текст; сноски издания исключены"
+        },
+        {
+          "id": "madarij-v2-p003-b",
+          "order": 1,
+          "ar": "وهذا الفصل من أجلّ فصول الكتاب وأنفعها لكل أحد، وهو حقيق بأن تُثنَى عليه الخناصر، ولعلك لا تظفر به في كتاب سواه إلا ما ذكرناه في كتابنا المسمّى بـ«سفر الهجرتين وطريق السعادتين».",
+          "ru": "Этот раздел — один из важнейших и наиболее полезных для каждого человека во всей книге. Он заслуживает особого внимания. Возможно, ты не найдёшь подобного объяснения в другой книге, кроме того, что мы уже изложили в нашем труде «Два переселения и путь к двум видам счастья».",
+          "role": "author",
+          "status": "draft_self_checked",
+          "source": "Том 2 · стр. 3 · авторский текст; сноски издания исключены"
+        }
+      ]
+    }
+  ]
+}
