@@ -10,16 +10,17 @@
 
 ## Типы обнаруженных замечаний
 
-- CHECK_QUOTE_MISMATCH: **152**
+- CHECK_QUOTE_MISMATCH: **154**
+- EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE: **94**
 - EDITORIAL_COMMENT_IN_AUTHOR_TEXT: **94**
 
 ## Статусы коранических фрагментов
 
 - EXACT_AFTER_ARABIC_NORMALIZATION: **160**
-- CHECK_QUOTE_MISMATCH: **152**
-- QUOTE_VARIANT_REQUIRES_REVIEW: **58**
+- CHECK_QUOTE_MISMATCH: **154**
+- QUOTE_VARIANT_REQUIRES_REVIEW: **55**
 - REFERENCE_WITHOUT_NEARBY_QUOTE: **7**
-- QUOTE_TOO_SHORT: **1**
+- QUOTE_TOO_SHORT: **2**
 
 ## Список критических случаев
 
@@ -62,7 +63,6 @@
 - Стр. 83 — CHECK_QUOTE_MISMATCH: [الزخرف: ٣]
 - Стр. 90 — CHECK_QUOTE_MISMATCH: [الفرقان: ٢٧ - ٢٩]
 - Стр. 90 — CHECK_QUOTE_MISMATCH: [العنكبوت: ٢٥]
-- Стр. 94 — CHECK_QUOTE_MISMATCH: [مريم: ٨١ - ٨٢]
 - Стр. 94 — CHECK_QUOTE_MISMATCH: [يس: ٧٤ - ٧٥]
 - Стр. 94 — CHECK_QUOTE_MISMATCH: [الإسراء: ٢٢]
 - Стр. 99 — CHECK_QUOTE_MISMATCH: [الحج: ٧٨]
@@ -134,6 +134,7 @@
 - Стр. 408 — CHECK_QUOTE_MISMATCH: [الأنفال: ٢]
 - Стр. 420 — CHECK_QUOTE_MISMATCH: [غافر:٤٤ - ٤٥]
 - Стр. 445 — CHECK_QUOTE_MISMATCH: [البقرة: ١٥٣]
+- Стр. 445 — CHECK_QUOTE_MISMATCH: [الأحقاف: ٣٥]
 - Стр. 446 — CHECK_QUOTE_MISMATCH: [آل عمران: ١٧]
 - Стр. 446 — CHECK_QUOTE_MISMATCH: [آل عمران: ١٤٦]
 - Стр. 446 — CHECK_QUOTE_MISMATCH: [البقرة: ٢٤٩]
@@ -166,6 +167,7 @@
 - Стр. 567 — CHECK_QUOTE_MISMATCH: [المدثر: ٤٨]
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [النحل: ٧٨]
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [البقرة: ١٥١ - ١٥٢]
+- Стр. 587 — CHECK_QUOTE_MISMATCH: [آل عمران: ١٤٤]
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [إبراهيم: ٥]
 - Стр. 627 — CHECK_QUOTE_MISMATCH: [التوبة: ١١٩]
 - Стр. 628 — CHECK_QUOTE_MISMATCH: [الأحزاب: ٢٤]
@@ -173,6 +175,7 @@
 - Стр. 630 — CHECK_QUOTE_MISMATCH: [يونس: ٢]
 - Стр. 630 — CHECK_QUOTE_MISMATCH: [القمر: ٥٤ - ٥٥]
 - Стр. 632 — CHECK_QUOTE_MISMATCH: [الروم: ٢٢]
+- Стр. 657 — CHECK_QUOTE_MISMATCH: [ق: ١٦]
 - Стр. 658 — CHECK_QUOTE_MISMATCH: [القيامة: ١٨]
 - Стр. 658 — CHECK_QUOTE_MISMATCH: [ق: ١٦]
 

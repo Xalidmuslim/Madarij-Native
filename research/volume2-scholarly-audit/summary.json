@@ -5,14 +5,15 @@
   "arabic_pages_matched_exactly_to_source": 649,
   "arabic_quran_references_tested": 378,
   "citation_statuses": {
-    "CHECK_QUOTE_MISMATCH": 152,
-    "QUOTE_VARIANT_REQUIRES_REVIEW": 58,
+    "CHECK_QUOTE_MISMATCH": 154,
+    "QUOTE_VARIANT_REQUIRES_REVIEW": 55,
     "EXACT_AFTER_ARABIC_NORMALIZATION": 160,
     "REFERENCE_WITHOUT_NEARBY_QUOTE": 7,
-    "QUOTE_TOO_SHORT": 1
+    "QUOTE_TOO_SHORT": 2
   },
   "issue_counts": {
-    "CHECK_QUOTE_MISMATCH": 152,
+    "CHECK_QUOTE_MISMATCH": 154,
+    "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE": 94,
     "EDITORIAL_COMMENT_IN_AUTHOR_TEXT": 94
   },
   "independently_semantically_reviewed_pages": 0,

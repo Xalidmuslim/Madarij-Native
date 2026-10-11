@@ -6,6 +6,12 @@
     "ref": "[الأنعام: ٣٨]"
   },
   {
+    "page": 15,
+    "id": "madarij-v2-p015-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأعراف: ٥٤]"
+  },
+  {
     "page": 21,
     "id": "madarij-v2-p021-draft",
     "type": "CHECK_QUOTE_MISMATCH",
@@ -14,8 +20,26 @@
   {
     "page": 23,
     "id": "madarij-v2-p023-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ٨٤ - ٨٥]"
+  },
+  {
+    "page": 23,
+    "id": "madarij-v2-p023-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ٨٦ - ٨٩]"
+  },
+  {
+    "page": 23,
+    "id": "madarij-v2-p023-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[المؤمنون: ٨٦ - ٨٩]"
+  },
+  {
+    "page": 23,
+    "id": "madarij-v2-p023-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النمل: ٥٩ - ٦٤]"
   },
   {
     "page": 23,
@@ -44,6 +68,12 @@
   {
     "page": 27,
     "id": "madarij-v2-p027-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحجرات: ٧ - ٨]"
+  },
+  {
+    "page": 27,
+    "id": "madarij-v2-p027-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الحجرات: ٧ - ٨]"
   },
@@ -62,8 +92,20 @@
   {
     "page": 32,
     "id": "madarij-v2-p032-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ١١٥ - ١١٦]"
+  },
+  {
+    "page": 32,
+    "id": "madarij-v2-p032-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[المؤمنون: ١١٥ - ١١٦]"
+  },
+  {
+    "page": 38,
+    "id": "madarij-v2-p038-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ٩٧]"
   },
   {
     "page": 38,
@@ -72,10 +114,28 @@
     "ref": "[النحل: ٩٧]"
   },
   {
+    "page": 38,
+    "id": "madarij-v2-p038-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الزمر: ١٠]"
+  },
+  {
     "page": 39,
     "id": "madarij-v2-p039-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[هود: ٣]"
+  },
+  {
+    "page": 39,
+    "id": "madarij-v2-p039-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الانفطار: ١٣ - ١٤]"
+  },
+  {
+    "page": 40,
+    "id": "madarij-v2-p040-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النمل: ٧١ - ٧٢]"
   },
   {
     "page": 40,
@@ -116,14 +176,32 @@
   {
     "page": 55,
     "id": "madarij-v2-p055-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[ق: ٦ - ٨]"
   },
   {
     "page": 55,
     "id": "madarij-v2-p055-draft",
     "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[ق: ٦ - ٨]"
+  },
+  {
+    "page": 55,
+    "id": "madarij-v2-p055-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[غافر: ١٣]"
+  },
+  {
+    "page": 55,
+    "id": "madarij-v2-p055-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[غافر: ١٣]"
+  },
+  {
+    "page": 55,
+    "id": "madarij-v2-p055-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الروم: ٣٠ - ٣١]"
   },
   {
     "page": 56,
@@ -134,14 +212,38 @@
   {
     "page": 56,
     "id": "madarij-v2-p056-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[ص: ٢٤]"
+  },
+  {
+    "page": 56,
+    "id": "madarij-v2-p056-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[ق: ٣١ - ٣٤]"
+  },
+  {
+    "page": 56,
+    "id": "madarij-v2-p056-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الزمر: ١٧]"
+  },
+  {
+    "page": 56,
+    "id": "madarij-v2-p056-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الروم: ٣٣ - ٣٤]"
   },
   {
     "page": 57,
     "id": "madarij-v2-p057-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الفرقان: ٧٠]"
+  },
+  {
+    "page": 57,
+    "id": "madarij-v2-p057-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البقرة: ١٦٠]"
   },
   {
     "page": 58,
@@ -164,14 +266,38 @@
   {
     "page": 69,
     "id": "madarij-v2-p069-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[غافر: ٥٣ - ٥٤]"
   },
   {
     "page": 69,
     "id": "madarij-v2-p069-draft",
     "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[غافر: ٥٣ - ٥٤]"
+  },
+  {
+    "page": 69,
+    "id": "madarij-v2-p069-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحاقة: ٤٨]"
+  },
+  {
+    "page": 69,
+    "id": "madarij-v2-p069-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[ق: ٦ - ٨]"
+  },
+  {
+    "page": 69,
+    "id": "madarij-v2-p069-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[ق: ٦ - ٨]"
+  },
+  {
+    "page": 70,
+    "id": "madarij-v2-p070-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[ق: ٣٦]"
   },
   {
     "page": 70,
@@ -184,6 +310,12 @@
     "id": "madarij-v2-p074-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[النحل: ١٢٥]"
+  },
+  {
+    "page": 77,
+    "id": "madarij-v2-p077-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النازعات: ٤٢ - ٤٥]"
   },
   {
     "page": 77,
@@ -218,14 +350,44 @@
   {
     "page": 82,
     "id": "madarij-v2-p082-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الشعراء: ٢٠٥ - ٢٠٧]"
+  },
+  {
+    "page": 82,
+    "id": "madarij-v2-p082-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النازعات: ٤٦]"
+  },
+  {
+    "page": 82,
+    "id": "madarij-v2-p082-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[المؤمنون: ١١٢ - ١١٤]"
   },
   {
     "page": 82,
     "id": "madarij-v2-p082-draft",
     "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[المؤمنون: ١١٢ - ١١٤]"
+  },
+  {
+    "page": 82,
+    "id": "madarij-v2-p082-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[الأحقاف: ٣٥]"
+  },
+  {
+    "page": 82,
+    "id": "madarij-v2-p082-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[الأحقاف: ٣٥]"
+  },
+  {
+    "page": 82,
+    "id": "madarij-v2-p082-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[طه: ١٠٢ - ١٠٤]"
   },
   {
     "page": 82,
@@ -248,14 +410,32 @@
   {
     "page": 83,
     "id": "madarij-v2-p083-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[محمد: ٢٤]"
   },
   {
     "page": 83,
     "id": "madarij-v2-p083-draft",
     "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[محمد: ٢٤]"
+  },
+  {
+    "page": 83,
+    "id": "madarij-v2-p083-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ٦٨]"
+  },
+  {
+    "page": 83,
+    "id": "madarij-v2-p083-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الزخرف: ٣]"
+  },
+  {
+    "page": 90,
+    "id": "madarij-v2-p090-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الفرقان: ٢٧ - ٢٩]"
   },
   {
     "page": 90,
@@ -272,8 +452,14 @@
   {
     "page": 94,
     "id": "madarij-v2-p094-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[مريم: ٨١ - ٨٢]"
+  },
+  {
+    "page": 94,
+    "id": "madarij-v2-p094-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[يس: ٧٤ - ٧٥]"
   },
   {
     "page": 94,
@@ -292,6 +478,12 @@
     "id": "madarij-v2-p096-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "требует проверки"
+  },
+  {
+    "page": 99,
+    "id": "madarij-v2-p099-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحج: ٧٨]"
   },
   {
     "page": 99,
@@ -330,6 +522,24 @@
     "ref": "[مريم: ١٢]"
   },
   {
+    "page": 117,
+    "id": "madarij-v2-p117-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الطلاق: ٢ - ٣]"
+  },
+  {
+    "page": 119,
+    "id": "madarij-v2-p119-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[التكاثر: ٦ - ٧]"
+  },
+  {
+    "page": 131,
+    "id": "madarij-v2-p131-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الزمر: ١٧ - ١٨]"
+  },
+  {
     "page": 131,
     "id": "madarij-v2-p131-draft",
     "type": "CHECK_QUOTE_MISMATCH",
@@ -344,8 +554,26 @@
   {
     "page": 131,
     "id": "madarij-v2-p131-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المائدة: ٨٣]"
+  },
+  {
+    "page": 131,
+    "id": "madarij-v2-p131-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأنفال: ٢٣]"
+  },
+  {
+    "page": 131,
+    "id": "madarij-v2-p131-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[فصلت: ٢٦]"
+  },
+  {
+    "page": 132,
+    "id": "madarij-v2-p132-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحج: ٤٦]"
   },
   {
     "page": 132,
@@ -356,8 +584,20 @@
   {
     "page": 134,
     "id": "madarij-v2-p134-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الجن: ١]"
+  },
+  {
+    "page": 134,
+    "id": "madarij-v2-p134-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الجن: ١]"
+  },
+  {
+    "page": 134,
+    "id": "madarij-v2-p134-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأنفال: ٢٣]"
   },
   {
     "page": 135,
@@ -452,8 +692,20 @@
   {
     "page": 179,
     "id": "madarij-v2-p179-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ٥٧ - ٦١]"
+  },
+  {
+    "page": 179,
+    "id": "madarij-v2-p179-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[المؤمنون: ٥٧ - ٦١]"
+  },
+  {
+    "page": 189,
+    "id": "madarij-v2-p189-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الطور: ٢٥ - ٢٧]"
   },
   {
     "page": 189,
@@ -482,6 +734,12 @@
   {
     "page": 193,
     "id": "madarij-v2-p193-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المؤمنون: ١]"
+  },
+  {
+    "page": 193,
+    "id": "madarij-v2-p193-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[المؤمنون: ١]"
   },
@@ -504,6 +762,18 @@
     "sample": "требуют сверки"
   },
   {
+    "page": 197,
+    "id": "madarij-v2-p197-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الرحمن: ٤٦]"
+  },
+  {
+    "page": 197,
+    "id": "madarij-v2-p197-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النازعات: ٤٠]"
+  },
+  {
     "page": 202,
     "id": "madarij-v2-p202-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
@@ -514,6 +784,18 @@
     "id": "madarij-v2-p206-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "Достоверност"
+  },
+  {
+    "page": 209,
+    "id": "madarij-v2-p209-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحج: ٣٤]"
+  },
+  {
+    "page": 209,
+    "id": "madarij-v2-p209-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الحج: ٣٥]"
   },
   {
     "page": 209,
@@ -536,14 +818,32 @@
   {
     "page": 218,
     "id": "madarij-v2-p218-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ٩٦]"
+  },
+  {
+    "page": 218,
+    "id": "madarij-v2-p218-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الحديد: ٢٠]"
   },
   {
     "page": 218,
     "id": "madarij-v2-p218-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[يونس: ٢٤]"
+  },
+  {
+    "page": 218,
+    "id": "madarij-v2-p218-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[يونس: ٢٤]"
+  },
+  {
+    "page": 218,
+    "id": "madarij-v2-p218-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الكهف: ٤٥ - ٤٦]"
   },
   {
     "page": 218,
@@ -560,14 +860,32 @@
   {
     "page": 219,
     "id": "madarij-v2-p219-draft",
-    "type": "CHECK_QUOTE_MISMATCH",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[الأعلى: ١٦]"
   },
   {
     "page": 219,
     "id": "madarij-v2-p219-draft",
     "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[الأعلى: ١٦]"
+  },
+  {
+    "page": 219,
+    "id": "madarij-v2-p219-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
     "ref": "[الكهف: ٧ - ٨]"
+  },
+  {
+    "page": 219,
+    "id": "madarij-v2-p219-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[الكهف: ٧ - ٨]"
+  },
+  {
+    "page": 219,
+    "id": "madarij-v2-p219-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الزخرف: ٣٣ - ٣٥]"
   },
   {
     "page": 219,
@@ -580,6 +898,12 @@
     "id": "madarij-v2-p224-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "атрибуци"
+  },
+  {
+    "page": 234,
+    "id": "madarij-v2-p234-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[المدثر: ٤]"
   },
   {
     "page": 236,
@@ -638,6 +962,12 @@
   {
     "page": 267,
     "id": "madarij-v2-p267-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الإسراء: ٥٦]"
+  },
+  {
+    "page": 267,
+    "id": "madarij-v2-p267-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الإسراء: ٥٦]"
   },
@@ -692,8 +1022,20 @@
   {
     "page": 322,
     "id": "madarij-v2-p322-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[ص: ٢٥]"
+  },
+  {
+    "page": 322,
+    "id": "madarij-v2-p322-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[ص: ٢٥]"
+  },
+  {
+    "page": 323,
+    "id": "madarij-v2-p323-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الشعراء: ٤١ - ٤٢]"
   },
   {
     "page": 323,
@@ -710,8 +1052,20 @@
   {
     "page": 323,
     "id": "madarij-v2-p323-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأنبياء: ٨٩ - ٩٠]"
+  },
+  {
+    "page": 323,
+    "id": "madarij-v2-p323-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الأنبياء: ٨٩ - ٩٠]"
+  },
+  {
+    "page": 324,
+    "id": "madarij-v2-p324-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الفرقان: ٦٥ - ٦٦]"
   },
   {
     "page": 324,
@@ -724,6 +1078,12 @@
     "id": "madarij-v2-p325-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "необходимо сверить"
+  },
+  {
+    "page": 325,
+    "id": "madarij-v2-p325-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الشعراء: ٨٢ - ٨٧]"
   },
   {
     "page": 325,
@@ -742,6 +1102,12 @@
     "id": "madarij-v2-p328-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "необходимо проверить"
+  },
+  {
+    "page": 329,
+    "id": "madarij-v2-p329-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[يونس: ٢٥]"
   },
   {
     "page": 329,
@@ -770,8 +1136,26 @@
   {
     "page": 344,
     "id": "madarij-v2-p344-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الزمر: ٢ - ٣]"
+  },
+  {
+    "page": 344,
+    "id": "madarij-v2-p344-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الزمر: ٢ - ٣]"
+  },
+  {
+    "page": 344,
+    "id": "madarij-v2-p344-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الزمر: ١١ - ١٥]"
+  },
+  {
+    "page": 344,
+    "id": "madarij-v2-p344-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأنعام: ١٦٢ - ١٦٣]"
   },
   {
     "page": 344,
@@ -818,6 +1202,12 @@
   {
     "page": 352,
     "id": "madarij-v2-p352-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الإسراء: ٧٤]"
+  },
+  {
+    "page": 352,
+    "id": "madarij-v2-p352-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الإسراء: ٧٤]"
   },
@@ -842,6 +1232,18 @@
   {
     "page": 356,
     "id": "madarij-v2-p356-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[التكوير: ٢٨ - ٢٩]"
+  },
+  {
+    "page": 356,
+    "id": "madarij-v2-p356-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الإنسان: ٢٩ - ٣٠]"
+  },
+  {
+    "page": 356,
+    "id": "madarij-v2-p356-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الإنسان: ٢٩ - ٣٠]"
   },
@@ -856,6 +1258,12 @@
     "id": "madarij-v2-p368-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[فصلت: ٣٠]"
+  },
+  {
+    "page": 368,
+    "id": "madarij-v2-p368-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الأحقاف: ١٣ - ١٤]"
   },
   {
     "page": 368,
@@ -948,10 +1356,34 @@
     "sample": "требует проверки"
   },
   {
+    "page": 436,
+    "id": "madarij-v2-p436-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النساء: ٦٥]"
+  },
+  {
+    "page": 445,
+    "id": "madarij-v2-p445-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البقرة: ١٥٣]"
+  },
+  {
     "page": 445,
     "id": "madarij-v2-p445-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[البقرة: ١٥٣]"
+  },
+  {
+    "page": 445,
+    "id": "madarij-v2-p445-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ١٢٧]"
+  },
+  {
+    "page": 445,
+    "id": "madarij-v2-p445-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[الأحقاف: ٣٥]"
   },
   {
     "page": 446,
@@ -998,8 +1430,20 @@
   {
     "page": 448,
     "id": "madarij-v2-p448-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[القصص: ٨٠]"
+  },
+  {
+    "page": 448,
+    "id": "madarij-v2-p448-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[القصص: ٨٠]"
+  },
+  {
+    "page": 448,
+    "id": "madarij-v2-p448-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[فصلت: ٣٤ - ٣٥]"
   },
   {
     "page": 448,
@@ -1022,8 +1466,20 @@
   {
     "page": 448,
     "id": "madarij-v2-p448-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الشورى: ٣٢]"
+  },
+  {
+    "page": 448,
+    "id": "madarij-v2-p448-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الشورى: ٣٢]"
+  },
+  {
+    "page": 448,
+    "id": "madarij-v2-p448-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الرعد: ٢٣]"
   },
   {
     "page": 448,
@@ -1036,6 +1492,12 @@
     "id": "madarij-v2-p451-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الكهف: ٢٨]"
+  },
+  {
+    "page": 453,
+    "id": "madarij-v2-p453-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ١٢٧]"
   },
   {
     "page": 456,
@@ -1068,6 +1530,12 @@
     "sample": "Достоверност"
   },
   {
+    "page": 486,
+    "id": "madarij-v2-p486-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الفجر: ٢٧ - ٢٨]"
+  },
+  {
     "page": 487,
     "id": "madarij-v2-p487-draft",
     "type": "CHECK_QUOTE_MISMATCH",
@@ -1084,6 +1552,18 @@
     "id": "madarij-v2-p492-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[الأنعام: ١٤]"
+  },
+  {
+    "page": 497,
+    "id": "madarij-v2-p497-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الفجر: ٢٧ - ٢٨]"
+  },
+  {
+    "page": 497,
+    "id": "madarij-v2-p497-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البينة: ٨]"
   },
   {
     "page": 497,
@@ -1112,6 +1592,12 @@
   {
     "page": 501,
     "id": "madarij-v2-p501-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البينة: ٧ - ٨]"
+  },
+  {
+    "page": 501,
+    "id": "madarij-v2-p501-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[البينة: ٧ - ٨]"
   },
@@ -1134,10 +1620,28 @@
     "ref": "[الزخرف: ٢٠]"
   },
   {
+    "page": 509,
+    "id": "madarij-v2-p509-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النساء: ٦٥]"
+  },
+  {
+    "page": 515,
+    "id": "madarij-v2-p515-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[فاطر: ٦]"
+  },
+  {
     "page": 515,
     "id": "madarij-v2-p515-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[فاطر: ٦]"
+  },
+  {
+    "page": 521,
+    "id": "madarij-v2-p521-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[التوبة: ٤٦ - ٤٧]"
   },
   {
     "page": 521,
@@ -1168,6 +1672,12 @@
     "id": "madarij-v2-p532-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "Достоверност"
+  },
+  {
+    "page": 534,
+    "id": "madarij-v2-p534-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الفجر: ٢٧ - ٣٠]"
   },
   {
     "page": 539,
@@ -1296,6 +1806,18 @@
     "sample": "необходимо проверить"
   },
   {
+    "page": 586,
+    "id": "madarij-v2-p586-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ١٢٠ - ١٢١]"
+  },
+  {
+    "page": 587,
+    "id": "madarij-v2-p587-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ٧٨]"
+  },
+  {
     "page": 587,
     "id": "madarij-v2-p587-draft",
     "type": "CHECK_QUOTE_MISMATCH",
@@ -1304,8 +1826,20 @@
   {
     "page": 587,
     "id": "madarij-v2-p587-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البقرة: ١٥١ - ١٥٢]"
+  },
+  {
+    "page": 587,
+    "id": "madarij-v2-p587-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[البقرة: ١٥١ - ١٥٢]"
+  },
+  {
+    "page": 587,
+    "id": "madarij-v2-p587-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[آل عمران: ١٤٤]"
   },
   {
     "page": 587,
@@ -1350,6 +1884,12 @@
     "sample": "Достоверност"
   },
   {
+    "page": 611,
+    "id": "madarij-v2-p611-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[العلق: ١٤]"
+  },
+  {
     "page": 612,
     "id": "madarij-v2-p612-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
@@ -1392,10 +1932,22 @@
     "sample": "требуют сверки"
   },
   {
+    "page": 622,
+    "id": "madarij-v2-p622-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[النحل: ١٢٨]"
+  },
+  {
     "page": 623,
     "id": "madarij-v2-p623-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "требует проверки"
+  },
+  {
+    "page": 623,
+    "id": "madarij-v2-p623-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[البقرة: ١٨٦]"
   },
   {
     "page": 626,
@@ -1426,6 +1978,12 @@
     "id": "madarij-v2-p630-draft",
     "type": "CHECK_QUOTE_MISMATCH",
     "ref": "[يونس: ٢]"
+  },
+  {
+    "page": 630,
+    "id": "madarij-v2-p630-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[القمر: ٥٤ - ٥٥]"
   },
   {
     "page": 630,
@@ -1462,6 +2020,24 @@
     "id": "madarij-v2-p642-draft",
     "type": "EDITORIAL_COMMENT_IN_AUTHOR_TEXT",
     "sample": "требуют отдельной проверки"
+  },
+  {
+    "page": 653,
+    "id": "madarij-v2-p653-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[الإنسان: ٢٩ - ٣٠]"
+  },
+  {
+    "page": 653,
+    "id": "madarij-v2-p653-draft",
+    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
+    "ref": "[التكوير: ٢٨ - ٢٩]"
+  },
+  {
+    "page": 657,
+    "id": "madarij-v2-p657-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[ق: ١٦]"
   },
   {
     "page": 658,
