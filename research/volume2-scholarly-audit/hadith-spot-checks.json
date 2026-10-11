@@ -1,0 +1,51 @@
+{
+  "created": "2026-10-12",
+  "scope": "Five individual source-identification spot-checks, not comprehensive hadith grading",
+  "status": "PARTIAL_SPOT_CHECKS_ONLY",
+  "items": [
+    {
+      "printed_page": 623,
+      "topic": "Ближе всего раб к Господу в земном поклоне",
+      "source": "Sahih Muslim 482",
+      "url": "https://sunnah.com/muslim:482",
+      "source_status": "Primary narration confirmed",
+      "russian_meaning_checked": "The closest a servant is to his Lord is while prostrating",
+      "limit": "Does not verify the second distinct night-time narration on this page."
+    },
+    {
+      "printed_page": 588,
+      "topic": "Помоги мне поминать Тебя, благодарить Тебя и правильно поклоняться",
+      "source": "Sunan Abi Dawud 1522",
+      "url": "https://sunnah.com/abudawud:1522",
+      "source_status": "Arabic matn and source reference confirmed; Sunnah.com labels Sahih (Al-Albani)",
+      "limit": "Only this specific supplication; other long duas on the page need separate isnad and word checks."
+    },
+    {
+      "printed_page": 611,
+      "topic": "Если не испытываешь стыда, делай что хочешь",
+      "source": "Sahih al-Bukhari 6120",
+      "url": "https://sunnah.com/bukhari:6120",
+      "source_status": "Arabic matn and source reference confirmed",
+      "limit": "Does not grade other reported sayings on the page."
+    },
+    {
+      "printed_page": 633,
+      "topic": "Правдивость ведёт к благочестию, благочестие ведёт в Рай",
+      "source": "Sahih al-Bukhari 6094; Sahih Muslim 2607",
+      "url": "https://sunnah.com/bukhari:6094",
+      "alternate_url": "https://sunnah.com/muslim:2607b",
+      "source_status": "Arabic matn and core meaning of the narration confirmed",
+      "limit": "Differences of narrator phraseology and all theological contextualizations remain to review."
+    },
+    {
+      "printed_page": 634,
+      "topic": "Правдивость продавца и покупателя; благословение сделки",
+      "source": "Sahih al-Bukhari 2079",
+      "url": "https://sunnah.com/bukhari:2079",
+      "source_status": "Arabic matn and source reference confirmed",
+      "limit": "Not a blanket verification of all sales-law interpretations."
+    }
+  ],
+  "all_volume_hadith_independently_verified": false,
+  "volume_publication_ready": false
+}
