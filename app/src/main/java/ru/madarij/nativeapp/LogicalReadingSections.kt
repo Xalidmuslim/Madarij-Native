@@ -39,7 +39,8 @@ internal object LogicalReadingSections {
         "madarij-v1-p535-draft-section",
         "madarij-v1-p553-draft-section",
         "madarij-v1-p566-draft-section",
-        "madarij-v1-p609-draft-section"
+        "madarij-v1-p609-draft-section",
+        "madarij-v2-p003-views-of-sin"
     )
     private val pages: Map<String, Pair<Int,Int>> = mapOf(
         "madarij-v1-opening-001-section" to (3 to 21),
@@ -71,7 +72,8 @@ internal object LogicalReadingSections {
         "madarij-v1-p535-draft-section" to (535 to 552),
         "madarij-v1-p553-draft-section" to (553 to 565),
         "madarij-v1-p566-draft-section" to (566 to 608),
-        "madarij-v1-p609-draft-section" to (609 to 610)
+        "madarij-v1-p609-draft-section" to (609 to 610),
+        "madarij-v2-p003-views-of-sin" to (3 to 3)
     )
     fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter { it.id in starts }
     fun members(chapters: List<Chapter>, requestedId: String): List<Chapter> {
@@ -79,6 +81,10 @@ internal object LogicalReadingSections {
         if (index < 0) return emptyList()
         val first = (index downTo 0).firstOrNull { chapters[it].id in starts } ?: 0
         val end = (indexOfNextStart(chapters, first + 1)).takeIf { it >= 0 } ?: chapters.size
+        // A volume boundary is never merged into the preceding reader section.
+        require(chapters.subList(first, end).all { it.volume == chapters[index].volume }) {
+            "Cross-volume section detected: $requestedId"
+        }
         return chapters.subList(first, end)
     }
     private fun indexOfNextStart(chapters: List<Chapter>, start: Int): Int =
