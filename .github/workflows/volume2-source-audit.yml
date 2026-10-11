@@ -1,0 +1,80 @@
+name: Volume 2 Arabic Source Audit
+
+on:
+  push:
+    branches:
+      - codex/madarij-v146-volume2-arabic-source-audit
+    paths:
+      - tools/ingest_volume2_arabic.py
+      - .github/workflows/volume2-source-audit.yml
+  workflow_dispatch:
+    inputs:
+      start_page:
+        description: "First PRINTED page (1..659)"
+        required: false
+        default: "1"
+      end_page:
+        description: "Last PRINTED page (1..659)"
+        required: false
+        default: "659"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: madarij-v2-source-audit
+  cancel-in-progress: false
+
+jobs:
+  ingest-arabic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout source processing script
+        uses: actions/checkout@v4
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate parser and protect editorial footnotes
+        shell: bash
+        run: |
+          python -m py_compile tools/ingest_volume2_arabic.py
+          python - <<'PY'
+          import importlib.util
+          spec = importlib.util.spec_from_file_location("ingest", "tools/ingest_volume2_arabic.py")
+          m = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(m)
+          fixture = """<figcaption id="cap"><h4>كتاب مدارج السالكين - ط عطاءات العلم (اسم الجزء: 2)</h4>
+          فصل في مشاهد الخلق في المعصية<br>وهي اثنا عشر مشهدًا (¬١).
+          <br>---------------<br>(¬١) حاشية محقق.
+          <h4>الصفحة 3</h4></figcaption>"""
+          p = m.decode_page(fixture, 3)
+          assert "فصل" in p["arabic_body"], p
+          assert "حاشية محقق" not in p["arabic_body"], p
+          assert p["editor_footnotes_excluded"], p
+          assert p["footnote_refs_for_review"] == 1, p
+          print("Parser sanity checks passed")
+          PY
+      - name: Capture all page-aligned public-domain Arabic author text
+        shell: bash
+        env:
+          FROM: ${{ github.event.inputs.start_page || '1' }}
+          TO: ${{ github.event.inputs.end_page || '659' }}
+        run: python3 tools/ingest_volume2_arabic.py --start "$FROM" --end "$TO" --output volume2-source-audit
+      - name: Upload source inventory and audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-V2-Arabic-Source-Audit
+          path: volume2-source-audit/*
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Summarize editorial status
+        if: always()
+        shell: bash
+        run: |
+          if test -f volume2-source-audit/source_audit.json; then
+            echo "### Source extraction (not translated or independently verified)" >> "$GITHUB_STEP_SUMMARY"
+            cat volume2-source-audit/source_audit.json >> "$GITHUB_STEP_SUMMARY"
+          fi
