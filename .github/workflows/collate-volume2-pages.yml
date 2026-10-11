@@ -1,0 +1,60 @@
+name: Correct selected Arabic-Russian omissions and audit all 657 pages
+on:
+  push:
+    branches: [codex/madarij-v158-ar-ru-translation-collation]
+    paths: [.github/workflows/collate-volume2-pages.yml, tools/apply_volume2_collation_4pages.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: Prove actual omissions with RED failing regression tests
+        run: |
+          set +e
+          python3 -m unittest tools/test_volume2_collation_4pages.py > /tmp/red-tests.log 2>&1
+          result=$?
+          set -e
+          cat /tmp/red-tests.log | tail -25
+          if [ "$result" -eq 0 ]; then echo "ERROR: regression tests unexpectedly pass before corrections"; exit 1; fi
+          echo "EXPECTED RED: source inaccuracies reproduced"
+      - name: Restore faithfully translated quotations and clipped canonical verses
+        run: |
+          python3 -m py_compile tools/apply_volume2_collation_4pages.py tools/build_volume2_page_review_register.py
+          python3 tools/apply_volume2_collation_4pages.py
+      - name: GREEN tests, all existing source-alignment invariants, and Quran review
+        run: |
+          python3 -m unittest -v tools/test_volume2_collation_4pages.py
+          python3 tools/validate_volume2_preview.py
+          python3 tools/audit_volume2_quran.py
+          python3 tools/build_volume2_page_review_register.py
+      - name: Ensure this is not misrepresented as independent approval
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('research/volume2-scholarly-audit')
+          b=json.loads(Path('app/src/main/assets/volume2-preview.json').read_text())
+          x=json.loads((root/'page-by-page-reconciliation-register.json').read_text())
+          y=json.loads((root/'translation-collation-applied.json').read_text())
+          assert len(x['pages'])==657 and x['fully_independently_verified_pages']==0
+          assert all(not p['ready_to_publish'] for p in x['pages'])
+          assert len(y['changes'])==5 and set(y['pages_touched'])=={448,463,507,622}
+          assert not b['translation_independently_verified'] and not b['publication_ready']
+          assert len(b['chapters'])==9 and sum(len(c['paragraphs']) for c in b['chapters'])==676
+          print('PASS: 657-page review register, 5 corrections on 4 pages, publication blocked until independent review')
+          PY
+      - name: Persist exact corrected Android assets and transparent QA report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json research/volume2-scholarly-audit/
+          git diff --cached --check
+          git commit -m "fix(v2): restore omitted author text and Quran quotations, triage all 657 printed pages"
+          git push origin HEAD:codex/madarij-v158-ar-ru-translation-collation
