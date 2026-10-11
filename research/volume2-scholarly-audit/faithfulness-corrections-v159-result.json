@@ -1,0 +1,133 @@
+{
+  "review_scope": "TEN_PAGE_DETAILED_CORRECTIONS__NOT_FULL_657_PAGE_CERTIFICATION",
+  "pages_corrected": 10,
+  "corrected_page_numbers": [
+    271,
+    407,
+    440,
+    444,
+    446,
+    468,
+    478,
+    479,
+    497,
+    498
+  ],
+  "russian_characters_added": 8646,
+  "original_arabic_corpus_changed": false,
+  "first_volume_changed": false,
+  "all_657_pages_independently_verified": false,
+  "publication_ready": false,
+  "changes": [
+    {
+      "printed_page": 271,
+      "old_russian_characters": 974,
+      "new_russian_characters": 2040,
+      "original_russian_sha256": "3f2569881c894947be995d280b44d5ace1cb22346779010f18d6ef864dee80e9",
+      "expanded_russian_sha256": "d4fb22cd4075d6c7e9a63201c8a704483a382d94f037171d7823fa7038d1c0bb",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 407,
+      "old_russian_characters": 1169,
+      "new_russian_characters": 2023,
+      "original_russian_sha256": "cfd226b53a749002401cce36a56f3db572bc8fb691ee98c67f1fdb7d5cea867a",
+      "expanded_russian_sha256": "15f400e469aa41a8b99b9d81db7ed053ac1705fbb1b6bc2709e31a8db7f1624d",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 440,
+      "old_russian_characters": 966,
+      "new_russian_characters": 1864,
+      "original_russian_sha256": "159b3d841510a46f5cee801723947c3916b5178762f5a37e653b4a38d9ce0bf0",
+      "expanded_russian_sha256": "d8118c1aed31c3665a110c4c1310e3798224cfb90550ff96292a9ed479ea9cfe",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 444,
+      "old_russian_characters": 624,
+      "new_russian_characters": 1385,
+      "original_russian_sha256": "820270e679e6d8cb8dcd65ab6011cfcfaa9c5425f52793f5ee39ea7476073599",
+      "expanded_russian_sha256": "e801def3384cc976b08f1ee1f628046012187c80512ed92cce5048857978f6e7",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 446,
+      "old_russian_characters": 909,
+      "new_russian_characters": 1268,
+      "original_russian_sha256": "1479cc11ea419a84210fcac67974ca860450a08702afe189ea008bf5a21688ee",
+      "expanded_russian_sha256": "0a053ec1c33abcd398d46e37d6b02dcf27e1c98efcf8b872d7dc3360d019dc5f",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 468,
+      "old_russian_characters": 960,
+      "new_russian_characters": 1662,
+      "original_russian_sha256": "5cc9a4927b6b9d3ac3e7690252ac6c1b7714679e443a7437078e890fc7e7d9ad",
+      "expanded_russian_sha256": "b7d2b6a79c9bcf470736cdeacbee61815d7b76693f1be47aa42b4ea3bd5a8fcb",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 478,
+      "old_russian_characters": 977,
+      "new_russian_characters": 2226,
+      "original_russian_sha256": "f32264c1f49573b0caa1378dc7b96f61f98efedaef38d84ec31bc3e8a135e4a2",
+      "expanded_russian_sha256": "e78c1162b0d35614496f796e421230a5ffd68b99511d763ca3e74037eb471461",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 479,
+      "old_russian_characters": 962,
+      "new_russian_characters": 2098,
+      "original_russian_sha256": "7e4af07718e8d6f1b3352e4ac47c000db237747e2f4415ca5a6bb8136e23f39e",
+      "expanded_russian_sha256": "016601460043f136b3da737ee136e45e3b09bfbaf0004afdc52ad4959979ce20",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 497,
+      "old_russian_characters": 1038,
+      "new_russian_characters": 1844,
+      "original_russian_sha256": "07635de0a43ba5f6266244f26a7796999bc5afbfdad70e2f34e2ff50ff9f99cb",
+      "expanded_russian_sha256": "eb7f6e1b340e2a5d681395e7104b0ea95884aeecdc50e2a50cbb53ace9fd2d26",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    },
+    {
+      "printed_page": 498,
+      "old_russian_characters": 1067,
+      "new_russian_characters": 1882,
+      "original_russian_sha256": "28468a64ff057cac580a6ecf7b5a29b8b7ee4f9f69b28ce718d1539f99464fe4",
+      "expanded_russian_sha256": "13a54b89f90043e93711dfd96b05d424fec0fd53ee38b60466b3eedc68e33a19",
+      "arabic_remains_byte_identical": true,
+      "checked_against": "2019 edition electronic Arabic transcription",
+      "independent_visual_print_scan_review": false,
+      "isnad_review_completed": false
+    }
+  ]
+}

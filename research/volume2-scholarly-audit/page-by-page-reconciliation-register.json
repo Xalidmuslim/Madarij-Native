@@ -1,12 +1,12 @@
 {
   "status": "FULL_PAGE_COVERAGE_TRIAGE_NOT_FULL_TRANSLATION_VERIFICATION",
   "printed_pages_registered": 657,
-  "pages_with_automatic_flags": 239,
+  "pages_with_automatic_flags": 231,
   "flag_counts": {
-    "QURAN_REFERENCE_NOT_EXPLICIT_IN_RUSSIAN": 130,
+    "QURAN_REFERENCE_NOT_EXPLICIT_IN_RUSSIAN": 128,
     "QURAN_QUOTATION_NEEDS_VISUAL_COLLATION": 91,
     "POSSIBLE_EDITORIAL_INSERTION_IN_AUTHOR_PROSE": 91,
-    "SHORT_TRANSLATION_POSSIBLY_ABRIDGED": 19,
+    "SHORT_TRANSLATION_POSSIBLY_ABRIDGED": 9,
     "TARGETED_CORRECTION_THIS_VERSION": 4
   },
   "fully_independently_verified_pages": 0,
@@ -6156,15 +6156,13 @@
         "madarij-v2-p271-draft"
       ],
       "arabic_characters": 1049,
-      "russian_characters": 974,
-      "russian_arabic_character_ratio": 0.929,
+      "russian_characters": 2040,
+      "russian_arabic_character_ratio": 1.945,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -9183,8 +9181,8 @@
         "madarij-v2-p407-draft"
       ],
       "arabic_characters": 1336,
-      "russian_characters": 1169,
-      "russian_arabic_character_ratio": 0.875,
+      "russian_characters": 2023,
+      "russian_arabic_character_ratio": 1.514,
       "arabic_quran_refs": [
         "[الطلاق: ٥]",
         "[الطلاق: ٢]",
@@ -9192,19 +9190,10 @@
         "[النساء: ٦٩]",
         "[الطلاق: ٣]"
       ],
-      "quran_refs_not_explicit_in_russian": [
-        "[الطلاق: ٢]",
-        "[الطلاق: ٣]",
-        "[الطلاق: ٤]",
-        "[الطلاق: ٥]",
-        "[النساء: ٦٩]"
-      ],
+      "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "QURAN_REFERENCE_NOT_EXPLICIT_IN_RUSSIAN",
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -9903,15 +9892,13 @@
         "madarij-v2-p440-draft"
       ],
       "arabic_characters": 1054,
-      "russian_characters": 966,
-      "russian_arabic_character_ratio": 0.917,
+      "russian_characters": 1864,
+      "russian_arabic_character_ratio": 1.769,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -9988,15 +9975,13 @@
         "madarij-v2-p444-draft"
       ],
       "arabic_characters": 728,
-      "russian_characters": 624,
-      "russian_arabic_character_ratio": 0.857,
+      "russian_characters": 1385,
+      "russian_arabic_character_ratio": 1.902,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -10040,8 +10025,8 @@
         "madarij-v2-p446-draft"
       ],
       "arabic_characters": 966,
-      "russian_characters": 909,
-      "russian_arabic_character_ratio": 0.941,
+      "russian_characters": 1268,
+      "russian_arabic_character_ratio": 1.313,
       "arabic_quran_refs": [
         "[آل عمران: ١٧]",
         "[البقرة: ١٧٧]",
@@ -10052,16 +10037,11 @@
         "[النساء: ٢٥]",
         "[النحل: ٩٦]"
       ],
-      "quran_refs_not_explicit_in_russian": [
-        "[النحل: ١٢٦]",
-        "[النساء: ٢٥]"
-      ],
+      "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 3,
       "editorial_intrusion_indicators": 0,
       "flags": [
-        "QURAN_REFERENCE_NOT_EXPLICIT_IN_RUSSIAN",
-        "QURAN_QUOTATION_NEEDS_VISUAL_COLLATION",
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
+        "QURAN_QUOTATION_NEEDS_VISUAL_COLLATION"
       ],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
@@ -10549,15 +10529,13 @@
         "madarij-v2-p468-draft"
       ],
       "arabic_characters": 1029,
-      "russian_characters": 960,
-      "russian_arabic_character_ratio": 0.933,
+      "russian_characters": 1662,
+      "russian_arabic_character_ratio": 1.615,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -10751,15 +10729,13 @@
         "madarij-v2-p478-draft"
       ],
       "arabic_characters": 1181,
-      "russian_characters": 977,
-      "russian_arabic_character_ratio": 0.827,
+      "russian_characters": 2226,
+      "russian_arabic_character_ratio": 1.885,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -10773,15 +10749,13 @@
         "madarij-v2-p479-draft"
       ],
       "arabic_characters": 1097,
-      "russian_characters": 962,
-      "russian_arabic_character_ratio": 0.877,
+      "russian_characters": 2098,
+      "russian_arabic_character_ratio": 1.912,
       "arabic_quran_refs": [],
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
@@ -11155,8 +11129,8 @@
         "madarij-v2-p497-draft"
       ],
       "arabic_characters": 1288,
-      "russian_characters": 1038,
-      "russian_arabic_character_ratio": 0.806,
+      "russian_characters": 1844,
+      "russian_arabic_character_ratio": 1.432,
       "arabic_quran_refs": [
         "[الفجر: ٢٧ - ٢٨]",
         "[البينة: ٨]"
@@ -11168,8 +11142,7 @@
       "editorial_intrusion_indicators": 0,
       "flags": [
         "QURAN_REFERENCE_NOT_EXPLICIT_IN_RUSSIAN",
-        "QURAN_QUOTATION_NEEDS_VISUAL_COLLATION",
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
+        "QURAN_QUOTATION_NEEDS_VISUAL_COLLATION"
       ],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
@@ -11184,8 +11157,8 @@
         "madarij-v2-p498-draft"
       ],
       "arabic_characters": 1146,
-      "russian_characters": 1067,
-      "russian_arabic_character_ratio": 0.931,
+      "russian_characters": 1882,
+      "russian_arabic_character_ratio": 1.642,
       "arabic_quran_refs": [
         "[الأنعام: ١١٤]",
         "[الأنعام: ١٤]",
@@ -11194,9 +11167,7 @@
       "quran_refs_not_explicit_in_russian": [],
       "automated_mismatch_indicators": 0,
       "editorial_intrusion_indicators": 0,
-      "flags": [
-        "SHORT_TRANSLATION_POSSIBLY_ABRIDGED"
-      ],
+      "flags": [],
       "verified_against_print_scan": false,
       "translation_independently_checked": false,
       "all_quran_quotes_verified": false,
