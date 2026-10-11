@@ -6,18 +6,19 @@
 - Арабских оригинальных страниц: **659/659**.
 - Двуязычных фрагментов: **676**.
 - Автоматически просмотренных арабских ссылок на Коран: **378**.
-- Буквально совпавших с корпусом одностраничных арабских текстов: **649**.
+- Буквально совпавших с корпусом одностраничных арабских текстов: **648**.
 
 ## Типы обнаруженных замечаний
 
-- CHECK_QUOTE_MISMATCH: **154**
-- EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE: **94**
+- CHECK_QUOTE_MISMATCH: **155**
+- EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE: **93**
 - EDITORIAL_COMMENT_IN_AUTHOR_TEXT: **91**
+- ARABIC_SOURCE_MISMATCH: **1**
 
 ## Статусы коранических фрагментов
 
-- EXACT_AFTER_ARABIC_NORMALIZATION: **160**
-- CHECK_QUOTE_MISMATCH: **154**
+- EXACT_AFTER_ARABIC_NORMALIZATION: **159**
+- CHECK_QUOTE_MISMATCH: **155**
 - QUOTE_VARIANT_REQUIRES_REVIEW: **55**
 - REFERENCE_WITHOUT_NEARBY_QUOTE: **7**
 - QUOTE_TOO_SHORT: **2**
@@ -169,6 +170,7 @@
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [البقرة: ١٥١ - ١٥٢]
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [آل عمران: ١٤٤]
 - Стр. 587 — CHECK_QUOTE_MISMATCH: [إبراهيم: ٥]
+- Стр. 622 — CHECK_QUOTE_MISMATCH: [البقرة: ١٥٣]
 - Стр. 627 — CHECK_QUOTE_MISMATCH: [التوبة: ١١٩]
 - Стр. 628 — CHECK_QUOTE_MISMATCH: [الأحزاب: ٢٤]
 - Стр. 628 — CHECK_QUOTE_MISMATCH: [المائدة: ١١٩]

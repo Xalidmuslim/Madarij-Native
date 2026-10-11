@@ -1928,8 +1928,13 @@
   {
     "page": 622,
     "id": "madarij-v2-p622-draft",
-    "type": "EMBEDDED_NUMBER_IN_ARABIC_QURAN_QUOTE",
-    "ref": "[النحل: ١٢٨]"
+    "type": "ARABIC_SOURCE_MISMATCH"
+  },
+  {
+    "page": 622,
+    "id": "madarij-v2-p622-draft",
+    "type": "CHECK_QUOTE_MISMATCH",
+    "ref": "[البقرة: ١٥٣]"
   },
   {
     "page": 623,

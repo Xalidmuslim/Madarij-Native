@@ -1,0 +1,50 @@
+{
+  "status": "PARTIAL_CORRECTIONS__NOT_FULL_TRANSLATION_VERIFICATION",
+  "changes": [
+    {
+      "page": 448,
+      "type": "russian_semantic_expansion",
+      "old_sha256": "f895bfeaa12981c59e72dd463cecb473251c19b2a4c0a05d1bab72f607f83445",
+      "new_sha256": "c025c8b5f12e19408d8c20ce5565984f4f25275b0b34491e5e0decf930b591eb",
+      "independent_scan_checked": false
+    },
+    {
+      "page": 463,
+      "type": "russian_semantic_expansion",
+      "old_sha256": "ce00126598df4a34ced7c47cfcc48b2f05d3fad6b61c33133a3d33d075d641ba",
+      "new_sha256": "7d7b6f9a3c64a502afdc7841a4d3ebca3356d031c00389d879e076de863af7da",
+      "independent_scan_checked": false
+    },
+    {
+      "page": 507,
+      "type": "russian_semantic_expansion",
+      "old_sha256": "a9a9da1bafdca4c9b5a6419330ebb001b25cc69cdd656ce859286d6aaad66eaf",
+      "new_sha256": "9ee0cb3784f196794f5cc8a7ec10e3b10ab1e9ac5cfd74e93c24885610835777",
+      "independent_scan_checked": false
+    },
+    {
+      "page": 622,
+      "type": "restore_canonical_quran_quotation_from_clipped_OCR",
+      "surah_verse": "16:128",
+      "original_ocr_excerpt": "{(١٢٧) إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوْا وَالَّذِينَ هُمْ}",
+      "canonical_corrected_excerpt": "{إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوْا وَالَّذِينَ هُمْ مُحْسِنُونَ}",
+      "independent_scan_checked": false
+    },
+    {
+      "page": 622,
+      "type": "restore_canonical_quran_quotation_from_clipped_OCR",
+      "surah_verse": "2:153",
+      "original_ocr_excerpt": "{إِنَّ اللَّهَ مَعَ}",
+      "canonical_corrected_excerpt": "{إِنَّ اللَّهَ مَعَ الصَّابِرِينَ}",
+      "independent_scan_checked": false
+    }
+  ],
+  "pages_touched": [
+    448,
+    463,
+    507,
+    622
+  ],
+  "independently_verified_printed_pages": 0,
+  "publication_ready": false
+}

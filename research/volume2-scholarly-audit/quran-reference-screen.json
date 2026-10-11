@@ -3630,7 +3630,6 @@
     "sura": 16,
     "start": 128,
     "end": 128,
-    "source_embedded_numbers": true,
     "status": "EXACT_AFTER_ARABIC_NORMALIZATION"
   },
   {
@@ -3640,7 +3639,9 @@
     "sura": 2,
     "start": 153,
     "end": 153,
-    "status": "EXACT_AFTER_ARABIC_NORMALIZATION"
+    "match_ratio": 0.688,
+    "status": "CHECK_QUOTE_MISMATCH",
+    "quote_excerpt": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ"
   },
   {
     "page": 622,
