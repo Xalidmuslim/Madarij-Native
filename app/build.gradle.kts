@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 44
-        versionName = "1.43-centered-reading-cta"
+        versionCode = 45
+        versionName = "1.44-reed-pen-calligraphy"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -80,6 +80,7 @@ val verifyReleaseAssets by tasks.registering {
     doLast {
         check(file("src/main/res/font/naskh.ttf").isFile) { "Embedded Naskh missing" }
         check(file("src/main/assets/fonts/OFL.txt").isFile) { "Font license missing" }
+        check(file("src/main/assets/fonts/BadScript-OFL.txt").isFile) { "New handwriting font license missing" }
         if (releaseKey == null) logger.lifecycle("Owner signing not configured; using development signing for test APK")
     }
 }

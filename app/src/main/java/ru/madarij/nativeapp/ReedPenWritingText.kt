@@ -22,16 +22,57 @@ import kotlin.math.floor
 import kotlin.math.sin
 
 /** Natural, unhurried pen cadence for a Cyrillic quote card.
- * Real phrases take 5.5–12 seconds; each letter's advance stays uniform.
+ * Real phrases take 5.5–12 seconds; the relative pace follows letter and punctuation weights.
  * Pure for regression checks, without a clock or device dependency.
  */
 internal fun reedPenDurationMillis(charCount: Int): Int =
     (charCount.coerceAtLeast(0) * 58).coerceIn(5500, 12000)
 
+
+/**
+ * Models a reed nib moving across individual handwritten characters.
+ * Whitespace advances quickly, letters draw at the normal pace and punctuation
+ * allows a slight resting pause. The timeline is precomputed once per quote;
+ * frame rendering uses a binary search without remeasuring any glyphs.
+ */
+internal class ReedPenCharacterTimeline(text: String) {
+    private val cumulative = FloatArray(text.length + 1)
+    val totalWeight: Float
+    init {
+        for (index in text.indices) {
+            val weight = when (text[index]) {
+                ' ', '\t' -> .22f
+                '\n', '\r' -> .32f
+                '.', '!', '?', '…', ';', ':', '—' -> 1.70f
+                ',', '«', '»', '(', ')' -> 1.32f
+                else -> 1.0f
+            }
+            cumulative[index + 1] = cumulative[index] + weight
+        }
+        totalWeight = cumulative.last()
+    }
+
+    fun positionAt(progress: Float): Float {
+        if (cumulative.size <= 1) return 0f
+        if (progress <= 0f) return 0f
+        if (progress >= 1f) return (cumulative.size - 1).toFloat()
+        val target = totalWeight * progress
+        var low = 0
+        var high = cumulative.lastIndex
+        while (low < high) {
+            val mid = (low + high + 1) ushr 1
+            if (cumulative[mid] <= target) low = mid else high = mid - 1
+        }
+        val index = low.coerceAtMost(cumulative.lastIndex - 1)
+        val weight = cumulative[index + 1] - cumulative[index]
+        return index + ((target - cumulative[index]) / weight).coerceIn(0f, 1f)
+    }
+}
+
 /**
  * A compact, fully native reed-pen handwriting reveal.
  * All characters are measured in their FINAL positions. The ink mask follows
- * actual glyph bounding boxes and softly unveils each character, while a small
+ * actual glyph bounding boxes and softly unveils each character at natural pace, while a small
  * drawn reed nib follows the text. No full-screen overlays, text reflow,
  * expensive blur, particles, or cached bitmap per frame.
  */
@@ -46,6 +87,7 @@ internal fun ReedPenWritingText(
     modifier: Modifier = Modifier
 ) {
     val active = animate && !reducedMotion
+    val timeline = remember(text) { ReedPenCharacterTimeline(text) }
     val ink = remember(text) { Animatable(if (active) 0f else 1f) }
     val callback by rememberUpdatedState(onFinished)
     LaunchedEffect(text, active) {
@@ -76,7 +118,7 @@ internal fun ReedPenWritingText(
                 } else if (layout != null && amount > 0f) {
                     // The first layout pass may not have bounds yet.
                     // Never flash a fully visible quotation before the pen starts.
-                    val position = (amount * text.length).coerceIn(0f, text.length.toFloat())
+                    val position = timeline.positionAt(amount)
                     val charIndex = floor(position).toInt().coerceIn(0, text.length - 1)
                     val fraction = (position - charIndex).coerceIn(0f, 1f)
                     val line = layout.getLineForOffset(charIndex)
@@ -103,7 +145,7 @@ internal fun ReedPenWritingText(
                 val progress = ink.value
                 val layout = measured ?: return@Canvas
                 if (text.isEmpty() || progress <= .006f || progress >= .998f) return@Canvas
-                val cursor = (progress * text.length).coerceAtMost((text.length - 1).toFloat())
+                val cursor = timeline.positionAt(progress).coerceAtMost((text.length - 1).toFloat())
                 val index = floor(cursor).toInt().coerceIn(0, text.lastIndex)
                 val fraction = (cursor - index).coerceIn(0f, 1f)
                 val glyph = layout.getBoundingBox(index)
