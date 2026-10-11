@@ -37,8 +37,8 @@ class FaithfulRendering(unittest.TestCase):
  def test_479_contains_analogy_to_dry_ablution_and_arabic_antithesis(self):
   t=self.page(479)
   self.assertIn("тайаммума",t)
-  self.assertIn("как среди людей",t.replace("среди почти всех людей","как среди людей")) if False else None
-  self.assertIn("содержим",self.page(479).replace("содержимое","содержим"))
+  self.assertIn("содержимое могил",t)
+  self.assertIn("временная дружба",t)
  def test_497_lists_quran_passages_and_full_divine_attributes(self):
   t=self.page(497)
   self.assertIn("сжимающим и расширяющим",t)
