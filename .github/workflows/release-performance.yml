@@ -5,6 +5,7 @@ on:
     branches:
       - codex/madarij-v144-calligraphy-reed-pen
       - codex/madarij-v145-volume2-bilingual-preview
+      - codex/madarij-v150-volume2-pages81-150-russian-draft
   workflow_dispatch:
 
 permissions:
@@ -51,6 +52,9 @@ jobs:
           chmod +x gradlew
           mkdir -p development-signing
           keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+
+      - name: Verify bilingual Arabic and Russian chapter integrity
+        run: python3 tools/validate_volume2_preview.py
 
       - name: Unit tests and optimized R8 Release build
         run: ./gradlew :app:testDebugUnitTest :app:assembleRelease --no-daemon --stacktrace
