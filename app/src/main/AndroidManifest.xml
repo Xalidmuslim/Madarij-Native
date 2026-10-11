@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:label="Степени идущих · Тест 1.58" android:theme="@style/AppTheme" android:icon="@drawable/ic_book"
+    <application android:label="Степени идущих · Тест 1.59" android:theme="@style/AppTheme" android:icon="@drawable/ic_book"
         android:supportsRtl="true" android:allowBackup="false">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
