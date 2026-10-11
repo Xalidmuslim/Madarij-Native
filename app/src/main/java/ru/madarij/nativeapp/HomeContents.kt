@@ -65,7 +65,9 @@ internal fun HomeScreen(
     val due = attempts.count { it.value.due <= System.currentTimeMillis() }
     val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.ROOT).format(Date())
     val minutes = history.filter { it.date == today }.sumOf { it.seconds } / 60
-    val percent = if (chapters.isEmpty()) 0 else read.size * 100 / chapters.size
+    // Volume 2 is only a preview. Do not make it distort volume 1 reading progress.
+    val mainVolume = chapters.filter { it.volume == 1 }
+    val percent = if (mainVolume.isEmpty()) 0 else read.count { item -> mainVolume.any { it.id == item.chapterId } } * 100 / mainVolume.size
     val lastTitle = chapters.find { it.id == last?.chapterId }?.let(groups::findTitle)
 
     // BookRouteSurface paints the aged-paper sheet once beneath this screen.
@@ -278,6 +280,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     var query by rememberSaveable { mutableStateOf("") }
     var toolsVisible by rememberSaveable { mutableStateOf(true) }
     var filter by rememberSaveable { mutableStateOf("all") }
+    var selectedVolume by rememberSaveable { mutableIntStateOf(1) }
+    val availableVolumes = remember(chapters) { chapters.map { it.volume }.distinct().sorted() }
     var openedGroups by rememberSaveable { mutableStateOf(listOf<String>()) }
     var openedChapters by rememberSaveable { mutableStateOf(listOf<String>()) }
     var percents by remember { mutableStateOf<Map<String, Int>>(emptyMap()) }
@@ -316,9 +320,10 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
 
     val fallback = if (groups.isNotEmpty()) groups else listOf(TocGroup("volume1", "Первый том", "editorial_navigation", chapters.map { TocChapter(it.id, it.title, "", emptyList()) }))
     val normalizedQuery = normalizedText(query).text
+    val selectedChapterIds = remember(chapters, selectedVolume) { chapters.filter { it.volume == selectedVolume }.map { it.id }.toSet() }
     val matching = fallback.map { group ->
         group.copy(items = group.items.filter { chapter ->
-            (query.isBlank() || normalizedText("${chapter.title} ${chapter.subtitle} ${chapter.topics.joinToString { it.title }}").text.contains(normalizedQuery)) && when (filter) {
+            chapter.chapterId in selectedChapterIds && (query.isBlank() || normalizedText("${chapter.title} ${chapter.subtitle} ${chapter.topics.joinToString { it.title }}").text.contains(normalizedQuery)) && when (filter) {
                 "read" -> chapter.chapterId in readIds
                 "saved" -> chapter.chapterId in savedIds
                 else -> true
@@ -329,24 +334,39 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                // Single parchment label: the previous two stacked Boxes
-                // formed an unwanted double contour around 'Том 1'.
-                Box(
-                    Modifier.weight(1f).heightIn(min = 43.dp)
-                        .clip(RoundedCornerShape(14.dp))
-                        .background(BookColors.card)
-                        .border(.7.dp, BookColors.gold.copy(alpha = .30f), RoundedCornerShape(14.dp)),
-                    contentAlignment = Alignment.Center
-                ) {
-                    PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Text("Том 1", style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
-                        color = BookColors.ink)
+                // One compact parchment selector; the original typography and paper stay unchanged.
+                Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    availableVolumes.forEach { volume ->
+                        val selected = volume == selectedVolume
+                        val shape = RoundedCornerShape(14.dp)
+                        Box(
+                            Modifier.weight(1f).heightIn(min = 43.dp)
+                                .clip(shape)
+                                .background(BookColors.card.copy(alpha = if (selected) 1f else .65f))
+                                .border(if (selected) .85.dp else .5.dp,
+                                    BookColors.gold.copy(alpha = if (selected) .5f else .2f), shape)
+                                .clickable { selectedVolume = volume; resetList() },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                            Text("Том $volume",
+                                style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
+                                color = BookColors.ink.copy(alpha = if (selected) 1f else .72f))
+                        }
+                    }
                 }
                 IconButton(onClick = { toolsVisible = !toolsVisible }) { NavigationGlyph("search", selected = toolsVisible, modifier = Modifier.size(21.dp)) }
             }
         }
         if (toolsVisible) {
-        item { Text("Том 1 · ${LogicalReadingSections.roots(chapters).size} смысловых разделов · ${chapters.size} фрагментов", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        item {
+            val count = chapters.count { it.volume == selectedVolume }
+            val sectionCount = LogicalReadingSections.roots(chapters).count { it.volume == selectedVolume }
+            Text("Том $selectedVolume · $sectionCount смысловых разделов · $count фрагментов",
+                style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (selectedVolume == 2) Text("Ознакомительный фрагмент. Полный перевод и независимая сверка ещё не завершены.",
+                style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+        }
         last?.let { position ->
             item {
                 Soft3DSagePanel(
