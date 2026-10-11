@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 51
-        versionName = "1.51-volume2-pages3-220-draft"
+        versionCode = 52
+        versionName = "1.52-volume2-pages3-320-draft"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -31,7 +31,7 @@ android {
             // A debug APK has a new signing key in each CI run. Use a distinct
             // application ID so the user's installed reader and its Room data
             // are never uninstalled or overwritten to try the preview.
-            applicationIdSuffix = ".preview151"
+            applicationIdSuffix = ".preview152"
         }
         release {
             applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".readerpolish"
