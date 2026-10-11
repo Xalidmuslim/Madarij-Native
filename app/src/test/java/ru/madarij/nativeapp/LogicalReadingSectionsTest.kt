@@ -23,7 +23,7 @@ class LogicalReadingSectionsTest {
     }
     @Test fun unknownChapterReturnsEmpty() {
         assertTrue(LogicalReadingSections.members(testChapters(), "unknown").isEmpty())
-        assertEquals(32, LogicalReadingSections.starts.size)
+        assertEquals(33, LogicalReadingSections.starts.size)
     }
     @Test fun previewVolumeDoesNotMergeWithFirstVolume() {
         val chapters = testChapters() + Chapter(
@@ -35,6 +35,6 @@ class LogicalReadingSectionsTest {
         val secondVolume = LogicalReadingSections.members(chapters, "madarij-v2-p003-views-of-sin")
         assertEquals(1, secondVolume.size)
         assertEquals(2, secondVolume.single().volume)
-        assertEquals("Страницы 3–3", LogicalReadingSections.pageRange(secondVolume.single().id))
+        assertEquals("Страницы 3–10", LogicalReadingSections.pageRange(secondVolume.single().id))
     }
 }
