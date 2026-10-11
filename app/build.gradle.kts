@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 45
-        versionName = "1.44-reed-pen-calligraphy"
+        versionCode = 46
+        versionName = "1.45-volume2-preview"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
