@@ -8,6 +8,7 @@ on:
       - codex/madarij-v150-volume2-pages81-150-russian-draft
       - codex/madarij-v151-volume2-pages151-220-draft
       - codex/madarij-v152-volume2-pages221-320-100page-batch
+      - codex/madarij-v153-volume2-pages321-420-100page-batch
   workflow_dispatch:
 
 permissions:
