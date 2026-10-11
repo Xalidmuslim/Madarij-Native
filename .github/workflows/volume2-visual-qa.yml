@@ -1,0 +1,57 @@
+name: Volume 2 Android Reader Visual QA
+on:
+  push:
+    branches:
+      - codex/madarij-v146-volume2-arabic-source-audit
+    paths:
+      - tools/volume2_visual_smoke.py
+      - .github/workflows/volume2-visual-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reader-visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+      - name: Android build tools
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Licensed handwriting font for original UI
+        run: python3 tools/prepare_handwriting_font.py
+      - name: Pre-rendered paper textures
+        run: python3 -m pip install --user Pillow==11.3.0
+      - name: Development certificate
+        run: |
+          chmod +x gradlew
+          mkdir -p development-signing
+          keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+      - name: Compile Kotlin native APK
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+      - name: Android Pixel 6 emulator screen walkthrough
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-options: -no-snapshot -no-window -no-audio -no-boot-anim -gpu swiftshader_indirect
+          script: python3 tools/volume2_visual_smoke.py
+      - name: Upload actual reader images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-V2-Android-Reader-Visual-QA
+          path: volume2-visual-qa/*
+          if-no-files-found: warn
+          retention-days: 30
