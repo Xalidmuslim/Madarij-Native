@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 47
-        versionName = "1.47-volume2-opening-preview"
+        versionCode = 48
+        versionName = "1.48-volume2-pages3-10-preliminary"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
