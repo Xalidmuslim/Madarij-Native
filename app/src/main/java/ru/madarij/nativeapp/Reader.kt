@@ -177,7 +177,9 @@ fun Reader(
     LaunchedEffect(chapter.id, ready) { if (ready) while (true) { delay(30_000); recordTime() } }
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
     fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + (if (settings.showArabic && p.ar.isNotBlank()) p.ar + "\n\n" else "") + p.ru
-    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\nЛитературная сверка завершена · проверка источников отдельно\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
+    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\n" +
+        (if (chapter.volume == 2) "Предварительный фрагмент · перевод не прошёл независимую проверку" else "Литературная сверка завершена · проверка источников отдельно") +
+        "\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
     fun copy(text: String) { (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText(chapter.title, text)); message = "Текст скопирован" }
     fun share(text: String) { context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_SUBJECT, chapter.title); putExtra(Intent.EXTRA_TEXT, text) }, "Поделиться текстом")) }
     fun newBookmark(paragraph: Paragraph?) { bookmarkAnchor = paragraph?.id; val existing=bookmarks.find {it.chapterId==(paragraph?.chapterId ?: sectionId) && it.paragraphId==paragraph?.id};bookmarkTitle = existing?.title ?: (chapterStructure?.title ?: sectionRoot.title); bookmarkNote = existing?.note.orEmpty(); bookmarkDialog = true }
@@ -302,8 +304,15 @@ fun Reader(
             ) {
             item(key = "heading") {
                 Column(Modifier.fillMaxWidth()) {
-                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: sectionRoot.title,
+                    ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
+                        chapterStructure?.title ?: sectionRoot.title,
                         LogicalReadingSections.pageRange(sectionId), settings.theme == "dark")
+                    if (chapter.volume == 2) Text(
+                        "Том 2 · предварительный перевод. Полный текст и независимая сверка ещё не готовы.",
+                        Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                     if(query.isNotBlank()) Text("Найденный текст: «$query»",Modifier.padding(horizontal = 24.dp,vertical = 8.dp),style = MaterialTheme.typography.labelMedium,color = MaterialTheme.colorScheme.primary)
                 }
             }
