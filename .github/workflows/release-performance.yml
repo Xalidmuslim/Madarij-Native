@@ -11,6 +11,7 @@ on:
       - codex/madarij-v153-volume2-pages321-420-100page-batch
       - codex/madarij-v154-volume2-pages421-520-100page-batch
       - codex/madarij-v155-volume2-pages521-620-100page-batch
+      - codex/madarij-v156-volume2-pages621-659-final39-draft
   workflow_dispatch:
 
 permissions:
