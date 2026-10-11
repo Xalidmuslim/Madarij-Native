@@ -60,7 +60,8 @@ def main():
             assert ratio>=.80, (p["id"],"Arabic source differs or is clipped",round(ratio,3))
             count+=1
     topics=[t["paragraphId"] for g in toc["groups"] for c in g["items"] for t in c["topics"]]
-    assert topics and len(topics)==len(set(topics)) and set(topics)==ids
+    assert topics and len(topics)==len(set(topics)) and set(topics).issubset(ids)
+    # Contents contains navigational headings, not a redundant entry for every paragraph.
     assert len([json.loads(l) for l in QUEUE.read_text().splitlines() if l.strip()])==3210
     print("PASS: 659 source pages; %s current reader paragraphs compared to Arabic text;" % count)
     print("PASS: source IDs, TOC links, paragraph formatting, unverified-status flags")
