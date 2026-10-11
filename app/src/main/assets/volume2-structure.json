@@ -721,6 +721,102 @@
           ]
         }
       ]
+    },
+    {
+      "id": "v2-navigation-p521-p620",
+      "title": "Том 2 · страницы 521–620",
+      "provenance": "editorial_navigation_preliminary",
+      "items": [
+        {
+          "chapterId": "madarij-v2-p521-p620-translation-preview",
+          "title": "Довольство, благодарность и стыдливость",
+          "subtitle": "100 страниц предварительного русского перевода и арабского оригинала",
+          "entryParagraphId": "madarij-v2-p521-draft",
+          "entryNote": "Тестовый перевод: религиозные цитаты и соответствие арабским сканам не проверены независимо",
+          "topics": [
+            {
+              "paragraphId": "madarij-v2-p521-draft",
+              "title": "Довольство предопределением и отказ от оправдания греха",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p525-draft",
+              "title": "Равное доверие Господу при благе и испытании",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p541-draft",
+              "title": "Довольство Аллаха и высокая награда верующим",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p552-draft",
+              "title": "Мольба о довольстве и правильное отношение к дарам",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p561-draft",
+              "title": "Дела сердца и нравственная зрелость",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p565-draft",
+              "title": "Прекращение бесплодных споров и обращение за помощью",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p571-draft",
+              "title": "Хадисы об умеренности просьб",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p577-draft",
+              "title": "Настойчивая мольба и довольство",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p582-draft",
+              "title": "Третья степень рида и различение духовных состояний",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p586-draft",
+              "title": "Благодарность (шукр)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p589-draft",
+              "title": "Пять оснований настоящей благодарности",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p593-draft",
+              "title": "Отличие хвалы (хамд) и благодарности (шукр)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p601-draft",
+              "title": "Благодарность как обязанность перед Дарителем",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p604-draft",
+              "title": "Благодарность в испытаниях",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p611-draft",
+              "title": "Стыдливость перед Аллахом (хая)",
+              "provenance": "editorial_navigation_preliminary"
+            },
+            {
+              "paragraphId": "madarij-v2-p616-draft",
+              "title": "Десять видов благоговейной стыдливости",
+              "provenance": "editorial_navigation_preliminary"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
