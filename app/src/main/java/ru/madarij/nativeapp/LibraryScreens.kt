@@ -29,6 +29,10 @@ internal data class TocGroup(val id: String, val title: String, val provenance: 
 internal suspend fun loadStructure(context: Context): List<TocGroup> = withContext(Dispatchers.IO) {
     runCatching {
         val a = JSONObject(context.assets.open("structure.json").bufferedReader().use { it.readText() }).getJSONArray("groups")
+        val second = runCatching {
+            JSONObject(context.assets.open("volume2-structure.json").bufferedReader().use { it.readText() }).getJSONArray("groups")
+        }.getOrNull()
+        if (second != null) for (index in 0 until second.length()) a.put(second.getJSONObject(index))
         (0 until a.length()).map { i -> val g = a.getJSONObject(i); val items = g.getJSONArray("items")
             TocGroup(g.getString("id"),g.getString("title"),g.optString("provenance"),(0 until items.length()).map { j -> val c=items.getJSONObject(j);val topics=c.optJSONArray("topics")
                 TocChapter(c.getString("chapterId"),c.getString("title"),c.optString("subtitle"),if(topics==null) emptyList() else (0 until topics.length()).map { k -> val t=topics.getJSONObject(k);TocTopic(t.getString("paragraphId"),t.getString("title"),t.optString("provenance")) },c.optString("entryParagraphId").takeIf { it.isNotBlank() },c.optString("entryNote").takeIf { it.isNotBlank() })
