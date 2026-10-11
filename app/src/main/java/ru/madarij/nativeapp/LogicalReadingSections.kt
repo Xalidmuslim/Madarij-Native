@@ -73,7 +73,7 @@ internal object LogicalReadingSections {
         "madarij-v1-p553-draft-section" to (553 to 565),
         "madarij-v1-p566-draft-section" to (566 to 608),
         "madarij-v1-p609-draft-section" to (609 to 610),
-        "madarij-v2-p003-views-of-sin" to (3 to 3)
+        "madarij-v2-p003-views-of-sin" to (3 to 6)
     )
     fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter { it.id in starts }
     fun members(chapters: List<Chapter>, requestedId: String): List<Chapter> {
