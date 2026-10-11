@@ -238,7 +238,8 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
         // Filling the existing card's minimum-height viewport fixes the previous
         // top-biased placement; icon and both text lines are vertically centered.
         Row(
-            Modifier.fillMaxSize().padding(horizontal = 10.dp, vertical = 8.dp),
+            Modifier.fillMaxWidth().heightIn(min = 73.dp)
+                .padding(horizontal = 10.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
