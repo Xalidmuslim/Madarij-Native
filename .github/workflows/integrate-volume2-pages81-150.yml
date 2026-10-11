@@ -1,0 +1,59 @@
+name: Integrate second 70-page volume 2 Russian draft
+
+on:
+  push:
+    branches: [codex/madarij-v150-volume2-pages81-150-russian-draft]
+    paths:
+      - .github/workflows/integrate-volume2-pages81-150.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Validate all bilingual print pages and preserve prior chapters
+        shell: bash
+        run: |
+          python3 -m py_compile tools/integrate_volume2_pages81_150.py tools/validate_volume2_preview.py
+          python3 tools/integrate_volume2_pages81_150.py
+          python3 tools/validate_volume2_preview.py
+      - name: Verify 3–150 seamless source coverage
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          corpus=json.loads(Path("app/src/main/assets/volume2-preview.json").read_text())
+          chapters=corpus["chapters"]
+          assert [c["id"] for c in chapters] == [
+              "madarij-v2-p003-views-of-sin",
+              "madarij-v2-p011-p080-translation-preview",
+              "madarij-v2-p081-p150-translation-preview"
+          ]
+          assert [len(c["paragraphs"]) for c in chapters][1:] == [70,70]
+          assert [p["id"] for p in chapters[2]["paragraphs"]] == [
+              f"madarij-v2-p{x:03d}-draft" for x in range(81,151)]
+          assert all(p["ar"].strip() and p["ru"].strip() for c in chapters for p in c["paragraphs"])
+          assert len({p["id"] for c in chapters for p in c["paragraphs"]}) == sum(len(c["paragraphs"]) for c in chapters)
+          assert not corpus["publication_ready"] and not corpus["translation_independently_verified"]
+          structure=json.loads(Path("app/src/main/assets/volume2-structure.json").read_text())
+          assert len(structure["groups"]) == 3
+          assert {i["chapterId"] for g in structure["groups"] for i in g["items"]} == set(corpus["expected_chapter_ids"])
+          print("PASS: 148 translated preliminary printed pages (3-150), unique stable IDs, correct TOC")
+          PY
+      - name: Commit resulting native reader assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-81-150/review-report.json
+          git diff --cached --check
+          git commit -m "content(v2): integrate second seventy pages 81–150 into native reader"
+          git push origin HEAD:codex/madarij-v150-volume2-pages81-150-russian-draft
