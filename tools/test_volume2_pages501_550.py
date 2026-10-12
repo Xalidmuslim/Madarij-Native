@@ -38,7 +38,7 @@ class Volume2Pages501550(unittest.TestCase):
         self.assertIn("одно из мнений аль-Ашари", p506)
         self.assertIn("большинство его последователей", p506)
         self.assertIn("Кади Абу Бакр", p506)
-        self.assertIn("если оно является существующим", p506)
+        self.assertIn("если приобретение поступка рабом является чем-то существующим", p506)
 
     def test_original_similes_and_contrast_kept(self):
         ru=self.page(511)["ru"]
