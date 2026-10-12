@@ -1,0 +1,991 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages401-450-20261012",
+  "parent_branch": "codex/madarij-v158-volume2-collation-pages351-400-20261012",
+  "scope": "Consecutive electronic Arabic–Russian screening, pages 401–450, with substantive correction of selected passages on 16 pages; NOT exhaustive textual or print-scan scholarly verification.",
+  "edition": "Nabil ibn Nassar as-Sindi, Dar Ataat al-Ilm / Dar Ibn Hazm, 2019, volume 2",
+  "arabic_source": "research/volume2-source/arabic_pages.jsonl",
+  "arabic_print_images_pattern": "https://maknoon.org/ai/bk/madarej_2/{page}.png",
+  "corrected_android_asset": "app/src/main/assets/volume2-preview.json",
+  "russian_draft_folders": [
+    "research/volume2-batch-321-420/",
+    "research/volume2-batch-421-520/"
+  ],
+  "quran_text_sources": [
+    "https://quran.com/2/153",
+    "https://quran.com/16/127",
+    "https://quran.com/46/35",
+    "https://quran.com/3/139",
+    "https://quran.com/16/96",
+    "https://quran.com/39/10"
+  ],
+  "pages": [
+    {
+      "printed_page": 401,
+      "paragraph_ids": [
+        "madarij-v2-p401-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 402,
+      "paragraph_ids": [
+        "madarij-v2-p402-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлены перечисление имён Аллаха и конкретные следствия упования; удалена вставка о «мнении автора»."
+      ],
+      "open_questions": [
+        "Проверить единообразие русской передачи имён Аллаха по всему двухтомнику."
+      ]
+    },
+    {
+      "printed_page": 403,
+      "paragraph_ids": [
+        "madarij-v2-p403-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Вместо общей формулы «укрепление религиозной жизни» передано конкретное قمع المبتدعين; аргумент не сокращён."
+      ],
+      "open_questions": [
+        "Отдельно сопоставить богословский и исторический контекст термина المبتدعين."
+      ]
+    },
+    {
+      "printed_page": 404,
+      "paragraph_ids": [
+        "madarij-v2-p404-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Убраны внешние обозначения авторской речи, возвращено прямое толкование و الصواب и вопрос о وكيل الله."
+      ],
+      "open_questions": [
+        "Проверить хадис «اللهم أنت الصاحب في السفر والخليفة في الأهل» по первоисточнику и контексту."
+      ]
+    },
+    {
+      "printed_page": 405,
+      "paragraph_ids": [
+        "madarij-v2-p405-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 406,
+      "paragraph_ids": [
+        "madarij-v2-p406-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 407,
+      "paragraph_ids": [
+        "madarij-v2-p407-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 408,
+      "paragraph_ids": [
+        "madarij-v2-p408-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Суждение о месте упования в вере передано непосредственно без вставки «автор отмечает»."
+      ],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 409,
+      "paragraph_ids": [
+        "madarij-v2-p409-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 410,
+      "paragraph_ids": [
+        "madarij-v2-p410-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено рассуждение о причинах как завесе, скрывающей духовную степень человека от посторонних."
+      ],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 411,
+      "paragraph_ids": [
+        "madarij-v2-p411-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "محظور вместо смягчённого «нежелательно»; восстановлено сравнение с крайней необходимостью и точная ссылка на имама Ахмада."
+      ],
+      "open_questions": [
+        "Требуется независимая фикховая сверка запретительной формулировки и границ вынужденной просьбы."
+      ]
+    },
+    {
+      "printed_page": 412,
+      "paragraph_ids": [
+        "madarij-v2-p412-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Отсутствующее в авторской речи «Поэт сказал» заменено на нейтральное «Как сказано»."
+      ],
+      "open_questions": [
+        "Уточнить происхождение двустишия и хадисные ссылки; не заменять примечаниями слова автора."
+      ]
+    },
+    {
+      "printed_page": 413,
+      "paragraph_ids": [
+        "madarij-v2-p413-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 414,
+      "paragraph_ids": [
+        "madarij-v2-p414-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 415,
+      "paragraph_ids": [
+        "madarij-v2-p415-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 416,
+      "paragraph_ids": [
+        "madarij-v2-p416-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалено современное обобщающее предложение, отсутствующее в арабском абзаце."
+      ],
+      "open_questions": [
+        "Рассказы об исключительных состояниях не являются нормативным предписанием; проверить по печатному изданию."
+      ]
+    },
+    {
+      "printed_page": 417,
+      "paragraph_ids": [
+        "madarij-v2-p417-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 418,
+      "paragraph_ids": [
+        "madarij-v2-p418-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 419,
+      "paragraph_ids": [
+        "madarij-v2-p419-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 420,
+      "paragraph_ids": [
+        "madarij-v2-p420-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 421,
+      "paragraph_ids": [
+        "madarij-v2-p421-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 422,
+      "paragraph_ids": [
+        "madarij-v2-p422-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 423,
+      "paragraph_ids": [
+        "madarij-v2-p423-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлены «в четырёх местах» и ограниченное употребление слова تفويض в кораническом цитировании."
+      ],
+      "open_questions": [
+        "Проверить хадис о семидесяти тысячах и формулировку описания Пророка в Торе."
+      ]
+    },
+    {
+      "printed_page": 424,
+      "paragraph_ids": [
+        "madarij-v2-p424-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 425,
+      "paragraph_ids": [
+        "madarij-v2-p425-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 426,
+      "paragraph_ids": [
+        "madarij-v2-p426-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 427,
+      "paragraph_ids": [
+        "madarij-v2-p427-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено различие между лишением таўфика и принуждением к ослушанию, передан термин مكر."
+      ],
+      "open_questions": [
+        "Богословски проверить термин المكر и весь переход между страницами 426–428."
+      ]
+    },
+    {
+      "printed_page": 428,
+      "paragraph_ids": [
+        "madarij-v2-p428-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 429,
+      "paragraph_ids": [
+        "madarij-v2-p429-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 430,
+      "paragraph_ids": [
+        "madarij-v2-p430-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 431,
+      "paragraph_ids": [
+        "madarij-v2-p431-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 432,
+      "paragraph_ids": [
+        "madarij-v2-p432-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 433,
+      "paragraph_ids": [
+        "madarij-v2-p433-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 434,
+      "paragraph_ids": [
+        "madarij-v2-p434-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 435,
+      "paragraph_ids": [
+        "madarij-v2-p435-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 436,
+      "paragraph_ids": [
+        "madarij-v2-p436-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 437,
+      "paragraph_ids": [
+        "madarij-v2-p437-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлена авторская прямота и единственный существенный недостаток تسليم."
+      ],
+      "open_questions": [
+        "Термины تسليم, رضا, اختيار требуют терминологической экспертизы."
+      ]
+    },
+    {
+      "printed_page": 438,
+      "paragraph_ids": [
+        "madarij-v2-p438-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалено современное третьеличное обрамление при выводе о تسليم."
+      ],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 439,
+      "paragraph_ids": [
+        "madarij-v2-p439-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 440,
+      "paragraph_ids": [
+        "madarij-v2-p440-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 441,
+      "paragraph_ids": [
+        "madarij-v2-p441-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 442,
+      "paragraph_ids": [
+        "madarij-v2-p442-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 443,
+      "paragraph_ids": [
+        "madarij-v2-p443-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено утверждение автора о почти полном, фактически единодушном мнении обсуждаемой группы."
+      ],
+      "open_questions": [
+        "Проверить контекст слов о фана, фразе «это единогласие» и объекте единогласия."
+      ]
+    },
+    {
+      "printed_page": 444,
+      "paragraph_ids": [
+        "madarij-v2-p444-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 445,
+      "paragraph_ids": [
+        "madarij-v2-p445-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлен безусловный тезис об обязательности терпения в авторском рассуждении.",
+        "В арабском устранены номера соседних аятов в 2:153 и 16:127.",
+        "Из фрагмента 46:35 удалён ошибочный оторванный остаток следующей фразы.",
+        "Восстановлена корректная цитата 3:139 вместо повреждённого OCR-фрагмента."
+      ],
+      "open_questions": [
+        "Проверить фото печатной страницы для определения полного объёма и типографики цитат 2:153,16:127,46:35,3:139."
+      ]
+    },
+    {
+      "printed_page": 446,
+      "paragraph_ids": [
+        "madarij-v2-p446-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено окончание коранической цитаты 16:96 и исправлено وَ لَنَجْزِيَنَّ."
+      ],
+      "open_questions": [
+        "Проверить оформление и границы цитаты 16:96 по выбранному печатному изданию."
+      ]
+    },
+    {
+      "printed_page": 447,
+      "paragraph_ids": [
+        "madarij-v2-p447-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": true,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено окончание цитаты 39:10: بِغَيْرِ حِسَابٍ."
+      ],
+      "open_questions": [
+        "Проверить оформление и границы цитаты 39:10 и происхождение хадиса «إن النصر مع الصبر»."
+      ]
+    },
+    {
+      "printed_page": 448,
+      "paragraph_ids": [
+        "madarij-v2-p448-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Исходный черновой русский файл приведён к уже ранее исправленному тексту Android; повторной научной аттестации страницы нет."
+      ]
+    },
+    {
+      "printed_page": 449,
+      "paragraph_ids": [
+        "madarij-v2-p449-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    },
+    {
+      "printed_page": 450,
+      "paragraph_ids": [
+        "madarij-v2-p450-draft"
+      ],
+      "electronic_arabic_and_russian_screened": true,
+      "substantive_selected_passages_compared": false,
+      "every_sentence_exhaustively_collated": false,
+      "print_scan_visually_verified": false,
+      "all_quran_citations_independently_certified": false,
+      "hadith_chains_independently_verified": false,
+      "complete_scholarly_verification": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Требуется полный построчный аудит по скану издания 2019 года и независимая проверка цитат."
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 50,
+    "pages_with_confirmed_edits": 16,
+    "russian_edit_operations": 19,
+    "arabic_quotation_edit_operations": 6,
+    "total_exact_edit_operations": 25,
+    "arabic_quote_changed_pages": [
+      445,
+      446,
+      447
+    ],
+    "chapter_count_preserved": 9,
+    "paragraph_count_preserved": 676,
+    "app_p448_463_507_622_repairs_preserved": true,
+    "in_memory_checks_verified": 26,
+    "python_test_committed": true,
+    "python_test_executed": false,
+    "apk_built": false,
+    "printed_scans_inspected": 0,
+    "fully_independently_verified_pages": 0,
+    "next_first_pass_page": 451,
+    "first_page_still_requiring_complete_scholarly_signoff": 401
+  },
+  "editorial_safeguards": {
+    "first_volume_files_not_touched": true,
+    "arabic_source_inventory_untouched": true,
+    "original_draft_status_retained": true,
+    "all_edited_russian_drafts_synchronized": true,
+    "prior_448_translation_source_synchronized": true
+  },
+  "publication_ready": false
+}
