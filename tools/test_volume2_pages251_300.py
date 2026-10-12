@@ -31,7 +31,7 @@ class CheckPages251300(unittest.TestCase):
                     self.assertNotIn(term,self.page(n)["ru"])
     def test_full_author_legal_examples_page294(self):
         ru=self.page(294)["ru"]
-        for term in ("тамбуре", "град", "персидском", "ташаххуд",
+        for term in ("тамбуре", "град", "по-персидски", "ташаххуд",
                      "дочерью", "внебрачной", "более слабых"):
             with self.subTest(term=term):
                 self.assertIn(term,ru)
@@ -43,7 +43,7 @@ class CheckPages251300(unittest.TestCase):
         ar=self.page(298)["ar"]
         self.assertIn("{ابْتِغَاءَ رِضْوَانِ اللَّهِ}",ar)
         ru=self.page(298)["ru"]
-        for term in ("приложением", "части целого", "ошибочной заменой"):
+        for term in ("приложением", "части целого", "ошибочной замены"):
             self.assertIn(term,ru)
     def test_preserve_other_volumes_and_draft_status(self):
         self.assertEqual(len(self.book["chapters"]),9)
