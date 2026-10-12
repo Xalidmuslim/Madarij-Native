@@ -24,7 +24,7 @@ class VolumeTwo551600(unittest.TestCase):
             for term in bad:
                 with self.subTest(page=n,term=term): self.assertNotIn(term,self.para(n)["ru"])
     def test_full_reasoning_restore(self):
-        self.assertIn("не довольствуется одним только отсутствием гнева",self.para(558)["ru"])
+        self.assertIn("довольство распространялось на оба исхода",self.para(558)["ru"])
         self.assertIn("не иначе как относительно прав Аллаха",self.para(565)["ru"])
         self.assertIn("собственную честь и достоинство",self.para(569)["ru"])
         self.assertIn("различать два значения",self.para(577)["ru"])
