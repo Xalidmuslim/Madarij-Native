@@ -1,0 +1,868 @@
+{
+  "date": "2026-10-12",
+  "base_branch": "codex/madarij-v158-volume2-manual-pages031-040-20261012",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages041-080-20261012",
+  "edition": "Nabil ibn Nassar al-Sindi; Dar Ataat al-Ilm / Dar Ibn Hazm, 2019, volume 2",
+  "scope": "Sequential electronic Arabic to Russian comparison, printed pages 41–80, using edition-matched Arabic page transcripts (source corpus) and the Russian Android asset. Does not certify printed scans or independent scholarly approval.",
+  "arabic_transcript": "research/volume2-source/arabic_pages.jsonl",
+  "print_image_url_pattern": "https://maknoon.org/ai/bk/madarej_2/{page}.png",
+  "russian_app_asset": "app/src/main/assets/volume2-preview.json",
+  "source_draft_folder": "research/volume2-batch-11-80/",
+  "methodology": [
+    "Compared consecutive Arabic author-body segments with Russian draft paragraphs; tracked continuation across page breaks.",
+    "Made only text-level replacements on Android volume-2 asset; preserved Arabic source OCR separately.",
+    "Corrected Quran Arabic where damaged text was independently checked against canonical Quran resources; visual print collation remains pending.",
+    "Kept long narration on pages 53–54 and added separately labelled translator authenticity note instead of inventing prophetic attribution.",
+    "Preserved previous four targeted corrections and the book-wide draft/not-for-publication flags."
+  ],
+  "quran_and_hadith_references": [
+    "https://quran.com/ar/ghafir/13",
+    "https://quran.com/ar/al-baqarah/160/tafsirs",
+    "https://quran.com/ar/an-naziat/45",
+    "https://islamqa.info/ar/answers/230405",
+    "https://islamqa.info/ar/answers/431920",
+    "https://islamweb.net/ar/fatwa/304951"
+  ],
+  "pages": [
+    {
+      "printed_page": 41,
+      "paragraph_ids": [
+        "madarij-v2-p041-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed three editorial third-person insertions from direct author voice, preserving Quran references."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Original interpretation of Quran 4:79 is author doctrine; independent commentary review pending."
+      ]
+    },
+    {
+      "printed_page": 42,
+      "paragraph_ids": [
+        "madarij-v2-p042-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed an editorial qualifier inside the author's description of a believer's experience."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 43,
+      "paragraph_ids": [
+        "madarij-v2-p043-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Restored direct statement of the author's argument about justice instead of modern narrated framing."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 44,
+      "paragraph_ids": [
+        "madarij-v2-p044-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 45,
+      "paragraph_ids": [
+        "madarij-v2-p045-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed a redundant interpolation naming author in his own simile."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 46,
+      "paragraph_ids": [
+        "madarij-v2-p046-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Restored author voice in his explicit rejection of 'who knows himself knows his Lord' as Prophetic hadith."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "'Who knows himself knows his Lord' is explicitly denied Prophetic authenticity by the author; review is historically textual only."
+      ]
+    },
+    {
+      "printed_page": 47,
+      "paragraph_ids": [
+        "madarij-v2-p047-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 48,
+      "paragraph_ids": [
+        "madarij-v2-p048-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed third-person author attribution from direct statement."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 49,
+      "paragraph_ids": [
+        "madarij-v2-p049-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 50,
+      "paragraph_ids": [
+        "madarij-v2-p050-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed 'Poet said' not found in selected author text; verses retained."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 51,
+      "paragraph_ids": [
+        "madarij-v2-p051-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 52,
+      "paragraph_ids": [
+        "madarij-v2-p052-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 53,
+      "paragraph_ids": [
+        "madarij-v2-p053-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Restored direct narrative before long attributed report, clarified that attribution comes from Ibn al-Qayyim; no independent prophetic authenticity implied."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Long attributed report should not be graded authentic from this text; compare printed edition notes and early hadith sources."
+      ]
+    },
+    {
+      "printed_page": 54,
+      "paragraph_ids": [
+        "madarij-v2-p054-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Added visually distinguished translator caution after report: full narration not established authentic; Ahmad attribution disputed; some phrases have independently authenticated parallels."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Isnad/authenticity analysis of the long narration not complete; source attributions disputed. Comparison of individual sentences with separately authentic hadith remains."
+      ]
+    },
+    {
+      "printed_page": 55,
+      "paragraph_ids": [
+        "madarij-v2-p055-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Repaired corrupted Quran Arabic 40:13: missing ayatihi/terminal yunib, stray preceding number and duplication."
+      ],
+      "quran_spans_repaired": [
+        "40:13"
+      ],
+      "open_questions": [
+        "2019 print scan verse boundary should be checked against corrected Quran text; research source OCR remains untouched."
+      ]
+    },
+    {
+      "printed_page": 56,
+      "paragraph_ids": [
+        "madarij-v2-p056-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Reported 'every newborn' wording needs separate hadith variant/isnad collation."
+      ]
+    },
+    {
+      "printed_page": 57,
+      "paragraph_ids": [
+        "madarij-v2-p057-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed stray previous verse number 159 from Arabic Quran 2:160 excerpt."
+      ],
+      "quran_spans_repaired": [
+        "2:160"
+      ],
+      "open_questions": [
+        "Printed edition page boundary/abbreviated quoting to be checked; edited only displaced verse number."
+      ]
+    },
+    {
+      "printed_page": 58,
+      "paragraph_ids": [
+        "madarij-v2-p058-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 59,
+      "paragraph_ids": [
+        "madarij-v2-p059-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 60,
+      "paragraph_ids": [
+        "madarij-v2-p060-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 61,
+      "paragraph_ids": [
+        "madarij-v2-p061-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 62,
+      "paragraph_ids": [
+        "madarij-v2-p062-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 63,
+      "paragraph_ids": [
+        "madarij-v2-p063-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Verify Abdullah ibn Masud 'martyrs of my ummah are people who die on beds' independently against Musnad."
+      ]
+    },
+    {
+      "printed_page": 64,
+      "paragraph_ids": [
+        "madarij-v2-p064-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 65,
+      "paragraph_ids": [
+        "madarij-v2-p065-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 66,
+      "paragraph_ids": [
+        "madarij-v2-p066-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 67,
+      "paragraph_ids": [
+        "madarij-v2-p067-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 68,
+      "paragraph_ids": [
+        "madarij-v2-p068-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Restored Arabic final word yunib in 40:13 reference."
+      ],
+      "quran_spans_repaired": [
+        "40:13"
+      ],
+      "open_questions": [
+        "Full canonical 40:13 corrected in app while source OCR remains untouched; print scan still needed."
+      ]
+    },
+    {
+      "printed_page": 69,
+      "paragraph_ids": [
+        "madarij-v2-p069-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 70,
+      "paragraph_ids": [
+        "madarij-v2-p070-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed reference Qaf 50:36 vs 36–37 may be incomplete although both verses are quoted; needs scan."
+      ]
+    },
+    {
+      "printed_page": 71,
+      "paragraph_ids": [
+        "madarij-v2-p071-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 72,
+      "paragraph_ids": [
+        "madarij-v2-p072-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 73,
+      "paragraph_ids": [
+        "madarij-v2-p073-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 74,
+      "paragraph_ids": [
+        "madarij-v2-p074-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 75,
+      "paragraph_ids": [
+        "madarij-v2-p075-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed two modern third-person author labels from author's critique of Greek-logic reading of Quran 16:125."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 76,
+      "paragraph_ids": [
+        "madarij-v2-p076-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    },
+    {
+      "printed_page": 77,
+      "paragraph_ids": [
+        "madarij-v2-p077-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Restored missing phrase yakhshaha in Arabic Quran 79:42–45; removed shifted internal verse numbers."
+      ],
+      "quran_spans_repaired": [
+        "79:42-45"
+      ],
+      "open_questions": [
+        "Original electronic Quran quote had verses with offset numbers and truncated final words; scan still not checked."
+      ]
+    },
+    {
+      "printed_page": 78,
+      "paragraph_ids": [
+        "madarij-v2-p078-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed inserted author narration about Ibn Taymiyya's supplication practice; moved religious caution to explicitly named translator note."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Forty repetitions between sunna and fard Fajr is quoted from Ibn Taymiyya; not independently established as prophetic prescription."
+      ]
+    },
+    {
+      "printed_page": 79,
+      "paragraph_ids": [
+        "madarij-v2-p079-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": true,
+      "corrections": [
+        "Removed third-person author qualifier in explanation of ayyam Allah."
+      ],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Assess historical attributions concerning interpretation of 'days of Allah' before scholarly sign-off."
+      ]
+    },
+    {
+      "printed_page": 80,
+      "paragraph_ids": [
+        "madarij-v2-p080-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "translation_independently_certified": false,
+      "all_quran_quotes_independently_verified": false,
+      "all_hadith_isnads_verified": false,
+      "expert_signed_off": false,
+      "publication_ready": false,
+      "app_content_changed": false,
+      "corrections": [],
+      "quran_spans_repaired": [],
+      "open_questions": [
+        "Printed 2019 scan, all source notes and independent religious citation verification pending."
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_compared": 40,
+    "pages_with_confirmed_edits": 16,
+    "textual_replacement_operations": 19,
+    "arabic_quote_repaired_pages": [
+      55,
+      57,
+      68,
+      77
+    ],
+    "russian_translation_changed_pages": [
+      41,
+      42,
+      43,
+      45,
+      46,
+      48,
+      50,
+      53,
+      54,
+      75,
+      78,
+      79
+    ],
+    "arabic_source_ocr_altered": false,
+    "app_chapters_after": 9,
+    "app_fragments_after": 676,
+    "printed_scans_verified": 0,
+    "fully_scholarly_certified_pages": 0,
+    "first_next_page": 81
+  },
+  "validation": {
+    "test_file_created": "tools/test_volume2_pages041_080.py",
+    "python_unittest_executed": false,
+    "json_comparison_assertions_in_session": 20,
+    "json_comparison_assertions_passed": 20,
+    "apk_built": false,
+    "ci_skipped_by_commit_tag": true
+  },
+  "publication_ready": false
+}
