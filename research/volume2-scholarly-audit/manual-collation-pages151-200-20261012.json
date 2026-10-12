@@ -1,0 +1,1029 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages121-150-20261012",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages151-200-20261012",
+  "source_edition": "2019 Nabil ibn Nassar as-Sindi volume II, Dar Ataat al-Ilm / Dar Ibn Hazm",
+  "scope": "Sequential 50-page electronic Arabic/Russian screening, with closer passage comparison and confirmed repairs on indicated pages only. No claim of line-by-line independently certified translation for all 50 pages.",
+  "source_arabic": "research/volume2-source/arabic_pages.jsonl",
+  "source_russian": "research/volume2-batch-151-220/russian-pages-XXX-YYY.json",
+  "corrected_app": "app/src/main/assets/volume2-preview.json",
+  "quran_sources": [
+    "https://quran.com/57/16",
+    "https://quran.com/55/46",
+    "https://quran.ksu.edu.sa/tafseer/tabary/sura79-aya40.html"
+  ],
+  "pages": [
+    {
+      "printed_page": 151,
+      "paragraph_ids": [
+        "madarij-v2-p151-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 152,
+      "paragraph_ids": [
+        "madarij-v2-p152-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 153,
+      "paragraph_ids": [
+        "madarij-v2-p153-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 154,
+      "paragraph_ids": [
+        "madarij-v2-p154-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 155,
+      "paragraph_ids": [
+        "madarij-v2-p155-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Проверить происхождение и атрибуцию исторического сообщения"
+      ]
+    },
+    {
+      "printed_page": 156,
+      "paragraph_ids": [
+        "madarij-v2-p156-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 157,
+      "paragraph_ids": [
+        "madarij-v2-p157-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Удалены две современные авторские оговорки, сохранена авторская оценка влияния музыкального слушания."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 158,
+      "paragraph_ids": [
+        "madarij-v2-p158-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 159,
+      "paragraph_ids": [
+        "madarij-v2-p159-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Снята авторская оговорка в сравнении слушания Корана и песен; восстановлена непосредственная форма совета о постепенном переходе."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 160,
+      "paragraph_ids": [
+        "madarij-v2-p160-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Восстановлена прямая речь богословского рассуждения о благодарности и причитании; историческое сообщение об Умаре не аттестовано."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Проверить сообщение об Умаре ибн аль-Хаттабе по цепочке передачи"
+      ]
+    },
+    {
+      "printed_page": 161,
+      "paragraph_ids": [
+        "madarij-v2-p161-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Сохранена прямая авторская оценка ранних приближённых Аллаха; редакционная дистанцирующая фраза удалена."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 162,
+      "paragraph_ids": [
+        "madarij-v2-p162-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Восстановлена непосредственная формулировка о недопустимости определённого вида слушания."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 163,
+      "paragraph_ids": [
+        "madarij-v2-p163-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 164,
+      "paragraph_ids": [
+        "madarij-v2-p164-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Убрана редакторская надпись «Поэт сказал» при сохранении обоих стихов и раздела."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 165,
+      "paragraph_ids": [
+        "madarij-v2-p165-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 166,
+      "paragraph_ids": [
+        "madarij-v2-p166-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 167,
+      "paragraph_ids": [
+        "madarij-v2-p167-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 168,
+      "paragraph_ids": [
+        "madarij-v2-p168-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 169,
+      "paragraph_ids": [
+        "madarij-v2-p169-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Сохранён прямой довод о печали без вставки «по мысли автора»."
+      ],
+      "source_reference_count": 4,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 170,
+      "paragraph_ids": [
+        "madarij-v2-p170-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Рассуждение о печали и приведённом аяте 9:92 приведено в прямой авторской форме."
+      ],
+      "source_reference_count": 2,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 171,
+      "paragraph_ids": [
+        "madarij-v2-p171-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Два суждения Ибн аль-Каййима об источниках недостоверных сообщений восстановлены как его собственный критический вывод; хадисы не объявлены достоверными."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Проверить хадис Хинда ибн Абу Хали и сообщение «Аллах любит каждое печальное сердце» по первичным сборникам; автор оспаривает их достоверность"
+      ]
+    },
+    {
+      "printed_page": 172,
+      "paragraph_ids": [
+        "madarij-v2-p172-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Убраны вставки переводчика в изложении израильского сообщения и разногласия наставников."
+      ],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Уточнить источники израильского сообщения, не представлять как пророческий хадис"
+      ]
+    },
+    {
+      "printed_page": 173,
+      "paragraph_ids": [
+        "madarij-v2-p173-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 174,
+      "paragraph_ids": [
+        "madarij-v2-p174-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 175,
+      "paragraph_ids": [
+        "madarij-v2-p175-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 176,
+      "paragraph_ids": [
+        "madarij-v2-p176-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 177,
+      "paragraph_ids": [
+        "madarij-v2-p177-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Оценка автора руководства участвующих в джихаде передана без современного модального комментария; атрибуция аль-Аузаи и Ибн аль-Мубарака всё ещё требует проверки."
+      ],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Проверить передачу от аль-Аузаи и Ибн аль-Мубарака"
+      ]
+    },
+    {
+      "printed_page": 178,
+      "paragraph_ids": [
+        "madarij-v2-p178-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 179,
+      "paragraph_ids": [
+        "madarij-v2-p179-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 4,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 180,
+      "paragraph_ids": [
+        "madarij-v2-p180-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 181,
+      "paragraph_ids": [
+        "madarij-v2-p181-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 182,
+      "paragraph_ids": [
+        "madarij-v2-p182-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 183,
+      "paragraph_ids": [
+        "madarij-v2-p183-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 184,
+      "paragraph_ids": [
+        "madarij-v2-p184-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 185,
+      "paragraph_ids": [
+        "madarij-v2-p185-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 186,
+      "paragraph_ids": [
+        "madarij-v2-p186-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Восстановлена форма арабского «كما قيل» («как сказано») вместо не подкреплённого оригиналом «Поэт сказал»."
+      ],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 187,
+      "paragraph_ids": [
+        "madarij-v2-p187-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 188,
+      "paragraph_ids": [
+        "madarij-v2-p188-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 189,
+      "paragraph_ids": [
+        "madarij-v2-p189-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 3,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 190,
+      "paragraph_ids": [
+        "madarij-v2-p190-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 1,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 191,
+      "paragraph_ids": [
+        "madarij-v2-p191-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 192,
+      "paragraph_ids": [
+        "madarij-v2-p192-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 193,
+      "paragraph_ids": [
+        "madarij-v2-p193-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Восстановлен повреждённый арабский аят 57:16, убрана потерянная часть и OCR-дублирование; пояснение о незавершённой проверке печатного скана оставлено отдельным примечанием переводчика."
+      ],
+      "source_reference_count": 4,
+      "open_questions": [
+        "Проверить скан издания 2019 года: дословная длина цитаты 57:16 и приписываемые Ибн Масуду и Ибн Аббасу сообщения"
+      ]
+    },
+    {
+      "printed_page": 194,
+      "paragraph_ids": [
+        "madarij-v2-p194-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 195,
+      "paragraph_ids": [
+        "madarij-v2-p195-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 196,
+      "paragraph_ids": [
+        "madarij-v2-p196-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 197,
+      "paragraph_ids": [
+        "madarij-v2-p197-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": true,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [
+        "Восстановлены коранические фрагменты 55:46 и 79:40, удалены посторонние числа предыдущих аятов; восстановлена прямая речь в сравнении толкований."
+      ],
+      "source_reference_count": 2,
+      "open_questions": [
+        "Проверить в скане издательскую форму сокращённых цитат 55:46, 79:40"
+      ]
+    },
+    {
+      "printed_page": 198,
+      "paragraph_ids": [
+        "madarij-v2-p198-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 199,
+      "paragraph_ids": [
+        "madarij-v2-p199-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    },
+    {
+      "printed_page": 200,
+      "paragraph_ids": [
+        "madarij-v2-p200-draft"
+      ],
+      "electronic_arabic_present": true,
+      "electronic_russian_draft_present": true,
+      "screening_status": "electronic_screening_completed_not_full_paragraph_certification",
+      "selected_passages_substantively_compared": false,
+      "print_scan_verified": false,
+      "hadith_chains_independently_verified": false,
+      "fully_independently_verified": false,
+      "ready_to_publish": false,
+      "corrections": [],
+      "source_reference_count": 0,
+      "open_questions": [
+        "Построчная независимая сверка со сканом печатного тома и проверка цитат не завершены"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_screened": 50,
+    "pages_with_documented_repairs": 14,
+    "editing_operations": 23,
+    "arabic_quote_repaired_pages": [
+      193,
+      197
+    ],
+    "quranic_citations_restored": 3,
+    "arabic_source_jsonl_unchanged": true,
+    "independently_fully_verified_pages": 0,
+    "printed_scans_seen": 0,
+    "app_sections": 9,
+    "app_fragments": 676,
+    "next_sequential_electronic_screening_page": 201,
+    "first_page_requiring_complete_scholarly_signoff": 151
+  },
+  "regression_check": {
+    "script": "tools/test_volume2_pages151_200.py",
+    "method": "13 live JavaScript invariant assertions against pinned app-content commit 056dcd80ecaf1c57615d10c73953ed093c1281fc; all passed",
+    "python_unittest_executed": false,
+    "apk_built": false
+  },
+  "safety": {
+    "volume1_untouched": true,
+    "no_paragraphs_removed": true,
+    "publication_ready": false
+  },
+  "methodology_notes": [
+    "Electronic author-text source can carry OCR errors; restore Quran only after checking canonical references, retain a separate record of each changed quote.",
+    "Changed Russian draft files are synced with the Android asset; paragraph count and earlier repairs preserved.",
+    "Uncertified religious reports remain attributed as the author transmits them, without inventing isnad verdicts."
+  ]
+}
