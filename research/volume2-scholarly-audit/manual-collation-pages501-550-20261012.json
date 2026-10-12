@@ -1,0 +1,832 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-volume2-collation-pages501-550-20261012",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages451-500-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi, 2019, volume II",
+  "scope": "Consecutive 501–550 electronic Arabic/Russian screening; close comparison and actual correction confined to eight identified pages. Not complete translation signoff for all 50 pages.",
+  "arabic_source": "research/volume2-source/arabic_pages.jsonl",
+  "android_app_source": "app/src/main/assets/volume2-preview.json",
+  "russian_sources": "research/volume2-batch-421-520/ and research/volume2-batch-521-620/",
+  "quran_checks": [
+    {
+      "page": 501,
+      "verse": "98:7-8",
+      "mushaf": "https://quran.com/al-bayyinah/8",
+      "result": "restored omitted جزاؤهم; fixed shifted number; Russian quotation restored"
+    },
+    {
+      "page": 515,
+      "verse": "35:6",
+      "mushaf": "https://quran.com/ar/fatir/6",
+      "result": "removed spurious leading number from author-selected verse excerpt"
+    }
+  ],
+  "pages": [
+    {
+      "printed_page": 501,
+      "paragraph_id": "madarij-v2-p501-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored omitted Arabic Qur'an 98:8 expression جزاؤهم and corrected preceding shifted verse number in 98:7–8 excerpt",
+        "Restored complete Russian 98:7–8 quotation instead of shortened excerpt"
+      ],
+      "open_questions": [
+        "Visual compare Qur'an 98:7–8 with 2019 print scan",
+        "Unabridged Arabic citation 58:22 in Russian was not exhaustively checked"
+      ]
+    },
+    {
+      "printed_page": 502,
+      "paragraph_id": "madarij-v2-p502-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify attribution of Israelite tradition, do not classify as Prophetic hadith"
+      ]
+    },
+    {
+      "printed_page": 503,
+      "paragraph_id": "madarij-v2-p503-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 504,
+      "paragraph_id": "madarij-v2-p504-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author's explicit logical objection to two schools regarding decree and approval, eliminating inserted third-person commentary"
+      ],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 505,
+      "paragraph_id": "madarij-v2-p505-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 506,
+      "paragraph_id": "madarij-v2-p506-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Expanded shortened disagreement into author-directed refutations of the four formulae, Ash'ari majority attribution, and al-Baqillani transition"
+      ],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 507,
+      "paragraph_id": "madarij-v2-p507-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Preserve independently corrected Qur'an 6:148 and related arguments; final print-scan approval pending"
+      ]
+    },
+    {
+      "printed_page": 508,
+      "paragraph_id": "madarij-v2-p508-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 509,
+      "paragraph_id": "madarij-v2-p509-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 510,
+      "paragraph_id": "madarij-v2-p510-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 511,
+      "paragraph_id": "madarij-v2-p511-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author examples of infected limb amputation, medicine and arduous travel, as well as detailed Iblis/Jibril contrast"
+      ],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 512,
+      "paragraph_id": "madarij-v2-p512-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 513,
+      "paragraph_id": "madarij-v2-p513-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 514,
+      "paragraph_id": "madarij-v2-p514-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 515,
+      "paragraph_id": "madarij-v2-p515-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed shifted previous verse number in Qur'an 35:6 partial quotation; preserved its author-selected excerpt",
+        "Restored direct exposition of morally significant opposition to Satan, without third-person editorial qualifier"
+      ],
+      "open_questions": [
+        "Verify printed scan layout around Qur'an 35:6 and footnote marking"
+      ]
+    },
+    {
+      "printed_page": 516,
+      "paragraph_id": "madarij-v2-p516-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 517,
+      "paragraph_id": "madarij-v2-p517-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 518,
+      "paragraph_id": "madarij-v2-p518-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 519,
+      "paragraph_id": "madarij-v2-p519-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 520,
+      "paragraph_id": "madarij-v2-p520-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 521,
+      "paragraph_id": "madarij-v2-p521-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 522,
+      "paragraph_id": "madarij-v2-p522-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 523,
+      "paragraph_id": "madarij-v2-p523-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 524,
+      "paragraph_id": "madarij-v2-p524-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 525,
+      "paragraph_id": "madarij-v2-p525-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 526,
+      "paragraph_id": "madarij-v2-p526-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 527,
+      "paragraph_id": "madarij-v2-p527-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 528,
+      "paragraph_id": "madarij-v2-p528-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 529,
+      "paragraph_id": "madarij-v2-p529-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 530,
+      "paragraph_id": "madarij-v2-p530-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Check attributions and isnads of cited prophetic reports, no certified grade"
+      ]
+    },
+    {
+      "printed_page": 531,
+      "paragraph_id": "madarij-v2-p531-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 532,
+      "paragraph_id": "madarij-v2-p532-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 533,
+      "paragraph_id": "madarij-v2-p533-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 534,
+      "paragraph_id": "madarij-v2-p534-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 535,
+      "paragraph_id": "madarij-v2-p535-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 536,
+      "paragraph_id": "madarij-v2-p536-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 537,
+      "paragraph_id": "madarij-v2-p537-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored the sequential direct question-and-answer argument, omitted reasoning on innate nature and different creatures, and Qur'an 12:24 contextual reference"
+      ],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 538,
+      "paragraph_id": "madarij-v2-p538-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 539,
+      "paragraph_id": "madarij-v2-p539-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Source and classification of narrative unverified"
+      ]
+    },
+    {
+      "printed_page": 540,
+      "paragraph_id": "madarij-v2-p540-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author's direct wording and the complete attributed exhortation about unfavorable decree, removed interpretative third-person softening"
+      ],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 541,
+      "paragraph_id": "madarij-v2-p541-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 542,
+      "paragraph_id": "madarij-v2-p542-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify report source and grading"
+      ]
+    },
+    {
+      "printed_page": 543,
+      "paragraph_id": "madarij-v2-p543-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Assess unverified report of delegation; avoid treating as authenticated Prophetic statement"
+      ]
+    },
+    {
+      "printed_page": 544,
+      "paragraph_id": "madarij-v2-p544-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 545,
+      "paragraph_id": "madarij-v2-p545-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": true,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored claim about acts of worship, detailed Israelite narrative and concluding aphorism; distinguished translator authenticity note"
+      ],
+      "open_questions": [
+        "Israelite story remains separate from authenticated religious guidance; source details unverified"
+      ]
+    },
+    {
+      "printed_page": 546,
+      "paragraph_id": "madarij-v2-p546-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Check source and grade of reported hadith"
+      ]
+    },
+    {
+      "printed_page": 547,
+      "paragraph_id": "madarij-v2-p547-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify transmitted athar and prophetic attribution"
+      ]
+    },
+    {
+      "printed_page": 548,
+      "paragraph_id": "madarij-v2-p548-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 549,
+      "paragraph_id": "madarij-v2-p549-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent phrase-by-phrase Arabic/Russian verification and 2019 print scan review outstanding"
+      ]
+    },
+    {
+      "printed_page": 550,
+      "paragraph_id": "madarij-v2-p550-draft",
+      "electronic_inventory_screening": true,
+      "detailed_manual_collation_completed": false,
+      "selected_passages_compared": false,
+      "print_scan_checked": false,
+      "independent_hadith_verification": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify historical episode in editor's footnotes and separate translator caution"
+      ]
+    }
+  ],
+  "stats": {
+    "consecutive_pages_screened": 50,
+    "pages_with_confirmed_edits": 8,
+    "exact_replacement_operations": 10,
+    "arabic_quote_repaired_pages": [
+      501,
+      515
+    ],
+    "russian_translated_text_changed_pages": [
+      501,
+      504,
+      506,
+      511,
+      515,
+      537,
+      540,
+      545
+    ],
+    "app_chapters_retained": 9,
+    "app_fragments_retained": 676,
+    "javaScript_in_memory_assertions_passed": 15,
+    "source_draft_sync_checked": true,
+    "python_unittest_committed": true,
+    "python_unittest_executed": false,
+    "apk_built": false,
+    "print_scans_seen": 0,
+    "fully_independently_verified_pages": 0,
+    "next_sequential_electronic_screening_page": 551
+  },
+  "preserved": {
+    "first_volume_unchanged": true,
+    "arabic_source_jsonl_unchanged": true,
+    "previous_p448_463_507_622_repairs_retained": true,
+    "publication_draft_status": true
+  },
+  "publication_ready": false
+}
