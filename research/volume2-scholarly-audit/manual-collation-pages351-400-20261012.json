@@ -1,0 +1,872 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-volume2-collation-pages351-400-20261012",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages301-350-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi, 2019, volume II",
+  "scope": "Consecutive electronically screened pages 351–400 with direct confirmed repairs on selected pages listed. No 2019 print images inspected; no complete independent Arabic-Russian or hadith certification.",
+  "sources": {
+    "arabic": "research/volume2-source/arabic_pages.jsonl",
+    "android": "app/src/main/assets/volume2-preview.json",
+    "russian_drafts": "research/volume2-batch-321-420",
+    "quran_17_74": "https://quran.com/17/74",
+    "quran_60_4": "https://quran.com/60/4"
+  },
+  "pages": [
+    {
+      "printed_page": 351,
+      "paragraph_id": "madarij-v2-p351-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 1
+    },
+    {
+      "printed_page": 352,
+      "paragraph_id": "madarij-v2-p352-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored Arabic Quran 17:74 full closing قَلِيلًا and removed intrusive previous-verse counter 73"
+      ],
+      "open_questions": [
+        "Printed 2019 page and verse break to visually inspect"
+      ],
+      "quran_reference_count": 4
+    },
+    {
+      "printed_page": 353,
+      "paragraph_id": "madarij-v2-p353-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 354,
+      "paragraph_id": "madarij-v2-p354-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independently verify historical saying attribution"
+      ],
+      "quran_reference_count": 1
+    },
+    {
+      "printed_page": 355,
+      "paragraph_id": "madarij-v2-p355-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 356,
+      "paragraph_id": "madarij-v2-p356-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 2
+    },
+    {
+      "printed_page": 357,
+      "paragraph_id": "madarij-v2-p357-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 358,
+      "paragraph_id": "madarij-v2-p358-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 359,
+      "paragraph_id": "madarij-v2-p359-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 360,
+      "paragraph_id": "madarij-v2-p360-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author's direct claim that contentment at this point is deprivation; removed third-person editorial qualifier"
+      ],
+      "open_questions": [
+        "Source of unnamed pilgrim/parent story remains untraced"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 361,
+      "paragraph_id": "madarij-v2-p361-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 362,
+      "paragraph_id": "madarij-v2-p362-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Replaced distancing modern narrator with Ibn al-Qayyim's direct rhetorical warning"
+      ],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 363,
+      "paragraph_id": "madarij-v2-p363-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 364,
+      "paragraph_id": "madarij-v2-p364-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 365,
+      "paragraph_id": "madarij-v2-p365-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 366,
+      "paragraph_id": "madarij-v2-p366-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 367,
+      "paragraph_id": "madarij-v2-p367-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 368,
+      "paragraph_id": "madarij-v2-p368-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 4
+    },
+    {
+      "printed_page": 369,
+      "paragraph_id": "madarij-v2-p369-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 370,
+      "paragraph_id": "madarij-v2-p370-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Check hadith wording and full attribution independently"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 371,
+      "paragraph_id": "madarij-v2-p371-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 1
+    },
+    {
+      "printed_page": 372,
+      "paragraph_id": "madarij-v2-p372-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 373,
+      "paragraph_id": "madarij-v2-p373-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 374,
+      "paragraph_id": "madarij-v2-p374-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct author voice when describing temptation toward extremism, including Khawarij example"
+      ],
+      "open_questions": [
+        "Check author evidence for Khawarij example and hadith contextualization"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 375,
+      "paragraph_id": "madarij-v2-p375-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 376,
+      "paragraph_id": "madarij-v2-p376-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 377,
+      "paragraph_id": "madarij-v2-p377-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 378,
+      "paragraph_id": "madarij-v2-p378-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored detailed author reasoning on how merely verbal humility may conceal spiritual claims; retained argument sequence"
+      ],
+      "open_questions": [
+        "Perform a second independent scholarly review of the direct argument and verse 3:128"
+      ],
+      "quran_reference_count": 1
+    },
+    {
+      "printed_page": 379,
+      "paragraph_id": "madarij-v2-p379-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 380,
+      "paragraph_id": "madarij-v2-p380-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed editor qualifier and preserved specific distinction between essential dependence and philosophical occasional/possible existence"
+      ],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 381,
+      "paragraph_id": "madarij-v2-p381-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored missing Arabic Quran 60:4 closing الْمَصِيرُ and corresponding Russian translation"
+      ],
+      "open_questions": [
+        "Other Quran quotations on the page, including 4:81, need systematic independent mushaf check"
+      ],
+      "quran_reference_count": 12
+    },
+    {
+      "printed_page": 382,
+      "paragraph_id": "madarij-v2-p382-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 383,
+      "paragraph_id": "madarij-v2-p383-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 384,
+      "paragraph_id": "madarij-v2-p384-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 385,
+      "paragraph_id": "madarij-v2-p385-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 386,
+      "paragraph_id": "madarij-v2-p386-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 387,
+      "paragraph_id": "madarij-v2-p387-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 388,
+      "paragraph_id": "madarij-v2-p388-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct assertion that spiritual teachers agreed tawakkul does not negate taking means"
+      ],
+      "open_questions": [
+        "Historical Ibn Ibrahim–Jibril attribution requires isnad evaluation"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 389,
+      "paragraph_id": "madarij-v2-p389-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 390,
+      "paragraph_id": "madarij-v2-p390-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 391,
+      "paragraph_id": "madarij-v2-p391-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 392,
+      "paragraph_id": "madarij-v2-p392-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 393,
+      "paragraph_id": "madarij-v2-p393-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 394,
+      "paragraph_id": "madarij-v2-p394-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 395,
+      "paragraph_id": "madarij-v2-p395-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 396,
+      "paragraph_id": "madarij-v2-p396-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 397,
+      "paragraph_id": "madarij-v2-p397-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 398,
+      "paragraph_id": "madarij-v2-p398-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 399,
+      "paragraph_id": "madarij-v2-p399-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": false,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full Arabic–Russian passage review, print-scan check and cited-source grading still outstanding"
+      ],
+      "quran_reference_count": 0
+    },
+    {
+      "printed_page": 400,
+      "paragraph_id": "madarij-v2-p400-draft",
+      "electronic_source_present": true,
+      "android_russian_present": true,
+      "electronic_screening_performed": true,
+      "selected_passages_substantively_corrected": true,
+      "print_scan_verified": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct first-person author transition to Ibn Taymiyya's response across page boundary"
+      ],
+      "open_questions": [
+        "Independently verify attributed account of Abu Sulayman ad-Darani, and check continuation p401"
+      ],
+      "quran_reference_count": 0
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 50,
+    "pages_with_confirmed_corrections": 9,
+    "initial_replacement_operations": 11,
+    "additional_duplicate_cleanup_operations": 1,
+    "arabic_quote_repaired_pages": [
+      352,
+      381
+    ],
+    "russian_translation_changed_pages": [
+      360,
+      362,
+      374,
+      378,
+      380,
+      381,
+      388,
+      400
+    ],
+    "android_chapters": 9,
+    "android_bilingual_fragments": 676,
+    "independently_fully_verified_pages": 0,
+    "printed_scans_inspected": 0,
+    "equivalent_js_in_memory_assertions_passed": 16,
+    "python_unittest_committed": true,
+    "python_unittest_executed": false,
+    "apk_built": false,
+    "next_sequential_electronic_page": 401,
+    "first_page_requiring_full_manual_scholarly_signoff": 351
+  },
+  "invariants": {
+    "volume1_unchanged": true,
+    "arabic_source_jsonl_unchanged": true,
+    "translation_draft_status_retained": true,
+    "paragraph_count_preserved": true
+  },
+  "publication_ready": false
+}
