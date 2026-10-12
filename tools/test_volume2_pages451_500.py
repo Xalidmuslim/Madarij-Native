@@ -26,7 +26,7 @@ class Vol2Pages451500(unittest.TestCase):
 
     def test_preserve_isnad_instead_of_modern_summary(self):
         ru=self.p(459)["ru"]
-        self.assertIn("Мусы ибн Исмаила",ru)
+        self.assertIn("Мусу ибн Исмаила",ru)
         self.assertIn("Сувайда",ru)
         self.assertIn("Абдуллаха ибн Убайда ибн Умайра",ru)
         self.assertNotIn("Автор указывает цепочку",ru)
@@ -53,7 +53,7 @@ class Vol2Pages451500(unittest.TestCase):
                     self.assertNotIn(phrase,self.p(page)["ru"])
 
     def test_fuller_theological_and_fiqh_wording(self):
-        self.assertIn("оба мнения присутствуют в мазхабе имама Ахмада",self.p(496)["ru"])
+        self.assertIn("Оба мнения присутствуют в мазхабе имама Ахмада",self.p(496)["ru"])
         self.assertIn("Снабжающим необходимым",self.p(497)["ru"])
 
     def test_preserve_previous_repair_and_draft(self):
