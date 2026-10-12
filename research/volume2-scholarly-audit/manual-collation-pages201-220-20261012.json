@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-12",
+  "scope": "Sequential electronic screening 201–220 and selected direct Arabic–Russian repairs, NOT complete manual verification of all paragraphs; NOT print scan certified",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-volume2-collation-pages201-220-20261012",
+  "base": "codex/madarij-v158-volume2-collation-pages151-200-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi (2019), volume 2",
+  "arabic_source": "research/volume2-source/arabic_pages.jsonl",
+  "app_asset": "app/src/main/assets/volume2-preview.json",
+  "russian_drafts": [
+    "research/volume2-batch-151-220/russian-pages-201-210.json",
+    "research/volume2-batch-151-220/russian-pages-211-220.json"
+  ],
+  "quran_sources": [
+    "https://quran.com/ar/an-nahl/96",
+    "https://quran.com/10/24",
+    "https://quran.com/ur/al-ala/16-17"
+  ],
+  "pages": [
+    {
+      "printed_page": 201,
+      "paragraph_ids": [
+        "madarij-v2-p201-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 202,
+      "paragraph_ids": [
+        "madarij-v2-p202-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Отделена реплика переводчика о непроверенном иснаде от авторского текста"
+      ],
+      "unresolved": [
+        "Проверить источники и авторский диапазон цитирования по скану издания 2019 года, а передачу хадисов — по первоисточникам"
+      ]
+    },
+    {
+      "printed_page": 203,
+      "paragraph_ids": [
+        "madarij-v2-p203-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 204,
+      "paragraph_ids": [
+        "madarij-v2-p204-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 205,
+      "paragraph_ids": [
+        "madarij-v2-p205-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Восстановлено авторское решение о двух толкованиях беспечности в молитве"
+      ],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 206,
+      "paragraph_ids": [
+        "madarij-v2-p206-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 207,
+      "paragraph_ids": [
+        "madarij-v2-p207-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 208,
+      "paragraph_ids": [
+        "madarij-v2-p208-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Снята современная вставка «автор считает» из юридического вывода"
+      ],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 209,
+      "paragraph_ids": [
+        "madarij-v2-p209-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 210,
+      "paragraph_ids": [
+        "madarij-v2-p210-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 211,
+      "paragraph_ids": [
+        "madarij-v2-p211-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 212,
+      "paragraph_ids": [
+        "madarij-v2-p212-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 213,
+      "paragraph_ids": [
+        "madarij-v2-p213-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 214,
+      "paragraph_ids": [
+        "madarij-v2-p214-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 215,
+      "paragraph_ids": [
+        "madarij-v2-p215-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Восстановлено авторское «единодушны наставники» вместо искажающего «почти все»"
+      ],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 216,
+      "paragraph_ids": [
+        "madarij-v2-p216-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 217,
+      "paragraph_ids": [
+        "madarij-v2-p217-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    },
+    {
+      "printed_page": 218,
+      "paragraph_ids": [
+        "madarij-v2-p218-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Исправлены повреждённые цитаты 16:96 и 10:24; устранены ошибочные номера прежних аятов и восстановлены окончания",
+        "Явно отделено примечание переводчика от текста автора"
+      ],
+      "unresolved": [
+        "Проверить источники и авторский диапазон цитирования по скану издания 2019 года, а передачу хадисов — по первоисточникам"
+      ]
+    },
+    {
+      "printed_page": 219,
+      "paragraph_ids": [
+        "madarij-v2-p219-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": true,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [
+        "Восстановлена связанная цитата 87:16–17, с правильной ссылкой и окончанием",
+        "Явно отделено примечание переводчика"
+      ],
+      "unresolved": [
+        "Проверить источники и авторский диапазон цитирования по скану издания 2019 года, а передачу хадисов — по первоисточникам"
+      ]
+    },
+    {
+      "printed_page": 220,
+      "paragraph_ids": [
+        "madarij-v2-p220-draft"
+      ],
+      "electronic_page_screening": true,
+      "selected_passages_compared_and_corrected": false,
+      "all_arabic_and_russian_paragraphs_independently_verified": false,
+      "edition_print_scan_checked": false,
+      "hadith_isnad_verified": false,
+      "publish_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Построчная научная сверка со сканом и независимая аттестация ещё требуются"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 20,
+    "pages_corrected": 6,
+    "verified_arabic_quran_citations_restored": 3,
+    "app_paragraphs": 676,
+    "chapters": 9,
+    "full_independent_verification": 0,
+    "print_scans_seen": 0,
+    "next_page_for_electronic_screening": 221
+  },
+  "testing": {
+    "python_regression_script": "tools/test_volume2_pages201_220.py",
+    "python_regression_executed": false,
+    "js_data_assertions": 10,
+    "js_data_assertions_passed": 10,
+    "apk_built": false
+  },
+  "draft_status_unchanged": true,
+  "volume1_untouched": true,
+  "publication_ready": false
+}
