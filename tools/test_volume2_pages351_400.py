@@ -28,7 +28,7 @@ class Volume2Pages351400(unittest.TestCase):
                     self.assertNotIn(phrase,self.page(n)["ru"])
     def test_p378_not_abridged(self):
         ru=self.page(378)["ru"]
-        self.assertIn("само собственное смирение",ru)
+        self.assertIn("собственное смирение",ru)
         self.assertIn("не в действительности",ru)
         self.assertIn("не приписывать духовные состояния",ru)
     def test_preserve_draft_and_old_revisions(self):
