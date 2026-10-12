@@ -35,7 +35,7 @@ class Pages201250(unittest.TestCase):
 
     def test_retained_author_strength_on_p215(self):
         ru=self.page(215)["ru"]
-        self.assertIn("единодушно",ru)
+        self.assertIn("единодушны",ru)
         self.assertIn("как придерживавшиеся истины, так и заблуждавшиеся",ru)
 
     def test_quran_22_34_35_restored_p209(self):
