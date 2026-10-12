@@ -1,0 +1,479 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages081-120-20261012",
+  "working_branch": "codex/madarij-v158-audit-p121-150",
+  "edition": "Nabil ibn Nassar as-Sindi (2019), volume II, printed pagination",
+  "scope": "Sequential electronic source/draft screening for pages 121–150; detailed targeted collation and confirmed edits on 10 pages. NOT a final exhaustive line-by-line print manuscript or independent hadith certification.",
+  "method": "Compared numbered Arabic source pages in research/volume2-source/arabic_pages.jsonl with Russian pages in research/volume2-batch-81-150 and current bundled Android app resource; validated repaired Quran extracts against King Saud University Quran/tafsir text. Original Arabic source inventory was not rewritten.",
+  "sources": {
+    "arabic_inventory": "research/volume2-source/arabic_pages.jsonl",
+    "arabic_print_page": "https://maknoon.org/ai/view.php?bk=madarej_2&p={page}",
+    "android_text": "app/src/main/assets/volume2-preview.json",
+    "draft_prefix": "research/volume2-batch-81-150/russian-pages-",
+    "quran_references": [
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura5-aya83.html",
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura8-aya23.html",
+      "https://quran.ksu.edu.sa/tafseer/katheer/sura41-aya26.html",
+      "https://quran.com/72/1-2"
+    ]
+  },
+  "pages": [
+    {
+      "printed_page": 121,
+      "application_id": "madarij-v2-p121-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 122,
+      "application_id": "madarij-v2-p122-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 123,
+      "application_id": "madarij-v2-p123-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 124,
+      "application_id": "madarij-v2-p124-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 125,
+      "application_id": "madarij-v2-p125-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 126,
+      "application_id": "madarij-v2-p126-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 127,
+      "application_id": "madarij-v2-p127-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 128,
+      "application_id": "madarij-v2-p128-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 129,
+      "application_id": "madarij-v2-p129-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 130,
+      "application_id": "madarij-v2-p130-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 131,
+      "application_id": "madarij-v2-p131-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Quran 5:83: restored وَإِذَا before سَمِعُوا, removing leaked previous-verse number 82.",
+        "Quran 8:23: restored مُعْرِضُونَ and removed leaked previous-verse number 22.",
+        "Quran 41:26: restored final تَغْلِبُونَ."
+      ],
+      "outstanding": [
+        "Recheck all Quran quotation boundaries and typography against 2019 scan."
+      ]
+    },
+    {
+      "printed_page": 132,
+      "application_id": "madarij-v2-p132-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 133,
+      "application_id": "madarij-v2-p133-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 134,
+      "application_id": "madarij-v2-p134-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Corrected Arabic Quran 72:1-2 reference from only verse 1 to verses 1–2.",
+        "Quran 8:23: restored final مُعْرِضُونَ in both quoted occurrences, removed misassigned verse number 22."
+      ],
+      "outstanding": [
+        "Check original print layout of multi-verse quotation."
+      ]
+    },
+    {
+      "printed_page": 135,
+      "application_id": "madarij-v2-p135-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 136,
+      "application_id": "madarij-v2-p136-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 137,
+      "application_id": "madarij-v2-p137-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 138,
+      "application_id": "madarij-v2-p138-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Removed editor interpolation «по мнению автора» from direct Ibn al-Qayyim rhetorical declaration."
+      ],
+      "outstanding": [
+        "Verify reported attributions associated with al-Tabarani in the next-page passage, including marfu/mauquf distinction."
+      ]
+    },
+    {
+      "printed_page": 139,
+      "application_id": "madarij-v2-p139-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Replaced inserted «Поэт сказал» with impersonal poetic introduction consistent with Arabic كما قيل."
+      ],
+      "outstanding": [
+        "The long statement attributed to al-Tabarani has no independent source/isnad classification; preserve as author's citation with separate caution, not as certified prophetic speech."
+      ]
+    },
+    {
+      "printed_page": 140,
+      "application_id": "madarij-v2-p140-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Restored direct Arabic author assertions on listening, hypocrisy, and opposing attachments in one heart; removed repeated editor narration."
+      ],
+      "outstanding": [
+        "Trace attribution and chains for Ibn Masud maxim «الغناء ينبت النفاق في القلب»; avoid presenting an unverified attribution as a Prophetic hadith."
+      ]
+    },
+    {
+      "printed_page": 141,
+      "application_id": "madarij-v2-p141-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 142,
+      "application_id": "madarij-v2-p142-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 143,
+      "application_id": "madarij-v2-p143-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Restored direct explanation of التغني بالقرآن and clear attribution of vocal recitation explanation to Imam Ahmad."
+      ],
+      "outstanding": [
+        "Check primary sources and variant meanings of «ليس منا من لم يتغن بالقرآن» and report differences separately."
+      ]
+    },
+    {
+      "printed_page": 144,
+      "application_id": "madarij-v2-p144-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 145,
+      "application_id": "madarij-v2-p145-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 146,
+      "application_id": "madarij-v2-p146-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [],
+      "outstanding": [
+        "Sequential independent paragraph-by-paragraph certification and printed scan review not yet completed."
+      ]
+    },
+    {
+      "printed_page": 147,
+      "application_id": "madarij-v2-p147-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Restored Ibn al-Qayyim's argument on aural pleasure and his exact claim of highly authentic sanad, separating argument from modern third-person editorial summary."
+      ],
+      "outstanding": [
+        "Independently verify musical-instrument hadith primary references and claims of ijma; author's statement is not a separate scholarly authentication."
+      ]
+    },
+    {
+      "printed_page": 148,
+      "application_id": "madarij-v2-p148-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Removed 2 inserted author labels and preserved rhetorical critique in the author's own voice."
+      ],
+      "outstanding": [
+        "Double-check edition scan and nuanced legal examples."
+      ]
+    },
+    {
+      "printed_page": 149,
+      "application_id": "madarij-v2-p149-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Removed inserted author qualifications, restored explicit reference to more than one hundred alleged harms instead of «множество»."
+      ],
+      "outstanding": [
+        "Check contextual reference to the author's earlier discussion; no independent numerical confirmation supplied."
+      ]
+    },
+    {
+      "printed_page": 150,
+      "application_id": "madarij-v2-p150-draft",
+      "electronic_screened": true,
+      "content_fully_independently_verified": false,
+      "print_scan_checked": false,
+      "hadith_independently_graded": false,
+      "publication_ready": false,
+      "confirmed_corrections": [
+        "Removed editorial third-person narration and preserved author's direct arguments and rhetorical conclusion."
+      ],
+      "outstanding": [
+        "Independent theological and hadith/legal review required before publication."
+      ]
+    }
+  ],
+  "stats": {
+    "electronic_pages_screened": 30,
+    "pages_with_confirmed_corrections": 10,
+    "textual_replacement_operations": 26,
+    "arabic_citation_repair_pages": [
+      131,
+      134
+    ],
+    "russian_translation_changed_pages": [
+      138,
+      139,
+      140,
+      143,
+      147,
+      148,
+      149,
+      150
+    ],
+    "independently_verified_pages": 0,
+    "printed_scans_inspected": 0,
+    "chapters_retained": 9,
+    "paragraphs_retained": 676,
+    "continuation_first_page_for_electronic_screening": 151,
+    "pages_121_150_still_require_exhaustive_independent_approval": true
+  },
+  "testing": {
+    "regression_tests_added": "tools/test_volume2_pages121_150.py",
+    "python_unit_test_executed": false,
+    "data_level_assertions_passed": true,
+    "APK_built": false,
+    "commit_marks_skip_ci": true
+  },
+  "preservation": {
+    "first_volume_untouched": true,
+    "arabic_source_inventory_untouched": true,
+    "previous_repairs_preserved": [
+      448,
+      463,
+      507,
+      622
+    ],
+    "publishable": false
+  }
+}
