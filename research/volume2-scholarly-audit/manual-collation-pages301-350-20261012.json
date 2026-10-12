@@ -1,0 +1,882 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-volume2-collation-pages301-350-20261012",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages251-300-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi, 2019, volume II",
+  "scope": "Electronic Arabic/Russian screening for numbered pages 301-350, with actual close reading and confirmed textual repairs on the selected passages listed below. This is NOT independent full-translation verification, NOT scanned-print authentication, and NOT blanket hadith/mushaf verification.",
+  "original_arabic_repository": "research/volume2-source/arabic_pages.jsonl",
+  "corrected_android_asset": "app/src/main/assets/volume2-preview.json",
+  "quran_references_checked": {
+    "p329": "https://quran.com/10/25",
+    "p344": "https://quran.com/67/2",
+    "p319_not_repaired": "https://quran.com/22/30"
+  },
+  "pages": [
+    {
+      "printed_page": 301,
+      "paragraph_id": "madarij-v2-p301-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 302,
+      "paragraph_id": "madarij-v2-p302-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 303,
+      "paragraph_id": "madarij-v2-p303-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 304,
+      "paragraph_id": "madarij-v2-p304-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 305,
+      "paragraph_id": "madarij-v2-p305-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Quranic citation boundaries need independent mushaf collation"
+      ],
+      "source_religious_reference_count": 3
+    },
+    {
+      "printed_page": 306,
+      "paragraph_id": "madarij-v2-p306-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 307,
+      "paragraph_id": "madarij-v2-p307-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 308,
+      "paragraph_id": "madarij-v2-p308-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 309,
+      "paragraph_id": "madarij-v2-p309-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 310,
+      "paragraph_id": "madarij-v2-p310-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 311,
+      "paragraph_id": "madarij-v2-p311-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored ten legal-analogy contrasts, direct author reasoning, and unequivocal condemnation by earlier scholars"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 312,
+      "paragraph_id": "madarij-v2-p312-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored the consequences 'ruin of the world, corruption of existence, destruction of religion's foundations' omitted in Russian"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 313,
+      "paragraph_id": "madarij-v2-p313-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored four parties' direct opposing claims and rhetorical sequence instead of compressed modern summary"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 314,
+      "paragraph_id": "madarij-v2-p314-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 315,
+      "paragraph_id": "madarij-v2-p315-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 316,
+      "paragraph_id": "madarij-v2-p316-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 317,
+      "paragraph_id": "madarij-v2-p317-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 318,
+      "paragraph_id": "madarij-v2-p318-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 319,
+      "paragraph_id": "madarij-v2-p319-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored sense of plural hurumat and the duty to fully honor and safeguard rights; Quran 22:30 electronic excerpt remains corrupt and requires printed scan"
+      ],
+      "open_questions": [
+        "Source excerpt 22:30 ends mid-verse after وَأُحِلَّتْ; do not silently cut or expand without print-scan assessment"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 320,
+      "paragraph_id": "madarij-v2-p320-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 321,
+      "paragraph_id": "madarij-v2-p321-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 322,
+      "paragraph_id": "madarij-v2-p322-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 2
+    },
+    {
+      "printed_page": 323,
+      "paragraph_id": "madarij-v2-p323-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 3
+    },
+    {
+      "printed_page": 324,
+      "paragraph_id": "madarij-v2-p324-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 2
+    },
+    {
+      "printed_page": 325,
+      "paragraph_id": "madarij-v2-p325-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 2
+    },
+    {
+      "printed_page": 326,
+      "paragraph_id": "madarij-v2-p326-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 327,
+      "paragraph_id": "madarij-v2-p327-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 328,
+      "paragraph_id": "madarij-v2-p328-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Potential duplicate introductory paragraph about praying for Paradise with page 329; assess printed page segmentation before removing text"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 329,
+      "paragraph_id": "madarij-v2-p329-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored the damaged Qur'an 10:25 quotation from mushaf; removed editorial author framing"
+      ],
+      "open_questions": [
+        "2019 print-scan reading of repaired 10:25 still required"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 330,
+      "paragraph_id": "madarij-v2-p330-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "removed editorial poet attribution and author narrator insertions; preserved verse, hadith and the argument about divine pleasure"
+      ],
+      "open_questions": [
+        "Independently verify the second reported vision narration"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 331,
+      "paragraph_id": "madarij-v2-p331-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 332,
+      "paragraph_id": "madarij-v2-p332-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 3
+    },
+    {
+      "printed_page": 333,
+      "paragraph_id": "madarij-v2-p333-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored author voice and explicit claim about ultimate spiritual desire; theological dispute retained"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 334,
+      "paragraph_id": "madarij-v2-p334-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored author's first-person objection and conditions concerning temporary spiritual experiences"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 335,
+      "paragraph_id": "madarij-v2-p335-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 336,
+      "paragraph_id": "madarij-v2-p336-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 337,
+      "paragraph_id": "madarij-v2-p337-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "removed added author label from Malik report without changing its attributed wording; transmission still needs independent verification"
+      ],
+      "open_questions": [
+        "Independent isnad/source review of attributed statement of Imam Malik"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 338,
+      "paragraph_id": "madarij-v2-p338-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "removed added modern narrator labels from direct theological reasoning"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 339,
+      "paragraph_id": "madarij-v2-p339-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 340,
+      "paragraph_id": "madarij-v2-p340-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored direct author phrasing and the reference to a multitude of scholars; removed interpretive distancing"
+      ],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 341,
+      "paragraph_id": "madarij-v2-p341-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "restored groups' Arabic theological labels and author's direct comparison, retained polemical context"
+      ],
+      "open_questions": [
+        "Independent attribution of Shafi'i and Ibn Taymiyya poems"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 342,
+      "paragraph_id": "madarij-v2-p342-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Check attributed verses and clearly separate modern translator explanation from author"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 343,
+      "paragraph_id": "madarij-v2-p343-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 344,
+      "paragraph_id": "madarij-v2-p344-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": true,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "normalized leading whitespace within Quran 67:2 excerpt; printed source footnote marker had already been removed from Android Arabic at baseline"
+      ],
+      "open_questions": [
+        "2019 print verification of excerpt 67:2 and editorial Qur'an quote boundaries"
+      ],
+      "source_religious_reference_count": 6
+    },
+    {
+      "printed_page": 345,
+      "paragraph_id": "madarij-v2-p345-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 3
+    },
+    {
+      "printed_page": 346,
+      "paragraph_id": "madarij-v2-p346-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 347,
+      "paragraph_id": "madarij-v2-p347-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify weak or untraced hadith reports and separate attribution judgements"
+      ],
+      "source_religious_reference_count": 1
+    },
+    {
+      "printed_page": 348,
+      "paragraph_id": "madarij-v2-p348-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 349,
+      "paragraph_id": "madarij-v2-p349-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Independent full paragraph-by-paragraph validation with 2019 print scan and religious citations still outstanding"
+      ],
+      "source_religious_reference_count": 0
+    },
+    {
+      "printed_page": 350,
+      "paragraph_id": "madarij-v2-p350-draft",
+      "electronic_arabic_present": true,
+      "android_bilingual_present": true,
+      "source_electronically_screened": true,
+      "selected_text_substantively_corrected": false,
+      "print_scan_compared": false,
+      "fully_independently_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_questions": [
+        "Verify early piety sayings and source identity"
+      ],
+      "source_religious_reference_count": 0
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 50,
+    "pages_with_confirmed_edits": 13,
+    "individual_replacement_operations": 29,
+    "arabic_quote_changed_pages": [
+      329,
+      344
+    ],
+    "russian_corrected_pages": [
+      311,
+      312,
+      313,
+      319,
+      329,
+      330,
+      333,
+      334,
+      337,
+      338,
+      340,
+      341
+    ],
+    "chapters_retained": 9,
+    "paragraphs_retained": 676,
+    "independently_verified_pages": 0,
+    "printed_scans_seen": 0,
+    "in_memory_checks_passed": 14,
+    "python_unittest_executed": false,
+    "next_first_pass_page": 351,
+    "first_page_awaiting_exhaustive_scholarly_signoff": 301
+  },
+  "requirements": {
+    "volume1_untouched": true,
+    "arabic_source_jsonl_unchanged": true,
+    "draft_status_preserved": true,
+    "apk_not_built": true,
+    "ci_skipped": true
+  },
+  "publication_ready": false
+}
