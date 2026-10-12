@@ -58,7 +58,7 @@ class Vol2Pages041080(unittest.TestCase):
         p54=self.get(54)["ru"]
         self.assertNotIn("Прежде чем использовать его как пророческий хадис",p53)
         self.assertIn("**Примечание переводчика (источник и достоверность):**",p54)
-        self.assertIn("не установлен как достоверный",p54)
+        self.assertIn("не установлено как достоверный",p54)
 
     def test_p78_40_repetitions_are_not_prophetic_instruction(self):
         t=self.get(78)["ru"]
