@@ -36,7 +36,7 @@ class Pages201250(unittest.TestCase):
     def test_retained_author_strength_on_p215(self):
         ru=self.page(215)["ru"]
         self.assertIn("единодушно",ru)
-        self.assertIn("как правых, так и заблуждавшихся",ru)
+        self.assertIn("как придерживавшиеся истины, так и заблуждавшиеся",ru)
 
     def test_quran_22_34_35_restored_p209(self):
         ar=self.page(209)["ar"]
@@ -65,7 +65,7 @@ class Pages201250(unittest.TestCase):
     def test_author_verse_preserved_and_russian_not_lost(self):
         self.assertIn("Поэт сказал:",self.page(233)["ru"])
         self.assertIn("Как сказано:",self.page(250)["ru"])
-        self.assertIn("Внутреннее состояние",self.page(235)["ru"])
+        self.assertIn("Влияние сердца и души на одежду",self.page(235)["ru"])
         for n in (201,209,215,218,219,234,250):
             self.assertEqual(self.page(n)["status"],"draft_self_checked")
 
