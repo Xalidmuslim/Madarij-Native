@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-13",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages601-659-20261013",
+  "working_branch": "codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+  "printed_edition": "Madarij al-Salikin, volume 2, Nabil ibn Nassar al-Sindi, 2019",
+  "scope": "Second-round source correction of previously unresolved page 24 Quran 16:20 reading and associated Russian pronoun; separately inspected p319 remaining problematic source excerpt. This is not full 657-page print-scan certification.",
+  "confirmed_edits": [
+    {
+      "printed_page": 24,
+      "fragment_id": "madarij-v2-p024-draft",
+      "issue": "Electronically extracted edition printed وَالَّذِينَ الَّذِينَ ... instead of the recognized qira'a وَالَّذِينَ تَدْعُونَ; Russian had third-person 'они призывают' inconsistent with second-person 'تَدْعُونَ'.",
+      "old_arabic_excerpt": "{وَالَّذِينَ الَّذِينَ ... مِنْ دُونِ اللَّهِ لَا يَخْلُقُونَ شَيْئًا وَهُمْ يُخْلَقُونَ} [النحل: ٢٠]",
+      "corrected_arabic_excerpt": "{وَالَّذِينَ تَدْعُونَ مِنْ دُونِ اللَّهِ لَا يَخْلُقُونَ شَيْئًا وَهُمْ يُخْلَقُونَ} [النحل: ٢٠]",
+      "russian_old": "Те, кого они призывают помимо Аллаха",
+      "russian_new": "Те, к кому вы взываете помимо Аллаха",
+      "justification": "2019 edition footnote 3 (p.24) explicitly records the ta' reading as majority qira'a (other than Asim and Yaqub), and a separate edition-indexed copy of p.24 prints 'وَالَّذِينَ تَدْعُونَ'. Quranpedia 16:20 readings confirms ta' vs ya' forms. Do not normalize to Hafs ya' because target edition's cited reading uses ta'.",
+      "sources": [
+        "https://maknoon.org/ai/view.php?bk=madarej_2&p=24",
+        "https://iifa-aifi.org/wp-content/uploads/2025/11/31.مدارج-السالكين-في-منازل-السائرين-الجزء-الثاني.pdf",
+        "https://quranpedia.net/tafsir/an-nahl/20",
+        "https://quran.ksu.edu.sa/tafseer/qortobi/sura16-aya20.html"
+      ],
+      "print_scan_visually_examined": false,
+      "print_edition_footnote_electronically_inspected": true,
+      "independent_qiraat_reference_compared": true,
+      "verified_translation_change": true,
+      "fully_independently_verified": false,
+      "status": "corrected_electronic_source_and_russian_only",
+      "remaining": "Verify page image of selected edition and independent expert signoff before print-scan-verified status."
+    }
+  ],
+  "inspected_without_edit": [
+    {
+      "printed_page": 319,
+      "issue": "Electronic transcription in 22:30 ends quotation after 'وَأُحِلَّتْ', which is a mid-clause fragment; selected-edition page image not yet visually checked.",
+      "action": "Do not invent a complete original excerpt or falsely certify the quote; retain pending visual print collation.",
+      "quran_reference": "https://quran.com/ar/al-hajj/30/tafsirs/ar-tafsir-al-tabari",
+      "print_scan_visually_examined": false,
+      "status": "unresolved"
+    }
+  ],
+  "quality": {
+    "app_source_updated": "app/src/main/assets/volume2-preview.json",
+    "translation_draft_updated": "research/volume2-batch-11-80/russian-pages-021-030.json",
+    "regression_test_added": "tools/test_volume2_printed_qiraat_p024.py",
+    "app_bilingual_fragments_retained": 676,
+    "app_chapters_retained": 9,
+    "unrelated_675_fragments_unchanged": true,
+    "volume1_untouched": true,
+    "arabic_original_source_jsonl_untouched": true,
+    "global_registry_full_review_status_unchanged": true,
+    "publication_approved": false,
+    "apk_built": false,
+    "ci_skip_marker_used": true,
+    "python_unittest_executed": false,
+    "in_memory_assertions_completed": true
+  },
+  "next_actions": [
+    "Acquire and visually inspect target 2019 edition p.24 and p.319 page images.",
+    "Complete independent examination of the hadith/athar attribution on p.40 and earlier p.21.",
+    "Continue full paragraph-level print/original comparison starting at the earliest uncertified printed page 3; electronic first pass through 659 is not complete scientific certification."
+  ]
+}
