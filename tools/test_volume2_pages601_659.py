@@ -36,7 +36,7 @@ class Vol2LastPages(unittest.TestCase):
 
     def test_p607_specific_scholarly_discussion_not_an_editorial_abstract(self):
         t=self.page(607)["ru"]
-        self.assertIn("степень собранности",t)
+        self.assertIn("степенью собранности",t)
         self.assertIn("исчезновение осознания",t)
         self.assertNotIn("Автор описывает эту позицию без признания её обязательной",t)
 
