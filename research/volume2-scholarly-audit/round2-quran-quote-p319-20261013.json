@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+  "focus": "Second-round electronic verification of volume 2 printed page 319 against Quran 22:30 and another edition of Ibn al-Qayyim's text.",
+  "page": 319,
+  "error": "Damaged quotation in extracted 2019 electronic edition: {يُعَظِّمْ حُرُمَاتِ اللَّهِ فَهُوَ خَيْرٌ لَهُ عِنْدَ رَبِّهِ وَأُحِلَّتْ}; it omits وَمَنْ and ends at beginning of an unrelated subsequent clause.",
+  "corrected_excerpt": "{وَمَنْ يُعَظِّمْ حُرُمَاتِ اللَّهِ فَهُوَ خَيْرٌ لَهُ عِنْدَ رَبِّهِ} [الحج: ٣٠]",
+  "corroboration": [
+    "https://quran.com/ar/al-hajj/30/tafsirs/ar-tafsir-al-tabari",
+    "https://www.islamweb.net/ar/library/content/119/244/ما-هي-حرمات-الله",
+    "https://maknoon.org/ai/view.php?bk=madarej_2&p=319"
+  ],
+  "editorial_principle": "Restore the complete stand-alone author-cited portion of Quran 22:30, not all of Quran 22:30. Quran text from mushaf, prose context and another Ibn al-Qayyim edition were compared electronically. Exact 2019 print photo has not been visually inspected.",
+  "russian_translation": "Existing correct short translation retained, no doctrinal wording modified.",
+  "obsolete_inline_note": "Removed reader-facing notice about incomplete Arabic transcription from application paragraph and Russian draft; retain this issue and limits in scholarly audit.",
+  "app_changed": "app/src/main/assets/volume2-preview.json",
+  "russian_draft_changed": "research/volume2-batch-221-320/russian-pages-311-320.json",
+  "tests": "tools/test_volume2_quran_excerpt_p319.py",
+  "earlier_round_audit": "research/volume2-scholarly-audit/round2-qiraat-reconciliation-p024-20261013.json",
+  "original_arabic_source_jsonl_untouched": true,
+  "unrelated_675_app_fragments_unchanged": true,
+  "volume1_untouched": true,
+  "print_scan_visually_verified": false,
+  "quran_citation_electronically_checked": true,
+  "fully_independently_verified": false,
+  "publication_ready": false,
+  "apk_not_built": true,
+  "ci_skip_marker_used": true,
+  "open_question": "Check selected 2019 edition's scanned p319 against the proposed clean quotation; do not count this page as fully verified before that check."
+}
