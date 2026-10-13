@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-14",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "working_branch": "codex/madarij-v158-deep-audit-p601-602-20261014",
+  "base_branch": "codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+  "scope": "Targeted second-pass phrase-level electronic Arabic-to-Russian collation of printed volume II pages 601-602; not visually collated against 2019 print and not independently certified.",
+  "edition": "2019, edited by Nabil ibn Nassar as-Sindi, volume II",
+  "sources": {
+    "arabic_electronic": "research/volume2-batch-521-620/original-arabic/arabic-pages-601-610.json",
+    "arabic_repository": "research/volume2-source/arabic_pages.jsonl",
+    "rus_draft": "research/volume2-batch-521-620/russian-pages-601-610.json",
+    "android_asset": "app/src/main/assets/volume2-preview.json",
+    "quran_exact_text": "https://quran.com/27/40",
+    "edition_electronic_reference": "https://maknoon.org/ai/view.php?bk=madarej_2&p=601"
+  },
+  "changes": [
+    {
+      "printed_page": 601,
+      "kind": "quranic_arabic_order_restore",
+      "before": "{شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ وَمَنْ} [النمل: ٤٠]",
+      "after": "{وَمَنْ شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ} [النمل: ٤٠]",
+      "justification": "Quran 27:40 verifies the proper sequence, and the electronic extraction inverted the leading وَمَنْ and trailing position.",
+      "print_scan_verified": false
+    },
+    {
+      "printed_page": 601,
+      "kind": "russian_authorial_fidelity",
+      "fixes": [
+        "Removed unsupported 'excessively' from thanks to the king",
+        "Restored impossibility of reciprocal recompense even through gratitude, exact exchange/service reasoning, and three-fold negation of divine need",
+        "Restored author's clarification that self-beneficial gratitude is not blameworthy and maintained paragraph continuity on page 602"
+      ],
+      "print_scan_verified": false
+    },
+    {
+      "printed_page": 602,
+      "kind": "russian_authorial_fidelity",
+      "fixes": [
+        "Restored that Allah loves, is pleased with, and praises the grateful servant, while all benefit accrues to the servant",
+        "Removed added explanation about alleged fallacy of king-comparison; kept only author's 'this reason suffices'",
+        "Restored analogy 'from one sacred precinct to another', omitted contrast with 'first distinction', and closing author statement"
+      ],
+      "print_scan_verified": false
+    }
+  ],
+  "page_review": [
+    {
+      "page": 601,
+      "electronic_text_phrase_level_review": true,
+      "selected_quran_wording_independently_checked": true,
+      "printed_2019_scan_visually_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false
+    },
+    {
+      "page": 602,
+      "electronic_text_phrase_level_review": true,
+      "printed_2019_scan_visually_checked": false,
+      "independent_terminological_review": false,
+      "publication_ready": false
+    }
+  ],
+  "remaining": [
+    "Visually verify printed 2019 pages 601–602 and exact Arabic quote typography",
+    "Independently review translation of the metaphors حرم إلى حرم and الفرق الأول in 602",
+    "Continue phrase-by-phrase page audits from 604 onward; previous first-pass screening does not imply certification"
+  ],
+  "unchanged": [
+    "All 674 other app paragraphs",
+    "Volume I",
+    "Navigation, UI and layout",
+    "Arabic electronic-source JSONL",
+    "Global publication flags",
+    "Build scripts"
+  ],
+  "verification": {
+    "in_memory_red_before_and_green_after": true,
+    "app_paragraph_count": 676,
+    "chapters": 9,
+    "draft_app_p601_p602_synced": true,
+    "apk_built": false,
+    "ci_executed": false,
+    "external_print_scan_checked": false
+  }
+}
