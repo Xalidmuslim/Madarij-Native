@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-14",
+  "volume": 2,
+  "base_branch": "codex/madarij-v158-deep-audit-p601-602-20261014",
+  "working_branch": "codex/madarij-v158-deep-audit-p604-610-20261014",
+  "printed_edition": "2019, Nabil ibn Nassar as-Sindi, volume II",
+  "scope": "Second-pass semantic collation of source Arabic page texts 603–610 against Russian drafts; six pages retranslated for fidelity; 603 and 607 preserved.",
+  "changed_printed_pages": [
+    604,
+    605,
+    606,
+    608,
+    609,
+    610
+  ],
+  "checked_unchanged_printed_pages": [
+    603,
+    607
+  ],
+  "corrections": [
+    {
+      "printed_pages": [
+        604,
+        605
+      ],
+      "issue": "Restored explicit contrast of displeasure, accepted trials, gratitude and precedence; restored authorial terms instead of added psychological explanation"
+    },
+    {
+      "printed_page": 606,
+      "issue": "Restored ruler's servants analogy, love argument, whipping anecdote; removed added qualification about clearly understanding suffering"
+    },
+    {
+      "printed_pages": [
+        608,
+        609
+      ],
+      "issue": "Placed snow-return exchange and following two service/love comparisons at the correct printed-page boundaries; removed invented rhetorical question"
+    },
+    {
+      "printed_page": 610,
+      "issue": "Restored preceding page's concluding question and full cited Sufi quote without adding 'some' or an unsupported editorial disclaimer"
+    }
+  ],
+  "quran_verse_changes": [],
+  "arabic_electronic_text_files_changed": false,
+  "app_book_asset": "app/src/main/assets/volume2-preview.json",
+  "draft_file": "research/volume2-batch-521-620/russian-pages-601-610.json",
+  "regression_test": "tools/test_volume2_pages604_610.py",
+  "original_2019_print_scans_visually_checked": false,
+  "independent_hadith_isnad_checked": false,
+  "full_philological_certification": false,
+  "publication_ready": false,
+  "apk_built": false,
+  "note": "The source has page-boundary sentence continuations; the Russian translation now follows those continuations without silently removing the story portions."
+}

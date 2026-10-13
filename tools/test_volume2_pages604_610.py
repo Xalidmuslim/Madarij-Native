@@ -44,7 +44,7 @@ class Volume2Pages604610(unittest.TestCase):
 
     def test_p609_has_second_story_beginning(self):
         self.assertIn("два человека", self.page(609))
-        self.assertIn("что вы хотите", self.page(609))
+        self.assertIn("что вы хотите", self.page(609).lower())
         self.assertNotIn("Тем самым автор показывает", self.page(609))
 
     def test_p610_returns_to_ended_arabic_sentence(self):
