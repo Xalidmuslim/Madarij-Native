@@ -23,6 +23,7 @@ class Vol2LastPages(unittest.TestCase):
         self.assertNotIn("{(١٣) أَلَمْ",self.page(611)["ar"])
         self.assertIn("{إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوْا وَالَّذِينَ هُمْ مُحْسِنُونَ} [النحل: ١٢٨]",self.page(622)["ar"])
         self.assertNotIn("{(١٢٧) إِنَّ اللَّهَ",self.page(622)["ar"])
+        self.assertNotIn("В текстовом арабском корпусе некоторые слова этих аятов повреждены",self.page(622)["ru"])
         self.assertIn("{وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ} [البقرة: ١٨٦]",self.page(623)["ar"])
         self.assertNotIn("{(١٨٥) وَإِذَا",self.page(623)["ar"])
 
