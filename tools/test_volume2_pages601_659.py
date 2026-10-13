@@ -30,7 +30,7 @@ class Vol2LastPages(unittest.TestCase):
     def test_p603_restores_missing_discussion_and_no_interpolated_conditions(self):
         t=self.page(603)["ru"]
         self.assertIn("уровни наказания в Огне различаются",t)
-        self.assertIn("признание даров",t)
+        self.assertIn("признание благодеяния",t)
         self.assertNotIn("по мнению автора",t)
         self.assertNotIn("уровни ответственности людей различаются",t)
 
