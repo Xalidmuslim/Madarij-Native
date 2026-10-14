@@ -31,7 +31,7 @@ class Volume2Pages604610(unittest.TestCase):
 
     def test_p605_preserves_servitude_and_rank(self):
         self.assertIn("предпочтение тому, что угодно его Господу", self.page(605))
-        self.assertIn("достоинство и близость", self.page(605))
+        self.assertIn("о своём достоинстве и близости", self.page(605))
 
     def test_p606_retains_whipping_story_setup(self):
         self.assertIn("били плетьми", self.page(606))
