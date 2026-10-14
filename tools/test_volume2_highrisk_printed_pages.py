@@ -28,7 +28,7 @@ class EarlierPages(unittest.TestCase):
 
     def test_478_prophet_obedience_includes_authoritative_judgment(self):
         self.assertIn("не обращается за решением к иному", self.page(478))
-        self.assertIn("дозволенным средством", self.page(479))
+        self.assertIn("таяммума", self.page(479))
 
     def test_479_original_hadith_analogy_and_authors_words(self):
         self.assertIn("падали и крови", self.page(479))

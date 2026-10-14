@@ -20,7 +20,7 @@ class CitationRepairs(unittest.TestCase):
         self.assertIn("10:25",self.page(329))
 
     def test_444_surrendered_form_in_authorial_pair(self):
-        self.assertIn("собственного облика",self.page(444))
+        self.assertIn("собственный облик",self.page(444))
         self.assertIn("орудием этого предания",self.page(444))
 
     def test_567_explicit_quran_refs_and_arab_poetry(self):
@@ -30,7 +30,7 @@ class CitationRepairs(unittest.TestCase):
         self.assertNotIn("не основание отказывать нуждающемуся",self.page(567))
 
     def test_568_begging_conclusion_not_modernized(self):
-        self.assertIn("в основе запрещено",self.page(568))
+        self.assertIn("в своей основе запрещена",self.page(568))
         self.assertNotIn("Эта оценка относится к необоснованному",self.page(568))
 
     def test_569_continuation_and_sources_only(self):
