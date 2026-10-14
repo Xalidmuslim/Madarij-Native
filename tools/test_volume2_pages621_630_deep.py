@@ -54,20 +54,20 @@ class Pages621630(unittest.TestCase):
         self.assertIn("милости", self.page(626))
 
     def test_627_original_analogy_kept_as_authorial_claim(self):
-        self.assertIn("из обителей пророков", self.page(627))
+        self.assertIn("Из обителей пророков", self.page(627))
         self.assertNotIn("— образ постоянной поддержки", self.page(627))
 
     def test_628_quran_47_21_and_contrast_of_truth_lie(self):
-        self.assertIn("когда решение принято", self.page(628))
+        self.assertIn("Когда дело будет решено", self.page(628))
         self.assertIn("основа лицемерия", self.page(628))
 
     def test_629_three_degrees_and_verses(self):
-        self.assertIn("правдивость в состояниях", self.page(629))
+        self.assertIn("Правдивость в состояниях", self.page(629))
         self.assertIn("самая высокая степень правдивости", self.page(629))
 
     def test_630_full_historical_comparison_no_editorial_disclaimer(self):
         self.assertIn("Бану Курайза", self.page(630))
-        self.assertIn("не было совершено ради Аллаха", self.page(630))
+        self.assertIn("не был совершён ради Аллаха", self.page(630))
         self.assertNotIn("Это историческое изложение автора", self.page(630))
 
     def test_draft_sync_and_scope(self):
