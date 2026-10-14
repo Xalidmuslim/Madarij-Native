@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-14",
+  "branch": "codex/madarij-v158-deep-audit-p611-620-20261014",
+  "base_branch": "codex/madarij-v158-deep-audit-p604-610-20261014",
+  "backup_branch": "backup/madarij-before-p611-620-audit-2026-10-14",
+  "source_edition": "Nabil ibn Nassar as-Sindi, 2019, printed volume II",
+  "scope": "Second-pass Arabic–Russian authorial fidelity review for printed pages 611–620 against stored electronic Arabic transcription only; no independent visual print-scan signoff.",
+  "corrected_pages": [
+    {
+      "page": 611,
+      "before": 1042,
+      "after": 1089
+    },
+    {
+      "page": 612,
+      "before": 1093,
+      "after": 1315
+    },
+    {
+      "page": 613,
+      "before": 1060,
+      "after": 1072
+    },
+    {
+      "page": 614,
+      "before": 1219,
+      "after": 1300
+    },
+    {
+      "page": 615,
+      "before": 914,
+      "after": 1407
+    },
+    {
+      "page": 616,
+      "before": 1012,
+      "after": 686
+    },
+    {
+      "page": 617,
+      "before": 751,
+      "after": 594
+    },
+    {
+      "page": 618,
+      "before": 1300,
+      "after": 1391
+    },
+    {
+      "page": 619,
+      "before": 1140,
+      "after": 1889
+    },
+    {
+      "page": 620,
+      "before": 1416,
+      "after": 1315
+    }
+  ],
+  "corrections": [
+    "Removed unsupported 'excessive' qualification from Ibn Umar narrative on p611 and unoriginal interpretive conclusion.",
+    "Restored authorial order of two interpretations and full quoted Tirmidhi report on p612.",
+    "Restored the exact divine-speech-report quotation across p613–614, including the earth and Umm al-Kitab references; kept it classified as an attributed report, not a graded hadith.",
+    "Restored literal attributed statement of Yahya ibn Muadh and the author's explanation on p614 without doctrinal paraphrase.",
+    "Restored author's full human analogy p615 and kept precise boundary to divine-attribute discussion p616.",
+    "Restored authorial wording about the divine attribute and attributed reports p616 rather than recasting them as 'mercy'; graded authenticity NOT established.",
+    "Restored two non-canonical reports on Adam and angels on p617 without presenting them as authenticated hadith.",
+    "Restored precise question about madhi by Ali and Israelite report attribution p618.",
+    "Restored authorial description of love and moved beginning of shame-of-dignity passage to its original p619 boundary.",
+    "Restored p620 structure and removed editorial future-page note."
+  ],
+  "limitations": {
+    "original_2019_print_images_visually_compared": false,
+    "hadith_isnads_and_graded_authenticity_independently_checked": false,
+    "electronic_transcription_has_not_been_certified_against_print": false,
+    "app_translation_independently_verified": false,
+    "publication_ready": false,
+    "apk_built": false
+  },
+  "source_arabic_unchanged": true,
+  "first_volume_unchanged": true,
+  "review_footnotes_and_takhrij_to_be_kept_outside_author_text": true
+}
