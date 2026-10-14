@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-14",
+  "volume": 2,
+  "pages_reviewed": [
+    631,
+    659
+  ],
+  "baseline": "codex/madarij-v158-deep-audit-p621-630-20261014",
+  "backup": "backup/madarij-before-final-631-659-20261014",
+  "method": "Full electronic Arabic and Russian texts of each printed page were inspected in Arabic-to-Russian pairs, and source-fidelity edits were applied to confirmed omissions/editorial insertions. Does not certify a scan of the printed 2019 book.",
+  "changes": [
+    {
+      "printed_page": 631,
+      "modified": true,
+      "original_chars": 1071,
+      "result_chars": 1071,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 632,
+      "modified": true,
+      "original_chars": 1517,
+      "result_chars": 1517,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 633,
+      "modified": true,
+      "original_chars": 1302,
+      "result_chars": 1302,
+      "number_of_targeted_replacements": 3
+    },
+    {
+      "printed_page": 634,
+      "modified": true,
+      "original_chars": 1075,
+      "result_chars": 1075,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 635,
+      "modified": false,
+      "original_chars": 1307,
+      "result_chars": 1307,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 636,
+      "modified": false,
+      "original_chars": 1689,
+      "result_chars": 1689,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 637,
+      "modified": false,
+      "original_chars": 1146,
+      "result_chars": 1146,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 638,
+      "modified": true,
+      "original_chars": 1295,
+      "result_chars": 1295,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 639,
+      "modified": false,
+      "original_chars": 1071,
+      "result_chars": 1071,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 640,
+      "modified": true,
+      "original_chars": 1086,
+      "result_chars": 1086,
+      "number_of_targeted_replacements": 4
+    },
+    {
+      "printed_page": 641,
+      "modified": false,
+      "original_chars": 1098,
+      "result_chars": 1098,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 642,
+      "modified": true,
+      "original_chars": 1030,
+      "result_chars": 1030,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 643,
+      "modified": true,
+      "original_chars": 1529,
+      "result_chars": 1529,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 644,
+      "modified": true,
+      "original_chars": 1048,
+      "result_chars": 1048,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 645,
+      "modified": true,
+      "original_chars": 1086,
+      "result_chars": 1086,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 646,
+      "modified": true,
+      "original_chars": 891,
+      "result_chars": 891,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 647,
+      "modified": true,
+      "original_chars": 1282,
+      "result_chars": 1282,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 648,
+      "modified": true,
+      "original_chars": 1404,
+      "result_chars": 1404,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 649,
+      "modified": false,
+      "original_chars": 1376,
+      "result_chars": 1376,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 650,
+      "modified": true,
+      "original_chars": 1443,
+      "result_chars": 1443,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 651,
+      "modified": false,
+      "original_chars": 1644,
+      "result_chars": 1644,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 652,
+      "modified": false,
+      "original_chars": 1494,
+      "result_chars": 1494,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 653,
+      "modified": true,
+      "original_chars": 1646,
+      "result_chars": 1646,
+      "number_of_targeted_replacements": 1
+    },
+    {
+      "printed_page": 654,
+      "modified": true,
+      "original_chars": 1356,
+      "result_chars": 1356,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 655,
+      "modified": false,
+      "original_chars": 1803,
+      "result_chars": 1803,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 656,
+      "modified": false,
+      "original_chars": 1815,
+      "result_chars": 1815,
+      "number_of_targeted_replacements": 0
+    },
+    {
+      "printed_page": 657,
+      "modified": true,
+      "original_chars": 1506,
+      "result_chars": 1506,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 658,
+      "modified": true,
+      "original_chars": 1517,
+      "result_chars": 1517,
+      "number_of_targeted_replacements": 2
+    },
+    {
+      "printed_page": 659,
+      "modified": true,
+      "original_chars": 1298,
+      "result_chars": 1298,
+      "number_of_targeted_replacements": 1
+    }
+  ],
+  "key_findings": [
+    "p631–632: restored the Quran 19:50 quotation's correct printed-page boundary",
+    "p633: removed hadith supplement and editorial qualification absent from the electronic Arabic authorial text",
+    "p634 and p638: removed non-authorial editorial announcements and interpretive qualifier",
+    "p640: removed undifferentiated editorial hadith provenance cautions from within authorial prose; preserved reporting as attributed words",
+    "p642 and p645: removed translator-side provenance note and extrapolated moral disclaimer from continuous author text",
+    "p643–644: corrected awkward rendering and unsupported symbolism added to the author's cleansing metaphor",
+    "p646–648: preserved direct explanation of Umar's report and closer account of rukhas and the fasting travellers",
+    "p650–651: restored full author's reference to those first used to kindle the Fire on Resurrection, retaining cross-page sentence structure",
+    "p653–654: restored distinctions between attribution of acts and spiritual state; removed translator's polemical transition",
+    "p657–659: preserved the author's claims about divine nearness and essence without modernized qualifications or source-absent page commentary"
+  ],
+  "limitations": {
+    "original_2019_print_pages_visually_collated": false,
+    "hadith_takhrij_all_verified": false,
+    "footnotes_fully_checked": false,
+    "publication_ready": false,
+    "apk_built": false
+  },
+  "source_arabic_unchanged": true,
+  "first_volume_untouched": true,
+  "ui_untouched": true
+}
