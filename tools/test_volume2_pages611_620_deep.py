@@ -42,7 +42,7 @@ class Pages611620(unittest.TestCase):
         self.assertIn("стыдливости Господа", self.page(615))
 
     def test_616_report_attributions_retained(self):
-        self.assertIn("не определить её образ", self.page(616))
+        self.assertIn("не способен определить её образ", self.page(616))
         self.assertIn("стыдится наказать", self.page(616))
         self.assertIn("Аллах стыдится его", self.page(616))
 
@@ -56,7 +56,7 @@ class Pages611620(unittest.TestCase):
         self.assertIn("исраилият", self.page(618))
 
     def test_619_ninth_category_begins_on_its_original_page(self):
-        self.assertIn("стыд благородства и достоинства", self.page(619))
+        self.assertIn("Стыд благородства и достоинства", self.page(619))
 
     def test_620_has_no_editorial_explanation_of_next_page(self):
         self.assertIn("из возвеличивания, соединённого с любовью", self.page(620))
