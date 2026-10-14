@@ -61,7 +61,7 @@ class FinalPages(unittest.TestCase):
         self.assertIn("унесли награду", self.page(648))
 
     def test_650_retain_authorial_first_to_ignite_fire(self):
-        self.assertIn("первыми разожгут ими Огонь", self.page(650))
+        self.assertIn("ими первыми разожгут Огонь", self.page(650))
         self.assertNotIn("Второе толкование следует", self.page(650))
 
     def test_657_658_source_boundaries_not_narrator_notes(self):
