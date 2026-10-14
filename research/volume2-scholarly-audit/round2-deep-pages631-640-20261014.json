@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-14",
+  "branch": "codex/madarij-v158-deep-audit-p631-640-20261014",
+  "backup": "backup/madarij-before-p631-640-audit-2026-10-14",
+  "scope": "Second-pass source-fidelity comparison: printed pages 631–640 of volume II against electronically transcribed Arabic, not original scan",
+  "changed_pages": [
+    {
+      "printed_page": 631,
+      "corrections": 1,
+      "old_length": 1148,
+      "new_length": 1075
+    },
+    {
+      "printed_page": 632,
+      "corrections": 1,
+      "old_length": 1479,
+      "new_length": 1494
+    },
+    {
+      "printed_page": 633,
+      "corrections": 2,
+      "old_length": 1479,
+      "new_length": 1397
+    },
+    {
+      "printed_page": 634,
+      "corrections": 1,
+      "old_length": 1124,
+      "new_length": 1074
+    },
+    {
+      "printed_page": 635,
+      "corrections": 2,
+      "old_length": 1307,
+      "new_length": 1316
+    },
+    {
+      "printed_page": 636,
+      "corrections": 2,
+      "old_length": 1689,
+      "new_length": 1628
+    },
+    {
+      "printed_page": 637,
+      "corrections": 1,
+      "old_length": 1146,
+      "new_length": 1153
+    },
+    {
+      "printed_page": 638,
+      "corrections": 2,
+      "old_length": 1447,
+      "new_length": 1294
+    },
+    {
+      "printed_page": 639,
+      "corrections": 0,
+      "old_length": 1071,
+      "new_length": 1071
+    },
+    {
+      "printed_page": 640,
+      "corrections": 5,
+      "old_length": 1225,
+      "new_length": 1021
+    }
+  ],
+  "findings": [
+    "Restored original 19:50 verse transition across pp631–632 without a non-authorial next-page label.",
+    "Removed editorial extra-hadith discussion and restored source attribution about names and attributes on p633.",
+    "Removed next-page label from Junayd quote on p634.",
+    "Aligned metaphor about a ruined heart and the quest for wealth on p635.",
+    "Removed unsupported historical-context interpolation, restored original claims about established outward conventions on p636.",
+    "Clarified original heavy-mountains simile on p637.",
+    "Removed unoriginal universality clarification and repeated page signpost in p638; historical context belongs in separate notes.",
+    "Preserved Ibn al-Qayyim's explicit choice of the third interpretation on p639.",
+    "Kept the alleged divine saying labeled a report but removed source grading from within translation on p640; maintained original Sahl and al-Muhasibi quotations."
+  ],
+  "open_issues": [
+    "Reports on p640 attributed to God not independently authenticated; add a separate scholarly source and grading note after takhrij.",
+    "1970s/modern editorial context and discussion of the Quran 2:94 polemic should be in annotation rather than author's main text.",
+    "Printed 2019 source page images, variant edition notes and all hadith sources have not been independently compared."
+  ],
+  "limitations": {
+    "scan_printed_2019_checked": false,
+    "hadith_sources_graded": false,
+    "full_footnote_apparatus_checked": false,
+    "publication_ready": false,
+    "apk_built": false
+  },
+  "app_first_volume_unchanged": true,
+  "app_ui_unchanged": true
+}
