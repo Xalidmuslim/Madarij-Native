@@ -241,15 +241,18 @@
               "paragraphId": "madarij-v1-p084-draft",
               "title": "Исцеление сердца и тела",
               "sourceTitleAr": "في بيان اشتمال الفاتحة على الشفاءين: شفاء القلوب وشفاء الأبدان",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, что «Аль-Фатиха» заключает в себе два вида исцеления"
             },
             {
               "paragraphId": "madarij-v1-p088-draft",
               "title": "Исцеление тела",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Что касается содержащегося в ней исцеления тел"
             }
-          ]
+          ],
+          "entryParagraphId": "madarij-v1-p084-draft"
         }
       ]
     },
