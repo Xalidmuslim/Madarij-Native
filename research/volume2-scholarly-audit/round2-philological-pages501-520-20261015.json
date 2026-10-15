@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "scope": "Electronic Arabic-Russian focused source check of pp501–520 and data synchronization",
+  "printed_pages_reviewed": [
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520
+  ],
+  "changed_app_pages": [
+    510,
+    512,
+    513,
+    518,
+    519,
+    520
+  ],
+  "research_synced_from_superior_app_pages": [
+    507,
+    516,
+    517
+  ],
+  "notes": [
+    "p507 app preserves exact complete Quran 6:148 16:35 43:20 passages, research draft was abbreviated",
+    "p516 app includes authorial Quran and detailed signs, research draft abbreviated",
+    "p517 app includes a cross-page transition preserving the Arabic sentence from p516, research draft starts with paraphrase",
+    "Remove translator's intratextual bibliographic cautions and unsupported clarifications in p512–520",
+    "p520 restores authorial argument and exact continuation into p521"
+  ],
+  "source_limitations": {
+    "original_print_2019_visually_collated": false,
+    "hadith_grade_independently_checked": false,
+    "all_print_footnotes_checked": false,
+    "publisher_ready": false,
+    "apk_built": false
+  }
+}
