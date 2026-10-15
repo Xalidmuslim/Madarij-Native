@@ -1,0 +1,87 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p487-draft",
+    "printed_pages": [
+      487
+    ],
+    "old": "к которому мусульманин приближается время от времени и кается",
+    "new": "который мусульманин время от времени совершает, а затем кается в нём",
+    "arabic_anchor": "يُلِمُّ به المسلمُ المرَّةَ بعد المرَّة، فيتوب منه",
+    "reason": "Речь здесь о совершении большого греха и последующем покаянии, а не лишь приближении.",
+    "before": "к которому мусульманин приближается время от времени и кается",
+    "after": "который мусульманин время от времени совершает, а затем кается в нём",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p489-draft",
+    "printed_pages": [
+      489
+    ],
+    "old": "если приблизился, не покрыв его.",
+    "new": "если приблизился к нему, не совершив его.",
+    "arabic_anchor": "إذا قاربه ولم يغشَه",
+    "reason": "غشيه в данном определении означает совершить грех, а не покрыть предмет.",
+    "before": "если приблизился, не покрыв его.",
+    "after": "если приблизился к нему, не совершив его.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p490-draft",
+    "printed_pages": [
+      490
+    ],
+    "old": "Они не вкусит в нём",
+    "new": "Они не вкусят в нём",
+    "arabic_anchor": "لَا يَذُوقُونَ فِيهَا",
+    "reason": "Согласование множественного числа.",
+    "before": "Они не вкусит в нём",
+    "after": "Они не вкусят в нём",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p491-draft",
+    "printed_pages": [
+      491
+    ],
+    "old": "Они не вкусит там смерти",
+    "new": "Они не вкусят там смерти",
+    "arabic_anchor": "لَا يَذُوقُونَ فِيهَا الْمَوْتَ",
+    "reason": "Согласование множественного числа.",
+    "before": "Они не вкусит там смерти",
+    "after": "Они не вкусят там смерти",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p490-draft-editor-note-01",
+    "printed_pages": [
+      490
+    ],
+    "old": "Цитата Марьям: 62 в источнике дана фрагментарно, без начального отрицания; переведены присутствующие слова.",
+    "new": "Цитата Марьям: 62 во встроенном арабском тексте дана фрагментарно, без начального отрицания; переведены присутствующие слова.",
+    "arabic_anchor": "",
+    "reason": "Примечание к авторскому абзацу: доступен только встроенный корпус, а не скан издания.",
+    "before": "Цитата Марьям: 62 в источнике дана фрагментарно, без начального отрицания; переведены присутствующие слова.",
+    "after": "Цитата Марьям: 62 во встроенном арабском тексте дана фрагментарно, без начального отрицания; переведены присутствующие слова.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
