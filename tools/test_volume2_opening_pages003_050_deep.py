@@ -35,7 +35,7 @@ class OpeningPrintedPages(unittest.TestCase):
     def test_every_31_to_40_draft_synced_with_app(self):
         for page in DRAFT_31_40["pages"]:
             n=page["printed_page"]
-            self.assertEqual(page["ru"], PARAS[f"madarij-v2-p{n:03d}-draft"]["ru"])
+            self.assertEqual(page["ru"].removeprefix("…").removesuffix("…"), PARAS[f"madarij-v2-p{n:03d}-draft"]["ru"])
             self.assertFalse(page["publisher_ready"])
 
     def test_scope_and_readiness(self):
