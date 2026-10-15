@@ -1,0 +1,34 @@
+[
+  {
+    "paragraph_id": "madarij-v2-p607-draft",
+    "printed_pages": [
+      607
+    ],
+    "old": "нет ни дарителя, ни одаряемого",
+    "new": "нет ни дарителя, ни дарованного",
+    "arabic_anchor": "فلا واهب ولا موهوب",
+    "reason": "موهوب означает дарованное; одаряемый требовал бы موهوب له. Восстановлена пара даритель/дар.",
+    "before": "нет ни дарителя, ни одаряемого",
+    "after": "нет ни дарителя, ни дарованного",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p612-draft",
+    "printed_pages": [
+      612
+    ],
+    "old": "но оно произносится с кратким окончанием",
+    "new": "но оно оканчивается на алиф без конечной хамзы",
+    "arabic_anchor": "لكن هو مقصور",
+    "reason": "مقصور — термин для слова с конечным алифом, в отличие от حياء с хамзой; прежняя формулировка ошибочно указывала на краткую гласную.",
+    "before": "но оно произносится с кратким окончанием",
+    "after": "но оно оканчивается на алиф без конечной хамзы",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  }
+]
