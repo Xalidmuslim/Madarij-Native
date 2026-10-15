@@ -20,3 +20,9 @@
 
 ## Возобновление после окончания запуска
 Текущее машиночитаемое состояние: RESUME_STATE.json. Итог данного запуска — FINAL_READINESS_REPORT.md. Продолжать с тома I, 43–62, не с начала и не со второго тома. Доступные S4/S5 — альтернативные редакции, не подмена издания 2019. Для воспроизведения аппарата сохранить оба файла по фиксированному OpenITI-коммиту и запустить `python3 research/final-translation-collation/compare_alternative_sources.py --source-dir КАТАЛОГ`. Фоновый процесс редакторской работы после окончания запуска не запланирован.
+
+## Опубликованные контрольные точки GitHub
+- Исходное состояние и резервирование: [382c412](https://github.com/Xalidmuslim/Madarij-Native/commit/382c412345b5b0da05dfdd3691ca3a6b8152fc59).
+- Том I, 3–22: [069fc8a](https://github.com/Xalidmuslim/Madarij-Native/commit/069fc8a1f3b4a3bdb94450f996265dbeec2fad66).
+- Том I, 23–42 и альтернативные источники: [41733fb](https://github.com/Xalidmuslim/Madarij-Native/commit/41733fb).
+- Рабочая ветка: https://github.com/Xalidmuslim/Madarij-Native/tree/codex/madarij-v1-v2-scholarly-collation-20261015 . Не перезаписывать при возобновлении, сначала fetch и проверка удалённого HEAD.
