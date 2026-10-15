@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p427-draft",
+    "printed_pages": [
+      427
+    ],
+    "old": "чьи жизнь и имущество неприкосновенны и поедании",
+    "new": "чьи жизнь и имущество неприкосновенны, и поедании",
+    "arabic_anchor": "وسرقَة (3) أموال المعصومين، وأكل أموال اليتامى",
+    "reason": "Закрыто придаточное перед следующим членом перечня.",
+    "before": "чьи жизнь и имущество неприкосновенны и поедании",
+    "after": "чьи жизнь и имущество неприкосновенны, и поедании",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p439-draft",
+    "printed_pages": [
+      439
+    ],
+    "old": "прелюбодей лишился физической возможности совершать прелюбодеяние",
+    "new": "прелюбодею отсекли половой член",
+    "arabic_anchor": "والزّاني إذا جُبَّ",
+    "reason": "Восстановлен конкретный пример телесного повреждения جب, важный для аргумента о невозможности действия. Независимая проверка: جب отличается от خصي; оскопление может быть двусмысленным.",
+    "before": "прелюбодей лишился физической возможности совершать прелюбодеяние",
+    "after": "прелюбодею отсекли половой член",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p442-draft",
+    "printed_pages": [
+      442
+    ],
+    "old": "его покаяние действительно и вполне возможно. Ведь доступные ему основы покаяния налицо, а главное из того, что ему посильно, — сожаление.",
+    "new": "его покаяние действительно, возможно и действительно осуществляется. Ведь все основы покаяния в нём налицо, а доступное ему из них — сожаление.",
+    "arabic_anchor": "أنَّ توبتَه صحيحةٌ ممكنةٌ، بل واقعةٌ؛ فإنَّ أركانَ التَّوبة مجتمعةٌ فيه، والمقدورُ له منها النَّدم.",
+    "reason": "Восстановлено بل واقعة и сняты отсутствующие в AR ограничения «доступные основы» и «главное».",
+    "before": "его покаяние действительно и вполне возможно. Ведь доступные ему основы покаяния налицо, а главное из того, что ему посильно, — сожаление.",
+    "after": "его покаяние действительно, возможно и действительно осуществляется. Ведь все основы покаяния в нём налицо, а доступное ему из них — сожаление.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
