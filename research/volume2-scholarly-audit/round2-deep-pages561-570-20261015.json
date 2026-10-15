@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "method": "Electronic Arabic-Russian source collation; printed-page boundaries maintained",
+  "pages_reviewed": [
+    561,
+    570
+  ],
+  "app_russian_pages_changed": [
+    561,
+    563,
+    564,
+    565,
+    566
+  ],
+  "research_draft_reconciled_with_previously_corrected_app_pages": [
+    567,
+    568,
+    569,
+    570
+  ],
+  "replacements": 7,
+  "findings": [
+    "p561 restored 'people of the right hand' category suppressed by summary",
+    "p563 restored explicit authorial narrative of Musa and angel of death and speaker distinction without adding later editorial theological note",
+    "pp564–565 restored cross-page cause-and-dispute argument and protected source page break",
+    "p565 restored literal third condition and removed commentary absent in author's continuous text",
+    "p566 restored the statement that insistence in requesting is contrary to rida",
+    "pp567–570 research draft was out of sync with already corrected app text and was reconciled without altering app pages"
+  ],
+  "limitations": {
+    "full_2019_print_verified": false,
+    "hadith_grades_independently_authenticated": false,
+    "all_footnotes_checked": false,
+    "scholarly_publication_ready": false
+  },
+  "apk_built": false
+}
