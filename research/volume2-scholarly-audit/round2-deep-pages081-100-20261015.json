@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-15",
+  "branch": "codex/madarij-v158-deep-audit-p081-100-20261015",
+  "volume": 2,
+  "method": "Manually inspected full electronically transcribed Arabic authorial pages and corresponding Russian application translations in continuous order. Corrected only clear extraneous non-authorial glosses and a punctuation typo.",
+  "electronically_compared_printed_pages": [
+    81,
+    100
+  ],
+  "count": 20,
+  "app_paragraphs_changed": [
+    "madarij-v2-p082-draft",
+    "madarij-v2-p083-draft",
+    "madarij-v2-p093-draft",
+    "madarij-v2-p095-draft",
+    "madarij-v2-p096-draft",
+    "madarij-v2-p097-draft",
+    "madarij-v2-p100-draft"
+  ],
+  "draft_pages_resynchronized": [
+    82,
+    83,
+    85,
+    86,
+    87,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+  ],
+  "changes": [
+    {
+      "page": 82,
+      "description": "Editorial provenance comment absent from the author's Arabic paragraph; record hadith validation separately"
+    },
+    {
+      "page": 83,
+      "description": "Editorial hadith grading notice absent from original"
+    },
+    {
+      "page": 93,
+      "description": "Unmarked commentator's caveat removed from authorial hadith citation"
+    },
+    {
+      "page": 95,
+      "description": "Unmarked commentator's caveat removed; source-check remains open"
+    },
+    {
+      "page": 96,
+      "description": "Unmarked attribution/provenance assessment not in source wording"
+    },
+    {
+      "page": 97,
+      "description": "Corrected mechanical punctuation without change of sense"
+    },
+    {
+      "page": 100,
+      "description": "Unmarked hadith authentication note removed from authorial text and documented in audit"
+    }
+  ],
+  "notes": [
+    "All hadith authentication warnings are preserved here as pending bibliographic work rather than blended into the author's narrative.",
+    "Existing research and app divergences at pp87, 93, 95, 96 and 97 were resolved by using the reviewed application translations. Research-only continuation ellipses have been removed so the two data sources match exactly.",
+    "Source p82 Quran citations and cross-page transition p81–83 were inspected, and extensive scriptural quotations kept intact."
+  ],
+  "outstanding_hadith_checks": [
+    {
+      "pages": [
+        82
+      ],
+      "issue": "Speech near sundown and duration of world; authenticate citation and wording"
+    },
+    {
+      "pages": [
+        82,
+        83
+      ],
+      "issue": "Account of companions repairing their hut, beginning p82 and continuing p83"
+    },
+    {
+      "pages": [
+        93
+      ],
+      "issue": "Intention-based equivalence in reward and Prophet's wish about tamattu / qiran; validate variants"
+    },
+    {
+      "pages": [
+        95
+      ],
+      "issue": "Report concerning eating, drinking, breath thirds and stomach"
+    },
+    {
+      "pages": [
+        96
+      ],
+      "issue": "Report about Iblis and Yahya ibn Zakariya; verify provenance"
+    },
+    {
+      "pages": [
+        100
+      ],
+      "issue": "Attribution to Ibn Masud: Quran as God's rope, clear light and beneficial healing"
+    }
+  ],
+  "limits": {
+    "visually_inspected_2019_print": false,
+    "hadith_takhrij_completed": false,
+    "all_footnotes_collated": false,
+    "translation_scholarly_certified": false,
+    "publication_ready": false,
+    "apk_built": false,
+    "first_volume_touched": false,
+    "ui_touched": false
+  },
+  "machine_checks": {
+    "chapters": 9,
+    "paragraphs": 676,
+    "app_paragraphs_changed": 7,
+    "other_app_paragraphs_preserved": 669,
+    "drafts_match_app_exactly": true,
+    "arabic_assets_unchanged": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-15",
+  "volume": 2,
+  "branch": "codex/madarij-v158-deep-audit-p101-120-20261015",
+  "printed_pages_electronically_compared": [
+    101,
+    120
+  ],
+  "total_pages": 20,
+  "authorial_arabic_source": "app asset transcription of 2019 printed edition, not inspected as scan",
+  "quran_crosscheck": {
+    "page": 110,
+    "surah": "Al-Alaq",
+    "verse": "96:19",
+    "ar_before": "{تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ}",
+    "ar_after": "{كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ}",
+    "ru_before": "Повинуйся Ему",
+    "ru_after": "Не повинуйся ему",
+    "verified_against": "https://quran.com/en/al-alaq/19-19",
+    "important": "The old transcription omitted the Quranic prohibition, causing Russian meaning to reverse; visually collate printed 2019 author quote before certifying print fidelity."
+  },
+  "arabic_authorial_changes": [
+    110
+  ],
+  "russian_changed_paragraphs": [
+    "madarij-v2-p101-draft",
+    "madarij-v2-p105-draft",
+    "madarij-v2-p106-draft",
+    "madarij-v2-p110-draft"
+  ],
+  "research_pages_normalized": [
+    101,
+    102,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    112,
+    113,
+    116,
+    117,
+    119,
+    120
+  ],
+  "corrected_authorial_deviations": [
+    {
+      "page": 101,
+      "explanation": "Unmarked hadith authentication remark absent from Arabic original"
+    },
+    {
+      "page": 105,
+      "explanation": "Unmarked attribution remark absent from source"
+    },
+    {
+      "page": 105,
+      "explanation": "Unmarked provenance remark absent from source"
+    },
+    {
+      "page": 106,
+      "explanation": "Unmarked provenance remark absent from source"
+    },
+    {
+      "page": 110,
+      "explanation": "Critical opposite-meaning error, Qur'an 96:19 actually has لَا تُطِعْهُ"
+    }
+  ],
+  "open_source_checks": [
+    {
+      "pages": [
+        101
+      ],
+      "issue": "Isnad and exact matn of attributed Ali ibn Abi Talib Quran passage"
+    },
+    {
+      "pages": [
+        105,
+        106
+      ],
+      "issue": "Origins and chain checks for divine sayings regarding human ingratitude"
+    }
+  ],
+  "safety": {
+    "first_volume_unmodified": true,
+    "ui_and_logic_unchanged": true,
+    "apk_not_built": true,
+    "paragraph_count": 676,
+    "chapter_count": 9,
+    "publication_ready": false,
+    "all_2019_scan_pages_verbally_collated": false,
+    "hadiths_independently_graded": false
+  }
+}

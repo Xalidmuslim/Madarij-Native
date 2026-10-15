@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-15",
+  "volume": 2,
+  "printed_pages_compared_electronically": [
+    3,
+    50
+  ],
+  "number_of_printed_pages": 48,
+  "source": "2019 edition electronically transcribed authorial Arabic, as stored in app/src/main/assets/volume2-preview.json",
+  "base_commit": "03e4f35cdff7f55a665e261b9c5cceef25ccc2cc",
+  "working_branch": "codex/madarij-v158-deep-audit-p003-050-20261015",
+  "changed_paragraphs": [
+    "madarij-v2-p010-c",
+    "madarij-v2-p038-draft",
+    "madarij-v2-p039-draft"
+  ],
+  "changes": [
+    {
+      "page": 10,
+      "id": "madarij-v2-p010-c",
+      "explanation": "Arabic أبلَم describes dullness, not an animal's lack of mobility"
+    },
+    {
+      "page": 38,
+      "id": "madarij-v2-p038-draft",
+      "explanation": "Quran 16:30 in Arabic print p38 stops at لِلَّذِينَ"
+    },
+    {
+      "page": 39,
+      "id": "madarij-v2-p039-draft",
+      "explanation": "Arabic printed p39 begins أَحْسَنُوا فِي هَذِهِ الدُّنْيَا حَسَنَةٌ"
+    }
+  ],
+  "review_method": "Compared electronic Arabic and Russian opening text in printed-page order; split-page record IDs checked for pp3–10, paragraph continuations and Quran passages checked for pp11–50",
+  "test_status": "In-memory source-fidelity assertions passed. Dedicated repo Python tests authored but not executed in an external runner.",
+  "safeguards": {
+    "all_673_other_app_paragraphs_preserved": true,
+    "arabic_original_unchanged": true,
+    "first_volume_untouched": true,
+    "UI_untouched": true,
+    "APK_not_built": true
+  },
+  "remaining_requirements": {
+    "print_images_2019_edition_collated": false,
+    "editorial_footnotes_fully_checked": false,
+    "hadith_graded_independently": false,
+    "publisher_ready": false
+  },
+  "notes": [
+    "The 31–40 research text retains optional leading/trailing ellipses across page boundaries; application content does not. They match after stripping these typographical markers.",
+    "Page 38 Quran 16:30 is deliberately cut after «Тем, кто» because the source printed page ends mid-phrase.",
+    "A first electronic source-comparison pass does not guarantee no further philological errors."
+  ]
+}
