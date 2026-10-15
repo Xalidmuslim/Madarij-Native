@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-15",
+  "scope": "Printed pp521–550 electronic Arabic source check and verifiable fidelity gaps",
+  "pages_read": [
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550
+  ],
+  "pages_changed_in_app": [
+    527,
+    530,
+    532,
+    533,
+    534,
+    535,
+    536,
+    538,
+    539
+  ],
+  "reconciled_app_research_page": 529,
+  "reason_for_reconciliation": "App version of p529 already contains restored full authorial argument; research draft was still shortened. Kept superior app text and synchronized research.",
+  "corrections": [
+    {
+      "printed_page": 527,
+      "old_excerpt": " Точная формулировка сообщения нуждается в сверке.",
+      "revised_excerpt": ""
+    },
+    {
+      "printed_page": 530,
+      "old_excerpt": " Окончательное установление источника требуется.",
+      "revised_excerpt": ""
+    },
+    {
+      "printed_page": 530,
+      "old_excerpt": "; его степень достоверности необходимо проверить.",
+      "revised_excerpt": "."
+    },
+    {
+      "printed_page": 530,
+      "old_excerpt": " Разъяснение продолжается со страницы 531.",
+      "revised_excerpt": ""
+    },
+    {
+      "printed_page": 532,
+      "old_excerpt": " Достоверность истории нуждается в сверке.",
+      "revised_excerpt": ""
+    },
+    {
+      "printed_page": 533,
+      "old_excerpt": ", хотя может сохранять веру.",
+      "revised_excerpt": "."
+    },
+    {
+      "printed_page": 533,
+      "old_excerpt": "Автор считает это распространённым несовершенным состоянием.",
+      "revised_excerpt": "Автор говорит, что это состояние большинства людей: в нём нет ни благодеяния, ни довольства Милостивым. У Аллаха просим помощи."
+    },
+    {
+      "printed_page": 533,
+      "old_excerpt": "и получил ответ: «Моё довольство — в твоём довольстве Моим решением». Это назидательное предание, а не установленный хадис.",
+      "revised_excerpt": "и получил ответ: «Поистине,"
+    },
+    {
+      "printed_page": 534,
+      "old_excerpt": "**Двадцать девятое основание:**",
+      "revised_excerpt": "Моё довольство — в твоём довольстве Моим решением».\n\n**Двадцать девятое основание:**"
+    },
+    {
+      "printed_page": 534,
+      "old_excerpt": "**Тридцать второе:** отсутствие довольства открывает путь религиозным нововведениям, а правильное принятие Божественного руководства закрыва",
+      "revised_excerpt": "**Тридцать второе:** отсутствие довольства открывает врата религиозных нововведений, а довольство закрывает эти"
+    },
+    {
+      "printed_page": 535,
+      "old_excerpt": "**Тридцать третье:**",
+      "revised_excerpt": "врата. Если ты поразмыслишь о нововведениях рафидитов, насибитов и хариджитов, увидишь, что они возникли из недовольства предопределённым ре"
+    },
+    {
+      "printed_page": 535,
+      "old_excerpt": "Понимание этого укрепляет довольство Самим Господом. При этом, как разъяснено ранее, оно не означает необходимости одобрять грехи творений.",
+      "revised_excerpt": "Кто же не доволен тем, что предопределил его Господь, тот не доволен Его именами и атрибутами, а значит, не доволен Им как Господом."
+    },
+    {
+      "printed_page": 536,
+      "old_excerpt": "Это относится к происходящим испытаниям и их последствиям.",
+      "revised_excerpt": "Слова о справедливости решения охватывают и предопределение самого греха, и предопределение его последствий и наказания: оба относятся к реш"
+    },
+    {
+      "printed_page": 536,
+      "old_excerpt": "Автор распространяет смысл и на грех: он поясняет, что допущенное человеком ослушание связано с собственной прежней беспечностью и ослаблени",
+      "revised_excerpt": "Автор считает справедливость наказания очевидной, а справедливость предопределения самого греха начинает объяснять через причины ослушания."
+    },
+    {
+      "printed_page": 538,
+      "old_excerpt": "в историческом изложении автора",
+      "revised_excerpt": ""
+    },
+    {
+      "printed_page": 539,
+      "old_excerpt": " Достоверность подробностей рассказа следует проверить.",
+      "revised_excerpt": ""
+    }
+  ],
+  "findings": [
+    "p529 app/research divergence fixed without reverting stronger app text",
+    "p533–534 restore exact cross-page boundary of quotation about Moses and divine contentment",
+    "p534–535 move authorial sect examples to printed p535 and remove editorial intervention from authorial text",
+    "p535–536 restore stronger philosophical argument about names, attributes, and decree",
+    "Unverified hadith-source commentary removed from translated authorial prose but source-grading remains a separate outstanding task"
+  ],
+  "limits": {
+    "printed_2019_original_edition_visually_checked": false,
+    "hadith_authenticity_independently_checked": false,
+    "footnote_apparatus_complete": false,
+    "scholarly_publication_ready": false,
+    "apk_built": false
+  }
+}

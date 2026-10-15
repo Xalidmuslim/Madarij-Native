@@ -6,7 +6,7 @@
     610
   ],
   "author_translation_units": 644,
-  "author_ru_words": 129110,
+  "author_ru_words": 129416,
   "editor_note_paragraphs": 96,
   "reading_sections": 90,
   "source_file_sha256": "7f68c9bf542f9c82b6772f46c585f8234efa100459e2287db187ad0435e876d7",
@@ -10332,5 +10332,5 @@
       "action": "Russian translates verified opening; raw Arabic is retained unchanged. Printed edition still needs visual comparison."
     }
   ],
-  "corpus_sha256": "1be6b1f9c0ce88788e78201d4fc332ac6f239e6dc7e92cf9b250591c34aa9b14"
+  "corpus_sha256": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a"
 }

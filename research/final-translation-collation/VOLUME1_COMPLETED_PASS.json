@@ -1,0 +1,20 @@
+{
+  "volume1_pass_complete": true,
+  "pages": [
+    3,
+    610
+  ],
+  "page_count": 608,
+  "source_and_translation_units": 644,
+  "reader_units_total": 740,
+  "author_edit_records": 176,
+  "edited_author_units": 147,
+  "editor_note_edit_records": 30,
+  "source_text_unchanged": true,
+  "corpus_sha256": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a",
+  "content_manifest_sha256": "d44d25a574df356bbf86ae2c5673270cdbcecf6bee6f0eda235e3ca67368c546",
+  "volume2_unmodified_at_freeze": true,
+  "volume2_sha256": "cfe85a40c7c157d28a62c1df0bdc03ea206516f097c2ff16c39a07ad70d6775a",
+  "publication_ready": false,
+  "human_expert_review_complete": false
+}

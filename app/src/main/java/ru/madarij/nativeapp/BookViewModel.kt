@@ -28,7 +28,8 @@ class BookViewModel(app: Application) : AndroidViewModel(app) {
     val status = MutableStateFlow("Подготовка данных…")
     init { viewModelScope.launch { status.value = try {
         if (repository.importCorpus()) {
-            if (repository.importedDraft) "Том 1 · литературная сверка завершена; источники требуют отдельной проверки" else "Проверенный корпус загружен"
+            if (repository.importedVolume2Preview) "Тома 1 и 2 загружены · литературная сверка завершена; научная проверка источников не завершена"
+            else if (repository.importedDraft) "Том 1 · литературная сверка завершена; источники требуют отдельной проверки" else "Проверенный корпус загружен"
         } else "Текст пока не включён"
     } catch (error: Exception) { if (error is CancellationException) throw error; Log.e("BookImport", "Corpus import failed", error); "Не удалось загрузить текст. Перезапустите приложение." } } }
     fun recordReading(chapterId: String, paragraphId: String, seconds: Int) {

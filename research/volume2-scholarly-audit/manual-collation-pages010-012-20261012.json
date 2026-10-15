@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-12",
+  "base_commit": "b732bfd212542e46594fb7c8682bd893c84fa58d",
+  "source_edition": "Nabil ibn Nassar al-Sindi, 2019",
+  "method": "Page-by-page detailed Russian vs. Arabic electronic transcription comparison; photographic scans not available for verification.",
+  "pages": [
+    {
+      "printed_page": 10,
+      "reviewed_paragraph_ids": [
+        "madarij-v2-p010-a",
+        "madarij-v2-p010-b",
+        "madarij-v2-p010-c",
+        "madarij-v2-p010-d",
+        "madarij-v2-p010-e"
+      ],
+      "text_changes": [
+        {
+          "id": "madarij-v2-p010-b",
+          "reason": "Remove external editorial attribution; restore author's camel characterization"
+        },
+        {
+          "id": "madarij-v2-p010-d",
+          "reason": "Restore author's direct voice regarding horses and sheep"
+        },
+        {
+          "id": "madarij-v2-p010-e",
+          "reason": "Remove third-person editorial paraphrase and explicitly preserve reasoning about consumption, animal natures and religious prohibition"
+        }
+      ],
+      "unresolved": [
+        {
+          "id": "madarij-v2-p010-c",
+          "source_term": "أبلَمُ",
+          "issue": "Dictionary evidence has distinct senses (thick-lipped, silent). Existing translation 'неповоротливого' cannot confidently be certified; no speculative substitution, require edition notes/lexicographic expert and scan."
+        },
+        "Physical print scan and apparatus not checked."
+      ],
+      "publication_ready": false
+    },
+    {
+      "printed_page": 11,
+      "reviewed_paragraph_ids": [
+        "madarij-v2-p011-draft"
+      ],
+      "text_changes": [],
+      "findings": "Arabic rhetorical sequence and the transition to the second station reflected in provisional Russian draft; no independently confirmed omission in the electronic source comparison.",
+      "unresolved": [
+        "Print scan, editorial apparatus, theological interpretation of the four humors."
+      ]
+    },
+    {
+      "printed_page": 12,
+      "reviewed_paragraph_ids": [
+        "madarij-v2-p012-draft"
+      ],
+      "text_changes": [],
+      "findings": "The third station, jabr (coercion), and its fatalistic arguments are represented. Final phrase continues on next printed page and was preserved unfinished intentionally.",
+      "unresolved": [
+        "Print scan and exact boundary of paragraph continuing onto page 13."
+      ]
+    }
+  ],
+  "verified_photographic_scans": 0,
+  "independently_scholarly_approved": 0,
+  "continuation_next_printed_page": 13,
+  "publication_ready": false,
+  "lexical_reference": "https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D8%A3%D9%8E%D8%A8%D9%92%D9%84%D9%8E%D9%85%D9%8E?exact_search=true"
+}

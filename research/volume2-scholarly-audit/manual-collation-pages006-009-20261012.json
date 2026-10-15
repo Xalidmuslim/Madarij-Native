@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "codex/madarij-v158-ar-ru-translation-collation",
+  "base_commit_sha": "66321a5d87283cd0d5d52d830c0b52f48632d587",
+  "comparison_basis": "Source-aligned Arabic text in research/volume2-source/arabic_pages.jsonl (2019 electronic edition) and the application's bilingual paragraphs. No photographic page scans checked; no independent scholarly sign-off.",
+  "pages": [
+    {
+      "printed_page": 6,
+      "paragraph_ids": [
+        "madarij-v2-p006-01"
+      ],
+      "source_electronic_collated": true,
+      "print_scan_collated": false,
+      "corrections": [
+        "Removed repeated third-person editorial glosses inside Ibn al-Qayyim's discourse.",
+        "Restored details of the military armor analogy, description of the sting, the explanation of the alleged reach of the evil eye, and his concluding instruction about Quran and Sunnah protections."
+      ],
+      "hadith": "No explicit attributed hadith passage in this page; 'Prophetic protections' is generic. Not independent chain verification.",
+      "unresolved": [
+        "2019 scan pagination and relevant edition notes."
+      ]
+    },
+    {
+      "printed_page": 7,
+      "paragraph_ids": [
+        "madarij-v2-p007-a",
+        "madarij-v2-p007-b",
+        "madarij-v2-p007-c",
+        "madarij-v2-p007-d",
+        "madarij-v2-p007-e",
+        "madarij-v2-p007-f",
+        "madarij-v2-p007-g"
+      ],
+      "source_electronic_collated": true,
+      "print_scan_collated": false,
+      "corrections": [
+        "Corrected legal terms: in p007-c and p007-d the Arabic explicitly says 'kill' (يقتله), not simply 'hurt' or 'retaliate'.",
+        "Removed modern narrative glosses in p007-a/g; retained full author reasoning."
+      ],
+      "historical_context": "Preserve as a textual report of historical juristic discussion, not an endorsement of contemporary violence or an actionable legal instruction.",
+      "hadith": "Reported conversation with Ibn Taymiyyah is not automatically a prophetic hadith. Its separate historical transmission not independently authenticated.",
+      "unresolved": [
+        "Further juristic editing and contextual notes, printed-scan collation."
+      ]
+    },
+    {
+      "printed_page": 8,
+      "paragraph_ids": [
+        "madarij-v2-p008-a",
+        "madarij-v2-p008-b",
+        "madarij-v2-p008-c",
+        "madarij-v2-p008-p009-d"
+      ],
+      "source_electronic_collated": true,
+      "print_scan_collated": false,
+      "corrections": [
+        "Restored specific Arabic referent for the illicit act in p008-a; removed editorial third-person voice.",
+        "Restored Ibn al-Qayyim's first-person testimony about dreams in p008-c."
+      ],
+      "quran": "Excerpt of Quran 6:38 compared to Quran.com and tafsir site. This is a partial Quranic quotation in the original book and intentionally remains partial.",
+      "hadith": "Prophetic dream concerning slaughtered cows and Uhud matches Sahih al-Bukhari 7035; further Arabic edition variant verification outstanding.",
+      "unresolved": [
+        "Print scan, hadith variant-specific Arabic match."
+      ]
+    },
+    {
+      "printed_page": 9,
+      "paragraph_ids": [
+        "madarij-v2-p008-p009-d",
+        "madarij-v2-p009-a",
+        "madarij-v2-p009-b"
+      ],
+      "source_electronic_collated": true,
+      "print_scan_collated": false,
+      "corrections": [],
+      "quran": "No explicit verse quote.",
+      "hadith": "Umar's rooster dream corroborated by Sahih Muslim 567, but the author's additional foreign-man interpretation is not certified as part of that narration.",
+      "unresolved": [
+        "Print scan and comparison of Ibn al-Qayyim's supplementary interpretive sentence against source traditions."
+      ]
+    }
+  ],
+  "statistics": {
+    "pages_checked_against_electronic_text_in_this_entry": 4,
+    "pages_with_confirmed_text_edits": 3,
+    "bilingual_paragraphs_edited": 7,
+    "print_scan_verified": 0
+  },
+  "continuation": {
+    "next_page": 10,
+    "verified_against_print_scan": false,
+    "publication_ready": false
+  },
+  "sources": [
+    "https://quran.ksu.edu.sa/tafseer/tabary/sura6-aya38.html",
+    "https://sunnah.com/bukhari/91/50",
+    "https://dorar.net/h/GnAguymp?osoul=1"
+  ]
+}

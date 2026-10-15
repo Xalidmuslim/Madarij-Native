@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-14",
+  "branch": "codex/madarij-v158-deep-audit-p621-630-20261014",
+  "backup": "backup/madarij-before-p621-630-audit-2026-10-14",
+  "scope": "Arabic–Russian second-pass electronic source fidelity on printed volume II pages 621–630",
+  "corrections": [
+    {
+      "page": 621,
+      "corrections": 2,
+      "before": 1197,
+      "after": 1152
+    },
+    {
+      "page": 622,
+      "corrections": 3,
+      "before": 1406,
+      "after": 1425
+    },
+    {
+      "page": 623,
+      "corrections": 3,
+      "before": 985,
+      "after": 971
+    },
+    {
+      "page": 624,
+      "corrections": 2,
+      "before": 1355,
+      "after": 1449
+    },
+    {
+      "page": 625,
+      "corrections": 1,
+      "before": 1272,
+      "after": 1339
+    },
+    {
+      "page": 626,
+      "corrections": 2,
+      "before": 838,
+      "after": 853
+    },
+    {
+      "page": 627,
+      "corrections": 2,
+      "before": 1406,
+      "after": 1461
+    },
+    {
+      "page": 628,
+      "corrections": 2,
+      "before": 1551,
+      "after": 1578
+    },
+    {
+      "page": 629,
+      "corrections": 2,
+      "before": 1362,
+      "after": 1408
+    },
+    {
+      "page": 630,
+      "corrections": 4,
+      "before": 1555,
+      "after": 1582
+    }
+  ],
+  "primary_findings": [
+    "p621: distinguish love-based rejection of sin from fear-based rejection without editorial inference",
+    "p622: restore Arabic 'ma' neutral as to adjacency and separation, not only adjacency",
+    "p623: preserve qurb subdivisions and remove non-authorial text-transition note",
+    "p624: restore author's polemic about a denier and statement on Divine nearness and the Throne",
+    "p625: restore broad dislike of involvement with creatures, not merely excessive contact",
+    "p626: align the description of endless Divine generosity with the author",
+    "p627: present author's paradise-rivers comparison without interpreting it in his voice",
+    "p628: improve author-quoted Quran 47:21 and definition of faith vs hypocrisy",
+    "p629: clarify three types of sidq and highest siddiqiyya",
+    "p630: restore precise authorial comparison of Badr, Medina, Battle of Trench and Banu Qurayza; remove unoriginal editorial conclusion",
+    "Research Arabic source p622 Quran 16:128 and 2:153 omitted words; repaired to match Quran text already present in app Arabic. Research p623 Quran 2:186 stray preceding numeral removed."
+  ],
+  "limitations": {
+    "print_2019_scan_collated": false,
+    "hadith_grading_verified": false,
+    "footnote_apparatus_complete": false,
+    "publication_ready": false,
+    "apk_built": false
+  },
+  "first_volume_unchanged": true,
+  "ui_and_app_architecture_unchanged": true
+}

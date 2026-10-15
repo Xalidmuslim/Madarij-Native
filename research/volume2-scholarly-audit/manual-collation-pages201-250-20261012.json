@@ -1,0 +1,833 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "starting_branch": "codex/madarij-v158-volume2-collation-pages151-200-20261012",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages201-250-20261012",
+  "edition": "Ibn al-Qayyim, Madarij al-Salikin, 2019 edition edited by Nabil ibn Nassar as-Sindi, volume 2",
+  "scope": "Sequential first-pass screening of pages 201-250 against electronic edition Arabic body, with targeted passage-by-passage repairs; NOT a full scholarly verification of each paragraph or scanned print pages.",
+  "source_arabic": "research/volume2-source/arabic_pages.jsonl",
+  "source_russian": "research/volume2-batch-151-220/ and research/volume2-batch-221-320/",
+  "android_asset": "app/src/main/assets/volume2-preview.json",
+  "checked_external_quran_links": [
+    "https://quran.com/en/an-nahl/96",
+    "https://quran.com/10/24",
+    "https://quran.com/nl/al-ala/16-17",
+    "https://quran.com/nl/al-muddaththir/4"
+  ],
+  "method": "Read electronic Arabic and Russian data for pages 201–250. Identify direct author-voice intrusions and corrupted Quran excerpts. Check selected exact Arabic verses against independent Quran references; fix only grounded discrepancies. Preserve previous text and separate unverified editor notes.",
+  "pages": [
+    {
+      "printed_page": 201,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 202,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Уточнить иснад и первоисточник сообщения о смирении в молитве"
+      ]
+    },
+    {
+      "printed_page": 203,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 204,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 205,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Устранена современная вводная «По мнению автора»; сохранён прямой авторский вывод о двух смыслах беспечности в молитве"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 206,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 207,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 208,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Восстановлен прямой вывод Ибн аль-Каййима о предпочтительности второго мнения без модернизирующей атрибуции"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 209,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Удалена посторонняя нумерация внутри цитат 22:34 и 22:35",
+        "Восстановлено слово المخبتين на месте повреждённой отсылки к нему в рассуждении"
+      ],
+      "quran_repaired": true,
+      "unresolved": [
+        "Проверить написание цитаты и толкований 22:34–35 по скану 2019 года; не смешивать текст аята и комментарии"
+      ]
+    },
+    {
+      "printed_page": 210,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 211,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 212,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 213,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 214,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 215,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Восстановлено утверждение автора о единодушии наставников пути, в том числе правильных и ошибавшихся; неверное ослабление «почти все» устранено"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Отделить историческое сообщение Абу Язида о сновидении от религиозного доказательства, уточнить источник"
+      ]
+    },
+    {
+      "printed_page": 216,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 217,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 218,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Восстановлено слово باق из цитаты 16:96, удалён номер соседнего аята",
+        "Восстановлено окончание يتفكرون из цитаты 10:24 и удалён сдвинутый номер"
+      ],
+      "quran_repaired": true,
+      "unresolved": [
+        "Проверить конкретный размер авторской коранической цитаты на скане издания 2019 года, поскольку электронная транскрипция обрезана"
+      ]
+    },
+    {
+      "printed_page": 219,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Восстановлены بل и границы 87:16–17; устранено смещение нумерации"
+      ],
+      "quran_repaired": true,
+      "unresolved": [
+        "Сверить начало цитаты 87:16–17 с печатным сканом; электронный слой смещал номера"
+      ]
+    },
+    {
+      "printed_page": 220,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 221,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 222,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 223,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 224,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 225,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 226,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 227,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 228,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 229,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 230,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 231,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Убрана лишняя формула «по словам автора», объяснение передано непосредственно"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 232,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 233,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Удалена лишняя «по мнению автора», сохранены указание автора на второе толкование и атрибутированная поэтическая цитата"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 234,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Арабский фрагмент Корана 74:4 «وثيابك فطهر» восстановлен вместо ошибочно перенесённого фрагмента 74:3"
+      ],
+      "quran_repaired": true,
+      "unresolved": [
+        "Критическая проверка: электронный арабский оригинал цитировал 74:3 при ссылке 74:4; восстановлено по мусхафу и непосредственному контексту"
+      ]
+    },
+    {
+      "printed_page": 235,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Переписан сокращённый пояснительный пересказ, восстановлен прямой тезис о взаимном влиянии сердца и одежды, перечень внешних признаков и соответствующее авторское рассуждение"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Дополнительная проверка терминов الورع и حكم لبس الحرير والذهب وجلود السباع специалистом, без представления автора в качестве действующей правовой консультации"
+      ]
+    },
+    {
+      "printed_page": 236,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Историческая атрибуция и цепочка сообщения не проверены"
+      ]
+    },
+    {
+      "printed_page": 237,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 238,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Историческая атрибуция слов ранних предшественников не проверена"
+      ]
+    },
+    {
+      "printed_page": 239,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 240,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 241,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 242,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Остаётся проверка текста передачи и иснада"
+      ]
+    },
+    {
+      "printed_page": 243,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 244,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 245,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 246,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 247,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 248,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Убрана модернизирующая вставка «По мнению автора» в прямом авторском рассуждении"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 249,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": false,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [],
+      "quran_repaired": false,
+      "unresolved": [
+        "Требуется полная построчная проверка по печатному скану, полная проверка цитат и источников"
+      ]
+    },
+    {
+      "printed_page": 250,
+      "arabic_digital_page_present": true,
+      "russian_draft_present": true,
+      "status": "electronic_screening_only",
+      "selected_passages_compared": true,
+      "print_scan_verified": false,
+      "fully_independently_scholarly_verified": false,
+      "translation_publication_ready": false,
+      "changes_written_into_android": [
+        "Формула «Поэт сказал» заменена на соответствующее арабскому «Как сказано»; стих на следующей странице не менялся"
+      ],
+      "quran_repaired": false,
+      "unresolved": [
+        "Переход стиха со страницы 250 на 251 потребует проверки на границе"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 50,
+    "pages_with_grounded_changes": 12,
+    "replacement_operations": 18,
+    "arabic_quran_citation_changed_pages": [
+      209,
+      218,
+      219,
+      234
+    ],
+    "russian_paragraph_changed_pages": [
+      205,
+      208,
+      215,
+      231,
+      233,
+      235,
+      248,
+      250
+    ],
+    "android_chapters": 9,
+    "android_bilingual_fragments": 676,
+    "unchanged_all_pages_outside_201_to_250": true,
+    "equivalent_in_memory_checks_passed": 14,
+    "actual_python_unittest_executed": false,
+    "apk_not_built": true,
+    "print_scans_inspected": 0,
+    "fully_independently_verified_pages": 0,
+    "next_first_pass_printed_page": 251
+  },
+  "open_global": [
+    "Entire 201–250 range still requires line-by-line scholarly collation and 2019 printed facsimile review.",
+    "Automated chapter/paragraph invariants are not a substitute for Android runtime/UI tests.",
+    "No hadith grading or final theological certification was performed.",
+    "GitHub-hosted Python regression script committed, but not executed in a checkout environment."
+  ],
+  "publication_ready": false
+}

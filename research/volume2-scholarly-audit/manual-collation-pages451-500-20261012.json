@@ -1,0 +1,986 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "parent_branch": "codex/madarij-v158-volume2-collation-pages401-450-20261012",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages451-500-20261012",
+  "edition": "2019 edition (Nabil ibn Nassar as-Sindi), volume 2",
+  "scope": "Sequential Arabic/Russian electronic screening of printed pages 451–500; substantive selective repairs, NOT full independent line-by-line certification.",
+  "arabic_source": "research/volume2-source/arabic_pages.jsonl",
+  "app": "app/src/main/assets/volume2-preview.json",
+  "russian_draft": "research/volume2-batch-421-520/russian-pages-NNN-NNN.json",
+  "cited_quran_sources": [
+    "https://quran.com/16/127",
+    "https://quran.com/89/29",
+    "https://quran.com/98/8"
+  ],
+  "pages": [
+    {
+      "printed_page": 451,
+      "paragraph_ids": [
+        "madarij-v2-p451-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 452,
+      "paragraph_ids": [
+        "madarij-v2-p452-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 453,
+      "paragraph_ids": [
+        "madarij-v2-p453-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалено постороннее обозначение предыдущего аята из цитаты Корана 16:127."
+      ],
+      "unresolved": [
+        "Проверить визуально арабский фрагмент 16:127 в выбранном печатном издании."
+      ]
+    },
+    {
+      "printed_page": 454,
+      "paragraph_ids": [
+        "madarij-v2-p454-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 455,
+      "paragraph_ids": [
+        "madarij-v2-p455-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Неназванное стихотворение сохранено без современной формулы «Поэт сказал»."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 456,
+      "paragraph_ids": [
+        "madarij-v2-p456-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Не подтверждённое арабским текстом обозначение автора стиха заменено нейтральной формулой."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 457,
+      "paragraph_ids": [
+        "madarij-v2-p457-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 458,
+      "paragraph_ids": [
+        "madarij-v2-p458-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 459,
+      "paragraph_ids": [
+        "madarij-v2-p459-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлена указанная Ибн аль-Каййимом цепочка: Муса ибн Исмаил → Сувайд → Абдуллах ибн Убайд ибн Умайр → отец → дед; хадис не объявлен достоверным."
+      ],
+      "unresolved": [
+        "Проверить первоисточник в «Аль-Адаб» аль-Бухари, всех передатчиков и степень достоверности."
+      ]
+    },
+    {
+      "printed_page": 460,
+      "paragraph_ids": [
+        "madarij-v2-p460-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 461,
+      "paragraph_ids": [
+        "madarij-v2-p461-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "В стихотворных фрагментах разграничены «как сказано» и «он продекламировал» по арабскому оригиналу."
+      ],
+      "unresolved": [
+        "Уточнить происхождение поэтических строк; не считать авторское цитирование установленным сообщением."
+      ]
+    },
+    {
+      "printed_page": 462,
+      "paragraph_ids": [
+        "madarij-v2-p462-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 463,
+      "paragraph_ids": [
+        "madarij-v2-p463-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Сохранено более раннее содержательное исправление в Android; тексты источника выровнены, новая научная аттестация не выполнена."
+      ]
+    },
+    {
+      "printed_page": 464,
+      "paragraph_ids": [
+        "madarij-v2-p464-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 465,
+      "paragraph_ids": [
+        "madarij-v2-p465-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 466,
+      "paragraph_ids": [
+        "madarij-v2-p466-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Убрана редакционная вставка «по мнению автора» из рассуждения о мотивах воздержания от греха."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 467,
+      "paragraph_ids": [
+        "madarij-v2-p467-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 468,
+      "paragraph_ids": [
+        "madarij-v2-p468-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Убрана современная дистанцирующая вставка, сохранена прямая авторская аргументация."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 469,
+      "paragraph_ids": [
+        "madarij-v2-p469-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 470,
+      "paragraph_ids": [
+        "madarij-v2-p470-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалена непредусмотренная арабским текстом атрибуция стихов."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 471,
+      "paragraph_ids": [
+        "madarij-v2-p471-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено рассуждение о том, что слушатель не способен постичь более высокое состояние благодарности; неопределённое происхождение истории отделено примечанием переводчика. Убрана неподтверждённая атрибуция поэтических строк."
+      ],
+      "unresolved": [
+        "Установить происхождение рассказа о женщине и цепочку передачи, если имеется."
+      ]
+    },
+    {
+      "printed_page": 472,
+      "paragraph_ids": [
+        "madarij-v2-p472-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлена собственная оценка Ибн аль-Каййима превосходства терпения ради Аллаха над терпением посредством Его помощи."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 473,
+      "paragraph_ids": [
+        "madarij-v2-p473-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалено третьеличное обрамление без исключения аргументов и примеров о терпении пророков."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 474,
+      "paragraph_ids": [
+        "madarij-v2-p474-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 475,
+      "paragraph_ids": [
+        "madarij-v2-p475-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 476,
+      "paragraph_ids": [
+        "madarij-v2-p476-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 477,
+      "paragraph_ids": [
+        "madarij-v2-p477-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Возвращён прямой авторский вывод о двух хадисах и духовных стоянках."
+      ],
+      "unresolved": [
+        "Самостоятельная сверка обоих хадисов по достоверным первоисточникам остаётся открытой."
+      ]
+    },
+    {
+      "printed_page": 478,
+      "paragraph_ids": [
+        "madarij-v2-p478-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 479,
+      "paragraph_ids": [
+        "madarij-v2-p479-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 480,
+      "paragraph_ids": [
+        "madarij-v2-p480-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Убрано современное «по мнению автора» из богословской аргументации."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 481,
+      "paragraph_ids": [
+        "madarij-v2-p481-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Восстановлено прямое авторское утверждение о любви и довольстве."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 482,
+      "paragraph_ids": [
+        "madarij-v2-p482-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 483,
+      "paragraph_ids": [
+        "madarij-v2-p483-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 484,
+      "paragraph_ids": [
+        "madarij-v2-p484-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 485,
+      "paragraph_ids": [
+        "madarij-v2-p485-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 486,
+      "paragraph_ids": [
+        "madarij-v2-p486-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 487,
+      "paragraph_ids": [
+        "madarij-v2-p487-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 488,
+      "paragraph_ids": [
+        "madarij-v2-p488-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 489,
+      "paragraph_ids": [
+        "madarij-v2-p489-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Исправлено повреждённое OCR-слово الصَّرْحَ на فَادْخُلِي в цитате Корана 89:29; удалено устаревшее предупреждение внутри авторской речи. Восстановлено прямое авторское толкование."
+      ],
+      "unresolved": [
+        "Восстановление цитаты 89:29 подтверждено текстом Корана; выбранный печатный скан не осмотрен."
+      ]
+    },
+    {
+      "printed_page": 490,
+      "paragraph_ids": [
+        "madarij-v2-p490-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Второе грамматическое толкование передано прямо без вставки «автор считает»."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 491,
+      "paragraph_ids": [
+        "madarij-v2-p491-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 492,
+      "paragraph_ids": [
+        "madarij-v2-p492-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 493,
+      "paragraph_ids": [
+        "madarij-v2-p493-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Возвращено прямое утверждение автора о запрете принимать покровителей помимо Аллаха и его различении с любовью к праведным."
+      ],
+      "unresolved": [
+        "Терминологическая независимая проверка различий между توحيد, ولاية, شرك."
+      ]
+    },
+    {
+      "printed_page": 494,
+      "paragraph_ids": [
+        "madarij-v2-p494-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 495,
+      "paragraph_ids": [
+        "madarij-v2-p495-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Удалено третьеличное обрамление возражения автора о сравнительном достоинстве ступеней."
+      ],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 496,
+      "paragraph_ids": [
+        "madarij-v2-p496-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Точно переданы два мнения внутри мазхаба имама Ахмада об обязательности довольства предопределением; убрана современная вставка."
+      ],
+      "unresolved": [
+        "Проверить юридические источники двух мнений мазхаба Ахмада об обязательности الرضا بالقضاء."
+      ]
+    },
+    {
+      "printed_page": 497,
+      "paragraph_ids": [
+        "madarij-v2-p497-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": true,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Из арабской цитаты Корана 98:8 устранён чужой номер аята (٧). Восстановлено подробное авторское перечисление Божественных имён и атрибутов вместо сжатого пересказа."
+      ],
+      "unresolved": [
+        "Восстановление арабского фрагмента 98:8 и полного списка атрибутов; проверить по скану печатного тома."
+      ]
+    },
+    {
+      "printed_page": 498,
+      "paragraph_ids": [
+        "madarij-v2-p498-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 499,
+      "paragraph_ids": [
+        "madarij-v2-p499-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    },
+    {
+      "printed_page": 500,
+      "paragraph_ids": [
+        "madarij-v2-p500-draft"
+      ],
+      "consecutive_electronic_screen": true,
+      "selected_passage_content_collated": false,
+      "full_line_by_line_collation_completed": false,
+      "print_image_checked": false,
+      "independent_quran_apparatus_complete": false,
+      "all_hadith_chains_checked": false,
+      "scholarly_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "unresolved": [
+        "Полная построчная сверка по сканам издания 2019 года и независимый хадисоведческий аудит ещё необходимы."
+      ]
+    }
+  ],
+  "stats": {
+    "electronic_pages_screened": 50,
+    "changed_pages": 20,
+    "russian_edit_operations": 24,
+    "arabic_verse_edit_operations": 3,
+    "total_exact_replacements": 27,
+    "arabic_verse_repair_pages": [
+      453,
+      489,
+      497
+    ],
+    "app_chapters": 9,
+    "app_bilingual_fragments": 676,
+    "prior_p463_507_repairs_preserved": true,
+    "corrected_russian_drafts_synchronized": true,
+    "javascript_checks_passed": 28,
+    "python_test_committed": true,
+    "python_test_executed": false,
+    "apk_built": false,
+    "printed_scans_examined": 0,
+    "independently_verified_pages": 0,
+    "next_first_pass_page": 501,
+    "first_page_still_requiring_full_scholarly_signoff": 451
+  },
+  "authorial_text_not_abridged": true,
+  "original_arabic_source_jsonl_unchanged": true,
+  "first_volume_untouched": true,
+  "publication_ready": false
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p521-draft",
+    "printed_pages": [
+      521
+    ],
+    "old": "так же, так же ясно",
+    "new": "так же ясно",
+    "arabic_anchor": "كدلالة الشَّمس على النّهار",
+    "reason": "Устранить механический повтор.",
+    "before": "так же, так же ясно",
+    "after": "так же ясно",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p514-draft-editor-note-01",
+    "printed_pages": [
+      514
+    ],
+    "old": "Коранические цитаты аль-Исра: 74–75 и аль-Хакка: 44–46 в исходнике обрываются; переведён только наличный текст.",
+    "new": "Коранические цитаты аль-Исра: 74–75 и аль-Хакка: 44–46 во встроенном арабском тексте обрываются; переведён только наличный текст.",
+    "arabic_anchor": "",
+    "reason": "Примечание к авторскому абзацу: дефект подтверждён во встроенном арабском, без установления состояния печатного источника.",
+    "before": "Коранические цитаты аль-Исра: 74–75 и аль-Хакка: 44–46 в исходнике обрываются; переведён только наличный текст.",
+    "after": "Коранические цитаты аль-Исра: 74–75 и аль-Хакка: 44–46 во встроенном арабском тексте обрываются; переведён только наличный текст.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p521-draft-editor-note-01",
+    "printed_pages": [
+      521
+    ],
+    "old": "Цитата Ибрахим: 10 в исходнике обрывается; переведены только наличные слова.",
+    "new": "Цитата Ибрахим: 10 во встроенном арабском тексте обрывается; переведены только наличные слова.",
+    "arabic_anchor": "",
+    "reason": "Примечание к авторскому абзацу: дефект подтверждён во встроенном арабском, без установления состояния печатного источника.",
+    "before": "Цитата Ибрахим: 10 в исходнике обрывается; переведены только наличные слова.",
+    "after": "Цитата Ибрахим: 10 во встроенном арабском тексте обрывается; переведены только наличные слова.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

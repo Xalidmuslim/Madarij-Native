@@ -1,0 +1,53 @@
+name: Integrate final 39 volume-two pages 621-659
+on:
+  push:
+    branches: [codex/madarij-v156-volume2-pages621-659-final39-draft]
+    paths: [.github/workflows/integrate-volume2-final39.yml, tools/integrate_volume2_final39.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: Append final 39 bilingual original and translated pages
+        run: |
+          python3 -m py_compile tools/integrate_volume2_final39.py tools/validate_volume2_preview.py
+          python3 tools/integrate_volume2_final39.py
+          python3 tools/validate_volume2_preview.py
+      - name: Assert 657 numbered printed body pages without missing page
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          v=json.loads(Path('app/src/main/assets/volume2-preview.json').read_text())
+          toc=json.loads(Path('app/src/main/assets/volume2-structure.json').read_text())
+          chapters=v['chapters']
+          assert len(chapters)==9 and len(toc['groups'])==9
+          assert [len(c['paragraphs']) for c in chapters[1:]]==[70,70,70,100,100,100,100,39]
+          end=chapters[-1]['paragraphs']
+          assert [x['id'] for x in end]==[f'madarij-v2-p{i:03d}-draft' for i in range(621,660)]
+          ids=[p['id'] for c in chapters for p in c['paragraphs']]
+          assert len(ids)==len(set(ids))
+          assert all(p['ru'].strip() and p['ar'].strip() for c in chapters for p in c['paragraphs'])
+          assert v['expected_chapter_ids']==[x['id'] for x in chapters]
+          assert v['translation_completeness']=='preliminary_russian_pages_3_to_659'
+          assert v['editorial_audit']['translated_preliminary_pages']==657
+          assert v['editorial_audit']['printed_pages_included']==list(range(3,660))
+          assert v['publication_ready'] is False and v['translation_independently_verified'] is False
+          assert {item['chapterId'] for group in toc['groups'] for item in group['items']}==set(v['expected_chapter_ids'])
+          print('PASS 657 printed author-text pages 3–659 and 659 Arabic original source pages')
+          PY
+      - name: Persist new second-volume assets without modifying first volume
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-621-659/review-report.json
+          git diff --cached --check
+          git commit -m "content(v2): complete preliminary 657-page Russian text of volume 2, pp3-659"
+          git push origin HEAD:codex/madarij-v156-volume2-pages621-659-final39-draft

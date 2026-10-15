@@ -1,0 +1,54 @@
+name: Integrate 100 volume-two pages 321-420
+
+on:
+  push:
+    branches: [codex/madarij-v153-volume2-pages321-420-100page-batch]
+    paths: [.github/workflows/integrate-volume2-pages321-420.yml, tools/integrate_volume2_pages321_420.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: Append all 100 bilingual page pairs and validate
+        run: |
+          python3 -m py_compile tools/integrate_volume2_pages321_420.py tools/validate_volume2_preview.py
+          python3 tools/integrate_volume2_pages321_420.py
+          python3 tools/validate_volume2_preview.py
+      - name: Check coverage, navigation, order and editorial status
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          corpus=json.loads(Path('app/src/main/assets/volume2-preview.json').read_text())
+          toc=json.loads(Path('app/src/main/assets/volume2-structure.json').read_text())
+          chapters=corpus['chapters']
+          assert len(chapters)==6
+          assert [len(c['paragraphs']) for c in chapters[1:]] == [70,70,70,100,100]
+          ids=[f'madarij-v2-p{i:03d}-draft' for i in range(321,421)]
+          assert [p['id'] for p in chapters[-1]['paragraphs']]==ids
+          assert len(set(p['id'] for c in chapters for p in c['paragraphs']))==sum(len(c['paragraphs']) for c in chapters)
+          assert all(p['ar'].strip() and p['ru'].strip() for c in chapters for p in c['paragraphs'])
+          assert len(toc['groups'])==6
+          assert {item['chapterId'] for group in toc['groups'] for item in group['items']}==set(corpus['expected_chapter_ids'])
+          assert corpus['translation_completeness']=='preliminary_russian_pages_3_to_420'
+          assert corpus['translation_independently_verified'] is False
+          assert corpus['publication_ready'] is False
+          print('PASS: 100 new pages 321–420; all chapter navigation, text, editorial safety checks')
+          PY
+      - name: Persist native assets without modifying first volume
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-321-420/review-report.json
+          git diff --cached --check
+          git commit -m "content(v2): integrate 100-page Arabic/Russian draft 321–420 into native Android reader"
+          git push origin HEAD:codex/madarij-v153-volume2-pages321-420-100page-batch

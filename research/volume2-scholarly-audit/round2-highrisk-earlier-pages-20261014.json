@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "scope": "Focused deeper electronic Arabic-Russian verification of high-risk prior printed pages",
+  "pages_changed": [
+    407,
+    478,
+    479,
+    480,
+    516,
+    517,
+    529
+  ],
+  "method": "Compared complete Arabic and Russian from 2019 book's electronic transcription, restoring omitted source detail and printed-page transitions.",
+  "findings": [
+    "p407 restored full tawakkul argument and Quran citations",
+    "pp478-480 restored four aspects of rida, analogy with carrion/blood and tayammum, prayer about estrangement, and page boundary",
+    "pp516-517 restored angel argument, signs of Thamud and Lut, 26th sura refrain, and page boundary",
+    "p529 restored enumerated points 16-19 with no 530-page anticipations"
+  ],
+  "limitations": {
+    "print_scan_verified": false,
+    "hadith_sources_authenticated": false,
+    "all_pages_scholarly_certified": false,
+    "publication_ready": false
+  },
+  "apk_built": false
+}

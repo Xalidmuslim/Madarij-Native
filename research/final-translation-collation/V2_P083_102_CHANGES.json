@@ -1,0 +1,98 @@
+[
+  {
+    "paragraph_id": "madarij-v2-p085-draft",
+    "printed_pages": [
+      85
+    ],
+    "old": "познание Аллаха и присущих Ему совершенств, от которых Он пречист в отношении всякого недостатка",
+    "new": "познание Аллаха, присущих Ему качеств совершенства и тех признаков недостатка, от которых Он пречист",
+    "arabic_anchor": "والعلم بالله وما له من أوصاف الكمال، وما يتنزَّه عنه من سمات النّقص",
+    "reason": "Восстановлены2 разных объекта: присущее совершенство и отрицаемый недостаток. Прежняя относительная конструкция ошибочно относила пречистость к совершенствам.",
+    "before": "познание Аллаха и присущих Ему совершенств, от которых Он пречист в отношении всякого недостатка",
+    "after": "познание Аллаха, присущих Ему качеств совершенства и тех признаков недостатка, от которых Он пречист",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p087-draft",
+    "printed_pages": [
+      87
+    ],
+    "old": "И трусливому, безоружному сердцем",
+    "new": "И безоружному трусу",
+    "arabic_anchor": "وجبانِ قلبٍ أعزلٍ",
+    "reason": "جبان قلب означает трусливого человека, أعزل — его физическую безоружность перед вооружённым всадником; не безоружность сердца.",
+    "before": "И трусливому, безоружному сердцем",
+    "after": "И безоружному трусу",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p087-draft",
+    "printed_pages": [
+      87
+    ],
+    "old": "привязанность к кому-либо помимо Аллаха, чрезмерную сытость и сон",
+    "new": "привязанность к кому-либо помимо Аллаха, чрезмерная сытость и сон",
+    "arabic_anchor": "والتعلُّق بغير الله، والشِّبع، والمنام",
+    "reason": "Исправлено согласование перечисления после «были упомянуты»; смысл перечня не меняется.",
+    "before": "привязанность к кому-либо помимо Аллаха, чрезмерную сытость и сон",
+    "after": "привязанность к кому-либо помимо Аллаха, чрезмерная сытость и сон",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p091-draft",
+    "printed_pages": [
+      91
+    ],
+    "old": "на общих молитвах и собраниях",
+    "new": "на коллективных молитвах",
+    "arabic_anchor": "والجماعات",
+    "reason": "В перечне форм поклонения الجماعات — коллективные молитвы, не дополнительный общий класс любых собраний.",
+    "before": "на общих молитвах и собраниях",
+    "after": "на коллективных молитвах",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p095-draft",
+    "printed_pages": [
+      95
+    ],
+    "old": "и птицы с когтями",
+    "new": "и хищные птицы с когтями",
+    "arabic_anchor": "والمِخلَب من الطير",
+    "reason": "Термин ذو مخلب в данном правовом перечне относится к хищным птицам с охотничьими когтями; русское «птицы с когтями» без ограничения включает обычных птиц.",
+    "before": "и птицы с когтями",
+    "after": "и хищные птицы с когтями",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p096-draft",
+    "printed_pages": [
+      96
+    ],
+    "old": "особенно от сна после полудня",
+    "new": "особенно от сна во время асра",
+    "arabic_anchor": "ولاسيَّما نوم العصر",
+    "reason": "العصر — предвечерний период асра; перевод всем послеполуденным временем чрезмерно расширяет авторское утверждение.",
+    "before": "особенно от сна после полудня",
+    "after": "особенно от сна во время асра",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  }
+]

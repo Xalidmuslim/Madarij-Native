@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "codex/madarij-v158-ar-ru-translation-collation",
+  "working_branch": "codex/madarij-v158-volume2-manual-pages021-030-20261012",
+  "edition": "Nabil ibn Nassar al-Sindi, Dar Ataat al-Ilm / Dar Ibn Hazm (2019), volume 2",
+  "scope": "Consecutive Arabic/Russian paragraph comparison against edition-matched Maknoon electronic page transcripts and Android bundled bilingual text, pages 21–30; NOT print-scan-certified, NOT independent hadith or theological sign-off.",
+  "sources": {
+    "arabic_text": "https://maknoon.org/ai/view.php?bk=madarej_2&p={printed_page}",
+    "application": "app/src/main/assets/volume2-preview.json",
+    "draft_source": "research/volume2-batch-11-80/russian-pages-021-030.json",
+    "quran_21_23": "https://quran.com/21/23",
+    "quran_23_87_qiraat": "https://quranpedia.net/tafsir/al-muminun/87",
+    "quran_16_20": "https://quran.com/16/20"
+  },
+  "pages": [
+    {
+      "printed_page": 21,
+      "paragraph_ids": [
+        "madarij-v2-p021-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed Russian tautology while retaining the force of الخلق مقهورون تحت قبضته: «Все творения подчинены Его власти». "
+      ],
+      "quran_notes": [
+        "21:23 confirmed against Quran.com, wording preserved"
+      ],
+      "open": [
+        "Ibn Abbas attribution الإيمان بالقدر نظام التوحيد: trace chain and source cited by print editor (vol. 1 p. 126)"
+      ]
+    },
+    {
+      "printed_page": 22,
+      "paragraph_ids": [
+        "madarij-v2-p022-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open": [
+        "Page transitions 21→22 and 22→23 checked in electronic text only"
+      ]
+    },
+    {
+      "printed_page": 23,
+      "paragraph_ids": [
+        "madarij-v2-p023-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [
+        "23:87 and 23:89 source has سيقولون الله without lam, a recognized qira'a (Abu Amr, Yaqub); DO NOT normalize automatically to Hafs سيقولون لله",
+        "23:84–89 and 27:59–64 quotations and omissions require final mushaf/edition scan checks"
+      ],
+      "open": [
+        "Independent qira'at collation for all cited verses"
+      ]
+    },
+    {
+      "printed_page": 24,
+      "paragraph_ids": [
+        "madarij-v2-p024-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [
+        "16:20 electronic source exhibits «والذين الذين ...» instead of a continuous verse; text is flagged, NOT silently replaced with Hafs (يدعون), since print edition footnote discusses تدعون / يدعون qira'at"
+      ],
+      "open": [
+        "Visually inspect 2019 print scan p.24 and restore authentic reading of 16:20 in application once established"
+      ]
+    },
+    {
+      "printed_page": 25,
+      "paragraph_ids": [
+        "madarij-v2-p025-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed third-person modern narration «но автор выделяет его особо» from author's explanation ولكن أفرد بالذكر; preserved impersonal direct argument"
+      ],
+      "quran_notes": [
+        "11:88 reference retained"
+      ],
+      "open": [
+        "Independent source and scan review"
+      ]
+    },
+    {
+      "printed_page": 26,
+      "paragraph_ids": [
+        "madarij-v2-p026-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored literal rhetorical image لثُلَّ عرشُه «рухнул бы его престол» instead of interpretive «рухнули бы опоры его веры»"
+      ],
+      "quran_notes": [],
+      "open": [
+        "Trace sources and grading of two supplications; no Prophetic attribution introduced"
+      ]
+    },
+    {
+      "printed_page": 27,
+      "paragraph_ids": [
+        "madarij-v2-p027-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [
+        "49:7–8 in source; independent canonical quotation review still required"
+      ],
+      "open": [
+        "Printed-text verification and Qur'an quotation typography"
+      ]
+    },
+    {
+      "printed_page": 28,
+      "paragraph_ids": [
+        "madarij-v2-p028-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open": [
+        "Printed text/continuity of parable across p.28–29"
+      ]
+    },
+    {
+      "printed_page": 29,
+      "paragraph_ids": [
+        "madarij-v2-p029-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed modern «По оценке автора» and restored grammatical continuity from وعلم أنه من أبطل مذهب to the author's own doctrinal critique"
+      ],
+      "quran_notes": [],
+      "open": [
+        "Independent theological terminology review of القدرية الجبرية and القدرية النفاة"
+      ]
+    },
+    {
+      "printed_page": 30,
+      "paragraph_ids": [
+        "madarij-v2-p030-draft"
+      ],
+      "electronic_author_text_compared": true,
+      "print_scan_verified": false,
+      "independent_expert_signed_off": false,
+      "publication_ready": false,
+      "corrections": [],
+      "quran_notes": [],
+      "open": [
+        "Continuation onto p.31 and independent theological review"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_reviewed": 10,
+    "pages_with_changes": 4,
+    "russian_paragraphs_changed": 4,
+    "print_scans_inspected": 0,
+    "fully_independently_verified": 0,
+    "unresolved_specific_quran_source_problem_pages": [
+      24
+    ],
+    "next_sequential_electronic_page": 31
+  },
+  "preserved": {
+    "volume1_untouched": true,
+    "arabic_volume2_untouched": true,
+    "paragraph_count": 676,
+    "chapter_count": 9,
+    "previous_repairs": [
+      448,
+      463,
+      507,
+      622
+    ],
+    "publication_status_stays_draft": true
+  },
+  "build": {
+    "apk_not_requested": true,
+    "apk_not_built": true,
+    "ci_skipped_for_commits": true
+  },
+  "publication_ready": false
+}

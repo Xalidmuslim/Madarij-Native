@@ -1,0 +1,189 @@
+{
+  "range": [
+    43,
+    62
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 43,
+      "read_all_ar_ru": true,
+      "note": "Коранические доводы о справедливости и последствиях греха сохранены. Фраза فإن تداركها من سقي в AR синтаксически подозрительна; перевод передаёт общий медицинский образ, источник не реконструируется.",
+      "needs_expert": true,
+      "issues": [
+        "Quran13:33;3:18;17:5;anonymoussalaf sins-herald-unbelief saying. Corrupt-looking فإن تداركها من سقي requires edition scan."
+      ]
+    },
+    {
+      "page": 44,
+      "read_all_ar_ru": true,
+      "note": "Категорическое خرج ослаблено до «может исчезнуть», а السليم (ужаленный) превращён в вообще больного; предложены локальные правки.",
+      "needs_expert": true,
+      "issues": [
+        "Quran39:35 allusion;10thmercy absent initial list, source-numbering review."
+      ]
+    },
+    {
+      "page": 45,
+      "read_all_ar_ru": true,
+      "note": "Соблюдение границ не противопоставлено состраданию; دعاء عليهم (мольба против) излишне сужено до проклятий, предложена правка. Метафора овцы/пастуха сохранена.",
+      "needs_expert": true,
+      "issues": [
+        "Quran7:188/25:3 allusions;11thweakness vs initial10, preserve."
+      ]
+    },
+    {
+      "page": 46,
+      "read_all_ar_ru": true,
+      "note": "Автор прямо отрицает статус хадиса у «познавший себя»; оба первых толкования и довод тем более сохранены, оценку не выдаю за независимую аттестацию.",
+      "needs_expert": true,
+      "issues": [
+        "«من عرف نفسه عرف ربه» explicitly rejected as prophetic by author, attributed Israili wording: independent verification pending."
+      ]
+    },
+    {
+      "page": 47,
+      "read_all_ar_ru": true,
+      "note": "Третье толкование ограниченности знания и переход к12 взгляду прочитаны; сосуд и необходимость восстановления сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "12thlowliness vs initial11;divine nature/manner attributes discussion."
+      ]
+    },
+    {
+      "page": 48,
+      "read_all_ar_ru": true,
+      "note": "Косвенный порядок «Всё это порождает сокрушённость, овладевшая» двусмыслен; предложен ясный пассив, сохраняющий причинность от сокрушённости к оценке своих дел.",
+      "needs_expert": true,
+      "issues": [
+        "Quran20:111 allusion;anonymousknower heartprostration saying."
+      ]
+    },
+    {
+      "page": 49,
+      "read_all_ar_ru": true,
+      "note": "Смирение и любовь, затем пленённый сын под защитой отца переданы; притча не описана как собственная атрибуция Бога отцовству.",
+      "needs_expert": true,
+      "issues": [
+        "Father/son analogy author parable, no deityfatherhood claim."
+      ]
+    },
+    {
+      "page": 50,
+      "read_all_ar_ru": true,
+      "note": "Притча завершается вопросом о милосердии Господа; мольба и стих о сломанной кости переданы без подмены действия.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous devotional verse;invocation not graded."
+      ]
+    },
+    {
+      "page": 51,
+      "read_all_ar_ru": true,
+      "note": "Заголовок13 расходится с начальным перечнем12, сохранён по источнику. Любовь заменяет мысли/движения греха; рассказ о двери нужды передан анонимно.",
+      "needs_expert": true,
+      "issues": [
+        "13thlove vs initial12:source numbering anomaly. Anonymous devotional anecdote no independent attribution."
+      ]
+    },
+    {
+      "page": 52,
+      "read_all_ar_ru": true,
+      "note": "Прямая цитата «не вредит бездеятельность» смягчена до «менее губителен недостаток дополнительных трудов». Предложено восстановить категоричность, сохранив авторскую оговорку о выполненных обязательствах.",
+      "needs_expert": true,
+      "issues": [
+        "IbnTaymiyya saying;anonymousknower idleness saying, followed author restriction after obligations."
+      ]
+    },
+    {
+      "page": 53,
+      "read_all_ar_ru": true,
+      "note": "Прочитано всё начало длинного сообщения. Текущая редакторская атрибуция о передаче в Муснаде связана с явно отделённым примечанием54; прежний хадисный аудит не пересматриваю.",
+      "needs_expert": true,
+      "issues": [
+        "Long report attributed MusnadAhmad;existing54note explicitly flags provenance/weakness; no new grade."
+      ]
+    },
+    {
+      "page": 54,
+      "read_all_ar_ru": true,
+      "note": "Полное сообщение и окончание покаяния прочитаны. Уже существующее отдельное переводческое примечание о слабости/полной форме сохранено; новой оценки не добавляю.",
+      "needs_expert": true,
+      "issues": [
+        "Existing translator hadith critique cites Albani;kept as prior audit, independently unverified this pass;fullmessage translated."
+      ]
+    },
+    {
+      "page": 55,
+      "read_all_ar_ru": true,
+      "note": "Переход к инабе и грамматические варианты حال для منيبين переданы; все цитаты и оба возможных референта сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran39:54;11:75;50:6–8;40:13;30:30–31;65:1."
+      ]
+    },
+    {
+      "page": 56,
+      "read_all_ar_ru": true,
+      "note": "Общая инаба не смешана с исламом; исключения неверующих/многобожников сохранены. Пророческая цитата о рождении не снабжается мной новой оценкой.",
+      "needs_expert": true,
+      "issues": [
+        "Propheticbirthreport;Quran38:24;50:31–34;39:17;30:33–34."
+      ]
+    },
+    {
+      "page": 57,
+      "read_all_ar_ru": true,
+      "note": "В цитате Харави الحق означает Бога — Истинного, как показывает немедленный комментарий الرجوع إلى الله. Русское «истина/к ней» меняет адресата; предложена правка цитаты.",
+      "needs_expert": true,
+      "issues": [
+        "HarawiManazilquotation الحق;Quran25:70;2:160 truncated."
+      ]
+    },
+    {
+      "page": 58,
+      "read_all_ar_ru": true,
+      "note": "Завет Бога через ангелов/пророков/учёных и обязанности обучать/учиться различены. Инаба требует принятия и исполнения завета.",
+      "needs_expert": true,
+      "issues": [
+        "Quran48:10;17:34;16:91;2:177;hypocrisytreachery hadithallusion:sourcepending."
+      ]
+    },
+    {
+      "page": 59,
+      "read_all_ar_ru": true,
+      "note": "Слова/состояние и внутреннее/внешнее у аль-Хасана различены; три требования исправления и первый смысл боли падений переданы.",
+      "needs_expert": true,
+      "issues": [
+        "Harawiquote;HasanalBasri saying:sourcepending."
+      ]
+    },
+    {
+      "page": 60,
+      "read_all_ar_ru": true,
+      "note": "Боль за брата отделена от собственной боли;3 требования верности цитируются отдельно от комментария.",
+      "needs_expert": true,
+      "issues": [
+        "Harawiquote3requirements;noextra citations."
+      ]
+    },
+    {
+      "page": 61,
+      "read_all_ar_ru": true,
+      "note": "Два состояния и награда борьбы прочитаны; предпочтение спокойной души передано как ответ автора, возражение о человеческом/ангельском роде отделено.",
+      "needs_expert": true,
+      "issues": [
+        "Humansangelsranking attributed اهل السنة;three nafsstates;theological expert review."
+      ]
+    },
+    {
+      "page": 62,
+      "read_all_ar_ru": true,
+      "note": "Цель и средства пути к Дому различены; заслуга Абу Бакра не сведена к числу дел, трудность не приравнена к высшей степени.",
+      "needs_expert": true,
+      "issues": [
+        "Kaabapilgrimageparable;Quran5:54/57:21 phrase فضل الله;AbuBakr precedence sourcepending."
+      ]
+    }
+  ]
+}

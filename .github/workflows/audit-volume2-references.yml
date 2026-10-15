@@ -1,0 +1,28 @@
+name: First full-volume Quran and editorial citation audit
+on:
+  push:
+    branches: [codex/madarij-v157-volume2-scholarly-audit]
+    paths: [.github/workflows/audit-volume2-references.yml, tools/audit_volume2_quran.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify canonical Quran citation data and assess entire 657-page draft
+        run: |
+          python3 -m py_compile tools/audit_volume2_quran.py
+          python3 tools/audit_volume2_quran.py
+      - name: Publish review queue, not a certification
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/volume2-scholarly-audit/
+          git diff --cached --check
+          git commit -m "research(v2): record machine-screened Quran and editorial review queue for 657 pages"
+          git push origin HEAD:codex/madarij-v157-volume2-scholarly-audit

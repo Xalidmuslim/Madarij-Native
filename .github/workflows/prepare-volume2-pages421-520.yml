@@ -1,0 +1,23 @@
+name: Prepare original Arabic pages 421-520
+on:
+  push:
+    branches: [codex/madarij-v154-volume2-pages421-520-100page-batch]
+    paths: [.github/workflows/prepare-volume2-pages421-520.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - run: python3 tools/prepare_arabic_volume2_pages421_520.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/volume2-batch-421-520/original-arabic/
+          git diff --cached --check
+          git commit -m "research(v2): split original Arabic printed pages 421-520 into 10-page files"
+          git push origin HEAD:codex/madarij-v154-volume2-pages421-520-100page-batch

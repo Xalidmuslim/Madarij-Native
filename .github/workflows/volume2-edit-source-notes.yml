@@ -1,0 +1,43 @@
+name: Separate verified non-author editor remarks in full volume 2
+on:
+  push:
+    branches: [codex/madarij-v157-volume2-scholarly-audit]
+    paths: [.github/workflows/volume2-edit-source-notes.yml, tools/apply_volume2_editorial_fixes.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Move seven definite editorial intrusions outside the Russian author text
+        run: |
+          python3 -m py_compile tools/apply_volume2_editorial_fixes.py
+          python3 tools/apply_volume2_editorial_fixes.py
+          python3 tools/validate_volume2_preview.py
+      - name: Check text, source and draft status
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          v=json.loads(Path('app/src/main/assets/volume2-preview.json').read_text())
+          changes=json.loads(Path('research/volume2-scholarly-audit/precise-edits.json').read_text())
+          assert len(changes)==7 and len(v['chapters'])==9
+          assert [len(x['paragraphs']) for x in v['chapters'][1:]]==[70,70,70,100,100,100,100,39]
+          assert not v['publication_ready'] and not v['translation_independently_verified']
+          assert v['translation_completeness']=='preliminary_russian_pages_3_to_659'
+          assert all(p['ar'].strip() for c in v['chapters'] for p in c['paragraphs'])
+          print('PASS: exactly seven editor-only sentences moved out, no Arabic source or chapter removed')
+          PY
+      - name: Commit conservative source edits and tracked corrections
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json research/volume2-scholarly-audit/precise-edits.json
+          git diff --cached --check
+          git commit -m "fix(v2): distinguish author's words from seven editor-only remarks"
+          git push origin HEAD:codex/madarij-v157-volume2-scholarly-audit

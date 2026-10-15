@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "scope": "Further targeted second-pass fidelity on selected earlier pages flagged by electronic corpus quality checks",
+  "pages_changed": [
+    328,
+    329,
+    444,
+    567,
+    568,
+    569
+  ],
+  "findings": [
+    "pp328-329: restored correct printed-page placement of first author's argument, avoiding premature paragraph",
+    "p444: restored two authorial kinds of taslim and contrast of state and knowing",
+    "p567: restored Qur'an 74:48 and 2:123, lines by Imru al-Qays, explanatory comparisons by Ibn al-Anbari and Abu Ali and removed commentary absent from authorial text",
+    "pp568-569: restored exact scope of asking people for aid, its three authorial arguments, and the original cross-page continuation; removed translator disclaimer"
+  ],
+  "limitations": {
+    "print_scan_checked": false,
+    "hadith_graded": false,
+    "publication_ready": false
+  },
+  "independent_edition_certification": false
+}

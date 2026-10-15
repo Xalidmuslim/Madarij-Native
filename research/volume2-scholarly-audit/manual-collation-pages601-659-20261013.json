@@ -1,0 +1,1092 @@
+{
+  "date": "2026-10-13",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages601-659-20261013",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages551-600-20261012",
+  "scope": "Sequential first-pass screening of 59 printed pages 601-659 against existing edition-matched Arabic electronic transcription and current Russian Android content, with close comparison and confirmed corrections on listed pages. Not full sentence-by-sentence scan-certified or independently authenticated translation.",
+  "edition": "2019, edited by Nabil ibn Nassar as-Sindi; volume II",
+  "sources": {
+    "arabic_repository": "research/volume2-source/arabic_pages.jsonl",
+    "source_text_url_pattern": "https://maknoon.org/ai/view.php?bk=madarej_2&p={page}",
+    "app": "app/src/main/assets/volume2-preview.json",
+    "russian_drafts": "research/volume2-batch-521-620 and research/volume2-batch-621-659",
+    "verified_verses": [
+      "https://quran.com/96/14",
+      "https://quran.com/16/128",
+      "https://quran.com/2/186"
+    ]
+  },
+  "pages": [
+    {
+      "printed_page": 601,
+      "paragraph_ids": [
+        "madarij-v2-p601-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 602,
+      "paragraph_ids": [
+        "madarij-v2-p602-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 603,
+      "paragraph_ids": [
+        "madarij-v2-p603-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author's full argument on the limits of gratitude outside Islam, gratitude with blessings, and varying punishment in the Fire instead of modern summary."
+      ],
+      "open_issues": [
+        "2019 print wording and theological nuances of Muslim/non-Muslim gratitude"
+      ]
+    },
+    {
+      "printed_page": 604,
+      "paragraph_ids": [
+        "madarij-v2-p604-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 605,
+      "paragraph_ids": [
+        "madarij-v2-p605-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 606,
+      "paragraph_ids": [
+        "madarij-v2-p606-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 607,
+      "paragraph_ids": [
+        "madarij-v2-p607-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored full sequence on transient affect, love's effects, fana and jam', plus quotation absent from previous abridgement; lexical nuance remains for independent scholarly review."
+      ],
+      "open_issues": [
+        "Exact metaphor and reported Sufi phrase «من كانت مواهبه لا تتعدى يديه فلا واهب ولا موهوب» require print/philological review"
+      ]
+    },
+    {
+      "printed_page": 608,
+      "paragraph_ids": [
+        "madarij-v2-p608-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 609,
+      "paragraph_ids": [
+        "madarij-v2-p609-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 610,
+      "paragraph_ids": [
+        "madarij-v2-p610-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 611,
+      "paragraph_ids": [
+        "madarij-v2-p611-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Repaired Arabic Quran 96:14 by removing stray 13 and restoring يَرَى."
+      ],
+      "open_issues": [
+        "Hadith references on modesty need independent isnad grading"
+      ]
+    },
+    {
+      "printed_page": 612,
+      "paragraph_ids": [
+        "madarij-v2-p612-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed editorial third-person attribution from the author's preference between two interpretations."
+      ],
+      "open_issues": [
+        "Tirmidhi report «استحيوا من الله حق الحياء» must be graded independently"
+      ]
+    },
+    {
+      "printed_page": 613,
+      "paragraph_ids": [
+        "madarij-v2-p613-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Alleged divine speech report source and wording need attribution investigation"
+      ]
+    },
+    {
+      "printed_page": 614,
+      "paragraph_ids": [
+        "madarij-v2-p614-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Several reports labeled divine speech or Israelite need verified sources and separated footnotes"
+      ]
+    },
+    {
+      "printed_page": 615,
+      "paragraph_ids": [
+        "madarij-v2-p615-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed editorial narrator insertion; preserved the human analogy distinct from discussion of the divine attribute."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 616,
+      "paragraph_ids": [
+        "madarij-v2-p616-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Related reports on the divine attribute of modesty need independent hadith review"
+      ]
+    },
+    {
+      "printed_page": 617,
+      "paragraph_ids": [
+        "madarij-v2-p617-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Adam anecdote and angels' remark must not be labeled authenticated prophetic reports"
+      ]
+    },
+    {
+      "printed_page": 618,
+      "paragraph_ids": [
+        "madarij-v2-p618-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 619,
+      "paragraph_ids": [
+        "madarij-v2-p619-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 620,
+      "paragraph_ids": [
+        "madarij-v2-p620-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 621,
+      "paragraph_ids": [
+        "madarij-v2-p621-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 622,
+      "paragraph_ids": [
+        "madarij-v2-p622-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Arabic Quran 16:128 and 2:153 previously restored; inspect 2019 scan for edition reading"
+      ]
+    },
+    {
+      "printed_page": 623,
+      "paragraph_ids": [
+        "madarij-v2-p623-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed previous verse 185 inserted at start of Quran 2:186 excerpt; author-intended partial verse remains partial."
+      ],
+      "open_issues": [
+        "Quran 2:186 excerpt normalized against mushaf; claimed sabab al-nuzul and second nearness report require source criticism"
+      ]
+    },
+    {
+      "printed_page": 624,
+      "paragraph_ids": [
+        "madarij-v2-p624-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 625,
+      "paragraph_ids": [
+        "madarij-v2-p625-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 626,
+      "paragraph_ids": [
+        "madarij-v2-p626-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 627,
+      "paragraph_ids": [
+        "madarij-v2-p627-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 628,
+      "paragraph_ids": [
+        "madarij-v2-p628-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 629,
+      "paragraph_ids": [
+        "madarij-v2-p629-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 630,
+      "paragraph_ids": [
+        "madarij-v2-p630-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed editorial author-labeled transition while preserving historical comparisons."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 631,
+      "paragraph_ids": [
+        "madarij-v2-p631-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 632,
+      "paragraph_ids": [
+        "madarij-v2-p632-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 633,
+      "paragraph_ids": [
+        "madarij-v2-p633-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 634,
+      "paragraph_ids": [
+        "madarij-v2-p634-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 635,
+      "paragraph_ids": [
+        "madarij-v2-p635-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 636,
+      "paragraph_ids": [
+        "madarij-v2-p636-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 637,
+      "paragraph_ids": [
+        "madarij-v2-p637-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct assessment of Junayd's testimony on truthfulness."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 638,
+      "paragraph_ids": [
+        "madarij-v2-p638-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 639,
+      "paragraph_ids": [
+        "madarij-v2-p639-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored author's first-person selection of interpretation and removed later translator interpositions."
+      ],
+      "open_issues": [
+        "Third interpretation of wishing for death requires independent contextual review"
+      ]
+    },
+    {
+      "printed_page": 640,
+      "paragraph_ids": [
+        "madarij-v2-p640-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 641,
+      "paragraph_ids": [
+        "madarij-v2-p641-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 642,
+      "paragraph_ids": [
+        "madarij-v2-p642-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 643,
+      "paragraph_ids": [
+        "madarij-v2-p643-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 644,
+      "paragraph_ids": [
+        "madarij-v2-p644-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 645,
+      "paragraph_ids": [
+        "madarij-v2-p645-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 646,
+      "paragraph_ids": [
+        "madarij-v2-p646-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 647,
+      "paragraph_ids": [
+        "madarij-v2-p647-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 648,
+      "paragraph_ids": [
+        "madarij-v2-p648-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed added modern author-label from discussion of concession-seeking."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 649,
+      "paragraph_ids": [
+        "madarij-v2-p649-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 650,
+      "paragraph_ids": [
+        "madarij-v2-p650-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed added third-person author-label from the parable of borrowed spiritual guise."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 651,
+      "paragraph_ids": [
+        "madarij-v2-p651-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 652,
+      "paragraph_ids": [
+        "madarij-v2-p652-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 653,
+      "paragraph_ids": [
+        "madarij-v2-p653-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 654,
+      "paragraph_ids": [
+        "madarij-v2-p654-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 655,
+      "paragraph_ids": [
+        "madarij-v2-p655-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct author's criticism of making subjective states judge knowledge."
+      ],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 656,
+      "paragraph_ids": [
+        "madarij-v2-p656-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 657,
+      "paragraph_ids": [
+        "madarij-v2-p657-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Removed modern author-label from discussion of general and particular nearness."
+      ],
+      "open_issues": [
+        "Nearness/attributes terminology requires independent theological editorial reading"
+      ]
+    },
+    {
+      "printed_page": 658,
+      "paragraph_ids": [
+        "madarij-v2-p658-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": false,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [],
+      "open_issues": [
+        "Full sentence-level and 2019 printed-scan collation, hadith/apparatus review remain outstanding"
+      ]
+    },
+    {
+      "printed_page": 659,
+      "paragraph_ids": [
+        "madarij-v2-p659-draft"
+      ],
+      "electronic_page_available": true,
+      "first_pass_electronic_screened": true,
+      "selected_passages_compared_with_author_electronic_text": true,
+      "full_paragraph_independent_scholarly_verification": false,
+      "original_print_scan_checked": false,
+      "hadith_sources_all_verified": false,
+      "publication_ready": false,
+      "corrections": [
+        "Restored direct author formulation in concluding distinction between experience and knowledge."
+      ],
+      "open_issues": [
+        "Embryonic angel report attribution must be checked against primary hadith versions"
+      ]
+    }
+  ],
+  "stats": {
+    "electronic_pages_screened": 59,
+    "selected_pages_substantively_corrected": 14,
+    "exact_replacement_operations": 19,
+    "arabic_verse_repaired_pages": [
+      611,
+      623
+    ],
+    "preserved_previous_verse_repair_page": 622,
+    "app_chapters": 9,
+    "bilingual_fragments": 676,
+    "in_memory_assertions_passed": 16,
+    "actual_python_test_script_added": true,
+    "actual_python_unittest_executed": false,
+    "apk_built": false,
+    "print_scans_visually_examined": 0,
+    "fully_independently_verified_pages": 0,
+    "first_pass_electronic_coverage_end": 659,
+    "next_page_for_additional_electronic_first_pass": null,
+    "next_needed_work": "Begin full independent printed-edition and citation collation from earliest uncertified printed page 3; electronic first-pass is not publication approval."
+  },
+  "safeguards": {
+    "volume1_untouched": true,
+    "arabic_source_jsonl_not_modified": true,
+    "existing_navigation_unmodified": true,
+    "publication_ready": false,
+    "translation_independently_verified": false,
+    "previous_repairs_preserved": [
+      448,
+      463,
+      507,
+      622
+    ]
+  },
+  "notes": [
+    "Corrupted Arabic 16:128 on p622 was already repaired in parent branch and verified unchanged; do not count it again.",
+    "Arabic 2:186 on p623 was kept as an author-selected verse excerpt, with only extraneous previous-verse number removed.",
+    "Several Russian original draft files had older prose different from Android asset and were synchronized to app after selective repairs; historical unverified content was not silently certified.",
+    "Report statuses distinguish electronic presence, selective passage comparison, and print/expert certification."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "quran_candidates": 1083,
+  "quran_screen_outcomes": {
+    "requires_text_or_orthography_review": 478,
+    "reference_not_resolved": 240,
+    "ordered_substring_after_vocalization_normalization": 365
+  },
+  "reported_speech_or_term_candidates": 796,
+  "completeness_certified": false,
+  "hadith_grade_assigned": false,
+  "Q1": {
+    "url": "https://raw.githubusercontent.com/asim/quran-json-arabic/791a3cf1376e2851706e9cf01c226f8d3c9d7355/dist/quran.json",
+    "commit": "791a3cf1376e2851706e9cf01c226f8d3c9d7355",
+    "sha256": "d8a8adff387f60ce3ff7dbe3238dd9b27120bfe29d8fcb07ad2e89cad37cefd4",
+    "chapters": 114,
+    "verses": 6236,
+    "authority": "secondary_electronic_dataset_not_printed_mushaf",
+    "normalization": "NFKD; remove vowel/combining marks, tatweel, spaces, punctuation and digits; normalize alif-wasla; retain consonant order. Orthographic differences can cause false alarms."
+  }
+}

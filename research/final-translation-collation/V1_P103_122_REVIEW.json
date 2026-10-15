@@ -1,0 +1,189 @@
+{
+  "range": [
+    103,
+    122
+  ],
+  "evidence": "embedded-Arabic-only; independent agent collation, not human expert certification; edition2019 scans unavailable",
+  "pages": [
+    {
+      "page": 103,
+      "read_all_ar_ru": true,
+      "note": "Возражение джабритам не превращено в авторское утверждение о совершении Богом дурных поступков: условность в русском обозначена.",
+      "needs_expert": true,
+      "issues": [
+        "Theological claims on reported attributes/jabr: expert review."
+      ]
+    },
+    {
+      "page": 104,
+      "read_all_ar_ru": true,
+      "note": "Различены действия рабов и Бога, затем необходимость по сущности и свободное действие; оба отрицания способности сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Philosophical mujib bi-dhat terminology; expert review."
+      ]
+    },
+    {
+      "page": 105,
+      "read_all_ar_ru": true,
+      "note": "Пять сторон довода о свободном действии и переход к знанию частностей переданы последовательно.",
+      "needs_expert": true,
+      "issues": [
+        "Quran16:17; divine knowledge of particulars."
+      ]
+    },
+    {
+      "page": 106,
+      "read_all_ar_ru": true,
+      "note": "Все десять доводов о знании частностей сохранены; начало довода о пророчествах связано с продолжением p107.",
+      "needs_expert": true,
+      "issues": [
+        "Ten numbered arguments; no embedded explicit hadith reference."
+      ]
+    },
+    {
+      "page": 107,
+      "read_all_ar_ru": true,
+      "note": "Сохранены довод от хвалы к двум свидетельствам и связь посланничества с божественностью, господством и милостью.",
+      "needs_expert": true,
+      "issues": [
+        "Quran6:91 allusion; two shahadas; prophethood argument."
+      ]
+    },
+    {
+      "page": 108,
+      "read_all_ar_ru": true,
+      "note": "Мульк (владычество) и мильк (владение) различены, как и слова творения/религии; ангелы не смешаны с человеческими посланниками.",
+      "needs_expert": true,
+      "issues": [
+        "Mulk/milk distinction; angel-existence inference; scholarly review."
+      ]
+    },
+    {
+      "page": 109,
+      "read_all_ar_ru": true,
+      "note": "Отрицание посланников в русском дополнительно ограничено установленным образом поклонения; предлагается убрать отсутствующее ограничение.",
+      "needs_expert": true,
+      "issues": [
+        "Prophetic knowledge and shortest-line illustration; no new references."
+      ]
+    },
+    {
+      "page": 110,
+      "read_all_ar_ru": true,
+      "note": "Пропущено самостоятельное «если бы не посланники, были бы одной общиной»; предложено восстановить утверждение и невозможность трёх категорий без посланничества.",
+      "needs_expert": true,
+      "issues": [
+        "Quran74:24–25 begins; unnamed salaf speech claim: attribution pending."
+      ]
+    },
+    {
+      "page": 111,
+      "read_all_ar_ru": true,
+      "note": "Перечитаны доводы о возникновении мира; редакторская поправка ссылки74:24–25 честно отделена от арабской ссылки24.",
+      "needs_expert": true,
+      "issues": [
+        "Quran74:24–25 with source reference24; old-world eternity argument."
+      ]
+    },
+    {
+      "page": 112,
+      "read_all_ar_ru": true,
+      "note": "Авторское «кто из них люди истины» смягчено до «ближе к истине»; предлагается восстановить качественное утверждение.",
+      "needs_expert": true,
+      "issues": [
+        "Quran1:6–7; author polemic about Rafida."
+      ]
+    },
+    {
+      "page": 113,
+      "read_all_ar_ru": true,
+      "note": "Полемика о рафидитах, Хулагу и союзничестве сохранена как авторский текст без самостоятельного исторического подтверждения.",
+      "needs_expert": true,
+      "issues": [
+        "Historical Hulagu allegations are author assertions; Abu al-Aliya/al-Hasan tafsir attributions pending."
+      ]
+    },
+    {
+      "page": 114,
+      "read_all_ar_ru": true,
+      "note": "Универсальное «все группы» смягчено до «различные», явное «враги» до «выступают против»; предложена точная передача полемики.",
+      "needs_expert": true,
+      "issues": [
+        "Abu al-Aliya; Zayd ibn Aslam tafsir attributions; polemical universal claims."
+      ]
+    },
+    {
+      "page": 115,
+      "read_all_ar_ru": true,
+      "note": "Цепочка сведения смыслов104 Писаний сохранена с безличным «говорилось», без добавленной достоверности. Примечание неверно называет пояснение в тире скобочным.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous 104-books report: no grade assigned; Quran1:5."
+      ]
+    },
+    {
+      "page": 116,
+      "read_all_ar_ru": true,
+      "note": "Любовь и смирение, затем доверие и полагание различены; коранические доводы сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran31:25;43:87;23:84–85; tawakkul gloss."
+      ]
+    },
+    {
+      "page": 117,
+      "read_all_ar_ru": true,
+      "note": "Все шесть мест перечислены; цитата60:4 оставлена неполной и примечания этому соответствуют. «Моё содействие» для توفيقي неестественно и двусмысленно.",
+      "needs_expert": true,
+      "issues": [
+        "Quran11:88;11:123;60:4 truncated;73:8–9;13:30."
+      ]
+    },
+    {
+      "page": 118,
+      "read_all_ar_ru": true,
+      "note": "Все семь причин порядка поклонение/просьба о помощи сохранены, направление цели и средства не перевёрнуто.",
+      "needs_expert": true,
+      "issues": [
+        "Quran1:5 and names; no independent legal inference inserted."
+      ]
+    },
+    {
+      "page": 119,
+      "read_all_ar_ru": true,
+      "note": "له здесь значит «ради Него», противопоставлено به; русский «что принадлежит Аллаху» в выводе об Огне нарушает эту связь. Предложено восстановление.",
+      "needs_expert": true,
+      "issues": [
+        "له vs به; Hell permanence argument: theological expert review."
+      ]
+    },
+    {
+      "page": 120,
+      "read_all_ar_ru": true,
+      "note": "Синтаксическая исключительность и различие отдельного/присоединённого местоимений переданы; пример освобождения десяти рабов сохранён.",
+      "needs_expert": true,
+      "issues": [
+        "Sibawayh attribution pending; Quran2:40–41."
+      ]
+    },
+    {
+      "page": 121,
+      "read_all_ar_ru": true,
+      "note": "Русский текст подменяет арабское содержание: утрачены грамматический разбор إيا, повторение местоимения, начало классификации и хадис Муазу. Предложен полный перевод по арабскому корпуса.",
+      "needs_expert": true,
+      "issues": [
+        "Grammar إيا as explicit noun in quoted school; Muadh ibn Jabal prayer hadith omitted in original RU: full proposed restoration; دبر timing requires fiqh/hadith review, no grade invented."
+      ]
+    },
+    {
+      "page": 122,
+      "read_all_ar_ru": true,
+      "note": "Русский текст существенно подменяет арабский: утрачены полезнейшая мольба, слова Ибн Таймийи, вторая группа без обоих оснований и пример Иблиса. Предложен полный перевод с сохранением обрыва.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Taymiyya recollection; Iblis request example; full translation replacement must be read with p123 continuation."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "range": [
+    83,
+    102
+  ],
+  "evidence": "embedded-Arabic-only; independent agent collation, not human expert certification; edition2019 scans unavailable",
+  "pages": [
+    {
+      "page": 83,
+      "read_all_ar_ru": true,
+      "note": "Откровение пророков во сне отделено от проверяемых снов остальных; необходимость соответствия ясному откровению сохранена.",
+      "needs_expert": true,
+      "issues": [
+        "Dream claims and ritual recommendations are author text; no independent grading of predawn-dream allusion."
+      ]
+    },
+    {
+      "page": 84,
+      "read_all_ar_ru": true,
+      "note": "Переход от сновидений к двум видам исцеления передан; فساد العلم и فساد القصد различены.",
+      "needs_expert": true,
+      "issues": [
+        "Ubada ibn Samit saying; Malik dream interpretation statements: source verification pending."
+      ]
+    },
+    {
+      "page": 85,
+      "read_all_ar_ru": true,
+      "note": "Сохранены цель и средства испорченного намерения, метафора внешнего признания истины при отстранении от действительной власти.",
+      "needs_expert": false,
+      "issues": [
+        "Quran 1:5;1:6 allusions."
+      ]
+    },
+    {
+      "page": 86,
+      "read_all_ar_ru": true,
+      "note": "Кораническая цитата и авторская критика корыстного принятия истины отделены; барзах и День встречи не смешаны.",
+      "needs_expert": false,
+      "issues": [
+        "Quran 24:48–50."
+      ]
+    },
+    {
+      "page": 87,
+      "read_all_ar_ru": true,
+      "note": "Выпущено точное авторское число шести составляющих лекарства, заменено «несколькими»; предложено восстановить число.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 1:5–6; Ibn Taymiyya remembered saying; exact enumeration six in Arabic."
+      ]
+    },
+    {
+      "page": 88,
+      "read_all_ar_ru": true,
+      "note": "Перечитаны противопоставление сердец и тел и начало сообщения Абу Саида; передаваемый рассказ не превращён в общее медицинское наставление.",
+      "needs_expert": true,
+      "issues": [
+        "Abu Mutawakkil/Abu Said ruqya report attributed to al-Sahih: book and variants pending."
+      ]
+    },
+    {
+      "page": 89,
+      "read_all_ar_ru": true,
+      "note": "Сохранено авторское объяснение яда через качество души; современную медицинскую оценку в перевод не вношу.",
+      "needs_expert": true,
+      "issues": [
+        "Continuation of ruqya report and author medical reasoning; not independently authenticated."
+      ]
+    },
+    {
+      "page": 90,
+      "read_all_ar_ru": true,
+      "note": "Обнаружена лексическая ошибка «сглаживающего» вместо наводящего сглаз; последующее местоимение уточнено по смыслу العائن. Историческое объяснение автора не исправлялось.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 2:251; evil-eye explanation authorial."
+      ]
+    },
+    {
+      "page": 91,
+      "read_all_ar_ru": true,
+      "note": "Три условия исцеления и обязательность Божьего дозволения сохранены; отрицательные условия проверены по следующему обобщению.",
+      "needs_expert": true,
+      "issues": [
+        "Author ruqya theory: historical claims retained, not independently validated."
+      ]
+    },
+    {
+      "page": 92,
+      "read_all_ar_ru": true,
+      "note": "Автобиографический опыт автора отделён от дальнейшего общего доказательства; борьба с противниками истины сохранена без усиления.",
+      "needs_expert": true,
+      "issues": [
+        "Author autobiographical ruqya/Zamzam experience; no independent empirical verification."
+      ]
+    },
+    {
+      "page": 93,
+      "read_all_ar_ru": true,
+      "note": "Три пути и Медина как образ чеканки переданы; слова названных толкователей отделены от авторского вывода.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Abbas; Jabir; Ibn Masud; Ali; Sahl ibn Abdallah; marfu report attributed to Tirmidhi without added grade."
+      ]
+    },
+    {
+      "page": 94,
+      "read_all_ar_ru": true,
+      "note": "Переход от общего критерия к подробному доказательству Творца и разделение признающих/отрицающих сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Bakr ibn Abdallah al-Muzani attribution."
+      ]
+    },
+    {
+      "page": 95,
+      "read_all_ar_ru": true,
+      "note": "В арабском первая цитата14:10 оборвана, в русском полна. Два примечания противоречат друг другу и одно ошибочно утверждает восстановление арабского; предложено исправление.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 14:10 truncated first quote/full second fragment; Ibn Taymiyya saying; anonymous verse."
+      ]
+    },
+    {
+      "page": 96,
+      "read_all_ar_ru": true,
+      "note": "В передаче критикуемого учения местоименная связь وهو حقيقة هذا العالم заменена утверждением о сущности Бога; предложено вернуть «Он — истинная сущность этого мира».",
+      "needs_expert": true,
+      "issues": [
+        "Controversial ontological terminology presented as opponent view; specialist review."
+      ]
+    },
+    {
+      "page": 97,
+      "read_all_ar_ru": true,
+      "note": "Мباينة переводится местами как простое отличие; p098 специально различает مغاير и مباين. Предложена последовательная «отдельность/отделённость» в авторском аргументе.",
+      "needs_expert": true,
+      "issues": [
+        "Mubayana/mughayara distinction; theological specialist review."
+      ]
+    },
+    {
+      "page": 98,
+      "read_all_ar_ru": true,
+      "note": "Явное различение отличия مغاير и отдельности مباينة передано; это подтверждает необходимость терминологической правки p097/099.",
+      "needs_expert": true,
+      "issues": [
+        "Theological argument on separation vs distinction; no source corruption established."
+      ]
+    },
+    {
+      "page": 99,
+      "read_all_ar_ru": true,
+      "note": "То же مباين требует «отделённого», а не одного «отличного». Критика кадаритов маркирована как передаваемое автором воззрение оппонента.",
+      "needs_expert": true,
+      "issues": [
+        "Qadarite/Magian polemic; Quran 76:30/81:29 begins."
+      ]
+    },
+    {
+      "page": 100,
+      "read_all_ar_ru": true,
+      "note": "Проверены отрицания могущества/воли в передаваемом учении; различие платы как заслуженного права и дара сохранено.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 76:30;81:29;1:5–6."
+      ]
+    },
+    {
+      "page": 101,
+      "read_all_ar_ru": true,
+      "note": "Различение نعبدك и إياك نعبد с исключительностью адресата сохранено; два вида приобщения сотоварищей различены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 1:5–7; tawhid classification."
+      ]
+    },
+    {
+      "page": 102,
+      "read_all_ar_ru": true,
+      "note": "Связь хвалы с полнотой атрибутов и переход к сообщаемым откровением качествам сохранены. Формула невозможности слегка смягчена в русском, но логическое противоречие названо.",
+      "needs_expert": true,
+      "issues": [
+        "Quran1 names/predicates; istiwa and nightly descent discussion begins; hadith source/variant pending."
+      ]
+    }
+  ]
+}

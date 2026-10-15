@@ -16,8 +16,8 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 19
-        versionName = "1.19-reference-book"
+        versionCode = 58
+        versionName = "1.58-volume2-pages3-659-translation-collation"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
@@ -27,8 +27,14 @@ android {
         keyPassword = System.getenv("MADARIJ_KEY_PASSWORD")
     }
     buildTypes {
+        debug {
+            // A debug APK has a new signing key in each CI run. Use a distinct
+            // application ID so the user's installed reader and its Room data
+            // are never uninstalled or overwritten to try the preview.
+            applicationIdSuffix = ".qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
+        }
         release {
-            applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".readerpolish"
+            applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".collation158"
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
@@ -55,6 +61,23 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.7")
     testImplementation("junit:junit:4.13.2")
 }
+val generateBookTextures by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/generate_book_textures.py")
+}
+// The OFL-licensed Cyrillic handwriting face is verified against the official
+// Google Fonts Git object hash, then packaged as an Android font resource.
+val prepareHandwritingFont by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/prepare_handwriting_font.py")
+}
+val verifyKnowledgeReminders by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/check_home_reminders.py")
+}
+tasks.matching { it.name == "preBuild" }.configureEach {
+    dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareHandwritingFont)
+}
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "-m", "tools.content_gate", "app/src/main/assets/corpus.json")
@@ -63,6 +86,7 @@ val verifyReleaseAssets by tasks.registering {
     doLast {
         check(file("src/main/res/font/naskh.ttf").isFile) { "Embedded Naskh missing" }
         check(file("src/main/assets/fonts/OFL.txt").isFile) { "Font license missing" }
+        check(file("src/main/assets/fonts/BadScript-OFL.txt").isFile) { "New handwriting font license missing" }
         if (releaseKey == null) logger.lifecycle("Owner signing not configured; using development signing for test APK")
     }
 }

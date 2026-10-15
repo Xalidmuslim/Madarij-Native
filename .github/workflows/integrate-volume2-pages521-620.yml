@@ -1,0 +1,57 @@
+name: Integrate 100 volume-two pages 521-620
+
+on:
+  push:
+    branches: [codex/madarij-v155-volume2-pages521-620-100page-batch]
+    paths: [.github/workflows/integrate-volume2-pages521-620.yml, tools/integrate_volume2_pages521_620.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - name: Generate original Arabic files and all 100 Russian bilingual paragraphs
+        run: |
+          python3 -m py_compile tools/integrate_volume2_pages521_620.py tools/validate_volume2_preview.py
+          python3 tools/integrate_volume2_pages521_620.py
+          python3 tools/validate_volume2_preview.py
+      - name: Check continuous page mapping, original source, previous chapters and navigation
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          v=json.loads(Path('app/src/main/assets/volume2-preview.json').read_text())
+          t=json.loads(Path('app/src/main/assets/volume2-structure.json').read_text())
+          ch=v['chapters']
+          assert len(ch)==8 and len(t['groups'])==8
+          assert [len(c['paragraphs']) for c in ch[1:]]==[70,70,70,100,100,100,100]
+          latest=ch[-1]['paragraphs']
+          assert len(latest)==100
+          assert [x['id'] for x in latest]==[f'madarij-v2-p{i:03d}-draft' for i in range(521,621)]
+          pars=[p for c in ch for p in c['paragraphs']]
+          assert len({p['id'] for p in pars})==len(pars)
+          assert all(p['ar'].strip() and p['ru'].strip() for p in pars)
+          assert v['translation_completeness']=='preliminary_russian_pages_3_to_620'
+          assert v['publication_ready'] is False and v['translation_independently_verified'] is False
+          assert set(c['id'] for c in ch)==set(v['expected_chapter_ids'])
+          assert set(it['chapterId'] for group in t['groups'] for it in group['items'])==set(v['expected_chapter_ids'])
+          files=sorted(Path('research/volume2-batch-521-620/original-arabic').glob('arabic-pages-*.json'))
+          assert len(files)==10
+          print('PASS 100 of 100 translated pages 521-620, source Arabic originals, prior chapters, navigation, explicit draft flags')
+          PY
+      - name: Commit only second-volume generated assets and review report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-521-620/review-report.json research/volume2-batch-521-620/original-arabic/
+          git diff --cached --check
+          git commit -m "content(v2): integrate original Arabic and 100-page Russian draft 521-620 into Android v1.55"
+          git push origin HEAD:codex/madarij-v155-volume2-pages521-620-100page-batch

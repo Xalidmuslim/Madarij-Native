@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""Rebuild book bitmaps at compile time, not during Compose frame rendering."""
+from PIL import Image, ImageEnhance, ImageOps
+from pathlib import Path
+import math
+ROOT=Path(__file__).resolve().parents[1]
+D=ROOT/"app/src/main/res/drawable-nodpi"
+O=ROOT/".book-original-images"
+O.mkdir(exist_ok=True)
+def source(name):
+    src=O/name
+    if not src.exists(): src.write_bytes((D/name).read_bytes())
+    return Image.open(src).convert("RGB")
+paper=source("reference_paper.webp")
+hero=source("library_hero.webp")
+# Subtle amber colour grading, retaining the original composition.
+hero=ImageEnhance.Color(hero).enhance(.85)
+hero=ImageEnhance.Contrast(hero).enhance(.94)
+hero=Image.blend(hero,Image.new("RGB",hero.size,(67,42,25)),.055)
+w,h=hero.size
+alpha=Image.new("L",(w,h),255)
+px=alpha.load()
+for x in range(w):
+    edge=4*math.sin(x/21)+2*math.sin(x/8)
+    start=h*.54+edge
+    stop=h*.98+edge
+    for y in range(max(0,int(start)),h):
+        t=max(0.,min(1.,(y-start)/(stop-start)))
+        px[x,y]=int(255*(1-t*t*(3-2*t)))
+result=hero.convert("RGBA")
+result.putalpha(alpha)
+result.save(D/"library_hero.webp","WEBP",quality=83,method=6)
+# Static quiet-center folded-paper frame used by existing card components.
+w,h=600,300
+card=ImageOps.fit(paper,(w,h),method=Image.Resampling.LANCZOS)
+card=ImageEnhance.Color(card).enhance(.60)
+card=Image.blend(card,Image.new("RGB",(w,h),(250,240,222)),.45)
+p=card.load()
+for y in range(h):
+    for x in range(w):
+        distance=min(x,y,w-1-x,h-1-y)
+        shade=max(0,int(10*(1-distance/31)**1.5)) if distance<31 else 0
+        if y<30 or y>h-30:
+            fold=(math.sin(x/38+math.sin(x/87))+math.sin(x/21)*.43)
+            shade+=max(0,int(fold*1.7))
+        r,g,b=p[x,y]
+        p[x,y]=(max(0,r-shade),max(0,g-shade),max(0,b-shade))
+card.save(D/"card_paper.webp","WEBP",quality=74,method=6)
+# Old paper fibers preserved, warm desaturated sage-ivory instead of cold green.
+# Use the visibly fibrous antique page rather than the nearly flat old sage.
+# Keep aged corners but avoid cold green. This texture has no runtime cost.
+size=source("paper_sage.webp").size
+gray=ImageOps.grayscale(paper.resize(size,Image.Resampling.LANCZOS))
+# Restore the antique fibers, worn corners and creases which were too faint.
+# Slightly warmer ivory-sage, desaturated and brighter than the warm parchment.
+gray=ImageEnhance.Contrast(gray).enhance(1.47)
+gray=ImageEnhance.Brightness(gray).enhance(.99)
+warm=ImageOps.colorize(gray,black=(176,163,135),white=(253,249,235))
+warm=Image.blend(warm,Image.new("RGB",warm.size,(245,241,228)),.12)
+warm.save(D/"paper_sage.webp","WEBP",quality=83,method=6)
+# The primary reading action uses just the leather material without the nav frame.
+leather=source("navigation_leather.webp")
+lw,lh=leather.size
+leather_crop=leather.crop((int(lw*.16),int(lh*.24),int(lw*.84),int(lh*.76)))
+leather_crop=ImageOps.fit(leather_crop,(860,120),method=Image.Resampling.LANCZOS)
+leather_crop=ImageEnhance.Contrast(leather_crop).enhance(.80)
+leather_crop=Image.blend(leather_crop,Image.new("RGB",leather_crop.size,(45,28,20)),.30)
+leather_crop.save(D/"cta_leather.webp","WEBP",quality=75,method=6)
+# Transparent icons from the approved 8-item generated bronze/leather artwork.
+# Atlas is shipped as a single authored asset in tools/assets; individual tiny
+# drawables are generated at build time so Compose can use cached painterResource.
+atlas=Image.open(ROOT/"tools/assets/antique_icons_atlas.webp").convert("RGBA")
+assert atlas.size == (432,216), f"Unexpected antique icon atlas: {atlas.size}"
+antique=("home","contents","bookmarks","search","study","glossary","notes","more")
+for index,name in enumerate(antique):
+    x=(index%4)*108
+    y=(index//4)*108
+    icon=atlas.crop((x,y,x+108,y+108))
+    assert icon.getchannel("A").getbbox() is not None, name
+    icon.save(D/f"book_icon_{name}.webp","WEBP",quality=79,method=6,exact=True)
+print("Generated: library_hero, card_paper, paper_sage, cta_leather and 8 antique book icons")

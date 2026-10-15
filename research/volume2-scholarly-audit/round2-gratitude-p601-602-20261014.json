@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-14",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/madarij-v158-deep-audit-p601-602-20261014",
+  "base_branch": "codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+  "volume": 2,
+  "printed_pages": [
+    601,
+    602
+  ],
+  "source_edition": "Nabil ibn Nassar as-Sindi, 2019",
+  "scope": "Targeted second-round electronic text collation. Not full printed-scan examination, nor independent scholarly or hadith verification.",
+  "comparison_sources": [
+    "research/volume2-batch-521-620/original-arabic/arabic-pages-601-610.json",
+    "app/src/main/assets/volume2-preview.json",
+    "https://quran.com/27/40"
+  ],
+  "corrections": [
+    {
+      "page": 601,
+      "type": "quran_citation_reordering",
+      "before": "{شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ وَمَنْ} [النمل: ٤٠]",
+      "after": "{وَمَنْ شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ} [النمل: ٤٠]",
+      "verification": "Quran 27:40 text checked; print image of the target 2019 edition not visually checked",
+      "arabic_source_jsonl_edited": false
+    },
+    {
+      "page": 601,
+      "type": "russian_authorial_fidelity",
+      "details": [
+        "Restored full negative triplet about no need for strengthening, status or multitude",
+        "Restored qualification about thanking despite inability to compensate",
+        "Removed added evaluation 'excessively thanks' and modernized interpretive gloss",
+        "Kept the author's sentence open across p601/p602"
+      ],
+      "independently_verified": false
+    },
+    {
+      "page": 602,
+      "type": "russian_authorial_fidelity",
+      "details": [
+        "Restored original progression of repeated blessings and gratitude",
+        "Removed unsupported comparison to earthly king from passage on 'this aspect alone'",
+        "Retained author's sanctuary-to-sanctuary metaphor and critique of the first distinction",
+        "Removed editorial religious commentary not stated verbatim"
+      ],
+      "independently_verified": false
+    }
+  ],
+  "preserved": {
+    "first_volume_unchanged": true,
+    "unrelated_674_fragments_unchanged": true,
+    "app_chapters": 9,
+    "app_fragments": 676,
+    "publication_ready": false,
+    "translation_independently_verified": false,
+    "design_unchanged": true,
+    "arabic_source_jsonl_untouched": true
+  },
+  "outstanding": [
+    "Visually compare 2019 printed page scans for p601–602",
+    "Independent scholarly check of metaphor حرم إلى حرم, first distinction and doctrinal nuance",
+    "Continue full paragraph-level collation and verify quotations, hadith, and apparatus"
+  ],
+  "tests": {
+    "file": "tools/test_volume2_pages601_602.py",
+    "new_assertions_checked_in_memory": true,
+    "python_unittest_executed": false
+  },
+  "apk_built": false
+}

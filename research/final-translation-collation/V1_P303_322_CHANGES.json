@@ -1,0 +1,138 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p308-draft",
+    "printed_pages": [
+      308
+    ],
+    "old": "по всей видимости, имел в виду первый смысл",
+    "new": "имел в виду лишь первый смысл",
+    "arabic_anchor": "فما أراد إلّا المعنى الأوّل",
+    "reason": "Ограничительная категоричность автора заменена предположением.",
+    "before": "по всей видимости, имел в виду первый смысл",
+    "after": "имел в виду лишь первый смысл",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p308-draft",
+    "printed_pages": [
+      308
+    ],
+    "old": "То есть смотреть одним взглядом на предопределение и понимать его",
+    "new": "То есть смотреть одним взглядом на предопределение и оправдывать их с этой стороны",
+    "arabic_anchor": "فينظرَ بعين القدَر ويعذِرَهم بها",
+    "reason": "Оправдывать их заменено на понимать его, меняя предмет критики.",
+    "before": "То есть смотреть одним взглядом на предопределение и понимать его",
+    "after": "То есть смотреть одним взглядом на предопределение и оправдывать их с этой стороны",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p313-draft",
+    "printed_pages": [
+      313
+    ],
+    "old": "они не сдаются ему бездействуя и отказ от движения и поиска средств",
+    "new": "они не сдаются ему и не отказываются от движения и поиска средств",
+    "arabic_anchor": "لا الاستسلامُ لها وتركُ الحركة والحيلة",
+    "reason": "Исправление разрушенного русского синтаксиса. Основная и независимая проверка: отрицание охватывает оба действия, не деепричастное сопровождение.",
+    "before": "они не сдаются ему бездействуя и отказ от движения и поиска средств",
+    "after": "они не сдаются ему и не отказываются от движения и поиска средств",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p314-draft",
+    "printed_pages": [
+      314
+    ],
+    "old": "хотя послушанию и покаянию присуще внешний и внутренний почёт. Оно не должно быть его целью",
+    "new": "хотя послушанию и покаянию присущ внешний и внутренний почёт. Почёт не должен быть его целью",
+    "arabic_anchor": "فلا يكون مقصودُه العزَّة",
+    "reason": "Согласование сказуемого и местоимения с почётом.",
+    "before": "хотя послушанию и покаянию присуще внешний и внутренний почёт. Оно не должно быть его целью",
+    "after": "хотя послушанию и покаянию присущ внешний и внутренний почёт. Почёт не должен быть его целью",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p320-draft",
+    "printed_pages": [
+      320
+    ],
+    "old": "Такое познание рождает поклонение Аллаху в соответствии с этими именами, которая совершенно не возникает",
+    "new": "Такое познание рождает поклонение Аллаху в соответствии с этими именами, которое совершенно не возникает",
+    "arabic_anchor": "وتوجب له هذه المعرفةُ عبوديّةً بهذه الأسماء لا تحصل",
+    "reason": "Согласование относительного местоимения с поклонением.",
+    "before": "Такое познание рождает поклонение Аллаху в соответствии с этими именами, которая совершенно не возникает",
+    "after": "Такое познание рождает поклонение Аллаху в соответствии с этими именами, которое совершенно не возникает",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p305-draft-editor-note-01",
+    "printed_pages": [
+      305
+    ],
+    "old": "Порядок частей цитаты аль-Исра: 111 сохранен по исходнику.",
+    "new": "Во встроенном арабском тексте начало цитаты 17:111 («الحمد لله») переставлено в конец. В русском переводе эти слова не переданы. Требуется сверка со сканом издания.",
+    "arabic_anchor": "",
+    "reason": "Точно описать соответствующий авторский абзац в связи с соседней страницей: текущая заметка неверно утверждает сохранённую границу или повреждение сквозной цитаты.",
+    "before": "Порядок частей цитаты аль-Исра: 111 сохранен по исходнику.",
+    "after": "Во встроенном арабском тексте начало цитаты 17:111 («الحمد لله») переставлено в конец. В русском переводе эти слова не переданы. Требуется сверка со сканом издания.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p310-draft-editor-note-01",
+    "printed_pages": [
+      310
+    ],
+    "old": "Последняя цитата начинается в исходнике словами «وما» и продолжается на следующей странице; граница сохранена.",
+    "new": "Цитата 43:76 начинается на этой странице словами «وما» и продолжается на следующей. В русском переводе вся цитата помещена здесь, а ссылка — на следующей странице.",
+    "arabic_anchor": "",
+    "reason": "Точно описать соответствующий авторский абзац в связи с соседней страницей: текущая заметка неверно утверждает сохранённую границу или повреждение сквозной цитаты.",
+    "before": "Последняя цитата начинается в исходнике словами «وما» и продолжается на следующей странице; граница сохранена.",
+    "after": "Цитата 43:76 начинается на этой странице словами «وما» и продолжается на следующей. В русском переводе вся цитата помещена здесь, а ссылка — на следующей странице.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p311-draft-editor-note-01",
+    "printed_pages": [
+      311
+    ],
+    "old": "Начало страницы содержит повреждённое или обрезанное кораническое цитирование: переведено только имеющееся арабское словосочетание, без восстановления отрицания.",
+    "new": "Начало страницы продолжает цитату 43:76, начатую словами «وما» на предыдущей странице. В русском переводе цитата целиком приведена на предыдущей странице; здесь оставлена её ссылка.",
+    "arabic_anchor": "",
+    "reason": "Точно описать соответствующий авторский абзац в связи с соседней страницей: текущая заметка неверно утверждает сохранённую границу или повреждение сквозной цитаты.",
+    "before": "Начало страницы содержит повреждённое или обрезанное кораническое цитирование: переведено только имеющееся арабское словосочетание, без восстановления отрицания.",
+    "after": "Начало страницы продолжает цитату 43:76, начатую словами «وما» на предыдущей странице. В русском переводе цитата целиком приведена на предыдущей странице; здесь оставлена её ссылка.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

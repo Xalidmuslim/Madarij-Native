@@ -1,0 +1,54 @@
+name: Integrate verified-coverage 70-page Russian draft into volume 2
+
+on:
+  push:
+    branches: [codex/madarij-v149-volume2-70page-translation-batch-11-80]
+    paths:
+      - .github/workflows/integrate-volume2-70pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out exact 70-page editorial branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Verify draft source files and generate Android assets
+        run: |
+          python3 -m py_compile tools/integrate_volume2_70pages.py tools/validate_volume2_preview.py
+          python3 tools/integrate_volume2_70pages.py
+          python3 tools/validate_volume2_preview.py
+      - name: Verify all 70 page IDs and zero missing Russian texts
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path("app/src/main/assets/volume2-preview.json").read_text())
+          chapters=j["chapters"]
+          assert len(chapters)==2
+          assert chapters[0]["id"]=="madarij-v2-p003-views-of-sin"
+          c=chapters[1]
+          assert len(c["paragraphs"]) == 70
+          assert [p["id"] for p in c["paragraphs"]] == [
+              f"madarij-v2-p{x:03d}-draft" for x in range(11,81)]
+          assert all(p["ar"].strip() and p["ru"].strip() for p in c["paragraphs"])
+          assert not j["translation_independently_verified"]
+          assert not j["publication_ready"]
+          assert len(set(p["id"] for ch in chapters for p in ch["paragraphs"]))==sum(len(ch["paragraphs"]) for ch in chapters)
+          print("PASS: All seventy pages have source text and a Russian translation draft.")
+          PY
+      - name: Commit generated assets, leave first volume unchanged
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/volume2-preview.json app/src/main/assets/volume2-structure.json research/volume2-batch-11-80/review-report.json
+          git diff --cached --check
+          git commit -m "content(v2): bundle all seventy translated pages 11–80 into native reader"
+          git push origin HEAD:codex/madarij-v149-volume2-70page-translation-batch-11-80

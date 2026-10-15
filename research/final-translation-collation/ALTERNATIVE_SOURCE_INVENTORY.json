@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "version": "JK000081",
+      "source_commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+      "sha256": "677bb21c026e88c546c14bc9468b4293eaabf811247dcb3f215fbf1bfd4c633f",
+      "corpus_pages": [
+        3,
+        42
+      ],
+      "corpus_tokens": 6054,
+      "alternative_tokens": 5970,
+      "matching_tokens": 5585
+    },
+    {
+      "version": "Shamela0008370",
+      "source_commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+      "sha256": "bedb9f721dbdc23ac7c65c952f75b4a789901a9cb46d3a56ae5eed32d4c617f0",
+      "corpus_pages": [
+        3,
+        42
+      ],
+      "corpus_tokens": 6054,
+      "alternative_tokens": 6004,
+      "matching_tokens": 5682
+    }
+  ],
+  "edition_2019_verified": false,
+  "visual_collation": false,
+  "full_texts_redistributed": false
+}

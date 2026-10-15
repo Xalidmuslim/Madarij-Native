@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "scope": "Arabic/Russian source collation pp596–600",
+  "pages_compared": [
+    596,
+    600
+  ],
+  "edited_pages": [
+    596,
+    597,
+    598,
+    599
+  ],
+  "source": "Electronic Arabic transcription, not visual original print scan",
+  "findings": [
+    "Separated hadith grading editor's note from p596 authorial narrative",
+    "Restored unbroken source quotation across p596–597",
+    "Restored claim that gratitude is unsurpassed versus the view of fana, spanning p597–598",
+    "Recovered the attributed opponents' philosophical paradox of contingent giving thanks to the Eternal on p598",
+    "Recovered vivid authorial warning on p599, instead of summary"
+  ],
+  "limitations": {
+    "print_2019_original_checked": false,
+    "hadith_grading_completed": false,
+    "all_footnotes_collated": false,
+    "publisher_ready": false,
+    "apk_built": false
+  }
+}

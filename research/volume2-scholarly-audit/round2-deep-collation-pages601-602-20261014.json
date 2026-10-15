@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-14",
+  "base_branch": "codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+  "working_branch": "codex/madarij-v158-deep-audit-p601-602-20261014",
+  "printed_edition": "Volume 2, edited by Nabil ibn Nassar as-Sindi, 2019",
+  "scope": "Second-pass electronic AR-RU collation of pages 601-602 only; authorial phrasing restored and displaced Quran 27:40 words reordered in application and derived page copy.",
+  "pages": [
+    {
+      "printed_page": 601,
+      "changes": [
+        "Restored Arabic Quran 27:40 clause to وَمَنْ شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ as separately confirmed against Quran text.",
+        "Replaced interpretive Russian summary with close Russian rendering of the author's argument, including the ruler's need for services, divine self-sufficiency and non-equivalence of gratitude as compensation."
+      ],
+      "arabic_electronic_source_compared": true,
+      "printed_2019_scan_visually_compared": false,
+      "independently_scholarly_verified": false,
+      "publication_ready": false
+    },
+    {
+      "printed_page": 602,
+      "changes": [
+        "Restored precise sequence of divine favour, gratitude and benefit to the worshipper.",
+        "Restored author's imagery 'from one sanctuary to another' and the first-distinction comparison; removed extra explanatory interpretation not present in authorial line."
+      ],
+      "arabic_electronic_source_compared": true,
+      "printed_2019_scan_visually_compared": false,
+      "independently_scholarly_verified": false,
+      "publication_ready": false
+    }
+  ],
+  "quran_reference": "https://quran.com/27/40",
+  "source_arabic_corpus_unchanged": "research/volume2-source/arabic_pages.jsonl",
+  "app_asset": "app/src/main/assets/volume2-preview.json",
+  "original_derived_page_copy": "research/volume2-batch-521-620/original-arabic/arabic-pages-601-610.json",
+  "russian_draft": "research/volume2-batch-521-620/russian-pages-601-610.json",
+  "regression_test": "tools/test_volume2_pages601_602.py",
+  "preserved_others": true,
+  "remaining": [
+    "Visually compare original printed page images 601-602 with 2019 edition.",
+    "Have philologist/scholar validate theological terminology, the 'holy precinct to holy precinct' metaphor and source quotations.",
+    "Do not mark these pages publication-ready."
+  ],
+  "publication_ready": false,
+  "apk_built": false
+}

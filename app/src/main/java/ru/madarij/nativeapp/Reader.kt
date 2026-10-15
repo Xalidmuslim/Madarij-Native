@@ -66,22 +66,35 @@ fun Reader(
     var chapterTab by rememberSaveable(chapter.id) { mutableIntStateOf(0) }
     val context = LocalContext.current
     val actionScope = rememberCoroutineScope()
-    val listState = rememberLazyListState()
+    // A chapter transition must never inherit the previous chapter's end-of-list
+    // position. Otherwise the 'Отметить прочитанным' footer flashes briefly.
     val chapters by vm.chapters.collectAsStateWithLifecycle()
+    val members = remember(chapters, chapter.id) {
+        LogicalReadingSections.members(chapters, chapter.id).ifEmpty { listOf(chapter) }
+    }
+    val memberIds = remember(members) { members.map { it.id } }
+    val sectionKey = remember(memberIds) { memberIds.joinToString("|") }
+    val sectionRoot = members.first()
+    val sectionId = sectionRoot.id
+    val logicalChapters = remember(chapters) { LogicalReadingSections.roots(chapters) }
+    val chapterIndex = logicalChapters.indexOfFirst { it.id == sectionId }
+    val listState = remember(sectionId) { androidx.compose.foundation.lazy.LazyListState() }
     val read by vm.read.collectAsStateWithLifecycle()
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle()
-    val notesFlow = remember(chapter.id) { vm.repository.dao.notes(chapter.id) }
-    val notes by notesFlow.collectAsStateWithLifecycle(emptyList())
+    val allNotes by vm.notes.collectAsStateWithLifecycle()
+    val notes = remember(allNotes, memberIds) { allNotes.filter { it.chapterId in memberIds } }
     val groups = rememberStructure()
-    val chapterGroup = groups.find { g -> g.items.any { it.chapterId == chapter.id } }
-    val chapterStructure = chapterGroup?.items?.find { it.chapterId == chapter.id }
-    val topicsByParagraph = remember(chapterStructure) { chapterStructure?.topics?.associateBy { it.paragraphId }.orEmpty() }
+    val chapterGroup = groups.find { g -> g.items.any { it.chapterId == sectionId } }
+    val chapterStructure = chapterGroup?.items?.find { it.chapterId == sectionId }
+    val sectionTopics = remember(groups, memberIds) {
+        groups.flatMap { it.items }.filter { it.chapterId in memberIds }.flatMap { it.topics }
+    }
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
     val learning = remember { LearningRepository(context.applicationContext) }
     val termsByParagraph = remember(learning) { learning.terms.groupBy { it.sourceParagraphId } }
-    var paragraphs by remember(chapter.id) { mutableStateOf<List<Paragraph>>(emptyList()) }
-    var loaded by remember(chapter.id) { mutableStateOf(false) }
-    var ready by remember(chapter.id) { mutableStateOf(false) }
+    var paragraphs by remember(sectionKey) { mutableStateOf<List<Paragraph>>(emptyList()) }
+    var loaded by remember(sectionKey) { mutableStateOf(false) }
+    var ready by remember(sectionKey) { mutableStateOf(false) }
     var anchorConsumed by rememberSaveable(chapter.id, anchor) { mutableStateOf(false) }
     var matchRevealed by rememberSaveable(chapter.id, anchor, query) { mutableStateOf(false) }
     var loadingError by remember(chapter.id) { mutableStateOf("") }
@@ -107,18 +120,22 @@ fun Reader(
     val displayRussian = remember(paragraphs, query) { if (query.isBlank()) buildReaderDisplayRussian(paragraphs) else paragraphs.associate { it.id to it.ru } }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
     fun savePosition() {
-        if (ready) currentParagraph?.let { vm.savePosition(chapter.id, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
+        if (ready) currentParagraph?.let { vm.savePosition(sectionId, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
     }
     fun recordTime() {
         if (activeSince[0] > 0L) {
             val now = SystemClock.elapsedRealtime()
             val seconds = ((now - activeSince[0]) / 1000).toInt()
-            if (seconds > 0 && ready) currentParagraph?.let { vm.recordReading(chapter.id, it.id, seconds) }
+            if (seconds > 0 && ready) currentParagraph?.let { vm.recordReading(sectionId, it.id, seconds) }
             activeSince[0] = now
         }
     }
-    LaunchedEffect(chapter.id, retry) {
-        try { paragraphs = vm.repository.dao.paragraphs(chapter.id); loaded = true; loadingError = "" }
+    LaunchedEffect(sectionKey, retry) {
+        try {
+            paragraphs = members.flatMap { vm.repository.dao.paragraphs(it.id) }
+            loaded = true
+            loadingError = ""
+        }
         catch (e: kotlinx.coroutines.CancellationException) { throw e }
         catch (_: Exception) { loadingError = "Не удалось открыть текст. Повторите загрузку." }
     }
@@ -130,6 +147,7 @@ fun Reader(
                 listState.scrollToItem(0, 0)
             } else {
                 val old = vm.repository.dao.position(chapter.id)
+                    ?: vm.repository.dao.position(sectionId)
                 val target = if (anchor != null && !anchorConsumed) anchor else old?.paragraphId
                 val found = visible.indexOfFirst { it.id == target }
                 if (found >= 0) listState.scrollToItem(found + 1, if (target == anchor && !anchorConsumed) 0 else old?.offset ?: 0)
@@ -159,18 +177,19 @@ fun Reader(
     LaunchedEffect(chapter.id, ready) { if (ready) while (true) { delay(30_000); recordTime() } }
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
     fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + (if (settings.showArabic && p.ar.isNotBlank()) p.ar + "\n\n" else "") + p.ru
-    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapter.title}\nЛитературная сверка завершена · проверка источников отдельно\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
+    fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\n" +
+        (if (chapter.volume == 2) "Литературная сверка завершена · научная проверка источников не завершена" else "Литературная сверка завершена · проверка источников отдельно") +
+        "\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
     fun copy(text: String) { (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText(chapter.title, text)); message = "Текст скопирован" }
     fun share(text: String) { context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_SUBJECT, chapter.title); putExtra(Intent.EXTRA_TEXT, text) }, "Поделиться текстом")) }
-    fun newBookmark(paragraph: Paragraph?) { bookmarkAnchor = paragraph?.id; val existing=bookmarks.find {it.chapterId==chapter.id && it.paragraphId==paragraph?.id};bookmarkTitle = existing?.title ?: chapter.title; bookmarkNote = existing?.note.orEmpty(); bookmarkDialog = true }
+    fun newBookmark(paragraph: Paragraph?) { bookmarkAnchor = paragraph?.id; val existing=bookmarks.find {it.chapterId==(paragraph?.chapterId ?: sectionId) && it.paragraphId==paragraph?.id};bookmarkTitle = existing?.title ?: (chapterStructure?.title ?: sectionRoot.title); bookmarkNote = existing?.note.orEmpty(); bookmarkDialog = true }
     fun newNote(paragraph: Paragraph?) { noteAnchor = paragraph?.id; noteText = ""; noteDialog = true }
     val progress by remember(visible) { derivedStateOf { if (visible.isEmpty()) 0 else ((listState.firstVisibleItemIndex.toFloat() / visible.size) * 100).toInt().coerceIn(0, 100) } }
-    val chapterIndex = chapters.indexOfFirst { it.id == chapter.id }
     val density = androidx.compose.ui.platform.LocalDensity.current
     val backGestureInset = with(density) { 48.dp.toPx() }
     val swipeThreshold = with(density) { 56.dp.toPx() }
     val swipeLockDistance = with(density) { 9.dp.toPx() }
-    val swipeModifier = Modifier.pointerInput(chapter.id, chapters, backGestureInset, swipeThreshold, swipeLockDistance) {
+    val swipeModifier = Modifier.pointerInput(sectionId, logicalChapters, backGestureInset, swipeThreshold, swipeLockDistance) {
         awaitEachGesture {
             val down = awaitFirstDown(requireUnconsumed = false)
             var totalX = 0f
@@ -203,7 +222,7 @@ fun Reader(
                     ReaderPageSwipe.PREVIOUS -> chapterIndex - 1
                     null -> -1
                 }
-                chapters.getOrNull(targetIndex)?.let { target ->
+                logicalChapters.getOrNull(targetIndex)?.let { target ->
                     savePosition()
                     recordTime()
                     navigate(target.id)
@@ -211,9 +230,9 @@ fun Reader(
             }
         }
     }
-    Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
+    Column(Modifier.fillMaxSize().background(Color.Transparent)) {
         MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
-        Box(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.background).statusBarsPadding()) {
+        Box(Modifier.fillMaxWidth().background(Color.Transparent).statusBarsPadding()) {
             Box(Modifier.fillMaxWidth().heightIn(min = 54.dp)) {
                 Row(
                     Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 2.dp),
@@ -223,20 +242,22 @@ fun Reader(
                     ReaderControl("‹") { onBack() }
                     Column(Modifier.weight(1f).clickable { chapterPanel = true },horizontalAlignment = Alignment.CenterHorizontally) {
                         Text("Том ${chapter.volume}",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
-                        Text(chapterStructure?.title ?: chapter.title,style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 1,overflow = TextOverflow.Ellipsis)
+                        // Full editorial title belongs in the frontispiece / chapter
+                        // contents. In this compact toolbar its ellipsis looked like
+                        // a broken text transfer during scrolling.
+                        Text(chapterStructure?.title ?: "Смысловой раздел ${chapterIndex + 1}",
+                            style = MaterialTheme.typography.labelMedium.copy(
+                                fontFamily = BookSerif, fontWeight = FontWeight.Normal),
+                            color = MaterialTheme.colorScheme.onSurface)
+
                     }
                     IconButton(onClick = { newBookmark(currentParagraph) }) {
                         NavigationGlyph("bookmarks", selected = true, modifier = Modifier.size(22.dp))
                     }
-                    ReaderFontControl(
-                        value = draftFontSize,
-                        onChange = { draftFontSize = it; resizing = true },
-                        onCommit = {
-                            draftFontSize = it
-                            resizing = false
-                            vm.settings(settings.copy(russianSize = it))
-                        }
-                    )
+                    TextButton(onClick = { panel = true }, modifier = Modifier.width(42.dp),
+                        contentPadding = PaddingValues(0.dp)) {
+                        Text("Aa", color = MaterialTheme.colorScheme.primary, fontSize = 16.sp)
+                    }
                     Box {
                         ReaderControl("⋯") { menu = true }
                         DropdownMenu(menu, { menu = false }) {
@@ -265,36 +286,33 @@ fun Reader(
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
-        var readerContentVisible by remember(chapter.id) { mutableStateOf(false) }
-        LaunchedEffect(chapter.id, ready) {
-            if (ready) {
-                withFrameNanos { }
-                readerContentVisible = true
-            }
-        }
-        val readerContentAlpha by animateFloatAsState(
-            targetValue = if (readerContentVisible) 1f else 0f,
-            animationSpec = tween(165),
-            label = "reader-content-fade"
-        )
-        Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-            if (settings.theme != "dark") Image(painterResource(R.drawable.reference_paper),null,Modifier.matchParentSize(),contentScale = ContentScale.FillBounds,alpha = if(settings.theme == "light") .45f else 1f)
+        // The floating bottom bar overlays the paper image, but must NOT cover
+        // actual reading text. Reserve its 62dp height, its outer 4dp gap, the
+        // system gesture inset and a small breathing gap in the reader viewport.
+        // The paper texture still extends behind the floating navigation.
+        val readerBottomInset = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
+        Box(
+            Modifier.weight(1f).fillMaxWidth().background(Color.Transparent)
+                .padding(bottom = readerBottomInset + 76.dp)
+        ) {
             LazyColumn(
                 state = listState,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .then(swipeModifier)
-                    .graphicsLayer {
-                        alpha = readerContentAlpha
-                        translationX = (1f - readerContentAlpha) * 10f
-                    },
-                contentPadding = PaddingValues(top = 0.dp, bottom = 28.dp),
+                modifier = Modifier.fillMaxSize().then(swipeModifier),
+                contentPadding = PaddingValues(top = 8.dp, bottom = 22.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
             ) {
             item(key = "heading") {
                 Column(Modifier.fillMaxWidth()) {
-                    ReaderFrontispiece(chapterIndex + 1, chapterStructure?.title ?: chapter.title, chapterStructure?.subtitle, settings.theme == "dark")
+                    ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
+                        chapterStructure?.title ?: sectionRoot.title,
+                        LogicalReadingSections.pageRange(sectionId), settings.theme == "dark")
+                    if (chapter.volume == 2) Text(
+                        "Том 2 · литературно-смысловая редактура завершена. Сверка со сканами издания 2019 года и научная проверка источников ещё не выполнены.",
+                        Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                     if(query.isNotBlank()) Text("Найденный текст: «$query»",Modifier.padding(horizontal = 24.dp,vertical = 8.dp),style = MaterialTheme.typography.labelMedium,color = MaterialTheme.colorScheme.primary)
                 }
             }
@@ -302,25 +320,10 @@ fun Reader(
                 val terms = termsByParagraph[p.id].orEmpty()
                 val isNote = p.role in listOf("editor_note", "edition_note")
                 var expanded by rememberSaveable(p.id) { mutableStateOf(anchor == p.id && isNote) }
-                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = 24.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    topicsByParagraph[p.id]?.let { topic ->
-                        Column(
-                            Modifier.fillMaxWidth().padding(top = 5.dp, bottom = 7.dp),
-                            verticalArrangement = Arrangement.spacedBy(3.dp)
-                        ) {
-                            Text(
-                                if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА",
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.primary
-                            )
-                            Text(
-                                topic.title,
-                                style = MaterialTheme.typography.titleMedium,
-                                fontFamily = russianFamily(settings),
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
-                        }
-                    }
+                Column(Modifier.fillMaxWidth(settings.textWidth).padding(horizontal = if (settings.textWidth < .85f) 16.dp else 28.dp).combinedClickable(onClick = {}, onLongClick = { selected = p }), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    // Editorial TOC headings belong to "Содержание раздела", not
+                    // to the author's continuous prose. Source section markers
+                    // are rendered from the real book text by splitReaderText().
                     if (isNote) {
                         Soft3DPanel(
                             modifier = Modifier.fillMaxWidth(),
@@ -378,8 +381,138 @@ fun Reader(
                             }
                         }
                     }
+                    // Warnings are explicitly editorial and never blended into the author's prose.
+                    if (chapter.volume == 2) {
+                        val sourceWarning = when (p.id) {
+                            "madarij-v2-p005-06" ->
+                                "Примечание редакции: сообщение о сглазе имеет различные хадисоведческие оценки; " +
+                                "нельзя обозначать его как безусловно достоверное без независимой сверки."
+                            "madarij-v2-p046-draft" ->
+                                "Примечание редакции: выражение «Кто познал себя, тот познал своего Господа» " +
+                                "сам автор прямо называет НЕ хадисом Посланника Аллаха."
+                            "madarij-v2-p053-draft", "madarij-v2-p054-draft" ->
+                                "Примечание редакции: длинное сообщение, приписываемое Пророку, " +
+                                "требует проверки источника, текста и цепочки передачи. Достоверность пока не установлена."
+                            "madarij-v2-p063-draft" ->
+                                "Примечание редакции: приведённая передача о мучениках " +
+                                "пока не прошла независимую хадисоведческую проверку."
+                            "madarij-v2-p078-draft" ->
+                                "Примечание редакции: слова о сорокакратном повторении мольбы " +
+                                "переданы как наставление Ибн Таймийи, а не как установленная Сунна."
+                            "madarij-v2-p082-draft", "madarij-v2-p083-draft", "madarij-v2-p095-draft" ->
+                                "Примечание редакции: приведённые хадисы требуют самостоятельной сверки текста, " +
+                                "источника и оценки достоверности."
+                            "madarij-v2-p101-draft", "madarij-v2-p102-draft" ->
+                                "Примечание редакции: высказывания и хадисы о верви Аллаха нужно " +
+                                "сверить по первоисточникам и цепочкам передачи."
+                            "madarij-v2-p139-draft" ->
+                                "Примечание редакции: сообщение о разговоре шайтана с Господом " +
+                                "передаётся в разных формах и пока не признано подтверждённым хадисом."
+                            "madarij-v2-p147-draft" ->
+                                "Примечание редакции: здесь изложена правовая аргументация автора. " +
+                                "Её не следует представлять как единогласное мнение всех учёных."
+                            "madarij-v2-p156-draft", "madarij-v2-p166-draft",
+                            "madarij-v2-p193-draft", "madarij-v2-p197-draft",
+                            "madarij-v2-p218-draft", "madarij-v2-p219-draft" ->
+                                "Примечание редакции: в извлечённом арабском источнике " +
+                                "есть повреждённые или обрывающиеся фрагменты коранических цитат. " +
+                                "Русский текст необходимо дословно сверить с Кораном перед публикацией."
+                            "madarij-v2-p158-draft", "madarij-v2-p171-draft",
+                            "madarij-v2-p179-draft" ->
+                                "Примечание редакции: оценки переданных сообщений и их цепочек " +
+                                "пока не подтверждены независимой хадисоведческой проверкой."
+                            "madarij-v2-p202-draft", "madarij-v2-p206-draft",
+                            "madarij-v2-p208-draft" ->
+                                "Примечание редакции: автор рассматривает разные мнения о молитве " +
+                                "без сосредоточенности и в итоге предпочитает второе. " +
+                                "Это не следует считать единогласным решением всех правовых школ."
+                            "madarij-v2-p224-draft", "madarij-v2-p267-draft",
+                            "madarij-v2-p277-draft", "madarij-v2-p278-draft" ->
+                                "Примечание редакции: переданные религиозные сообщения " +
+                                "нуждаются в независимой проверке первоисточников и степени достоверности."
+                            "madarij-v2-p293-draft", "madarij-v2-p294-draft" ->
+                                "Примечание редакции: здесь перечисляются спорные и отвергаемые автором " +
+                                "правовые послабления, а не общепринятые дозволения."
+                            "madarij-v2-p297-draft", "madarij-v2-p298-draft" ->
+                                "Примечание редакции: в этом месте важны границы арабского аята " +
+                                "и его грамматический разбор; требуется точная сверка с Кораном."
+                            "madarij-v2-p319-draft" ->
+                                "Примечание редакции: в извлечённой арабской транскрипции " +
+                                "кораническая цитата 22:30 обрывается; до публикации сверить с Кораном."
+                            "madarij-v2-p337-draft", "madarij-v2-p338-draft",
+                            "madarij-v2-p339-draft" ->
+                                "Примечание редакции: здесь изложена богословская позиция автора. " +
+                                "Её толкования и утверждения о согласии ранних учёных требуют отдельной научной проверки."
+                            "madarij-v2-p347-draft", "madarij-v2-p350-draft",
+                            "madarij-v2-p382-draft", "madarij-v2-p388-draft" ->
+                                "Примечание редакции: сообщения, их формулировки и цепочки передачи " +
+                                "пока не проверены независимо по хадисным первоисточникам."
+                            "madarij-v2-p411-draft", "madarij-v2-p413-draft",
+                            "madarij-v2-p414-draft" ->
+                                "Примечание редакции: обсуждается порицаемое попрошайничество; " +
+                                "это не отменяет дозволенной помощи нуждающимся и прав на социальную поддержку."
+                            "madarij-v2-p433-draft", "madarij-v2-p434-draft",
+                            "madarij-v2-p459-draft", "madarij-v2-p476-draft" ->
+                                "Примечание редакции: источник и достоверность приведённого " +
+                                "изречения требуют отдельной хадисоведческой проверки."
+                            "madarij-v2-p488-draft", "madarij-v2-p489-draft" ->
+                                "Примечание редакции: отдельная арабская цитата из Корана " +
+                                "в исходной транскрипции повреждена; сверить текст 89:27–30 по мусхафу."
+                            "madarij-v2-p501-draft", "madarij-v2-p509-draft",
+                            "madarij-v2-p510-draft" ->
+                                "Примечание редакции: здесь важно различать религиозную волю " +
+                                "Аллаха и всеобщее предопределение. Это изложение позиции автора."
+                            "madarij-v2-p514-draft", "madarij-v2-p518-draft" ->
+                                "Примечание редакции: историческое и богословское изложение " +
+                                "не является самостоятельным современным правовым предписанием."
+                            "madarij-v2-p545-draft", "madarij-v2-p546-draft",
+                            "madarij-v2-p547-draft", "madarij-v2-p550-draft" ->
+                                "Примечание редакции: приведённые назидательные предания и рассказы " +
+                                "не прошли независимую проверку подлинности; не считайте их достоверными хадисами."
+                            "madarij-v2-p553-draft", "madarij-v2-p554-draft",
+                            "madarij-v2-p578-draft", "madarij-v2-p580-draft",
+                            "madarij-v2-p588-draft" ->
+                                "Примечание редакции: молитвы и религиозные сообщения ещё необходимо " +
+                                "сверить с первоисточниками и оценками хадисоведов."
+                            "madarij-v2-p566-draft", "madarij-v2-p568-draft",
+                            "madarij-v2-p569-draft", "madarij-v2-p575-draft" ->
+                                "Примечание редакции: осуждение необоснованных просьб не отменяет закят, " +
+                                "дозволенную помощь нуждающимся и законно причитающиеся права."
+                            "madarij-v2-p583-draft", "madarij-v2-p584-draft",
+                            "madarij-v2-p607-draft" ->
+                                "Примечание редакции: здесь разбирается спорная духовная терминология. " +
+                                "Фана не объявляется автором обязательным путём для верующих."
+                            "madarij-v2-p613-draft", "madarij-v2-p614-draft",
+                            "madarij-v2-p616-draft", "madarij-v2-p617-draft" ->
+                                "Примечание редакции: приведённые исторические и божественные высказывания " +
+                                "не подтверждены независимой проверкой цепочек передачи."
+                            "madarij-v2-p622-draft", "madarij-v2-p623-draft" ->
+                                "Примечание редакции: отдельные арабские коранические цитаты " +
+                                "в оцифрованном издании повреждены. Сверить по мусхафу и проверить хадисы."
+                            "madarij-v2-p626-draft" ->
+                                "Примечание редакции: сообщение о непрерывном возрастании благ Рая " +
+                                "требует отдельной проверки первоисточника и оценки достоверности."
+                            "madarij-v2-p638-draft", "madarij-v2-p639-draft" ->
+                                "Примечание редакции: приводятся разные толкования аята 2:94, " +
+                                "включая личное предпочтение автора. Это не утверждение единогласия."
+                            "madarij-v2-p654-draft", "madarij-v2-p655-draft" ->
+                                "Примечание редакции: неподтверждённые экстатические изречения " +
+                                "упоминаются как предмет критического богословского обсуждения."
+                            "madarij-v2-p657-draft", "madarij-v2-p658-draft",
+                            "madarij-v2-p659-draft" ->
+                                "Примечание редакции: это изложение позиции автора и нескольких " +
+                                "толкований Корана 50:16; независимая религиозная проверка не завершена."
+                            else -> null
+                        }
+                        if (sourceWarning != null) Text(
+                            sourceWarning,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(top = 3.dp)
+                        )
+                    }
                     notesByParagraph[p.id].orEmpty().forEach { note ->
-                        Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp)) { Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) { Text("Моя заметка", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary); Text(note.text, style = MaterialTheme.typography.bodyMedium) } }
+                        AgedPaperCard(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp)) { Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) { Text("Моя заметка", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary); Text(note.text, style = MaterialTheme.typography.bodyMedium) } }
                     }
                     if (actionsMode) Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                         TextButton(onClick = { newBookmark(p) }) { Text(if (bookmarks.any { it.paragraphId == p.id }) "Закладка ✓" else "Закладка") }
@@ -388,22 +521,24 @@ fun Reader(
                     }
                 }
             }
-            item(key = "end") {
+            // The completion footer only exists after the new chapter's content
+            // and scroll position have both been restored. Mark-read logic is kept.
+            if (loaded && ready && visible.isNotEmpty()) item(key = "end") {
                 Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                     HorizontalDivider()
                     Text("Конец раздела", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    val isRead = read.any { it.chapterId == chapter.id }
-                    Button(onClick = { if (isRead) vm.markUnread(chapter.id) else vm.markRead(chapter.id) }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary, contentColor = MaterialTheme.colorScheme.onTertiary), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp), elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)) { Text(if (isRead) "Прочитано ✓ · Снять отметку" else "Отметить прочитанным") }
+                    val isRead = members.all { member -> read.any { it.chapterId == member.id } }
+                    Button(onClick = { members.forEach { if (isRead) vm.markUnread(it.id) else vm.markRead(it.id) } }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp), colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary, contentColor = MaterialTheme.colorScheme.onTertiary), shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp), elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)) { Text(if (isRead) "Прочитано ✓ · Снять отметку" else "Отметить прочитанным") }
                     OutlinedButton(onClick = { savePosition(); onStudy(chapter.id) }, modifier = Modifier.fillMaxWidth()) { Text("Проверить понимание") }
                     Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { TextButton(onClick = { newBookmark(null) }) { Text("Закладка") }; TextButton(onClick = { newNote(null) }) { Text("Заметка") }; TextButton(onClick = { copy(fullChapter()) }) { Text("Копировать") }; TextButton(onClick = { share(fullChapter()) }) { Text("Поделиться") } }
                     notes.filter { it.paragraphId == null }.forEach { Text("Моя заметка · ${it.text}", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.primary) }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = { savePosition(); recordTime(); chapters.getOrNull(chapterIndex - 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex > 0) { Text("← Предыдущий") }
-                        OutlinedButton(onClick = { savePosition(); recordTime(); chapters.getOrNull(chapterIndex + 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex >= 0 && chapterIndex < chapters.lastIndex) { Text("Следующий →") }
+                        OutlinedButton(onClick = { savePosition(); recordTime(); logicalChapters.getOrNull(chapterIndex - 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex > 0) { Text("← Предыдущий") }
+                        OutlinedButton(onClick = { savePosition(); recordTime(); logicalChapters.getOrNull(chapterIndex + 1)?.let { navigate(it.id) } }, modifier = Modifier.weight(1f), enabled = chapterIndex >= 0 && chapterIndex < logicalChapters.lastIndex) { Text("Следующий →") }
                     }
-                    if (chapterStructure?.topics?.isNotEmpty() == true) {
+                    if (sectionTopics.isNotEmpty()) {
                         Text("Темы этого раздела", style = MaterialTheme.typography.titleSmall)
-                        chapterStructure.topics.forEach { topic -> TextButton(onClick = { savePosition(); onOpenParagraph(topic.paragraphId) }, modifier = Modifier.fillMaxWidth()) { Text(topic.title, Modifier.fillMaxWidth(), maxLines = 2, overflow = TextOverflow.Ellipsis) } }
+                        sectionTopics.forEach { topic -> TextButton(onClick = { savePosition(); onOpenParagraph(topic.paragraphId) }, modifier = Modifier.fillMaxWidth()) { Text(topic.title, Modifier.fillMaxWidth(), maxLines = 2, overflow = TextOverflow.Ellipsis) } }
                     }
                 }
             }
@@ -417,7 +552,10 @@ fun Reader(
             Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }
-                    Text(chapterStructure?.title ?: chapter.title, Modifier.weight(1f),style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal),color = MaterialTheme.colorScheme.onSurface,maxLines = 2,overflow = TextOverflow.Ellipsis)
+                    Text(chapterStructure?.title ?: sectionRoot.title, Modifier.weight(1f),
+                        style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,
+                            fontWeight = FontWeight.Normal),
+                        color = MaterialTheme.colorScheme.onSurface, softWrap = true)
                     IconButton(onClick = { newBookmark(currentParagraph) }) { NavigationGlyph("bookmarks",selected = true,modifier = Modifier.size(21.dp)) }
                 }
                 Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
@@ -440,16 +578,16 @@ fun Reader(
                     when (chapterTab) {
                         0 -> {
                             item { ChapterTopicRow("Начало раздела") { revealParagraph(null) } }
-                            items(chapterStructure?.topics.orEmpty(), key = { it.paragraphId + it.title }) { topic ->
+                            items(sectionTopics, key = { it.paragraphId + it.title }) { topic ->
                                 ChapterTopicRow(topic.title) { revealParagraph(topic.paragraphId) }
                             }
-                            if (chapterStructure?.topics.isNullOrEmpty()) item { Text("В этом разделе нет отдельных подразделов.", color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                            if (sectionTopics.isEmpty()) item { Text("В этом разделе нет отдельных подразделов.", color = MaterialTheme.colorScheme.onSurfaceVariant) }
                         }
                         1 -> {
-                            val own = bookmarks.filter { it.chapterId == chapter.id }
+                            val own = bookmarks.filter { it.chapterId in memberIds }
                             if (own.isEmpty()) item { Text("Закладок в этом разделе пока нет.") }
                             items(own, key = { it.id }) { bookmark ->
-                                OutlinedCard(onClick = { revealParagraph(bookmark.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
+                                AgedPaperCard(onClick = { revealParagraph(bookmark.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
                                     Column(Modifier.padding(AppSpacing.lg)) { Text(bookmark.title); if (bookmark.note.isNotBlank()) Text(bookmark.note) }
                                 }
                             }
@@ -457,7 +595,7 @@ fun Reader(
                         2 -> {
                             if (notes.isEmpty()) item { Text("Заметок в этом разделе пока нет.") }
                             items(notes, key = { it.id }) { note ->
-                                OutlinedCard(onClick = { revealParagraph(note.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
+                                AgedPaperCard(onClick = { revealParagraph(note.paragraphId) }, modifier = Modifier.fillMaxWidth()) {
                                     Text(note.text, Modifier.padding(AppSpacing.lg))
                                 }
                             }
@@ -469,28 +607,48 @@ fun Reader(
     }
     if (panel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.onSurface, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
     selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
-    if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(chapter.id, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
-    if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(chapter.id, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
+    if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(paragraphs.firstOrNull { it.id == noteAnchor }?.chapterId ?: sectionId, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
+    if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(paragraphs.firstOrNull { it.id == bookmarkAnchor }?.chapterId ?: sectionId, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
     if (sourceDialog) AlertDialog(onDismissRequest = { sourceDialog = false }, title = { Text("Источник раздела") }, text = { SelectionContainer { Text(chapter.source.ifBlank { "Источник требует редакционной сверки." }) } }, confirmButton = { TextButton(onClick = { sourceDialog = false }) { Text("Закрыть") } })
     termDialog?.let { term -> AlertDialog(onDismissRequest = { termDialog = null }, title = { Text(term.transcript) }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { ArabicText(term.ar, settings); Text(term.definition); Text("Пояснение редакции к этому фрагменту", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }, confirmButton = { TextButton(onClick = { val id = term.sourceParagraphId; termDialog = null; onOpenParagraph(id) }) { Text("Исходный контекст") } }, dismissButton = { TextButton(onClick = { termDialog = null }) { Text("Закрыть") } }) }
 }
 
 @Composable
 private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingSettings, arabic: Boolean) {
-    Column(
-        Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 5.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        if (arabic) ArabicText(block.label, settings, Modifier.heightIn(min = 28.dp))
-        else Text(block.label.uppercase(), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-        block.title?.let { title ->
-            if (arabic) ArabicText(title, settings)
-            else Text(
-                title,
-                style = MaterialTheme.typography.titleMedium,
-                fontFamily = russianFamily(settings),
-                color = MaterialTheme.colorScheme.onSurface
+    val sourceTitle = block.title?.takeIf { it.isNotBlank() }
+    if (sourceTitle == null) {
+        // The source has a section break but no heading. Rendering the word
+        // "РАЗДЕЛ" alone looked like an unnamed new chapter. Keep the actual
+        // textual boundary as a modest book ornament without inventing a title.
+        Row(
+            Modifier.fillMaxWidth().padding(vertical = 11.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            HorizontalDivider(
+                Modifier.weight(1f), thickness = .65.dp,
+                color = BookColors.gold.copy(alpha = .28f)
             )
+            Text("❖", Modifier.padding(horizontal = 10.dp),
+                fontFamily = BookSerif,
+                color = BookColors.gold.copy(alpha = .8f))
+            HorizontalDivider(
+                Modifier.weight(1f), thickness = .65.dp,
+                color = BookColors.gold.copy(alpha = .28f)
+            )
+        }
+    } else {
+        Column(
+            Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 5.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            if (arabic) ArabicText(block.label, settings, Modifier.heightIn(min = 28.dp))
+            else Text(block.label.uppercase(),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary)
+            if (arabic) ArabicText(sourceTitle, settings)
+            else Text(sourceTitle, style = MaterialTheme.typography.titleMedium,
+                fontFamily = russianFamily(settings),
+                color = MaterialTheme.colorScheme.onSurface)
         }
     }
 }
@@ -587,9 +745,10 @@ private fun ReaderRichTextBlock(
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.fillMaxWidth().padding(top = 6.dp)
                 )
-                is ReaderRichSegment.Poetry -> Surface(
+                is ReaderRichSegment.Poetry -> AgedPaperCard(
                     shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp),
-                    color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = .46f),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = .46f)),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
@@ -620,11 +779,12 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
             Modifier.width(4.dp).fillMaxHeight().defaultMinSize(minHeight = 64.dp)
                 .background(MaterialTheme.colorScheme.primary, androidx.compose.foundation.shape.RoundedCornerShape(4.dp))
         )
-        Surface(
+        AgedPaperCard(
             modifier = Modifier.weight(1f),
             shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
-            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .15f),
-            border = androidx.compose.foundation.BorderStroke(.7.dp,MaterialTheme.colorScheme.primary.copy(alpha = .3f))
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .15f)),
+            border = androidx.compose.foundation.BorderStroke(.7.dp,MaterialTheme.colorScheme.primary.copy(alpha = .3f)),
+            elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
         ) {
             Column(Modifier.padding(horizontal = 14.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 Text(segment.label, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)

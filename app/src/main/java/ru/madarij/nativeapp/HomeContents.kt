@@ -9,6 +9,8 @@ import androidx.compose.foundation.background
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -33,11 +35,21 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import ru.madarij.nativeapp.data.*
 import java.util.Date
 
 @Composable
-internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navigate: (String) -> Unit) {
+internal fun HomeScreen(
+    vm: BookViewModel,
+    open: (String, String?) -> Unit,
+    navigate: (String) -> Unit,
+    reminder: KnowledgeReminder,
+    reducedMotion: Boolean,
+    inkFinished: Boolean,
+    onInkFinished: () -> Unit
+) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val last by vm.last.collectAsStateWithLifecycle()
@@ -53,134 +65,200 @@ internal fun HomeScreen(vm: BookViewModel, open: (String, String?) -> Unit, navi
     val due = attempts.count { it.value.due <= System.currentTimeMillis() }
     val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.ROOT).format(Date())
     val minutes = history.filter { it.date == today }.sumOf { it.seconds } / 60
-    val percent = if (chapters.isEmpty()) 0 else read.size * 100 / chapters.size
+    // Volume 2 is only a preview. Do not make it distort volume 1 reading progress.
+    val mainVolume = chapters.filter { it.volume == 1 }
+    val percent = if (mainVolume.isEmpty()) 0 else read.count { item -> mainVolume.any { it.id == item.chapterId } } * 100 / mainVolume.size
     val lastTitle = chapters.find { it.id == last?.chapterId }?.let(groups::findTitle)
 
-    var excerpt by remember { mutableStateOf("") }
-    LaunchedEffect(chapters.firstOrNull()?.id) {
-        chapters.firstOrNull()?.id?.let { id ->
-            val text = vm.repository.dao.paragraphs(id).firstOrNull {
-                it.role !in listOf("editor_note", "edition_note") && it.ru.length > 80
-            }?.ru.orEmpty()
-            val sentences = Regex("[^.!?]+[.!?]").findAll(text).map { it.value.trim() }.take(2).toList()
-            excerpt = sentences.getOrNull(1) ?: sentences.firstOrNull() ?: text
-        }
-    }
-
-    BoxWithConstraints(Modifier.fillMaxSize()) {
-        val viewport = maxHeight
-        val pageHeight = viewport.coerceAtLeast(600.dp) * maxOf(1f, androidx.compose.ui.platform.LocalDensity.current.fontScale / 1.15f)
-        Image(painterResource(R.drawable.reference_home), null, Modifier.matchParentSize(), contentScale = ContentScale.Crop, alignment = Alignment.TopCenter)
-        Box(Modifier.matchParentSize().background(Brush.verticalGradient(listOf(Color(0x10000000), Color(0x0C000000), MaterialTheme.colorScheme.background.copy(alpha = .72f)))))
-        Box(Modifier.fillMaxWidth().height(WindowInsets.statusBars.asPaddingValues().calculateTopPadding()).background(MaterialTheme.colorScheme.background))
-        LazyColumn(contentPadding = PaddingValues(horizontal = 16.dp, vertical = 0.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        item {
-            Column(Modifier.fillMaxWidth().height(pageHeight).statusBarsPadding().padding(top = 28.dp, bottom = 14.dp)) {
-                Box(Modifier.fillMaxWidth()) {
-                    Column(Modifier.fillMaxWidth(.88f)) {
-                        Text("Степени\nидущих", style = MaterialTheme.typography.headlineMedium.copy(fontFamily = BookSerif, fontWeight = androidx.compose.ui.text.font.FontWeight.Normal, fontSize = 48.sp, lineHeight = 48.sp), color = Color(0xFFF7EAD6))
-                        Text("Ибн аль-Каййим\nаль-Джаузийя", Modifier.padding(top = 12.dp), style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif, fontSize = 20.sp, lineHeight = 25.sp), color = BookColors.lightGold)
-                    }
-                    IconButton(onClick = { navigate("settings") }, modifier = Modifier.align(Alignment.TopEnd)) { SettingsWheel(Modifier.size(23.dp)) }
-                }
-                Spacer(Modifier.weight(1f).heightIn(min = 140.dp))
-                if (excerpt.isNotBlank()) {
-                    Box(Modifier.fillMaxWidth().clip(RoundedCornerShape(20.dp)).background(BookColors.card.copy(alpha = .94f)).then(Modifier.border(1.dp, BookColors.gold.copy(alpha = .65f), RoundedCornerShape(20.dp)))) {
-                        Row(Modifier.padding(horizontal = 16.dp, vertical = 14.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                            Text("“", style = TextStyle(fontFamily = BookSerif, fontSize = 42.sp), color = BookColors.gold.copy(alpha = .7f))
-                            Column(Modifier.weight(1f)) {
-                                Text(excerpt, style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif, fontSize = 16.sp, lineHeight = 22.sp), color = BookColors.text)
-                                Text("Ибн аль-Каййим", Modifier.fillMaxWidth().padding(top = 8.dp), style = MaterialTheme.typography.labelSmall, textAlign = androidx.compose.ui.text.style.TextAlign.Center, color = BookColors.muted)
+    // BookRouteSurface paints the aged-paper sheet once beneath this screen.
+    // A solid beige HomeScreen layer previously concealed that book texture.
+    Box(Modifier.fillMaxSize()) {
+        PreloadedBookImage(R.drawable.library_hero,
+            Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
+            contentScale = ContentScale.Crop, alignment = Alignment.Center)
+        LazyColumn(
+            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 116.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            item {
+                Box(Modifier.fillMaxWidth().height(258.dp)) {
+                    Row(Modifier.fillMaxWidth().statusBarsPadding()
+                        .padding(start = 22.dp, end = 12.dp, top = 16.dp)) {
+                        Column(Modifier.weight(1f)) {
+                            Text("Степени\nидущих",
+                                style = MaterialTheme.typography.headlineLarge.copy(fontFamily = BookSerif,
+                                    fontWeight = androidx.compose.ui.text.font.FontWeight.Normal,
+                                    fontSize = 46.sp, lineHeight = 43.sp),
+                                color = Color(0xFFFFEDD0))
+                            Row(Modifier.widthIn(max = 210.dp).padding(top = 9.dp, bottom = 7.dp),
+                                verticalAlignment = Alignment.CenterVertically) {
+                                HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
+                                    color = Color(0xFFC79C64).copy(alpha = .65f))
+                                Text("❖", Modifier.padding(horizontal = 6.dp),
+                                    fontFamily = BookSerif, fontSize = 11.sp,
+                                    color = Color(0xFFEAC28B))
+                                HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
+                                    color = Color(0xFFC79C64).copy(alpha = .65f))
                             }
+                            Text("Ибн аль-Каййим\nаль-Джаузийя",
+                                style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif,
+                                    fontSize = 18.sp, lineHeight = 22.sp),
+                                color = Color(0xFFEFC489))
+                        }
+                        TextButton(onClick = { navigate("settings") },
+                            modifier = Modifier.size(42.dp),
+                            contentPadding = PaddingValues(0.dp)) {
+                            Text("Aa", color = Color(0xFFF1CC92), fontSize = 17.sp)
                         }
                     }
                 }
-                Spacer(Modifier.height(14.dp))
-                Button(onClick = { (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it, null) } }, enabled = chapters.isNotEmpty(), modifier = Modifier.fillMaxWidth().heightIn(min = 58.dp), shape = RoundedCornerShape(22.dp), colors = ButtonDefaults.buttonColors(containerColor = BookColors.lightGold, contentColor = BookColors.ink), elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)) {
-                    NavigationGlyph("contents", selected = true, modifier = Modifier.size(28.dp), tint = BookColors.ink)
-                    Spacer(Modifier.width(16.dp))
-                    Text("Продолжить чтение", Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                    Text("›", style = MaterialTheme.typography.headlineSmall)
-                }
             }
-        }
-
-        item { Text("Быстрый доступ", style = MaterialTheme.typography.titleMedium) }
-        item {
-            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                HomeAction("Содержание", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
-                HomeAction("Поиск", "По всему тому", "search", Modifier.weight(1f)) { navigate("search") }
-            }
-        }
-        item {
-            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                HomeAction("Изучение", "Проверки и задания", "study", Modifier.weight(1f)) { navigate("study") }
-                HomeAction("Словарь", "Термины и контекст", "glossary", Modifier.weight(1f)) { navigate("glossary") }
-            }
-        }
-        item {
-            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                HomeAction("Закладки", "Сохранено · ${bookmarks.size}", "bookmarks", Modifier.weight(1f)) { navigate("bookmarks") }
-                HomeAction("Заметки", "Личные записи · ${notes.size}", "notes", Modifier.weight(1f)) { navigate("notes") }
-            }
-        }
-
-        item {
-            Soft3DPanel(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(AppRadius.medium),
-                elevation = AppElevation.level2,
-                warm = true
-            ) {
-                Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 14.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Column(Modifier.weight(1f)) {
-                        Text("${read.size}", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                        Text("Прочитано", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    }
-                    VerticalDivider(Modifier.height(38.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = .35f))
-                    Column(Modifier.weight(1f).padding(start = 16.dp)) {
-                        Text("$minutes мин", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                        Text("Сегодня", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    }
-                    VerticalDivider(Modifier.height(38.dp), color = MaterialTheme.colorScheme.outline.copy(alpha = .35f))
-                    Column(Modifier.weight(1f).padding(start = 16.dp)) {
-                        Text("$due", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                        Text("Повторить", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            item(key = "knowledge-reminder") {
+                val shape = RoundedCornerShape(17.dp)
+                Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
+                    .background(BookColors.card)
+                    .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
+                    PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                    Row(Modifier.padding(horizontal = 18.dp, vertical = 13.dp),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                        Column(Modifier.weight(1f).clickable {
+                            open(reminder.chapterId, reminder.paragraphId)
+                        }) {
+                            ReedPenWritingText(
+                                text = reminder.text,
+                                style = MaterialTheme.typography.bodyLarge.copy(
+                                    fontFamily = FontFamily(Font(R.font.marck_script)),
+                                    fontWeight = FontWeight.Normal,
+                                    fontSize = 21.sp, lineHeight = 29.sp
+                                ),
+                                color = Color(0xFF62452F),
+                                reducedMotion = reducedMotion,
+                                animate = !inkFinished,
+                                onFinished = onInkFinished
+                            )
+                            Text("Из книги · том 1, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
+                                style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                        }
+                        IconButton(onClick = { navigate("bookmarks") },
+                            modifier = Modifier.size(30.dp)) {
+                            NavigationGlyph("bookmarks", selected = true,
+                                modifier = Modifier.size(18.dp), tint = BookColors.gold)
+                        }
                     }
                 }
             }
+            item {
+                Surface(
+                    onClick = { (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it, null) } },
+                    enabled = chapters.isNotEmpty(),
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp).height(48.dp),
+                    shape = RoundedCornerShape(15.dp),
+                    color = BookColors.leather,
+                    contentColor = Color(0xFFF8E7CE),
+                    shadowElevation = 0.dp
+                ) {
+                    Box(Modifier.fillMaxSize()) {
+                        // Use the SAME static leather-with-gilt-border resource as bottom navigation.
+                        // No extra full-screen layer or additional bitmap decoding.
+                        PreloadedBookImage(R.drawable.navigation_leather,
+                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
+                        Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
+                            verticalAlignment = Alignment.CenterVertically) {
+                            NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
+                                tint = BookColors.lightGold)
+                            Spacer(Modifier.width(11.dp))
+                            // Optical centering: BookSerif glyphs sit 2dp below the Row's
+                            // geometric centre due to the font's baseline metrics.
+                            Text("Продолжить чтение", Modifier.weight(1f).offset(y = (-2).dp),
+                                style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif, fontSize = 17.sp),
+                                color = Color(0xFFF8E7CE))
+                            Text("›", style = MaterialTheme.typography.headlineSmall,
+                                color = Color(0xFFF8E7CE))
+                        }
+                    }
+                }
+            }
+            item {
+                Text("Быстрый доступ", Modifier.padding(start = 16.dp, top = 4.dp, bottom = 2.dp),
+                    style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif, fontSize = 24.sp, lineHeight = 29.sp),
+                    color = BookColors.ink)
+            }
+            item {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    HomeAction("Содержание", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
+                    HomeAction("Поиск", "По всему тому", "search", Modifier.weight(1f)) { navigate("search") }
+                }
+            }
+            item {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    HomeAction("Изучение", "Проверки и задания", "study", Modifier.weight(1f)) { navigate("study") }
+                    HomeAction("Словарь", "Термины и контекст", "glossary", Modifier.weight(1f)) { navigate("glossary") }
+                }
+            }
+            item {
+                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    HomeAction("Закладки", "Сохранено · ${bookmarks.size}", "bookmarks", Modifier.weight(1f)) { navigate("bookmarks") }
+                    HomeAction("Заметки", "Личные записи · ${notes.size}", "notes", Modifier.weight(1f)) { navigate("notes") }
+                }
+            }
+            item {
+                Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 5.dp),
+                    verticalAlignment = Alignment.CenterVertically) {
+                    listOf(
+                        "${read.size}" to "Прочитано",
+                        "$minutes мин" to "Сегодня",
+                        "$due" to "Повторить"
+                    ).forEachIndexed { index, (number, label) ->
+                        if (index > 0) VerticalDivider(Modifier.height(37.dp),
+                            color = BookColors.gold.copy(alpha = .28f))
+                        Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
+                            Text(number, fontFamily = BookSerif, fontSize = 19.sp, color = BookColors.gold)
+                            Text(label, style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                        }
+                    }
+                }
+            }
+            if (chapters.isEmpty()) item { InfoCard("Подготовка книги", status) }
         }
+    }
 
-        item {
-            Text(
-                "Литературная сверка первого тома завершена · проверка источников отдельно",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(horizontal = 2.dp, vertical = 4.dp)
-            )
-        }
-        if (chapters.isEmpty()) item { InfoCard("Подготовка книги", status) }
-    }
-    }
+}
+
+@Composable
+private fun AntiqueHomeIcon(glyph: String) {
+    // The user's generated brass-and-leather icon, not doubled vector outlines.
+    AntiqueBookIcon(glyph, Modifier.size(35.dp))
 }
 
 @Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 96.dp),
+        modifier = modifier.heightIn(min = 73.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
         onClick = onClick
     ) {
-        Column(
-            Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 14.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
+        // Soft3DPanel is a BoxScope; Center anchors the ENTIRE icon/text/arrow
+        // row inside each aged-paper card instead of placing it at the top.
+        Row(
+            Modifier.align(Alignment.Center).fillMaxWidth()
+                .padding(horizontal = 9.dp, vertical = 7.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(6.dp)
         ) {
-            AppActionGlyph(glyph)
-            Spacer(Modifier.height(2.dp))
-            Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurface)
-            Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2)
+            AntiqueHomeIcon(glyph)
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp)) {
+                Text(title,
+                    style = MaterialTheme.typography.titleSmall.copy(
+                        fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp),
+                    color = BookColors.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Text(subtitle,
+                    style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp, lineHeight = 13.sp),
+                    color = BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            }
+            Text("›", fontFamily = BookSerif, fontSize = 20.sp,
+                color = BookColors.gold.copy(alpha = .86f))
         }
     }
 }
@@ -200,8 +278,10 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     var restored by remember { mutableStateOf(false) }
     var initialized by rememberSaveable { mutableStateOf(false) }
     var query by rememberSaveable { mutableStateOf("") }
-    var toolsVisible by rememberSaveable { mutableStateOf(false) }
+    var toolsVisible by rememberSaveable { mutableStateOf(true) }
     var filter by rememberSaveable { mutableStateOf("all") }
+    var selectedVolume by rememberSaveable { mutableIntStateOf(1) }
+    val availableVolumes = remember(chapters) { chapters.map { it.volume }.distinct().sorted() }
     var openedGroups by rememberSaveable { mutableStateOf(listOf<String>()) }
     var openedChapters by rememberSaveable { mutableStateOf(listOf<String>()) }
     var percents by remember { mutableStateOf<Map<String, Int>>(emptyMap()) }
@@ -209,14 +289,17 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     val savedIds = remember(bookmarks) { bookmarks.map { it.chapterId }.toSet() }
 
     LaunchedEffect(positions, read) {
-        val result = mutableMapOf<String, Int>()
-        positions.forEach { p ->
-            val paragraphs = vm.repository.dao.paragraphs(p.chapterId)
-            val ordinal = paragraphs.indexOfFirst { it.id == p.paragraphId }
-            result[p.chapterId] = if (paragraphs.isEmpty()) 0 else ((ordinal + 1) * 100 / paragraphs.size).coerceIn(0, 99)
+        percents = withContext(Dispatchers.IO) {
+            val result = mutableMapOf<String, Int>()
+            positions.forEach { p ->
+                val paragraphs = vm.repository.dao.paragraphs(p.chapterId)
+                val ordinal = paragraphs.indexOfFirst { it.id == p.paragraphId }
+                result[p.chapterId] = if (paragraphs.isEmpty()) 0 else
+                    ((ordinal + 1) * 100 / paragraphs.size).coerceIn(0, 99)
+            }
+            read.forEach { result[it.chapterId] = 100 }
+            result
         }
-        read.forEach { result[it.chapterId] = 100 }
-        percents = result
     }
     LaunchedEffect(groups, last?.chapterId) {
         if (groups.isNotEmpty() && !initialized) {
@@ -237,9 +320,10 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
 
     val fallback = if (groups.isNotEmpty()) groups else listOf(TocGroup("volume1", "Первый том", "editorial_navigation", chapters.map { TocChapter(it.id, it.title, "", emptyList()) }))
     val normalizedQuery = normalizedText(query).text
+    val selectedChapterIds = remember(chapters, selectedVolume) { chapters.filter { it.volume == selectedVolume }.map { it.id }.toSet() }
     val matching = fallback.map { group ->
         group.copy(items = group.items.filter { chapter ->
-            (query.isBlank() || normalizedText("${chapter.title} ${chapter.subtitle} ${chapter.topics.joinToString { it.title }}").text.contains(normalizedQuery)) && when (filter) {
+            chapter.chapterId in selectedChapterIds && (query.isBlank() || normalizedText("${chapter.title} ${chapter.subtitle} ${chapter.topics.joinToString { it.title }}").text.contains(normalizedQuery)) && when (filter) {
                 "read" -> chapter.chapterId in readIds
                 "saved" -> chapter.chapterId in savedIds
                 else -> true
@@ -247,19 +331,42 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         })
     }.filter { it.items.isNotEmpty() }
 
-    LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 28.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+    LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                Box(Modifier.weight(1f).clip(RoundedCornerShape(14.dp)).background(BookColors.secondaryBackground).padding(4.dp)) {
-                    Box(Modifier.fillMaxWidth().clip(RoundedCornerShape(11.dp)).background(BookColors.lightGold).padding(vertical = 8.dp), contentAlignment = Alignment.Center) {
-                        Text("Том 1", style = MaterialTheme.typography.labelLarge, color = BookColors.ink)
+                // One compact parchment selector; the original typography and paper stay unchanged.
+                Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    availableVolumes.forEach { volume ->
+                        val selected = volume == selectedVolume
+                        val shape = RoundedCornerShape(14.dp)
+                        Box(
+                            Modifier.weight(1f).heightIn(min = 43.dp)
+                                .clip(shape)
+                                .background(BookColors.card.copy(alpha = if (selected) 1f else .65f))
+                                .border(if (selected) .85.dp else .5.dp,
+                                    BookColors.gold.copy(alpha = if (selected) .5f else .2f), shape)
+                                .clickable { selectedVolume = volume; resetList() },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                            Text("Том $volume",
+                                style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
+                                color = BookColors.ink.copy(alpha = if (selected) 1f else .72f))
+                        }
                     }
                 }
                 IconButton(onClick = { toolsVisible = !toolsVisible }) { NavigationGlyph("search", selected = toolsVisible, modifier = Modifier.size(21.dp)) }
             }
         }
         if (toolsVisible) {
-        item { Text("Том 1 · ${chapters.size} разделов · ${read.size} прочитано", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        item {
+            val count = chapters.count { it.volume == selectedVolume }
+            val sectionCount = LogicalReadingSections.roots(chapters).count { it.volume == selectedVolume }
+            Text("Том $selectedVolume · $sectionCount смысловых разделов · $count фрагментов",
+                style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (selectedVolume == 2) Text("Том 2, страницы 3–659: литературно-смысловая редактура завершена. Сверка с изданием и научная проверка источников не завершены.",
+                style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+        }
         last?.let { position ->
             item {
                 Soft3DSagePanel(
@@ -320,7 +427,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             item(key = "group:${group.id}") {
                 val expanded = group.id in openedGroups || query.isNotBlank()
                 val count = group.items.count { it.chapterId in readIds }
-                Card(
+                AgedPaperCard(
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .90f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
@@ -330,7 +437,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     Row(Modifier.padding(horizontal = 14.dp, vertical = 9.dp), horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
                         Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
                         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            Text(group.title, style = MaterialTheme.typography.labelMedium, color = BookColors.muted)
+                            Text(group.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
+                            Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                             
                         }
                     }
@@ -339,23 +447,28 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             if (group.id in openedGroups || query.isNotBlank()) group.items.forEach { chapter ->
                 item(key = "chapter:${chapter.chapterId}") {
                     val expanded = chapter.chapterId in openedChapters || query.isNotBlank()
-                    val ordinal = chapters.indexOfFirst { it.id == chapter.chapterId } + 1
-                    val light = ordinal != 1
+                    val readingMembers = LogicalReadingSections.members(chapters, chapter.chapterId)
+                    val sectionStartId = readingMembers.firstOrNull()?.id ?: chapter.chapterId
+                    val isPageContinuation = sectionStartId != chapter.chapterId
+                    val ordinal = LogicalReadingSections.roots(chapters).indexOfFirst { it.id == sectionStartId } + 1
+                    val light = true
                     val ink = if (light) BookColors.ink else BookColors.text
                     val shape = RoundedCornerShape(17.dp)
                     Box(Modifier.fillMaxWidth().clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
-                        Image(painterResource(chapterArt(ordinal)), null, Modifier.matchParentSize(), contentScale = ContentScale.Crop, alignment = Alignment.CenterEnd)
-                        Box(Modifier.matchParentSize().background(Brush.horizontalGradient(listOf((if(light) BookColors.parchment else BookColors.card).copy(alpha = .96f), (if(light) BookColors.parchment else BookColors.card).copy(alpha = .82f), Color.Transparent))))
+                        PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(33.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
-                                    Text("$ordinal", style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.text)
+                                    Text(if (isPageContinuation) "↳" else "$ordinal",
+                                        style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
+                                        color = Color(0xFFFFF3DC))
                                 }
-                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(chapter.chapterId,chapter.entryParagraphId) }) {
+                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(sectionStartId, null) }) {
+                                    if (isPageContinuation) Text("ПРОДОЛЖЕНИЕ ТЕКСТА", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                                     Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 16.sp, lineHeight = 20.sp), color = ink)
                                     if(chapter.topics.isNotEmpty()) Text("${if(expanded) "⌄" else "›"} Содержание · ${chapter.topics.size}", style = MaterialTheme.typography.labelSmall, color = ink.copy(alpha = .7f))
                                 }
-                                IconButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("›", style = MaterialTheme.typography.headlineSmall, color = ink) }
+                                TextButton(onClick = { open(sectionStartId, null) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
                             }
                             val percent = percents[chapter.chapterId] ?: 0
                             if(percent > 0) LinearProgressIndicator(progress = {percent / 100f}, modifier = Modifier.fillMaxWidth().height(1.dp), color = BookColors.gold, trackColor = Color.Transparent)
@@ -364,7 +477,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 }
 
                 if (chapter.chapterId in openedChapters || query.isNotBlank()) items(chapter.topics, key = { "topic:${chapter.chapterId}:${it.paragraphId}:${it.title}" }) { topic ->
-                    Card(
+                    AgedPaperCard(
                         onClick = { open(chapter.chapterId, topic.paragraphId) },
                         modifier = Modifier.fillMaxWidth().padding(start = 20.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),

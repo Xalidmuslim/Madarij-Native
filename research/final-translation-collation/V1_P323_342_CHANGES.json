@@ -1,0 +1,87 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p328-draft",
+    "printed_pages": [
+      328
+    ],
+    "old": "Её объясняли также принуждением и безумием. Наш шейх, да помилует его Аллах, сказал: «Она охватывает всё это.",
+    "new": "Этот термин объясняли также принуждением и безумием. Наш шейх, да помилует его Аллах, сказал: «Он охватывает всё это.",
+    "arabic_anchor": "وفسَّروه بالإكراه، وفسَّروه بالجنون",
+    "reason": "Русские местоимения должны относиться к мужскому игляк/термин, не к несуществующему женскому референту.",
+    "before": "Её объясняли также принуждением и безумием. Наш шейх, да помилует его Аллах, сказал: «Она охватывает всё это.",
+    "after": "Этот термин объясняли также принуждением и безумием. Наш шейх, да помилует его Аллах, сказал: «Он охватывает всё это.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p330-draft",
+    "printed_pages": [
+      330
+    ],
+    "old": "и признал его врагом человека",
+    "new": "и признал его Своим врагом",
+    "arabic_anchor": "واتّخذَه عدوًّا له",
+    "reason": "له относится к Аллаху как субъекту اتخذ; следующий абзац о враге Возлюбленного подтверждает.",
+    "before": "и признал его врагом человека",
+    "after": "и признал его Своим врагом",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p330-draft",
+    "printed_pages": [
+      330
+    ],
+    "old": "У любимого есть враг — самое ненавистное Ему из Его творений.",
+    "new": "У Возлюбленного есть враг — самое ненавистное Ему из Его творений.",
+    "arabic_anchor": "وللمحبوب عدوٌّ، هو أبغَضُ خلقه إليه",
+    "reason": "Здесь Возлюбленный — Господь, а не только что упомянутый любимый Им человек; капитализация снимает спутывание референтов.",
+    "before": "У любимого есть враг — самое ненавистное Ему из Его творений.",
+    "after": "У Возлюбленного есть враг — самое ненавистное Ему из Его творений.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p339-draft",
+    "printed_pages": [
+      339
+    ],
+    "old": "О них следует говорить так же, как о Его довольстве, любви, воли и остальных качеств.",
+    "new": "О них следует говорить так же, как о Его довольстве, любви, воле и остальных качествах.",
+    "arabic_anchor": "وحكمُه حكمُ رضاه ومحبّته وإرادته وسائر صفاته",
+    "reason": "Исправить управление предложного падежа.",
+    "before": "О них следует говорить так же, как о Его довольстве, любви, воли и остальных качеств.",
+    "after": "О них следует говорить так же, как о Его довольстве, любви, воле и остальных качествах.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p341-draft",
+    "printed_pages": [
+      341
+    ],
+    "old": "Ведь Пречистый никого не взыскивает и не наказывает иначе как за грех.",
+    "new": "Ведь Пречистый ни с кого не взыскивает и никого не наказывает иначе как за грех.",
+    "arabic_anchor": "فإنّه سبحانه لا يأخذ أحدًا ولا يعاقبه إلّا بذنبه",
+    "reason": "Исправить управление взыскивать с кого.",
+    "before": "Ведь Пречистый никого не взыскивает и не наказывает иначе как за грех.",
+    "after": "Ведь Пречистый ни с кого не взыскивает и никого не наказывает иначе как за грех.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

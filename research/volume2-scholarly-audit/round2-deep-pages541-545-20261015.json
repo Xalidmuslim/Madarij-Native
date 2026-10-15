@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "method": "Electronic Arabic-to-Russian printed-page source comparison",
+  "pages_reviewed": [
+    541,
+    545
+  ],
+  "pages_edited": [
+    541,
+    542,
+    543,
+    544,
+    545
+  ],
+  "targeted_edits": 9,
+  "findings": [
+    "Restored hadith on exclusive divine remembrance at exact p541–542 boundary",
+    "Restored second hadith and p542–543 boundary distinguishing rida and sabr",
+    "Restored complete narration of faith delegation, dialogue and five listed virtues on p543",
+    "Preserved Ar-Rabi ibn Anas quotation across pages 543–544 instead of anticipatory narration",
+    "Moved unverified provenance warnings about Israelite and Ibn Mas'ud reports from authorial text to research report"
+  ],
+  "limitations": {
+    "print_2019_scan_verified": false,
+    "hadith_grading_verified": false,
+    "footnotes_checked": false,
+    "publisher_ready": false
+  },
+  "apk_built": false
+}

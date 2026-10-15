@@ -1,0 +1,189 @@
+{
+  "range": [
+    63,
+    82
+  ],
+  "evidence": "embedded-Arabic-only; independent agent collation, not human expert certification; edition2019 scans unavailable",
+  "pages": [
+    {
+      "page": 63,
+      "read_all_ar_ru": true,
+      "note": "Сопоставлены окончание слов мухаддаса, полемический перечень и переход к степени понимания: различение авторской речи и цитаты сохранено.",
+      "needs_expert": false,
+      "issues": [
+        "Quran 21:78–79; continuation of prior-page attributed saying."
+      ]
+    },
+    {
+      "page": 64,
+      "read_all_ar_ru": true,
+      "note": "Смысл особого понимания Сулеймана, ответа Али и письма Умара передан; кровная компенсация отделена от понимания.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 21:78–79 continuation; Ali report; Umar letter to Abu Musa: authentication/source editions not verified."
+      ]
+    },
+    {
+      "page": 65,
+      "read_all_ar_ru": true,
+      "note": "Объяснение суры ан-Наср и зависимость достаточности текстов от способности понимать сохранены; переход к общему разъяснению точен.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Abbas/Umar report on surat an-Nasr (110); attribution to salaf not authenticated."
+      ]
+    },
+    {
+      "page": 66,
+      "read_all_ar_ru": true,
+      "note": "Перечитаны все отрицания и причинность наказания заблуждением после разъяснения; необходимое условие не смешано с достаточным.",
+      "needs_expert": false,
+      "issues": [
+        "Quran 9:115;61:5;4:155;6:110;41:17."
+      ]
+    },
+    {
+      "page": 67,
+      "read_all_ar_ru": true,
+      "note": "Общее разъяснение посланников отделено от особого действенного разъяснения; избрание и устранение причин оставления без помощи сохранены.",
+      "needs_expert": false,
+      "issues": [
+        "Quran 14:4;16:37;28:56 begins."
+      ]
+    },
+    {
+      "page": 68,
+      "read_all_ar_ru": true,
+      "note": "Арабская цитата 8:23 оборвана после وهم; русский текст восполнен, существующее примечание ошибочно отрицает восполнение. Различие слуха ушей и сердца сохранено.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 28:56 continuation;8:23 truncated Arabic and complete RU;35:19–23;21:2."
+      ]
+    },
+    {
+      "page": 69,
+      "read_all_ar_ru": true,
+      "note": "Сопоставлены три вида слышания и переход к ильхаму; сообщение Хусайну передано без добавленной оценки достоверности.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 47:16;91:7–8; prophetic prayer to Husayn ibn al-Mundhir, source/grade pending."
+      ]
+    },
+    {
+      "page": 70,
+      "read_all_ar_ru": true,
+      "note": "Цитата автора Маназиль отделена от возражения Ибн аль-Каййима; всеобщий ильхам не смешан с особым тахдисом.",
+      "needs_expert": true,
+      "issues": [
+        "Manazil al-sairin quotation; prophetic report «إن يكن... فعمر», source/grade pending."
+      ]
+    },
+    {
+      "page": 71,
+      "read_all_ar_ru": true,
+      "note": "Примеры внушения непророкам и пчеле сохранены; различение приобретаемой фирасы и чистого дара ильхама передано.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 28:7;5:111;16:68; Manazil quotation."
+      ]
+    },
+    {
+      "page": 72,
+      "read_all_ar_ru": true,
+      "note": "Исключительность непосредственной речи Бога для пророков сохранена; сообщение об Имране и прижигании требует источниковедческой проверки.",
+      "needs_expert": true,
+      "issues": [
+        "Imran ibn Husayn angel greeting report: authentication pending."
+      ]
+    },
+    {
+      "page": 73,
+      "read_all_ar_ru": true,
+      "note": "Сопоставлены слуховое и сердечное обращение ангела; формулировки известного хадиса переведены по данному арабскому тексту.",
+      "needs_expert": true,
+      "issues": [
+        "Angel/shaytan lamma report: wording/grade pending; Quran 2:268;8:12; unnamed tafsir authorities."
+      ]
+    },
+    {
+      "page": 74,
+      "read_all_ar_ru": true,
+      "note": "Притча ан-Навваса передана с авторским указанием на передачу смысла; неопределённость внушения без посредника сохранена.",
+      "needs_expert": true,
+      "issues": [
+        "Nawwas ibn Saman report attributed to Tirmidhi Jami and Ahmad Musnad; author explicitly transmits wording or meaning; grade pending."
+      ]
+    },
+    {
+      "page": 75,
+      "read_all_ar_ru": true,
+      "note": "Различены голоса праведного джинна и шайтана; исключение посланников и совокупной общины из ошибки сохранено.",
+      "needs_expert": true,
+      "issues": [
+        "Quran 4:120;2:268; Umar/Ghaylan ibn Salama report: authentication pending."
+      ]
+    },
+    {
+      "page": 76,
+      "read_all_ar_ru": true,
+      "note": "В начальном стихе перевёрнуты субъект и объект: القراءُ — доверяющие чтецы, а не лица, которым доверяют. Далее добавлена отсутствующая причина «действие воображения».",
+      "needs_expert": true,
+      "issues": [
+        "Unattributed verse addressed to Shahr; subject القراءُ explicit in embedded vocalization."
+      ]
+    },
+    {
+      "page": 77,
+      "read_all_ar_ru": true,
+      "note": "Внутреннее переживание отделено от внешнего события; цитата второй степени ильхама не приписана автору комментария.",
+      "needs_expert": false,
+      "issues": [
+        "Manazil quotation: second degree of inspiration."
+      ]
+    },
+    {
+      "page": 78,
+      "read_all_ar_ru": true,
+      "note": "Три признака ильхама переданы. В заключительной цитате оставлены непереведёнными عين التحقيق и عين الأزل; первая часть объясняется далее, второй термин требует решения специалиста.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Sayyad report; Manazil third-degree quotation includes untranslated terms."
+      ]
+    },
+    {
+      "page": 79,
+      "read_all_ar_ru": true,
+      "note": "Различение исчезновения в созерцании и в существовании сохранено; передаваемые взгляды отделены от оценки автора.",
+      "needs_expert": true,
+      "issues": [
+        "Manazil terminology fana/shuhud vs wujud: specialist review advised."
+      ]
+    },
+    {
+      "page": 80,
+      "read_all_ar_ru": true,
+      "note": "Доли пророчества 1/46 и арифметика объяснения переданы как авторское рассуждение, без самостоятельного исправления хронологии.",
+      "needs_expert": true,
+      "issues": [
+        "Dream as 1/46 of prophecy; alternate narration begins: no independent grading."
+      ]
+    },
+    {
+      "page": 81,
+      "read_all_ar_ru": true,
+      "note": "Перевод смягчает авторское категорическое отсутствие караматов у сподвижников до меньшей частоты; предложено восстановить силу утверждения. Историческую оценку не добавляю.",
+      "needs_expert": true,
+      "issues": [
+        "Dream as 1/70; near-end-time dream report; Ahmad attribution; Ubada ibn Samit saying: authentication pending."
+      ]
+    },
+    {
+      "page": 82,
+      "read_all_ar_ru": true,
+      "note": "Сопоставлены сообщения о благих вестях, совпадении сновидений и трёх видах снов; необычное повторение «последние десять» присутствует в самом арабском тексте.",
+      "needs_expert": true,
+      "issues": [
+        "Three prophetic dream reports incl. Laylat al-Qadr last ten; canonical variants not substituted for embedded wording."
+      ]
+    }
+  ]
+}

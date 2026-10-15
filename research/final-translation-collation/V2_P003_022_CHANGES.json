@@ -1,0 +1,114 @@
+[
+  {
+    "paragraph_id": "madarij-v2-p013-draft",
+    "printed_pages": [
+      13
+    ],
+    "old": "Когда возлюбленному не выпал счастливый удел",
+    "new": "Когда любящему не выпал счастливый удел",
+    "arabic_anchor": "إذا كان المحبُّ قليل حظٍّ",
+    "reason": "المحب — действительное причастие «любящий», не «возлюбленный»; восстановлен субъект любовной метафоры.",
+    "before": "Когда возлюбленному не выпал счастливый удел",
+    "after": "Когда любящему не выпал счастливый удел",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p014-draft",
+    "printed_pages": [
+      14
+    ],
+    "old": "привести кого-либо к руководству или оставить в заблуждении",
+    "new": "наставить кого-либо или ввести его в заблуждение",
+    "arabic_anchor": "أن يهدي أحدًا ولا يضلَّه",
+    "reason": "يضلّه выражает действие введения в заблуждение; передаваемое отрицание способности нельзя сужать до оставления.",
+    "before": "привести кого-либо к руководству или оставить в заблуждении",
+    "after": "наставить кого-либо или ввести его в заблуждение",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p015-draft",
+    "printed_pages": [
+      15
+    ],
+    "old": "с прежней настойчивостью",
+    "new": "столь настойчиво",
+    "arabic_anchor": "ولا يزعجهم إليها ذلك الإزعاج",
+    "reason": "ذلك не утверждает прежнюю стадию воздействия; убрано добавленное временное сравнение.",
+    "before": "с прежней настойчивостью",
+    "after": "столь настойчиво",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p018-draft",
+    "printed_pages": [
+      18
+    ],
+    "old": "перенесённым ради Него тяготам от врагов, о которых Он знает и которых видит",
+    "new": "тяготам, которые они переносили ради Него от Его врагов перед Его взором и с Его ведома",
+    "arabic_anchor": "وتحمُّلِهم لأجله من أعدائه ما هو بعينه وعلمه",
+    "reason": "Объект بعينه وعلمه — переносимое ради Бога, а не сами враги; восстановлена атрибуция знания/видения.",
+    "before": "перенесённым ради Него тяготам от врагов, о которых Он знает и которых видит",
+    "after": "тяготам, которые они переносили ради Него от Его врагов перед Его взором и с Его ведома",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p021-draft",
+    "printed_pages": [
+      21
+    ],
+    "old": "внушил их нечестие и оставил их несчастными",
+    "new": "внушил их нечестие и сделал их несчастными",
+    "arabic_anchor": "وألهم نفوس الفجَّار فجورها وأشقاها",
+    "reason": "أشقى — причинное действие, не простое оставление в прежнем состоянии.",
+    "before": "внушил их нечестие и оставил их несчастными",
+    "after": "внушил их нечестие и сделал их несчастными",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p021-draft",
+    "printed_pages": [
+      21
+    ],
+    "old": "кого Он оставляет в заблуждении, того никто не наставит",
+    "new": "кого Он вводит в заблуждение, того никто не наставит",
+    "arabic_anchor": "ومن يضلل فلا هادي له",
+    "reason": "Восстановлена причинная семантика يضلل.",
+    "before": "кого Он оставляет в заблуждении, того никто не наставит",
+    "after": "кого Он вводит в заблуждение, того никто не наставит",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p021-draft",
+    "printed_pages": [
+      21
+    ],
+    "old": "и оставляет в заблуждении кого пожелает",
+    "new": "и вводит в заблуждение кого пожелает",
+    "arabic_anchor": "ويضلُّ من يشاء بعدله وحكمته",
+    "reason": "Тот же глагол يضل в доводе о предопределении передан последовательно, без смягчения.",
+    "before": "и оставляет в заблуждении кого пожелает",
+    "after": "и вводит в заблуждение кого пожелает",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  }
+]

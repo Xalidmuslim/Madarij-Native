@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-15",
+  "base_commit": "bac689aeb84fa2e8fe86b21942af261b0b1f14d1",
+  "working_branch": "codex/madarij-v1-v2-scholarly-collation-20261015",
+  "publication_ready": false,
+  "files": {
+    "app/src/main/assets/corpus.json": "1be6b1f9c0ce88788e78201d4fc332ac6f239e6dc7e92cf9b250591c34aa9b14",
+    "app/src/main/assets/volume2-preview.json": "cfe85a40c7c157d28a62c1df0bdc03ea206516f097c2ff16c39a07ad70d6775a",
+    "app/src/main/assets/structure.json": "546aa8bb88d1b70520add7f51d543feb15e3c0d66dc709beae26f44d467bda1b",
+    "app/src/main/assets/volume2-structure.json": "163fe5996530ccb51bc53d5992cefcf9b9d47d001d81290a899f4b43e71bdce2",
+    "research/volume2-source/arabic_pages.jsonl": "f80c21f10b7bbf9c7b8d155d559a82388878541a7890fabf28418e83eeddc807"
+  },
+  "backup_branches": {
+    "volume1_main": "backup/cloud-v1-main-before-collation-20261015",
+    "volume2_requested": "backup/cloud-v2-before-collation-20261015",
+    "combined_latest": "backup/cloud-combined-before-collation-20261015"
+  }
+}

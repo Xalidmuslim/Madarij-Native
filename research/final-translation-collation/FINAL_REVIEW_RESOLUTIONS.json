@@ -1,0 +1,47 @@
+{
+  "literary_findings": [
+    {
+      "printed_page": 167,
+      "paragraph_id": "madarij-v2-p167-draft",
+      "final_text": "Всё желаемое помимо Него — преходящая тень и исчезающий образ. Даже если его обладатель какое-то время наслаждается им, это лишь обманчивое пользование.",
+      "decision": "applied_and_checked_against_final_reader",
+      "reason": "Разделить предложение: прежняя конструкция повторно вводит сказуемое через «это» после уже законченного именного сказуемого.",
+      "arabic_and_structure_unchanged": true
+    },
+    {
+      "printed_page": 199,
+      "paragraph_id": "madarij-v2-p199-draft",
+      "final_text": "куда же ему притязать на особое достоинство?",
+      "decision": "applied_and_checked_against_final_reader",
+      "reason": "Риторический вопрос требует вопросительного знака.",
+      "arabic_and_structure_unchanged": true
+    },
+    {
+      "printed_page": 211,
+      "paragraph_id": "madarij-v2-p211-draft",
+      "final_text": "«Устремление исправляет беспечность»: под устремлением",
+      "decision": "applied_and_checked_against_final_reader",
+      "reason": "После исправления заголовка согласовать называемый термин в непосредственно следующем толковании.",
+      "arabic_and_structure_unchanged": true
+    },
+    {
+      "printed_page": 477,
+      "paragraph_id": "madarij-v2-p477-draft",
+      "final_text": "В другом хадисе сообщается, что тому, кто, слыша призыв на молитву, произнесёт: «Я доволен Аллахом как Господом, исламом как религией и Мухаммадом как Посланником», будут прощены грехи.",
+      "decision": "applied_and_checked_against_final_reader",
+      "reason": "Вставка придаточного после причастия разрывает его связь с прямой речью и оставляет незакрытой конструкцию; перестройка сохраняет حين يسمع и устанавливает ясную связь «тому, кто... будут прощены».",
+      "arabic_and_structure_unchanged": true
+    },
+    {
+      "printed_page": 655,
+      "paragraph_id": "madarij-v2-p655-draft",
+      "final_text": "Если человек не строит духовный путь на этом основании, его путь становится порочным, а его итог — отрыв от знания и религии.",
+      "decision": "applied_and_checked_against_final_reader",
+      "reason": "Указать «путь»: местоимение «тот» после «если человек» читается как относящееся к человеку, тогда как فسلوكه прямо называет путь.",
+      "arabic_and_structure_unchanged": true
+    }
+  ],
+  "source": "INDEPENDENT_V2_LITERARY_REVIEW.json",
+  "recheck_log": "V2_RECHECK_CHANGES.json",
+  "independent_human_expert_review": false
+}

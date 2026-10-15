@@ -1,0 +1,780 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages501-550-20261012",
+  "branch": "codex/madarij-v158-volume2-collation-pages551-600-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi, 2019, volume II",
+  "scope": "Consecutive page-number screening 551-600 of Arabic electronic text and Russian draft, with detailed corrections on 9 pages only; not an exhaustive scholarly collation.",
+  "arabic_source": "research/volume2-source/arabic_pages.jsonl",
+  "android_asset": "app/src/main/assets/volume2-preview.json",
+  "russian_drafts": "research/volume2-batch-521-620/russian-pages-*.json",
+  "external_sources": [
+    {
+      "verse": "2:151",
+      "uri": "https://quran.com/al-baqarah/151"
+    },
+    {
+      "verse": "2:152",
+      "uri": "https://quran.com/2/152"
+    },
+    {
+      "verse": "16:78",
+      "uri": "https://quran.com/ar/an-nahl/78"
+    }
+  ],
+  "pages": [
+    {
+      "printed_page": 551,
+      "fragment_id": "madarij-v2-p551-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 552,
+      "fragment_id": "madarij-v2-p552-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 553,
+      "fragment_id": "madarij-v2-p553-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 554,
+      "fragment_id": "madarij-v2-p554-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 555,
+      "fragment_id": "madarij-v2-p555-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 556,
+      "fragment_id": "madarij-v2-p556-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 557,
+      "fragment_id": "madarij-v2-p557-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 558,
+      "fragment_id": "madarij-v2-p558-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored author's direct assertion that contentment with decree applies to both missed favorable and realized unfavorable outcomes, without added narratorial label"
+      ],
+      "open": [
+        "Exact hadith wording of Anas' recollection across transmitters requires independent sources"
+      ]
+    },
+    {
+      "printed_page": 559,
+      "fragment_id": "madarij-v2-p559-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 560,
+      "fragment_id": "madarij-v2-p560-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 561,
+      "fragment_id": "madarij-v2-p561-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 562,
+      "fragment_id": "madarij-v2-p562-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 563,
+      "fragment_id": "madarij-v2-p563-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Musa and angel of death report wording and interpretation need primary text review"
+      ]
+    },
+    {
+      "printed_page": 564,
+      "fragment_id": "madarij-v2-p564-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 565,
+      "fragment_id": "madarij-v2-p565-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored direct prophetic conduct example about Allah's rights rather than a modern author label"
+      ],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 566,
+      "fragment_id": "madarij-v2-p566-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 567,
+      "fragment_id": "madarij-v2-p567-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 568,
+      "fragment_id": "madarij-v2-p568-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 569,
+      "fragment_id": "madarij-v2-p569-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored author's explicit argument about the supplicant's self-debasement and the strict necessity exception"
+      ],
+      "open": [
+        "Check three legal narrations across Sahihayn individually"
+      ]
+    },
+    {
+      "printed_page": 570,
+      "fragment_id": "madarij-v2-p570-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 571,
+      "fragment_id": "madarij-v2-p571-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 572,
+      "fragment_id": "madarij-v2-p572-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 573,
+      "fragment_id": "madarij-v2-p573-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Review cited reports with isnad and editorial print footnote"
+      ]
+    },
+    {
+      "printed_page": 574,
+      "fragment_id": "madarij-v2-p574-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Review cited narrations and exact narrator names"
+      ]
+    },
+    {
+      "printed_page": 575,
+      "fragment_id": "madarij-v2-p575-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 576,
+      "fragment_id": "madarij-v2-p576-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 577,
+      "fragment_id": "madarij-v2-p577-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored direct interpretive distinction of two readings of persistent requests"
+      ],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 578,
+      "fragment_id": "madarij-v2-p578-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 579,
+      "fragment_id": "madarij-v2-p579-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 580,
+      "fragment_id": "madarij-v2-p580-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 581,
+      "fragment_id": "madarij-v2-p581-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 582,
+      "fragment_id": "madarij-v2-p582-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Source and grade of supplication report unresolved"
+      ]
+    },
+    {
+      "printed_page": 583,
+      "fragment_id": "madarij-v2-p583-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 584,
+      "fragment_id": "madarij-v2-p584-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 585,
+      "fragment_id": "madarij-v2-p585-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 586,
+      "fragment_id": "madarij-v2-p586-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored full Arabic 2:152 quote with final تكفرون and first person author's claim of shukr as half of faith"
+      ],
+      "open": [
+        "Print-scan compare 2:152 to the authorized 2019 edition; author transcript had an OCR truncation"
+      ]
+    },
+    {
+      "printed_page": 587,
+      "fragment_id": "madarij-v2-p587-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored complete canonical Arabic 16:78, removing the prior verse's trailing text",
+        "Restored Arabic 2:151-152 including complete final verse 2:152 and removed previous verse numeral",
+        "Restored complete Russian quotations for Qur'an 16:78 and 2:151-152"
+      ],
+      "open": [
+        "Print-scan compare 16:78, 2:151–152; other Qur'anic excerpts on same page need comprehensive check"
+      ]
+    },
+    {
+      "printed_page": 588,
+      "fragment_id": "madarij-v2-p588-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 589,
+      "fragment_id": "madarij-v2-p589-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 590,
+      "fragment_id": "madarij-v2-p590-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored Ibn al-Qayyim's own first-person interpretation of Shibli's statement and his ranking of interpretations"
+      ],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 591,
+      "fragment_id": "madarij-v2-p591-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 592,
+      "fragment_id": "madarij-v2-p592-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 593,
+      "fragment_id": "madarij-v2-p593-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Review report authenticity"
+      ]
+    },
+    {
+      "printed_page": 594,
+      "fragment_id": "madarij-v2-p594-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 595,
+      "fragment_id": "madarij-v2-p595-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 596,
+      "fragment_id": "madarij-v2-p596-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 597,
+      "fragment_id": "madarij-v2-p597-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored direct author reading of Qur'an 93:11 and forceful theological criticism of describing gratitude as an inferior station"
+      ],
+      "open": [
+        "Qur'an 93:11 attribution and early exegetes' attributions require independent check"
+      ]
+    },
+    {
+      "printed_page": 598,
+      "fragment_id": "madarij-v2-p598-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 599,
+      "fragment_id": "madarij-v2-p599-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [],
+      "open": [
+        "Full phrase-by-phrase comparison with print scan and independent source certification not yet completed"
+      ]
+    },
+    {
+      "printed_page": 600,
+      "fragment_id": "madarij-v2-p600-draft",
+      "electronic_source_screened": true,
+      "comprehensive_ar_ru_collation": false,
+      "print_scan_verified": false,
+      "independent_religious_sources_verified": false,
+      "fully_scholarly_verified": false,
+      "publication_ready": false,
+      "changes": [
+        "Restored author's condemnation of false creator/creation analogy and explicit mention of worship of sun, moon and idols"
+      ],
+      "open": [
+        "Full manuscript/print verification of rebuttal and technical theological vocabulary"
+      ]
+    }
+  ],
+  "stats": {
+    "numbered_pages_electronically_screened": 50,
+    "pages_with_confirmed_edits": 9,
+    "individual_exact_replacements": 17,
+    "arabic_quran_repaired_pages": [
+      586,
+      587
+    ],
+    "arabic_quran_fragments_repaired": 3,
+    "russian_changed_pages": [
+      558,
+      565,
+      569,
+      577,
+      586,
+      587,
+      590,
+      597,
+      600
+    ],
+    "android_chapters": 9,
+    "android_bilingual_fragments": 676,
+    "in_memory_assertions_passed": 11,
+    "source_drafts_synced": true,
+    "python_unittest_committed": true,
+    "python_unittest_executed": false,
+    "apk_built": false,
+    "print_scans_seen": 0,
+    "fully_independently_verified_pages": 0,
+    "next_sequential_electronic_page": 601
+  },
+  "status": "partial electronic examination only",
+  "publication_ready": false
+}

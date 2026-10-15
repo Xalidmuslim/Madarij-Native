@@ -1,0 +1,155 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p087-draft",
+    "printed_pages": [
+      87
+    ],
+    "old": "из нескольких взаимосвязанных основ",
+    "new": "из шести составляющих",
+    "arabic_anchor": "مركّبٌ من ستّة أجزاءٍ",
+    "reason": "Восстановлено точное авторское число; самостоятельно пересчитывать или заменять его неопределённым нельзя.",
+    "before": "из нескольких взаимосвязанных основ",
+    "after": "из шести составляющих",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p090-draft",
+    "printed_pages": [
+      90
+    ],
+    "old": "взгляд человека, сглаживающего другого",
+    "new": "взгляд человека, наводящего сглаз на другого",
+    "arabic_anchor": "نظرُ العائن",
+    "reason": "«Сглаживать» означает делать гладким и не передаёт العائن.",
+    "before": "взгляд человека, сглаживающего другого",
+    "after": "взгляд человека, наводящего сглаз на другого",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p090-draft",
+    "printed_pages": [
+      90
+    ],
+    "old": "в его душе возникает ядовитое состояние",
+    "new": "в душе сглазившего возникает ядовитое состояние",
+    "arabic_anchor": "حدثت في نفسه كيفيّةٌ سمِّيّةٌ",
+    "reason": "Местоимение نفسه относится к источнику взгляда العائن, а не к жертве المَعِين.",
+    "before": "в его душе возникает ядовитое состояние",
+    "after": "в душе сглазившего возникает ядовитое состояние",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p095-draft-editor-note-01",
+    "printed_pages": [
+      95
+    ],
+    "old": "Первая цитата Ибрахим: 10 в источнике обрывается после «أفي»; недостающие слова аята не восстановлены.",
+    "new": "Примечание переводчика: первая цитата 14:10 в извлечённом арабском тексте обрывается после أفي. Русская цитата дана с отсутствующим окончанием. Сверка с печатным изданием книги ещё требуется.",
+    "arabic_anchor": "",
+    "reason": "Авторский p095 содержит полную RU-цитату при обрыве AR; устраняется ложное заявление об отсутствии восполнения.",
+    "before": "Первая цитата Ибрахим: 10 в источнике обрывается после «أفي»; недостающие слова аята не восстановлены.",
+    "after": "Примечание переводчика: первая цитата 14:10 в извлечённом арабском тексте обрывается после أفي. Русская цитата дана с отсутствующим окончанием. Сверка с печатным изданием книги ещё требуется.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p095-draft-editor-note-02",
+    "printed_pages": [
+      95
+    ],
+    "old": "В извлечённом арабском тексте цитата Ибрахим 14:10 была оборвана после «أَفِي»; фраза «أَفِي اللَّهِ شَكٌّ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ» восстановлена по тексту Корана.",
+    "new": "Примечание переводчика: восполнение цитаты 14:10 относится к русскому переводу. В арабском тексте корпуса после أَفِي по-прежнему имеется обрыв; печатное издание здесь не сверено.",
+    "arabic_anchor": "",
+    "reason": "Арабский p095 не восстановлен, поэтому примечание должно точно определить уровень восполнения.",
+    "before": "В извлечённом арабском тексте цитата Ибрахим 14:10 была оборвана после «أَفِي»; фраза «أَفِي اللَّهِ شَكٌّ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ» восстановлена по тексту Корана.",
+    "after": "Примечание переводчика: восполнение цитаты 14:10 относится к русскому переводу. В арабском тексте корпуса после أَفِي по-прежнему имеется обрыв; печатное издание здесь не сверено.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p096-draft",
+    "printed_pages": [
+      96
+    ],
+    "old": "а бытие этого мира и есть бытие Аллаха и Его истинная сущность.",
+    "new": "а бытие этого мира тождественно бытию Аллаха, и Он — истинная сущность этого мира.",
+    "arabic_anchor": "بل وجودُ هذا العالم هو عينُ وجود الله، وهو حقيقةُ هذا العالم",
+    "reason": "Восстановлена направленность второго предиката: هو ... حقيقة هذا العالم; это изложение критикуемой автором позиции, а не собственное утверждение переводчика.",
+    "before": "а бытие этого мира и есть бытие Аллаха и Его истинная сущность.",
+    "after": "а бытие этого мира тождественно бытию Аллаха, и Он — истинная сущность этого мира.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p097-draft",
+    "printed_pages": [
+      97
+    ],
+    "old": "Господь по Своей сущности отличен от мира",
+    "new": "Господь по Своей сущности отделён от мира",
+    "arabic_anchor": "مباينةَ الرَّبِّ للعالم بالذّات",
+    "reason": "مباينة не сводится к простому отличию; p098 противопоставляет مغاير и مباينة.",
+    "before": "Господь по Своей сущности отличен от мира",
+    "after": "Господь по Своей сущности отделён от мира",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p097-draft",
+    "printed_pages": [
+      97
+    ],
+    "old": "Кто не утверждает Господа, отличного от мира",
+    "new": "Кто не утверждает Господа, отделённого от мира",
+    "arabic_anchor": "فمَن لم يُثبت ربًّا مباينًا للعالم",
+    "reason": "Сохранён термин مباين в авторском аргументе.",
+    "before": "Кто не утверждает Господа, отличного от мира",
+    "after": "Кто не утверждает Господа, отделённого от мира",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p099-draft",
+    "printed_pages": [
+      99
+    ],
+    "old": "и отличного от Своего творения",
+    "new": "и отделённого от Своего творения",
+    "arabic_anchor": "مباينٍ لخلقه",
+    "reason": "Тот же термин мباينة; сохраняется утверждаемая автором отдельность, а не лишь различие свойств.",
+    "before": "и отличного от Своего творения",
+    "after": "и отделённого от Своего творения",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-12",
+  "parent_commit": "2d572927d976f744acc2e2b3283d25017d77dbe6",
+  "edition": "Nabil ibn Nassar al-Sindi 2019, volume 2",
+  "scope": "Sequential Arabic-to-Russian comparison against the electronically transcribed source page; print scan not inspected. Verification means electronic text comparison, not independent scholarly sign-off.",
+  "pages": [
+    {
+      "printed_page": 13,
+      "ids": [
+        "madarij-v2-p013-draft"
+      ],
+      "corrections": [
+        "Author's denunciation of fatalist opponents restored to direct voice; removed 'по словам автора'."
+      ],
+      "open": [
+        "Unattributed poetry source in the original not yet independently traced."
+      ]
+    },
+    {
+      "printed_page": 14,
+      "ids": [
+        "madarij-v2-p014-draft"
+      ],
+      "corrections": [
+        "Restored complete relationship among reliance on Allah, supplication for guidance and the theological position attributed to the Qadariyya. Removed modern narrated judgment in mid-prose."
+      ],
+      "open": [
+        "Independent theological editorial review."
+      ]
+    },
+    {
+      "printed_page": 15,
+      "ids": [
+        "madarij-v2-p015-draft"
+      ],
+      "corrections": [
+        "Removed two third-person editorial intrusions in direct author speech while preserving all five-station argumentation."
+      ],
+      "quran": "Verse 7:54 excerpt checked against Quran.com; Arabic text remains unchanged."
+    },
+    {
+      "printed_page": 16,
+      "ids": [
+        "madarij-v2-p016-draft"
+      ],
+      "corrections": [
+        "Removed 'Поэт сказал:' because the Arabic source directly presents two poetic lines without speaker label."
+      ],
+      "quran": "Quran 2:30 present; phrase 'ربنا ما خلقت هذا باطلا' is an allusion to Quran 3:191 not explicitly cited in this printed segment; source text unchanged.",
+      "open": [
+        "Examine editor footnotes and verse-boundary apparatus in printed edition."
+      ]
+    },
+    {
+      "printed_page": 17,
+      "ids": [
+        "madarij-v2-p017-draft"
+      ],
+      "corrections": [
+        "Removed redundant 'по передаче автора' inserted inside the translated author statement referring to Torah."
+      ],
+      "open": [
+        "The Torah passage is an author's claimed paraphrase; exact biblical source wording and textual tradition have NOT been independently confirmed."
+      ]
+    },
+    {
+      "printed_page": 18,
+      "ids": [
+        "madarij-v2-p018-draft"
+      ],
+      "corrections": [],
+      "open": [
+        "Long theological causality argument reviewed electronically; final expert check and print scan needed."
+      ]
+    },
+    {
+      "printed_page": 19,
+      "ids": [
+        "madarij-v2-p019-draft"
+      ],
+      "corrections": [],
+      "open": [
+        "Check report about angels, Harut and Marut against cited editions and narration if any."
+      ]
+    },
+    {
+      "printed_page": 20,
+      "ids": [
+        "madarij-v2-p020-draft"
+      ],
+      "corrections": [],
+      "open": [
+        "The sixth station sentence crosses the boundary to page 21. Check print scan."
+      ]
+    }
+  ],
+  "stats": {
+    "electronic_text_pages_reviewed": 8,
+    "changed_pages": 5,
+    "changed_paragraph_ids": [
+      "madarij-v2-p013-draft",
+      "madarij-v2-p014-draft",
+      "madarij-v2-p015-draft",
+      "madarij-v2-p016-draft",
+      "madarij-v2-p017-draft"
+    ],
+    "scan_verified": 0,
+    "scholarly_signed_off": 0
+  },
+  "continuation_next_printed_page": 21,
+  "publication_ready": false,
+  "source_links": [
+    "https://quran.com/ar/al-araf/54",
+    "https://quran.com/ali-imran/191/tafsirs/ar-tafsir-al-tabari"
+  ]
+}

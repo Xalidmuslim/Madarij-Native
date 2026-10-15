@@ -1,0 +1,875 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages251-300-20261012",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages201-250-20261012",
+  "edition": "2019, Nabil ibn Nassar as-Sindi; Dar Ataat al-Ilm / Dar Ibn Hazm, volume 2",
+  "method": "Consecutive 50-page electronic Arabic/Russian source presence + targeted substantive passage collation. Only identified passages on the nine changed pages manually analyzed in detail. This is NOT a full sentence-by-sentence verification of all 50 pages.",
+  "sources": {
+    "arabic": "research/volume2-source/arabic_pages.jsonl",
+    "app": "app/src/main/assets/volume2-preview.json",
+    "russian_draft": "research/volume2-batch-221-320/russian-pages-xxx-yyy.json",
+    "print_source": "https://d1.islamhouse.com/data/ar/ih_books/single-03/ar-Madarij-alSalikee-02.pdf",
+    "quran_55_64": "https://quran.com/ar/ar-rahman/64",
+    "quran_57_27": "https://quran.ksu.edu.sa/tafseer/qortobi/sura57-aya27.html"
+  },
+  "pages": [
+    {
+      "printed_page": 251,
+      "paragraph_ids": [
+        "madarij-v2-p251-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Убрано отсутствующее в авторской речи «Поэт сказал» на границе печатных страниц 250/251; стих сохранён."
+      ],
+      "open_questions": [
+        "Не установлено имя автора стихотворной цитаты."
+      ]
+    },
+    {
+      "printed_page": 252,
+      "paragraph_ids": [
+        "madarij-v2-p252-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 253,
+      "paragraph_ids": [
+        "madarij-v2-p253-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 254,
+      "paragraph_ids": [
+        "madarij-v2-p254-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 255,
+      "paragraph_ids": [
+        "madarij-v2-p255-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 256,
+      "paragraph_ids": [
+        "madarij-v2-p256-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Авторское «как сказано» сохранено без добавления неизвестной атрибуции стиха."
+      ],
+      "open_questions": [
+        "Атрибуция стихотворения не проверена."
+      ]
+    },
+    {
+      "printed_page": 257,
+      "paragraph_ids": [
+        "madarij-v2-p257-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 258,
+      "paragraph_ids": [
+        "madarij-v2-p258-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 259,
+      "paragraph_ids": [
+        "madarij-v2-p259-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 260,
+      "paragraph_ids": [
+        "madarij-v2-p260-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 261,
+      "paragraph_ids": [
+        "madarij-v2-p261-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 262,
+      "paragraph_ids": [
+        "madarij-v2-p262-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 263,
+      "paragraph_ids": [
+        "madarij-v2-p263-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 264,
+      "paragraph_ids": [
+        "madarij-v2-p264-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 265,
+      "paragraph_ids": [
+        "madarij-v2-p265-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 266,
+      "paragraph_ids": [
+        "madarij-v2-p266-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 267,
+      "paragraph_ids": [
+        "madarij-v2-p267-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 268,
+      "paragraph_ids": [
+        "madarij-v2-p268-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 269,
+      "paragraph_ids": [
+        "madarij-v2-p269-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 270,
+      "paragraph_ids": [
+        "madarij-v2-p270-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 271,
+      "paragraph_ids": [
+        "madarij-v2-p271-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 272,
+      "paragraph_ids": [
+        "madarij-v2-p272-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 273,
+      "paragraph_ids": [
+        "madarij-v2-p273-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Удалена современная оговорка «по объяснению автора»; сохранено различение двух видов Божественной воли."
+      ],
+      "open_questions": [
+        "Требуется независимая богословская редактура двух видов воли."
+      ]
+    },
+    {
+      "printed_page": 274,
+      "paragraph_ids": [
+        "madarij-v2-p274-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 275,
+      "paragraph_ids": [
+        "madarij-v2-p275-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 276,
+      "paragraph_ids": [
+        "madarij-v2-p276-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Восстановлена сильная прямая оценка Ибн аль-Каййима вместо современного дистанцирующего пересказа."
+      ],
+      "open_questions": [
+        "Сверить все хадисы соседнего рассуждения с первоисточниками."
+      ]
+    },
+    {
+      "printed_page": 277,
+      "paragraph_ids": [
+        "madarij-v2-p277-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 278,
+      "paragraph_ids": [
+        "madarij-v2-p278-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 279,
+      "paragraph_ids": [
+        "madarij-v2-p279-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 280,
+      "paragraph_ids": [
+        "madarij-v2-p280-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 281,
+      "paragraph_ids": [
+        "madarij-v2-p281-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 282,
+      "paragraph_ids": [
+        "madarij-v2-p282-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 283,
+      "paragraph_ids": [
+        "madarij-v2-p283-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Убрано «по мысли автора» и восстановено прямое рассуждение о предопределении и покаянии."
+      ],
+      "open_questions": [
+        "Требуется окончательная проверка богословского контекста и связанного аята 27:22."
+      ]
+    },
+    {
+      "printed_page": 284,
+      "paragraph_ids": [
+        "madarij-v2-p284-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 285,
+      "paragraph_ids": [
+        "madarij-v2-p285-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 286,
+      "paragraph_ids": [
+        "madarij-v2-p286-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 287,
+      "paragraph_ids": [
+        "madarij-v2-p287-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Формула «поэтому сказано» точнее исходного «ولهذا قيل»; стих оставлен."
+      ],
+      "open_questions": [
+        "Атрибуция стиха не подтверждена."
+      ]
+    },
+    {
+      "printed_page": 288,
+      "paragraph_ids": [
+        "madarij-v2-p288-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Убрана не подтверждённая авторским текстом фраза «Поэт сказал» при сохранении всего стихотворного фрагмента."
+      ],
+      "open_questions": [
+        "Источник стихотворения не установлен."
+      ]
+    },
+    {
+      "printed_page": 289,
+      "paragraph_ids": [
+        "madarij-v2-p289-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 290,
+      "paragraph_ids": [
+        "madarij-v2-p290-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 291,
+      "paragraph_ids": [
+        "madarij-v2-p291-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 292,
+      "paragraph_ids": [
+        "madarij-v2-p292-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 293,
+      "paragraph_ids": [
+        "madarij-v2-p293-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 294,
+      "paragraph_ids": [
+        "madarij-v2-p294-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Восстановлено перечисление конкретных правовых примеров, опущенных в черновом русском пересказе, включая музыку, пост, условия молитвы и обсуждаемые автором правовые мнения.",
+        "Восстановлена арабская кораническая цитата «مُدْهَامَّتَانِ» из суры 55:64 вместо ошибочной цифры (63)."
+      ],
+      "open_questions": [
+        "Данные примеры передают полемику автора, а не юридическое руководство; каждую правовую атрибуцию необходимо подтвердить по первоисточнику.",
+        "Проверить скан 2019 года: в электронном арабском тексте вместо слова из аята 55:64 стояла цифра."
+      ]
+    },
+    {
+      "printed_page": 295,
+      "paragraph_ids": [
+        "madarij-v2-p295-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 296,
+      "paragraph_ids": [
+        "madarij-v2-p296-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 297,
+      "paragraph_ids": [
+        "madarij-v2-p297-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 298,
+      "paragraph_ids": [
+        "madarij-v2-p298-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": true,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [
+        "Восстановлены три грамматических объяснения, разбор видов приложения и аргумент различия действующих лиц.",
+        "Повреждённые OCR-фрагменты коранического выражения исправлены в данных приложения по аяту 57:27."
+      ],
+      "open_questions": [
+        "Скан редакции 2019 года не проверен: повреждённые сегменты арабской цитаты исправлены по Корану 57:27.",
+        "Уточнить грамматический разбор по печатному экземпляру и первоисточникам."
+      ]
+    },
+    {
+      "printed_page": 299,
+      "paragraph_ids": [
+        "madarij-v2-p299-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    },
+    {
+      "printed_page": 300,
+      "paragraph_ids": [
+        "madarij-v2-p300-draft"
+      ],
+      "electronically_screened": true,
+      "selected_passages_substantively_compared": false,
+      "entire_page_line_by_line_verified": false,
+      "print_scan_verified": false,
+      "all_hadith_and_athar_verified": false,
+      "fully_independently_verified": false,
+      "corrections": [],
+      "open_questions": [
+        "Полная построчная сверка со сканом, проверка цитат и независимое подтверждение остаются открытыми."
+      ]
+    }
+  ],
+  "general_open": [
+    "Проблемы электронного арабского OCR сохраняются и на других страницах; слепая автоматическая нормализация чтений Корана недопустима.",
+    "Религиозные передачи в этом диапазоне не получили независимой иснад-проверки.",
+    "Первый том, Android UI/navigation, status and previously repaired pages untouched."
+  ],
+  "stats": {
+    "pages_electronically_screened": 50,
+    "pages_with_confirmed_text_repairs": 9,
+    "replacement_operations": 12,
+    "arabic_quran_repaired_pages": [
+      294,
+      298
+    ],
+    "russian_corrected_pages": [
+      251,
+      256,
+      273,
+      276,
+      283,
+      287,
+      288,
+      294,
+      298
+    ],
+    "app_chapters": 9,
+    "app_fragments": 676,
+    "in_memory_assertions_passed": 11,
+    "python_unittest_committed": true,
+    "python_unittest_executed": false,
+    "apk_built": false,
+    "printed_scans_inspected": 0,
+    "fully_independently_verified_pages": 0,
+    "next_first_pass_page": 301
+  },
+  "publication_ready": false
+}

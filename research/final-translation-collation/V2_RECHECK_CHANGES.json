@@ -1,0 +1,44 @@
+[
+  {
+    "paragraph_id": "madarij-v2-p167-draft",
+    "printed_pages": [
+      167
+    ],
+    "before": "Всё желаемое помимо Него — преходящая тень и исчезающий образ, даже если его обладатель какое-то время наслаждается им, — это лишь обманчивое пользование.",
+    "after": "Всё желаемое помимо Него — преходящая тень и исчезающий образ. Даже если его обладатель какое-то время наслаждается им, это лишь обманчивое пользование.",
+    "arabic_anchor": "وأمَّا (الوقوف على الغاية في كلِّ حينٍ)،",
+    "reason": "Разделить предложение: прежняя конструкция повторно вводит сказуемое через «это» после уже законченного именного сказуемого.",
+    "evidence": "independent_agent_literary_recheck_after_embedded_arabic_collation",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p199-draft",
+    "printed_pages": [
+      199
+    ],
+    "before": "куда же ему притязать на особое достоинство.",
+    "after": "куда же ему притязать на особое достоинство?",
+    "arabic_anchor": "وأمّا (تنسُّم نسيم الفناء)، فلمَّا كان ا",
+    "reason": "Риторический вопрос требует вопросительного знака.",
+    "evidence": "independent_agent_literary_recheck_after_embedded_arabic_collation",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p211-draft",
+    "printed_pages": [
+      211
+    ],
+    "before": "«Устремление исправляет беспечность»: под решимостью",
+    "after": "«Устремление исправляет беспечность»: под устремлением",
+    "arabic_anchor": "المريد السالك تعرض له غفلةٌ عن مراده تُض",
+    "reason": "После исправления заголовка согласовать называемый термин в непосредственно следующем толковании.",
+    "evidence": "independent_agent_literary_recheck_after_embedded_arabic_collation",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "volume": 2,
+  "batch_pages": 70,
+  "first_printed_page": 151,
+  "last_printed_page": 220,
+  "missing_pages": [],
+  "arabic_characters": 60160,
+  "russian_characters": 83915,
+  "arabic_corpus_sha256": "f80c21f10b7bbf9c7b8d155d559a82388878541a7890fabf28418e83eeddc807",
+  "previous_volume_1_unchanged": true,
+  "previous_volume_2_chapter_ids_preserved": true,
+  "merged_syntactic_continuations": [
+    155,
+    161,
+    162,
+    166,
+    170,
+    175,
+    178,
+    185,
+    186,
+    190,
+    191,
+    196,
+    200,
+    213,
+    214,
+    216
+  ],
+  "source_transcription_needs_correction": [
+    156,
+    166,
+    193,
+    197,
+    218
+  ],
+  "independent_translation_collation": false,
+  "religious_quote_review_complete": false,
+  "ready_for_publication": false
+}

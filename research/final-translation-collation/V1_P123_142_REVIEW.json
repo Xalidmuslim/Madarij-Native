@@ -1,0 +1,189 @@
+{
+  "range": [
+    123,
+    142
+  ],
+  "evidence": "embedded-Arabic-only; independent agent collation, not human expert certification; edition2019 scans unavailable",
+  "pages": [
+    {
+      "page": 123,
+      "read_all_ar_ru": true,
+      "note": "Полная подмена RU материалом страницы125; арабские рассуждения об исполнении губительной просьбы, защите отказом, обвинении предопределения и условной просьбе отсутствуют. Предложен полный перевод.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous verse about blame of qadar; Quran75:14 allusion; istikhara recommendation; full missing-content restoration."
+      ]
+    },
+    {
+      "page": 124,
+      "read_all_ar_ru": true,
+      "note": "Полная подмена RU материалом126; отсутствуют истихара, дар как помощь послушанию, испытание даром/отказом и Коран89:15–17. Предложен полный перевод.",
+      "needs_expert": true,
+      "issues": [
+        "Quran89:15–17 missing in original RU; istikhara gloss relocated accurately."
+      ]
+    },
+    {
+      "page": 125,
+      "read_all_ar_ru": true,
+      "note": "RU относится к127. Соответствующий AR125 русский материал обнаружен в RU123, перечитан и перенесён предложением полной замены.",
+      "needs_expert": true,
+      "issues": [
+        "Qadarite theology; no independent doctrinal certification."
+      ]
+    },
+    {
+      "page": 126,
+      "read_all_ar_ru": true,
+      "note": "RU относится к128. Соответствующий AR126 материал имеется в RU124, перечитан и перенесён предложением полной замены.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Abbas qadar/tawhid attribution pending; mountain-moving hypothetical retains condition of command."
+      ]
+    },
+    {
+      "page": 127,
+      "read_all_ar_ru": true,
+      "note": "RU — вольное сокращение129. Соответствующий AR127 материал имеется в RU125, перечитан и перенесён предложением полной замены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran65:3; tawakkul fourth group; extraordinary states not equated to sainthood."
+      ]
+    },
+    {
+      "page": 128,
+      "read_all_ar_ru": true,
+      "note": "RU объединяет/сокращает130–131. Соответствующий AR128 материал имеется в RU126, перечитан и перенесён предложением полной замены. Примечание об ихлясе не соответствует странице.",
+      "needs_expert": true,
+      "issues": [
+        "Quran1:5; second fourfold classification begins."
+      ]
+    },
+    {
+      "page": 129,
+      "read_all_ar_ru": true,
+      "note": "RU дублирует132. В AR129 отсутствовали полный довод об искренности, Коран67:2 и начало ответа Фудайля; предложен полный перевод.",
+      "needs_expert": true,
+      "issues": [
+        "Quran67:2;18:7 allusion; Fudayl ibn Iyad explanation: attribution pending."
+      ]
+    },
+    {
+      "page": 130,
+      "read_all_ar_ru": true,
+      "note": "RU дублирует133. В AR130 отсутствовали продолжение Фудайля,18:110,4:125, хадис о непринятом деле и начало3:188; предложен полный перевод.",
+      "needs_expert": true,
+      "issues": [
+        "Quran18:110;4:125;3:188 begins; hadith «كل عمل ليس عليه أمرنا فهو رد» attributed to al-Sahih, edition/grade independently pending."
+      ]
+    },
+    {
+      "page": 131,
+      "read_all_ar_ru": true,
+      "note": "RU дублирует134. Предложен полный перевод действительного AR131 с окончанием3:188 и третьей/четвёртой группами.",
+      "needs_expert": true,
+      "issues": [
+        "Quran3:188 continuation;98:5 embedded citation lacks initial وما, quoted portion retained."
+      ]
+    },
+    {
+      "page": 132,
+      "read_all_ar_ru": true,
+      "note": "Здесь соответствие AR/RU восстанавливается: прочитаны обе группы, ссылка на не имеющие основы слова отмечена как оценка автора.",
+      "needs_expert": true,
+      "issues": [
+        "Report «أفضل الأعمال أحمزها» called baseless by author; no independent grading."
+      ]
+    },
+    {
+      "page": 133,
+      "read_all_ar_ru": true,
+      "note": "Собранность сердца подчинена обязательному повелению; обе подгруппы и диалог о муэдзине переданы.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous verse and unnamed teacher anecdote; source verification pending."
+      ]
+    },
+    {
+      "page": 134,
+      "read_all_ar_ru": true,
+      "note": "Сопоставлены доказательства приоритета общественной пользы; хадисы даны как цитаты, без придуманной аттестации.",
+      "needs_expert": true,
+      "issues": [
+        "Hadiths all creatures depend on God; scholar vs worshipper; Ali/red camels; call to guidance begins: sources/grades pending."
+      ]
+    },
+    {
+      "page": 135,
+      "read_all_ar_ru": true,
+      "note": "Польза сохраняющегося доброго воздействия, цели посланников и переход к предпочтению обязанности данного времени переданы.",
+      "needs_expert": true,
+      "issues": [
+        "Hadith continuation call to guidance; blessing teachers; forgiveness fish/ant; ascetic separation anecdote: variants/grades pending."
+      ]
+    },
+    {
+      "page": 136,
+      "read_all_ar_ru": true,
+      "note": "Предпочтительность джихада, гостя, семьи, обучения, предрассветного поклонения и молитв передана; условия молитвы в безопасности сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Legal priority examples: specialist legal review, no fresh prescriptions inserted."
+      ]
+    },
+    {
+      "page": 137,
+      "read_all_ar_ru": true,
+      "note": "Правило помощи нуждающемуся, чтения Корана, Арафата, десяти дней и присутствия при смерти брата передано. В вывод о вреде людей не внесено бегство.",
+      "needs_expert": true,
+      "issues": [
+        "Arafat fasting; Dhul-Hijja ten; Ramadan last ten; hadith mixing with people begins."
+      ]
+    },
+    {
+      "page": 138,
+      "read_all_ar_ru": true,
+      "note": "Общение в добре/зле и исключение уменьшения зла различены; неограниченное поклонение не сведено к произволу.",
+      "needs_expert": true,
+      "issues": [
+        "Hadith continuation mixing and patience; exact wording/source pending."
+      ]
+    },
+    {
+      "page": 139,
+      "read_all_ar_ru": true,
+      "note": "Предпочтение повеления своим духовным удовольствиям сохранено; образ пальмы и строгость к нарушению запретов не изъяты.",
+      "needs_expert": true,
+      "issues": [
+        "Palm metaphor resembles prophetic description; author discourse not recategorized as direct hadith."
+      ]
+    },
+    {
+      "page": 140,
+      "read_all_ar_ru": true,
+      "note": "Изложение отрицателей причин и внутренней мудрости промаркировано как их позиция; числа60 и авторские названия книг сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Author works Miftah Dar al-Saada; Safar al-Hijratayn: titles kept as in embedded text."
+      ]
+    },
+    {
+      "page": 141,
+      "read_all_ar_ru": true,
+      "note": "Отрицание любви и рассказ о Джааде переданы как авторский довод; источниковедческая проверка исторического сообщения остаётся.",
+      "needs_expert": true,
+      "issues": [
+        "Historical execution of al-Jad ibn Dirham by Khalid al-Qasri: independent verification pending; author work Qurrat Uyun..."
+      ]
+    },
+    {
+      "page": 142,
+      "read_all_ar_ru": true,
+      "note": "В аргументе оппонентов عوض (плата/возмещение) ошибочно заменено причиной воздаяния; это стирает важное различие цены и причины. Предложена правка.39:10 честно оставлено неполным.",
+      "needs_expert": true,
+      "issues": [
+        "Quran7:43;16:32;27:90;39:10 truncated; divine saying «يا عبادي إنما هي أعمالكم...» source/grade pending; عوض vs سبب requires care."
+      ]
+    }
+  ]
+}

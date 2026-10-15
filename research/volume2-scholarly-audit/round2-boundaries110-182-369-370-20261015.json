@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-15",
+  "scope": "Source page boundaries: authorial Arabic texts versus original Russian reader additions",
+  "pages_fixed": [
+    110,
+    111,
+    164,
+    165,
+    181,
+    182,
+    369,
+    370
+  ],
+  "removed": [
+    "Translator-page-navigation explanations",
+    "Misplaced mid-hadith and mid-quotation closing marks",
+    "Translator note on unverified hadith wording (preserved in audit)"
+  ],
+  "synced_minor_baseline_discrepancies": [
+    {
+      "page": 111,
+      "diff": -1
+    },
+    {
+      "page": 165,
+      "diff": -1
+    }
+  ],
+  "limitations": {
+    "printed_scan_verified": false,
+    "hadith_grading_verified": false,
+    "publisher_ready": false,
+    "apk_built": false
+  }
+}

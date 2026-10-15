@@ -1,0 +1,11 @@
+{
+  "tests_run": 203,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "successful": true,
+  "expectation_updates": 17,
+  "test_files": 8,
+  "test_logic_AST_unchanged_except_strings": true,
+  "translation_unchanged_by_test_repairs": true
+}

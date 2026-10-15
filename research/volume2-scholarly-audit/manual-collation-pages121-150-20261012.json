@@ -1,0 +1,552 @@
+{
+  "date": "2026-10-12",
+  "repository": "Xalidmuslim/Madarij-Native",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages121-150-20261012",
+  "base_branch": "codex/madarij-v158-volume2-collation-pages081-120-20261012",
+  "edition": "Nabil ibn Nassar as-Sindi, Dar Ataat al-Ilm / Dar Ibn Hazm, 2019, volume II",
+  "scope": "Electronic screening of Arabic and Russian data for 30 consecutive printed pages 121–150, with direct substantive correction of ten identified pages. Does NOT mean all 30 pages are fully manually verified, does NOT certify original printed scans, hadith chains, or scholarly theological sign-off.",
+  "author_arabic": "research/volume2-source/arabic_pages.jsonl",
+  "android_text": "app/src/main/assets/volume2-preview.json",
+  "translation_drafts": [
+    "research/volume2-batch-81-150/russian-pages-131-140.json",
+    "research/volume2-batch-81-150/russian-pages-141-150.json"
+  ],
+  "sources_checked": [
+    "https://quran.com/8/23",
+    "https://quran.com/5/83",
+    "https://quran.com/41/26",
+    "https://quran.com/72/2"
+  ],
+  "pages": [
+    {
+      "printed_page": 121,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 122,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 123,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 124,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 125,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 126,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 127,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 128,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 129,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 130,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 131,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Восстановлено начало аята 5:83, устранена цифра соседнего аята; восстановлены окончания цитат 8:23 и 41:26"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Сверить с фотографией страницы выбранного издания; проверить разночтения/структуру цитат"
+      ]
+    },
+    {
+      "printed_page": 132,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 133,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 134,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Исправлена ссылка на Коран 72:1–2 и восстановлены два окончания цитаты 8:23, устранена цифра соседнего аята"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Сверить с фотографией страницы выбранного издания; проверить разночтения/структуру цитат"
+      ]
+    },
+    {
+      "printed_page": 135,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 136,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 137,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 138,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Удалено стороннее «по мнению автора» из авторского богословского рассуждения"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Выявить первоисточник и степень достоверности сообщения о «Коране шайтана»"
+      ]
+    },
+    {
+      "printed_page": 139,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Убрано не принадлежащее авторской речи «Поэт сказал», стих сохранён"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Выявить первоисточник и степень достоверности сообщения о «Коране шайтана»"
+      ]
+    },
+    {
+      "printed_page": 140,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Убраны редакторские формулы, сохранены атрибуция слов Ибн Масуду и непосредственные доводы автора"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Проверить атрибуцию сообщения Ибн Масуду"
+      ]
+    },
+    {
+      "printed_page": 141,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 142,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 143,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Убрано вводное «Автор считает» в изложении возражений и благозвучного чтения"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Сверить хадисы о чтении Корана и музыкальных инструментах по иснадам"
+      ]
+    },
+    {
+      "printed_page": 144,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 145,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 146,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": false,
+      "app_text_changed": false,
+      "corrections": [],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Не выполнена исчерпывающая ручная абзацная сверка; требуется отдельный научный проход"
+      ]
+    },
+    {
+      "printed_page": 147,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Восстановлена прямая форма аргумента о пяти категориях религиозной оценки и благозвучии; вопрос достоверности соответствующего хадиса открыт"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Сверить хадисы о чтении Корана и музыкальных инструментах по иснадам"
+      ]
+    },
+    {
+      "printed_page": 148,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Убраны редакторские обозначения говорящего, сохранены возражения автора о доводе из положения обитателей Рая"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": []
+    },
+    {
+      "printed_page": 149,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Удалена редакторская оговорка, восстановлена конкретная авторская характеристика: «более ста пагубных последствий»"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": []
+    },
+    {
+      "printed_page": 150,
+      "arabic_source_loaded": true,
+      "russian_draft_loaded": true,
+      "screening": "electronic_triage_only",
+      "direct_compared_paragraph": true,
+      "app_text_changed": true,
+      "corrections": [
+        "Устранены редакторские вставки и восстановлено прямое авторское отрицание сопоставления двух видов «опьянения»"
+      ],
+      "print_scan_checked": false,
+      "all_hadith_checked": false,
+      "scholarly_translation_verified": false,
+      "ready_to_publish": false,
+      "open_issues": [
+        "Проверить риторическую точность сложного полемического пассажа"
+      ]
+    }
+  ],
+  "stats": {
+    "pages_electronically_screened": 30,
+    "pages_with_content_edits": 10,
+    "exact_replacements": 25,
+    "arabic_quote_repaired_pages": [
+      131,
+      134
+    ],
+    "russian_author_voice_repaired_pages": [
+      138,
+      139,
+      140,
+      143,
+      147,
+      148,
+      149,
+      150
+    ],
+    "printed_scans_compared": 0,
+    "fully_scholarly_verified_pages": 0,
+    "app_chapters": 9,
+    "app_paragraphs": 676,
+    "js_invariant_assertions_passed": 13,
+    "python_unittest": "Committed but not executed; repository not checked out in an executable runtime",
+    "next_sequential_first_pass_page": 151
+  },
+  "preserved": {
+    "volume1_untouched": true,
+    "volume2_source_inventory_untouched": true,
+    "old_fixes_448_463_507_622_preserved": true,
+    "publication_status_draft": true,
+    "apk_build_requested": false
+  },
+  "publication_ready": false
+}

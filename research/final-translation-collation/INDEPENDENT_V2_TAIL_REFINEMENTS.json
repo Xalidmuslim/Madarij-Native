@@ -1,0 +1,56 @@
+{
+  "scope": "Independent reread of full current Arabic/Russian paragraphs631,653,654 and comparison of four revised proposals; no app or Git mutation.",
+  "results": [
+    {
+      "paragraph_id": "madarij-v2-p631-draft",
+      "printed_pages": [
+        631
+      ],
+      "old": "Его обладатель вверяет себя Господу.",
+      "new": "Его обладатель находится под поручительством Аллаха.",
+      "arabic_anchor": "وصاحبه ضامنٌ على الله",
+      "decision": "approve_provisional",
+      "finding": "ضامن على الله conveys divine undertaking/guarantee. Broad поручительство is more faithful than restricting to a particular guaranteed protection. Both affirmative statement and negative petition preserve source direction."
+    },
+    {
+      "paragraph_id": "madarij-v2-p631-draft",
+      "printed_pages": [
+        631
+      ],
+      "old": "при котором не могу довериться Тебе",
+      "new": "при котором я не буду под Твоим поручительством",
+      "arabic_anchor": "لا أكون فيه ضامنًا عليك",
+      "decision": "approve_provisional",
+      "finding": "ضامن على الله conveys divine undertaking/guarantee. Broad поручительство is more faithful than restricting to a particular guaranteed protection. Both affirmative statement and negative petition preserve source direction."
+    },
+    {
+      "paragraph_id": "madarij-v2-p654-draft",
+      "printed_pages": [
+        654
+      ],
+      "old": "прежнее внимание к собственному действию кажется ему недостатком.",
+      "new": "даже лучшие его дела кажутся ему грехом в этом отношении.",
+      "arabic_anchor": "رأى أحسن أعماله ذنبًا بهذا الاعتبار",
+      "decision": "approve_provisional",
+      "finding": "أحسن أعماله is the best deeds, not attention to own action; ذنبا is sin. بهذا الاعتبار limitation retained. This remains the opponent argument rejected by author on655, not narrator endorsement."
+    },
+    {
+      "paragraph_id": "madarij-v2-p653-draft",
+      "printed_pages": [
+        653
+      ],
+      "old": "а сотворил их вместе с дарованными им волей и способностью, которые являются причинами их действий.",
+      "new": "а сотворил эти поступки посредством дарованных им способности и воли, которые являются причинами действия.",
+      "arabic_anchor": "بل خلقها بما أعطانا من القدرة والإرادة اللَّتين هما من أسباب الفعل",
+      "decision": "approve_provisional",
+      "finding": "خلقها refers to actions; بما indicates means, namely granted ability and will. Explicit эти поступки removes pronoun ambiguity; посредством restores causal/instrumental argument instead of simultaneity."
+    }
+  ],
+  "remaining_blockers": [],
+  "proposal_sha256": {
+    "/tmp/madarij-v2-623-642.json": "a53e25cba91b2f4b0dfb5631b3f9d950f37a71b79cab29dea65e8f81d4f35782",
+    "/tmp/madarij-v2-643-659.json": "e9648e167cef732660662fb212fe25f9476b12c66e6f95a885e2c2aa221fe8e0"
+  },
+  "publication_certification": false,
+  "visual_scan_collation": false
+}

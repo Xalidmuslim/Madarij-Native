@@ -1,0 +1,98 @@
+[
+  {
+    "paragraph_id": "madarij-v2-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "old": "все средства успеха в Его руке",
+    "new": "все поводья содействия — в обеих Его руках",
+    "arabic_anchor": "وأزِمَّة التوفيق جميعها بيديه",
+    "reason": "Восстановлены образ أزمّة «поводья» и двойственное بيديه; единственное число руки не соответствует тексту.",
+    "before": "все средства успеха в Его руке",
+    "after": "все поводья содействия — в обеих Его руках",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p027-draft",
+    "printed_pages": [
+      27
+    ],
+    "old": "возникли не сами по себе",
+    "new": "исходили не от вас самих",
+    "arabic_anchor": "لم تكن محبَّتكم للإيمان وإرادته وتزيينه في قلوبكم منكم",
+    "reason": "منكم отрицает происхождение от адресатов, а не самопроизвольное возникновение.",
+    "before": "возникли не сами по себе",
+    "after": "исходили не от вас самих",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p029-draft",
+    "printed_pages": [
+      29
+    ],
+    "old": "некоторых Своей милостью и заботой",
+    "new": "некоторых своей милостью и заботой",
+    "arabic_anchor": "خصَّ أولئك بإحسانه وعنايته",
+    "reason": "Здесь продолжает действовать земной царь притчи, не непосредственно Бог; заглавное местоимение нарушает уровень речи.",
+    "before": "некоторых Своей милостью и заботой",
+    "after": "некоторых своей милостью и заботой",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p033-draft",
+    "printed_pages": [
+      33
+    ],
+    "old": "связаны с тем, что слышимо и видимо",
+    "new": "предполагают наличие слышимого и видимого",
+    "arabic_anchor": "واسمه السَّميع البصير يوجب مسموعًا ومرئيًا",
+    "reason": "يوجب выражает необходимое следствие, центральное для довода, а не просто отношение связи.",
+    "before": "связаны с тем, что слышимо и видимо",
+    "after": "предполагают наличие слышимого и видимого",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p036-draft",
+    "printed_pages": [
+      36
+    ],
+    "old": "Нечётный (Единственный в этом отношении)",
+    "new": "Нечётный",
+    "arabic_anchor": "وترٌ يحبُّ الوتر",
+    "reason": "Скобочное пояснение отсутствует в авторском тексте и не определяет ясно, в каком отношении говорится о единственности; основной буквальный перевод сохранён.",
+    "before": "Нечётный (Единственный в этом отношении)",
+    "after": "Нечётный",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  },
+  {
+    "paragraph_id": "madarij-v2-p036-draft",
+    "printed_pages": [
+      36
+    ],
+    "old": "Стыдливый в достойном Его смысле",
+    "new": "Стыдливый",
+    "arabic_anchor": "حَيِيٌّ يحبُّ الحياء وأهله",
+    "reason": "Оговорка принадлежит редактору и отсутствует в авторском предложении; не добавляю собственное богословское пояснение.",
+    "before": "Стыдливый в достойном Его смысле",
+    "after": "Стыдливый",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false
+  }
+]

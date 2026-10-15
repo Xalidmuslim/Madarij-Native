@@ -1,0 +1,22 @@
+{
+  "total": 1879,
+  "existing_candidates": 796,
+  "fresh_delimited_quotes": 0,
+  "quran_braces": 1083,
+  "suggested_counts": {
+    "technical_term": 159,
+    "prophetic": 163,
+    "unresolved": 446,
+    "companion": 7,
+    "israiliyat": 11,
+    "Harawi": 5,
+    "salaf": 5,
+    "Quran": 1083
+  },
+  "invalid_offsets": [],
+  "input_candidates_sha256": "ee4f901d672408bc971fce8505f81b829ffd6a68fd774cfa550c63e421ca5b50",
+  "source_sha256": {
+    "1": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a",
+    "2": "536a11ca3828a13a179109c18b5244a57116b17064537220f573d7cadb2a5eb4"
+  }
+}

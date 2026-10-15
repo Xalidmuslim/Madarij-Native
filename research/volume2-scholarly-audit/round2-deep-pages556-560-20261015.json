@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "method": "Electronic Arabic/Russian phrase and page-boundary comparison",
+  "pages_reviewed": [
+    556,
+    560
+  ],
+  "modified_pages": [
+    556,
+    557,
+    558,
+    559,
+    560
+  ],
+  "changes": 11,
+  "findings": [
+    "Restored literal metaphor of grave-dwellers and Umar ibn Abd al-Aziz's introductory speech",
+    "Removed translator hadith provenance qualifiers from authorial prose on 558–560; external chain verification remains pending",
+    "Restored p559→560 narrative boundary for Sa'd ibn Abi Waqqas and Abd Allah ibn al-Sa'ib",
+    "Restored authorial quotations about being cut by shears and the 50-year worshipper's dialogue, including p560→561 boundary"
+  ],
+  "limitations": {
+    "original_2019_print_verified": false,
+    "hadith_reports_graded": false,
+    "footnotes_critically_checked": false,
+    "publication_ready": false
+  },
+  "apk_built": false
+}

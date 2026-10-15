@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "codex/madarij-v158-volume2-collation-pages041-080-20261012",
+  "working_branch": "codex/madarij-v158-volume2-collation-pages081-120-20261012",
+  "edition": "2019, Nabil ibn Nassar as-Sindi; Dar Ataat al-Ilm / Dar Ibn Hazm, volume II",
+  "scope": "40 consecutive numbered print pages inspected in electronic arabic source and Russian draft; direct passage-by-passage corrections restricted to findings documented below. This is NOT a complete manual verification of every sentence and does not certify printed image, ahadith, qiraat or publication.",
+  "source_arabic": "research/volume2-source/arabic_pages.jsonl",
+  "russian_draft": "research/volume2-batch-81-150/russian-pages-081-120 as four decade files",
+  "source_page_template": "https://maknoon.org/ai/view.php?bk=madarej_2&p={page}",
+  "quran_compared_to": [
+    "https://quran.com/an-naziat/46",
+    "https://quran.com/muhammad/24",
+    "https://quran.com/al-muminun/68",
+    "https://quran.com/at-talaq/2-3"
+  ],
+  "precautions": [
+    "The source Arabic JSONL is retained and was not rewritten; only the application's two damaged quotation fragments were corrected.",
+    "Quran 65:2-3 and 102:6-7 contain legitimate in-quotation ayah numbers and were not altered.",
+    "All earlier pages and volume 1 remain untouched.",
+    "No APK build or workflow dispatch was requested or triggered.",
+    "Automated CI push workflow uses [skip ci] on commits."
+  ],
+  "pages": [
+    {
+      "printed_page": 81,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p081-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 82,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p082-draft",
+      "confirmed_corrections": [
+        "Restored Quran 79:46 missing ضحاها and removed intruding previous verse number 45 from application Arabic text."
+      ],
+      "quran_references_checked": [
+        "79:46"
+      ],
+      "open_questions": [
+        "Verify 2019 scan wording and note/parenthetical numbering of long multi-ayah quotations.",
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 83,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p083-draft",
+      "confirmed_corrections": [
+        "Restored missing أقفالها (47:24), and القول (23:68); removed previous-verse numbering inserted in citations."
+      ],
+      "quran_references_checked": [
+        "47:24",
+        "23:68"
+      ],
+      "open_questions": [
+        "Verify print scan and original Qur'an quote boundary.",
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 84,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p084-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 85,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p085-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 86,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p086-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 87,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p087-draft",
+      "confirmed_corrections": [
+        "Removed vague editor insertion that referred to an unnamed author while explaining five causes of heart corruption."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 88,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p088-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 89,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p089-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 90,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p090-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 91,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p091-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 92,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p092-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 93,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p093-draft",
+      "confirmed_corrections": [
+        "Removed 'По объяснению автора' from direct author conclusion about the rewards of qiran and wished-for tamattu."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Check underlying report about farewell pilgrimage and separate theological ruling.",
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 94,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p094-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 95,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p095-draft",
+      "confirmed_corrections": [
+        "Removed added editorial 'по словам приводимого сообщения' from direct author statement about the devil flowing like blood."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Trace Prophetic report source and wording; do not claim hadith grade from this content-only review.",
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 96,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p096-draft",
+      "confirmed_corrections": [
+        "Restored direct author presentation of preferred sleep times; removed third-person author label and modern distancing phrase."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 97,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p097-draft",
+      "confirmed_corrections": [
+        "Removed two editorial third-person author insertions while preserving the author's historical sleep-time claims."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Medical/historical claims of the author are not modern clinical advice."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 98,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p098-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 99,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p099-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 100,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p100-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 101,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p101-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 102,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p102-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 103,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p103-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 104,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p104-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 105,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p105-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 106,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p106-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 107,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p107-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 108,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p108-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 109,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p109-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 110,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p110-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 111,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p111-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 112,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p112-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 113,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p113-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 114,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p114-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 115,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p115-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 116,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p116-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 117,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p117-draft",
+      "confirmed_corrections": [
+        "Removed third-person author narration from direct statement of hope and reliance."
+      ],
+      "quran_references_checked": [
+        "65:2-3"
+      ],
+      "open_questions": [
+        "Kept legitimate internal Quran ayat number (2)."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 118,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p118-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Hadith/athar source attribution and grading not independently established for all cited narrations on this page."
+      ],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 119,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p119-draft",
+      "confirmed_corrections": [],
+      "quran_references_checked": [],
+      "open_questions": [],
+      "ready_to_publish": false
+    },
+    {
+      "printed_page": 120,
+      "scope": "electronic_screening_and_selected_passage_comparison",
+      "arabic_ru_fully_independently_collated": false,
+      "edition_print_scan_verified": false,
+      "independent_scholar_signed_off": false,
+      "application_paragraph_id": "madarij-v2-p120-draft",
+      "confirmed_corrections": [
+        "Restored direct author polemic and logical conclusion instead of 'По оценке автора' and 'Он называет'."
+      ],
+      "quran_references_checked": [],
+      "open_questions": [
+        "Doctrinal attribution needs independent expert review; no softened or strengthened judgement added."
+      ],
+      "ready_to_publish": false
+    }
+  ],
+  "stats": {
+    "pages_structurally_screened": 40,
+    "pages_with_confirmed_changes": 9,
+    "arabic_quotation_repaired_pages": [
+      82,
+      83
+    ],
+    "russian_paragraph_corrected_pages": [
+      87,
+      93,
+      95,
+      96,
+      97,
+      117,
+      120
+    ],
+    "textual_replacement_operations": 12,
+    "independently_verified_complete_pages": 0,
+    "print_scans_verified": 0,
+    "app_fragments_retained": 676,
+    "app_chapters_retained": 9,
+    "equivalent_data_invariant_assertions_passed": 18,
+    "test_script_added": "tools/test_volume2_pages081_120.py",
+    "test_script_executed": false,
+    "verification_note": "JS assertions against live exact app JSON passed; Python unittest file committed but not executed due unavailable runtime repo checkout.",
+    "next_sequential_first_pass_page": 121,
+    "first_page_still_requiring_exhaustive_approval": 81
+  },
+  "publication_ready": false
+}

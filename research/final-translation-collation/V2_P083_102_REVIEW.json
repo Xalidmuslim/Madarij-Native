@@ -1,0 +1,189 @@
+{
+  "range": [
+    83,
+    102
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 83,
+      "read_all_ar_ru": true,
+      "note": "Продолжение сообщения о ремонте и2 основания краткости надежд переданы; размышление над Кораном отделено от простого чтения.",
+      "needs_expert": true,
+      "issues": [
+        "Shelterrepairreport continuation;Quran38:29;47:24;23:68;43:3;HasanalBasri saying."
+      ]
+    },
+    {
+      "page": 84,
+      "read_all_ar_ru": true,
+      "note": "Все звенья большого перечня пользы аятов и6 необходимых знаний присутствуют; противоположные пути не смешаны.",
+      "needs_expert": true,
+      "issues": [
+        "Authorfullbenefitslist;noaddedexternalreferences."
+      ]
+    },
+    {
+      "page": 85,
+      "read_all_ar_ru": true,
+      "note": "Русский оборот «совершенств, от которых Он пречист» ошибочно связывает очищение с совершенствами вместо недостатков; предложено разнести оба объекта.",
+      "needs_expert": true,
+      "issues": [
+        "Sixnecessaryknowledgeitems;angelsfromwombtoafterlife;divineperfection/defects distinction."
+      ]
+    },
+    {
+      "page": 86,
+      "read_all_ar_ru": true,
+      "note": "Все побуждения Корана и образ каравана сохранены; ключ к сокровищнице передан как образ, не новая техника.",
+      "needs_expert": true,
+      "issues": [
+        "Quran3:173 allusion حسبني الله ونعم الوكيل;no reportgrade."
+      ]
+    },
+    {
+      "page": 87,
+      "read_all_ar_ru": true,
+      "note": "Все9 стихов и переход к5 вредителям прочитаны. Два русских дефекта: безоружность приписана сердцу, а чрезмерная сытость стоит в неверном падеже.",
+      "needs_expert": true,
+      "issues": [
+        "9anonymouscouplets;claws/armor imagery;all5heartcorruptors."
+      ]
+    },
+    {
+      "page": 88,
+      "read_all_ar_ru": true,
+      "note": "Непременное условие двух раёв и слова Ибн Таймийи сохранены без собственного смягчения; земное блаженство не объявлено физическим Раем.",
+      "needs_expert": true,
+      "issues": [
+        "IbnTaymiyya earthparadisesaying;anonymousknowerstate;sourcepending."
+      ]
+    },
+    {
+      "page": 89,
+      "read_all_ar_ru": true,
+      "note": "Анонимная речь и её приблизительность переданы; вред избытка общения и история Абу Талиба не лишены авторского вывода.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymousloverquote;AbuTalibdeathreportallusion:source/gradepending."
+      ]
+    },
+    {
+      "page": 90,
+      "read_all_ar_ru": true,
+      "note": "Общение ради ложной цели и последующая вражда сохранены; все3 цитаты и переход к полезному правилу прочитаны.",
+      "needs_expert": true,
+      "issues": [
+        "Quran25:27–29;43:67;29:25."
+      ]
+    },
+    {
+      "page": 91,
+      "read_all_ar_ru": true,
+      "note": "الجماعات означает коллективные молитвы, но RU добавляет вообще собрания; предложено уточнение. Оставаться среди людей не равно соглашаться с дурным.",
+      "needs_expert": true,
+      "issues": [
+        "Legal/ethicalsocialguidance authorial;collectiveprayers vs genericgatherings."
+      ]
+    },
+    {
+      "page": 92,
+      "read_all_ar_ru": true,
+      "note": "Все5 условий духовного отстранения и начало моря мечтаний прочитаны; виды низменных мечтаний не опущены.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymoushalfverse wishesbankruptscapital;notpropheticattribution."
+      ]
+    },
+    {
+      "page": 93,
+      "read_all_ar_ru": true,
+      "note": "Добрые намерения отличены от бесплодных фантазий;2 награды за кыран/желание таматту переданы как довод автора, не новая фетва.",
+      "needs_expert": true,
+      "issues": [
+        "Equalrewardgoodintention hadith;ProphetHajjtamattu/qiranreport;gradesnot independentlyassigned."
+      ]
+    },
+    {
+      "page": 94,
+      "read_all_ar_ru": true,
+      "note": "Все4 положения похвалы/помощи сохранены; неблагополучие привязанности не перепутано с абсолютным запретом обычной связи людей.",
+      "needs_expert": true,
+      "issues": [
+        "Quran19:81–82;36:74–75;17:22."
+      ]
+    },
+    {
+      "page": 95,
+      "read_all_ar_ru": true,
+      "note": "Оба вида запрещённой пищи и вред количества сохранены. «Птицы с когтями» без хищных расширяет класс на обычных птиц; предложено точное терминологическое пояснение.",
+      "needs_expert": true,
+      "issues": [
+        "Foodprohibitionsfiqh;shaytanbloodflowallusion;stomachthirdsreport:source/gradepending."
+      ]
+    },
+    {
+      "page": 96,
+      "read_all_ar_ru": true,
+      "note": "Рассказ о Яхье оставлен передаваемым без аттестации. نوم العصر ошибочно расширен до всего времени после полудня; предложено время асра.",
+      "needs_expert": true,
+      "issues": [
+        "AnonymousIsrailiYahya/Iblisstory;Asrsleepmedicalhistoricalclaim not authenticated propheticrule."
+      ]
+    },
+    {
+      "page": 97,
+      "read_all_ar_ru": true,
+      "note": "Авторские8 часов сна и объяснение врачей переданы как исторический взгляд, без превращения в современное назначение. Вред лишения сна не опущен.",
+      "needs_expert": true,
+      "issues": [
+        "8hours authorhistoricalmedicine;dislikebeforesleepIshareportallusion;no modernmedicalvalidation."
+      ]
+    },
+    {
+      "page": 98,
+      "read_all_ar_ru": true,
+      "note": "Краткое окончание умеренности сна и2 заключительных предложения прочитаны целиком;عدل уместно передан соразмерностью в этом контексте.",
+      "needs_expert": true,
+      "issues": [
+        "عدل=balancecontext;closingformula."
+      ]
+    },
+    {
+      "page": 99,
+      "read_all_ar_ru": true,
+      "note": "Оба вида итисама различены: защита от заблуждения через вервь и от гибели через Бога.22:78 в AR усечён с начала, не реконструирован.",
+      "needs_expert": true,
+      "issues": [
+        "Quran3:103;22:78 missing واعتصموا fromsource;twoformsitisam."
+      ]
+    },
+    {
+      "page": 100,
+      "read_all_ar_ru": true,
+      "note": "Все5 названных толкователей верви и сообщение Ибн Масуда прочитаны; община и религия не объявлены противоречием.",
+      "needs_expert": true,
+      "issues": [
+        "IbnAbbas;IbnMasud;Mujahid;Ata;Qatada;Suddi;IbnMasudmarfuQuranrope:source/gradepending."
+      ]
+    },
+    {
+      "page": 101,
+      "read_all_ar_ru": true,
+      "note": "Сообщение Али и цепочка Малик–Сухайль–отец–Абу Хурайра сохранены; отрицания страстей/языков прочитаны.",
+      "needs_expert": true,
+      "issues": [
+        "AlimarfuQuranreport;Muqatil;Muwatta Malik>Suhayl>father>AbuHurayra sourcechain;variantnot independentlyauthenticated."
+      ]
+    },
+    {
+      "page": 102,
+      "read_all_ar_ru": true,
+      "note": "Повеление как мотив отделено от привычки; слова Талька и2 хадисных фрагмента прочитаны. Странное الإيمان الآمر без ب требует источника, не исправляется догадкой.",
+      "needs_expert": true,
+      "issues": [
+        "Muslimattribution;Harawiquote;TalqibnHabibtaqwadefinition;Ramadan/LaylatQadrreportfragments;الإيمان الآمرsource requirescheck."
+      ]
+    }
+  ]
+}

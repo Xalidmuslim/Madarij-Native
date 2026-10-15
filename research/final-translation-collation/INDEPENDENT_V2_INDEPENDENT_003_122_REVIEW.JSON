@@ -1,0 +1,407 @@
+{
+  "scope": "Complete independent review003–122: all43proposals approved provisionally. Full affected embedded Arabic/Russian paragraphs plus needed boundaries read; all103–122pages additionally read sequentially, plus123. No app/Git mutation.",
+  "results": [
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p013-draft",
+      "old": "Когда возлюбленному не выпал счастливый удел",
+      "new": "Когда любящему не выпал счастливый удел",
+      "decision": "approve_provisional",
+      "finding": "المحب is lover, not beloved."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p014-draft",
+      "old": "привести кого-либо к руководству или оставить в заблуждении",
+      "new": "наставить кого-либо или ввести его в заблуждение",
+      "decision": "approve_provisional",
+      "finding": "Causative misguidance restored inside reported Qadari position."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p015-draft",
+      "old": "с прежней настойчивостью",
+      "new": "столь настойчиво",
+      "decision": "approve_provisional",
+      "finding": "No temporal previous stage in ذلك الإزعاج."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p018-draft",
+      "old": "перенесённым ради Него тяготам от врагов, о которых Он знает и которых видит",
+      "new": "тяготам, которые они переносили ради Него от Его врагов перед Его взором и с Его ведома",
+      "decision": "approve_provisional",
+      "finding": "His sight/knowledge relates to endured suffering, not enemies."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p021-draft",
+      "old": "внушил их нечестие и оставил их несчастными",
+      "new": "внушил их нечестие и сделал их несчастными",
+      "decision": "approve_provisional",
+      "finding": "أشقاها causal making wretched restored."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p021-draft",
+      "old": "кого Он оставляет в заблуждении, того никто не наставит",
+      "new": "кого Он вводит в заблуждение, того никто не наставит",
+      "decision": "approve_provisional",
+      "finding": "Active يضلل restored."
+    },
+    {
+      "file": "/tmp/madarij-v2-003-022.json",
+      "index": 7,
+      "paragraph_id": "madarij-v2-p021-draft",
+      "old": "и оставляет в заблуждении кого пожелает",
+      "new": "и вводит в заблуждение кого пожелает",
+      "decision": "approve_provisional",
+      "finding": "Same active يضل preserved in parallel clause."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p025-draft",
+      "old": "все средства успеха в Его руке",
+      "new": "все поводья содействия — в обеих Его руках",
+      "decision": "approve_provisional",
+      "finding": "Dual hands and reins image exactly present."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p027-draft",
+      "old": "возникли не сами по себе",
+      "new": "исходили не от вас самих",
+      "decision": "approve_provisional",
+      "finding": "منكم means not from yourselves, not merely spontaneous origin."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p029-draft",
+      "old": "некоторых Своей милостью и заботой",
+      "new": "некоторых своей милостью и заботой",
+      "decision": "approve_provisional",
+      "finding": "Earthly king remains subject of parable; lowercase pronoun correct."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p033-draft",
+      "old": "связаны с тем, что слышимо и видимо",
+      "new": "предполагают наличие слышимого и видимого",
+      "decision": "approve_provisional",
+      "finding": "يوجب necessary implication restored."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p036-draft",
+      "old": "Нечётный (Единственный в этом отношении)",
+      "new": "Нечётный",
+      "decision": "approve_provisional",
+      "finding": "Unmarked non-source gloss removed."
+    },
+    {
+      "file": "/tmp/madarij-v2-023-042.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p036-draft",
+      "old": "Стыдливый в достойном Его смысле",
+      "new": "Стыдливый",
+      "decision": "approve_provisional",
+      "finding": "Unmarked non-source qualifier removed."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p044-draft",
+      "old": "из его сердца может исчезнуть",
+      "new": "из его сердца исчезает",
+      "decision": "approve_provisional",
+      "finding": "Categorical خرج replaces unsupported possibility."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p044-draft",
+      "old": "словно человек, поражённый болезнью",
+      "new": "словно человек, ужаленный ядовитым существом",
+      "decision": "approve_provisional",
+      "finding": "السليم in this simile is euphemism for stung person."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p045-draft",
+      "old": "Вместо проклятий в адрес согрешивших он начинает молиться за них",
+      "new": "Вместо того чтобы молиться против согрешивших, он начинает молиться за них",
+      "decision": "approve_provisional",
+      "finding": "دعاء عليهم wider than curses; preceding44 context confirms."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p048-draft",
+      "old": "Всё это порождает сокрушённость, овладевшая сердцем.",
+      "new": "Всё это порождается сокрушённостью, овладевшей сердцем.",
+      "decision": "approve_provisional",
+      "finding": "Causal direction now unmistakable, consistent with أوجبت. Old nominative also could convey this but new clearer."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p052-draft",
+      "old": "а смирение и нужда в Аллахе делают менее губительным недостаток дополнительных трудов",
+      "new": "а при смирении и нужде в Аллахе бездеятельность не вредит",
+      "decision": "approve_provisional",
+      "finding": "Categorical denial of harm restored with immediately retained condition of fulfilled obligations."
+    },
+    {
+      "file": "/tmp/madarij-v2-043-062.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p057-draft",
+      "old": "Автор «Маназиль ас-саирин» сказал: «В языковом смысле инаба — возвращение, а здесь это возвращение к истине. Оно включает три вещи: возвращение к истине через исправление — как раньше человек возвращался через просьбу об извинении; возвращение к ней посредством исполнения обязательства — как прежде он возвращался, заключая завет; возвращение к ней своим состоянием — как прежде он возвращался, откликаясь на зов».",
+      "new": "Автор «Маназиль ас-саирин» сказал: «В языковом смысле инаба — возвращение, а здесь это возвращение к Истинному. Оно включает три вещи: возвращение к Истинному через исправление — как раньше человек возвращался через просьбу об извинении; возвращение к Нему посредством исполнения обязательства — как прежде он возвращался, заключая завет; возвращение к Нему своим состоянием — как прежде он возвращался, откликаясь на зов».",
+      "decision": "approve_provisional",
+      "finding": "الحق personal Divine referent confirmed by رجع إلى الله and next58; Harawi quotation remains distinct."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p063-draft",
+      "old": "пока не станешь испытывать неприязнь к порокам людей ради Аллаха, а затем не обратишься к самому себе и не увидишь в себе ещё больше того, что заслуживает осуждения",
+      "new": "пока не возненавидишь творения ради Аллаха, а затем не обратишься к самому себе и не возненавидишь себя ещё сильнее",
+      "decision": "approve_provisional",
+      "finding": "مقت directed toward الخلق and then oneself, not merely vices; quotation and explanatory64 confirm."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p064-draft",
+      "old": "человек неизбежно испытывает неприятие их поступков",
+      "new": "человек неизбежно испытывает к ним ненависть",
+      "decision": "approve_provisional",
+      "finding": "مقتهم refers to creatures themselves; proposed object correct in author explanation."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p066-draft",
+      "old": "исчезновение самолюбования собственными делами",
+      "new": "исчезновение видения собственных дел",
+      "decision": "approve_provisional",
+      "finding": "فناء عن رؤية is absence of perceiving actions, not merely vanity."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p066-draft",
+      "old": "её проявления бесчисленны и не имеют единственного основания",
+      "new": "её проявления бесчисленны, а сама нужда не обусловлена какой-либо причиной",
+      "decision": "approve_provisional",
+      "finding": "Intrinsic need بالذات contrasted with God intrinsic self-sufficiency; no particular cause correctly distinguished from no single cause."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p070-draft",
+      "old": "Каждая из них питает, укрепляет и порождает следующую.",
+      "new": "Каждая из них питает, укрепляет и порождает другую.",
+      "decision": "approve_provisional",
+      "finding": "69–70 boundary describes three interrelated stations; صاحبه does not mean only next."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p076-draft",
+      "old": "достаточно крепким, чтобы лечиться иначе",
+      "new": "достаточно крепким, чтобы обойтись без лечения",
+      "decision": "approve_provisional",
+      "finding": "ترك التداوي unambiguously abstaining from treatment; preceding alternative medicine already separately named."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 7,
+      "paragraph_id": "madarij-v2-p077-draft",
+      "old": "размышляющий понимает, что и того, кто повторит эту причину, может постичь сходный исход",
+      "new": "размышляющий понимает, что к совершившему то же применимо такое же суждение",
+      "decision": "approve_provisional",
+      "finding": "حكم analogical judgment restored instead of mere probabilistic outcome."
+    },
+    {
+      "file": "/tmp/madarij-v2-063-082.json",
+      "index": 8,
+      "paragraph_id": "madarij-v2-p082-draft",
+      "old": "Разве будут погублены кто-либо, кроме нечестивцев?",
+      "new": "Разве будет погублен кто-либо, кроме нечестивцев?",
+      "decision": "approve_provisional",
+      "finding": "Russian singular agreement with кто-либо correct."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p085-draft",
+      "old": "познание Аллаха и присущих Ему совершенств, от которых Он пречист в отношении всякого недостатка",
+      "new": "познание Аллаха, присущих Ему качеств совершенства и тех признаков недостатка, от которых Он пречист",
+      "decision": "approve_provisional",
+      "finding": "Separate objects of divine perfection and excluded deficiency restored; prior syntax faulty."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p087-draft",
+      "old": "И трусливому, безоружному сердцем",
+      "new": "И безоружному трусу",
+      "decision": "approve_provisional",
+      "finding": "Poetic figure is unarmed coward contrasted with armed horseman; heart qualifies cowardice, not disarmament."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p087-draft",
+      "old": "привязанность к кому-либо помимо Аллаха, чрезмерную сытость и сон",
+      "new": "привязанность к кому-либо помимо Аллаха, чрезмерная сытость и сон",
+      "decision": "approve_provisional",
+      "finding": "Nominative list after были упомянуты requires чрезмерная сытость."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p091-draft",
+      "old": "на общих молитвах и собраниях",
+      "new": "на коллективных молитвах",
+      "decision": "approve_provisional",
+      "finding": "90–91 boundary كالجمعة والجماعات confirms congregational prayers, no separate gatherings."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p095-draft",
+      "old": "и птицы с когтями",
+      "new": "и хищные птицы с когтями",
+      "decision": "approve_provisional",
+      "finding": "Jurist usage of bird claws is predatory hunting talons; qualifier prevents false general prohibition of all clawed birds."
+    },
+    {
+      "file": "/tmp/madarij-v2-083-102.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p096-draft",
+      "old": "особенно от сна после полудня",
+      "new": "особенно от сна во время асра",
+      "decision": "approve_provisional",
+      "finding": "Asr interval distinguished from entire post-noon span; exact temporal reference restored."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 1,
+      "paragraph_id": "madarij-v2-p103-draft",
+      "old": "противопоставляя Своё предопределение другому предопределению, Свою волю — последствиям иной воли",
+      "new": "отражая одно Своё предопределение другим, одну Свою волю — другой",
+      "decision": "approve_provisional",
+      "finding": "All four possessives refer to God, not distinct source of another will."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 2,
+      "paragraph_id": "madarij-v2-p104-draft",
+      "old": "А совершенство этого состояния состоит в отказе желать чего-либо, что не соответствует Его воле.",
+      "new": "А совершенство этого состояния — восхождение от желания чего-либо помимо Него к устремлению к Нему.",
+      "decision": "approve_provisional",
+      "finding": "إرادته is desiring Him as object in parallel with prior witnessing; restored target valid."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 3,
+      "paragraph_id": "madarij-v2-p109-draft",
+      "old": "это свидетельствование Единой Истины, после полного обращения к Ней в почтении и занятия Ею в близости",
+      "new": "это созерцание одного лишь Истинного после полного обращения к Нему в почтении и сосредоточения на Нём в близости",
+      "decision": "approve_provisional",
+      "finding": "الحق personal Divine referent explicit in following commentary."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 4,
+      "paragraph_id": "madarij-v2-p109-draft",
+      "old": "Под «свидетельствованием Единой Истины»",
+      "new": "Под «созерцанием одного лишь Истинного»",
+      "decision": "approve_provisional",
+      "finding": "Repeated phrase harmonised with corrected quotation."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 5,
+      "paragraph_id": "madarij-v2-p112-draft",
+      "old": "исчезновению желаний, противоречащих Его воле",
+      "new": "исчезновению желания чего-либо помимо Него",
+      "decision": "approve_provisional",
+      "finding": "إرادة السوى is desire of other than Him, not only contrary desires; following sentence clarifies religious will."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 6,
+      "paragraph_id": "madarij-v2-p112-draft",
+      "old": "исчезает всё, что прежде было временным предметом желания, предпочтения, любви, возвеличивания, страха, надежды и упования",
+      "new": "тот, кто прежде не существовал, исчезает как предмет желания, предпочтения, любви, возвеличивания, страха, надежды и упования",
+      "decision": "approve_provisional",
+      "finding": "من لم يكن created which previously did not exist; adverbial aspects restored. Optional neutral «то, чего прежде не было» broader than person-like «тот, кто»."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 7,
+      "paragraph_id": "madarij-v2-p117-draft",
+      "old": "Чем лучше раб думает об Аллахе, чем твёрже его надежда и искреннее упование, тем меньше он опасается, что надежда останется напрасной.",
+      "new": "Если раб хорошо думает об Аллахе, возлагает на Него благую надежду и искренне уповает на Него, Аллах никогда не оставит его надежду напрасной.",
+      "decision": "approve_provisional",
+      "finding": "Divine unfailing promise restored instead of reduction of human anxiety."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 8,
+      "paragraph_id": "madarij-v2-p118-draft",
+      "old": "«Мы имеем больше оснований сомневаться, чем Ибрахим, когда он сказал: “Господь мой, покажи мне, как Ты оживляешь мёртвых”»",
+      "new": "«Мы имеем больше оснований сомневаться, чем Ибрахим, когда он сказал: “Господь мой, покажи мне, как Ты оживляешь мёртвых”. Он сказал: “Разве ты не уверовал?” Он ответил: “Конечно, но я хочу, чтобы моё сердце успокоилось”»",
+      "decision": "approve_provisional",
+      "finding": "Full dialogue present in repeated Arabic quotation; restoration based on embedded source, not external reconstruction."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 9,
+      "paragraph_id": "madarij-v2-p120-draft",
+      "old": "к упразднению значительной части религиозных повелений",
+      "new": "к упразднению религиозного повеления в целом",
+      "decision": "approve_provisional",
+      "finding": "جملة الأمر is command in entirety, both inner/outer sides, not significant part."
+    },
+    {
+      "file": "/tmp/madarij-v2-103-122.json",
+      "index": 10,
+      "paragraph_id": "madarij-v2-p122-draft",
+      "old": "от всего, что ниже Истины, к Истине",
+      "new": "от всего, что ниже Истинного, к Истинному",
+      "decision": "approve_provisional",
+      "finding": "الحق personal Divine referent; full123 boundary read, whose opening still needs same к Истинному correction in next block."
+    }
+  ],
+  "remaining_blockers": [],
+  "pending_blocks": [],
+  "proposal_sha256": {
+    "/tmp/madarij-v2-003-022.json": "a8b075fb1b68a39972072e88702e8012e850ed82d3ac324c0dc3475f6fb6cb50",
+    "/tmp/madarij-v2-023-042.json": "afde400187189b8b9f8768b8d5250408f5c5e135b495dde272974e4a3b97eaea",
+    "/tmp/madarij-v2-043-062.json": "d945bbd8f24107d0a1a88874c3100a4a40cde53fc59674d3cabfed9f79c6bbf7",
+    "/tmp/madarij-v2-063-082.json": "4b46031cafb7db9f44e985887159515b23403be79acdad1484121492bbeaca9d",
+    "/tmp/madarij-v2-083-102.json": "fab295a3506fe1e4f3ea304831b391ed44369caa6c48e6cce9cdda9d085da8d3",
+    "/tmp/madarij-v2-103-122.json": "b31a2844b8e6b8a1845c745951a9b21a0a8d0e922bbcfeeb57846f600bf0ca6a"
+  },
+  "publication_certification": false,
+  "visual_scan_collation": false,
+  "integration_notes": [
+    "Page123 opening currently says к Истине and should be harmonised to к Истинному by next block; proposer and root notified."
+  ]
+}

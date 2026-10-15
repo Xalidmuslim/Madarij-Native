@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p410-draft",
+    "printed_pages": [
+      410
+    ],
+    "old": "которому требовали их основы отрицания качеств",
+    "new": "которого требовали их основы отрицания качеств",
+    "arabic_anchor": "لما اقتضته أصولهم من نفي الصِّفات",
+    "reason": "Исправлено управление «требовать чего». ",
+    "before": "которому требовали их основы отрицания качеств",
+    "after": "которого требовали их основы отрицания качеств",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p417-draft",
+    "printed_pages": [
+      417
+    ],
+    "old": "и покаяние от самого этого видения.",
+    "new": "и покаяние от видения этого видения.",
+    "arabic_anchor": "وتوبتُه من رؤية تلك الرُّؤية",
+    "reason": "Восстановлена вторая степень рефлексии, необходимая для следующего опровержения бесконечного регресса.",
+    "before": "и покаяние от самого этого видения.",
+    "after": "и покаяние от видения этого видения.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p422-draft",
+    "printed_pages": [
+      422
+    ],
+    "old": "а пребывающий в фана из-за погружения в исчезновение и созерцание кайюмийи вовсе теряет из виду своё повиновение — и это недостаток.",
+    "new": "…погружением в фана и созерцание кайюмийи от созерцания своего повиновения — и это недостаток.",
+    "arabic_anchor": "باستغراقه في الفناء وشهودِ القيُّوميّة عن شهودها، وهو ناقصٌ.",
+    "reason": "Продолжено предложение стр. 421 «исчезнувший же отвлечён»; устранён повтор субъекта, отсутствующий в AR.",
+    "before": "а пребывающий в фана из-за погружения в исчезновение и созерцание кайюмийи вовсе теряет из виду своё повиновение — и это недостаток.",
+    "after": "…погружением в фана и созерцание кайюмийи от созерцания своего повиновения — и это недостаток.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

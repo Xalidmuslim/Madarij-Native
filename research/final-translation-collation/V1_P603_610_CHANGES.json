@@ -1,0 +1,36 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p603-draft",
+    "printed_pages": [
+      603
+    ],
+    "old": "Кто последними словами произнёс: “Нет божества, достойного поклонения, кроме Аллаха”, войдёт в Рай",
+    "new": "Чьими последними словами были: “Нет божества, достойного поклонения, кроме Аллаха”, тот войдёт в Рай",
+    "arabic_anchor": "من كان آخرَ كلامه: لا إله إلّا الله، دخل الجنّة",
+    "reason": "Исправлена ненормативная русская конструкция, сохранён смысл последних слов человека.",
+    "before": "Кто последними словами произнёс: “Нет божества, достойного поклонения, кроме Аллаха”, войдёт в Рай",
+    "after": "Чьими последними словами были: “Нет божества, достойного поклонения, кроме Аллаха”, тот войдёт в Рай",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p607-draft",
+    "printed_pages": [
+      607
+    ],
+    "old": "с учётом основания наказания и препятствия к нему а решающим",
+    "new": "с учётом основания наказания и препятствия к нему, а решающим",
+    "arabic_anchor": "اعتبارًا لمقتضي العقاب ومانعِه، وإعمالًا لأرجحهما",
+    "reason": "Восстановлена пропущенная запятая между частями предложения.",
+    "before": "с учётом основания наказания и препятствия к нему а решающим",
+    "after": "с учётом основания наказания и препятствия к нему, а решающим",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

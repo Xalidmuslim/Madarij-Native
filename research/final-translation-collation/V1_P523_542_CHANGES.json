@@ -1,0 +1,70 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p527-draft",
+    "printed_pages": [
+      527
+    ],
+    "old": "Затем неверующие равняют с их Господом",
+    "new": "Затем неверующие приравнивают других к своему Господу",
+    "arabic_anchor": "ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ",
+    "reason": "Восстановить русское управление и подразумеваемый объект, прямо пояснённый автором далее.",
+    "before": "Затем неверующие равняют с их Господом",
+    "after": "Затем неверующие приравнивают других к своему Господу",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p535-draft",
+    "printed_pages": [
+      535
+    ],
+    "old": "предостерегал о Его мощи",
+    "new": "предостерегал о Его каре",
+    "arabic_anchor": "ويُنذرهم بأسَه",
+    "reason": "بأس в сочетании с предупреждением означает кару, суровое наказание.",
+    "before": "предостерегал о Его мощи",
+    "after": "предостерегал о Его каре",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p537-draft",
+    "printed_pages": [
+      537
+    ],
+    "old": "Путь поздних более знающ и мудр, а путь прежних предшественников менее знающ, хотя безопаснее!",
+    "new": "Путь поздних более знающ и мудр, а путь прежних предшественников невежественнее, хотя безопаснее!",
+    "arabic_anchor": "فطريقةُ المتأخِّرين أعلَمُ وأحكَمُ، وطريقةُ السّلف الماضين أجهَلُ لكنَّها أسلَم",
+    "reason": "أجهل — невежественнее; ослабление «менее знающ» смягчает сатирическую речь, вложенную автором в уста оппонентов.",
+    "before": "Путь поздних более знающ и мудр, а путь прежних предшественников менее знающ, хотя безопаснее!",
+    "after": "Путь поздних более знающ и мудр, а путь прежних предшественников невежественнее, хотя безопаснее!",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p528-draft-editor-note-01",
+    "printed_pages": [
+      528
+    ],
+    "old": "Цитата аль-Кахф: 17 в исходнике содержит повреждение «فهو فهو» и пропуск; повреждённое место сохранено в переводе без восстановления.",
+    "new": "Цитата аль-Кахф: 17 во встроенном арабском тексте содержит повреждение «فهو فهو» и пропуск; повреждённое место сохранено в переводе без восстановления.",
+    "arabic_anchor": "",
+    "reason": "Примечание к авторскому абзацу: повреждение встроенного корпуса не удостоверяет дефекта печатного издания.",
+    "before": "Цитата аль-Кахф: 17 в исходнике содержит повреждение «فهو فهو» и пропуск; повреждённое место сохранено в переводе без восстановления.",
+    "after": "Цитата аль-Кахф: 17 во встроенном арабском тексте содержит повреждение «فهو فهو» и пропуск; повреждённое место сохранено в переводе без восстановления.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

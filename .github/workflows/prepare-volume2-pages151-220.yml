@@ -1,0 +1,29 @@
+name: Prepare Arabic original volume 2 pages 151 to 220
+on:
+  push:
+    branches:
+      - codex/madarij-v151-volume2-pages151-220-draft
+    paths:
+      - .github/workflows/prepare-volume2-pages151-220.yml
+      - tools/prepare_arabic_volume2_pages151_220.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  originals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Split exact printed Arabic source pages 151–220
+        run: python3 tools/prepare_arabic_volume2_pages151_220.py
+      - name: Commit seven separately readable original-source batches
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/volume2-batch-151-220/original-arabic/
+          git diff --cached --check
+          git commit -m "research(v2): preserve exact original Arabic page text 151–220 in seven batches"
+          git push origin HEAD:codex/madarij-v151-volume2-pages151-220-draft

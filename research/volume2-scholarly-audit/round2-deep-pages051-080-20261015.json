@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-15",
+  "volume": 2,
+  "branch": "codex/madarij-v158-deep-audit-p051-080-20261015",
+  "source": "2019 scholarly edition Arabic electronic transcription available as app paragraph text",
+  "printed_pages_manually_compared": [
+    51,
+    80
+  ],
+  "pages_compared_count": 30,
+  "changed_paragraphs": [
+    "madarij-v2-p053-draft",
+    "madarij-v2-p054-draft",
+    "madarij-v2-p056-draft",
+    "madarij-v2-p063-draft",
+    "madarij-v2-p079-draft",
+    "madarij-v2-p080-draft"
+  ],
+  "replacements": [
+    {
+      "page": 53,
+      "reason": "Arabic source p53 ends mid-sentence: فأنا أعلم به إذ"
+    },
+    {
+      "page": 54,
+      "reason": "Arabic p54 begins أنشأته من الأرض; did not belong in p53"
+    },
+    {
+      "page": 56,
+      "reason": "Move non-authorial hadith provenance qualification to scholarly audit"
+    },
+    {
+      "page": 63,
+      "reason": "Remove unmarked translator provenance note from author text; retain warning in audit"
+    },
+    {
+      "page": 79,
+      "reason": "Arabic p79 ends with تقول العرب: فلان"
+    },
+    {
+      "page": 80,
+      "reason": "Arabic p80 begins عالم بأيام العرب وأيام الناس"
+    },
+    {
+      "page": 80,
+      "reason": "Arabic p80 concludes with colon preceding his quotation on p81"
+    }
+  ],
+  "findings": [
+    "Source-faithful Arabic-to-Russian quotation boundary for a long attributed report on pp53–54",
+    "Source-faithful Arabic-to-Russian proverb boundary pp79–80; removed unsupported ellipsis at p80 ending",
+    "Hadith-attribution uncertainty on p56 and p63 is a scholarly note, not words of Ibn al-Qayyim, and is not inserted into the continuous author translation",
+    "Publisher-status flags remain false; existing explicitly labeled scholarly/translator caveats on pp54 and 78 retained"
+  ],
+  "unresolved_for_scholars": [
+    {
+      "pages": [
+        53,
+        54
+      ],
+      "issue": "Authenticate long attributed narration supposedly in Musnad Ahmad; non-authorial note exists in p54."
+    },
+    {
+      "pages": [
+        56
+      ],
+      "issue": "Verify precise matn and isnad for each newborn being upon al-milla; original author speech only preserved in Russian."
+    },
+    {
+      "pages": [
+        63
+      ],
+      "issue": "Check isnad and grading of narration concerning martyrs on their beds versus in battlefield lines."
+    },
+    {
+      "pages": [
+        70
+      ],
+      "issue": "Electronic Arabic citation of Qaf 50:36 may encompass following verse 50:37; Russian says 50:36–37. Requires inspection of exact printed reference."
+    },
+    {
+      "pages": [
+        78
+      ],
+      "issue": "40 repetitions before Fajr attributed to Ibn Taymiyya; verify origin, retain explicit non-prophetic caution."
+    }
+  ],
+  "verified_machine": {
+    "affected_paragraphs": 6,
+    "other_app_paragraphs_unchanged": 670,
+    "arabic_content_unchanged": true,
+    "chapters": 9,
+    "paragraphs": 676,
+    "all_research_drafts_51_80_synced_ignoring_typographic_edge_ellipses": true,
+    "in_memory_checks_passed": 6
+  },
+  "limitations": {
+    "print_2019_scan_verified": false,
+    "full_hadith_takhrij_done": false,
+    "footnotes_verified": false,
+    "all_vol2_pages_independently_scholarly_verified": false,
+    "publication_ready": false,
+    "apk_built": false,
+    "first_volume_or_UI_touched": false
+  }
+}

@@ -2,6 +2,7 @@ package ru.madarij.nativeapp
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -17,6 +18,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -94,7 +97,12 @@ internal fun Soft3DPanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
         .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
+        content()
+    }
 }
 
 @Composable
@@ -107,7 +115,12 @@ internal fun Soft3DSagePanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.secondaryContainer)
         .border(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .3f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base), content = content)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
+        content()
+    }
 }
 
 @Composable
@@ -142,38 +155,85 @@ internal fun MadarijTopBar(
     showTextSettings: Boolean, onTextSettings: () -> Unit, onBookmarks: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
-        Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),verticalAlignment = Alignment.CenterVertically) {
-            TextButton(onClick = onBack,modifier = Modifier.size(44.dp),contentPadding = PaddingValues(0.dp)) { Text("‹",style = MaterialTheme.typography.headlineSmall) }
-            Text(title,Modifier.weight(1f),style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif,fontWeight = FontWeight.Normal,fontSize = 21.sp),textAlign = TextAlign.Center,maxLines = 2,overflow = TextOverflow.Ellipsis)
-            if(title == "Оглавление") IconButton(onClick = onBookmarks) { NavigationGlyph("bookmarks",selected = true,modifier = Modifier.size(21.dp)) }
-            else if(showSearch) IconButton(onClick = onSearch) { NavigationGlyph("search",modifier = Modifier.size(21.dp)) }
-            else Spacer(Modifier.width(44.dp))
+        if (title == "Оглавление") {
+            Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f)) {
+                    Text(title, style = MaterialTheme.typography.headlineLarge.copy(
+                        fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
+                        color = BookColors.ink)
+                    if (subtitle != null) Text(subtitle,
+                        style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+                }
+                IconButton(onClick = onSearch) {
+                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = BookColors.ink)
+                }
+                TextButton(onClick = onTextSettings, modifier = Modifier.width(44.dp),
+                    contentPadding = PaddingValues(0.dp)) {
+                    Text("Aa", color = BookColors.gold, fontSize = 17.sp)
+                }
+            }
+        } else {
+            Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                TextButton(onClick = onBack, modifier = Modifier.size(44.dp),
+                    contentPadding = PaddingValues(0.dp)) {
+                    Text("‹", style = MaterialTheme.typography.headlineSmall)
+                }
+                Text(title, Modifier.weight(1f),
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        fontFamily = BookSerif, fontWeight = FontWeight.Normal, fontSize = 20.sp),
+                    textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
+                if (showSearch) IconButton(onClick = onSearch) {
+                    NavigationGlyph("search", modifier = Modifier.size(21.dp))
+                } else Spacer(Modifier.width(44.dp))
+            }
         }
-        HorizontalDivider(color = BookColors.gold.copy(alpha = .12f))
+        HorizontalDivider(color = BookColors.gold.copy(alpha = .15f))
     }
 }
-
 @Composable
 internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surface)) {
-        HorizontalDivider(color = BookColors.gold.copy(alpha = .16f))
-        Row(Modifier.fillMaxWidth().heightIn(min = 56.dp).padding(horizontal = AppSpacing.xs, vertical = AppSpacing.xs),
-            verticalAlignment = Alignment.CenterVertically) {
+    Box(Modifier.fillMaxWidth().height(62.dp)
+        .clip(RoundedCornerShape(18.dp))
+        .background(BookColors.leather)
+        .border(.6.dp, BookColors.lightGold.copy(alpha = .34f), RoundedCornerShape(18.dp))) {
+        PreloadedBookImage(R.drawable.navigation_leather,
+            modifier = Modifier.matchParentSize(),
+            contentScale = ContentScale.FillBounds)
+        Row(
+            Modifier.fillMaxSize().padding(horizontal = 8.dp, vertical = 5.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             items.forEach { (destination, label) ->
                 val active = selected == destination
-                Column(Modifier.weight(1f).heightIn(min = 48.dp).clip(RoundedCornerShape(AppRadius.small))
-                    .clickable { onSelect(destination) }.padding(vertical = AppSpacing.xs),
-                    horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
-                    NavigationGlyph(if(destination == "contents") "toc" else destination, selected = active, modifier = Modifier.size(21.dp))
-                    Spacer(Modifier.height(AppSpacing.xs))
-                    Text(label, style = MaterialTheme.typography.labelSmall.copy(fontSize = 9.sp),
-                        color = if (active) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                val labelColor = androidx.compose.animation.animateColorAsState(
+                    targetValue = if (active) BookColors.lightGold else Color(0xFFB9A793),
+                    animationSpec = androidx.compose.animation.core.tween(110),
+                    label = "tab-color"
+                ).value
+                Column(
+                    Modifier.weight(1f).fillMaxHeight()
+                        .clip(RoundedCornerShape(10.dp))
+                        .clickable { onSelect(destination) }
+                        .padding(vertical = 1.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    AntiqueBookIcon(destination, modifier = Modifier.size(25.dp))
+                    Spacer(Modifier.height(3.dp))
+                    Text(
+                        label,
+                        style = MaterialTheme.typography.labelSmall.copy(fontFamily = BookSerif, fontSize = 11.sp),
+                        color = labelColor,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
                 }
             }
         }
     }
 }
-
 @Composable
 internal fun AppActionGlyph(kind: String, modifier: Modifier = Modifier) {
     Soft3DIconPuck(kind, modifier)
@@ -242,6 +302,12 @@ internal fun highlight(text: String, query: String, color: Color): AnnotatedStri
 
 @Composable
 internal fun NavigationGlyph(kind: String, selected: Boolean = false, modifier: Modifier = Modifier, tint: Color? = null) {
+    // Use the same icon family throughout home, bottom navigation and controls.
+    // Retain original vector drawing for any unrecognised functional glyph.
+    if (AntiqueBookIcons.drawable(kind) != null) {
+        AntiqueBookIcon(kind, modifier)
+        return
+    }
     val color = tint ?: if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
     val accent = tint ?: MaterialTheme.colorScheme.secondary
     Canvas(modifier) {
@@ -344,11 +410,11 @@ internal fun SettingSwitch(label: String, checked: Boolean, change: (Boolean) ->
 
 @Composable
 private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> Unit) {
-    Surface(
-        color = MaterialTheme.colorScheme.surface,
+    AgedPaperCard(
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         shape = RoundedCornerShape(AppRadius.medium),
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .42f)),
-        shadowElevation = 0.dp
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 15.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
@@ -373,8 +439,12 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
     LazyColumn(contentPadding = PaddingValues(horizontal=16.dp,vertical=10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             SettingsGroup("Оформление") {
-                Text("Тема", style = MaterialTheme.typography.labelLarge)
-                ThemeSelector(value.theme) { update(value.copy(theme = it)) }
+                Text("Фон чтения", style = MaterialTheme.typography.labelLarge)
+                ReadingPaperSelector(value.paperTone) { newTone ->
+                    update(value.copy(paperTone = newTone, theme = if (value.theme == "dark") "sepia" else value.theme))
+                }
+                SettingSwitch("Ночной режим", value.theme == "dark",
+                    { update(value.copy(theme = if (it) "dark" else "sepia")) })
                 Text("Русский шрифт", style = MaterialTheme.typography.labelLarge)
                 Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { listOf("sans" to "Стандартный", "book" to "Книжный", "serif" to "С засечками").forEach { (key,label) -> FilterChip(value.russianFont == key, { update(value.copy(russianFont = key)) }, { Text(label) }) } }
                 ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}", value.russianSize, 14f..36f) { update(value.copy(russianSize = it)) }
@@ -401,10 +471,11 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
             }
         }
         item {
-            Surface(
-                color = MaterialTheme.colorScheme.primaryContainer,
+            AgedPaperCard(
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
                 shape = RoundedCornerShape(AppRadius.large),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .18f))
+                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .18f)),
+                elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
             ) {
                 Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement=Arrangement.spacedBy(8.dp), horizontalAlignment=Alignment.CenterHorizontally) {
                     Text("Предпросмотр",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)
@@ -418,20 +489,34 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
 }
 
 @Composable
-internal fun ThemeSelector(selected: String, change: (String) -> Unit) {
-    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-        listOf("light" to "Светлая", "sepia" to "Тёплая", "dark" to "Тёмная", "system" to "Системная").forEach { (key, label) ->
-            val paper = when (key) { "light" -> Color(0xFFFAF6EF); "sepia", "system" -> BookColors.parchment; else -> BookColors.nightCard }
-            val ink = if (key == "dark") BookColors.nightText else BookColors.ink
-            val frame = RoundedCornerShape(AppRadius.small)
-            Column(Modifier.width(82.dp).clip(frame).border(1.dp,
-                if (selected == key) BookColors.gold else BookColors.gold.copy(alpha = .12f), frame)
-                .clickable { change(key) }.padding(AppSpacing.sm), horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
-                Box(Modifier.fillMaxWidth().height(58.dp).clip(RoundedCornerShape(6.dp)).background(paper).padding(7.dp)) {
-                    Text("Степени\nидущих", style = MaterialTheme.typography.labelSmall.copy(fontFamily = FontFamily.Serif), color = ink)
+internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
+    val options = listOf(
+        Triple("warm", "Тёплый", R.drawable.reference_paper),
+        Triple("light", "Светлый", R.drawable.paper_light),
+        Triple("sage", "Светлый шалфей", R.drawable.paper_sage)
+    )
+    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        options.forEach { (key, label, drawable) ->
+            val active = selected == key
+            val frame = RoundedCornerShape(13.dp)
+            Column(
+                Modifier.weight(1f).clip(frame)
+                    .border(if (active) 1.5.dp else .7.dp,
+                        if (active) BookColors.gold else BookColors.gold.copy(alpha = .27f), frame)
+                    .clickable { change(key) }.padding(5.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(7.dp)
+            ) {
+                Box(Modifier.fillMaxWidth().height(72.dp).clip(RoundedCornerShape(9.dp))) {
+                    PreloadedBookImage(drawable, modifier = Modifier.matchParentSize(),
+                        contentScale = ContentScale.Crop)
+                    Text("Степени\nидущих", Modifier.align(Alignment.CenterStart).padding(start = 6.dp),
+                        style = MaterialTheme.typography.labelMedium.copy(fontFamily = BookSerif),
+                        color = BookColors.ink)
                 }
-                Text(label, style = MaterialTheme.typography.labelSmall, maxLines = 1)
+                Text(label, style = MaterialTheme.typography.labelMedium,
+                    color = if (active) BookColors.gold else MaterialTheme.colorScheme.onSurface,
+                    maxLines = 1)
             }
         }
     }

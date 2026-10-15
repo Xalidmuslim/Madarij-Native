@@ -1,0 +1,138 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p203-draft",
+    "printed_pages": [
+      203
+    ],
+    "old": "для некоторых представителей этого пути это и есть искомая цель.",
+    "new": "для этих людей это и есть искомая цель.",
+    "arabic_anchor": "هذا هو الغاية المطلوبة عند القوم",
+    "reason": "Убрано неподтверждённое «некоторых»; разные мнения перечисляются далее.",
+    "before": "для некоторых представителей этого пути это и есть искомая цель.",
+    "after": "для этих людей это и есть искомая цель.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p208-draft",
+    "printed_pages": [
+      208
+    ],
+    "old": "лама‘ат, бараки и лаваих",
+    "new": "лавами‘, баварик и лаваих",
+    "arabic_anchor": "فتكون لوامع وبوارق ولوائح",
+    "reason": "Исправлена транслитерация фактических арабских форм.",
+    "before": "лама‘ат, бараки и лаваих",
+    "after": "лавами‘, баварик и лаваих",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p211-draft",
+    "printed_pages": [
+      211
+    ],
+    "old": "не лишён некоторой условности",
+    "new": "не лишён произвольности",
+    "arabic_anchor": "لا يخلو عن تحكُّمٍ",
+    "reason": "تحكم — произвольное установление, а не нейтральная условность.",
+    "before": "не лишён некоторой условности",
+    "after": "не лишён произвольности",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p212-draft",
+    "printed_pages": [
+      212
+    ],
+    "old": "могут требоваться гораздо сильнее",
+    "new": "требуются гораздо сильнее",
+    "arabic_anchor": "ويحتاج هذا السَّالكُ في نهايته إلى أمورٍ من البصيرة والتّوبة والمحاسبة أعظمَ من حاجة صاحب البداية إليها",
+    "reason": "Убрано отсутствующее в авторском утверждении модальное ослабление.",
+    "before": "могут требоваться гораздо сильнее",
+    "after": "требуются гораздо сильнее",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p214-draft",
+    "printed_pages": [
+      214
+    ],
+    "old": "поздние отличаются от них главным образом искусственной усложнённостью",
+    "new": "поздние отличаются от них лишь искусственной усложнённостью",
+    "arabic_anchor": "ما امتاز عنهم المتأخِّرون إلّا بالتّكلُّف",
+    "reason": "Восстановлена ограничительная конструкция ما...إلا.",
+    "before": "поздние отличаются от них главным образом искусственной усложнённостью",
+    "after": "поздние отличаются от них лишь искусственной усложнённостью",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p215-draft",
+    "printed_pages": [
+      215
+    ],
+    "old": "Это подъём ради Аллаха, упомянутое в Его словах",
+    "new": "Это подъём ради Аллаха, упомянутый в Его словах",
+    "arabic_anchor": "هي القومة لله المذكورة في قوله",
+    "reason": "Исправлено согласование.",
+    "before": "Это подъём ради Аллаха, упомянутое в Его словах",
+    "after": "Это подъём ради Аллаха, упомянутый в Его словах",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p219-draft",
+    "printed_pages": [
+      219
+    ],
+    "old": "Он ответил: «Да», — и привел хадис.",
+    "new": "Он ответил: «Да»; далее передатчик изложил хадис.",
+    "arabic_anchor": "قال: \"نعم\" (2). فذكر الحديث",
+    "reason": "Разграничена речь Пророка и авторское указание на сокращённо приведённый хадис. Независимая проверка: это сообщение о продолжении передачи, не обещание полного текста здесь.",
+    "before": "Он ответил: «Да», — и привел хадис.",
+    "after": "Он ответил: «Да»; далее передатчик изложил хадис.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p222-draft",
+    "printed_pages": [
+      222
+    ],
+    "old": "при величии Того, Кому он ослушался",
+    "new": "при величии Того, Кого он ослушался",
+    "arabic_anchor": "مع عِظَمِ قدرِ مَن خالفه",
+    "reason": "Исправлено управление русского глагола.",
+    "before": "при величии Того, Кому он ослушался",
+    "after": "при величии Того, Кого он ослушался",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]

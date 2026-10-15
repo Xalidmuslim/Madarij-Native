@@ -1,0 +1,189 @@
+{
+  "range": [
+    103,
+    122
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 103,
+      "read_all_ar_ru": true,
+      "note": "Защита через Бога и вервь различены. Повторные قدره/إرادته относятся к Нему, но RU вводит последствия иной воли; предложена точная формулировка обоих Божьих действий.",
+      "needs_expert": true,
+      "issues": [
+        "Quran22:38 quotation suppliedreferenceRU;Harawiitisamdefinition;قدر بقدر/إرادة بإرادة divineactions."
+      ]
+    },
+    {
+      "page": 104,
+      "read_all_ar_ru": true,
+      "note": "إرادة ما سواه إلى إرادته — смена желаемого объекта с иного на Бога, а не отказ только от противоречащего Его воле. Предложено восстановление. Отрицание сотворённого существования отделено как учение оппонента.",
+      "needs_expert": true,
+      "issues": [
+        "Harawi3degrees;anonymousskepticwagerverse;desireobjectvs divinewill."
+      ]
+    },
+    {
+      "page": 105,
+      "read_all_ar_ru": true,
+      "note": "Три вида справедливости к Господу и2 сообщения сохранены в осторожной текущей атрибуции, без новых оценок достоверности.",
+      "needs_expert": true,
+      "issues": [
+        "2divinespeechattributedreports:source/gradepending,priorcautiousattributionpreserved."
+      ]
+    },
+    {
+      "page": 106,
+      "read_all_ar_ru": true,
+      "note": "Третье сообщение и возражение Харави о высших/обычных переданы; цитата3 видов отрешения отделена.",
+      "needs_expert": true,
+      "issues": [
+        "Thirdattributedreport;Harawi3formsofdisengagement."
+      ]
+    },
+    {
+      "page": 107,
+      "read_all_ar_ru": true,
+      "note": "Абу Язид и3 характеристики отрешения прочитаны; подставленная щека/рубаха/две мили сохранены как авторское изложение, не самостоятельно аттестованы.",
+      "needs_expert": true,
+      "issues": [
+        "AbuYazid saying;anonymoussufism-mannerssaying;cheek/cloak/twomilemotifs parallelMatthew5,sourcepending."
+      ]
+    },
+    {
+      "page": 108,
+      "read_all_ar_ru": true,
+      "note": "Внутренние связи отличены от внешних,2 случая отказа сохранены; богатство у Ахмада не объявлено несовместимым с зухдом.",
+      "needs_expert": true,
+      "issues": [
+        "Ahmad1000dinarsanecdote;Sirathooksmetaphor."
+      ]
+    },
+    {
+      "page": 109,
+      "read_all_ar_ru": true,
+      "note": "Божественный الحق в цитате вновь стал безличной женской Истиной; предложено единообразное «Истинный/Нему». Комментарий явно раскрывает Аллаха.",
+      "needs_expert": true,
+      "issues": [
+        "Harawiشهود الحق;fanaandintentiontechnicalreview."
+      ]
+    },
+    {
+      "page": 110,
+      "read_all_ar_ru": true,
+      "note": "Оба направления приближения и4 хадисных фрагмента сохранены; божественные атрибуты не подменены новой авторской интерпретацией.",
+      "needs_expert": true,
+      "issues": [
+        "Quran96:19;divinespeechpalm/cubit;obligations/supererogatorynearness;lastnightnearness;prostrationnearness;travelvoicereport:variants/gradesnot independentlychecked."
+      ]
+    },
+    {
+      "page": 111,
+      "read_all_ar_ru": true,
+      "note": "Продолжение слышащего/близкого, полный поворот и имена аль-Батын/аль-Кариб сохранены; переход к средней фана не повреждён.",
+      "needs_expert": true,
+      "issues": [
+        "Travelvoicereportcontinuation;divinenamesalBatin/alQarib."
+      ]
+    },
+    {
+      "page": 112,
+      "read_all_ar_ru": true,
+      "note": "Различены объект желания, желающий и само желание. В RU определение высокой фана сужено, а «прежде не существовавший» заменён временным предметом; предложены2 правки.",
+      "needs_expert": true,
+      "issues": [
+        "Ontological vs experientialfanaandunion indesiredobjectnotwillingagent/volition:specialistreview."
+      ]
+    },
+    {
+      "page": 113,
+      "read_all_ar_ru": true,
+      "note": "Завершение любви и близость как полная занятость Возлюбленным сохранены; аналогия правителя не превращена в физическую схему Бога.",
+      "needs_expert": true,
+      "issues": [
+        "Harawiوالاشتغال به قربا;noexternalattributionadded."
+      ]
+    },
+    {
+      "page": 114,
+      "read_all_ar_ru": true,
+      "note": "Оба вида бегства,3 толкователя и3 ступени Харави переданы; «не бывшее прежде» прямо раскрыто как творения.",
+      "needs_expert": true,
+      "issues": [
+        "Quran51:50;IbnAbbas;SahlibnAbdallah;unnamedtafsir;Harawi3flightdegrees."
+      ]
+    },
+    {
+      "page": 115,
+      "read_all_ar_ru": true,
+      "note": "Два невежества (не знать/не поступать) и4 цитаты/атрибуции сохранены; стих не выдан за повеление автора.",
+      "needs_expert": true,
+      "issues": [
+        "Quran2:67;12:33;4:17;QatadaandunnamedCompanionconsensusattributions;anonymousverse."
+      ]
+    },
+    {
+      "page": 116,
+      "read_all_ar_ru": true,
+      "note": "جد и عزم различены; слова отсрочки пояснены контекстом бездействия, все3 цитаты прочитаны.",
+      "needs_expert": true,
+      "issues": [
+        "Quran2:63;7:145;19:12."
+      ]
+    },
+    {
+      "page": 117,
+      "read_all_ar_ru": true,
+      "note": "Объективное «Бог не оставит надежду напрасной» заменено уменьшением опасения самого раба; предложена правка субъекта и результата.",
+      "needs_expert": true,
+      "issues": [
+        "Quran65:2–3;RabibnKhuthaym;AbualAliya;Hasantaفسير:provenancepending."
+      ]
+    },
+    {
+      "page": 118,
+      "read_all_ar_ru": true,
+      "note": "Оба толкования «мы более достойны сомнения» сохранены с явным отрицанием сомнения пророков. Во втором цитировании2:260 опущен полный диалог без многоточия; предложено восстановление по встроенному тексту.",
+      "needs_expert": true,
+      "issues": [
+        "Quran2:260 twice;Propheticنحن أحق بالشكreport full repeateddialogue missingRU;nogradeadded."
+      ]
+    },
+    {
+      "page": 119,
+      "read_all_ar_ru": true,
+      "note": "Все3 степени убеждённости и пример Рая/Огня сохранены; знание не отменяет внешних предписаний.",
+      "needs_expert": true,
+      "issues": [
+        "Quran102:6–7;ilmalyaqin/aynalyaqin/haqqalyaqin;commandobservance."
+      ]
+    },
+    {
+      "page": 120,
+      "read_all_ar_ru": true,
+      "note": "Совместное упразднение повеления в целом ослаблено до значительной части; предложена правка. Полемическая квалификация групп и сердце/войско сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Commandwholeversuspart;authorpolemicaldeclarationspreserved."
+      ]
+    },
+    {
+      "page": 121,
+      "read_all_ar_ru": true,
+      "note": "Диапазон личных долей от запретного до менее предпочтительного сохранён; все5 стихов и заключение постоянного покаяния прочитаны.",
+      "needs_expert": true,
+      "issues": [
+        "5anonymouscouplets;lawful/praiseworthypersonalshareargument."
+      ]
+    },
+    {
+      "page": 122,
+      "read_all_ar_ru": true,
+      "note": "Оба вида личной доли (мешающий/помогающий) различены. В начинающейся цитате الحق вновь переведён безличной Истиной; предложена правка Божественного референта.",
+      "needs_expert": true,
+      "issues": [
+        "Harawihighestflightquotationbeginsandcontinues123;coordinationneededwithnextreviewblock."
+      ]
+    }
+  ]
+}

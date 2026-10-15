@@ -69,7 +69,7 @@ fun BackupScreen(vm: BookViewModel) {
             } finally { busy = false }
         }
     }
-    LazyColumn(contentPadding = PaddingValues(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+    LazyColumn(contentPadding = PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         item { Text("Резервная копия", style = MaterialTheme.typography.headlineSmall) }
         item { Text("Сохраните личные данные перед заменой телефона или переустановкой. Книга уже находится в приложении и в копию не добавляется.") }
         item { Card { Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
