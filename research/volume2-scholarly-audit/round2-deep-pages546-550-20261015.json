@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-15",
+  "method": "Arabic/Russian page-pair check based on electronic edition, without scan-level collation",
+  "pages_reviewed": [
+    546,
+    550
+  ],
+  "pages_edited": [
+    546,
+    547,
+    548,
+    549,
+    550
+  ],
+  "targeted_replacements": 16,
+  "findings": [
+    "Isolated historical and hadith report verification concerns in research report rather than adding them to author's prose",
+    "Restored attributed conversation about people in barzakh p547 with authorial distinction intact; this is an unattributed spiritual report, not independently authenticated doctrine",
+    "Restored literal weather and family expressions across page boundary 548–549",
+    "Restored explicit divine-speech attribution on p550, instead of translator summary",
+    "Removed reader-safety and authenticity editorial commentary from authorial passage without asserting any disputed report is authenticated"
+  ],
+  "limitations": {
+    "printed_2019_page_images_checked": false,
+    "hadith_chains_graded": false,
+    "unverified_israiliyyat_and_spiritual_claims_remain_unverified": true,
+    "footnotes_checked": false,
+    "publisher_ready": false
+  },
+  "apk_built": false
+}
