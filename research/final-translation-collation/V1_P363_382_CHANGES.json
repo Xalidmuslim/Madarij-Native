@@ -1,0 +1,36 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p365-draft",
+    "printed_pages": [
+      365
+    ],
+    "old": "…в украшение одежды.",
+    "new": "…в одежду.",
+    "arabic_anchor": "الزِّينة.",
+    "reason": "Исправление грамматики продолжения «облачаясь» со стр. 364; смысл أخذ الزينة — облачение в одежду.",
+    "before": "…в украшение одежды.",
+    "after": "…в одежду.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p371-draft",
+    "printed_pages": [
+      371
+    ],
+    "old": "во врождённой природе всех миров",
+    "new": "во врождённой природе всех людей",
+    "arabic_anchor": "المستقرِّ قبحُه في فِطَرِ العالمين كلِّهم",
+    "reason": "Здесь речь о человеческих врождённых представлениях, не о природе миров.",
+    "before": "во врождённой природе всех миров",
+    "after": "во врождённой природе всех людей",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
