@@ -296,7 +296,7 @@ private fun groupDisplayTitle(group: TocGroup): String =
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, resume: (String) -> Unit, reducedMotion: Boolean = false) {
+internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, reducedMotion: Boolean = false, resume: (String) -> Unit) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle()
