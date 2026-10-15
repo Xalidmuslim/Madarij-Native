@@ -1,0 +1,189 @@
+{
+  "range": [
+    63,
+    82
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 63,
+      "read_all_ar_ru": true,
+      "note": "Сравнение степеней и сообщение о постелях прочитаны. В прямой цитате مقت الخلق заменено неприязнью к порокам: изменён объект и смягчена сила; предложено восстановить.",
+      "needs_expert": true,
+      "issues": [
+        "MusnadAhmad IbnMasud report about beds/battle intentions:source/gradepending. Anonymoussalaf saying object الخلق."
+      ]
+    },
+    {
+      "page": 64,
+      "read_all_ar_ru": true,
+      "note": "То же مقتهم заменено неприятием поступков вместо людей; предложено точное сохранение авторской полемической формулы. Искренность скрытого/открытого дела различена.",
+      "needs_expert": true,
+      "issues": [
+        "Quotecontext for salaf مقتهم;noindependent theologicalendorsement."
+      ]
+    },
+    {
+      "page": 65,
+      "read_all_ar_ru": true,
+      "note": "Преграды между сердцем и Господом и осторожность сердечного врачевания сохранены; случай Риая передан как авторское свидетельство, не независимая история.",
+      "needs_expert": true,
+      "issues": [
+        "HarithalMuhasibi Riaya account;Harawiquotation:provenancepending."
+      ]
+    },
+    {
+      "page": 66,
+      "read_all_ar_ru": true,
+      "note": "Фана о видении собственных дел сведена к исчезновению самолюбования; отсутствие причины нужды заменено отсутствием единственного основания. Предложены2 точные правки.",
+      "needs_expert": true,
+      "issues": [
+        "Paradise/salvation by works hadith attributed alSahih;IbnTaymiyya povertyverse;fana technicalsemantic."
+      ]
+    },
+    {
+      "page": 67,
+      "read_all_ar_ru": true,
+      "note": "Все прошлые/настоящие/ожидаемые блага и причина со следствием приписаны Богу; незадача заслуги не превращена в отсутствие причин вообще.",
+      "needs_expert": true,
+      "issues": [
+        "Quran57:3;30:4 allusions;divinenames and grace."
+      ]
+    },
+    {
+      "page": 68,
+      "read_all_ar_ru": true,
+      "note": "Тазаккур/тафаккур и их взаимное возвращение переданы; цитаты Хасана и Харави отделены от комментария.",
+      "needs_expert": true,
+      "issues": [
+        "Quran40:13;50:8;2:269;HasanalBasri saying;Harawiquotes."
+      ]
+    },
+    {
+      "page": 69,
+      "read_all_ar_ru": true,
+      "note": "Обретение уже известного отличено от первого поиска; морфологическое объяснение постепенности и цитаты сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran40:53–54;69:48 truncatedsource;50:6–8."
+      ]
+    },
+    {
+      "page": 70,
+      "read_all_ar_ru": true,
+      "note": "Взаимное усиление стоянок сужено до следующей по порядку; предложено «другую». Три вида восприимчивости и возражение об أو сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran50:36–37 but ARref36;semanticboundary correctedRU already;أو argument."
+      ]
+    },
+    {
+      "page": 71,
+      "read_all_ar_ru": true,
+      "note": "Яркое сердце и внимательное слушание различены; дом Абу Бакра, ливень/мелкий дождь и две райские группы переданы.",
+      "needs_expert": true,
+      "issues": [
+        "AbuBakr anonymoussimile;Quran2:265;paradisedrinks allusion83:27–28/76:5–6."
+      ]
+    },
+    {
+      "page": 72,
+      "read_all_ar_ru": true,
+      "note": "Три опоры припоминания, два вида наставления и усиление прозрения переданы по порядку.",
+      "needs_expert": true,
+      "issues": [
+        "Quran34:6;Harawi3supports."
+      ]
+    },
+    {
+      "page": 73,
+      "read_all_ar_ru": true,
+      "note": "Два плода размышления и пример торгового заработка переданы; не утрачена обязанность поступать по знанию.",
+      "needs_expert": true,
+      "issues": [
+        "Harawiphrase commentary;tradingmetaphor."
+      ]
+    },
+    {
+      "page": 74,
+      "read_all_ar_ru": true,
+      "note": "Три условия пользы наставления, три адресата и два толкования достойного спора сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Harawi3conditions;Quran16:125."
+      ]
+    },
+    {
+      "page": 75,
+      "read_all_ar_ru": true,
+      "note": "Критика наложения греческой логики на16:125 сохранена; объяснение изъяна проповедника не смешано с выводом о ложности его знаний.",
+      "needs_expert": true,
+      "issues": [
+        "Laterlogicians unnamed;author rejects syllogismreading."
+      ]
+    },
+    {
+      "page": 76,
+      "read_all_ar_ru": true,
+      "note": "Врач может считать себя способным вообще не лечиться, но RU говорит лечиться иначе; предложено исправление. Стихи/11:88 сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran11:88;anonymoussalaf injunction;anonymousverse."
+      ]
+    },
+    {
+      "page": 77,
+      "read_all_ar_ru": true,
+      "note": "Равное суждение о повторении причины смягчено вероятностью похожего исхода; предложено точное выражение суждения, без самостоятельного обещания конкретной беды.",
+      "needs_expert": true,
+      "issues": [
+        "Quran11:103;87:10;79:42–45;50:45;Harawi3conditions."
+      ]
+    },
+    {
+      "page": 78,
+      "read_all_ar_ru": true,
+      "note": "Опытные40 повторений и источник Ибн Таймийя сохранены; уже имеющееся явное переводческое примечание не пересмотрено, новую сунну/аттестацию не добавляю.",
+      "needs_expert": true,
+      "issues": [
+        "IbnTaymiyya40timesinvocation;existingtranslatornotepreservesnonpropheticattribution;nofreshgrade."
+      ]
+    },
+    {
+      "page": 79,
+      "read_all_ar_ru": true,
+      "note": "Два толкования дней и названные передатчики сохранены, противопоставление преходящего/вечного не нарушено.",
+      "needs_expert": true,
+      "issues": [
+        "Quran14:5;IbnAbbas;Ubayy;Mujahid;Muqatiltafsir:attributionpending."
+      ]
+    },
+    {
+      "page": 80,
+      "read_all_ar_ru": true,
+      "note": "Пристрастие как следование страсти и перемена восприятия добра/зла сохранены; третье условие включает все5 вредителей.",
+      "needs_expert": true,
+      "issues": [
+        "Quran12:111;Harawi3conditionsand5corruptors."
+      ]
+    },
+    {
+      "page": 81,
+      "read_all_ar_ru": true,
+      "note": "Краткость ожиданий и встречное движение мира/будущей жизни переданы; остаток дня/сосуда сохранён.",
+      "needs_expert": true,
+      "issues": [
+        "Worldremainingcup/day propheticallusions:sourcepending."
+      ]
+    },
+    {
+      "page": 82,
+      "read_all_ar_ru": true,
+      "note": "Все6 коранических цитат, проповедь о конце дня и переход к навесу прочитаны. Исправлено русское согласование «будут...кто-либо».",
+      "needs_expert": true,
+      "issues": [
+        "Quran26:205–207;10:45;79:46;23:112–114;46:35;20:102–104;enddaysermon and shelterrepairreport source/gradepending."
+      ]
+    }
+  ]
+}
