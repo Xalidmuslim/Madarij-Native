@@ -1,0 +1,19 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p600-draft",
+    "printed_pages": [
+      600
+    ],
+    "old": "в каждом грехе возможно покаяние, и оно может быть принято.",
+    "new": "в каждом грехе возможно покаяние, и оно принимается.",
+    "arabic_anchor": "فكلُّ ذنبٍ يمكن التَّوبةُ منه وتُقْبَل.",
+    "reason": "Большинство здесь утверждает принятие покаяния, а не одну лишь возможность его принятия; восстановлено категорическое تُقبل.",
+    "before": "в каждом грехе возможно покаяние, и оно может быть принято.",
+    "after": "в каждом грехе возможно покаяние, и оно принимается.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
