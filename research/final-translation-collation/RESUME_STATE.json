@@ -1073,9 +1073,9 @@
   },
   "volume2": {
     "pages_in_corpus": 657,
-    "new_semantic_review_completed": false,
+    "new_semantic_review_completed": true,
     "content_unchanged_from_combined_baseline": false,
-    "next_page": 643,
+    "next_page": null,
     "provisionally_compared_pages": [
       3,
       4,
@@ -1716,7 +1716,24 @@
       639,
       640,
       641,
-      642
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659
     ]
   },
   "visual_comparison_pages": 0,
