@@ -19,6 +19,9 @@ expected = original(path)
 current = json.loads((ROOT / path).read_text())
 units = {p['id']: p for c in expected['chapters'] for p in c['paragraphs']}
 logs = [row for f in sorted(HERE.glob('V2_P*_CHANGES.json')) for row in json.loads(f.read_text())]
+recheck = HERE / 'V2_RECHECK_CHANGES.json'
+if recheck.exists():
+    logs.extend(json.loads(recheck.read_text()))
 for row in logs:
     p = units[row['paragraph_id']]
     assert p['ru'].count(row['before']) == 1, p['id']
