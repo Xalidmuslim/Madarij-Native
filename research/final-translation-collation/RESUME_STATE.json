@@ -1074,8 +1074,30 @@
   "volume2": {
     "pages_in_corpus": 657,
     "new_semantic_review_completed": false,
-    "content_unchanged_from_combined_baseline": true,
-    "next_page": 3
+    "content_unchanged_from_combined_baseline": false,
+    "next_page": 23,
+    "provisionally_compared_pages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
   },
   "visual_comparison_pages": 0,
   "confirmed_2019_edition_pages": 0,

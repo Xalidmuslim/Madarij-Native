@@ -1,0 +1,189 @@
+{
+  "range": [
+    3,
+    22
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 3,
+      "read_all_ar_ru": true,
+      "note": "Прочитаны оба начальных абзаца;12 взглядов и необычное авторское «наивысший десятый» сохранены без самостоятельной перенумерации.",
+      "needs_expert": true,
+      "issues": [
+        "Author work Safar al-Hijratayn title; internal numbering highest tenth vs12 list: source review."
+      ]
+    },
+    {
+      "page": 4,
+      "read_all_ar_ru": true,
+      "note": "Прочитаны все3 единицы включая переход4–5; собачья и ослиная метафоры и исключение человеческого/ангельского уровня переданы.",
+      "needs_expert": true,
+      "issues": [
+        "Quran7:176 allusion;62:5 begins across4–5."
+      ]
+    },
+    {
+      "page": 5,
+      "read_all_ar_ru": true,
+      "note": "Прочитано окончание4–5 и3 собственных единицы; хищная, мышиная и ядовитая души различены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran62:5 and7:175–176 allusions; evil eye graves/cooking pot allusion: source/grade pending."
+      ]
+    },
+    {
+      "page": 6,
+      "read_all_ar_ru": true,
+      "note": "Полный абзац механизма сглаза сопоставлен; направление воздействия, защита и авторское возложение вины сохранены без современной вставки.",
+      "needs_expert": true,
+      "issues": [
+        "Author evil-eye mechanism and prophetic protection recitations; no independent empirical or legal certification."
+      ]
+    },
+    {
+      "page": 7,
+      "read_all_ar_ru": true,
+      "note": "Все7 единиц вопросов/ответов прочитаны; непроизвольность, дийа, кысас и способ возмездия не смешаны.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Taymiyya reported response about killing by hal; source/fiqh review; no applied legal instruction added."
+      ]
+    },
+    {
+      "page": 8,
+      "read_all_ar_ru": true,
+      "note": "Все4 единицы прочитаны включая8–9; юридический довод и сновидческие образы отделены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran6:38; Sufyan ibn Uyayna tafsir; Uhud dream report begins."
+      ]
+    },
+    {
+      "page": 9,
+      "read_all_ar_ru": true,
+      "note": "Окончание8–9 и2 единицы прочитаны; Умар/Абу Лулу и свиная метафора переданы. В8–9 опущено указание касры в ذل; смысл покорности сохранён.",
+      "needs_expert": true,
+      "issues": [
+        "Uhud dream cows report; Umar rooster dream/Abu Lulu; source/grade pending; phonetic بكسر الذال omitted but translated meaning retained."
+      ]
+    },
+    {
+      "page": 10,
+      "read_all_ar_ru": true,
+      "note": "Все5 единиц прочитаны; животные нравы и объяснение запрета мяса сохранены как утверждения автора.",
+      "needs_expert": true,
+      "issues": [
+        "Dietary prohibition causal explanation authorial; sources/grades not supplied."
+      ]
+    },
+    {
+      "page": 11,
+      "read_all_ar_ru": true,
+      "note": "Гиппократические4 начала и необходимость внешнего сдерживания переданы как взгляд критикуемых философов/врачей.",
+      "needs_expert": true,
+      "issues": [
+        "Four natural temperaments philosophical/medical account; author polemic."
+      ]
+    },
+    {
+      "page": 12,
+      "read_all_ar_ru": true,
+      "note": "Принуждение и последующее оправдание греха не превращены в авторское одобрение; переход в13 сохранён.",
+      "needs_expert": true,
+      "issues": [
+        "Divine will vs command distinction; mushrikun Quran allusion unnumbered."
+      ]
+    },
+    {
+      "page": 13,
+      "read_all_ar_ru": true,
+      "note": "В стихе المحب (любящий) переведён как возлюбленный, то есть изменена роль; предложена локальная правка. Полемика с оправдывающими Иблиса сохранена.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous verse; Ibn Taymiyya taiyya attribution."
+      ]
+    },
+    {
+      "page": 14,
+      "read_all_ar_ru": true,
+      "note": "Отрицания кадаритов переданы как их мнение; يضله ошибочно смягчено до оставления вместо введения в заблуждение.",
+      "needs_expert": true,
+      "issues": [
+        "Ibn Taymiyya taiyya continuation; Qadarite denials attributed."
+      ]
+    },
+    {
+      "page": 15,
+      "read_all_ar_ru": true,
+      "note": "Две цели шайтана и переход к мудрости сохранены. Добавленное «прежняя» настойчивость вводит временное сравнение без основания.",
+      "needs_expert": true,
+      "issues": [
+        "Quran7:54; bidah vs sin authorial claim, no report grade assigned."
+      ]
+    },
+    {
+      "page": 16,
+      "read_all_ar_ru": true,
+      "note": "Мудрость в предопределении дурного и знамения потопа переданы; причинный довод не обращён в одобрение греха.",
+      "needs_expert": true,
+      "issues": [
+        "Quran2:30;3:191 allusion; anonymous couplets; flood narrative."
+      ]
+    },
+    {
+      "page": 17,
+      "read_all_ar_ru": true,
+      "note": "История Фараона, Тора и огонь Ибрахима переданы в соответствующих авторских атрибуциях, без новой оценки достоверности.",
+      "needs_expert": true,
+      "issues": [
+        "Torah attributed saying about Pharaoh; independent Biblical/source verification pending."
+      ]
+    },
+    {
+      "page": 18,
+      "read_all_ar_ru": true,
+      "note": "В первом предложении ما هو بعينه وعلمه относится к переносимым тяготам, но русский относит знание/видение к врагам; предложено уточнение. Сравнение двух любимых исходов проверено.",
+      "needs_expert": true,
+      "issues": [
+        "Adam/tree hypothetical; divine sight/knowledge wording; theological expert review."
+      ]
+    },
+    {
+      "page": 19,
+      "read_all_ar_ru": true,
+      "note": "Потенциальное/действительное в сердце Иблиса и взаимное испытание приближённых/врагов сохранены; Харут/Марут не аттестованы самостоятельно.",
+      "needs_expert": true,
+      "issues": [
+        "Harut/Marut angel narrative: source/grade pending; no silent correction."
+      ]
+    },
+    {
+      "page": 20,
+      "read_all_ar_ru": true,
+      "note": "Продолжение ангельского смирения и ограниченность удела каждого сохранены. Нумерация шестого взгляда расходится с начальным перечнем: текст не исправляю.",
+      "needs_expert": true,
+      "issues": [
+        "Sixth heading tawhid conflicts initial sixth tawfiq/khidhlan; preserve embeddedsource, source review."
+      ]
+    },
+    {
+      "page": 21,
+      "read_all_ar_ru": true,
+      "note": "يضل и أشقاها переведены как оставление, тогда как арабский утверждает причинное действие; предложено восстановить. Теологические атрибуты и Ибн Аббас сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran21:23; Ibn Abbas qadar/tawhid saying: source verification pending; divine fingers/hand attributes translated."
+      ]
+    },
+    {
+      "page": 22,
+      "read_all_ar_ru": true,
+      "note": "Движение от господства к поклонению и подчинение остальных страхов/надежд главному сохранены; цитата43:87 и её продолжение читаются как единый довод.",
+      "needs_expert": true,
+      "issues": [
+        "Quran43:87; theological terms rububiyya/uluhiyya."
+      ]
+    }
+  ]
+}

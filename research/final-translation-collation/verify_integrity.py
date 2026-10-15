@@ -45,11 +45,11 @@ for book in (original, current):
                 paragraph.pop('translation_sha256', None)
 assert original == current, 'Nontranslation data changed'
 for name, digest in baseline['files'].items():
-    if name != book_path:
+    if name not in (book_path, 'app/src/main/assets/volume2-preview.json'):
         assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
 paths = subprocess.check_output(['git', 'diff', baseline['base_commit'], '--name-only'], cwd=ROOT, text=True).splitlines()
-assert all(p in (book_path, 'app/src/main/assets/content-manifest.json') or p.startswith('research/final-translation-collation/') for p in paths), paths
-print(f'PASS: {len(ids)} v1 units; {len(changed_ids)} edited text units; all source text, IDs, metadata, navigation and volume II preserved')
+assert all(p in (book_path, 'app/src/main/assets/content-manifest.json', 'app/src/main/assets/volume2-preview.json') or p.startswith('research/final-translation-collation/') or p in {x['path'] for row in json.loads((HERE / 'V2_SYNC_MAP.json').read_text())['reader_mapping'] for x in row['redundant_ru_locations']} for p in paths), paths
+print(f'PASS: {len(ids)} v1 units; {len(changed_ids)} edited text units; all source text, IDs, metadata, navigation preserved; volume II Russian changes audited separately')
 
 manifest_path = 'app/src/main/assets/content-manifest.json'
 manifest = json.loads((ROOT / manifest_path).read_text())
@@ -61,3 +61,11 @@ for item in (manifest, old_manifest):
     item.pop('corpus_sha256')
     item.pop('author_ru_words')
 assert manifest == old_manifest, 'Unexpected manifest mutation'
+
+freeze = json.loads((HERE / 'VOLUME1_COMPLETED_PASS.json').read_text())
+assert hashlib.sha256((ROOT / book_path).read_bytes()).hexdigest() == freeze['corpus_sha256'], 'Volume I changed during volume II work'
+assert hashlib.sha256((ROOT / 'app/src/main/assets/content-manifest.json').read_bytes()).hexdigest() == freeze['content_manifest_sha256']
+if list(HERE.glob('V2_P*_CHANGES.json')):
+    subprocess.run(['python3', str(HERE / 'verify_volume2_integrity.py')], cwd=ROOT, check=True)
+else:
+    assert hashlib.sha256((ROOT / 'app/src/main/assets/volume2-preview.json').read_bytes()).hexdigest() == freeze['volume2_sha256']
