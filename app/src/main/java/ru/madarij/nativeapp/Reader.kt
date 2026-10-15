@@ -333,8 +333,11 @@ fun Reader(
                     // to the author's continuous prose. Source section markers
                     // are rendered from the real book text by splitReaderText().
                     if (p.id == anchor && query.isBlank() && selectedTopic != null) {
-                        val startWords = remember(p.id, p.ru) {
-                            p.ru.replace(Regex("""\s+"""), " ").trim().take(96).trimEnd()
+                        // Use the same Russian text as the reader itself: the
+                        // display layer can reconcile a sentence split across pages.
+                        val shownOpeningText = displayRussian[p.id].orEmpty().ifBlank { p.ru }
+                        val startWords = remember(p.id, shownOpeningText) {
+                            shownOpeningText.replace(Regex("""\s+"""), " ").trim().take(96).trimEnd()
                         }
                         Surface(
                             modifier = Modifier.fillMaxWidth(),
@@ -356,7 +359,7 @@ fun Reader(
                                         color = MaterialTheme.colorScheme.onSurface)
                                     if (startWords.isNotBlank()) Text(
                                         "Ориентир — начало абзаца: «" + startWords +
-                                            (if (p.ru.length > 96) "…" else "") + "»",
+                                            (if (shownOpeningText.length > 96) "…" else "") + "»",
                                         style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
