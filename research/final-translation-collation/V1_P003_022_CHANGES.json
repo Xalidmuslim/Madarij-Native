@@ -1,0 +1,138 @@
+[
+  {
+    "paragraph_id": "madarij-v1-opening-005",
+    "printed_pages": [
+      3,
+      4
+    ],
+    "arabic_anchor": "لا تزيغ به الأهواء",
+    "before": "мудрое Напоминание, от которого не уводят страсти",
+    "after": "мудрое Напоминание, которого не искажают страсти",
+    "reason": "Сохранён объект отрицания: страсти не отклоняют/не искажают Напоминание; прежняя формулировка переносила действие на читателя.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-opening-005",
+    "printed_pages": [
+      3,
+      4
+    ],
+    "arabic_anchor": "كلّما بجَسَتْ مَعينَه فجَّر لها ينابيع الحكمة تفجيرًا",
+    "before": "Всякий раз, когда он обращается к его источнику, перед ним бьют ключи мудрости.",
+    "after": "Всякий раз, когда он пробивает путь к его источнику, тот открывает ему родники мудрости.",
+    "reason": "Восстановлено действие بجست — вскрытие источника — вместо общего «обращается»; сохранён образ источника и родников.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-opening-014",
+    "printed_pages": [
+      7
+    ],
+    "arabic_anchor": "وأهلُ الكتاب والسُّنّة المقدِّمون لنصوصها على غيرها",
+    "before": "Люди Книги и Сунны, ставящие их тексты выше всего остального",
+    "after": "Приверженцы Книги и Сунны, ставящие их тексты выше всего остального",
+    "reason": "Устранена двусмысленность русского устойчивого выражения «люди Книги»: речь здесь о приверженцах Корана и Сунны.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-fatiha-008",
+    "printed_pages": [
+      11,
+      12
+    ],
+    "arabic_anchor": "فاقتضاءُ الرّحمة لما يحصل به حياة القلوب والأرواح أعظمُ من اقتضائها لما يحصل به حياة الأبدان\nوالأشباح",
+    "before": "Ведь милость в том, что даёт жизнь сердцам и душам, ещё значительнее милости в том, что даёт жизнь телам и их внешним оболочкам.",
+    "after": "Ведь милость с ещё большей необходимостью предполагает то, что даёт жизнь сердцам и душам, чем то, что даёт жизнь телам и их внешним оболочкам.",
+    "reason": "Восстановлен довод اقتضاء: сравнивается то, что следует из милости, а не величина двух видов милости.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-fatiha-009",
+    "printed_pages": [
+      12
+    ],
+    "arabic_anchor": "وبهم استُحِقَّ الثَّواب والعقاب، وبهم قام سوق يوم الدِّين، وسيق الأبرار إلى النَّعيم، والفجَّار إلى الجحيم.",
+    "before": "Через них возникает основание для награды и наказания; без них не было бы самого порядка воздаяния в Судный день: праведные не были бы приведены к блаженству, а нечестивые — в Ад.",
+    "after": "Благодаря им возникает основание для награды и наказания; благодаря им разворачивается торжище Дня воздаяния, праведные будут приведены к блаженству, а нечестивые — в Ад.",
+    "reason": "Вместо введённого переводом отрицательного условия восстановлены утвердительный параллелизм بهم и метафора سوق. Торжище — авторский образ, не буквальное описание устройства Судного дня.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-fatiha-014",
+    "printed_pages": [
+      14
+    ],
+    "arabic_anchor": "ومنهم المخدوش المسلَّم",
+    "before": "Среди них будут те, кого крючья заденут, но кто спасётся",
+    "after": "Среди них будут те, кто будет исцарапан, но спасётся",
+    "reason": "المخدوش передано как «исцарапан»; крючья названы в следующем авторском фрагменте, но не в этом предложении.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  },
+  {
+    "paragraph_id": "madarij-v1-fatiha-024",
+    "printed_pages": [
+      17
+    ],
+    "arabic_anchor": "وهذه القسمة إنّما أوجبها ثبوت الرِّسالة",
+    "before": "а само оно возникло лишь после того, как было установлено посланничество.",
+    "after": "а само это разделение обусловлено тем, что посланники были отправлены.",
+    "reason": "Причинно-логическая связь أوجبها не заменяется утверждением о времени возникновения разделения.",
+    "evidence": "embedded_arabic_corpus_only",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "recheck": {
+      "literal_relation": "rechecked_against_arabic_anchor",
+      "russian_readability": "reread",
+      "reverse_semantic_comparison": "rechecked",
+      "independent_expert_review": false
+    }
+  }
+]

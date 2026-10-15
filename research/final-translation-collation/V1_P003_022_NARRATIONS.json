@@ -1,0 +1,70 @@
+[
+  {
+    "volume": 1,
+    "printed_pages": [
+      17
+    ],
+    "paragraph_id": "madarij-v1-fatiha-023",
+    "kind": "prophetic_hadith_as_attributed_by_author",
+    "narrator": "Ади ибн Хатим",
+    "arabic_quote": "اليهود مغضوبٌ عليهم، والنّصارى ضالُّون",
+    "source_as_given_by_author": "ат-Тирмизи; Сахих Ибн Хиббана",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "status": "требуется проверка первоисточников и оценки; русский смысл сопоставлен только с арабским корпусом"
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      22
+    ],
+    "paragraph_id": "madarij-v1-p022-draft",
+    "kind": "prophetic_hadith_as_attributed_by_author",
+    "narrator": "Ибн Масуд",
+    "arabic_quote": "هذا سبيل الله ... هذه سُبلٌ، على كلِّ سبيلٍ شيطانٌ يدعو إليه",
+    "quote_is_excerpt": true,
+    "source_as_given_by_author": "В сохранённом авторском тексте сборник не указан; после рассказа стоит ссылка на сноску (1).",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "status": "требуется открыть сноску и первоисточник; не присваивать оценку по памяти"
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      22
+    ],
+    "paragraph_id": "madarij-v1-p022-draft",
+    "kind": "reported_early_authority_statement",
+    "narrator": "аль-Хасан; личность требует источниковедческого уточнения",
+    "arabic_quote": "صراطٌ إليّ مستقيمٌ",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "status": "слова толкователя, не пророческий хадис"
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      3,
+      4
+    ],
+    "paragraph_id": "madarij-v1-opening-005",
+    "kind": "possible_hadith_allusion_in_author_prose",
+    "narrator": null,
+    "arabic_quote": "الصِّراط المستقيم ... الذِّكر الحكيم ... لا تفنى عجائبه",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "status": "в корпусе не оформлено как передача; нельзя превращать авторскую прозу в дословный хадис"
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      14
+    ],
+    "paragraph_id": "madarij-v1-fatiha-014",
+    "kind": "author_exposition_with_possible_hadith_allusion",
+    "arabic_quote": "فمنهم من يمرُّ كالبرق ... ومنهم المُكَرْدَس في النّار",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "status": "перечень прохождения Сирата: нужен отдельный источник; в этом месте автор говорит от себя"
+  }
+]
