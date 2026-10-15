@@ -17,7 +17,7 @@ class OpeningPrintedPages(unittest.TestCase):
     def test_first_ten_printed_pages_are_not_lost(self):
         for number in range(3, 11):
             self.assertTrue(any(
-                str(number).zfill(3) in p["id"].split("-")[2:5]
+                f"p{number:03d}" in p["id"]
                 for p in PARAS.values()
             ), f"missing printed page {number}")
 
