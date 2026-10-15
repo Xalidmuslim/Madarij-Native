@@ -1,0 +1,19 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p391-draft",
+    "printed_pages": [
+      391
+    ],
+    "old": "и Его Его вселенской воли и пожелания",
+    "new": "и Его вселенской волей и пожеланием",
+    "arabic_anchor": "ومشيئته وإرادته الكونيَّة",
+    "reason": "Исправлены повтор слова и падеж после «между»: две стороны различения стоят в творительном падеже.",
+    "before": "и Его Его вселенской воли и пожелания",
+    "after": "и Его вселенской волей и пожеланием",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
