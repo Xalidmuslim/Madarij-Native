@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-15",
+  "scope": "Targeted second-pass corrections verified against electronic Arabic source, printed pages 483 497 498 501 526 528",
+  "pages_corrected": [
+    {
+      "page": 483,
+      "oldLength": 1189,
+      "newLength": 1277,
+      "replacements": 2
+    },
+    {
+      "page": 497,
+      "oldLength": 1201,
+      "newLength": 1386,
+      "replacements": 1
+    },
+    {
+      "page": 498,
+      "oldLength": 1067,
+      "newLength": 1404,
+      "replacements": 2
+    },
+    {
+      "page": 501,
+      "oldLength": 1401,
+      "newLength": 1526,
+      "replacements": 1
+    },
+    {
+      "page": 526,
+      "oldLength": 1153,
+      "newLength": 1497,
+      "replacements": 3
+    },
+    {
+      "page": 528,
+      "oldLength": 1106,
+      "newLength": 1382,
+      "replacements": 3
+    }
+  ],
+  "substantive_findings": [
+    "Reinstated distinction of Allah's lordship and contentment with what comes from Him",
+    "Restored list of divine actions and unconditional acceptance of all from Allah as beneficence (p498)",
+    "Restored central comparison obligatory versus elevated contentment (p501)",
+    "Restored original 2:216 Quran quote beginning and author's account of benefit through displeasing events (p526)",
+    "Restored fuller enumeration and theological account of contentment in hardship (p528)",
+    "Removed editor-only disclaimer in midst of author's dream account (p483)"
+  ],
+  "limitations": {
+    "source": "stored electronic Arabic transcription only",
+    "printed_scan_verified": false,
+    "hadith_isnads_all_verified": false,
+    "publication_ready": false,
+    "apk_built": false
+  }
+}
