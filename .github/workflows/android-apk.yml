@@ -42,6 +42,8 @@ jobs:
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - name: Verify source alignment and paragraph boundaries of draft volume 2
         run: python3 tools/validate_volume2_preview.py
+      - name: Check every TOC topic and precise reader landmark
+        run: python3 tools/validate_toc_anchors.py
       - name: Test volume-2 corrections and previous repairs
         run: python3 -m unittest -v tools/test_volume2_pages003_005.py tools/test_volume2_pages006_009.py tools/test_volume2_pages010_012.py tools/test_volume2_pages013_020.py tools/test_volume2_collation_4pages.py
       - name: Prepare licensed Russian handwriting font
