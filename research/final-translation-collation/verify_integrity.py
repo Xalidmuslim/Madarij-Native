@@ -48,5 +48,16 @@ for name, digest in baseline['files'].items():
     if name != book_path:
         assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
 paths = subprocess.check_output(['git', 'diff', baseline['base_commit'], '--name-only'], cwd=ROOT, text=True).splitlines()
-assert all(p == book_path or p.startswith('research/final-translation-collation/') for p in paths), paths
+assert all(p in (book_path, 'app/src/main/assets/content-manifest.json') or p.startswith('research/final-translation-collation/') for p in paths), paths
 print(f'PASS: {len(ids)} v1 units; {len(changed_ids)} edited text units; all source text, IDs, metadata, navigation and volume II preserved')
+
+manifest_path = 'app/src/main/assets/content-manifest.json'
+manifest = json.loads((ROOT / manifest_path).read_text())
+old_manifest = json.loads(subprocess.check_output(['git', 'show', f'{baseline["base_commit"]}:{manifest_path}'], cwd=ROOT, text=True))
+assert manifest['corpus_sha256'] == hashlib.sha256((ROOT / book_path).read_bytes()).hexdigest()
+full_book = json.loads((ROOT / book_path).read_text())
+assert manifest['author_ru_words'] == sum(len(p['ru'].split()) for c in full_book['chapters'] for p in c['paragraphs'] if p['role']=='author')
+for item in (manifest, old_manifest):
+    item.pop('corpus_sha256')
+    item.pop('author_ru_words')
+assert manifest == old_manifest, 'Unexpected manifest mutation'

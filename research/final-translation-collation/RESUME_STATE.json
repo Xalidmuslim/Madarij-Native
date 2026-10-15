@@ -1066,14 +1066,16 @@
       609,
       610
     ],
-    "author_edits": 16,
-    "edited_author_units": 13,
-    "edited_editor_notes": 5
+    "author_edits": 176,
+    "edited_author_units": 147,
+    "edited_editor_notes": 30,
+    "provisional_embedded_pass_complete": true
   },
   "volume2": {
     "pages_in_corpus": 657,
     "new_semantic_review_completed": false,
-    "content_unchanged_from_combined_baseline": true
+    "content_unchanged_from_combined_baseline": true,
+    "next_page": 3
   },
   "visual_comparison_pages": 0,
   "confirmed_2019_edition_pages": 0,
