@@ -1,0 +1,169 @@
+{
+  "review_type": "manual_agent_reading_not_expert_authentication",
+  "Q1_sha256": "d8a8adff387f60ce3ff7dbe3238dd9b27120bfe29d8fcb07ad2e89cad37cefd4",
+  "records": [
+    {
+      "id": "v2-madarij-v2-p156-draft-q1",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p156-draft",
+      "printed_pages": [
+        156
+      ],
+      "arabic_quote": "أَعْمَالُهُمْ كَسَرَابٍ يَحْسِبُهُ يَحْسَبُهُ الظَّمْآنُ مَاءً حَتَّى إِذَا جَاءَهُ لَمْ يَجِدْهُ شَيْئًا وَوَجَدَ اللَّهَ عِنْدَهُ فَوَفَّاهُ حِسَابَهُ وَاللَّهُ سَرِيعُ",
+      "reference_as_printed_in_corpus": "النور: ٣٩",
+      "Q1_reference": "24:39",
+      "classification": "source_damage_and_partly_disclosed_RU_completion",
+      "full_current_ar_ru_read": true,
+      "finding": "Full current AR/RU p156 read. AR repeats يحسبه and lacks Q1 بقيعة; RU renders «в пустыне» and omits repetition. Existing translator note discloses repetition and truncated ending but does not explicitly say spatial phrase restored. Keep raw AR; edition scan needed.",
+      "recommended_handling": "Do not certify source complete; consider making existing note explicit about restored spatial phrase.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p166-draft-q1",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p166-draft",
+      "printed_pages": [
+        166
+      ],
+      "arabic_quote": "هَدَى تَدْخُلُوا الْجَنَّةَ وَلَمَّا يَأْتِكُمْ مَثَلُ الَّذِينَ خَلَوْا مِنْ قَبْلِكُمْ مَسَّتْهُمُ الْبَأْسَاءُ وَالضَّرَّاءُ وَزُلْزِلُوا حَتَّى يَقُولَ الرَّسُولُ",
+      "reference_as_printed_in_corpus": "البقرة: ٢١٣",
+      "Q1_reference": "2:213",
+      "classification": "damaged_source_fragment_and_reference_conflict",
+      "full_current_ar_ru_read": true,
+      "finding": "Full current AR/RU p166 read. AR begins هدى تدخلوا... then words from2:214, labeled2:213; fragment does not form coherent author sentence. RU transparently excludes this fragment in a separate existing note.",
+      "recommended_handling": "Keep unresolved source problem; no silent reconstruction or new reader patch suggested.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p356-draft-q2",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p356-draft",
+      "printed_pages": [
+        356
+      ],
+      "arabic_quote": "إِنَّ هَذِهِ تَذْكِرَةٌ فَمَنْ شَاءَ اتَّخَذَ إِلَى رَبِّهِ سَبِيلًا (٢٩) وَمَا يَشَاءُونَ إِلَّا أَنْ يَشَاءَ اللَّهُ إِنَّ اللَّهَ كَانَ عَلِيمًا حَكِيمًا",
+      "reference_as_printed_in_corpus": "الإنسان: ٢٩ - ٣٠",
+      "Q1_reference": "76:29-30",
+      "classification": "person_difference_and_RU_standardization",
+      "full_current_ar_ru_read": true,
+      "finding": "Full current AR/RU p356 read. Embedded AR has وما يشاؤون (third-person); Q1 has وما تشاؤون (second-person). RU uses «вы» matching Q1, not embedded person. A reading difference remains possible; Q1 alone does not establish corruption.",
+      "recommended_handling": "Flag reading/source and translation basis explicitly; do not overwrite source or assign a qiraa without specialist evidence.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p567-draft-q2",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p567-draft",
+      "printed_pages": [
+        567
+      ],
+      "arabic_quote": "لَا وَلَا يُقْبَلُ مِنْهَا",
+      "reference_as_printed_in_corpus": "البقرة: ١٢٣",
+      "Q1_reference": "2:123",
+      "classification": "internally_truncated_quote_RU_noun_from_commentary",
+      "full_current_ar_ru_read": true,
+      "finding": "Full current AR/RU p567 read. AR cited fragment لا ولا يقبل منها omits Q1 internal تجزي نفس عن نفس شيئا and ends before عدل. RU translates «И не будет принят от неё выкуп»; author immediately explains «أي لا يكون عدل فيقبل», supplying noun conceptually.",
+      "recommended_handling": "Record quote truncation and inferred noun; do not treat contiguous canonical quotation as preserved in AR.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p023-draft-q2",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p023-draft",
+      "printed_pages": [
+        23
+      ],
+      "arabic_quote": "قُلْ مَنْ رَبُّ السَّمَاوَاتِ السَّبْعِ وَرَبُّ الْعَرْشِ الْعَظِيمِ (٨٦) سَيَقُولُونَ اللَّهُ قُلْ أَفَلَا تَتَّقُونَ (٨٧) قُلْ مَنْ بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِنْ كُنْتُمْ تَعْلَمُونَ (٨٨) سَيَقُولُونَ اللَّهُ قُلْ فَأَنَّى تُسْحَرُونَ",
+      "reference_as_printed_in_corpus": "المؤمنون: ٨٦ - ٨٩",
+      "Q1_reference": "23:86-89",
+      "classification": "possible_reading_difference",
+      "full_current_ar_ru_read": true,
+      "finding": "Full AR/RU p23 read during sequential collation. AR says سيقولون الله in23:87/89; Q1 says سيقولون لله. These are distinct word forms, not a dagger-alif difference.",
+      "recommended_handling": "Needs reading/source review; Q1 disagreement alone is not a corruption verdict.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p024-draft-q4",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p024-draft",
+      "printed_pages": [
+        24
+      ],
+      "arabic_quote": "وَالَّذِينَ تَدْعُونَ مِنْ دُونِ اللَّهِ لَا يَخْلُقُونَ شَيْئًا وَهُمْ يُخْلَقُونَ",
+      "reference_as_printed_in_corpus": "النحل: ٢٠",
+      "Q1_reference": "16:20",
+      "classification": "possible_reading_person_difference",
+      "full_current_ar_ru_read": true,
+      "finding": "Full AR/RU p24 read. تدعون vs Q1 يدعون changes grammatical person; retained as a token difference.",
+      "recommended_handling": "Do not flatten person via normalization; specialist reading review.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p082-draft-q2",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p082-draft",
+      "printed_pages": [
+        82
+      ],
+      "arabic_quote": "وَيَوْمَ نَحْشُرُهُمْ كَأَنْ لَمْ يَلْبَثُوا إِلَّا سَاعَةً مِنَ النَّهَارِ يَتَعَارَفُونَ بَيْنَهُمْ",
+      "reference_as_printed_in_corpus": "يونس: ٤٥",
+      "Q1_reference": "10:45",
+      "classification": "possible_reading_person_difference",
+      "full_current_ar_ru_read": true,
+      "finding": "Full AR/RU p82 read. نحشرهم vs Q1 يحشرهم changes person.",
+      "recommended_handling": "No silent harmonization; possible reading needs specialist evidence.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p082-draft-q6",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p082-draft",
+      "printed_pages": [
+        82
+      ],
+      "arabic_quote": "يَوْمَ نَنفُخُ فِي الصُّورِ وَنَحْشُرُ الْمُجْرِمِينَ يَوْمَئِذٍ زُرْقًا (١٠٢) يَتَخَافَتُونَ بَيْنَهُمْ إِنْ لَبِثْتُمْ إِلَّا عَشْرًا (١٠٣) نَحْنُ أَعْلَمُ بِمَا يَقُولُونَ إِذْ يَقُولُ أَمْثَلُهُمْ طَرِيقَةً إِنْ لَبِثْتُمْ إِلَّا يَوْمًا",
+      "reference_as_printed_in_corpus": "طه: ١٠٢ - ١٠٤",
+      "Q1_reference": "20:102-104",
+      "classification": "possible_reading_voice_person_difference",
+      "full_current_ar_ru_read": true,
+      "finding": "Full AR/RU p82 read. ننفخ vs Q1 ينفخ changes voice/person.",
+      "recommended_handling": "No silent harmonization; possible reading needs specialist evidence.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    },
+    {
+      "id": "v2-madarij-v2-p115-draft-q2",
+      "volume": 2,
+      "paragraph_id": "madarij-v2-p115-draft",
+      "printed_pages": [
+        115
+      ],
+      "arabic_quote": "أَتَتَّخِذُنَا هُزُؤًا",
+      "reference_as_printed_in_corpus": "البقرة: ٦٧",
+      "Q1_reference": "2:67",
+      "classification": "possible_reading_hamza_difference",
+      "full_current_ar_ru_read": true,
+      "finding": "Full AR/RU p115 read. هزؤا vs Q1 هزوا differs in pronounced consonantal hamza, beyond recitation-mark stripping.",
+      "recommended_handling": "Remain flagged for reading review; not labeled ordinary orthographic identity.",
+      "expert_verified": false,
+      "visual_original_comparison": false,
+      "reader_changes_applied": false
+    }
+  ],
+  "scope": "9 selected V2 candidates only; remaining flags are automated triage, not manual semantic review"
+}

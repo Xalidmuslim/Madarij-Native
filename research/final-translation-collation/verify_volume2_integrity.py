@@ -40,3 +40,8 @@ for row in sync:
 for name, obj in mirrors.items():
     assert json.loads((ROOT / name).read_text()) == obj, name
 print(f'PASS: v2 {len(units)} stable units; {len(logs)} logged edits; {len(sync)} local mirror updates; Arabic and metadata unchanged')
+
+freeze_path = HERE / 'VOLUME2_COMPLETED_PASS.json'
+if freeze_path.exists():
+    freeze = json.loads(freeze_path.read_text())
+    assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == freeze['sha256'], 'Volume II changed after completed-pass snapshot'

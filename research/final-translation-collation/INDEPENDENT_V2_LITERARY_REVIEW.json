@@ -1,0 +1,362 @@
+{
+  "complete": true,
+  "scope": "Literary integration QA of all final Volume II proposals; provisional embedded-text review, no visual or human-expert certification.",
+  "baseline": "bac689a:app/src/main/assets/volume2-preview.json",
+  "method": "All 33 proposal blocks applied sequentially in memory to immutable baseline. Read every resulting edited context, then refreshed latest proposal files and read changed contexts and relevant page boundaries. No app/source/proposal/Git mutation.",
+  "proposal_blocks": 33,
+  "total_changes": 551,
+  "exact_old_failures": [],
+  "blocks_reviewed": [
+    {
+      "block": "/tmp/madarij-v2-003-022.json",
+      "range": [
+        3,
+        22
+      ],
+      "changes": 7
+    },
+    {
+      "block": "/tmp/madarij-v2-023-042.json",
+      "range": [
+        23,
+        42
+      ],
+      "changes": 6
+    },
+    {
+      "block": "/tmp/madarij-v2-043-062.json",
+      "range": [
+        43,
+        62
+      ],
+      "changes": 6
+    },
+    {
+      "block": "/tmp/madarij-v2-063-082.json",
+      "range": [
+        63,
+        82
+      ],
+      "changes": 8
+    },
+    {
+      "block": "/tmp/madarij-v2-083-102.json",
+      "range": [
+        83,
+        102
+      ],
+      "changes": 6
+    },
+    {
+      "block": "/tmp/madarij-v2-103-122.json",
+      "range": [
+        103,
+        122
+      ],
+      "changes": 10
+    },
+    {
+      "block": "/tmp/madarij-v2-123-142.json",
+      "range": [
+        123,
+        142
+      ],
+      "changes": 12
+    },
+    {
+      "block": "/tmp/madarij-v2-143-162.json",
+      "range": [
+        143,
+        162
+      ],
+      "changes": 25
+    },
+    {
+      "block": "/tmp/madarij-v2-163-182.json",
+      "range": [
+        163,
+        182
+      ],
+      "changes": 19
+    },
+    {
+      "block": "/tmp/madarij-v2-183-202.json",
+      "range": [
+        183,
+        202
+      ],
+      "changes": 24
+    },
+    {
+      "block": "/tmp/madarij-v2-203-222.json",
+      "range": [
+        203,
+        222
+      ],
+      "changes": 25
+    },
+    {
+      "block": "/tmp/madarij-v2-223-242.json",
+      "range": [
+        223,
+        242
+      ],
+      "changes": 24
+    },
+    {
+      "block": "/tmp/madarij-v2-243-262.json",
+      "range": [
+        243,
+        262
+      ],
+      "changes": 15
+    },
+    {
+      "block": "/tmp/madarij-v2-263-282.json",
+      "range": [
+        263,
+        282
+      ],
+      "changes": 18
+    },
+    {
+      "block": "/tmp/madarij-v2-283-302.json",
+      "range": [
+        283,
+        302
+      ],
+      "changes": 9
+    },
+    {
+      "block": "/tmp/madarij-v2-303-322.json",
+      "range": [
+        303,
+        322
+      ],
+      "changes": 12
+    },
+    {
+      "block": "/tmp/madarij-v2-323-342.json",
+      "range": [
+        323,
+        342
+      ],
+      "changes": 15
+    },
+    {
+      "block": "/tmp/madarij-v2-343-362.json",
+      "range": [
+        343,
+        362
+      ],
+      "changes": 19
+    },
+    {
+      "block": "/tmp/madarij-v2-363-382.json",
+      "range": [
+        363,
+        382
+      ],
+      "changes": 15
+    },
+    {
+      "block": "/tmp/madarij-v2-383-402.json",
+      "range": [
+        383,
+        402
+      ],
+      "changes": 16
+    },
+    {
+      "block": "/tmp/madarij-v2-403-422.json",
+      "range": [
+        403,
+        422
+      ],
+      "changes": 18
+    },
+    {
+      "block": "/tmp/madarij-v2-423-442.json",
+      "range": [
+        423,
+        442
+      ],
+      "changes": 15
+    },
+    {
+      "block": "/tmp/madarij-v2-443-462.json",
+      "range": [
+        443,
+        462
+      ],
+      "changes": 20
+    },
+    {
+      "block": "/tmp/madarij-v2-463-482.json",
+      "range": [
+        463,
+        482
+      ],
+      "changes": 14
+    },
+    {
+      "block": "/tmp/madarij-v2-483-502.json",
+      "range": [
+        483,
+        502
+      ],
+      "changes": 35
+    },
+    {
+      "block": "/tmp/madarij-v2-503-522.json",
+      "range": [
+        503,
+        522
+      ],
+      "changes": 37
+    },
+    {
+      "block": "/tmp/madarij-v2-523-542.json",
+      "range": [
+        523,
+        542
+      ],
+      "changes": 27
+    },
+    {
+      "block": "/tmp/madarij-v2-543-562.json",
+      "range": [
+        543,
+        562
+      ],
+      "changes": 24
+    },
+    {
+      "block": "/tmp/madarij-v2-563-582.json",
+      "range": [
+        563,
+        582
+      ],
+      "changes": 16
+    },
+    {
+      "block": "/tmp/madarij-v2-583-602.json",
+      "range": [
+        583,
+        602
+      ],
+      "changes": 17
+    },
+    {
+      "block": "/tmp/madarij-v2-603-622.json",
+      "range": [
+        603,
+        622
+      ],
+      "changes": 2
+    },
+    {
+      "block": "/tmp/madarij-v2-623-642.json",
+      "range": [
+        623,
+        642
+      ],
+      "changes": 15
+    },
+    {
+      "block": "/tmp/madarij-v2-643-659.json",
+      "range": [
+        643,
+        659
+      ],
+      "changes": 20
+    }
+  ],
+  "findings": [
+    {
+      "page": 167,
+      "block": "/tmp/madarij-v2-163-182.json",
+      "paragraph_id": "madarij-v2-p167-draft",
+      "status": "suggestion_pending_root",
+      "priority": "grammar",
+      "old": "Всё желаемое помимо Него — преходящая тень и исчезающий образ, даже если его обладатель какое-то время наслаждается им, — это лишь обманчивое пользование.",
+      "new": "Всё желаемое помимо Него — преходящая тень и исчезающий образ. Даже если его обладатель какое-то время наслаждается им, это лишь обманчивое пользование.",
+      "reason": "Разделить предложение: прежняя конструкция повторно вводит сказуемое через «это» после уже законченного именного сказуемого.",
+      "coordinate_system": "Resulting Russian after proposals applied to bac689a, not proposal.old field"
+    },
+    {
+      "page": 199,
+      "block": "/tmp/madarij-v2-183-202.json",
+      "paragraph_id": "madarij-v2-p199-draft",
+      "status": "suggestion_pending_root",
+      "priority": "minor",
+      "old": "куда же ему притязать на особое достоинство.",
+      "new": "куда же ему притязать на особое достоинство?",
+      "reason": "Риторический вопрос требует вопросительного знака.",
+      "coordinate_system": "Resulting Russian after proposals applied to bac689a, not proposal.old field"
+    },
+    {
+      "page": 211,
+      "block": "/tmp/madarij-v2-203-222.json",
+      "paragraph_id": "madarij-v2-p211-draft",
+      "status": "suggestion_pending_root",
+      "priority": "terminology",
+      "old": "«Устремление исправляет беспечность»: под решимостью",
+      "new": "«Устремление исправляет беспечность»: под устремлением",
+      "reason": "После исправления заголовка согласовать называемый термин в непосредственно следующем толковании.",
+      "coordinate_system": "Resulting Russian after proposals applied to bac689a, not proposal.old field"
+    },
+    {
+      "page": 477,
+      "block": "/tmp/madarij-v2-463-482.json",
+      "paragraph_id": "madarij-v2-p477-draft",
+      "status": "suggestion_pending_root",
+      "priority": "grammar",
+      "old": "В другом хадисе сообщается, что произнесшему, когда он слышит призыв на молитву: «Я доволен Аллахом как Господом, исламом как религией и Мухаммадом как Посланником» будут прощены грехи.",
+      "new": "В другом хадисе сообщается, что тому, кто, слыша призыв на молитву, произнесёт: «Я доволен Аллахом как Господом, исламом как религией и Мухаммадом как Посланником», будут прощены грехи.",
+      "reason": "Вставка придаточного после причастия разрывает его связь с прямой речью и оставляет незакрытой конструкцию; перестройка сохраняет حين يسمع и устанавливает ясную связь «тому, кто... будут прощены».",
+      "coordinate_system": "Resulting Russian after proposals applied to bac689a, not proposal.old field"
+    },
+    {
+      "page": 655,
+      "block": "/tmp/madarij-v2-643-659.json",
+      "paragraph_id": "madarij-v2-p655-draft",
+      "status": "suggestion_pending_root",
+      "priority": "clarity",
+      "old": "Если человек не строит духовный путь на этом основании, тот становится порочным, а его итог — отрыв от знания и религии.",
+      "new": "Если человек не строит духовный путь на этом основании, его путь становится порочным, а его итог — отрыв от знания и религии.",
+      "reason": "Указать «путь»: местоимение «тот» после «если человек» читается как относящееся к человеку, тогда как فسلوكه прямо называет путь.",
+      "coordinate_system": "Resulting Russian after proposals applied to bac689a, not proposal.old field"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "page": 416,
+      "status": "resolved_in_latest_proposal",
+      "reason": "Expanded restoration approved: explicit он and omitted support/carrying/impossibility conditional replace obsolete оно."
+    },
+    {
+      "page": 426,
+      "status": "resolved_in_latest_proposal",
+      "reason": "Added «, и Он удержал их» restores subject after impersonal было ненавистно."
+    },
+    {
+      "page": 521,
+      "status": "resolved_in_latest_proposal",
+      "reason": "Same Qur’an wording now grammatically repaired as p426."
+    },
+    {
+      "page": 540,
+      "status": "resolved_in_latest_proposal",
+      "reason": "Latest proposal puts all parallel predicates in nominative: дар; милость; благополучие."
+    }
+  ],
+  "additional_checks": [
+    "No introduced bracket or parenthesis imbalance detected.",
+    "Only changed guillemet balances are p205 opening and p206 closing: inspected and valid shared quotation.",
+    "p348–349,351–352,377–378 and506–507 joins inspected; coherent.",
+    "p280 additional rida correction approved independently: حقيقته resumes الرضا, not patience.",
+    "p91 apparent truncated word was tool context clipping; full final Russian Аллаха intact."
+  ],
+  "limitations": "Full Arabic fidelity is covered by separate peer reviews; this pass targets newly edited Russian and boundaries. Existing unrelated Russian wording has not been gratuitously rewritten."
+}

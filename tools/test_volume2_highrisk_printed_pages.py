@@ -38,8 +38,8 @@ class EarlierPages(unittest.TestCase):
         self.assertIn("ни силы, ни помощника", self.page(480))
 
     def test_516_angel_and_examples_in_authorial_sequence(self):
-        self.assertIn("народом Самуд", self.page(516))
-        self.assertIn("народом Лута", self.page(516))
+        self.assertIn("гибель народа Самуд", self.page(516))
+        self.assertIn("народа Лута", self.page(516))
         self.assertIn("26", self.page(516))
 
     def test_517_previous_sentence_continues(self):

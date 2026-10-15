@@ -24,11 +24,11 @@ class Volume2Pages601602(unittest.TestCase):
     def test_page_601_and_602_authorial_phrases(self):
         a = self.pars["madarij-v2-p601-draft"]["ru"]
         b = self.pars["madarij-v2-p602-draft"]["ru"]
-        self.assertIn("взаимному обмену и взаимопомощи", a)
+        self.assertIn("к обмену и взаимной помощи", a)
         self.assertNotIn("чрезмерно благодарит", a)
-        self.assertIn("не следует порицать", a)
-        self.assertIn("восхваляет его", b)
-        self.assertIn("«первого различения»", b)
+        self.assertIn("такая благодарность не заслуживает порицания", a)
+        self.assertIn("хвалит его за неё", b)
+        self.assertIn("людям первого различения", b)
         self.assertIn("пусть каждый говорит что пожелает", b)
 
     def test_app_draft_synced_preserve_unpublished(self):

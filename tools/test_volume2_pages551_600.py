@@ -25,13 +25,13 @@ class VolumeTwo551600(unittest.TestCase):
                 with self.subTest(page=n,term=term): self.assertNotIn(term,self.para(n)["ru"])
     def test_full_reasoning_restore(self):
         self.assertIn("довольство распространялось на оба исхода",self.para(558)["ru"])
-        self.assertIn("не иначе как относительно прав Аллаха",self.para(565)["ru"])
-        self.assertIn("собственную честь и достоинство",self.para(569)["ru"])
+        self.assertIn("не упрекал их иначе как относительно прав Аллаха",self.para(565)["ru"])
+        self.assertIn("умаляет её честь и достоинство",self.para(569)["ru"])
         self.assertIn("различать два значения",self.para(577)["ru"])
         self.assertIn("половина веры",self.para(586)["ru"])
         self.assertIn("второе толкование совершеннее",self.para(590)["ru"])
         self.assertIn("О если бы шейх уберёг свою книгу",self.para(597)["ru"])
-        self.assertIn("привёл их к поклонению солнцу, луне и идолам",self.para(600)["ru"])
+        self.assertIn("привело их к поклонению солнцу, луне и идолам",self.para(600)["ru"])
     def test_preserve_draft_and_previous_pages(self):
         self.assertEqual(len(self.book["chapters"]),9)
         self.assertEqual(len(self.paras),676)

@@ -47,8 +47,22 @@ assert original == current, 'Nontranslation data changed'
 for name, digest in baseline['files'].items():
     if name not in (book_path, 'app/src/main/assets/volume2-preview.json'):
         assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
+# Test logic is frozen; only individually justified string expectations may change.
+expectation_path = HERE / 'TEST_EXPECTATION_UPDATES.json'
+expectation_rows = json.loads(expectation_path.read_text()) if expectation_path.exists() else []
+expected_tests = {}
+for row in expectation_rows:
+    name = row['test_file']
+    assert name.startswith('tools/test_volume2') and name.endswith('.py')
+    if name not in expected_tests:
+        expected_tests[name] = subprocess.check_output(['git', 'show', f'{baseline["base_commit"]}:{name}'], cwd=ROOT, text=True)
+    assert expected_tests[name].count(row['old']) == 1
+    expected_tests[name] = expected_tests[name].replace(row['old'], row['new'])
+for name, text in expected_tests.items():
+    assert (ROOT / name).read_text() == text, ('Unlogged test change', name)
+
 paths = subprocess.check_output(['git', 'diff', baseline['base_commit'], '--name-only'], cwd=ROOT, text=True).splitlines()
-assert all(p in (book_path, 'app/src/main/assets/content-manifest.json', 'app/src/main/assets/volume2-preview.json') or p.startswith('research/final-translation-collation/') or p in {x['path'] for row in json.loads((HERE / 'V2_SYNC_MAP.json').read_text())['reader_mapping'] for x in row['redundant_ru_locations']} for p in paths), paths
+assert all(p in (book_path, 'app/src/main/assets/content-manifest.json', 'app/src/main/assets/volume2-preview.json') or p.startswith('research/final-translation-collation/') or p in expected_tests or p in {x['path'] for row in json.loads((HERE / 'V2_SYNC_MAP.json').read_text())['reader_mapping'] for x in row['redundant_ru_locations']} for p in paths), paths
 print(f'PASS: {len(ids)} v1 units; {len(changed_ids)} edited text units; all source text, IDs, metadata, navigation preserved; volume II Russian changes audited separately')
 
 manifest_path = 'app/src/main/assets/content-manifest.json'

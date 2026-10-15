@@ -1,0 +1,47 @@
+{
+  "records": 1083,
+  "Q1_sha256": "d8a8adff387f60ce3ff7dbe3238dd9b27120bfe29d8fcb07ad2e89cad37cefd4",
+  "input_registry_sha256": "788b208ad5a154051b0deccb652d86695f75368a7489f6152e9a78e5acf461a3",
+  "output_sha256": "3ac5dfbe3e4a498cae2ad55279584dc91155a09eb9c8ec5dd8ac8d49fcd4a2fd",
+  "script_sha256": "a12db309285def25ca7a8d5fad114dab83d7c0c59edbad914446e266ac3b7dd8",
+  "statuses": {
+    "orthography_compatible_contiguous_match_at_printed_reference": 420,
+    "contiguous_match_at_printed_reference": 380,
+    "reference_inferred_from_unique_normalized_phrase": 192,
+    "reference_unresolved_no_exact_normalized_match": 26,
+    "reference_ambiguous_multiple_exact_matches": 22,
+    "quote_matches_outside_existing_reference_requires_review": 17,
+    "token_difference_requires_review": 22,
+    "ordered_quote_with_internal_Q1_tokens_not_quoted": 3,
+    "alignment_inconclusive_requires_review": 1
+  },
+  "original_478_mismatches": {
+    "orthography_compatible_contiguous_match_at_printed_reference": 420,
+    "contiguous_match_at_printed_reference": 16,
+    "quote_matches_outside_existing_reference_requires_review": 17,
+    "token_difference_requires_review": 21,
+    "ordered_quote_with_internal_Q1_tokens_not_quoted": 3,
+    "alignment_inconclusive_requires_review": 1
+  },
+  "original_240_unresolved": {
+    "reference_inferred_from_unique_normalized_phrase": 192,
+    "reference_unresolved_no_exact_normalized_match": 26,
+    "reference_ambiguous_multiple_exact_matches": 22
+  },
+  "original_fields_preserved": true,
+  "reader_ar_ru_changed": false,
+  "expert_verified": false,
+  "visual_original_comparison": false,
+  "normalization": [
+    "strip vocalization/recitation marks and tatweel",
+    "normalize alif seats أإآٱ to ا; initial ءا to ا",
+    "tokenwise dagger-alif omission/expansion; Uthmani وٰ/medial ىٰ to imlai alif where compatible; hamza carriers aligned using consonantal spelling variants; explicit lexical silent-alif list",
+    "no general hamza deletion, no ة/ه merger, no negation/pronoun deletion, no fuzzy inference; expand small high yeh and word-internal small waw; finite spelling list is explicit in script"
+  ],
+  "limits": [
+    "Unique normalized phrase identifies only an electronic Q1 occurrence; it does not prove author intent, printed edition content, recitation, or translation correctness.",
+    "A proper excerpt may be intentional or extraction-truncated; matching does not certify source completeness.",
+    "Token edit alignment is heuristic; missing/extra/replacement labels require manual reading.",
+    "Existing printed-reference parsing remains unmodified, including possibly incorrect parsed references."
+  ]
+}

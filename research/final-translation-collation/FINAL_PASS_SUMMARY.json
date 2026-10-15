@@ -1,0 +1,26 @@
+{
+  "volume1_pages": 608,
+  "volume2_pages": 657,
+  "total_pages": 1265,
+  "volume1_author_edits": 176,
+  "volume1_editor_note_edits": 30,
+  "volume2_edit_records": 554,
+  "volume2_edited_units": 367,
+  "per_page_issues": 1074,
+  "status_counts": {
+    "1": {
+      "предварительно проверена": 160,
+      "требует экспертной проверки": 448
+    },
+    "2": {
+      "требует экспертной проверки": 496,
+      "предварительно проверена": 161
+    }
+  },
+  "data_tests_run": 203,
+  "data_tests_passed": true,
+  "publication_ready": false,
+  "task_scientifically_complete": false,
+  "branch": "https://github.com/Xalidmuslim/Madarij-Native/tree/codex/madarij-v1-v2-scholarly-collation-20261015",
+  "last_text_commit": "6600172555aa91366f6411c906e75f49e7a80258"
+}

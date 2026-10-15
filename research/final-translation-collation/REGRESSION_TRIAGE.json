@@ -1,0 +1,293 @@
+{
+  "source_test_result": "/tmp/final-volume2-test-result.json",
+  "tests_run": 203,
+  "failure_records_reviewed": 11,
+  "summary": {
+    "real_content_bugs_in_failed_features": 0,
+    "outdated_exact_phrase_records": 11,
+    "proposed_literal_updates": 17,
+    "masked_literal_mismatches_found": 6
+  },
+  "method": "Прочитаны исходные тестовые функции и полные текущие AR/RU затронутых страниц;599–600 проверены совместно. Проверены все последующие утверждения в методах, остановившихся на первом assertIn. Никакие тесты, переводы или файлы репозитория не изменены. Предлагаются только точные замены ожидаемых строк с сохранением либо усилением конкретного смыслового признака, без удаления проверок.",
+  "records": [
+    {
+      "id": "test_volume2_highrisk_printed_pages.EarlierPages.test_516_angel_and_examples_in_authorial_sequence",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить последовательность аргумента ангелов и примеры знамений Самуда, Лута, суры26.",
+      "failure_cause": "Ожидается творительный народом, а действующий текст после гибель использует родительный народа. Оба примера и26 присутствуют.",
+      "source_evidence": "وآية إهلاك ثمود وقوم لوط — гибель Самуда и народа Лута; искажения содержания нет.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_highrisk_printed_pages.py",
+          "page": 516,
+          "old": "народом Самуд",
+          "new": "гибель народа Самуд",
+          "arabic_anchor": "إهلاك ثمودَ",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_highrisk_printed_pages.py",
+          "page": 516,
+          "old": "народом Лута",
+          "new": "народа Лута",
+          "arabic_anchor": "وقومِ لوطٍ",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [
+        "После первого assertIn тот же тест упал бы на народом Лута; заменить обе падежные формы."
+      ],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_p601_602_fidelity.Volume2Pages601602.test_page_601_and_602_authorial_phrases",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить взаимный обмен земного царя, отсутствие порицания благодарности и Божью хвалу, а также термин первого различения602.",
+      "failure_cause": "Четыре устаревших буквальных формы: обмену и взаимной помощи; не заслуживает порицания; хвалит; термин без кавычек.",
+      "source_evidence": "601 المعاوضة والمعاونة и فلا يذم,602 وثناؤه عليه به и بعين الفرق الأول переданы; все четыре проверяемых смысла сохранены.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_p601_602_fidelity.py",
+          "page": 601,
+          "old": "взаимному обмену и взаимопомощи",
+          "new": "к обмену и взаимной помощи",
+          "arabic_anchor": "المعاوضة والمعاونة",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_p601_602_fidelity.py",
+          "page": 601,
+          "old": "не следует порицать",
+          "new": "такая благодарность не заслуживает порицания",
+          "arabic_anchor": "فلا يُذَمُّ",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_p601_602_fidelity.py",
+          "page": 602,
+          "old": "восхваляет его",
+          "new": "хвалит его за неё",
+          "arabic_anchor": "وثناؤه عليه به",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_p601_602_fidelity.py",
+          "page": 602,
+          "old": "«первого различения»",
+          "new": "людям первого различения",
+          "arabic_anchor": "بعين الفرق الأوَّل",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [
+        "Первое падение маскирует ещё три устаревших assertIn.",
+        "assertNotIn чрезмерно благодарит и финальное пусть каждый говорит что пожелает соответствуют текущему тексту и остаются без изменений."
+      ],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages081_100_deep.VolumeTwoPrinted81To100.test_source_point_and_safety_flags",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Проверить конкретный смысл двух защит — от заблуждения и от гибели — при сохранении публикационных флагов.",
+      "failure_cause": "Общее слово посредством не является смысловым инвариантом; нынешний текст употребляет держание/прибегание и даёт.",
+      "source_evidence": "الاعتصام بحبله ... من الضلالة والاعتصام به ... من الهلكة прямо передан полной контрастной фразой. Новый литерал гораздо конкретнее и проверяет оба объекта/оба результата.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages081_100_deep.py",
+          "page": 99,
+          "old": "посредством",
+          "new": "Держание за вервь Аллаха защищает от заблуждения, а прибегание к Самому Аллаху — от гибели.",
+          "arabic_anchor": "الاعتصام بحبله فإنَّه يعصم من الضّلالة، والاعتصام به يعصم من الهلكة",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages301_350.Vol2Pages301350.test_no_truncated_logic_and_author_interpositions (page=313, term='Вам переданное знание')",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Не потерять полемическую формулу النقل/العقل и прямой авторский голос313.",
+      "failure_cause": "Вставлено грамматическое тире между Вам и переданное знание.",
+      "source_evidence": "لكم النقل ولنا العقل соответствует Вам — переданное знание, нам — разум; это пунктуация, не выпадение.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages301_350.py",
+          "page": 313,
+          "old": "Вам переданное знание",
+          "new": "Вам — переданное знание",
+          "arabic_anchor": "لكم النقل ولنا العقل",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages301_350.Vol2Pages301350.test_no_truncated_logic_and_author_interpositions (page=329, term='Следует сказать так:')",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить переход от доводов групп к собственному верному ответу автора о сущности Рая.",
+      "failure_cause": "Следует сказать так заменено равнозначным Верный ответ таков.",
+      "source_evidence": "والتحقيق أن يقال явно вводит собственный вывод автора; голос и переход сохранены.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages301_350.py",
+          "page": 329,
+          "old": "Следует сказать так:",
+          "new": "Верный ответ таков:",
+          "arabic_anchor": "والتحقيق أن يقال",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages301_350.Vol2Pages301350.test_no_truncated_logic_and_author_interpositions (page=330, term='любое проявление Его довольства')",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить любой, даже наименьший размер Божьего довольства как превосходящий Рай.",
+      "failure_cause": "Проявление заменено более точным доля; обобщение любая осталось.",
+      "source_evidence": "فأيسر يسير ... أي شيء كان من رضاه соответствует любая, даже самая малая доля Его довольства; квантор и сравнение сохранены.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages301_350.py",
+          "page": 330,
+          "old": "любое проявление Его довольства",
+          "new": "любая, даже самая малая доля Его довольства",
+          "arabic_anchor": "أيُّ شيءٍ كان من رضاه",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages501_550.Volume2Pages501550.test_author_and_athar_wording_page_540",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Проверить дар в облике лишения и точные слова наставника, без внешнего голоса автора.",
+      "failure_cause": "Исправлен ошибочный творительный даром после именной связки — на именительный дар. Последующие милость/благополучие также правильно согласованы.",
+      "source_evidence": "فقضاؤه لعبده المؤمن عطاء وإن كان في صورة المنع — Его решение есть дар; правка грамматическая и сохраняет утверждение.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages501_550.py",
+          "page": 540,
+          "old": "даром, даже если он выглядит лишением",
+          "new": "дар, даже если он выглядит лишением",
+          "arabic_anchor": "عطاءٌ وإن كان في صورة المنع",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [
+        "Оставшиеся assertIn/NotIn этой функции соответствуют текущему тексту."
+      ],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_pages551_600.VolumeTwo551600.test_full_reasoning_restore",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить исключение прав Аллаха в споре, достоинство просителя569, два значения577, половину веры586, толкование590, критику597 и аналогию600.",
+      "failure_cause": "Новый первый сбой565 возник после исправления двойного отрицания не...не иначе. Остальные старые несовпадения569 и600 были скрыты этим первым assertIn.",
+      "source_evidence": "565 لم يكن يخاصم أحدا ولا يعاتبه إلا — не спорил и не упрекал иначе как; прежнее дополнительное не меняло полярность.569 أخمل شرفها ووضع قدرها — честь души.600 القياس нейтрального рода по-русски уподобление, поэтому привело.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages551_600.py",
+          "page": 565,
+          "old": "не иначе как относительно прав Аллаха",
+          "new": "не упрекал их иначе как относительно прав Аллаха",
+          "arabic_anchor": "ولا يعاتبه إلَّا فيما يتعلَّق بحقِّ الله",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages551_600.py",
+          "page": 569,
+          "old": "собственную честь и достоинство",
+          "new": "умаляет её честь и достоинство",
+          "arabic_anchor": "وأخمل شرفها، ووضع قدرها",
+          "meaning_preserved": true
+        },
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_pages551_600.py",
+          "page": 600,
+          "old": "привёл их к поклонению солнцу, луне и идолам",
+          "new": "привело их к поклонению солнцу, луне и идолам",
+          "arabic_anchor": "وبمثله عُبدت الشمس والقمر والأوثان",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [
+        "Проверены все восемь assertIn этой функции, а не только первый.",
+        "558 довольство распространялось на оба исхода,577 различать два значения,586 половина веры,590 второе толкование совершеннее,597 О если бы шейх уберёг свою книгу остаются буквально и содержательно верны.",
+        "Нельзя возвращать ошибочное двойное не в перевод для прохождения теста."
+      ],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_philology_pages521_550.Volume2Fidelity521to550.test_source (n=539)",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить содержательное завершение беседы539 и реакцию Суфьяна на ответ Вухайба.",
+      "failure_cause": "Внешняя парафраза духовной высотой ответа заменена собственными словами Суфьяна и клятвой.",
+      "source_evidence": "فقبل الثوري بين عينيه وقال روحانية ورب الكعبة — нынешний текст точнее прежнего и сохраняет как духовность, так и клятву.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_philology_pages521_550.py",
+          "page": 539,
+          "old": "духовной высотой ответа",
+          "new": "поцеловал его между глаз и сказал: «Это духовность, клянусь Господом Каабы!»",
+          "arabic_anchor": "فقبَّل الثوريُّ بين عينيه وقال: روحانيّةٌ وربِّ الكعبة",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_philology_pages581_600.Collation581to600.test_source_sense_restored (page=588, phrase='даруй победу над тем, кто притесняет меня')",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Не опустить прошение о победе над притеснителем из мольбы Ибн Аббаса588.",
+      "failure_cause": "Придаточное тем, кто притесняет заменено причастием притесняющим.",
+      "source_evidence": "وانصرني على من بغى علي — субъект просьбы, противник-притеснитель и направление победы полностью сохранены.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_philology_pages581_600.py",
+          "page": 588,
+          "old": "даруй победу над тем, кто притесняет меня",
+          "new": "даруй победу над притесняющим меня",
+          "arabic_anchor": "وانصرني على من بغى عليّ",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    },
+    {
+      "id": "test_volume2_philology_pages581_600.Collation581to600.test_source_sense_restored (page=600, phrase='пользуясь своим человеческим существованием')",
+      "classification": "outdated_exact_phrase",
+      "real_content_bug": false,
+      "test_purpose": "Сохранить человеческое существование как носитель страсти, движение к душе, а не к Богу; соединить599–600.",
+      "failure_cause": "Деепричастие пользуясь заменено инфинитивом направиться с этим существованием, чтобы грамматически завершить восстановленную фразу599.",
+      "source_evidence": "599 حمل الشهوة والحظ ... على هذا الرسم,600 والسير به إلى النفس — нынешний сквозной текст сохраняет и носителя, и направление. Это не удаление аргумента.",
+      "proposed_test_updates": [
+        {
+          "test_file": "/workspace/Madarij-Native/tools/test_volume2_philology_pages581_600.py",
+          "page": 600,
+          "old": "пользуясь своим человеческим существованием",
+          "new": "направиться с этим человеческим существованием к собственной душе",
+          "arabic_anchor": "على هذا الرسم والسَّير به إلى النفس",
+          "meaning_preserved": true
+        }
+      ],
+      "masked_assertion_diagnosis": [],
+      "translation_change_needed": false
+    }
+  ]
+}

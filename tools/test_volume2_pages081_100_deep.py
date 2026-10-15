@@ -39,7 +39,7 @@ class VolumeTwoPrinted81To100(unittest.TestCase):
 
     def test_source_point_and_safety_flags(self):
         self.assertIn("вервь Аллаха", self.page(100))
-        self.assertIn("посредством", self.page(99))
+        self.assertIn("Держание за вервь Аллаха защищает от заблуждения, а прибегание к Самому Аллаху — от гибели.", self.page(99))
         self.assertFalse(BOOK["publication_ready"])
         self.assertFalse(BOOK["translation_independently_verified"])
         self.assertEqual(len(BOOK["chapters"]),9)

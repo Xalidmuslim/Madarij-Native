@@ -1,0 +1,4358 @@
+{
+  "scope": "MACHINE_ALIGNMENT_ONLY_NOT_SEMANTIC_OR_VISUAL_EDITION_VERIFICATION",
+  "inputs": [
+    {
+      "volume": 1,
+      "path": "/workspace/Madarij-Native/app/src/main/assets/corpus.json",
+      "sha256": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a"
+    },
+    {
+      "volume": 2,
+      "path": "/workspace/Madarij-Native/app/src/main/assets/volume2-preview.json",
+      "sha256": "536a11ca3828a13a179109c18b5244a57116b17064537220f573d7cadb2a5eb4"
+    }
+  ],
+  "unit_counts": {
+    "1": 644,
+    "2": 676
+  },
+  "witnesses": [
+    {
+      "version": "JK000081",
+      "path": "/tmp/0751IbnQayyimJawziyya.MadarijSalikin.JK000081-ara1",
+      "sha256": "677bb21c026e88c546c14bc9468b4293eaabf811247dcb3f215fbf1bfd4c633f",
+      "tokens": 365192,
+      "page_markers": 1567,
+      "rare_7gram_index_entries": 359435,
+      "paragraph_status_counts": {
+        "short_exact_ambiguous": 1,
+        "short_missing": 1,
+        "anchored_local_window": 1312,
+        "short_exact_unique": 2,
+        "no_rare_anchor": 4
+      },
+      "flag_counts": {
+        "SHORT_UNIT_NO_7GRAM_PROOF": 4,
+        "AMBIGUOUS_SHORT_TEXT": 1,
+        "LOW_EXTENDED_EXACT_COVERAGE": 219,
+        "LONG_UNANCHORED_SPAN": 67,
+        "LOW_RARE_ANCHOR_COVERAGE": 67,
+        "SINGLE_ANCHOR_ONLY": 3,
+        "NO_RARE_7GRAM_ANCHOR": 4
+      },
+      "flagged_units": [
+        {
+          "paragraph_id": "madarij-v1-opening-001",
+          "volume": 1,
+          "pages": [
+            3
+          ],
+          "coverage": null,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF",
+            "AMBIGUOUS_SHORT_TEXT"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-002",
+          "volume": 1,
+          "pages": [
+            3
+          ],
+          "coverage": null,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-008",
+          "volume": 1,
+          "pages": [
+            5
+          ],
+          "coverage": 0.7551,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-010",
+          "volume": 1,
+          "pages": [
+            5,
+            6
+          ],
+          "coverage": 0.70192,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-013",
+          "volume": 1,
+          "pages": [
+            6,
+            7
+          ],
+          "coverage": 0.73333,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-015",
+          "volume": 1,
+          "pages": [
+            7,
+            8
+          ],
+          "coverage": 0.78814,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-001",
+          "volume": 1,
+          "pages": [
+            10
+          ],
+          "coverage": 0.18919,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "SINGLE_ANCHOR_ONLY",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-005",
+          "volume": 1,
+          "pages": [
+            11
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-007",
+          "volume": 1,
+          "pages": [
+            11
+          ],
+          "coverage": 0.5,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-010",
+          "volume": 1,
+          "pages": [
+            12
+          ],
+          "coverage": 0.73611,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-016",
+          "volume": 1,
+          "pages": [
+            15
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-017",
+          "volume": 1,
+          "pages": [
+            15
+          ],
+          "coverage": 0.58333,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-022",
+          "volume": 1,
+          "pages": [
+            16
+          ],
+          "coverage": 0.6,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-023",
+          "volume": 1,
+          "pages": [
+            17
+          ],
+          "coverage": 0.68571,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-025",
+          "volume": 1,
+          "pages": [
+            17
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SINGLE_ANCHOR_ONLY"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-030",
+          "volume": 1,
+          "pages": [
+            19
+          ],
+          "coverage": 0.53571,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-034",
+          "volume": 1,
+          "pages": [
+            20
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p021-draft",
+          "volume": 1,
+          "pages": [
+            21
+          ],
+          "coverage": 0.78,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p022-draft",
+          "volume": 1,
+          "pages": [
+            22
+          ],
+          "coverage": 0.73026,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p024-draft",
+          "volume": 1,
+          "pages": [
+            24
+          ],
+          "coverage": 0.78431,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p035-draft",
+          "volume": 1,
+          "pages": [
+            35
+          ],
+          "coverage": 0.73469,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p036-draft",
+          "volume": 1,
+          "pages": [
+            36
+          ],
+          "coverage": 0.73984,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p039-draft",
+          "volume": 1,
+          "pages": [
+            39
+          ],
+          "coverage": 0.72,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p040-draft",
+          "volume": 1,
+          "pages": [
+            40
+          ],
+          "coverage": 0.73545,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p044-draft",
+          "volume": 1,
+          "pages": [
+            44
+          ],
+          "coverage": 0.79439,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p046-draft",
+          "volume": 1,
+          "pages": [
+            46
+          ],
+          "coverage": 0.77632,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p056-draft",
+          "volume": 1,
+          "pages": [
+            56
+          ],
+          "coverage": 0.79245,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p061-draft",
+          "volume": 1,
+          "pages": [
+            61
+          ],
+          "coverage": 0.70922,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p063-draft",
+          "volume": 1,
+          "pages": [
+            63
+          ],
+          "coverage": 0.77632,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p064-draft",
+          "volume": 1,
+          "pages": [
+            64
+          ],
+          "coverage": 0.59615,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p081-draft",
+          "volume": 1,
+          "pages": [
+            81
+          ],
+          "coverage": 0.75,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p082-draft",
+          "volume": 1,
+          "pages": [
+            82
+          ],
+          "coverage": 0.79612,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p093-draft",
+          "volume": 1,
+          "pages": [
+            93
+          ],
+          "coverage": 0.70992,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p094-draft",
+          "volume": 1,
+          "pages": [
+            94
+          ],
+          "coverage": 0.6,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p113-draft",
+          "volume": 1,
+          "pages": [
+            113
+          ],
+          "coverage": 0.73427,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p114-draft",
+          "volume": 1,
+          "pages": [
+            114
+          ],
+          "coverage": 0.69767,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p122-draft",
+          "volume": 1,
+          "pages": [
+            122
+          ],
+          "coverage": 0.78182,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p134-draft",
+          "volume": 1,
+          "pages": [
+            134
+          ],
+          "coverage": 0.65254,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p135-draft",
+          "volume": 1,
+          "pages": [
+            135
+          ],
+          "coverage": 0.71942,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p144-draft",
+          "volume": 1,
+          "pages": [
+            144
+          ],
+          "coverage": 0.78231,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p149-draft",
+          "volume": 1,
+          "pages": [
+            149
+          ],
+          "coverage": 0.77869,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p150-draft",
+          "volume": 1,
+          "pages": [
+            150
+          ],
+          "coverage": 0.73381,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p153-draft",
+          "volume": 1,
+          "pages": [
+            153
+          ],
+          "coverage": 0.72222,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p156-draft",
+          "volume": 1,
+          "pages": [
+            156
+          ],
+          "coverage": 0.57759,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p157-draft",
+          "volume": 1,
+          "pages": [
+            157
+          ],
+          "coverage": 0.64286,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p160-draft",
+          "volume": 1,
+          "pages": [
+            160
+          ],
+          "coverage": 0.74051,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p161-draft",
+          "volume": 1,
+          "pages": [
+            161
+          ],
+          "coverage": 0.70312,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p164-draft",
+          "volume": 1,
+          "pages": [
+            164
+          ],
+          "coverage": 0.70408,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p168-draft",
+          "volume": 1,
+          "pages": [
+            168
+          ],
+          "coverage": 0.67647,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p196-draft",
+          "volume": 1,
+          "pages": [
+            196
+          ],
+          "coverage": 0.76761,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p207-draft",
+          "volume": 1,
+          "pages": [
+            207
+          ],
+          "coverage": 0.76692,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p209-draft",
+          "volume": 1,
+          "pages": [
+            209
+          ],
+          "coverage": 0.78378,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p219-draft",
+          "volume": 1,
+          "pages": [
+            219
+          ],
+          "coverage": 0.64198,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p230-draft",
+          "volume": 1,
+          "pages": [
+            230
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p240-draft",
+          "volume": 1,
+          "pages": [
+            240
+          ],
+          "coverage": 0.82682,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p241-draft",
+          "volume": 1,
+          "pages": [
+            241
+          ],
+          "coverage": 0.77436,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p246-draft",
+          "volume": 1,
+          "pages": [
+            246
+          ],
+          "coverage": 0.73039,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p253-draft",
+          "volume": 1,
+          "pages": [
+            253
+          ],
+          "coverage": 0.76875,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p258-draft",
+          "volume": 1,
+          "pages": [
+            258
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p262-draft",
+          "volume": 1,
+          "pages": [
+            262
+          ],
+          "coverage": 0.78512,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p263-draft",
+          "volume": 1,
+          "pages": [
+            263
+          ],
+          "coverage": 0.77922,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p271-draft",
+          "volume": 1,
+          "pages": [
+            271
+          ],
+          "coverage": 0.70455,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p273-draft",
+          "volume": 1,
+          "pages": [
+            273
+          ],
+          "coverage": 0.7037,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p274-draft",
+          "volume": 1,
+          "pages": [
+            274
+          ],
+          "coverage": 0.77519,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p278-draft",
+          "volume": 1,
+          "pages": [
+            278
+          ],
+          "coverage": 0.77273,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p285-draft",
+          "volume": 1,
+          "pages": [
+            285
+          ],
+          "coverage": 0.67532,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p298-draft",
+          "volume": 1,
+          "pages": [
+            298
+          ],
+          "coverage": 0.65217,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p303-draft",
+          "volume": 1,
+          "pages": [
+            303
+          ],
+          "coverage": 0.73529,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p313-draft",
+          "volume": 1,
+          "pages": [
+            313
+          ],
+          "coverage": 0.82166,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p328-draft",
+          "volume": 1,
+          "pages": [
+            328
+          ],
+          "coverage": 0.77679,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p355-draft",
+          "volume": 1,
+          "pages": [
+            355
+          ],
+          "coverage": 0.72381,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p383-draft",
+          "volume": 1,
+          "pages": [
+            383
+          ],
+          "coverage": 0.70625,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p405-draft",
+          "volume": 1,
+          "pages": [
+            405
+          ],
+          "coverage": 0.81875,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p406-draft",
+          "volume": 1,
+          "pages": [
+            406
+          ],
+          "coverage": 0.84324,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p431-draft",
+          "volume": 1,
+          "pages": [
+            431
+          ],
+          "coverage": 0.7069,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p432-draft",
+          "volume": 1,
+          "pages": [
+            432
+          ],
+          "coverage": 0.53913,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p458-draft",
+          "volume": 1,
+          "pages": [
+            458
+          ],
+          "coverage": 0.75904,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p466-draft",
+          "volume": 1,
+          "pages": [
+            466
+          ],
+          "coverage": 0.74775,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p467-draft",
+          "volume": 1,
+          "pages": [
+            467
+          ],
+          "coverage": 0.79032,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p469-draft",
+          "volume": 1,
+          "pages": [
+            469
+          ],
+          "coverage": 0.84711,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p473-draft",
+          "volume": 1,
+          "pages": [
+            473
+          ],
+          "coverage": 0.8172,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p481-draft",
+          "volume": 1,
+          "pages": [
+            481
+          ],
+          "coverage": 0.76136,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p482-draft",
+          "volume": 1,
+          "pages": [
+            482
+          ],
+          "coverage": 0.57252,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p487-draft",
+          "volume": 1,
+          "pages": [
+            487
+          ],
+          "coverage": 0.79699,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p494-draft",
+          "volume": 1,
+          "pages": [
+            494
+          ],
+          "coverage": 0.68548,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p500-draft",
+          "volume": 1,
+          "pages": [
+            500
+          ],
+          "coverage": 0.76744,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p506-draft",
+          "volume": 1,
+          "pages": [
+            506
+          ],
+          "coverage": 0.67347,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p513-draft",
+          "volume": 1,
+          "pages": [
+            513
+          ],
+          "coverage": 0.60563,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p517-draft",
+          "volume": 1,
+          "pages": [
+            517
+          ],
+          "coverage": 0.79085,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p518-draft",
+          "volume": 1,
+          "pages": [
+            518
+          ],
+          "coverage": 0.65957,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p523-draft",
+          "volume": 1,
+          "pages": [
+            523
+          ],
+          "coverage": 0.78947,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p530-draft",
+          "volume": 1,
+          "pages": [
+            530
+          ],
+          "coverage": 0.60294,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p538-draft",
+          "volume": 1,
+          "pages": [
+            538
+          ],
+          "coverage": 0.74834,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p550-draft",
+          "volume": 1,
+          "pages": [
+            550
+          ],
+          "coverage": 0.7265,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p551-draft",
+          "volume": 1,
+          "pages": [
+            551
+          ],
+          "coverage": 0.76829,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p552-draft",
+          "volume": 1,
+          "pages": [
+            552
+          ],
+          "coverage": 0.73196,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p553-draft",
+          "volume": 1,
+          "pages": [
+            553
+          ],
+          "coverage": 0.72993,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p554-draft",
+          "volume": 1,
+          "pages": [
+            554
+          ],
+          "coverage": 0.70085,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p560-draft",
+          "volume": 1,
+          "pages": [
+            560
+          ],
+          "coverage": 0.66667,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p562-draft",
+          "volume": 1,
+          "pages": [
+            562
+          ],
+          "coverage": 0.76562,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p579-draft",
+          "volume": 1,
+          "pages": [
+            579
+          ],
+          "coverage": 0.69388,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p587-draft",
+          "volume": 1,
+          "pages": [
+            587
+          ],
+          "coverage": 0.81221,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p593-draft",
+          "volume": 1,
+          "pages": [
+            593
+          ],
+          "coverage": 0.7803,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p598-draft",
+          "volume": 1,
+          "pages": [
+            598
+          ],
+          "coverage": 0.78531,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p004-01",
+          "volume": 2,
+          "pages": [
+            4
+          ],
+          "coverage": 0.79365,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p005-04",
+          "volume": 2,
+          "pages": [
+            5
+          ],
+          "coverage": 0.73913,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p007-b",
+          "volume": 2,
+          "pages": [
+            7
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p007-e",
+          "volume": 2,
+          "pages": [
+            7
+          ],
+          "coverage": 0.57143,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p007-f",
+          "volume": 2,
+          "pages": [
+            7
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p008-c",
+          "volume": 2,
+          "pages": [
+            8
+          ],
+          "coverage": 0.69048,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p008-p009-d",
+          "volume": 2,
+          "pages": [
+            8,
+            9
+          ],
+          "coverage": 0.58333,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p009-a",
+          "volume": 2,
+          "pages": [
+            9
+          ],
+          "coverage": 0.38095,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-a",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.46667,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "SINGLE_ANCHOR_ONLY"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-c",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-d",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.78571,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-e",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.79487,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p026-draft",
+          "volume": 2,
+          "pages": [
+            26
+          ],
+          "coverage": 0.83951,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p055-draft",
+          "volume": 2,
+          "pages": [
+            55
+          ],
+          "coverage": 0.6117,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p056-draft",
+          "volume": 2,
+          "pages": [
+            56
+          ],
+          "coverage": 0.78528,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p068-draft",
+          "volume": 2,
+          "pages": [
+            68
+          ],
+          "coverage": 0.67347,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p072-draft",
+          "volume": 2,
+          "pages": [
+            72
+          ],
+          "coverage": 0.67568,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p077-draft",
+          "volume": 2,
+          "pages": [
+            77
+          ],
+          "coverage": 0.73881,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p079-draft",
+          "volume": 2,
+          "pages": [
+            79
+          ],
+          "coverage": 0.73224,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p082-draft",
+          "volume": 2,
+          "pages": [
+            82
+          ],
+          "coverage": 0.70064,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p083-draft",
+          "volume": 2,
+          "pages": [
+            83
+          ],
+          "coverage": 0.7963,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p092-draft",
+          "volume": 2,
+          "pages": [
+            92
+          ],
+          "coverage": 0.71324,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p101-draft",
+          "volume": 2,
+          "pages": [
+            101
+          ],
+          "coverage": 0.76316,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p103-draft",
+          "volume": 2,
+          "pages": [
+            103
+          ],
+          "coverage": 0.75472,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p114-draft",
+          "volume": 2,
+          "pages": [
+            114
+          ],
+          "coverage": 0.75269,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p116-draft",
+          "volume": 2,
+          "pages": [
+            116
+          ],
+          "coverage": 0.78873,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p118-draft",
+          "volume": 2,
+          "pages": [
+            118
+          ],
+          "coverage": 0.74251,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p130-draft",
+          "volume": 2,
+          "pages": [
+            130
+          ],
+          "coverage": 0.76471,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p132-draft",
+          "volume": 2,
+          "pages": [
+            132
+          ],
+          "coverage": 0.81646,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p138-draft",
+          "volume": 2,
+          "pages": [
+            138
+          ],
+          "coverage": 0.76543,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p143-draft",
+          "volume": 2,
+          "pages": [
+            143
+          ],
+          "coverage": 0.5618,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p149-draft",
+          "volume": 2,
+          "pages": [
+            149
+          ],
+          "coverage": 0.6,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p153-draft",
+          "volume": 2,
+          "pages": [
+            153
+          ],
+          "coverage": 0.77143,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p156-draft",
+          "volume": 2,
+          "pages": [
+            156
+          ],
+          "coverage": 0.76271,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p162-draft",
+          "volume": 2,
+          "pages": [
+            162
+          ],
+          "coverage": 0.72941,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p166-draft",
+          "volume": 2,
+          "pages": [
+            166
+          ],
+          "coverage": 0.84737,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p167-draft",
+          "volume": 2,
+          "pages": [
+            167
+          ],
+          "coverage": 0.7686,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p169-draft",
+          "volume": 2,
+          "pages": [
+            169
+          ],
+          "coverage": 0.71014,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p179-draft",
+          "volume": 2,
+          "pages": [
+            179
+          ],
+          "coverage": 0.64407,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p180-draft",
+          "volume": 2,
+          "pages": [
+            180
+          ],
+          "coverage": 0.77064,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p182-draft",
+          "volume": 2,
+          "pages": [
+            182
+          ],
+          "coverage": 0.77885,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p183-draft",
+          "volume": 2,
+          "pages": [
+            183
+          ],
+          "coverage": 0.775,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p190-draft",
+          "volume": 2,
+          "pages": [
+            190
+          ],
+          "coverage": 0.76351,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p193-draft",
+          "volume": 2,
+          "pages": [
+            193
+          ],
+          "coverage": 0.76429,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p194-draft",
+          "volume": 2,
+          "pages": [
+            194
+          ],
+          "coverage": 0.73118,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p195-draft",
+          "volume": 2,
+          "pages": [
+            195
+          ],
+          "coverage": 0.40741,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p210-draft",
+          "volume": 2,
+          "pages": [
+            210
+          ],
+          "coverage": 0.78378,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p216-draft",
+          "volume": 2,
+          "pages": [
+            216
+          ],
+          "coverage": 0.57831,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p218-draft",
+          "volume": 2,
+          "pages": [
+            218
+          ],
+          "coverage": 0.66071,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p219-draft",
+          "volume": 2,
+          "pages": [
+            219
+          ],
+          "coverage": 0.78125,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p226-draft",
+          "volume": 2,
+          "pages": [
+            226
+          ],
+          "coverage": 0.60526,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p232-draft",
+          "volume": 2,
+          "pages": [
+            232
+          ],
+          "coverage": 0.77444,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p236-draft",
+          "volume": 2,
+          "pages": [
+            236
+          ],
+          "coverage": 0.79518,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p242-draft",
+          "volume": 2,
+          "pages": [
+            242
+          ],
+          "coverage": 0.79054,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p243-draft",
+          "volume": 2,
+          "pages": [
+            243
+          ],
+          "coverage": 0.79825,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p245-draft",
+          "volume": 2,
+          "pages": [
+            245
+          ],
+          "coverage": 0.72185,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p269-draft",
+          "volume": 2,
+          "pages": [
+            269
+          ],
+          "coverage": 0.8232,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p281-draft",
+          "volume": 2,
+          "pages": [
+            281
+          ],
+          "coverage": 0.75694,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p292-draft",
+          "volume": 2,
+          "pages": [
+            292
+          ],
+          "coverage": 0.77181,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p297-draft",
+          "volume": 2,
+          "pages": [
+            297
+          ],
+          "coverage": 0.79755,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p298-draft",
+          "volume": 2,
+          "pages": [
+            298
+          ],
+          "coverage": 0.78395,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p300-draft",
+          "volume": 2,
+          "pages": [
+            300
+          ],
+          "coverage": 0.66667,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p302-draft",
+          "volume": 2,
+          "pages": [
+            302
+          ],
+          "coverage": 0.7625,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p303-draft",
+          "volume": 2,
+          "pages": [
+            303
+          ],
+          "coverage": 0.73387,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p306-draft",
+          "volume": 2,
+          "pages": [
+            306
+          ],
+          "coverage": 0.71264,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p308-draft",
+          "volume": 2,
+          "pages": [
+            308
+          ],
+          "coverage": 0.76515,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p318-draft",
+          "volume": 2,
+          "pages": [
+            318
+          ],
+          "coverage": 0.78889,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p319-draft",
+          "volume": 2,
+          "pages": [
+            319
+          ],
+          "coverage": 0.77885,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p320-draft",
+          "volume": 2,
+          "pages": [
+            320
+          ],
+          "coverage": 0.65517,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p323-draft",
+          "volume": 2,
+          "pages": [
+            323
+          ],
+          "coverage": 0.63889,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p324-draft",
+          "volume": 2,
+          "pages": [
+            324
+          ],
+          "coverage": 0.38583,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p325-draft",
+          "volume": 2,
+          "pages": [
+            325
+          ],
+          "coverage": 0.39744,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p339-draft",
+          "volume": 2,
+          "pages": [
+            339
+          ],
+          "coverage": 0.75,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p344-draft",
+          "volume": 2,
+          "pages": [
+            344
+          ],
+          "coverage": 0.74419,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p345-draft",
+          "volume": 2,
+          "pages": [
+            345
+          ],
+          "coverage": 0.7561,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p375-draft",
+          "volume": 2,
+          "pages": [
+            375
+          ],
+          "coverage": 0.78571,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p379-draft",
+          "volume": 2,
+          "pages": [
+            379
+          ],
+          "coverage": 0.78571,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p382-draft",
+          "volume": 2,
+          "pages": [
+            382
+          ],
+          "coverage": 0.78417,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p386-draft",
+          "volume": 2,
+          "pages": [
+            386
+          ],
+          "coverage": 0.73504,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p400-draft",
+          "volume": 2,
+          "pages": [
+            400
+          ],
+          "coverage": 0.79104,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p403-draft",
+          "volume": 2,
+          "pages": [
+            403
+          ],
+          "coverage": 0.74,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p409-draft",
+          "volume": 2,
+          "pages": [
+            409
+          ],
+          "coverage": 0.68293,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p417-draft",
+          "volume": 2,
+          "pages": [
+            417
+          ],
+          "coverage": 0.68067,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p418-draft",
+          "volume": 2,
+          "pages": [
+            418
+          ],
+          "coverage": 0.72727,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p423-draft",
+          "volume": 2,
+          "pages": [
+            423
+          ],
+          "coverage": 0.74766,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p426-draft",
+          "volume": 2,
+          "pages": [
+            426
+          ],
+          "coverage": 0.69853,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p433-draft",
+          "volume": 2,
+          "pages": [
+            433
+          ],
+          "coverage": 0.72477,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p434-draft",
+          "volume": 2,
+          "pages": [
+            434
+          ],
+          "coverage": 0.77049,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p445-draft",
+          "volume": 2,
+          "pages": [
+            445
+          ],
+          "coverage": 0.77228,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p449-draft",
+          "volume": 2,
+          "pages": [
+            449
+          ],
+          "coverage": 0.65517,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p460-draft",
+          "volume": 2,
+          "pages": [
+            460
+          ],
+          "coverage": 0.6375,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p475-draft",
+          "volume": 2,
+          "pages": [
+            475
+          ],
+          "coverage": 0.84028,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p478-draft",
+          "volume": 2,
+          "pages": [
+            478
+          ],
+          "coverage": 0.78534,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p482-draft",
+          "volume": 2,
+          "pages": [
+            482
+          ],
+          "coverage": 0.71429,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p485-draft",
+          "volume": 2,
+          "pages": [
+            485
+          ],
+          "coverage": 0.55844,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p486-draft",
+          "volume": 2,
+          "pages": [
+            486
+          ],
+          "coverage": 0.51351,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p491-draft",
+          "volume": 2,
+          "pages": [
+            491
+          ],
+          "coverage": 0.67442,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p497-draft",
+          "volume": 2,
+          "pages": [
+            497
+          ],
+          "coverage": 0.55789,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p501-draft",
+          "volume": 2,
+          "pages": [
+            501
+          ],
+          "coverage": 0.61878,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p506-draft",
+          "volume": 2,
+          "pages": [
+            506
+          ],
+          "coverage": 0.79433,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p511-draft",
+          "volume": 2,
+          "pages": [
+            511
+          ],
+          "coverage": 0.81481,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p532-draft",
+          "volume": 2,
+          "pages": [
+            532
+          ],
+          "coverage": 0.66061,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p533-draft",
+          "volume": 2,
+          "pages": [
+            533
+          ],
+          "coverage": 0.57516,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p536-draft",
+          "volume": 2,
+          "pages": [
+            536
+          ],
+          "coverage": 0.70085,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p539-draft",
+          "volume": 2,
+          "pages": [
+            539
+          ],
+          "coverage": 0.69167,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p542-draft",
+          "volume": 2,
+          "pages": [
+            542
+          ],
+          "coverage": 0.71,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p545-draft",
+          "volume": 2,
+          "pages": [
+            545
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p548-draft",
+          "volume": 2,
+          "pages": [
+            548
+          ],
+          "coverage": 0.82759,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p551-draft",
+          "volume": 2,
+          "pages": [
+            551
+          ],
+          "coverage": 0.78723,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p552-draft",
+          "volume": 2,
+          "pages": [
+            552
+          ],
+          "coverage": 0.74483,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p553-draft",
+          "volume": 2,
+          "pages": [
+            553
+          ],
+          "coverage": 0.71094,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p559-draft",
+          "volume": 2,
+          "pages": [
+            559
+          ],
+          "coverage": 0.77222,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p561-draft",
+          "volume": 2,
+          "pages": [
+            561
+          ],
+          "coverage": 0.78947,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p566-draft",
+          "volume": 2,
+          "pages": [
+            566
+          ],
+          "coverage": 0.7438,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p568-draft",
+          "volume": 2,
+          "pages": [
+            568
+          ],
+          "coverage": 0.81818,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p569-draft",
+          "volume": 2,
+          "pages": [
+            569
+          ],
+          "coverage": 0.76761,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p572-draft",
+          "volume": 2,
+          "pages": [
+            572
+          ],
+          "coverage": 0.72637,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p573-draft",
+          "volume": 2,
+          "pages": [
+            573
+          ],
+          "coverage": 0.74586,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p574-draft",
+          "volume": 2,
+          "pages": [
+            574
+          ],
+          "coverage": 0.71028,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p575-draft",
+          "volume": 2,
+          "pages": [
+            575
+          ],
+          "coverage": 0.76733,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p576-draft",
+          "volume": 2,
+          "pages": [
+            576
+          ],
+          "coverage": 0.7451,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p580-draft",
+          "volume": 2,
+          "pages": [
+            580
+          ],
+          "coverage": 0.61667,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p581-draft",
+          "volume": 2,
+          "pages": [
+            581
+          ],
+          "coverage": 0.64151,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p582-draft",
+          "volume": 2,
+          "pages": [
+            582
+          ],
+          "coverage": 0.79137,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p587-draft",
+          "volume": 2,
+          "pages": [
+            587
+          ],
+          "coverage": 0.66165,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p610-draft",
+          "volume": 2,
+          "pages": [
+            610
+          ],
+          "coverage": 0.67273,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p611-draft",
+          "volume": 2,
+          "pages": [
+            611
+          ],
+          "coverage": 0.71318,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p618-draft",
+          "volume": 2,
+          "pages": [
+            618
+          ],
+          "coverage": 0.67606,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p620-draft",
+          "volume": 2,
+          "pages": [
+            620
+          ],
+          "coverage": 0.79528,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p622-draft",
+          "volume": 2,
+          "pages": [
+            622
+          ],
+          "coverage": 0.73826,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p626-draft",
+          "volume": 2,
+          "pages": [
+            626
+          ],
+          "coverage": 0.74,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p628-draft",
+          "volume": 2,
+          "pages": [
+            628
+          ],
+          "coverage": 0.78125,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p631-draft",
+          "volume": 2,
+          "pages": [
+            631
+          ],
+          "coverage": 0.74468,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p637-draft",
+          "volume": 2,
+          "pages": [
+            637
+          ],
+          "coverage": 0.7907,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p644-draft",
+          "volume": 2,
+          "pages": [
+            644
+          ],
+          "coverage": 0.5812,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p646-draft",
+          "volume": 2,
+          "pages": [
+            646
+          ],
+          "coverage": 0.74737,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p649-draft",
+          "volume": 2,
+          "pages": [
+            649
+          ],
+          "coverage": 0.78231,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p652-draft",
+          "volume": 2,
+          "pages": [
+            652
+          ],
+          "coverage": 0.73988,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p659-draft",
+          "volume": 2,
+          "pages": [
+            659
+          ],
+          "coverage": 0.79167,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Shamela0008370",
+      "path": "/tmp/0751IbnQayyimJawziyya.MadarijSalikin.Shamela0008370-ara1",
+      "sha256": "bedb9f721dbdc23ac7c65c952f75b4a789901a9cb46d3a56ae5eed32d4c617f0",
+      "tokens": 368307,
+      "page_markers": 1460,
+      "rare_7gram_index_entries": 361349,
+      "paragraph_status_counts": {
+        "short_exact_ambiguous": 1,
+        "short_missing": 1,
+        "anchored_local_window": 1313,
+        "short_exact_unique": 2,
+        "no_rare_anchor": 3
+      },
+      "flag_counts": {
+        "SHORT_UNIT_NO_7GRAM_PROOF": 4,
+        "AMBIGUOUS_SHORT_TEXT": 1,
+        "LOW_EXTENDED_EXACT_COVERAGE": 104,
+        "LOW_RARE_ANCHOR_COVERAGE": 29,
+        "SINGLE_ANCHOR_ONLY": 3,
+        "LONG_UNANCHORED_SPAN": 38,
+        "NO_RARE_7GRAM_ANCHOR": 3
+      },
+      "flagged_units": [
+        {
+          "paragraph_id": "madarij-v1-opening-001",
+          "volume": 1,
+          "pages": [
+            3
+          ],
+          "coverage": null,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF",
+            "AMBIGUOUS_SHORT_TEXT"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-002",
+          "volume": 1,
+          "pages": [
+            3
+          ],
+          "coverage": null,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-008",
+          "volume": 1,
+          "pages": [
+            5
+          ],
+          "coverage": 0.7551,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-opening-010",
+          "volume": 1,
+          "pages": [
+            5,
+            6
+          ],
+          "coverage": 0.75962,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-001",
+          "volume": 1,
+          "pages": [
+            10
+          ],
+          "coverage": 0.18919,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "SINGLE_ANCHOR_ONLY",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-005",
+          "volume": 1,
+          "pages": [
+            11
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-007",
+          "volume": 1,
+          "pages": [
+            11
+          ],
+          "coverage": 0.5,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-010",
+          "volume": 1,
+          "pages": [
+            12
+          ],
+          "coverage": 0.73611,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-016",
+          "volume": 1,
+          "pages": [
+            15
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-017",
+          "volume": 1,
+          "pages": [
+            15
+          ],
+          "coverage": 0.58333,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-022",
+          "volume": 1,
+          "pages": [
+            16
+          ],
+          "coverage": 0.62857,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-025",
+          "volume": 1,
+          "pages": [
+            17
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SINGLE_ANCHOR_ONLY"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-fatiha-030",
+          "volume": 1,
+          "pages": [
+            19
+          ],
+          "coverage": 0.54762,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p021-draft",
+          "volume": 1,
+          "pages": [
+            21
+          ],
+          "coverage": 0.78,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p022-draft",
+          "volume": 1,
+          "pages": [
+            22
+          ],
+          "coverage": 0.78289,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p039-draft",
+          "volume": 1,
+          "pages": [
+            39
+          ],
+          "coverage": 0.77333,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p046-draft",
+          "volume": 1,
+          "pages": [
+            46
+          ],
+          "coverage": 0.77632,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p059-draft",
+          "volume": 1,
+          "pages": [
+            59
+          ],
+          "coverage": 0.8,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p060-draft",
+          "volume": 1,
+          "pages": [
+            60
+          ],
+          "coverage": 0.78049,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p061-draft",
+          "volume": 1,
+          "pages": [
+            61
+          ],
+          "coverage": 0.7234,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p064-draft",
+          "volume": 1,
+          "pages": [
+            64
+          ],
+          "coverage": 0.74038,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p076-draft",
+          "volume": 1,
+          "pages": [
+            76
+          ],
+          "coverage": 0.76636,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p113-draft",
+          "volume": 1,
+          "pages": [
+            113
+          ],
+          "coverage": 0.7972,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p114-draft",
+          "volume": 1,
+          "pages": [
+            114
+          ],
+          "coverage": 0.7907,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p122-draft",
+          "volume": 1,
+          "pages": [
+            122
+          ],
+          "coverage": 0.78788,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p153-draft",
+          "volume": 1,
+          "pages": [
+            153
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p156-draft",
+          "volume": 1,
+          "pages": [
+            156
+          ],
+          "coverage": 0.59483,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p160-draft",
+          "volume": 1,
+          "pages": [
+            160
+          ],
+          "coverage": 0.76582,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p164-draft",
+          "volume": 1,
+          "pages": [
+            164
+          ],
+          "coverage": 0.63265,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p168-draft",
+          "volume": 1,
+          "pages": [
+            168
+          ],
+          "coverage": 0.74265,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p196-draft",
+          "volume": 1,
+          "pages": [
+            196
+          ],
+          "coverage": 0.76761,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p209-draft",
+          "volume": 1,
+          "pages": [
+            209
+          ],
+          "coverage": 0.78378,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p230-draft",
+          "volume": 1,
+          "pages": [
+            230
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p246-draft",
+          "volume": 1,
+          "pages": [
+            246
+          ],
+          "coverage": 0.72549,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p258-draft",
+          "volume": 1,
+          "pages": [
+            258
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p263-draft",
+          "volume": 1,
+          "pages": [
+            263
+          ],
+          "coverage": 0.77922,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p278-draft",
+          "volume": 1,
+          "pages": [
+            278
+          ],
+          "coverage": 0.77273,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p298-draft",
+          "volume": 1,
+          "pages": [
+            298
+          ],
+          "coverage": 0.78261,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p303-draft",
+          "volume": 1,
+          "pages": [
+            303
+          ],
+          "coverage": 0.73529,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p355-draft",
+          "volume": 1,
+          "pages": [
+            355
+          ],
+          "coverage": 0.72381,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p383-draft",
+          "volume": 1,
+          "pages": [
+            383
+          ],
+          "coverage": 0.70625,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p405-draft",
+          "volume": 1,
+          "pages": [
+            405
+          ],
+          "coverage": 0.825,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p431-draft",
+          "volume": 1,
+          "pages": [
+            431
+          ],
+          "coverage": 0.75862,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p466-draft",
+          "volume": 1,
+          "pages": [
+            466
+          ],
+          "coverage": 0.69369,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p473-draft",
+          "volume": 1,
+          "pages": [
+            473
+          ],
+          "coverage": 0.8172,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p506-draft",
+          "volume": 1,
+          "pages": [
+            506
+          ],
+          "coverage": 0.79592,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p513-draft",
+          "volume": 1,
+          "pages": [
+            513
+          ],
+          "coverage": 0.70423,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p517-draft",
+          "volume": 1,
+          "pages": [
+            517
+          ],
+          "coverage": 0.82353,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p518-draft",
+          "volume": 1,
+          "pages": [
+            518
+          ],
+          "coverage": 0.65957,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p550-draft",
+          "volume": 1,
+          "pages": [
+            550
+          ],
+          "coverage": 0.76923,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p552-draft",
+          "volume": 1,
+          "pages": [
+            552
+          ],
+          "coverage": 0.73196,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p553-draft",
+          "volume": 1,
+          "pages": [
+            553
+          ],
+          "coverage": 0.72263,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p562-draft",
+          "volume": 1,
+          "pages": [
+            562
+          ],
+          "coverage": 0.76562,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p567-draft",
+          "volume": 1,
+          "pages": [
+            567
+          ],
+          "coverage": 0.75,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v1-p579-draft",
+          "volume": 1,
+          "pages": [
+            579
+          ],
+          "coverage": 0.68707,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p005-04",
+          "volume": 2,
+          "pages": [
+            5
+          ],
+          "coverage": 0.73913,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p007-e",
+          "volume": 2,
+          "pages": [
+            7
+          ],
+          "coverage": 0.57143,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p007-f",
+          "volume": 2,
+          "pages": [
+            7
+          ],
+          "coverage": 1.0,
+          "flags": [
+            "SHORT_UNIT_NO_7GRAM_PROOF"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p009-a",
+          "volume": 2,
+          "pages": [
+            9
+          ],
+          "coverage": 0.38095,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-a",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.46667,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "SINGLE_ANCHOR_ONLY"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-c",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.0,
+          "flags": [
+            "NO_RARE_7GRAM_ANCHOR"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p010-d",
+          "volume": 2,
+          "pages": [
+            10
+          ],
+          "coverage": 0.78571,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p020-draft",
+          "volume": 2,
+          "pages": [
+            20
+          ],
+          "coverage": 0.79104,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p055-draft",
+          "volume": 2,
+          "pages": [
+            55
+          ],
+          "coverage": 0.69149,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p092-draft",
+          "volume": 2,
+          "pages": [
+            92
+          ],
+          "coverage": 0.75,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p101-draft",
+          "volume": 2,
+          "pages": [
+            101
+          ],
+          "coverage": 0.79825,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p130-draft",
+          "volume": 2,
+          "pages": [
+            130
+          ],
+          "coverage": 0.77778,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p132-draft",
+          "volume": 2,
+          "pages": [
+            132
+          ],
+          "coverage": 0.81646,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p153-draft",
+          "volume": 2,
+          "pages": [
+            153
+          ],
+          "coverage": 0.71429,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p154-draft",
+          "volume": 2,
+          "pages": [
+            154
+          ],
+          "coverage": 0.78788,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p156-draft",
+          "volume": 2,
+          "pages": [
+            156
+          ],
+          "coverage": 0.80226,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p162-draft",
+          "volume": 2,
+          "pages": [
+            162
+          ],
+          "coverage": 0.71765,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p166-draft",
+          "volume": 2,
+          "pages": [
+            166
+          ],
+          "coverage": 0.83158,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p167-draft",
+          "volume": 2,
+          "pages": [
+            167
+          ],
+          "coverage": 0.79339,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p179-draft",
+          "volume": 2,
+          "pages": [
+            179
+          ],
+          "coverage": 0.63559,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p183-draft",
+          "volume": 2,
+          "pages": [
+            183
+          ],
+          "coverage": 0.8,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p190-draft",
+          "volume": 2,
+          "pages": [
+            190
+          ],
+          "coverage": 0.76351,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p195-draft",
+          "volume": 2,
+          "pages": [
+            195
+          ],
+          "coverage": 0.40741,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p201-draft",
+          "volume": 2,
+          "pages": [
+            201
+          ],
+          "coverage": 0.7619,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p207-draft",
+          "volume": 2,
+          "pages": [
+            207
+          ],
+          "coverage": 0.6747,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p210-draft",
+          "volume": 2,
+          "pages": [
+            210
+          ],
+          "coverage": 0.78378,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p216-draft",
+          "volume": 2,
+          "pages": [
+            216
+          ],
+          "coverage": 0.49398,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p218-draft",
+          "volume": 2,
+          "pages": [
+            218
+          ],
+          "coverage": 0.68452,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p226-draft",
+          "volume": 2,
+          "pages": [
+            226
+          ],
+          "coverage": 0.60526,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p232-draft",
+          "volume": 2,
+          "pages": [
+            232
+          ],
+          "coverage": 0.78195,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p245-draft",
+          "volume": 2,
+          "pages": [
+            245
+          ],
+          "coverage": 0.78808,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p249-draft",
+          "volume": 2,
+          "pages": [
+            249
+          ],
+          "coverage": 0.72917,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p281-draft",
+          "volume": 2,
+          "pages": [
+            281
+          ],
+          "coverage": 0.75694,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p297-draft",
+          "volume": 2,
+          "pages": [
+            297
+          ],
+          "coverage": 0.78528,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p302-draft",
+          "volume": 2,
+          "pages": [
+            302
+          ],
+          "coverage": 0.7875,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p303-draft",
+          "volume": 2,
+          "pages": [
+            303
+          ],
+          "coverage": 0.73387,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p306-draft",
+          "volume": 2,
+          "pages": [
+            306
+          ],
+          "coverage": 0.71264,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p308-draft",
+          "volume": 2,
+          "pages": [
+            308
+          ],
+          "coverage": 0.71212,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p320-draft",
+          "volume": 2,
+          "pages": [
+            320
+          ],
+          "coverage": 0.65517,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p324-draft",
+          "volume": 2,
+          "pages": [
+            324
+          ],
+          "coverage": 0.77165,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p325-draft",
+          "volume": 2,
+          "pages": [
+            325
+          ],
+          "coverage": 0.33974,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p339-draft",
+          "volume": 2,
+          "pages": [
+            339
+          ],
+          "coverage": 0.79762,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p355-draft",
+          "volume": 2,
+          "pages": [
+            355
+          ],
+          "coverage": 0.77064,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p375-draft",
+          "volume": 2,
+          "pages": [
+            375
+          ],
+          "coverage": 0.70238,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p379-draft",
+          "volume": 2,
+          "pages": [
+            379
+          ],
+          "coverage": 0.78571,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p385-draft",
+          "volume": 2,
+          "pages": [
+            385
+          ],
+          "coverage": 0.75949,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p403-draft",
+          "volume": 2,
+          "pages": [
+            403
+          ],
+          "coverage": 0.77,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p417-draft",
+          "volume": 2,
+          "pages": [
+            417
+          ],
+          "coverage": 0.73109,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p418-draft",
+          "volume": 2,
+          "pages": [
+            418
+          ],
+          "coverage": 0.72727,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p426-draft",
+          "volume": 2,
+          "pages": [
+            426
+          ],
+          "coverage": 0.77206,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p460-draft",
+          "volume": 2,
+          "pages": [
+            460
+          ],
+          "coverage": 0.65,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p475-draft",
+          "volume": 2,
+          "pages": [
+            475
+          ],
+          "coverage": 0.84028,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p482-draft",
+          "volume": 2,
+          "pages": [
+            482
+          ],
+          "coverage": 0.81818,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p485-draft",
+          "volume": 2,
+          "pages": [
+            485
+          ],
+          "coverage": 0.79221,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p486-draft",
+          "volume": 2,
+          "pages": [
+            486
+          ],
+          "coverage": 0.71171,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p497-draft",
+          "volume": 2,
+          "pages": [
+            497
+          ],
+          "coverage": 0.82632,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p501-draft",
+          "volume": 2,
+          "pages": [
+            501
+          ],
+          "coverage": 0.69613,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p536-draft",
+          "volume": 2,
+          "pages": [
+            536
+          ],
+          "coverage": 0.75214,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p539-draft",
+          "volume": 2,
+          "pages": [
+            539
+          ],
+          "coverage": 0.69167,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p545-draft",
+          "volume": 2,
+          "pages": [
+            545
+          ],
+          "coverage": 0.78431,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p575-draft",
+          "volume": 2,
+          "pages": [
+            575
+          ],
+          "coverage": 0.87624,
+          "flags": [
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p587-draft",
+          "volume": 2,
+          "pages": [
+            587
+          ],
+          "coverage": 0.77444,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p597-draft",
+          "volume": 2,
+          "pages": [
+            597
+          ],
+          "coverage": 0.77444,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p610-draft",
+          "volume": 2,
+          "pages": [
+            610
+          ],
+          "coverage": 0.67273,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p620-draft",
+          "volume": 2,
+          "pages": [
+            620
+          ],
+          "coverage": 0.79528,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p637-draft",
+          "volume": 2,
+          "pages": [
+            637
+          ],
+          "coverage": 0.7907,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p644-draft",
+          "volume": 2,
+          "pages": [
+            644
+          ],
+          "coverage": 0.60684,
+          "flags": [
+            "LOW_RARE_ANCHOR_COVERAGE",
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p646-draft",
+          "volume": 2,
+          "pages": [
+            646
+          ],
+          "coverage": 0.76842,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE"
+          ]
+        },
+        {
+          "paragraph_id": "madarij-v2-p652-draft",
+          "volume": 2,
+          "pages": [
+            652
+          ],
+          "coverage": 0.73988,
+          "flags": [
+            "LOW_EXTENDED_EXACT_COVERAGE",
+            "LONG_UNANCHORED_SPAN"
+          ]
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "rare_ngram_length": 7,
+    "maximum_witness_occurrences": 3,
+    "offset_bin_tokens": 96,
+    "local_offset_neighbor_bins": 1,
+    "max_candidate_bins": 6,
+    "low_anchor_coverage": 0.7,
+    "low_extended_coverage": 0.8
+  },
+  "warning": "No text replacement. Older witnesses1973/1996 differ from2019. PageV locators are preserved as BOTH surrounding markers: neither marker placement convention nor edition pagination is visually certified. Normalization erases distinctions. Anchor coverage is not textual correctness.",
+  "validation": {
+    "complete": true,
+    "unique_paragraph_witness_pairs": 2640,
+    "page_summaries": 2530,
+    "exact_sample_anchors_checked": 20885,
+    "no_global_SequenceMatcher": true,
+    "statistics_by_witness_volume": {
+      "JK000081": {
+        "1": {
+          "units": 644,
+          "mean_extended_coverage": 0.87821,
+          "median_extended_coverage": 0.89704,
+          "below_0_8": 93,
+          "no_rare_anchor_ids": [
+            "madarij-v1-fatiha-016",
+            "madarij-v1-p258-draft"
+          ]
+        },
+        "2": {
+          "units": 676,
+          "mean_extended_coverage": 0.8664,
+          "median_extended_coverage": 0.88528,
+          "below_0_8": 130,
+          "no_rare_anchor_ids": [
+            "madarij-v2-p007-b",
+            "madarij-v2-p010-c"
+          ]
+        }
+      },
+      "Shamela0008370": {
+        "1": {
+          "units": 644,
+          "mean_extended_coverage": 0.90779,
+          "median_extended_coverage": 0.9263,
+          "below_0_8": 47,
+          "no_rare_anchor_ids": [
+            "madarij-v1-fatiha-016",
+            "madarij-v1-p258-draft"
+          ]
+        },
+        "2": {
+          "units": 676,
+          "mean_extended_coverage": 0.90251,
+          "median_extended_coverage": 0.92141,
+          "below_0_8": 60,
+          "no_rare_anchor_ids": [
+            "madarij-v2-p010-c"
+          ]
+        }
+      }
+    },
+    "proof_limit": "Exact equality of normalized anchor snippets validates the machine mapping format, not 2019 text, attribution, translation, semantic correctness or page scans."
+  }
+}

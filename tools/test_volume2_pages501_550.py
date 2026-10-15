@@ -55,7 +55,7 @@ class Volume2Pages501550(unittest.TestCase):
 
     def test_author_and_athar_wording_page_540(self):
         ru=self.page(540)["ru"]
-        self.assertIn("даром, даже если он выглядит лишением",ru)
+        self.assertIn("дар, даже если он выглядит лишением",ru)
         self.assertIn("Он не лишил тебя иначе как для того, чтобы одарить",ru)
         self.assertNotIn("по словам автора",ru)
         self.assertNotIn("Это образные слова духовных наставников",ru)
