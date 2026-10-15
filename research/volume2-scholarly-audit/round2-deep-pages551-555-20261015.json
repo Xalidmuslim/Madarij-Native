@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "method": "Printed-page Arabic/Russian electronic source pairing",
+  "scope_pages": [
+    551,
+    555
+  ],
+  "modified_pages": [
+    551,
+    552,
+    553,
+    554,
+    555
+  ],
+  "changes": 10,
+  "findings": [
+    "Restored reported divine statement's page boundary 551→552 and removed non-authorial caveats from literary body",
+    "Restored exact opening and conclusion of supplication spanning p552→553 instead of duplicating it on page 553",
+    "Restored p553→554 causal phrase of the 55th argument about rida",
+    "Restored full alternate chain attribution on page 554 without independently validating grading",
+    "Removed translator's in-body analysis of planning absent from p555 Arabic"
+  ],
+  "limitations": {
+    "original_2019_print_edition_visually_collated": false,
+    "hadith_chains_all_verified": false,
+    "academic_certification": false,
+    "apk_built": false
+  },
+  "other_paragraphs_untouched": true
+}
