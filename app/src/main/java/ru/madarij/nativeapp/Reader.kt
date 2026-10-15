@@ -95,6 +95,9 @@ fun Reader(
     val selectedTopic = remember(sectionTopics, anchor) {
         sectionTopics.firstOrNull { it.paragraphId == anchor }
     }
+    val selectedTopicHeading = selectedTopic?.startText?.takeIf { query.isBlank() }
+    val readerTitle = selectedTopic?.title?.takeIf { query.isBlank() }
+        ?: chapterStructure?.title ?: sectionRoot.title
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
     val learning = remember { LearningRepository(context.applicationContext) }
     val termsByParagraph = remember(learning) { learning.terms.groupBy { it.sourceParagraphId } }
@@ -253,7 +256,7 @@ fun Reader(
                         // Full editorial title belongs in the frontispiece / chapter
                         // contents. In this compact toolbar its ellipsis looked like
                         // a broken text transfer during scrolling.
-                        Text(chapterStructure?.title ?: "Смысловой раздел ${chapterIndex + 1}",
+                        Text(readerTitle,
                             style = MaterialTheme.typography.labelMedium.copy(
                                 fontFamily = BookSerif, fontWeight = FontWeight.Normal),
                             color = MaterialTheme.colorScheme.onSurface)
@@ -313,7 +316,7 @@ fun Reader(
             item(key = "heading") {
                 Column(Modifier.fillMaxWidth()) {
                     ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
-                        chapterStructure?.title ?: sectionRoot.title,
+                        readerTitle,
                         LogicalReadingSections.pageRange(sectionId), settings.theme == "dark")
                     if (chapter.volume == 2) Text(
                         "Том 2 · литературно-смысловая редактура завершена. Сверка со сканами издания 2019 года и научная проверка источников ещё не выполнены.",
@@ -332,7 +335,7 @@ fun Reader(
                     // Editorial TOC headings belong to "Содержание раздела", not
                     // to the author's continuous prose. Source section markers
                     // are rendered from the real book text by splitReaderText().
-                    if (p.id == anchor && query.isBlank() && selectedTopic != null) {
+                    if (p.id == anchor && query.isBlank() && selectedTopic != null && selectedTopicHeading == null) {
                         // Use the same Russian text as the reader itself: the
                         // display layer can reconcile a sentence split across pages.
                         val shownOpeningText = displayRussian[p.id].orEmpty().ifBlank { p.ru }
@@ -409,7 +412,44 @@ fun Reader(
                             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                                 russianBlocks.forEach { block ->
                                     when (block) {
-                                        is ReaderTextBlock.Section -> ReaderSectionCard(block, settings, arabic = false)
+                                        is ReaderTextBlock.Section -> {
+                                            // Some authorial headings start half-way through a
+                                            // page-sized paragraph. For those TOC links the
+                                            // actual section heading, not the page opening,
+                                            // is the navigation target and visible landmark.
+                                            val exactHeading = selectedTopicHeading?.let { phrase ->
+                                                p.id == anchor && block.title?.contains(phrase, ignoreCase = true) == true
+                                            } == true
+                                            if (exactHeading) {
+                                                val targetRequester = remember(anchor, selectedTopicHeading) { BringIntoViewRequester() }
+                                                Column(
+                                                    Modifier.fillMaxWidth().bringIntoViewRequester(targetRequester),
+                                                    verticalArrangement = Arrangement.spacedBy(6.dp)
+                                                ) {
+                                                    Surface(
+                                                        modifier = Modifier.fillMaxWidth(),
+                                                        shape = RoundedCornerShape(14.dp),
+                                                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .28f)
+                                                    ) {
+                                                        Column(Modifier.padding(horizontal = 14.dp, vertical = 10.dp)) {
+                                                            Text("НАЧАЛО ВЫБРАННОЙ ТЕМЫ",
+                                                                style = MaterialTheme.typography.labelSmall,
+                                                                color = MaterialTheme.colorScheme.primary)
+                                                            Text(selectedTopic?.title.orEmpty(),
+                                                                style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+                                                                color = MaterialTheme.colorScheme.onSurface)
+                                                        }
+                                                    }
+                                                    ReaderSectionCard(block, settings, arabic = false)
+                                                }
+                                                LaunchedEffect(ready, anchor, selectedTopicHeading) {
+                                                    if (ready) {
+                                                        withFrameNanos { }
+                                                        targetRequester.bringIntoView()
+                                                    }
+                                                }
+                                            } else ReaderSectionCard(block, settings, arabic = false)
+                                        }
                                         is ReaderTextBlock.Body -> ReaderRichTextBlock(
                                             text = block.text,
                                             query = query,
@@ -598,7 +638,7 @@ fun Reader(
             Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).clickable(interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null) { }.statusBarsPadding().padding(horizontal = AppSpacing.lg)) {
                 Row(Modifier.fillMaxWidth().padding(vertical = 8.dp),verticalAlignment = Alignment.CenterVertically) {
                     ReaderControl("‹") { chapterPanel = false }
-                    Text(chapterStructure?.title ?: sectionRoot.title, Modifier.weight(1f),
+                    Text(readerTitle, Modifier.weight(1f),
                         style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif,
                             fontWeight = FontWeight.Normal),
                         color = MaterialTheme.colorScheme.onSurface, softWrap = true)
