@@ -53,7 +53,8 @@
               "paragraphId": "madarij-v1-p032-draft",
               "title": "Спутники на прямом пути",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Поскольку тот, кто"
             }
           ]
         },
@@ -72,13 +73,15 @@
               "paragraphId": "madarij-v1-p037-draft",
               "title": "Три вида единобожия",
               "sourceTitleAr": "في اشتمال هذه السُّورة على أنواع التّوحيد الثّلاثة التي اتّفقت عليها الرُّسل صلوات الله وسلامه عليهم.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, что"
             },
             {
               "paragraphId": "madarij-v1-p042-draft",
               "title": "Хвала и единобожие имён и качеств",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Так хвала указывает"
             }
           ]
         },
@@ -91,13 +94,15 @@
               "paragraphId": "madarij-v1-p047-draft",
               "title": "Указание имён Аллаха на Его качества",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Второе положение: каждое"
             },
             {
               "paragraphId": "madarij-v1-p049-draft",
               "title": "Имя «Аллах» и прекрасные имена",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "После того как"
             }
           ]
         },
@@ -110,7 +115,8 @@
               "paragraphId": "madarij-v1-p052-draft",
               "title": "Творение и повеление",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Вдумайся в связь"
             }
           ]
         }
@@ -138,13 +144,15 @@
               "paragraphId": "madarij-v1-p059-draft",
               "title": "Вторая степень: откровение",
               "sourceTitleAr": "المرتبة الثانية: مرتبة الوحي المختص بالأنبياء عليهم السلام",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Вторая степень —"
             },
             {
               "paragraphId": "madarij-v1-p060-draft",
               "title": "Третья степень: посланник",
               "sourceTitleAr": "المرتبة الثّالثة: إرسال الرّسول الملكيِّ إلى الرّسول البشريِّ، فيوحي إليه عن الله ما أمره أن يوصله إليه.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Третья степень —"
             }
           ]
         },
@@ -163,25 +171,29 @@
               "paragraphId": "madarij-v1-p063-draft",
               "title": "Пятая степень: понимание",
               "sourceTitleAr": "المرتبة الخامسة: مرتبة الإفهام.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Пятая степень —"
             },
             {
               "paragraphId": "madarij-v1-p065-draft",
               "title": "Шестая степень: общее разъяснение",
               "sourceTitleAr": "المرتبة السادسة: مرتبة البيان العامِّ.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Шестая степень —"
             },
             {
               "paragraphId": "madarij-v1-p067-draft",
               "title": "Седьмая степень: особое разъяснение",
               "sourceTitleAr": "المرتبة السابعة: البيان الخاصُّ.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Седьмая степень —"
             },
             {
               "paragraphId": "madarij-v1-p068-draft",
               "title": "Восьмая степень: слышание",
               "sourceTitleAr": "المرتبة الثامنة: مرتبة الإسماع.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Восьмая степень —"
             }
           ]
         },
@@ -194,7 +206,8 @@
               "paragraphId": "madarij-v1-p069-draft",
               "title": "Девятая степень: вдохновение",
               "sourceTitleAr": "المرتبة التاسعة: مرتبة الإلهام.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Девятая степень —"
             }
           ]
         },
@@ -219,7 +232,8 @@
               "paragraphId": "madarij-v1-p080-draft",
               "title": "Десятая степень: правдивый сон",
               "sourceTitleAr": "المرتبة العاشرة من مراتب الهداية: الرُّؤيا الصّادقة.",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "Десятая степень наставления"
             }
           ]
         }
@@ -272,7 +286,8 @@
               "paragraphId": "madarij-v1-p092-draft",
               "title": "Опровержение ложных учений",
               "sourceTitleAr": "في اشتمال الفاتحة على الرّدِّ على جميع المُبطلين من أهل الملل والنِّحل، والرَّدِّ على أهل البدع والضّلال من هذه الأمّة",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             }
           ]
         },
@@ -285,19 +300,22 @@
               "paragraphId": "madarij-v1-p101-draft",
               "title": "Опровержение отрицания качеств Аллаха",
               "sourceTitleAr": "في تضمُّنها الرّدّ على الجهميّة معطِّلة الصِّفات",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             },
             {
               "paragraphId": "madarij-v1-p103-draft",
               "title": "Опровержение джабритов",
               "sourceTitleAr": "في تضمُّنها الرَّدَّ على الجبريّة",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             },
             {
               "paragraphId": "madarij-v1-p106-draft",
               "title": "Опровержение отрицания пророчества",
               "sourceTitleAr": "في بيانِ تضمُّنِها للرّدِّ على منكري النُّبوّات",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             }
           ]
         },
@@ -310,13 +328,15 @@
               "paragraphId": "madarij-v1-p111-draft",
               "title": "Опровержение учения о вечности мира",
               "sourceTitleAr": "في بيان تضمُّنها للرّدِّ على من قال بقِدَم العالم",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             },
             {
               "paragraphId": "madarij-v1-p112-draft",
               "title": "Полемика с рафидитами",
               "sourceTitleAr": "في بيان تضمُّنها للرّدِّ على الرّافضة",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О том, как"
             }
           ]
         }
@@ -338,7 +358,8 @@
               "paragraphId": "madarij-v1-p121-draft",
               "title": "Четыре вида поклоняющихся",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Если это понятно,"
             }
           ]
         },
@@ -351,7 +372,8 @@
               "paragraphId": "madarij-v1-p128-draft",
               "title": "Искренность и следование Посланнику",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Итак, когда это"
             }
           ]
         },
@@ -376,7 +398,8 @@
               "paragraphId": "madarij-v1-p139-draft",
               "title": "Польза и цель поклонения",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "В понимании пользы"
             }
           ]
         },
@@ -395,7 +418,8 @@
               "paragraphId": "madarij-v1-p153-draft",
               "title": "Четыре основы поклонения",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Смысл слов «Тебе"
             }
           ]
         },
@@ -420,7 +444,8 @@
               "paragraphId": "madarij-v1-p164-draft",
               "title": "Степени поклонения в знании и действии",
               "sourceTitleAr": "في مراتب {إِيَّاكَ نَعْبُدُ} علمًا وعملًا",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О степенях слов"
             }
           ]
         },
@@ -439,7 +464,8 @@
               "paragraphId": "madarij-v1-p177-draft",
               "title": "Обязанности органов чувств",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Пять правовых категорий"
             }
           ]
         },
@@ -473,13 +499,15 @@
               "paragraphId": "madarij-v1-p192-draft",
               "title": "Прозрение в повелении и запрете",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Вторая степень духовного"
             },
             {
               "paragraphId": "madarij-v1-p193-draft",
               "title": "Прозрение в обещании и предостережении",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Третья степень —"
             }
           ]
         },
@@ -492,13 +520,15 @@
               "paragraphId": "madarij-v1-p201-draft",
               "title": "Намерение и искреннее устремление",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Когда он пробудился"
             },
             {
               "paragraphId": "madarij-v1-p203-draft",
               "title": "Решимость",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Когда его устремление"
             }
           ]
         },
@@ -551,7 +581,8 @@
               "paragraphId": "madarij-v1-p235-draft",
               "title": "Виды фана",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Узнав, что эти"
             }
           ]
         },
@@ -623,7 +654,8 @@
               "paragraphId": "madarij-v1-p265-draft",
               "title": "Различение прав Аллаха и прав раба",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Вторая опора самоотчёта"
             }
           ]
         },
@@ -664,7 +696,8 @@
               "paragraphId": "madarij-v1-p290-draft",
               "title": "Оправдания людей",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Что касается слов"
             }
           ]
         },
@@ -822,7 +855,8 @@
               "paragraphId": "madarij-v1-p422-draft",
               "title": "Положения о покаянии",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Упомянем теперь некоторые"
             }
           ]
         }
@@ -850,7 +884,8 @@
               "paragraphId": "madarij-v1-p427-draft",
               "title": "Возвращение к греху после покаяния",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "К положениям о"
             }
           ]
         },
@@ -863,7 +898,8 @@
               "paragraphId": "madarij-v1-p439-draft",
               "title": "Покаяние при невозможности совершить грех",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "К положениям о"
             }
           ]
         },
@@ -888,13 +924,15 @@
               "paragraphId": "madarij-v1-p448-draft",
               "title": "Возмещение прав человека",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "К положениям о"
             },
             {
               "paragraphId": "madarij-v1-p451-draft",
               "title": "Возвращение к прежней степени",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "К положениям о"
             }
           ]
         },
@@ -932,7 +970,8 @@
               "paragraphId": "madarij-v1-p474-draft",
               "title": "Просьба о прощении",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Просьба о прощении"
             }
           ]
         }
@@ -960,7 +999,8 @@
               "paragraphId": "madarij-v1-p484-draft",
               "title": "Малые и большие грехи",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Грехи делятся на"
             }
           ]
         },
@@ -973,7 +1013,8 @@
               "paragraphId": "madarij-v1-p492-draft",
               "title": "Большие грехи",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Относительно больших грехов"
             }
           ]
         },
@@ -998,7 +1039,8 @@
               "paragraphId": "madarij-v1-p516-draft",
               "title": "Виды того, в чём следует покаяться",
               "sourceTitleAr": "في أجناس ما يتاب منها ولا يستحقُّ العبدُ اسمَ التّائب حتّى يخلص منها",
-              "provenance": "source_heading"
+              "provenance": "source_heading",
+              "startText": "О видах того,"
             }
           ]
         },
@@ -1011,13 +1053,15 @@
               "paragraphId": "madarij-v1-p520-draft",
               "title": "Виды большого неверия",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Большое неверие имеет"
             },
             {
               "paragraphId": "madarij-v1-p523-draft",
               "title": "Большое и малое многобожие",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Многобожие бывает двух"
             }
           ]
         },
@@ -1030,7 +1074,8 @@
               "paragraphId": "madarij-v1-p530-draft",
               "title": "Малое многобожие",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Малое многобожие —"
             }
           ]
         },
@@ -1100,7 +1145,8 @@
               "paragraphId": "madarij-v1-p575-draft",
               "title": "Покаяние при невозможности возместить упущенное",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "К положениям покаяния"
             }
           ]
         }
@@ -1128,13 +1174,15 @@
               "paragraphId": "madarij-v1-p591-draft",
               "title": "Права людей",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Что же до прав"
             },
             {
               "paragraphId": "madarij-v1-p597-draft",
               "title": "Возмещение по запрещённой сделке",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Второй случай: человек"
             }
           ]
         },
@@ -1147,13 +1195,15 @@
               "paragraphId": "madarij-v1-p598-draft",
               "title": "Возврат присвоенного имущества",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Если человек присвоил"
             },
             {
               "paragraphId": "madarij-v1-p600-draft",
               "title": "Есть ли грех, покаяние в котором не принимается?",
               "sourceTitleAr": "",
-              "provenance": "editorial_navigation"
+              "provenance": "editorial_navigation",
+              "startText": "Люди разошлись относительно"
             }
           ]
         },
