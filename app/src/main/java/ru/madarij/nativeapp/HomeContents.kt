@@ -282,7 +282,7 @@ private fun groupPageLabel(group: TocGroup): String? {
     val first = group.items.firstOrNull()
     val last = group.items.lastOrNull()
     return tocPageLabel(
-        tocPage(first?.entryParagraphId ?: first?.chapterId) ?: advertised?.first,
+        tocPage(first?.entryParagraphId ?: first?.chapterId) ?: tocRange(first?.subtitle.orEmpty())?.first ?: advertised?.first,
         tocRange(last?.subtitle.orEmpty())?.second ?: advertised?.second
     )
 }
