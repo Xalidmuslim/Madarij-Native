@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-15",
+  "scope": "Arabic-Russian collation printed pages 571–575",
+  "reviewed_pages": [
+    571,
+    575
+  ],
+  "changed_app_pages": [
+    572,
+    573,
+    574,
+    575
+  ],
+  "research_draft_reconciled_from_preexisting_app_for_page": [
+    571
+  ],
+  "replacements": 10,
+  "findings": [
+    "App p571 already correctly continued from p570, while draft was out of sync; synchronized draft without modifying app p571",
+    "Restored Auwf ibn Malik pledge's last condition to correct p572 boundary",
+    "Restored Zayd ibn Uqba's omitted hadith narration and reference to asking as facial scratches on p573",
+    "Preserved attribution of al-Tirmidhi's judgement, without asserting independent isnad verification",
+    "Corrected Sah'l ibn al-Hanzaliyya hadith page boundary 574–575 without prematurely quoting the next page",
+    "Removed source-absent translator's jurisprudential caveat from continuous authorial text"
+  ],
+  "limitations": {
+    "edition_2019_scan_checked": false,
+    "hadith_grading_verified": false,
+    "footnotes_verified": false,
+    "publisher_ready": false
+  },
+  "first_volume_ui_untouched": true
+}
