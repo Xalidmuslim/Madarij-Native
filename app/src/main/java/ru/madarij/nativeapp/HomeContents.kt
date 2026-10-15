@@ -263,6 +263,34 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
     }
 }
 
+// Printed-page labels are derived from navigation metadata, never from
+// position in the Compose list. Page ranges in the book remain stable.
+private val tocPageIdRegex = Regex("""-p(\d{3})(?:-|$)""")
+private val tocRangeRegex = Regex("""(?i)страниц[аы]?\s*(\d+)\s*[–-]\s*(\d+)""")
+private fun tocPage(id: String?): Int? =
+    id?.let { tocPageIdRegex.find(it)?.groupValues?.get(1)?.toIntOrNull() }
+private fun tocRange(text: String): Pair<Int, Int>? =
+    tocRangeRegex.find(text)?.let { it.groupValues[1].toInt() to it.groupValues[2].toInt() }
+private fun tocPageLabel(start: Int?, end: Int?): String? =
+    start?.let { "стр. " + it + (if (end != null && end > it) "–$end" else "") }
+private fun chapterPageLabel(chapter: TocChapter): String? {
+    val pages = tocRange(chapter.subtitle)
+    return tocPageLabel(tocPage(chapter.entryParagraphId ?: chapter.chapterId) ?: pages?.first, pages?.second)
+}
+private fun groupPageLabel(group: TocGroup): String? {
+    val advertised = tocRange(group.title)
+    val first = group.items.firstOrNull()
+    val last = group.items.lastOrNull()
+    return tocPageLabel(
+        tocPage(first?.entryParagraphId ?: first?.chapterId) ?: tocRange(first?.subtitle.orEmpty())?.first ?: advertised?.first,
+        tocRange(last?.subtitle.orEmpty())?.second ?: advertised?.second
+    )
+}
+private fun groupDisplayTitle(group: TocGroup): String =
+    if (group.title.startsWith("Том 2 · страницы") || group.title.startsWith("Второй том · страницы"))
+        group.items.firstOrNull()?.title ?: group.title
+    else group.title
+
 @Composable
 internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, resume: (String) -> Unit) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
@@ -434,12 +462,17 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     shape = RoundedCornerShape(AppRadius.medium),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Row(Modifier.padding(horizontal = 14.dp, vertical = 9.dp), horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            Text(group.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
-                            Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                            
+                    Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
+                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                                Text(groupDisplayTitle(group), style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
+                                Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                            }
+                        }
+                        groupPageLabel(group)?.let { page ->
+                            Text(page, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.End,
+                                style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                         }
                     }
                 }
@@ -449,7 +482,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     val expanded = chapter.chapterId in openedChapters || query.isNotBlank()
                     val readingMembers = LogicalReadingSections.members(chapters, chapter.chapterId)
                     val sectionStartId = readingMembers.firstOrNull()?.id ?: chapter.chapterId
-                    val isPageContinuation = sectionStartId != chapter.chapterId
+                    val isPageContinuation = sectionStartId != chapter.chapterId && chapter.entryParagraphId == null
                     val ordinal = LogicalReadingSections.roots(chapters).indexOfFirst { it.id == sectionStartId } + 1
                     val light = true
                     val ink = if (light) BookColors.ink else BookColors.text
@@ -463,12 +496,17 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                         style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
                                         color = Color(0xFFFFF3DC))
                                 }
-                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(sectionStartId, null) }) {
+                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(chapter.chapterId, chapter.entryParagraphId) }) {
                                     if (isPageContinuation) Text("ПРОДОЛЖЕНИЕ ТЕКСТА", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                                     Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 16.sp, lineHeight = 20.sp), color = ink)
                                     if(chapter.topics.isNotEmpty()) Text("${if(expanded) "⌄" else "›"} Содержание · ${chapter.topics.size}", style = MaterialTheme.typography.labelSmall, color = ink.copy(alpha = .7f))
                                 }
-                                TextButton(onClick = { open(sectionStartId, null) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
+                                TextButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
+                            }
+                            chapterPageLabel(chapter)?.let { page ->
+                                Text(page, modifier = Modifier.fillMaxWidth().padding(end = 14.dp, bottom = 7.dp),
+                                    textAlign = androidx.compose.ui.text.style.TextAlign.End,
+                                    style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                             }
                             val percent = percents[chapter.chapterId] ?: 0
                             if(percent > 0) LinearProgressIndicator(progress = {percent / 100f}, modifier = Modifier.fillMaxWidth().height(1.dp), color = BookColors.gold, trackColor = Color.Transparent)
@@ -487,6 +525,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         Column(Modifier.padding(horizontal = 13.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
                             Text(topic.title, style = MaterialTheme.typography.bodyMedium)
+                            tocPage(topic.paragraphId)?.let { page ->
+                                Text("стр. $page", modifier = Modifier.fillMaxWidth(),
+                                    textAlign = androidx.compose.ui.text.style.TextAlign.End,
+                                    style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                            }
                         }
                     }
                 }

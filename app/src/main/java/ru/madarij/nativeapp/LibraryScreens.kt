@@ -23,7 +23,7 @@ import ru.madarij.nativeapp.data.*
 import java.text.DateFormat
 import java.util.Date
 
-internal data class TocTopic(val paragraphId: String, val title: String, val provenance: String)
+internal data class TocTopic(val paragraphId: String, val title: String, val provenance: String, val startText: String? = null)
 internal data class TocChapter(val chapterId: String, val title: String, val subtitle: String, val topics: List<TocTopic>, val entryParagraphId: String? = null, val entryNote: String? = null)
 internal data class TocGroup(val id: String, val title: String, val provenance: String, val items: List<TocChapter>)
 internal suspend fun loadStructure(context: Context): List<TocGroup> = withContext(Dispatchers.IO) {
@@ -35,7 +35,7 @@ internal suspend fun loadStructure(context: Context): List<TocGroup> = withConte
         if (second != null) for (index in 0 until second.length()) a.put(second.getJSONObject(index))
         (0 until a.length()).map { i -> val g = a.getJSONObject(i); val items = g.getJSONArray("items")
             TocGroup(g.getString("id"),g.getString("title"),g.optString("provenance"),(0 until items.length()).map { j -> val c=items.getJSONObject(j);val topics=c.optJSONArray("topics")
-                TocChapter(c.getString("chapterId"),c.getString("title"),c.optString("subtitle"),if(topics==null) emptyList() else (0 until topics.length()).map { k -> val t=topics.getJSONObject(k);TocTopic(t.getString("paragraphId"),t.getString("title"),t.optString("provenance")) },c.optString("entryParagraphId").takeIf { it.isNotBlank() },c.optString("entryNote").takeIf { it.isNotBlank() })
+                TocChapter(c.getString("chapterId"),c.getString("title"),c.optString("subtitle"),if(topics==null) emptyList() else (0 until topics.length()).map { k -> val t=topics.getJSONObject(k);TocTopic(t.getString("paragraphId"),t.getString("title"),t.optString("provenance"),t.optString("startText").takeIf { it.isNotBlank() }) },c.optString("entryParagraphId").takeIf { it.isNotBlank() },c.optString("entryNote").takeIf { it.isNotBlank() })
             })
         }
     }.getOrElse { emptyList() }
