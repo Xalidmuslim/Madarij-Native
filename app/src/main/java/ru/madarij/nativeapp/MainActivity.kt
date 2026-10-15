@@ -65,13 +65,14 @@ private fun BookRouteSurface(
     content: @Composable () -> Unit
 ) {
     // The paper background remains fully opaque on the first frame.
-    // Only the text/controls receive a tiny 130ms opacity polish; no translated
-    // text, crossfading of old screens or additional full-screen paper layers.
+    // Fade content gently over an already opaque, preloaded paper background.
+    // Never translate the whole screen: it changes text baselines and looks like
+    // the reader is jumping. A single short alpha layer is removed at rest.
     var entryShown by remember { mutableStateOf(false) }
     LaunchedEffect(motionEnabled) { entryShown = true }
     val entranceAlpha by animateFloatAsState(
-        targetValue = if (!motionEnabled || entryShown) 1f else .88f,
-        animationSpec = tween(durationMillis = 130, easing = FastOutSlowInEasing),
+        targetValue = if (!motionEnabled || entryShown) 1f else .76f,
+        animationSpec = tween(durationMillis = if (motionEnabled) 180 else 0, easing = FastOutSlowInEasing),
         label = "paper-content-entrance"
     )
     Box(
@@ -283,7 +284,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     .navigationBarsPadding()
                     .padding(horizontal = 15.dp).padding(bottom = 4.dp)
             ) {
-MadarijBottomBar(tabs, selectedTab) { destination ->
+MadarijBottomBar(tabs, selectedTab, motionEnabled = !settings.reducedMotion) { destination ->
     when {
         destination == "home" -> {
             // On HOME a repeated tap is a strict no-op; there is no new route,
