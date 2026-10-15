@@ -1,0 +1,189 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p184-draft",
+    "printed_pages": [
+      184
+    ],
+    "old": "поскольку человек способен выплатить свой долг.",
+    "new": "поскольку заработок позволяет ему выплатить свой долг.",
+    "arabic_anchor": "لتمكُّنه من أداء دينه",
+    "reason": "Уточнена причинная связь заработка и возможности выплаты.",
+    "before": "поскольку человек способен выплатить свой долг.",
+    "after": "поскольку заработок позволяет ему выплатить свой долг.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p187-draft",
+    "printed_pages": [
+      187
+    ],
+    "old": "возможность обучать людей обрядам и следовать примеру Пророка",
+    "new": "возможность обучать людей обрядам и служить для них примером",
+    "arabic_anchor": "من تعليمٍ للمناسك، واقتداءٍ به",
+    "reason": "В арабском местоимение относится к находящемуся верхом; слово Пророк не названо.",
+    "before": "возможность обучать людей обрядам и следовать примеру Пророка",
+    "after": "возможность обучать людей обрядам и служить для них примером",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p191-draft",
+    "printed_pages": [
+      191
+    ],
+    "old": "видящего движения мира — верхнего и нижнего, его существ и мельчайших частиц, слышащего их голоса, наблюдающего их мысли и тайны.",
+    "new": "видит движения мира — верхнего и нижнего, его существ и мельчайших частиц, слышит их голоса, наблюдает за их мыслями и тайнами.",
+    "arabic_anchor": "بصيرًا بحركات العالم علويِّه وسفليِّه وأشخاصه وذرَّاته",
+    "reason": "Исправлено согласование с началом «Он вознёсся..., говорит...» без смены богословского тезиса.",
+    "before": "видящего движения мира — верхнего и нижнего, его существ и мельчайших частиц, слышащего их голоса, наблюдающего их мысли и тайны.",
+    "after": "видит движения мира — верхнего и нижнего, его существ и мельчайших частиц, слышит их голоса, наблюдает за их мыслями и тайнами.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p192-draft",
+    "printed_pages": [
+      192
+    ],
+    "old": "которых многие из этих богословов не считают обладающими полноценной верой",
+    "new": "которых большинство из этих богословов не считает верующими",
+    "arabic_anchor": "الذين ليسوا مؤمنين عند أكثرهم",
+    "reason": "Восстановлены أكثرهم и отрицание веры без добавленного смягчения «полноценной».",
+    "before": "которых многие из этих богословов не считают обладающими полноценной верой",
+    "after": "которых большинство из этих богословов не считает верующими",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p194-draft",
+    "printed_pages": [
+      194
+    ],
+    "old": "то, что сообщил Посланник, исходит из истинного и надёжного источника, последовавший которой не боится неприятного впоследствии, а спокоен относительно исхода следования ей.",
+    "new": "то, что сообщил Посланник, исходит из подлинной истины: следующий ей не боится неприятного впоследствии, а спокоен относительно исхода следования ей.",
+    "arabic_anchor": "أنّ ما أخبر به الرّسول صادرٌ عن حقيقةٍ صادقةٍ",
+    "reason": "Авторское объяснение использует حقيقة; исправлены последовательность смысла и согласование.",
+    "before": "то, что сообщил Посланник, исходит из истинного и надёжного источника, последовавший которой не боится неприятного впоследствии, а спокоен относительно исхода следования ей.",
+    "after": "то, что сообщил Посланник, исходит из подлинной истины: следующий ей не боится неприятного впоследствии, а спокоен относительно исхода следования ей.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p195-draft",
+    "printed_pages": [
+      195
+    ],
+    "old": "а не случайно и не не по одной лишь воле",
+    "new": "а не случайно и не по одной лишь воле",
+    "arabic_anchor": "لا بالاتِّفاق، ولا بمحض المشيئة",
+    "reason": "Удалено ошибочное второе отрицание.",
+    "before": "а не случайно и не не по одной лишь воле",
+    "after": "а не случайно и не по одной лишь воле",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p197-draft",
+    "printed_pages": [
+      197
+    ],
+    "old": "ма‘рифа (познание) у этих людей уже и глубже обычного знания",
+    "new": "ма‘рифа (познание) у этих людей имеет более узкий смысл, чем ‘ильм (знание)",
+    "arabic_anchor": "لأنَّ المعرفةَ أخصُّ من العلم عند القوم",
+    "reason": "أخص — более частное/узкое понятие; «глубже обычного» не сказано.",
+    "before": "ма‘рифа (познание) у этих людей уже и глубже обычного знания",
+    "after": "ма‘рифа (познание) у этих людей имеет более узкий смысл, чем ‘ильм (знание)",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p199-draft",
+    "printed_pages": [
+      199
+    ],
+    "old": "по наблюдаемому — о том, что недоступно непосредственному зрению.",
+    "new": "по зримому — о предметах веры.",
+    "arabic_anchor": "فيستدلُّ بالعيان على الإيمان",
+    "reason": "Восстановлено الإيمان, отличное от общего «скрытого» в предыдущем обороте.",
+    "before": "по наблюдаемому — о том, что недоступно непосредственному зрению.",
+    "after": "по зримому — о предметах веры.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p200-draft",
+    "printed_pages": [
+      200
+    ],
+    "old": "Вторая — низшая фираса, общая верующему и неверующему",
+    "new": "Вторая — низшая, низменная фираса, общая верующему и неверующему",
+    "arabic_anchor": "وفراسةٌ سفليّةٌ دنيئةٌ مشتركةٌ بين المؤمن والكافر",
+    "reason": "Восстановлена оценка دنيئة, сохранена авторская полемика.",
+    "before": "Вторая — низшая фираса, общая верующему и неверующему",
+    "after": "Вторая — низшая, низменная фираса, общая верующему и неверующему",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p201-draft",
+    "printed_pages": [
+      201
+    ],
+    "old": "их фираса стала связана со светом откровения и светом веры.",
+    "new": "их фираса стала связана с Аллахом и обращена к свету откровения вместе со светом веры.",
+    "arabic_anchor": "كانت فراستهم متّصلةً بالله، متعلِّقةً بنور الوحي مع نور الإيمان",
+    "reason": "Восстановлено опущенное متصلة بالله.",
+    "before": "их фираса стала связана со светом откровения и светом веры.",
+    "after": "их фираса стала связана с Аллахом и обращена к свету откровения вместе со светом веры.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p202-draft",
+    "printed_pages": [
+      202
+    ],
+    "old": "Он назвал три его пользы: оно побуждает к движению без остановки и колебания и без иной причины, кроме поклонения, такой как рия (показуха), стремление к известности, похвале, влиянию или положению среди людей.",
+    "new": "Он назвал три его пользы: оно побуждает к движению без остановки, без колебания и без побуждений, посторонних поклонению, будь то рия (показное благочестие), стремление к известности, похвале, влиянию или положению среди людей.",
+    "arabic_anchor": "ولا علّةٍ غير العبوديّة من رياءٍ أو سمعةٍ أو طلب محمدةٍ أو جاهٍ ومنزلةٍ عند الخلق",
+    "reason": "Устранена синтаксическая двусмысленность: рия — пример посторонней причины, а не поклонения.",
+    "before": "Он назвал три его пользы: оно побуждает к движению без остановки и колебания и без иной причины, кроме поклонения, такой как рия (показуха), стремление к известности, похвале, влиянию или положению среди людей.",
+    "after": "Он назвал три его пользы: оно побуждает к движению без остановки, без колебания и без побуждений, посторонних поклонению, будь то рия (показное благочестие), стремление к известности, похвале, влиянию или положению среди людей.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
