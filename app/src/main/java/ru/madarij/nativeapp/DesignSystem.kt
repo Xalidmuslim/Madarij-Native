@@ -1,5 +1,7 @@
 package ru.madarij.nativeapp
 
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
@@ -18,6 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.geometry.Offset
@@ -193,7 +196,7 @@ internal fun MadarijTopBar(
     }
 }
 @Composable
-internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, onSelect: (String) -> Unit) {
+internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: String, motionEnabled: Boolean = true, onSelect: (String) -> Unit) {
     Box(Modifier.fillMaxWidth().height(62.dp)
         .clip(RoundedCornerShape(18.dp))
         .background(BookColors.leather)
@@ -209,8 +212,13 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                 val active = selected == destination
                 val labelColor = androidx.compose.animation.animateColorAsState(
                     targetValue = if (active) BookColors.lightGold else Color(0xFFB9A793),
-                    animationSpec = androidx.compose.animation.core.tween(110),
+                    animationSpec = tween(if (motionEnabled) 150 else 0),
                     label = "tab-color"
+                ).value
+                val iconScale = animateFloatAsState(
+                    targetValue = if (active) 1.06f else 1f,
+                    animationSpec = tween(if (motionEnabled) 155 else 0),
+                    label = "tab-selection-scale"
                 ).value
                 Column(
                     Modifier.weight(1f).fillMaxHeight()
@@ -220,7 +228,8 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    AntiqueBookIcon(destination, modifier = Modifier.size(25.dp))
+                    AntiqueBookIcon(destination, modifier = Modifier.size(25.dp)
+                        .graphicsLayer { scaleX = iconScale; scaleY = iconScale })
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
