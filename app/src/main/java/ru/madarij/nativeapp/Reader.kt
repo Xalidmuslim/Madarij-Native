@@ -130,8 +130,24 @@ fun Reader(
     val normalizedQuery = remember(query) { normalizedText(query).text }
     val displayRussian = remember(paragraphs, query) { if (query.isBlank()) buildReaderDisplayRussian(paragraphs) else paragraphs.associate { it.id to it.ru } }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
+    // Keep the reader invisible while restoring the saved position AND locating a
+    // topic inside a long printed-page paragraph. Otherwise the user sees the
+    // first line before a second bringIntoView moves it out of sight.
+    val exactTargetAvailable = query.isBlank() && anchor != null &&
+        selectedTopicHeading != null &&
+        displayRussian[anchor]?.contains(selectedTopicHeading, ignoreCase = true) == true
+    var exactTargetSettled by remember(sectionKey, anchor) { mutableStateOf(false) }
+    val searchTargetAvailable = query.isNotBlank() && anchor != null &&
+        visible.any { it.id == anchor }
+    val readerSettled = ready &&
+        (if (searchTargetAvailable) matchRevealed else (!exactTargetAvailable || exactTargetSettled))
+    val readerAlpha by animateFloatAsState(
+        targetValue = if (readerSettled) 1f else 0f,
+        animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 150),
+        label = "reader-position-ready"
+    )
     fun savePosition() {
-        if (ready) currentParagraph?.let { vm.savePosition(sectionId, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
+        if (readerSettled) currentParagraph?.let { vm.savePosition(sectionId, it.id, if (listState.firstVisibleItemIndex !in 1..visible.size) 0 else listState.firstVisibleItemScrollOffset) }
     }
     fun recordTime() {
         if (activeSince[0] > 0L) {
@@ -167,8 +183,8 @@ fun Reader(
             ready = true
         }
     }
-    LaunchedEffect(ready, visible) {
-        if (ready) snapshotFlow { listState.isScrollInProgress }
+    LaunchedEffect(readerSettled, visible) {
+        if (readerSettled) snapshotFlow { listState.isScrollInProgress }
             .distinctUntilChanged()
             .collect { scrolling -> if (!scrolling) savePosition() }
     }
@@ -308,7 +324,9 @@ fun Reader(
         ) {
             LazyColumn(
                 state = listState,
-                modifier = Modifier.fillMaxSize().then(swipeModifier),
+                modifier = Modifier.fillMaxSize()
+                    .graphicsLayer { alpha = readerAlpha }
+                    .then(swipeModifier),
                 contentPadding = PaddingValues(top = 8.dp, bottom = 22.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
@@ -444,8 +462,12 @@ fun Reader(
                                                 }
                                                 LaunchedEffect(ready, anchor, selectedTopicHeading) {
                                                     if (ready) {
-                                                        withFrameNanos { }
-                                                        targetRequester.bringIntoView()
+                                                        try {
+                                                            withFrameNanos { }
+                                                            targetRequester.bringIntoView()
+                                                        } finally {
+                                                            exactTargetSettled = true
+                                                        }
                                                     }
                                                 }
                                             } else ReaderSectionCard(block, settings, arabic = false)
@@ -484,8 +506,12 @@ fun Reader(
                                                 }
                                                 LaunchedEffect(ready, anchor, selectedTopicHeading) {
                                                     if (ready) {
-                                                        withFrameNanos { }
-                                                        topicRequester.bringIntoView()
+                                                        try {
+                                                            withFrameNanos { }
+                                                            topicRequester.bringIntoView()
+                                                        } finally {
+                                                            exactTargetSettled = true
+                                                        }
                                                     }
                                                 }
                                                 ReaderRichTextBlock(
