@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p569-draft",
+    "printed_pages": [
+      569
+    ],
+    "old": "Говорили также: он не преступает, превышая установленную меру, и не преступает, употребляя меньше необходимого, вплоть до гибели.",
+    "new": "Говорили также: он не должен нарушать установленную меру ни превышая её, ни употребляя меньше необходимого вплоть до гибели.",
+    "arabic_anchor": "لا يبغي بتجاوز الحدِّ الذي حُدَّ له منها، ولا يتعدّى بتقصيره عن تناوله",
+    "reason": "Русская конструкция могла утверждать отсутствие греха при превышении/недостатке; арабское толкование исключает оба нарушения, что прямо пояснено далее.",
+    "before": "Говорили также: он не преступает, превышая установленную меру, и не преступает, употребляя меньше необходимого, вплоть до гибели.",
+    "after": "Говорили также: он не должен нарушать установленную меру ни превышая её, ни употребляя меньше необходимого вплоть до гибели.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p574-draft",
+    "printed_pages": [
+      574
+    ],
+    "old": "откроются ему лишь лишь через",
+    "new": "откроются ему лишь через",
+    "arabic_anchor": "فلا ينكشف لهذا ذنوبُه",
+    "reason": "Устранён случайный повтор.",
+    "before": "откроются ему лишь лишь через",
+    "after": "откроются ему лишь через",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p577-draft",
+    "printed_pages": [
+      577
+    ],
+    "old": "задержка сподвижников в день бану Курайза до заката",
+    "new": "задержка сподвижников в день бану Курайза до времени после заката",
+    "arabic_anchor": "يومَ بني قريظة إلى بعد غروب الشّمس",
+    "reason": "В оригинале прямо сказано «после захода солнца»; прежний перевод обращал временное отношение.",
+    "before": "задержка сподвижников в день бану Курайза до заката",
+    "after": "задержка сподвижников в день бану Курайза до времени после заката",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
