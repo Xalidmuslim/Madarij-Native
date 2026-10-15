@@ -1,0 +1,3695 @@
+{
+  "version": "JK000081",
+  "source_commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+  "sha256": "677bb21c026e88c546c14bc9468b4293eaabf811247dcb3f215fbf1bfd4c633f",
+  "corpus_pages": [
+    3,
+    42
+  ],
+  "corpus_tokens": 6054,
+  "alternative_tokens": 5970,
+  "matching_tokens": 5585,
+  "normalization": "Strip brackets/parentheses, diacritics and non-Arabic markers; NFKD. This loses distinctions and cannot establish edition fidelity.",
+  "differences": [
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-001",
+        "madarij-v1-opening-002",
+        "madarij-v1-opening-003"
+      ],
+      "corpus_tokens": "رب يسر",
+      "alternative_tokens": "وبه نستعين ولا حول ولا قوة الا بالله العلي العظيم",
+      "left_context": "بسم الله الرحمن الرحيم",
+      "right_context": "الحمد لله رب العالمين والعاقبة للمتقين ولا عدوان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-003"
+      ],
+      "corpus_tokens": "الا الله",
+      "alternative_tokens": "الاالله",
+      "left_context": "عدوان الا على الظالمين واشهد ان لا اله",
+      "right_context": "وحده لا شريك له رب العالمين واله المرسلين",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-003"
+      ],
+      "corpus_tokens": "السماوات",
+      "alternative_tokens": "السموات",
+      "left_context": "لا شريك له رب العالمين واله المرسلين وقيوم",
+      "right_context": "والارضين واشهد ان محمدا عبده ورسوله المبعوث بالكتاب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-003"
+      ],
+      "corpus_tokens": "اخباره",
+      "alternative_tokens": "به",
+      "left_context": "به تذكرا ونحمله على احسن وجوهه ومعانيه ونصدق",
+      "right_context": "ونجتهد على اقامة اوامره ونواهيه ونجتني ثمار علومه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-004"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "عليه",
+      "left_context": "الحكم من بين رياضه وازهاره فهو كتابه الدال",
+      "right_context": "لمن اراد معرفته وطريقه الموصلة لسالكها اليه ونوره",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-005"
+      ],
+      "corpus_tokens": "لا تميل",
+      "alternative_tokens": "لاتميل",
+      "left_context": "يغلق اذا غلقت الابواب وهو الصراط المستقيم الذي",
+      "right_context": "به الاراء والذكر الحكيم الذي لا تزيغ به",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-005"
+      ],
+      "corpus_tokens": "دلالته",
+      "alternative_tokens": "دلالاته",
+      "left_context": "ولا تقلع سحايبه ولا تنقضي اياته ولا تختلف",
+      "right_context": "كلما ازدادت البصاير فيه تاملا وتفكيرا زادها هداية",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-005"
+      ],
+      "corpus_tokens": "يا اهل",
+      "alternative_tokens": "يااهل",
+      "left_context": "وحادي الارواح الى بلاد الافراح والمنادي بالمساء والصباح",
+      "right_context": "الفلاح حي على الفلاح نادى به منادي الايمان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-006"
+      ],
+      "corpus_tokens": "به منادي",
+      "alternative_tokens": "منادى",
+      "left_context": "والصباح يا اهل الفلاح حي على الفلاح نادى",
+      "right_context": "الايمان على راس الصراط المستقيم ياقومنا اجيبوا داعي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-006"
+      ],
+      "corpus_tokens": "ياقومنا",
+      "alternative_tokens": "يا قومنا",
+      "left_context": "نادى به منادي الايمان على راس الصراط المستقيم",
+      "right_context": "اجيبوا داعي الله وامنوا به يغفر لكم من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-006"
+      ],
+      "corpus_tokens": "ابواب رشدها",
+      "alternative_tokens": "ابوابها",
+      "left_context": "الاهواء فاطفات مصابيحها وتمكنت منها اراء الرجال فاغلقت",
+      "right_context": "واضاعت مفاتيحها وران عليها كسبها فلم تجد حقايق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-006"
+      ],
+      "corpus_tokens": "فيها",
+      "alternative_tokens": "اليها",
+      "left_context": "مفاتيحها وران عليها كسبها فلم تجد حقايق القران",
+      "right_context": "منفذا وتحكمت فيها اسقام الجهل فلم تنتفع معها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-006",
+        "madarij-v1-opening-007"
+      ],
+      "corpus_tokens": "الغذا",
+      "alternative_tokens": "العمل",
+      "left_context": "وتحكمت فيها اسقام الجهل فلم تنتفع معها بصالح",
+      "right_context": "واعجبا لها جعلت غذاءها من هذه الاراء التي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-007"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "كيف",
+      "left_context": "الجهل فلم تنتفع معها بصالح الغذا واعجبا لها",
+      "right_context": "جعلت غذاءها من هذه الاراء التي لا تسمن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-007"
+      ],
+      "corpus_tokens": "ونص",
+      "alternative_tokens": "ونصوص حديث",
+      "left_context": "من جوع ولم تقبل الاغتذاء بكلام رب العالمين",
+      "right_context": "نبيه المرفوع سبحان الله كيف اهتدت في ظلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-007"
+      ],
+      "corpus_tokens": "سبحان الله",
+      "alternative_tokens": "ام",
+      "left_context": "تقبل الاغتذاء بكلام رب العالمين ونص نبيه المرفوع",
+      "right_context": "كيف اهتدت في ظلم الاراء الى التمييز بين",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-007"
+      ],
+      "corpus_tokens": "وخفي",
+      "alternative_tokens": "وخفى",
+      "left_context": "في ظلم الاراء الى التمييز بين الخطا والصواب",
+      "right_context": "عليها ذلك في مطالع الانوار من السنة والكتاب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-008"
+      ],
+      "corpus_tokens": "تلقي",
+      "alternative_tokens": "تلقى",
+      "left_context": "ومردودها وراجحها ومرجوحها واقرت على انفسها بالعجز عن",
+      "right_context": "الهدى والعلم من كلام من لا ياتيه الباطل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-008"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "كلامه",
+      "left_context": "بالعجز عن تلقي الهدى والعلم من كلام من",
+      "right_context": "لا ياتيه الباطل من بين يديه ولا من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-008"
+      ],
+      "corpus_tokens": "التبيان",
+      "alternative_tokens": "البيان",
+      "left_context": "من خلفه وهو الكفيل بايضاح الحق مع غاية",
+      "right_context": "وكلام من اوتي جوامع الكلم واستولى على الامد",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-008"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "كلامه",
+      "left_context": "غاية التبيان وكلام من اوتي جوامع الكلم واستولى",
+      "right_context": "على الامد الاقصى من البيان كلا بل هي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-opening-008"
+      ],
+      "corpus_tokens": "الامد",
+      "alternative_tokens": "",
+      "left_context": "التبيان وكلام من اوتي جوامع الكلم واستولى على",
+      "right_context": "الاقصى من البيان كلا بل هي والله فتنة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-009"
+      ],
+      "corpus_tokens": "عليها",
+      "alternative_tokens": "فيها",
+      "left_context": "العقول عن طرايق قصدها يربى فيها الصغير ويهرم",
+      "right_context": "الكبير وظنت خفافيش البصاير انها الغاية التي يسابق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "يسابق",
+      "alternative_tokens": "يتسابق اليها",
+      "left_context": "عليها الكبير وظنت خفافيش البصاير انها الغاية التي",
+      "right_context": "المتسابقون اليها والنهاية التي يتنافس المتنافسون فيها وتزاحموا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "اليها",
+      "alternative_tokens": "",
+      "left_context": "وظنت خفافيش البصاير انها الغاية التي يسابق المتسابقون",
+      "right_context": "والنهاية التي يتنافس المتنافسون فيها وتزاحموا عليها وهيهات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "يتنافس المتنافسون",
+      "alternative_tokens": "تنافس",
+      "left_context": "انها الغاية التي يسابق المتسابقون اليها والنهاية التي",
+      "right_context": "فيها وتزاحموا عليها وهيهات اين السهى من شمس",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "المنافسون",
+      "left_context": "يسابق المتسابقون اليها والنهاية التي يتنافس المتنافسون فيها",
+      "right_context": "وتزاحموا عليها وهيهات اين السهى من شمس الضحى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "يضمن",
+      "alternative_tokens": "تضمن",
+      "left_context": "الثرى من كواكب الجوزاء واين الكلام الذي لم",
+      "right_context": "لنا عصمة قايله بدليل معلوم من النقل المصدق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "اعلى",
+      "alternative_tokens": "اعلا",
+      "left_context": "النقل المصدق عن القايل المعصوم واين الاقوال التي",
+      "right_context": "درجاتها ان تكون سايغة الاتباع من النصوص الواجب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "الى",
+      "alternative_tokens": "من",
+      "left_context": "الاراء التي نهى قايلها عن تقليده فيها وحذر",
+      "right_context": "النصوص التي فرض على كل عبد انه يهتدي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "انه",
+      "alternative_tokens": "ان",
+      "left_context": "وحذر الى النصوص التي فرض على كل عبد",
+      "right_context": "يهتدي بها ويتبصر واين المذاهب التي اذا مات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "اربابها",
+      "alternative_tokens": "اربها",
+      "left_context": "يهتدي بها ويتبصر واين المذاهب التي اذا مات",
+      "right_context": "فهي من جملة الاموات الى النصوص التي لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010"
+      ],
+      "corpus_tokens": "الى",
+      "alternative_tokens": "من",
+      "left_context": "التي اذا مات اربابها فهي من جملة الاموات",
+      "right_context": "النصوص التي لا تزول اذا زالت الارض والسماوات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-010",
+        "madarij-v1-opening-011"
+      ],
+      "corpus_tokens": "والسماوات",
+      "alternative_tokens": "والسموات",
+      "left_context": "الى النصوص التي لا تزول اذا زالت الارض",
+      "right_context": "سبحان الله ماذا حرم المعرضون عن نصوص الوحي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-011"
+      ],
+      "corpus_tokens": "مشكاتها",
+      "alternative_tokens": "مشكاته",
+      "left_context": "حرم المعرضون عن نصوص الوحي واقتباس العلم من",
+      "right_context": "من كنوز الذخاير وماذا فاتهم من حياة القلوب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-011"
+      ],
+      "corpus_tokens": "استنبطها",
+      "alternative_tokens": "استنبطتها",
+      "left_context": "فاتهم من حياة القلوب واستنارة البصاير قنعوا باقوال",
+      "right_context": "معاول الاراء فكرا وتقطعوا امرهم بينهم لاجلها زبرا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-013"
+      ],
+      "corpus_tokens": "من",
+      "alternative_tokens": "عن",
+      "left_context": "ظلم ارايهم وعقدها فليسوا يبصرونها خلعوا نصوص الوحي",
+      "right_context": "سلطان الحقيقة وعزلوها عن ولاية اليقين وشنوا عليها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-013"
+      ],
+      "corpus_tokens": "ما لك",
+      "alternative_tokens": "مالك",
+      "left_context": "من بعيد ولكن بالدفع في صدورها والاعجاز وقالوا",
+      "right_context": "عندنا من عبور وان كان لا بد فعلى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-013"
+      ],
+      "corpus_tokens": "لا",
+      "alternative_tokens": "ولا",
+      "left_context": "وقالوا ما لك عندنا من عبور وان كان",
+      "right_context": "بد فعلى سبيل المجاز انزلوا النصوص منزلة الخليفة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-013",
+        "madarij-v1-opening-014"
+      ],
+      "corpus_tokens": "المجاز",
+      "alternative_tokens": "الاجتياز",
+      "left_context": "من عبور وان كان لا بد فعلى سبيل",
+      "right_context": "انزلوا النصوص منزلة الخليفة في هذا الزمان له",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-014"
+      ],
+      "corpus_tokens": "وما له",
+      "alternative_tokens": "وماله",
+      "left_context": "منزلة الخليفة في هذا الزمان له السكة والخطبة",
+      "right_context": "حكم نافذ ولا سلطان المتمسك عندهم بالكتاب والسنة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "تمسكوا",
+      "alternative_tokens": "وتمسكوا",
+      "left_context": "والله الوصول بعدولهم عن منهج الوحي وتضييعهم الاصول",
+      "right_context": "باعجاز لا صدور لها فخانتهم احرص ما كانوا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "ما لم",
+      "alternative_tokens": "مالم",
+      "left_context": "وقدموا على ما قدموه وبدا لهم من الله",
+      "right_context": "يكونوا ليحتسبوه وسقط في ايديهم عند الحصاد لما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "ليحتسبوه",
+      "alternative_tokens": "يحتسبون",
+      "left_context": "قدموه وبدا لهم من الله ما لم يكونوا",
+      "right_context": "وسقط في ايديهم عند الحصاد لما عاينوا غلة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "فيا شدة",
+      "alternative_tokens": "فياشدة",
+      "left_context": "ايديهم عند الحصاد لما عاينوا غلة ما بذروه",
+      "right_context": "الحسرة عندما يعاين المبطل سعيه وكده هباء منثورا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "عندما",
+      "alternative_tokens": "عند ما",
+      "left_context": "لما عاينوا غلة ما بذروه فيا شدة الحسرة",
+      "right_context": "يعاين المبطل سعيه وكده هباء منثورا ويا عظم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "هباء",
+      "alternative_tokens": "هباءا",
+      "left_context": "فيا شدة الحسرة عندما يعاين المبطل سعيه وكده",
+      "right_context": "منثورا ويا عظم المصيبة عندما يتبين بوارق امانيه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "ويا عظم",
+      "alternative_tokens": "وياعظم",
+      "left_context": "الحسرة عندما يعاين المبطل سعيه وكده هباء منثورا",
+      "right_context": "المصيبة عندما يتبين بوارق امانيه خلبا واماله الكاذبة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "عندما",
+      "alternative_tokens": "عند ما",
+      "left_context": "المبطل سعيه وكده هباء منثورا ويا عظم المصيبة",
+      "right_context": "يتبين بوارق امانيه خلبا واماله الكاذبة غرورا فما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "بوارق",
+      "alternative_tokens": "بواراق",
+      "left_context": "وكده هباء منثورا ويا عظم المصيبة عندما يتبين",
+      "right_context": "امانيه خلبا واماله الكاذبة غرورا فما ظن من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-015"
+      ],
+      "corpus_tokens": "الكاذبة",
+      "alternative_tokens": "كاذبة",
+      "left_context": "عظم المصيبة عندما يتبين بوارق امانيه خلبا واماله",
+      "right_context": "غرورا فما ظن من انطوت سريرته على البدعة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-opening-016"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "المحال وانما ضمنت النجاة لمن حكم هدى الله",
+      "right_context": "على غيره وتزود التقوى وايتم بالدليل وسلك الصراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-017"
+      ],
+      "corpus_tokens": "فاقسم",
+      "alternative_tokens": "اقسم",
+      "left_context": "الذين امنوا وعملوا الصالحات وتواصوا بالحق وتواصوا بالصبر",
+      "right_context": "سبحانه ان كل احد خاسر الا من كمل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-opening-017"
+      ],
+      "corpus_tokens": "له",
+      "alternative_tokens": "",
+      "left_context": "بالايمان وقوته العملية بالعمل الصالح وكمل غيره بالتوصية",
+      "right_context": "بالحق والصبر عليه فالحق هو الايمان والعمل ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-017"
+      ],
+      "corpus_tokens": "يتم",
+      "alternative_tokens": "يتمان",
+      "left_context": "بالحق والصبر عليه فالحق هو الايمان والعمل ولا",
+      "right_context": "الا بالصبر عليه والتواصي به كان حقيقا بالانسان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-017"
+      ],
+      "corpus_tokens": "عليه",
+      "alternative_tokens": "عليهما",
+      "left_context": "فالحق هو الايمان والعمل ولا يتم الا بالصبر",
+      "right_context": "والتواصي به كان حقيقا بالانسان ان ينفق ساعات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-017"
+      ],
+      "corpus_tokens": "به",
+      "alternative_tokens": "بهما",
+      "left_context": "الايمان والعمل ولا يتم الا بالصبر عليه والتواصي",
+      "right_context": "كان حقيقا بالانسان ان ينفق ساعات عمره بل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-018"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "طوايف",
+      "left_context": "هذه المطالب وما تضمنته من الرد على جميع",
+      "right_context": "اهل البدع والضلال وما تضمنته من منازل السايرين",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-opening-018"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "السورة مقامها ولا يسد مسدها ولذلك لم ينزل",
+      "right_context": "في التوراة ولا في الانجيل ولا في الزبور",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-opening-018"
+      ],
+      "corpus_tokens": "ولا في الزبور",
+      "alternative_tokens": "",
+      "left_context": "ولذلك لم ينزل في التوراة ولا في الانجيل",
+      "right_context": "ولا في القران مثلها والله المستعان وعليه التكلان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-opening-018",
+        "madarij-v1-fatiha-001",
+        "madarij-v1-fatiha-002"
+      ],
+      "corpus_tokens": "قوله عز وجل اعوذ بالله من الشيطان الرجيم بسم الله الرحمن الرحيم الحمد لله رب العالمين الرحمن الرحيم مالك يوم الدين اياك نعبد واياك نستعين اهدنا الصراط المستقيم صراط الذين انعمت عليهم غير المغضوب عليهم ولا الضالين",
+      "alternative_tokens": "العلي العظيم اعلم ان",
+      "left_context": "وعليه التكلان ولا حول ولا قوة الا بالله",
+      "right_context": "هذه السورة اشتملت على امهات المطالب العالية اتم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-003"
+      ],
+      "corpus_tokens": "والرحمن",
+      "alternative_tokens": "الرحمن",
+      "left_context": "والصفات العليا اليها ومدارها عليها وهي الله والرب",
+      "right_context": "وبنيت السورة على الالهية والربوبية والرحمة ف اياك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-003"
+      ],
+      "corpus_tokens": "مبني",
+      "alternative_tokens": "مبنى",
+      "left_context": "السورة على الالهية والربوبية والرحمة ف اياك نعبد",
+      "right_context": "على الالهية و واياك نستعين على الربوبية وطلب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-003"
+      ],
+      "corpus_tokens": "و",
+      "alternative_tokens": "",
+      "left_context": "والربوبية والرحمة ف اياك نعبد مبني على الالهية",
+      "right_context": "واياك نستعين على الربوبية وطلب الهداية الى صراطه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-003"
+      ],
+      "corpus_tokens": "صراطه",
+      "alternative_tokens": "الصراط",
+      "left_context": "و واياك نستعين على الربوبية وطلب الهداية الى",
+      "right_context": "المستقيم بصفة الرحمة والحمد يتضمن الامور الثلاثة فهو",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-003",
+        "madarij-v1-fatiha-004"
+      ],
+      "corpus_tokens": "لحمده",
+      "alternative_tokens": "لجده",
+      "left_context": "المحمود في الهيته وربوبيته ورحمته والثناء والمجد كمالان",
+      "right_context": "وتضمنت اثبات المعاد وجزاء العباد باعمالهم حسنها وسييها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-006"
+      ],
+      "corpus_tokens": "يتركهم",
+      "alternative_tokens": "يترك عباده",
+      "left_context": "احدها كونه رب العالمين فلا يليق به ان",
+      "right_context": "سدى مهملا لا يعرفهم ما ينفعهم في معاشهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-006"
+      ],
+      "corpus_tokens": "مهملا",
+      "alternative_tokens": "هملا",
+      "left_context": "رب العالمين فلا يليق به ان يتركهم سدى",
+      "right_context": "لا يعرفهم ما ينفعهم في معاشهم ومعادهم وما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-006"
+      ],
+      "corpus_tokens": "الى",
+      "alternative_tokens": "",
+      "left_context": "ومعادهم وما يضرهم فيهما فهذا هضم للربوبية ونسبة",
+      "right_context": "الرب تعالى ما لا يليق به وما قدره",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-006"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الى",
+      "left_context": "فيهما فهذا هضم للربوبية ونسبة الى الرب تعالى",
+      "right_context": "ما لا يليق به وما قدره حق قدره",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-007"
+      ],
+      "corpus_tokens": "اسمه",
+      "alternative_tokens": "اسم",
+      "left_context": "حق قدره من نسبه اليه الثاني اخذها من",
+      "right_context": "الله وهو المالوه المعبود ولا سبيل للعباد الى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-007"
+      ],
+      "corpus_tokens": "عبوديته",
+      "alternative_tokens": "عبادته",
+      "left_context": "وهو المالوه المعبود ولا سبيل للعباد الى معرفة",
+      "right_context": "الا من طريق رسله الموضع الثالث من اسمه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-008"
+      ],
+      "corpus_tokens": "كمالهم",
+      "alternative_tokens": "كما لهم",
+      "left_context": "اهمال عباده وعدم تعريفهم ما ينالون به غاية",
+      "right_context": "فمن اعطى اسم الرحمن حقه علم انه متضمن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-008"
+      ],
+      "corpus_tokens": "علم",
+      "alternative_tokens": "عرف",
+      "left_context": "به غاية كمالهم فمن اعطى اسم الرحمن حقه",
+      "right_context": "انه متضمن لارسال الرسل وانزال الكتب اعظم من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-008"
+      ],
+      "corpus_tokens": "يحصل",
+      "alternative_tokens": "تحصل",
+      "left_context": "الغيث وانبات الكلا واخراج الحب فاقتضاء الرحمة لما",
+      "right_context": "به حياة القلوب والارواح اعظم من اقتضايها لما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-008"
+      ],
+      "corpus_tokens": "يحصل",
+      "alternative_tokens": "تحصل",
+      "left_context": "به حياة القلوب والارواح اعظم من اقتضايها لما",
+      "right_context": "به حياة الابدان والاشباح لكن المحجوبون انما ادركوا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الرب",
+      "left_context": "من قوله اياك نعبد فان ما يعبد به",
+      "right_context": "تعالى لا يكون الا ما يحبه ويرضاه وعبادته",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "على",
+      "left_context": "فان ما يعبد به تعالى لا يكون الا",
+      "right_context": "ما يحبه ويرضاه وعبادته هي شكره وحسنه فطري",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "هي",
+      "alternative_tokens": "وهي",
+      "left_context": "تعالى لا يكون الا ما يحبه ويرضاه وعبادته",
+      "right_context": "شكره وحسنه فطري معقول للعقول السليمة لكن طريق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "وحسنه فطري معقول",
+      "alternative_tokens": "وحبه وخشيته فطرى ومعقول",
+      "left_context": "يكون الا ما يحبه ويرضاه وعبادته هي شكره",
+      "right_context": "للعقول السليمة لكن طريق التعبد وما يعبد به",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وبيانهم",
+      "left_context": "يعبد به لا سبيل الى معرفته الا برسله",
+      "right_context": "وفي هذا بيان ان ارسال الرسل امر مستقر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "يجعل",
+      "alternative_tokens": "جعل الله",
+      "left_context": "الرسول فقد انكر المرسل ولم يومن به ولهذا",
+      "right_context": "سبحانه الكفر برسوله كفرا به الموضع السادس من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-010"
+      ],
+      "corpus_tokens": "برسوله",
+      "alternative_tokens": "برسله",
+      "left_context": "المرسل ولم يومن به ولهذا يجعل سبحانه الكفر",
+      "right_context": "كفرا به الموضع السادس من قوله اهدنا الصراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-011"
+      ],
+      "corpus_tokens": "الى العبد",
+      "alternative_tokens": "اليه",
+      "left_context": "عليه هداية التوفيق وجعل الايمان في القلب وتحبيبه",
+      "right_context": "وتزيينه في قلبه وجعله موثرا له راضيا به",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-011"
+      ],
+      "corpus_tokens": "قلبه",
+      "alternative_tokens": "القلب",
+      "left_context": "الايمان في القلب وتحبيبه الى العبد وتزيينه في",
+      "right_context": "وجعله موثرا له راضيا به راغبا فيه وهما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-012"
+      ],
+      "corpus_tokens": "مسوولتان ولا",
+      "alternative_tokens": "مستقلتان لا",
+      "left_context": "موثرا له راضيا به راغبا فيه وهما هدايتان",
+      "right_context": "يحصل الفلاح الا بهما وهما متضمنتان تعريف ما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-012"
+      ],
+      "corpus_tokens": "ما لم",
+      "alternative_tokens": "مالم",
+      "left_context": "ولا يحصل الفلاح الا بهما وهما متضمنتان تعريف",
+      "right_context": "نعلمه من الحق تفصيلا واجمالا والهامنا له وجعلنا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-012",
+        "madarij-v1-fatiha-013"
+      ],
+      "corpus_tokens": "الموافاة",
+      "alternative_tokens": "الوفاة",
+      "left_context": "والعزم ثم ادامة ذلك لنا وتثبيتنا عليه الى",
+      "right_context": "ومن هاهنا يعلم اضطرار العبد الى هذه الدعوة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-013"
+      ],
+      "corpus_tokens": "هاهنا",
+      "alternative_tokens": "هنا",
+      "left_context": "ادامة ذلك لنا وتثبيتنا عليه الى الموافاة ومن",
+      "right_context": "يعلم اضطرار العبد الى هذه الدعوة فوق كل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-013"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "سوال",
+      "left_context": "الى الموافاة ومن هاهنا يعلم اضطرار العبد الى",
+      "right_context": "هذه الدعوة فوق كل ضرورة وبطلان سوال من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-013"
+      ],
+      "corpus_tokens": "سوال",
+      "alternative_tokens": "قول",
+      "left_context": "العبد الى هذه الدعوة فوق كل ضرورة وبطلان",
+      "right_context": "من يقول اذا كنا مهتدين فكيف نسال الهداية",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "الصراط",
+      "alternative_tokens": "الصرط",
+      "left_context": "وهي الهداية يوم القيامة الى طريق الجنة وهو",
+      "right_context": "الموصل اليها فمن هدي في هذه الدار الى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "هدي",
+      "alternative_tokens": "هدى",
+      "left_context": "الى طريق الجنة وهو الصراط الموصل اليها فمن",
+      "right_context": "في هذه الدار الى صراط الله المستقيم الذي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "رسوله",
+      "alternative_tokens": "رسله",
+      "left_context": "الدار الى صراط الله المستقيم الذي ارسل به",
+      "right_context": "وانزل به كتابه هدي هناك الى الصراط المستقيم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "كتابه هدي",
+      "alternative_tokens": "كتبه هدى",
+      "left_context": "الله المستقيم الذي ارسل به رسوله وانزل به",
+      "right_context": "هناك الى الصراط المستقيم الموصل الى جنته ودار",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "قدمه",
+      "alternative_tokens": "قدم العبد",
+      "left_context": "الموصل الى جنته ودار ثوابه وعلى قدر ثبوت",
+      "right_context": "على هذا الصراط الذي نصبه الله لعباده في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "هذا",
+      "alternative_tokens": "هذه",
+      "left_context": "المنصوب على متن جهنم وعلى قدر سيره على",
+      "right_context": "الصراط يكون سيره على ذاك الصراط فمنهم من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "كالريح ومنهم من يمر",
+      "left_context": "كالبرق ومنهم من يمر كالطرف ومنهم من يمر",
+      "right_context": "كشد الركاب ومنهم من يسعى سعيا ومنهم من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "يمر",
+      "alternative_tokens": "يمشي",
+      "left_context": "كشد الركاب ومنهم من يسعى سعيا ومنهم من",
+      "right_context": "مشيا ومنهم من يحبو حبوا ومنهم المخدوش المسلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-014"
+      ],
+      "corpus_tokens": "يحبو",
+      "alternative_tokens": "يحبوا",
+      "left_context": "يسعى سعيا ومنهم من يمر مشيا ومنهم من",
+      "right_context": "حبوا ومنهم المخدوش المسلم ومنهم المكردس في النار",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-015"
+      ],
+      "corpus_tokens": "الشهوات والشبهات",
+      "alternative_tokens": "الشبهات والشهوات",
+      "left_context": "وفاقا هل تجزون الا ما كنتم تعملون ولينظر",
+      "right_context": "التي تعوقه عن سيره على هذا الصراط المستقيم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-015"
+      ],
+      "corpus_tokens": "ان",
+      "alternative_tokens": "فان",
+      "left_context": "بجنبتي ذاك الصراط تخطفه وتعوقه عن المرور عليه",
+      "right_context": "كثرت هنا وقويت فكذلك هي هناك وما ربك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-015",
+        "madarij-v1-fatiha-016"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "للعبيد",
+      "left_context": "هنا وقويت فكذلك هي هناك وما ربك بظلام",
+      "right_context": "فسوال الهداية متضمن لحصول كل خير وللسلامة من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-016"
+      ],
+      "corpus_tokens": "وللسلامة",
+      "alternative_tokens": "والسلامة",
+      "left_context": "ربك بظلام فسوال الهداية متضمن لحصول كل خير",
+      "right_context": "من كل شر الموضع السابع من معرفة نفس",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-017"
+      ],
+      "corpus_tokens": "المسوول",
+      "alternative_tokens": "المسيول",
+      "left_context": "من كل شر الموضع السابع من معرفة نفس",
+      "right_context": "وهو الصراط المستقيم ولا يكون الطريق صراطا حتى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-017"
+      ],
+      "corpus_tokens": "يكون",
+      "alternative_tokens": "تكون",
+      "left_context": "من معرفة نفس المسوول وهو الصراط المستقيم ولا",
+      "right_context": "الطريق صراطا حتى يتضمن خمسة امور الاستقامة والايصال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-017"
+      ],
+      "corpus_tokens": "يتضمن",
+      "alternative_tokens": "تتضمن",
+      "left_context": "وهو الصراط المستقيم ولا يكون الطريق صراطا حتى",
+      "right_context": "خمسة امور الاستقامة والايصال الى المقصود والقرب وسعته",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-019"
+      ],
+      "corpus_tokens": "المنصوب",
+      "alternative_tokens": "المنسوب",
+      "left_context": "العباد كما في الفاتحة لكونهم اهل سلوكه وهو",
+      "right_context": "لهم وهم المارون عليه الموضع الثامن من ذكر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-020"
+      ],
+      "corpus_tokens": "عامل",
+      "alternative_tokens": "ان يكون عاملا",
+      "left_context": "عالما بالحق او جاهلا به والعالم بالحق اما",
+      "right_context": "بموجبه او مخالف له فهذه اقسام المكلفين لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-020"
+      ],
+      "corpus_tokens": "مخالف",
+      "alternative_tokens": "مخالفا",
+      "left_context": "جاهلا به والعالم بالحق اما عامل بموجبه او",
+      "right_context": "له فهذه اقسام المكلفين لا يخرجون عنها البتة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-021"
+      ],
+      "corpus_tokens": "هاهنا",
+      "alternative_tokens": "ههنا",
+      "left_context": "معرفته به اولى بوصف الغضب واحق به ومن",
+      "right_context": "كان اليهود احق به وهو متغلظ في حقهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-021"
+      ],
+      "corpus_tokens": "فباءوا",
+      "alternative_tokens": "فباووا",
+      "left_context": "الله من فضله على من يشاء من عباده",
+      "right_context": "بغضب على غضب وقال تعالى قل هل انبيكم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-021"
+      ],
+      "corpus_tokens": "عند الله",
+      "alternative_tokens": "من عندالله",
+      "left_context": "تعالى قل هل انبيكم بشر من ذلك مثوبة",
+      "right_context": "من لعنه الله وغضب عليه وجعل منهم القردة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-021",
+        "madarij-v1-fatiha-022"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وعبدالطاغوت اوليك شر مكانا واضل عن سواء السبيل",
+      "left_context": "لعنه الله وغضب عليه وجعل منهم القردة والخنازير",
+      "right_context": "والجاهل بالحق احق باسم الضلال ومن هاهنا وصفت",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-022"
+      ],
+      "corpus_tokens": "هاهنا",
+      "alternative_tokens": "هنا",
+      "left_context": "القردة والخنازير والجاهل بالحق احق باسم الضلال ومن",
+      "right_context": "وصفت النصارى به في قوله تعالى يااهل الكتاب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-022"
+      ],
+      "corpus_tokens": "يااهل",
+      "alternative_tokens": "قل يا اهل",
+      "left_context": "ومن هاهنا وصفت النصارى به في قوله تعالى",
+      "right_context": "الكتاب لا تغلوا في دينكم غير الحق ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-023"
+      ],
+      "corpus_tokens": "و صحيح",
+      "alternative_tokens": "وصحيح",
+      "left_context": "اليهود والثانية في سياقه مع النصارى وفي الترمذي",
+      "right_context": "ابن حبان من حديث عدي بن حاتم قال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-023"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "حديث عدي بن حاتم قال قال رسول الله",
+      "right_context": "اليهود مغضوب عليهم والنصارى ضالون ففي ذكر المنعم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-023",
+        "madarij-v1-fatiha-024"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "ح",
+      "left_context": "الله عليه وسلم اليهود مغضوب عليهم والنصارى ضالون",
+      "right_context": "ففي ذكر المنعم عليهم وهم من عرف الحق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-024"
+      ],
+      "corpus_tokens": "عليهم",
+      "alternative_tokens": "عيهم",
+      "left_context": "المنعم عليهم وهم من عرف الحق واتبعه والمغضوب",
+      "right_context": "وهم من عرفه واتبع هواه والضالين وهم من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-026"
+      ],
+      "corpus_tokens": "مقابلها",
+      "alternative_tokens": "مقابلتهما",
+      "left_context": "في اسناد الخيرات والنعم اليه وحذف الفاعل في",
+      "right_context": "كقول مومني الجن وانا لا ندري اشر اريد",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-026"
+      ],
+      "corpus_tokens": "اشدهما",
+      "alternative_tokens": "اشدهم ويستخرجا كنزهما",
+      "left_context": "في شان الجدار واليتيمين فاراد ربك ان يبلغا",
+      "right_context": "وقال في خرقه السفينة فاردت ان اعيبها ثم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-026"
+      ],
+      "corpus_tokens": "خرقه",
+      "alternative_tokens": "خرق",
+      "left_context": "واليتيمين فاراد ربك ان يبلغا اشدهما وقال في",
+      "right_context": "السفينة فاردت ان اعيبها ثم قال بعد ذلك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-027"
+      ],
+      "corpus_tokens": "وراء",
+      "alternative_tokens": "رواء",
+      "left_context": "حرمت عليكم امهاتكم ثم قال واحل لكم ما",
+      "right_context": "ذلكم وفي تخصيصه لاهل الصراط المستقيم بالنعمة ما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-028"
+      ],
+      "corpus_tokens": "نعمة",
+      "alternative_tokens": "نعمه",
+      "left_context": "مطلق النعمة فعلى المومن والكافر فكل الخلق في",
+      "right_context": "وهذا فصل النزاع في مسالة هل لله على",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-028"
+      ],
+      "corpus_tokens": "نعمت",
+      "alternative_tokens": "نعمة",
+      "left_context": "تكون للمومن والكافر كما قال تعالى وان تعدوا",
+      "right_context": "الله لا تحصوها ان الانسان لظلوم كفار والنعمة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "المتفرد",
+      "alternative_tokens": "المنفرد",
+      "left_context": "هم محسنون الوجه الثاني ان الله سبحانه هو",
+      "right_context": "بالنعم بكم من نعمة فمن الله ثم فاضيف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وما",
+      "left_context": "الوجه الثاني ان الله سبحانه هو المتفرد بالنعم",
+      "right_context": "بكم من نعمة فمن الله ثم فاضيف اليه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "ثم",
+      "alternative_tokens": "",
+      "left_context": "هو المتفرد بالنعم بكم من نعمة فمن الله",
+      "right_context": "فاضيف اليه ما هو متفرد به وان اضيف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "متفرد",
+      "alternative_tokens": "منفرد",
+      "left_context": "نعمة فمن الله ثم فاضيف اليه ما هو",
+      "right_context": "به وان اضيف الى غيره فلكونه طريقا ومجرى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "تعالى",
+      "left_context": "للنعمة واما الغضب على اعدايه فلا يختص به",
+      "right_context": "بل ملايكته وانبياوه ورسله واولياوه يغضبون لغضبه فكان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "من الاشعار",
+      "alternative_tokens": "",
+      "left_context": "واولياوه يغضبون لغضبه فكان في لفظة المغضوب عليهم",
+      "right_context": "بموافقة اوليايه له في غضبه ما لم يكن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "في غضبه ما لم يكن في غضبت عليهم وكان في لفظة انعمت عليهم",
+      "alternative_tokens": "",
+      "left_context": "لفظة المغضوب عليهم من الاشعار بموافقة اوليايه له",
+      "right_context": "من الدلالة على تفرده بالانعام وان النعمة المطلقة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-030"
+      ],
+      "corpus_tokens": "هو المتفرد",
+      "alternative_tokens": "هوالمنفرد",
+      "left_context": "على تفرده بالانعام وان النعمة المطلقة منه وحده",
+      "right_context": "بها ما ليس في لفظة المنعم عليهم الوجه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-031"
+      ],
+      "corpus_tokens": "ذكره وفي",
+      "alternative_tokens": "",
+      "left_context": "المغضوب عليه وتحقيره وتصغير شانه ما ليس في",
+      "right_context": "ذكر فاعل النعمة من اكرام المنعم عليه والاشادة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-031"
+      ],
+      "corpus_tokens": "ومناه",
+      "alternative_tokens": "ما تمناه",
+      "left_context": "فقلت هذا الذي اكرمه السلطان وخلع عليه واعطاه",
+      "right_context": "كان ابلغ في الثناء والتعظيم من قولك هذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-031",
+        "madarij-v1-fatiha-032"
+      ],
+      "corpus_tokens": "واعطي",
+      "alternative_tokens": "واعطى",
+      "left_context": "من قولك هذا الذي اكرم وخلع عليه وشرف",
+      "right_context": "وتامل سرا بديعا في ذكر السبب والجزاء للطوايف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-032"
+      ],
+      "corpus_tokens": "ولفظة",
+      "alternative_tokens": "ولفظ",
+      "left_context": "كمال الانعام بحسن الثواب والجزاء فهذا تمام النعمة",
+      "right_context": "انعمت عليهم تتضمن الامرين وذكر غضبه على المغضوب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-032"
+      ],
+      "corpus_tokens": "تتضمن",
+      "alternative_tokens": "يتضمن",
+      "left_context": "الثواب والجزاء فهذا تمام النعمة ولفظة انعمت عليهم",
+      "right_context": "الامرين وذكر غضبه على المغضوب عليهم يتضمن ايضا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-033"
+      ],
+      "corpus_tokens": "عليهم",
+      "alternative_tokens": "",
+      "left_context": "غضبه سبحانه فانه ارحم واراف من ان يغضب",
+      "right_context": "بلا جناية منهم ولا ضلال وكان الغضب عليهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-033"
+      ],
+      "corpus_tokens": "وكان",
+      "alternative_tokens": "فكان",
+      "left_context": "ان يغضب عليهم بلا جناية منهم ولا ضلال",
+      "right_context": "الغضب عليهم مستلزما لضلالهم وذكر الضالين مستلزم لغضبه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-033"
+      ],
+      "corpus_tokens": "مستلزما",
+      "alternative_tokens": "مستلزم",
+      "left_context": "بلا جناية منهم ولا ضلال وكان الغضب عليهم",
+      "right_context": "لضلالهم وذكر الضالين مستلزم لغضبه عليهم وعقابه لهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-034"
+      ],
+      "corpus_tokens": "الثلاثة",
+      "alternative_tokens": "الثلاث",
+      "left_context": "الله عليه فاستلزم وصف كل واحد من الطوايف",
+      "right_context": "للسبب والجزاء ابين استلزام واقتضاه اكمل اقتضاء في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-034"
+      ],
+      "corpus_tokens": "وحذفه",
+      "alternative_tokens": "وحذفة",
+      "left_context": "والبيان والفصاحة مع ذكر الفاعل في اهل السعادة",
+      "right_context": "في اهل الغضب واسناد الفعل الى السبب في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-035"
+      ],
+      "corpus_tokens": "والضالين",
+      "alternative_tokens": "و الضالين",
+      "left_context": "بين الهداية والنعمة والغضب والضلال فذكر المغضوب عليهم",
+      "right_context": "في مقابلة المهتدين المنعم عليهم وهذا كثير في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-036"
+      ],
+      "corpus_tokens": "مني",
+      "alternative_tokens": "منى",
+      "left_context": "سبحانه بين الامور الاربعة في قوله فاما ياتينكم",
+      "right_context": "هدى فمن اتبع هداي فلا يضل ولا يشقى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-fatiha-036"
+      ],
+      "corpus_tokens": "ذكري",
+      "alternative_tokens": "ذكرى",
+      "left_context": "فهذا الهدى والسعادة ثم قال ومن اعرض عن",
+      "right_context": "فان له معيشة ضنكا ونحشره يوم القيامة اعمى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p021-draft"
+      ],
+      "corpus_tokens": "تعيينه",
+      "alternative_tokens": "تعينه",
+      "left_context": "معرفا تعريفين تعريفا باللام وتعريفا بالاضافة وذلك يفيد",
+      "right_context": "واختصاصه وانه صراط واحد واما طرق اهل الغضب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p021-draft"
+      ],
+      "corpus_tokens": "ولا يفردها",
+      "alternative_tokens": "ويفردها",
+      "left_context": "واما طرق اهل الغضب والضلال فانه سبحانه يجمعها",
+      "right_context": "كقوله تعالى وان هذا صراطي مستقيما فاتبعوه ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p021-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "الغضب والضلال فانه سبحانه يجمعها ولا يفردها كقوله",
+      "right_context": "وان هذا صراطي مستقيما فاتبعوه ولا تتبعوا السبل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p021-draft"
+      ],
+      "corpus_tokens": "صراطه وسبيله",
+      "alternative_tokens": "الصراط و سبيله",
+      "left_context": "تتبعوا السبل فتفرق بكم عن سبيله فوحد لفظ",
+      "right_context": "وجمع السبل المخالفة له وقال ابن مسعود رضي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "رضي الله عنه",
+      "alternative_tokens": "",
+      "left_context": "وسبيله وجمع السبل المخالفة له وقال ابن مسعود",
+      "right_context": "خط لنا رسول الله صلى الله عليه وسلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "مسعود رضي الله عنه خط لنا رسول الله",
+      "right_context": "خطا وقال هذا سبيل الله ثم خط خطوطا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "تعالى",
+      "left_context": "كل سبيل شيطان يدعو اليه ثم قرا قوله",
+      "right_context": "وان هذا صراطي مستقيما فاتبعوه ولا تتبعوا السبل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "يوصل",
+      "alternative_tokens": "يصل",
+      "left_context": "ما بعث به رسله وانزل به كتبه لا",
+      "right_context": "اليه الا من هذا الطريق ولو اتى الناس",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "احد",
+      "left_context": "به رسله وانزل به كتبه لا يوصل اليه",
+      "right_context": "الا من هذا الطريق ولو اتى الناس من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "هذا",
+      "alternative_tokens": "هذه",
+      "left_context": "وانزل به كتبه لا يوصل اليه الا من",
+      "right_context": "الطريق ولو اتى الناس من كل طريق او",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "او استفتحوا",
+      "alternative_tokens": "واستفتحوا",
+      "left_context": "هذا الطريق ولو اتى الناس من كل طريق",
+      "right_context": "من كل باب فالطرق عليهم مسدودة والابواب في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "في وجوههم",
+      "alternative_tokens": "عليهم",
+      "left_context": "استفتحوا من كل باب فالطرق عليهم مسدودة والابواب",
+      "right_context": "مغلقة الا هذا الطريق الواحد فانه متصل بالله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "من",
+      "left_context": "فالطرق عليهم مسدودة والابواب في وجوههم مغلقة الا",
+      "right_context": "هذا الطريق الواحد فانه متصل بالله تعالى موصل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "مغلقة الا هذا الطريق الواحد فانه متصل بالله",
+      "right_context": "موصل الى الله تعالى قال تعالى هذا صراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "الواحد فانه متصل بالله تعالى موصل الى الله",
+      "right_context": "قال تعالى هذا صراط علي مستقيم قال الحسن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "متصل بالله تعالى موصل الى الله تعالى قال",
+      "right_context": "تعالى هذا صراط علي مستقيم قال الحسن رضي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "رضي الله عنه",
+      "alternative_tokens": "",
+      "left_context": "قال تعالى هذا صراط علي مستقيم قال الحسن",
+      "right_context": "معناه صراط الي مستقيم وهذا يحتمل امرين احدهما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p022-draft"
+      ],
+      "corpus_tokens": "احدهما",
+      "alternative_tokens": "",
+      "left_context": "عنه معناه صراط الي مستقيم وهذا يحتمل امرين",
+      "right_context": "ان يكون اراد به انه من باب اقامة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p023-draft"
+      ],
+      "corpus_tokens": "يوصل",
+      "alternative_tokens": "موصل",
+      "left_context": "على المعنى وهو الاشبه بطريق السلف اي صراط",
+      "right_context": "الي وقال مجاهد رضي الله عنه الحق يرجع",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p023-draft"
+      ],
+      "corpus_tokens": "رضي الله عنه",
+      "alternative_tokens": "",
+      "left_context": "بطريق السلف اي صراط يوصل الي وقال مجاهد",
+      "right_context": "الحق يرجع الى الله وعليه طريقه لا يعرج",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p023-draft"
+      ],
+      "corpus_tokens": "على",
+      "alternative_tokens": "علي",
+      "left_context": "وهو من اصح ما قيل في الاية وقيل",
+      "right_context": "فيه للوجوب اي علي بيانه وتعريفه والدلالة عليه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p023-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وهي",
+      "left_context": "والدلالة عليه والقولان نظير القولين في اية النحل",
+      "right_context": "وعلى الله قصد السبيل والصحيح فيها كالصحيح في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p023-draft"
+      ],
+      "corpus_tokens": "تقلب",
+      "alternative_tokens": "تشقلب",
+      "left_context": "مضوا سلفا قصد السبيل عليهم وصرف المنايا بالرجال",
+      "right_context": "اي ممرنا عليهم واليهم وصولنا وقال الاخر فهن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "حسابهم",
+      "left_context": "الوصول قال ان الينا ايابهم ثم ان علينا",
+      "right_context": "وقال الينا مرجعهم ثم الى ربهم مرجعهم وقال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وقال",
+      "left_context": "الينا ايابهم ثم ان علينا وقال الينا مرجعهم",
+      "right_context": "ثم الى ربهم مرجعهم وقال لما اراد الوجوب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "حسابهم وقال",
+      "left_context": "مرجعهم وقال لما اراد الوجوب ثم ان علينا",
+      "right_context": "ان علينا جمعه وقرانه وما من دابة في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وقال",
+      "left_context": "الوجوب ثم ان علينا ان علينا جمعه وقرانه",
+      "right_context": "وما من دابة في الارض الا على الله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "ذكر",
+      "alternative_tokens": "",
+      "left_context": "الا على الله رزقها ونظاير ذلك قيل في",
+      "right_context": "اداة على سر لطيف وهو الاشعار بكون السالك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "وحق مع وصوله الى الله تعالى فغايته الوصول الى الله",
+      "alternative_tokens": "",
+      "left_context": "الاشعار بكون السالك على هذا الصراط على هدى",
+      "right_context": "وهو في حال استقامته على هدى وعلى حق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "في حال استقامته على هدى وعلى",
+      "alternative_tokens": "",
+      "left_context": "الى الله تعالى فغايته الوصول الى الله وهو",
+      "right_context": "حق كما قال في حق المومنين اوليك على",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "المومنين اوليك على هدى من ربهم وقال لرسوله",
+      "right_context": "فتوكل على الله انك على الحق المبين والله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "وسراطه",
+      "alternative_tokens": "وصراطه",
+      "left_context": "على الحق المبين والله عز وجل هو الحق",
+      "right_context": "حق ودينه حق فمن استقام على صراطه فهو",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "وكان",
+      "alternative_tokens": "فكان",
+      "left_context": "فمن استقام على صراطه فهو على الحق والهدى",
+      "right_context": "في دلالة اداة على على هذا المعنى ما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p024-draft"
+      ],
+      "corpus_tokens": "دلالة",
+      "alternative_tokens": "",
+      "left_context": "على صراطه فهو على الحق والهدى وكان في",
+      "right_context": "اداة على على هذا المعنى ما ليس في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "عليه",
+      "alternative_tokens": "اليه",
+      "left_context": "استعلايه وعلوه بالحق والهدى مع ثباته عليه واستقامته",
+      "right_context": "فكان في الاتيان باداة على ما يدل على",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "وثباته",
+      "alternative_tokens": "وثبوته",
+      "left_context": "في الاتيان باداة على ما يدل على علوه",
+      "right_context": "واستقامته فان طريق الحق تاخذ علوا صاعدة الى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "فان طريق الحق تاخذ علوا صاعدة الى العلي الكبير وطريق الضلال تاخذ سفلا هاوية في اسفل سافلين",
+      "alternative_tokens": "",
+      "left_context": "باداة على ما يدل على علوه وثباته واستقامته",
+      "right_context": "وهذا بخلاف الضلال والريب فانه يوتى فيه باداة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "فيه",
+      "alternative_tokens": "",
+      "left_context": "يوتى فيه باداة في الدالة على انغماس صاحبه",
+      "right_context": "وانقماعه وتدسسه فيه كقوله تعالى فهم في ريبهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وقوله",
+      "left_context": "في الظلمات وقوله فذرهم في غمرتهم حتى حين",
+      "right_context": "وانهم لفي شك منه مريب وتامل قوله تعالى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "فان طريق الحق تاخذ علوا صاعدة بصاحبها الى العلي الكبير وطريق الضلال تاخذ سفلا هاوية بسالكها في اسفل سافلين",
+      "left_context": "او اياكم لعلى هدى او في ضلال مبين",
+      "right_context": "وفي قوله تعالى قال هذا صراط علي مستقيم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p025-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "قول الكسايي انه على التهديد والوعيد نظير قوله",
+      "right_context": "ان ربك لبالمرصاد كما يقال طريقك علي وممرك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "علي",
+      "alternative_tokens": "على",
+      "left_context": "قوله تعالى ان ربك لبالمرصاد كما يقال طريقك",
+      "right_context": "وممرك علي لمن تريد اعلامه بانه غير فايت",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "علي",
+      "alternative_tokens": "على",
+      "left_context": "ان ربك لبالمرصاد كما يقال طريقك علي وممرك",
+      "right_context": "لمن تريد اعلامه بانه غير فايت لك ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "قال تعالى",
+      "alternative_tokens": "قاله",
+      "left_context": "والسياق يابى هذا ولا يناسبه لمن تامله فانه",
+      "right_context": "مجيبا لابليس لعنه الله فبعزتك لاغوينهم اجمعين الا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "لعنه الله فبعزتك",
+      "alternative_tokens": "الذي قال",
+      "left_context": "يناسبه لمن تامله فانه قال تعالى مجيبا لابليس",
+      "right_context": "لاغوينهم اجمعين الا عبادك منهم فانه لا سبيل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "المخلصين",
+      "left_context": "لعنه الله فبعزتك لاغوينهم اجمعين الا عبادك منهم",
+      "right_context": "فانه لا سبيل لي الى اغوايهم ولا طريق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "عز وجل",
+      "left_context": "الى اغوايهم ولا طريق لي عليهم فقرر الله",
+      "right_context": "ذلك اتم التقرير واخبر ان الاخلاص صراط عليه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "اهل",
+      "alternative_tokens": "",
+      "left_context": "الصراط لانه صراط علي ولا سبيل لابليس الى",
+      "right_context": "هذا الصراط فانه محروس محفوظ بالله فلا يصل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "ولا الحوم حول ساحته",
+      "left_context": "علي ولا سبيل لابليس الى اهل هذا الصراط",
+      "right_context": "فانه محروس محفوظ بالله فلا يصل عدو الله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "وسبيله التي هو عليها ليست مستقيمة على الله",
+      "right_context": "فلا يستقيم هذا القول البتة واما قول من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p026-draft"
+      ],
+      "corpus_tokens": "قول",
+      "alternative_tokens": "",
+      "left_context": "الله تعالى فلا يستقيم هذا القول البتة واما",
+      "right_context": "من فسره بالوجوب اي علي بيان استقامته والدلالة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "حذف",
+      "alternative_tokens": "",
+      "left_context": "الحذف المذكور ليكون مدلولا عليه اذا حذف بخلاف",
+      "right_context": "عامل الظرف اذا وقع صفة فانه حذف مالوف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "علي",
+      "alternative_tokens": "على",
+      "left_context": "انه لا يذكر البتة فاذا قلت له درهم",
+      "right_context": "كان الحذف معروفا مالوفا فلو اردت علي نقده",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "ابن",
+      "alternative_tokens": "احمد بن",
+      "left_context": "واجل المعنيين واكبرهما وسمعت شيخ الاسلام تقي الدين",
+      "right_context": "تيمية رضي الله عنه يقول وهما نظير قوله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "تبارك وتعالى",
+      "alternative_tokens": "تعالى",
+      "left_context": "تيمية رضي الله عنه يقول وهما نظير قوله",
+      "right_context": "ان علينا قال فهذه ثلاثة مواضع في القران",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "للهدى وان لنا للاخرة والاولى",
+      "left_context": "يقول وهما نظير قوله تبارك وتعالى ان علينا",
+      "right_context": "قال فهذه ثلاثة مواضع في القران في هذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "يذكروا",
+      "alternative_tokens": "يذكر",
+      "left_context": "القران في هذا المعنى قلت واكثر المفسرين لم",
+      "right_context": "في سورة الا معنى الوجوب اي علينا بيان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "والليل اذا يغشى",
+      "left_context": "المعنى قلت واكثر المفسرين لم يذكروا في سورة",
+      "right_context": "الا معنى الوجوب اي علينا بيان الهدى من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p027-draft"
+      ],
+      "corpus_tokens": "واختيار",
+      "alternative_tokens": "واختار",
+      "left_context": "وذكر الواحدي في بسيطه المعنيين في سورة النحل",
+      "right_context": "شيخنا قول مجاهد والحسن في السور الثلاث فصل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "مستقيم",
+      "left_context": "يستوي هو ومن يامر بالعدل وهو على صراط",
+      "right_context": "فهذا مثل ضربه الله تعالى للاصنام التي لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "بالعدل وهو على صراط فهذا مثل ضربه الله",
+      "right_context": "للاصنام التي لا تسمع ولا تنطق ولا تعقل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "العبادة",
+      "alternative_tokens": "العادة",
+      "left_context": "يحمله عابده ويضعه ويقيمه ويخدمه فكيف يسوونه في",
+      "right_context": "بالله الذي يامر بالعدل والتوحيد وهو قادر متكلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "غني",
+      "alternative_tokens": "غنى",
+      "left_context": "بالله الذي يامر بالعدل والتوحيد وهو قادر متكلم",
+      "right_context": "وهو على صراط مستقيم في قوله وفعله فقوله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "الاقوال",
+      "alternative_tokens": "الاقول",
+      "left_context": "وهدى وفعله حكمة وعدل ورحمة ومصلحة هذا اصح",
+      "right_context": "في الاية وهو الذي لم يذكر كثير من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p028-draft"
+      ],
+      "corpus_tokens": "رحمه الله",
+      "alternative_tokens": "",
+      "left_context": "على الاقوال ثم حكاها بعده كما فعل البغوي",
+      "right_context": "فانه جزم به وجعله تفسير الاية ثم قال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "المستقيم",
+      "alternative_tokens": "",
+      "left_context": "على صراط مستقيم قلت ودلالته لنا على الصراط",
+      "right_context": "هي من موجب كونه سبحانه وتعالى على الصراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "وتعالى",
+      "alternative_tokens": "",
+      "left_context": "على الصراط المستقيم هي من موجب كونه سبحانه",
+      "right_context": "على الصراط المستقيم فان دلالته بفعله وقوله وهو",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم بما",
+      "alternative_tokens": "",
+      "left_context": "على الصراط المستقيم قال وقيل هو رسول الله",
+      "right_context": "يامر بالعدل وهو على صراط مستقيم قلت وهذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "قول",
+      "alternative_tokens": "حق",
+      "left_context": "يامر بالعدل وهو على صراط مستقيم قلت وهذا",
+      "right_context": "لا يناقض القول الاول فالله على الصراط المستقيم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "ولامام",
+      "alternative_tokens": "والامام",
+      "left_context": "هو ابكم لا يقدر على هدى ولا خير",
+      "right_context": "الابرار وهو رسول الله صلى الله عليه وسلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p029-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "هدى ولا خير ولامام الابرار وهو رسول الله",
+      "right_context": "الذي يامر بالعدل وهو على صراط مستقيم وعلى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "الكافر وهاديه",
+      "alternative_tokens": "الكفار وهاديهم",
+      "left_context": "صراط مستقيم ورسوله واتباع رسوله وضد ذلك معبود",
+      "right_context": "والكافر التابع والمتبوع والمعبود ويكون بعض السلف ذكر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "ويكون",
+      "alternative_tokens": "فيكون",
+      "left_context": "ذلك معبود الكافر وهاديه والكافر التابع والمتبوع والمعبود",
+      "right_context": "بعض السلف ذكر اعلى الانواع وبعضهم ذكر الهادي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "عليه السلام",
+      "alternative_tokens": "",
+      "left_context": "ولذلك نظاير كثيرة في القران واما اية هود",
+      "right_context": "فصريحة لا تحتمل الا معنى واحدا وهو ان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "وتعالى",
+      "alternative_tokens": "",
+      "left_context": "تحتمل الا معنى واحدا وهو ان الله سبحانه",
+      "right_context": "على صراط مستقيم وهو سبحانه احق من كان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "كلمت",
+      "alternative_tokens": "كلمة",
+      "left_context": "اقواله كلها صدق ورشد وهدى وعدل وحكمة وتمت",
+      "right_context": "ربك صدقا وعدلا وافعاله كلها مصالح وحكم ورحمة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "واقواله",
+      "alternative_tokens": "",
+      "left_context": "اقواله وانما يدخل في افعال من خرج عنه",
+      "right_context": "وفي دعاء النبي صلى الله عليه وسلم لبيك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "دعاء النبي صلى الله",
+      "alternative_tokens": "اقواله وفي دعايه",
+      "left_context": "يدخل في افعال من خرج عنه واقواله وفي",
+      "right_context": "عليه وسلم لبيك وسعديك والخير كله بيديك والشر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p030-draft"
+      ],
+      "corpus_tokens": "وسلم",
+      "alternative_tokens": "الصلاة والسلام",
+      "left_context": "عنه واقواله وفي دعاء النبي صلى الله عليه",
+      "right_context": "لبيك وسعديك والخير كله بيديك والشر ليس اليك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p031-draft"
+      ],
+      "corpus_tokens": "وطابق",
+      "alternative_tokens": "فطابق",
+      "left_context": "في اسمايه او اوصافه او افعاله او اقواله",
+      "right_context": "بين هذا المعنى وبين قوله ان ربي على",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p031-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "ان",
+      "left_context": "مشييته فان ناصية كل دابة بيده لا يمكنها",
+      "right_context": "تتحرك الا باذنه فهو المتصرف فيها ومع هذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "ما له",
+      "alternative_tokens": "ماله",
+      "left_context": "ولو سلطكم علي فله من الحكمة في ذلك",
+      "right_context": "الحمد عليه لانه تسليط من هو على صراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "ولا القدرية",
+      "alternative_tokens": "والقدرية",
+      "left_context": "فهكذا تكون المعرفة بالله لا معرفة القدرية المجوسية",
+      "right_context": "الجبرية نفاة الحكم والمصالح والتعليل والله الموفق سبحانه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "وتعالى",
+      "alternative_tokens": "",
+      "left_context": "الجبرية نفاة الحكم والمصالح والتعليل والله الموفق سبحانه",
+      "right_context": "فصل ولما كان طالب الصراط المستقيم طالب امر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "مريد",
+      "alternative_tokens": "مريدا",
+      "left_context": "الصراط المستقيم طالب امر اكثر الناس ناكبون عنه",
+      "right_context": "لسلوك طريق مرافقه فيها في غاية العزة والنفوس",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "العزة",
+      "alternative_tokens": "القلة والعزة",
+      "left_context": "عنه مريد لسلوك طريق مرافقه فيها في غاية",
+      "right_context": "والنفوس مجبولة على وحشة التفرد وعلى الانس بالرفيق",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "انعم",
+      "alternative_tokens": "انهم",
+      "left_context": "فاضاف الصراط الى الرفيق السالكين له وهم الذين",
+      "right_context": "الله عليهم ليزول عن الطالب للهداية وسلوك الصراط",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p032-draft"
+      ],
+      "corpus_tokens": "وبني",
+      "alternative_tokens": "وبنى",
+      "left_context": "للهداية وسلوك الصراط وحشة تفرده عن اهل زمانه",
+      "right_context": "جنسه وليعلم ان رفيقه في هذا الصراط هم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p033-draft"
+      ],
+      "corpus_tokens": "او عاقوك",
+      "alternative_tokens": "وعاقوك",
+      "left_context": "فلا تلتفت اليهم فانك متى التفت اليهم اخذوك",
+      "right_context": "وقد ضربت لذلك مثلان فليكونا منك على بال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p033-draft"
+      ],
+      "corpus_tokens": "مثلان",
+      "alternative_tokens": "مثلين",
+      "left_context": "التفت اليهم اخذوك او عاقوك وقد ضربت لذلك",
+      "right_context": "فليكونا منك على بال المثال الاول رجل خرج",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p033-draft"
+      ],
+      "corpus_tokens": "المثال",
+      "alternative_tokens": "المثل",
+      "left_context": "وقد ضربت لذلك مثلان فليكونا منك على بال",
+      "right_context": "الاول رجل خرج من بيته الى الصلاة لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p033-draft"
+      ],
+      "corpus_tokens": "فاتت",
+      "alternative_tokens": "فاتته",
+      "left_context": "منه فقهره ومنعه عن الوصول الى المسجد حتى",
+      "right_context": "الصلاة وربما كان اقوى من شيطان الانس ولكن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p033-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الرجل",
+      "left_context": "الوصول الى المسجد حتى فاتت الصلاة وربما كان",
+      "right_context": "اقوى من شيطان الانس ولكن اشتغل بمهاوشته عن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "او الوقت",
+      "alternative_tokens": "اوالوقت",
+      "left_context": "عنه واشتغل بما هو بصدده وخاف فوت الصلاة",
+      "right_context": "لم يبلغ عدوه منه شييا المثل الثاني الظبي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "شييا",
+      "alternative_tokens": "ما شاء",
+      "left_context": "فوت الصلاة او الوقت لم يبلغ عدوه منه",
+      "right_context": "المثل الثاني الظبي اشد سعيا من الكلب ولكنه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "فضعف",
+      "alternative_tokens": "فيضعف",
+      "left_context": "من الكلب ولكنه اذا احس به التفت اليه",
+      "right_context": "سعيه فيدركه الكلب فياخذه والقصد ان في ذكر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "وهذا احد",
+      "alternative_tokens": "وهذه احدى",
+      "left_context": "وحشة التفرد ويحث على السير والتشمير للحاق بهم",
+      "right_context": "الفوايد في دعاء القنوت اللهم اهدني فيمن هديت",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "عليه",
+      "alternative_tokens": "عليهم",
+      "left_context": "السايل للكريم تصدق علي في جملة من تصدقت",
+      "right_context": "وعلمني من جملة من علمته واحسن الي في",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p034-draft"
+      ],
+      "corpus_tokens": "من",
+      "alternative_tokens": "في",
+      "left_context": "تصدق علي في جملة من تصدقت عليه وعلمني",
+      "right_context": "جملة من علمته واحسن الي في جملة من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "جملة من شملته باحسانك فصل ولما كان سوال",
+      "right_context": "الهداية الى الصراط المستقيم اجل المطالب ونيله اشرف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "وهما",
+      "alternative_tokens": "ويويدهما",
+      "left_context": "بعبوديته وهاتان الوسيلتان لا يكاد يرد معهما الدعاء",
+      "right_context": "الوسيلتان المذكورتان في حديثي الاسم الاعظم اللذين رواهما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "رضي الله عنهم",
+      "alternative_tokens": "",
+      "left_context": "رواهما ابن حبان في صحيحه والامام احمد والترمذي",
+      "right_context": "احدهما حديث عبد الله بن بريدة عن ابيه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "عبد الله",
+      "alternative_tokens": "عبدالله",
+      "left_context": "والامام احمد والترمذي رضي الله عنهم احدهما حديث",
+      "right_context": "بن بريدة عن ابيه رضي الله عنهما قال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "رضي الله عنهما",
+      "alternative_tokens": "",
+      "left_context": "احدهما حديث عبد الله بن بريدة عن ابيه",
+      "right_context": "قال سمع النبي صلى الله عليه وسلم رجلا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "عن ابيه رضي الله عنهما قال سمع النبي",
+      "right_context": "رجلا يدعو وهو يقول اللهم اني اسالك باني",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "وهو يقول",
+      "alternative_tokens": "ويقول",
+      "left_context": "سمع النبي صلى الله عليه وسلم رجلا يدعو",
+      "right_context": "اللهم اني اسالك باني اشهد انك انت الله",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "انت",
+      "alternative_tokens": "",
+      "left_context": "وهو يقول اللهم اني اسالك باني اشهد انك",
+      "right_context": "الله الذي لا اله الا انت الاحد الصمد",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "دعي",
+      "alternative_tokens": "دعى",
+      "left_context": "بيده لقد سال الله باسمه الاعظم الذي اذا",
+      "right_context": "به اجاب واذا سيل به اعطى قال الترمذي",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p035-draft"
+      ],
+      "corpus_tokens": "بالوحدانية",
+      "alternative_tokens": "بالواحدانية",
+      "left_context": "فهذا توسل الى الله بتوحيده وشهادة الداعي له",
+      "right_context": "وثبوت صفاته المدلول عليها باسم الصمد وهو كما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "رضي الله عنهما",
+      "alternative_tokens": "",
+      "left_context": "عليها باسم الصمد وهو كما قال ابن عباس",
+      "right_context": "العالم الذي كمل علمه القادر الذي كملت قدرته",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "علي",
+      "alternative_tokens": "",
+      "left_context": "كمل علمه القادر الذي كملت قدرته وفي رواية",
+      "right_context": "عنه هو السيد الذي قد كمل فيه جميع",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "سودده",
+      "alternative_tokens": "سوده",
+      "left_context": "السودد وقال ابو وايل هو السيد الذي انتهى",
+      "right_context": "وقال سعيد بن جبير هو الكامل في جميع",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "واعماله",
+      "alternative_tokens": "وافعاله واقواله",
+      "left_context": "سعيد بن جبير هو الكامل في جميع صفاته",
+      "right_context": "وبنفي التمثيل والتشبيه عنه بقوله ولم يكن له",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "التمثيل والتشبيه",
+      "alternative_tokens": "التشبيه والتمثيل",
+      "left_context": "جبير هو الكامل في جميع صفاته واعماله وبنفي",
+      "right_context": "عنه بقوله ولم يكن له كفوا احد وهذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "وهذا",
+      "alternative_tokens": "وهذه",
+      "left_context": "والتشبيه عنه بقوله ولم يكن له كفوا احد",
+      "right_context": "ترجمة عقيدة اهل السنة فالتوسل بالايمان بذلك والشهادة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "فالتوسل",
+      "alternative_tokens": "والتوسل",
+      "left_context": "له كفوا احد وهذا ترجمة عقيدة اهل السنة",
+      "right_context": "بالايمان بذلك والشهادة به هو الاسم الاعظم والثاني",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "رضي الله عنه",
+      "alternative_tokens": "",
+      "left_context": "والشهادة به هو الاسم الاعظم والثاني حديث انس",
+      "right_context": "ان رسول الله صلى الله عليه وسلم سمع",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "حديث انس رضي الله عنه ان رسول الله",
+      "right_context": "سمع رجلا يدعو اللهم اني اسالك بان لك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "السماوات",
+      "alternative_tokens": "السموات",
+      "left_context": "لك الحمد لا اله الا انت المنان بديع",
+      "right_context": "والارض ذا الجلال والاكرام يا حي يا قيوم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p036-draft"
+      ],
+      "corpus_tokens": "يا حي",
+      "alternative_tokens": "ياحي",
+      "left_context": "انت المنان بديع السماوات والارض ذا الجلال والاكرام",
+      "right_context": "يا قيوم فقال لقد سال الله باسمه الاعظم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وهما",
+      "left_context": "توسل اليه باسمايه وصفاته وقد جمعت الفاتحة الوسيلتين",
+      "right_context": "التوسل بالحمد لله والثناء عليه وتمجيده والتوسل اليه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "لله",
+      "alternative_tokens": "",
+      "left_context": "باسمايه وصفاته وقد جمعت الفاتحة الوسيلتين التوسل بالحمد",
+      "right_context": "والثناء عليه وتمجيده والتوسل اليه بعبوديته وتوحيده ثم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "الرغبات",
+      "alternative_tokens": "الرغايب",
+      "left_context": "بعبوديته وتوحيده ثم جاء سوال اهم المطالب وانجح",
+      "right_context": "وهو الهداية بعد الوسيلتين فالداعي به حقيق بالاجابة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "صلى الله عليه وسلم",
+      "alternative_tokens": "",
+      "left_context": "فالداعي به حقيق بالاجابة ونظير هذا دعاء النبي",
+      "right_context": "الذي كان يدعو به اذا قام يصلي من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "رضي الله عنهما",
+      "alternative_tokens": "",
+      "left_context": "رواه البخاري في صحيحه من حديث ابن عباس",
+      "right_context": "اللهم لك الحمد انت نور السماوات والارض ومن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "السماوات",
+      "alternative_tokens": "السموات",
+      "left_context": "رضي الله عنهما اللهم لك الحمد انت نور",
+      "right_context": "والارض ومن فيهن ولك الحمد انت قيم السماوات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p037-draft"
+      ],
+      "corpus_tokens": "قيم السماوات",
+      "alternative_tokens": "قيوم السموات",
+      "left_context": "نور السماوات والارض ومن فيهن ولك الحمد انت",
+      "right_context": "والارض ومن فيهن ولك الحمد انت الحق ووعدك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "وهذه",
+      "alternative_tokens": "فهذه",
+      "left_context": "ايضا نوعان توحيد في الربوبية وتوحيد في الالهية",
+      "right_context": "ثلاثة انواع فاما توحيد العلم فمداره على اثبات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "على",
+      "alternative_tokens": "الى",
+      "left_context": "الالهية وهذه ثلاثة انواع فاما توحيد العلم فمداره",
+      "right_context": "اثبات صفات الكمال وعلى نفي التشبيه والمثال والتنزيه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "فاما",
+      "alternative_tokens": "اما",
+      "left_context": "والنقايص وقد دل على هذا شييان مجمل ومفصل",
+      "right_context": "المجمل فاثبات الحمد لله سبحانه واما المفصل فذكر",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "لله",
+      "alternative_tokens": "له",
+      "left_context": "هذا شييان مجمل ومفصل فاما المجمل فاثبات الحمد",
+      "right_context": "سبحانه واما المفصل فذكر صفة الالهية والربوبية والرحمة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "الممدوح",
+      "alternative_tokens": "المحمود",
+      "left_context": "والخضوع له فلا يكون حامدا من جحد صفات",
+      "right_context": "ولا من اعرض عن محبته والخضوع له وكلما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "الممدوح",
+      "alternative_tokens": "المحمود",
+      "left_context": "عن محبته والخضوع له وكلما كانت صفات كمال",
+      "right_context": "اكثر كان حمده اكمل وكلما نقص من صفات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "كله",
+      "alternative_tokens": "",
+      "left_context": "كماله نقص من حمده بحسبها ولهذا كان الحمد",
+      "right_context": "لله حمدا لا يحصيه احد سواه لكمال صفاته",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "احد",
+      "alternative_tokens": "",
+      "left_context": "ولهذا كان الحمد كله لله حمدا لا يحصيه",
+      "right_context": "سواه لكمال صفاته وكثرتها ولهذا لا يحصي احد",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "ولهذا",
+      "alternative_tokens": "ولاجل هذا",
+      "left_context": "حمدا لا يحصيه احد سواه لكمال صفاته وكثرتها",
+      "right_context": "لا يحصي احد من خلقه ثناء عليه لما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "يحصي",
+      "alternative_tokens": "يحصى",
+      "left_context": "يحصيه احد سواه لكمال صفاته وكثرتها ولهذا لا",
+      "right_context": "احد من خلقه ثناء عليه لما له من",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "سبحانه وتعالى",
+      "alternative_tokens": "تعالى",
+      "left_context": "الجلال التي لا يحصيها سواه ولهذا ذم الله",
+      "right_context": "الهة الكفار وعابها بسلب اوصاف الكمال عنها فعابها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "تكلم",
+      "alternative_tokens": "تهدي",
+      "left_context": "بانها لا تسمع ولا تبصر ولا تتكلم ولا",
+      "right_context": "ولا تهدي وهذه صفات اله الجهمية التي عاب",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft"
+      ],
+      "corpus_tokens": "تهدي",
+      "alternative_tokens": "تنفع ولا تضر",
+      "left_context": "تسمع ولا تبصر ولا تتكلم ولا تكلم ولا",
+      "right_context": "وهذه صفات اله الجهمية التي عاب بها الاصنام",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p038-draft",
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "صفات",
+      "alternative_tokens": "صفة",
+      "left_context": "تبصر ولا تتكلم ولا تكلم ولا تهدي وهذه",
+      "right_context": "اله الجهمية التي عاب بها الاصنام نسبوها اليه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "الجهمية التي عاب بها الاصنام نسبوها اليه تعالى",
+      "right_context": "عما يقول الظالمون والجاحدون علوا كبيرا فقال تعالى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "على نبينا وعليه الصلاة والسلام",
+      "alternative_tokens": "عليه السلام",
+      "left_context": "علوا كبيرا فقال تعالى حكاية عن خليله ابراهيم",
+      "right_context": "في محاجته لابيه ياابت لم تعبد ما لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "ياابت",
+      "alternative_tokens": "يا ابت",
+      "left_context": "على نبينا وعليه الصلاة والسلام في محاجته لابيه",
+      "right_context": "لم تعبد ما لا يسمع ولا يبصر ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "ما لا",
+      "alternative_tokens": "مالا",
+      "left_context": "الصلاة والسلام في محاجته لابيه ياابت لم تعبد",
+      "right_context": "يسمع ولا يبصر ولا يغني عنك شييا فلو",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "المثابة",
+      "alternative_tokens": "الصفة والمثابة",
+      "left_context": "يغني عنك شييا فلو كان اله ابراهيم بهذه",
+      "right_context": "لقال له ازر وانت الهك بهذه المثابة فكيف",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "اتخذوه وكانوا ظالمين",
+      "left_context": "الم يروا انه لا يكلمهم ولا يهديهم سبيلا",
+      "right_context": "فلو كان اله الخلق سبحانه وتعالى كذلك لم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "وتعالى",
+      "alternative_tokens": "",
+      "left_context": "ولا يهديهم سبيلا فلو كان اله الخلق سبحانه",
+      "right_context": "كذلك لم يكن في هذا الانكار عليهم ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "الانكار",
+      "alternative_tokens": "انكار",
+      "left_context": "الخلق سبحانه وتعالى كذلك لم يكن في هذا",
+      "right_context": "عليهم ولا الاستدلال على بطلان الهيته بذلك فان",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "ولا الاستدلال",
+      "alternative_tokens": "واستدلال",
+      "left_context": "وتعالى كذلك لم يكن في هذا الانكار عليهم",
+      "right_context": "على بطلان الهيته بذلك فان قيل فالله تعالى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "الهيته",
+      "alternative_tokens": "الالهية",
+      "left_context": "في هذا الانكار عليهم ولا الاستدلال على بطلان",
+      "right_context": "بذلك فان قيل فالله تعالى لا يكلم عباده",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "عباده قيل بلى قد كلمهم فمنهم من كلمه",
+      "right_context": "من وراء حجاب منه اليه بلا واسطة كموسى",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "عليه السلام",
+      "alternative_tokens": "",
+      "left_context": "من وراء حجاب منه اليه بلا واسطة كموسى",
+      "right_context": "ومنهم من كلمه على لسان رسوله الملكي وهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p039-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "بلا واسطة كموسى عليه السلام ومنهم من كلمه",
+      "right_context": "على لسان رسوله الملكي وهم الانبياء عليهم السلام",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "عليهم السلام",
+      "alternative_tokens": "",
+      "left_context": "من كلمه على لسان رسوله الملكي وهم الانبياء",
+      "right_context": "وكلم ساير العباد على السنة رسله فانزل عليهم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "الله",
+      "left_context": "لسان رسوله الملكي وهم الانبياء عليهم السلام وكلم",
+      "right_context": "ساير العباد على السنة رسله فانزل عليهم كلامه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "العباد",
+      "alternative_tokens": "الناس",
+      "left_context": "رسوله الملكي وهم الانبياء عليهم السلام وكلم ساير",
+      "right_context": "على السنة رسله فانزل عليهم كلامه الذي بلغته",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "هاهنا",
+      "alternative_tokens": "ههنا",
+      "left_context": "الله الذي تكلم به وامرنا بتبليغه اليكم ومن",
+      "right_context": "قال السلف رضي الله عنهم من انكر كون",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "رضي الله عنهم",
+      "alternative_tokens": "",
+      "left_context": "به وامرنا بتبليغه اليكم ومن هاهنا قال السلف",
+      "right_context": "من انكر كون الله متكلما فقد انكر رسالة",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "تكلمه انتفى ارساله",
+      "alternative_tokens": "كلامه انتفت الرسالة",
+      "left_context": "كلامه الذي تكلم به الى عباده فاذا انتفى",
+      "right_context": "وقال تعالى في سورة طه عن السامري فاخرج",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "فنسي",
+      "alternative_tokens": "فنسى",
+      "left_context": "جسدا له خوار فقالوا هذا الهكم واله موسى",
+      "right_context": "افلا يرون الا يرجع اليهم قولا ولا يملك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "الا",
+      "alternative_tokens": "ان لا",
+      "left_context": "فقالوا هذا الهكم واله موسى فنسي افلا يرون",
+      "right_context": "يرجع اليهم قولا ولا يملك لهم ضرا ولا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "وضرب",
+      "alternative_tokens": "ضرب",
+      "left_context": "نفعا ورجع القول هو التكلم والتكليم وقال تعالى",
+      "right_context": "الله مثلا رجلين احدهما ابكم لا يقدر على",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "صراط مستقيم",
+      "left_context": "هل يستوي هو ومن يامر بالعدل وهو على",
+      "right_context": "فجعل نفي صفات الكمال موجبا لبطلان الالهية وهذا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "صفات الكمال",
+      "alternative_tokens": "صفة الكلام",
+      "left_context": "هو ومن يامر بالعدل وهو على فجعل نفي",
+      "right_context": "موجبا لبطلان الالهية وهذا امر معلوم بالفطر والعقول",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "السليمة",
+      "left_context": "موجبا لبطلان الالهية وهذا امر معلوم بالفطر والعقول",
+      "right_context": "والكتب السماوية ان فاقد صفات الكمال لا يكون",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "لا في الاولى ولا في الاخرة",
+      "left_context": "بل هو مذموم معيب ناقص ليس له الحمد",
+      "right_context": "وانما الحمد لمن له صفات الكمال ونعوت الجلال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "في الاولى والاخرة",
+      "left_context": "مذموم معيب ناقص ليس له الحمد وانما الحمد",
+      "right_context": "لمن له صفات الكمال ونعوت الجلال التي لاجلها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p040-draft",
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "وانكاره",
+      "left_context": "على خلقه وكلامه وتكليمه توحيدا لان نفي ذلك",
+      "right_context": "والكفر به انكار للصانع وجحد له وانما توحيده",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "الشبه",
+      "alternative_tokens": "التشبيه",
+      "left_context": "له وانما توحيده اثبات صفات كماله وتنزيهه عن",
+      "right_context": "والنقايص فجعل المعطلة جحد الصفات وتعطيل الصانع عنها",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "تعالى",
+      "alternative_tokens": "",
+      "left_context": "الصفات وتعطيل الصانع عنها توحيدا وجعلوا اثباتها لله",
+      "right_context": "تشبيها وتجسيما وتركيبا فسموا الباطل باسم الحق ترغيبا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "ترغيبا",
+      "alternative_tokens": "ترغييا",
+      "left_context": "تعالى تشبيها وتجسيما وتركيبا فسموا الباطل باسم الحق",
+      "right_context": "فيه وزخرفا ينفقونه به وسموا الحق باسم الباطل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "و",
+      "alternative_tokens": "",
+      "left_context": "اكثرهم مع ظاهر السكة ليس لهم نقد النقاد",
+      "right_context": "من يهد الله فهو فهو المهتدي ومن يضلل",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "فهو",
+      "alternative_tokens": "",
+      "left_context": "ليس لهم نقد النقاد و من يهد الله",
+      "right_context": "فهو المهتدي ومن يضلل فلن تجد له وليا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "والسلوب",
+      "alternative_tokens": "والسكوت",
+      "left_context": "له وليا مرشدا والمحمود لا يحمد على العدم",
+      "right_context": "البتة الا اذا كانت سلب عيوب ونقايص تتضمن",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "ولذلك حمد نفسه",
+      "alternative_tokens": "وكذلك حمده لنفسه",
+      "left_context": "المحض لا حمد فيه ولا مدح ولا كمال",
+      "right_context": "على عدم اتخاذ الولد المتضمن لكمال صمديته وغناه",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "وتعبد",
+      "alternative_tokens": "وتعبيد",
+      "left_context": "عدم اتخاذ الولد المتضمن لكمال صمديته وغناه وملكه",
+      "right_context": "كل شيء له فاتخاذ الولد ينافي ذلك كما",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p041-draft"
+      ],
+      "corpus_tokens": "السماوات",
+      "alternative_tokens": "السموات",
+      "left_context": "الله ولدا سبحانه هو الغني له ما في",
+      "right_context": "وما في الارض وحمد نفسه على عدم الشريك",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "سبحانه",
+      "left_context": "الموجود اكمل من المعدوم ولهذا لا يحمد نفسه",
+      "right_context": "بعدم الا اذا كان متضمنا ثبوتا كما حمد",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "ثبوتا",
+      "alternative_tokens": "لثبوت كمال",
+      "left_context": "لا يحمد نفسه بعدم الا اذا كان متضمنا",
+      "right_context": "كما حمد نفسه بكونه لا يموت لتضمنه كمال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "بانه",
+      "alternative_tokens": "بكونه",
+      "left_context": "بكونه لا يموت لتضمنه كمال حياته وحمد نفسه",
+      "right_context": "لا تاخذه سنة ولا نوم لتضمن ذلك كمال",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "insert",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "",
+      "alternative_tokens": "ولا اصغر من ذلك ولا اكبر",
+      "left_context": "علمه مثقال ذرة في الارض ولا في السماء",
+      "right_context": "لكمال علمه واحاطته وحمد نفسه بانه لا يظلم",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "والا",
+      "alternative_tokens": "",
+      "left_context": "يدرك كما انه يعلم ولا يحاط به علما",
+      "right_context": "فمجرد نفي الروية ليس بكمال لان العدم لا",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "حمد",
+      "alternative_tokens": "حمدالله",
+      "left_context": "الغفلة والنسيان لكمال علمه فكل سلب في القران",
+      "right_context": "به نفسه فلمضادته لثبوت ضده ولتضمنه كمال ثبوت",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "replace",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "فهذا",
+      "alternative_tokens": "فهذه",
+      "left_context": "نفي لحمده ونفي الحمد مستلزم لثبوت ضده فصل",
+      "right_context": "دلالة الحمد على توحيد الاسماء والصفات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    },
+    {
+      "operation": "delete",
+      "paragraph_ids": [
+        "madarij-v1-p042-draft"
+      ],
+      "corpus_tokens": "الحمد",
+      "alternative_tokens": "",
+      "left_context": "ونفي الحمد مستلزم لثبوت ضده فصل فهذا دلالة",
+      "right_context": "على توحيد الاسماء والصفات",
+      "review_status": "pending_editorial_review_not_an_instruction_to_replace_2019_text"
+    }
+  ],
+  "visual_comparison": false,
+  "complete_semantic_comparison": false
+}

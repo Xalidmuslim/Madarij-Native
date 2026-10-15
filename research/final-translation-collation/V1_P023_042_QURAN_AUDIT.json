@@ -1,0 +1,765 @@
+[
+  {
+    "id": "v1-madarij-v1-p023-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p023-draft",
+    "printed_pages": [
+      23
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَعَلَى اللَّهِ قَصْدُ السَّبِيلِ",
+    "arabic_offsets": [
+      283,
+      316
+    ],
+    "reference_as_printed_in_corpus": "الآية: 9",
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "16:9",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "(24) إِنَّ إِلَيْنَا إِيَابَهُمْ (25) ثُمَّ إِنَّ عَلَيْنَا",
+    "arabic_offsets": [
+      138,
+      197
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "88:25-26",
+    "editorial_review": "Fragment ends before حسابهم; existing Russian completion checked in Q1; printed source pending.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "إِلَيْنَا مَرْجِعُهُمْ",
+    "arabic_offsets": [
+      230,
+      252
+    ],
+    "reference_as_printed_in_corpus": "يونس: 70",
+    "resolved_reference": "10:70",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "10:70",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q3",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "ثُمَّ إِلَى رَبِّهِمْ مَرْجِعُهُمْ",
+    "arabic_offsets": [
+      267,
+      301
+    ],
+    "reference_as_printed_in_corpus": "الأنعام: 108",
+    "resolved_reference": "6:108",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "6:108",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q4",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "(25) ثُمَّ إِنَّ عَلَيْنَا",
+    "arabic_offsets": [
+      343,
+      369
+    ],
+    "reference_as_printed_in_corpus": "الغاشية: 26",
+    "resolved_reference": "88:26",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "88:26",
+    "editorial_review": "Fragment ends before حسابهم.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q5",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ",
+    "arabic_offsets": [
+      387,
+      423
+    ],
+    "reference_as_printed_in_corpus": "القيامة: 17",
+    "resolved_reference": "75:17",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "75:17",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q6",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَمَا مِنْ دَابَّةٍ فِي الْأَرْضِ إِلَّا عَلَى اللَّهِ رِزْقُهَا",
+    "arabic_offsets": [
+      441,
+      505
+    ],
+    "reference_as_printed_in_corpus": "هود: 6",
+    "resolved_reference": "11:6",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "11:6",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q7",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "أُولَئِكَ عَلَى هُدًى مِنْ رَبِّهِمْ",
+    "arabic_offsets": [
+      741,
+      777
+    ],
+    "reference_as_printed_in_corpus": "البقرة: 5",
+    "resolved_reference": "2:5",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "2:5",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p024-draft-q8",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p024-draft",
+    "printed_pages": [
+      24
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "فَتَوَكَّلْ عَلَى اللَّهِ إِنَّكَ عَلَى الْحَقِّ الْمُبِينِ",
+    "arabic_offsets": [
+      829,
+      888
+    ],
+    "reference_as_printed_in_corpus": "النمل: 79",
+    "resolved_reference": "27:79",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "27:79",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "فَهُمْ فِي رَيْبِهِمْ يَتَرَدَّدُونَ",
+    "arabic_offsets": [
+      489,
+      525
+    ],
+    "reference_as_printed_in_corpus": "التوبة: 45",
+    "resolved_reference": "9:45",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "9:45",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَالَّذِينَ كَذَّبُوا بِآيَاتِنَا صُمٌّ وَبُكْمٌ فِي الظُّلُمَاتِ",
+    "arabic_offsets": [
+      549,
+      614
+    ],
+    "reference_as_printed_in_corpus": "الأنعام: 39",
+    "resolved_reference": "6:39",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "6:39",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q3",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "فَذَرْهُمْ فِي غَمْرَتِهِمْ حَتَّى حِينٍ",
+    "arabic_offsets": [
+      639,
+      679
+    ],
+    "reference_as_printed_in_corpus": "المؤمنون: 54",
+    "resolved_reference": "23:54",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "23:54",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q4",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَإِنَّهُمْ لَفِي شَكٍّ مِنْهُ مُرِيبٍ",
+    "arabic_offsets": [
+      698,
+      736
+    ],
+    "reference_as_printed_in_corpus": "هود: 110",
+    "resolved_reference": "11:110",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "11:110",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q5",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَإِنَّا أَوْ إِيَّاكُمْ لَعَلَى هُدًى أَوْ فِي ضَلَالٍ مُبِينٍ",
+    "arabic_offsets": [
+      770,
+      833
+    ],
+    "reference_as_printed_in_corpus": "سبأ: 24",
+    "resolved_reference": "34:24",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "34:24",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p025-draft-q6",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p025-draft",
+    "printed_pages": [
+      25
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "قَالَ هَذَا صِرَاطٌ عَلَيَّ مُسْتَقِيمٌ",
+    "arabic_offsets": [
+      867,
+      906
+    ],
+    "reference_as_printed_in_corpus": "الحجر: 41",
+    "resolved_reference": "15:41",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "15:41",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p026-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p026-draft",
+    "printed_pages": [
+      26
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "فَبِعِزَّتِكَ لَأُغْوِيَنَّهُمْ أَجْمَعِينَ (82) إِلَّا عِبَادَكَ مِنْهُمُ",
+    "arabic_offsets": [
+      225,
+      299
+    ],
+    "reference_as_printed_in_corpus": "ص: 82 - 83",
+    "resolved_reference": "38:82-83",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "38:82-83",
+    "editorial_review": "Fragment ends before المخلصين; Russian preserves abbreviated corpus, editorial warning retained.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p026-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p026-draft",
+    "printed_pages": [
+      26
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
+    "arabic_offsets": [
+      795,
+      825
+    ],
+    "reference_as_printed_in_corpus": "الفجر: 14",
+    "resolved_reference": "89:14",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "89:14",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p027-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p027-draft",
+    "printed_pages": [
+      27
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "(11) إِنَّ عَلَيْنَا",
+    "arabic_offsets": [
+      550,
+      570
+    ],
+    "reference_as_printed_in_corpus": "الليل: 12",
+    "resolved_reference": "92:12",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "92:12",
+    "editorial_review": "Fragment ends before للهدى; existing Russian completion checked in Q1.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p028-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p028-draft",
+    "printed_pages": [
+      28
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "مَا مِنْ دَابَّةٍ إِلَّا هُوَ آخِذٌ بِنَاصِيَتِهَا إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ (56)",
+    "arabic_offsets": [
+      185,
+      279
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "11:56",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p028-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p028-draft",
+    "printed_pages": [
+      28
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَضَرَبَ اللَّهُ مَثَلًا رَجُلَيْنِ أَحَدُهُمَا أَبْكَمُ لَا يَقْدِرُ عَلَى شَيْءٍ وَهُوَ كَلٌّ عَلَى مَوْلَاهُ أَيْنَمَا يُوَجِّهْهُ لَا يَأْتِ بِخَيْرٍ هَلْ يَسْتَوِي هُوَ وَمَنْ يَأْمُرُ بِالْعَدْلِ وَهُوَ عَلَى صِرَاطٍ",
+    "arabic_offsets": [
+      299,
+      521
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "16:76",
+    "editorial_review": "Fragment ends before مستقيم; existing Russian completion checked in Q1.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p030-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p030-draft",
+    "printed_pages": [
+      30
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَتَمَّتْ كَلِمَتُ رَبِّكَ صِدْقًا وَعَدْلًا",
+    "arabic_offsets": [
+      545,
+      589
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "6:115",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p031-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p031-draft",
+    "printed_pages": [
+      31
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+    "arabic_offsets": [
+      284,
+      322
+    ],
+    "reference_as_printed_in_corpus": "هود: 56",
+    "resolved_reference": "11:56",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "11:56",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p031-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p031-draft",
+    "printed_pages": [
+      31
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "إِنِّي تَوَكَّلْتُ عَلَى اللَّهِ رَبِّي وَرَبِّكُمْ",
+    "arabic_offsets": [
+      367,
+      418
+    ],
+    "reference_as_printed_in_corpus": "هود: 56",
+    "resolved_reference": "11:56",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "11:56",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p032-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p032-draft",
+    "printed_pages": [
+      32
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "أَنْعَمَ اللَّهُ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا",
+    "arabic_offsets": [
+      604,
+      726
+    ],
+    "reference_as_printed_in_corpus": "النساء: 69",
+    "resolved_reference": "4:69",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "4:69",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p036-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p036-draft",
+    "printed_pages": [
+      36
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+    "arabic_offsets": [
+      346,
+      379
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "112:4",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p039-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p039-draft",
+    "printed_pages": [
+      39
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "يَاأَبَتِ لِمَ تَعْبُدُ مَا لَا يَسْمَعُ وَلَا يُبْصِرُ وَلَا يُغْنِي عَنْكَ شَيْئًا",
+    "arabic_offsets": [
+      203,
+      287
+    ],
+    "reference_as_printed_in_corpus": "مريم: 42",
+    "resolved_reference": "19:42",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "19:42",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p039-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p039-draft",
+    "printed_pages": [
+      39
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَاتَّخَذَ قَوْمُ مُوسَى مِنْ بَعْدِهِ مِنْ حُلِيِّهِمْ عِجْلًا جَسَدًا لَهُ خُوَارٌ أَلَمْ يَرَوْا أَنَّهُ لَا يُكَلِّمُهُمْ وَلَا يَهْدِيهِمْ سَبِيلًا",
+    "arabic_offsets": [
+      524,
+      676
+    ],
+    "reference_as_printed_in_corpus": "الأعراف: 148",
+    "resolved_reference": "7:148",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "7:148",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p040-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p040-draft",
+    "printed_pages": [
+      40
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "فَأَخْرَجَ لَهُمْ عِجْلًا جَسَدًا لَهُ خُوَارٌ فَقَالُوا هَذَا إِلَهُكُمْ وَإِلَهُ مُوسَى فَنَسِيَ (88) أَفَلَا يَرَوْنَ أَلَّا يَرْجِعُ إِلَيْهِمْ قَوْلًا وَلَا يَمْلِكُ لَهُمْ ضَرًّا وَلَا نَفْعًا",
+    "arabic_offsets": [
+      394,
+      592
+    ],
+    "reference_as_printed_in_corpus": "طه: 88 - 89",
+    "resolved_reference": "20:88-89",
+    "electronic_screen": "ordered_substring_after_vocalization_normalization",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "20:88-89",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p040-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p040-draft",
+    "printed_pages": [
+      40
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "وَضَرَبَ اللَّهُ مَثَلًا رَجُلَيْنِ أَحَدُهُمَا أَبْكَمُ لَا يَقْدِرُ عَلَى شَيْءٍ وَهُوَ كَلٌّ عَلَى مَوْلَاهُ أَيْنَمَا يُوَجِّهْهُ لَا يَأْتِ بِخَيْرٍ هَلْ يَسْتَوِي هُوَ وَمَنْ يَأْمُرُ بِالْعَدْلِ وَهُوَ عَلَى",
+    "arabic_offsets": [
+      658,
+      872
+    ],
+    "reference_as_printed_in_corpus": "النحل: 76",
+    "resolved_reference": "16:76",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "16:76",
+    "editorial_review": "Fragment ends before صراط مستقيم; existing Russian completion checked in Q1.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p041-draft-q1",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p041-draft",
+    "printed_pages": [
+      41
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "مَنْ يَهْدِ اللَّهُ فَهُوَ فَهُوَ الْمُهْتَدِي وَمَنْ يُضْلِلْ فَلَنْ تَجِدَ لَهُ وَلِيًّا مُرْشِدًا",
+    "arabic_offsets": [
+      386,
+      486
+    ],
+    "reference_as_printed_in_corpus": null,
+    "resolved_reference": null,
+    "electronic_screen": "reference_not_resolved",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "18:17",
+    "editorial_review": "Corpus has doubled فهو and المهتدي where Q1 reads فهو المهتد; check edition, extraction and qiraat.",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-madarij-v1-p041-draft-q2",
+    "volume": 1,
+    "paragraph_id": "madarij-v1-p041-draft",
+    "printed_pages": [
+      41
+    ],
+    "kind": "quran_candidate",
+    "arabic_quote": "قَالُوا اتَّخَذَ اللَّهُ وَلَدًا سُبْحَانَهُ هُوَ الْغَنِيُّ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+    "arabic_offsets": [
+      828,
+      935
+    ],
+    "reference_as_printed_in_corpus": "يونس: 68",
+    "resolved_reference": "10:68",
+    "electronic_screen": "requires_text_or_orthography_review",
+    "comparison_source": "Q1",
+    "russian_semantic_review": "pending",
+    "visual_original_comparison": false,
+    "expert_verified": false,
+    "curated_reference": "10:68",
+    "editorial_review": "Russian sense compared to embedded Arabic; reference located in Q1; no printed-edition certification",
+    "edition_2019_verified": false
+  },
+  {
+    "id": "v1-p025-p026-q-split",
+    "volume": 1,
+    "paragraph_ids": [
+      "madarij-v1-p025-draft",
+      "madarij-v1-p026-draft"
+    ],
+    "printed_pages": [
+      25,
+      26
+    ],
+    "kind": "quran_quote_crosses_page_and_unit_boundary",
+    "arabic_quote": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
+    "curated_reference": "89:14",
+    "editorial_review": "Opening إن occurs on p25, remainder on p26; paragraph-local brace search misses this occurrence. Existing Russian likewise crosses the boundary.",
+    "comparison_source": "Q1",
+    "edition_2019_verified": false,
+    "expert_verified": false
+  }
+]

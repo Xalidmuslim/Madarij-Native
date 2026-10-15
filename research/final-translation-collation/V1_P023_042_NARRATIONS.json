@@ -1,0 +1,184 @@
+[
+  {
+    "volume": 1,
+    "printed_pages": [
+      23
+    ],
+    "kind": "tafsir_authority",
+    "attribution_as_given": "Муджахид",
+    "arabic_anchor_or_excerpt": "الحقُّ يرجع إلى الله",
+    "quote_is_excerpt": true,
+    "status": "В корпусе сноска (2); независимая атрибуция не выполнена.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      23
+    ],
+    "kind": "poetry",
+    "attribution_as_given": "Туфайль аль-Ганави; второй поэт не назван",
+    "arabic_anchor_or_excerpt": "مضوا سلفًا ... فهنَّ المنايا",
+    "quote_is_excerpt": true,
+    "status": "Два поэтических примера, не хадисы; атрибуция стихов требует источника.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      27
+    ],
+    "kind": "quoted_scholar",
+    "attribution_as_given": "Ибн Таймийя",
+    "arabic_anchor_or_excerpt": "وسمعت شيخ الإسلام",
+    "quote_is_excerpt": true,
+    "status": "Слова шейха цитирует Ибн аль-Каййим; не смешивать с последующим قلت автора.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      29
+    ],
+    "kind": "tafsir_report",
+    "attribution_as_given": "Атыйя от Ибн Аббаса; Ата",
+    "arabic_anchor_or_excerpt": "يرويه عطيّة عن ابن عبّاس",
+    "quote_is_excerpt": true,
+    "status": "Разделение двух толкований сохранено; оценка иснадов не установлена.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      30
+    ],
+    "kind": "prophetic_invocation_as_attributed_by_author",
+    "attribution_as_given": "Не назван в этом месте",
+    "arabic_anchor_or_excerpt": "لبّيك وسعديك، والخيرُ كلُّه بيديك، والشّرُّ ليس إليك",
+    "quote_is_excerpt": true,
+    "status": "В сохранённом тексте ссылка на сноску (4), первоисточник не открыт.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      33
+    ],
+    "kind": "early_authority_saying",
+    "attribution_as_given": "Один из саляфов, имя не дано",
+    "arabic_anchor_or_excerpt": "عليك بطريق الحقِّ",
+    "quote_is_excerpt": true,
+    "status": "Не пророческий хадис; сноска (1) требует чтения.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      34
+    ],
+    "kind": "qunut_invocation",
+    "attribution_as_given": "Не назван в этом месте",
+    "arabic_anchor_or_excerpt": "اللهمَّ اهدني فيمن هديت",
+    "quote_is_excerpt": true,
+    "status": "Не приписывать по памяти конкретному передатчику или сборнику.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      35
+    ],
+    "kind": "prophetic_hadith_as_attributed_by_author",
+    "attribution_as_given": "Абдуллах ибн Бурайда от отца",
+    "arabic_anchor_or_excerpt": "لقد سأل الله باسمه الأعظم",
+    "quote_is_excerpt": true,
+    "status": "Вводная ссылка: Ибн Хиббан, Ахмад, ат-Тирмизи. Автор пишет: قال الترمذي حديث صحيح. Это цитируемая оценка, независимо не проверена.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      36
+    ],
+    "kind": "tafsir_authority",
+    "attribution_as_given": "Ибн Аббас; передача через Али",
+    "arabic_anchor_or_excerpt": "العالم الذي كمل علمُه",
+    "quote_is_excerpt": true,
+    "status": "Личность Али не уточняется по догадке; источник и иснад не проверены.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      36
+    ],
+    "kind": "early_authority_sayings",
+    "attribution_as_given": "Абу Ваиль; Саид ибн Джубайр",
+    "arabic_anchor_or_excerpt": "السّيِّد الذي انتهى سؤدده ... الكامل",
+    "quote_is_excerpt": true,
+    "status": "Отдельные слова ранних толкователей, не пророческие хадисы.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      36
+    ],
+    "kind": "prophetic_hadith_as_attributed_by_author",
+    "attribution_as_given": "Анас",
+    "arabic_anchor_or_excerpt": "اللهمّ إنِّي أسألك بأنّ لك الحمد",
+    "quote_is_excerpt": true,
+    "status": "Хадис о Величайшем имени; конкретный первоисточник/вариант не открыт.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      37
+    ],
+    "kind": "prophetic_hadith_as_attributed_by_author",
+    "attribution_as_given": "Ибн Аббас",
+    "arabic_anchor_or_excerpt": "اللهمّ لك الحمد، أنت نور السّماوات",
+    "quote_is_excerpt": true,
+    "status": "Автор указывает Сахих аль-Бухари. Полный текст и порядок фраз сверены только с корпусом, первоисточник не открыт.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  },
+  {
+    "volume": 1,
+    "printed_pages": [
+      40
+    ],
+    "kind": "collective_early_authority_attribution",
+    "attribution_as_given": "Саляфы, без имён",
+    "arabic_anchor_or_excerpt": "من أنكر كون الله متكلمًا",
+    "quote_is_excerpt": true,
+    "status": "Обобщённая атрибуция автора; нельзя назначить иснад или степень достоверности без источника.",
+    "primary_source_opened": false,
+    "hadith_grade": null,
+    "independent_authentication": false
+  }
+]
