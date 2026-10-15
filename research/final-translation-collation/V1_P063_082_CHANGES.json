@@ -1,0 +1,104 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p068-draft-editor-note-01",
+    "printed_pages": [
+      68
+    ],
+    "old": "Цитата Аль-Анфаль: 23 в исходном тексте обрывается после «وهم»; переведена имеющаяся часть.",
+    "new": "Примечание переводчика: цитата 8:23 в извлечённом арабском тексте обрывается после وهم. Русская цитата содержит также перевод отсутствующего окончания معرضون. Сверка с печатным изданием книги ещё требуется.",
+    "arabic_anchor": "",
+    "reason": "Соответствующий авторский абзац p068 содержит полное русское «отвращаясь», хотя арабское окончание отсутствует; примечание должно сообщать фактическое восполнение, не утверждая проверку источника.",
+    "before": "Цитата Аль-Анфаль: 23 в исходном тексте обрывается после «وهم»; переведена имеющаяся часть.",
+    "after": "Примечание переводчика: цитата 8:23 в извлечённом арабском тексте обрывается после وهم. Русская цитата содержит также перевод отсутствующего окончания معرضون. Сверка с печатным изданием книги ещё требуется.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p076-draft",
+    "printed_pages": [
+      76
+    ],
+    "old": "Кому же после тебя, о Шахр, можно доверять из чтецов!",
+    "new": "Кому же чтецы могут доверять после тебя, о Шахр!",
+    "arabic_anchor": "فمَن يأمنُ القُرَّاءُ بعدَك يا شَهْرُ",
+    "reason": "القراءُ стоит в именительном падеже как субъект يأمن; русский перевод менял направление доверия.",
+    "before": "Кому же после тебя, о Шахр, можно доверять из чтецов!",
+    "after": "Кому же чтецы могут доверять после тебя, о Шахр!",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p076-draft",
+    "printed_pages": [
+      76
+    ],
+    "old": "В силу привычного действия воображения",
+    "new": "В силу привычки",
+    "arabic_anchor": "بحكم",
+    "reason": "На стыке с p077 بحكم العادة означает «в силу привычки»; воображение здесь не названо самостоятельной причиной.",
+    "before": "В силу привычного действия воображения",
+    "after": "В силу привычки",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p081-draft",
+    "printed_pages": [
+      81
+    ],
+    "old": "его явленности было достаточно и нужда в этом была меньше.",
+    "new": "его явленность и сила позволяли обходиться без сновидений.",
+    "arabic_anchor": "ففي ظهور نورها وقوّته ما يُغني عن الرُّؤيا",
+    "reason": "يغني عن означает достаточность, позволяющую обходиться без, а не просто меньшую нужду.",
+    "before": "его явленности было достаточно и нужда в этом была меньше.",
+    "after": "его явленность и сила позволяли обходиться без сновидений.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p081-draft",
+    "printed_pages": [
+      81
+    ],
+    "old": "которые стали заметнее после эпохи сподвижников",
+    "new": "которые проявились после эпохи сподвижников",
+    "arabic_anchor": "الكرامات التي ظهرت بعد عصر الصّحابة",
+    "reason": "Сравнительное «заметнее» отсутствует; сохраняется авторская формулировка без исторической коррекции.",
+    "before": "которые стали заметнее после эпохи сподвижников",
+    "after": "которые проявились после эпохи сподвижников",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p081-draft",
+    "printed_pages": [
+      81
+    ],
+    "old": "У самих сподвижников они проявлялись меньше",
+    "new": "У самих сподвижников они не проявлялись",
+    "arabic_anchor": "ولم تظهر عليهم",
+    "reason": "Восстановлено категорическое отрицание автора; перевод не должен самостоятельно смягчать богословско-историческое утверждение.",
+    "before": "У самих сподвижников они проявлялись меньше",
+    "after": "У самих сподвижников они не проявлялись",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
