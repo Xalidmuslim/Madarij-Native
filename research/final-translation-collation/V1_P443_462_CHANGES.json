@@ -1,0 +1,70 @@
+[
+  {
+    "paragraph_id": "madarij-v1-p444-draft",
+    "printed_pages": [
+      444
+    ],
+    "old": "ходьба по ней и распоряжение ею",
+    "new": "ходьба по нему и распоряжение им",
+    "arabic_anchor": "بالخروج الذي هو مشيٌ فيها وتصرُّفٌ",
+    "reason": "Исправлено согласование с русским antecedent «участок».",
+    "before": "ходьба по ней и распоряжение ею",
+    "after": "ходьба по нему и распоряжение им",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p448-draft",
+    "printed_pages": [
+      448
+    ],
+    "old": "на того, чьё право кровной мести перешло к нему по наследству",
+    "new": "на того, чьим наследником он является",
+    "arabic_anchor": "أو بدن موروثه",
+    "reason": "موروثه обозначает наследодателя без ограничения видом перешедшего права; конкретизация кровной местью добавлена переводом.",
+    "before": "на того, чьё право кровной мести перешло к нему по наследству",
+    "after": "на того, чьим наследником он является",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p457-draft",
+    "printed_pages": [
+      457
+    ],
+    "old": "Первая: гибель от выпитого яда.\nВторая: уменьшение и ослабление силы, если он спасётся от гибели.\nТретья: возвращение прежней силы или даже большей.",
+    "new": "Первый: гибель от выпитого яда.\nВторой: уменьшение и ослабление силы, если он спасётся от гибели.\nТретий: возвращение прежней силы или даже большей.",
+    "arabic_anchor": "أحدُها: العطَب والهلاك بشرب السَّمِّ.",
+    "reason": "Согласован род перечисления с существительным «исходы».",
+    "before": "Первая: гибель от выпитого яда.\nВторая: уменьшение и ослабление силы, если он спасётся от гибели.\nТретья: возвращение прежней силы или даже большей.",
+    "after": "Первый: гибель от выпитого яда.\nВторой: уменьшение и ослабление силы, если он спасётся от гибели.\nТретий: возвращение прежней силы или даже большей.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  },
+  {
+    "paragraph_id": "madarij-v1-p460-draft",
+    "printed_pages": [
+      460
+    ],
+    "old": "Он не допустил бы испытания грехом для самых почитаемых Им из творений.",
+    "new": "Он не испытал бы грехом самых почитаемых Им из творений.",
+    "arabic_anchor": "لما ابتلى بالذَّنب أكرمَ الخلقِ عليه",
+    "reason": "ابتلى — прямое испытание, а не лишь допущение испытания; сохранена богословская формулировка передаваемой позиции.",
+    "before": "Он не допустил бы испытания грехом для самых почитаемых Им из творений.",
+    "after": "Он не испытал бы грехом самых почитаемых Им из творений.",
+    "evidence": "embedded_arabic_corpus",
+    "external_source_verified": false,
+    "visual_collation": false,
+    "independent_human_expert_review": false,
+    "primary_agent_recheck": "Arabic anchor/context and proposed Russian reread before integration"
+  }
+]
