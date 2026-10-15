@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-15",
+  "branch": "codex/madarij-v158-deep-audit-p121-140-20261015",
+  "printed_pages_electronically_compared": [
+    121,
+    140
+  ],
+  "pages_compared": 20,
+  "app_changed": [
+    "madarij-v2-p123-draft",
+    "madarij-v2-p129-draft",
+    "madarij-v2-p139-draft"
+  ],
+  "research_reconciled": [
+    122,
+    123,
+    127,
+    128,
+    129,
+    130,
+    138,
+    139,
+    140
+  ],
+  "corrections": [
+    {
+      "page": 123,
+      "reason": "Restore original formula بــه منــه إليــه, without gloss about punishment and mercy"
+    },
+    {
+      "page": 129,
+      "reason": "Restore source's قربه من الله ووصوله إليه; original does not say obtaining God's approval here"
+    },
+    {
+      "page": 139,
+      "reason": "Keep separate questions of hadith provenance outside uninterrupted source author text"
+    }
+  ],
+  "outstanding": [
+    {
+      "page": 139,
+      "issue": "Check the al-Tabarani report's attribution and hadith grading (marfu vs mawquf)"
+    },
+    {
+      "page": 124,
+      "issue": "Original Arabic electron transcription excerpt of Quran 39:33 may have been truncated; print scan pending"
+    }
+  ],
+  "checks": {
+    "chapters": 9,
+    "paragraphs": 676,
+    "arabic_asset_unchanged": true,
+    "drafts_match_app": true,
+    "others_unmodified": 673,
+    "publication_ready": false,
+    "print_scan_collated": false,
+    "hadith_grading_completed": false,
+    "APK_built": false,
+    "first_volume_touched": false,
+    "UI_touched": false
+  }
+}
