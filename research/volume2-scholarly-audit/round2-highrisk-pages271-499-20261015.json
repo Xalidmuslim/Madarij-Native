@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-15",
+  "pages": [
+    271,
+    499
+  ],
+  "scope": "Focused Arabic/Russian fidelity restoration: restored omitted authorial arguments in two high-risk pages",
+  "evidence": [
+    {
+      "page": 271,
+      "previous_app": 974,
+      "previous_draft": 975,
+      "same": false,
+      "new": 1676
+    },
+    {
+      "page": 499,
+      "previous_app": 985,
+      "previous_draft": 985,
+      "same": true,
+      "new": 1557
+    }
+  ],
+  "notes": [
+    "Page 271 original Arabic gives a much longer chain of causes and effects of culpable choice than existing Russian condensed prose",
+    "Page 499 Arabic distinguishes divine worship's axis, the three claims about love/obedience/honor and the conditional relation between tasting and sweetness of faith",
+    "First Arabic sentences begin mid-thought on preceding printed pages; original page boundaries preserved"
+  ],
+  "source": "Electronic Arabic transcription only",
+  "limitations": {
+    "original_2019_scan_verified": false,
+    "publication_ready": false,
+    "hadith_grade_verified": false
+  }
+}
