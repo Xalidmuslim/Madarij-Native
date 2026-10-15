@@ -1,0 +1,189 @@
+{
+  "range": [
+    23,
+    42
+  ],
+  "evidence": "embedded-Arabic-only; full bilingual agent collation; no visual2019scan/human expert certification",
+  "pages": [
+    {
+      "page": 23,
+      "read_all_ar_ru": true,
+      "note": "Довод от единоличного творения к поклонению и предполагаемое «совершил это» сохранены в авторском рассуждении, не вставлены в сам аят.",
+      "needs_expert": true,
+      "issues": [
+        "Quran23:84–89;27:59–60, author refers sequence59–64."
+      ]
+    },
+    {
+      "page": 24,
+      "read_all_ar_ru": true,
+      "note": "Оба возражения слабому толкованию сохранены;13:16 в AR усечён с начала, RU содержит восстановленный вопрос — записано как проблема происхождения цитаты.",
+      "needs_expert": true,
+      "issues": [
+        "Quran13:16 missing أم جعلوا at start;RU restores question without note;31:11;16:17;16:20;25:3."
+      ]
+    },
+    {
+      "page": 25,
+      "read_all_ar_ru": true,
+      "note": "Начало седьмого взгляда, определения тауфика/хизляна и причинность поступков сохранены. بيديه (две руки) сведено к единственной руке; предложено восстановить число и образ поводьев.",
+      "needs_expert": true,
+      "issues": [
+        "Quran11:88;divine two-hands attribute بيديه;numbering tawfiq7 vs initial6 requires source review."
+      ]
+    },
+    {
+      "page": 26,
+      "read_all_ar_ru": true,
+      "note": "Метафоры престола/неба веры, мольбы и полная нужда сохранены без самостоятельной аттестации приведённых молитв.",
+      "needs_expert": true,
+      "issues": [
+        "Heart-turning prayers;living/self-subsisting invocation combines phrasings: sources/grades not independently established. Quran22:65 allusion."
+      ]
+    },
+    {
+      "page": 27,
+      "read_all_ar_ru": true,
+      "note": "Формула «не от вас» заменена «не сами по себе», что смещает отрицание человеческого источника в отрицание самопроизвольности; предложена точная правка.",
+      "needs_expert": true,
+      "issues": [
+        "Quran49:7–8 and49:1 allusion."
+      ]
+    },
+    {
+      "page": 28,
+      "read_all_ar_ru": true,
+      "note": "Продолжение объяснения49:7 и притча о царском посланце сохранены; различено общее обеспечение и особое приведение избранных.",
+      "needs_expert": true,
+      "issues": [
+        "Quran49:7 author explanation;king/rescue parable."
+      ]
+    },
+    {
+      "page": 29,
+      "read_all_ar_ru": true,
+      "note": "Позиции джабритов и отрицателей кадра различены. Заглавное «Своей» ошибочно сближает царя притчи с Богом; предложено строчное.",
+      "needs_expert": true,
+      "issues": [
+        "Quran2:213 allusion;views of two qadar schools attributed."
+      ]
+    },
+    {
+      "page": 30,
+      "read_all_ar_ru": true,
+      "note": "Сохранены предопределение, причины, несотворённость Божественной мудрости и принятие истины обеих групп без их ошибок.",
+      "needs_expert": true,
+      "issues": [
+        "Quran6:159;23:53 allusions;wisdom as divine attribute specialist review."
+      ]
+    },
+    {
+      "page": 31,
+      "read_all_ar_ru": true,
+      "note": "Связь имён, атрибутов, действий и объектов передана в обоих направлениях; لازم/متعدي различены.",
+      "needs_expert": true,
+      "issues": [
+        "Names/attributes entailment theological terminology."
+      ]
+    },
+    {
+      "page": 32,
+      "read_all_ar_ru": true,
+      "note": "Все четыре коранических довода и невозможность упразднения следствий имён сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran6:91;39:67;45:21;23:115–116."
+      ]
+    },
+    {
+      "page": 33,
+      "read_all_ar_ru": true,
+      "note": "يوجب слышимое/видимое ослаблено до простой связи, тогда как автор доказывает необходимое следствие; предложено восстановление.",
+      "needs_expert": true,
+      "issues": [
+        "Names list and implied necessary objects;names authenticity not independently checked."
+      ]
+    },
+    {
+      "page": 34,
+      "read_all_ar_ru": true,
+      "note": "Прощение при полном могуществе/знании,5:118 и вывод о предопределении проступков сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Quran5:118;divine joy allusion:report sourcing pending."
+      ]
+    },
+    {
+      "page": 35,
+      "read_all_ar_ru": true,
+      "note": "Поклонение со всеми именами не заслоняет одно имя другим; названия приведены в авторском перечне без самостоятельной проверки статуса имени.",
+      "needs_expert": true,
+      "issues": [
+        "Quran7:180;names such as al-Muntaqim reported as author list, no own name canon added."
+      ]
+    },
+    {
+      "page": 36,
+      "read_all_ar_ru": true,
+      "note": "Четыре вида причин/исходов переданы. Внесены отсутствующие оговорки «Единственный в этом отношении» и «в достойном Его смысле»; предложено удалить редакторские вставки из авторского предложения.",
+      "needs_expert": true,
+      "issues": [
+        "Odd/beautiful/modest names and reports allusions;source/grade pending;anonymous verse."
+      ]
+    },
+    {
+      "page": 37,
+      "read_all_ar_ru": true,
+      "note": "Оба возможных и оба невозможных конечных исхода различены; возражение о несовместимых условиях сохранено; переход к9 взгляду точен.",
+      "needs_expert": true,
+      "issues": [
+        "Ninth heading increase faith vs initial wording;no correction from conjecture."
+      ]
+    },
+    {
+      "page": 38,
+      "read_all_ar_ru": true,
+      "note": "Отрицание роста веры от самого греха отделено от укрепления веры через наблюдение его последствий; аяты и обрыв на39 сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Salaf consensus assertion;Quran16:97;39:10;16:30 starts."
+      ]
+    },
+    {
+      "page": 39,
+      "read_all_ar_ru": true,
+      "note": "Три обители и опьянение страстями переданы.16:30 обрывается на ولنعم в AR, в RU завершён местоименной фразой; источник требует проверки.",
+      "needs_expert": true,
+      "issues": [
+        "Quran16:30 ends truncated ولنعم;11:3;20:124;82:13–14."
+      ]
+    },
+    {
+      "page": 40,
+      "read_all_ar_ru": true,
+      "note": "Разная степень страданий в трёх обителях и забывание боли сохранены; слова Ибн Аббаса переданы без нового иснада.",
+      "needs_expert": true,
+      "issues": [
+        "Quran52:47;27:71–72;Ibn Abbas gooddeed-light saying:authentication pending."
+      ]
+    },
+    {
+      "page": 41,
+      "read_all_ar_ru": true,
+      "note": "Различены ниспосланные блага/беды и совершаемые поступки; всеобщий авторский тезис о происхождении зла не смягчён.",
+      "needs_expert": true,
+      "issues": [
+        "Quran42:30;3:165;4:79;anonymous autobiographical interlocutor starts."
+      ]
+    },
+    {
+      "page": 42,
+      "read_all_ar_ru": true,
+      "note": "Признание правдивости предупреждения после последствий не представлено оправданием греха; образ судна/доски и переход к истории сохранены.",
+      "needs_expert": true,
+      "issues": [
+        "Anonymous report continuation;historical induction and lightof-faith metaphor."
+      ]
+    }
+  ]
+}
