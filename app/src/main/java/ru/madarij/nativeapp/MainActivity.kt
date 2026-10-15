@@ -65,13 +65,14 @@ private fun BookRouteSurface(
     content: @Composable () -> Unit
 ) {
     // The paper background remains fully opaque on the first frame.
-    // Only the text/controls receive a tiny 130ms opacity polish; no translated
-    // text, crossfading of old screens or additional full-screen paper layers.
+    // Fade content gently over an already opaque, preloaded paper background.
+    // Never translate the whole screen: it changes text baselines and looks like
+    // the reader is jumping. A single short alpha layer is removed at rest.
     var entryShown by remember { mutableStateOf(false) }
     LaunchedEffect(motionEnabled) { entryShown = true }
     val entranceAlpha by animateFloatAsState(
-        targetValue = if (!motionEnabled || entryShown) 1f else .88f,
-        animationSpec = tween(durationMillis = 130, easing = FastOutSlowInEasing),
+        targetValue = if (!motionEnabled || entryShown) 1f else .76f,
+        animationSpec = tween(durationMillis = if (motionEnabled) 180 else 0, easing = FastOutSlowInEasing),
         label = "paper-content-entrance"
     )
     Box(
@@ -232,7 +233,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
             ) {
                 composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate,knowledgeReminder,settings.reducedMotion,
                         knowledgeInkFinished, { knowledgeInkFinished = true }) } }
-                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents) { chapter -> openReader(chapter,null,"") } } }
+                composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents,reducedMotion = settings.reducedMotion) { chapter -> openReader(chapter,null,"") } } }
                 composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Поиск", subtitle = "По доступным материалам томов", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SearchScreen(vm,openReader) } }
                 composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Закладки", subtitle = "Сохранённые места", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
                 composable("notes") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Мои заметки", subtitle = "Личные записи", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { NotesScreen(vm) {id,p -> openReader(id,p,"")} } }
@@ -283,7 +284,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                     .navigationBarsPadding()
                     .padding(horizontal = 15.dp).padding(bottom = 4.dp)
             ) {
-MadarijBottomBar(tabs, selectedTab) { destination ->
+MadarijBottomBar(tabs, selectedTab, motionEnabled = !settings.reducedMotion) { destination ->
     when {
         destination == "home" -> {
             // On HOME a repeated tap is a strict no-op; there is no new route,

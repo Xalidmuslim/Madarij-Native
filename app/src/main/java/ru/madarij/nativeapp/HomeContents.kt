@@ -1,5 +1,7 @@
 package ru.madarij.nativeapp
 
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -29,6 +31,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.contentDescription
@@ -291,8 +294,9 @@ private fun groupDisplayTitle(group: TocGroup): String =
         group.items.firstOrNull()?.title ?: group.title
     else group.title
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
-internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, resume: (String) -> Unit) {
+internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, reducedMotion: Boolean = false, resume: (String) -> Unit) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle()
@@ -300,9 +304,14 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     val positions by vm.positions.collectAsStateWithLifecycle()
     val groups = rememberStructure()
     val scope = rememberCoroutineScope()
-    val listState = rememberLazyListState()
     var savedIndex by rememberSaveable { mutableIntStateOf(0) }
     var savedOffset by rememberSaveable { mutableIntStateOf(0) }
+    // Initialize the list at its saved position before the first layout.
+    // An effect-driven scrollToItem previously made the TOC visibly jump.
+    val listState = rememberLazyListState(
+        initialFirstVisibleItemIndex = savedIndex,
+        initialFirstVisibleItemScrollOffset = savedOffset
+    )
     var restored by remember { mutableStateOf(false) }
     var initialized by rememberSaveable { mutableStateOf(false) }
     var query by rememberSaveable { mutableStateOf("") }
@@ -335,16 +344,18 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             if (last != null) openedChapters = listOf(last!!.chapterId)
             initialized = true
         }
-        if (groups.isNotEmpty() && !restored) {
-            listState.scrollToItem(savedIndex, savedOffset)
-            restored = true
-        }
+        if (groups.isNotEmpty() && !restored) restored = true
     }
     LaunchedEffect(restored) {
         if (restored) snapshotFlow { listState.firstVisibleItemIndex to listState.firstVisibleItemScrollOffset }
             .collect { (index, offset) -> savedIndex = index; savedOffset = offset }
     }
-    fun resetList() { savedIndex = 0; savedOffset = 0; scope.launch { listState.scrollToItem(0) } }
+    fun resetList() {
+        savedIndex = 0
+        savedOffset = 0
+        // Schedule the new index in the same remeasure as tab/filter changes.
+        listState.requestScrollToItem(0)
+    }
 
     val fallback = if (groups.isNotEmpty()) groups else listOf(TocGroup("volume1", "Первый том", "editorial_navigation", chapters.map { TocChapter(it.id, it.title, "", emptyList()) }))
     val normalizedQuery = normalizedText(query).text
@@ -359,6 +370,12 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         })
     }.filter { it.items.isNotEmpty() }
 
+    if (!restored || groups.isEmpty()) {
+        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Text("Открываем оглавление…", color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        return
+    }
     LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
@@ -460,7 +477,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .90f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
                     shape = RoundedCornerShape(AppRadius.medium),
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth().animateItem(
+                        fadeInSpec = tween(if (reducedMotion) 0 else 140),
+                        placementSpec = tween(if (reducedMotion) 0 else 175),
+                        fadeOutSpec = tween(if (reducedMotion) 0 else 105)
+                    )
                 ) {
                     Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                         Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -487,7 +508,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     val light = true
                     val ink = if (light) BookColors.ink else BookColors.text
                     val shape = RoundedCornerShape(17.dp)
-                    Box(Modifier.fillMaxWidth().clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
+                    Box(Modifier.fillMaxWidth().animateItem(
+                        fadeInSpec = tween(if (reducedMotion) 0 else 140),
+                        placementSpec = tween(if (reducedMotion) 0 else 175),
+                        fadeOutSpec = tween(if (reducedMotion) 0 else 105)
+                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
                         PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -517,7 +542,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 if (chapter.chapterId in openedChapters || query.isNotBlank()) items(chapter.topics, key = { "topic:${chapter.chapterId}:${it.paragraphId}:${it.title}" }) { topic ->
                     AgedPaperCard(
                         onClick = { open(chapter.chapterId, topic.paragraphId) },
-                        modifier = Modifier.fillMaxWidth().padding(start = 20.dp),
+                        modifier = Modifier.fillMaxWidth().animateItem(
+                            fadeInSpec = tween(if (reducedMotion) 0 else 140),
+                            placementSpec = tween(if (reducedMotion) 0 else 175),
+                            fadeOutSpec = tween(if (reducedMotion) 0 else 105)
+                        ).padding(start = 20.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),
                         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
                         shape = RoundedCornerShape(20.dp)
