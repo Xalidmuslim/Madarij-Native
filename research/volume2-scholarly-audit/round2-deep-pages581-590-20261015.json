@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "working_branch": "codex/madarij-v158-v2-final-collation-20261014",
+  "printed_pages_electronically_compared": [
+    581,
+    590
+  ],
+  "changed_russian_pages": [
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    588,
+    589
+  ],
+  "targeted_russian_replacements": 11,
+  "arabic_transcription_restorations": [
+    586,
+    587
+  ],
+  "arabic_verses_verified_against_app_and_external_quran": [
+    "2:152",
+    "16:78",
+    "2:151–152"
+  ],
+  "findings": [
+    "Restored hadith spanning p581–582, instead of editorial summary",
+    "Added missing part of authorial treatment of fana with source page 583–584 transition",
+    "Removed source-absent narrator note at p585",
+    "Restored Arabic transcription of 2:152, 16:78 and 2:151–152 in research source; app Arabic already held complete quotations",
+    "Restored hadith illustration of shukr on p589 and correct cross-page wording",
+    "Moved unverified provenance concerns outside authorial prose; hadith independent authentication remains open"
+  ],
+  "limitations": {
+    "full_print_2019_scan_verification": false,
+    "hadith_grading_verified": false,
+    "footnotes_verified": false,
+    "publisher_ready": false,
+    "apk_built": false
+  },
+  "protected": {
+    "chapters": 9,
+    "paragraphs": 676,
+    "other_pages_not_changed": true,
+    "ui_and_first_volume_untouched": true
+  }
+}
