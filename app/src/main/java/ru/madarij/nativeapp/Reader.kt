@@ -89,13 +89,21 @@ fun Reader(
     val sectionTopics = remember(groups, memberIds) {
         groups.flatMap { it.items }.filter { it.chapterId in memberIds }.flatMap { it.topics }
     }
+    // Editorial navigation maps topics to paragraph IDs, not individual words.
+    // Show the mapped paragraph as an explicit landmark instead of silently
+    // dropping the reader into the middle of a long logical section.
+    val selectedTopic = remember(sectionTopics, anchor) {
+        sectionTopics.firstOrNull { it.paragraphId == anchor }
+    }
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
     val learning = remember { LearningRepository(context.applicationContext) }
     val termsByParagraph = remember(learning) { learning.terms.groupBy { it.sourceParagraphId } }
     var paragraphs by remember(sectionKey) { mutableStateOf<List<Paragraph>>(emptyList()) }
     var loaded by remember(sectionKey) { mutableStateOf(false) }
     var ready by remember(sectionKey) { mutableStateOf(false) }
-    var anchorConsumed by rememberSaveable(chapter.id, anchor) { mutableStateOf(false) }
+    // A newly opened TOC link always gets its explicit target, even if this
+    // destination was previously displayed and Compose saved another position.
+    var anchorConsumed by remember(chapter.id, anchor) { mutableStateOf(false) }
     var matchRevealed by rememberSaveable(chapter.id, anchor, query) { mutableStateOf(false) }
     var loadingError by remember(chapter.id) { mutableStateOf("") }
     var retry by remember(chapter.id) { mutableIntStateOf(0) }
@@ -324,6 +332,41 @@ fun Reader(
                     // Editorial TOC headings belong to "Содержание раздела", not
                     // to the author's continuous prose. Source section markers
                     // are rendered from the real book text by splitReaderText().
+                    if (p.id == anchor && query.isBlank() && selectedTopic != null) {
+                        // Use the same Russian text as the reader itself: the
+                        // display layer can reconcile a sentence split across pages.
+                        val shownOpeningText = displayRussian[p.id].orEmpty().ifBlank { p.ru }
+                        val startWords = remember(p.id, shownOpeningText) {
+                            shownOpeningText.replace(Regex("""\s+"""), " ").trim().take(96).trimEnd()
+                        }
+                        Surface(
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(16.dp),
+                            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .28f)
+                        ) {
+                            Row(
+                                Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 12.dp),
+                                horizontalArrangement = Arrangement.spacedBy(11.dp)
+                            ) {
+                                Box(
+                                    Modifier.width(3.dp).height(70.dp)
+                                        .background(MaterialTheme.colorScheme.primary, RoundedCornerShape(3.dp))
+                                )
+                                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                                    Text("ВЫБРАННАЯ ТЕМА", style = MaterialTheme.typography.labelSmall,
+                                        color = MaterialTheme.colorScheme.primary)
+                                    Text(selectedTopic.title, style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+                                        color = MaterialTheme.colorScheme.onSurface)
+                                    if (startWords.isNotBlank()) Text(
+                                        "Ориентир — начало абзаца: «" + startWords +
+                                            (if (shownOpeningText.length > 96) "…" else "") + "»",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                }
+                            }
+                        }
+                    }
                     if (isNote) {
                         Soft3DPanel(
                             modifier = Modifier.fillMaxWidth(),
@@ -372,7 +415,10 @@ fun Reader(
                                             query = query,
                                             settings = readerSettings,
                                             terms = terms,
-                                            reveal = ready && p.id == anchor && !matchRevealed && !arabicMatch,
+                                            // Only search hits need a second, intra-paragraph
+                                            // bringIntoView; TOC targets are already positioned
+                                            // by LazyListState.scrollToItem and must not jump.
+                                            reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
                                             onRevealed = { matchRevealed = true },
                                             onOpenTerm = { termDialog = it }
                                         )
