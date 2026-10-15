@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-15",
+  "scope": "Electronic Arabic-to-Russian deep audit printed pages 576–581, including cross-page boundaries",
+  "pages_reviewed": [
+    576,
+    581
+  ],
+  "pages_modified": [
+    576,
+    577,
+    578,
+    579,
+    580,
+    581
+  ],
+  "replacements": 12,
+  "findings": [
+    "Restored Abu Sa'id's camel remark in its actual 577 printed page, removing anticipatory note on p576",
+    "Corrected p577–578 continuation of the author's judgment about insistence in supplication",
+    "Moved the example of asking for a person's political appointment back to the p578–579 boundary",
+    "Restored quoted report about supplication and the two contrasting instructions to angels on p579–580 without certifying provenance",
+    "Corrected p580–581 hadith's opening phrase and eliminated editorial paging instructions",
+    "Separated unverified hadith authenticity editor's concerns from authorial text"
+  ],
+  "limitations": {
+    "original_2019_print_collated": false,
+    "hadith_sources_and_grades_verified": false,
+    "footnotes_checked": false,
+    "publisher_ready": false,
+    "apk_built": false
+  },
+  "first_volume_ui_untouched": true
+}
