@@ -203,11 +203,11 @@ internal fun AboutScreen() {
     val context=LocalContext.current;var edition by remember {mutableStateOf<JSONObject?>(null)}
     LaunchedEffect(context) {edition=withContext(Dispatchers.IO) {runCatching {JSONObject(context.assets.open("corpus.json").bufferedReader().use {it.readText()}).getJSONObject("edition")}.getOrNull()}}
     LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {
-        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Первый том")}
+        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Тома 1 и 2")}
         item {InfoCard("Автор","Ибн Каййим аль-Джаузийя (1292–1350). Книга посвящена ступеням духовного пути и построена вокруг осмысления слов суры «Аль-Фатиха».")}
-        item {InfoCard("Русский перевод","Первый том литературно сверён с содержащимся в корпусе арабским текстом: обработаны все 644 авторских блока, страницы 3–610. Русский текст отредактирован по смыслу, терминологии и литературной форме. Отдельная хадисоведческая, источниковедческая и богословская проверка цитат и атрибуций ещё не завершена; поэтому это не окончательное критическое издание.")}
+        item {InfoCard("Русский перевод","Том 1: выполнена литературно-смысловая сверка страниц 3–610 (644 авторских блока). Том 2: выполнена литературно-смысловая сверка страниц 3–659 (676 авторских единиц). Исправления повторно проверены другим ИИ-агентом. Сканы издания 2019 года не сопоставлялись с текстом; независимая научная, хадисоведческая и источниковедческая экспертиза не проводилась. Это не окончательное критическое издание.")}
         item {InfoCard("Арабский источник",edition?.optString("source_edition").orEmpty().ifBlank {"Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019"}+"\n"+edition?.optString("source_url").orEmpty())}
         item {InfoCard("Навигация и пояснения","Технические разделы для чтения не всегда совпадают с главами автора. Группы, темы и редакторские пояснения помогают ориентироваться; источник главы доступен из меню чтения. Вопросы и словарь составлены редакционно по тексту и требуют той же сверки.")}
-        item {Text("Мадаридж · 1.8 · Первый том",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
+        item {Text("Мадаридж · Тома 1 и 2",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
     }
 }
