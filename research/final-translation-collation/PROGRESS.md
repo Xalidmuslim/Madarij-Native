@@ -26,3 +26,6 @@
 - Том I, 3–22: [069fc8a](https://github.com/Xalidmuslim/Madarij-Native/commit/069fc8a1f3b4a3bdb94450f996265dbeec2fad66).
 - Том I, 23–42 и альтернативные источники: [41733fb](https://github.com/Xalidmuslim/Madarij-Native/commit/41733fb).
 - Рабочая ветка: https://github.com/Xalidmuslim/Madarij-Native/tree/codex/madarij-v1-v2-scholarly-collation-20261015 . Не перезаписывать при возобновлении, сначала fetch и проверка удалённого HEAD.
+
+## Том I, 43–62
+Полностью прочитаны оба языка и связанные примечания, десять локальных правок. Особо отмечены дефектные извлечения, неоднозначное يدخُل فيه на60 и невоспроизведённая фраза о круге собравшихся на58. Продолжение63/каляля прочитано для контроля границы. Подробности — V1_P043_062_REVIEW.json.

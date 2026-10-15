@@ -11,7 +11,7 @@ book_path = 'app/src/main/assets/corpus.json'
 current = json.loads((ROOT / book_path).read_text())
 original = json.loads(subprocess.check_output(
     ['git', 'show', f'{baseline["base_commit"]}:{book_path}'], cwd=ROOT, text=True))
-logs = [row for path in HERE.glob('V1_P*_CHANGES.json')
+logs = [row for path in sorted(HERE.glob('V1_*CHANGES.json'), key=lambda p: ('RECHECK' in p.name, p.name))
         for row in json.loads(path.read_text())]
 changed_ids = {row['paragraph_id'] for row in logs}
 original_units = {p['id']: p for c in original['chapters'] for p in c['paragraphs']}
