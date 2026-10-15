@@ -450,18 +450,62 @@ fun Reader(
                                                 }
                                             } else ReaderSectionCard(block, settings, arabic = false)
                                         }
-                                        is ReaderTextBlock.Body -> ReaderRichTextBlock(
-                                            text = block.text,
-                                            query = query,
-                                            settings = readerSettings,
-                                            terms = terms,
-                                            // Only search hits need a second, intra-paragraph
-                                            // bringIntoView; TOC targets are already positioned
-                                            // by LazyListState.scrollToItem and must not jump.
-                                            reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
-                                            onRevealed = { matchRevealed = true },
-                                            onOpenTerm = { termDialog = it }
-                                        )
+                                        is ReaderTextBlock.Body -> {
+                                            // The editor's TOC may point to a new authorial
+                                            // section *within* a printed page. Scrolling only
+                                            // to that page wrongly shows the previous topic.
+                                            // Split this DISPLAY block at the verified text
+                                            // anchor; leave stored Arabic/Russian untouched.
+                                            val exactOffset = if (p.id == anchor && query.isBlank() && selectedTopicHeading != null)
+                                                block.text.indexOf(selectedTopicHeading, ignoreCase = true) else -1
+                                            if (exactOffset >= 0) {
+                                                val previousText = block.text.substring(0, exactOffset)
+                                                val selectedText = block.text.substring(exactOffset)
+                                                if (previousText.isNotBlank()) ReaderRichTextBlock(
+                                                    text = previousText, query = query,
+                                                    settings = readerSettings, terms = terms,
+                                                    reveal = false, onRevealed = {},
+                                                    onOpenTerm = { termDialog = it }
+                                                )
+                                                val topicRequester = remember(anchor, selectedTopicHeading) { BringIntoViewRequester() }
+                                                Surface(
+                                                    modifier = Modifier.fillMaxWidth().bringIntoViewRequester(topicRequester),
+                                                    shape = RoundedCornerShape(14.dp),
+                                                    color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .28f)
+                                                ) {
+                                                    Column(Modifier.padding(horizontal = 14.dp, vertical = 10.dp)) {
+                                                        Text("НАЧАЛО ВЫБРАННОЙ ТЕМЫ",
+                                                            style = MaterialTheme.typography.labelSmall,
+                                                            color = MaterialTheme.colorScheme.primary)
+                                                        Text(selectedTopic?.title.orEmpty(),
+                                                            style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+                                                            color = MaterialTheme.colorScheme.onSurface)
+                                                    }
+                                                }
+                                                LaunchedEffect(ready, anchor, selectedTopicHeading) {
+                                                    if (ready) {
+                                                        withFrameNanos { }
+                                                        topicRequester.bringIntoView()
+                                                    }
+                                                }
+                                                ReaderRichTextBlock(
+                                                    text = selectedText, query = query,
+                                                    settings = readerSettings, terms = terms,
+                                                    reveal = false, onRevealed = {},
+                                                    onOpenTerm = { termDialog = it }
+                                                )
+                                            } else ReaderRichTextBlock(
+                                                text = block.text,
+                                                query = query,
+                                                settings = readerSettings,
+                                                terms = terms,
+                                                // Search results alone use the second
+                                                // intra-paragraph bringIntoView pass.
+                                                reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
+                                                onRevealed = { matchRevealed = true },
+                                                onOpenTerm = { termDialog = it }
+                                            )
+                                        }
                                     }
                                 }
                             }
