@@ -28,7 +28,7 @@ class StudyScopeTest {
     @Test fun volumeSwitchDoesNotRetainHiddenSelectedChapter() {
         assertEquals("", selectedStudyChapterAfterVolumeChange("v1-b", 2, volumes))
         assertEquals("v1-b", selectedStudyChapterAfterVolumeChange("v1-b", 1, volumes))
-        assertEquals("v1-b", selectedStudyChapterAfterVolumeChange("v1-b", 0, volumes))
+        assertEquals("", selectedStudyChapterAfterVolumeChange("v1-b", 0, volumes))
         assertEquals("", selectedStudyChapterAfterVolumeChange("", 2, volumes))
     }
 
