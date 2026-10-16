@@ -69,6 +69,7 @@ def make():
     ]
     questions, exercises = [], []
     report = {}
+    all_options_by_volume = {}
     for volume, book, per_chapter in books:
         chapters = book['chapters']
         pool = {c['id']: select(c, per_chapter) for c in chapters}
@@ -79,6 +80,7 @@ def make():
         )) for c in chapters}
         if len(all_options) < 20:
             raise ValueError(f'Insufficient useful verified sentences in volume {volume}')
+        all_options_by_volume[volume] = all_options
         used = set()
         count = 0
         for index, chapter in enumerate(chapters):
@@ -163,10 +165,8 @@ def make():
         # Recognition distractors are real sentences from other chapters,
         # not invented religious claims.
         from_other_chapters = {
-            candidate['sentence']
-            for c in next(book for v, book, _ in books if v == vol)['chapters']
-            if c['id'] != ch
-            for candidate in select(c, 3 if vol == 1 else 14)
+            sentence for candidate_ch, sentence in all_options_by_volume[vol]
+            if candidate_ch != ch
         }
         assert all(x['text'] in from_other_chapters
                    for x in options if not x['correct'])
