@@ -969,7 +969,8 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
     // page border, paper tone and global MaterialTheme are never changed.
     val subtitle = when (segment.kind) {
         ReaderCitationKind.VERSE -> "АЯТ КОРАНА"
-        ReaderCitationKind.PROPHETIC_REPORT -> "ПЕРЕДАЧА"
+        ReaderCitationKind.PROPHETIC_REPORT -> "СЛОВА ПРОРОКА"
+        ReaderCitationKind.COMPANION_SAYING -> "СЛОВА СПОДВИЖНИКА"
         ReaderCitationKind.SAYING -> "ВЫСКАЗЫВАНИЕ"
     }
     Row(

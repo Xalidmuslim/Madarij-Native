@@ -1,11 +1,13 @@
 package ru.madarij.nativeapp
 
 /**
- * Presentation-only semantic rendering. This parser never modifies the corpus.
- * We deliberately classify quotations conservatively: a generic "сказал" is
- * NOT evidence that a narration is a hadith.
+ * Source-preserving classification for DISPLAY ONLY. Never alter the Arabic
+ * original, Russian translation, source references or database paragraph IDs.
+ *
+ * Quran references take precedence over indefinite "Он сказал" / "передача".
+ * A statement attributed to a named human is NEVER inferred to be a hadith.
  */
-internal enum class ReaderCitationKind { VERSE, PROPHETIC_REPORT, SAYING }
+internal enum class ReaderCitationKind { VERSE, PROPHETIC_REPORT, COMPANION_SAYING, SAYING }
 
 internal sealed interface ReaderRichSegment {
     val raw: String
@@ -22,21 +24,113 @@ internal sealed interface ReaderRichSegment {
     data class Poetry(override val raw: String) : ReaderRichSegment
 }
 
-private val readerSentenceGap = Regex("""(?<=[.!?…»\]])\s+(?=[А-ЯЁ«])""")
-private val readerVerseReference = Regex("""\[[^\]]*\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?[^\]]*]""")
-private val readerLead = Regex("""^(.{2,135}?\bсказал(?:а|и)?\s*:)\s*(?=[«"])""", RegexOption.IGNORE_CASE)
-private val readerVerseIntro = Regex(
-    """(?i)^(?:Всевышний(?:\s+Аллах)?|Аллах|В Коране|В аяте)\b"""
+private val sourceSurahRef = Regex(
+    """(?i)\(\s*сура\s+[«„"][^»“"]{2,90}[»“"]\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:\s*[–—-]\s*\d{1,3})?\s*\)"""
 )
-private val readerProphetIntro = Regex(
-    """(?i)(?:Пророк(?:а|ом|у)?|Посланник(?:а|ом|у)?\s+Аллаха|ﷺ)\b"""
+private val bracketSurahRef = Regex(
+    """\[\s*[«„"]?[^,\[\]\n]{2,65}[»“"]?\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:[–—-]\d{1,3})?\s*]"""
 )
+private val colonSurahRef = Regex(
+    """\[\s*[^:\[\]\n]{2,65}:\s*\d{1,3}(?:[–—-]\d{1,3})?\s*]"""
+)
+private val bareSurahRef = Regex(
+    """\(\s*сура\s+[«„"][^»“"]{2,90}[»“"]\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:[–—-]\d{1,3})?\s*\)""",
+    RegexOption.IGNORE_CASE
+)
+private val bareSurahWord = Regex("""(?i)(?:\bсура\b|^\s*[«„"]?(?:аль-|ан-|ат-|аш-|аз-|ар-|ас-|ад-|ал-))""")
+private val misleadingHadithReference = Regex(
+    """(?i)Бухари|Муслим|Тирмизи|Насаи|Абу\s+Дауд|Ибн\s+Маджа|Ахмад|хадис"""
+)
+private val explicitDivineLead = Regex(
+    """(?i)^(?:и\s+|также\s+|затем\s+|после\s+этого\s+)?(?:Всевышний(?:\s+Аллах)?|Аллах|Господь(?:\s+миров)?|Всемогущий(?:\s+и\s+Великий)?\s+Аллах|Он)\s+(?:также\s+)?(?:сказал|говорит|повелел)\s*:\s*$"""
+)
+private val namedDivineWithoutReference = Regex(
+    """(?i)^(?:и\s+|также\s+|затем\s+)?(?:Всевышний(?:\s+Аллах)?|Аллах|Господь(?:\s+миров)?|Всемогущий(?:\s+и\s+Великий)?\s+Аллах)\s+(?:также\s+)?(?:сказал|говорит|повелел)\s*:\s*$"""
+)
+private val explicitPropheticLead = Regex(
+    """(?i)^(?:и\s+|также\s+)?(?:Пророк(?:\s*,[^:]{0,65})?|Посланник\s+Аллаха(?:\s*,[^:]{0,65})?)\s+(?:сказал|сообщил|передал)\s*:\s*$"""
+)
+private val speakerLead = Regex("""(?i)^(.{2,190}?)\b(сказал|сказала|передал|говорил|объяснил)\s*:\s*$""")
+private val knownHuman = Regex(
+    """(?i)(?:\bИбн\s+[А-ЯЁа-яё-]+|\bАль-[А-ЯЁа-яё-]+|\bаль-[А-ЯЁа-яё-]+|\bИмам\s+[А-ЯЁа-яё-]+|\bМуджахид\b|\bУмар\b|\bАли\b|\bАбу\s+[А-ЯЁа-яё-]+|\bАбу\s+Хурайра\b|\bШейх\b)"""
+)
+private val ibnAbbas = Regex("""(?i)^\s*Ибн\s+Аббас\b""")
 private val readerNumberIntro = Regex(
     """(?i)^(Первое|Второе|Третье|Четвёртое|Четвертое|Пятое|Шестое|Седьмое|Восьмое|Девятое|Десятое|Одиннадцатое|Двенадцатое|Во-первых|Во-вторых|В-третьих|Во-четвёртых|Во-пятых|\d{1,3}[.)])(?:\s*[:.]\s*|\s+)(.+)$"""
 )
 private val readerHeader = Regex(
     """(?i)^(?:глава|раздел|степень|ступень|смысл|польза|правило|основа|вопрос|ответ|положение|сторона)(?:\s+[^.!?…]{0,82})?$"""
 )
+
+/**
+ * Sentence boundaries outside guillemets. Regex split on question marks used
+ * to break Quran quotations at "?" inside «…», incorrectly treating the rest
+ * of the same verse as a statement by a scholar.
+ */
+private fun splitOutsideQuotedText(text: String): List<String> {
+    val parts = mutableListOf<String>()
+    var from = 0
+    var guillemetDepth = 0
+    var curlyDepth = 0
+    var lowCurlyDepth = 0
+    for (i in text.indices) {
+        when (text[i]) {
+            '«' -> guillemetDepth++
+            '»' -> guillemetDepth = (guillemetDepth - 1).coerceAtLeast(0)
+            '„' -> lowCurlyDepth++
+            // Russian nested quotation uses „…“; English uses “…”.
+            '“' -> if (lowCurlyDepth > 0) lowCurlyDepth-- else curlyDepth++
+            '”' -> curlyDepth = (curlyDepth - 1).coerceAtLeast(0)
+        }
+        if (guillemetDepth != 0 || curlyDepth != 0 || lowCurlyDepth != 0 ||
+            text[i] !in ".!?…»”])") continue
+        if (i + 1 >= text.length || !text[i + 1].isWhitespace()) continue
+        var next = i + 1
+        while (next < text.length && text[next].isWhitespace()) next++
+        if (next >= text.length) continue
+        if (!text[next].isUpperCase() && text[next] != '«') continue
+        // Keep the immediately following scripture source with its quotation.
+        if (text[i] == '»' && text.substring(next).startsWith("сура ", true)) continue
+        parts += text.substring(from, i + 1).trim()
+        from = next
+    }
+    if (from < text.length) parts += text.substring(from).trim()
+    return parts.filter(String::isNotBlank)
+}
+
+private fun verseReference(sentence: String): String? {
+    val candidates = listOfNotNull(
+        sourceSurahRef.find(sentence)?.value,
+        bracketSurahRef.find(sentence)?.value,
+        colonSurahRef.find(sentence)?.value
+    )
+    return candidates.firstOrNull { match ->
+        !misleadingHadithReference.containsMatchIn(match) &&
+            (sourceSurahRef.matches(match) ||
+                bareSurahWord.containsMatchIn(match.drop(1)) ||
+                match.contains('«') ||
+                // "Юсуф: 106" and similar printed Quran references.
+                colonSurahRef.matches(match))
+    }
+}
+
+private fun hasVerseQuotedBeforeReference(sentence: String, reference: String): Boolean {
+    val pos = sentence.indexOf(reference)
+    if (pos <= 0) return false
+    val close = maxOf(sentence.lastIndexOf('»', pos), sentence.lastIndexOf('”', pos))
+    if (close < 0) return false
+    val intervening = sentence.substring(close + 1, pos)
+    return intervening.all { it.isWhitespace() || it in ".,;:!?" } &&
+        (sentence.lastIndexOf('«', close) >= 0 || sentence.lastIndexOf('“', close) >= 0)
+}
+
+private fun humanIntro(prefix: String): Boolean {
+    val lead = speakerLead.matchEntire(prefix) ?: return false
+    // A relative phrase "сподвижникам Пророка — Он сказал" is not a prophetic
+    // narration, and "Он также сказал" does not identify a human at all.
+    val clean = lead.groupValues[1].trim()
+    return knownHuman.containsMatchIn(clean) && !explicitPropheticLead.matches(prefix)
+}
 
 internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
     val paragraphs = text.replace("\r", "")
@@ -52,11 +146,8 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
             result += ReaderRichSegment.Heading(paragraph)
             continue
         }
-        // Preserve every word and all punctuation. Only formatting whitespace
-        // between the blocks is normalized, as in the existing reader.
         val flat = paragraph.replace(Regex("""[ \t]*\n[ \t]*"""), " ")
             .replace(Regex("""[ \t]+"""), " ").trim()
-        val pieces = readerSentenceGap.split(flat).filter(String::isNotBlank)
         val plain = mutableListOf<String>()
         fun flush() {
             if (plain.isNotEmpty()) {
@@ -64,38 +155,58 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
                 plain.clear()
             }
         }
-        for (piece in pieces) {
-            val intro = readerLead.find(piece)
-            val quoteAt = piece.indexOf('«')
-            val quoteEnd = piece.lastIndexOf('»')
-            val verseRef = readerVerseReference.find(piece)?.value
-            val explicitVerse = readerVerseIntro.containsMatchIn(piece.substringBefore('«'))
+        for (piece in splitOutsideQuotedText(flat)) {
+            val quoteAt = listOf(piece.indexOf('«'), piece.indexOf('“'))
+                .filter { it >= 0 }.minOrNull() ?: -1
+            val quoteEnd = maxOf(piece.lastIndexOf('»'), piece.lastIndexOf('”'))
+            val prefix = if (quoteAt >= 0) piece.substring(0, quoteAt).trim() else ""
+            val citation = verseReference(piece)
+            val surahQuote = citation != null && hasVerseQuotedBeforeReference(piece, citation)
+            val namedHuman = humanIntro(prefix)
+            val clearDivine = explicitDivineLead.matches(prefix)
+            val clearProphetic = explicitPropheticLead.matches(prefix)
             val isVerse = quoteAt >= 0 && quoteEnd > quoteAt &&
-                ((verseRef != null && (explicitVerse || quoteAt == 0)) ||
-                    (intro != null && readerVerseIntro.containsMatchIn(intro.groupValues[1]) &&
-                        !readerProphetIntro.containsMatchIn(intro.groupValues[1])))
-            val isReport = intro != null &&
-                readerProphetIntro.containsMatchIn(intro.groupValues[1])
-            val isSaying = intro != null && !isReport && !isVerse
-            val numberMatch = readerNumberIntro.matchEntire(piece)
+                !namedHuman && (surahQuote ||
+                    (citation == null && namedDivineWithoutReference.matches(prefix)))
+            val matchNumber = readerNumberIntro.matchEntire(piece)
             when {
-                (isVerse || isReport || isSaying) && quoteAt >= 0 && quoteEnd > quoteAt -> {
+                isVerse -> {
                     flush()
-                    val kind = when {
-                        isVerse -> ReaderCitationKind.VERSE
-                        isReport -> ReaderCitationKind.PROPHETIC_REPORT
-                        else -> ReaderCitationKind.SAYING
+                    // A long author introduction is meaningful prose, not part
+                    // of the Quran quotation. Keep it visible outside the card;
+                    // suppress only a redundant short divine attribution.
+                    if (prefix.isNotBlank() && !clearDivine) {
+                        result += ReaderRichSegment.Paragraph(prefix)
                     }
-                    val label = intro?.groupValues?.get(1)?.trim().orEmpty().ifBlank {
-                        if (isVerse) "Аят" else "Передаётся"
-                    }
-                    val body = if (intro != null) piece.substring(intro.range.last + 1).trimStart() else piece
-                    result += ReaderRichSegment.Quote(piece, label, body, verseRef, kind)
+                    // Do not repeat "Всевышний сказал:" in a Quran card.
+                    // The complete unmodified source remains in .raw.
+                    val displayed = piece.substring(quoteAt).trimStart()
+                    result += ReaderRichSegment.Quote(
+                        raw = if (prefix.isNotBlank() && !clearDivine) piece.substring(quoteAt) else piece,
+                        label = "", body = displayed,
+                        reference = citation, kind = ReaderCitationKind.VERSE
+                    )
                 }
-                numberMatch != null -> {
+                quoteAt >= 0 && quoteEnd > quoteAt && clearProphetic -> {
+                    flush()
+                    result += ReaderRichSegment.Quote(
+                        raw = piece, label = prefix, body = piece.substring(quoteAt),
+                        reference = citation, kind = ReaderCitationKind.PROPHETIC_REPORT
+                    )
+                }
+                quoteAt >= 0 && quoteEnd > quoteAt && namedHuman -> {
+                    flush()
+                    result += ReaderRichSegment.Quote(
+                        raw = piece, label = prefix, body = piece.substring(quoteAt),
+                        reference = citation,
+                        kind = if (ibnAbbas.containsMatchIn(prefix))
+                            ReaderCitationKind.COMPANION_SAYING else ReaderCitationKind.SAYING
+                    )
+                }
+                matchNumber != null -> {
                     flush()
                     result += ReaderRichSegment.Numbered(
-                        piece, numberMatch.groupValues[1], numberMatch.groupValues[2]
+                        piece, matchNumber.groupValues[1], matchNumber.groupValues[2]
                     )
                 }
                 else -> plain += piece
