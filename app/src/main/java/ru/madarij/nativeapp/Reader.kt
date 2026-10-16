@@ -50,6 +50,8 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.flow.distinctUntilChanged
 import ru.madarij.nativeapp.data.*
 import ru.madarij.nativeapp.data.Paragraph
@@ -107,6 +109,7 @@ fun Reader(
     var paragraphs by remember(sectionKey) { mutableStateOf<List<Paragraph>>(emptyList()) }
     var loaded by remember(sectionKey) { mutableStateOf(false) }
     var ready by remember(sectionKey) { mutableStateOf(false) }
+    var preparedRussian by remember(sectionKey) { mutableStateOf<Map<String, String>>(emptyMap()) }
     // A newly opened TOC link always gets its explicit target, even if this
     // destination was previously displayed and Compose saved another position.
     var anchorConsumed by remember(chapter.id, anchor) { mutableStateOf(false) }
@@ -131,7 +134,9 @@ fun Reader(
     val activeSince = remember(chapter.id) { longArrayOf(0L) }
     val visible = remember(paragraphs, settings.showNotes, anchor) { paragraphs.filter { settings.showNotes || it.id == anchor || it.role !in listOf("editor_note", "edition_note") } }
     val normalizedQuery = remember(query) { normalizedText(query).text }
-    val displayRussian = remember(paragraphs, query) { if (query.isBlank()) buildReaderDisplayRussian(paragraphs) else paragraphs.associate { it.id to it.ru } }
+    val displayRussian = remember(paragraphs, query, preparedRussian) {
+        if (query.isBlank()) preparedRussian else paragraphs.associate { it.id to it.ru }
+    }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
     // Keep the reader invisible while restoring the saved position AND locating a
     // topic inside a long printed-page paragraph. Otherwise the user sees the
@@ -156,7 +161,7 @@ fun Reader(
     // Inconsistent legacy metadata must never leave the reading surface blank.
     LaunchedEffect(ready, exactTargetAvailable, sectionKey, anchor) {
         if (ready && exactTargetAvailable && !exactTargetSettled) {
-            delay(650)
+            delay(190)
             exactTargetSettled = true
         }
     }
@@ -166,7 +171,7 @@ fun Reader(
         (if (searchTargetAvailable) matchRevealed else (!exactTargetAvailable || exactTargetSettled))
     val readerAlpha by animateFloatAsState(
         targetValue = if (readerSettled) 1f else 0f,
-        animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 75),
+        animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 125),
         label = "reader-position-ready"
     )
     fun savePosition() {
@@ -182,7 +187,16 @@ fun Reader(
     }
     LaunchedEffect(sectionKey, retry) {
         try {
-            paragraphs = members.flatMap { vm.repository.dao.paragraphs(it.id) }
+            // Read the chapter on IO; reconcile sentences across printed pages
+            // on Default so the first Compose frame never performs this scan.
+            val loadedParagraphs = withContext(Dispatchers.IO) {
+                members.flatMap { vm.repository.dao.paragraphs(it.id) }
+            }
+            val reconciled = withContext(Dispatchers.Default) {
+                buildReaderDisplayRussian(loadedParagraphs)
+            }
+            preparedRussian = reconciled
+            paragraphs = loadedParagraphs
             loaded = true
             loadingError = ""
         }
@@ -423,20 +437,20 @@ fun Reader(
                     if (isNote) {
                         Soft3DPanel(
                             modifier = Modifier.fillMaxWidth(),
-                            shape = androidx.compose.foundation.shape.RoundedCornerShape(20.dp),
+                            shape = RoundedCornerShape(14.dp),
                             elevation = AppElevation.level2,
                             warm = true,
                             onClick = { expanded = !expanded }
                         ) {
-                            Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 13.dp),
-                                horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                                Box(Modifier.width(3.dp).heightIn(min = 62.dp)
+                            Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 9.dp),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                Box(Modifier.width(3.dp).heightIn(min = 29.dp)
                                     .background(BookColors.gold.copy(alpha = .80f), RoundedCornerShape(3.dp)))
-                                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                                     Row(verticalAlignment = Alignment.CenterVertically,
-                                        horizontalArrangement = Arrangement.spacedBy(9.dp)) {
+                                        horizontalArrangement = Arrangement.spacedBy(7.dp)) {
                                         NavigationGlyph("notes", selected = false,
-                                            modifier = Modifier.size(19.dp), tint = BookColors.gold)
+                                            modifier = Modifier.size(16.dp), tint = BookColors.gold)
                                         Text((if (p.role == "editor_note") "Пояснение редакции" else "Примечание издания") +
                                             (if (expanded) " · Скрыть" else " · Открыть"),
                                             style = MaterialTheme.typography.labelLarge,
@@ -448,11 +462,8 @@ fun Reader(
                                             highlight(p.ru, query, MaterialTheme.colorScheme.primary),
                                             p.ru, query, readerStyle(readerSettings),
                                             ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
-                                    } else {
-                                        Text("Развёрнутое объяснение и дополнительные детали",
-                                            style = MaterialTheme.typography.bodySmall,
-                                            color = MaterialTheme.colorScheme.onSurfaceVariant)
                                     }
+
                                 }
                             }
                         }
@@ -1013,21 +1024,22 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
 @Composable
 private fun ReaderNumberedBlock(segment: ReaderRichSegment.Numbered, settings: ReadingSettings, query: String) {
     Row(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 5.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
+        horizontalArrangement = Arrangement.spacedBy(7.dp),
         verticalAlignment = Alignment.Top
     ) {
         Surface(
-            shape = androidx.compose.foundation.shape.CircleShape,
-            color = BookColors.lightGold.copy(alpha = .24f),
+            shape = RoundedCornerShape(10.dp),
+            color = BookColors.lightGold.copy(alpha = .20f),
             border = androidx.compose.foundation.BorderStroke(
                 .7.dp, BookColors.gold.copy(alpha = .34f))
         ) {
-            Text(segment.label, modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
-                style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+            Text(segment.label, modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+                style = MaterialTheme.typography.labelMedium.copy(
+                    fontFamily = BookSerif, fontSize = 13.sp, lineHeight = 17.sp),
                 color = MaterialTheme.colorScheme.primary)
         }
-        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
             val colon = segment.body.indexOf(':')
             val separateTitle = colon in 4..65 &&
                 segment.body.substring(0, colon).none { it == '.' || it == '?' || it == '!' }
