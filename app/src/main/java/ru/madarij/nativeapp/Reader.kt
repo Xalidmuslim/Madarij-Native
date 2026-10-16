@@ -61,6 +61,7 @@ import kotlin.math.abs
 @Composable
 fun Reader(
     vm: BookViewModel, chapter: Chapter, settings: ReadingSettings, anchor: String? = null, query: String = "", forceTop: Boolean = false,
+    spotlightReminder: Boolean = false,
     onStudy: (String) -> Unit = {}, onOpenParagraph: (String) -> Unit = {}, onBack: () -> Unit = {}, navigate: (String) -> Unit
 ) {
     var resizing by remember { mutableStateOf(false) }
@@ -100,7 +101,9 @@ fun Reader(
     val selectedTopic = remember(sectionTopics, anchor) {
         sectionTopics.firstOrNull { it.paragraphId == anchor }
     }
-    val selectedTopicHeading = selectedTopic?.startText?.takeIf { query.isBlank() }
+    // A home quote is a unique sentence, not a chapter/topic start; do not
+    // render the permanent "НАЧАЛО ВЫБРАННОЙ ТЕМЫ" UI for this jump.
+    val selectedTopicHeading = selectedTopic?.startText?.takeIf { query.isBlank() && !spotlightReminder }
     val readerTitle = selectedTopic?.title?.takeIf { query.isBlank() }
         ?: chapterStructure?.title ?: sectionRoot.title
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
@@ -137,6 +140,16 @@ fun Reader(
     val displayRussian = remember(paragraphs, query, preparedRussian) {
         if (query.isBlank()) preparedRussian else paragraphs.associate { it.id to it.ru }
     }
+    val homeQuote = remember(anchor, spotlightReminder, context) {
+        if (!spotlightReminder || anchor == null) null
+        else runCatching {
+            KnowledgeReminders.all(context.applicationContext)
+                .firstOrNull { it.paragraphId == anchor }?.text
+        }.getOrNull()
+    }
+    var showQuoteSpotlight by remember(sectionKey, anchor, spotlightReminder) {
+        mutableStateOf(spotlightReminder)
+    }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
     // Keep the reader invisible while restoring the saved position AND locating a
     // topic inside a long printed-page paragraph. Otherwise the user sees the
@@ -144,6 +157,15 @@ fun Reader(
     val exactTargetAvailable = query.isBlank() && anchor != null &&
         selectedTopicHeading != null &&
         displayRussian[anchor]?.contains(selectedTopicHeading, ignoreCase = true) == true
+    val spotlightTargetAvailable = spotlightReminder && query.isBlank() &&
+        anchor != null && homeQuote != null &&
+        displayRussian[anchor]?.let { reminderSpotlightRange(it, homeQuote) } != null
+    var spotlightTargetSettled by remember(sectionKey, anchor, spotlightReminder) {
+        mutableStateOf(false)
+    }
+    var spotlightTopY by remember(sectionKey, anchor, spotlightReminder) {
+        mutableFloatStateOf(Float.NaN)
+    }
     var exactTargetSettled by remember(sectionKey, anchor) { mutableStateOf(false) }
     var viewportTopY by remember(sectionKey) { mutableFloatStateOf(Float.NaN) }
     var targetTopY by remember(sectionKey, anchor) { mutableFloatStateOf(Float.NaN) }
@@ -158,6 +180,23 @@ fun Reader(
             exactTargetSettled = true
         }
     }
+    // The exact home quote starts at a measured glyph position within a
+    // potentially long paragraph; no extra database lookup or search screen.
+    LaunchedEffect(ready, spotlightTargetAvailable, spotlightTopY, viewportTopY) {
+        if (ready && spotlightTargetAvailable && !spotlightTargetSettled &&
+            spotlightTopY.isFinite() && viewportTopY.isFinite()) {
+            val inset = with(alignDensity) { 10.dp.toPx() }
+            listState.scrollBy(spotlightTopY - viewportTopY - inset)
+            spotlightTargetSettled = true
+        }
+    }
+    // Defensive fallback for older corpus data; never leave the page hidden.
+    LaunchedEffect(ready, spotlightTargetAvailable, sectionKey, anchor) {
+        if (ready && spotlightTargetAvailable && !spotlightTargetSettled) {
+            delay(550)
+            spotlightTargetSettled = true
+        }
+    }
     // Inconsistent legacy metadata must never leave the reading surface blank.
     LaunchedEffect(ready, exactTargetAvailable, sectionKey, anchor) {
         if (ready && exactTargetAvailable && !exactTargetSettled) {
@@ -168,7 +207,18 @@ fun Reader(
     val searchTargetAvailable = query.isNotBlank() && anchor != null &&
         visible.any { it.id == anchor }
     val readerSettled = ready &&
-        (if (searchTargetAvailable) matchRevealed else (!exactTargetAvailable || exactTargetSettled))
+        when {
+            searchTargetAvailable -> matchRevealed
+            spotlightTargetAvailable -> spotlightTargetSettled
+            else -> !exactTargetAvailable || exactTargetSettled
+        }
+    // One-shot visual locator: it never changes the corpus or stored notes.
+    LaunchedEffect(readerSettled, spotlightReminder, homeQuote) {
+        if (readerSettled && spotlightReminder && homeQuote != null) {
+            delay(5_000)
+            showQuoteSpotlight = false
+        }
+    }
     val readerAlpha by animateFloatAsState(
         targetValue = if (readerSettled) 1f else 0f,
         animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 125),
@@ -365,7 +415,7 @@ fun Reader(
         ) {
             // A near-final topic must still have enough trailing scroll extent
             // to bring its first word to the top without a second animation.
-            val topicBottomPadding = if (exactTargetAvailable)
+            val topicBottomPadding = if (exactTargetAvailable || spotlightTargetAvailable)
                 (maxHeight - 12.dp).coerceAtLeast(22.dp) else 22.dp
             LazyColumn(
                 state = listState,
