@@ -2,8 +2,11 @@
 set -euo pipefail
 mkdir -p performance-results
 APK="app/build/outputs/apk/release/app-release.apk"
-# Matches app/build.gradle.kts release applicationIdSuffix (.collation158).
-PKG="ru.madarij.nativeapp.collation158"
+# Read the actual isolated QA package from the built APK. Never assume
+# that an ephemeral CI key can replace an owner's installed application.
+PKG=$("$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" |
+  sed -n "s/^package: name='\([^']*\)'.*/\1/p" | head -1)
+test -n "$PKG"
 ACT="ru.madarij.nativeapp.MainActivity"
 test -s "$APK"
 adb shell wm size 432x960
