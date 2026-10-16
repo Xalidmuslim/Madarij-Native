@@ -74,6 +74,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var noteSaved by rememberSaveable { mutableStateOf(false) }
     val bank=if(loaded) repo.questions else emptyList()
     val bankByChapter=remember(bank) { bank.groupBy { it.chapterId } }
+    val questionCounts=remember(bankByChapter) { bankByChapter.mapValues { it.value.size } }
     val chapterVolumes=remember(chapters) { chapters.associate { it.id to it.volume } }
     val readIds=remember(read) { read.map { it.chapterId }.toSet() }
     fun inStudyScope(id: String): Boolean =
@@ -82,7 +83,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         bank.filter { studyScopeMatches(it.chapterId, chapterId, selectedVolume, chapterVolumes) }
     }
     val dueQuestions=scopedBank.count { (attempts[it.id]?.due ?: Long.MAX_VALUE) <= System.currentTimeMillis() }
-    val scopedChapters=remember(chapters,chapterId,selectedVolume) {
+    val scopedChapters=remember(chapters,chapterId,selectedVolume,chapterVolumes) {
         chapters.filter { studyScopeMatches(it.id, chapterId, selectedVolume, chapterVolumes) }
     }
     val listState=rememberLazyListState()
@@ -132,7 +133,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             selectedChapterId = chapterId,
             chapters = chapters,
             chapterTitles = chapterTitles,
-            questionCounts = bankByChapter.mapValues { it.value.size },
+            questionCounts = questionCounts,
             readIds = readIds,
             onSelectAll = { volume ->
                 selectedVolume = volume
