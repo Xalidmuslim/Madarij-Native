@@ -51,7 +51,8 @@ internal fun HomeScreen(
     reminder: KnowledgeReminder,
     reducedMotion: Boolean,
     inkFinished: Boolean,
-    onInkFinished: () -> Unit
+    onInkFinished: () -> Unit,
+    onOpenReminder: (KnowledgeReminder) -> Unit
 ) {
     val chapters by vm.chapters.collectAsStateWithLifecycle()
     val read by vm.read.collectAsStateWithLifecycle()
@@ -125,7 +126,7 @@ internal fun HomeScreen(
                     Row(Modifier.padding(horizontal = 18.dp, vertical = 13.dp),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(Modifier.weight(1f).clickable {
-                            open(reminder.chapterId, reminder.paragraphId)
+                            onOpenReminder(reminder)
                         }) {
                             ReedPenWritingText(
                                 text = reminder.text,
