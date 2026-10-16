@@ -39,12 +39,35 @@ adb shell uiautomator dump /sdcard/contents.xml >/dev/null 2>&1
 adb pull /sdcard/contents.xml performance-results/contents.xml >/dev/null
 adb shell input swipe 210 780 210 300 500
 adb shell input swipe 210 310 210 780 500
-echo "---- READER tap and scroll ----" >> performance-results/measurements.txt
-# From Contents, return to Home and use its explicit Continue Reading
-# surface. The old y=532 coordinate had opened Search, not the reader.
-adb shell input tap 62 906
 sleep 2
-adb shell input tap 195 439
+# Resolve a real visible Read action from the Contents accessibility tree.
+# A fixed Home coordinate fails when the scroll state is restored.
+adb shell uiautomator dump /sdcard/contents-scrolled.xml >/dev/null 2>&1
+adb pull /sdcard/contents-scrolled.xml performance-results/contents-scrolled.xml >/dev/null
+python3 - <<'PY'
+from xml.etree import ElementTree as ET
+import re
+root=ET.parse('performance-results/contents-scrolled.xml').getroot()
+targets=[]
+for n in root.iter('node'):
+    label=(n.get('text','')+' '+n.get('content-desc','')).strip()
+    if 'Читать' not in label:
+        continue
+    m=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.get('bounds',''))
+    if m is None:
+        continue
+    x1,y1,x2,y2=map(int,m.groups())
+    if 170 < y1 < 810:
+        targets.append((y1,(x1+x2)//2,(y1+y2)//2))
+if not targets:
+    raise SystemExit('No visible Read control in Contents')
+_,x,y=min(targets)
+open('performance-results/reader-target.txt','w').write(f'{x} {y}\n')
+print('Reading from Contents at',x,y)
+PY
+read -r READ_X READ_Y < performance-results/reader-target.txt
+echo "---- READER tap and scroll ----" >> performance-results/measurements.txt
+adb shell input tap "$READ_X" "$READ_Y"
 sleep 4
 adb shell screencap -p /sdcard/performance-reader.png
 adb pull /sdcard/performance-reader.png performance-results/reader.png >/dev/null
