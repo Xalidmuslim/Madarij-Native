@@ -31,6 +31,7 @@ internal fun StudyChapterPicker(
     onDismiss: () -> Unit
 ) {
     var search by rememberSaveable { mutableStateOf("") }
+    var showAllChapters by rememberSaveable { mutableStateOf(false) }
     var pickerVolume by rememberSaveable {
         mutableIntStateOf(chapters.firstOrNull { it.id == selectedChapterId }?.volume
             ?: selectedVolume)
@@ -53,9 +54,9 @@ internal fun StudyChapterPicker(
             Modifier.fillMaxWidth().padding(horizontal = 20.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Text("Выберите материал", style = MaterialTheme.typography.headlineSmall,
+            Text("Что будем изучать?", style = MaterialTheme.typography.headlineSmall,
                 fontFamily = BookSerif)
-            Text("Выберите том целиком или один раздел. Настройка действует во всех видах занятий.",
+            Text("1. Выберите том. 2. Выберите тему или оставьте весь том.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
@@ -76,18 +77,27 @@ internal fun StudyChapterPicker(
                 label = { Text("Поиск по названию") },
                 placeholder = { Text("Например, покаяние") }
             )
-            TextButton(onClick = { onSelectAll(pickerVolume) },
-                modifier = Modifier.fillMaxWidth()) {
-                Text(if(pickerVolume == 0) "✓ Изучать оба тома целиком"
-                     else "✓ Изучать весь том $pickerVolume",
-                     modifier = Modifier.fillMaxWidth(), fontWeight = FontWeight.SemiBold)
+            Button(onClick = { onSelectAll(pickerVolume) },
+                modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
+                Text(if (pickerVolume == 0) "Выбрать оба тома целиком"
+                     else "Выбрать весь том $pickerVolume")
             }
             HorizontalDivider(color = BookColors.gold.copy(alpha = .3f))
-            Text(
-                "Разделы · ${matches.size}",
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary
-            )
+            Row(Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween) {
+                Text("Или выберите отдельную тему",
+                    style = MaterialTheme.typography.titleSmall,
+                    color = MaterialTheme.colorScheme.onSurface)
+                Text("${matches.size} тем",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (search.isBlank() && matches.size > 12) {
+                TextButton(onClick = { showAllChapters = !showAllChapters }) {
+                    Text(if (showAllChapters) "Свернуть список"
+                        else "Показать все темы · ${matches.size}")
+                }
+            }
             LazyColumn(
                 modifier = Modifier.fillMaxWidth().heightIn(max = 420.dp),
                 contentPadding = PaddingValues(bottom = 24.dp),
@@ -95,6 +105,8 @@ internal fun StudyChapterPicker(
             ) {
                 for (volume in 1..2) {
                     val pages = matches.filter { it.volume == volume }
+                    val visiblePages = if (showAllChapters || search.isNotBlank())
+                        pages else pages.take(6)
                     if (pages.isNotEmpty()) {
                         item(key = "v:$volume") {
                             Text("ТОМ $volume",
@@ -102,7 +114,7 @@ internal fun StudyChapterPicker(
                                 color = MaterialTheme.colorScheme.primary,
                                 modifier = Modifier.padding(top = 10.dp, bottom = 5.dp))
                         }
-                        items(pages, key = { it.id }) { chapter ->
+                        items(visiblePages, key = { it.id }) { chapter ->
                             TextButton(
                                 onClick = { onSelectChapter(chapter.id, chapter.volume) },
                                 modifier = Modifier.fillMaxWidth(),
@@ -111,7 +123,8 @@ internal fun StudyChapterPicker(
                                 Column(Modifier.fillMaxWidth(),
                                     verticalArrangement = Arrangement.spacedBy(3.dp)) {
                                     Text(
-                                        chapterTitles[chapter.id] ?: chapter.title,
+                                        (if (chapter.id == selectedChapterId) "✓ " else "") +
+                                            (chapterTitles[chapter.id] ?: chapter.title),
                                         style = MaterialTheme.typography.bodyMedium,
                                         color = MaterialTheme.colorScheme.onSurface,
                                         fontWeight = if(chapter.id == selectedChapterId)
@@ -124,6 +137,14 @@ internal fun StudyChapterPicker(
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
                                 }
+                            }
+                        }
+                        if (visiblePages.size < pages.size) item(key = "more:$volume") {
+                            TextButton(
+                                onClick = { showAllChapters = true },
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text("Ещё темы тома $volume · ${pages.size-visiblePages.size}")
                             }
                         }
                     }
