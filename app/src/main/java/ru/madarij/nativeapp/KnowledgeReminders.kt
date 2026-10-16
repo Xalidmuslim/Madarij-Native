@@ -1,13 +1,14 @@
 package ru.madarij.nativeapp
 
 import android.content.Context
+import org.json.JSONArray
 import kotlin.random.Random
 
 /** Verified sentences from the app's existing Russian translation of Madarij vol. 1.
  * Provenance is an author-role paragraph from corpus.json, with its source page.
  * The Russian text is the app's draft translation (not an independent scholarly edition).
  */
-internal data class KnowledgeReminder(val text: String, val chapterId: String, val paragraphId: String, val page: Int)
+internal data class KnowledgeReminder(val text: String, val chapterId: String, val paragraphId: String, val page: Int, val volume: Int = 1)
 
 internal object KnowledgeReminders {
     val items: List<KnowledgeReminder> = listOf(
@@ -39,20 +40,68 @@ internal object KnowledgeReminders {
         KnowledgeReminder("Человек не становится кающимся одним прекращением, намерением и сожалением, пока у него не появится решительное намерение совершить предписанное и его исполнение.", "madarij-v1-p472-draft-section", "madarij-v1-p472-draft", 472)
     )
 
-    /** Do not repeat any sentence until the entire shuffled round is exhausted.
-     * On a new round the first entry is different from the previous round's last.
+    // The extra 74 passages are bundled as a tiny, build-verified JSON asset.
+    // Never parse either 3-MB full book on the main thread just to show a quote.
+    private var fullDeckCache: List<KnowledgeReminder>? = null
+    @Synchronized
+    fun all(context: Context): List<KnowledgeReminder> {
+        fullDeckCache?.let { return it }
+        val extra = context.assets.open("curated_knowledge_reminders.json").bufferedReader().use {
+            val json = JSONArray(it.readText())
+            (0 until json.length()).map { i ->
+                val x = json.getJSONObject(i)
+                KnowledgeReminder(
+                    text = x.getString("text"),
+                    chapterId = x.getString("chapterId"),
+                    paragraphId = x.getString("paragraphId"),
+                    page = x.getInt("page"),
+                    volume = x.getInt("volume")
+                )
+            }
+        }
+        require(extra.size == 74 && items.size == 26) { "Expected 100 sourced quotations" }
+        val deck = items + extra
+        require(deck.map { it.paragraphId }.distinct().size == 100) { "Duplicate knowledge passage" }
+        fullDeckCache = deck
+        return deck
+    }
+
+    /** One new source-verified passage per actual entrance to the HOME screen.
+     * The shuffled deck is persisted and exhausted before any repetition.
      */
-    fun newOrder(last: Int, random: Random = Random.Default): List<Int> {
-        val indices = items.indices.toMutableList()
+    fun nextForEntry(context: Context): KnowledgeReminder {
+        val deck = all(context)
+        val prefs = context.getSharedPreferences("madarij_knowledge_reminders_v3", Context.MODE_PRIVATE)
+        val previous = prefs.getInt("last", -1)
+        val order = prefs.getString("order", null)?.split(',')?.mapNotNull { it.toIntOrNull() }
+        val cursor = prefs.getInt("cursor", 0)
+        val valid = order != null && order.size == deck.size &&
+            order.toSet() == deck.indices.toSet() && cursor in deck.indices
+        val shuffled = if (valid) order!! else orderForCount(deck.size, previous)
+        val position = if (valid) cursor else 0
+        val picked = shuffled[position]
+        prefs.edit().putString("order", shuffled.joinToString(","))
+            .putInt("cursor", position + 1).putInt("last", picked).apply()
+        return deck[picked]
+    }
+
+    private fun orderForCount(size: Int, last: Int, random: Random = Random.Default): List<Int> {
+        val indices = (0 until size).toMutableList()
         indices.shuffle(random)
         if (indices.size > 1 && indices.first() == last) {
             val swap = 1 + random.nextInt(indices.size - 1)
-            val temp = indices[0]
+            val tmp = indices[0]
             indices[0] = indices[swap]
-            indices[swap] = temp
+            indices[swap] = tmp
         }
         return indices
     }
+
+    /** Do not repeat any sentence until the entire shuffled round is exhausted.
+     * On a new round the first entry is different from the previous round's last.
+     */
+    fun newOrder(last: Int, random: Random = Random.Default): List<Int> =
+        orderForCount(items.size, last, random)
 
     /** Called once per new Activity session; never during in-app navigation. */
     fun nextForLaunch(context: Context): Int {
