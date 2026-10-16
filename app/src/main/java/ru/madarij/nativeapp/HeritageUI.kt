@@ -36,6 +36,33 @@ internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+internal fun HeritageMenuIcon(kind: String, modifier: Modifier = Modifier) {
+    if (AntiqueBookIcons.drawable(kind) != null) {
+        AntiqueBookIcon(kind, modifier)
+    } else Box(modifier, contentAlignment = Alignment.Center) {
+        when (kind) {
+            "progress" -> Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.Bottom) {
+                listOf(15.dp, 26.dp, 36.dp).forEach { bar ->
+                    Box(Modifier.width(7.dp).height(bar).padding(end = 1.dp)
+                        .clip(RoundedCornerShape(topStart = 3.dp, topEnd = 3.dp))
+                        .background(HeritageBrown))
+                    Spacer(Modifier.width(3.dp))
+                }
+            }
+            "about" -> Box(Modifier.size(34.dp).clip(RoundedCornerShape(5.dp))
+                .background(HeritageBrown).border(1.dp, HeritageBronze,
+                    RoundedCornerShape(5.dp)), contentAlignment = Alignment.Center) {
+                Text("i", fontFamily = BookSerif, fontSize = 29.sp,
+                    color = HeritageCream)
+            }
+            "settings" -> Text("⚙", fontSize = 35.sp, color = HeritageBrown)
+            else -> Text("❖", fontSize = 26.sp, color = HeritageBrown)
+        }
+    }
+}
+
 private data class MenuItem(
     val route: String, val title: String, val subtitle: String, val glyph: String
 )
@@ -54,7 +81,7 @@ private fun MenuGroup(heading: String, entries: List<MenuItem>, navigate: (Strin
                         .padding(horizontal = 17.dp, vertical = 13.dp),
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(13.dp)) {
-                        AntiqueBookIcon(entry.glyph, Modifier.size(39.dp))
+                        HeritageMenuIcon(entry.glyph, Modifier.size(39.dp))
                         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(entry.title, fontFamily = BookSerif, fontSize = 19.sp,
                                 color = HeritageBrown, maxLines = 1,
