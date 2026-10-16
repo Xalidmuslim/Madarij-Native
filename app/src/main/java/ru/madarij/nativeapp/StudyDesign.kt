@@ -20,16 +20,15 @@ internal fun StudyOverview(
     answered: Int,
     allQuestions: Int,
     due: Int,
-    writingTasks: Int,
-    onStart: () -> Unit
+    writingTasks: Int
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
         Column(Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
             verticalArrangement = Arrangement.spacedBy(11.dp)) {
-            Text("Моё изучение", style = MaterialTheme.typography.titleLarge,
+            Text("Мой прогресс", style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.SemiBold)
-            Text("Короткие проверки по прочитанному и повторение трудных вопросов.",
+            Text("Что уже пройдено по выбранному материалу.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             val progress = if (allQuestions > 0) answered.toFloat() / allQuestions else 0f
@@ -45,10 +44,6 @@ internal fun StudyOverview(
             Text("$writingTasks письменных заданий · вопросы по обоим томам",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
-            Button(onClick = onStart, enabled = allQuestions > 0,
-                modifier = Modifier.fillMaxWidth().heightIn(min = 45.dp)) {
-                Text("Начать занятие · 10 вопросов")
-            }
         }
     }
 }
@@ -63,27 +58,83 @@ private fun StudyStat(value: String, description: String, modifier: Modifier = M
     }
 }
 
+/**
+ * Three obvious tasks, one tap each. There is no redundant 2x2 tab grid.
+ * Each task opens its own uncluttered screen.
+ */
 @Composable
-internal fun StudyModeTabs(tab: Int, onSelect: (Int) -> Unit) {
-    // Four destinations, no duplicate 'In progress / All sections' navigation.
-    val names = listOf("Обзор", "Вопросы", "Письменно", "Повторить")
-    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        for (row in 0..1) {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                for (column in 0..1) {
-                    val index = row * 2 + column
-                    FilterChip(
-                        selected = tab == index,
-                        onClick = { onSelect(index) },
-                        label = {
-                            Text(names[index], maxLines = 1,
-                                overflow = TextOverflow.Ellipsis)
-                        },
-                        modifier = Modifier.weight(1f).heightIn(min = 43.dp)
-                    )
-                }
+internal fun StudyMainActions(
+    availableQuestions: Int,
+    writingTasks: Int,
+    due: Int,
+    onQuiz: () -> Unit,
+    onWriting: () -> Unit,
+    onReview: () -> Unit
+) {
+    Text("Что хотите сделать?", style = MaterialTheme.typography.titleMedium,
+        fontWeight = FontWeight.SemiBold)
+    StudyActionRow(
+        title = "Пройти викторину",
+        subtitle = "$availableQuestions вопросов · короткое занятие из 10 заданий",
+        marker = "01", enabled = availableQuestions > 0, onClick = onQuiz
+    )
+    StudyActionRow(
+        title = "Письменные задания",
+        subtitle = "$writingTasks заданий · размышления и личные заметки",
+        marker = "02", enabled = writingTasks > 0, onClick = onWriting
+    )
+    StudyActionRow(
+        title = "Повторить изученное",
+        subtitle = if (due > 0) "$due вопросов ждут повторения"
+            else "Проверить ошибки и назначенные перечитывания",
+        marker = "03", enabled = true, onClick = onReview
+    )
+}
+
+@Composable
+private fun StudyActionRow(title: String, subtitle: String, marker: String,
+    enabled: Boolean, onClick: () -> Unit
+) {
+    AgedPaperCard(
+        onClick = onClick,
+        enabled = enabled,
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+    ) {
+        Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 14.dp),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically) {
+            Text(marker, style = MaterialTheme.typography.titleSmall,
+                color = MaterialTheme.colorScheme.primary, fontFamily = BookSerif)
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(title, style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.SemiBold)
+                Text(subtitle, style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
+            Text("›", style = MaterialTheme.typography.headlineSmall,
+                color = MaterialTheme.colorScheme.primary)
         }
+    }
+}
+
+/** A mode has one exit to Overview, not a second navigation system. */
+@Composable
+internal fun StudyModeHeader(tab: Int, onBack: () -> Unit) {
+    val (heading, description) = when (tab) {
+        1 -> "Викторина" to "Проверьте знания по выбранному материалу."
+        2 -> "Письменные задания" to "Записывайте свои ответы и сверяйте с книгой."
+        else -> "Повторение" to "Вернитесь к трудным вопросам и разделам."
+    }
+    Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
+        TextButton(onClick = onBack,
+            contentPadding = PaddingValues(horizontal = 0.dp)) {
+            Text("‹ К обзору изучения")
+        }
+        Text(heading, style = MaterialTheme.typography.headlineSmall,
+            fontFamily = BookSerif)
+        Text(description, style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
@@ -142,38 +193,28 @@ internal fun StudyAnswerFeedback(
  * Single, consistent book/section selector shown across study modes.
  * The same selection applies to the overview, quiz, writing and revisions.
  */
+/**
+ * One compact selector instead of three volume chips AND a section picker.
+ * Both parameters are a unified scope inside the bottom sheet.
+ */
 @Composable
 internal fun StudyScopeBar(
     selectedLabel: String,
-    selectedVolume: Int,
-    onChooseSection: () -> Unit,
-    onSelectVolume: (Int) -> Unit
+    onChooseSection: () -> Unit
 ) {
-    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Text("Что изучаем", style = MaterialTheme.typography.titleSmall,
-            fontWeight = FontWeight.SemiBold)
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-            listOf(0 to "Оба тома", 1 to "Том 1", 2 to "Том 2").forEach { (vol, label) ->
-                FilterChip(
-                    selected = selectedVolume == vol,
-                    onClick = { onSelectVolume(vol) },
-                    label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
-                    modifier = Modifier.weight(1f).heightIn(min = 42.dp)
-                )
-            }
+    OutlinedButton(
+        onClick = onChooseSection,
+        modifier = Modifier.fillMaxWidth().heightIn(min = 57.dp),
+        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 9.dp)
+    ) {
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text("ИЗУЧАЕМЫЙ МАТЕРИАЛ", style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text(selectedLabel, maxLines = 2, overflow = TextOverflow.Ellipsis,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurface)
         }
-        OutlinedButton(onClick = onChooseSection, modifier = Modifier.fillMaxWidth()
-            .heightIn(min = 50.dp),
-            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 10.dp)) {
-            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(9.dp)) {
-                Text("Раздел:", style = MaterialTheme.typography.labelMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant)
-                Text(selectedLabel, modifier = Modifier.weight(1f), maxLines = 2,
-                    overflow = TextOverflow.Ellipsis,
-                    style = MaterialTheme.typography.bodyMedium)
-                Text("⌄", style = MaterialTheme.typography.titleLarge)
-            }
-        }
+        Spacer(Modifier.width(8.dp))
+        Text("Изменить ›", style = MaterialTheme.typography.labelMedium)
     }
 }

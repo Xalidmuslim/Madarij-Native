@@ -63,23 +63,29 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var saveError by remember { mutableStateOf("") }
     var saving by remember { mutableStateOf(false) }
     var chapterMenu by remember { mutableStateOf(false) }
-    var chapterSearch by rememberSaveable { mutableStateOf("") }
     var sessionNotice by remember { mutableStateOf("") }
     var checksFilter by rememberSaveable { mutableStateOf("in_progress") }
     var showChecksHelp by rememberSaveable { mutableStateOf(false) }
-    var visibleQuestions by rememberSaveable { mutableIntStateOf(15) }
-    var visibleExercises by rememberSaveable { mutableIntStateOf(15) }
+    var visibleQuestions by rememberSaveable { mutableIntStateOf(8) }
+    var visibleExercises by rememberSaveable { mutableIntStateOf(8) }
     var exerciseId by rememberSaveable { mutableStateOf("") }
     var reflection by rememberSaveable { mutableStateOf("") }
     var hintVisible by rememberSaveable { mutableStateOf(false) }
     var noteSaved by rememberSaveable { mutableStateOf(false) }
     val bank=if(loaded) repo.questions else emptyList()
     val bankByChapter=remember(bank) { bank.groupBy { it.chapterId } }
+    val questionCounts=remember(bankByChapter) { bankByChapter.mapValues { it.value.size } }
     val chapterVolumes=remember(chapters) { chapters.associate { it.id to it.volume } }
     val readIds=remember(read) { read.map { it.chapterId }.toSet() }
     fun inStudyScope(id: String): Boolean =
         studyScopeMatches(id, chapterId, selectedVolume, chapterVolumes)
-    val dueQuestions=attempts.count { it.value.due<=System.currentTimeMillis() }
+    val scopedBank=remember(bank, chapterId, selectedVolume, chapterVolumes) {
+        bank.filter { studyScopeMatches(it.chapterId, chapterId, selectedVolume, chapterVolumes) }
+    }
+    val dueQuestions=scopedBank.count { (attempts[it.id]?.due ?: Long.MAX_VALUE) <= System.currentTimeMillis() }
+    val scopedChapters=remember(chapters,chapterId,selectedVolume,chapterVolumes) {
+        chapters.filter { studyScopeMatches(it.id, chapterId, selectedVolume, chapterVolumes) }
+    }
     val listState=rememberLazyListState()
     LaunchedEffect(tab, questionId, exerciseId, chapterId, selectedVolume) {
         listState.scrollToItem(0)
@@ -122,176 +128,108 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         else sessionIds.split("|").mapNotNull { id -> bankById[id] }
     }
     if (chapterMenu) {
-        val normalizedSearch=remember(chapterSearch) { normalizedText(chapterSearch).text }
-        val matches=remember(chapters, chapterTitles, selectedVolume, normalizedSearch) {
-            chapters.filter { c ->
-                (selectedVolume == 0 || c.volume == selectedVolume) &&
-                    (normalizedSearch.isEmpty() ||
-                        normalizedText(chapterTitles[c.id] ?: c.title).text.contains(normalizedSearch))
-            }.sortedWith(compareBy({ it.volume }, { it.ordinal }))
-        }
-        AlertDialog(
-            onDismissRequest={chapterMenu=false},
-            title={Text("Выбор раздела")},
-            text={
-                Column(verticalArrangement=Arrangement.spacedBy(9.dp)) {
-                    Text(
-                        when(selectedVolume) {
-                            1 -> "Том 1 · ${matches.size} разделов"
-                            2 -> "Том 2 · ${matches.size} разделов"
-                            else -> "Оба тома · ${matches.size} разделов"
-                        },
-                        style=MaterialTheme.typography.bodySmall,
-                        color=MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    OutlinedTextField(
-                        chapterSearch, {chapterSearch=it},
-                        modifier=Modifier.fillMaxWidth(),
-                        singleLine=true, label={Text("Найти раздел")}
-                    )
-                    LazyColumn(Modifier.heightIn(max=390.dp),
-                        verticalArrangement=Arrangement.spacedBy(3.dp)) {
-                        item {
-                            TextButton(
-                                onClick={
-                                    chapterId=""
-                                    checksFilter="in_progress"
-                                    exerciseId=""
-                                    questionId=""
-                                    chapterMenu=false
-                                    chapterSearch=""
-                                },
-                                modifier=Modifier.fillMaxWidth()
-                            ) {
-                                Text(
-                                    if(selectedVolume==0) "✓ Все разделы обоих томов"
-                                    else "✓ Все разделы тома $selectedVolume",
-                                    modifier=Modifier.fillMaxWidth()
-                                )
-                            }
-                        }
-                        for (volume in 1..2) {
-                            val bookChapters=matches.filter { it.volume==volume }
-                            if(bookChapters.isNotEmpty()) {
-                                item(key="vol-header:$volume") {
-                                    Text("ТОМ $volume · ${bookChapters.size} разделов",
-                                        style=MaterialTheme.typography.labelMedium,
-                                        color=MaterialTheme.colorScheme.primary,
-                                        modifier=Modifier.padding(top=9.dp, bottom=3.dp))
-                                }
-                                items(bookChapters,key={it.id}) { c ->
-                                    TextButton(
-                                        onClick={
-                                            chapterId=c.id
-                                            selectedVolume=c.volume
-                                            checksFilter="in_progress"
-                                            questionId=""
-                                            exerciseId=""
-                                            reflection=""
-                                            hintVisible=false
-                                            chapterMenu=false
-                                            chapterSearch=""
-                                            visibleQuestions=15
-                                            visibleExercises=15
-                                        },
-                                        modifier=Modifier.fillMaxWidth(),
-                                        contentPadding=PaddingValues(horizontal=9.dp,vertical=8.dp)
-                                    ) {
-                                        Column(Modifier.fillMaxWidth()) {
-                                            Text(chapterTitles[c.id] ?: c.title,
-                                                maxLines=3,
-                                                style=MaterialTheme.typography.bodyMedium)
-                                            Text(
-                                                "${bankByChapter[c.id]?.size ?: 0} вопросов",
-                                                style=MaterialTheme.typography.labelSmall,
-                                                color=MaterialTheme.colorScheme.onSurfaceVariant
-                                            )
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        if(matches.isEmpty()) item {
-                            Text("Ничего не найдено. Измените поисковый запрос.")
-                        }
-                    }
-                }
+        StudyChapterPicker(
+            selectedVolume = selectedVolume,
+            selectedChapterId = chapterId,
+            chapters = chapters,
+            chapterTitles = chapterTitles,
+            questionCounts = questionCounts,
+            readIds = readIds,
+            onSelectAll = { volume ->
+                selectedVolume = volume
+                chapterId = ""
+                questionId = ""
+                exerciseId = ""
+                sessionIds = ""
+                sessionFinished = false
+                checksFilter = "in_progress"
+                visibleQuestions = 8
+                visibleExercises = 8
+                chapterMenu = false
             },
-            confirmButton={
-                TextButton(onClick={chapterMenu=false}) {Text("Закрыть")}
-            }
+            onSelectChapter = { id, volume ->
+                selectedVolume = volume
+                chapterId = id
+                questionId = ""
+                exerciseId = ""
+                reflection = ""
+                hintVisible = false
+                sessionIds = ""
+                sessionFinished = false
+                checksFilter = "in_progress"
+                visibleQuestions = 8
+                visibleExercises = 8
+                chapterMenu = false
+            },
+            onDismiss = { chapterMenu = false }
         )
     }
     LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),
         state=listState,
         verticalArrangement=Arrangement.spacedBy(10.dp),
         contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
-        // No large dashboard, duplicated mode tabs or section-picker on a
-        // question or while composing a written answer.
-        if(tab==0 && q==null && exercise==null) item {
-            StudyOverview(
-                readChapters=readIds.size,
-                allChapters=chapters.size,
-                answered=attempts.count { it.value.count>0 },
-                allQuestions=bank.size,
-                due=dueQuestions,
-                writingTasks=if(loaded) repo.exercises.size else 0,
-                onStart={if(loaded) beginSession()}
-            )
-        }
-        if(chapterReviewMessage.isNotBlank()) item {
-            Text(chapterReviewMessage,style=MaterialTheme.typography.bodySmall,
-                color=MaterialTheme.colorScheme.primary)
-        }
-        if(sessionNotice.isNotBlank()) item {
-            Text(sessionNotice,style=MaterialTheme.typography.bodySmall,
-                color=MaterialTheme.colorScheme.primary)
-        }
-        if(q==null && exercise==null) {
+        if (q == null && exercise == null) {
             item {
-                StudyScopeBar(
-                    selectedLabel=chapterTitles[chapterId] ?:
-                        when(selectedVolume) {
-                            1 -> "Все разделы тома 1"
-                            2 -> "Все разделы тома 2"
-                            else -> "Все разделы"
-                        },
-                    selectedVolume=selectedVolume,
-                    onChooseSection={
-                        chapterSearch=""
-                        chapterMenu=true
-                    },
-                    onSelectVolume={ volume ->
-                        selectedVolume=volume
-                        checksFilter="in_progress"
-                        chapterId=selectedStudyChapterAfterVolumeChange(
-                            chapterId,volume,chapterVolumes)
-                        questionId=""
-                        exerciseId=""
-                        visibleQuestions=15
-                        visibleExercises=15
-                        sessionFinished=false
+                if (tab != 0) {
+                    StudyModeHeader(tab) {
+                        tab = 0
+                        questionId = ""
+                        sessionIds = ""
+                        sessionFinished = false
                     }
+                }
+                StudyScopeBar(
+                    selectedLabel = chapterTitles[chapterId] ?: when (selectedVolume) {
+                        1 -> "Том 1 · все разделы"
+                        2 -> "Том 2 · все разделы"
+                        else -> "Оба тома · все разделы"
+                    },
+                    onChooseSection = { chapterMenu = true }
                 )
             }
-            item {
-                StudyModeTabs(tab) { selected ->
-                    tab=selected
-                    questionId=""
-                    sessionIds=""
-                    sessionFinished=false
-                    visibleQuestions=15
-                    visibleExercises=15
+            if (tab == 0) {
+                item {
+                    StudyOverview(
+                        readChapters = scopedChapters.count { it.id in readIds },
+                        allChapters = scopedChapters.size,
+                        answered = scopedBank.count { (attempts[it.id]?.count ?: 0) > 0 },
+                        allQuestions = scopedBank.size,
+                        due = dueQuestions,
+                        writingTasks = if (loaded)
+                            repo.exercises.count { inStudyScope(it.chapterId) } else 0
+                    )
+                }
+                item {
+                    StudyMainActions(
+                        availableQuestions = scopedBank.size,
+                        writingTasks = if (loaded)
+                            repo.exercises.count { inStudyScope(it.chapterId) } else 0,
+                        due = dueQuestions,
+                        onQuiz = {
+                            tab = 1
+                            questionId = ""
+                            sessionIds = ""
+                            sessionFinished = false
+                        },
+                        onWriting = {
+                            tab = 2
+                            exerciseId = ""
+                        },
+                        onReview = {
+                            tab = 3
+                            questionId = ""
+                        }
+                    )
                 }
             }
         } else item {
-            TextButton(onClick={
-                if(q!=null) {
-                    questionId=""
-                    sessionIds=""
-                } else exerciseId=""
+            TextButton(onClick = {
+                if (q != null) {
+                    questionId = ""
+                    sessionIds = ""
+                } else exerciseId = ""
             }) {
-                Text(if(q!=null) "‹ Вернуться к вопросам" else "‹ К письменным заданиям")
+                Text(if (q != null) "‹ К вопросам" else "‹ К письменным заданиям")
             }
         }
         if(!loaded) item { Text(if(loadError) "Не удалось загрузить учебные материалы. Откройте раздел снова." else "Загрузка учебных материалов…") }
@@ -405,19 +343,19 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         Text(
                             if(checksFilter=="all") "Все разделы · ${scoped.size}"
                             else if(activeIds.isEmpty()) "С чего начать"
-                            else "Мои разделы",
+                            else "Продолжить изучение",
                             style=MaterialTheme.typography.titleMedium
                         )
                         if(chapterId.isEmpty()) {
                             TextButton(onClick={
                                 checksFilter=if(checksFilter=="all") "in_progress" else "all"
                             }) {
-                                Text(if(checksFilter=="all") "Свернуть" else "Все ${scoped.size}")
+                                Text(if(checksFilter=="all") "Свернуть список" else "Показать все ${scoped.size}")
                             }
                         }
                     }
                     if(chapterId.isEmpty() && activeIds.isEmpty() && checksFilter!="all")
-                        Text("Выберите тему и начните проверку. Полный список доступен по кнопке «Все».",
+                        Text("Начните с одного из разделов или выберите другой материал выше.",
                             style=MaterialTheme.typography.bodySmall)
                     TextButton(onClick={showChecksHelp=!showChecksHelp}) {
                         Text(if(showChecksHelp) "Скрыть объяснение" else "Что значит «Проверено»?")
