@@ -10,7 +10,11 @@ internal sealed interface ReaderTextBlock {
 /** Splits only standalone source section markers; all author wording remains in order. */
 internal fun splitReaderText(text: String, marker: String, label: String): List<ReaderTextBlock> {
     if (text.isBlank() || marker.isBlank()) return emptyList()
-    val matches = Regex("(?m)^${Regex.escape(marker)}[ \\t]*$").findAll(text).toList()
+    // Page-based drafts may contain a source heading marked as **Раздел**.
+    // Match standalone lines only, never a word inside the author's prose.
+    val escaped = Regex.escape(marker)
+    val matches = Regex("""(?m)^[ \t]*(?:${escaped}|\*\*${escaped}\*\*)[ \t]*\r?$""")
+        .findAll(text).toList()
     if (matches.isEmpty()) return listOf(ReaderTextBlock.Body(text))
 
     val result = mutableListOf<ReaderTextBlock>()
@@ -48,4 +52,15 @@ private fun looksLikeHeading(line: String, nextLine: String): Boolean {
 private fun addBody(target: MutableList<ReaderTextBlock>, text: String) {
     val body = text.trim('\r', '\n')
     if (body.isNotBlank()) target += ReaderTextBlock.Body(body)
+}
+
+/**
+ * Strip balanced Markdown emphasis only from the visible Russian book text.
+ * The source text in Room and copy/share output remains untouched.
+ */
+internal fun readerDisplayMarkdown(text: String): String {
+    val paired = Regex("""(?<!\*)\*\*([^*\r\n]{1,180})\*\*(?!\*)|(?<!\*)\*([^*\r\n]{1,180})\*(?!\*)""")
+    return paired.replace(text) { match ->
+        match.groups[1]?.value ?: match.groups[2]?.value ?: match.value
+    }
 }
