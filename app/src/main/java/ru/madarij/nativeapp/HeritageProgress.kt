@@ -68,7 +68,7 @@ private fun ProgressDetail(name: String, value: String, icon: String,
         .padding(horizontal = 14.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-        AntiqueBookIcon(icon, Modifier.size(30.dp))
+        HeritageMenuIcon(icon, Modifier.size(30.dp))
         Text(name, Modifier.weight(1f), fontFamily = BookSerif, fontSize = 16.sp,
             color = HeritageBrown)
         Text(value, fontFamily = BookSerif, fontSize = 16.sp, color = HeritageBrown)
