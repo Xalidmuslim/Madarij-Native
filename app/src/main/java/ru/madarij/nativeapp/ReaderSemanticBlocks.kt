@@ -71,12 +71,15 @@ private fun splitOutsideQuotedText(text: String): List<String> {
     val parts = mutableListOf<String>()
     var from = 0
     var guillemetDepth = 0
+    var curlyDepth = 0
     for (i in text.indices) {
         when (text[i]) {
             '«' -> guillemetDepth++
             '»' -> guillemetDepth = (guillemetDepth - 1).coerceAtLeast(0)
+            '“' -> curlyDepth++
+            '”' -> curlyDepth = (curlyDepth - 1).coerceAtLeast(0)
         }
-        if (guillemetDepth != 0 || text[i] !in ".!?…»])") continue
+        if (guillemetDepth != 0 || curlyDepth != 0 || text[i] !in ".!?…»”])") continue
         if (i + 1 >= text.length || !text[i + 1].isWhitespace()) continue
         var next = i + 1
         while (next < text.length && text[next].isWhitespace()) next++
@@ -110,11 +113,11 @@ private fun verseReference(sentence: String): String? {
 private fun hasVerseQuotedBeforeReference(sentence: String, reference: String): Boolean {
     val pos = sentence.indexOf(reference)
     if (pos <= 0) return false
-    val close = sentence.lastIndexOf('»', pos)
+    val close = maxOf(sentence.lastIndexOf('»', pos), sentence.lastIndexOf('”', pos))
     if (close < 0) return false
     val intervening = sentence.substring(close + 1, pos)
     return intervening.all { it.isWhitespace() || it in ".,;:!?" } &&
-        sentence.lastIndexOf('«', close) >= 0
+        (sentence.lastIndexOf('«', close) >= 0 || sentence.lastIndexOf('“', close) >= 0)
 }
 
 private fun humanIntro(prefix: String): Boolean {
@@ -149,8 +152,9 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
             }
         }
         for (piece in splitOutsideQuotedText(flat)) {
-            val quoteAt = piece.indexOf('«')
-            val quoteEnd = piece.lastIndexOf('»')
+            val quoteAt = listOf(piece.indexOf('«'), piece.indexOf('“'))
+                .filter { it >= 0 }.minOrNull() ?: -1
+            val quoteEnd = maxOf(piece.lastIndexOf('»'), piece.lastIndexOf('”'))
             val prefix = if (quoteAt >= 0) piece.substring(0, quoteAt).trim() else ""
             val citation = verseReference(piece)
             val surahQuote = citation != null && hasVerseQuotedBeforeReference(piece, citation)
