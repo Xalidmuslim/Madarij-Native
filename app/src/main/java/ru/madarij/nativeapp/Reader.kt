@@ -1023,40 +1023,30 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
 }
 
 @Composable
-private fun ReaderNumberedBlock(segment: ReaderRichSegment.Numbered, settings: ReadingSettings, query: String) {
-    Row(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
-        horizontalArrangement = Arrangement.spacedBy(7.dp),
-        verticalAlignment = Alignment.Top
-    ) {
-        Surface(
-            shape = RoundedCornerShape(10.dp),
-            color = BookColors.lightGold.copy(alpha = .20f),
-            border = androidx.compose.foundation.BorderStroke(
-                .7.dp, BookColors.gold.copy(alpha = .34f))
-        ) {
-            Text(segment.label, modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
-                style = MaterialTheme.typography.labelMedium.copy(
-                    fontFamily = BookSerif, fontSize = 13.sp, lineHeight = 17.sp),
-                color = MaterialTheme.colorScheme.primary)
-        }
-        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            val colon = segment.body.indexOf(':')
-            val separateTitle = colon in 4..65 &&
-                segment.body.substring(0, colon).none { it == '.' || it == '?' || it == '!' }
-            if (separateTitle) {
-                Text(segment.body.substring(0, colon + 1),
-                    style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif),
-                    color = MaterialTheme.colorScheme.primary)
-                Text(highlight(segment.body.substring(colon + 1).trimStart(), query,
-                        MaterialTheme.colorScheme.primary),
-                    style = readerStyle(settings))
-            } else {
-                Text(highlight(segment.body, query, MaterialTheme.colorScheme.primary),
-                    style = readerStyle(settings))
+private fun ReaderNumberedBlock(
+    segment: ReaderRichSegment.Numbered,
+    settings: ReadingSettings,
+    query: String
+) {
+    // Inline emphasis instead of a separate badge/column: text keeps the
+    // entire page width, so "Первое / Второе" doesn't force excessive wrapping.
+    // Use the original source string verbatim, including its punctuation.
+    val accent = MaterialTheme.colorScheme.primary
+    val numbered = remember(segment.raw, segment.label, query, accent) {
+        buildAnnotatedString {
+            append(highlight(segment.raw, query, accent))
+            val offset = segment.raw.indexOf(segment.label)
+            if (offset >= 0) {
+                addStyle(SpanStyle(fontWeight = FontWeight.SemiBold, color = accent),
+                    offset, offset + segment.label.length)
             }
         }
     }
+    Text(
+        numbered,
+        style = readerStyle(settings),
+        modifier = Modifier.fillMaxWidth().padding(vertical = 1.dp)
+    )
 }
 
 private fun buildReaderDisplayRussian(paragraphs: List<Paragraph>): Map<String, String> {
