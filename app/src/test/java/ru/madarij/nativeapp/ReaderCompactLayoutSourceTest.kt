@@ -8,9 +8,14 @@ import java.io.File
 class ReaderCompactLayoutSourceTest {
     @Test fun numberedLabelsStayCompact() {
         val src = File("src/main/java/ru/madarij/nativeapp/Reader.kt").readText()
-        assertTrue(src.contains("Modifier.padding(horizontal = 8.dp, vertical = 4.dp)"))
-        assertTrue(src.contains("fontSize = 13.sp, lineHeight = 17.sp"))
-        assertTrue(src.contains("horizontalArrangement = Arrangement.spacedBy(7.dp)"))
+        // No narrow badge column, no rounded Surface around "Первое".
+        val block = src.substringAfter("private fun ReaderNumberedBlock(")
+            .substringBefore("private fun buildReaderDisplayRussian(")
+        assertTrue(block.contains("Modifier.fillMaxWidth().padding(vertical = 1.dp)"))
+        assertTrue(block.contains("append(highlight(segment.raw, query, accent))"))
+        assertTrue(block.contains("FontWeight.SemiBold"))
+        assertTrue(!block.contains("Surface("))
+        assertTrue(!block.contains("Modifier.weight(1f)"))
     }
 
     @Test fun notesAreCompactAndStillExpandable() {
