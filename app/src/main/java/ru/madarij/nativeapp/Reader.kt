@@ -142,13 +142,13 @@ fun Reader(
     var exactTargetSettled by remember(sectionKey, anchor) { mutableStateOf(false) }
     var viewportTopY by remember(sectionKey) { mutableFloatStateOf(Float.NaN) }
     var targetTopY by remember(sectionKey, anchor) { mutableFloatStateOf(Float.NaN) }
-    val density = androidx.compose.ui.platform.LocalDensity.current
+    val alignDensity = androidx.compose.ui.platform.LocalDensity.current
     // Locate the exact author-heading or editorial phrase once, then place it
     // against the TOP of the reading viewport (not merely "somewhere visible").
     LaunchedEffect(ready, exactTargetAvailable, viewportTopY, targetTopY) {
         if (ready && exactTargetAvailable && !exactTargetSettled &&
             viewportTopY.isFinite() && targetTopY.isFinite()) {
-            val inset = with(density) { 8.dp.toPx() }
+            val inset = with(alignDensity) { 8.dp.toPx() }
             listState.scrollBy(targetTopY - viewportTopY - inset)
             exactTargetSettled = true
         }
