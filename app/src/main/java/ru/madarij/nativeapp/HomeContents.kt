@@ -92,27 +92,27 @@ internal fun HomeScreen(
                             Text("Степени\nидущих",
                                 style = MaterialTheme.typography.headlineLarge.copy(fontFamily = BookSerif,
                                     fontWeight = androidx.compose.ui.text.font.FontWeight.Normal,
-                                    fontSize = 46.sp, lineHeight = 43.sp),
-                                color = Color(0xFFFFEDD0))
+                                    fontSize = 48.sp, lineHeight = 45.sp),
+                                color = BookColors.ink)
                             Row(Modifier.widthIn(max = 210.dp).padding(top = 9.dp, bottom = 7.dp),
                                 verticalAlignment = Alignment.CenterVertically) {
                                 HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
-                                    color = Color(0xFFC79C64).copy(alpha = .65f))
+                                    color = BookColors.gold.copy(alpha = .65f))
                                 Text("❖", Modifier.padding(horizontal = 6.dp),
                                     fontFamily = BookSerif, fontSize = 11.sp,
-                                    color = Color(0xFFEAC28B))
+                                    color = BookColors.gold)
                                 HorizontalDivider(Modifier.weight(1f), thickness = .6.dp,
-                                    color = Color(0xFFC79C64).copy(alpha = .65f))
+                                    color = BookColors.gold.copy(alpha = .65f))
                             }
                             Text("Ибн аль-Каййим\nаль-Джаузийя",
                                 style = MaterialTheme.typography.bodyLarge.copy(fontFamily = BookSerif,
                                     fontSize = 18.sp, lineHeight = 22.sp),
-                                color = Color(0xFFEFC489))
+                                color = BookColors.ink)
                         }
                         TextButton(onClick = { navigate("settings") },
                             modifier = Modifier.size(42.dp),
                             contentPadding = PaddingValues(0.dp)) {
-                            Text("Aa", color = Color(0xFFF1CC92), fontSize = 17.sp)
+                            Text("Aa", color = BookColors.ink, fontSize = 17.sp)
                         }
                     }
                 }
@@ -386,18 +386,20 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         val selected = volume == selectedVolume
                         val shape = RoundedCornerShape(14.dp)
                         Box(
-                            Modifier.weight(1f).heightIn(min = 43.dp)
+                            Modifier.weight(1f).heightIn(min = 45.dp)
                                 .clip(shape)
-                                .background(BookColors.card.copy(alpha = if (selected) 1f else .65f))
-                                .border(if (selected) .85.dp else .5.dp,
-                                    BookColors.gold.copy(alpha = if (selected) .5f else .2f), shape)
+                                .background(if (selected) HeritageBrown else BookColors.card.copy(alpha = .72f))
+                                .border(if (selected) .8.dp else .55.dp,
+                                    BookColors.gold.copy(alpha = if (selected) .65f else .25f), shape)
                                 .clickable { selectedVolume = volume; resetList() },
                             contentAlignment = Alignment.Center
                         ) {
-                            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                            if (!selected) PreloadedBookImage(R.drawable.card_paper,
+                                Modifier.matchParentSize(), ContentScale.FillBounds)
                             Text("Том $volume",
-                                style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
-                                color = BookColors.ink.copy(alpha = if (selected) 1f else .72f))
+                                style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif,
+                                    fontSize = 18.sp),
+                                color = if (selected) HeritageCream else BookColors.ink)
                         }
                     }
                 }
