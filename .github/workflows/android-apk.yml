@@ -60,6 +60,8 @@ jobs:
           keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
       - name: Run Android unit tests
         run: ./gradlew :app:testDebugUnitTest --no-daemon --stacktrace
+      - name: Verify performance-gate parser (fast, before R8)
+        run: python3 -m unittest -v tools/test_performance_gate.py
       # Every PR, main update and manual run must deliver the same optimized
       # release variant used for performance acceptance. Debug remains solely
       # the target of unit tests; it is never offered as the user's new APK.
@@ -114,8 +116,6 @@ jobs:
         run: |
           echo "[Download optimized R8 Release APK]($APK_URL)" >> "$GITHUB_STEP_SUMMARY"
           echo "Note: CI uses an ephemeral development keystore. Do not replace existing user installs signed by another key." >> "$GITHUB_STEP_SUMMARY"
-      - name: Verify performance-gate parser
-        run: python3 -m unittest -v tools/test_performance_gate.py
       - name: Enable Android emulator KVM
         shell: bash
         run: |
