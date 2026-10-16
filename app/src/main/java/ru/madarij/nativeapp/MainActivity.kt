@@ -203,11 +203,10 @@ fun BookApp(vm:BookViewModel=viewModel()) {
 
         val openReader:(String,String?,String)->Unit = { chapter,p,q -> nav.navigate(readerRoute(chapter,p,q)) }
         val openFromContents:(String,String?)->Unit = { chapter,paragraph ->
-            if (paragraph == null) {
-                nav.navigate(readerRoute(chapter, top = true))
-            } else scope.launch {
-                vm.repository.dao.paragraph(paragraph)?.let { nav.navigate(readerRoute(it.chapterId,it.id)) }
-            }
+            // TOC chapter/paragraph ownership is verified by the bundled corpus:
+            // no database round-trip is needed before opening the reader.
+            if (paragraph == null) nav.navigate(readerRoute(chapter, top = true))
+            else nav.navigate(readerRoute(chapter, paragraph))
         }
         val openSource:(String)->Unit = { id -> scope.launch {
             vm.repository.dao.paragraph(id)?.let { nav.navigate(readerRoute(it.chapterId,it.id)) }
