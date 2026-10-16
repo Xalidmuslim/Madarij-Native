@@ -49,6 +49,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var sessionIndex by rememberSaveable { mutableIntStateOf(0) }
     var sessionCorrect by rememberSaveable { mutableIntStateOf(0) }
     var sessionFinished by rememberSaveable { mutableStateOf(false) }
+    var sessionLastSize by rememberSaveable { mutableIntStateOf(0) }
     var chapterId by rememberSaveable { mutableStateOf(initialChapterId ?: "") }
     var questionId by rememberSaveable { mutableStateOf("") }
     var answer by rememberSaveable { mutableIntStateOf(-1) }
@@ -90,6 +91,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             sessionIds = picked.joinToString("|") { it.id }
             sessionIndex = 0
             sessionCorrect = 0
+            sessionLastSize = picked.size
             sessionFinished = false
             tab = 1
             start(picked.first())
@@ -141,19 +143,96 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         }
         if(!loaded) item { Text(if(loadError) "Не удалось загрузить учебные материалы. Откройте раздел снова." else "Загрузка учебных материалов…") }
         else if(q!=null && (tab==1 || tab==3)) {
-            item { Text(q.prompt,style=MaterialTheme.typography.titleLarge);Text(levelLabel(q.level),style=MaterialTheme.typography.labelLarge) }
-            val indices=optionOrder.split(",").mapNotNull{it.toIntOrNull()}.filter{it in q.options.indices}.ifEmpty {q.options.indices.toList()}
-            items(indices,key={"option:$it"}) { index -> val option=q.options[index]; val label=('A'.code+indices.indexOf(index)).toChar()
-                OutlinedButton(onClick={answer=index},enabled=!submitted && !saving,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics {contentDescription="Вариант $label. ${option.text}${if(answer==index) ". Выбран" else ""}"}) {Text("$label. ${if(answer==index) "✓ " else ""}${option.text}")}
-                if(submitted) Text((if(option.correct) "Ответ по тексту. " else "Другой вариант. ")+option.explanation)
+            val ordinal = if (sessionQuestions.isNotEmpty()) sessionIndex + 1 else null
+            val total = if (sessionQuestions.isNotEmpty()) sessionQuestions.size else null
+            item {
+                StudyQuestionHeading(
+                    chapter = chapterTitles[q.chapterId] ?: "Раздел книги",
+                    level = levelLabel(q.level),
+                    ordinal = ordinal,
+                    total = total,
+                    category = if (q.id.startsWith("book-recognition-")) "Узнайте фрагмент" else "Понимание смысла"
+                )
+                Spacer(Modifier.height(9.dp))
+                Text(q.prompt, style = MaterialTheme.typography.titleLarge)
+            }
+            val indices=optionOrder.split(",").mapNotNull{it.toIntOrNull()}
+                .filter{it in q.options.indices}.ifEmpty {q.options.indices.toList()}
+            items(indices,key={"option:$it"}) { index ->
+                val option=q.options[index]
+                val label=('A'.code+indices.indexOf(index)).toChar()
+                OutlinedButton(
+                    onClick={answer=index},
+                    enabled=!submitted && !saving,
+                    modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics {
+                        contentDescription="Вариант $label. ${option.text}${if(answer==index) ". Выбран" else ""}"
+                    },
+                    colors=ButtonDefaults.outlinedButtonColors(
+                        containerColor=if(answer==index) MaterialTheme.colorScheme.primaryContainer
+                            else MaterialTheme.colorScheme.surface.copy(alpha=.35f)
+                    )
+                ) {
+                    Text("$label. ${if(answer==index) "✓ " else ""}${option.text}",
+                        modifier=Modifier.fillMaxWidth())
+                }
             }
             item {
                 if(!submitted) {
-                    Row { Checkbox(confidence,{confidence=it},enabled=!saving);Text("Ответ неуверенный",Modifier.padding(top=12.dp)) }
-                    Button(enabled=answer>=0 && !saving,onClick={saving=true;scope.launch {try {repo.record(q.id,q.options[answer].correct,confidence);submitted=true} catch(e:Exception) {if(e is CancellationException) throw e;saveError="Не удалось сохранить попытку. Повторите."} finally {saving=false}}}) {Text("Проверить ответ")}
+                    Row(verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
+                        Checkbox(confidence,{confidence=it},enabled=!saving)
+                        Text("Ответ неуверенный",style=MaterialTheme.typography.bodySmall)
+                    }
+                    Button(enabled=answer>=0 && !saving,
+                        modifier=Modifier.fillMaxWidth(),
+                        onClick={
+                            saving=true
+                            scope.launch {
+                                try {
+                                    val correct=q.options[answer].correct
+                                    repo.record(q.id,correct,confidence)
+                                    submitted=true
+                                    if(correct && sessionQuestions.isNotEmpty()) sessionCorrect++
+                                } catch(e:Exception) {
+                                    if(e is CancellationException) throw e
+                                    saveError="Не удалось сохранить попытку. Повторите."
+                                } finally { saving=false }
+                            }
+                        }) { Text("Проверить ответ") }
                     if(saveError.isNotBlank()) Text(saveError)
-                } else {Text("Исходный фрагмент",style=MaterialTheme.typography.titleMedium);Text(q.sourceExcerpt);TextButton(onClick={onOpenParagraph(q.sourceParagraphId)}) {Text("Открыть абзац в книге")} }
-                TextButton(onClick={questionId=""}) {Text("К списку вопросов")}
+                } else {
+                    val selected=q.options.getOrNull(answer)
+                    val correct=q.options.firstOrNull { it.correct }
+                    val good=selected?.correct == true
+                    StudyAnswerFeedback(
+                        isCorrect=good,
+                        detail=buildString {
+                            if(!good && correct!=null) append("Правильный вариант: ${correct.text}\n\n")
+                            append(if(good) correct?.explanation.orEmpty()
+                                else selected?.explanation.orEmpty())
+                        },
+                        onSource={onOpenParagraph(q.sourceParagraphId)},
+                        onContinue={
+                            val next=sessionQuestions.getOrNull(sessionIndex+1)
+                            if(next!=null) {
+                                sessionIndex++
+                                start(next)
+                            } else {
+                                questionId=""
+                                sessionFinished=sessionQuestions.isNotEmpty()
+                                sessionIds=""
+                            }
+                        },
+                        continueLabel=if(sessionQuestions.isNotEmpty() &&
+                            sessionIndex+1<sessionQuestions.size) "Следующий" else "К вопросам"
+                    )
+                    Spacer(Modifier.height(9.dp))
+                    Text("Опорный фрагмент",style=MaterialTheme.typography.titleSmall)
+                    Text(q.sourceExcerpt.take(420) +
+                        if(q.sourceExcerpt.length>420) "…" else "",
+                        style=MaterialTheme.typography.bodySmall,
+                        color=MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                TextButton(onClick={questionId="";sessionIds=""}) {Text("Завершить просмотр")}
             }
         } else when(tab) {
             0 -> {
