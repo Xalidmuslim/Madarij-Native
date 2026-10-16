@@ -19,7 +19,7 @@ class PerformanceGateTest(unittest.TestCase):
         self.assertEqual(4290, data["cold_median_ms"])
         self.assertEqual(42, data["frames"])
         self.assertEqual([], evaluate(data))
-        self.assertIn("reference #502", report(data, []))
+        self.assertIn("Optimized #502 reference", report(data, []))
 
     def test_extreme_cold_start_regression_fails(self):
         timings = self.reference.replace("4290", "10000").replace(
