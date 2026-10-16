@@ -27,9 +27,9 @@ internal fun StudyOverview(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
         Column(Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
             verticalArrangement = Arrangement.spacedBy(11.dp)) {
-            Text("Мой путь по книге", style = MaterialTheme.typography.titleLarge,
+            Text("Моё изучение", style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.SemiBold)
-            Text("Читайте, проверяйте понимание и возвращайтесь к трудным вопросам.",
+            Text("Короткие проверки по прочитанному и повторение трудных вопросов.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             val progress = if (allQuestions > 0) answered.toFloat() / allQuestions else 0f
@@ -42,12 +42,12 @@ internal fun StudyOverview(
                 StudyStat("$due", "Повторить", Modifier.weight(.8f))
                 StudyStat("$readChapters/$allChapters", "Прочитано", Modifier.weight(1.0f))
             }
-            Text("Вопросы на понимание и узнавание текста · $writingTasks письменных заданий",
+            Text("$writingTasks письменных заданий · вопросы по обоим томам",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Button(onClick = onStart, enabled = allQuestions > 0,
                 modifier = Modifier.fillMaxWidth().heightIn(min = 45.dp)) {
-                Text("Начать проверку · 10 вопросов")
+                Text("Начать занятие · 10 вопросов")
             }
         }
     }
@@ -65,8 +65,8 @@ private fun StudyStat(value: String, description: String, modifier: Modifier = M
 
 @Composable
 internal fun StudyModeTabs(tab: Int, onSelect: (Int) -> Unit) {
-    // Two rows instead of a cropped horizontally scrolling strip.
-    val names = listOf("Разделы", "Викторина", "Письменные", "Повторение")
+    // Four destinations, no duplicate 'In progress / All sections' navigation.
+    val names = listOf("Обзор", "Вопросы", "Письменно", "Повторить")
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         for (row in 0..1) {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -133,6 +133,46 @@ internal fun StudyAnswerFeedback(
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 TextButton(onClick = onSource) { Text("Открыть источник") }
                 Button(onClick = onContinue) { Text(continueLabel) }
+            }
+        }
+    }
+}
+
+/**
+ * Single, consistent book/section selector shown across study modes.
+ * The same selection applies to the overview, quiz, writing and revisions.
+ */
+@Composable
+internal fun StudyScopeBar(
+    selectedLabel: String,
+    selectedVolume: Int,
+    onChooseSection: () -> Unit,
+    onSelectVolume: (Int) -> Unit
+) {
+    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Text("Что изучаем", style = MaterialTheme.typography.titleSmall,
+            fontWeight = FontWeight.SemiBold)
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+            listOf(0 to "Оба тома", 1 to "Том 1", 2 to "Том 2").forEach { (vol, label) ->
+                FilterChip(
+                    selected = selectedVolume == vol,
+                    onClick = { onSelectVolume(vol) },
+                    label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                    modifier = Modifier.weight(1f).heightIn(min = 42.dp)
+                )
+            }
+        }
+        OutlinedButton(onClick = onChooseSection, modifier = Modifier.fillMaxWidth()
+            .heightIn(min = 50.dp),
+            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 10.dp)) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(9.dp)) {
+                Text("Раздел:", style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(selectedLabel, modifier = Modifier.weight(1f), maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    style = MaterialTheme.typography.bodyMedium)
+                Text("⌄", style = MaterialTheme.typography.titleLarge)
             }
         }
     }
