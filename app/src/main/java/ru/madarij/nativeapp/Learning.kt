@@ -385,19 +385,45 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             }
         } else when(tab) {
             0 -> {
-                item {
-                    Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
-                        FilterChip(checksFilter=="in_progress",{checksFilter="in_progress"},label={Text("В работе")})
-                        FilterChip(checksFilter=="all",{checksFilter="all"},label={Text("Все разделы")})
-                    }
-                    chapterPicker()
-                    TextButton(onClick={showChecksHelp=!showChecksHelp}) {Text(if(showChecksHelp) "Скрыть пояснение" else "Как считается понимание")}
-                    if(showChecksHelp) Text("«Понято по проверкам»: не менее двух ответов, из них не менее 80% правильных. Это показатель работы с вопросами; чтение отмечается отдельно.",style=MaterialTheme.typography.bodySmall)
+                val activeIds=readIds+listOfNotNull(last?.chapterId)
+                val scoped=chapters.filter { inStudyScope(it.id) }
+                // Show a few actionable chapters by default, not all 99.
+                val checksChapters=when {
+                    chapterId.isNotEmpty() -> scoped
+                    checksFilter=="all" -> scoped
+                    activeIds.isEmpty() -> scoped.take(3)
+                    else -> scoped.filter { it.id in activeIds }.ifEmpty { scoped.take(3) }
                 }
-                val activeIds=read.map{it.chapterId}.toSet()+listOfNotNull(last?.chapterId)
-                val checksChapters=chapters.filter{(chapterId.isBlank() || it.id==chapterId) && (checksFilter=="all" || activeIds.isEmpty() || it.id in activeIds)}
+                item {
+                    Row(Modifier.fillMaxWidth(),
+                        horizontalArrangement=Arrangement.SpaceBetween,
+                        verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
+                        Text(
+                            if(checksFilter=="all") "Все разделы · ${scoped.size}"
+                            else if(activeIds.isEmpty()) "С чего начать"
+                            else "Мои разделы",
+                            style=MaterialTheme.typography.titleMedium
+                        )
+                        if(chapterId.isEmpty()) {
+                            TextButton(onClick={
+                                checksFilter=if(checksFilter=="all") "in_progress" else "all"
+                            }) {
+                                Text(if(checksFilter=="all") "Свернуть" else "Все ${scoped.size}")
+                            }
+                        }
+                    }
+                    if(chapterId.isEmpty() && activeIds.isEmpty() && checksFilter!="all")
+                        Text("Выберите тему и начните проверку. Полный список доступен по кнопке «Все».",
+                            style=MaterialTheme.typography.bodySmall)
+                    TextButton(onClick={showChecksHelp=!showChecksHelp}) {
+                        Text(if(showChecksHelp) "Скрыть объяснение" else "Что значит «Проверено»?")
+                    }
+                    if(showChecksHelp) Text(
+                        "Раздел считается освоенным по вопросам после двух ответов с точностью не ниже 80%. Это учебный показатель, а не научная оценка понимания.",
+                        style=MaterialTheme.typography.bodySmall)
+                }
                 items(checksChapters,key={"section:${it.id}"}) { c ->
-                    val questions=bank.filter{it.chapterId==c.id}; val tried=questions.mapNotNull{attempts[it.id]}.filter{it.count>0};val correct=tried.count{it.latestCorrect};val understood=tried.size>=2 && correct.toDouble()/tried.size>=0.8
+                    val questions=bankByChapter[c.id].orEmpty(); val tried=questions.mapNotNull{attempts[it.id]}.filter{it.count>0};val correct=tried.count{it.latestCorrect};val understood=tried.size>=2 && correct.toDouble()/tried.size>=0.8
                     var actions by remember {mutableStateOf(false)}
                     AgedPaperCard(Modifier.fillMaxWidth(),colors=CardDefaults.cardColors(containerColor=MaterialTheme.colorScheme.surfaceVariant)) {Column(Modifier.padding(horizontal=14.dp,vertical=12.dp),verticalArrangement=Arrangement.spacedBy(4.dp)) {
                         Text(chapterTitles[c.id] ?: c.title,style=MaterialTheme.typography.titleMedium)
@@ -417,8 +443,9 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 }
             }
             2 -> {
-                item {chapterPicker();Text("Письменный ответ сохраняется как личная заметка. Редакторский ориентир открывается после того, как вы напишете ответ.")}
-                val exercises=repo.exercises.filter{chapterId.isBlank() || it.chapterId==chapterId}
+                item {Text("Ответы сохраняются в личных заметках. Ориентир можно открыть после написания ответа.",
+                    style=MaterialTheme.typography.bodySmall)}
+                val exercises=repo.exercises.filter{inStudyScope(it.chapterId)}
                 if(exercise==null) {
                     items(exercises.take(visibleExercises),key={it.id}) { e ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(14.dp)) {Text(chapterTitles[e.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(e.prompt);TextButton(onClick={exerciseId=e.id;reflection="";hintVisible=false;noteSaved=false}) {Text("Написать ответ")}}} }
                     if(exercises.size>visibleExercises) item {TextButton(onClick={visibleExercises+=15}) {Text("Показать ещё · ${exercises.size-visibleExercises}")}}
@@ -431,7 +458,6 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             }
             else -> {
                 item {
-                    chapterPicker()
                     if (tab == 1) {
                         if (sessionFinished) {
                             AgedPaperCard(Modifier.fillMaxWidth()) {
@@ -495,9 +521,9 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 }
                 val now=System.currentTimeMillis()
                 if(tab==3) {
-                    val scheduled=chapterReviews.filter {chapterId.isBlank() || it.key==chapterId}.toList().sortedBy {it.second.due}
+                    val scheduled=chapterReviews.filter {inStudyScope(it.key)}.toList().sortedBy {it.second.due}
                     item {Text("Перечитывание разделов",style=MaterialTheme.typography.titleMedium);Text("Эти задания назначаются отдельно от викторины и не меняют результаты ответов.",style=MaterialTheme.typography.bodySmall)}
-                    if(scheduled.isEmpty()) item {Text("Перечитывание разделов пока не назначено. Его можно назначить во вкладке «Проверки» или при чтении.")}
+                    if(scheduled.isEmpty()) item {Text("Пока нет назначенного перечитывания. Его можно назначить из «Обзора» или во время чтения.")}
                     items(scheduled,key={"chapter-review:${it.first}"}) { (id,review) ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
                         Text(chapterTitles[id] ?: "Раздел $id",style=MaterialTheme.typography.titleMedium)
                         Text("${if(review.due<=now) "Пора перечитать" else "Перечитать"}: ${date(review.due)}")
@@ -507,7 +533,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     item {Text("Повторение вопросов",style=MaterialTheme.typography.titleMedium)}
                 }
                 val filtered=bank.filter { item ->
-                    val inChapter=chapterId.isBlank() || item.chapterId==chapterId
+                    val inChapter=inStudyScope(item.chapterId)
                     if (tab==3) inChapter && (attempts[item.id]?.due ?: Long.MAX_VALUE)<=now
                     else inChapter && (level=="all" || item.level==level) &&
                         (questionType=="all" || (item.id.startsWith("book-recognition-") == (questionType=="recognition"))) &&
@@ -547,11 +573,11 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 }
                 if(filtered.size>visibleQuestions) item {TextButton(onClick={visibleQuestions+=15}) {Text("Показать ещё · ${filtered.size-visibleQuestions}")}}
                 if(tab==3) {
-                    val future=bank.filter{(chapterId.isBlank() || it.chapterId==chapterId) && (attempts[it.id]?.due ?: 0L)>now}.sortedBy{attempts[it.id]?.due}
+                    val future=bank.filter{inStudyScope(it.chapterId) && (attempts[it.id]?.due ?: 0L)>now}.sortedBy{attempts[it.id]?.due}
                     if(future.isNotEmpty()) item {Text("Следующие повторения",style=MaterialTheme.typography.titleMedium)}
                     items(future.take(visibleQuestions),key={"future:${it.id}"}) {item->Column {Text(item.prompt,style=MaterialTheme.typography.bodySmall);Text("${date(attempts.getValue(item.id).due)}",style=MaterialTheme.typography.labelMedium);TextButton(onClick={start(item)}) {Text("Повторить раньше")}}}
                     if(future.size>visibleQuestions) item {TextButton(onClick={visibleQuestions+=15}) {Text("Показать ещё повторения · ${future.size-visibleQuestions}")}}
-                    val new=bank.count{(chapterId.isBlank() || it.chapterId==chapterId) && attempts[it.id]==null};item {Text("Ещё не отвечали: $new. Новые вопросы доступны во вкладке «Викторина».")}
+                    val new=bank.count{inStudyScope(it.chapterId) && attempts[it.id]==null};item {Text("Не пройдено вопросов: $new. Они доступны во вкладке «Вопросы».")}
                 }
             }
         }
