@@ -32,6 +32,20 @@ class StudyScopeTest {
         assertEquals("", selectedStudyChapterAfterVolumeChange("", 2, volumes))
     }
 
+    @Test fun pickerShowsShortPreviewButDoesNotHideSearchResults() {
+        val sections=(1..90).map { "section-$it" }
+        assertEquals(sections.take(6),studyPickerPreview(sections,searching=false,expanded=false))
+        assertEquals(sections,studyPickerPreview(sections,searching=true,expanded=false))
+        assertEquals(sections,studyPickerPreview(sections,searching=false,expanded=true))
+    }
+
+    @Test fun pickerKeepsSecondVolumeAndSelectedShortVolumesAccessible() {
+        val secondVolume = (1..9).map { "v2-$it" }
+        assertEquals(6,studyPickerPreview(secondVolume,false,false).size)
+        assertEquals(9,studyPickerPreview(secondVolume,false,true).size)
+        assertEquals(listOf("one"),studyPickerPreview(listOf("one"),false,false))
+    }
+
     @Test fun invalidChapterIsNotImplicitlyIncludedInVolume() {
         assertFalse(studyScopeMatches("unknown", "", 1, volumes))
     }
