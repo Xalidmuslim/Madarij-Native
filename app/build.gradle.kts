@@ -34,7 +34,12 @@ android {
             applicationIdSuffix = ".qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
         }
         release {
-            applicationIdSuffix = if (providers.gradleProperty("premiumPreview").orNull == "true") ".referencepreview" else ".collation158"
+            applicationIdSuffix = when {
+                providers.gradleProperty("premiumPreview").orNull == "true" -> ".referencepreview"
+                providers.gradleProperty("ciIsolatedRelease").orNull == "true" ->
+                    ".r8qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
+                else -> ".collation158"
+            }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
