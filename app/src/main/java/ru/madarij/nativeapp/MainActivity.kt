@@ -47,8 +47,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Boolean=false) =
-    "read/${Uri.encode(id)}?paragraph=${Uri.encode(paragraph.orEmpty())}&query=${Uri.encode(query)}&top=$top"
+internal fun readerRoute(id:String,paragraph:String?=null,query:String="",top:Boolean=false,spotlight:Boolean=false) =
+    "read/${Uri.encode(id)}?paragraph=${Uri.encode(paragraph.orEmpty())}&query=${Uri.encode(query)}&top=$top&spotlight=$spotlight"
 
 @Composable
 private fun BookRouteSurface(
@@ -243,7 +243,10 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 popExitTransition = { ExitTransition.None }
             ) {
                 composable("home") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { HomeScreen(vm,{id,p -> openReader(id,p,"")},navigate,knowledgeReminder,settings.reducedMotion,
-                        knowledgeInkFinished, { knowledgeInkFinished = true }) } }
+                        knowledgeInkFinished, { knowledgeInkFinished = true },
+                        onOpenReminder = { reminder ->
+                            nav.navigate(readerRoute(reminder.chapterId, reminder.paragraphId, spotlight = true))
+                        }) } }
                 composable("contents") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Оглавление", subtitle = "Главы, темы и место чтения", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { ContentsScreen(vm,openFromContents,reducedMotion = settings.reducedMotion) { chapter -> openReader(chapter,null,"") } } }
                 composable("search") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Поиск", subtitle = "По доступным материалам томов", showSearch = false, showTextSettings = false, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { SearchScreen(vm,openReader) } }
                 composable("bookmarks") { BookRouteSurface(R.drawable.reference_paper, settings.theme == "dark", motionEnabled = !settings.reducedMotion, title = "Закладки", subtitle = "Сохранённые места", showSearch = true, showTextSettings = true, onBack = { if (!nav.popBackStack()) nav.navigate("home") }, onSearch = { navigate("search") }, onTextSettings = { navigate("settings") }) { BookmarksScreen(vm) {id,p -> openReader(id,p,"")} } }
@@ -267,11 +270,12 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         ) }
                 }
                 composable(
-                    "read/{id}?paragraph={paragraph}&query={query}&top={top}",
+                    "read/{id}?paragraph={paragraph}&query={query}&top={top}&spotlight={spotlight}",
                     arguments=listOf(
                         navArgument("paragraph") {type=NavType.StringType;defaultValue=""},
                         navArgument("query") {type=NavType.StringType;defaultValue=""},
-                        navArgument("top") {type=NavType.BoolType;defaultValue=false}
+                        navArgument("top") {type=NavType.BoolType;defaultValue=false},
+                        navArgument("spotlight") {type=NavType.BoolType;defaultValue=false}
                     )
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
@@ -281,6 +285,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
                         forceTop=e.arguments?.getBoolean("top") == true,
+                        spotlightReminder=e.arguments?.getBoolean("spotlight") == true,
                         onStudy={navigate("study?chapter=${Uri.encode(it)}")},
                         onOpenParagraph=openSource,
                         onBack={ nav.popBackStack() },

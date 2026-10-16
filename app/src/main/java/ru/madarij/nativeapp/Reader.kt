@@ -61,6 +61,7 @@ import kotlin.math.abs
 @Composable
 fun Reader(
     vm: BookViewModel, chapter: Chapter, settings: ReadingSettings, anchor: String? = null, query: String = "", forceTop: Boolean = false,
+    spotlightReminder: Boolean = false,
     onStudy: (String) -> Unit = {}, onOpenParagraph: (String) -> Unit = {}, onBack: () -> Unit = {}, navigate: (String) -> Unit
 ) {
     var resizing by remember { mutableStateOf(false) }
@@ -100,7 +101,9 @@ fun Reader(
     val selectedTopic = remember(sectionTopics, anchor) {
         sectionTopics.firstOrNull { it.paragraphId == anchor }
     }
-    val selectedTopicHeading = selectedTopic?.startText?.takeIf { query.isBlank() }
+    // A home quote is a unique sentence, not a chapter/topic start; do not
+    // render the permanent "НАЧАЛО ВЫБРАННОЙ ТЕМЫ" UI for this jump.
+    val selectedTopicHeading = selectedTopic?.startText?.takeIf { query.isBlank() && !spotlightReminder }
     val readerTitle = selectedTopic?.title?.takeIf { query.isBlank() }
         ?: chapterStructure?.title ?: sectionRoot.title
     val notesByParagraph = remember(notes) { notes.groupBy { it.paragraphId } }
@@ -137,6 +140,16 @@ fun Reader(
     val displayRussian = remember(paragraphs, query, preparedRussian) {
         if (query.isBlank()) preparedRussian else paragraphs.associate { it.id to it.ru }
     }
+    val homeQuote = remember(anchor, spotlightReminder, context) {
+        if (!spotlightReminder || anchor == null) null
+        else runCatching {
+            KnowledgeReminders.all(context.applicationContext)
+                .firstOrNull { it.paragraphId == anchor }?.text
+        }.getOrNull()
+    }
+    var showQuoteSpotlight by remember(sectionKey, anchor, spotlightReminder) {
+        mutableStateOf(spotlightReminder)
+    }
     val currentParagraph by remember(visible) { derivedStateOf { if (visible.isEmpty()) null else visible[(listState.firstVisibleItemIndex - 1).coerceIn(0, visible.lastIndex)] } }
     // Keep the reader invisible while restoring the saved position AND locating a
     // topic inside a long printed-page paragraph. Otherwise the user sees the
@@ -144,6 +157,15 @@ fun Reader(
     val exactTargetAvailable = query.isBlank() && anchor != null &&
         selectedTopicHeading != null &&
         displayRussian[anchor]?.contains(selectedTopicHeading, ignoreCase = true) == true
+    val spotlightTargetAvailable = spotlightReminder && query.isBlank() &&
+        anchor != null && homeQuote != null &&
+        displayRussian[anchor]?.let { reminderSpotlightRange(it, homeQuote) } != null
+    var spotlightTargetSettled by remember(sectionKey, anchor, spotlightReminder) {
+        mutableStateOf(false)
+    }
+    var spotlightTopY by remember(sectionKey, anchor, spotlightReminder) {
+        mutableFloatStateOf(Float.NaN)
+    }
     var exactTargetSettled by remember(sectionKey, anchor) { mutableStateOf(false) }
     var viewportTopY by remember(sectionKey) { mutableFloatStateOf(Float.NaN) }
     var targetTopY by remember(sectionKey, anchor) { mutableFloatStateOf(Float.NaN) }
@@ -158,6 +180,23 @@ fun Reader(
             exactTargetSettled = true
         }
     }
+    // The exact home quote starts at a measured glyph position within a
+    // potentially long paragraph; no extra database lookup or search screen.
+    LaunchedEffect(ready, spotlightTargetAvailable, spotlightTopY, viewportTopY) {
+        if (ready && spotlightTargetAvailable && !spotlightTargetSettled &&
+            spotlightTopY.isFinite() && viewportTopY.isFinite()) {
+            val inset = with(alignDensity) { 10.dp.toPx() }
+            listState.scrollBy(spotlightTopY - viewportTopY - inset)
+            spotlightTargetSettled = true
+        }
+    }
+    // Defensive fallback for older corpus data; never leave the page hidden.
+    LaunchedEffect(ready, spotlightTargetAvailable, sectionKey, anchor) {
+        if (ready && spotlightTargetAvailable && !spotlightTargetSettled) {
+            delay(550)
+            spotlightTargetSettled = true
+        }
+    }
     // Inconsistent legacy metadata must never leave the reading surface blank.
     LaunchedEffect(ready, exactTargetAvailable, sectionKey, anchor) {
         if (ready && exactTargetAvailable && !exactTargetSettled) {
@@ -168,7 +207,18 @@ fun Reader(
     val searchTargetAvailable = query.isNotBlank() && anchor != null &&
         visible.any { it.id == anchor }
     val readerSettled = ready &&
-        (if (searchTargetAvailable) matchRevealed else (!exactTargetAvailable || exactTargetSettled))
+        when {
+            searchTargetAvailable -> matchRevealed
+            spotlightTargetAvailable -> spotlightTargetSettled
+            else -> !exactTargetAvailable || exactTargetSettled
+        }
+    // One-shot visual locator: it never changes the corpus or stored notes.
+    LaunchedEffect(readerSettled, spotlightReminder, homeQuote) {
+        if (readerSettled && spotlightReminder && homeQuote != null) {
+            delay(5_000)
+            showQuoteSpotlight = false
+        }
+    }
     val readerAlpha by animateFloatAsState(
         targetValue = if (readerSettled) 1f else 0f,
         animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 125),
@@ -365,7 +415,7 @@ fun Reader(
         ) {
             // A near-final topic must still have enough trailing scroll extent
             // to bring its first word to the top without a second animation.
-            val topicBottomPadding = if (exactTargetAvailable)
+            val topicBottomPadding = if (exactTargetAvailable || spotlightTargetAvailable)
                 (maxHeight - 12.dp).coerceAtLeast(22.dp) else 22.dp
             LazyColumn(
                 state = listState,
@@ -570,7 +620,9 @@ fun Reader(
                                                 // intra-paragraph bringIntoView pass.
                                                 reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
                                                 onRevealed = { matchRevealed = true },
-                                                onOpenTerm = { termDialog = it }
+                                                onOpenTerm = { termDialog = it },
+                                                temporarySpotlight = if (p.id == anchor && showQuoteSpotlight) homeQuote else null,
+                                                onSpotlightLocated = { spotlightTopY = it }
                                             )
                                         }
                                     }
@@ -902,6 +954,58 @@ private fun annotatedReaderText(text: String, query: String, color: androidx.com
     }
 }
 
+/**
+ * The highlighted span is transient and presentation-only. A translucent
+ * antique-gold ink wash does not affect glyph size, line breaking or the
+ * original book. On-text-layout provides the first matching word's precise
+ * vertical coordinate for top-aligned navigation.
+ */
+@Composable
+private fun ReaderSpotlightText(
+    text: AnnotatedString,
+    raw: String,
+    temporarySpotlight: String?,
+    style: TextStyle,
+    modifier: Modifier = Modifier,
+    onLocated: (Float) -> Unit = {}
+) {
+    val range = remember(raw, temporarySpotlight) {
+        temporarySpotlight?.let { reminderSpotlightRange(raw, it) }
+    }
+    if (range == null) {
+        Text(text, style = style, modifier = modifier)
+        return
+    }
+    val marked = remember(text, range) {
+        buildAnnotatedString {
+            append(text)
+            addStyle(
+                SpanStyle(background = BookColors.gold.copy(alpha = .26f)),
+                range.first, range.last + 1
+            )
+        }
+    }
+    var measuredTop by remember(raw, temporarySpotlight) { mutableFloatStateOf(Float.NaN) }
+    var windowTop by remember(raw, temporarySpotlight) { mutableFloatStateOf(Float.NaN) }
+    Text(
+        marked,
+        style = style,
+        modifier = modifier.onGloballyPositioned {
+            windowTop = it.positionInWindow().y
+        },
+        onTextLayout = { layout ->
+            if (range.first < layout.layoutInput.text.length) {
+                measuredTop = layout.getBoundingBox(range.first).top
+            }
+        }
+    )
+    LaunchedEffect(range, measuredTop, windowTop) {
+        if (windowTop.isFinite() && measuredTop.isFinite()) {
+            onLocated(windowTop + measuredTop)
+        }
+    }
+}
+
 @Composable
 private fun ReaderRichTextBlock(
     text: String,
@@ -910,7 +1014,9 @@ private fun ReaderRichTextBlock(
     terms: List<StudyTerm>,
     reveal: Boolean,
     onRevealed: () -> Unit,
-    onOpenTerm: (StudyTerm) -> Unit
+    onOpenTerm: (StudyTerm) -> Unit,
+    temporarySpotlight: String? = null,
+    onSpotlightLocated: (Float) -> Unit = {}
 ) {
     val segments = remember(text) { parseReaderRichSegments(text) }
     val requester = remember { BringIntoViewRequester() }
@@ -920,13 +1026,19 @@ private fun ReaderRichTextBlock(
     ) {
         segments.forEach { segment ->
             when (segment) {
-                is ReaderRichSegment.Paragraph -> Text(
+                is ReaderRichSegment.Paragraph -> ReaderSpotlightText(
                     annotatedReaderText(segment.raw, query, MaterialTheme.colorScheme.primary, terms, onOpenTerm),
+                    raw = segment.raw, temporarySpotlight = temporarySpotlight,
                     style = readerStyle(settings),
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp)
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
+                    onLocated = onSpotlightLocated
                 )
-                is ReaderRichSegment.Quote -> ReaderQuoteCard(segment, settings, query)
-                is ReaderRichSegment.Numbered -> ReaderNumberedBlock(segment, settings, query)
+                is ReaderRichSegment.Quote -> ReaderQuoteCard(
+                    segment, settings, query, temporarySpotlight, onSpotlightLocated
+                )
+                is ReaderRichSegment.Numbered -> ReaderNumberedBlock(
+                    segment, settings, query, temporarySpotlight, onSpotlightLocated
+                )
                 is ReaderRichSegment.Heading -> Row(
                     modifier = Modifier.fillMaxWidth().padding(top = 11.dp, bottom = 5.dp),
                     horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -964,7 +1076,10 @@ private fun ReaderRichTextBlock(
 }
 
 @Composable
-private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingSettings, query: String) {
+private fun ReaderQuoteCard(
+    segment: ReaderRichSegment.Quote, settings: ReadingSettings, query: String,
+    temporarySpotlight: String? = null, onSpotlightLocated: (Float) -> Unit = {}
+) {
     // Antique parchment and existing gold/brown ink only; background images,
     // page border, paper tone and global MaterialTheme are never changed.
     val subtitle = when (segment.kind) {
@@ -1014,9 +1129,13 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
                 }
                 // The original quoted punctuation/citation is displayed intact,
                 // even when the source has no verified hadith grading.
-                Text(highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                ReaderSpotlightText(
+                    highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                    raw = segment.body, temporarySpotlight = temporarySpotlight,
                     style = readerStyle(settings).copy(fontWeight = FontWeight.Medium),
-                    modifier = Modifier.fillMaxWidth())
+                    modifier = Modifier.fillMaxWidth(),
+                    onLocated = onSpotlightLocated
+                )
             }
         }
     }
@@ -1026,7 +1145,9 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
 private fun ReaderNumberedBlock(
     segment: ReaderRichSegment.Numbered,
     settings: ReadingSettings,
-    query: String
+    query: String,
+    temporarySpotlight: String? = null,
+    onSpotlightLocated: (Float) -> Unit = {}
 ) {
     // Inline emphasis instead of a separate badge/column: text keeps the
     // entire page width, so "Первое / Второе" doesn't force excessive wrapping.
@@ -1042,10 +1163,11 @@ private fun ReaderNumberedBlock(
             }
         }
     }
-    Text(
-        numbered,
+    ReaderSpotlightText(
+        numbered, raw = segment.raw, temporarySpotlight = temporarySpotlight,
         style = readerStyle(settings),
-        modifier = Modifier.fillMaxWidth().padding(vertical = 1.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 1.dp),
+        onLocated = onSpotlightLocated
     )
 }
 
