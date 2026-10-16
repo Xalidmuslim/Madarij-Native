@@ -72,7 +72,19 @@ def make():
     all_options_by_volume = {}
     for volume, book, per_chapter in books:
         chapters = book['chapters']
-        pool = {c['id']: select(c, per_chapter) for c in chapters}
+        # Retain all old 14-per-chapter volume-2 questions verbatim, with
+        # stable IDs and answer alternatives. New additional candidates come
+        # AFTER the original selection, never replacing progress records.
+        base_pool = {c['id']: select(c, per_chapter) for c in chapters}
+        extra_pool = {
+            c['id']: ([item for item in select(c, 38)
+                       if item['sentence'] not in {v['sentence'] for v in base_pool[c['id']]}]
+                      if volume == 2 else [])
+            for c in chapters
+        }
+        pool = {c['id']: base_pool[c['id']] + extra_pool[c['id']] for c in chapters}
+        base_options = [(c['id'], candidate['sentence']) for c in chapters
+                        for candidate in base_pool[c['id']]]
         all_options = [(c['id'], candidate['sentence']) for c in chapters
                        for candidate in pool[c['id']]]
         chapter_corpus = {c['id']: SPACE.sub(' ', ' '.join(
@@ -96,8 +108,9 @@ def make():
                 if question_id in existing_ids:
                     raise ValueError(f'Duplicate study question {question_id}')
                 # Nearby chapters are more challenging and keep topic coherence.
+                option_pool = base_options if ci < len(base_pool[chapter_id]) else all_options
                 distractors = [
-                    (other, other_sentence) for other, other_sentence in all_options
+                    (other, other_sentence) for other, other_sentence in option_pool
                     if other != chapter_id and other_sentence != sentence
                     and other_sentence not in chapter_corpus[chapter_id]
                 ]
@@ -143,7 +156,9 @@ def make():
                         'hint': 'Для самопроверки перечитайте исходный абзац в книге. Не считайте редакторский ориентир готовым правильным ответом.'
                     })
         report[f'volume_{volume}'] = count
-    if report['volume_1'] < 140 or report['volume_2'] < 65:
+        if volume == 2:
+            report['volume_2_extra'] = count - sum(len(base_pool[c['id']]) for c in chapters)
+    if report['volume_1'] < 140 or report['volume_2'] < 200:
         raise ValueError(f'Insufficient coverage: {report}')
     new_ids = [x['id'] for x in questions]
     if len(new_ids) != len(set(new_ids)):
