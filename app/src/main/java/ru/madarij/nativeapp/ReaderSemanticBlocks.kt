@@ -72,14 +72,18 @@ private fun splitOutsideQuotedText(text: String): List<String> {
     var from = 0
     var guillemetDepth = 0
     var curlyDepth = 0
+    var lowCurlyDepth = 0
     for (i in text.indices) {
         when (text[i]) {
             '«' -> guillemetDepth++
             '»' -> guillemetDepth = (guillemetDepth - 1).coerceAtLeast(0)
-            '“' -> curlyDepth++
+            '„' -> lowCurlyDepth++
+            // Russian nested quotation uses „…“; English uses “…”.
+            '“' -> if (lowCurlyDepth > 0) lowCurlyDepth-- else curlyDepth++
             '”' -> curlyDepth = (curlyDepth - 1).coerceAtLeast(0)
         }
-        if (guillemetDepth != 0 || curlyDepth != 0 || text[i] !in ".!?…»”])") continue
+        if (guillemetDepth != 0 || curlyDepth != 0 || lowCurlyDepth != 0 ||
+            text[i] !in ".!?…»”])") continue
         if (i + 1 >= text.length || !text[i + 1].isWhitespace()) continue
         var next = i + 1
         while (next < text.length && text[next].isWhitespace()) next++
