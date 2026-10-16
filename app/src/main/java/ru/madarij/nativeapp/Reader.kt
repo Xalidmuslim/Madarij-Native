@@ -954,6 +954,58 @@ private fun annotatedReaderText(text: String, query: String, color: androidx.com
     }
 }
 
+/**
+ * The highlighted span is transient and presentation-only. A translucent
+ * antique-gold ink wash does not affect glyph size, line breaking or the
+ * original book. On-text-layout provides the first matching word's precise
+ * vertical coordinate for top-aligned navigation.
+ */
+@Composable
+private fun ReaderSpotlightText(
+    text: AnnotatedString,
+    raw: String,
+    temporarySpotlight: String?,
+    style: TextStyle,
+    modifier: Modifier = Modifier,
+    onLocated: (Float) -> Unit = {}
+) {
+    val range = remember(raw, temporarySpotlight) {
+        temporarySpotlight?.let { reminderSpotlightRange(raw, it) }
+    }
+    if (range == null) {
+        Text(text, style = style, modifier = modifier)
+        return
+    }
+    val marked = remember(text, range) {
+        buildAnnotatedString {
+            append(text)
+            addStyle(
+                SpanStyle(background = BookColors.gold.copy(alpha = .26f)),
+                range.first, range.last + 1
+            )
+        }
+    }
+    var measuredTop by remember(raw, temporarySpotlight) { mutableFloatStateOf(Float.NaN) }
+    var windowTop by remember(raw, temporarySpotlight) { mutableFloatStateOf(Float.NaN) }
+    Text(
+        marked,
+        style = style,
+        modifier = modifier.onGloballyPositioned {
+            windowTop = it.positionInWindow().y
+        },
+        onTextLayout = { layout ->
+            if (range.first < layout.layoutInput.text.length) {
+                measuredTop = layout.getBoundingBox(range.first).top
+            }
+        }
+    )
+    LaunchedEffect(range, measuredTop, windowTop) {
+        if (windowTop.isFinite() && measuredTop.isFinite()) {
+            onLocated(windowTop + measuredTop)
+        }
+    }
+}
+
 @Composable
 private fun ReaderRichTextBlock(
     text: String,
