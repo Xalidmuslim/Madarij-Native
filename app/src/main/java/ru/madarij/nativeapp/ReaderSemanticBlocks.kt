@@ -174,7 +174,8 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
                     // The complete unmodified source remains in .raw.
                     val displayed = piece.substring(quoteAt).trimStart()
                     result += ReaderRichSegment.Quote(
-                        raw = piece, label = "", body = displayed,
+                        raw = if (prefix.isNotBlank() && !clearDivine) piece.substring(quoteAt) else piece,
+                        label = "", body = displayed,
                         reference = citation, kind = ReaderCitationKind.VERSE
                     )
                 }
