@@ -50,14 +50,6 @@ adb shell screencap -p /sdcard/performance-reader.png
 adb pull /sdcard/performance-reader.png performance-results/reader.png >/dev/null
 adb shell uiautomator dump /sdcard/reader.xml >/dev/null 2>&1
 adb pull /sdcard/reader.xml performance-results/reader.xml >/dev/null
-adb shell input swipe 230 785 230 330 500
-adb shell input swipe 230 350 230 785 500
-adb shell input keyevent KEYCODE_BACK
-sleep 1
-adb shell input keyevent KEYCODE_BACK
-sleep 1
-adb shell screencap -p /sdcard/performance-final.png
-adb pull /sdcard/performance-final.png performance-results/final.png >/dev/null
 # If either screen failed to navigate, abort rather than report invalid
 # scrolling metrics as proof of Reader performance.
 python3 - <<'PY'
@@ -80,11 +72,22 @@ if not any('Оглавление' in s and y<160 for s,y in contents):
 if not any(('Том 1' in s or 'Том 2' in s) and y<175 for s,y in reader):
     raise SystemExit('Reader screen was not opened: QA route invalid')
 PY
+# Collect scroll and frame metrics while the verified reader is still open.
+adb shell dumpsys gfxinfo "$PKG" reset >/dev/null
+adb shell input swipe 230 785 230 330 500
+adb shell input swipe 230 350 230 785 500
+sleep 1
 adb shell dumpsys gfxinfo "$PKG" > performance-results/gfxinfo.txt
 adb shell dumpsys meminfo "$PKG" > performance-results/meminfo.txt
 adb shell am start -W -n "$PKG/$ACT" >> performance-results/measurements.txt
 adb shell dumpsys gfxinfo "$PKG" framestats > performance-results/framestats.txt
 grep -E "Total frames rendered|Janky frames|50th percentile|90th percentile|95th percentile|99th percentile" performance-results/gfxinfo.txt >> performance-results/measurements.txt || true
+# BACK and final screenshot are secondary: never discard valid scroll metrics
+# just because an unstable emulator temporarily loses its ADB connection.
+adb shell input keyevent KEYCODE_BACK || true
+sleep 1
+adb shell screencap -p /sdcard/performance-final.png || true
+adb pull /sdcard/performance-final.png performance-results/final.png >/dev/null || true
 adb logcat -d -t 1500 | grep -E 'FATAL EXCEPTION|ANR in ru.madarij.nativeapp' > performance-results/crash-log.txt || true
 if [ -s performance-results/crash-log.txt ]; then
   echo "Crash or ANR detected" >&2
