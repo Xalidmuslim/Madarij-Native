@@ -60,11 +60,11 @@ class BadScriptHomeFontTest {
             val deltas = starts + count * 2
             val ranges = deltas + count * 2
             for (i in 0 until count) {
-                val start = u16(starts + i)
-                val end = u16(ends + i)
+                val start = u16(starts + i * 2)
+                val end = u16(ends + i * 2)
                 if (code !in start..end) continue
-                val delta = u16(deltas + i)
-                val rangeOffset = u16(ranges + i)
+                val delta = u16(deltas + i * 2)
+                val rangeOffset = u16(ranges + i * 2)
                 if (rangeOffset == 0) return (code + delta) and 0xffff
                 val address = ranges + i * 2 + rangeOffset + (code - start) * 2
                 if (address > bytes.size - 2) return 0
