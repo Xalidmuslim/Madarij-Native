@@ -58,9 +58,10 @@ private fun addBody(target: MutableList<ReaderTextBlock>, text: String) {
  * Strip balanced Markdown emphasis only from the visible Russian book text.
  * The source text in Room and copy/share output remains untouched.
  */
+private val DISPLAY_INLINE_EMPHASIS = Regex("""(?<!\*)\*\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*\*(?!\*)|(?<!\*)\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*(?!\*)""")
+
 internal fun readerDisplayMarkdown(text: String): String {
-    val paired = Regex("""(?<!\*)\*\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*\*(?!\*)|(?<!\*)\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*(?!\*)""")
-    return paired.replace(text) { match ->
+    return DISPLAY_INLINE_EMPHASIS.replace(text) { match ->
         match.groups[1]?.value ?: match.groups[2]?.value ?: match.value
     }
 }

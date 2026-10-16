@@ -2,8 +2,11 @@
 set -euo pipefail
 mkdir -p performance-results
 APK="app/build/outputs/apk/release/app-release.apk"
-# Matches app/build.gradle.kts release applicationIdSuffix (.collation158).
-PKG="ru.madarij.nativeapp.collation158"
+# Read the actual isolated QA package from the built APK. Never assume
+# that an ephemeral CI key can replace an owner's installed application.
+PKG=$("$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" |
+  sed -n "s/^package: name='\([^']*\)'.*/\1/p" | head -1)
+test -n "$PKG"
 ACT="ru.madarij.nativeapp.MainActivity"
 test -s "$APK"
 adb shell wm size 432x960
@@ -16,7 +19,7 @@ adb shell input keyevent KEYCODE_HOME
   echo "Build: optimized release; R8 mapping verified in CI"
   echo "Cold process launch: force-stop, then am start -W"
 } > performance-results/measurements.txt
-for n in 1 2 3; do
+for n in 1 2 3 4 5; do
   adb shell am force-stop "$PKG"
   sleep 2
   echo "---- Cold start $n ----" >> performance-results/measurements.txt
@@ -96,6 +99,7 @@ if not any(('Том 1' in s or 'Том 2' in s) and y<175 for s,y in reader):
     raise SystemExit('Reader screen was not opened: QA route invalid')
 PY
 # Collect scroll and frame metrics while the verified reader is still open.
+# Frame timing is reset only after reaching Reader, never on the Home menu.
 adb shell dumpsys gfxinfo "$PKG" reset >/dev/null
 adb shell input swipe 230 785 230 330 500
 adb shell input swipe 230 350 230 785 500

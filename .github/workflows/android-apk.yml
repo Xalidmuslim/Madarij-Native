@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       full_checks:
-        description: 'Run unit tests and build the release preview as well'
+        description: 'Also build the optional isolated premium preview APK'
         type: boolean
         required: false
         default: false
@@ -23,7 +23,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 70
     steps:
       - name: Checkout native source
         uses: actions/checkout@v4
@@ -60,21 +60,32 @@ jobs:
           keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
       - name: Run Android unit tests
         run: ./gradlew :app:testDebugUnitTest --no-daemon --stacktrace
-      - name: Fast build of native Android debug APK
-        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
-      - name: Verify installable debug APK
+      - name: Verify performance-gate parser (fast, before R8)
+        run: python3 -m unittest -v tools/test_performance_gate.py
+      # Every PR, main update and manual run must deliver the same optimized
+      # release variant used for performance acceptance. Debug remains solely
+      # the target of unit tests; it is never offered as the user's new APK.
+      - name: Build optimized native Android Release (R8)
+        # Development-signed test packages need isolated IDs: reusing the
+        # production app ID with a new ephemeral key prevents safe upgrades.
+        run: ./gradlew :app:assembleRelease -PciIsolatedRelease=true --no-daemon --stacktrace
+      - name: Verify R8 mapping, package, integrity and development signature
         shell: bash
         run: |
           set -euo pipefail
-          APK=app/build/outputs/apk/debug/app-debug.apk
+          APK=app/build/outputs/apk/release/app-release.apk
           test -s "$APK"
+          test -s app/build/outputs/mapping/release/mapping.txt
           unzip -t "$APK" >/dev/null
           "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
-      - name: Verify revised bilingual text is in APK
+          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" > release-badging.txt
+          grep -Eq "package: name='ru.madarij.nativeapp.r8qa[0-9]+'" release-badging.txt
+          printf 'Optimized R8 release (development signing; isolated package)\n' >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify bilingual volume-2 data in R8 Release APK
         shell: bash
         run: |
           set -euo pipefail
-          unzip -p app/build/outputs/apk/debug/app-debug.apk assets/volume2-preview.json > /tmp/volume2-apk.json
+          unzip -p app/build/outputs/apk/release/app-release.apk assets/volume2-preview.json > /tmp/volume2-apk.json
           python3 - <<'PY'
           import json
           with open('/tmp/volume2-apk.json',encoding='utf-8') as f: x=json.load(f)
@@ -89,76 +100,27 @@ jobs:
           assert 'по словам автора' not in p['madarij-v2-p013-draft']['ru']
           assert 'как утверждает автор' not in p['madarij-v2-p015-draft']['ru']
           assert not x['publication_ready']
-          print('PASS: verified volume-2 pages 3-5 in packaged APK')
+          print('PASS: unchanged, verifiable volume-two printed text in R8 Release')
           PY
-      - name: Upload installable debug APK
+      - name: Upload installable optimized Release APK (not Debug)
         uses: actions/upload-artifact@v4
-        id: apk
+        id: release
         with:
-          name: Madarij-Native-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: Madarij-Optimized-R8-Release-APK
+          path: app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
           retention-days: 30
-      - name: APK download link
+      - name: R8 download and signing warning
         env:
-          APK_URL: ${{ steps.apk.outputs.artifact-url }}
-        run: echo "[Download Madarij debug APK archive]($APK_URL)" >> "$GITHUB_STEP_SUMMARY"
-      - name: Full checks (manual only)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_checks }}
-        run: ./gradlew :app:testDebugUnitTest :app:assembleRelease -PpremiumPreview=true --no-daemon --stacktrace
-      - name: Verify release preview (manual only)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_checks }}
-        shell: bash
+          APK_URL: ${{ steps.release.outputs.artifact-url }}
         run: |
-          set -euo pipefail
-          APK=app/build/outputs/apk/release/app-release.apk
-          test -s "$APK"
-          unzip -t "$APK" >/dev/null
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
-      - name: Upload release preview (manual only)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_checks }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: Madarij-Native-Release-Preview-APK
-          path: app/build/outputs/apk/release/app-release.apk
-          if-no-files-found: error
-          retention-days: 30
-
-      # On this performance branch, exercise the actual minified production
-      # build instead of mistaking the faster-to-build debug APK for R8.
-      - name: R8 Release build (volume-2 performance branch)
-        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
-        run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
-
-      - name: Verify shrunk Release APK, mapping and signature
-        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          APK=app/build/outputs/apk/release/app-release.apk
-          test -s "$APK"
-          test -s app/build/outputs/mapping/release/mapping.txt
-          unzip -t "$APK" >/dev/null
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
-          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" | head -4
-
-      - name: Upload R8 Release APK (development-signed)
-        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: Madarij-Volume2-Optimized-R8-Release
-          path: app/build/outputs/apk/release/app-release.apk
-          if-no-files-found: error
-          retention-days: 30
-
-      - name: Enable emulator virtualization
-        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+          echo "[Download optimized R8 Release APK]($APK_URL)" >> "$GITHUB_STEP_SUMMARY"
+          echo "Note: CI uses an ephemeral development keystore. Do not replace existing user installs signed by another key." >> "$GITHUB_STEP_SUMMARY"
+      - name: Enable Android emulator KVM
         shell: bash
         run: |
           if [ -e /dev/kvm ]; then sudo chmod 666 /dev/kvm; fi
-
-      - name: Emulator cold start, scrolling and navigation smoke
-        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+      - name: Release Cold Start, reader navigation and scrolling QA
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 35
@@ -168,12 +130,24 @@ jobs:
           disable-animations: false
           emulator-options: -no-snapshot -no-window -no-audio -no-boot-anim -gpu swiftshader_indirect
           script: bash tools/performance_smoke.sh
-
-      - name: Upload emulator metrics and screenshots
-        if: ${{ always() && (github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016') }}
+      - name: Evaluate performance regression thresholds
+        run: python3 tools/performance_gate.py --measurements performance-results/measurements.txt --gfxinfo performance-results/gfxinfo.txt --report performance-results/summary.md
+      - name: Upload performance evidence even when QA fails
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume2-Performance-Measurements
+          name: Madarij-R8-Performance-QA
           path: performance-results/
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 30
+      - name: Optional premium preview Release (manual only)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_checks }}
+        run: ./gradlew :app:assembleRelease -PpremiumPreview=true --no-daemon --stacktrace
+      - name: Upload optional premium preview Release
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_checks }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Premium-Preview-R8-Release
+          path: app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
+          retention-days: 30
