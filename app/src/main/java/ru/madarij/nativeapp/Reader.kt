@@ -195,12 +195,16 @@ fun Reader(
                 // Opening a section from the contents or by horizontal paging must show
                 // its actual section heading instead of restoring an old paragraph offset.
                 listState.scrollToItem(0, 0)
+            } else if (anchor != null && !anchorConsumed) {
+                // An explicitly chosen TOC topic/search hit wins over history.
+                // Never wait for another DAO query before placing it.
+                val found = visible.indexOfFirst { it.id == anchor }
+                if (found >= 0) listState.scrollToItem(found + 1, 0)
             } else {
                 val old = vm.repository.dao.position(chapter.id)
                     ?: vm.repository.dao.position(sectionId)
-                val target = if (anchor != null && !anchorConsumed) anchor else old?.paragraphId
-                val found = visible.indexOfFirst { it.id == target }
-                if (found >= 0) listState.scrollToItem(found + 1, if (target == anchor && !anchorConsumed) 0 else old?.offset ?: 0)
+                val found = visible.indexOfFirst { it.id == old?.paragraphId }
+                if (found >= 0) listState.scrollToItem(found + 1, old?.offset ?: 0)
             }
             anchorConsumed = true
             ready = true
