@@ -149,7 +149,7 @@ def make():
     if len(new_ids) != len(set(new_ids)):
         raise ValueError('Generated question IDs not unique')
     sources = {
-        p['id']: (vol, c['id'], SPACE.sub(' ', p.get('ru', '')))
+        p['id']: (vol, c['id'], SPACE.sub(' ', p.get('ru', '').replace('**', ' ')))
         for vol, book, _ in books
         for c in book['chapters']
         for p in c['paragraphs']
