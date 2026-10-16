@@ -46,6 +46,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var level by rememberSaveable { mutableStateOf("all") }
     var questionType by rememberSaveable { mutableStateOf("all") }
     var quizSearch by rememberSaveable { mutableStateOf("") }
+    var showQuizFilters by rememberSaveable { mutableStateOf(false) }
     var sessionIds by rememberSaveable { mutableStateOf("") }
     var sessionIndex by rememberSaveable { mutableIntStateOf(0) }
     var sessionCorrect by rememberSaveable { mutableIntStateOf(0) }
@@ -154,6 +155,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                             TextButton(
                                 onClick={
                                     chapterId=""
+                                    checksFilter="in_progress"
                                     exerciseId=""
                                     questionId=""
                                     chapterMenu=false
@@ -182,6 +184,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                                         onClick={
                                             chapterId=c.id
                                             selectedVolume=c.volume
+                                            checksFilter="in_progress"
                                             questionId=""
                                             exerciseId=""
                                             reflection=""
@@ -260,6 +263,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     },
                     onSelectVolume={ volume ->
                         selectedVolume=volume
+                        checksFilter="in_progress"
                         chapterId=selectedStudyChapterAfterVolumeChange(
                             chapterId,volume,chapterVolumes)
                         questionId=""
@@ -469,8 +473,16 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                                 }
                             }
                         }
-                        Text("Выберите уровень и тип вопросов",
-                            style=MaterialTheme.typography.titleSmall)
+                        Text("Быстрая проверка · 10 случайных вопросов",style=MaterialTheme.typography.titleMedium)
+                        Button(onClick={beginSession()},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp)) {
+                            Text("Начать 10 вопросов")
+                        }
+                        TextButton(onClick={showQuizFilters=!showQuizFilters}) {
+                            Text(if(showQuizFilters) "Скрыть настройку вопросов"
+                                else "Настроить уровень, тип и поиск")
+                        }
+                        if(showQuizFilters) {
+                        Text("Уровень сложности",style=MaterialTheme.typography.titleSmall)
                         Column(verticalArrangement=Arrangement.spacedBy(4.dp)) {
                             listOf(
                                 listOf("all", "basic"),
@@ -507,13 +519,11 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         OutlinedTextField(
                             quizSearch, {quizSearch=it;visibleQuestions=15},
                             modifier=Modifier.fillMaxWidth(),singleLine=true,
-                            label={Text("Поиск вопросов")}
+                            label={Text("Найти вопрос")}
                         )
-                        Button(onClick={beginSession()},modifier=Modifier.fillMaxWidth()) {
-                            Text("Новая проверка · 10 вопросов")
-                        }
-                        Text("Вопросы на узнавание — дословные фрагменты книги; задания на понимание требуют размышления над смыслом.",
+                        Text("Узнавание текста — дословные фразы книги. Вопросы на понимание проверяют смысл.",
                             style=MaterialTheme.typography.bodySmall)
+                        }
                     } else {
                         Text("Повторение: ошибки и неуверенные ответы — на следующий день; уверенные правильные — через 3, 7 и 14 дней.",
                             style=MaterialTheme.typography.bodySmall)
