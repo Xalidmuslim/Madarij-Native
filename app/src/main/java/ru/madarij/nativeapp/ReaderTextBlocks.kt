@@ -59,7 +59,7 @@ private fun addBody(target: MutableList<ReaderTextBlock>, text: String) {
  * The source text in Room and copy/share output remains untouched.
  */
 internal fun readerDisplayMarkdown(text: String): String {
-    val paired = Regex("""(?<!\*)\*\*([^*\r\n]{1,180})\*\*(?!\*)|(?<!\*)\*([^*\r\n]{1,180})\*(?!\*)""")
+    val paired = Regex("""(?<!\*)\*\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*\*(?!\*)|(?<!\*)\*([^\s*\r\n](?:[^*\r\n]{0,178}?[^\s*\r\n])?)\*(?!\*)""")
     return paired.replace(text) { match ->
         match.groups[1]?.value ?: match.groups[2]?.value ?: match.value
     }
