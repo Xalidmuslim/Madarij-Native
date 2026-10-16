@@ -64,7 +64,9 @@ jobs:
       # release variant used for performance acceptance. Debug remains solely
       # the target of unit tests; it is never offered as the user's new APK.
       - name: Build optimized native Android Release (R8)
-        run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
+        # Development-signed test packages need isolated IDs: reusing the
+        # production app ID with a new ephemeral key prevents safe upgrades.
+        run: ./gradlew :app:assembleRelease -PciIsolatedRelease=true --no-daemon --stacktrace
       - name: Verify R8 mapping, package, integrity and development signature
         shell: bash
         run: |
