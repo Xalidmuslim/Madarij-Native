@@ -17,6 +17,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import java.util.concurrent.ConcurrentHashMap
 
 /**
@@ -28,6 +31,9 @@ import java.util.concurrent.ConcurrentHashMap
  */
 internal object BookImagePreloader {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    // Bound decoding to avoid seven simultaneous 32-bit bitmaps competing
+    // with Compose, Room startup and text layout for CPU and heap.
+    private val decodeGate = Semaphore(2)
     private val inFlight = ConcurrentHashMap.newKeySet<Int>()
     private val cached = mutableStateMapOf<Int, ImageBitmap>()
     private val bookResources = intArrayOf(
@@ -41,8 +47,20 @@ internal object BookImagePreloader {
     )
 
     fun preload(context: Context) {
-        // Start the home image and shared paper first, then the secondary screens.
-        bookResources.forEach { request(context, it) }
+        // Home's backdrop and navigation are prioritized for first-frame paint.
+        // Delay secondary paper themes until after first content composition.
+        request(context, R.drawable.reference_paper)
+        request(context, R.drawable.navigation_leather)
+        request(context, R.drawable.card_paper)
+        scope.launch {
+            delay(300)
+            for (id in bookResources) {
+                if (id !in setOf(R.drawable.reference_paper,
+                        R.drawable.navigation_leather, R.drawable.card_paper)) {
+                    request(context, id)
+                }
+            }
+        }
     }
 
     fun request(context: Context, id: Int) {
@@ -50,14 +68,16 @@ internal object BookImagePreloader {
         val appContext = context.applicationContext
         scope.launch {
             try {
-                val options = BitmapFactory.Options().apply {
-                    inScaled = false  // drawable-nodpi: preserve the exact bitmap pixels
-                    inPreferredConfig = android.graphics.Bitmap.Config.ARGB_8888
-                }
-                val bitmap = BitmapFactory.decodeResource(appContext.resources, id, options)
-                if (bitmap != null) {
-                    val image = bitmap.asImageBitmap()
-                    withContext(Dispatchers.Main.immediate) { cached[id] = image }
+                decodeGate.withPermit {
+                    val options = BitmapFactory.Options().apply {
+                        inScaled = false // Preserve original paper texture pixels
+                        inPreferredConfig = android.graphics.Bitmap.Config.ARGB_8888
+                    }
+                    val bitmap = BitmapFactory.decodeResource(appContext.resources, id, options)
+                    if (bitmap != null) {
+                        val image = bitmap.asImageBitmap()
+                        withContext(Dispatchers.Main.immediate) { cached[id] = image }
+                    }
                 }
             } catch (_: OutOfMemoryError) {
                 // Existing opaque paper/color placeholders remain readable.

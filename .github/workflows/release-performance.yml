@@ -14,6 +14,7 @@ on:
       - codex/madarij-v156-volume2-pages621-659-final39-draft
       - codex/madarij-v157-volume2-scholarly-audit
       - codex/madarij-v158-ar-ru-translation-collation
+      - codex/madarij-v2-performance-release-20261016
   workflow_dispatch:
 
 permissions:
