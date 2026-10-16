@@ -44,6 +44,9 @@ private val misleadingHadithReference = Regex(
 private val explicitDivineLead = Regex(
     """(?i)^(?:и\s+|также\s+|затем\s+|после\s+этого\s+)?(?:Всевышний(?:\s+Аллах)?|Аллах|Господь(?:\s+миров)?|Всемогущий(?:\s+и\s+Великий)?\s+Аллах|Он)\s+(?:также\s+)?(?:сказал|говорит|повелел)\s*:\s*$"""
 )
+private val namedDivineWithoutReference = Regex(
+    """(?i)^(?:и\s+|также\s+|затем\s+)?(?:Всевышний(?:\s+Аллах)?|Аллах|Господь(?:\s+миров)?|Всемогущий(?:\s+и\s+Великий)?\s+Аллах)\s+(?:также\s+)?(?:сказал|говорит|повелел)\s*:\s*$"""
+)
 private val explicitPropheticLead = Regex(
     """(?i)^(?:и\s+|также\s+)?(?:Пророк(?:\s*,[^:]{0,65})?|Посланник\s+Аллаха(?:\s*,[^:]{0,65})?)\s+(?:сказал|сообщил|передал)\s*:\s*$"""
 )
@@ -155,15 +158,21 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
             val clearDivine = explicitDivineLead.matches(prefix)
             val clearProphetic = explicitPropheticLead.matches(prefix)
             val isVerse = quoteAt >= 0 && quoteEnd > quoteAt &&
-                !namedHuman && (surahQuote || (clearDivine && citation == null))
+                !namedHuman && (surahQuote ||
+                    (citation == null && namedDivineWithoutReference.matches(prefix)))
             val matchNumber = readerNumberIntro.matchEntire(piece)
             when {
                 isVerse -> {
                     flush()
-                    // Do not repeat "Всевышний сказал:" under the "АЯТ КОРАНА"
-                    // header. The full sentence is retained in .raw for fidelity.
-                    val displayed = if (clearDivine || surahQuote)
-                        piece.substring(quoteAt).trimStart() else piece
+                    // A long author introduction is meaningful prose, not part
+                    // of the Quran quotation. Keep it visible outside the card;
+                    // suppress only a redundant short divine attribution.
+                    if (prefix.isNotBlank() && !clearDivine) {
+                        result += ReaderRichSegment.Paragraph(prefix)
+                    }
+                    // Do not repeat "Всевышний сказал:" in a Quran card.
+                    // The complete unmodified source remains in .raw.
+                    val displayed = piece.substring(quoteAt).trimStart()
                     result += ReaderRichSegment.Quote(
                         raw = piece, label = "", body = displayed,
                         reference = citation, kind = ReaderCitationKind.VERSE
