@@ -19,6 +19,16 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         val structureBytes = try { context.assets.open("structure.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
         val volume2Bytes = try { context.assets.open("volume2-preview.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
         val structure2Bytes = try { context.assets.open("volume2-structure.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
+        // Fast path for subsequent launches: Room already contains the exact
+        // installed corpus. Avoid reparsing thousands of JSON paragraphs and
+        // rebuilding search entries only to discover that nothing changed.
+        // A new APK with changed book/TOC bytes still follows full validation.
+        val hash = sha(bytes + structureBytes + volume2Bytes + structure2Bytes)
+        if (dao.contentVersion()?.sha256 == hash) {
+            importedDraft = true // Current two-volume bundle contains the own literary draft.
+            importedVolume2Preview = volume2Bytes.isNotEmpty()
+            return@withContext true
+        }
         val titles = HashMap<String, String>()
         for (structure in listOf(structureBytes, structure2Bytes)) {
             if (structure.isEmpty()) continue
@@ -60,8 +70,6 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         }
         importedDraft = draft
         importedVolume2Preview = volume2Bytes.isNotEmpty()
-        val hash = sha(bytes + structureBytes + volume2Bytes + structure2Bytes)
-        if (dao.contentVersion()?.sha256 == hash) return@withContext true
         val chapterRows = ArrayList<Chapter>()
         val paragraphRows = ArrayList<Paragraph>()
         val indexRows = ArrayList<SearchIndex>()

@@ -71,8 +71,8 @@ private fun BookRouteSurface(
     var entryShown by remember { mutableStateOf(false) }
     LaunchedEffect(motionEnabled) { entryShown = true }
     val entranceAlpha by animateFloatAsState(
-        targetValue = if (!motionEnabled || entryShown) 1f else .76f,
-        animationSpec = tween(durationMillis = if (motionEnabled) 180 else 0, easing = FastOutSlowInEasing),
+        targetValue = if (!motionEnabled || entryShown) 1f else .62f,
+        animationSpec = tween(durationMillis = if (motionEnabled) 165 else 0, easing = FastOutSlowInEasing),
         label = "paper-content-entrance"
     )
     Box(
