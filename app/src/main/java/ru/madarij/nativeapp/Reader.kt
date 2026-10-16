@@ -428,13 +428,31 @@ fun Reader(
                             warm = true,
                             onClick = { expanded = !expanded }
                         ) {
-                            Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                Text((if (p.role == "editor_note") "Пояснение редакции" else "Примечание издания") + (if (expanded) " · Скрыть" else " · Открыть"), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-                                if (expanded) {
-                                    if (settings.showArabic && p.ar.isNotBlank()) SelectionContainer { ArabicText(p.ar, settings) }
-                                    SelectionContainer { SearchAnchorText(highlight(p.ru, query, MaterialTheme.colorScheme.primary),p.ru,query,readerStyle(readerSettings),ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
-                                } else {
-                                    Text("Развёрнутое объяснение и дополнительные детали", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 13.dp),
+                                horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                                Box(Modifier.width(3.dp).heightIn(min = 62.dp)
+                                    .background(BookColors.gold.copy(alpha = .80f), RoundedCornerShape(3.dp)))
+                                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                                    Row(verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.spacedBy(9.dp)) {
+                                        NavigationGlyph("notes", selected = false,
+                                            modifier = Modifier.size(19.dp), tint = BookColors.gold)
+                                        Text((if (p.role == "editor_note") "Пояснение редакции" else "Примечание издания") +
+                                            (if (expanded) " · Скрыть" else " · Открыть"),
+                                            style = MaterialTheme.typography.labelLarge,
+                                            color = MaterialTheme.colorScheme.primary)
+                                    }
+                                    if (expanded) {
+                                        if (settings.showArabic && p.ar.isNotBlank()) SelectionContainer { ArabicText(p.ar, settings) }
+                                        SelectionContainer { SearchAnchorText(
+                                            highlight(p.ru, query, MaterialTheme.colorScheme.primary),
+                                            p.ru, query, readerStyle(readerSettings),
+                                            ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
+                                    } else {
+                                        Text("Развёрнутое объяснение и дополнительные детали",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                    }
                                 }
                             }
                         }
@@ -873,14 +891,6 @@ private fun annotatedReaderText(text: String, query: String, color: androidx.com
     }
 }
 
-private sealed interface ReaderRichSegment {
-    data class Paragraph(val text: String) : ReaderRichSegment
-    data class Quote(val label: String, val quote: String, val reference: String?) : ReaderRichSegment
-    data class Numbered(val label: String, val body: String) : ReaderRichSegment
-    data class Heading(val text: String) : ReaderRichSegment
-    data class Poetry(val text: String) : ReaderRichSegment
-}
-
 @Composable
 private fun ReaderRichTextBlock(
     text: String,
@@ -900,19 +910,24 @@ private fun ReaderRichTextBlock(
         segments.forEach { segment ->
             when (segment) {
                 is ReaderRichSegment.Paragraph -> Text(
-                    annotatedReaderText(segment.text, query, MaterialTheme.colorScheme.primary, terms, onOpenTerm),
+                    annotatedReaderText(segment.raw, query, MaterialTheme.colorScheme.primary, terms, onOpenTerm),
                     style = readerStyle(settings),
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp)
                 )
                 is ReaderRichSegment.Quote -> ReaderQuoteCard(segment, settings, query)
                 is ReaderRichSegment.Numbered -> ReaderNumberedBlock(segment, settings, query)
-                is ReaderRichSegment.Heading -> Text(
-                    segment.text,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontFamily = russianFamily(settings),
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.fillMaxWidth().padding(top = 6.dp)
-                )
+                is ReaderRichSegment.Heading -> Row(
+                    modifier = Modifier.fillMaxWidth().padding(top = 11.dp, bottom = 5.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Box(Modifier.width(3.dp).height(34.dp)
+                        .background(BookColors.gold.copy(alpha = .80f), RoundedCornerShape(3.dp)))
+                    Text(segment.raw,
+                        style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.weight(1f))
+                }
                 is ReaderRichSegment.Poetry -> AgedPaperCard(
                     shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp),
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = .46f)),
@@ -920,7 +935,7 @@ private fun ReaderRichTextBlock(
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
-                        segment.text,
+                        segment.raw,
                         modifier = Modifier.padding(horizontal = 14.dp, vertical = 12.dp),
                         style = readerStyle(settings).copy(fontStyle = androidx.compose.ui.text.font.FontStyle.Italic)
                     )
@@ -939,31 +954,57 @@ private fun ReaderRichTextBlock(
 
 @Composable
 private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingSettings, query: String) {
+    // Antique parchment and existing gold/brown ink only; background images,
+    // page border, paper tone and global MaterialTheme are never changed.
+    val subtitle = when (segment.kind) {
+        ReaderCitationKind.VERSE -> "АЯТ КОРАНА"
+        ReaderCitationKind.PROPHETIC_REPORT -> "ПЕРЕДАЧА"
+        ReaderCitationKind.SAYING -> "ВЫСКАЗЫВАНИЕ"
+    }
     Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.spacedBy(10.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 3.dp),
+        horizontalArrangement = Arrangement.spacedBy(9.dp)
     ) {
         Box(
-            Modifier.width(4.dp).fillMaxHeight().defaultMinSize(minHeight = 64.dp)
-                .background(MaterialTheme.colorScheme.primary, androidx.compose.foundation.shape.RoundedCornerShape(4.dp))
+            Modifier.width(3.dp).heightIn(min = 64.dp).fillMaxHeight()
+                .background(BookColors.gold.copy(alpha = .86f), RoundedCornerShape(3.dp))
         )
         AgedPaperCard(
             modifier = Modifier.weight(1f),
-            shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .15f)),
-            border = androidx.compose.foundation.BorderStroke(.7.dp,MaterialTheme.colorScheme.primary.copy(alpha = .3f)),
+            shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .74f)),
+            border = androidx.compose.foundation.BorderStroke(
+                .7.dp, BookColors.lightGold.copy(alpha = .34f)),
             elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
         ) {
-            Column(Modifier.padding(horizontal = 14.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                Text(segment.label, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-                Text(
-                    highlight(segment.quote, query, MaterialTheme.colorScheme.primary),
-                    style = readerStyle(settings).copy(fontWeight = FontWeight.Normal),
-                    modifier = Modifier.fillMaxWidth()
-                )
-                if (!segment.reference.isNullOrBlank()) {
-                    Text(segment.reference, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Column(
+                Modifier.padding(horizontal = 13.dp, vertical = 11.dp),
+                verticalArrangement = Arrangement.spacedBy(7.dp)
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    if (segment.kind == ReaderCitationKind.VERSE) {
+                        NavigationGlyph("contents", selected = true,
+                            modifier = Modifier.size(19.dp), tint = BookColors.gold)
+                    } else {
+                        Text(if (segment.kind == ReaderCitationKind.PROPHETIC_REPORT) "✧" else "❖",
+                            fontFamily = BookSerif,
+                            color = BookColors.gold,
+                            style = MaterialTheme.typography.titleSmall)
+                    }
+                    Text(subtitle, style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.primary)
                 }
+                if (segment.label.isNotBlank() && segment.label != "Аят") {
+                    Text(segment.label, style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                // The original quoted punctuation/citation is displayed intact,
+                // even when the source has no verified hadith grading.
+                Text(highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                    style = readerStyle(settings).copy(fontWeight = FontWeight.Medium),
+                    modifier = Modifier.fillMaxWidth())
             }
         }
     }
@@ -972,115 +1013,37 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
 @Composable
 private fun ReaderNumberedBlock(segment: ReaderRichSegment.Numbered, settings: ReadingSettings, query: String) {
     Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.spacedBy(12.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 5.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalAlignment = Alignment.Top
     ) {
         Surface(
             shape = androidx.compose.foundation.shape.CircleShape,
-            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .34f)
+            color = BookColors.lightGold.copy(alpha = .24f),
+            border = androidx.compose.foundation.BorderStroke(
+                .7.dp, BookColors.gold.copy(alpha = .34f))
         ) {
-            Text(
-                segment.label,
-                modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.primary
-            )
+            Text(segment.label, modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
+                style = MaterialTheme.typography.titleMedium.copy(fontFamily = BookSerif),
+                color = MaterialTheme.colorScheme.primary)
         }
-        Text(
-            highlight(segment.body, query, MaterialTheme.colorScheme.primary),
-            style = readerStyle(settings),
-            modifier = Modifier.weight(1f)
-        )
-    }
-}
-
-private val quoteLeadRegex = Regex(
-    """^(?<label>(?:Всевышний|Аллах|Пророк|Посланник Аллаха|Было сказано|Сказано|[А-ЯЁA-Z][^.!?]{0,120}?) сказал:)\s*[«"](?<quote>.+)[»"]\s*(?<ref>\[[^\]]+\])?[.!?…]*$"""
-)
-private val quranRefRegex = Regex("""\[[^\]]*\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?[^\]]*]""")
-private val numberedSentenceRegex = Regex(
-    """^(?<lead>Первое|Второе|Третье|Четвёртое|Четвертое|Пятое|Шестое|Седьмое|Восьмое|Девятое|Десятое|Одиннадцатое|Двенадцатое):\s*(?<body>.+)$""",
-    RegexOption.IGNORE_CASE
-)
-
-private fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
-    val rawParagraphs = text.replace("\r", "")
-        .split(Regex("""\n[ \t]*\n+"""))
-        .map { it.trim() }
-        .filter { it.isNotBlank() }
-    if (rawParagraphs.isEmpty()) return emptyList()
-
-    val result = mutableListOf<ReaderRichSegment>()
-    rawParagraphs.forEach { raw ->
-        if (raw.startsWith("«") && raw.contains('\n')) {
-            result += ReaderRichSegment.Poetry(raw)
-            return@forEach
-        }
-        if (raw.length <= 110 && standaloneHeadingRegex.matches(raw)) {
-            result += ReaderRichSegment.Heading(raw)
-            return@forEach
-        }
-
-        val flat = raw.replace(Regex("""[ \t]*\n[ \t]*"""), " ").replace(Regex("""[ \t]+"""), " ").trim()
-        val sentences = Regex("""(?<=[.!?…»] |[.!?…»]\s)(?=[А-ЯЁ«])""")
-            .split(flat)
-            .flatMap { chunk -> Regex("""(?<=[.!?…»])\s+(?=[А-ЯЁ«])""").split(chunk) }
-            .map { it.trim() }
-            .filter { it.isNotBlank() }
-
-        var index = 0
-        while (index < sentences.size) {
-            val sentence = sentences[index]
-            val quoteMatch = quoteLeadRegex.matchEntire(sentence)
-            if (quoteMatch != null) {
-                result += ReaderRichSegment.Quote(
-                    label = quoteMatch.groups["label"]!!.value.trim(),
-                    quote = quoteMatch.groups["quote"]!!.value.trim(),
-                    reference = quoteMatch.groups["ref"]?.value?.trim()
-                )
-                index++
-                continue
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+            val colon = segment.body.indexOf(':')
+            val separateTitle = colon in 4..65 &&
+                segment.body.substring(0, colon).none { it == '.' || it == '?' || it == '!' }
+            if (separateTitle) {
+                Text(segment.body.substring(0, colon + 1),
+                    style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif),
+                    color = MaterialTheme.colorScheme.primary)
+                Text(highlight(segment.body.substring(colon + 1).trimStart(), query,
+                        MaterialTheme.colorScheme.primary),
+                    style = readerStyle(settings))
+            } else {
+                Text(highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                    style = readerStyle(settings))
             }
-
-            if (quranRefRegex.containsMatchIn(sentence) && sentence.contains('«') && sentence.contains('»')) {
-                val first = sentence.indexOf('«')
-                val last = sentence.lastIndexOf('»')
-                val reference = quranRefRegex.find(sentence)?.value
-                if (first >= 0 && last > first) {
-                    val prefix = sentence.substring(0, first).trim().trimEnd(':')
-                    result += ReaderRichSegment.Quote(
-                        label = prefix.takeIf { it.isNotBlank() } ?: "Аят",
-                        quote = sentence.substring(first + 1, last).trim(),
-                        reference = reference
-                    )
-                    index++
-                    continue
-                }
-            }
-
-            val numberMatch = numberedSentenceRegex.matchEntire(sentence)
-            if (numberMatch != null) {
-                result += ReaderRichSegment.Numbered(
-                    numberMatch.groups["lead"]!!.value.trim(),
-                    numberMatch.groups["body"]!!.value.trim()
-                )
-                index++
-                continue
-            }
-
-            val paragraphParts = mutableListOf(sentence)
-            var cursor = index + 1
-            while (cursor < sentences.size) {
-                val candidate = sentences[cursor]
-                if (quoteLeadRegex.matchEntire(candidate) != null || numberedSentenceRegex.matchEntire(candidate) != null || (quranRefRegex.containsMatchIn(candidate) && candidate.contains('«') && candidate.contains('»'))) break
-                paragraphParts += candidate
-                cursor++
-            }
-            result += ReaderRichSegment.Paragraph(paragraphParts.joinToString(" "))
-            index = cursor
         }
     }
-    return result
 }
 
 private fun buildReaderDisplayRussian(paragraphs: List<Paragraph>): Map<String, String> {
