@@ -22,7 +22,7 @@ internal sealed interface ReaderRichSegment {
     data class Poetry(override val raw: String) : ReaderRichSegment
 }
 
-private val readerSentenceGap = Regex("""(?<=[.!?…»])\s+(?=[А-ЯЁ«])""")
+private val readerSentenceGap = Regex("""(?<=[.!?…»\]])\s+(?=[А-ЯЁ«])""")
 private val readerVerseReference = Regex("""\[[^\]]*\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?[^\]]*]""")
 private val readerLead = Regex("""^(.{2,135}?\bсказал(?:а|и)?\s*:)\s*(?=[«"])""", RegexOption.IGNORE_CASE)
 private val readerVerseIntro = Regex(
