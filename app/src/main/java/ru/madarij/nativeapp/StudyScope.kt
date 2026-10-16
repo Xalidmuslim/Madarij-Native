@@ -21,5 +21,5 @@ internal fun selectedStudyChapterAfterVolumeChange(
     newVolume: Int,
     chapterVolumes: Map<String, Int>
 ): String = selectedChapterId.takeIf {
-    it.isEmpty() || newVolume == 0 || chapterVolumes[it] == newVolume
+    it.isNotEmpty() && newVolume in 1..2 && chapterVolumes[it] == newVolume
 } ?: ""
