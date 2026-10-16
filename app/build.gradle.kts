@@ -112,6 +112,12 @@ val prepareStudySupplement by tasks.registering(Exec::class) {
 tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont)
 }
+// Production Play uploads are forbidden until edition/editorial rights,
+// Arabic collation, scholarly references and Data Safety are documented.
+val verifyPlayProductionClearance by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/play_release_gate.py", "--mode", "production")
+}
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "-m", "tools.content_gate", "app/src/main/assets/corpus.json")
@@ -129,4 +135,5 @@ val verifyReleaseAssets by tasks.registering {
 tasks.matching { it.name == "preReleaseBuild" }.configureEach {
     dependsOn(verifyReleaseAssets)
     if (rootProject.file("tools/content_gate.py").isFile) dependsOn(verifyCorpus)
+    if (playProduction) dependsOn(verifyPlayProductionClearance)
 }
