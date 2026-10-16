@@ -77,7 +77,7 @@ jobs:
           unzip -t "$APK" >/dev/null
           "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
           "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" > release-badging.txt
-          grep -q "package: name='ru.madarij.nativeapp.collation158'" release-badging.txt
+          grep -Eq "package: name='ru.madarij.nativeapp.r8qa[0-9]+'" release-badging.txt
           printf 'Optimized R8 release (development signing; isolated package)\n' >> "$GITHUB_STEP_SUMMARY"
       - name: Verify bilingual volume-2 data in R8 Release APK
         shell: bash
