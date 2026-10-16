@@ -428,13 +428,31 @@ fun Reader(
                             warm = true,
                             onClick = { expanded = !expanded }
                         ) {
-                            Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                Text((if (p.role == "editor_note") "Пояснение редакции" else "Примечание издания") + (if (expanded) " · Скрыть" else " · Открыть"), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-                                if (expanded) {
-                                    if (settings.showArabic && p.ar.isNotBlank()) SelectionContainer { ArabicText(p.ar, settings) }
-                                    SelectionContainer { SearchAnchorText(highlight(p.ru, query, MaterialTheme.colorScheme.primary),p.ru,query,readerStyle(readerSettings),ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
-                                } else {
-                                    Text("Развёрнутое объяснение и дополнительные детали", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 13.dp),
+                                horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                                Box(Modifier.width(3.dp).heightIn(min = 62.dp)
+                                    .background(BookColors.gold.copy(alpha = .80f), RoundedCornerShape(3.dp)))
+                                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                                    Row(verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.spacedBy(9.dp)) {
+                                        NavigationGlyph("notes", selected = false,
+                                            modifier = Modifier.size(19.dp), tint = BookColors.gold)
+                                        Text((if (p.role == "editor_note") "Пояснение редакции" else "Примечание издания") +
+                                            (if (expanded) " · Скрыть" else " · Открыть"),
+                                            style = MaterialTheme.typography.labelLarge,
+                                            color = MaterialTheme.colorScheme.primary)
+                                    }
+                                    if (expanded) {
+                                        if (settings.showArabic && p.ar.isNotBlank()) SelectionContainer { ArabicText(p.ar, settings) }
+                                        SelectionContainer { SearchAnchorText(
+                                            highlight(p.ru, query, MaterialTheme.colorScheme.primary),
+                                            p.ru, query, readerStyle(readerSettings),
+                                            ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
+                                    } else {
+                                        Text("Развёрнутое объяснение и дополнительные детали",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                    }
                                 }
                             }
                         }
