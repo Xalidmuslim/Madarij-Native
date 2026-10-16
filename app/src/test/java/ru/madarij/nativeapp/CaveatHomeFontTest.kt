@@ -23,14 +23,8 @@ class CaveatHomeFontTest {
         assertTrue(license.contains("The Caveat Project Authors"))
     }
 
-    @Test fun onlyAnimatedHomeQuotationUsesNewHandwritingFace() {
+    @Test fun previouslyBundledCaveatIsNotAppliedToAnimatedQuotes() {
         val home = File("src/main/java/ru/madarij/nativeapp/HomeContents.kt").readText()
-        val animation = File("src/main/java/ru/madarij/nativeapp/ReedPenWritingText.kt").readText()
-        assertTrue(home.contains("fontFamily = FontFamily(Font(R.font.caveat_handwriting))"))
-        assertFalse(home.contains("Font(R.font.marck_script)"))
-        assertTrue(home.contains("fontSize = 24.sp, lineHeight = 31.sp"))
-        assertTrue(home.contains("ReedPenWritingText("))
-        assertTrue(animation.contains("ReedPenCharacterTimeline"))
-        assertTrue(animation.contains("drawWithContent"))
+        assertFalse(home.contains("Font(R.font.caveat_handwriting)"))
     }
 }

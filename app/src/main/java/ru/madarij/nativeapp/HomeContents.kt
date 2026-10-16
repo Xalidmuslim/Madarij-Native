@@ -131,7 +131,7 @@ internal fun HomeScreen(
                             ReedPenWritingText(
                                 text = reminder.text,
                                 style = MaterialTheme.typography.bodyLarge.copy(
-                                    fontFamily = FontFamily(Font(R.font.caveat_handwriting)),
+                                    fontFamily = FontFamily(Font(R.font.bad_script)),
                                     fontWeight = FontWeight.Normal,
                                     fontSize = 24.sp, lineHeight = 31.sp
                                 ),
