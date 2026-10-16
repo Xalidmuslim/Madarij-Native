@@ -486,18 +486,34 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
                     )
                 ) {
-                    Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                                Text(groupDisplayTitle(group), style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
-                                Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                    val volumeGroups = fallback.filter { candidate ->
+                        candidate.items.any { it.chapterId in selectedChapterIds }
+                    }
+                    val ordinal = (volumeGroups.indexOfFirst { it.id == group.id } + 1).coerceAtLeast(1)
+                    Row(Modifier.fillMaxWidth().heightIn(min = 92.dp)
+                        .padding(horizontal = 13.dp, vertical = 11.dp),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalAlignment = Alignment.CenterVertically) {
+                        HeritageMedallion(ordinal, Modifier.size(52.dp))
+                        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                            Text(groupDisplayTitle(group),
+                                style = MaterialTheme.typography.bodyLarge.copy(
+                                    fontFamily = BookSerif, fontSize = 18.sp, lineHeight = 23.sp),
+                                color = HeritageBrown)
+                            Row(Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween) {
+                                Text("$count из " + group.items.size + " прочитано",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = HeritageMuted)
+                                groupPageLabel(group)?.let { page ->
+                                    Text(page, style = MaterialTheme.typography.labelSmall,
+                                        color = HeritageMuted)
+                                }
                             }
                         }
-                        groupPageLabel(group)?.let { page ->
-                            Text(page, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.End,
-                                style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                        }
+                        Text(if (expanded) "⌄" else "›",
+                            fontFamily = BookSerif, fontSize = 26.sp,
+                            color = HeritageBrown)
                     }
                 }
             }
