@@ -431,13 +431,23 @@ fun Reader(
                 Column(Modifier.fillMaxWidth()) {
                     ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
                         readerTitle,
-                        LogicalReadingSections.pageRange(sectionId), settings.theme == "dark")
-                    if (chapter.volume == 2) Text(
-                        "Том 2 · литературно-смысловая редактура завершена. Сверка со сканами издания 2019 года и научная проверка источников ещё не выполнены.",
-                        Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+                        LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
+                        pageFragment = chapter.volume == 2)
+                    if (chapter.volume == 2) {
+                        val isContinuation = paragraphs.firstOrNull {
+                            it.role !in listOf("editor_note", "edition_note")
+                        }?.ru?.trimStart()?.let { it.startsWith("…") || it.startsWith("...") } == true
+                        Text(
+                            buildString {
+                                append("Тематическое название — ориентир для диапазона страниц, а не обозначение новой авторской главы.")
+                                if (isContinuation) append(" Начало фрагмента продолжает текст предыдущей страницы.")
+                                append("\nЛитературно-смысловая редактура завершена; сверка с изданием 2019 года и научная проверка источников не завершены.")
+                            },
+                            Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                     if(query.isNotBlank()) Text("Найденный текст: «$query»",Modifier.padding(horizontal = 24.dp,vertical = 8.dp),style = MaterialTheme.typography.labelMedium,color = MaterialTheme.colorScheme.primary)
                 }
             }
@@ -1018,7 +1028,9 @@ private fun ReaderRichTextBlock(
     temporarySpotlight: String? = null,
     onSpotlightLocated: (Float) -> Unit = {}
 ) {
-    val segments = remember(text) { parseReaderRichSegments(text) }
+    // Printed Russian drafts sometimes carry inline *italics* and
+    // **bold** markers. Convert these in the display layer only.
+    val segments = remember(text) { parseReaderRichSegments(readerDisplayMarkdown(text)) }
     val requester = remember { BringIntoViewRequester() }
     Column(
         modifier = Modifier.fillMaxWidth().bringIntoViewRequester(requester),

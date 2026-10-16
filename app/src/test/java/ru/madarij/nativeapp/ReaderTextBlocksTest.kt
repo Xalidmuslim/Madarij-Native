@@ -36,4 +36,35 @@ class ReaderTextBlocksTest {
             splitReaderText("فصل\n$body", marker = "فصل", label = "فصل")
         )
     }
+    @Test fun markdownSectionFromSecondVolumeIsBookDividerNotLiteralStars() {
+        val original = "Некоторые объясняют происхождение стыдливости иначе: состояние называется *хая*.\n\n**Раздел**\n\nАвтор «Маназиль» сказал: «У стыдливости три степени»."
+        val result = splitReaderText(original, marker = "Раздел", label = "Раздел")
+        assertEquals(3, result.size)
+        assertEquals(ReaderTextBlock.Section(label = "Раздел"), result[1])
+        assertEquals(
+            "Некоторые объясняют происхождение стыдливости иначе: состояние называется *хая*.",
+            (result[0] as ReaderTextBlock.Body).text
+        )
+        assertEquals(
+            "Автор «Маназиль» сказал: «У стыдливости три степени».",
+            (result[2] as ReaderTextBlock.Body).text
+        )
+    }
+
+    @Test fun inlineMarkdownIsRemovedOnlyFromReaderDisplay() {
+        val original = "Состояние *хая*. Жаловаться **Самому Аллаху**. "
+        assertEquals("Состояние хая. Жаловаться Самому Аллаху. ", readerDisplayMarkdown(original))
+        assertEquals("Состояние *хая*. Жаловаться **Самому Аллаху**. ", original)
+        assertEquals("2 * 3 и *непарный", readerDisplayMarkdown("2 * 3 и *непарный"))
+    }
+
+    @Test fun headingMarkdownDoesNotSwallowFollowingBookText() {
+        val source = "Текст до.\n\n**Раздел**\n\nПодлинное содержание продолжается.\n\nСледующий абзац."
+        val parts = splitReaderText(source, marker = "Раздел", label = "Раздел")
+        assertEquals(3, parts.size)
+        assertEquals(ReaderTextBlock.Body("Текст до."), parts[0])
+        assertEquals(ReaderTextBlock.Section(label = "Раздел"), parts[1])
+        assertEquals(ReaderTextBlock.Body("Подлинное содержание продолжается.\n\nСледующий абзац."), parts[2])
+    }
+
 }
