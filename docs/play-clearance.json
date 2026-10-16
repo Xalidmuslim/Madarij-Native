@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "arabic_source": "2019 Arabic print edition of Ibn al-Qayyim, Nabil ibn Nassar al-Sindi (as recorded in project)",
+  "translation_method": "Developer states Russian translation was generated from Arabic using AI, with no existing Russian translations used",
+  "status": "PREPARATION_ONLY_NOT_READY_FOR_PUBLICATION",
+  "checks": {
+    "arabic_edition_modern_editorial_rights_reviewed": false,
+    "arabic_author_text_vs_editorial_notes_verified": false,
+    "source_pages_visually_collated": false,
+    "russian_translation_religious_references_reviewed": false,
+    "privacy_policy_data_safety_and_developer_identity_completed": false
+  },
+  "evidence": {
+    "arabic_edition_modern_editorial_rights_reviewed": "",
+    "arabic_author_text_vs_editorial_notes_verified": "",
+    "source_pages_visually_collated": "",
+    "russian_translation_religious_references_reviewed": "",
+    "privacy_policy_data_safety_and_developer_identity_completed": ""
+  },
+  "instructions": "For each check, record supporting evidence and independently review it; do not set a check to true simply to build."
+}

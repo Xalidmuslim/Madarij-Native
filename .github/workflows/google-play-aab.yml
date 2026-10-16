@@ -1,0 +1,94 @@
+name: Madarij Google Play AAB Candidate (R8)
+
+on:
+  push:
+    branches:
+      - codex/madarij-google-play-aab-rights-disclosure-20261016
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/google-play-aab.yml'
+      - 'app/build.gradle.kts'
+      - 'app/src/main/AndroidManifest.xml'
+      - 'app/src/main/java/ru/madarij/nativeapp/LibraryScreens.kt'
+      - 'tools/play_release_gate.py'
+      - 'docs/play-clearance.json'
+      - 'docs/google-play-release-checklist.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: madarij-play-bundle-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  candidate-aab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Cache Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+      - name: SDK 36 and build-tools
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Source provenance check (candidate allowed, production blocked)
+        run: python3 tools/play_release_gate.py --mode candidate
+      - name: Source and navigation checks
+        run: |
+          python3 tools/validate_volume2_preview.py
+          python3 tools/validate_toc_anchors.py
+      - name: Prepare fonts and static textures
+        run: |
+          python3 -m pip install --user Pillow==11.3.0
+          python3 tools/prepare_handwriting_font.py
+      - name: Temporary development-only signing (never Play upload)
+        shell: bash
+        run: |
+          set -euo pipefail
+          chmod +x gradlew
+          mkdir -p development-signing
+          keytool -genkeypair -noprompt -keystore development-signing/debug.keystore -storepass android -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+      - name: Run tests and build minified Android App Bundle
+        run: ./gradlew :app:testDebugUnitTest :app:bundleRelease -PplayCandidate=true --no-daemon --stacktrace
+      - name: Verify AAB signature, book data and all compiled assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          AAB=app/build/outputs/bundle/release/app-release.aab
+          test -s "$AAB"
+          test -s app/build/outputs/mapping/release/mapping.txt
+          unzip -t "$AAB" >/dev/null
+          jarsigner -verify "$AAB" | tee /tmp/madarij-bundle-signature.txt
+          grep -q 'jar verified.' /tmp/madarij-bundle-signature.txt
+          unzip -l "$AAB" | grep 'base/assets/corpus.json'
+          unzip -l "$AAB" | grep 'base/assets/volume2-preview.json'
+          unzip -l "$AAB" | grep 'base/assets/volume2-structure.json'
+          unzip -l "$AAB" | grep 'base/assets/study_supplement.json'
+          unzip -p "$AAB" base/assets/volume2-preview.json > /tmp/madarij-v2-bundle.json
+          python3 - <<'PY'
+          import json
+          with open("/tmp/madarij-v2-bundle.json",encoding="utf-8") as f: obj=json.load(f)
+          assert len(obj["chapters"]) == 9
+          assert obj["publication_ready"] is False
+          print("AAB: both-volume data present; volume 2 remains explicitly not publication-verified")
+          PY
+          echo 'R8 candidate AAB validated. Isolated QA package, development key: NOT FOR GOOGLE PLAY SUBMISSION.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload AAB candidate (development signed)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Play-Preview-R8-AAB-NOT-FOR-UPLOAD
+          path: app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+          retention-days: 30
