@@ -105,8 +105,9 @@ internal fun StudyChapterPicker(
             ) {
                 for (volume in 1..2) {
                     val pages = matches.filter { it.volume == volume }
-                    val visiblePages = if (showAllChapters || search.isNotBlank())
-                        pages else pages.take(6)
+                    val visiblePages = studyPickerPreview(
+                        pages, searching = search.isNotBlank(), expanded = showAllChapters
+                    )
                     if (pages.isNotEmpty()) {
                         item(key = "v:$volume") {
                             Text("ТОМ $volume",
