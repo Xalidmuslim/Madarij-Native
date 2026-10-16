@@ -74,6 +74,9 @@ def make():
         pool = {c['id']: select(c, per_chapter) for c in chapters}
         all_options = [(c['id'], candidate['sentence']) for c in chapters
                        for candidate in pool[c['id']]]
+        chapter_corpus = {c['id']: SPACE.sub(' ', ' '.join(
+            p.get('ru', '') for p in c.get('paragraphs', [])
+        )) for c in chapters}
         if len(all_options) < 20:
             raise ValueError(f'Insufficient useful verified sentences in volume {volume}')
         used = set()
@@ -94,7 +97,7 @@ def make():
                 distractors = [
                     (other, other_sentence) for other, other_sentence in all_options
                     if other != chapter_id and other_sentence != sentence
-                    and other_sentence not in p.get('ru', '')
+                    and other_sentence not in chapter_corpus[chapter_id]
                 ]
                 distractors.sort(key=lambda v: (
                     abs(next(i for i, c in enumerate(chapters) if c['id'] == v[0]) - index),
@@ -115,10 +118,16 @@ def make():
                 # Avoid a predictable first-option answer even before UI shuffling.
                 shift = int(digest[:2], 16) % 4
                 options = options[shift:] + options[:shift]
+                prompts = (
+                    'Какая из этих формулировок действительно встречается в выбранном разделе?',
+                    'Найдите точную мысль автора из этой части книги.',
+                    'Какое из четырёх утверждений принадлежит этому разделу?',
+                    'Какую формулировку можно найти в тексте выбранной главы?'
+                )
                 questions.append({
                     'id': question_id, 'chapterId': chapter_id,
                     'level': 'basic', 'kind': 'recognition',
-                    'prompt': f'Какая из этих формулировок встречается в разделе «{chapter["title"]}»?',
+                    'prompt': prompts[ci % len(prompts)],
                     'options': options, 'sourceParagraphId': p['id'],
                     'sourceExcerpt': sentence
                 })
@@ -137,9 +146,30 @@ def make():
     new_ids = [x['id'] for x in questions]
     if len(new_ids) != len(set(new_ids)):
         raise ValueError('Generated question IDs not unique')
+    sources = {
+        p['id']: (vol, c['id'], SPACE.sub(' ', p.get('ru', '')))
+        for vol, book, _ in books
+        for c in book['chapters']
+        for p in c['paragraphs']
+    }
     for q in questions:
         options = q['options']
         assert len(options) == 4 and sum(x['correct'] for x in options) == 1
+        assert len({x['text'] for x in options}) == 4
+        vol, ch, original = sources[q['sourceParagraphId']]
+        assert ch == q['chapterId'], 'Wrong source chapter'
+        assert q['sourceExcerpt'] in original, 'Correct answer not in book'
+        assert next(x for x in options if x['correct'])['text'] == q['sourceExcerpt']
+        # Recognition distractors are real sentences from other chapters,
+        # not invented religious claims.
+        from_other_chapters = {
+            candidate['sentence']
+            for c in next(book for v, book, _ in books if v == vol)['chapters']
+            if c['id'] != ch
+            for candidate in select(c, 3 if vol == 1 else 14)
+        }
+        assert all(x['text'] in from_other_chapters
+                   for x in options if not x['correct'])
     out = {'schema': 1, 'generation': 'deterministic-verbatim-chapter-recognition',
            'questions': questions, 'exercises': exercises}
     (ASSETS / 'study_supplement.json').write_text(
