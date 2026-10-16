@@ -228,8 +228,14 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    AntiqueBookIcon(destination, modifier = Modifier.size(25.dp)
-                        .graphicsLayer { scaleX = iconScale; scaleY = iconScale })
+                    // Do not retain a dedicated GPU layer for every resting
+                    // navigation icon; animate only the short selection pulse.
+                    val iconModifier = if (iconScale == 1f) Modifier.size(25.dp)
+                        else Modifier.size(25.dp).graphicsLayer {
+                            scaleX = iconScale
+                            scaleY = iconScale
+                        }
+                    AntiqueBookIcon(destination, modifier = iconModifier)
                     Spacer(Modifier.height(3.dp))
                     Text(
                         label,
