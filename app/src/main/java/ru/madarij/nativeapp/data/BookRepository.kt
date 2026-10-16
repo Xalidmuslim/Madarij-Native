@@ -23,7 +23,9 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         // installed corpus. Avoid reparsing thousands of JSON paragraphs and
         // rebuilding search entries only to discover that nothing changed.
         // A new APK with changed book/TOC bytes still follows full validation.
-        val hash = sha(bytes + structureBytes + volume2Bytes + structure2Bytes)
+        // Incremental SHA-256 avoids copying the entire bilingual corpus into
+        // an additional multi-megabyte array on every cold start.
+        val hash = shaCombined(bytes, structureBytes, volume2Bytes, structure2Bytes)
         if (dao.contentVersion()?.sha256 == hash) {
             importedDraft = true // Current two-volume bundle contains the own literary draft.
             importedVolume2Preview = volume2Bytes.isNotEmpty()
@@ -129,5 +131,10 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
     private fun normalize(text: String): String = text.lowercase(Locale.ROOT)
         .replace(Regex("[\u064B-\u065F\u0670\u0640\u06D6-\u06ED]"), "")
         .replace(Regex("[أإآٱ]"), "ا").replace('ё', 'е')
+    private fun shaCombined(vararg parts: ByteArray): String {
+        val digest = MessageDigest.getInstance("SHA-256")
+        for (part in parts) digest.update(part)
+        return digest.digest().joinToString("") { "%02x".format(it) }
+    }
     private fun sha(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
 }
