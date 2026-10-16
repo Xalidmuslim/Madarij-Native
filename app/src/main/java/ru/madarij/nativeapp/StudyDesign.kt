@@ -71,20 +71,21 @@ internal fun StudyMainActions(
     onWriting: () -> Unit,
     onReview: () -> Unit
 ) {
-    Text("Что хотите сделать?", style = MaterialTheme.typography.titleMedium,
+    Text("Как будем заниматься?", style = MaterialTheme.typography.titleMedium,
         fontWeight = FontWeight.SemiBold)
     StudyActionRow(
-        title = "Пройти викторину",
-        subtitle = "$availableQuestions вопросов · короткое занятие из 10 заданий",
-        marker = "01", enabled = availableQuestions > 0, onClick = onQuiz
+        title = "Начать проверку · 10 вопросов",
+        subtitle = "Вопросы по выбранному материалу · всего $availableQuestions",
+        marker = "01", prominent = true,
+        enabled = availableQuestions > 0, onClick = onQuiz
     )
     StudyActionRow(
-        title = "Письменные задания",
-        subtitle = "$writingTasks заданий · размышления и личные заметки",
+        title = "Ответить письменно",
+        subtitle = "$writingTasks заданий · ответ сохранится в заметках",
         marker = "02", enabled = writingTasks > 0, onClick = onWriting
     )
     StudyActionRow(
-        title = "Повторить изученное",
+        title = "Повторить материал",
         subtitle = if (due > 0) "$due вопросов ждут повторения"
             else "Проверить ошибки и назначенные перечитывания",
         marker = "03", enabled = true, onClick = onReview
@@ -93,13 +94,15 @@ internal fun StudyMainActions(
 
 @Composable
 private fun StudyActionRow(title: String, subtitle: String, marker: String,
-    enabled: Boolean, onClick: () -> Unit
+    prominent: Boolean = false, enabled: Boolean, onClick: () -> Unit
 ) {
     AgedPaperCard(
         onClick = onClick,
         enabled = enabled,
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+        colors = CardDefaults.cardColors(
+            containerColor = if (prominent) MaterialTheme.colorScheme.primaryContainer.copy(alpha = .58f)
+                else MaterialTheme.colorScheme.surfaceVariant)
     ) {
         Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 14.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -208,13 +211,13 @@ internal fun StudyScopeBar(
         contentPadding = PaddingValues(horizontal = 14.dp, vertical = 9.dp)
     ) {
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text("ИЗУЧАЕМЫЙ МАТЕРИАЛ", style = MaterialTheme.typography.labelSmall,
+            Text("ВЫБРАННЫЙ ТОМ И ТЕМА", style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Text(selectedLabel, maxLines = 2, overflow = TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurface)
         }
         Spacer(Modifier.width(8.dp))
-        Text("Изменить ›", style = MaterialTheme.typography.labelMedium)
+        Text("Выбрать ›", style = MaterialTheme.typography.labelMedium)
     }
 }
