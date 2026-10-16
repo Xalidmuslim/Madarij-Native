@@ -26,7 +26,9 @@ class CaveatHomeFontTest {
     @Test fun onlyAnimatedHomeQuotationUsesNewHandwritingFace() {
         val home = File("src/main/java/ru/madarij/nativeapp/HomeContents.kt").readText()
         val animation = File("src/main/java/ru/madarij/nativeapp/ReedPenWritingText.kt").readText()
-        assertTrue(home.contains("fontFamily = FontFamily(Font(R.font.caveat_handwriting))"))
+        // Keep the legacy licensed font asset, but never use it on the home quote.
+        assertFalse(home.contains("fontFamily = FontFamily(Font(R.font.caveat_handwriting))"))
+        assertTrue(home.contains("fontFamily = FontFamily(Font(R.font.bad_script))"))
         assertFalse(home.contains("Font(R.font.marck_script)"))
         assertTrue(home.contains("fontSize = 24.sp, lineHeight = 31.sp"))
         assertTrue(home.contains("ReedPenWritingText("))
