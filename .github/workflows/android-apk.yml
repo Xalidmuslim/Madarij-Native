@@ -123,3 +123,57 @@ jobs:
           path: app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
           retention-days: 30
+
+      # On this performance branch, exercise the actual minified production
+      # build instead of mistaking the faster-to-build debug APK for R8.
+      - name: R8 Release build (volume-2 performance branch)
+        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+        run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
+
+      - name: Verify shrunk Release APK, mapping and signature
+        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=app/build/outputs/apk/release/app-release.apk
+          test -s "$APK"
+          test -s app/build/outputs/mapping/release/mapping.txt
+          unzip -t "$APK" >/dev/null
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
+          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging "$APK" | head -4
+
+      - name: Upload R8 Release APK (development-signed)
+        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Volume2-Optimized-R8-Release
+          path: app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Enable emulator virtualization
+        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+        shell: bash
+        run: |
+          if [ -e /dev/kvm ]; then sudo chmod 666 /dev/kvm; fi
+
+      - name: Emulator cold start, scrolling and navigation smoke
+        if: ${{ github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016' }}
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: false
+          emulator-options: -no-snapshot -no-window -no-audio -no-boot-anim -gpu swiftshader_indirect
+          script: bash tools/performance_smoke.sh
+
+      - name: Upload emulator metrics and screenshots
+        if: ${{ always() && (github.ref_name == 'codex/madarij-v2-performance-release-20261016' || github.head_ref == 'codex/madarij-v2-performance-release-20261016') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Volume2-Performance-Measurements
+          path: performance-results/
+          if-no-files-found: warn
+          retention-days: 14
