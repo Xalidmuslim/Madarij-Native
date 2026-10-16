@@ -5,6 +5,16 @@ plugins {
     id("org.jetbrains.kotlin.kapt")
 }
 val releaseKey = System.getenv("MADARIJ_KEYSTORE")
+val playCandidate = providers.gradleProperty("playCandidate").orNull == "true"
+val playProduction = providers.gradleProperty("playProduction").orNull == "true"
+check(!playCandidate || !playProduction) { "Play candidate and production modes are mutually exclusive" }
+if (playProduction) {
+    check(!releaseKey.isNullOrBlank() &&
+        !System.getenv("MADARIJ_STORE_PASSWORD").isNullOrBlank() &&
+        !System.getenv("MADARIJ_KEY_ALIAS").isNullOrBlank() &&
+        !System.getenv("MADARIJ_KEY_PASSWORD").isNullOrBlank()
+    ) { "Google Play bundle requires the owner's persistent upload keystore and all signing secrets" }
+}
 android {
     namespace = "ru.madarij.nativeapp"
     compileSdk = 36
@@ -19,6 +29,7 @@ android {
         versionCode = 58
         versionName = "1.58-volume2-pages3-659-translation-collation"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.58"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
         storeFile = file(releaseKey)
@@ -34,16 +45,26 @@ android {
             applicationIdSuffix = ".qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
         }
         release {
-            applicationIdSuffix = when {
-                providers.gradleProperty("premiumPreview").orNull == "true" -> ".referencepreview"
-                providers.gradleProperty("ciIsolatedRelease").orNull == "true" ->
-                    ".r8qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
-                else -> ".collation158"
+            // Candidate bundles are intentionally NOT the Play package, and
+            // therefore cannot accidentally reserve the production application ID.
+            // Production releases keep the base applicationId and REQUIRE owner key.
+            if (!playProduction) {
+                applicationIdSuffix = when {
+                    playCandidate -> ".playqa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
+                    providers.gradleProperty("premiumPreview").orNull == "true" -> ".referencepreview"
+                    providers.gradleProperty("ciIsolatedRelease").orNull == "true" ->
+                        ".r8qa${System.getenv("GITHUB_RUN_NUMBER") ?: "local"}"
+                    else -> ".collation158"
+                }
+            }
+            if (playProduction || playCandidate) {
+                manifestPlaceholders["appTitle"] = "Степени идущих"
             }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
-            signingConfig = if (releaseKey != null) signingConfigs.getByName("owner") else signingConfigs.getByName("debug")
+            signingConfig = if (playProduction || (!releaseKey.isNullOrBlank() && !playCandidate))
+                signingConfigs.getByName("owner") else signingConfigs.getByName("debug")
         }
     }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
