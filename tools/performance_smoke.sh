@@ -40,6 +40,32 @@ adb shell screencap -p /sdcard/performance-contents.png
 adb pull /sdcard/performance-contents.png performance-results/contents.png >/dev/null
 adb shell uiautomator dump /sdcard/contents.xml >/dev/null 2>&1
 adb pull /sdcard/contents.xml performance-results/contents.xml >/dev/null
+# The optimized TOC intentionally starts with chapter groups collapsed.
+# Expand a real, visible first chapter from the accessibility tree before
+# looking for a "Читать" action. Do not regress the cleaner UI for old QA taps.
+python3 - <<'PY'
+from xml.etree import ElementTree as ET
+import re
+root=ET.parse('performance-results/contents.xml').getroot()
+matches=[]
+for n in root.iter('node'):
+    label=(n.get('text','')+' '+n.get('content-desc','')).strip()
+    if 'Введение и толкование' not in label:
+        continue
+    found=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.get('bounds',''))
+    if found:
+        x1,y1,x2,y2=map(int,found.groups())
+        if 180 < y1 < 810:
+            matches.append((y1,(x1+x2)//2,(y1+y2)//2))
+if not matches:
+    raise SystemExit('No visible first chapter to expand; Contents QA invalid')
+_,x,y=min(matches)
+open('performance-results/chapter-target.txt','w').write(f'{x} {y}\n')
+print('Expanding Contents chapter at',x,y)
+PY
+read -r CHAPTER_X CHAPTER_Y < performance-results/chapter-target.txt
+adb shell input tap "$CHAPTER_X" "$CHAPTER_Y"
+sleep 2
 adb shell input swipe 210 780 210 300 500
 adb shell input swipe 210 310 210 780 500
 sleep 2

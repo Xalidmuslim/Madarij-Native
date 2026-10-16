@@ -158,12 +158,14 @@ internal fun MadarijTopBar(
     showTextSettings: Boolean, onTextSettings: () -> Unit, onBookmarks: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
-        if (title == "Оглавление") {
+        if (title == "Оглавление" || title == "Ещё") {
             Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
                 verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.headlineLarge.copy(
-                        fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
+                        fontFamily = BookSerif,
+                        fontSize = if (title == "Ещё") 38.sp else 32.sp,
+                        lineHeight = if (title == "Ещё") 43.sp else 37.sp),
                         color = BookColors.ink)
                     if (subtitle != null) Text(subtitle,
                         style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
@@ -175,6 +177,32 @@ internal fun MadarijTopBar(
                     contentPadding = PaddingValues(0.dp)) {
                     Text("Aa", color = BookColors.gold, fontSize = 17.sp)
                 }
+            }
+        } else if (title == "Прогресс") {
+            Row(Modifier.fillMaxWidth().padding(horizontal = 9.dp, vertical = 11.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                TextButton(onClick = onBack, modifier = Modifier.size(44.dp),
+                    contentPadding = PaddingValues(0.dp)) {
+                    Text("‹", fontFamily = BookSerif, fontSize = 36.sp, color = BookColors.ink)
+                }
+                Text("Мой прогресс", Modifier.weight(1f),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.headlineLarge.copy(
+                        fontFamily = BookSerif, fontSize = 30.sp, lineHeight = 35.sp),
+                    color = BookColors.ink)
+                IconButton(onClick = onSearch) {
+                    NavigationGlyph("search", modifier = Modifier.size(22.dp))
+                }
+            }
+            Row(Modifier.fillMaxWidth().padding(bottom = 3.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center) {
+                HorizontalDivider(Modifier.width(55.dp), thickness = .7.dp,
+                    color = BookColors.gold.copy(alpha = .48f))
+                Text(" ❖ ", fontFamily = BookSerif, fontSize = 13.sp,
+                    color = BookColors.gold)
+                HorizontalDivider(Modifier.width(55.dp), thickness = .7.dp,
+                    color = BookColors.gold.copy(alpha = .48f))
             }
         } else {
             Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
