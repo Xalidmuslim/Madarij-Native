@@ -8,6 +8,7 @@ import android.os.SystemClock
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.gestures.scrollBy
 import androidx.compose.foundation.background
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -15,6 +16,8 @@ import androidx.compose.foundation.border
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.positionInWindow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -137,13 +140,33 @@ fun Reader(
         selectedTopicHeading != null &&
         displayRussian[anchor]?.contains(selectedTopicHeading, ignoreCase = true) == true
     var exactTargetSettled by remember(sectionKey, anchor) { mutableStateOf(false) }
+    var viewportTopY by remember(sectionKey) { mutableFloatStateOf(Float.NaN) }
+    var targetTopY by remember(sectionKey, anchor) { mutableFloatStateOf(Float.NaN) }
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    // Locate the exact author-heading or editorial phrase once, then place it
+    // against the TOP of the reading viewport (not merely "somewhere visible").
+    LaunchedEffect(ready, exactTargetAvailable, viewportTopY, targetTopY) {
+        if (ready && exactTargetAvailable && !exactTargetSettled &&
+            viewportTopY.isFinite() && targetTopY.isFinite()) {
+            val inset = with(density) { 8.dp.toPx() }
+            listState.scrollBy(targetTopY - viewportTopY - inset)
+            exactTargetSettled = true
+        }
+    }
+    // Inconsistent legacy metadata must never leave the reading surface blank.
+    LaunchedEffect(ready, exactTargetAvailable, sectionKey, anchor) {
+        if (ready && exactTargetAvailable && !exactTargetSettled) {
+            delay(650)
+            exactTargetSettled = true
+        }
+    }
     val searchTargetAvailable = query.isNotBlank() && anchor != null &&
         visible.any { it.id == anchor }
     val readerSettled = ready &&
         (if (searchTargetAvailable) matchRevealed else (!exactTargetAvailable || exactTargetSettled))
     val readerAlpha by animateFloatAsState(
         targetValue = if (readerSettled) 1f else 0f,
-        animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 150),
+        animationSpec = tween(durationMillis = if (settings.reducedMotion) 0 else 75),
         label = "reader-position-ready"
     )
     fun savePosition() {
@@ -318,16 +341,21 @@ fun Reader(
         // system gesture inset and a small breathing gap in the reader viewport.
         // The paper texture still extends behind the floating navigation.
         val readerBottomInset = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
-        Box(
+        BoxWithConstraints(
             Modifier.weight(1f).fillMaxWidth().background(Color.Transparent)
                 .padding(bottom = readerBottomInset + 76.dp)
         ) {
+            // A near-final topic must still have enough trailing scroll extent
+            // to bring its first word to the top without a second animation.
+            val topicBottomPadding = if (exactTargetAvailable)
+                (maxHeight - 12.dp).coerceAtLeast(22.dp) else 22.dp
             LazyColumn(
                 state = listState,
                 modifier = Modifier.fillMaxSize()
+                    .onGloballyPositioned { viewportTopY = it.positionInWindow().y }
                     .graphicsLayer { alpha = readerAlpha }
                     .then(swipeModifier),
-                contentPadding = PaddingValues(top = 8.dp, bottom = 22.dp),
+                contentPadding = PaddingValues(top = 8.dp, bottom = topicBottomPadding),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
             ) {
@@ -439,9 +467,9 @@ fun Reader(
                                                 p.id == anchor && block.title?.contains(phrase, ignoreCase = true) == true
                                             } == true
                                             if (exactHeading) {
-                                                val targetRequester = remember(anchor, selectedTopicHeading) { BringIntoViewRequester() }
                                                 Column(
-                                                    Modifier.fillMaxWidth().bringIntoViewRequester(targetRequester),
+                                                    Modifier.fillMaxWidth()
+                                                        .onGloballyPositioned { targetTopY = it.positionInWindow().y },
                                                     verticalArrangement = Arrangement.spacedBy(6.dp)
                                                 ) {
                                                     Surface(
@@ -460,17 +488,7 @@ fun Reader(
                                                     }
                                                     ReaderSectionCard(block, settings, arabic = false)
                                                 }
-                                                LaunchedEffect(ready, anchor, selectedTopicHeading) {
-                                                    if (ready) {
-                                                        try {
-                                                            withFrameNanos { }
-                                                            targetRequester.bringIntoView()
-                                                        } finally {
-                                                            exactTargetSettled = true
-                                                        }
-                                                    }
-                                                }
-                                            } else ReaderSectionCard(block, settings, arabic = false)
+                                             } else ReaderSectionCard(block, settings, arabic = false)
                                         }
                                         is ReaderTextBlock.Body -> {
                                             // The editor's TOC may point to a new authorial
@@ -489,9 +507,9 @@ fun Reader(
                                                     reveal = false, onRevealed = {},
                                                     onOpenTerm = { termDialog = it }
                                                 )
-                                                val topicRequester = remember(anchor, selectedTopicHeading) { BringIntoViewRequester() }
                                                 Surface(
-                                                    modifier = Modifier.fillMaxWidth().bringIntoViewRequester(topicRequester),
+                                                    modifier = Modifier.fillMaxWidth()
+                                                        .onGloballyPositioned { targetTopY = it.positionInWindow().y },
                                                     shape = RoundedCornerShape(14.dp),
                                                     color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = .28f)
                                                 ) {
@@ -504,17 +522,7 @@ fun Reader(
                                                             color = MaterialTheme.colorScheme.onSurface)
                                                     }
                                                 }
-                                                LaunchedEffect(ready, anchor, selectedTopicHeading) {
-                                                    if (ready) {
-                                                        try {
-                                                            withFrameNanos { }
-                                                            topicRequester.bringIntoView()
-                                                        } finally {
-                                                            exactTargetSettled = true
-                                                        }
-                                                    }
-                                                }
-                                                ReaderRichTextBlock(
+                                                 ReaderRichTextBlock(
                                                     text = selectedText, query = query,
                                                     settings = readerSettings, terms = terms,
                                                     reveal = false, onRevealed = {},
