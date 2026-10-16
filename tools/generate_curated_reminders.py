@@ -107,14 +107,14 @@ def main() -> None:
         ru = paragraph["ru"]
         # Split exactly as during excerpt selection, retaining original
         # punctuation; never write paraphrases into the reminder deck.
-        simplified = ru.replace("\\r", "").replace("Раздел\\n", "").replace("Глава\\n", "").replace("**", "")
-        parts = re.split(r"(?<=[.!?…])\\s+(?=[А-ЯЁ«“])", simplified)
+        simplified = ru.replace("\r", "").replace("Раздел\n", "").replace("Глава\n", "").replace("**", "")
+        parts = re.split(r"(?<=[.!?…])\s+(?=[А-ЯЁ«“])", simplified)
         matches = [s.strip().strip('"«»') for s in parts if s.strip().startswith(start)]
         assert len(matches) == 1, f"Ambiguous source excerpt: {pid} / {start!r} -> {len(matches)}"
         quote = matches[0]
         assert quote in ru, f"Not a verbatim substring: {pid}"
         assert 55 <= len(quote) <= 200, f"Unexpected excerpt size: {pid} ({len(quote)})"
-        m = re.search(r"-p(\\d{3})", pid)
+        m = re.search(r"-p(\d{3})", pid)
         if volume == 1:
             pages = paragraph.get("source_pages", [])
             page = pages[0] if pages else (int(m.group(1)) if m else 3)
@@ -127,7 +127,7 @@ def main() -> None:
     assert sum(x["volume"] == 1 for x in result) == 20
     assert sum(x["volume"] == 2 for x in result) == 54
     out = ASSETS / "curated_knowledge_reminders.json"
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"PASS: {len(result)} verbatim curated excerpts; V1=20 V2=54; {out.name}")
 
 if __name__ == "__main__":
