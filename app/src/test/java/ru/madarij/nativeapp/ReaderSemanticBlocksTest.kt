@@ -118,4 +118,17 @@ class ReaderSemanticBlocksTest {
         assertTrue(segments.last() is ReaderRichSegment.Paragraph)
     }
 
+    @Test fun firstVolumeCurlyQuotationIsQuranWhenPrintedSourceFollows() {
+        val text = "И Он говорит: “Поистине, к Нам их возвращение, а затем на Нас — их расчёт” [“Аль-Гашия”, 88:25–26]."
+        val quote = parseReaderRichSegments(text).filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.VERSE, quote.kind)
+        assertTrue(quote.body.contains("88:25–26"))
+    }
+
+    @Test fun ibnAbbasWordsWithCurlyQuotationStayHumanWords() {
+        val text = "Ибн Аббас сказал: “Здесь требуется мудрость и терпение”."
+        val quote = parseReaderRichSegments(text).filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.COMPANION_SAYING, quote.kind)
+    }
+
 }
