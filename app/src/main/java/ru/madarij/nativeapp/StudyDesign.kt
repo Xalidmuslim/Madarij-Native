@@ -20,8 +20,7 @@ internal fun StudyOverview(
     answered: Int,
     allQuestions: Int,
     due: Int,
-    writingTasks: Int,
-    // The overview reports progress. Actions appear directly below.
+    writingTasks: Int
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
