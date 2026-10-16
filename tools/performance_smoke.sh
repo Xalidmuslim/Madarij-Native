@@ -2,12 +2,14 @@
 set -euo pipefail
 mkdir -p performance-results
 APK="app/build/outputs/apk/release/app-release.apk"
-PKG="ru.madarij.nativeapp.readerpolish"
+# Matches app/build.gradle.kts release applicationIdSuffix (.collation158).
+PKG="ru.madarij.nativeapp.collation158"
 ACT="ru.madarij.nativeapp.MainActivity"
 test -s "$APK"
 adb shell wm size 432x960
 adb shell wm density 160
 adb install -r "$APK"
+adb shell pm path "$PKG" | grep -q 'package:'
 adb shell input keyevent KEYCODE_HOME
 {
   echo "Android emulator: Pixel 6, Android API 35"
@@ -21,6 +23,8 @@ for n in 1 2 3; do
   adb shell am start -W -n "$PKG/$ACT" >> performance-results/measurements.txt
   sleep 3
 done
+# The navigation tests use the same viewport across all runs. Keep Android
+# system animations enabled: an artificially instant UI hides jank.
 adb shell dumpsys gfxinfo "$PKG" reset >/dev/null
 echo "---- HOME scroll ----" >> performance-results/measurements.txt
 adb shell input swipe 220 765 220 290 400
@@ -28,11 +32,15 @@ adb shell input swipe 220 300 220 770 400
 echo "---- CONTENTS tap and scroll ----" >> performance-results/measurements.txt
 adb shell input tap 130 867
 sleep 2
+adb shell screencap -p /sdcard/performance-contents.png
+adb pull /sdcard/performance-contents.png performance-results/contents.png >/dev/null
 adb shell input swipe 210 780 210 300 500
 adb shell input swipe 210 310 210 780 500
 echo "---- READER tap and scroll ----" >> performance-results/measurements.txt
 adb shell input tap 358 532
 sleep 2
+adb shell screencap -p /sdcard/performance-reader.png
+adb pull /sdcard/performance-reader.png performance-results/reader.png >/dev/null
 adb shell input swipe 230 785 230 330 500
 adb shell input swipe 230 350 230 785 500
 adb shell input keyevent KEYCODE_BACK
@@ -42,6 +50,8 @@ sleep 1
 adb shell screencap -p /sdcard/performance-final.png
 adb pull /sdcard/performance-final.png performance-results/final.png >/dev/null
 adb shell dumpsys gfxinfo "$PKG" > performance-results/gfxinfo.txt
+adb shell dumpsys meminfo "$PKG" > performance-results/meminfo.txt
+adb shell am start -W -n "$PKG/$ACT" >> performance-results/measurements.txt
 adb shell dumpsys gfxinfo "$PKG" framestats > performance-results/framestats.txt
 grep -E "Total frames rendered|Janky frames|50th percentile|90th percentile|95th percentile|99th percentile" performance-results/gfxinfo.txt >> performance-results/measurements.txt || true
 adb logcat -d -t 1500 | grep -E 'FATAL EXCEPTION|ANR in ru.madarij.nativeapp' > performance-results/crash-log.txt || true
