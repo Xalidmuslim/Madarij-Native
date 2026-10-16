@@ -68,6 +68,7 @@ def make():
         (2, json.loads((ASSETS / 'volume2-preview.json').read_text(encoding='utf-8')), 14)
     ]
     questions, exercises = [], []
+    original_question_ids = {1: [], 2: []}
     report = {}
     all_options_by_volume = {}
     for volume, book, per_chapter in books:
@@ -107,6 +108,8 @@ def make():
                 question_id = f'book-recognition-v{volume}-{digest}'
                 if question_id in existing_ids:
                     raise ValueError(f'Duplicate study question {question_id}')
+                if ci < len(base_pool[chapter_id]):
+                    original_question_ids[volume].append(question_id)
                 # Nearby chapters are more challenging and keep topic coherence.
                 option_pool = base_options if ci < len(base_pool[chapter_id]) else all_options
                 distractors = [
@@ -160,6 +163,16 @@ def make():
             report['volume_2_extra'] = count - sum(len(base_pool[c['id']]) for c in chapters)
     if report['volume_1'] < 140 or report['volume_2'] < 200:
         raise ValueError(f'Insufficient coverage: {report}')
+    # Regression signatures from the previously shipped 484 APK. Existing
+    # attempt keys must remain valid; new v2 questions are append-only.
+    expected_legacy_hashes = {
+        1: '67fe50de213674ea8aa44c55ad1d5d53f9250b6117a13c4383c23e200510dd0e',
+        2: 'f03a7827e7c8b62e3c4254a607b2b2525b1b854ee44e2daab63cb09be4027533',
+    }
+    for volume, expected in expected_legacy_hashes.items():
+        actual = hashlib.sha256('\n'.join(original_question_ids[volume]).encode('utf-8')).hexdigest()
+        if actual != expected:
+            raise ValueError(f'Legacy volume {volume} progress IDs changed: {actual}')
     new_ids = [x['id'] for x in questions]
     if len(new_ids) != len(set(new_ids)):
         raise ValueError('Generated question IDs not unique')
