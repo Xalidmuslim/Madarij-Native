@@ -191,17 +191,6 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             }
             if (tab == 0) {
                 item {
-                    StudyOverview(
-                        readChapters = scopedChapters.count { it.id in readIds },
-                        allChapters = scopedChapters.size,
-                        answered = scopedBank.count { (attempts[it.id]?.count ?: 0) > 0 },
-                        allQuestions = scopedBank.size,
-                        due = dueQuestions,
-                        writingTasks = if (loaded)
-                            repo.exercises.count { inStudyScope(it.chapterId) } else 0
-                    )
-                }
-                item {
                     StudyMainActions(
                         availableQuestions = scopedBank.size,
                         writingTasks = if (loaded)
@@ -219,6 +208,17 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                             tab = 3
                             questionId = ""
                         }
+                    )
+                }
+                item {
+                    StudyOverview(
+                        readChapters = scopedChapters.count { it.id in readIds },
+                        allChapters = scopedChapters.size,
+                        answered = scopedBank.count { (attempts[it.id]?.count ?: 0) > 0 },
+                        allQuestions = scopedBank.size,
+                        due = dueQuestions,
+                        writingTasks = if (loaded)
+                            repo.exercises.count { inStudyScope(it.chapterId) } else 0
                     )
                 }
             }
