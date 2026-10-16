@@ -120,44 +120,174 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         if (sessionIds.isBlank()) emptyList()
         else sessionIds.split("|").mapNotNull { id -> bankById[id] }
     }
-    @Composable fun chapterPicker() {
-        OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Все разделы · оба тома",maxLines=1)}
-        if(chapterMenu) AlertDialog(
+    if (chapterMenu) {
+        val normalizedSearch=remember(chapterSearch) { normalizedText(chapterSearch).text }
+        val matches=remember(chapters, chapterTitles, selectedVolume, normalizedSearch) {
+            chapters.filter { c ->
+                (selectedVolume == 0 || c.volume == selectedVolume) &&
+                    (normalizedSearch.isEmpty() ||
+                        normalizedText(chapterTitles[c.id] ?: c.title).text.contains(normalizedSearch))
+            }.sortedWith(compareBy({ it.volume }, { it.ordinal }))
+        }
+        AlertDialog(
             onDismissRequest={chapterMenu=false},
-            title={Text("Выбрать раздел")},
-            text={Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
-                OutlinedTextField(chapterSearch,{chapterSearch=it},modifier=Modifier.fillMaxWidth(),singleLine=true,label={Text("Поиск раздела")})
-                LazyColumn(Modifier.heightIn(max=360.dp),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                    item {TextButton(onClick={chapterId="";exerciseId="";chapterMenu=false;chapterSearch=""},modifier=Modifier.fillMaxWidth()) {Text("Все разделы · оба тома",Modifier.fillMaxWidth())}}
-                    items(chapters.filter { chapterSearch.isBlank() || normalizedText(chapterTitles[it.id].orEmpty()).text.contains(normalizedText(chapterSearch).text) },key={it.id}) { c ->
-                        TextButton(onClick={chapterId=c.id;exerciseId="";reflection="";hintVisible=false;chapterMenu=false;chapterSearch="";visibleQuestions=15;visibleExercises=15},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[c.id] ?: c.title,Modifier.fillMaxWidth(),maxLines=2)}
+            title={Text("Выбор раздела")},
+            text={
+                Column(verticalArrangement=Arrangement.spacedBy(9.dp)) {
+                    Text(
+                        when(selectedVolume) {
+                            1 -> "Том 1 · ${matches.size} разделов"
+                            2 -> "Том 2 · ${matches.size} разделов"
+                            else -> "Оба тома · ${matches.size} разделов"
+                        },
+                        style=MaterialTheme.typography.bodySmall,
+                        color=MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    OutlinedTextField(
+                        chapterSearch, {chapterSearch=it},
+                        modifier=Modifier.fillMaxWidth(),
+                        singleLine=true, label={Text("Найти раздел")}
+                    )
+                    LazyColumn(Modifier.heightIn(max=390.dp),
+                        verticalArrangement=Arrangement.spacedBy(3.dp)) {
+                        item {
+                            TextButton(
+                                onClick={
+                                    chapterId=""
+                                    exerciseId=""
+                                    questionId=""
+                                    chapterMenu=false
+                                    chapterSearch=""
+                                },
+                                modifier=Modifier.fillMaxWidth()
+                            ) {
+                                Text(
+                                    if(selectedVolume==0) "✓ Все разделы обоих томов"
+                                    else "✓ Все разделы тома $selectedVolume",
+                                    modifier=Modifier.fillMaxWidth()
+                                )
+                            }
+                        }
+                        for (volume in 1..2) {
+                            val bookChapters=matches.filter { it.volume==volume }
+                            if(bookChapters.isNotEmpty()) {
+                                item(key="vol-header:$volume") {
+                                    Text("ТОМ $volume · ${bookChapters.size} разделов",
+                                        style=MaterialTheme.typography.labelMedium,
+                                        color=MaterialTheme.colorScheme.primary,
+                                        modifier=Modifier.padding(top=9.dp, bottom=3.dp))
+                                }
+                                items(bookChapters,key={it.id}) { c ->
+                                    TextButton(
+                                        onClick={
+                                            chapterId=c.id
+                                            selectedVolume=c.volume
+                                            questionId=""
+                                            exerciseId=""
+                                            reflection=""
+                                            hintVisible=false
+                                            chapterMenu=false
+                                            chapterSearch=""
+                                            visibleQuestions=15
+                                            visibleExercises=15
+                                        },
+                                        modifier=Modifier.fillMaxWidth(),
+                                        contentPadding=PaddingValues(horizontal=9.dp,vertical=8.dp)
+                                    ) {
+                                        Column(Modifier.fillMaxWidth()) {
+                                            Text(chapterTitles[c.id] ?: c.title,
+                                                maxLines=3,
+                                                style=MaterialTheme.typography.bodyMedium)
+                                            Text(
+                                                "${bankByChapter[c.id]?.size ?: 0} вопросов",
+                                                style=MaterialTheme.typography.labelSmall,
+                                                color=MaterialTheme.colorScheme.onSurfaceVariant
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        if(matches.isEmpty()) item {
+                            Text("Ничего не найдено. Измените поисковый запрос.")
+                        }
                     }
                 }
-            }},
-            confirmButton={TextButton(onClick={chapterMenu=false}) {Text("Закрыть")}}
+            },
+            confirmButton={
+                TextButton(onClick={chapterMenu=false}) {Text("Закрыть")}
+            }
         )
     }
-    LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),verticalArrangement=Arrangement.spacedBy(9.dp),contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
-        item {
+    LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),
+        state=listState,
+        verticalArrangement=Arrangement.spacedBy(10.dp),
+        contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
+        // No large dashboard, duplicated mode tabs or section-picker on a
+        // question or while composing a written answer.
+        if(tab==0 && q==null && exercise==null) item {
             StudyOverview(
-                readChapters = read.map { it.chapterId }.distinct().size,
-                allChapters = chapters.size,
-                answered = attempts.count { it.value.count > 0 },
-                allQuestions = bank.size,
-                due = dueQuestions,
-                writingTasks = if (loaded) repo.exercises.size else 0,
-                onStart = { if (loaded) beginSession() }
+                readChapters=readIds.size,
+                allChapters=chapters.size,
+                answered=attempts.count { it.value.count>0 },
+                allQuestions=bank.size,
+                due=dueQuestions,
+                writingTasks=if(loaded) repo.exercises.size else 0,
+                onStart={if(loaded) beginSession()}
             )
         }
-        if(chapterReviewMessage.isNotBlank()) item {Text(chapterReviewMessage,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.primary)}
-        item {
-            StudyModeTabs(tab) { selected ->
-                tab = selected
-                questionId = ""
-                sessionIds = ""
-                sessionFinished = false
-                visibleQuestions = 15
-                visibleExercises = 15
+        if(chapterReviewMessage.isNotBlank()) item {
+            Text(chapterReviewMessage,style=MaterialTheme.typography.bodySmall,
+                color=MaterialTheme.colorScheme.primary)
+        }
+        if(sessionNotice.isNotBlank()) item {
+            Text(sessionNotice,style=MaterialTheme.typography.bodySmall,
+                color=MaterialTheme.colorScheme.primary)
+        }
+        if(q==null && exercise==null) {
+            item {
+                StudyScopeBar(
+                    selectedLabel=chapterTitles[chapterId] ?:
+                        when(selectedVolume) {
+                            1 -> "Все разделы тома 1"
+                            2 -> "Все разделы тома 2"
+                            else -> "Все разделы"
+                        },
+                    selectedVolume=selectedVolume,
+                    onChooseSection={
+                        chapterSearch=""
+                        chapterMenu=true
+                    },
+                    onSelectVolume={ volume ->
+                        selectedVolume=volume
+                        chapterId=selectedStudyChapterAfterVolumeChange(
+                            chapterId,volume,chapterVolumes)
+                        questionId=""
+                        exerciseId=""
+                        visibleQuestions=15
+                        visibleExercises=15
+                        sessionFinished=false
+                    }
+                )
+            }
+            item {
+                StudyModeTabs(tab) { selected ->
+                    tab=selected
+                    questionId=""
+                    sessionIds=""
+                    sessionFinished=false
+                    visibleQuestions=15
+                    visibleExercises=15
+                }
+            }
+        } else item {
+            TextButton(onClick={
+                if(q!=null) {
+                    questionId=""
+                    sessionIds=""
+                } else exerciseId=""
+            }) {
+                Text(if(q!=null) "‹ Вернуться к вопросам" else "‹ К письменным заданиям")
             }
         }
         if(!loaded) item { Text(if(loadError) "Не удалось загрузить учебные материалы. Откройте раздел снова." else "Загрузка учебных материалов…") }
