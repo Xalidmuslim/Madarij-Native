@@ -24,10 +24,17 @@ class LearningRepository(private val context: Context) {
     private val historyKey = stringPreferencesKey("history")
     private val chapterReviewKey = stringPreferencesKey("chapter_reviews")
     private val bank by lazy { JSONObject(context.assets.open("study.json").bufferedReader().use { it.readText() }) }
-    val questions: List<StudyQuestion> by lazy {
-        val a = bank.getJSONArray("questions")
+    // Additional questions are generated offline from the bundled Russian book.
+    // Their IDs are stable; existing progress remains in the same DataStore.
+    private val extraBank by lazy { JSONObject(context.assets.open("study_supplement.json").bufferedReader().use { it.readText() }) }
+    private fun parseQuestions(a: JSONArray): List<StudyQuestion> =
         (0 until a.length()).map { i -> val q=a.getJSONObject(i); val o=q.getJSONArray("options")
             StudyQuestion(q.getString("id"),q.getString("level"),q.getString("prompt"),q.getString("sourceParagraphId"),(0 until o.length()).map { j -> val v=o.getJSONObject(j); StudyOption(v.getString("text"),v.getBoolean("correct"),v.getString("explanation")) },q.getString("sourceExcerpt"),q.optString("chapterId")) }
+    val questions: List<StudyQuestion> by lazy {
+        val combined = parseQuestions(bank.getJSONArray("questions")) +
+            parseQuestions(extraBank.getJSONArray("questions"))
+        require(combined.map { it.id }.distinct().size == combined.size) { "Duplicate question identifiers" }
+        combined
     }
     private fun strings(a: JSONArray?): List<String> = if(a==null) emptyList() else (0 until a.length()).map {a.getString(it)}
     val terms: List<StudyTerm> by lazy { val a=bank.getJSONArray("terms"); (0 until a.length()).map { i -> val t=a.getJSONObject(i); StudyTerm(t.getString("ar"),t.getString("transcript"),t.getString("definition"),t.getString("sourceParagraphId"),t.optString("id"),t.optString("extendedDefinition"),strings(t.optJSONArray("relatedTerms")),strings(t.optJSONArray("sourceParagraphIds"))) } }
