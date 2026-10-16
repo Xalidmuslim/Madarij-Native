@@ -91,6 +91,8 @@ val verifyReleaseAssets by tasks.registering {
         check(file("src/main/res/font/naskh.ttf").isFile) { "Embedded Naskh missing" }
         check(file("src/main/assets/fonts/OFL.txt").isFile) { "Font license missing" }
         check(file("src/main/assets/fonts/BadScript-OFL.txt").isFile) { "New handwriting font license missing" }
+        check(file("src/main/res/font/caveat_handwriting.ttf").isFile) { "Caveat Cyrillic handwriting font missing" }
+        check(file("src/main/assets/fonts/Caveat-OFL.txt").isFile) { "Caveat OFL license missing" }
         if (releaseKey == null) logger.lifecycle("Owner signing not configured; using development signing for test APK")
     }
 }
