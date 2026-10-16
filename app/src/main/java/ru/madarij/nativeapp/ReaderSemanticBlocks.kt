@@ -124,6 +124,47 @@ private fun hasVerseQuotedBeforeReference(sentence: String, reference: String): 
         (sentence.lastIndexOf('«', close) >= 0 || sentence.lastIndexOf('“', close) >= 0)
 }
 
+/**
+ * Locate ONLY the scripture quote + its printed surah reference. A whole
+ * author sentence may contain text both BEFORE and AFTER that citation:
+ * "Что же до ... «аят» [«Сура», 89:14], то различие ..."
+ * That commentary must never be painted inside a Quran block.
+ */
+private data class ScriptureSpan(val first: Int, val endExclusive: Int, val reference: String)
+
+private fun findScriptureSpan(text: String): ScriptureSpan? {
+    val references = (sourceSurahRef.findAll(text) +
+        bracketSurahRef.findAll(text) + colonSurahRef.findAll(text))
+        .sortedBy { it.range.first }
+        .distinctBy { it.range }
+    for (hit in references) {
+        val ref = hit.value
+        if (misleadingHadithReference.containsMatchIn(ref)) continue
+        val validRef = sourceSurahRef.matches(ref) ||
+            bareSurahWord.containsMatchIn(ref.drop(1)) ||
+            ref.contains('«') || ref.contains('“') || colonSurahRef.matches(ref)
+        if (!validRef) continue
+        val close = maxOf(text.lastIndexOf('»', hit.range.first - 1),
+            text.lastIndexOf('”', hit.range.first - 1))
+        if (close < 0) continue
+        val between = text.substring(close + 1, hit.range.first)
+        // Anything except adjacent punctuation means the reference might
+        // describe the AUTHOR'S words rather than the nearest quotation.
+        if (!between.all { it.isWhitespace() || it in ".,;:!?" }) continue
+        val opening = if (text[close] == '»')
+            text.lastIndexOf('«', close) else text.lastIndexOf('“', close)
+        if (opening < 0) continue
+        val preceding = text.substring(0, opening).trim()
+        if (humanIntro(preceding)) continue
+        var end = hit.range.last + 1
+        // Sentence punctuation immediately after the citation stays next
+        // to it. The author's continuation remains a separate paragraph.
+        while (end < text.length && text[end] in ".,;:!?") end++
+        return ScriptureSpan(opening, end, ref)
+    }
+    return null
+}
+
 private fun humanIntro(prefix: String): Boolean {
     val lead = speakerLead.matchEntire(prefix) ?: return false
     // A relative phrase "сподвижникам Пророка — Он сказал" is not a prophetic
@@ -155,62 +196,79 @@ internal fun parseReaderRichSegments(text: String): List<ReaderRichSegment> {
                 plain.clear()
             }
         }
-        for (piece in splitOutsideQuotedText(flat)) {
+        fun consumePiece(piece: String) {
+            if (piece.isBlank()) return
+            // Extract a citation *within* an explanatory sentence, leaving
+            // its author introduction and conclusion outside the Quran card.
+            val cited = findScriptureSpan(piece)
+            if (cited != null) {
+                flush()
+                val prefix = piece.substring(0, cited.first).trimEnd()
+                val divine = explicitDivineLead.matches(prefix)
+                val citation = piece.substring(cited.first, cited.endExclusive)
+                if (prefix.isNotBlank() && !divine) {
+                    result += ReaderRichSegment.Paragraph(prefix)
+                }
+                result += ReaderRichSegment.Quote(
+                    raw = if (divine) piece.substring(0, cited.endExclusive) else citation,
+                    label = "", body = citation,
+                    reference = cited.reference, kind = ReaderCitationKind.VERSE
+                )
+                val trailing = piece.substring(cited.endExclusive).trimStart()
+                if (trailing.isNotBlank()) consumePiece(trailing)
+                return
+            }
+
             val quoteAt = listOf(piece.indexOf('«'), piece.indexOf('“'))
                 .filter { it >= 0 }.minOrNull() ?: -1
             val quoteEnd = maxOf(piece.lastIndexOf('»'), piece.lastIndexOf('”'))
             val prefix = if (quoteAt >= 0) piece.substring(0, quoteAt).trim() else ""
-            val citation = verseReference(piece)
-            val surahQuote = citation != null && hasVerseQuotedBeforeReference(piece, citation)
             val namedHuman = humanIntro(prefix)
-            val clearDivine = explicitDivineLead.matches(prefix)
             val clearProphetic = explicitPropheticLead.matches(prefix)
-            val isVerse = quoteAt >= 0 && quoteEnd > quoteAt &&
-                !namedHuman && (surahQuote ||
-                    (citation == null && namedDivineWithoutReference.matches(prefix)))
-            val matchNumber = readerNumberIntro.matchEntire(piece)
+            // With no traceable printed source, only an explicit divine
+            // attribution may receive Quran styling; vague "Он сказал" isn't
+            // sufficient and a named person must not become an ayah.
+            val clearDivine = !namedHuman && namedDivineWithoutReference.matches(prefix)
+            val numberMatch = readerNumberIntro.matchEntire(piece)
             when {
-                isVerse -> {
+                quoteAt >= 0 && quoteEnd > quoteAt && clearDivine -> {
                     flush()
-                    // A long author introduction is meaningful prose, not part
-                    // of the Quran quotation. Keep it visible outside the card;
-                    // suppress only a redundant short divine attribution.
-                    if (prefix.isNotBlank() && !clearDivine) {
-                        result += ReaderRichSegment.Paragraph(prefix)
-                    }
-                    // Do not repeat "Всевышний сказал:" in a Quran card.
-                    // The complete unmodified source remains in .raw.
-                    val displayed = piece.substring(quoteAt).trimStart()
+                    val quotePart = piece.substring(quoteAt, quoteEnd + 1)
                     result += ReaderRichSegment.Quote(
-                        raw = if (prefix.isNotBlank() && !clearDivine) piece.substring(quoteAt) else piece,
-                        label = "", body = displayed,
-                        reference = citation, kind = ReaderCitationKind.VERSE
+                        raw = piece.substring(0, quoteEnd + 1),
+                        label = "", body = quotePart,
+                        reference = null, kind = ReaderCitationKind.VERSE
                     )
+                    val after = piece.substring(quoteEnd + 1).trimStart()
+                    if (after.isNotBlank()) consumePiece(after)
                 }
                 quoteAt >= 0 && quoteEnd > quoteAt && clearProphetic -> {
                     flush()
                     result += ReaderRichSegment.Quote(
                         raw = piece, label = prefix, body = piece.substring(quoteAt),
-                        reference = citation, kind = ReaderCitationKind.PROPHETIC_REPORT
+                        reference = null, kind = ReaderCitationKind.PROPHETIC_REPORT
                     )
                 }
                 quoteAt >= 0 && quoteEnd > quoteAt && namedHuman -> {
                     flush()
                     result += ReaderRichSegment.Quote(
                         raw = piece, label = prefix, body = piece.substring(quoteAt),
-                        reference = citation,
+                        reference = null,
                         kind = if (ibnAbbas.containsMatchIn(prefix))
                             ReaderCitationKind.COMPANION_SAYING else ReaderCitationKind.SAYING
                     )
                 }
-                matchNumber != null -> {
+                numberMatch != null -> {
                     flush()
                     result += ReaderRichSegment.Numbered(
-                        piece, matchNumber.groupValues[1], matchNumber.groupValues[2]
+                        piece, numberMatch.groupValues[1], numberMatch.groupValues[2]
                     )
                 }
                 else -> plain += piece
             }
+        }
+        for (piece in splitOutsideQuotedText(flat)) {
+            consumePiece(piece)
         }
         flush()
     }
