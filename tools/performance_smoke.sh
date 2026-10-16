@@ -16,7 +16,7 @@ adb shell input keyevent KEYCODE_HOME
   echo "Build: optimized release; R8 mapping verified in CI"
   echo "Cold process launch: force-stop, then am start -W"
 } > performance-results/measurements.txt
-for n in 1 2 3; do
+for n in 1 2 3 4 5; do
   adb shell am force-stop "$PKG"
   sleep 2
   echo "---- Cold start $n ----" >> performance-results/measurements.txt
@@ -96,6 +96,7 @@ if not any(('Том 1' in s or 'Том 2' in s) and y<175 for s,y in reader):
     raise SystemExit('Reader screen was not opened: QA route invalid')
 PY
 # Collect scroll and frame metrics while the verified reader is still open.
+# Frame timing is reset only after reaching Reader, never on the Home menu.
 adb shell dumpsys gfxinfo "$PKG" reset >/dev/null
 adb shell input swipe 230 785 230 330 500
 adb shell input swipe 230 350 230 785 500
