@@ -131,4 +131,53 @@ class ReaderSemanticBlocksTest {
         assertEquals(ReaderCitationKind.COMPANION_SAYING, quote.kind)
     }
 
+    @Test fun explanatorySentenceIsNotSwallowedByQuranFrame() {
+        val text = "Что же до сопоставления аль-Кисаи со словами «Поистине, твой Господь — в засаде» [«Аль-Фаджр», 89:14], то различие между ними по контексту и смыслу очевидно."
+        val blocks = parseReaderRichSegments(text)
+        val verses = blocks.filterIsInstance<ReaderRichSegment.Quote>()
+        assertEquals(1, verses.size)
+        val verse = verses.single()
+        assertEquals(ReaderCitationKind.VERSE, verse.kind)
+        assertEquals("«Поистине, твой Господь — в засаде» [«Аль-Фаджр», 89:14],", verse.body)
+        assertTrue(!verse.body.contains("то различие между ними"))
+        val plain = blocks.filterIsInstance<ReaderRichSegment.Paragraph>()
+        assertEquals(2, plain.size)
+        assertTrue(plain.first().raw.startsWith("Что же до сопоставления"))
+        assertTrue(plain.last().raw.startsWith("то различие между ними"))
+        assertEquals(text, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun quranReferenceFollowedByFullAuthorExplanationStaysOutsideQuote() {
+        val text = "Всевышний сказал: «Он ведёт, кого пожелает» (сура «Аль-Бакара», 2:272). Здесь автор разъясняет смысл указания."
+        val blocks = parseReaderRichSegments(text)
+        val verse = blocks.filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.VERSE, verse.kind)
+        assertTrue(verse.body.endsWith("(сура «Аль-Бакара», 2:272)."))
+        assertTrue(!verse.body.contains("Здесь автор"))
+        assertEquals("Здесь автор разъясняет смысл указания.", blocks.last().raw)
+        assertEquals(text, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun twoVersesAndAuthorExplanationRemainThreeDifferentBlocks() {
+        val text = "«Первый аят» (сура «Ан-Нахль», 16:97). Также Он сказал: «Второй аят» (сура «Аш-Шура», 42:30). Таков вывод автора."
+        val blocks = parseReaderRichSegments(text)
+        assertEquals(2, blocks.count { it is ReaderRichSegment.Quote && it.kind == ReaderCitationKind.VERSE })
+        assertTrue(blocks.last() is ReaderRichSegment.Paragraph)
+        assertEquals("Таков вывод автора.", blocks.last().raw)
+        assertEquals(text, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun namedHumanWithQuranReferenceMustNotBeMarkedAsVerse() {
+        val text = "Ибн Аббас сказал: «Это моё объяснение слов аята» [«Аль-Фаджр», 89:14]."
+        val block = parseReaderRichSegments(text).filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.COMPANION_SAYING, block.kind)
+    }
+
+    @Test fun numberingKeepOriginalPunctuationAfterRemovingBadge() {
+        val original = "Первое: слова о прямом пути. Второе следует после первого объяснения."
+        val result = parseReaderRichSegments(original)
+        assertEquals(2, result.count { it is ReaderRichSegment.Numbered })
+        assertEquals(original, result.joinToString(" ") { it.raw })
+    }
+
 }
