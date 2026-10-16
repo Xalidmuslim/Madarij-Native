@@ -620,7 +620,9 @@ fun Reader(
                                                 // intra-paragraph bringIntoView pass.
                                                 reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
                                                 onRevealed = { matchRevealed = true },
-                                                onOpenTerm = { termDialog = it }
+                                                onOpenTerm = { termDialog = it },
+                                                temporarySpotlight = if (p.id == anchor && showQuoteSpotlight) homeQuote else null,
+                                                onSpotlightLocated = { spotlightTopY = it }
                                             )
                                         }
                                     }
@@ -960,7 +962,9 @@ private fun ReaderRichTextBlock(
     terms: List<StudyTerm>,
     reveal: Boolean,
     onRevealed: () -> Unit,
-    onOpenTerm: (StudyTerm) -> Unit
+    onOpenTerm: (StudyTerm) -> Unit,
+    temporarySpotlight: String? = null,
+    onSpotlightLocated: (Float) -> Unit = {}
 ) {
     val segments = remember(text) { parseReaderRichSegments(text) }
     val requester = remember { BringIntoViewRequester() }
@@ -970,13 +974,19 @@ private fun ReaderRichTextBlock(
     ) {
         segments.forEach { segment ->
             when (segment) {
-                is ReaderRichSegment.Paragraph -> Text(
+                is ReaderRichSegment.Paragraph -> ReaderSpotlightText(
                     annotatedReaderText(segment.raw, query, MaterialTheme.colorScheme.primary, terms, onOpenTerm),
+                    raw = segment.raw, temporarySpotlight = temporarySpotlight,
                     style = readerStyle(settings),
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp)
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
+                    onLocated = onSpotlightLocated
                 )
-                is ReaderRichSegment.Quote -> ReaderQuoteCard(segment, settings, query)
-                is ReaderRichSegment.Numbered -> ReaderNumberedBlock(segment, settings, query)
+                is ReaderRichSegment.Quote -> ReaderQuoteCard(
+                    segment, settings, query, temporarySpotlight, onSpotlightLocated
+                )
+                is ReaderRichSegment.Numbered -> ReaderNumberedBlock(
+                    segment, settings, query, temporarySpotlight, onSpotlightLocated
+                )
                 is ReaderRichSegment.Heading -> Row(
                     modifier = Modifier.fillMaxWidth().padding(top = 11.dp, bottom = 5.dp),
                     horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -1014,7 +1024,10 @@ private fun ReaderRichTextBlock(
 }
 
 @Composable
-private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingSettings, query: String) {
+private fun ReaderQuoteCard(
+    segment: ReaderRichSegment.Quote, settings: ReadingSettings, query: String,
+    temporarySpotlight: String? = null, onSpotlightLocated: (Float) -> Unit = {}
+) {
     // Antique parchment and existing gold/brown ink only; background images,
     // page border, paper tone and global MaterialTheme are never changed.
     val subtitle = when (segment.kind) {
@@ -1064,9 +1077,13 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
                 }
                 // The original quoted punctuation/citation is displayed intact,
                 // even when the source has no verified hadith grading.
-                Text(highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                ReaderSpotlightText(
+                    highlight(segment.body, query, MaterialTheme.colorScheme.primary),
+                    raw = segment.body, temporarySpotlight = temporarySpotlight,
                     style = readerStyle(settings).copy(fontWeight = FontWeight.Medium),
-                    modifier = Modifier.fillMaxWidth())
+                    modifier = Modifier.fillMaxWidth(),
+                    onLocated = onSpotlightLocated
+                )
             }
         }
     }
@@ -1076,7 +1093,9 @@ private fun ReaderQuoteCard(segment: ReaderRichSegment.Quote, settings: ReadingS
 private fun ReaderNumberedBlock(
     segment: ReaderRichSegment.Numbered,
     settings: ReadingSettings,
-    query: String
+    query: String,
+    temporarySpotlight: String? = null,
+    onSpotlightLocated: (Float) -> Unit = {}
 ) {
     // Inline emphasis instead of a separate badge/column: text keeps the
     // entire page width, so "Первое / Второе" doesn't force excessive wrapping.
@@ -1092,10 +1111,11 @@ private fun ReaderNumberedBlock(
             }
         }
     }
-    Text(
-        numbered,
+    ReaderSpotlightText(
+        numbered, raw = segment.raw, temporarySpotlight = temporarySpotlight,
         style = readerStyle(settings),
-        modifier = Modifier.fillMaxWidth().padding(vertical = 1.dp)
+        modifier = Modifier.fillMaxWidth().padding(vertical = 1.dp),
+        onLocated = onSpotlightLocated
     )
 }
 
