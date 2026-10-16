@@ -42,7 +42,13 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var loadError by remember { mutableStateOf(false) }
     LaunchedEffect(repo) { try {repo.load();loaded=true} catch(e:Exception) {if(e is CancellationException) throw e;loadError=true} }
     var tab by rememberSaveable { mutableIntStateOf(initialTab.coerceIn(0,3)) }
-    var level by rememberSaveable { mutableStateOf("advanced") }
+    var level by rememberSaveable { mutableStateOf("all") }
+    var questionType by rememberSaveable { mutableStateOf("all") }
+    var quizSearch by rememberSaveable { mutableStateOf("") }
+    var sessionIds by rememberSaveable { mutableStateOf("") }
+    var sessionIndex by rememberSaveable { mutableIntStateOf(0) }
+    var sessionCorrect by rememberSaveable { mutableIntStateOf(0) }
+    var sessionFinished by rememberSaveable { mutableStateOf(false) }
     var chapterId by rememberSaveable { mutableStateOf(initialChapterId ?: "") }
     var questionId by rememberSaveable { mutableStateOf("") }
     var answer by rememberSaveable { mutableIntStateOf(-1) }
@@ -71,18 +77,37 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         val serial=bank.indexOfFirst{it.id==item.id}.coerceAtLeast(0)
         val correct=item.options.indexOfFirst{it.correct}
         val wrong=item.options.indices.filter{it!=correct}.shuffled().toMutableList()
-        wrong.add((serial+sessionRotation+(attempts[item.id]?.count ?: 0))%item.options.size,correct)
+        if (correct >= 0) wrong.add((serial+sessionRotation+(attempts[item.id]?.count ?: 0))%item.options.size,correct)
+        else wrong.addAll(item.options.indices.filter { it !in wrong })
         optionOrder=wrong.joinToString(",")
     }
+    fun beginSession() {
+        val selected = bank.filter { chapterId.isBlank() || it.chapterId == chapterId }
+        val eligible = selected.filter { level == "all" || it.level == level }
+        val base = if (eligible.isNotEmpty()) eligible else selected
+        val picked = base.shuffled().take(10)
+        if (picked.isNotEmpty()) {
+            sessionIds = picked.joinToString("|") { it.id }
+            sessionIndex = 0
+            sessionCorrect = 0
+            sessionFinished = false
+            tab = 1
+            start(picked.first())
+        }
+    }
+    val sessionQuestions = remember(sessionIds, bank) {
+        if (sessionIds.isBlank()) emptyList()
+        else sessionIds.split("|").mapNotNull { id -> bank.find { it.id == id } }
+    }
     @Composable fun chapterPicker() {
-        OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Весь том",maxLines=1)}
+        OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Все разделы · оба тома",maxLines=1)}
         if(chapterMenu) AlertDialog(
             onDismissRequest={chapterMenu=false},
             title={Text("Выбрать раздел")},
             text={Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(chapterSearch,{chapterSearch=it},modifier=Modifier.fillMaxWidth(),singleLine=true,label={Text("Поиск раздела")})
                 LazyColumn(Modifier.heightIn(max=360.dp),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                    item {TextButton(onClick={chapterId="";exerciseId="";chapterMenu=false;chapterSearch=""},modifier=Modifier.fillMaxWidth()) {Text("Весь том",Modifier.fillMaxWidth())}}
+                    item {TextButton(onClick={chapterId="";exerciseId="";chapterMenu=false;chapterSearch=""},modifier=Modifier.fillMaxWidth()) {Text("Все разделы · оба тома",Modifier.fillMaxWidth())}}
                     items(chapters.filter { chapterSearch.isBlank() || normalizedText(chapterTitles[it.id].orEmpty()).text.contains(normalizedText(chapterSearch).text) },key={it.id}) { c ->
                         TextButton(onClick={chapterId=c.id;exerciseId="";reflection="";hintVisible=false;chapterMenu=false;chapterSearch="";visibleQuestions=15;visibleExercises=15},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[c.id] ?: c.title,Modifier.fillMaxWidth(),maxLines=2)}
                     }
@@ -92,9 +117,28 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         )
     }
     LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),verticalArrangement=Arrangement.spacedBy(9.dp),contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
-        item { AgedPaperCard(colors=CardDefaults.cardColors(containerColor=MaterialTheme.colorScheme.primaryContainer)) {Column(Modifier.padding(15.dp),verticalArrangement=Arrangement.spacedBy(4.dp)) {Text("Изучение книги",style=MaterialTheme.typography.titleLarge);Text("${read.size} разделов прочитано · ${attempts.size} вопросов пройдено · $dueQuestions на повторение",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onPrimaryContainer)}} }
+        item {
+            StudyOverview(
+                readChapters = read.map { it.chapterId }.distinct().size,
+                allChapters = chapters.size,
+                answered = attempts.count { it.value.count > 0 },
+                allQuestions = bank.size,
+                due = dueQuestions,
+                writingTasks = if (loaded) repo.exercises.size else 0,
+                onStart = { if (loaded) beginSession() }
+            )
+        }
         if(chapterReviewMessage.isNotBlank()) item {Text(chapterReviewMessage,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.primary)}
-        item { Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(7.dp)) {listOf("Проверки","Викторина","Задания","Повторение").forEachIndexed { i,t -> FilterChip(selected=tab==i,onClick={tab=i;questionId="";visibleQuestions=15;visibleExercises=15},label={Text(t)}) }} }
+        item {
+            StudyModeTabs(tab) { selected ->
+                tab = selected
+                questionId = ""
+                sessionIds = ""
+                sessionFinished = false
+                visibleQuestions = 15
+                visibleExercises = 15
+            }
+        }
         if(!loaded) item { Text(if(loadError) "Не удалось загрузить учебные материалы. Откройте раздел снова." else "Загрузка учебных материалов…") }
         else if(q!=null && (tab==1 || tab==3)) {
             item { Text(q.prompt,style=MaterialTheme.typography.titleLarge);Text(levelLabel(q.level),style=MaterialTheme.typography.labelLarge) }
