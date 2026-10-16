@@ -47,6 +47,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var questionType by rememberSaveable { mutableStateOf("all") }
     var quizSearch by rememberSaveable { mutableStateOf("") }
     var showQuizFilters by rememberSaveable { mutableStateOf(false) }
+    var browseQuestions by rememberSaveable { mutableStateOf(false) }
+    var showFutureReviews by rememberSaveable { mutableStateOf(false) }
     var sessionIds by rememberSaveable { mutableStateOf("") }
     var sessionIndex by rememberSaveable { mutableIntStateOf(0) }
     var sessionCorrect by rememberSaveable { mutableIntStateOf(0) }
@@ -101,9 +103,9 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         else wrong.addAll(item.options.indices.filter { it !in wrong })
         optionOrder=wrong.joinToString(",")
     }
-    fun beginSession() {
+    fun beginSession(forChapterId: String = chapterId) {
         val eligible = bank.filter { item ->
-            inStudyScope(item.chapterId) &&
+            studyScopeMatches(item.chapterId, forChapterId, selectedVolume, chapterVolumes) &&
                 (level == "all" || item.level == level) &&
                 (questionType == "all" ||
                     (item.id.startsWith("book-recognition-") == (questionType == "recognition")))
@@ -206,10 +208,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                             repo.exercises.count { inStudyScope(it.chapterId) } else 0,
                         due = dueQuestions,
                         onQuiz = {
-                            tab = 1
-                            questionId = ""
-                            sessionIds = ""
-                            sessionFinished = false
+                            // One tap starts a focused lesson, not another menu.
+                            beginSession()
                         },
                         onWriting = {
                             tab = 2
@@ -371,7 +371,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         Text(chapterTitles[c.id] ?: c.title,style=MaterialTheme.typography.titleMedium)
                         Text("${if(read.any{it.chapterId==c.id}) "Прочитано" else "Не прочитано"} · ${if(understood) "Понято по проверкам" else "Нужна проверка"} · $correct/${tried.size} правильных",style=MaterialTheme.typography.bodySmall)
                         Row(horizontalArrangement=Arrangement.spacedBy(4.dp)) {
-                            TextButton(onClick={chapterId=c.id;tab=1;questionId=""}) {Text("Проверить")}
+                            TextButton(onClick={chapterId=c.id;beginSession(c.id)}) {Text("Начать проверку")}
                             Box {
                                 TextButton(onClick={actions=true}) {Text("Ещё")}
                                 DropdownMenu(expanded=actions,onDismissRequest={actions=false}) {
@@ -411,13 +411,17 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                                 }
                             }
                         }
-                        Text("Быстрая проверка · 10 случайных вопросов",style=MaterialTheme.typography.titleMedium)
+                        Text("10 вопросов из выбранного материала",style=MaterialTheme.typography.titleMedium)
                         Button(onClick={beginSession()},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp)) {
-                            Text("Начать 10 вопросов")
+                            Text("Начать проверку")
+                        }
+                        if(sessionNotice.isNotBlank()) {
+                            Text(sessionNotice,style=MaterialTheme.typography.bodySmall,
+                                color=MaterialTheme.colorScheme.error)
                         }
                         TextButton(onClick={showQuizFilters=!showQuizFilters}) {
-                            Text(if(showQuizFilters) "Скрыть настройку вопросов"
-                                else "Настроить уровень, тип и поиск")
+                            Text(if(showQuizFilters) "Скрыть дополнительные настройки"
+                                else "Изменить сложность или тип вопросов")
                         }
                         if(showQuizFilters) {
                         Text("Уровень сложности",style=MaterialTheme.typography.titleSmall)
@@ -462,6 +466,10 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         Text("Узнавание текста — дословные фразы книги. Вопросы на понимание проверяют смысл.",
                             style=MaterialTheme.typography.bodySmall)
                         }
+                        TextButton(onClick={browseQuestions=!browseQuestions}) {
+                            Text(if(browseQuestions) "Скрыть каталог вопросов"
+                                else "Выбрать отдельный вопрос из каталога")
+                        }
                     } else {
                         Text("Повторение: ошибки и неуверенные ответы — на следующий день; уверенные правильные — через 3, 7 и 14 дней.",
                             style=MaterialTheme.typography.bodySmall)
@@ -489,15 +497,15 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                             item.prompt.contains(quizSearch,ignoreCase=true) ||
                             chapterTitles[item.chapterId].orEmpty().contains(quizSearch,ignoreCase=true))
                 }.let { list ->if(tab==3) list.sortedWith(compareByDescending<StudyQuestion>{attempts[it.id]?.let{a->a.errors.toDouble()/a.count.coerceAtLeast(1)} ?: 0.0}.thenByDescending{attempts[it.id]?.lowConfidence==true}.thenBy{attempts[it.id]?.due ?: 0L}) else list }
-                if(tab==1) item {
+                if(tab==1 && browseQuestions) item {
                     Text("Вопросов по выбранным фильтрам: ${filtered.size}",
                         style=MaterialTheme.typography.labelLarge)
                 }
-                if(filtered.isEmpty()) item {
+                if((tab==3 || browseQuestions) && filtered.isEmpty()) item {
                     Text(if(tab==3) "На сегодня нет вопросов к повторению." else
                         "Подходящих вопросов нет. Сбросьте поиск, уровень или выберите другой раздел.")
                 }
-                items(filtered.take(visibleQuestions),key={it.id}) { item ->
+                if(tab==3 || browseQuestions) items(filtered.take(visibleQuestions),key={it.id}) { item ->
                     AgedPaperCard(Modifier.fillMaxWidth()) {
                         Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
                             verticalArrangement=Arrangement.spacedBy(7.dp)) {
@@ -519,12 +527,33 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         }
                     }
                 }
-                if(filtered.size>visibleQuestions) item {TextButton(onClick={visibleQuestions+=15}) {Text("Показать ещё · ${filtered.size-visibleQuestions}")}}
+                if((tab==3 || browseQuestions) && filtered.size>visibleQuestions) item {
+                    TextButton(onClick={visibleQuestions+=15}) {
+                        Text("Показать ещё · ${filtered.size-visibleQuestions}")
+                    }
+                }
                 if(tab==3) {
                     val future=bank.filter{inStudyScope(it.chapterId) && (attempts[it.id]?.due ?: 0L)>now}.sortedBy{attempts[it.id]?.due}
-                    if(future.isNotEmpty()) item {Text("Следующие повторения",style=MaterialTheme.typography.titleMedium)}
-                    items(future.take(visibleQuestions),key={"future:${it.id}"}) {item->Column {Text(item.prompt,style=MaterialTheme.typography.bodySmall);Text("${date(attempts.getValue(item.id).due)}",style=MaterialTheme.typography.labelMedium);TextButton(onClick={start(item)}) {Text("Повторить раньше")}}}
-                    if(future.size>visibleQuestions) item {TextButton(onClick={visibleQuestions+=15}) {Text("Показать ещё повторения · ${future.size-visibleQuestions}")}}
+                    if(future.isNotEmpty()) item {
+                        TextButton(onClick={showFutureReviews=!showFutureReviews}) {
+                            Text(if(showFutureReviews) "Скрыть будущие повторения"
+                                else "Будущие повторения · ${future.size}")
+                        }
+                    }
+                    if(showFutureReviews) {
+                        items(future.take(visibleQuestions),key={"future:${it.id}"}) {item ->
+                            Column {
+                                Text(item.prompt,style=MaterialTheme.typography.bodySmall)
+                                Text("${date(attempts.getValue(item.id).due)}",style=MaterialTheme.typography.labelMedium)
+                                TextButton(onClick={start(item)}) {Text("Повторить раньше")}
+                            }
+                        }
+                        if(future.size>visibleQuestions) item {
+                            TextButton(onClick={visibleQuestions+=15}) {
+                                Text("Показать ещё · ${future.size-visibleQuestions}")
+                            }
+                        }
+                    }
                     val new=bank.count{inStudyScope(it.chapterId) && attempts[it.id]==null};item {Text("Не пройдено вопросов: $new. Они доступны во вкладке «Вопросы».")}
                 }
             }
