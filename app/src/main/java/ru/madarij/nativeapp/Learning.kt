@@ -4,6 +4,7 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -51,6 +52,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var sessionFinished by rememberSaveable { mutableStateOf(false) }
     var sessionLastSize by rememberSaveable { mutableIntStateOf(0) }
     var chapterId by rememberSaveable { mutableStateOf(initialChapterId ?: "") }
+    var selectedVolume by rememberSaveable { mutableIntStateOf(0) }
     var questionId by rememberSaveable { mutableStateOf("") }
     var answer by rememberSaveable { mutableIntStateOf(-1) }
     var submitted by rememberSaveable { mutableStateOf(false) }
@@ -61,6 +63,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var saving by remember { mutableStateOf(false) }
     var chapterMenu by remember { mutableStateOf(false) }
     var chapterSearch by rememberSaveable { mutableStateOf("") }
+    var sessionNotice by remember { mutableStateOf("") }
     var checksFilter by rememberSaveable { mutableStateOf("in_progress") }
     var showChecksHelp by rememberSaveable { mutableStateOf(false) }
     var visibleQuestions by rememberSaveable { mutableIntStateOf(15) }
@@ -70,7 +73,16 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var hintVisible by rememberSaveable { mutableStateOf(false) }
     var noteSaved by rememberSaveable { mutableStateOf(false) }
     val bank=if(loaded) repo.questions else emptyList()
+    val bankByChapter=remember(bank) { bank.groupBy { it.chapterId } }
+    val chapterVolumes=remember(chapters) { chapters.associate { it.id to it.volume } }
+    val readIds=remember(read) { read.map { it.chapterId }.toSet() }
+    fun inStudyScope(id: String): Boolean =
+        studyScopeMatches(id, chapterId, selectedVolume, chapterVolumes)
     val dueQuestions=attempts.count { it.value.due<=System.currentTimeMillis() }
+    val listState=rememberLazyListState()
+    LaunchedEffect(tab, questionId, exerciseId, chapterId, selectedVolume) {
+        listState.scrollToItem(0)
+    }
     val q=bank.find { it.id==questionId }
     val exercise=if(loaded) repo.exercises.find{it.id==exerciseId} else null
     fun start(item: StudyQuestion) {
@@ -83,11 +95,17 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         optionOrder=wrong.joinToString(",")
     }
     fun beginSession() {
-        val selected = bank.filter { chapterId.isBlank() || it.chapterId == chapterId }
-        val eligible = selected.filter { level == "all" || it.level == level }
-        val base = if (eligible.isNotEmpty()) eligible else selected
-        val picked = base.shuffled().take(10)
-        if (picked.isNotEmpty()) {
+        val eligible = bank.filter { item ->
+            inStudyScope(item.chapterId) &&
+                (level == "all" || item.level == level) &&
+                (questionType == "all" ||
+                    (item.id.startsWith("book-recognition-") == (questionType == "recognition")))
+        }
+        val picked = eligible.shuffled().take(10)
+        if (picked.isEmpty()) {
+            sessionNotice = "По выбранной теме и фильтрам вопросов нет. Выберите другой уровень или тип."
+        } else {
+            sessionNotice = ""
             sessionIds = picked.joinToString("|") { it.id }
             sessionIndex = 0
             sessionCorrect = 0
@@ -97,9 +115,10 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             start(picked.first())
         }
     }
-    val sessionQuestions = remember(sessionIds, bank) {
+    val bankById=remember(bank) { bank.associateBy { it.id } }
+    val sessionQuestions = remember(sessionIds, bankById) {
         if (sessionIds.isBlank()) emptyList()
-        else sessionIds.split("|").mapNotNull { id -> bank.find { it.id == id } }
+        else sessionIds.split("|").mapNotNull { id -> bankById[id] }
     }
     @Composable fun chapterPicker() {
         OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Все разделы · оба тома",maxLines=1)}
