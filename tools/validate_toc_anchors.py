@@ -51,6 +51,9 @@ def run() -> None:
                     title = topic["title"].strip()
                     assert title, f"Empty topic title: {pid}"
                     assert pid in paragraphs, f"TOC target missing in corpus: {pid}"
+                    assert pid in chapter_paragraphs[chapter["chapterId"]], (
+                        f"TOC target outside chosen chapter: {chapter['chapterId']} -> {pid}"
+                    )
                     source_volume, russian = paragraphs[pid]
                     assert source_volume == volume, f"Wrong-volume target: {pid}"
                     key = (volume, pid)

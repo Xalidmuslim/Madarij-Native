@@ -139,7 +139,7 @@ internal fun HomeScreen(
                                 animate = !inkFinished,
                                 onFinished = onInkFinished
                             )
-                            Text("Из книги · том 1, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
+                            Text("Из книги · том ${reminder.volume}, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
                                 style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                         }
                         IconButton(onClick = { navigate("bookmarks") },
