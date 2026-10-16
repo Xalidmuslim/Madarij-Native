@@ -79,8 +79,12 @@ val prepareCuratedReminders by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_curated_reminders.py")
 }
+val prepareStudySupplement by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/generate_study_supplement.py")
+}
 tasks.matching { it.name == "preBuild" }.configureEach {
-    dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareCuratedReminders, prepareHandwritingFont)
+    dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont)
 }
 val verifyCorpus by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)

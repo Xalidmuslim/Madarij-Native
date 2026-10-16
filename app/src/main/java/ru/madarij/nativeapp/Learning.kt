@@ -42,7 +42,14 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var loadError by remember { mutableStateOf(false) }
     LaunchedEffect(repo) { try {repo.load();loaded=true} catch(e:Exception) {if(e is CancellationException) throw e;loadError=true} }
     var tab by rememberSaveable { mutableIntStateOf(initialTab.coerceIn(0,3)) }
-    var level by rememberSaveable { mutableStateOf("advanced") }
+    var level by rememberSaveable { mutableStateOf("all") }
+    var questionType by rememberSaveable { mutableStateOf("all") }
+    var quizSearch by rememberSaveable { mutableStateOf("") }
+    var sessionIds by rememberSaveable { mutableStateOf("") }
+    var sessionIndex by rememberSaveable { mutableIntStateOf(0) }
+    var sessionCorrect by rememberSaveable { mutableIntStateOf(0) }
+    var sessionFinished by rememberSaveable { mutableStateOf(false) }
+    var sessionLastSize by rememberSaveable { mutableIntStateOf(0) }
     var chapterId by rememberSaveable { mutableStateOf(initialChapterId ?: "") }
     var questionId by rememberSaveable { mutableStateOf("") }
     var answer by rememberSaveable { mutableIntStateOf(-1) }
@@ -71,18 +78,38 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         val serial=bank.indexOfFirst{it.id==item.id}.coerceAtLeast(0)
         val correct=item.options.indexOfFirst{it.correct}
         val wrong=item.options.indices.filter{it!=correct}.shuffled().toMutableList()
-        wrong.add((serial+sessionRotation+(attempts[item.id]?.count ?: 0))%item.options.size,correct)
+        if (correct >= 0) wrong.add((serial+sessionRotation+(attempts[item.id]?.count ?: 0))%item.options.size,correct)
+        else wrong.addAll(item.options.indices.filter { it !in wrong })
         optionOrder=wrong.joinToString(",")
     }
+    fun beginSession() {
+        val selected = bank.filter { chapterId.isBlank() || it.chapterId == chapterId }
+        val eligible = selected.filter { level == "all" || it.level == level }
+        val base = if (eligible.isNotEmpty()) eligible else selected
+        val picked = base.shuffled().take(10)
+        if (picked.isNotEmpty()) {
+            sessionIds = picked.joinToString("|") { it.id }
+            sessionIndex = 0
+            sessionCorrect = 0
+            sessionLastSize = picked.size
+            sessionFinished = false
+            tab = 1
+            start(picked.first())
+        }
+    }
+    val sessionQuestions = remember(sessionIds, bank) {
+        if (sessionIds.isBlank()) emptyList()
+        else sessionIds.split("|").mapNotNull { id -> bank.find { it.id == id } }
+    }
     @Composable fun chapterPicker() {
-        OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Весь том",maxLines=1)}
+        OutlinedButton(onClick={chapterMenu=true},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[chapterId] ?: "Все разделы · оба тома",maxLines=1)}
         if(chapterMenu) AlertDialog(
             onDismissRequest={chapterMenu=false},
             title={Text("Выбрать раздел")},
             text={Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(chapterSearch,{chapterSearch=it},modifier=Modifier.fillMaxWidth(),singleLine=true,label={Text("Поиск раздела")})
                 LazyColumn(Modifier.heightIn(max=360.dp),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                    item {TextButton(onClick={chapterId="";exerciseId="";chapterMenu=false;chapterSearch=""},modifier=Modifier.fillMaxWidth()) {Text("Весь том",Modifier.fillMaxWidth())}}
+                    item {TextButton(onClick={chapterId="";exerciseId="";chapterMenu=false;chapterSearch=""},modifier=Modifier.fillMaxWidth()) {Text("Все разделы · оба тома",Modifier.fillMaxWidth())}}
                     items(chapters.filter { chapterSearch.isBlank() || normalizedText(chapterTitles[it.id].orEmpty()).text.contains(normalizedText(chapterSearch).text) },key={it.id}) { c ->
                         TextButton(onClick={chapterId=c.id;exerciseId="";reflection="";hintVisible=false;chapterMenu=false;chapterSearch="";visibleQuestions=15;visibleExercises=15},modifier=Modifier.fillMaxWidth()) {Text(chapterTitles[c.id] ?: c.title,Modifier.fillMaxWidth(),maxLines=2)}
                     }
@@ -92,24 +119,120 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         )
     }
     LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),verticalArrangement=Arrangement.spacedBy(9.dp),contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
-        item { AgedPaperCard(colors=CardDefaults.cardColors(containerColor=MaterialTheme.colorScheme.primaryContainer)) {Column(Modifier.padding(15.dp),verticalArrangement=Arrangement.spacedBy(4.dp)) {Text("Изучение книги",style=MaterialTheme.typography.titleLarge);Text("${read.size} разделов прочитано · ${attempts.size} вопросов пройдено · $dueQuestions на повторение",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onPrimaryContainer)}} }
+        item {
+            StudyOverview(
+                readChapters = read.map { it.chapterId }.distinct().size,
+                allChapters = chapters.size,
+                answered = attempts.count { it.value.count > 0 },
+                allQuestions = bank.size,
+                due = dueQuestions,
+                writingTasks = if (loaded) repo.exercises.size else 0,
+                onStart = { if (loaded) beginSession() }
+            )
+        }
         if(chapterReviewMessage.isNotBlank()) item {Text(chapterReviewMessage,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.primary)}
-        item { Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(7.dp)) {listOf("Проверки","Викторина","Задания","Повторение").forEachIndexed { i,t -> FilterChip(selected=tab==i,onClick={tab=i;questionId="";visibleQuestions=15;visibleExercises=15},label={Text(t)}) }} }
+        item {
+            StudyModeTabs(tab) { selected ->
+                tab = selected
+                questionId = ""
+                sessionIds = ""
+                sessionFinished = false
+                visibleQuestions = 15
+                visibleExercises = 15
+            }
+        }
         if(!loaded) item { Text(if(loadError) "Не удалось загрузить учебные материалы. Откройте раздел снова." else "Загрузка учебных материалов…") }
         else if(q!=null && (tab==1 || tab==3)) {
-            item { Text(q.prompt,style=MaterialTheme.typography.titleLarge);Text(levelLabel(q.level),style=MaterialTheme.typography.labelLarge) }
-            val indices=optionOrder.split(",").mapNotNull{it.toIntOrNull()}.filter{it in q.options.indices}.ifEmpty {q.options.indices.toList()}
-            items(indices,key={"option:$it"}) { index -> val option=q.options[index]; val label=('A'.code+indices.indexOf(index)).toChar()
-                OutlinedButton(onClick={answer=index},enabled=!submitted && !saving,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics {contentDescription="Вариант $label. ${option.text}${if(answer==index) ". Выбран" else ""}"}) {Text("$label. ${if(answer==index) "✓ " else ""}${option.text}")}
-                if(submitted) Text((if(option.correct) "Ответ по тексту. " else "Другой вариант. ")+option.explanation)
+            val ordinal = if (sessionQuestions.isNotEmpty()) sessionIndex + 1 else null
+            val total = if (sessionQuestions.isNotEmpty()) sessionQuestions.size else null
+            item {
+                StudyQuestionHeading(
+                    chapter = chapterTitles[q.chapterId] ?: "Раздел книги",
+                    level = levelLabel(q.level),
+                    ordinal = ordinal,
+                    total = total,
+                    category = if (q.id.startsWith("book-recognition-")) "Узнайте фрагмент" else "Понимание смысла"
+                )
+                Spacer(Modifier.height(9.dp))
+                Text(q.prompt, style = MaterialTheme.typography.titleLarge)
+            }
+            val indices=optionOrder.split(",").mapNotNull{it.toIntOrNull()}
+                .filter{it in q.options.indices}.ifEmpty {q.options.indices.toList()}
+            items(indices,key={"option:$it"}) { index ->
+                val option=q.options[index]
+                val label=('A'.code+indices.indexOf(index)).toChar()
+                OutlinedButton(
+                    onClick={answer=index},
+                    enabled=!submitted && !saving,
+                    modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics {
+                        contentDescription="Вариант $label. ${option.text}${if(answer==index) ". Выбран" else ""}"
+                    },
+                    colors=ButtonDefaults.outlinedButtonColors(
+                        containerColor=if(answer==index) MaterialTheme.colorScheme.primaryContainer
+                            else MaterialTheme.colorScheme.surface.copy(alpha=.35f)
+                    )
+                ) {
+                    Text("$label. ${if(answer==index) "✓ " else ""}${option.text}",
+                        modifier=Modifier.fillMaxWidth())
+                }
             }
             item {
                 if(!submitted) {
-                    Row { Checkbox(confidence,{confidence=it},enabled=!saving);Text("Ответ неуверенный",Modifier.padding(top=12.dp)) }
-                    Button(enabled=answer>=0 && !saving,onClick={saving=true;scope.launch {try {repo.record(q.id,q.options[answer].correct,confidence);submitted=true} catch(e:Exception) {if(e is CancellationException) throw e;saveError="Не удалось сохранить попытку. Повторите."} finally {saving=false}}}) {Text("Проверить ответ")}
+                    Row(verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
+                        Checkbox(confidence,{confidence=it},enabled=!saving)
+                        Text("Ответ неуверенный",style=MaterialTheme.typography.bodySmall)
+                    }
+                    Button(enabled=answer>=0 && !saving,
+                        modifier=Modifier.fillMaxWidth(),
+                        onClick={
+                            saving=true
+                            scope.launch {
+                                try {
+                                    val correct=q.options[answer].correct
+                                    repo.record(q.id,correct,confidence)
+                                    submitted=true
+                                    if(correct && sessionQuestions.isNotEmpty()) sessionCorrect++
+                                } catch(e:Exception) {
+                                    if(e is CancellationException) throw e
+                                    saveError="Не удалось сохранить попытку. Повторите."
+                                } finally { saving=false }
+                            }
+                        }) { Text("Проверить ответ") }
                     if(saveError.isNotBlank()) Text(saveError)
-                } else {Text("Исходный фрагмент",style=MaterialTheme.typography.titleMedium);Text(q.sourceExcerpt);TextButton(onClick={onOpenParagraph(q.sourceParagraphId)}) {Text("Открыть абзац в книге")} }
-                TextButton(onClick={questionId=""}) {Text("К списку вопросов")}
+                } else {
+                    val selected=q.options.getOrNull(answer)
+                    val correct=q.options.firstOrNull { it.correct }
+                    val good=selected?.correct == true
+                    StudyAnswerFeedback(
+                        isCorrect=good,
+                        detail=buildString {
+                            if(!good && correct!=null) append("Правильный вариант: ${correct.text}\n\n")
+                            append(if(good) correct?.explanation.orEmpty()
+                                else selected?.explanation.orEmpty())
+                        },
+                        onSource={onOpenParagraph(q.sourceParagraphId)},
+                        onContinue={
+                            val next=sessionQuestions.getOrNull(sessionIndex+1)
+                            if(next!=null) {
+                                sessionIndex++
+                                start(next)
+                            } else {
+                                questionId=""
+                                sessionFinished=sessionQuestions.isNotEmpty()
+                                sessionIds=""
+                            }
+                        },
+                        continueLabel=if(sessionQuestions.isNotEmpty() &&
+                            sessionIndex+1<sessionQuestions.size) "Следующий" else "К вопросам"
+                    )
+                    Spacer(Modifier.height(9.dp))
+                    Text("Опорный фрагмент",style=MaterialTheme.typography.titleSmall)
+                    Text(q.sourceExcerpt.take(420) +
+                        if(q.sourceExcerpt.length>420) "…" else "",
+                        style=MaterialTheme.typography.bodySmall,
+                        color=MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                TextButton(onClick={questionId="";sessionIds=""}) {Text("Завершить просмотр")}
             }
         } else when(tab) {
             0 -> {
@@ -158,7 +281,69 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 }
             }
             else -> {
-                item {chapterPicker();if(tab==1) {Text("Уровень — сложность редакторской проверки. Для полной проверки раздела доступны вопросы разных уровней.");Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {listOf("basic","advanced","expert").forEach {v->FilterChip(level==v,{level=v},label={Text(levelLabel(v))})}}} else Text("Повторение: ошибки и неуверенные ответы — через день; уверенные правильные — через 3, 7 и 14 дней. Очередь учитывает ошибки, уверенность и срок.")}
+                item {
+                    chapterPicker()
+                    if (tab == 1) {
+                        if (sessionFinished) {
+                            AgedPaperCard(Modifier.fillMaxWidth()) {
+                                Column(Modifier.padding(14.dp),
+                                    verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                                    Text("Проверка завершена",style=MaterialTheme.typography.titleMedium)
+                                    Text("Правильных ответов: ${sessionCorrect} из ${sessionLastSize}. Ошибки будут доступны в повторении.")
+                                    TextButton(onClick={beginSession()}) { Text("Пройти ещё 10 вопросов") }
+                                }
+                            }
+                        }
+                        Text("Выберите уровень и тип вопросов",
+                            style=MaterialTheme.typography.titleSmall)
+                        Column(verticalArrangement=Arrangement.spacedBy(4.dp)) {
+                            listOf(
+                                listOf("all", "basic"),
+                                listOf("advanced", "expert")
+                            ).forEach { pair ->
+                                Row(Modifier.fillMaxWidth(),
+                                    horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                                    pair.forEach { v ->
+                                        FilterChip(
+                                            selected=level==v,
+                                            onClick={level=v;visibleQuestions=15;sessionFinished=false},
+                                            label={Text(if(v=="all") "Все уровни" else levelLabel(v))},
+                                            modifier=Modifier.weight(1f)
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                        Row(Modifier.fillMaxWidth(),
+                            horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                            listOf(
+                                "all" to "Все",
+                                "reasoning" to "Понимание",
+                                "recognition" to "Фрагменты"
+                            ).forEach { (id,label) ->
+                                FilterChip(
+                                    selected=questionType==id,
+                                    onClick={questionType=id;visibleQuestions=15;sessionFinished=false},
+                                    label={Text(label,maxLines=1)},
+                                    modifier=Modifier.weight(1f)
+                                )
+                            }
+                        }
+                        OutlinedTextField(
+                            quizSearch, {quizSearch=it;visibleQuestions=15},
+                            modifier=Modifier.fillMaxWidth(),singleLine=true,
+                            label={Text("Поиск вопросов")}
+                        )
+                        Button(onClick={beginSession()},modifier=Modifier.fillMaxWidth()) {
+                            Text("Новая проверка · 10 вопросов")
+                        }
+                        Text("Вопросы на узнавание — дословные фрагменты книги; задания на понимание требуют размышления над смыслом.",
+                            style=MaterialTheme.typography.bodySmall)
+                    } else {
+                        Text("Повторение: ошибки и неуверенные ответы — на следующий день; уверенные правильные — через 3, 7 и 14 дней.",
+                            style=MaterialTheme.typography.bodySmall)
+                    }
+                }
                 val now=System.currentTimeMillis()
                 if(tab==3) {
                     val scheduled=chapterReviews.filter {chapterId.isBlank() || it.key==chapterId}.toList().sortedBy {it.second.due}
@@ -172,9 +357,45 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     }} }
                     item {Text("Повторение вопросов",style=MaterialTheme.typography.titleMedium)}
                 }
-                val filtered=bank.filter{item -> (chapterId.isBlank() || item.chapterId==chapterId) && if(tab==3) (attempts[item.id]?.due ?: Long.MAX_VALUE)<=now else item.level==level }.let { list ->if(tab==3) list.sortedWith(compareByDescending<StudyQuestion>{attempts[it.id]?.let{a->a.errors.toDouble()/a.count.coerceAtLeast(1)} ?: 0.0}.thenByDescending{attempts[it.id]?.lowConfidence==true}.thenBy{attempts[it.id]?.due ?: 0L}) else list }
-                if(filtered.isEmpty()) item {Text(if(tab==3) "Назначенных повторений на сегодня нет." else "Для выбранного уровня в этом разделе вопросов нет. Выберите другой уровень.")}
-                items(filtered.take(visibleQuestions),key={it.id}) {item->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(14.dp)) {Text(chapterTitles[item.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(item.prompt);attempts[item.id]?.let{a->Text("Попыток: ${a.count} · ошибок: ${a.errors} · ${if(a.lowConfidence) "неуверенный ответ · " else ""}повторить: ${date(a.due)}",style=MaterialTheme.typography.bodySmall)};TextButton(onClick={start(item)}) {Text("Ответить")}}} }
+                val filtered=bank.filter { item ->
+                    val inChapter=chapterId.isBlank() || item.chapterId==chapterId
+                    if (tab==3) inChapter && (attempts[item.id]?.due ?: Long.MAX_VALUE)<=now
+                    else inChapter && (level=="all" || item.level==level) &&
+                        (questionType=="all" || (item.id.startsWith("book-recognition-") == (questionType=="recognition"))) &&
+                        (quizSearch.isBlank() ||
+                            item.prompt.contains(quizSearch,ignoreCase=true) ||
+                            chapterTitles[item.chapterId].orEmpty().contains(quizSearch,ignoreCase=true))
+                }.let { list ->if(tab==3) list.sortedWith(compareByDescending<StudyQuestion>{attempts[it.id]?.let{a->a.errors.toDouble()/a.count.coerceAtLeast(1)} ?: 0.0}.thenByDescending{attempts[it.id]?.lowConfidence==true}.thenBy{attempts[it.id]?.due ?: 0L}) else list }
+                if(tab==1) item {
+                    Text("Вопросов по выбранным фильтрам: ${filtered.size}",
+                        style=MaterialTheme.typography.labelLarge)
+                }
+                if(filtered.isEmpty()) item {
+                    Text(if(tab==3) "На сегодня нет вопросов к повторению." else
+                        "Подходящих вопросов нет. Сбросьте поиск, уровень или выберите другой раздел.")
+                }
+                items(filtered.take(visibleQuestions),key={it.id}) { item ->
+                    AgedPaperCard(Modifier.fillMaxWidth()) {
+                        Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
+                            verticalArrangement=Arrangement.spacedBy(7.dp)) {
+                            Text(chapterTitles[item.chapterId] ?: "Раздел",
+                                style=MaterialTheme.typography.labelLarge,
+                                color=MaterialTheme.colorScheme.primary)
+                            Text(if(item.id.startsWith("book-recognition-"))
+                                "Узнайте фрагмент · Базовый" else levelLabel(item.level),
+                                style=MaterialTheme.typography.labelSmall,
+                                color=MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(item.prompt,style=MaterialTheme.typography.bodyLarge)
+                            attempts[item.id]?.let { a ->
+                                Text("Попыток: ${a.count} · ошибок: ${a.errors} · повторить: ${date(a.due)}",
+                                    style=MaterialTheme.typography.bodySmall)
+                            }
+                            TextButton(onClick={sessionIds="";sessionFinished=false;start(item)}) {
+                                Text("Ответить")
+                            }
+                        }
+                    }
+                }
                 if(filtered.size>visibleQuestions) item {TextButton(onClick={visibleQuestions+=15}) {Text("Показать ещё · ${filtered.size-visibleQuestions}")}}
                 if(tab==3) {
                     val future=bank.filter{(chapterId.isBlank() || it.chapterId==chapterId) && (attempts[it.id]?.due ?: 0L)>now}.sortedBy{attempts[it.id]?.due}

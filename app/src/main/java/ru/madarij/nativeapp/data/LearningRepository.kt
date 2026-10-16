@@ -24,14 +24,30 @@ class LearningRepository(private val context: Context) {
     private val historyKey = stringPreferencesKey("history")
     private val chapterReviewKey = stringPreferencesKey("chapter_reviews")
     private val bank by lazy { JSONObject(context.assets.open("study.json").bufferedReader().use { it.readText() }) }
-    val questions: List<StudyQuestion> by lazy {
-        val a = bank.getJSONArray("questions")
+    // Additional questions are generated offline from the bundled Russian book.
+    // Their IDs are stable; existing progress remains in the same DataStore.
+    private val extraBank by lazy { JSONObject(context.assets.open("study_supplement.json").bufferedReader().use { it.readText() }) }
+    private fun parseQuestions(a: JSONArray): List<StudyQuestion> =
         (0 until a.length()).map { i -> val q=a.getJSONObject(i); val o=q.getJSONArray("options")
             StudyQuestion(q.getString("id"),q.getString("level"),q.getString("prompt"),q.getString("sourceParagraphId"),(0 until o.length()).map { j -> val v=o.getJSONObject(j); StudyOption(v.getString("text"),v.getBoolean("correct"),v.getString("explanation")) },q.getString("sourceExcerpt"),q.optString("chapterId")) }
+    val questions: List<StudyQuestion> by lazy {
+        val combined = parseQuestions(bank.getJSONArray("questions")) +
+            parseQuestions(extraBank.getJSONArray("questions"))
+        require(combined.map { it.id }.distinct().size == combined.size) { "Duplicate question identifiers" }
+        combined
     }
     private fun strings(a: JSONArray?): List<String> = if(a==null) emptyList() else (0 until a.length()).map {a.getString(it)}
     val terms: List<StudyTerm> by lazy { val a=bank.getJSONArray("terms"); (0 until a.length()).map { i -> val t=a.getJSONObject(i); StudyTerm(t.getString("ar"),t.getString("transcript"),t.getString("definition"),t.getString("sourceParagraphId"),t.optString("id"),t.optString("extendedDefinition"),strings(t.optJSONArray("relatedTerms")),strings(t.optJSONArray("sourceParagraphIds"))) } }
-    val exercises: List<StudyExercise> by lazy { val a=bank.optJSONArray("exercises") ?: JSONArray(); (0 until a.length()).map { i -> val e=a.getJSONObject(i); StudyExercise(e.getString("id"),e.getString("chapterId"),e.getString("sourceParagraphId"),e.getString("prompt"),e.getString("hint")) } }
+    private fun parseExercises(a: JSONArray): List<StudyExercise> = (0 until a.length()).map { i ->
+        val e=a.getJSONObject(i)
+        StudyExercise(e.getString("id"),e.getString("chapterId"),e.getString("sourceParagraphId"),e.getString("prompt"),e.getString("hint"))
+    }
+    val exercises: List<StudyExercise> by lazy {
+        val combined = parseExercises(bank.optJSONArray("exercises") ?: JSONArray()) +
+            parseExercises(extraBank.optJSONArray("exercises") ?: JSONArray())
+        require(combined.map { it.id }.distinct().size == combined.size) { "Duplicate exercise identifiers" }
+        combined
+    }
     suspend fun load() = withContext(Dispatchers.IO) { questions.size; terms.size; exercises.size }
     private fun parse(raw: String): Map<String, StudyAttempt> { val obj=runCatching { JSONObject(raw) }.getOrDefault(JSONObject()); return obj.keys().asSequence().associateWith { id -> val v=obj.getJSONObject(id); StudyAttempt(v.optInt("count"),v.optInt("errors"),v.optInt("streak"),v.optLong("due"),v.optBoolean("lowConfidence"),if(v.has("latestCorrect")) v.optBoolean("latestCorrect") else v.optInt("streak")>0 && !v.optBoolean("lowConfidence"),v.optLong("updatedAt"),v.optString("sourceParagraphId").takeIf{it.isNotBlank()}) } }
     val attempts = context.learningStore.data.map { parse(it[key] ?: "{}") }
