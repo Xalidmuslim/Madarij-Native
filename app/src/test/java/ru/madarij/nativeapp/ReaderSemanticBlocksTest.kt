@@ -180,4 +180,47 @@ class ReaderSemanticBlocksTest {
         assertEquals(original, result.joinToString(" ") { it.raw })
     }
 
+    @Test fun alAsrCitationIncludesTranslationNoteInQuranCard() {
+        val original = "Всевышний сказал: «Клянусь временем! Поистине, человек пребывает в убытке, кроме тех, кто уверовал, совершал праведные дела, заповедовал друг другу истину и заповедовал друг другу терпение» [аль-Аср, 103:1–3; перевод смысла]. Пречистый поклялся, что всякий человек в убытке."
+        val blocks = parseReaderRichSegments(original)
+        val verse = blocks.filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.VERSE, verse.kind)
+        assertTrue(verse.body.endsWith("[аль-Аср, 103:1–3; перевод смысла]."))
+        assertEquals("[аль-Аср, 103:1–3; перевод смысла]", verse.reference)
+        assertTrue(!verse.body.contains("Пречистый поклялся"))
+        assertEquals("Пречистый поклялся, что всякий человек в убытке.", blocks.last().raw)
+        assertEquals(original, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun alMaidaCitationIncludesPartialVerseNoteInQuranCard() {
+        val original = "Всевышний также сказал: «Скажи: “Сообщить ли вам о тех, чьё воздаяние у Аллаха ещё хуже этого? Это те, кого Аллах проклял, на кого разгневался и среди кого сделал обезьян и свиней”» [«Аль-Маида», 5:60; цитируется часть аята]. А не знающий истины в большей степени заслуживает названия заблудшего."
+        val blocks = parseReaderRichSegments(original)
+        val verse = blocks.filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.VERSE, verse.kind)
+        assertTrue(verse.body.endsWith("[«Аль-Маида», 5:60; цитируется часть аята]."))
+        assertEquals("[«Аль-Маида», 5:60; цитируется часть аята]", verse.reference)
+        assertTrue(!verse.body.contains("А не знающий истины"))
+        assertEquals("А не знающий истины в большей степени заслуживает названия заблудшего.", blocks.last().raw)
+        assertEquals(original, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun adjacentQuranReferencesWithEditorialNotesDoNotSplit() {
+        val original = "Всевышний сказал: «Первый аят» [«Аль-Бакара», 2:90]. Всевышний также сказал: «Второй аят» [«Аль-Маида», 5:60; цитируется часть аята]. Затем автор пояснил."
+        val blocks = parseReaderRichSegments(original)
+        val verses = blocks.filterIsInstance<ReaderRichSegment.Quote>()
+        assertEquals(2, verses.size)
+        assertTrue(verses[0].body.contains("[«Аль-Бакара», 2:90]"))
+        assertTrue(verses[1].body.contains("[«Аль-Маида», 5:60; цитируется часть аята]"))
+        assertEquals("Затем автор пояснил.", blocks.last().raw)
+        assertEquals(original, blocks.joinToString(" ") { it.raw })
+    }
+
+    @Test fun annotatedQuranSourceDoesNotTurnHumanAttributionIntoVerse() {
+        val original = "Ибн Аббас сказал: «Это слова моего объяснения» [аль-Аср, 103:1–3; перевод смысла]."
+        val blocks = parseReaderRichSegments(original)
+        val quote = blocks.filterIsInstance<ReaderRichSegment.Quote>().single()
+        assertEquals(ReaderCitationKind.COMPANION_SAYING, quote.kind)
+        assertEquals(original, blocks.joinToString(" ") { it.raw })
+    }
+
 }

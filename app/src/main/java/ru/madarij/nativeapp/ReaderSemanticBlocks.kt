@@ -27,8 +27,12 @@ internal sealed interface ReaderRichSegment {
 private val sourceSurahRef = Regex(
     """(?i)\(\s*сура\s+[«„"][^»“"]{2,90}[»“"]\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:\s*[–—-]\s*\d{1,3})?\s*\)"""
 )
+// Full Quran source markers may have editorial qualifications after the
+// ayah range, e.g. [аль-Аср, 103:1–3; перевод смысла] or
+// [«Аль-Маида», 5:60; цитируется часть аята]. Never leave those words
+// behind in author prose; the WHOLE bracket belongs to the source marker.
 private val bracketSurahRef = Regex(
-    """\[\s*[«„"]?[^,\[\]\n]{2,65}[»“"]?\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:[–—-]\d{1,3})?\s*]"""
+    """\[\s*(?:[«„“"][^»“”"\]\n]{2,90}[»“”"]|[^,\[\]\n]{2,90})\s*,\s*\d{1,3}\s*:\s*\d{1,3}(?:\s*[–—-]\s*\d{1,3})?(?:\s*;\s*[^\[\]\n;]{2,100})?\s*]"""
 )
 private val colonSurahRef = Regex(
     """\[\s*[^:\[\]\n]{2,65}:\s*\d{1,3}(?:[–—-]\d{1,3})?\s*]"""
