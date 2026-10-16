@@ -137,11 +137,23 @@ fun BookApp(vm:BookViewModel=viewModel()) {
         CompositionLocalProvider(LocalContentColor provides colors.onBackground) {
         val scope = rememberCoroutineScope()
         val context = LocalContext.current
-        // Selected once for each new app launch, preserved across navigation/rotation.
-        val knowledgeReminderIndex = rememberSaveable { KnowledgeReminders.nextForLaunch(context.applicationContext) }
-        val knowledgeReminder = KnowledgeReminders.items[knowledgeReminderIndex]
-        // Persist across navigation: never replay the pen when returning Home.
-        var knowledgeInkFinished by rememberSaveable { mutableStateOf(false) }
+        // The quote changes on every return to HOME, not only when the Activity
+        // is restarted. The deck is persisted; no repeats in a 100-quote cycle.
+        var knowledgeReminder by remember {
+            mutableStateOf(KnowledgeReminders.nextForEntry(context.applicationContext))
+        }
+        var knowledgeInkFinished by remember { mutableStateOf(false) }
+        var previousVisibleRoute by remember { mutableStateOf<String?>(null) }
+        LaunchedEffect(route) {
+            if (route == "home" &&
+                previousVisibleRoute != null &&
+                previousVisibleRoute != "" &&
+                previousVisibleRoute != "home") {
+                knowledgeReminder = KnowledgeReminders.nextForEntry(context.applicationContext)
+                knowledgeInkFinished = false
+            }
+            previousVisibleRoute = route
+        }
         LaunchedEffect(Unit) {
             // Fresh installation defaults only; existing preferences are retained.
             if (!java.io.File(context.filesDir, "datastore/reading_settings.preferences_pb").exists())
@@ -265,7 +277,7 @@ fun BookApp(vm:BookViewModel=viewModel()) {
                 ) { e ->
                     val chapter=chapters.find {it.id==e.arguments?.getString("id")}
                     if(chapter==null) BookRouteSurface(readerPaperTexture, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { }
-                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark", motionEnabled = !settings.reducedMotion) { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
+                    else BookRouteSurface(readerPaperTexture, settings.theme == "dark", motionEnabled = false) { MaterialTheme(colorScheme = bookReaderColors(settings, false)) { Reader(
                         vm, chapter, settings,
                         e.arguments?.getString("paragraph")?.takeIf {it.isNotEmpty()},
                         e.arguments?.getString("query").orEmpty(),
