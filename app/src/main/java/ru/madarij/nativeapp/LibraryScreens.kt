@@ -151,52 +151,7 @@ internal fun NotesScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     editing?.let {n -> AlertDialog(onDismissRequest={editing=null},title={Text("Моя заметка")},text={OutlinedTextField(text,{text=it},modifier=Modifier.fillMaxWidth(),minLines=5)},confirmButton={TextButton(onClick={vm.editNote(n.id,text);editing=null},enabled=text.isNotBlank()) {Text("Сохранить")}},dismissButton={TextButton(onClick={editing=null}) {Text("Отмена")}}) }
 }
 
-@Composable
-internal fun ProgressScreen(vm:BookViewModel,open:(String,String?)->Unit,navigate:(String)->Unit) {
-    val chapters by vm.chapters.collectAsStateWithLifecycle();val read by vm.read.collectAsStateWithLifecycle();val history by vm.history.collectAsStateWithLifecycle();val context=LocalContext.current;val repo=remember {LearningRepository(context.applicationContext)};val attempts by repo.attempts.collectAsStateWithLifecycle(emptyMap());var questionChapters by remember {mutableStateOf<Map<String,String>>(emptyMap())}
-    LaunchedEffect(chapters) {questionChapters=repo.questions.mapNotNull {q -> vm.repository.dao.paragraph(q.sourceParagraphId)?.let {q.id to it.chapterId}}.toMap()}
-    val studied=questionChapters.filter {it.key in attempts}.values.toSet();val due=attempts.count {it.value.due<=System.currentTimeMillis()};val minutes=history.sumOf {it.seconds}/60
-    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item {ScreenHeading("Первый том", "Чтение и понимание учитываются отдельно")}
-        item {InfoCard("Прочитано ${read.size} из ${chapters.size}","${if(chapters.isEmpty()) 0 else read.size*100/chapters.size}% разделов отмечено прочитанными. Отметка меняется вручную.")}
-        item {InfoCard("Изучение · ${studied.size} разделов","Отвечено на ${attempts.size} из ${repo.questions.size} вопросов; назначено повторений: $due. Попытка ответа означает работу с вопросом, а не полное усвоение главы.")}
-        item {Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {Button(onClick={navigate("study?review=true")},Modifier.weight(1f)) {Text("Повторить")};OutlinedButton(onClick={navigate("study")},Modifier.weight(1f)) {Text("Вопросы")}}}
-        item {InfoCard("История чтения","$minutes минут в открытом читателе · ${history.map {it.date}.distinct().size} дней. Время учитывается только пока экран чтения активен.")}
-        if(attempts.any {it.value.errors>0 || it.value.lowConfidence}) item {Text("Темы для повторения",style=MaterialTheme.typography.titleMedium)}
-        items(repo.questions.filter {q -> attempts[q.id]?.let {it.errors>0 || it.lowConfidence}==true},key={"hard:${it.id}"}) {q -> AgedPaperCard(onClick={navigate("study?review=true")},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(q.prompt);Text("Ошибок: ${attempts[q.id]?.errors ?: 0}"+(if(attempts[q.id]?.lowConfidence==true) " · Неуверенный ответ" else ""),style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}}}
-        if(read.isNotEmpty()) item {Text("Прочитанные разделы",style=MaterialTheme.typography.titleMedium)}
-        items(chapters.filter {c -> read.any {it.chapterId==c.id}},key={it.id}) {c -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp)) {Text(c.title);Row {TextButton(onClick={open(c.id,null)}) {Text("Открыть")};TextButton(onClick={vm.markUnread(c.id)}) {Text("Снять отметку")}}}}}
-        history.groupBy {it.date}.entries.take(30).forEach { (date,records) -> item(key="day:$date") {Text("$date · ${records.sumOf {it.seconds}/60} мин · ${records.map {it.chapterId}.distinct().size} разделов",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)} }
-    }
-}
-
-@Composable
-internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(start=16.dp, top=12.dp, end=16.dp, bottom=124.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        item { ScreenHeading("Ещё", "Инструменты и личные материалы") }
-        listOf(
-            "study" to ("Изучение" to "Проверки, задания и повторение"),
-            "bookmarks" to ("Закладки" to "Сохранённые главы, цитаты и места"),
-            "notes" to ("Мои заметки" to "Личные записи и размышления"),
-            "glossary" to ("Словарь терминов" to "Пояснения с исходным контекстом"),
-            "progress" to ("Прогресс" to "Чтение, изучение и повторение"),
-            "settings" to ("Настройки" to "Шрифты, тема и яркость"),
-            "about" to ("О книге" to "Автор, источник и статус перевода")
-        ).forEach { (route, texts) ->
-            item {
-                AgedPaperCard(onClick={navigate(route)},modifier=Modifier.fillMaxWidth()) {
-                    Row(Modifier.padding(horizontal=14.dp,vertical=10.dp),horizontalArrangement=Arrangement.spacedBy(12.dp),verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                            Text(texts.first,style=MaterialTheme.typography.titleSmall)
-                            Text(texts.second,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
-                        }
-                        Text("›",style=MaterialTheme.typography.titleLarge,color=MaterialTheme.colorScheme.primary)
-                    }
-                }
-            }
-        }
-    }
-}
+// Progress and More screens use reference-matched pure Compose layouts in HeritageProgress.kt and HeritageUI.kt.
 
 @Composable
 internal fun AboutScreen() {
