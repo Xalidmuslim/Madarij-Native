@@ -43,7 +43,9 @@ class ReminderSpotlightTest {
 
     @Test fun bookCorpusAndSavedPositionRemainUntouched() {
         val reader = File("src/main/java/ru/madarij/nativeapp/Reader.kt").readText()
-        assertTrue(reader.contains("readerSpotlightRange(raw, it)"))
+        val locator = File("src/main/java/ru/madarij/nativeapp/ReminderSpotlight.kt").readText()
+        assertTrue(locator.contains("reminderSpotlightRange(text: String, reminder: String)"))
+        assertTrue(reader.contains("reminderSpotlightRange(raw, it)"))
         assertTrue(reader.contains("getBoundingBox(range.first).top"))
         assertTrue(reader.contains("spotlightTopY - viewportTopY - inset"))
         assertTrue(reader.contains("savePosition()"))
