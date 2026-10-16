@@ -26,7 +26,7 @@ private val readerSentenceGap = Regex("""(?<=[.!?…»\]])\s+(?=[А-ЯЁ«])""")
 private val readerVerseReference = Regex("""\[[^\]]*\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?[^\]]*]""")
 private val readerLead = Regex("""^(.{2,135}?\bсказал(?:а|и)?\s*:)\s*(?=[«"])""", RegexOption.IGNORE_CASE)
 private val readerVerseIntro = Regex(
-    """(?i)(?:Всевышний|Аллах|в Коране|аят|сура)\b"""
+    """(?i)^(?:Всевышний(?:\s+Аллах)?|Аллах|В Коране|В аяте)\b"""
 )
 private val readerProphetIntro = Regex(
     """(?i)(?:Пророк(?:а|ом|у)?|Посланник(?:а|ом|у)?\s+Аллаха|ﷺ)\b"""
