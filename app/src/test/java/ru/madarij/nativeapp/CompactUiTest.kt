@@ -3,6 +3,7 @@ package ru.madarij.nativeapp
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.io.File
 
 class CompactUiTest {
     @Test fun compactTypographyKeepsHierarchyWithoutGiantTitles() {
@@ -29,6 +30,20 @@ class CompactUiTest {
         assertTrue(CompactUi.tocManuscriptIconDp <= CompactUi.tocMedallionDp)
         assertTrue(CompactUi.tocVolumeMinHeightDp >= 48)
         assertTrue(CompactUi.tocFilterMinHeightDp >= 48)
+    }
+
+    @Test fun tocManuscriptIsOriginalVectorLeafNotOldRectangularTile() {
+        val source = File("src/main/java/ru/madarij/nativeapp/HeritageUi.kt").readText()
+        val leaf = source.substringAfter("internal fun HeritageManuscriptNumber(")
+            .substringBefore("/** Preserve older learning-screen callers")
+        assertTrue(leaf.contains("Canvas(Modifier.fillMaxSize())"))
+        assertTrue(leaf.contains("quadraticBezierTo("))
+        assertTrue(leaf.contains("drawPath(parchment") ||
+            leaf.contains("drawPath(\n                parchment"))
+        assertTrue(leaf.contains("fontSize = 15.sp"))
+        assertTrue(!leaf.contains("drawRoundRect("))
+        assertTrue(!leaf.contains("PreloadedBookImage("))
+        assertTrue(!leaf.contains("R.drawable."))
     }
 
     @Test fun handwritingIsSmallerButRemainsComfortablyReadable() {
