@@ -293,13 +293,13 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
             }
             item {
                 AgedPaperCard(Modifier.fillMaxWidth(),
-                    colors=CardDefaults.cardColors(containerColor=BookColors.card.copy(alpha=.72f)),
+                    colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.82f)),
                     border=androidx.compose.foundation.BorderStroke(.8.dp,
                         BookColors.gold.copy(alpha=.29f))) {
                     Column(Modifier.padding(13.dp),
                         verticalArrangement=Arrangement.spacedBy(9.dp)) {
                         Text("Прочитанные фрагменты", style=MaterialTheme.typography.labelMedium,
-                            color=BookColors.muted)
+                            color=heritageMuted())
                         HeritageActivityBars(chart.second, chart.first,
                             highlightIndex=if(period=="week") today.dayOfWeek.value-1 else -1)
                         HorizontalDivider(color=BookColors.gold.copy(alpha=.22f))
@@ -307,7 +307,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                             today.format(java.time.format.DateTimeFormatter.ofPattern(
                                 "LLL",java.util.Locale("ru"))),
                             style=MaterialTheme.typography.titleMedium.copy(fontFamily=BookSerif),
-                            color=BookColors.ink)
+                            color=heritageInk())
                         Row(Modifier.fillMaxWidth(),
                             horizontalArrangement=Arrangement.SpaceBetween) {
                             Text("Читали: $todaySections",style=MaterialTheme.typography.bodySmall)
@@ -323,7 +323,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                     Row(Modifier.fillMaxWidth().padding(15.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Text("Вернуться к повторению · $due вопросов",
-                            Modifier.weight(1f), color=BookColors.ink)
+                            Modifier.weight(1f), color=heritageInk())
                         Text("›",style=MaterialTheme.typography.titleLarge,
                             color=BookColors.gold)
                     }
@@ -338,10 +338,10 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                     Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
                         verticalArrangement=Arrangement.spacedBy(5.dp)) {
                         Text("Том ${chapter.volume} · ${if(chapter.id in readIds) "Прочитано" else "Не прочитано"}",
-                            style=MaterialTheme.typography.labelSmall,color=BookColors.muted)
+                            style=MaterialTheme.typography.labelSmall,color=heritageMuted())
                         Text(chapter.title,
                             style=MaterialTheme.typography.titleSmall.copy(fontFamily=BookSerif),
-                            color=BookColors.ink)
+                            color=heritageInk())
                         Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
                             TextButton(onClick={open(chapter.id,null)}){Text("Открыть")}
                             if(chapter.id in readIds)
