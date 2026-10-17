@@ -182,6 +182,12 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         due = dueQuestions,
                         writingTasks = if(loaded)
                             repo.exercises.count { inStudyScope(it.chapterId) } else 0,
+                        scopeLabel = when {
+                            chapterId.isNotBlank() -> "выбранная тема"
+                            selectedVolume == 1 -> "первый том"
+                            selectedVolume == 2 -> "второй том"
+                            else -> "оба тома"
+                        },
                         onStart = { beginSession() }
                     )
                 }
@@ -338,7 +344,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     else -> true
                 } }
                 val checksChapters = if (showAllStudySections || chapterId.isNotBlank())
-                    matchingSections else matchingSections.take(4)
+                    matchingSections else matchingSections.take(3)
                 item {
                     HeritageSectionHeading("Разделы книги",
                         trailing="${if(loaded) repo.exercises.count { inStudyScope(it.chapterId) } else 0} заданий")
