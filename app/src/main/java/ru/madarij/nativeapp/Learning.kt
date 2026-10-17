@@ -169,8 +169,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     }
     LazyColumn(Modifier.fillMaxSize().padding(horizontal=16.dp),
         state=listState,
-        verticalArrangement=Arrangement.spacedBy(10.dp),
-        contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
+        verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp),
+        contentPadding=PaddingValues(start=0.dp,top=8.dp,end=0.dp,bottom=124.dp)) {
         if (q == null && exercise == null) {
             if (tab == 0) {
                 item {
@@ -396,7 +396,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         border=androidx.compose.foundation.BorderStroke(.75.dp,
                             BookColors.gold.copy(alpha=.31f)),
                         shape=androidx.compose.foundation.shape.RoundedCornerShape(19.dp)) {
-                        Row(Modifier.fillMaxWidth().padding(horizontal=10.dp,vertical=11.dp),
+                        Row(Modifier.fillMaxWidth().padding(horizontal=10.dp,vertical=8.dp),
                             horizontalArrangement=Arrangement.spacedBy(10.dp),
                             verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
                             HeritageMedallion(ordinal)
@@ -460,7 +460,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     style=MaterialTheme.typography.bodySmall)}
                 val exercises=repo.exercises.filter{inStudyScope(it.chapterId)}
                 if(exercise==null) {
-                    items(exercises.take(visibleExercises),key={it.id}) { e ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(14.dp)) {Text(chapterTitles[e.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(e.prompt);TextButton(onClick={exerciseId=e.id;reflection="";hintVisible=false;noteSaved=false}) {Text("Написать ответ")}}} }
+                    items(exercises.take(visibleExercises),key={it.id}) { e ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(11.dp)) {Text(chapterTitles[e.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(e.prompt);TextButton(onClick={exerciseId=e.id;reflection="";hintVisible=false;noteSaved=false}) {Text("Написать ответ")}}} }
                     if(exercises.size>visibleExercises) item {TextButton(onClick={visibleExercises+=15}) {Text("Показать ещё · ${exercises.size-visibleExercises}")}}
                 }
                 else {
@@ -578,8 +578,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 }
                 if(tab==3 || browseQuestions) items(filtered.take(visibleQuestions),key={it.id}) { item ->
                     AgedPaperCard(Modifier.fillMaxWidth()) {
-                        Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
-                            verticalArrangement=Arrangement.spacedBy(7.dp)) {
+                        Column(Modifier.padding(horizontal=12.dp,vertical=8.dp),
+                            verticalArrangement=Arrangement.spacedBy(5.dp)) {
                             Text(chapterTitles[item.chapterId] ?: "Раздел",
                                 style=MaterialTheme.typography.labelLarge,
                                 color=MaterialTheme.colorScheme.primary)
@@ -638,7 +638,7 @@ fun GlossaryScreen(onOpenParagraph: (String) -> Unit) {
     val context=LocalContext.current;val repo=remember(context) {LearningRepository(context.applicationContext)}
     var query by rememberSaveable {mutableStateOf("")};var expanded by rememberSaveable {mutableStateOf("")};var loaded by remember {mutableStateOf(false)};var error by remember {mutableStateOf(false)}
     LaunchedEffect(repo) {try {repo.load();loaded=true} catch(e:Exception) {if(e is CancellationException) throw e;error=true}}
-    LazyColumn(Modifier.fillMaxSize().padding(16.dp),verticalArrangement=Arrangement.spacedBy(12.dp),contentPadding=PaddingValues(bottom=124.dp)) {
+    LazyColumn(Modifier.fillMaxSize().padding(16.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp),contentPadding=PaddingValues(bottom=124.dp)) {
         item {Text("Термины",style=MaterialTheme.typography.headlineSmall);Text("Редакторские пояснения к переводу. Значение терминов уточняется по контексту и первоисточникам.");OutlinedTextField(query,{query=it},label={Text("Поиск термина")},modifier=Modifier.fillMaxWidth())}
         if(!loaded) item {Text(if(error) "Не удалось загрузить термины." else "Загрузка…")}
         else items(repo.terms.filter{query.isBlank() || "${it.ar} ${it.transcript} ${it.definition}".contains(query,ignoreCase=true)},key={it.id}) {term->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(term.ar,fontFamily=FontFamily(Font(R.font.naskh)),fontSize=28.sp);Text(term.transcript,style=MaterialTheme.typography.titleMedium);Text(term.definition);TextButton(onClick={expanded=if(expanded==term.id) "" else term.id}) {Text(if(expanded==term.id) "Свернуть" else "Подробности и связи")};if(expanded==term.id) {Text(term.extendedDefinition);term.relatedTerms.mapNotNull{id->repo.terms.find{it.id==id}}.forEach{related->TextButton(onClick={query=related.transcript;expanded=related.id}) {Text("Связанный термин: ${related.transcript}")}}};term.sourceParagraphIds.ifEmpty{listOf(term.sourceParagraphId)}.forEachIndexed { i,pid->TextButton(onClick={onOpenParagraph(pid)}) {Text(if(i==0) "Открыть контекст" else "Другой фрагмент ${i+1}")}}}} }
