@@ -469,27 +469,37 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 val count = group.items.count { it.chapterId in readIds }
                 AgedPaperCard(
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .90f)),
+                    colors = CardDefaults.cardColors(containerColor = BookColors.card.copy(alpha = .78f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
-                    shape = RoundedCornerShape(AppRadius.medium),
+                    border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .34f)),
+                    shape = RoundedCornerShape(19.dp),
                     modifier = Modifier.fillMaxWidth().animateItem(
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
                     )
                 ) {
-                    Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                                Text(groupDisplayTitle(group), style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
-                                Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                    Row(Modifier.fillMaxWidth().heightIn(min=91.dp)
+                        .padding(horizontal=13.dp,vertical=12.dp),
+                        horizontalArrangement=Arrangement.spacedBy(13.dp),
+                        verticalAlignment=Alignment.CenterVertically) {
+                        HeritageMedallion(matching.indexOfFirst { it.id==group.id }+1)
+                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
+                            Text(groupDisplayTitle(group),
+                                style=MaterialTheme.typography.titleMedium.copy(
+                                    fontFamily=BookSerif,fontSize=18.sp,lineHeight=23.sp),
+                                color=BookColors.ink)
+                            Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                                Text("$count из ${group.items.size} прочитано",
+                                    style=MaterialTheme.typography.labelSmall,color=BookColors.muted)
+                                groupPageLabel(group)?.let { page ->
+                                    Text("· $page",style=MaterialTheme.typography.labelSmall,
+                                        color=BookColors.muted)
+                                }
                             }
                         }
-                        groupPageLabel(group)?.let { page ->
-                            Text(page, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.End,
-                                style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                        }
+                        Text(if(expanded) "⌄" else "›",
+                            style=MaterialTheme.typography.headlineSmall,color=BookColors.gold)
                     }
                 }
             }
@@ -559,6 +569,5 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 }
             }
         }
-        item { Text("Следующие тома ещё не включены.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 6.dp, bottom = 14.dp)) }
     }
 }
