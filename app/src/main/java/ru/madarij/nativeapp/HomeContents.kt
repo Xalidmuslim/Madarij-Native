@@ -127,7 +127,7 @@ internal fun HomeScreen(
                 val shape = RoundedCornerShape(17.dp)
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
                     .background(BookColors.card)
-                    .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
+                    .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape).heritageEtching(cornerRadius = 17.dp)) {
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                     Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
                         horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -450,7 +450,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         }
         item {
             OutlinedTextField(query,{query=it;resetList()},
-                modifier=Modifier.fillMaxWidth(),
+                modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = .70f),
                 singleLine=true,
                 placeholder={Text("Найти главу или тему")},
                 leadingIcon={
@@ -544,7 +544,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
+                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape).heritageEtching(cornerRadius = 17.dp)) {
                         PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {

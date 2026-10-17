@@ -70,7 +70,7 @@ internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier
         .background(if (selected) BookColors.leather else heritageCard().copy(alpha = .64f))
         .border(.9.dp, if (selected) BookColors.gold.copy(alpha = .8f)
                       else BookColors.gold.copy(alpha = .32f), shape)
-        .clickable(onClick = onClick).padding(horizontal = 7.dp, vertical = 5.dp),
+        .clickable(onClick = onClick).heritageEtching(cornerRadius = 14.dp, prominence = .62f).padding(horizontal = 7.dp, vertical = 5.dp),
         contentAlignment = Alignment.Center) {
         Text(label, style = MaterialTheme.typography.labelMedium.copy(
             fontFamily = BookSerif, fontSize = 14.sp),
