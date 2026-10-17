@@ -50,23 +50,47 @@ adb pull /sdcard/contents-scrolled.xml performance-results/contents-scrolled.xml
 python3 - <<'PY'
 from xml.etree import ElementTree as ET
 import re
-root=ET.parse('performance-results/contents-scrolled.xml').getroot()
-targets=[]
-for n in root.iter('node'):
-    label=(n.get('text','')+' '+n.get('content-desc','')).strip()
-    if 'Читать' not in label:
-        continue
-    m=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.get('bounds',''))
-    if m is None:
-        continue
-    x1,y1,x2,y2=map(int,m.groups())
-    if 170 < y1 < 810:
-        targets.append((y1,(x1+x2)//2,(y1+y2)//2))
+import subprocess
+import time
+
+def visible_nodes(path):
+    root=ET.parse(path).getroot()
+    result=[]
+    for n in root.iter('node'):
+        label=(n.get('text','')+' '+n.get('content-desc','')).strip()
+        m=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.get('bounds',''))
+        if m:
+            x1,y1,x2,y2=map(int,m.groups())
+            if 170 < y1 < 810:
+                result.append((label,y1,(x1+x2)//2,(y1+y2)//2))
+    return result
+
+def reads(nodes):
+    return [point for point in nodes if 'Читать' in point[0]]
+
+nodes=visible_nodes('performance-results/contents-scrolled.xml')
+targets=reads(nodes)
 if not targets:
-    raise SystemExit('No visible Read control in Contents')
-_,x,y=min(targets)
+    # New design intentionally starts with semantic sections collapsed.
+    # Expand the actual first-volume first title by its UI tree position.
+    titles=[p for p in nodes if 'Введение и толкование' in p[0]]
+    if not titles:
+        raise SystemExit('No first section in Contents: cannot measure Reader')
+    _,_,x,y=min(titles,key=lambda p:p[1])
+    subprocess.run(['adb','shell','input','tap',str(x),str(y)],check=True)
+    time.sleep(2)
+    subprocess.run(['adb','shell','uiautomator','dump',
+                    '/sdcard/contents-expanded.xml'],check=True,
+                   stdout=subprocess.DEVNULL)
+    subprocess.run(['adb','pull','/sdcard/contents-expanded.xml',
+                    'performance-results/contents-expanded.xml'],
+                   check=True,stdout=subprocess.DEVNULL)
+    targets=reads(visible_nodes('performance-results/contents-expanded.xml'))
+if not targets:
+    raise SystemExit('No visible Read control after opening first semantic section')
+_,_,x,y=min(targets,key=lambda p:p[1])
 open('performance-results/reader-target.txt','w').write(f'{x} {y}\n')
-print('Reading from Contents at',x,y)
+print('Reading from expanded Contents at',x,y)
 PY
 read -r READ_X READ_Y < performance-results/reader-target.txt
 echo "---- READER tap and scroll ----" >> performance-results/measurements.txt
