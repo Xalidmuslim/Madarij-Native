@@ -158,14 +158,14 @@ internal fun MadarijTopBar(
     showTextSettings: Boolean, onTextSettings: () -> Unit, onBookmarks: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
-        if (title == "Оглавление") {
+        if (title in setOf("Оглавление", "Изучение", "Ещё")) {
             Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
                 verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.headlineLarge.copy(
                         fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
                         color = BookColors.ink)
-                    if (subtitle != null) Text(subtitle,
+                    if (!subtitle.isNullOrBlank()) Text(subtitle,
                         style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
                 }
                 IconButton(onClick = onSearch) {
@@ -185,7 +185,8 @@ internal fun MadarijTopBar(
                 }
                 Text(title, Modifier.weight(1f),
                     style = MaterialTheme.typography.titleMedium.copy(
-                        fontFamily = BookSerif, fontWeight = FontWeight.Normal, fontSize = 20.sp),
+                        fontFamily = BookSerif, fontWeight = FontWeight.Normal,
+                        fontSize = if(title=="Настройки" || title=="Мой прогресс") 27.sp else 20.sp),
                     textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 if (showSearch) IconButton(onClick = onSearch) {
                     NavigationGlyph("search", modifier = Modifier.size(21.dp))
