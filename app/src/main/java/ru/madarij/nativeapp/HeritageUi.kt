@@ -93,9 +93,9 @@ internal fun HeritageManuscriptNumber(number: Int, modifier: Modifier = Modifier
             val stroke = .95.dp.toPx()
             val page = Path().apply {
                 moveTo(w * .25f, h * .11f)
-                quadraticTo(w * .69f, h * .07f, w * .82f, h * .15f)
+                quadraticBezierTo(w * .69f, h * .07f, w * .82f, h * .15f)
                 lineTo(w * .80f, h * .83f)
-                quadraticTo(w * .50f, h * .88f, w * .21f, h * .83f)
+                quadraticBezierTo(w * .50f, h * .88f, w * .21f, h * .83f)
                 close()
             }
             // Restrained warm-ink shadow, aged page and curling edges.
