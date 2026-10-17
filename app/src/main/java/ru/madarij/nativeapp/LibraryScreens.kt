@@ -246,8 +246,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 .atZone(java.time.ZoneId.systemDefault()).toLocalDate() == today
     }
 
-    LazyColumn(contentPadding=PaddingValues(start=16.dp,end=16.dp,top=10.dp,bottom=130.dp),
-        verticalArrangement=Arrangement.spacedBy(13.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,end=16.dp,top=7.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(8.dp)) {
                 HeritageChoice("Общий", view=="all", Modifier.weight(1f)) {view="all"}
@@ -256,7 +256,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
         }
         if(view=="all") {
             item {
-                Row(Modifier.fillMaxWidth().padding(vertical=9.dp),
+                Row(Modifier.fillMaxWidth().padding(vertical=3.dp),
                     horizontalArrangement=Arrangement.spacedBy(7.dp)) {
                     HeritageProgressRing(
                         fraction=if(chapters.isEmpty()) 0f else readIds.size.toFloat()/chapters.size,
@@ -274,7 +274,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 AgedPaperCard(Modifier.fillMaxWidth(),
                     border=androidx.compose.foundation.BorderStroke(.9.dp,
                         BookColors.gold.copy(alpha=.3f))) {
-                    Column(Modifier.padding(vertical=5.dp)) {
+                    Column(Modifier.padding(vertical=2.dp)) {
                         HeritageMetricRow("contents", "Завершено смысловых разделов",
                             "$completedGroups из $totalGroups", {view="sections"})
                         HorizontalDivider(color=BookColors.gold.copy(alpha=.2f))
@@ -303,8 +303,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                     colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.82f)),
                     border=androidx.compose.foundation.BorderStroke(.8.dp,
                         BookColors.gold.copy(alpha=.29f))) {
-                    Column(Modifier.padding(13.dp),
-                        verticalArrangement=Arrangement.spacedBy(9.dp)) {
+                    Column(Modifier.padding(10.dp),
+                        verticalArrangement=Arrangement.spacedBy(6.dp)) {
                         Text("Прочитанные фрагменты", style=MaterialTheme.typography.labelMedium,
                             color=heritageMuted())
                         HeritageActivityBars(chart.second, chart.first,
@@ -327,7 +327,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
             if(due>0) item {
                 AgedPaperCard(onClick={navigate("study?review=true")},
                     modifier=Modifier.fillMaxWidth()) {
-                    Row(Modifier.fillMaxWidth().padding(15.dp),
+                    Row(Modifier.fillMaxWidth().padding(11.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Text("Вернуться к повторению · $due вопросов",
                             Modifier.weight(1f), color=heritageInk())
@@ -342,8 +342,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 AgedPaperCard(Modifier.fillMaxWidth(),
                     border=androidx.compose.foundation.BorderStroke(.7.dp,
                         BookColors.gold.copy(alpha=.24f))) {
-                    Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
-                        verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                    Column(Modifier.padding(horizontal=12.dp,vertical=8.dp),
+                        verticalArrangement=Arrangement.spacedBy(3.dp)) {
                         Text("Том ${chapter.volume} · ${if(chapter.id in readIds) "Прочитано" else "Не прочитано"}",
                             style=MaterialTheme.typography.labelSmall,color=heritageMuted())
                         Text(chapter.title,
@@ -365,8 +365,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
 
 @Composable
 internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(start=17.dp,top=12.dp,end=17.dp,bottom=130.dp),
-        verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,top=7.dp,end=16.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             HeritageSectionHeading("ИЗУЧЕНИЕ")
             HeritageMenuGroup(listOf(
