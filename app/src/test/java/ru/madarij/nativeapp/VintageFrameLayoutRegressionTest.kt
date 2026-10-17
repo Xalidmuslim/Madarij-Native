@@ -28,8 +28,15 @@ class VintageFrameLayoutRegressionTest {
 
     @Test fun graphicBorderThicknessIsBoundedForCompactCards() {
         val styles = source("HeritageFrames.kt")
-        assertTrue(styles.contains("HeritageFrameKind.SECTION -> .68f"))
-        assertTrue(styles.contains("HeritageFrameKind.SUBSECTION -> .64f"))
+        val weights = Regex("""HeritageFrameKind[.](SECTION|SUBSECTION) *-> *([0-9.]+)f""")
+            .findAll(styles).associate { it.groupValues[1] to it.groupValues[2].toFloat() }
+        val section = requireNotNull(weights["SECTION"]) { "SECTION weight missing" }
+        val subsection = requireNotNull(weights["SUBSECTION"]) { "SUBSECTION weight missing" }
+        // Antique detail may be stronger than the old flat trim, but may not
+        // become opaque or obscure short labels. Subsections remain quieter.
+        assertTrue("Section ornament has too much contrast", section in .70f.. .84f)
+        assertTrue("Subsection ornament has too much contrast", subsection in .66f.. .82f)
+        assertTrue("Subsections must not overpower sections", subsection <= section)
         assertTrue(styles.contains("15.dp.toPx().roundToInt()"))
     }
 }

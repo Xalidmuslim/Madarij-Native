@@ -89,11 +89,11 @@ internal fun Modifier.heritageEtching(
     // Heavy generated frames must not overpower short book labels.
     // Volume selectors remain more pronounced than chapter or menu cards.
     val visualWeight = when (kind) {
-        HeritageFrameKind.SECTION -> .68f
-        HeritageFrameKind.SUBSECTION -> .64f
-        HeritageFrameKind.SEARCH -> .72f
-        HeritageFrameKind.SMALL_BUTTON -> .74f
-        else -> .88f
+        HeritageFrameKind.SECTION -> .82f
+        HeritageFrameKind.SUBSECTION -> .78f
+        HeritageFrameKind.SEARCH -> .84f
+        HeritageFrameKind.SMALL_BUTTON -> .82f
+        else -> .92f
     }
     val amount = prominence.coerceIn(0f, 1f) * visualWeight
     return drawWithCache {
@@ -129,8 +129,10 @@ internal fun Modifier.heritageEtching(
                     cornerRadius=CornerRadius((radius-1.3.dp.toPx()).coerceAtLeast(0f)),
                     style=Stroke(.9.dp.toPx())
                 )
-            } else {
-                for (row in 0..2) for (col in 0..2) {
+            }
+            // Keep the individually aged corners in night mode as well.
+            // A reduced alpha preserves readability against the dark paper.
+            for (row in 0..2) for (col in 0..2) {
                     if (col==1 && row==1) continue
                     val dw=dstX[col+1]-dstX[col]
                     val dh=dstY[row+1]-dstY[row]
@@ -143,12 +145,11 @@ internal fun Modifier.heritageEtching(
                             srcSize=IntSize(sw,sh),
                             dstOffset=IntOffset(dstX[col],dstY[row]),
                             dstSize=IntSize(dw,dh),
-                            alpha=amount,
+                            alpha=if (night) amount * .36f else amount,
                             filterQuality=FilterQuality.Low
                         )
                     }
                 }
-            }
         }
     }
 }
