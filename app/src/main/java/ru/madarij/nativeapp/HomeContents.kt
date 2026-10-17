@@ -123,8 +123,8 @@ internal fun HomeScreen(
                     .background(BookColors.card)
                     .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Row(Modifier.padding(horizontal = 18.dp, vertical = 13.dp),
-                        horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
+                        horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                         Column(Modifier.weight(1f).clickable {
                             onOpenReminder(reminder)
                         }) {
@@ -132,15 +132,16 @@ internal fun HomeScreen(
                                 text = reminder.text,
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontFamily = FontFamily(Font(R.font.bad_script)),
-                                    fontWeight = FontWeight.Normal,
-                                    fontSize = 24.sp, lineHeight = 31.sp
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = CompactUi.homeQuoteSizeSp.sp,
+                                    lineHeight = CompactUi.homeQuoteLineHeightSp.sp
                                 ),
-                                color = Color(0xFF62452F),
+                                color = Color(0xFF52341F),
                                 reducedMotion = reducedMotion,
                                 animate = !inkFinished,
                                 onFinished = onInkFinished
                             )
-                            Text("Из книги · том ${reminder.volume}, стр. ${reminder.page}", Modifier.padding(top = 8.dp),
+                            Text("Из книги · том ${reminder.volume}, стр. ${reminder.page}", Modifier.padding(top = 6.dp),
                                 style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                         }
                         IconButton(onClick = { navigate("bookmarks") },
@@ -386,7 +387,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(10.dp)) {
                 availableVolumes.forEach { volume ->
-                    HeritageChoice("Том $volume", volume==selectedVolume,
+                    HeritageTocVolumeTab("Том $volume", volume==selectedVolume,
                         Modifier.weight(1f)) {
                         selectedVolume=volume
                         openedGroups=emptyList()
@@ -454,7 +455,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(6.dp)) {
                 listOf("all" to "Все","read" to "Прочитано","saved" to "С закладками")
                     .forEach { (key,label) ->
-                        HeritageChoice(label,filter==key,Modifier.weight(1f)) {
+                        HeritageTocFilterTab(label,key,filter==key,Modifier.weight(1f)) {
                             filter=key
                             resetList()
                         }
@@ -484,9 +485,9 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 ) {
                     Row(Modifier.fillMaxWidth().heightIn(min=CompactUi.contentsGroupMinHeightDp.dp)
                         .padding(horizontal=11.dp,vertical=8.dp),
-                        horizontalArrangement=Arrangement.spacedBy(13.dp),
+                        horizontalArrangement=Arrangement.spacedBy(10.dp),
                         verticalAlignment=Alignment.CenterVertically) {
-                        HeritageMedallion(matching.indexOfFirst { it.id==group.id }+1)
+                        HeritageManuscriptNumber(matching.indexOfFirst { it.id==group.id }+1)
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(

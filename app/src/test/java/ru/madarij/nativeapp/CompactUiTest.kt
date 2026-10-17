@@ -24,6 +24,19 @@ class CompactUiTest {
         assertEquals(118, CompactUi.activityGraphDp)
     }
 
+    @Test fun manuscriptTableOfContentsUsesConsistentCompactAssets() {
+        assertEquals(38, CompactUi.tocManuscriptIconDp)
+        assertTrue(CompactUi.tocManuscriptIconDp <= CompactUi.tocMedallionDp)
+        assertTrue(CompactUi.tocVolumeMinHeightDp >= 48)
+        assertTrue(CompactUi.tocFilterMinHeightDp >= 48)
+    }
+
+    @Test fun handwritingIsSmallerButRemainsComfortablyReadable() {
+        assertEquals(20, CompactUi.homeQuoteSizeSp)
+        assertEquals(26, CompactUi.homeQuoteLineHeightSp)
+        assertTrue(CompactUi.homeQuoteLineHeightSp > CompactUi.homeQuoteSizeSp)
+    }
+
     @Test fun compactnessDoesNotSacrificeTouchableAreas() {
         assertTrue(CompactUi.choiceMinHeightDp >= 48)
         assertTrue(CompactUi.actionMinHeightDp >= 48)
