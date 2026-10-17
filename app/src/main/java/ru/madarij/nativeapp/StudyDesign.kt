@@ -33,9 +33,9 @@ internal fun StudyOverview(
             verticalArrangement=Arrangement.spacedBy(13.dp)) {
             Text("Мой путь по книге",
                 style=MaterialTheme.typography.headlineSmall.copy(
-                    fontFamily=BookSerif,fontSize=27.sp),color=BookColors.ink)
+                    fontFamily=BookSerif,fontSize=27.sp),color=heritageInk())
             Text("Читайте, проверяйте понимание и возвращайтесь к трудным вопросам.",
-                style=MaterialTheme.typography.bodyMedium,color=BookColors.muted)
+                style=MaterialTheme.typography.bodyMedium,color=heritageMuted())
             HorizontalDivider(color=BookColors.gold.copy(alpha=.23f))
             Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(17.dp)) {
                 Column(Modifier.weight(1f),
@@ -47,9 +47,9 @@ internal fun StudyOverview(
                         Column {
                             Text("$readChapters / $allChapters",
                                 style=MaterialTheme.typography.titleLarge.copy(
-                                    fontFamily=BookSerif,fontSize=23.sp),color=BookColors.ink)
+                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
                             Text("Прочитано",style=MaterialTheme.typography.labelMedium,
-                                color=BookColors.muted)
+                                color=heritageMuted())
                         }
                     }
                     LinearProgressIndicator(
@@ -67,9 +67,9 @@ internal fun StudyOverview(
                         Column {
                             Text("$answered / $allQuestions",
                                 style=MaterialTheme.typography.titleLarge.copy(
-                                    fontFamily=BookSerif,fontSize=23.sp),color=BookColors.ink)
+                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
                             Text("Проверено",style=MaterialTheme.typography.labelMedium,
-                                color=BookColors.muted)
+                                color=heritageMuted())
                         }
                     }
                     LinearProgressIndicator(
@@ -89,7 +89,7 @@ internal fun StudyOverview(
                     fontFamily=BookSerif,fontSize=17.sp)
             }
             if (due > 0) Text("К повторению: $due вопросов",
-                style=MaterialTheme.typography.labelSmall,color=BookColors.muted)
+                style=MaterialTheme.typography.labelSmall,color=heritageMuted())
         }
     }
 }
@@ -129,7 +129,7 @@ internal fun StudyModeGrid(selectedTab: Int,
                             Text(title,Modifier.weight(1f),
                                 style=MaterialTheme.typography.titleSmall.copy(
                                     fontFamily=BookSerif,fontSize=16.sp),
-                                color=BookColors.ink,maxLines=2,
+                                color=heritageInk(),maxLines=2,
                                 overflow=TextOverflow.Ellipsis)
                             Text("›",style=MaterialTheme.typography.titleLarge,
                                 color=BookColors.gold)
