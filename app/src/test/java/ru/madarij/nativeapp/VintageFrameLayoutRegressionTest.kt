@@ -28,7 +28,7 @@ class VintageFrameLayoutRegressionTest {
 
     @Test fun graphicBorderThicknessIsBoundedForCompactCards() {
         val styles = source("HeritageFrames.kt")
-        val weights = Regex("""HeritageFrameKind\\.(SECTION|SUBSECTION)\\s*->\\s*([0-9.]+)f""")
+        val weights = Regex("""HeritageFrameKind[.](SECTION|SUBSECTION) *-> *([0-9.]+)f""")
             .findAll(styles).associate { it.groupValues[1] to it.groupValues[2].toFloat() }
         val section = requireNotNull(weights["SECTION"]) { "SECTION weight missing" }
         val subsection = requireNotNull(weights["SUBSECTION"]) { "SUBSECTION weight missing" }
