@@ -464,7 +464,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     if(exercises.size>visibleExercises) item {TextButton(onClick={visibleExercises+=15}) {Text("Показать ещё · ${exercises.size-visibleExercises}")}}
                 }
                 else {
-                    item {Text(exercise.prompt,style=MaterialTheme.typography.titleLarge);OutlinedTextField(reflection,{reflection=it;noteSaved=false},label={Text("Ваш ответ")},modifier=Modifier.fillMaxWidth(),minLines=5)}
+                    item {Text(exercise.prompt,style=MaterialTheme.typography.titleLarge);OutlinedTextField(reflection,{reflection=it;noteSaved=false},label={Text("Ваш ответ")},modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = .74f),minLines=5)}
                     item {Button(enabled=reflection.isNotBlank() && !noteSaved,onClick={vm.addNote(exercise.chapterId,exercise.sourceParagraphId,"Задание: ${exercise.prompt}\n\n$reflection");noteSaved=true}) {Text(if(noteSaved) "Сохранено в заметках" else "Сохранить ответ")};TextButton(enabled=reflection.trim().isNotEmpty(),onClick={hintVisible=true}) {Text("Показать ориентир после ответа")};if(hintVisible) Text(exercise.hint);TextButton(onClick={onOpenParagraph(exercise.sourceParagraphId)}) {Text("Открыть опорный абзац")};TextButton(onClick={exerciseId=""}) {Text("К заданиям")}}
                     items(notes.filter{it.chapterId==exercise.chapterId && it.paragraphId==exercise.sourceParagraphId},key={"note:${it.id}"}) {note ->Card {Text(note.text,Modifier.padding(16.dp))} }
                 }
@@ -531,7 +531,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         }
                         OutlinedTextField(
                             quizSearch, {quizSearch=it;visibleQuestions=15},
-                            modifier=Modifier.fillMaxWidth(),singleLine=true,
+                            modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = .74f),singleLine=true,
                             label={Text("Найти вопрос")}
                         )
                         Text("Узнавание текста — дословные фразы книги. Вопросы на понимание проверяют смысл.",
@@ -639,7 +639,7 @@ fun GlossaryScreen(onOpenParagraph: (String) -> Unit) {
     var query by rememberSaveable {mutableStateOf("")};var expanded by rememberSaveable {mutableStateOf("")};var loaded by remember {mutableStateOf(false)};var error by remember {mutableStateOf(false)}
     LaunchedEffect(repo) {try {repo.load();loaded=true} catch(e:Exception) {if(e is CancellationException) throw e;error=true}}
     LazyColumn(Modifier.fillMaxSize().padding(16.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp),contentPadding=PaddingValues(bottom=124.dp)) {
-        item {Text("Термины",style=MaterialTheme.typography.headlineSmall);Text("Редакторские пояснения к переводу. Значение терминов уточняется по контексту и первоисточникам.");OutlinedTextField(query,{query=it},label={Text("Поиск термина")},modifier=Modifier.fillMaxWidth())}
+        item {Text("Термины",style=MaterialTheme.typography.headlineSmall);Text("Редакторские пояснения к переводу. Значение терминов уточняется по контексту и первоисточникам.");OutlinedTextField(query,{query=it},label={Text("Поиск термина")},modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = .74f))}
         if(!loaded) item {Text(if(error) "Не удалось загрузить термины." else "Загрузка…")}
         else items(repo.terms.filter{query.isBlank() || "${it.ar} ${it.transcript} ${it.definition}".contains(query,ignoreCase=true)},key={it.id}) {term->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(term.ar,fontFamily=FontFamily(Font(R.font.naskh)),fontSize=28.sp);Text(term.transcript,style=MaterialTheme.typography.titleMedium);Text(term.definition);TextButton(onClick={expanded=if(expanded==term.id) "" else term.id}) {Text(if(expanded==term.id) "Свернуть" else "Подробности и связи")};if(expanded==term.id) {Text(term.extendedDefinition);term.relatedTerms.mapNotNull{id->repo.terms.find{it.id==id}}.forEach{related->TextButton(onClick={query=related.transcript;expanded=related.id}) {Text("Связанный термин: ${related.transcript}")}}};term.sourceParagraphIds.ifEmpty{listOf(term.sourceParagraphId)}.forEachIndexed { i,pid->TextButton(onClick={onOpenParagraph(pid)}) {Text(if(i==0) "Открыть контекст" else "Другой фрагмент ${i+1}")}}}} }
     }
