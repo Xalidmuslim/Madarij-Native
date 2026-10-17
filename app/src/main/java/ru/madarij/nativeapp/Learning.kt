@@ -218,7 +218,13 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         allQuestions = scopedBank.size,
                         due = dueQuestions,
                         writingTasks = if (loaded)
-                            repo.exercises.count { inStudyScope(it.chapterId) } else 0
+                            repo.exercises.count { inStudyScope(it.chapterId) } else 0,
+                        scopeLabel = when {
+                            chapterId.isNotEmpty() -> "по выбранной теме"
+                            selectedVolume == 1 -> "по первому тому"
+                            selectedVolume == 2 -> "по второму тому"
+                            else -> "по обоим томам"
+                        }
                     )
                 }
             }
@@ -334,7 +340,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     chapterId.isNotEmpty() -> scoped
                     checksFilter=="all" -> scoped
                     activeIds.isEmpty() -> scoped.take(3)
-                    else -> scoped.filter { it.id in activeIds }.ifEmpty { scoped.take(3) }
+                    else -> scoped.filter { it.id in activeIds }.ifEmpty { scoped.take(3) }.take(3)
                 }
                 item {
                     Row(Modifier.fillMaxWidth(),
