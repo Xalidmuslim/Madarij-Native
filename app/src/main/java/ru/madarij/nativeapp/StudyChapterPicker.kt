@@ -73,7 +73,7 @@ internal fun StudyChapterPicker(
             OutlinedTextField(
                 value = search,
                 onValueChange = { search = it },
-                modifier = Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = .74f),
+                modifier = Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = 1f, kind = HeritageFrameKind.SEARCH),
                 singleLine = true,
                 label = { Text("Поиск по названию") },
                 placeholder = { Text("Например, покаяние") }
