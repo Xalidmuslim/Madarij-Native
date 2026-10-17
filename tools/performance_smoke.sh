@@ -1,6 +1,30 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -Eeuo pipefail
 mkdir -p performance-results
+# Keep diagnostics if UI Automator is briefly unavailable on SwiftShader CI.
+trap 'code=$?; echo "Smoke failed at line $LINENO (exit $code)" >&2;   adb devices -l >&2 || true;   adb logcat -d -t 500 2>/dev/null | grep -E "FATAL EXCEPTION|ANR in|UiAutomation|UiAutomator"     > performance-results/last-errors.txt || true; exit "$code"' ERR
+capture_ui() {
+  local label="$1"
+  local remote="/sdcard/${label}.xml"
+  local target="performance-results/${label}.xml"
+  for retry in 1 2 3 4; do
+    if adb shell uiautomator dump "$remote" > "performance-results/${label}-attempt.log" 2>&1 &&
+       adb pull "$remote" "$target" >/dev/null 2>&1 &&
+       grep -q '<hierarchy' "$target"; then
+      return 0
+    fi
+    sleep 2
+  done
+  echo "Accessibility hierarchy capture failed: $label" >&2
+  cat "performance-results/${label}-attempt.log" >&2 || true
+  return 1
+}
+capture_screenshot() {
+  local label="$1"
+  # PNG images are supporting evidence, not a dependency of frame metrics.
+  adb exec-out screencap -p > "performance-results/${label}.png" 2>/dev/null ||
+    rm -f "performance-results/${label}.png"
+}
 APK="app/build/outputs/apk/release/app-release.apk"
 # Read the actual isolated QA package from the built APK. Never assume
 # that an ephemeral CI key can replace an owner's installed application.
@@ -36,17 +60,14 @@ echo "---- CONTENTS tap and scroll ----" >> performance-results/measurements.txt
 # Bottom navigation lies at y=870..934 for the fixed 432x960 viewport.
 adb shell input tap 129 906
 sleep 3
-adb shell screencap -p /sdcard/performance-contents.png
-adb pull /sdcard/performance-contents.png performance-results/contents.png >/dev/null
-adb shell uiautomator dump /sdcard/contents.xml >/dev/null 2>&1
-adb pull /sdcard/contents.xml performance-results/contents.xml >/dev/null
+capture_ui contents
+capture_screenshot contents
 adb shell input swipe 210 780 210 300 500
 adb shell input swipe 210 310 210 780 500
 sleep 2
 # Resolve a real visible Read action from the Contents accessibility tree.
 # A fixed Home coordinate fails when the scroll state is restored.
-adb shell uiautomator dump /sdcard/contents-scrolled.xml >/dev/null 2>&1
-adb pull /sdcard/contents-scrolled.xml performance-results/contents-scrolled.xml >/dev/null
+capture_ui contents-scrolled
 python3 - <<'PY'
 from xml.etree import ElementTree as ET
 import re
@@ -79,12 +100,20 @@ if not targets:
     _,_,x,y=min(titles,key=lambda p:p[1])
     subprocess.run(['adb','shell','input','tap',str(x),str(y)],check=True)
     time.sleep(2)
-    subprocess.run(['adb','shell','uiautomator','dump',
-                    '/sdcard/contents-expanded.xml'],check=True,
-                   stdout=subprocess.DEVNULL)
-    subprocess.run(['adb','pull','/sdcard/contents-expanded.xml',
+    for attempt in range(4):
+        result=subprocess.run(['adb','shell','uiautomator','dump',
+                    '/sdcard/contents-expanded.xml'],
+                    stdout=subprocess.PIPE,stderr=subprocess.STDOUT,
+                    text=True,timeout=45)
+        pull=subprocess.run(['adb','pull','/sdcard/contents-expanded.xml',
                     'performance-results/contents-expanded.xml'],
-                   check=True,stdout=subprocess.DEVNULL)
+                    stdout=subprocess.PIPE,stderr=subprocess.STDOUT,
+                    text=True,timeout=30) if result.returncode==0 else None
+        if pull is not None and pull.returncode==0:
+            break
+        time.sleep(2)
+    else:
+        raise SystemExit('Could not acquire accessibility hierarchy after expanding Contents')
     targets=reads(visible_nodes('performance-results/contents-expanded.xml'))
 if not targets:
     raise SystemExit('No visible Read control after opening first semantic section')
@@ -96,10 +125,8 @@ read -r READ_X READ_Y < performance-results/reader-target.txt
 echo "---- READER tap and scroll ----" >> performance-results/measurements.txt
 adb shell input tap "$READ_X" "$READ_Y"
 sleep 4
-adb shell screencap -p /sdcard/performance-reader.png
-adb pull /sdcard/performance-reader.png performance-results/reader.png >/dev/null
-adb shell uiautomator dump /sdcard/reader.xml >/dev/null 2>&1
-adb pull /sdcard/reader.xml performance-results/reader.xml >/dev/null
+capture_ui reader
+capture_screenshot reader
 # If either screen failed to navigate, abort rather than report invalid
 # scrolling metrics as proof of Reader performance.
 python3 - <<'PY'
