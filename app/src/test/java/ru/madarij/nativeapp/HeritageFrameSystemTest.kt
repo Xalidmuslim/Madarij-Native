@@ -18,7 +18,12 @@ class HeritageFrameSystemTest {
         assertTrue(shared.contains("onDrawWithContent"))
         assertTrue(shared.contains("drawRoundRect"))
         assertEquals(2, cards.split("modifier.heritageEtching()").size - 1)
-        assertFalse(shared.contains("R.drawable."))
+        assertTrue(shared.contains("R.drawable.heritage_frame_parchment"))
+        assertTrue(shared.contains("ImageBitmap.imageResource("))
+        assertTrue(shared.contains("srcOffset = IntOffset("))
+        assertTrue(shared.contains("dstSize = IntSize("))
+        assertTrue(shared.contains("x == 1 && y == 1"))
+        assertTrue(shared.contains("filterQuality = FilterQuality.Low"))
         assertFalse(shared.contains("PreloadedBookImage("))
     }
 
@@ -52,6 +57,7 @@ class HeritageFrameSystemTest {
         assertTrue(frame.contains("BookColors.nightBackground"))
         assertTrue(frame.contains("nightExterior"))
         assertTrue(frame.contains("cornerRadius.toPx()"))
+        assertTrue(frame.contains("if (!night)"))
         assertFalse(frame.contains("Random("))
         assertFalse(frame.contains("rememberInfiniteTransition"))
     }
