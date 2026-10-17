@@ -23,6 +23,18 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+@Composable internal fun heritageInk(): Color =
+    if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
+        BookColors.nightText else heritageInk()
+
+@Composable internal fun heritageMuted(): Color =
+    if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
+        BookColors.nightMuted else BookColors.muted
+
+@Composable internal fun heritageCard(): Color =
+    if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
+        BookColors.nightCard else BookColors.card
+
 /**
  * Decorative presentation primitives. No decoded images, GPU saveLayers or
  * effects are added to the existing paper background and leather navigation.
@@ -35,11 +47,11 @@ internal fun HeritageSectionHeading(title: String, modifier: Modifier = Modifier
         horizontalArrangement = Arrangement.spacedBy(10.dp)) {
         Text(title, style = MaterialTheme.typography.titleMedium.copy(
             fontFamily = BookSerif, fontSize = 20.sp, fontWeight = FontWeight.SemiBold),
-            color = BookColors.ink)
+            color = heritageInk())
         Box(Modifier.weight(1f).height(1.dp)
             .background(BookColors.gold.copy(alpha = .35f)))
         if (trailing != null) Text(trailing,
-            style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+            style = MaterialTheme.typography.labelSmall, color = heritageMuted())
         else Text("✥", fontSize = 12.sp, color = BookColors.gold)
     }
 }
@@ -49,7 +61,7 @@ internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier
                             onClick: () -> Unit) {
     val shape = RoundedCornerShape(17.dp)
     Box(modifier.heightIn(min = 44.dp).clip(shape)
-        .background(if (selected) BookColors.leather else BookColors.card.copy(alpha = .48f))
+        .background(if (selected) BookColors.leather else heritageCard().copy(alpha = .64f))
         .border(.9.dp, if (selected) BookColors.gold.copy(alpha = .8f)
                       else BookColors.gold.copy(alpha = .32f), shape)
         .clickable(onClick = onClick).padding(horizontal = 8.dp, vertical = 8.dp),
@@ -57,7 +69,7 @@ internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier
         Text(label, style = MaterialTheme.typography.labelMedium.copy(
             fontFamily = BookSerif, fontSize = 14.sp),
             textAlign = TextAlign.Center, maxLines = 2,
-            color = if (selected) Color(0xFFFFE9C0) else BookColors.ink)
+            color = if (selected) Color(0xFFFFE9C0) else heritageInk())
     }
 }
 
@@ -87,7 +99,7 @@ internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
 @Composable
 internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
     AgedPaperCard(Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = BookColors.card.copy(alpha = .55f)),
+        colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
         border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .32f)),
         shape = RoundedCornerShape(20.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)) {
@@ -104,9 +116,9 @@ internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navi
                     }
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                         Text(item.second, style = MaterialTheme.typography.titleMedium.copy(
-                            fontFamily = BookSerif, fontSize = 20.sp), color = BookColors.ink)
+                            fontFamily = BookSerif, fontSize = 20.sp), color = heritageInk())
                         Text(item.third, style = MaterialTheme.typography.bodySmall,
-                            color = BookColors.muted, maxLines = 2,
+                            color = heritageMuted(), maxLines = 2,
                             overflow = TextOverflow.Ellipsis)
                     }
                     Text("›", fontSize = 29.sp, color = BookColors.gold)
@@ -138,15 +150,15 @@ internal fun HeritageProgressRing(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(value, style = MaterialTheme.typography.headlineMedium.copy(
                     fontSize = 27.sp, fontFamily = BookSerif),
-                    color = BookColors.ink)
+                    color = heritageInk())
                 NavigationGlyph(icon, modifier = Modifier.size(25.dp),
                     tint = BookColors.gold)
             }
         }
         Text(total, style = MaterialTheme.typography.titleMedium.copy(
-            fontFamily = BookSerif, fontSize = 18.sp), color = BookColors.ink)
+            fontFamily = BookSerif, fontSize = 18.sp), color = heritageInk())
         Text(caption, style = MaterialTheme.typography.bodyMedium.copy(
-            fontFamily = BookSerif), color = BookColors.ink)
+            fontFamily = BookSerif), color = heritageInk())
     }
 }
 
@@ -160,9 +172,9 @@ internal fun HeritageMetricRow(icon: String, label: String, value: String,
         NavigationGlyph(icon, modifier = Modifier.size(25.dp), tint = BookColors.gold)
         Text(label, Modifier.weight(1f),
             style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
-            color = BookColors.ink)
+            color = heritageInk())
         Text(value, style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif),
-            color = BookColors.ink)
+            color = heritageInk())
         Text("›", style = MaterialTheme.typography.titleLarge, color = BookColors.gold)
     }
 }
@@ -178,14 +190,14 @@ internal fun HeritageActivityBars(values: List<Int>, labels: List<String>,
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 Text(if (v > 0) "$v" else " ", style = MaterialTheme.typography.labelSmall,
-                    color = BookColors.muted)
+                    color = heritageMuted())
                 val height = (8f + v * 92f / max).dp
                 Box(Modifier.fillMaxWidth(.75f).height(height)
                     .clip(RoundedCornerShape(topStart = 7.dp, topEnd = 7.dp))
                     .background(if (i == highlightIndex)
                         BookColors.gold else BookColors.gold.copy(alpha = .47f)))
                 Text(labels.getOrElse(i) { "" }, style = MaterialTheme.typography.labelSmall,
-                    color = BookColors.ink, textAlign = TextAlign.Center, maxLines = 1)
+                    color = heritageInk(), textAlign = TextAlign.Center, maxLines = 1)
             }
         }
     }
