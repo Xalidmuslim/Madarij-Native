@@ -38,6 +38,25 @@ class ReedPenInkBoundsTest {
         assertTrue(pen.contains("ReedPenCharacterTimeline"))
     }
 
+    @Test fun textMaskTracksSelectionInsteadOfLeakingAcrossLines() {
+        val ink = File("src/main/java/ru/madarij/nativeapp/ReedPenWritingText.kt").readText()
+        assertTrue("Revealed characters must use selection geometry",
+            ink.contains("layout.getPathForRange(0, charIndex)"))
+        assertTrue("Current glyph should still reveal gradually",
+            ink.contains("visibleInk.addRect("))
+        assertTrue("Keep the finished-text fast path",
+            ink.contains("amount >= 0.9999f"))
+        assertTrue("Avoid broad previous-line masks that expose upcoming glyphs",
+            !ink.contains("Rect(0f, 0f, size.width, lineTop)"))
+    }
+
+    @Test fun homeAndContentsCannotPaintUnderFloatingBottomNavigation() {
+        val screen = File("src/main/java/ru/madarij/nativeapp/HomeContents.kt").readText()
+        assertTrue(screen.contains("WindowInsets.navigationBars.asPaddingValues()"))
+        assertTrue(screen.contains("calculateBottomPadding() + 68.dp"))
+        assertEquals(2, screen.split("calculateBottomPadding() + 68.dp").size - 1)
+    }
+
     @Test fun tocTabsAreNativeAndNotBitmapsTakenFromReference() {
         val ui = File("src/main/java/ru/madarij/nativeapp/HeritageUi.kt").readText()
         assertTrue(ui.contains("internal fun HeritageTocVolumeTab("))
