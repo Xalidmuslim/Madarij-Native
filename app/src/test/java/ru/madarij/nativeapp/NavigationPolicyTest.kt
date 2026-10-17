@@ -49,6 +49,7 @@ class NavigationPolicyTest {
         assertEquals(PrimaryBackAction.STAY, primaryBackAction("home"))
         assertEquals(PrimaryBackAction.HOME, primaryBackAction("contents"))
         assertEquals(PrimaryBackAction.HOME, primaryBackAction("study"))
+        assertEquals(PrimaryBackAction.POP, primaryBackAction("study?chapter={chapter}&review={review}"))
         assertEquals(PrimaryBackAction.POP, primaryBackAction("read/{id}"))
     }
 
