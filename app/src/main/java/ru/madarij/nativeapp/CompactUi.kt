@@ -12,6 +12,11 @@ internal object CompactUi {
     const val sectionTitleSp = 17
     const val contentsGroupMinHeightDp = 72
     const val tocMedallionDp = 42
+    const val tocManuscriptIconDp = 38
+    const val tocVolumeMinHeightDp = 48
+    const val tocFilterMinHeightDp = 48
+    const val homeQuoteSizeSp = 20
+    const val homeQuoteLineHeightSp = 26
     const val menuRowMinHeightDp = 60
     const val progressRingDp = 106
     const val activityGraphDp = 118
