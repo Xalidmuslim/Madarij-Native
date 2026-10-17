@@ -22,6 +22,7 @@ internal fun StudyOverview(
     allQuestions: Int,
     due: Int,
     writingTasks: Int,
+    scopeLabel: String,
     onStart: () -> Unit = {}
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
@@ -80,6 +81,9 @@ internal fun StudyOverview(
                         trackColor=BookColors.gold.copy(alpha=.17f))
                 }
             }
+            Text("$writingTasks письменных заданий · $scopeLabel",
+                style = MaterialTheme.typography.labelSmall,
+                color = heritageMuted())
             Button(onClick=onStart,enabled=allQuestions>0,
                 modifier=Modifier.fillMaxWidth().heightIn(min=51.dp),
                 shape=androidx.compose.foundation.shape.RoundedCornerShape(24.dp),
@@ -286,7 +290,7 @@ internal fun StudyAnswerFeedback(
  */
 @Composable
 internal fun StudyScopeBar(selectedLabel: String, onChooseSection: () -> Unit) {
-    HeritageSectionHeading("Выбранный раздел")
+    HeritageSectionHeading("Изучаемый материал")
     AgedPaperCard(onClick=onChooseSection,modifier=Modifier.fillMaxWidth(),
         shape=androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
         border=androidx.compose.foundation.BorderStroke(.9.dp,
