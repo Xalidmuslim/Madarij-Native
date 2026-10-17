@@ -187,10 +187,10 @@ internal fun MadarijTopBar(
                 }
                 if (buttons.textSettings) TextButton(
                     onClick = onTextSettings,
-                    modifier = Modifier.widthIn(min = 48.dp).semantics { contentDescription = "Настройки текста" },
+                    modifier = Modifier.widthIn(min = 56.dp).heightIn(min = 42.dp).heritageEtching(cornerRadius = 10.dp, kind = HeritageFrameKind.SMALL_BUTTON).semantics { contentDescription = "Настройки текста" },
                     contentPadding = PaddingValues(0.dp)
                 ) {
-                    Text("Шрифт", color = BookColors.gold, fontSize = 13.sp)
+                    Row(verticalAlignment = Alignment.CenterVertically) { VintageAssetIcon(VintageAssetIconKind.SETTINGS, Modifier.size(17.dp)); Spacer(Modifier.width(3.dp)); Text("Шрифт", color = BookColors.gold, fontSize = 13.sp) }
                 }
             }
         } else {
