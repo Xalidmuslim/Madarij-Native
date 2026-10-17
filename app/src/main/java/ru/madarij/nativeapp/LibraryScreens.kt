@@ -172,28 +172,34 @@ internal fun ProgressScreen(vm:BookViewModel,open:(String,String?)->Unit,navigat
 
 @Composable
 internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(start=16.dp, top=12.dp, end=16.dp, bottom=124.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        item { ScreenHeading("Ещё", "Инструменты и личные материалы") }
-        listOf(
-            "study" to ("Изучение" to "Проверки, задания и повторение"),
-            "bookmarks" to ("Закладки" to "Сохранённые главы, цитаты и места"),
-            "notes" to ("Мои заметки" to "Личные записи и размышления"),
-            "glossary" to ("Словарь терминов" to "Пояснения с исходным контекстом"),
-            "progress" to ("Прогресс" to "Чтение, изучение и повторение"),
-            "settings" to ("Настройки" to "Шрифты, тема и яркость"),
-            "about" to ("О книге" to "Автор, источник и статус перевода")
-        ).forEach { (route, texts) ->
-            item {
-                AgedPaperCard(onClick={navigate(route)},modifier=Modifier.fillMaxWidth()) {
-                    Row(Modifier.padding(horizontal=14.dp,vertical=10.dp),horizontalArrangement=Arrangement.spacedBy(12.dp),verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                            Text(texts.first,style=MaterialTheme.typography.titleSmall)
-                            Text(texts.second,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
-                        }
-                        Text("›",style=MaterialTheme.typography.titleLarge,color=MaterialTheme.colorScheme.primary)
-                    }
-                }
-            }
+    LazyColumn(contentPadding=PaddingValues(start=17.dp,top=12.dp,end=17.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(12.dp)) {
+        item {
+            HeritageSectionHeading("ИЗУЧЕНИЕ")
+            HeritageMenuGroup(listOf(
+                Triple("study", "Изучение", "Викторины, письменные задания и повторение"),
+                Triple("progress", "Мой прогресс", "Чтение, результаты и активность")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("ЛИЧНОЕ")
+            HeritageMenuGroup(listOf(
+                Triple("bookmarks", "Закладки", "Сохранённые главы, цитаты и места"),
+                Triple("notes", "Мои заметки", "Личные записи и размышления")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("СПРАВКА")
+            HeritageMenuGroup(listOf(
+                Triple("glossary", "Словарь терминов", "Пояснения с исходным контекстом"),
+                Triple("about", "О книге", "Автор, источники и статус перевода")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("НАСТРОЙКИ")
+            HeritageMenuGroup(listOf(
+                Triple("settings", "Настройки", "Шрифты, оформление и чтение")
+            ), navigate)
         }
     }
 }
