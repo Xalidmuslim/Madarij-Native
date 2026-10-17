@@ -189,10 +189,11 @@ internal fun HeritageTocVolumeTab(
                 ), shape
             )
             .border(.9.dp, rim, shape)
-            .selectable(selected = selected, role = Role.Tab, onClick = onClick),
+            .selectable(selected = selected, role = Role.Tab, onClick = onClick)
+            .heritageEtching(cornerRadius = 12.dp, prominence = .80f),
         contentAlignment = Alignment.Center
     ) {
-        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
+        // Aged raster nine-slice supplies the frame without double outlines.
         Text(
             label, style = MaterialTheme.typography.titleMedium.copy(
                 fontFamily = BookSerif, fontSize = 17.sp, fontWeight = FontWeight.Medium),
@@ -251,10 +252,11 @@ internal fun HeritageTocFilterTab(
                 ), shape
             )
             .border(.9.dp, rim, shape)
-            .selectable(selected = selected, role = Role.Tab, onClick = onClick),
+            .selectable(selected = selected, role = Role.Tab, onClick = onClick)
+            .heritageEtching(cornerRadius = 11.dp, prominence = .80f),
         contentAlignment = Alignment.Center
     ) {
-        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
+        // Aged raster nine-slice supplies the frame without double outlines.
         Row(
             Modifier.fillMaxWidth().padding(horizontal = 5.dp, vertical = 5.dp),
             verticalAlignment = Alignment.CenterVertically,
