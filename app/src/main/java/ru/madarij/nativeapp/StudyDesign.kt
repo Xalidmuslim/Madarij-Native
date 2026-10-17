@@ -26,30 +26,30 @@ internal fun StudyOverview(
     onStart: () -> Unit = {}
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
-        shape = androidx.compose.foundation.shape.RoundedCornerShape(23.dp),
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
         border = androidx.compose.foundation.BorderStroke(.8.dp,
             BookColors.gold.copy(alpha = .3f)),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha=.82f))) {
-        Column(Modifier.padding(horizontal=19.dp,vertical=18.dp),
-            verticalArrangement=Arrangement.spacedBy(13.dp)) {
+        Column(Modifier.padding(horizontal=15.dp,vertical=12.dp),
+            verticalArrangement=Arrangement.spacedBy(8.dp)) {
             Text("Мой путь по книге",
                 style=MaterialTheme.typography.headlineSmall.copy(
-                    fontFamily=BookSerif,fontSize=27.sp),color=heritageInk())
+                    fontFamily=BookSerif,fontSize=22.sp),color=heritageInk())
             Text("Читайте, проверяйте понимание и возвращайтесь к трудным вопросам.",
                 style=MaterialTheme.typography.bodyMedium,color=heritageMuted())
             HorizontalDivider(color=BookColors.gold.copy(alpha=.23f))
-            Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(17.dp)) {
+            Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(11.dp)) {
                 Column(Modifier.weight(1f),
                     verticalArrangement=Arrangement.spacedBy(5.dp)) {
                     Row(verticalAlignment=Alignment.CenterVertically,
                         horizontalArrangement=Arrangement.spacedBy(10.dp)) {
-                        NavigationGlyph("contents",modifier=Modifier.size(32.dp),
+                        NavigationGlyph("contents",modifier=Modifier.size(26.dp),
                             tint=BookColors.gold)
                         Column {
                             Text("$readChapters / $allChapters",
                                 style=MaterialTheme.typography.titleLarge.copy(
-                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
+                                    fontFamily=BookSerif,fontSize=19.sp),color=heritageInk())
                             Text("Прочитано",style=MaterialTheme.typography.labelMedium,
                                 color=heritageMuted())
                         }
@@ -64,12 +64,12 @@ internal fun StudyOverview(
                     verticalArrangement=Arrangement.spacedBy(5.dp)) {
                     Row(verticalAlignment=Alignment.CenterVertically,
                         horizontalArrangement=Arrangement.spacedBy(10.dp)) {
-                        NavigationGlyph("study",modifier=Modifier.size(32.dp),
+                        NavigationGlyph("study",modifier=Modifier.size(26.dp),
                             tint=BookColors.gold)
                         Column {
                             Text("$answered / $allQuestions",
                                 style=MaterialTheme.typography.titleLarge.copy(
-                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
+                                    fontFamily=BookSerif,fontSize=19.sp),color=heritageInk())
                             Text("Проверено",style=MaterialTheme.typography.labelMedium,
                                 color=heritageMuted())
                         }
@@ -85,13 +85,13 @@ internal fun StudyOverview(
                 style = MaterialTheme.typography.labelSmall,
                 color = heritageMuted())
             Button(onClick=onStart,enabled=allQuestions>0,
-                modifier=Modifier.fillMaxWidth().heightIn(min=51.dp),
+                modifier=Modifier.fillMaxWidth().heightIn(min=CompactUi.actionMinHeightDp.dp),
                 shape=androidx.compose.foundation.shape.RoundedCornerShape(24.dp),
                 colors=ButtonDefaults.buttonColors(
                     containerColor=BookColors.leather,
                     contentColor=androidx.compose.ui.graphics.Color(0xFFFFEBD1))) {
                 Text("▶   Начать проверку · 10 вопросов   ›",
-                    fontFamily=BookSerif,fontSize=17.sp)
+                    fontFamily=BookSerif,fontSize=16.sp)
             }
             if (due > 0) Text("К повторению: $due вопросов",
                 style=MaterialTheme.typography.labelSmall,color=heritageMuted())
@@ -125,11 +125,11 @@ internal fun StudyModeGrid(selectedTab: Int,
                             if(selectedTab==index) 1.2.dp else .7.dp,
                             BookColors.gold.copy(alpha=if(selectedTab==index) .72f else .3f)),
                         shape=androidx.compose.foundation.shape.RoundedCornerShape(18.dp)) {
-                        Row(Modifier.fillMaxWidth().heightIn(min=63.dp)
-                            .padding(horizontal=10.dp,vertical=9.dp),
+                        Row(Modifier.fillMaxWidth().heightIn(min=58.dp)
+                            .padding(horizontal=9.dp,vertical=7.dp),
                             verticalAlignment=Alignment.CenterVertically,
                             horizontalArrangement=Arrangement.spacedBy(7.dp)) {
-                            NavigationGlyph(icon,modifier=Modifier.size(27.dp),
+                            NavigationGlyph(icon,modifier=Modifier.size(24.dp),
                                 tint=BookColors.gold)
                             Text(title,Modifier.weight(1f),
                                 style=MaterialTheme.typography.titleSmall.copy(
@@ -192,7 +192,7 @@ private fun StudyActionRow(title: String, subtitle: String, marker: String,
             containerColor = if (prominent) MaterialTheme.colorScheme.primaryContainer.copy(alpha = .58f)
                 else MaterialTheme.colorScheme.surfaceVariant)
     ) {
-        Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 14.dp),
+        Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 10.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalAlignment = Alignment.CenterVertically) {
             Text(marker, style = MaterialTheme.typography.titleSmall,
@@ -222,7 +222,7 @@ internal fun StudyModeHeader(tab: Int, onBack: () -> Unit) {
             contentPadding = PaddingValues(horizontal = 0.dp)) {
             Text("‹ К обзору изучения")
         }
-        Text(heading, style = MaterialTheme.typography.headlineSmall,
+        Text(heading, style = MaterialTheme.typography.titleLarge,
             fontFamily = BookSerif)
         Text(description, style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -239,7 +239,7 @@ internal fun StudyQuestionHeading(
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
-        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Column(Modifier.padding(11.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(chapter, style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary)
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
@@ -268,7 +268,7 @@ internal fun StudyAnswerFeedback(
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
-        Column(Modifier.padding(15.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(if (isCorrect) "Верно по тексту книги" else "Стоит повторить",
                 style = MaterialTheme.typography.titleMedium)
             Text(detail, style = MaterialTheme.typography.bodyMedium)
@@ -296,15 +296,15 @@ internal fun StudyScopeBar(selectedLabel: String, onChooseSection: () -> Unit) {
         border=androidx.compose.foundation.BorderStroke(.9.dp,
             BookColors.gold.copy(alpha=.4f)),
         colors=CardDefaults.cardColors(containerColor=BookColors.card.copy(alpha=.75f))) {
-        Row(Modifier.fillMaxWidth().heightIn(min=64.dp)
-            .padding(horizontal=14.dp,vertical=10.dp),
+        Row(Modifier.fillMaxWidth().heightIn(min=52.dp)
+            .padding(horizontal=11.dp,vertical=7.dp),
             verticalAlignment=Alignment.CenterVertically,
             horizontalArrangement=Arrangement.spacedBy(12.dp)) {
-            NavigationGlyph("contents",modifier=Modifier.size(31.dp),
+            NavigationGlyph("contents",modifier=Modifier.size(25.dp),
                 tint=BookColors.gold)
             Text(selectedLabel,Modifier.weight(1f),
                 style=MaterialTheme.typography.bodyMedium.copy(
-                    fontFamily=BookSerif,fontSize=17.sp),
+                    fontFamily=BookSerif,fontSize=16.sp),
                 color=BookColors.ink,maxLines=2,overflow=TextOverflow.Ellipsis)
             Text("⌄",style=MaterialTheme.typography.titleLarge,
                 color=BookColors.gold)
