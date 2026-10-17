@@ -129,14 +129,19 @@ internal fun HomeScreen(
                             onOpenReminder(reminder)
                         }) {
                             ReedPenWritingText(
+                                modifier = Modifier.fillMaxWidth()
+                                    .padding(top = 4.dp, bottom = 12.dp),
                                 text = reminder.text,
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontFamily = FontFamily(Font(R.font.bad_script)),
                                     fontWeight = FontWeight.Bold,
                                     fontSize = CompactUi.homeQuoteSizeSp.sp,
-                                    lineHeight = CompactUi.homeQuoteLineHeightSp.sp
+                                    lineHeight = CompactUi.homeQuoteLineHeightSp.sp,
+                                    platformStyle = androidx.compose.ui.text.PlatformTextStyle(
+                                        includeFontPadding = true
+                                    )
                                 ),
-                                color = Color(0xFF52341F),
+                                color = Color(0xFF3E281A),
                                 reducedMotion = reducedMotion,
                                 animate = !inkFinished,
                                 onFinished = onInkFinished
