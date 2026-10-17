@@ -66,7 +66,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
     var saving by remember { mutableStateOf(false) }
     var chapterMenu by remember { mutableStateOf(false) }
     var sessionNotice by remember { mutableStateOf("") }
-    var checksFilter by rememberSaveable { mutableStateOf("in_progress") }
+    var checksFilter by rememberSaveable { mutableStateOf("all") }
+    var showAllStudySections by rememberSaveable { mutableStateOf(false) }
     var showChecksHelp by rememberSaveable { mutableStateOf(false) }
     var visibleQuestions by rememberSaveable { mutableIntStateOf(8) }
     var visibleExercises by rememberSaveable { mutableIntStateOf(8) }
@@ -144,7 +145,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 exerciseId = ""
                 sessionIds = ""
                 sessionFinished = false
-                checksFilter = "in_progress"
+                checksFilter = "all"
                 visibleQuestions = 8
                 visibleExercises = 8
                 chapterMenu = false
@@ -158,7 +159,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                 hintVisible = false
                 sessionIds = ""
                 sessionFinished = false
-                checksFilter = "in_progress"
+                checksFilter = "all"
                 visibleQuestions = 8
                 visibleExercises = 8
                 chapterMenu = false
@@ -171,45 +172,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
         verticalArrangement=Arrangement.spacedBy(10.dp),
         contentPadding=PaddingValues(start=0.dp,top=12.dp,end=0.dp,bottom=124.dp)) {
         if (q == null && exercise == null) {
-            item {
-                if (tab != 0) {
-                    StudyModeHeader(tab) {
-                        tab = 0
-                        questionId = ""
-                        sessionIds = ""
-                        sessionFinished = false
-                    }
-                }
-                StudyScopeBar(
-                    selectedLabel = chapterTitles[chapterId] ?: when (selectedVolume) {
-                        1 -> "Том 1 · все разделы"
-                        2 -> "Том 2 · все разделы"
-                        else -> "Оба тома · все разделы"
-                    },
-                    onChooseSection = { chapterMenu = true }
-                )
-            }
             if (tab == 0) {
-                item {
-                    StudyMainActions(
-                        availableQuestions = scopedBank.size,
-                        writingTasks = if (loaded)
-                            repo.exercises.count { inStudyScope(it.chapterId) } else 0,
-                        due = dueQuestions,
-                        onQuiz = {
-                            // One tap starts a focused lesson, not another menu.
-                            beginSession()
-                        },
-                        onWriting = {
-                            tab = 2
-                            exerciseId = ""
-                        },
-                        onReview = {
-                            tab = 3
-                            questionId = ""
-                        }
-                    )
-                }
                 item {
                     StudyOverview(
                         readChapters = scopedChapters.count { it.id in readIds },
@@ -217,10 +180,39 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                         answered = scopedBank.count { (attempts[it.id]?.count ?: 0) > 0 },
                         allQuestions = scopedBank.size,
                         due = dueQuestions,
-                        writingTasks = if (loaded)
-                            repo.exercises.count { inStudyScope(it.chapterId) } else 0
+                        writingTasks = if(loaded)
+                            repo.exercises.count { inStudyScope(it.chapterId) } else 0,
+                        onStart = { beginSession() }
                     )
                 }
+                item {
+                    StudyModeGrid(
+                        selectedTab = 0,
+                        onSections = {tab=0},
+                        onQuiz = {tab=1;questionId="";sessionIds=""},
+                        onWriting = {tab=2;exerciseId=""},
+                        onReview = {tab=3;questionId="";sessionIds=""}
+                    )
+                }
+            } else {
+                item {
+                    StudyModeHeader(tab) {
+                        tab=0
+                        questionId=""
+                        sessionIds=""
+                        sessionFinished=false
+                    }
+                }
+            }
+            item {
+                StudyScopeBar(
+                    selectedLabel = chapterTitles[chapterId] ?: when(selectedVolume) {
+                        1 -> "Все разделы · том 1"
+                        2 -> "Все разделы · том 2"
+                        else -> "Все разделы · оба тома"
+                    },
+                    onChooseSection = {chapterMenu=true}
+                )
             }
         } else item {
             TextButton(onClick = {
