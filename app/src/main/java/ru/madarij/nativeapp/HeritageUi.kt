@@ -140,98 +140,132 @@ internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
     HeritageManuscriptNumber(number, modifier)
 }
 
-/** Volumes: understated old binding tabs, not generic rounded Material chips. */
+/**
+ * Two natively drawn parchment/leather page-tabs.
+ * Unlike a bitmap cut from a reference, the frame scales with the screen,
+ * responds to theme and selected state, and remains a real accessible tab.
+ */
 @Composable
 internal fun HeritageTocVolumeTab(
     label: String, selected: Boolean, modifier: Modifier = Modifier, onClick: () -> Unit
 ) {
-    val shape = RoundedCornerShape(topStart = 13.dp, topEnd = 13.dp,
-        bottomStart = 5.dp, bottomEnd = 5.dp)
-    val rim = if (selected) Color(0xFFC69B61) else Color(0xFFC0A078)
+    val shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp,
+        bottomStart = 7.dp, bottomEnd = 7.dp)
+    val rim = if (selected) Color(0xFFCDA36D) else Color(0xFFBD9870)
     Box(
         modifier.heightIn(min = CompactUi.tocVolumeMinHeightDp.dp)
             .clip(shape)
-            .background(Brush.verticalGradient(
-                if (selected) listOf(Color(0xFF573723), Color(0xFF28180F))
-                else listOf(Color(0xFFFFF3DE), Color(0xFFE6CFAB))), shape)
-            .border(1.dp, rim, shape)
+            .background(
+                Brush.verticalGradient(
+                    if (selected) listOf(Color(0xFF503321), Color(0xFF2C1B13))
+                    else listOf(Color(0xFFFFF2D8), Color(0xFFEBD5B2))
+                ), shape
+            )
+            .border(.9.dp, rim, shape)
             .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
-        Canvas(Modifier.matchParentSize()) {
-            drawLine(rim.copy(alpha = .7f),
-                Offset(8.dp.toPx(), 5.dp.toPx()),
-                Offset(size.width - 8.dp.toPx(), 5.dp.toPx()),
-                strokeWidth = .65.dp.toPx())
-            drawLine(rim.copy(alpha = .40f),
-                Offset(5.dp.toPx(), size.height - 4.dp.toPx()),
-                Offset(size.width - 5.dp.toPx(), size.height - 4.dp.toPx()),
-                strokeWidth = .7.dp.toPx())
-        }
-        Text(label,
-            style = MaterialTheme.typography.titleMedium.copy(
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
+        Text(
+            label, style = MaterialTheme.typography.titleMedium.copy(
                 fontFamily = BookSerif, fontSize = 17.sp, fontWeight = FontWeight.Medium),
-            color = if (selected) Color(0xFFFFE9C3) else Color(0xFF422A1A),
-            maxLines = 1, textAlign = TextAlign.Center)
+            color = if (selected) Color(0xFFFFEDCD) else Color(0xFF4C301F),
+            maxLines = 1, textAlign = TextAlign.Center
+        )
     }
 }
 
-/** Compact parchment filters for All / Read / With bookmarks. */
+/**
+ * A restrained old-document rim: a continuous etched inner outline and two
+ * tiny binding marks. Native vector drawing only, no copied screenshot assets.
+ */
+@Composable
+private fun HeritageTocEngraving(
+    color: Color, selected: Boolean, modifier: Modifier = Modifier
+) {
+    Canvas(modifier) {
+        val inset = 3.dp.toPx()
+        val bodyWidth = (size.width - inset * 2f).coerceAtLeast(0f)
+        val bodyHeight = (size.height - inset * 2f).coerceAtLeast(0f)
+        drawRoundRect(
+            color = color.copy(alpha = if (selected) .70f else .52f),
+            topLeft = Offset(inset, inset),
+            size = Size(bodyWidth, bodyHeight),
+            cornerRadius = CornerRadius(7.dp.toPx()),
+            style = Stroke(.6.dp.toPx())
+        )
+        val y = 6.dp.toPx()
+        val x1 = 12.dp.toPx()
+        val x2 = (size.width - x1).coerceAtLeast(x1)
+        drawLine(
+            color = Color.White.copy(alpha = if (selected) .12f else .44f),
+            start = Offset(x1, y), end = Offset(x2, y),
+            strokeWidth = .7.dp.toPx()
+        )
+    }
+}
+
+/** Same parchment-frame vocabulary for all three filtering actions. */
 @Composable
 internal fun HeritageTocFilterTab(
     label: String, kind: String, selected: Boolean,
     modifier: Modifier = Modifier, onClick: () -> Unit
 ) {
     val shape = RoundedCornerShape(11.dp)
-    val accent = if (selected) Color(0xFFF2D3A0) else Color(0xFF775035)
+    val rim = if (selected) Color(0xFFCDA36D) else Color(0xFFC3A17D)
+    val ink = if (selected) Color(0xFFFBE5C5) else Color(0xFF5A3825)
     Box(
         modifier.heightIn(min = CompactUi.tocFilterMinHeightDp.dp)
             .clip(shape)
-            .background(Brush.verticalGradient(
-                if (selected) listOf(Color(0xFF573723), Color(0xFF2D1A11))
-                else listOf(Color(0xFFFFF1DB), Color(0xFFE9D4B4))), shape)
-            .border(1.dp, if (selected) Color(0xFFBF925C) else Color(0xFFBDA07B), shape)
+            .background(
+                Brush.verticalGradient(
+                    if (selected) listOf(Color(0xFF503321), Color(0xFF2B1B14))
+                    else listOf(Color(0xFFFFEFD5), Color(0xFFECD6B8))
+                ), shape
+            )
+            .border(.9.dp, rim, shape)
             .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 6.dp),
+            Modifier.fillMaxWidth().padding(horizontal = 5.dp, vertical = 5.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
             when (kind) {
-                "all" -> Canvas(Modifier.size(16.dp)) {
-                    val line = 1.25.dp.toPx()
-                    for (index in 0..2) {
-                        val y = size.height * (.15f + index * .23f)
-                        drawRoundRect(color = accent, topLeft = Offset(size.width * .20f,y),
-                            size = Size(size.width * .60f, size.height * .15f),
-                            cornerRadius = CornerRadius(1.dp.toPx()))
-                        drawLine(if (selected) Color(0xFF53331E) else Color(0xFFFFEAD0),
-                            Offset(size.width * .28f,y + line),
-                            Offset(size.width * .73f,y + line), line)
+                "all" -> Canvas(Modifier.size(14.dp)) {
+                    repeat(3) { index ->
+                        val y = size.height * (.14f + index * .26f)
+                        drawRoundRect(
+                            color = ink, topLeft = Offset(size.width * .16f, y),
+                            size = Size(size.width * .70f, size.height * .14f),
+                            cornerRadius = CornerRadius(.8.dp.toPx())
+                        )
                     }
                 }
-                "read" -> Canvas(Modifier.size(16.dp)) {
-                    drawCircle(accent, radius = size.minDimension * .42f,
-                        style = Stroke(1.5.dp.toPx()))
-                    val p = Path().apply {
+                "read" -> Canvas(Modifier.size(14.dp)) {
+                    drawCircle(ink, radius = size.minDimension * .41f,
+                        style = Stroke(1.3.dp.toPx()))
+                    val check = Path().apply {
                         moveTo(size.width * .24f, size.height * .51f)
-                        lineTo(size.width * .44f, size.height * .70f)
-                        lineTo(size.width * .76f, size.height * .29f)
+                        lineTo(size.width * .44f, size.height * .69f)
+                        lineTo(size.width * .75f, size.height * .30f)
                     }
-                    drawPath(p, accent, style = Stroke(1.6.dp.toPx(), cap = StrokeCap.Round))
+                    drawPath(check, ink, style = Stroke(1.35.dp.toPx(), cap = StrokeCap.Round))
                 }
                 else -> NavigationGlyph("bookmarks",
-                    modifier = Modifier.size(16.dp), tint = accent)
+                    modifier = Modifier.size(14.dp), tint = ink)
             }
             Spacer(Modifier.width(4.dp))
-            Text(label,
-                style = MaterialTheme.typography.labelMedium.copy(
-                    fontFamily = BookSerif, fontSize = 12.sp, fontWeight = FontWeight.Medium),
-                color = if (selected) Color(0xFFFFE9C3) else Color(0xFF4C3322),
-                textAlign = TextAlign.Center, maxLines = 2,
-                overflow = TextOverflow.Clip, lineHeight = 15.sp)
+            Text(
+                label, style = MaterialTheme.typography.labelMedium.copy(
+                    fontFamily = BookSerif, fontSize = 13.sp,
+                    lineHeight = 15.sp, fontWeight = FontWeight.Medium
+                ),
+                color = ink, textAlign = TextAlign.Center, maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
         }
     }
 }

@@ -70,6 +70,21 @@ internal class ReedPenCharacterTimeline(text: String) {
 }
 
 /**
+ * The ink glyphs of Bad Script may extend below typography line metrics.
+ * A reveal clipped exactly at getLineBottom() cuts Cyrillic descenders.
+ * Keep a small ink-safe margin while staying within the text drawing area.
+ */
+internal fun reedPenVisibleLineBounds(
+    lineTop: Float, lineBottom: Float,
+    glyphTop: Float, glyphBottom: Float,
+    overscan: Float, height: Float
+): Pair<Float, Float> {
+    val top = (minOf(lineTop, glyphTop) - overscan).coerceAtLeast(0f)
+    val bottom = (maxOf(lineBottom, glyphBottom) + overscan).coerceAtMost(height)
+    return top to bottom
+}
+
+/**
  * A compact, fully native reed-pen handwriting reveal.
  * All characters are measured in their FINAL positions. The ink mask follows
  * actual glyph bounding boxes and softly unveils each character at natural pace, while a small
@@ -123,8 +138,14 @@ internal fun ReedPenWritingText(
                     val fraction = (position - charIndex).coerceIn(0f, 1f)
                     val line = layout.getLineForOffset(charIndex)
                     val glyph = layout.getBoundingBox(charIndex)
-                    val lineTop = layout.getLineTop(line).toFloat()
-                    val lineBottom = layout.getLineBottom(line).toFloat()
+                    val (lineTop, lineBottom) = reedPenVisibleLineBounds(
+                        lineTop = layout.getLineTop(line).toFloat(),
+                        lineBottom = layout.getLineBottom(line).toFloat(),
+                        glyphTop = glyph.top,
+                        glyphBottom = glyph.bottom,
+                        overscan = 7.dp.toPx(),
+                        height = size.height
+                    )
                     val x = (glyph.left + glyph.width * fraction).coerceIn(0f, size.width)
                     val visibleInk = Path().apply {
                         if (lineTop > 0f) addRect(Rect(0f, 0f, size.width, lineTop))

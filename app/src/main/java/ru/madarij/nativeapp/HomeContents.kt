@@ -129,14 +129,19 @@ internal fun HomeScreen(
                             onOpenReminder(reminder)
                         }) {
                             ReedPenWritingText(
+                                modifier = Modifier.fillMaxWidth()
+                                    .padding(top = 4.dp, bottom = 12.dp),
                                 text = reminder.text,
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontFamily = FontFamily(Font(R.font.bad_script)),
                                     fontWeight = FontWeight.Bold,
                                     fontSize = CompactUi.homeQuoteSizeSp.sp,
-                                    lineHeight = CompactUi.homeQuoteLineHeightSp.sp
+                                    lineHeight = CompactUi.homeQuoteLineHeightSp.sp,
+                                    platformStyle = androidx.compose.ui.text.PlatformTextStyle(
+                                        includeFontPadding = true
+                                    )
                                 ),
-                                color = Color(0xFF52341F),
+                                color = Color(0xFF3E281A),
                                 reducedMotion = reducedMotion,
                                 animate = !inkFinished,
                                 onFinished = onInkFinished
@@ -413,7 +418,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     modifier=Modifier.fillMaxWidth(),
                     border=BorderStroke(.8.dp,BookColors.gold.copy(alpha=.3f)),
                     colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.86f))) {
-                    Row(Modifier.fillMaxWidth().padding(horizontal=14.dp,vertical=10.dp),
+                    Row(Modifier.fillMaxWidth().padding(horizontal=13.dp,vertical=8.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(5.dp)) {
                             Text("Продолжить с места остановки",
@@ -443,7 +448,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 trailingIcon={
                     if(query.isNotBlank()) TextButton(onClick={query="";resetList()}) {Text("×")}
                 },
-                shape=RoundedCornerShape(22.dp),
+                shape=RoundedCornerShape(14.dp),
                 colors=OutlinedTextFieldDefaults.colors(
                     focusedContainerColor=BookColors.card.copy(alpha=.6f),
                     unfocusedContainerColor=BookColors.card.copy(alpha=.43f),
@@ -455,7 +460,14 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(6.dp)) {
                 listOf("all" to "Все","read" to "Прочитано","saved" to "С закладками")
                     .forEach { (key,label) ->
-                        HeritageTocFilterTab(label,key,filter==key,Modifier.weight(1f)) {
+                        HeritageTocFilterTab(
+                            label, key, filter==key,
+                            Modifier.weight(when (key) {
+                                "all" -> .82f
+                                "read" -> 1.08f
+                                else -> 1.30f
+                            })
+                        ) {
                             filter=key
                             resetList()
                         }
