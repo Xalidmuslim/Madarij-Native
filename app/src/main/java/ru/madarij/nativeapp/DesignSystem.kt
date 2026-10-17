@@ -426,80 +426,148 @@ internal fun SettingSwitch(label: String, checked: Boolean, change: (Boolean) ->
 @Composable
 private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> Unit) {
     AgedPaperCard(
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-        shape = RoundedCornerShape(AppRadius.medium),
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .42f)),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .72f)),
+        shape = RoundedCornerShape(AppRadius.large),
+        border = BorderStroke(.85.dp, BookColors.gold.copy(alpha = .3f)),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
-        Column(Modifier.fillMaxWidth().padding(horizontal = 15.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Text(title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
+        Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 13.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Text(title, style = MaterialTheme.typography.titleMedium.copy(
+                fontFamily = BookSerif, fontSize = 20.sp), color = BookColors.ink)
             content()
         }
     }
 }
 
 @Composable
-private fun ReadingSlider(label: String, valueLabel: String, value: Float, range: ClosedFloatingPointRange<Float>, onValue: (Float) -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Text(label, style = MaterialTheme.typography.bodyMedium)
-            Text(valueLabel, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+private fun ReadingSlider(label: String, valueLabel: String, value: Float,
+    range: ClosedFloatingPointRange<Float>, onValue: (Float) -> Unit, step: Float = 1f) {
+    Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically) {
+            Text(label, style = MaterialTheme.typography.bodyMedium, color = BookColors.ink)
+            Text(valueLabel, style = MaterialTheme.typography.labelMedium, color = BookColors.muted)
         }
-        BookTextSlider(value, onValue, {}, range = range)
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            TextButton(onClick = { onValue((value - step).coerceIn(range.start, range.endInclusive)) },
+                enabled = value > range.start,
+                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
+                Text("−", color = BookColors.ink, fontSize = 21.sp)
+            }
+            Box(Modifier.weight(1f)) {
+                BookTextSlider(value, onValue, {}, range = range)
+            }
+            TextButton(onClick = { onValue((value + step).coerceIn(range.start, range.endInclusive)) },
+                enabled = value < range.endInclusive,
+                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
+                Text("+", color = BookColors.ink, fontSize = 21.sp)
+            }
+        }
     }
 }
 
 @Composable
 fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
-    LazyColumn(contentPadding = PaddingValues(horizontal=16.dp,vertical=10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+    LazyColumn(contentPadding = PaddingValues(start=17.dp,end=17.dp,top=10.dp,bottom=128.dp),
+        verticalArrangement = Arrangement.spacedBy(13.dp)) {
         item {
-            SettingsGroup("Оформление") {
-                Text("Фон чтения", style = MaterialTheme.typography.labelLarge)
+            HeritageSectionHeading("Оформление")
+            SettingsGroup("Фон чтения") {
                 ReadingPaperSelector(value.paperTone) { newTone ->
-                    update(value.copy(paperTone = newTone, theme = if (value.theme == "dark") "sepia" else value.theme))
+                    update(value.copy(paperTone = newTone,
+                        theme = if (value.theme == "dark") "sepia" else value.theme))
                 }
-                SettingSwitch("Ночной режим", value.theme == "dark",
-                    { update(value.copy(theme = if (it) "dark" else "sepia")) })
-                Text("Русский шрифт", style = MaterialTheme.typography.labelLarge)
-                Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { listOf("sans" to "Стандартный", "book" to "Книжный", "serif" to "С засечками").forEach { (key,label) -> FilterChip(value.russianFont == key, { update(value.copy(russianFont = key)) }, { Text(label) }) } }
-                ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}", value.russianSize, 14f..36f) { update(value.copy(russianSize = it)) }
-                ReadingSlider("Межстрочный интервал", "${"%.1f".format(value.lineHeight)}", value.lineHeight, 1.3f..2.2f) { update(value.copy(lineHeight = it)) }
-                ReadingSlider("Ширина текста", "${(value.textWidth * 100).toInt()}%", value.textWidth, .65f..1f) { update(value.copy(textWidth = it)) }
-                Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { FilterChip(value.alignment == "start", { update(value.copy(alignment = "start")) }, { Text("Слева") }); FilterChip(value.alignment == "justify", { update(value.copy(alignment = "justify")) }, { Text("По ширине") }) }
             }
         }
         item {
-            SettingsGroup("Арабский оригинал") {
-                SettingSwitch("Показывать арабский", value.showArabic, { update(value.copy(showArabic = it)) })
+            SettingsGroup("Ночной режим") {
+                SettingSwitch("Тёмное оформление", value.theme == "dark",
+                    { update(value.copy(theme = if (it) "dark" else "sepia")) },
+                    "Для комфортного чтения в вечернее время")
+            }
+        }
+        item {
+            HeritageSectionHeading("Русский шрифт")
+            SettingsGroup("Шрифт и параметры текста") {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    listOf("sans" to "Стандартный", "book" to "Книжный",
+                        "serif" to "С засечками").forEach { (key, label) ->
+                        HeritageChoice(label, value.russianFont == key, Modifier.weight(1f)) {
+                            update(value.copy(russianFont = key))
+                        }
+                    }
+                }
+                ReadingSlider("Размер русского текста", "${value.russianSize.toInt()}",
+                    value.russianSize, 14f..36f,
+                    { update(value.copy(russianSize = it)) })
+                HorizontalDivider(color = BookColors.gold.copy(alpha = .17f))
+                ReadingSlider("Межстрочный интервал",
+                    "%.1f".format(java.util.Locale.ROOT, value.lineHeight),
+                    value.lineHeight, 1.3f..2.2f,
+                    { update(value.copy(lineHeight = it)) }, .1f)
+                HorizontalDivider(color = BookColors.gold.copy(alpha = .17f))
+                ReadingSlider("Ширина текста", "${(value.textWidth * 100).toInt()}%",
+                    value.textWidth, .65f..1f,
+                    { update(value.copy(textWidth = it)) }, .05f)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    HeritageChoice("Слева", value.alignment == "start", Modifier.weight(1f)) {
+                        update(value.copy(alignment = "start"))
+                    }
+                    HeritageChoice("По ширине", value.alignment == "justify", Modifier.weight(1f)) {
+                        update(value.copy(alignment = "justify"))
+                    }
+                }
+            }
+        }
+        item {
+            HeritageSectionHeading("Арабский оригинал")
+            SettingsGroup("Арабский текст") {
+                SettingSwitch("Показывать арабский текст", value.showArabic,
+                    { update(value.copy(showArabic = it)) },
+                    "Оригинал на арабском рядом с русским переводом")
                 if (value.showArabic) {
-                    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement=Arrangement.spacedBy(6.dp)) { FilterChip(value.arabicFont == "naskh", { update(value.copy(arabicFont = "naskh")) }, { Text("Насх") }); FilterChip(value.arabicFont == "alternate", { update(value.copy(arabicFont = "alternate")) }, { Text("Насх · второй") }) }
-                    ReadingSlider("Размер арабского текста", "${value.arabicSize.toInt()}", value.arabicSize, 20f..44f) { update(value.copy(arabicSize = it)) }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        HeritageChoice("Насх", value.arabicFont == "naskh", Modifier.weight(1f)) {
+                            update(value.copy(arabicFont = "naskh"))
+                        }
+                        HeritageChoice("Насх · второй", value.arabicFont == "alternate", Modifier.weight(1f)) {
+                            update(value.copy(arabicFont = "alternate"))
+                        }
+                    }
+                    ReadingSlider("Размер арабского текста", "${value.arabicSize.toInt()}",
+                        value.arabicSize, 20f..44f, { update(value.copy(arabicSize = it)) })
                 }
             }
         }
         item {
-            SettingsGroup("Дополнительно") {
-                SettingSwitch("Примечания редакции", value.showNotes, { update(value.copy(showNotes = it)) })
-                SettingSwitch("Автояркость устройства", value.brightness < 0f, { update(value.copy(brightness = if(it) -1f else .5f)) })
-                if (value.brightness >= 0f) ReadingSlider("Яркость экрана чтения", "${(value.brightness * 100).toInt()}%", value.brightness, .05f..1f) { update(value.copy(brightness = it)) }
-                SettingSwitch("Уменьшить движение", value.reducedMotion, { update(value.copy(reducedMotion = it)) })
+            HeritageSectionHeading("Дополнительно")
+            SettingsGroup("Настройки чтения") {
+                SettingSwitch("Примечания редакции", value.showNotes,
+                    { update(value.copy(showNotes = it)) })
+                HorizontalDivider(color = BookColors.gold.copy(alpha = .15f))
+                SettingSwitch("Автояркость устройства", value.brightness < 0f,
+                    { update(value.copy(brightness = if(it) -1f else .5f)) })
+                if (value.brightness >= 0f)
+                    ReadingSlider("Яркость экрана чтения",
+                        "${(value.brightness * 100).toInt()}%", value.brightness, .05f..1f,
+                        { update(value.copy(brightness = it)) }, .05f)
+                HorizontalDivider(color = BookColors.gold.copy(alpha = .15f))
+                SettingSwitch("Уменьшить движение", value.reducedMotion,
+                    { update(value.copy(reducedMotion = it)) },
+                    "Минимальные анимации, если нужно")
             }
         }
         item {
-            AgedPaperCard(
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
-                shape = RoundedCornerShape(AppRadius.large),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .18f)),
-                elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
-            ) {
-                Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement=Arrangement.spacedBy(8.dp), horizontalAlignment=Alignment.CenterHorizontally) {
-                    Text("Предпросмотр",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)
-                    Text("Чтение помогает остановиться, вдуматься и вернуться к смыслу текста.",Modifier.fillMaxWidth(value.textWidth),style=readerStyle(value))
-                    if(value.showArabic) ArabicText("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",value,Modifier.fillMaxWidth(value.textWidth))
-                }
+            SettingsGroup("Предпросмотр чтения") {
+                Text("Чтение помогает остановиться, вдуматься и вернуться к смыслу текста.",
+                    Modifier.fillMaxWidth(value.textWidth),
+                    style = readerStyle(value), color = MaterialTheme.colorScheme.onSurface)
+                if(value.showArabic) ArabicText("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", value,
+                    Modifier.fillMaxWidth(value.textWidth))
             }
         }
-        item { TextButton(onClick={update(ReadingSettings())}) { Text("Сбросить настройки") } }
+        item { TextButton(onClick = { update(ReadingSettings()) }) { Text("Сбросить настройки") } }
     }
 }
 
