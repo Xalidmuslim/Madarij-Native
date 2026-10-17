@@ -319,61 +319,134 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
             }
         } else when(tab) {
             0 -> {
-                val activeIds=readIds+listOfNotNull(last?.chapterId)
                 val scoped=chapters.filter { inStudyScope(it.id) }
-                // Show a few actionable chapters by default, not all 99.
-                val checksChapters=when {
-                    chapterId.isNotEmpty() -> scoped
-                    checksFilter=="all" -> scoped
-                    activeIds.isEmpty() -> scoped.take(3)
-                    else -> scoped.filter { it.id in activeIds }.ifEmpty { scoped.take(3) }
-                }
+                val completedIds = scoped.filter { c ->
+                    val tried=bankByChapter[c.id].orEmpty()
+                        .mapNotNull { attempts[it.id] }.filter { it.count>0 }
+                    tried.size>=2 && c.id in readIds &&
+                        tried.count { it.latestCorrect }.toDouble()/tried.size>=.8
+                }.map {it.id}.toSet()
+                val workingIds=scoped.filter { c ->
+                    c.id !in completedIds &&
+                        (c.id in readIds || bankByChapter[c.id].orEmpty()
+                            .any { (attempts[it.id]?.count ?: 0)>0 })
+                }.map {it.id}.toSet()
+                val matchingSections = scoped.filter { c -> when(checksFilter) {
+                    "not_read" -> c.id !in readIds && c.id !in workingIds
+                    "in_progress" -> c.id in workingIds
+                    "completed" -> c.id in completedIds
+                    else -> true
+                } }
+                val checksChapters = if (showAllStudySections || chapterId.isNotBlank())
+                    matchingSections else matchingSections.take(4)
                 item {
-                    Row(Modifier.fillMaxWidth(),
-                        horizontalArrangement=Arrangement.SpaceBetween,
-                        verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
-                        Text(
-                            if(checksFilter=="all") "Все разделы · ${scoped.size}"
-                            else if(activeIds.isEmpty()) "С чего начать"
-                            else "Продолжить изучение",
-                            style=MaterialTheme.typography.titleMedium
-                        )
-                        if(chapterId.isEmpty()) {
-                            TextButton(onClick={
-                                checksFilter=if(checksFilter=="all") "in_progress" else "all"
-                            }) {
-                                Text(if(checksFilter=="all") "Свернуть список" else "Показать все ${scoped.size}")
-                            }
-                        }
-                    }
-                    if(chapterId.isEmpty() && activeIds.isEmpty() && checksFilter!="all")
-                        Text("Начните с одного из разделов или выберите другой материал выше.",
-                            style=MaterialTheme.typography.bodySmall)
-                    TextButton(onClick={showChecksHelp=!showChecksHelp}) {
-                        Text(if(showChecksHelp) "Скрыть объяснение" else "Что значит «Проверено»?")
-                    }
-                    if(showChecksHelp) Text(
-                        "Раздел считается освоенным по вопросам после двух ответов с точностью не ниже 80%. Это учебный показатель, а не научная оценка понимания.",
-                        style=MaterialTheme.typography.bodySmall)
-                }
-                items(checksChapters,key={"section:${it.id}"}) { c ->
-                    val questions=bankByChapter[c.id].orEmpty(); val tried=questions.mapNotNull{attempts[it.id]}.filter{it.count>0};val correct=tried.count{it.latestCorrect};val understood=tried.size>=2 && correct.toDouble()/tried.size>=0.8
-                    var actions by remember {mutableStateOf(false)}
-                    AgedPaperCard(Modifier.fillMaxWidth(),colors=CardDefaults.cardColors(containerColor=MaterialTheme.colorScheme.surfaceVariant)) {Column(Modifier.padding(horizontal=14.dp,vertical=12.dp),verticalArrangement=Arrangement.spacedBy(4.dp)) {
-                        Text(chapterTitles[c.id] ?: c.title,style=MaterialTheme.typography.titleMedium)
-                        Text("${if(read.any{it.chapterId==c.id}) "Прочитано" else "Не прочитано"} · ${if(understood) "Понято по проверкам" else "Нужна проверка"} · $correct/${tried.size} правильных",style=MaterialTheme.typography.bodySmall)
-                        Row(horizontalArrangement=Arrangement.spacedBy(4.dp)) {
-                            TextButton(onClick={chapterId=c.id;beginSession(c.id)}) {Text("Начать проверку")}
-                            Box {
-                                TextButton(onClick={actions=true}) {Text("Ещё")}
-                                DropdownMenu(expanded=actions,onDismissRequest={actions=false}) {
-                                    DropdownMenuItem(text={Text("Письменные задания")},onClick={actions=false;chapterId=c.id;tab=2;exerciseId=""})
-                                    DropdownMenuItem(text={Text("Повторить через 3 дня")},onClick={actions=false;scope.launch {try {repo.scheduleChapterReview(c.id);chapterReviewMessage="Перечитывание раздела назначено через 3 дня."} catch(e:Exception) {if(e is CancellationException) throw e;chapterReviewMessage="Не удалось назначить перечитывание. Повторите."}}})
+                    HeritageSectionHeading("Разделы книги",
+                        trailing="${if(loaded) repo.exercises.count { inStudyScope(it.chapterId) } else 0} заданий")
+                    Column(verticalArrangement=Arrangement.spacedBy(6.dp)) {
+                        listOf(
+                            listOf("all" to "Все","not_read" to "Не прочитано"),
+                            listOf("in_progress" to "В работе","completed" to "Завершено")
+                        ).forEach { row ->
+                            Row(Modifier.fillMaxWidth(),
+                                horizontalArrangement=Arrangement.spacedBy(7.dp)) {
+                                row.forEach { (id,label) ->
+                                    HeritageChoice(label,checksFilter==id,Modifier.weight(1f)) {
+                                        checksFilter=id
+                                        showAllStudySections=false
+                                    }
                                 }
                             }
                         }
-                        chapterReviews[c.id]?.let {review ->Text("Перечитать: ${date(review.due)}",style=MaterialTheme.typography.bodySmall)}
-                    }}
+                    }
+                    if(showChecksHelp)
+                        Text("Раздел считается изученным по заданиям после двух ответов " +
+                            "с долей последних правильных не ниже 80% и отметки чтения. " +
+                            "Это учебный ориентир, не научная оценка усвоения.",
+                            style=MaterialTheme.typography.bodySmall,color=BookColors.muted)
+                    TextButton(onClick={showChecksHelp=!showChecksHelp}) {
+                        Text(if(showChecksHelp) "Скрыть пояснение" else "Как считается результат?")
+                    }
+                }
+                if(matchingSections.isEmpty()) item {
+                    Text("По этому фильтру пока нет разделов.",
+                        style=MaterialTheme.typography.bodyMedium,color=BookColors.muted)
+                }
+                items(checksChapters,key={"section:${it.id}"}) { c ->
+                    val tried=bankByChapter[c.id].orEmpty()
+                        .mapNotNull{attempts[it.id]}.filter{it.count>0}
+                    val correct=tried.count{it.latestCorrect}
+                    val understood=c.id in completedIds
+                    val status=when {
+                        understood -> "Завершено"
+                        c.id in workingIds -> "В работе"
+                        else -> "Не прочитано"
+                    }
+                    val ordinal=scoped.indexOfFirst {it.id==c.id}+1
+                    val writingCount=repo.exercises.count {it.chapterId==c.id}
+                    var actions by remember {mutableStateOf(false)}
+                    AgedPaperCard(Modifier.fillMaxWidth(),
+                        colors=CardDefaults.cardColors(
+                            containerColor=MaterialTheme.colorScheme.surfaceVariant.copy(alpha=.76f)),
+                        border=androidx.compose.foundation.BorderStroke(.75.dp,
+                            BookColors.gold.copy(alpha=.31f)),
+                        shape=androidx.compose.foundation.shape.RoundedCornerShape(19.dp)) {
+                        Row(Modifier.fillMaxWidth().padding(horizontal=10.dp,vertical=11.dp),
+                            horizontalArrangement=Arrangement.spacedBy(10.dp),
+                            verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
+                            HeritageMedallion(ordinal)
+                            Column(Modifier.weight(1f),
+                                verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                                Text(chapterTitles[c.id] ?: c.title,
+                                    style=MaterialTheme.typography.titleMedium.copy(
+                                        fontFamily=BookSerif,fontSize=17.sp),
+                                    color=BookColors.ink)
+                                Text("$writingCount заданий · $status",
+                                    style=MaterialTheme.typography.labelSmall,color=BookColors.muted)
+                                if(tried.isNotEmpty()) Text(
+                                    "$correct/${tried.size} последних ответов верны",
+                                    style=MaterialTheme.typography.labelSmall,
+                                    color=BookColors.muted)
+                                Row(horizontalArrangement=Arrangement.spacedBy(5.dp)) {
+                                    TextButton(onClick={chapterId=c.id;beginSession(c.id)},
+                                        contentPadding=PaddingValues(horizontal=6.dp)) {
+                                        Text("Проверить")
+                                    }
+                                    Box {
+                                        TextButton(onClick={actions=true},
+                                            contentPadding=PaddingValues(horizontal=6.dp)) {
+                                            Text("Ещё")
+                                        }
+                                        DropdownMenu(expanded=actions,onDismissRequest={actions=false}) {
+                                            DropdownMenuItem(text={Text("Письменные задания")},
+                                                onClick={actions=false;chapterId=c.id;tab=2;exerciseId=""})
+                                            DropdownMenuItem(text={Text("Повторить через 3 дня")},
+                                                onClick={actions=false;scope.launch {
+                                                    try {
+                                                        repo.scheduleChapterReview(c.id)
+                                                        chapterReviewMessage="Перечитывание назначено через 3 дня."
+                                                    } catch(e:Exception) {
+                                                        if(e is CancellationException) throw e
+                                                        chapterReviewMessage="Не удалось назначить перечитывание."
+                                                    }
+                                                }})
+                                        }
+                                    }
+                                }
+                                chapterReviews[c.id]?.let { review ->
+                                    Text("Перечитать: ${date(review.due)}",
+                                        style=MaterialTheme.typography.labelSmall)
+                                }
+                            }
+                            Text("›",style=MaterialTheme.typography.titleLarge,
+                                color=BookColors.gold)
+                        }
+                    }
+                }
+                if(!showAllStudySections && matchingSections.size>checksChapters.size) item {
+                    TextButton(onClick={showAllStudySections=true},
+                        modifier=Modifier.fillMaxWidth()) {
+                        Text("Показать все ${matchingSections.size} разделов")
+                    }
                 }
             }
             2 -> {
