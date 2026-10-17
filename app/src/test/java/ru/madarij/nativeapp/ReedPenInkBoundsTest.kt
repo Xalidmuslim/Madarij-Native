@@ -54,8 +54,7 @@ class ReedPenInkBoundsTest {
         val screen = File("src/main/java/ru/madarij/nativeapp/HomeContents.kt").readText()
         assertTrue(screen.contains("WindowInsets.navigationBars.asPaddingValues()"))
         assertTrue(screen.contains("calculateBottomPadding() + 68.dp"))
-        assertEquals(2, "calculateBottomPadding() + 68.dp".toRegex()
-            .findAll(screen).count())
+        assertEquals(2, screen.split("calculateBottomPadding() + 68.dp").size - 1)
     }
 
     @Test fun tocTabsAreNativeAndNotBitmapsTakenFromReference() {
