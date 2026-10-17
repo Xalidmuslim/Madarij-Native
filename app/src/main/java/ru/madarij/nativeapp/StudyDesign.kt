@@ -8,6 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 /**
  * All learning visuals use the application's existing aged-paper cards,
@@ -21,41 +22,127 @@ internal fun StudyOverview(
     allQuestions: Int,
     due: Int,
     writingTasks: Int,
-    scopeLabel: String
+    scopeLabel: String,
+    onStart: () -> Unit = {}
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
-        Column(Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
-            verticalArrangement = Arrangement.spacedBy(11.dp)) {
-            Text("Мой прогресс", style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.SemiBold)
-            Text("Что уже пройдено по выбранному материалу.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
-            val progress = if (allQuestions > 0) answered.toFloat() / allQuestions else 0f
-            LinearProgressIndicator(
-                progress = { progress.coerceIn(0f, 1f) },
-                modifier = Modifier.fillMaxWidth().height(4.dp)
-            )
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                StudyStat("$answered/$allQuestions", "Проверено", Modifier.weight(1.15f))
-                StudyStat("$due", "Повторить", Modifier.weight(.8f))
-                StudyStat("$readChapters/$allChapters", "Прочитано", Modifier.weight(1.0f))
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(23.dp),
+        border = androidx.compose.foundation.BorderStroke(.8.dp,
+            BookColors.gold.copy(alpha = .3f)),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha=.82f))) {
+        Column(Modifier.padding(horizontal=19.dp,vertical=18.dp),
+            verticalArrangement=Arrangement.spacedBy(13.dp)) {
+            Text("Мой путь по книге",
+                style=MaterialTheme.typography.headlineSmall.copy(
+                    fontFamily=BookSerif,fontSize=27.sp),color=heritageInk())
+            Text("Читайте, проверяйте понимание и возвращайтесь к трудным вопросам.",
+                style=MaterialTheme.typography.bodyMedium,color=heritageMuted())
+            HorizontalDivider(color=BookColors.gold.copy(alpha=.23f))
+            Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(17.dp)) {
+                Column(Modifier.weight(1f),
+                    verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                    Row(verticalAlignment=Alignment.CenterVertically,
+                        horizontalArrangement=Arrangement.spacedBy(10.dp)) {
+                        NavigationGlyph("contents",modifier=Modifier.size(32.dp),
+                            tint=BookColors.gold)
+                        Column {
+                            Text("$readChapters / $allChapters",
+                                style=MaterialTheme.typography.titleLarge.copy(
+                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
+                            Text("Прочитано",style=MaterialTheme.typography.labelMedium,
+                                color=heritageMuted())
+                        }
+                    }
+                    LinearProgressIndicator(
+                        progress={if(allChapters==0) 0f else readChapters.toFloat()/allChapters},
+                        modifier=Modifier.fillMaxWidth().height(4.dp),
+                        color=BookColors.gold,
+                        trackColor=BookColors.gold.copy(alpha=.17f))
+                }
+                Column(Modifier.weight(1f),
+                    verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                    Row(verticalAlignment=Alignment.CenterVertically,
+                        horizontalArrangement=Arrangement.spacedBy(10.dp)) {
+                        NavigationGlyph("study",modifier=Modifier.size(32.dp),
+                            tint=BookColors.gold)
+                        Column {
+                            Text("$answered / $allQuestions",
+                                style=MaterialTheme.typography.titleLarge.copy(
+                                    fontFamily=BookSerif,fontSize=23.sp),color=heritageInk())
+                            Text("Проверено",style=MaterialTheme.typography.labelMedium,
+                                color=heritageMuted())
+                        }
+                    }
+                    LinearProgressIndicator(
+                        progress={if(allQuestions==0) 0f else answered.toFloat()/allQuestions},
+                        modifier=Modifier.fillMaxWidth().height(4.dp),
+                        color=BookColors.gold,
+                        trackColor=BookColors.gold.copy(alpha=.17f))
+                }
             }
             Text("$writingTasks письменных заданий · $scopeLabel",
                 style = MaterialTheme.typography.labelSmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
+                color = heritageMuted())
+            Button(onClick=onStart,enabled=allQuestions>0,
+                modifier=Modifier.fillMaxWidth().heightIn(min=51.dp),
+                shape=androidx.compose.foundation.shape.RoundedCornerShape(24.dp),
+                colors=ButtonDefaults.buttonColors(
+                    containerColor=BookColors.leather,
+                    contentColor=androidx.compose.ui.graphics.Color(0xFFFFEBD1))) {
+                Text("▶   Начать проверку · 10 вопросов   ›",
+                    fontFamily=BookSerif,fontSize=17.sp)
+            }
+            if (due > 0) Text("К повторению: $due вопросов",
+                style=MaterialTheme.typography.labelSmall,color=heritageMuted())
         }
     }
 }
 
 @Composable
-private fun StudyStat(value: String, description: String, modifier: Modifier = Modifier) {
-    Column(modifier, verticalArrangement = Arrangement.spacedBy(2.dp)) {
-        Text(value, style = MaterialTheme.typography.titleMedium,
-            maxLines = 1, overflow = TextOverflow.Ellipsis)
-        Text(description, style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant)
+internal fun StudyModeGrid(selectedTab: Int,
+    onSections: () -> Unit, onQuiz: () -> Unit,
+    onWriting: () -> Unit, onReview: () -> Unit) {
+    HeritageSectionHeading("Режим изучения")
+    val actions=listOf(
+        Triple("Разделы", "contents", onSections),
+        Triple("Викторина", "study", onQuiz),
+        Triple("Письменные", "notes", onWriting),
+        Triple("Повторение", "more", onReview)
+    )
+    Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
+        (0..1).forEach { row ->
+            Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                (0..1).forEach { column ->
+                    val index=row*2+column
+                    val (title,icon,action)=actions[index]
+                    AgedPaperCard(onClick=action,modifier=Modifier.weight(1f),
+                        colors=CardDefaults.cardColors(
+                            containerColor=if(selectedTab==index)
+                                BookColors.gold.copy(alpha=.24f)
+                            else BookColors.card.copy(alpha=.56f)),
+                        border=androidx.compose.foundation.BorderStroke(
+                            if(selectedTab==index) 1.2.dp else .7.dp,
+                            BookColors.gold.copy(alpha=if(selectedTab==index) .72f else .3f)),
+                        shape=androidx.compose.foundation.shape.RoundedCornerShape(18.dp)) {
+                        Row(Modifier.fillMaxWidth().heightIn(min=63.dp)
+                            .padding(horizontal=10.dp,vertical=9.dp),
+                            verticalAlignment=Alignment.CenterVertically,
+                            horizontalArrangement=Arrangement.spacedBy(7.dp)) {
+                            NavigationGlyph(icon,modifier=Modifier.size(27.dp),
+                                tint=BookColors.gold)
+                            Text(title,Modifier.weight(1f),
+                                style=MaterialTheme.typography.titleSmall.copy(
+                                    fontFamily=BookSerif,fontSize=16.sp),
+                                color=heritageInk(),maxLines=2,
+                                overflow=TextOverflow.Ellipsis)
+                            Text("›",style=MaterialTheme.typography.titleLarge,
+                                color=BookColors.gold)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -202,23 +289,25 @@ internal fun StudyAnswerFeedback(
  * Both parameters are a unified scope inside the bottom sheet.
  */
 @Composable
-internal fun StudyScopeBar(
-    selectedLabel: String,
-    onChooseSection: () -> Unit
-) {
-    OutlinedButton(
-        onClick = onChooseSection,
-        modifier = Modifier.fillMaxWidth().heightIn(min = 57.dp),
-        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 9.dp)
-    ) {
-        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text("ИЗУЧАЕМЫЙ МАТЕРИАЛ", style = MaterialTheme.typography.labelSmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
-            Text(selectedLabel, maxLines = 2, overflow = TextOverflow.Ellipsis,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurface)
+internal fun StudyScopeBar(selectedLabel: String, onChooseSection: () -> Unit) {
+    HeritageSectionHeading("Изучаемый материал")
+    AgedPaperCard(onClick=onChooseSection,modifier=Modifier.fillMaxWidth(),
+        shape=androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
+        border=androidx.compose.foundation.BorderStroke(.9.dp,
+            BookColors.gold.copy(alpha=.4f)),
+        colors=CardDefaults.cardColors(containerColor=BookColors.card.copy(alpha=.75f))) {
+        Row(Modifier.fillMaxWidth().heightIn(min=64.dp)
+            .padding(horizontal=14.dp,vertical=10.dp),
+            verticalAlignment=Alignment.CenterVertically,
+            horizontalArrangement=Arrangement.spacedBy(12.dp)) {
+            NavigationGlyph("contents",modifier=Modifier.size(31.dp),
+                tint=BookColors.gold)
+            Text(selectedLabel,Modifier.weight(1f),
+                style=MaterialTheme.typography.bodyMedium.copy(
+                    fontFamily=BookSerif,fontSize=17.sp),
+                color=BookColors.ink,maxLines=2,overflow=TextOverflow.Ellipsis)
+            Text("⌄",style=MaterialTheme.typography.titleLarge,
+                color=BookColors.gold)
         }
-        Spacer(Modifier.width(8.dp))
-        Text("Изменить ›", style = MaterialTheme.typography.labelMedium)
     }
 }

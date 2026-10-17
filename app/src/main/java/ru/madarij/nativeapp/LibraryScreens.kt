@@ -8,6 +8,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
@@ -151,49 +152,247 @@ internal fun NotesScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     editing?.let {n -> AlertDialog(onDismissRequest={editing=null},title={Text("Моя заметка")},text={OutlinedTextField(text,{text=it},modifier=Modifier.fillMaxWidth(),minLines=5)},confirmButton={TextButton(onClick={vm.editNote(n.id,text);editing=null},enabled=text.isNotBlank()) {Text("Сохранить")}},dismissButton={TextButton(onClick={editing=null}) {Text("Отмена")}}) }
 }
 
+private fun activitySummary(history: List<ReadingHistory>, period: String): Pair<List<String>, List<Int>> {
+    val today = java.time.LocalDate.now()
+    val days = history.mapNotNull { item ->
+        runCatching { java.time.LocalDate.parse(item.date) }.getOrNull()?.let { it to item.chapterId }
+    }
+    val labels: List<String>
+    val buckets: List<List<java.time.LocalDate>>
+    when (period) {
+        "month" -> {
+            val start = today.minusDays(29)
+            buckets = (0..5).map { part ->
+                (0..4).map { start.plusDays((part * 5 + it).toLong()) }
+            }
+            labels = buckets.map { "${it.first().dayOfMonth}" }
+        }
+        "all" -> {
+            val first = today.withDayOfMonth(1).minusMonths(5)
+            buckets = (0..5).map { part ->
+                val month = first.plusMonths(part.toLong())
+                (1..month.lengthOfMonth()).map { month.withDayOfMonth(it) }
+            }
+            labels = (0..5).map {
+                first.plusMonths(it.toLong()).format(
+                    java.time.format.DateTimeFormatter.ofPattern("LLL", java.util.Locale("ru"))
+                )
+            }
+        }
+        else -> {
+            val monday = today.minusDays((today.dayOfWeek.value - 1).toLong())
+            buckets = (0..6).map { listOf(monday.plusDays(it.toLong())) }
+            labels = listOf("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс")
+        }
+    }
+    return labels to buckets.map { bucket ->
+        // A single day's multiple reading sessions for one chapter count once.
+        days.filter { it.first in bucket }.map { it.first to it.second }.distinct().size
+    }
+}
+
 @Composable
-internal fun ProgressScreen(vm:BookViewModel,open:(String,String?)->Unit,navigate:(String)->Unit) {
-    val chapters by vm.chapters.collectAsStateWithLifecycle();val read by vm.read.collectAsStateWithLifecycle();val history by vm.history.collectAsStateWithLifecycle();val context=LocalContext.current;val repo=remember {LearningRepository(context.applicationContext)};val attempts by repo.attempts.collectAsStateWithLifecycle(emptyMap());var questionChapters by remember {mutableStateOf<Map<String,String>>(emptyMap())}
-    LaunchedEffect(chapters) {questionChapters=repo.questions.mapNotNull {q -> vm.repository.dao.paragraph(q.sourceParagraphId)?.let {q.id to it.chapterId}}.toMap()}
-    val studied=questionChapters.filter {it.key in attempts}.values.toSet();val due=attempts.count {it.value.due<=System.currentTimeMillis()};val minutes=history.sumOf {it.seconds}/60
-    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item {ScreenHeading("Первый том", "Чтение и понимание учитываются отдельно")}
-        item {InfoCard("Прочитано ${read.size} из ${chapters.size}","${if(chapters.isEmpty()) 0 else read.size*100/chapters.size}% разделов отмечено прочитанными. Отметка меняется вручную.")}
-        item {InfoCard("Изучение · ${studied.size} разделов","Отвечено на ${attempts.size} из ${repo.questions.size} вопросов; назначено повторений: $due. Попытка ответа означает работу с вопросом, а не полное усвоение главы.")}
-        item {Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {Button(onClick={navigate("study?review=true")},Modifier.weight(1f)) {Text("Повторить")};OutlinedButton(onClick={navigate("study")},Modifier.weight(1f)) {Text("Вопросы")}}}
-        item {InfoCard("История чтения","$minutes минут в открытом читателе · ${history.map {it.date}.distinct().size} дней. Время учитывается только пока экран чтения активен.")}
-        if(attempts.any {it.value.errors>0 || it.value.lowConfidence}) item {Text("Темы для повторения",style=MaterialTheme.typography.titleMedium)}
-        items(repo.questions.filter {q -> attempts[q.id]?.let {it.errors>0 || it.lowConfidence}==true},key={"hard:${it.id}"}) {q -> AgedPaperCard(onClick={navigate("study?review=true")},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(q.prompt);Text("Ошибок: ${attempts[q.id]?.errors ?: 0}"+(if(attempts[q.id]?.lowConfidence==true) " · Неуверенный ответ" else ""),style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}}}
-        if(read.isNotEmpty()) item {Text("Прочитанные разделы",style=MaterialTheme.typography.titleMedium)}
-        items(chapters.filter {c -> read.any {it.chapterId==c.id}},key={it.id}) {c -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp)) {Text(c.title);Row {TextButton(onClick={open(c.id,null)}) {Text("Открыть")};TextButton(onClick={vm.markUnread(c.id)}) {Text("Снять отметку")}}}}}
-        history.groupBy {it.date}.entries.take(30).forEach { (date,records) -> item(key="day:$date") {Text("$date · ${records.sumOf {it.seconds}/60} мин · ${records.map {it.chapterId}.distinct().size} разделов",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)} }
+internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,navigate:(String)->Unit) {
+    val chapters by vm.chapters.collectAsStateWithLifecycle()
+    val read by vm.read.collectAsStateWithLifecycle()
+    val history by vm.history.collectAsStateWithLifecycle()
+    val notes by vm.notes.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+    val repo = remember(context) { LearningRepository(context.applicationContext) }
+    val attempts by repo.attempts.collectAsStateWithLifecycle(emptyMap())
+    var totals by remember { mutableStateOf(0 to 0) }
+    var exercisePrompts by remember { mutableStateOf<List<String>>(emptyList()) }
+    LaunchedEffect(repo) {
+        val prepared = withContext(Dispatchers.Default) {
+            Triple(repo.questions.size, repo.exercises.size,
+                repo.exercises.map { it.prompt })
+        }
+        totals = prepared.first to prepared.second
+        exercisePrompts = prepared.third
+    }
+    var view by rememberSaveable { mutableStateOf("all") }
+    var period by rememberSaveable { mutableStateOf("week") }
+    val readIds = remember(read) { read.map { it.chapterId }.toSet() }
+    val completedGroups = remember(chapters, readIds) {
+        LogicalReadingSections.roots(chapters).count { root ->
+            LogicalReadingSections.members(chapters, root.id).let { members ->
+                members.isNotEmpty() && members.all { it.id in readIds }
+            }
+        }
+    }
+    val totalGroups = remember(chapters) { LogicalReadingSections.roots(chapters).size }
+    val answered = attempts.count { it.value.count > 0 }
+    val written = remember(notes, exercisePrompts) {
+        val saved = notes.mapNotNull { note ->
+            note.text.takeIf { it.startsWith("Задание: ") }
+                ?.substringAfter("Задание: ")?.substringBefore("\n\n")
+        }.toSet()
+        // The bank is decoded off the UI thread; only cheap lookup remains.
+        exercisePrompts.count { it in saved }
+    }
+    val minutes = history.sumOf { it.seconds } / 60
+    val latestCorrect = attempts.values.count { it.count > 0 && it.latestCorrect }
+    val latestAccuracy = if (answered > 0) "${latestCorrect * 100 / answered}%"
+        else "—"
+    val due = attempts.values.count { it.count > 0 && it.due <= System.currentTimeMillis() }
+    val chart = remember(history, period) { activitySummary(history, period) }
+    val today = java.time.LocalDate.now()
+    val todayHistory = history.filter { it.date == today.toString() }
+    val todaySections = todayHistory.map { it.chapterId }.distinct().size
+    val todayMinutes = todayHistory.sumOf { it.seconds } / 60
+    val todayAnswers = attempts.values.count { attempt ->
+        attempt.count > 0 && attempt.updatedAt > 0 &&
+            java.time.Instant.ofEpochMilli(attempt.updatedAt)
+                .atZone(java.time.ZoneId.systemDefault()).toLocalDate() == today
+    }
+
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,end=16.dp,top=10.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(13.dp)) {
+        item {
+            Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                HeritageChoice("Общий", view=="all", Modifier.weight(1f)) {view="all"}
+                HeritageChoice("По разделам", view=="sections", Modifier.weight(1f)) {view="sections"}
+            }
+        }
+        if(view=="all") {
+            item {
+                Row(Modifier.fillMaxWidth().padding(vertical=9.dp),
+                    horizontalArrangement=Arrangement.spacedBy(7.dp)) {
+                    HeritageProgressRing(
+                        fraction=if(chapters.isEmpty()) 0f else readIds.size.toFloat()/chapters.size,
+                        value="${if(chapters.isEmpty()) 0 else readIds.size*100/chapters.size}%",
+                        total="${readIds.size} / ${chapters.size}",
+                        caption="Прочитано", icon="contents", modifier=Modifier.weight(1f))
+                    HeritageProgressRing(
+                        fraction=if(totals.first==0) 0f else answered.toFloat()/totals.first,
+                        value="${if(totals.first==0) 0 else answered*100/totals.first}%",
+                        total="$answered / ${totals.first}",
+                        caption="Проверено", icon="study", modifier=Modifier.weight(1f))
+                }
+            }
+            item {
+                AgedPaperCard(Modifier.fillMaxWidth(),
+                    border=androidx.compose.foundation.BorderStroke(.9.dp,
+                        BookColors.gold.copy(alpha=.3f))) {
+                    Column(Modifier.padding(vertical=5.dp)) {
+                        HeritageMetricRow("contents", "Завершено смысловых разделов",
+                            "$completedGroups из $totalGroups", {view="sections"})
+                        HorizontalDivider(color=BookColors.gold.copy(alpha=.2f))
+                        HeritageMetricRow("notes", "Письменных заданий",
+                            "$written из ${totals.second}", {navigate("study")})
+                        HorizontalDivider(color=BookColors.gold.copy(alpha=.2f))
+                        HeritageMetricRow("study", "Последние ответы верны",
+                            latestAccuracy, {navigate("study")})
+                        HorizontalDivider(color=BookColors.gold.copy(alpha=.2f))
+                        HeritageMetricRow("more", "Время в читалке", "$minutes мин",
+                            {view="sections"})
+                    }
+                }
+            }
+            item {
+                HeritageSectionHeading("Активность")
+                Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                    listOf("week" to "Неделя", "month" to "Месяц", "all" to "Всё время")
+                        .forEach { (key,label) ->
+                            HeritageChoice(label,period==key,Modifier.weight(1f)) {period=key}
+                        }
+                }
+            }
+            item {
+                AgedPaperCard(Modifier.fillMaxWidth(),
+                    colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.82f)),
+                    border=androidx.compose.foundation.BorderStroke(.8.dp,
+                        BookColors.gold.copy(alpha=.29f))) {
+                    Column(Modifier.padding(13.dp),
+                        verticalArrangement=Arrangement.spacedBy(9.dp)) {
+                        Text("Прочитанные фрагменты", style=MaterialTheme.typography.labelMedium,
+                            color=heritageMuted())
+                        HeritageActivityBars(chart.second, chart.first,
+                            highlightIndex=if(period=="week") today.dayOfWeek.value-1 else -1)
+                        HorizontalDivider(color=BookColors.gold.copy(alpha=.22f))
+                        Text("Сегодня · ${today.dayOfMonth} " +
+                            today.format(java.time.format.DateTimeFormatter.ofPattern(
+                                "LLL",java.util.Locale("ru"))),
+                            style=MaterialTheme.typography.titleMedium.copy(fontFamily=BookSerif),
+                            color=heritageInk())
+                        Row(Modifier.fillMaxWidth(),
+                            horizontalArrangement=Arrangement.SpaceBetween) {
+                            Text("Читали: $todaySections",style=MaterialTheme.typography.bodySmall)
+                            Text("Проверяли: $todayAnswers",style=MaterialTheme.typography.bodySmall)
+                            Text("Время: $todayMinutes мин",style=MaterialTheme.typography.bodySmall)
+                        }
+                    }
+                }
+            }
+            if(due>0) item {
+                AgedPaperCard(onClick={navigate("study?review=true")},
+                    modifier=Modifier.fillMaxWidth()) {
+                    Row(Modifier.fillMaxWidth().padding(15.dp),
+                        verticalAlignment=Alignment.CenterVertically) {
+                        Text("Вернуться к повторению · $due вопросов",
+                            Modifier.weight(1f), color=heritageInk())
+                        Text("›",style=MaterialTheme.typography.titleLarge,
+                            color=BookColors.gold)
+                    }
+                }
+            }
+        } else {
+            item { HeritageSectionHeading("Главы двух томов",trailing="Прочитано ${readIds.size} / ${chapters.size}") }
+            items(chapters,key={it.id}) { chapter ->
+                AgedPaperCard(Modifier.fillMaxWidth(),
+                    border=androidx.compose.foundation.BorderStroke(.7.dp,
+                        BookColors.gold.copy(alpha=.24f))) {
+                    Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
+                        verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                        Text("Том ${chapter.volume} · ${if(chapter.id in readIds) "Прочитано" else "Не прочитано"}",
+                            style=MaterialTheme.typography.labelSmall,color=heritageMuted())
+                        Text(chapter.title,
+                            style=MaterialTheme.typography.titleSmall.copy(fontFamily=BookSerif),
+                            color=heritageInk())
+                        Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                            TextButton(onClick={open(chapter.id,null)}){Text("Открыть")}
+                            if(chapter.id in readIds)
+                                TextButton(onClick={vm.markUnread(chapter.id)}) {
+                                    Text("Снять отметку")
+                                }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @Composable
 internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(start=16.dp, top=12.dp, end=16.dp, bottom=124.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        item { ScreenHeading("Ещё", "Инструменты и личные материалы") }
-        listOf(
-            "study" to ("Изучение" to "Проверки, задания и повторение"),
-            "bookmarks" to ("Закладки" to "Сохранённые главы, цитаты и места"),
-            "notes" to ("Мои заметки" to "Личные записи и размышления"),
-            "glossary" to ("Словарь терминов" to "Пояснения с исходным контекстом"),
-            "progress" to ("Прогресс" to "Чтение, изучение и повторение"),
-            "settings" to ("Настройки" to "Шрифты, тема и яркость"),
-            "about" to ("О книге" to "Автор, источник и статус перевода")
-        ).forEach { (route, texts) ->
-            item {
-                AgedPaperCard(onClick={navigate(route)},modifier=Modifier.fillMaxWidth()) {
-                    Row(Modifier.padding(horizontal=14.dp,vertical=10.dp),horizontalArrangement=Arrangement.spacedBy(12.dp),verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                            Text(texts.first,style=MaterialTheme.typography.titleSmall)
-                            Text(texts.second,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
-                        }
-                        Text("›",style=MaterialTheme.typography.titleLarge,color=MaterialTheme.colorScheme.primary)
-                    }
-                }
-            }
+    LazyColumn(contentPadding=PaddingValues(start=17.dp,top=12.dp,end=17.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(12.dp)) {
+        item {
+            HeritageSectionHeading("ИЗУЧЕНИЕ")
+            HeritageMenuGroup(listOf(
+                Triple("study", "Изучение", "Викторины, письменные задания и повторение"),
+                Triple("progress", "Мой прогресс", "Чтение, результаты и активность")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("ЛИЧНОЕ")
+            HeritageMenuGroup(listOf(
+                Triple("bookmarks", "Закладки", "Сохранённые главы, цитаты и места"),
+                Triple("notes", "Мои заметки", "Личные записи и размышления")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("СПРАВКА")
+            HeritageMenuGroup(listOf(
+                Triple("glossary", "Словарь терминов", "Пояснения с исходным контекстом"),
+                Triple("about", "О книге", "Автор, источники и статус перевода")
+            ), navigate)
+        }
+        item {
+            HeritageSectionHeading("НАСТРОЙКИ")
+            HeritageMenuGroup(listOf(
+                Triple("settings", "Настройки", "Шрифты, оформление и чтение")
+            ), navigate)
         }
     }
 }

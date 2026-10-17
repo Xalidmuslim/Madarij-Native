@@ -341,8 +341,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     }
     LaunchedEffect(groups, last?.chapterId) {
         if (groups.isNotEmpty() && !initialized) {
-            openedGroups = listOf(groups.find { group -> group.items.any { it.chapterId == last?.chapterId } }?.id ?: groups.first().id)
-            if (last != null) openedChapters = listOf(last!!.chapterId)
+            // Match the compact reference list: initially show only semantic
+            // chapter cards. Expanding a card reveals its fragments and topics.
+            // The "Continue reading" card above retains the last position.
+            openedGroups = emptyList()
+            openedChapters = emptyList()
             initialized = true
         }
         if (groups.isNotEmpty() && !restored) restored = true
@@ -377,96 +380,90 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         }
         return
     }
-    LazyColumn(state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 124.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+    LazyColumn(state = listState,
+        contentPadding = PaddingValues(start = 17.dp,end = 17.dp,top = 9.dp,bottom = 132.dp),
+        verticalArrangement = Arrangement.spacedBy(11.dp)) {
         item {
-            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                // One compact parchment selector; the original typography and paper stay unchanged.
-                Row(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    availableVolumes.forEach { volume ->
-                        val selected = volume == selectedVolume
-                        val shape = RoundedCornerShape(14.dp)
-                        Box(
-                            Modifier.weight(1f).heightIn(min = 43.dp)
-                                .clip(shape)
-                                .background(BookColors.card.copy(alpha = if (selected) 1f else .65f))
-                                .border(if (selected) .85.dp else .5.dp,
-                                    BookColors.gold.copy(alpha = if (selected) .5f else .2f), shape)
-                                .clickable { selectedVolume = volume; resetList() },
-                            contentAlignment = Alignment.Center
-                        ) {
-                            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                            Text("Том $volume",
-                                style = MaterialTheme.typography.labelLarge.copy(fontFamily = BookSerif),
-                                color = BookColors.ink.copy(alpha = if (selected) 1f else .72f))
-                        }
+            Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(10.dp)) {
+                availableVolumes.forEach { volume ->
+                    HeritageChoice("Том $volume", volume==selectedVolume,
+                        Modifier.weight(1f)) {
+                        selectedVolume=volume
+                        openedGroups=emptyList()
+                        openedChapters=emptyList()
+                        resetList()
                     }
                 }
-                IconButton(onClick = { toolsVisible = !toolsVisible }) { NavigationGlyph("search", selected = toolsVisible, modifier = Modifier.size(21.dp)) }
             }
         }
-        if (toolsVisible) {
         item {
-            val count = chapters.count { it.volume == selectedVolume }
-            val sectionCount = LogicalReadingSections.roots(chapters).count { it.volume == selectedVolume }
-            Text("Том $selectedVolume · $sectionCount смысловых разделов · $count фрагментов",
-                style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            if (selectedVolume == 2) Text("Том 2, страницы 3–659: литературно-смысловая редактура завершена. Сверка с изданием и научная проверка источников не завершены.",
-                style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+            val sections=LogicalReadingSections.roots(chapters)
+                .count { it.volume==selectedVolume }
+            Text("Том $selectedVolume · $sections смысловых разделов · " +
+                    "${selectedChapterIds.size} фрагментов",
+                style=MaterialTheme.typography.bodySmall,color=heritageMuted())
+            if(selectedVolume==2) Text(
+                "Тематические группы страниц. Сверка издания и научная проверка источников не завершены.",
+                style=MaterialTheme.typography.bodySmall,color=heritageMuted())
         }
-        last?.let { position ->
+        if (last != null && last!!.chapterId in selectedChapterIds) {
             item {
-                Soft3DSagePanel(
-                    onClick = { resume(position.chapterId) },
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(AppRadius.medium),
-                    elevation = AppElevation.level2
-                ) {
-                    Row(Modifier.padding(horizontal = 16.dp, vertical = 13.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            Text("Продолжить с места остановки", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-                            Text(groups.find { it.items.any { c -> c.chapterId == position.chapterId } }?.items?.find { it.chapterId == position.chapterId }?.title ?: "Последний раздел", style = MaterialTheme.typography.bodyMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                AgedPaperCard(onClick={resume(last!!.chapterId)},
+                    modifier=Modifier.fillMaxWidth(),
+                    border=BorderStroke(.8.dp,BookColors.gold.copy(alpha=.3f)),
+                    colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.86f))) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal=17.dp,vertical=13.dp),
+                        verticalAlignment=Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                            Text("Продолжить с места остановки",
+                                style=MaterialTheme.typography.titleSmall.copy(fontFamily=BookSerif),
+                                color=heritageInk())
+                            Text(groups.flatMap { it.items }
+                                .find { it.chapterId==last!!.chapterId }?.title
+                                    ?: "Последнее место чтения",
+                                style=MaterialTheme.typography.bodyMedium,
+                                color=heritageMuted(),maxLines=2,
+                                overflow=TextOverflow.Ellipsis)
                         }
-                        Text("→", style = MaterialTheme.typography.titleMedium)
+                        Text("›", style=MaterialTheme.typography.headlineSmall,
+                            color=BookColors.gold)
                     }
                 }
             }
         }
-        item { OutlinedTextField(
-            query,
-            { query = it; resetList() },
-            label = { Text("Найти главу или тему") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true,
-            shape = RoundedCornerShape(AppRadius.medium),
-            colors = OutlinedTextFieldDefaults.colors(
-                focusedContainerColor = MaterialTheme.colorScheme.surface.copy(alpha = .72f),
-                unfocusedContainerColor = MaterialTheme.colorScheme.surface.copy(alpha = .54f),
-                focusedBorderColor = MaterialTheme.colorScheme.primary.copy(alpha = .48f),
-                unfocusedBorderColor = MaterialTheme.colorScheme.outline.copy(alpha = .32f)
-            ),
-            trailingIcon = { if (query.isNotEmpty()) TextButton(onClick = { query = ""; resetList() }) { Text("Очистить") } }
-        ) }
         item {
-            Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-                listOf("all" to "Все", "read" to "Прочитано", "saved" to "С закладками").forEach { (key, label) ->
-                    FilterChip(
-                        selected = filter == key,
-                        onClick = { filter = key; resetList() },
-                        label = { Text(label) },
-                        colors = FilterChipDefaults.filterChipColors(
-                            selectedContainerColor = MaterialTheme.colorScheme.primaryContainer,
-                            selectedLabelColor = MaterialTheme.colorScheme.primary
-                        )
-                    )
-                }
+            OutlinedTextField(query,{query=it;resetList()},
+                modifier=Modifier.fillMaxWidth(),
+                singleLine=true,
+                placeholder={Text("Найти главу или тему")},
+                leadingIcon={
+                    NavigationGlyph("search",modifier=Modifier.size(22.dp),tint=BookColors.gold)
+                },
+                trailingIcon={
+                    if(query.isNotBlank()) TextButton(onClick={query="";resetList()}) {Text("×")}
+                },
+                shape=RoundedCornerShape(22.dp),
+                colors=OutlinedTextFieldDefaults.colors(
+                    focusedContainerColor=BookColors.card.copy(alpha=.6f),
+                    unfocusedContainerColor=BookColors.card.copy(alpha=.43f),
+                    focusedBorderColor=BookColors.gold.copy(alpha=.72f),
+                    unfocusedBorderColor=BookColors.gold.copy(alpha=.3f)
+                ))
+        }
+        item {
+            Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                listOf("all" to "Все","read" to "Прочитано","saved" to "С закладками")
+                    .forEach { (key,label) ->
+                        HeritageChoice(label,filter==key,Modifier.weight(1f)) {
+                            filter=key
+                            resetList()
+                        }
+                    }
             }
         }
         item {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                TextButton(onClick = { openedGroups = matching.map { it.id }; openedChapters = matching.flatMap { it.items }.map { it.chapterId } }, contentPadding = PaddingValues(horizontal = 6.dp)) { Text("Раскрыть всё") }
-                TextButton(onClick = { openedGroups = emptyList(); openedChapters = emptyList() }, contentPadding = PaddingValues(horizontal = 6.dp)) { Text("Свернуть всё") }
-            }
-        }
+            HeritageSectionHeading("Разделы книги",
+                trailing="${matching.sumOf { it.items.size }} фрагментов")
         }
         if (matching.isEmpty()) item { InfoCard("Ничего не найдено", "Измените запрос или фильтр.") }
         matching.forEach { group ->
@@ -475,27 +472,37 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 val count = group.items.count { it.chapterId in readIds }
                 AgedPaperCard(
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .90f)),
+                    colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .83f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
-                    shape = RoundedCornerShape(AppRadius.medium),
+                    border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .34f)),
+                    shape = RoundedCornerShape(19.dp),
                     modifier = Modifier.fillMaxWidth().animateItem(
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
                     )
                 ) {
-                    Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Text(if (expanded) "⌄" else "›", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.primary)
-                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                                Text(groupDisplayTitle(group), style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif), color = BookColors.ink)
-                                Text("$count из ${group.items.size} прочитано", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
+                    Row(Modifier.fillMaxWidth().heightIn(min=91.dp)
+                        .padding(horizontal=13.dp,vertical=12.dp),
+                        horizontalArrangement=Arrangement.spacedBy(13.dp),
+                        verticalAlignment=Alignment.CenterVertically) {
+                        HeritageMedallion(matching.indexOfFirst { it.id==group.id }+1)
+                        Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
+                            Text(groupDisplayTitle(group),
+                                style=MaterialTheme.typography.titleMedium.copy(
+                                    fontFamily=BookSerif,fontSize=18.sp,lineHeight=23.sp),
+                                color=heritageInk())
+                            Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
+                                Text("$count из ${group.items.size} прочитано",
+                                    style=MaterialTheme.typography.labelSmall,color=heritageMuted())
+                                groupPageLabel(group)?.let { page ->
+                                    Text("· $page",style=MaterialTheme.typography.labelSmall,
+                                        color=heritageMuted())
+                                }
                             }
                         }
-                        groupPageLabel(group)?.let { page ->
-                            Text(page, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.End,
-                                style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                        }
+                        Text(if(expanded) "⌄" else "›",
+                            style=MaterialTheme.typography.headlineSmall,color=BookColors.gold)
                     }
                 }
             }
@@ -565,6 +572,5 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 }
             }
         }
-        item { Text("Следующие тома ещё не включены.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 6.dp, bottom = 14.dp)) }
     }
 }
