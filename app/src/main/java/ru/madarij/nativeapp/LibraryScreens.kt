@@ -201,8 +201,14 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
     val repo = remember(context) { LearningRepository(context.applicationContext) }
     val attempts by repo.attempts.collectAsStateWithLifecycle(emptyMap())
     var totals by remember { mutableStateOf(0 to 0) }
+    var exercisePrompts by remember { mutableStateOf<List<String>>(emptyList()) }
     LaunchedEffect(repo) {
-        totals = withContext(Dispatchers.Default) { repo.questions.size to repo.exercises.size }
+        val prepared = withContext(Dispatchers.Default) {
+            Triple(repo.questions.size, repo.exercises.size,
+                repo.exercises.map { it.prompt })
+        }
+        totals = prepared.first to prepared.second
+        exercisePrompts = prepared.third
     }
     var view by rememberSaveable { mutableStateOf("all") }
     var period by rememberSaveable { mutableStateOf("week") }
@@ -216,13 +222,13 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
     }
     val totalGroups = remember(chapters) { LogicalReadingSections.roots(chapters).size }
     val answered = attempts.count { it.value.count > 0 }
-    val written = remember(notes, totals) {
+    val written = remember(notes, exercisePrompts) {
         val saved = notes.mapNotNull { note ->
             note.text.takeIf { it.startsWith("Задание: ") }
                 ?.substringAfter("Задание: ")?.substringBefore("\n\n")
         }.toSet()
-        // Count distinct prompts, not repeated notes as extra assignments.
-        repo.exercises.count { it.prompt in saved }
+        // The bank is decoded off the UI thread; only cheap lookup remains.
+        exercisePrompts.count { it in saved }
     }
     val minutes = history.sumOf { it.seconds } / 60
     val latestCorrect = attempts.values.count { it.count > 0 && it.latestCorrect }
