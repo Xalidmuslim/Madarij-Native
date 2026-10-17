@@ -136,20 +136,29 @@ internal fun ReedPenWritingText(
                     val position = timeline.positionAt(amount)
                     val charIndex = floor(position).toInt().coerceIn(0, text.length - 1)
                     val fraction = (position - charIndex).coerceIn(0f, 1f)
-                    val line = layout.getLineForOffset(charIndex)
                     val glyph = layout.getBoundingBox(charIndex)
-                    val (lineTop, lineBottom) = reedPenVisibleLineBounds(
-                        lineTop = layout.getLineTop(line).toFloat(),
-                        lineBottom = layout.getLineBottom(line).toFloat(),
-                        glyphTop = glyph.top,
-                        glyphBottom = glyph.bottom,
-                        overscan = 7.dp.toPx(),
-                        height = size.height
-                    )
                     val x = (glyph.left + glyph.width * fraction).coerceIn(0f, size.width)
-                    val visibleInk = Path().apply {
-                        if (lineTop > 0f) addRect(Rect(0f, 0f, size.width, lineTop))
-                        if (x > 0f) addRect(Rect(0f, lineTop, x, lineBottom))
+                    // The old broad rectangles used to overlap the NEXT handwritten
+                    // line, exposing isolated Cyrillic strokes before the pen reached
+                    // that line. Selection geometry tracks only completed characters.
+                    // This retains native text layout without per-frame text reflow.
+                    val visibleInk = layout.getPathForRange(0, charIndex)
+                    if (x > glyph.left && glyph.width > 0f) {
+                        val (_, safeBottom) = reedPenVisibleLineBounds(
+                            lineTop = glyph.top,
+                            lineBottom = glyph.bottom,
+                            glyphTop = glyph.top,
+                            glyphBottom = glyph.bottom,
+                            overscan = 2.dp.toPx(),
+                            height = size.height
+                        )
+                        visibleInk.addRect(
+                            Rect(
+                                glyph.left.coerceAtLeast(0f),
+                                (glyph.top - 2.dp.toPx()).coerceAtLeast(0f),
+                                x, safeBottom
+                            )
+                        )
                     }
                     val contentScope = this
                     clipPath(visibleInk) { contentScope.drawContent() }
