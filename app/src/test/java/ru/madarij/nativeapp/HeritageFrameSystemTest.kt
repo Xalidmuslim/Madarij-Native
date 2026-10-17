@@ -36,7 +36,7 @@ class HeritageFrameSystemTest {
         assertTrue(design.contains(".heritageEtching())"))
         assertTrue(home.contains("heritageEtching(cornerRadius = 17.dp)"))
         assertTrue(home.contains("heritageEtching(cornerRadius = 14.dp"))
-        assertTrue(heritage.contains(".heritageEtching(cornerRadius = 14.dp"))
+        assertTrue(heritage.contains("HeritageFrameKind.FILTER_ACTIVE"))
         assertTrue(fields.contains("HeritageFrameTokens.fieldRadius"))
         assertTrue(learning.contains("HeritageFrameTokens.fieldRadius"))
         assertTrue(code("StudyChapterPicker.kt").contains("HeritageFrameTokens.fieldRadius"))
