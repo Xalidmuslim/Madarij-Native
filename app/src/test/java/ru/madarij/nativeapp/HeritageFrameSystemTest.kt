@@ -18,9 +18,9 @@ class HeritageFrameSystemTest {
         assertTrue(shared.contains("onDrawWithContent"))
         assertTrue(shared.contains("drawRoundRect"))
         assertEquals(2, cards.split("Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))").size - 1)
-        assertTrue("Native content must be drawn after the frame", cards.contains(
-            "Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))\\n            Column"
-        ))
+        assertTrue("Native content must be painted after the ornament",
+            cards.indexOf("Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))") <
+                cards.indexOf("Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp))"))
         assertTrue(shared.contains("R.drawable.vintage_section_card"))
         assertTrue(shared.contains("ImageBitmap.imageResource("))
         assertTrue(shared.contains("srcOffset=IntOffset("))
