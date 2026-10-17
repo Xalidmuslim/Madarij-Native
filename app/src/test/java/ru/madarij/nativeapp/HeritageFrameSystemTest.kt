@@ -37,7 +37,7 @@ class HeritageFrameSystemTest {
         val fields = code("LibraryScreens.kt")
         val learning = code("Learning.kt")
         assertTrue(design.contains("Box(Modifier.matchParentSize().heritageEtching(prominence = .72f))"))
-        assertTrue(home.contains("heritageEtching(cornerRadius = 17.dp)"))
+        assertTrue(home.contains("heritageEtching(cornerRadius = 17.dp, prominence = .74f"))
         assertTrue(home.contains("heritageEtching(cornerRadius = 14.dp"))
         assertTrue(heritage.contains("HeritageFrameKind.FILTER_ACTIVE"))
         assertTrue(fields.contains("HeritageFrameTokens.fieldRadius"))
