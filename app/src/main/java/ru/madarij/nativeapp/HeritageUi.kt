@@ -134,6 +134,12 @@ internal fun HeritageManuscriptNumber(number: Int, modifier: Modifier = Modifier
     }
 }
 
+/** Preserve older learning-screen callers while using the same manuscript artwork. */
+@Composable
+internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
+    HeritageManuscriptNumber(number, modifier)
+}
+
 /** Volumes: understated old binding tabs, not generic rounded Material chips. */
 @Composable
 internal fun HeritageTocVolumeTab(
