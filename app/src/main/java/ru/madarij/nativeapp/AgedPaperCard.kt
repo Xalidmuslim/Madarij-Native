@@ -25,9 +25,10 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: HeritageFrameKind = HeritageFrameKind.SECTION,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Card(modifier = modifier.heritageEtching(), shape = shape, colors = colors, elevation = elevation, border = border) {
+    Card(modifier = modifier.heritageEtching(kind = frameKind), shape = shape, colors = colors, elevation = elevation, border = border) {
         Box {
             if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
                 PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
@@ -46,10 +47,11 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: HeritageFrameKind = HeritageFrameKind.SECTION,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(
-        onClick = onClick, modifier = modifier.heritageEtching(), enabled = enabled, shape = shape,
+        onClick = onClick, modifier = modifier.heritageEtching(kind = frameKind), enabled = enabled, shape = shape,
         colors = colors, elevation = elevation, border = border
     ) {
         Box {
