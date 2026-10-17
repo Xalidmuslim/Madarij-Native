@@ -20,7 +20,8 @@ internal fun StudyOverview(
     answered: Int,
     allQuestions: Int,
     due: Int,
-    writingTasks: Int
+    writingTasks: Int,
+    scopeLabel: String
 ) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
@@ -41,7 +42,7 @@ internal fun StudyOverview(
                 StudyStat("$due", "Повторить", Modifier.weight(.8f))
                 StudyStat("$readChapters/$allChapters", "Прочитано", Modifier.weight(1.0f))
             }
-            Text("$writingTasks письменных заданий · вопросы по обоим томам",
+            Text("$writingTasks письменных заданий · $scopeLabel",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
@@ -211,13 +212,13 @@ internal fun StudyScopeBar(
         contentPadding = PaddingValues(horizontal = 14.dp, vertical = 9.dp)
     ) {
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text("ВЫБРАННЫЙ ТОМ И ТЕМА", style = MaterialTheme.typography.labelSmall,
+            Text("ИЗУЧАЕМЫЙ МАТЕРИАЛ", style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Text(selectedLabel, maxLines = 2, overflow = TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurface)
         }
         Spacer(Modifier.width(8.dp))
-        Text("Выбрать ›", style = MaterialTheme.typography.labelMedium)
+        Text("Изменить ›", style = MaterialTheme.typography.labelMedium)
     }
 }
