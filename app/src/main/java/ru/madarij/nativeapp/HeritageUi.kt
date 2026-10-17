@@ -80,57 +80,84 @@ internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier
 }
 
 /**
- * A single 38dp old manuscript icon is used for every TOC group.
- * The page silhouette stays identical; only its printed numeral changes.
- * Rendered with lightweight native Canvas geometry, never screenshot slices.
+ * Original miniature parchment leaf, drawn entirely by Compose Canvas.
+ *
+ * The organic left/right edges and single subtle folded corner deliberately
+ * avoid the thick horizontal roll caps that looked like cropped picture tiles.
+ * The same 32dp silhouette is used by all chapters; only the numeral changes.
+ * This is vector geometry, not a bitmap crop of the user's reference.
  */
 @Composable
 internal fun HeritageManuscriptNumber(number: Int, modifier: Modifier = Modifier) {
-    Box(modifier.size(CompactUi.tocManuscriptIconDp.dp), contentAlignment = Alignment.Center) {
+    Box(
+        modifier.size(CompactUi.tocManuscriptIconDp.dp),
+        contentAlignment = Alignment.Center
+    ) {
         Canvas(Modifier.fillMaxSize()) {
             val w = size.width
             val h = size.height
-            val stroke = .95.dp.toPx()
-            val page = Path().apply {
-                moveTo(w * .25f, h * .11f)
-                quadraticBezierTo(w * .69f, h * .07f, w * .82f, h * .15f)
-                lineTo(w * .80f, h * .83f)
-                quadraticBezierTo(w * .50f, h * .88f, w * .21f, h * .83f)
+            val parchment = Path().apply {
+                moveTo(w * .20f, h * .11f)
+                quadraticBezierTo(w * .29f, h * .075f, w * .49f, h * .105f)
+                quadraticBezierTo(w * .61f, h * .09f, w * .69f, h * .105f)
+                lineTo(w * .80f, h * .22f)
+                quadraticBezierTo(w * .76f, h * .36f, w * .80f, h * .49f)
+                quadraticBezierTo(w * .75f, h * .66f, w * .79f, h * .81f)
+                quadraticBezierTo(w * .64f, h * .88f, w * .49f, h * .86f)
+                quadraticBezierTo(w * .32f, h * .90f, w * .20f, h * .84f)
+                quadraticBezierTo(w * .17f, h * .69f, w * .21f, h * .54f)
+                quadraticBezierTo(w * .16f, h * .34f, w * .20f, h * .11f)
                 close()
             }
-            // Restrained warm-ink shadow, aged page and curling edges.
-            drawRoundRect(
-                color = Color(0xFF634025).copy(alpha = .17f),
-                topLeft = Offset(w * .26f, h * .16f),
-                size = Size(w * .63f, h * .76f),
-                cornerRadius = CornerRadius(3.dp.toPx())
+            // Warm matte leaf. No horizontal roll caps, texture crops or
+            // rectangular plaques: only the organic parchment silhouette.
+            drawPath(
+                parchment,
+                brush = Brush.verticalGradient(
+                    listOf(Color(0xFFF7E2BD), Color(0xFFE5C396), Color(0xFFEDD2AA))
+                )
             )
-            drawPath(page, brush = Brush.verticalGradient(listOf(
-                Color(0xFFFFE9BD), Color(0xFFE9C595), Color(0xFFD5AE79)
-            )))
-            drawPath(page, color = Color(0xFF926741), style = Stroke(stroke))
-            drawRoundRect(
-                brush = Brush.verticalGradient(listOf(Color(0xFFFBE2B4), Color(0xFFCE9C61))),
-                topLeft = Offset(w * .16f, h * .09f),
-                size = Size(w * .62f, h * .13f),
-                cornerRadius = CornerRadius(h * .065f)
+            drawPath(
+                parchment, color = Color(0xFF98734D),
+                style = Stroke(width = .9.dp.toPx())
             )
-            drawRoundRect(
-                brush = Brush.verticalGradient(listOf(Color(0xFFD8AA75), Color(0xFFF6D5A5))),
-                topLeft = Offset(w * .15f, h * .77f),
-                size = Size(w * .67f, h * .13f),
-                cornerRadius = CornerRadius(h * .06f)
+            // Tiny upper-right dog-ear: one fold, not a decorative frame.
+            val dogEar = Path().apply {
+                moveTo(w * .68f, h * .105f)
+                quadraticBezierTo(w * .66f, h * .19f, w * .68f, h * .235f)
+                quadraticBezierTo(w * .74f, h * .23f, w * .80f, h * .22f)
+                close()
+            }
+            drawPath(dogEar, color = Color(0xFFD1AB77).copy(alpha = .8f))
+            drawLine(
+                Color(0xFFAD875C).copy(alpha = .7f),
+                Offset(w * .68f, h * .235f),
+                Offset(w * .77f, h * .222f),
+                strokeWidth = .6.dp.toPx()
             )
-            drawLine(Color(0xFF976A44), Offset(w * .19f,h * .19f),
-                Offset(w * .77f,h * .19f), strokeWidth = .7.dp.toPx())
-            drawLine(Color(0xFFAA7848), Offset(w * .18f,h * .83f),
-                Offset(w * .79f,h * .83f), strokeWidth = .7.dp.toPx())
+            // Restrained left manuscript edge gives depth at tiny sizes.
+            val innerEdge = Path().apply {
+                moveTo(w * .27f, h * .19f)
+                quadraticBezierTo(w * .23f, h * .46f, w * .275f, h * .76f)
+            }
+            drawPath(
+                innerEdge,
+                color = Color(0xFF9B744E).copy(alpha = .35f),
+                style = Stroke(width = .65.dp.toPx(), cap = StrokeCap.Round)
+            )
         }
-        Text(number.toString(),
-            modifier = Modifier.offset(x = 1.dp, y = 1.dp),
-            style = MaterialTheme.typography.titleMedium.copy(
-                fontFamily = BookSerif, fontWeight = FontWeight.Bold, fontSize = 18.sp),
-            color = Color(0xFF58351E))
+        Text(
+            number.toString(),
+            modifier = Modifier.offset(x = 0.dp, y = 1.dp),
+            style = MaterialTheme.typography.labelLarge.copy(
+                fontFamily = BookSerif,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 15.sp,
+                lineHeight = 17.sp
+            ),
+            color = Color(0xFF51341F),
+            maxLines = 1
+        )
     }
 }
 
