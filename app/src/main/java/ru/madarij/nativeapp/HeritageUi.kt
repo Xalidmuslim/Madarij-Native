@@ -70,10 +70,7 @@ internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier
         .background(if (selected) BookColors.leather else heritageCard().copy(alpha = .64f))
         .border(.9.dp, if (selected) BookColors.gold.copy(alpha = .8f)
                       else BookColors.gold.copy(alpha = .32f), shape)
-        .clickable(onClick = onClick).heritageEtching(
-            cornerRadius = 14.dp, prominence = .86f,
-            kind = if (selected) HeritageFrameKind.FILTER_ACTIVE else HeritageFrameKind.FILTER_INACTIVE
-        ).padding(horizontal = 7.dp, vertical = 5.dp),
+        .clickable(onClick = onClick).padding(horizontal = 7.dp, vertical = 5.dp),
         contentAlignment = Alignment.Center) {
         Text(label, style = MaterialTheme.typography.labelMedium.copy(
             fontFamily = BookSerif, fontSize = 14.sp),
@@ -192,12 +189,10 @@ internal fun HeritageTocVolumeTab(
                 ), shape
             )
             .border(.9.dp, rim, shape)
-            .selectable(selected = selected, role = Role.Tab, onClick = onClick)
-            .heritageEtching(cornerRadius = 12.dp, prominence = 1f,
-                kind = if (selected) HeritageFrameKind.TAB_ACTIVE else HeritageFrameKind.TAB_INACTIVE),
+            .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
-        // Aged raster nine-slice supplies the frame without double outlines.
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
         Text(
             label, style = MaterialTheme.typography.titleMedium.copy(
                 fontFamily = BookSerif, fontSize = 17.sp, fontWeight = FontWeight.Medium),
@@ -256,25 +251,39 @@ internal fun HeritageTocFilterTab(
                 ), shape
             )
             .border(.9.dp, rim, shape)
-            .selectable(selected = selected, role = Role.Tab, onClick = onClick)
-            .heritageEtching(cornerRadius = 11.dp, prominence = 1f,
-                kind = if (selected) HeritageFrameKind.FILTER_ACTIVE else HeritageFrameKind.FILTER_INACTIVE),
+            .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
-        // Aged raster nine-slice supplies the frame without double outlines.
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
         Row(
             Modifier.fillMaxWidth().padding(horizontal = 5.dp, vertical = 5.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            VintageAssetIcon(
-                when(kind) {
-                    "all" -> VintageAssetIconKind.ALL
-                    "read" -> VintageAssetIconKind.READ
-                    else -> VintageAssetIconKind.BOOKMARK
-                },
-                modifier = Modifier.size(17.dp)
-            )
+            when (kind) {
+                "all" -> Canvas(Modifier.size(14.dp)) {
+                    repeat(3) { index ->
+                        val y = size.height * (.14f + index * .26f)
+                        drawRoundRect(
+                            color = ink, topLeft = Offset(size.width * .16f, y),
+                            size = Size(size.width * .70f, size.height * .14f),
+                            cornerRadius = CornerRadius(.8.dp.toPx())
+                        )
+                    }
+                }
+                "read" -> Canvas(Modifier.size(14.dp)) {
+                    drawCircle(ink, radius = size.minDimension * .41f,
+                        style = Stroke(1.3.dp.toPx()))
+                    val check = Path().apply {
+                        moveTo(size.width * .24f, size.height * .51f)
+                        lineTo(size.width * .44f, size.height * .69f)
+                        lineTo(size.width * .75f, size.height * .30f)
+                    }
+                    drawPath(check, ink, style = Stroke(1.35.dp.toPx(), cap = StrokeCap.Round))
+                }
+                else -> NavigationGlyph("bookmarks",
+                    modifier = Modifier.size(14.dp), tint = ink)
+            }
             Spacer(Modifier.width(4.dp))
             Text(
                 label, style = MaterialTheme.typography.labelMedium.copy(
@@ -302,7 +311,22 @@ private fun HeritageMenuIcon(kind: String) {
                     cornerRadius=androidx.compose.ui.geometry.CornerRadius(2.dp.toPx()))
             }
         }
-        "settings" -> VintageAssetIcon(VintageAssetIconKind.SETTINGS, Modifier.size(25.dp))
+        "settings" -> Canvas(Modifier.size(26.dp)) {
+            val bronze=BookColors.gold
+            val c=Offset(size.width/2,size.height/2)
+            val r=size.minDimension*.29f
+            drawCircle(bronze,r,c,style=Stroke(2.8.dp.toPx()))
+            drawCircle(bronze,r*.38f,c,style=Stroke(2.dp.toPx()))
+            repeat(8) { i ->
+                val angle=i*Math.PI/4.0
+                val dx=kotlin.math.cos(angle).toFloat()
+                val dy=kotlin.math.sin(angle).toFloat()
+                drawLine(bronze,
+                    Offset(c.x+dx*r*.99f,c.y+dy*r*.99f),
+                    Offset(c.x+dx*r*1.45f,c.y+dy*r*1.45f),
+                    strokeWidth=3.3.dp.toPx(),cap=StrokeCap.Round)
+            }
+        }
         "about" -> Text("ⓘ",fontSize=26.sp,color=BookColors.gold,
             fontFamily=BookSerif)
         else -> NavigationGlyph(kind, modifier=Modifier.size(26.dp), tint=BookColors.gold)
@@ -311,25 +335,18 @@ private fun HeritageMenuIcon(kind: String) {
 
 @Composable
 internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
-    // Individual actionable cards are required for the antique frame artwork:
-    // never stretch a single ornate border across two unrelated menu rows.
-    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        items.forEach { item ->
-            AgedPaperCard(
-                onClick = { navigate(item.first) },
-                modifier = Modifier.fillMaxWidth(),
-                colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
-                border = BorderStroke(.7.dp, BookColors.gold.copy(alpha = .22f)),
-                shape = RoundedCornerShape(15.dp),
-                elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
-                frameKind = HeritageFrameKind.SUBSECTION
-            ) {
-                Row(
-                    Modifier.fillMaxWidth().heightIn(min = 62.dp)
-                        .padding(horizontal = 10.dp, vertical = 8.dp),
+    AgedPaperCard(Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
+        border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .32f)),
+        shape = RoundedCornerShape(17.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)) {
+        Column {
+            items.forEachIndexed { index, item ->
+                Row(Modifier.fillMaxWidth().clickable { navigate(item.first) }
+                    .heightIn(min = CompactUi.menuRowMinHeightDp.dp)
+                    .padding(horizontal = 12.dp, vertical = 7.dp),
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
+                    verticalAlignment = Alignment.CenterVertically) {
                     Box(Modifier.size(34.dp), contentAlignment = Alignment.Center) {
                         HeritageMenuIcon(item.first)
                     }
@@ -337,11 +354,14 @@ internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navi
                         Text(item.second, style = MaterialTheme.typography.titleMedium.copy(
                             fontFamily = BookSerif, fontSize = 17.sp), color = heritageInk())
                         Text(item.third, style = MaterialTheme.typography.bodySmall,
-                            color = heritageMuted(), maxLines = 3,
+                            color = heritageMuted(), maxLines = 2,
                             overflow = TextOverflow.Ellipsis)
                     }
                     Text("›", fontSize = 23.sp, color = BookColors.gold)
                 }
+                if (index < items.lastIndex)
+                    HorizontalDivider(color = BookColors.gold.copy(alpha = .16f),
+                        thickness = .7.dp, modifier = Modifier.padding(horizontal = 14.dp))
             }
         }
     }

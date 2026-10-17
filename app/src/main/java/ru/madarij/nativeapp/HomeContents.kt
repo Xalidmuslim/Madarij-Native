@@ -129,8 +129,7 @@ internal fun HomeScreen(
                     .background(BookColors.card)
                     .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
                     PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Box(Modifier.matchParentSize().heritageEtching(cornerRadius = 17.dp, prominence = .74f))
-                    Row(Modifier.padding(horizontal = 17.dp, vertical = 14.dp),
+                    Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
                         horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                         Column(Modifier.weight(1f).clickable {
                             onOpenReminder(reminder)
@@ -274,7 +273,8 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
                     style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp, lineHeight = 13.sp),
                     color = BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
-            VintageAssetIcon(VintageAssetIconKind.ARROW_RIGHT, Modifier.size(14.dp))
+            Text("›", fontFamily = BookSerif, fontSize = 20.sp,
+                color = BookColors.gold.copy(alpha = .86f))
         }
     }
 }
@@ -442,18 +442,19 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 color=heritageMuted(),maxLines=2,
                                 overflow=TextOverflow.Ellipsis)
                         }
-                        VintageAssetIcon(VintageAssetIconKind.ARROW_RIGHT, Modifier.size(19.dp))
+                        Text("›", style=MaterialTheme.typography.headlineSmall,
+                            color=BookColors.gold)
                     }
                 }
             }
         }
         item {
             OutlinedTextField(query,{query=it;resetList()},
-                modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = 1f, kind = HeritageFrameKind.SEARCH),
+                modifier=Modifier.fillMaxWidth(),
                 singleLine=true,
                 placeholder={Text("Найти главу или тему")},
                 leadingIcon={
-                    VintageAssetIcon(VintageAssetIconKind.SEARCH,Modifier.size(25.dp))
+                    NavigationGlyph("search",modifier=Modifier.size(22.dp),tint=BookColors.gold)
                 },
                 trailingIcon={
                     if(query.isNotBlank()) TextButton(onClick={query="";resetList()}) {Text("×")}
@@ -524,7 +525,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 }
                             }
                         }
-                        VintageAssetIcon(if(expanded) VintageAssetIconKind.EXPAND else VintageAssetIconKind.ARROW_RIGHT, Modifier.size(18.dp))
+                        Text(if(expanded) "⌄" else "›",
+                            style=MaterialTheme.typography.headlineSmall,color=BookColors.gold)
                     }
                 }
             }
@@ -544,8 +546,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
                     ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
                         PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                        Box(Modifier.matchParentSize().heritageEtching(cornerRadius = 17.dp, prominence = .68f, kind = HeritageFrameKind.SUBSECTION))
-                        Column(Modifier.padding(top = 7.dp, bottom = 9.dp)) {
+                        Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(30.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
                                     Text(if (isPageContinuation) "↳" else "$ordinal",
@@ -580,8 +581,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         ).padding(start = 14.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),
                         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
-                        shape = RoundedCornerShape(20.dp),
-                        frameKind = HeritageFrameKind.SUBSECTION
+                        shape = RoundedCornerShape(20.dp)
                     ) {
                         Column(Modifier.padding(horizontal = 11.dp, vertical = 7.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
