@@ -26,10 +26,16 @@ class AntiqueFrameArtworkTest {
             assertEquals(112, image.height)
             assertEquals("Text center must be transparent: $name",
                 0, image.getRGB(image.width / 2, image.height / 2) ushr 24)
-            assertTrue("The vertical edge is missing: $name",
-                image.getRGB(2, image.height / 2) ushr 24 > 0)
-            assertTrue("The top edge is missing: $name",
-                image.getRGB(image.width / 2, 2) ushr 24 > 0)
+            val leftOpaque = (8 until image.height - 8).count {
+                image.getRGB(2, it) ushr 24 > 0
+            }
+            val topOpaque = (8 until image.width - 8).count {
+                image.getRGB(it, 2) ushr 24 > 0
+            }
+            assertTrue("Vertical trim has too many missing pixels: $name",
+                leftOpaque > image.height / 2)
+            assertTrue("Horizontal trim has too many missing pixels: $name",
+                topOpaque > image.width / 2)
         }
     }
 
