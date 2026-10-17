@@ -22,10 +22,10 @@ class HeritageFrameTextureTest {
 
     @Test fun cornersAreNotStretchedByPanelLayout() {
         val frames = File("src/main/java/ru/madarij/nativeapp/HeritageFrames.kt").readText()
-        assertTrue(frames.contains("val sX = intArrayOf("))
-        assertTrue(frames.contains("val dX = intArrayOf("))
-        assertTrue(frames.contains("for (y in 0..2) for (x in 0..2)"))
-        assertTrue(frames.contains("if (x == 1 && y == 1) continue"))
-        assertTrue(frames.contains("R.drawable.heritage_frame_parchment"))
+        assertTrue(frames.contains("val srcX = intArrayOf("))
+        assertTrue(frames.contains("val dstX = intArrayOf("))
+        assertTrue(frames.contains("for (row in 0..2) for (col in 0..2)"))
+        assertTrue(frames.contains("if (col==1 && row==1) continue"))
+        assertTrue(frames.contains("R.drawable.vintage_section_card"))
     }
 }
