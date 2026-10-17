@@ -104,7 +104,7 @@ internal fun Soft3DPanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
         .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base).heritageEtching()) {
         if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
             PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
@@ -122,7 +122,7 @@ internal fun Soft3DSagePanel(
 ) {
     val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.secondaryContainer)
         .border(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .3f), shape)
-    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base).heritageEtching()) {
         if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
             PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
@@ -608,7 +608,7 @@ internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
                 Modifier.weight(1f).clip(frame)
                     .border(if (active) 1.5.dp else .7.dp,
                         if (active) BookColors.gold else BookColors.gold.copy(alpha = .27f), frame)
-                    .clickable { change(key) }.padding(5.dp),
+                    .clickable { change(key) }.heritageEtching(cornerRadius = 13.dp, prominence = .72f).padding(5.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(7.dp)
             ) {
