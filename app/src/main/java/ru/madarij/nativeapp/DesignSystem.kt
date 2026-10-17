@@ -435,7 +435,7 @@ private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> 
         Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 13.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Text(title, style = MaterialTheme.typography.titleMedium.copy(
-                fontFamily = BookSerif, fontSize = 20.sp), color = BookColors.ink)
+                fontFamily = BookSerif, fontSize = 20.sp), color = heritageInk())
             content()
         }
     }
@@ -447,14 +447,14 @@ private fun ReadingSlider(label: String, valueLabel: String, value: Float,
     Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text(label, style = MaterialTheme.typography.bodyMedium, color = BookColors.ink)
-            Text(valueLabel, style = MaterialTheme.typography.labelMedium, color = BookColors.muted)
+            Text(label, style = MaterialTheme.typography.bodyMedium, color = heritageInk())
+            Text(valueLabel, style = MaterialTheme.typography.labelMedium, color = heritageMuted())
         }
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
             TextButton(onClick = { onValue((value - step).coerceIn(range.start, range.endInclusive)) },
                 enabled = value > range.start,
                 contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
-                Text("−", color = BookColors.ink, fontSize = 21.sp)
+                Text("−", color = heritageInk(), fontSize = 21.sp)
             }
             Box(Modifier.weight(1f)) {
                 BookTextSlider(value, onValue, {}, range = range)
@@ -462,7 +462,7 @@ private fun ReadingSlider(label: String, valueLabel: String, value: Float,
             TextButton(onClick = { onValue((value + step).coerceIn(range.start, range.endInclusive)) },
                 enabled = value < range.endInclusive,
                 contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
-                Text("+", color = BookColors.ink, fontSize = 21.sp)
+                Text("+", color = heritageInk(), fontSize = 21.sp)
             }
         }
     }
