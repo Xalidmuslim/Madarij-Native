@@ -341,8 +341,11 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     }
     LaunchedEffect(groups, last?.chapterId) {
         if (groups.isNotEmpty() && !initialized) {
-            openedGroups = listOf(groups.find { group -> group.items.any { it.chapterId == last?.chapterId } }?.id ?: groups.first().id)
-            if (last != null) openedChapters = listOf(last!!.chapterId)
+            // Match the compact reference list: initially show only semantic
+            // chapter cards. Expanding a card reveals its fragments and topics.
+            // The "Continue reading" card above retains the last position.
+            openedGroups = emptyList()
+            openedChapters = emptyList()
             initialized = true
         }
         if (groups.isNotEmpty() && !restored) restored = true
