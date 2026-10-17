@@ -97,6 +97,42 @@ internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
 }
 
 @Composable
+private fun HeritageMenuIcon(kind: String) {
+    when(kind) {
+        "progress" -> Canvas(Modifier.size(31.dp)) {
+            val bronze=BookColors.gold
+            val w=size.width
+            val h=size.height
+            listOf(.35f,.68f,.94f).forEachIndexed { i, height ->
+                drawRoundRect(bronze.copy(alpha=.9f),
+                    topLeft=Offset(w*(.10f+i*.30f),h*(1f-height)),
+                    size=androidx.compose.ui.geometry.Size(w*.17f,h*height),
+                    cornerRadius=androidx.compose.ui.geometry.CornerRadius(2.dp.toPx()))
+            }
+        }
+        "settings" -> Canvas(Modifier.size(31.dp)) {
+            val bronze=BookColors.gold
+            val c=Offset(size.width/2,size.height/2)
+            val r=size.minDimension*.29f
+            drawCircle(bronze,r,c,style=Stroke(2.8.dp.toPx()))
+            drawCircle(bronze,r*.38f,c,style=Stroke(2.dp.toPx()))
+            repeat(8) { i ->
+                val angle=i*Math.PI/4.0
+                val dx=kotlin.math.cos(angle).toFloat()
+                val dy=kotlin.math.sin(angle).toFloat()
+                drawLine(bronze,
+                    Offset(c.x+dx*r*.99f,c.y+dy*r*.99f),
+                    Offset(c.x+dx*r*1.45f,c.y+dy*r*1.45f),
+                    strokeWidth=3.3.dp.toPx(),cap=StrokeCap.Round)
+            }
+        }
+        "about" -> Text("ⓘ",fontSize=31.sp,color=BookColors.gold,
+            fontFamily=BookSerif)
+        else -> NavigationGlyph(kind, modifier=Modifier.size(31.dp), tint=BookColors.gold)
+    }
+}
+
+@Composable
 internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
     AgedPaperCard(Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
@@ -111,8 +147,7 @@ internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navi
                     horizontalArrangement = Arrangement.spacedBy(14.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     Box(Modifier.size(42.dp), contentAlignment = Alignment.Center) {
-                        NavigationGlyph(item.first, modifier = Modifier.size(31.dp),
-                            tint = BookColors.gold)
+                        HeritageMenuIcon(item.first)
                     }
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                         Text(item.second, style = MaterialTheme.typography.titleMedium.copy(
