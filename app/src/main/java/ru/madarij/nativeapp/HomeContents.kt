@@ -231,13 +231,13 @@ internal fun HomeScreen(
 @Composable
 private fun AntiqueHomeIcon(glyph: String) {
     // The user's generated brass-and-leather icon, not doubled vector outlines.
-    AntiqueBookIcon(glyph, Modifier.size(35.dp))
+    AntiqueBookIcon(glyph, Modifier.size(31.dp))
 }
 
 @Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 73.dp),
+        modifier = modifier.heightIn(min = 66.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
@@ -382,7 +382,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
     }
     LazyColumn(state = listState,
         contentPadding = PaddingValues(start = 17.dp,end = 17.dp,top = 9.dp,bottom = 132.dp),
-        verticalArrangement = Arrangement.spacedBy(11.dp)) {
+        verticalArrangement = Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(10.dp)) {
                 availableVolumes.forEach { volume ->
@@ -412,7 +412,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     modifier=Modifier.fillMaxWidth(),
                     border=BorderStroke(.8.dp,BookColors.gold.copy(alpha=.3f)),
                     colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.86f))) {
-                    Row(Modifier.fillMaxWidth().padding(horizontal=17.dp,vertical=13.dp),
+                    Row(Modifier.fillMaxWidth().padding(horizontal=14.dp,vertical=10.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(5.dp)) {
                             Text("Продолжить с места остановки",
@@ -482,15 +482,15 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
                     )
                 ) {
-                    Row(Modifier.fillMaxWidth().heightIn(min=91.dp)
-                        .padding(horizontal=13.dp,vertical=12.dp),
+                    Row(Modifier.fillMaxWidth().heightIn(min=CompactUi.contentsGroupMinHeightDp.dp)
+                        .padding(horizontal=11.dp,vertical=8.dp),
                         horizontalArrangement=Arrangement.spacedBy(13.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         HeritageMedallion(matching.indexOfFirst { it.id==group.id }+1)
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(
-                                    fontFamily=BookSerif,fontSize=18.sp,lineHeight=23.sp),
+                                    fontFamily=BookSerif,fontSize=17.sp,lineHeight=21.sp),
                                 color=heritageInk())
                             Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
                                 Text("$count из ${group.items.size} прочитано",
@@ -523,21 +523,21 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
                         PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
-                            Row(Modifier.fillMaxWidth().heightIn(min = 70.dp).padding(start = 12.dp, end = 4.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                                Box(Modifier.size(33.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
+                            Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                                Box(Modifier.size(30.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
                                     Text(if (isPageContinuation) "↳" else "$ordinal",
                                         style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
                                         color = Color(0xFFFFF3DC))
                                 }
                                 Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(chapter.chapterId, chapter.entryParagraphId) }) {
                                     if (isPageContinuation) Text("ПРОДОЛЖЕНИЕ ТЕКСТА", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                                    Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 16.sp, lineHeight = 20.sp), color = ink)
+                                    Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp), color = ink)
                                     if(chapter.topics.isNotEmpty()) Text("${if(expanded) "⌄" else "›"} Содержание · ${chapter.topics.size}", style = MaterialTheme.typography.labelSmall, color = ink.copy(alpha = .7f))
                                 }
                                 TextButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
                             }
                             chapterPageLabel(chapter)?.let { page ->
-                                Text(page, modifier = Modifier.fillMaxWidth().padding(end = 14.dp, bottom = 7.dp),
+                                Text(page, modifier = Modifier.fillMaxWidth().padding(end = 12.dp, bottom = 5.dp),
                                     textAlign = androidx.compose.ui.text.style.TextAlign.End,
                                     style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
                             }
@@ -554,12 +554,12 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                             fadeInSpec = tween(if (reducedMotion) 0 else 140),
                             placementSpec = tween(if (reducedMotion) 0 else 175),
                             fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                        ).padding(start = 20.dp),
+                        ).padding(start = 14.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),
                         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
                         shape = RoundedCornerShape(20.dp)
                     ) {
-                        Column(Modifier.padding(horizontal = 13.dp, vertical = 9.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Column(Modifier.padding(horizontal = 11.dp, vertical = 7.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
                             Text(topic.title, style = MaterialTheme.typography.bodyMedium)
                             tocPage(topic.paragraphId)?.let { page ->

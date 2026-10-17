@@ -78,19 +78,19 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
     val ownNotes=if(filter=="note" && query.isNotBlank()) notes.filter { normalizedText(it.text).text.contains(normalizedText(query).text) } else emptyList()
     val terms=if(filter=="term" && query.isNotBlank()) learning.terms.filter { normalizedText("${it.transcript} ${it.ar} ${it.definition}").text.contains(normalizedText(query).text) } else emptyList()
     val found=results.size+ownNotes.size+terms.size
-    Column(Modifier.fillMaxSize().padding(horizontal=20.dp)) {
-        OutlinedTextField(query,{query=it},modifier=Modifier.fillMaxWidth().padding(top=16.dp),label={Text("Слово или фраза")},singleLine=true,trailingIcon={if(query.isNotEmpty()) TextButton(onClick={query=""}) {Text("Очистить")}})
-        Row(Modifier.horizontalScroll(rememberScrollState()).padding(top=10.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+    Column(Modifier.fillMaxSize().padding(horizontal=16.dp)) {
+        OutlinedTextField(query,{query=it},modifier=Modifier.fillMaxWidth().padding(top=8.dp),label={Text("Слово или фраза")},singleLine=true,trailingIcon={if(query.isNotEmpty()) TextButton(onClick={query=""}) {Text("Очистить")}})
+        Row(Modifier.horizontalScroll(rememberScrollState()).padding(top=6.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
             listOf("all" to "Всё","title" to "Заголовки","ayat" to "Фрагменты с аятами","hadith" to "Фрагменты с хадисами","term" to "Термины","note" to "Заметки").forEach { (key,label) -> FilterChip(filter==key,{filter=key},{Text(label)},modifier=Modifier.heightIn(min=48.dp)) }
         }
-        Text(when {loading -> "Поиск…";error.isNotBlank() -> error;query.isBlank() -> "Ищите в русском и арабском тексте. Огласовки и регистр не влияют на поиск.";else -> "Найдено: $found"},Modifier.padding(vertical=12.dp),style=MaterialTheme.typography.bodyMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)
-        if(filter=="ayat" || filter=="hadith") Text("Фильтр находит упоминания по словам исходного текста. Он не заменяет проверку цитаты и её атрибуции.",Modifier.padding(bottom=12.dp),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
-        if(!loading) LazyColumn(state=state,modifier=Modifier.weight(1f),contentPadding=PaddingValues(bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+        Text(when {loading -> "Поиск…";error.isNotBlank() -> error;query.isBlank() -> "Ищите в русском и арабском тексте. Огласовки и регистр не влияют на поиск.";else -> "Найдено: $found"},Modifier.padding(vertical=7.dp),style=MaterialTheme.typography.bodyMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)
+        if(filter=="ayat" || filter=="hadith") Text("Фильтр находит упоминания по словам исходного текста. Он не заменяет проверку цитаты и её атрибуции.",Modifier.padding(bottom=8.dp),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
+        if(!loading) LazyColumn(state=state,modifier=Modifier.weight(1f),contentPadding=PaddingValues(bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
             if(query.isNotBlank() && found==0 && error.isBlank()) item { InfoCard("Ничего не найдено","Попробуйте более короткое слово, другую форму или фильтр «Всё».") }
             items(results,key={"p:${it.id}"}) { p ->
                 val c=chapters.find { it.id==p.chapterId }
                 AgedPaperCard(onClick={open(p.chapterId,p.id,query)},modifier=Modifier.fillMaxWidth()) {
-                    Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
+                    Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
                         Text(if(c==null) "Первый том" else structure.findTitle(c),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)
                         val arabicOnly=normalizedText(p.ar).text.contains(normalizedText(query).text) && !normalizedText(p.ru).text.contains(normalizedText(query).text)
                         if(arabicOnly) Text(highlight(searchExcerpt(p.ar,query),query,MaterialTheme.colorScheme.primary),maxLines=5,style=textDirectionStyle(),overflow=TextOverflow.Ellipsis)
@@ -98,8 +98,8 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
                     }
                 }
             }
-            items(ownNotes,key={"n:${it.id}"}) { n -> AgedPaperCard(onClick={open(n.chapterId,n.paragraphId,query)},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(18.dp)) {Text("Моя заметка",style=MaterialTheme.typography.labelLarge);Text(highlight(searchExcerpt(n.text,query),query,MaterialTheme.colorScheme.primary),maxLines=5,overflow=TextOverflow.Ellipsis)}} }
-            items(terms,key={"t:${it.transcript}"}) { t -> val scope=rememberCoroutineScope();AgedPaperCard(onClick={scope.launch {vm.repository.dao.paragraph(t.sourceParagraphId)?.let {open(it.chapterId,it.id,query)}}},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text("${t.transcript} · ${t.ar}",style=MaterialTheme.typography.titleMedium);Text(t.definition);Text("Открыть исходный контекст",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)}} }
+            items(ownNotes,key={"n:${it.id}"}) { n -> AgedPaperCard(onClick={open(n.chapterId,n.paragraphId,query)},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp)) {Text("Моя заметка",style=MaterialTheme.typography.labelLarge);Text(highlight(searchExcerpt(n.text,query),query,MaterialTheme.colorScheme.primary),maxLines=5,overflow=TextOverflow.Ellipsis)}} }
+            items(terms,key={"t:${it.transcript}"}) { t -> val scope=rememberCoroutineScope();AgedPaperCard(onClick={scope.launch {vm.repository.dao.paragraph(t.sourceParagraphId)?.let {open(it.chapterId,it.id,query)}}},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text("${t.transcript} · ${t.ar}",style=MaterialTheme.typography.titleMedium);Text(t.definition);Text("Открыть исходный контекст",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)}} }
         }
     }
 }
@@ -116,11 +116,11 @@ private fun textDirectionStyle()=androidx.compose.ui.text.TextStyle(textDirectio
 @Composable
 internal fun BookmarksScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Bookmark?>(null)};var title by remember {mutableStateOf("")};var note by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
-    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,top=9.dp,end=16.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item { Text("${bookmarks.size} сохранённых мест", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
         if(bookmarks.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Найти закладку")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
         if(bookmarks.isEmpty()) item {InfoCard("Сохраните важное место","В меню чтения можно добавить закладку главы. Для отдельного абзаца включите «Действия с абзацами».")}
-        items(bookmarks.filter {query.isBlank() || "${it.title} ${it.note}".contains(query,true)},key={it.id}) {b -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(b.title,style=MaterialTheme.typography.titleMedium);Text((if(b.paragraphId==null) "Глава" else "Абзац")+" · "+chapters.find {it.id==b.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);BookmarkExcerpt(vm, b);if(b.note.isNotBlank()) Text(b.note);Row(Modifier.horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(4.dp)) {TextButton(onClick={open(b.chapterId,b.paragraphId)}) {Text("Открыть")};TextButton(onClick={editing=b;title=b.title;note=b.note}) {Text("Изменить")};TextButton(onClick={vm.deleteBookmark(b.id)}) {Text("Удалить")}}}} }
+        items(bookmarks.filter {query.isBlank() || "${it.title} ${it.note}".contains(query,true)},key={it.id}) {b -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(b.title,style=MaterialTheme.typography.titleMedium);Text((if(b.paragraphId==null) "Глава" else "Абзац")+" · "+chapters.find {it.id==b.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);BookmarkExcerpt(vm, b);if(b.note.isNotBlank()) Text(b.note);Row(Modifier.horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(4.dp)) {TextButton(onClick={open(b.chapterId,b.paragraphId)}) {Text("Открыть")};TextButton(onClick={editing=b;title=b.title;note=b.note}) {Text("Изменить")};TextButton(onClick={vm.deleteBookmark(b.id)}) {Text("Удалить")}}}} }
     }
     editing?.let {b -> AlertDialog(onDismissRequest={editing=null},title={Text("Изменить закладку")},text={Column(verticalArrangement=Arrangement.spacedBy(12.dp)) {OutlinedTextField(title,{title=it},label={Text("Название")},modifier=Modifier.fillMaxWidth());OutlinedTextField(note,{note=it},label={Text("Комментарий")},modifier=Modifier.fillMaxWidth(),minLines=3)}},confirmButton={TextButton(onClick={vm.editBookmark(b.id,title,note);editing=null},enabled=title.isNotBlank()) {Text("Сохранить")}},dismissButton={TextButton(onClick={editing=null}) {Text("Отмена")}}) }
 }
@@ -143,11 +143,11 @@ private fun BookmarkExcerpt(vm: BookViewModel, bookmark: Bookmark) {
 @Composable
 internal fun NotesScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val notes by vm.notes.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Note?>(null)};var text by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
-    LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,top=9.dp,end=16.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {ScreenHeading("Мои заметки","Личные записи рядом с текстом")}
         if(notes.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Поиск по заметкам")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
         if(notes.isEmpty()) item {InfoCard("Ваши мысли рядом с книгой","Добавьте заметку через меню главы или действия с абзацами. Также можно записать размышление во вкладке изучения.")}
-        items(notes.filter {query.isBlank() || it.text.contains(query,true)},key={it.id}) {n -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(chapters.find {it.id==n.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary);Text(n.text);Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.SHORT).format(Date(n.updatedAt)),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(onClick={open(n.chapterId,n.paragraphId)}) {Text("К тексту")};TextButton(onClick={editing=n;text=n.text}) {Text("Изменить")};TextButton(onClick={vm.deleteNote(n.id)}) {Text("Удалить")}}}} }
+        items(notes.filter {query.isBlank() || it.text.contains(query,true)},key={it.id}) {n -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(chapters.find {it.id==n.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary);Text(n.text);Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.SHORT).format(Date(n.updatedAt)),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(onClick={open(n.chapterId,n.paragraphId)}) {Text("К тексту")};TextButton(onClick={editing=n;text=n.text}) {Text("Изменить")};TextButton(onClick={vm.deleteNote(n.id)}) {Text("Удалить")}}}} }
     }
     editing?.let {n -> AlertDialog(onDismissRequest={editing=null},title={Text("Моя заметка")},text={OutlinedTextField(text,{text=it},modifier=Modifier.fillMaxWidth(),minLines=5)},confirmButton={TextButton(onClick={vm.editNote(n.id,text);editing=null},enabled=text.isNotBlank()) {Text("Сохранить")}},dismissButton={TextButton(onClick={editing=null}) {Text("Отмена")}}) }
 }
@@ -246,8 +246,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 .atZone(java.time.ZoneId.systemDefault()).toLocalDate() == today
     }
 
-    LazyColumn(contentPadding=PaddingValues(start=16.dp,end=16.dp,top=10.dp,bottom=130.dp),
-        verticalArrangement=Arrangement.spacedBy(13.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,end=16.dp,top=7.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(8.dp)) {
                 HeritageChoice("Общий", view=="all", Modifier.weight(1f)) {view="all"}
@@ -256,7 +256,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
         }
         if(view=="all") {
             item {
-                Row(Modifier.fillMaxWidth().padding(vertical=9.dp),
+                Row(Modifier.fillMaxWidth().padding(vertical=3.dp),
                     horizontalArrangement=Arrangement.spacedBy(7.dp)) {
                     HeritageProgressRing(
                         fraction=if(chapters.isEmpty()) 0f else readIds.size.toFloat()/chapters.size,
@@ -274,7 +274,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 AgedPaperCard(Modifier.fillMaxWidth(),
                     border=androidx.compose.foundation.BorderStroke(.9.dp,
                         BookColors.gold.copy(alpha=.3f))) {
-                    Column(Modifier.padding(vertical=5.dp)) {
+                    Column(Modifier.padding(vertical=2.dp)) {
                         HeritageMetricRow("contents", "Завершено смысловых разделов",
                             "$completedGroups из $totalGroups", {view="sections"})
                         HorizontalDivider(color=BookColors.gold.copy(alpha=.2f))
@@ -303,8 +303,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                     colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.82f)),
                     border=androidx.compose.foundation.BorderStroke(.8.dp,
                         BookColors.gold.copy(alpha=.29f))) {
-                    Column(Modifier.padding(13.dp),
-                        verticalArrangement=Arrangement.spacedBy(9.dp)) {
+                    Column(Modifier.padding(10.dp),
+                        verticalArrangement=Arrangement.spacedBy(6.dp)) {
                         Text("Прочитанные фрагменты", style=MaterialTheme.typography.labelMedium,
                             color=heritageMuted())
                         HeritageActivityBars(chart.second, chart.first,
@@ -327,7 +327,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
             if(due>0) item {
                 AgedPaperCard(onClick={navigate("study?review=true")},
                     modifier=Modifier.fillMaxWidth()) {
-                    Row(Modifier.fillMaxWidth().padding(15.dp),
+                    Row(Modifier.fillMaxWidth().padding(11.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Text("Вернуться к повторению · $due вопросов",
                             Modifier.weight(1f), color=heritageInk())
@@ -342,8 +342,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 AgedPaperCard(Modifier.fillMaxWidth(),
                     border=androidx.compose.foundation.BorderStroke(.7.dp,
                         BookColors.gold.copy(alpha=.24f))) {
-                    Column(Modifier.padding(horizontal=14.dp,vertical=11.dp),
-                        verticalArrangement=Arrangement.spacedBy(5.dp)) {
+                    Column(Modifier.padding(horizontal=12.dp,vertical=8.dp),
+                        verticalArrangement=Arrangement.spacedBy(3.dp)) {
                         Text("Том ${chapter.volume} · ${if(chapter.id in readIds) "Прочитано" else "Не прочитано"}",
                             style=MaterialTheme.typography.labelSmall,color=heritageMuted())
                         Text(chapter.title,
@@ -365,8 +365,8 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
 
 @Composable
 internal fun MoreScreen(navigate:(String)->Unit) {
-    LazyColumn(contentPadding=PaddingValues(start=17.dp,top=12.dp,end=17.dp,bottom=130.dp),
-        verticalArrangement=Arrangement.spacedBy(12.dp)) {
+    LazyColumn(contentPadding=PaddingValues(start=16.dp,top=7.dp,end=16.dp,bottom=130.dp),
+        verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             HeritageSectionHeading("ИЗУЧЕНИЕ")
             HeritageMenuGroup(listOf(
