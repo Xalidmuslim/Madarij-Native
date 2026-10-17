@@ -86,16 +86,25 @@ internal fun Modifier.heritageEtching(
     }
     val frame = ImageBitmap.imageResource(resource)
     val night = MaterialTheme.colorScheme.background == BookColors.nightBackground
-    val amount = prominence.coerceIn(0f, 1f)
+    // Heavy generated frames must not overpower short book labels.
+    // Volume selectors remain more pronounced than chapter or menu cards.
+    val visualWeight = when (kind) {
+        HeritageFrameKind.SECTION -> .68f
+        HeritageFrameKind.SUBSECTION -> .64f
+        HeritageFrameKind.SEARCH -> .72f
+        HeritageFrameKind.SMALL_BUTTON -> .74f
+        else -> .88f
+    }
+    val amount = prominence.coerceIn(0f, 1f) * visualWeight
     return drawWithCache {
         val w = size.width.roundToInt()
         val h = size.height.roundToInt()
         val compact = minOf(w,h)
         val radius = cornerRadius.toPx().coerceAtMost(size.minDimension/2f)
-        val targetX = (radius + 6.dp.toPx()).roundToInt()
-            .coerceAtLeast(1).coerceAtMost(w / 2)
-        val targetY = (radius + 6.dp.toPx()).roundToInt()
-            .coerceAtLeast(1).coerceAtMost(h / 2)
+        val targetX = (radius + 3.dp.toPx()).roundToInt()
+            .coerceAtLeast(1).coerceAtMost(minOf(w / 2, 18.dp.toPx().roundToInt()))
+        val targetY = (radius + 3.dp.toPx()).roundToInt()
+            .coerceAtLeast(1).coerceAtMost(minOf(h / 2, 15.dp.toPx().roundToInt()))
         val sourceX = (frame.width * .29f).roundToInt().coerceIn(1,frame.width/2-1)
         val sourceY = (frame.height * .32f).roundToInt().coerceIn(1,frame.height/2-1)
         val srcX = intArrayOf(0,sourceX,frame.width-sourceX,frame.width)

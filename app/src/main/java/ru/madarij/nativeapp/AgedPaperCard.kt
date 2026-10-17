@@ -11,6 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.ContentScale
 
 /**
@@ -28,12 +29,14 @@ internal fun AgedPaperCard(
     frameKind: HeritageFrameKind = HeritageFrameKind.SECTION,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Card(modifier = modifier.heritageEtching(kind = frameKind), shape = shape, colors = colors, elevation = elevation, border = border) {
+    Card(modifier = modifier, shape = shape, colors = colors, elevation = elevation, border = border) {
         Box {
             if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
                 PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
             }
-            Column { content() }
+            // Render ornament above paper but BELOW the live UI, never across text.
+            Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))
+            Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp)) { content() }
         }
     }
 }
@@ -51,14 +54,16 @@ internal fun AgedPaperCard(
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(
-        onClick = onClick, modifier = modifier.heritageEtching(kind = frameKind), enabled = enabled, shape = shape,
+        onClick = onClick, modifier = modifier, enabled = enabled, shape = shape,
         colors = colors, elevation = elevation, border = border
     ) {
         Box {
             if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
                 PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
             }
-            Column { content() }
+            // Render ornament above paper but BELOW the live UI, never across text.
+            Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))
+            Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp)) { content() }
         }
     }
 }

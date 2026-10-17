@@ -17,7 +17,10 @@ class HeritageFrameSystemTest {
         assertTrue(shared.contains("drawWithCache"))
         assertTrue(shared.contains("onDrawWithContent"))
         assertTrue(shared.contains("drawRoundRect"))
-        assertEquals(2, cards.split("modifier.heritageEtching(kind = frameKind)").size - 1)
+        assertEquals(2, cards.split("Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))").size - 1)
+        assertTrue("Native content must be painted after the ornament",
+            cards.indexOf("Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))") <
+                cards.indexOf("Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp))"))
         assertTrue(shared.contains("R.drawable.vintage_section_card"))
         assertTrue(shared.contains("ImageBitmap.imageResource("))
         assertTrue(shared.contains("srcOffset=IntOffset("))
@@ -33,8 +36,8 @@ class HeritageFrameSystemTest {
         val heritage = code("HeritageUi.kt")
         val fields = code("LibraryScreens.kt")
         val learning = code("Learning.kt")
-        assertTrue(design.contains(".heritageEtching())"))
-        assertTrue(home.contains("heritageEtching(cornerRadius = 17.dp)"))
+        assertTrue(design.contains("Box(Modifier.matchParentSize().heritageEtching(prominence = .72f))"))
+        assertTrue(home.contains("heritageEtching(cornerRadius = 17.dp, prominence = .74f"))
         assertTrue(home.contains("heritageEtching(cornerRadius = 14.dp"))
         assertTrue(heritage.contains("HeritageFrameKind.FILTER_ACTIVE"))
         assertTrue(fields.contains("HeritageFrameTokens.fieldRadius"))

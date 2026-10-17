@@ -311,18 +311,25 @@ private fun HeritageMenuIcon(kind: String) {
 
 @Composable
 internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
-    AgedPaperCard(Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
-        border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .32f)),
-        shape = RoundedCornerShape(17.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)) {
-        Column {
-            items.forEachIndexed { index, item ->
-                Row(Modifier.fillMaxWidth().clickable { navigate(item.first) }
-                    .heightIn(min = CompactUi.menuRowMinHeightDp.dp)
-                    .padding(horizontal = 12.dp, vertical = 7.dp),
+    // Individual actionable cards are required for the antique frame artwork:
+    // never stretch a single ornate border across two unrelated menu rows.
+    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        items.forEach { item ->
+            AgedPaperCard(
+                onClick = { navigate(item.first) },
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
+                border = BorderStroke(.7.dp, BookColors.gold.copy(alpha = .22f)),
+                shape = RoundedCornerShape(15.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
+                frameKind = HeritageFrameKind.SUBSECTION
+            ) {
+                Row(
+                    Modifier.fillMaxWidth().heightIn(min = 62.dp)
+                        .padding(horizontal = 10.dp, vertical = 8.dp),
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
-                    verticalAlignment = Alignment.CenterVertically) {
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     Box(Modifier.size(34.dp), contentAlignment = Alignment.Center) {
                         HeritageMenuIcon(item.first)
                     }
@@ -330,14 +337,11 @@ internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navi
                         Text(item.second, style = MaterialTheme.typography.titleMedium.copy(
                             fontFamily = BookSerif, fontSize = 17.sp), color = heritageInk())
                         Text(item.third, style = MaterialTheme.typography.bodySmall,
-                            color = heritageMuted(), maxLines = 2,
+                            color = heritageMuted(), maxLines = 3,
                             overflow = TextOverflow.Ellipsis)
                     }
                     Text("›", fontSize = 23.sp, color = BookColors.gold)
                 }
-                if (index < items.lastIndex)
-                    HorizontalDivider(color = BookColors.gold.copy(alpha = .16f),
-                        thickness = .7.dp, modifier = Modifier.padding(horizontal = 14.dp))
             }
         }
     }
