@@ -7,6 +7,27 @@ internal enum class ReaderPageSwipe { PREVIOUS, NEXT }
 internal enum class ReaderEntryKind { CONTINUE, CHAPTER, TOPIC }
 internal enum class PrimaryBackAction { STAY, HOME, POP }
 
+/** Pure presentation policy: a large header never invents actions the route disabled. */
+internal data class TopBarButtons(
+    val back: Boolean,
+    val search: Boolean,
+    val textSettings: Boolean
+)
+
+internal fun topBarButtons(
+    title: String,
+    canBack: Boolean,
+    showSearch: Boolean,
+    showTextSettings: Boolean
+): TopBarButtons {
+    val largeHeader = title in setOf("Оглавление", "Изучение", "Ещё")
+    return TopBarButtons(
+        back = largeHeader && canBack,
+        search = showSearch,
+        textSettings = largeHeader && showTextSettings
+    )
+}
+
 internal fun readerEntryParagraph(
     kind: ReaderEntryKind,
     firstParagraphId: String?,
