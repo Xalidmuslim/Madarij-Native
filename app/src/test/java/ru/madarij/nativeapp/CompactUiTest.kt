@@ -32,8 +32,8 @@ class CompactUiTest {
     }
 
     @Test fun handwritingIsSmallerButRemainsComfortablyReadable() {
-        assertEquals(20, CompactUi.homeQuoteSizeSp)
-        assertEquals(26, CompactUi.homeQuoteLineHeightSp)
+        assertEquals(18, CompactUi.homeQuoteSizeSp)
+        assertEquals(29, CompactUi.homeQuoteLineHeightSp)
         assertTrue(CompactUi.homeQuoteLineHeightSp > CompactUi.homeQuoteSizeSp)
     }
 
