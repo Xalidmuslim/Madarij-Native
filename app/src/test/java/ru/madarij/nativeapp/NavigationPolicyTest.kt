@@ -15,6 +15,17 @@ class NavigationPolicyTest {
         assertEquals(listOf("home", "contents", "study", "more"), primaryTabRoutes)
     }
 
+    @Test fun largeHeadersExposeOnlyRequestedActions() {
+        assertEquals(TopBarButtons(back = true, search = false, textSettings = false),
+            topBarButtons("Изучение", canBack = true, showSearch = false, showTextSettings = false))
+        assertEquals(TopBarButtons(back = false, search = false, textSettings = true),
+            topBarButtons("Оглавление", canBack = false, showSearch = false, showTextSettings = true))
+        assertEquals(TopBarButtons(back = false, search = false, textSettings = false),
+            topBarButtons("Ещё", canBack = false, showSearch = false, showTextSettings = false))
+        assertEquals(TopBarButtons(back = false, search = true, textSettings = false),
+            topBarButtons("Закладки", canBack = false, showSearch = true, showTextSettings = true))
+    }
+
     @Test fun centralHorizontalGesturesChangeSectionDirectionally() {
         assertEquals(ReaderPageSwipe.NEXT, classifyReaderSwipe(200f, 400f, -90f, 8f, 48f, 72f))
         assertEquals(ReaderPageSwipe.PREVIOUS, classifyReaderSwipe(200f, 400f, 90f, 8f, 48f, 72f))
@@ -38,6 +49,7 @@ class NavigationPolicyTest {
         assertEquals(PrimaryBackAction.STAY, primaryBackAction("home"))
         assertEquals(PrimaryBackAction.HOME, primaryBackAction("contents"))
         assertEquals(PrimaryBackAction.HOME, primaryBackAction("study"))
+        assertEquals(PrimaryBackAction.POP, primaryBackAction("study?chapter={chapter}&review={review}"))
         assertEquals(PrimaryBackAction.POP, primaryBackAction("read/{id}"))
     }
 

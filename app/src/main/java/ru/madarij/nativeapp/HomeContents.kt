@@ -110,7 +110,7 @@ internal fun HomeScreen(
                                 color = Color(0xFFEFC489))
                         }
                         TextButton(onClick = { navigate("settings") },
-                            modifier = Modifier.size(42.dp),
+                            modifier = Modifier.size(42.dp).semantics { contentDescription = "Настройки чтения" },
                             contentPadding = PaddingValues(0.dp)) {
                             Text("Aa", color = Color(0xFFF1CC92), fontSize = 17.sp)
                         }
@@ -189,8 +189,8 @@ internal fun HomeScreen(
             }
             item {
                 Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    HomeAction("Содержание", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
-                    HomeAction("Поиск", "По всему тому", "search", Modifier.weight(1f)) { navigate("search") }
+                    HomeAction("Оглавление", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
+                    HomeAction("Поиск", "По двум томам", "search", Modifier.weight(1f)) { navigate("search") }
                 }
             }
             item {

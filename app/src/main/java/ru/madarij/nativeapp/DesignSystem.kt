@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
@@ -33,6 +34,9 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.text.*
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.*
 import androidx.compose.ui.text.style.*
 import androidx.compose.ui.unit.*
@@ -157,29 +161,43 @@ internal fun MadarijTopBar(
     showSearch: Boolean, onSearch: () -> Unit,
     showTextSettings: Boolean, onTextSettings: () -> Unit, onBookmarks: () -> Unit = {}
 ) {
+    val buttons = topBarButtons(title, canBack, showSearch, showTextSettings)
+    val largeHeader = title in setOf("Оглавление", "Изучение", "Ещё")
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
-        if (title in setOf("Оглавление", "Изучение", "Ещё")) {
-            Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
+        if (largeHeader) {
+            Row(Modifier.fillMaxWidth().padding(start = if (buttons.back) 7.dp else 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
                 verticalAlignment = Alignment.CenterVertically) {
+                if (buttons.back) {
+                    IconButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Назад" }) {
+                        Text("‹", style = MaterialTheme.typography.headlineSmall, color = heritageInk())
+                    }
+                }
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.headlineLarge.copy(
                         fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
-                        color = BookColors.ink)
+                        color = heritageInk())
                     if (!subtitle.isNullOrBlank()) Text(subtitle,
-                        style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+                        style = MaterialTheme.typography.bodySmall, color = heritageMuted())
                 }
-                IconButton(onClick = onSearch) {
-                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = BookColors.ink)
+                if (buttons.search) IconButton(
+                    onClick = onSearch,
+                    modifier = Modifier.semantics { contentDescription = "Поиск по книге" }
+                ) {
+                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = heritageInk())
                 }
-                TextButton(onClick = onTextSettings, modifier = Modifier.width(44.dp),
-                    contentPadding = PaddingValues(0.dp)) {
-                    Text("Aa", color = BookColors.gold, fontSize = 17.sp)
+                if (buttons.textSettings) TextButton(
+                    onClick = onTextSettings,
+                    modifier = Modifier.widthIn(min = 48.dp).semantics { contentDescription = "Настройки текста" },
+                    contentPadding = PaddingValues(0.dp)
+                ) {
+                    Text("Шрифт", color = BookColors.gold, fontSize = 13.sp)
                 }
             }
         } else {
             Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
                 verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack, modifier = Modifier.size(44.dp),
+                TextButton(onClick = onBack,
+                    modifier = Modifier.size(44.dp).semantics { contentDescription = "Назад" },
                     contentPadding = PaddingValues(0.dp)) {
                     Text("‹", style = MaterialTheme.typography.headlineSmall)
                 }
@@ -188,7 +206,10 @@ internal fun MadarijTopBar(
                         fontFamily = BookSerif, fontWeight = FontWeight.Normal,
                         fontSize = if(title=="Настройки" || title=="Мой прогресс") 27.sp else 20.sp),
                     textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
-                if (showSearch) IconButton(onClick = onSearch) {
+                if (buttons.search) IconButton(
+                    onClick = onSearch,
+                    modifier = Modifier.semantics { contentDescription = "Поиск по книге" }
+                ) {
                     NavigationGlyph("search", modifier = Modifier.size(21.dp))
                 } else Spacer(Modifier.width(44.dp))
             }
@@ -224,7 +245,7 @@ internal fun MadarijBottomBar(items: List<Pair<String, String>>, selected: Strin
                 Column(
                     Modifier.weight(1f).fillMaxHeight()
                         .clip(RoundedCornerShape(10.dp))
-                        .clickable { onSelect(destination) }
+                        .selectable(selected = active, role = Role.Tab, onClick = { onSelect(destination) })
                         .padding(vertical = 1.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
