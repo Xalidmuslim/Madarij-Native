@@ -11,7 +11,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.ContentScale
 
 /**
@@ -26,7 +25,6 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
-    frameKind: HeritageFrameKind = HeritageFrameKind.SECTION,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(modifier = modifier, shape = shape, colors = colors, elevation = elevation, border = border) {
@@ -34,9 +32,7 @@ internal fun AgedPaperCard(
             if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
                 PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
             }
-            // Render ornament above paper but BELOW the live UI, never across text.
-            Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))
-            Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp)) { content() }
+            Column { content() }
         }
     }
 }
@@ -50,7 +46,6 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
-    frameKind: HeritageFrameKind = HeritageFrameKind.SECTION,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(
@@ -61,9 +56,7 @@ internal fun AgedPaperCard(
             if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
                 PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
             }
-            // Render ornament above paper but BELOW the live UI, never across text.
-            Box(Modifier.matchParentSize().heritageEtching(kind = frameKind))
-            Column(Modifier.padding(horizontal = 4.dp, vertical = 8.dp)) { content() }
+            Column { content() }
         }
     }
 }

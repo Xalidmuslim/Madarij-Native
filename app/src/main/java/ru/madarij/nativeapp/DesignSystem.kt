@@ -108,8 +108,6 @@ internal fun Soft3DPanel(
         if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
             PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
-        // A frame is decoration, not a layer that can cover labels or icons.
-        Box(Modifier.matchParentSize().heritageEtching(prominence = .72f))
         content()
     }
 }
@@ -128,8 +126,6 @@ internal fun Soft3DSagePanel(
         if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
             PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
         }
-        // A frame is decoration, not a layer that can cover labels or icons.
-        Box(Modifier.matchParentSize().heritageEtching(prominence = .72f))
         content()
     }
 }
@@ -191,10 +187,10 @@ internal fun MadarijTopBar(
                 }
                 if (buttons.textSettings) TextButton(
                     onClick = onTextSettings,
-                    modifier = Modifier.widthIn(min = 56.dp).heightIn(min = 42.dp).heritageEtching(cornerRadius = 10.dp, kind = HeritageFrameKind.SMALL_BUTTON).semantics { contentDescription = "Настройки текста" },
+                    modifier = Modifier.widthIn(min = 48.dp).semantics { contentDescription = "Настройки текста" },
                     contentPadding = PaddingValues(0.dp)
                 ) {
-                    Row(verticalAlignment = Alignment.CenterVertically) { VintageAssetIcon(VintageAssetIconKind.SETTINGS, Modifier.size(17.dp)); Spacer(Modifier.width(3.dp)); Text("Шрифт", color = BookColors.gold, fontSize = 13.sp) }
+                    Text("Шрифт", color = BookColors.gold, fontSize = 13.sp)
                 }
             }
         } else {
@@ -612,7 +608,7 @@ internal fun ReadingPaperSelector(selected: String, change: (String) -> Unit) {
                 Modifier.weight(1f).clip(frame)
                     .border(if (active) 1.5.dp else .7.dp,
                         if (active) BookColors.gold else BookColors.gold.copy(alpha = .27f), frame)
-                    .clickable { change(key) }.heritageEtching(cornerRadius = 13.dp, prominence = .72f).padding(5.dp),
+                    .clickable { change(key) }.padding(5.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(7.dp)
             ) {

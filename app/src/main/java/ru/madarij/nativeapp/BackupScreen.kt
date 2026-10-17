@@ -75,17 +75,17 @@ fun BackupScreen(vm: BookViewModel) {
         item { Card { Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Text("Сохранение", style = MaterialTheme.typography.titleMedium)
             Text("Папку выбираете вы. Файл содержит ваши личные записи. Приложение не отправляет его автоматически.")
-            Button(enabled = !busy, onClick = { export.launch("Madarij-backup-${SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(Date())}.json") }, modifier = Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = .70f)) { Text("Сохранить копию") }
+            Button(enabled = !busy, onClick = { export.launch("Madarij-backup-${SimpleDateFormat("yyyy-MM-dd", Locale.ROOT).format(Date())}.json") }, modifier = Modifier.fillMaxWidth()) { Text("Сохранить копию") }
         } } }
         item { Card { Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Text("Восстановление", style = MaterialTheme.typography.titleMedium)
             Text("Данные объединяются с текущими. Записи к отсутствующим фрагментам пропускаются. Параметры чтения берутся из копии.")
-            OutlinedButton(enabled = !busy, onClick = { choose.launch(arrayOf("application/json", "text/plain", "application/octet-stream")) }, modifier = Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = .70f)) { Text("Выбрать копию") }
+            OutlinedButton(enabled = !busy, onClick = { choose.launch(arrayOf("application/json", "text/plain", "application/octet-stream")) }, modifier = Modifier.fillMaxWidth()) { Text("Выбрать копию") }
         } } }
         if (busy) item { LinearProgressIndicator(Modifier.fillMaxWidth()); Text("Обработка файла…", Modifier.padding(top = 12.dp)) }
         if (result.isNotBlank()) item { Text(result, color = MaterialTheme.colorScheme.primary) }
     }
-    pending?.let { data -> AlertDialog(modifier = Modifier.heritageEtching(cornerRadius = 22.dp, prominence = .82f), 
+    pending?.let { data -> AlertDialog(
         onDismissRequest = { if (!busy) pending = null },
         title = { Text("Восстановить личные данные?") },
         text = { Text("Новые записи будут добавлены; более свежие заметки и позиции чтения сохранятся. Настройки будут заменены параметрами из выбранной копии.") },

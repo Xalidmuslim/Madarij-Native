@@ -46,7 +46,6 @@ internal fun StudyChapterPicker(
         }.sortedWith(compareBy({ it.volume }, { it.ordinal })).toList()
     }
     ModalBottomSheet(
-        modifier = Modifier.heritageEtching(cornerRadius = 22.dp, prominence = .75f),
         onDismissRequest = onDismiss,
         sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true),
         containerColor = MaterialTheme.colorScheme.surface
@@ -66,14 +65,14 @@ internal fun StudyChapterPicker(
                         selected = pickerVolume == volume,
                         onClick = { pickerVolume = volume },
                         label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
-                        modifier = Modifier.weight(1f).heightIn(min = 48.dp).heritageEtching(cornerRadius = 12.dp, prominence = .6f)
+                        modifier = Modifier.weight(1f).heightIn(min = 45.dp)
                     )
                 }
             }
             OutlinedTextField(
                 value = search,
                 onValueChange = { search = it },
-                modifier = Modifier.fillMaxWidth().heritageEtching(cornerRadius = HeritageFrameTokens.fieldRadius, prominence = 1f, kind = HeritageFrameKind.SEARCH),
+                modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 label = { Text("Поиск по названию") },
                 placeholder = { Text("Например, покаяние") }
