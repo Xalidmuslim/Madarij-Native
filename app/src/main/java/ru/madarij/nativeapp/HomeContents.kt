@@ -273,8 +273,7 @@ private fun HomeAction(title: String, subtitle: String, glyph: String, modifier:
                     style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp, lineHeight = 13.sp),
                     color = BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
-            Text("›", fontFamily = BookSerif, fontSize = 20.sp,
-                color = BookColors.gold.copy(alpha = .86f))
+            VintageAssetIcon(VintageAssetIconKind.ARROW_RIGHT, Modifier.size(14.dp))
         }
     }
 }
@@ -442,19 +441,18 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 color=heritageMuted(),maxLines=2,
                                 overflow=TextOverflow.Ellipsis)
                         }
-                        Text("›", style=MaterialTheme.typography.headlineSmall,
-                            color=BookColors.gold)
+                        VintageAssetIcon(VintageAssetIconKind.ARROW_RIGHT, Modifier.size(19.dp))
                     }
                 }
             }
         }
         item {
             OutlinedTextField(query,{query=it;resetList()},
-                modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = .70f),
+                modifier=Modifier.fillMaxWidth().heritageEtching(cornerRadius = 14.dp, prominence = 1f, kind = HeritageFrameKind.SEARCH),
                 singleLine=true,
                 placeholder={Text("Найти главу или тему")},
                 leadingIcon={
-                    NavigationGlyph("search",modifier=Modifier.size(22.dp),tint=BookColors.gold)
+                    VintageAssetIcon(VintageAssetIconKind.SEARCH,Modifier.size(25.dp))
                 },
                 trailingIcon={
                     if(query.isNotBlank()) TextButton(onClick={query="";resetList()}) {Text("×")}
@@ -525,8 +523,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 }
                             }
                         }
-                        Text(if(expanded) "⌄" else "›",
-                            style=MaterialTheme.typography.headlineSmall,color=BookColors.gold)
+                        VintageAssetIcon(if(expanded) VintageAssetIconKind.EXPAND else VintageAssetIconKind.ARROW_RIGHT, Modifier.size(18.dp))
                     }
                 }
             }
@@ -544,7 +541,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape).heritageEtching(cornerRadius = 17.dp)) {
+                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape).heritageEtching(cornerRadius = 17.dp, kind = HeritageFrameKind.SUBSECTION)) {
                         PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -581,7 +578,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         ).padding(start = 14.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = .94f)),
                         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
-                        shape = RoundedCornerShape(20.dp)
+                        shape = RoundedCornerShape(20.dp),
+                        frameKind = HeritageFrameKind.SUBSECTION
                     ) {
                         Column(Modifier.padding(horizontal = 11.dp, vertical = 7.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
