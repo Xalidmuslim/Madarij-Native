@@ -398,28 +398,28 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 .count { it.volume==selectedVolume }
             Text("Том $selectedVolume · $sections смысловых разделов · " +
                     "${selectedChapterIds.size} фрагментов",
-                style=MaterialTheme.typography.bodySmall,color=BookColors.muted)
+                style=MaterialTheme.typography.bodySmall,color=heritageMuted())
             if(selectedVolume==2) Text(
                 "Тематические группы страниц. Сверка издания и научная проверка источников не завершены.",
-                style=MaterialTheme.typography.bodySmall,color=BookColors.muted)
+                style=MaterialTheme.typography.bodySmall,color=heritageMuted())
         }
         if (last != null && last!!.chapterId in selectedChapterIds) {
             item {
                 AgedPaperCard(onClick={resume(last!!.chapterId)},
                     modifier=Modifier.fillMaxWidth(),
                     border=BorderStroke(.8.dp,BookColors.gold.copy(alpha=.3f)),
-                    colors=CardDefaults.cardColors(containerColor=BookColors.card.copy(alpha=.8f))) {
+                    colors=CardDefaults.cardColors(containerColor=heritageCard().copy(alpha=.86f))) {
                     Row(Modifier.fillMaxWidth().padding(horizontal=17.dp,vertical=13.dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(5.dp)) {
                             Text("Продолжить с места остановки",
                                 style=MaterialTheme.typography.titleSmall.copy(fontFamily=BookSerif),
-                                color=BookColors.ink)
+                                color=heritageInk())
                             Text(groups.flatMap { it.items }
                                 .find { it.chapterId==last!!.chapterId }?.title
                                     ?: "Последнее место чтения",
                                 style=MaterialTheme.typography.bodyMedium,
-                                color=BookColors.muted,maxLines=2,
+                                color=heritageMuted(),maxLines=2,
                                 overflow=TextOverflow.Ellipsis)
                         }
                         Text("›", style=MaterialTheme.typography.headlineSmall,
@@ -469,7 +469,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                 val count = group.items.count { it.chapterId in readIds }
                 AgedPaperCard(
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
-                    colors = CardDefaults.cardColors(containerColor = BookColors.card.copy(alpha = .78f)),
+                    colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .83f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
                     border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .34f)),
                     shape = RoundedCornerShape(19.dp),
@@ -488,13 +488,13 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(
                                     fontFamily=BookSerif,fontSize=18.sp,lineHeight=23.sp),
-                                color=BookColors.ink)
+                                color=heritageInk())
                             Row(horizontalArrangement=Arrangement.spacedBy(6.dp)) {
                                 Text("$count из ${group.items.size} прочитано",
-                                    style=MaterialTheme.typography.labelSmall,color=BookColors.muted)
+                                    style=MaterialTheme.typography.labelSmall,color=heritageMuted())
                                 groupPageLabel(group)?.let { page ->
                                     Text("· $page",style=MaterialTheme.typography.labelSmall,
-                                        color=BookColors.muted)
+                                        color=heritageMuted())
                                 }
                             }
                         }
