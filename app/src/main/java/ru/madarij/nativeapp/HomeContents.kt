@@ -81,7 +81,13 @@ internal fun HomeScreen(
             Modifier.align(Alignment.TopCenter).fillMaxWidth().height(358.dp),
             contentScale = ContentScale.Crop, alignment = Alignment.Center)
         LazyColumn(
-            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 116.dp),
+            // Reserve the real floating-bar footprint so dashboard metrics
+            // never render underneath its opaque leather surface.
+            modifier = Modifier.fillMaxSize().padding(
+                bottom = WindowInsets.navigationBars.asPaddingValues()
+                    .calculateBottomPadding() + 68.dp
+            ),
+            contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             item {
@@ -386,8 +392,13 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
         }
         return
     }
-    LazyColumn(state = listState,
-        contentPadding = PaddingValues(start = 17.dp,end = 17.dp,top = 9.dp,bottom = 132.dp),
+    LazyColumn(
+        state = listState,
+        modifier = Modifier.fillMaxSize().padding(
+            bottom = WindowInsets.navigationBars.asPaddingValues()
+                .calculateBottomPadding() + 68.dp
+        ),
+        contentPadding = PaddingValues(start = 17.dp,end = 17.dp,top = 9.dp,bottom = 18.dp),
         verticalArrangement = Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(10.dp)) {
