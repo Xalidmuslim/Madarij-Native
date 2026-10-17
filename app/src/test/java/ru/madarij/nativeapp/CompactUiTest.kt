@@ -25,7 +25,7 @@ class CompactUiTest {
     }
 
     @Test fun manuscriptTableOfContentsUsesConsistentCompactAssets() {
-        assertEquals(38, CompactUi.tocManuscriptIconDp)
+        assertEquals(32, CompactUi.tocManuscriptIconDp)
         assertTrue(CompactUi.tocManuscriptIconDp <= CompactUi.tocMedallionDp)
         assertTrue(CompactUi.tocVolumeMinHeightDp >= 48)
         assertTrue(CompactUi.tocFilterMinHeightDp >= 48)
