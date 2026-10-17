@@ -169,21 +169,21 @@ internal fun MadarijTopBar(
                 verticalAlignment = Alignment.CenterVertically) {
                 if (buttons.back) {
                     IconButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Назад" }) {
-                        Text("‹", style = MaterialTheme.typography.headlineSmall, color = BookColors.ink)
+                        Text("‹", style = MaterialTheme.typography.headlineSmall, color = heritageInk())
                     }
                 }
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.headlineLarge.copy(
                         fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
-                        color = BookColors.ink)
+                        color = heritageInk())
                     if (!subtitle.isNullOrBlank()) Text(subtitle,
-                        style = MaterialTheme.typography.bodySmall, color = BookColors.muted)
+                        style = MaterialTheme.typography.bodySmall, color = heritageMuted())
                 }
                 if (buttons.search) IconButton(
                     onClick = onSearch,
                     modifier = Modifier.semantics { contentDescription = "Поиск по книге" }
                 ) {
-                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = BookColors.ink)
+                    NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = heritageInk())
                 }
                 if (buttons.textSettings) TextButton(
                     onClick = onTextSettings,
