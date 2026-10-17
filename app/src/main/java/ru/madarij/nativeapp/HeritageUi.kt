@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable internal fun heritageInk(): Color =
     if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
-        BookColors.nightText else heritageInk()
+        BookColors.nightText else BookColors.ink
 
 @Composable internal fun heritageMuted(): Color =
     if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
