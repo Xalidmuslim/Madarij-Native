@@ -546,6 +546,11 @@ def generate(root=None):
         if not name.startswith('vintage_') or not name.endswith('.png'):
             raise RuntimeError('Bad asset path: '+name)
         (target/name).write_bytes(z.read(name))
+    # Replace only the eight frame trims. Preserve all seven original icon PNGs.
+    # Gradle regenerates these before every build, preventing stale assets.
+    from generate_antique_frames import generate_antique_frames
+    if generate_antique_frames(target) != 8:
+        raise RuntimeError('Incomplete antique frame material set')
     return len(z.namelist())
 
 if __name__=='__main__':
