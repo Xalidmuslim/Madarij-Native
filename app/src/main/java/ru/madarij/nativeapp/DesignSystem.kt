@@ -149,8 +149,8 @@ fun InfoCard(title: String, body: String, modifier: Modifier = Modifier) {
 
 @Composable
 internal fun ScreenHeading(title: String, subtitle: String? = null) {
-    Column(verticalArrangement = Arrangement.spacedBy(5.dp), modifier = Modifier.padding(vertical = 2.dp)) {
-        Text(title, style = MaterialTheme.typography.headlineMedium, color = MaterialTheme.colorScheme.onBackground)
+    Column(verticalArrangement = Arrangement.spacedBy(3.dp), modifier = Modifier.padding(vertical = 1.dp)) {
+        Text(title, style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onBackground)
         if (subtitle != null) Text(subtitle, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
@@ -165,7 +165,7 @@ internal fun MadarijTopBar(
     val largeHeader = title in setOf("Оглавление", "Изучение", "Ещё")
     Column(Modifier.fillMaxWidth().statusBarsPadding()) {
         if (largeHeader) {
-            Row(Modifier.fillMaxWidth().padding(start = if (buttons.back) 7.dp else 18.dp, end = 10.dp, top = 11.dp, bottom = 8.dp),
+            Row(Modifier.fillMaxWidth().padding(start = if (buttons.back) 7.dp else 18.dp, end = 10.dp, top = 7.dp, bottom = 5.dp),
                 verticalAlignment = Alignment.CenterVertically) {
                 if (buttons.back) {
                     IconButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Назад" }) {
@@ -174,7 +174,7 @@ internal fun MadarijTopBar(
                 }
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.headlineLarge.copy(
-                        fontFamily = BookSerif, fontSize = 32.sp, lineHeight = 37.sp),
+                        fontFamily = BookSerif, fontSize = CompactUi.headerTitleSp.sp, lineHeight = 31.sp),
                         color = heritageInk())
                     if (!subtitle.isNullOrBlank()) Text(subtitle,
                         style = MaterialTheme.typography.bodySmall, color = heritageMuted())
@@ -204,7 +204,7 @@ internal fun MadarijTopBar(
                 Text(title, Modifier.weight(1f),
                     style = MaterialTheme.typography.titleMedium.copy(
                         fontFamily = BookSerif, fontWeight = FontWeight.Normal,
-                        fontSize = if(title=="Настройки" || title=="Мой прогресс") 27.sp else 20.sp),
+                        fontSize = if(title=="Настройки" || title=="Мой прогресс") 22.sp else 19.sp),
                     textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 if (buttons.search) IconButton(
                     onClick = onSearch,
@@ -439,7 +439,7 @@ internal fun NavigationGlyph(kind: String, selected: Boolean = false, modifier: 
 
 @Composable
 internal fun SettingSwitch(label: String, checked: Boolean, change: (Boolean) -> Unit, description: String? = null) {
-    Row(Modifier.fillMaxWidth().heightIn(min = 52.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().heightIn(min = CompactUi.settingsSwitchMinHeightDp.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
         Column(Modifier.weight(1f).padding(end = 12.dp)) { Text(label); if (description != null) Text(description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
         Switch(checked, change)
     }
@@ -453,10 +453,10 @@ private fun SettingsGroup(title: String, content: @Composable ColumnScope.() -> 
         border = BorderStroke(.85.dp, BookColors.gold.copy(alpha = .3f)),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
-        Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 13.dp),
-            verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Column(Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 9.dp),
+            verticalArrangement = Arrangement.spacedBy(7.dp)) {
             Text(title, style = MaterialTheme.typography.titleMedium.copy(
-                fontFamily = BookSerif, fontSize = 20.sp), color = heritageInk())
+                fontFamily = BookSerif, fontSize = CompactUi.sectionTitleSp.sp), color = heritageInk())
             content()
         }
     }
@@ -474,7 +474,7 @@ private fun ReadingSlider(label: String, valueLabel: String, value: Float,
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
             TextButton(onClick = { onValue((value - step).coerceIn(range.start, range.endInclusive)) },
                 enabled = value > range.start,
-                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
+                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(44.dp)) {
                 Text("−", color = heritageInk(), fontSize = 21.sp)
             }
             Box(Modifier.weight(1f)) {
@@ -482,7 +482,7 @@ private fun ReadingSlider(label: String, valueLabel: String, value: Float,
             }
             TextButton(onClick = { onValue((value + step).coerceIn(range.start, range.endInclusive)) },
                 enabled = value < range.endInclusive,
-                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(38.dp)) {
+                contentPadding = PaddingValues(0.dp), modifier = Modifier.size(44.dp)) {
                 Text("+", color = heritageInk(), fontSize = 21.sp)
             }
         }
@@ -491,8 +491,8 @@ private fun ReadingSlider(label: String, valueLabel: String, value: Float,
 
 @Composable
 fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
-    LazyColumn(contentPadding = PaddingValues(start=17.dp,end=17.dp,top=10.dp,bottom=128.dp),
-        verticalArrangement = Arrangement.spacedBy(13.dp)) {
+    LazyColumn(contentPadding = PaddingValues(start=16.dp,end=16.dp,top=7.dp,bottom=128.dp),
+        verticalArrangement = Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {
             HeritageSectionHeading("Оформление")
             SettingsGroup("Фон чтения") {
