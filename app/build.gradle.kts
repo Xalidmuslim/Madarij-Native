@@ -87,6 +87,10 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.7")
     testImplementation("junit:junit:4.13.2")
 }
+val generateSoftPaperFrames by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/generate_soft_paper_frames.py")
+}
 val generateBookTextures by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_book_textures.py")
@@ -110,7 +114,7 @@ val prepareStudySupplement by tasks.registering(Exec::class) {
     commandLine("python3", "tools/generate_study_supplement.py")
 }
 tasks.matching { it.name == "preBuild" }.configureEach {
-    dependsOn(generateBookTextures, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont)
+    dependsOn(generateBookTextures, generateSoftPaperFrames, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont)
 }
 // Production Play uploads are forbidden until edition/editorial rights,
 // Arabic collation, scholarly references and Data Safety are documented.

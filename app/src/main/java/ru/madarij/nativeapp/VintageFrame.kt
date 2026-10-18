@@ -24,22 +24,22 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlin.math.roundToInt
 
-/** Exactly seven user-provided image resources; no legacy strokes, borders or background textures. */
+/** Seven generated soft-paper alpha textures; live text and icons stay native Compose elements. */
 internal enum class VintageFrameKind(val drawableId: Int, val leftFraction: Float = .20f, val rightFraction: Float = .20f) {
-    SEARCH(R.drawable.frame_search, .235f, .185f),
-    LIGHT_COMPACT(R.drawable.frame_light_compact, .20f, .20f),
-    LIGHT_WIDE(R.drawable.frame_light_wide, .19f, .19f),
-    SECTION_NUMBERED(R.drawable.frame_section_numbered, .25f, .185f),
-    FONT_SETTINGS(R.drawable.frame_font_settings, .12f, .12f),
-    DARK_COMPACT(R.drawable.frame_dark_compact, .20f, .20f),
-    DARK_WIDE(R.drawable.frame_dark_wide, .20f, .20f)
+    SEARCH(R.drawable.frame_search, .16f, .16f),
+    LIGHT_COMPACT(R.drawable.frame_light_compact, .16f, .16f),
+    LIGHT_WIDE(R.drawable.frame_light_wide, .16f, .16f),
+    SECTION_NUMBERED(R.drawable.frame_section_numbered, .16f, .16f),
+    FONT_SETTINGS(R.drawable.frame_font_settings, .16f, .16f),
+    DARK_COMPACT(R.drawable.frame_dark_compact, .16f, .16f),
+    DARK_WIDE(R.drawable.frame_dark_wide, .16f, .16f)
 }
 
 /**
  * Nine-slice image background drawn BEFORE live Compose content.
  * Light cards have no Material/Card clipping layer, so torn alpha edges survive.
- * Left and right pictograms are wholly inside fixed end segments. Corner pixels
- * and built-in labels are not stretched by changes in the card's width or height.
+ * The new artwork contains NO pictograms: only softly deckled paper texture.
+ * Native chapter markers, search icon and chevrons never distort with resizing.
  *
  * The PNG/WebP is the only background; callers must not stack card_paper,
  * .border(), gradient, second chevrons or duplicated search/Aa icons over it.
@@ -54,8 +54,8 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
         val h = size.height.roundToInt().coerceAtLeast(1)
         val srcL = (bitmap.width * kind.leftFraction).roundToInt()
         val srcR = (bitmap.width * kind.rightFraction).roundToInt()
-        val srcT = (bitmap.height * .32f).roundToInt()
-        val srcB = (bitmap.height * .32f).roundToInt()
+        val srcT = (bitmap.height * .28f).roundToInt()
+        val srcB = (bitmap.height * .28f).roundToInt()
         // Cap the fixed illustrated end segments so controls remain usable
         // even on smaller screens (and when system text scaling is increased).
         val fitScale = minOf(
@@ -65,10 +65,10 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
         // Never allow large cards/long text to inflate ornate corners.
         // The numbered plaque and search icon need deliberately wider fixed ends.
         val maxEndDp = when(kind) {
-            VintageFrameKind.SECTION_NUMBERED -> 66.dp
-            VintageFrameKind.SEARCH -> 62.dp
-            VintageFrameKind.FONT_SETTINGS -> 32.dp
-            else -> 38.dp
+            VintageFrameKind.SECTION_NUMBERED -> 30.dp
+            VintageFrameKind.SEARCH -> 30.dp
+            VintageFrameKind.FONT_SETTINGS -> 26.dp
+            else -> 30.dp
         }
         val maxEnd = minOf((w * .32f).roundToInt(), maxEndDp.toPx().roundToInt())
         val dstL = (srcL * fitScale).roundToInt().coerceIn(1,maxEnd.coerceAtLeast(1))
@@ -98,7 +98,7 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
                     srcSize = IntSize(sw,sh),
                     dstOffset = IntOffset(dx[ix],dy[iy]),
                     dstSize = IntSize(dw,dh),
-                    filterQuality = FilterQuality.Low
+                    filterQuality = FilterQuality.Medium
                 )
             }
             drawContent()
@@ -107,6 +107,7 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
 }
 
 /** The magnifier belongs to the actual search PNG; no duplicate leading icon. */
+/** Search icon and input are native, not embedded inside the bitmap. */
 @Composable
 internal fun VintageSearchField(
     value: String,
@@ -114,27 +115,40 @@ internal fun VintageSearchField(
     modifier: Modifier = Modifier,
     placeholder: String = "Найти главу или тему"
 ) {
-    Box(modifier.heightIn(min = 56.dp).vintageFrame(VintageFrameKind.SEARCH),
+    Box(modifier.heightIn(min = 51.dp).vintageFrame(VintageFrameKind.SEARCH),
         contentAlignment = Alignment.CenterStart) {
-        Row(Modifier.fillMaxWidth().padding(start = 65.dp, end = 27.dp),
+        Row(Modifier.fillMaxWidth().padding(start = 17.dp, end = 14.dp),
             verticalAlignment = Alignment.CenterVertically) {
+            androidx.compose.foundation.Canvas(Modifier.size(22.dp)) {
+                val ink = Color(0xFF876341)
+                val center = Offset(size.width * .41f, size.height * .40f)
+                drawCircle(ink, radius = size.minDimension * .29f, center = center,
+                    style = androidx.compose.ui.graphics.drawscope.Stroke(1.7.dp.toPx()))
+                drawLine(ink, Offset(size.width * .61f, size.height * .63f),
+                    Offset(size.width * .90f, size.height * .91f),
+                    strokeWidth = 1.8.dp.toPx())
+            }
+            Spacer(Modifier.width(13.dp))
             BasicTextField(
                 value = value, onValueChange = onValueChange,
                 modifier = Modifier.weight(1f),
                 singleLine = true,
-                textStyle = TextStyle(color = if (MaterialTheme.colorScheme.background == BookColors.nightBackground) BookColors.nightText else BookColors.ink, fontSize = 16.sp,
-                    fontWeight = FontWeight.Normal),
+                textStyle = TextStyle(
+                    color = if (MaterialTheme.colorScheme.background == BookColors.nightBackground)
+                        BookColors.nightText else BookColors.ink,
+                    fontSize = 16.sp, fontWeight = FontWeight.Normal
+                ),
                 decorationBox = { inner ->
                     Box(contentAlignment = Alignment.CenterStart) {
                         if (value.isBlank()) Text(placeholder, color = BookColors.muted,
-                            maxLines=1, overflow=TextOverflow.Ellipsis, fontSize=15.sp)
+                            maxLines = 1, overflow = TextOverflow.Ellipsis, fontSize = 15.sp)
                         inner()
                     }
                 }
             )
-            if(value.isNotBlank()) TextButton(onClick={ onValueChange("") },
-                contentPadding=PaddingValues(0.dp),modifier=Modifier.width(32.dp)) {
-                Text("×", fontSize = 19.sp,color=BookColors.gold)
+            if (value.isNotBlank()) TextButton(onClick = { onValueChange("") },
+                contentPadding = PaddingValues(0.dp), modifier = Modifier.width(32.dp)) {
+                Text("×", fontSize = 19.sp, color = BookColors.gold)
             }
         }
     }

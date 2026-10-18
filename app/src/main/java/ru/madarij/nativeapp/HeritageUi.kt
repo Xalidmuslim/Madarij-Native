@@ -255,27 +255,45 @@ private fun HeritageMenuIcon(kind: String) {
     }
 }
 
+/** One lightweight paper sheet per menu category. Compact native rows save
+ * vertical space and prevent the floating navigation from obscuring Settings. */
 @Composable
-internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth(),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        items.forEach { item ->
-            AgedPaperCard(onClick={navigate(item.first)}, modifier=Modifier.fillMaxWidth()) {
-                Row(Modifier.fillMaxWidth().heightIn(min=66.dp)
-                    .padding(horizontal=15.dp,vertical=10.dp),
-                    horizontalArrangement=Arrangement.spacedBy(10.dp),
-                    verticalAlignment=Alignment.CenterVertically) {
-                    Box(Modifier.size(34.dp),contentAlignment=Alignment.Center) {
-                        HeritageMenuIcon(item.first)
-                    }
-                    Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                        Text(item.second,style=MaterialTheme.typography.titleMedium.copy(
-                            fontFamily=BookSerif,fontSize=17.sp),color=heritageInk())
-                        Text(item.third,style=MaterialTheme.typography.bodySmall,
-                            color=heritageMuted(),maxLines=3,overflow=TextOverflow.Ellipsis)
-                    }
-                    Text("›",fontSize=22.sp,color=BookColors.gold)
+internal fun HeritageMenuGroup(
+    items: List<Triple<String, String, String>>,
+    navigate: (String) -> Unit
+) {
+    AgedPaperCard(modifier = Modifier.fillMaxWidth(),
+        frameKind = VintageFrameKind.LIGHT_WIDE) {
+        items.forEachIndexed { index, item ->
+            Row(
+                Modifier.fillMaxWidth().clickable { navigate(item.first) }
+                    .heightIn(min = 61.dp)
+                    .padding(horizontal = 7.dp, vertical = 7.dp),
+                horizontalArrangement = Arrangement.spacedBy(11.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Box(Modifier.size(31.dp), contentAlignment = Alignment.Center) {
+                    HeritageMenuIcon(item.first)
                 }
+                Column(Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    Text(item.second,
+                        style = MaterialTheme.typography.titleMedium.copy(
+                            fontFamily = BookSerif, fontSize = 17.sp),
+                        color = heritageInk(), maxLines = 1,
+                        overflow = TextOverflow.Ellipsis)
+                    Text(item.third,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = heritageMuted(), maxLines = 2,
+                        overflow = TextOverflow.Ellipsis)
+                }
+                Text("›", fontSize = 22.sp, color = BookColors.gold)
             }
+            if (index != items.lastIndex) HorizontalDivider(
+                modifier = Modifier.padding(horizontal = 8.dp),
+                color = BookColors.gold.copy(alpha = .16f),
+                thickness = .5.dp
+            )
         }
     }
 }

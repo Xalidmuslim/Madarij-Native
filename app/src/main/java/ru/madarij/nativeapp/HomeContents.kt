@@ -483,14 +483,9 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         .padding(horizontal=11.dp,vertical=8.dp),
                         horizontalArrangement=Arrangement.spacedBy(10.dp),
                         verticalAlignment=Alignment.CenterVertically) {
-                        Box(Modifier.width(52.dp).heightIn(min=39.dp),
-                            contentAlignment=Alignment.CenterStart) {
-                            Text("${matching.indexOfFirst { it.id==group.id }+1}",
-                                modifier=Modifier.offset(x=(-4).dp),
-                                style=MaterialTheme.typography.titleSmall.copy(
-                                    fontFamily=BookSerif,fontSize=15.sp,fontWeight=FontWeight.Bold),
-                                color=Color(0xFF55351C))
-                        }
+                        HeritageManuscriptNumber(
+                            matching.indexOfFirst { it.id == group.id } + 1
+                        )
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(
@@ -505,8 +500,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 }
                             }
                         }
-                        // Arrow is embedded in the user's chapter-card image.
-                        Spacer(Modifier.width(18.dp))
+                        Text(if (expanded) "⌄" else "›", fontSize = 22.sp,
+                            color = BookColors.gold, modifier = Modifier.padding(end = 4.dp))
                     }
                 }
             }
