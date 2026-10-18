@@ -7,18 +7,16 @@ import java.io.File
 /** Prevent accidental return of embossed image panels or oversized category rows. */
 class NaturalPaperUiTest {
     private val root=File("src/main/java/ru/madarij/nativeapp")
-    @Test fun generatedPaperNeverContainsStampsOrFrames() {
+    @Test fun exactUserApprovedPaperImagesAreBundledAndReadable() {
         val script=File("../tools/generate_soft_paper_frames.py").readText()
+        assertTrue(script.contains("tools/assets/approved_paper_sprite.webp"))
         assertTrue(script.contains("frame_light_wide"))
         assertTrue(script.contains("frame_section_numbered"))
+        assertTrue(script.contains("frame_search"))
+        assertTrue(script.contains("frame_font_settings"))
         assertTrue(script.contains("frame_dark_compact"))
-        assertTrue(script.contains("verify.getpixel((0, 0))[3] == 0"))
-        assertTrue("Texture needs genuine edge patina",
-            script.contains("sum(center_mean) - sum(edge_mean) > 33"))
-        assertTrue("Texture needs paper fibers",
-            script.contains("ImageStat.Stat(center).stddev[0] > 2.5"))
-        assertTrue(script.contains("alpha_composite"))
-        assertTrue(!script.contains("draw.rectangle("))
+        assertTrue(script.contains("verify_tile(name, card)"))
+        assertTrue(script.contains("ImageStat.Stat(center).stddev[0] < 15"))
     }
     @Test fun chapterNumberAndArrowAreIndependentNativeElements() {
         val toc=File(root,"HomeContents.kt").readText()
