@@ -6,7 +6,7 @@ Approved transparent source artwork is bundled as an RGBA WebP sprite:
   row 1: compact parchment button
   row 2: search field
   row 3: small settings button
-Each row is 90 px tall. The atlas is stored under tools/assets/.
+Each row is 160 px tall. The atlas is stored under tools/assets/.
 This generator runs before Android resource compilation. It leaves the two
 existing DARK paper buttons untouched to retain their contrast and labels.
 """
@@ -18,11 +18,11 @@ OUT = ROOT / "app/src/main/res/drawable-nodpi"
 ATLAS = ROOT / "tools/assets/approved_paper_sprite.webp"
 # Old dark resources: frame_dark_compact and frame_dark_wide are preserved.
 TILES = {
-    "frame_light_wide": (0, 288),
-    "frame_light_compact": (1, 180),
-    "frame_section_numbered": (0, 288),
-    "frame_search": (2, 288),
-    "frame_font_settings": (3, 180),
+    "frame_light_wide": (0, 512),
+    "frame_light_compact": (1, 320),
+    "frame_section_numbered": (0, 512),
+    "frame_search": (2, 512),
+    "frame_font_settings": (3, 320),
 }
 
 def verify_tile(name, tile):
@@ -41,13 +41,13 @@ def main():
         raise SystemExit("Required original approved parchment sprite is missing: " + str(ATLAS))
     with Image.open(ATLAS) as sheet:
         sheet = sheet.convert("RGBA")
-        assert sheet.size == (288, 360), f"Unexpected sprite dimensions: {sheet.size}"
+        assert sheet.size == (512, 640), f"Unexpected sprite dimensions: {sheet.size}"
         OUT.mkdir(parents=True, exist_ok=True)
         for name, (row, width) in TILES.items():
-            tile = sheet.crop((0, row*90, width, (row+1)*90))
+            tile = sheet.crop((0, row*160, width, (row+1)*160))
             # Keep a little alpha margin so wrinkles and torn fibers are not
             # clipped by the rectangular bitmap bounds.
-            card = Image.new("RGBA", (width+8, 98), (0,0,0,0))
+            card = Image.new("RGBA", (width+8, 168), (0,0,0,0))
             card.alpha_composite(tile, (4,4))
             verify_tile(name, card)
             target = OUT / (name + ".webp")
