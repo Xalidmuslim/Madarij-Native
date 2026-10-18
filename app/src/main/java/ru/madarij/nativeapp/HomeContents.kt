@@ -88,7 +88,8 @@ internal fun HomeScreen(
                     .calculateBottomPadding() + 68.dp
             ),
             contentPadding = PaddingValues(start = 0.dp, end = 0.dp, bottom = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
+            // Leave room for the last metric above the floating navigation on phones.
+            verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
             item {
                 Box(Modifier.fillMaxWidth().height(258.dp)) {
@@ -226,7 +227,7 @@ internal fun HomeScreen(
                 }
             }
             item {
-                Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 5.dp),
+                Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 3.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     listOf(
                         "${read.size}" to "Прочитано",
@@ -257,7 +258,7 @@ private fun AntiqueHomeIcon(glyph: String) {
 @Composable
 private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     Soft3DPanel(
-        modifier = modifier.heightIn(min = 66.dp),
+        modifier = modifier.heightIn(min = 62.dp),
         shape = RoundedCornerShape(AppRadius.medium),
         elevation = AppElevation.level3,
         warm = true,
