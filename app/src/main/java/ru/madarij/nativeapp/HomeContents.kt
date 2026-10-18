@@ -494,7 +494,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             item(key = "group:${group.id}") {
                 val expanded = group.id in openedGroups || query.isNotBlank()
                 val count = group.items.count { it.chapterId in readIds }
-                AgedPaperCard(
+                PilotTocGroupCard(
+                    pilot = matching.indexOfFirst { it.id == group.id } == 0,
                     onClick = { openedGroups = if (group.id in openedGroups) openedGroups - group.id else openedGroups + group.id },
                     colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .83f)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
