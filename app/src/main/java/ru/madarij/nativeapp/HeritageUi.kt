@@ -65,17 +65,15 @@ internal fun HeritageSectionHeading(title: String, modifier: Modifier = Modifier
 @Composable
 internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier = Modifier,
                             onClick: () -> Unit) {
-    val shape = RoundedCornerShape(14.dp)
-    Box(modifier.heightIn(min = CompactUi.choiceMinHeightDp.dp).clip(shape)
-        .background(if (selected) BookColors.leather else heritageCard().copy(alpha = .64f))
-        .border(.9.dp, if (selected) BookColors.gold.copy(alpha = .8f)
-                      else BookColors.gold.copy(alpha = .32f), shape)
-        .clickable(onClick = onClick).padding(horizontal = 7.dp, vertical = 5.dp),
-        contentAlignment = Alignment.Center) {
-        Text(label, style = MaterialTheme.typography.labelMedium.copy(
-            fontFamily = BookSerif, fontSize = 14.sp),
-            textAlign = TextAlign.Center, maxLines = 2,
-            color = if (selected) Color(0xFFFFE9C0) else heritageInk())
+    Box(modifier.heightIn(min=CompactUi.choiceMinHeightDp.dp)
+        .vintageFrame(if(selected) VintageFrameKind.DARK_COMPACT else VintageFrameKind.LIGHT_COMPACT)
+        .clickable(onClick=onClick)
+        .padding(horizontal=12.dp,vertical=7.dp),
+        contentAlignment=Alignment.Center) {
+        Text(label, style=MaterialTheme.typography.labelMedium.copy(
+            fontFamily=BookSerif,fontSize=14.sp),
+            textAlign=TextAlign.Center,maxLines=2,
+            color=if(selected) Color(0xFFFFE9C0) else Color(0xFF51341F))
     }
 }
 
