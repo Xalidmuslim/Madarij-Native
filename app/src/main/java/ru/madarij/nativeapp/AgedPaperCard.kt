@@ -27,10 +27,11 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(modifier = modifier, shape = shape, colors = CardDefaults.cardColors(containerColor = Color.Transparent), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), border = null) {
-        Box(Modifier.fillMaxWidth().vintageFrame(VintageFrameKind.LIGHT_WIDE)) {
+        Box(Modifier.fillMaxWidth().vintageFrame(frameKind)) {
             // The user image is the only surface. All content is composed above it.
             Column(Modifier.padding(horizontal = 8.dp, vertical = 8.dp)) { content() }
         }
@@ -46,13 +47,14 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(
         onClick = onClick, modifier = modifier, enabled = enabled, shape = shape,
         colors = CardDefaults.cardColors(containerColor = Color.Transparent), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), border = null
     ) {
-        Box(Modifier.fillMaxWidth().vintageFrame(VintageFrameKind.LIGHT_WIDE)) {
+        Box(Modifier.fillMaxWidth().vintageFrame(frameKind)) {
             // The user image is the only surface. All content is composed above it.
             Column(Modifier.padding(horizontal = 8.dp, vertical = 8.dp)) { content() }
         }
