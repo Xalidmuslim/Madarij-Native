@@ -12,7 +12,11 @@ class NaturalPaperUiTest {
         assertTrue(script.contains("frame_light_wide"))
         assertTrue(script.contains("frame_section_numbered"))
         assertTrue(script.contains("frame_dark_compact"))
-        assertTrue(script.contains("verify.getpixel((0,0))[3]==0"))
+        assertTrue(script.contains("verify.getpixel((0, 0))[3] == 0"))
+        assertTrue("Texture needs genuine edge patina",
+            script.contains("sum(center_mean) - sum(edge_mean) > 33"))
+        assertTrue("Texture needs paper fibers",
+            script.contains("ImageStat.Stat(center).stddev[0] > 2.5"))
         assertTrue(script.contains("alpha_composite"))
         assertTrue(!script.contains("draw.rectangle("))
     }
