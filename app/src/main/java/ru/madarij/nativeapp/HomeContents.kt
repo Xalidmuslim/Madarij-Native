@@ -486,9 +486,9 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         Box(Modifier.width(52.dp).heightIn(min=39.dp),
                             contentAlignment=Alignment.CenterStart) {
                             Text("${matching.indexOfFirst { it.id==group.id }+1}",
-                                modifier=Modifier.padding(start=18.dp),
+                                modifier=Modifier.offset(x=(-4).dp),
                                 style=MaterialTheme.typography.titleSmall.copy(
-                                    fontFamily=BookSerif,fontSize=17.sp,fontWeight=FontWeight.Bold),
+                                    fontFamily=BookSerif,fontSize=15.sp,fontWeight=FontWeight.Bold),
                                 color=Color(0xFF55351C))
                         }
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
