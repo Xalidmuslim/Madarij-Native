@@ -61,7 +61,9 @@ class ReedPenInkBoundsTest {
         val ui = File("src/main/java/ru/madarij/nativeapp/HeritageUi.kt").readText()
         assertTrue(ui.contains("internal fun HeritageTocVolumeTab("))
         assertTrue(ui.contains("internal fun HeritageTocFilterTab("))
-        assertTrue(ui.contains("private fun HeritageTocEngraving("))
+        assertTrue(ui.contains("VintageFrameKind.DARK_WIDE"))
+        assertTrue(ui.contains("VintageFrameKind.LIGHT_COMPACT"))
+        assertTrue(ui.contains(".vintageFrame("))
         assertTrue(ui.contains("role = Role.Tab"))
     }
 }

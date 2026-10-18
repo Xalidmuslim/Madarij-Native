@@ -1,9 +1,8 @@
 package ru.madarij.nativeapp
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Card
 import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CardElevation
@@ -11,12 +10,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.unit.dp
 
 /**
- * Thin presentation wrapper around Material3 Card.
- * The original Card's click behavior, sizing, accessibility and state stay intact.
- * All light cards share one cached static edge texture; dark cards are untouched.
+ * A paper sheet is intentionally NOT nested inside Material Card: the latter
+ * clips irregular translucent paper edges to a geometric rounded rectangle.
+ * Painting on the parent Box also keeps all original live text and content
+ * above the image and preserves screen-reader and click handling.
  */
 @Composable
 internal fun AgedPaperCard(
@@ -25,14 +25,12 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Card(modifier = modifier, shape = shape, colors = colors, elevation = elevation, border = border) {
-        Box {
-            if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
-                PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-            }
-            Column { content() }
+    Box(modifier.vintageFrame(frameKind)) {
+        Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 11.dp)) {
+            content()
         }
     }
 }
@@ -46,17 +44,12 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Card(
-        onClick = onClick, modifier = modifier, enabled = enabled, shape = shape,
-        colors = colors, elevation = elevation, border = border
-    ) {
-        Box {
-            if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
-                PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-            }
-            Column { content() }
+    Box(modifier.vintageFrame(frameKind).clickable(enabled = enabled, onClick = onClick)) {
+        Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 11.dp)) {
+            content()
         }
     }
 }
