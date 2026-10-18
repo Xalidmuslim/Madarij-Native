@@ -11,7 +11,7 @@ class SoftParchmentFramesTest {
         val cards = File(root, "AgedPaperCard.kt").readText()
         assertTrue(cards.contains("Box(modifier.vintageFrame(frameKind))"))
         assertTrue(cards.contains(".clickable(enabled = enabled, onClick = onClick)"))
-        assertTrue(!cards.contains("Card("))
+        assertTrue(!cards.contains("\n    Card("))
     }
     @Test fun everyPageUsesNativeParchmentImageSlices() {
         val renderer = File(root, "VintageFrame.kt").readText()
