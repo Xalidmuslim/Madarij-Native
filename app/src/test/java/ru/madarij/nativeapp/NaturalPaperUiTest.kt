@@ -36,5 +36,9 @@ class NaturalPaperUiTest {
         assertTrue(frame.contains("androidx.compose.foundation.Canvas"))
         assertTrue(frame.contains("Spacer(Modifier.width(13.dp))"))
         assertTrue(design.contains("Text(\"Aa\""))
+        val home=File(root,"HomeContents.kt").readText()
+        assertTrue(home.contains("Text(\"Aa\", fontFamily = BookSerif"))
+        assertTrue(home.contains("contentDescription = \"Настройки чтения\""))
+        assertTrue(home.contains("val ink = Color(0xFF725034)"))
     }
 }
