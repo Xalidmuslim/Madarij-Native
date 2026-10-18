@@ -65,15 +65,17 @@ internal fun HeritageSectionHeading(title: String, modifier: Modifier = Modifier
 @Composable
 internal fun HeritageChoice(label: String, selected: Boolean, modifier: Modifier = Modifier,
                             onClick: () -> Unit) {
-    Box(modifier.heightIn(min=CompactUi.choiceMinHeightDp.dp)
-        .vintageFrame(if(selected) VintageFrameKind.DARK_COMPACT else VintageFrameKind.LIGHT_COMPACT)
-        .clickable(onClick=onClick)
-        .padding(horizontal=12.dp,vertical=7.dp),
-        contentAlignment=Alignment.Center) {
-        Text(label, style=MaterialTheme.typography.labelMedium.copy(
-            fontFamily=BookSerif,fontSize=14.sp),
-            textAlign=TextAlign.Center,maxLines=2,
-            color=if(selected) Color(0xFFFFE9C0) else Color(0xFF51341F))
+    val shape = RoundedCornerShape(14.dp)
+    Box(modifier.heightIn(min = CompactUi.choiceMinHeightDp.dp).clip(shape)
+        .background(if (selected) BookColors.leather else heritageCard().copy(alpha = .64f))
+        .border(.9.dp, if (selected) BookColors.gold.copy(alpha = .8f)
+                      else BookColors.gold.copy(alpha = .32f), shape)
+        .clickable(onClick = onClick).padding(horizontal = 7.dp, vertical = 5.dp),
+        contentAlignment = Alignment.Center) {
+        Text(label, style = MaterialTheme.typography.labelMedium.copy(
+            fontFamily = BookSerif, fontSize = 14.sp),
+            textAlign = TextAlign.Center, maxLines = 2,
+            color = if (selected) Color(0xFFFFE9C0) else heritageInk())
     }
 }
 
@@ -174,47 +176,123 @@ internal fun HeritageMedallion(number: Int, modifier: Modifier = Modifier) {
 internal fun HeritageTocVolumeTab(
     label: String, selected: Boolean, modifier: Modifier = Modifier, onClick: () -> Unit
 ) {
+    val shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp,
+        bottomStart = 7.dp, bottomEnd = 7.dp)
+    val rim = if (selected) Color(0xFFCDA36D) else Color(0xFFBD9870)
     Box(
         modifier.heightIn(min = CompactUi.tocVolumeMinHeightDp.dp)
-            .vintageFrame(if (selected) VintageFrameKind.DARK_WIDE else VintageFrameKind.LIGHT_WIDE)
+            .clip(shape)
+            .background(
+                Brush.verticalGradient(
+                    if (selected) listOf(Color(0xFF503321), Color(0xFF2C1B13))
+                    else listOf(Color(0xFFFFF2D8), Color(0xFFEBD5B2))
+                ), shape
+            )
+            .border(.9.dp, rim, shape)
             .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
-        Text(label, style = MaterialTheme.typography.titleMedium.copy(
-            fontFamily = BookSerif, fontSize = 17.sp, fontWeight = FontWeight.Medium),
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
+        Text(
+            label, style = MaterialTheme.typography.titleMedium.copy(
+                fontFamily = BookSerif, fontSize = 17.sp, fontWeight = FontWeight.Medium),
             color = if (selected) Color(0xFFFFEDCD) else Color(0xFF4C301F),
             maxLines = 1, textAlign = TextAlign.Center
         )
     }
 }
 
+/**
+ * A restrained old-document rim: a continuous etched inner outline and two
+ * tiny binding marks. Native vector drawing only, no copied screenshot assets.
+ */
+@Composable
+private fun HeritageTocEngraving(
+    color: Color, selected: Boolean, modifier: Modifier = Modifier
+) {
+    Canvas(modifier) {
+        val inset = 3.dp.toPx()
+        val bodyWidth = (size.width - inset * 2f).coerceAtLeast(0f)
+        val bodyHeight = (size.height - inset * 2f).coerceAtLeast(0f)
+        drawRoundRect(
+            color = color.copy(alpha = if (selected) .70f else .52f),
+            topLeft = Offset(inset, inset),
+            size = Size(bodyWidth, bodyHeight),
+            cornerRadius = CornerRadius(7.dp.toPx()),
+            style = Stroke(.6.dp.toPx())
+        )
+        val y = 6.dp.toPx()
+        val x1 = 12.dp.toPx()
+        val x2 = (size.width - x1).coerceAtLeast(x1)
+        drawLine(
+            color = Color.White.copy(alpha = if (selected) .12f else .44f),
+            start = Offset(x1, y), end = Offset(x2, y),
+            strokeWidth = .7.dp.toPx()
+        )
+    }
+}
+
+/** Same parchment-frame vocabulary for all three filtering actions. */
 @Composable
 internal fun HeritageTocFilterTab(
     label: String, kind: String, selected: Boolean,
     modifier: Modifier = Modifier, onClick: () -> Unit
 ) {
+    val shape = RoundedCornerShape(11.dp)
+    val rim = if (selected) Color(0xFFCDA36D) else Color(0xFFC3A17D)
     val ink = if (selected) Color(0xFFFBE5C5) else Color(0xFF5A3825)
     Box(
         modifier.heightIn(min = CompactUi.tocFilterMinHeightDp.dp)
-            .vintageFrame(if (selected) VintageFrameKind.DARK_COMPACT else VintageFrameKind.LIGHT_COMPACT)
+            .clip(shape)
+            .background(
+                Brush.verticalGradient(
+                    if (selected) listOf(Color(0xFF503321), Color(0xFF2B1B14))
+                    else listOf(Color(0xFFFFEFD5), Color(0xFFECD6B8))
+                ), shape
+            )
+            .border(.9.dp, rim, shape)
             .selectable(selected = selected, role = Role.Tab, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
+        HeritageTocEngraving(rim, selected, Modifier.matchParentSize())
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 7.dp),
+            Modifier.fillMaxWidth().padding(horizontal = 5.dp, vertical = 5.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            when(kind) {
-                "all" -> NavigationGlyph("contents", modifier=Modifier.size(13.dp), tint=ink)
-                "read" -> Text("✓", color=ink, fontSize=14.sp)
-                else -> NavigationGlyph("bookmarks", modifier=Modifier.size(13.dp),tint=ink)
+            when (kind) {
+                "all" -> Canvas(Modifier.size(14.dp)) {
+                    repeat(3) { index ->
+                        val y = size.height * (.14f + index * .26f)
+                        drawRoundRect(
+                            color = ink, topLeft = Offset(size.width * .16f, y),
+                            size = Size(size.width * .70f, size.height * .14f),
+                            cornerRadius = CornerRadius(.8.dp.toPx())
+                        )
+                    }
+                }
+                "read" -> Canvas(Modifier.size(14.dp)) {
+                    drawCircle(ink, radius = size.minDimension * .41f,
+                        style = Stroke(1.3.dp.toPx()))
+                    val check = Path().apply {
+                        moveTo(size.width * .24f, size.height * .51f)
+                        lineTo(size.width * .44f, size.height * .69f)
+                        lineTo(size.width * .75f, size.height * .30f)
+                    }
+                    drawPath(check, ink, style = Stroke(1.35.dp.toPx(), cap = StrokeCap.Round))
+                }
+                else -> NavigationGlyph("bookmarks",
+                    modifier = Modifier.size(14.dp), tint = ink)
             }
             Spacer(Modifier.width(4.dp))
-            Text(label, style=MaterialTheme.typography.labelMedium.copy(
-                fontFamily=BookSerif,fontSize=12.sp,lineHeight=14.sp, fontWeight=FontWeight.Medium),
-                color=ink,textAlign=TextAlign.Center,maxLines=2,
-                overflow=TextOverflow.Ellipsis)
+            Text(
+                label, style = MaterialTheme.typography.labelMedium.copy(
+                    fontFamily = BookSerif, fontSize = 13.sp,
+                    lineHeight = 15.sp, fontWeight = FontWeight.Medium
+                ),
+                color = ink, textAlign = TextAlign.Center, maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
         }
     }
 }
@@ -257,24 +335,33 @@ private fun HeritageMenuIcon(kind: String) {
 
 @Composable
 internal fun HeritageMenuGroup(items: List<Triple<String, String, String>>, navigate: (String) -> Unit) {
-    Column(Modifier.fillMaxWidth(),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        items.forEach { item ->
-            AgedPaperCard(onClick={navigate(item.first)}, modifier=Modifier.fillMaxWidth()) {
-                Row(Modifier.fillMaxWidth().heightIn(min=66.dp)
-                    .padding(horizontal=15.dp,vertical=10.dp),
-                    horizontalArrangement=Arrangement.spacedBy(10.dp),
-                    verticalAlignment=Alignment.CenterVertically) {
-                    Box(Modifier.size(34.dp),contentAlignment=Alignment.Center) {
+    AgedPaperCard(Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = heritageCard().copy(alpha = .72f)),
+        border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .32f)),
+        shape = RoundedCornerShape(17.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)) {
+        Column {
+            items.forEachIndexed { index, item ->
+                Row(Modifier.fillMaxWidth().clickable { navigate(item.first) }
+                    .heightIn(min = CompactUi.menuRowMinHeightDp.dp)
+                    .padding(horizontal = 12.dp, vertical = 7.dp),
+                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                    verticalAlignment = Alignment.CenterVertically) {
+                    Box(Modifier.size(34.dp), contentAlignment = Alignment.Center) {
                         HeritageMenuIcon(item.first)
                     }
-                    Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(2.dp)) {
-                        Text(item.second,style=MaterialTheme.typography.titleMedium.copy(
-                            fontFamily=BookSerif,fontSize=17.sp),color=heritageInk())
-                        Text(item.third,style=MaterialTheme.typography.bodySmall,
-                            color=heritageMuted(),maxLines=3,overflow=TextOverflow.Ellipsis)
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Text(item.second, style = MaterialTheme.typography.titleMedium.copy(
+                            fontFamily = BookSerif, fontSize = 17.sp), color = heritageInk())
+                        Text(item.third, style = MaterialTheme.typography.bodySmall,
+                            color = heritageMuted(), maxLines = 2,
+                            overflow = TextOverflow.Ellipsis)
                     }
-                    Text("›",fontSize=22.sp,color=BookColors.gold)
+                    Text("›", fontSize = 23.sp, color = BookColors.gold)
                 }
+                if (index < items.lastIndex)
+                    HorizontalDivider(color = BookColors.gold.copy(alpha = .16f),
+                        thickness = .7.dp, modifier = Modifier.padding(horizontal = 14.dp))
             }
         }
     }
