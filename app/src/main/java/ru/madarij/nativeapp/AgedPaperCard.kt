@@ -2,6 +2,8 @@ package ru.madarij.nativeapp
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardColors
@@ -25,14 +27,13 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    Card(modifier = modifier, shape = shape, colors = colors, elevation = elevation, border = border) {
-        Box {
-            if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
-                PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-            }
-            Column { content() }
+    Card(modifier = modifier, shape = shape, colors = CardDefaults.cardColors(containerColor = Color.Transparent), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), border = null) {
+        Box(Modifier.fillMaxWidth().vintageFrame(frameKind)) {
+            // The user image is the only surface. All content is composed above it.
+            Column(Modifier.padding(horizontal = 8.dp, vertical = 8.dp)) { content() }
         }
     }
 }
@@ -46,17 +47,16 @@ internal fun AgedPaperCard(
     colors: CardColors = CardDefaults.cardColors(),
     elevation: CardElevation = CardDefaults.cardElevation(),
     border: BorderStroke? = null,
+    frameKind: VintageFrameKind = VintageFrameKind.LIGHT_WIDE,
     content: @Composable ColumnScope.() -> Unit
 ) {
     Card(
         onClick = onClick, modifier = modifier, enabled = enabled, shape = shape,
-        colors = colors, elevation = elevation, border = border
+        colors = CardDefaults.cardColors(containerColor = Color.Transparent), elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), border = null
     ) {
-        Box {
-            if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
-                PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-            }
-            Column { content() }
+        Box(Modifier.fillMaxWidth().vintageFrame(frameKind)) {
+            // The user image is the only surface. All content is composed above it.
+            Column(Modifier.padding(horizontal = 8.dp, vertical = 8.dp)) { content() }
         }
     }
 }
