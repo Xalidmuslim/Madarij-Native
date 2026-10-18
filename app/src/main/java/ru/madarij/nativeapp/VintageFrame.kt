@@ -46,6 +46,8 @@ internal enum class VintageFrameKind(val drawableId: Int, val leftFraction: Floa
 @Composable
 internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
     val bitmap = ImageBitmap.imageResource(kind.drawableId)
+    val night = MaterialTheme.colorScheme.background == BookColors.nightBackground
+    val nightColor = MaterialTheme.colorScheme.surface
     return this.drawWithCache {
         val w = size.width.roundToInt().coerceAtLeast(1)
         val h = size.height.roundToInt().coerceAtLeast(1)
@@ -66,6 +68,12 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
         val dx = intArrayOf(0,dstL,w-dstR,w)
         val dy = intArrayOf(0,dstT,h-dstB,h)
         onDrawWithContent {
+            if (night) {
+                // Keep existing readable night typography; antiqued images are day surfaces.
+                drawRect(nightColor)
+                drawContent()
+                return@onDrawWithContent
+            }
             for (iy in 0..2) for (ix in 0..2) {
                 val sw=sx[ix+1]-sx[ix]; val sh=sy[iy+1]-sy[iy]
                 val dw=dx[ix+1]-dx[ix]; val dh=dy[iy+1]-dy[iy]
@@ -99,7 +107,7 @@ internal fun VintageSearchField(
                 value = value, onValueChange = onValueChange,
                 modifier = Modifier.weight(1f),
                 singleLine = true,
-                textStyle = TextStyle(color = BookColors.ink, fontSize = 16.sp,
+                textStyle = TextStyle(color = if (MaterialTheme.colorScheme.background == BookColors.nightBackground) BookColors.nightText else BookColors.ink, fontSize = 16.sp,
                     fontWeight = FontWeight.Normal),
                 decorationBox = { inner ->
                     Box(contentAlignment = Alignment.CenterStart) {
