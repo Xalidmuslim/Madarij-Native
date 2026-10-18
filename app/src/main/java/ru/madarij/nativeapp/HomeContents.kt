@@ -115,10 +115,35 @@ internal fun HomeScreen(
                                     fontSize = 18.sp, lineHeight = 22.sp),
                                 color = Color(0xFFEFC489))
                         }
-                        Box(Modifier.size(width=68.dp,height=36.dp)
+                        Box(Modifier.size(width = 80.dp, height = 42.dp)
                             .vintageFrame(VintageFrameKind.FONT_SETTINGS)
                             .clickable { navigate("settings") }
-                            .semantics { contentDescription = "Настройки чтения" })
+                            .semantics { contentDescription = "Настройки чтения" },
+                            contentAlignment = Alignment.Center) {
+                            Row(
+                                Modifier.fillMaxWidth().padding(horizontal = 9.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text("Aa", fontFamily = BookSerif, fontSize = 17.sp,
+                                    color = Color(0xFF533A27))
+                                androidx.compose.foundation.Canvas(
+                                    Modifier.size(width = 20.dp, height = 18.dp)
+                                ) {
+                                    val ink = Color(0xFF725034)
+                                    repeat(3) { n ->
+                                        val y = size.height * (.22f + n * .28f)
+                                        drawLine(ink, androidx.compose.ui.geometry.Offset(0f, y),
+                                            androidx.compose.ui.geometry.Offset(size.width, y),
+                                            strokeWidth = 1.35.dp.toPx())
+                                        drawCircle(ink, radius = 2.dp.toPx(),
+                                            center = androidx.compose.ui.geometry.Offset(
+                                                size.width * (if (n == 1) .72f else .34f), y
+                                            ))
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
