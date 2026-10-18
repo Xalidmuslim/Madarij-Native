@@ -115,10 +115,35 @@ internal fun HomeScreen(
                                     fontSize = 18.sp, lineHeight = 22.sp),
                                 color = Color(0xFFEFC489))
                         }
-                        Box(Modifier.size(width=68.dp,height=36.dp)
+                        Box(Modifier.size(width = 80.dp, height = 42.dp)
                             .vintageFrame(VintageFrameKind.FONT_SETTINGS)
                             .clickable { navigate("settings") }
-                            .semantics { contentDescription = "Настройки чтения" })
+                            .semantics { contentDescription = "Настройки чтения" },
+                            contentAlignment = Alignment.Center) {
+                            Row(
+                                Modifier.fillMaxWidth().padding(horizontal = 9.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text("Aa", fontFamily = BookSerif, fontSize = 17.sp,
+                                    color = Color(0xFF533A27))
+                                androidx.compose.foundation.Canvas(
+                                    Modifier.size(width = 20.dp, height = 18.dp)
+                                ) {
+                                    val ink = Color(0xFF725034)
+                                    repeat(3) { n ->
+                                        val y = size.height * (.22f + n * .28f)
+                                        drawLine(ink, androidx.compose.ui.geometry.Offset(0f, y),
+                                            androidx.compose.ui.geometry.Offset(size.width, y),
+                                            strokeWidth = 1.35.dp.toPx())
+                                        drawCircle(ink, radius = 2.dp.toPx(),
+                                            center = androidx.compose.ui.geometry.Offset(
+                                                size.width * (if (n == 1) .72f else .34f), y
+                                            ))
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -483,14 +508,9 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         .padding(horizontal=11.dp,vertical=8.dp),
                         horizontalArrangement=Arrangement.spacedBy(10.dp),
                         verticalAlignment=Alignment.CenterVertically) {
-                        Box(Modifier.width(52.dp).heightIn(min=39.dp),
-                            contentAlignment=Alignment.CenterStart) {
-                            Text("${matching.indexOfFirst { it.id==group.id }+1}",
-                                modifier=Modifier.offset(x=(-4).dp),
-                                style=MaterialTheme.typography.titleSmall.copy(
-                                    fontFamily=BookSerif,fontSize=15.sp,fontWeight=FontWeight.Bold),
-                                color=Color(0xFF55351C))
-                        }
+                        HeritageManuscriptNumber(
+                            matching.indexOfFirst { it.id == group.id } + 1
+                        )
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(
@@ -505,8 +525,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 }
                             }
                         }
-                        // Arrow is embedded in the user's chapter-card image.
-                        Spacer(Modifier.width(18.dp))
+                        Text(if (expanded) "⌄" else "›", fontSize = 22.sp,
+                            color = BookColors.gold, modifier = Modifier.padding(end = 4.dp))
                     }
                 }
             }

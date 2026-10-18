@@ -178,11 +178,29 @@ internal fun MadarijTopBar(
                     NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = heritageInk())
                 }
                 if (buttons.textSettings) Box(
-                    Modifier.size(width=80.dp,height=42.dp)
+                    Modifier.size(width = 80.dp, height = 42.dp)
                         .vintageFrame(VintageFrameKind.FONT_SETTINGS)
-                        .clickable(onClick=onTextSettings)
-                        .semantics { contentDescription = "Настройки текста" }
-                )
+                        .clickable(onClick = onTextSettings)
+                        .semantics { contentDescription = "Настройки текста" },
+                    contentAlignment = Alignment.Center
+                ) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween) {
+                        Text("Aa", fontFamily = BookSerif, fontSize = 17.sp,
+                            color = heritageInk())
+                        Canvas(Modifier.size(width = 21.dp, height = 19.dp)) {
+                            val ink = Color(0xFF725034)
+                            repeat(3) { n ->
+                                val y = size.height * (.22f + n * .28f)
+                                drawLine(ink, Offset(0f,y),Offset(size.width,y),
+                                    strokeWidth = 1.35.dp.toPx())
+                                drawCircle(ink, radius = 2.2.dp.toPx(),
+                                    center = Offset(size.width * (if(n==1) .72f else .34f),y))
+                            }
+                        }
+                    }
+                }
             }
         } else {
             Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
