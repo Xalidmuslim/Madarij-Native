@@ -115,21 +115,17 @@ internal fun HomeScreen(
                                     fontSize = 18.sp, lineHeight = 22.sp),
                                 color = Color(0xFFEFC489))
                         }
-                        TextButton(onClick = { navigate("settings") },
-                            modifier = Modifier.size(42.dp).semantics { contentDescription = "Настройки чтения" },
-                            contentPadding = PaddingValues(0.dp)) {
-                            Text("Aa", color = Color(0xFFF1CC92), fontSize = 17.sp)
-                        }
+                        Box(Modifier.size(width=68.dp,height=36.dp)
+                            .vintageFrame(VintageFrameKind.FONT_SETTINGS)
+                            .clickable { navigate("settings") }
+                            .semantics { contentDescription = "Настройки чтения" })
                     }
                 }
             }
             item(key = "knowledge-reminder") {
-                val shape = RoundedCornerShape(17.dp)
-                Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp).clip(shape)
-                    .background(BookColors.card)
-                    .border(.65.dp, BookColors.gold.copy(alpha = .22f), shape)) {
-                    PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
-                    Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
+                Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp)
+                    .vintageFrame(VintageFrameKind.LIGHT_WIDE)) {
+                    Row(Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
                         horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                         Column(Modifier.weight(1f).clickable {
                             onOpenReminder(reminder)
@@ -164,33 +160,20 @@ internal fun HomeScreen(
                 }
             }
             item {
-                Surface(
-                    onClick = { (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it, null) } },
-                    enabled = chapters.isNotEmpty(),
-                    modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp).height(48.dp),
-                    shape = RoundedCornerShape(15.dp),
-                    color = BookColors.leather,
-                    contentColor = Color(0xFFF8E7CE),
-                    shadowElevation = 0.dp
-                ) {
-                    Box(Modifier.fillMaxSize()) {
-                        // Use the SAME static leather-with-gilt-border resource as bottom navigation.
-                        // No extra full-screen layer or additional bitmap decoding.
-                        PreloadedBookImage(R.drawable.navigation_leather,
-                            modifier = Modifier.matchParentSize(), contentScale = ContentScale.FillBounds)
-                        Row(Modifier.fillMaxSize().padding(horizontal = 16.dp),
-                            verticalAlignment = Alignment.CenterVertically) {
-                            NavigationGlyph("contents", selected = true, modifier = Modifier.size(23.dp),
-                                tint = BookColors.lightGold)
-                            Spacer(Modifier.width(11.dp))
-                            // Optical centering: BookSerif glyphs sit 2dp below the Row's
-                            // geometric centre due to the font's baseline metrics.
-                            Text("Продолжить чтение", Modifier.weight(1f).offset(y = (-2).dp),
-                                style = MaterialTheme.typography.titleSmall.copy(fontFamily = BookSerif, fontSize = 17.sp),
-                                color = Color(0xFFF8E7CE))
-                            Text("›", style = MaterialTheme.typography.headlineSmall,
-                                color = Color(0xFFF8E7CE))
-                        }
+                Box(Modifier.fillMaxWidth().padding(horizontal=14.dp)
+                    .heightIn(min=54.dp).vintageFrame(VintageFrameKind.DARK_WIDE)
+                    .clickable(enabled=chapters.isNotEmpty()) {
+                        (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it,null) }
+                    }) {
+                    Row(Modifier.fillMaxWidth().padding(horizontal=22.dp,vertical=13.dp),
+                        verticalAlignment=Alignment.CenterVertically) {
+                        NavigationGlyph("contents",selected=true,modifier=Modifier.size(22.dp),
+                            tint=BookColors.lightGold)
+                        Spacer(Modifier.width(11.dp))
+                        Text("Продолжить чтение", Modifier.weight(1f),
+                            style=MaterialTheme.typography.titleSmall.copy(
+                                fontFamily=BookSerif,fontSize=17.sp),color=Color(0xFFF8E7CE))
+                        Text("›",style=MaterialTheme.typography.headlineSmall,color=Color(0xFFF8E7CE))
                     }
                 }
             }
@@ -449,23 +432,12 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             }
         }
         item {
-            OutlinedTextField(query,{query=it;resetList()},
+            VintageSearchField(
+                value=query,
+                onValueChange={query=it;resetList()},
                 modifier=Modifier.fillMaxWidth(),
-                singleLine=true,
-                placeholder={Text("Найти главу или тему")},
-                leadingIcon={
-                    NavigationGlyph("search",modifier=Modifier.size(22.dp),tint=BookColors.gold)
-                },
-                trailingIcon={
-                    if(query.isNotBlank()) TextButton(onClick={query="";resetList()}) {Text("×")}
-                },
-                shape=RoundedCornerShape(14.dp),
-                colors=OutlinedTextFieldDefaults.colors(
-                    focusedContainerColor=BookColors.card.copy(alpha=.6f),
-                    unfocusedContainerColor=BookColors.card.copy(alpha=.43f),
-                    focusedBorderColor=BookColors.gold.copy(alpha=.72f),
-                    unfocusedBorderColor=BookColors.gold.copy(alpha=.3f)
-                ))
+                placeholder="Найти главу или тему"
+            )
         }
         item {
             Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(6.dp)) {
@@ -500,6 +472,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     elevation = CardDefaults.cardElevation(defaultElevation = 0.dp, pressedElevation = 0.dp),
                     border = BorderStroke(.8.dp, BookColors.gold.copy(alpha = .34f)),
                     shape = RoundedCornerShape(19.dp),
+                    frameKind = VintageFrameKind.SECTION_NUMBERED,
                     modifier = Modifier.fillMaxWidth().animateItem(
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
@@ -510,7 +483,14 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         .padding(horizontal=11.dp,vertical=8.dp),
                         horizontalArrangement=Arrangement.spacedBy(10.dp),
                         verticalAlignment=Alignment.CenterVertically) {
-                        HeritageManuscriptNumber(matching.indexOfFirst { it.id==group.id }+1)
+                        Box(Modifier.width(52.dp).heightIn(min=39.dp),
+                            contentAlignment=Alignment.CenterStart) {
+                            Text("${matching.indexOfFirst { it.id==group.id }+1}",
+                                modifier=Modifier.offset(x=(-4).dp),
+                                style=MaterialTheme.typography.titleSmall.copy(
+                                    fontFamily=BookSerif,fontSize=15.sp,fontWeight=FontWeight.Bold),
+                                color=Color(0xFF55351C))
+                        }
                         Column(Modifier.weight(1f),verticalArrangement=Arrangement.spacedBy(6.dp)) {
                             Text(groupDisplayTitle(group),
                                 style=MaterialTheme.typography.titleMedium.copy(
@@ -525,8 +505,8 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                                 }
                             }
                         }
-                        Text(if(expanded) "⌄" else "›",
-                            style=MaterialTheme.typography.headlineSmall,color=BookColors.gold)
+                        // Arrow is embedded in the user's chapter-card image.
+                        Spacer(Modifier.width(18.dp))
                     }
                 }
             }
@@ -544,8 +524,7 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                    ).clip(shape).background(if(light) BookColors.parchment else BookColors.card).border(.7.dp, BookColors.lightGold.copy(alpha = .35f), shape)) {
-                        PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+                    ).vintageFrame(VintageFrameKind.LIGHT_WIDE)) {
                         Column {
                             Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                                 Box(Modifier.size(30.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
