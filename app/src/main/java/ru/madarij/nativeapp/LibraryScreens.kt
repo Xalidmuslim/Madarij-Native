@@ -79,7 +79,7 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
     val terms=if(filter=="term" && query.isNotBlank()) learning.terms.filter { normalizedText("${it.transcript} ${it.ar} ${it.definition}").text.contains(normalizedText(query).text) } else emptyList()
     val found=results.size+ownNotes.size+terms.size
     Column(Modifier.fillMaxSize().padding(horizontal=16.dp)) {
-        OutlinedTextField(query,{query=it},modifier=Modifier.fillMaxWidth().padding(top=8.dp),label={Text("Слово или фраза")},singleLine=true,trailingIcon={if(query.isNotEmpty()) TextButton(onClick={query=""}) {Text("Очистить")}})
+        VintageSearchField(query,{query=it},modifier=Modifier.fillMaxWidth().padding(top=8.dp),placeholder="Слово или фраза")
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(top=6.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
             listOf("all" to "Всё","title" to "Заголовки","ayat" to "Фрагменты с аятами","hadith" to "Фрагменты с хадисами","term" to "Термины","note" to "Заметки").forEach { (key,label) -> FilterChip(filter==key,{filter=key},{Text(label)},modifier=Modifier.heightIn(min=48.dp)) }
         }
@@ -118,7 +118,7 @@ internal fun BookmarksScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val bookmarks by vm.bookmarks.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Bookmark?>(null)};var title by remember {mutableStateOf("")};var note by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
     LazyColumn(contentPadding=PaddingValues(start=16.dp,top=9.dp,end=16.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item { Text("${bookmarks.size} сохранённых мест", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-        if(bookmarks.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Найти закладку")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
+        if(bookmarks.isNotEmpty()) item {VintageSearchField(query,{query=it},modifier=Modifier.fillMaxWidth(),placeholder="Найти закладку")}
         if(bookmarks.isEmpty()) item {InfoCard("Сохраните важное место","В меню чтения можно добавить закладку главы. Для отдельного абзаца включите «Действия с абзацами».")}
         items(bookmarks.filter {query.isBlank() || "${it.title} ${it.note}".contains(query,true)},key={it.id}) {b -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(b.title,style=MaterialTheme.typography.titleMedium);Text((if(b.paragraphId==null) "Глава" else "Абзац")+" · "+chapters.find {it.id==b.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);BookmarkExcerpt(vm, b);if(b.note.isNotBlank()) Text(b.note);Row(Modifier.horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(4.dp)) {TextButton(onClick={open(b.chapterId,b.paragraphId)}) {Text("Открыть")};TextButton(onClick={editing=b;title=b.title;note=b.note}) {Text("Изменить")};TextButton(onClick={vm.deleteBookmark(b.id)}) {Text("Удалить")}}}} }
     }
@@ -145,7 +145,7 @@ internal fun NotesScreen(vm:BookViewModel,open:(String,String?)->Unit) {
     val notes by vm.notes.collectAsStateWithLifecycle();val chapters by vm.chapters.collectAsStateWithLifecycle();var editing by remember {mutableStateOf<Note?>(null)};var text by remember {mutableStateOf("")};var query by rememberSaveable {mutableStateOf("")}
     LazyColumn(contentPadding=PaddingValues(start=16.dp,top=9.dp,end=16.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
         item {ScreenHeading("Мои заметки","Личные записи рядом с текстом")}
-        if(notes.isNotEmpty()) item {OutlinedTextField(query,{query=it},label={Text("Поиск по заметкам")},modifier=Modifier.fillMaxWidth(),singleLine=true)}
+        if(notes.isNotEmpty()) item {VintageSearchField(query,{query=it},modifier=Modifier.fillMaxWidth(),placeholder="Поиск по заметкам")}
         if(notes.isEmpty()) item {InfoCard("Ваши мысли рядом с книгой","Добавьте заметку через меню главы или действия с абзацами. Также можно записать размышление во вкладке изучения.")}
         items(notes.filter {query.isBlank() || it.text.contains(query,true)},key={it.id}) {n -> AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(chapters.find {it.id==n.chapterId}?.title.orEmpty(),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary);Text(n.text);Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.SHORT).format(Date(n.updatedAt)),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);Row(Modifier.horizontalScroll(rememberScrollState())) {TextButton(onClick={open(n.chapterId,n.paragraphId)}) {Text("К тексту")};TextButton(onClick={editing=n;text=n.text}) {Text("Изменить")};TextButton(onClick={vm.deleteNote(n.id)}) {Text("Удалить")}}}} }
     }
