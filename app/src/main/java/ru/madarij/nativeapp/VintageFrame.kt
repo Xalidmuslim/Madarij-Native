@@ -58,9 +58,17 @@ internal fun Modifier.vintageFrame(kind: VintageFrameKind): Modifier {
         // Cap the fixed illustrated end segments so controls remain usable
         // even on smaller screens (and when system text scaling is increased).
         val fitScale = (h.toFloat() / bitmap.height).coerceAtLeast(.1f)
-        val maxEnd = (w * .38f).roundToInt()
+        // Never allow large cards/long text to inflate ornate corners.
+        // The numbered plaque and search icon need deliberately wider fixed ends.
+        val maxEndDp = when(kind) {
+            VintageFrameKind.SECTION_NUMBERED -> 66.dp
+            VintageFrameKind.SEARCH -> 62.dp
+            VintageFrameKind.FONT_SETTINGS -> 32.dp
+            else -> 29.dp
+        }
+        val maxEnd = minOf((w * .38f).roundToInt(), maxEndDp.toPx().roundToInt())
         val dstL = (srcL * fitScale).roundToInt().coerceIn(1,maxEnd.coerceAtLeast(1))
-        val dstR = (srcR * fitScale).roundToInt().coerceIn(1,(w - dstL - 1).coerceAtLeast(1))
+        val dstR = (srcR * fitScale).roundToInt().coerceIn(1,minOf(maxEnd,(w - dstL - 1)).coerceAtLeast(1))
         val dstT = (h * .32f).roundToInt()
         val dstB = (h * .32f).roundToInt()
         val sx = intArrayOf(0,srcL,bitmap.width-srcR,bitmap.width)
