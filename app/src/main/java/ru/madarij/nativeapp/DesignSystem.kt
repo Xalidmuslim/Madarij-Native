@@ -102,8 +102,12 @@ internal fun Soft3DPanel(
     onClick: (() -> Unit)? = null,
     content: @Composable BoxScope.() -> Unit
 ) {
-    val background = Modifier.vintageFrame(VintageFrameKind.LIGHT_COMPACT)
-    Box(modifier.then(if (onClick!=null) background.clickable(onClick=onClick) else background)) {
+    val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.surface)
+        .border(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = .32f), shape)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
         content()
     }
 }
@@ -116,8 +120,12 @@ internal fun Soft3DSagePanel(
     onClick: (() -> Unit)? = null,
     content: @Composable BoxScope.() -> Unit
 ) {
-    val background = Modifier.vintageFrame(VintageFrameKind.LIGHT_WIDE)
-    Box(modifier.then(if (onClick!=null) background.clickable(onClick=onClick) else background)) {
+    val base = Modifier.clip(shape).background(MaterialTheme.colorScheme.secondaryContainer)
+        .border(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = .3f), shape)
+    Box(modifier.then(if (onClick != null) base.clickable(onClick = onClick) else base)) {
+        if (MaterialTheme.colorScheme.background != BookColors.nightBackground) {
+            PreloadedBookImage(R.drawable.card_paper, Modifier.matchParentSize(), ContentScale.FillBounds)
+        }
         content()
     }
 }
@@ -177,12 +185,13 @@ internal fun MadarijTopBar(
                 ) {
                     NavigationGlyph("search", modifier = Modifier.size(23.dp), tint = heritageInk())
                 }
-                if (buttons.textSettings) Box(
-                    Modifier.size(width=80.dp,height=42.dp)
-                        .vintageFrame(VintageFrameKind.FONT_SETTINGS)
-                        .clickable(onClick=onTextSettings)
-                        .semantics { contentDescription = "Настройки текста" }
-                )
+                if (buttons.textSettings) TextButton(
+                    onClick = onTextSettings,
+                    modifier = Modifier.widthIn(min = 48.dp).semantics { contentDescription = "Настройки текста" },
+                    contentPadding = PaddingValues(0.dp)
+                ) {
+                    Text("Шрифт", color = BookColors.gold, fontSize = 13.sp)
+                }
             }
         } else {
             Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).padding(horizontal = 8.dp),
