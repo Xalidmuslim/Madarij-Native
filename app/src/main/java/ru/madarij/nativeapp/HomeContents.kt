@@ -115,18 +115,17 @@ internal fun HomeScreen(
                                     fontSize = 18.sp, lineHeight = 22.sp),
                                 color = Color(0xFFEFC489))
                         }
-                        TextButton(onClick = { navigate("settings") },
-                            modifier = Modifier.size(42.dp).semantics { contentDescription = "Настройки чтения" },
-                            contentPadding = PaddingValues(0.dp)) {
-                            Text("Aa", color = Color(0xFFF1CC92), fontSize = 17.sp)
-                        }
+                        Box(Modifier.size(width=68.dp,height=36.dp)
+                            .vintageFrame(VintageFrameKind.FONT_SETTINGS)
+                            .clickable { navigate("settings") }
+                            .semantics { contentDescription = "Настройки чтения" })
                     }
                 }
             }
             item(key = "knowledge-reminder") {
                 Box(Modifier.fillMaxWidth().padding(horizontal = 14.dp)
                     .vintageFrame(VintageFrameKind.LIGHT_WIDE)) {
-                    Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
+                    Row(Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
                         horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                         Column(Modifier.weight(1f).clickable {
                             onOpenReminder(reminder)
