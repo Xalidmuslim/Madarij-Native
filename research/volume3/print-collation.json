@@ -475,6 +475,15 @@
       "pdf_file_page": 53,
       "author_body_sha256": "fd1e3235b247aa10404fe0d9551005ce891a4e9dddf7e084da6a102481c4b349",
       "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": []
+    },
+    {
+      "printed_page": 54,
+      "pdf_file_page": 54,
+      "author_body_sha256": "f806d19c39dfe9ff251067d2ede7afe81a69a68fb4e8d55b9c4e024c88ffb09e",
+      "arabic_body_scan_comparison": "self_checked",
       "russian_semantic_review": "translation_not_complete",
       "external_human_review": false,
       "notes": []

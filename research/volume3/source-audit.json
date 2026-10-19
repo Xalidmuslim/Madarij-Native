@@ -88,7 +88,7 @@
     54,
     584
   ],
-  "source_status": "Uploaded 2019 print control; author body pages 3–53 visually compared; Russian translation complete through page 52, first 50 author pages, AI self-review only",
+  "source_status": "Control print verified; pages 3–54 visually compared; translated through page 53 and part of page 54; AI self-review only; first 50-page block committed and pushed as 3474c3df1b5f70c63218681d32a61dcb1996db1d",
   "modern_editorial_notes_reproduced": false,
   "source_issues": [
     {
@@ -208,7 +208,8 @@
       50,
       51,
       52,
-      53
+      53,
+      54
     ]
   }
 }
