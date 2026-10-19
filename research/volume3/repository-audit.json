@@ -1,0 +1,1399 @@
+{
+  "checked_on": "2026-10-19",
+  "base_commit": "2a3627f25b6efdaf75aa0b34108e33d411b174ab",
+  "v158_commit": "086ca732b6facd627ce320ef92f006557364bbe2",
+  "branches": [
+    {
+      "ref": "origin/main",
+      "commit": "2a3627f25b6efdaf75aa0b34108e33d411b174ab",
+      "date": "2026-10-18 20:41:33 +0300",
+      "subject": "feat(ui): install four user-approved transparent antique parchment frames",
+      "behind_main": 0,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-approved-paper-assets-20261018",
+      "commit": "0169a6ef9dbfde3f303be4ad718f7bf72f069238",
+      "date": "2026-10-18 20:31:09 +0300",
+      "subject": "assets(ui): replace reduced-size sprite with high-resolution user-selected parchment originals",
+      "behind_main": 1,
+      "ahead_of_main": 3
+    },
+    {
+      "ref": "origin/codex/madarij-v3-home-clearance-20261018",
+      "commit": "9cfc5bf85af7d55a1a8cf87b4443a7a667a7afbc",
+      "date": "2026-10-18 20:03:34 +0300",
+      "subject": "test(home): keep scrolling clearance and typography with compact dashboard spacing",
+      "behind_main": 1,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/codex/madarij-natural-paper-no-ornate-borders-20261018",
+      "commit": "a702e92089a36fdecb00622e3ad6ba23f97a469d",
+      "date": "2026-10-18 19:42:54 +0300",
+      "subject": "test(ui): enforce visible antique paper grain, aged edges and transparent corners",
+      "behind_main": 2,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-soft-paper-uncropped-20261018",
+      "commit": "d16ecd0e77b4df0bf95970f8bd6aab7941c9362d",
+      "date": "2026-10-18 18:12:46 +0300",
+      "subject": "test: avoid matching composable AgedPaperCard function name as Material Card",
+      "behind_main": 3,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/codex/figma-native-single-toc-pilot-20261018",
+      "commit": "f84a23f010356479f553e26ab61307cdd256f40e",
+      "date": "2026-10-18 16:32:37 +0300",
+      "subject": "feat(pilot): apply Figma scalable card only to first TOC section; other sections untouched",
+      "behind_main": 3,
+      "ahead_of_main": 3
+    },
+    {
+      "ref": "origin/codex/revert-seven-cropped-image-frames-20261018",
+      "commit": "6a8ca3199fb1a6e63db941e4a42f9b1489c7fd9a",
+      "date": "2026-10-18 16:05:37 +0300",
+      "subject": "revert(ui): restore unchanged pre-PR39 interface and remove cropped graphic frames",
+      "behind_main": 4,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/codex/replace-all-frames-seven-original-assets-20261018",
+      "commit": "9c552cb445806f4719ecf49d16c8b0bd4145fe64",
+      "date": "2026-10-18 15:50:49 +0300",
+      "subject": "fix(toc): center chapter numbers inside built-in parchment plaque rather than beside it",
+      "behind_main": 5,
+      "ahead_of_main": 15
+    },
+    {
+      "ref": "origin/codex/remove-added-decorative-frames-20261017",
+      "commit": "d4f658cf68765c5e2d05b9f8b8bcbece95b856e7",
+      "date": "2026-10-17 23:27:55 +0300",
+      "subject": "revert(ui): remove all added vintage frames, textures and graphic border generators",
+      "behind_main": 6,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/codex/madarij-antique-frame-materials-20261017",
+      "commit": "2185606334ad90c510657fad5d5cc74ee261ef16",
+      "date": "2026-10-17 22:48:24 +0300",
+      "subject": "fix(test): use correct raw-string regex for heritage weights",
+      "behind_main": 6,
+      "ahead_of_main": 8
+    },
+    {
+      "ref": "origin/codex/madarij-vintage-frames-safe-content-20261017",
+      "commit": "9e5123c25992754b55d771fd95a6d29ce797d9f4",
+      "date": "2026-10-17 21:35:37 +0300",
+      "subject": "test(ui): update home parchment border invariant for safe under-content layering",
+      "behind_main": 7,
+      "ahead_of_main": 10
+    },
+    {
+      "ref": "origin/codex/madarij-full-vintage-assets-20261017",
+      "commit": "f628ff5e9690f07e67411e097f9ef5454ef10dee",
+      "date": "2026-10-17 21:05:51 +0300",
+      "subject": "test: verify functional vintage filter selection rather than obsolete literal whitespace",
+      "behind_main": 8,
+      "ahead_of_main": 15
+    },
+    {
+      "ref": "origin/codex/madarij-generated-aged-frame-nine-slice-20261017",
+      "commit": "13727f1254a0f1a26e641c53d2aa171625f4de2e",
+      "date": "2026-10-17 19:42:33 +0300",
+      "subject": "test(ui): validate actual transparent generated frame PNG and its unstretched corners",
+      "behind_main": 9,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-heritage-frame-system-20261017",
+      "commit": "8ae102bf4f63e8adc94a639e1a2c518857f527a3",
+      "date": "2026-10-17 19:11:36 +0300",
+      "subject": "test(ui): protect shared antique frame system across TOC, dashboards, dialogs and reading",
+      "behind_main": 10,
+      "ahead_of_main": 15
+    },
+    {
+      "ref": "origin/codex/madarij-original-compact-manuscript-icons-20261017",
+      "commit": "aa8854b88db322b217354127e09b19c0119b9895",
+      "date": "2026-10-17 17:59:39 +0300",
+      "subject": "test(toc): prevent pasted raster glyphs and oversized rectangular roll caps",
+      "behind_main": 11,
+      "ahead_of_main": 4
+    },
+    {
+      "ref": "origin/codex/madarij-ink-mask-safe-nav-20261017",
+      "commit": "b8153d96dec4bd44576bfedf7fa3bac85b8d9697",
+      "date": "2026-10-17 17:44:10 +0300",
+      "subject": "test(layout): count literal safe-area padding usage instead of invalid regex",
+      "behind_main": 12,
+      "ahead_of_main": 4
+    },
+    {
+      "ref": "origin/codex/madarij-quote-clipping-native-toc-20261017",
+      "commit": "8bf3b633a6347c4123801279bd84e6f7b2a31f18",
+      "date": "2026-10-17 17:15:51 +0300",
+      "subject": "ui(contents): balanced tab widths, native search frame and tighter resume card",
+      "behind_main": 13,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-manuscript-toc-tabs-quote-20261017",
+      "commit": "8b0d2c1518c3911fa1b3d6377691c644860dc5bf",
+      "date": "2026-10-17 16:54:51 +0300",
+      "subject": "test(home): update Bad Script contract for smaller 20sp bold animated quotation",
+      "behind_main": 14,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-compact-density-20261017",
+      "commit": "e8dfdf3be5fbc2423b57509e87376597fa33e724",
+      "date": "2026-10-17 14:48:52 +0300",
+      "subject": "ui(search,bookmarks,notes): compact result cards, toolbar spacing and personal lists",
+      "behind_main": 15,
+      "ahead_of_main": 9
+    },
+    {
+      "ref": "origin/codex/madarij-navigation-clarity-20261017",
+      "commit": "7f7eae5615d2b13382facbcca89d1d411337bf59",
+      "date": "2026-10-17 13:01:58 +0300",
+      "subject": "test(navigation): preserve back stack on actual study route",
+      "behind_main": 16,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-heritage-all-screens-ui-20261017",
+      "commit": "161c918f4a4564e699a1f335a351ceed8c6ed19b",
+      "date": "2026-10-17 09:23:53 +0300",
+      "subject": "merge(main): preserve recent Study scope fixes within complete heritage UI redesign",
+      "behind_main": 17,
+      "ahead_of_main": 27
+    },
+    {
+      "ref": "origin/codex/madarij-study-clean-ux-r8-20261017",
+      "commit": "164e48d698898ee5f00159876674eaa8c09eb85c",
+      "date": "2026-10-17 09:10:28 +0300",
+      "subject": "ui(study): show only three current chapters and accurate per-volume statistics",
+      "behind_main": 18,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/codex/madarij-study-ux-simplification-r8-20261017",
+      "commit": "68006d85bf30c5a5fc822387737905612c09c232",
+      "date": "2026-10-17 00:20:34 +0300",
+      "subject": "test(study): verify six-topic preview and full chapter discoverability",
+      "behind_main": 19,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-home-bad-script-only-20261016",
+      "commit": "5ba1f9b99a44b2235003d48544267d25ef49d114",
+      "date": "2026-10-17 00:04:54 +0300",
+      "subject": "test(font): fix 16-bit cmap record indexing when verifying Cyrillic glyphs",
+      "behind_main": 20,
+      "ahead_of_main": 6
+    },
+    {
+      "ref": "origin/codex/madarij-bad-script-home-20261016",
+      "commit": "bb818c9bd79c78416fa4e22d5ddb7a7064fb7bb5",
+      "date": "2026-10-17 00:01:31 +0300",
+      "subject": "test(font): check Cyrillic via TrueType cmap without unavailable java.awt dependency",
+      "behind_main": 20,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-heritage-reference-ui-20261016",
+      "commit": "b227dd658c453919d752f7225f230ae3cf077ada",
+      "date": "2026-10-16 23:25:58 +0300",
+      "subject": "qa(android): expand collapsed chapter through accessible title before reader navigation test",
+      "behind_main": 21,
+      "ahead_of_main": 10
+    },
+    {
+      "ref": "origin/backup/madarij-before-bad-script-home-20261016",
+      "commit": "9ca7bc76993262ebcb39af9cdd683d3345851ee5",
+      "date": "2026-10-16 23:07:16 +0300",
+      "subject": "ui(study): native learning hub with three clear actions and unified chapter selection",
+      "behind_main": 20,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-pre-bad-script-20261016",
+      "commit": "9ca7bc76993262ebcb39af9cdd683d3345851ee5",
+      "date": "2026-10-16 23:07:16 +0300",
+      "subject": "ui(study): native learning hub with three clear actions and unified chapter selection",
+      "behind_main": 20,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-study-clarity-native-ui-20261016",
+      "commit": "d7c17c5f092ae401263198770f6144b0aa624d25",
+      "date": "2026-10-16 22:58:19 +0300",
+      "subject": "perf(study): cache per-chapter question counts and scoped section list for Compose recomposition",
+      "behind_main": 21,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-study-clear-navigation-v1-20261016",
+      "commit": "0326d447d2e53e6e0bd4a7215a5917ca414a54b5",
+      "date": "2026-10-16 22:35:43 +0300",
+      "subject": "ui(study): quick quiz first, advanced settings collapsible; volume choice resets overview list",
+      "behind_main": 22,
+      "ahead_of_main": 9
+    },
+    {
+      "ref": "origin/codex/madarij-google-play-aab-rights-disclosure-20261016",
+      "commit": "41358970a5b65632bfb0d246a5cf3a3fcbabaa99",
+      "date": "2026-10-16 20:22:44 +0300",
+      "subject": "ci(play): require isolated R8 AAB validation on Google Play readiness PR",
+      "behind_main": 23,
+      "ahead_of_main": 9
+    },
+    {
+      "ref": "origin/codex/madarij-release-default-perf-gate-20261016",
+      "commit": "90673f44f696d87c70039d6215d953c02233ae45",
+      "date": "2026-10-16 19:09:25 +0300",
+      "subject": "ci(perf): fail fast on gate tests before running costly R8 minification",
+      "behind_main": 24,
+      "ahead_of_main": 11
+    },
+    {
+      "ref": "origin/codex/madarij-v2-page-fragments-markdown-display-20261016",
+      "commit": "aab58ae1e43589eafe3b0f5e5c590fbd3adbd57d",
+      "date": "2026-10-16 18:16:46 +0300",
+      "subject": "fix(reader): only strip inline Markdown when stars hug words; preserve literal multiplication/unmatched stars",
+      "behind_main": 25,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-v2-performance-release-20261016",
+      "commit": "147906945175c61a13cf2ebd7b792728b3f3aa17",
+      "date": "2026-10-16 16:09:52 +0300",
+      "subject": "qa(android): tap actual visible Read control from accessibility tree, not stale Home coordinate",
+      "behind_main": 26,
+      "ahead_of_main": 11
+    },
+    {
+      "ref": "origin/codex/madarij-study-library-upgrade-20261016",
+      "commit": "47ce46bc25aab85a29ce6e741d135551f78bad34",
+      "date": "2026-10-16 14:11:54 +0300",
+      "subject": "fix(study): compare verified sentence using same whitespace and formatting normalization",
+      "behind_main": 27,
+      "ahead_of_main": 11
+    },
+    {
+      "ref": "origin/codex/madarij-caveat-handwritten-home-20261016",
+      "commit": "e155bd069968121fec509c7ac4b651fde1eb1939",
+      "date": "2026-10-16 13:22:33 +0300",
+      "subject": "test(home): verify offline Caveat binary, OFL attribution and native writing animation",
+      "behind_main": 28,
+      "ahead_of_main": 4
+    },
+    {
+      "ref": "origin/codex/madarij-home-quote-temporary-spotlight-20261016",
+      "commit": "089443e3924e98249a2db86838ebe1e32905d479",
+      "date": "2026-10-16 12:27:44 +0300",
+      "subject": "test(reader): validate spotlight locator in its actual source file",
+      "behind_main": 29,
+      "ahead_of_main": 8
+    },
+    {
+      "ref": "origin/codex/madarij-quran-ref-notes-complete-20261016",
+      "commit": "df6709ee17ecc5643e7b49ecf9172728ad936cad",
+      "date": "2026-10-16 10:13:33 +0300",
+      "subject": "test(reader): Al-Asr and Al-Maida annotated sources must stay inside Quran card",
+      "behind_main": 30,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/codex/madarij-tight-numbering-quran-boundaries-20261016",
+      "commit": "dcc5ca67b1eb8a9ea65bee8bd497057aa1eba3ed",
+      "date": "2026-10-16 10:01:21 +0300",
+      "subject": "test(reader): Quran block stops at surah reference; preserve commentary, human speech and numbered text",
+      "behind_main": 31,
+      "ahead_of_main": 4
+    },
+    {
+      "ref": "origin/codex/madarij-quran-citations-speakers-fix-20261016",
+      "commit": "423e72a9d3b1add6275a94c595578c9d922800ae",
+      "date": "2026-10-16 09:12:45 +0300",
+      "subject": "fix(parser): close nested Russian low/high quotation marks before detecting sentence boundary",
+      "behind_main": 32,
+      "ahead_of_main": 8
+    },
+    {
+      "ref": "origin/codex/madarij-compact-blocks-fast-reader-20261016",
+      "commit": "c3caf8e2a5d0b4b6c1f841cfbb4720572e8437ec",
+      "date": "2026-10-16 08:51:58 +0300",
+      "subject": "test(reader): guard compact number pills, notes and cold-start performance path",
+      "behind_main": 33,
+      "ahead_of_main": 4
+    },
+    {
+      "ref": "origin/codex/madarij-antique-semantic-reader-20261016",
+      "commit": "36b1d92ecbddcd88c7c189c644eb1f61bed921b5",
+      "date": "2026-10-16 08:36:22 +0300",
+      "subject": "ui(reader): antique note strip and notes icon with existing collapsible behavior",
+      "behind_main": 34,
+      "ahead_of_main": 6
+    },
+    {
+      "ref": "origin/codex/madarij-reader-top-align-home-100-20261016",
+      "commit": "c71b88781839eae84675f37d1cd0f66430fc3dbf",
+      "date": "2026-10-16 08:09:25 +0300",
+      "subject": "test(toc): guarantee immediate navigation uses verified chapter ownership",
+      "behind_main": 35,
+      "ahead_of_main": 11
+    },
+    {
+      "ref": "origin/codex/madarij-no-jump-soft-motion-20261015",
+      "commit": "cf09ddee0660fe4c981053f24a16687acac73386",
+      "date": "2026-10-16 00:00:35 +0300",
+      "subject": "fix(build): keep ContentsScreen trailing navigation callback and pass reduced-motion setting",
+      "behind_main": 36,
+      "ahead_of_main": 6
+    },
+    {
+      "ref": "origin/codex/madarij-toc-full-anchor-audit-20261015",
+      "commit": "5939945d73e6cd0ef744a28d749fbddffd53560e",
+      "date": "2026-10-15 23:38:17 +0300",
+      "subject": "fix(toc): preserve paragraph-start entries when later section changes subject",
+      "behind_main": 37,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-accurate-toc-title-pages-20261015",
+      "commit": "6f8e2d57f4a30f1de03ed3f37f66f49104cd96b3",
+      "date": "2026-10-15 23:14:43 +0300",
+      "subject": "fix(toc): fall back to published span for introductory pages lacking page IDs",
+      "behind_main": 38,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-topic-start-marker-20261015",
+      "commit": "17398366f9638a89fdd6739e7e45b8d948ed69fc",
+      "date": "2026-10-15 20:11:14 +0300",
+      "subject": "fix(reader): landmark excerpt follows displayed text across page boundaries",
+      "behind_main": 39,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/codex/madarij-v2-editorial-status-labels-20261015",
+      "commit": "e6e3ea71ff947564133599ce7053a624099ef035",
+      "date": "2026-10-15 19:23:22 +0300",
+      "subject": "copy: describe both volumes and remaining scholarly verification in about screen",
+      "behind_main": 40,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v1-v2-scholarly-collation-20261015",
+      "commit": "967cb598b6fd6602276cef24b01b6f6b9aef7a50",
+      "date": "2026-10-15 14:02:46 +0000",
+      "subject": "fix: sync home reminder with final volume text [skip ci]",
+      "behind_main": 45,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/cloud-combined-before-collation-20261015",
+      "commit": "bac689aeb84fa2e8fe86b21942af261b0b1f14d1",
+      "date": "2026-10-15 13:49:11 +0300",
+      "subject": "chore: preserve both v2 collation histories before two-volume review [skip ci]",
+      "behind_main": 115,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v1-v2-final-collation-20261015",
+      "commit": "bac689aeb84fa2e8fe86b21942af261b0b1f14d1",
+      "date": "2026-10-15 13:49:11 +0300",
+      "subject": "chore: preserve both v2 collation histories before two-volume review [skip ci]",
+      "behind_main": 115,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/cloud-v2-before-collation-20261015",
+      "commit": "3a5717040f9a783f67e95c53c1d278c42f735c72",
+      "date": "2026-10-15 12:09:26 +0300",
+      "subject": "fix(v2): preserve full Quran 507 and source fidelity pp501–520 [skip ci]",
+      "behind_main": 129,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v1-v2-before-final-20261015",
+      "commit": "3a5717040f9a783f67e95c53c1d278c42f735c72",
+      "date": "2026-10-15 12:09:26 +0300",
+      "subject": "fix(v2): preserve full Quran 507 and source fidelity pp501–520 [skip ci]",
+      "behind_main": 129,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-v2-final-collation-20261014",
+      "commit": "3a5717040f9a783f67e95c53c1d278c42f735c72",
+      "date": "2026-10-15 12:09:26 +0300",
+      "subject": "fix(v2): preserve full Quran 507 and source fidelity pp501–520 [skip ci]",
+      "behind_main": 129,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v2-opening-before-final-20261015",
+      "commit": "933ef7c4005f2626ba5384dc86c17321a76e2d25",
+      "date": "2026-10-15 10:42:48 +0300",
+      "subject": "fix(v2): source-compare pp121–140 and retain author's theological formulas [skip ci]",
+      "behind_main": 130,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p121-140-20261015",
+      "commit": "933ef7c4005f2626ba5384dc86c17321a76e2d25",
+      "date": "2026-10-15 10:42:48 +0300",
+      "subject": "fix(v2): source-compare pp121–140 and retain author's theological formulas [skip ci]",
+      "behind_main": 130,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p121-140-audit-20261015",
+      "commit": "c1527a775baa64e01b2e642c4b898541413a4be4",
+      "date": "2026-10-15 10:38:52 +0300",
+      "subject": "fix(v2): restore Quran 96:19 prohibition and source-fidelity pp101–120 [skip ci]",
+      "behind_main": 132,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p101-120-20261015",
+      "commit": "c1527a775baa64e01b2e642c4b898541413a4be4",
+      "date": "2026-10-15 10:38:52 +0300",
+      "subject": "fix(v2): restore Quran 96:19 prohibition and source-fidelity pp101–120 [skip ci]",
+      "behind_main": 132,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p101-120-audit-20261015",
+      "commit": "9de52fecc29dbf845d5edb6839130c38ed849068",
+      "date": "2026-10-15 10:35:06 +0300",
+      "subject": "fix(v2): source-compare pp81–100 and separate hadith scrutiny from author text [skip ci]",
+      "behind_main": 135,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p081-100-20261015",
+      "commit": "9de52fecc29dbf845d5edb6839130c38ed849068",
+      "date": "2026-10-15 10:35:06 +0300",
+      "subject": "fix(v2): source-compare pp81–100 and separate hadith scrutiny from author text [skip ci]",
+      "behind_main": 135,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p081-100-audit-20261015",
+      "commit": "cbb74de9dd15ec91b7318c6e36f7cc9390ac928a",
+      "date": "2026-10-15 10:30:49 +0300",
+      "subject": "fix(v2): deep-check pp51–80, restore hadith/proverb print boundaries, extract provenance commentary [skip ci]",
+      "behind_main": 137,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p051-080-20261015",
+      "commit": "cbb74de9dd15ec91b7318c6e36f7cc9390ac928a",
+      "date": "2026-10-15 10:30:49 +0300",
+      "subject": "fix(v2): deep-check pp51–80, restore hadith/proverb print boundaries, extract provenance commentary [skip ci]",
+      "behind_main": 137,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p051-080-audit-20261015",
+      "commit": "6ea14ba21a4235155608a4fb99603cca15d5c503",
+      "date": "2026-10-15 10:25:06 +0300",
+      "subject": "fix(v2): deepen opening pp3–50 translation and correct Quran 16:30 cross-page citation [skip ci]",
+      "behind_main": 139,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p003-050-20261015",
+      "commit": "6ea14ba21a4235155608a4fb99603cca15d5c503",
+      "date": "2026-10-15 10:25:06 +0300",
+      "subject": "fix(v2): deepen opening pp3–50 translation and correct Quran 16:30 cross-page citation [skip ci]",
+      "behind_main": 139,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-early-p003-050-audit-20261015",
+      "commit": "03e4f35cdff7f55a665e261b9c5cceef25ccc2cc",
+      "date": "2026-10-15 09:55:39 +0300",
+      "subject": "fix(v2): restore source-complete supplication and causal arguments on printed p393 [skip ci]",
+      "behind_main": 143,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-review-p581-600-20261015",
+      "commit": "03e4f35cdff7f55a665e261b9c5cceef25ccc2cc",
+      "date": "2026-10-15 09:55:39 +0300",
+      "subject": "fix(v2): restore source-complete supplication and causal arguments on printed p393 [skip ci]",
+      "behind_main": 143,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p631-640-20261014",
+      "commit": "193993b7a7ca41ebecdfcf6440fb096046643e43",
+      "date": "2026-10-14 19:03:13 +0300",
+      "subject": "fix(v2): recheck authorial text and page boundaries pp631–640 [skip ci]",
+      "behind_main": 159,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/backup/madarij-before-final-631-659-20261014",
+      "commit": "9bc96c72b46cf0da52cd5339a087b5ffa5172504",
+      "date": "2026-10-14 18:58:46 +0300",
+      "subject": "test(v2): match source-faithful text and exact Quran quotation casing [skip ci]",
+      "behind_main": 159,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p631-640-audit-2026-10-14",
+      "commit": "9bc96c72b46cf0da52cd5339a087b5ffa5172504",
+      "date": "2026-10-14 18:58:46 +0300",
+      "subject": "test(v2): match source-faithful text and exact Quran quotation casing [skip ci]",
+      "behind_main": 159,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p621-630-20261014",
+      "commit": "9bc96c72b46cf0da52cd5339a087b5ffa5172504",
+      "date": "2026-10-14 18:58:46 +0300",
+      "subject": "test(v2): match source-faithful text and exact Quran quotation casing [skip ci]",
+      "behind_main": 159,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p621-630-audit-2026-10-14",
+      "commit": "f96bb5ec01f68e28b9eed98062d07ffaac5aef3d",
+      "date": "2026-10-14 08:20:39 +0300",
+      "subject": "test(v2): align pp616 and 619 guards with exact text/case [skip ci]",
+      "behind_main": 162,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p611-620-20261014",
+      "commit": "f96bb5ec01f68e28b9eed98062d07ffaac5aef3d",
+      "date": "2026-10-14 08:20:39 +0300",
+      "subject": "test(v2): align pp616 and 619 guards with exact text/case [skip ci]",
+      "behind_main": 162,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p611-620-audit-2026-10-14",
+      "commit": "3be544f3e1f308a4b30bdb29b19654a33845c91e",
+      "date": "2026-10-14 08:16:37 +0300",
+      "subject": "test(v2): correct p605 regression to exact authorial phrase [skip ci]",
+      "behind_main": 165,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p604-610-20261014",
+      "commit": "3be544f3e1f308a4b30bdb29b19654a33845c91e",
+      "date": "2026-10-14 08:16:37 +0300",
+      "subject": "test(v2): correct p605 regression to exact authorial phrase [skip ci]",
+      "behind_main": 165,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p604-610-audit-2026-10-14",
+      "commit": "1299238f4931ec782b34359a3880c1e258472f5e",
+      "date": "2026-10-14 02:30:14 +0300",
+      "subject": "fix(v2): restore faithful Arabic/Russian pp601-602, correct Quran 27:40 and record audit [skip ci]",
+      "behind_main": 168,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-deep-audit-p601-602-20261014",
+      "commit": "1299238f4931ec782b34359a3880c1e258472f5e",
+      "date": "2026-10-14 02:30:14 +0300",
+      "subject": "fix(v2): restore faithful Arabic/Russian pp601-602, correct Quran 27:40 and record audit [skip ci]",
+      "behind_main": 168,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-p601-602-audit-2026-10-14",
+      "commit": "5a8a419bab97042186c35f7f39e2166354308d55",
+      "date": "2026-10-13 09:41:32 +0300",
+      "subject": "docs(v2): document corrected 22:30 excerpt p319 and remaining print-scan uncertainty [skip ci]",
+      "behind_main": 172,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-v2-deep-audit-qiraat-p024-20261013",
+      "commit": "5a8a419bab97042186c35f7f39e2166354308d55",
+      "date": "2026-10-13 09:41:32 +0300",
+      "subject": "docs(v2): document corrected 22:30 excerpt p319 and remaining print-scan uncertainty [skip ci]",
+      "behind_main": 172,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages601-659-20261013",
+      "commit": "dcd4dd34919088a90ccf4ade583ff0d08fe9b380",
+      "date": "2026-10-13 08:45:29 +0300",
+      "subject": "test(v2): check exact restored gratitude wording p603 [skip ci]",
+      "behind_main": 180,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages551-600-20261012",
+      "commit": "f5c5f26062359c4808e5e9817911026bc50459ef",
+      "date": "2026-10-12 21:57:34 +0300",
+      "subject": "docs(v2): record p551–600 Quran restoration, corrected authorship and open isnads [skip ci]",
+      "behind_main": 192,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages501-550-20261012",
+      "commit": "f5d7e6a0c5d03fd50b65353432543403047f0bf1",
+      "date": "2026-10-12 21:52:11 +0300",
+      "subject": "docs(v2): record exact pagewise 501–550 restorations and unresolved checks [skip ci]",
+      "behind_main": 201,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages451-500-20261012",
+      "commit": "4c0f7467ef9b2ff0f249babe309b71b0801b300c",
+      "date": "2026-10-12 20:23:01 +0300",
+      "subject": "docs(v2): log actual 451-500 electronic collation, source fixes and open religious checks [skip ci]",
+      "behind_main": 209,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages401-450-20261012",
+      "commit": "4801bd6f85da1d8a701576ba717ff1d41fd7eb8f",
+      "date": "2026-10-12 20:16:32 +0300",
+      "subject": "docs(v2): record page-by-page electronic collation 401-450 and open scholarly checks [skip ci]",
+      "behind_main": 218,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages351-400-20261012",
+      "commit": "27a153bc6684e30890529370bd5aebefa6dbe696",
+      "date": "2026-10-12 15:04:27 +0300",
+      "subject": "docs(v2): log exact 351-400 electronic screening, restorations and open sources [skip ci]",
+      "behind_main": 229,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages301-350-20261012",
+      "commit": "c81db218c5bd5d5c1f8aedf364f16cd8fb748bb3",
+      "date": "2026-10-12 14:58:35 +0300",
+      "subject": "docs(v2): log pagewise 301-350 electronic review, exact repairs and outstanding scholarly checks [skip ci]",
+      "behind_main": 239,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages251-300-20261012",
+      "commit": "f26a371ff61034aa9389533fb17b21b74aba7968",
+      "date": "2026-10-12 13:35:22 +0300",
+      "subject": "test(v2): guard restored p294 direct author voice [skip ci]",
+      "behind_main": 249,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages201-250-20261012",
+      "commit": "56b691d6993f43333d667c0b1ab829732163ffe1",
+      "date": "2026-10-12 13:10:03 +0300",
+      "subject": "test(v2): assert exact plural wording of author consensus p215 [skip ci]",
+      "behind_main": 264,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages201-220-20261012",
+      "commit": "476c1be642f70e9c8f4c3034393e9c00e7de3ee1",
+      "date": "2026-10-12 11:52:35 +0300",
+      "subject": "docs(v2): pagewise register for electronic screening and corrections 201–220 [skip ci]",
+      "behind_main": 274,
+      "ahead_of_main": 5
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages151-200-20261012",
+      "commit": "6753984347c3e348cd4321eb3e0f270cc6b52ee9",
+      "date": "2026-10-12 11:49:00 +0300",
+      "subject": "docs(v2): log precise source-screening, verified repairs and open questions pages 151-200 [skip ci]",
+      "behind_main": 274,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-audit-p121-150",
+      "commit": "f2680cd138ed92319c30379975650849deede76a",
+      "date": "2026-10-12 11:36:03 +0300",
+      "subject": "docs(v2): page-level screening 121-150, 26 text repairs and unresolved scholarly issues [skip ci]",
+      "behind_main": 291,
+      "ahead_of_main": 7
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages121-150-20261012",
+      "commit": "2414ad67dba9d23bcfc153cd9a0e0daf035b15ec",
+      "date": "2026-10-12 11:32:44 +0300",
+      "subject": "docs(v2): record precise page 121-150 triage, confirmed repairs, unresolved isnads [skip ci]",
+      "behind_main": 286,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages081-120-20261012",
+      "commit": "b0d344dea98e98788307ebc0b37349aff1a1749b",
+      "date": "2026-10-12 10:17:30 +0300",
+      "subject": "docs(v2): record electronic 81-120 screening, confirmed repairs and open religious checks [skip ci]",
+      "behind_main": 291,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-collation-pages041-080-20261012",
+      "commit": "870ae1ec56092ab0bced52c6000f0c9143af0dd9",
+      "date": "2026-10-12 09:44:13 +0300",
+      "subject": "docs(v2): record 40 sequential electronic collation pages 41-80 and open sources [skip ci]",
+      "behind_main": 300,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-manual-pages031-040-20261012",
+      "commit": "0bbf3520a56e9b6a84ce1fc2a922711da5239c78",
+      "date": "2026-10-12 02:24:06 +0300",
+      "subject": "docs(v2): record pages 31–40 collation and unresolved Ibn Abbas attribution [skip ci]",
+      "behind_main": 308,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-volume2-manual-pages021-030-20261012",
+      "commit": "08a84de97c25fb1cbc85dc8eda384ddd1191fd8d",
+      "date": "2026-10-12 02:20:04 +0300",
+      "subject": "docs(v2): record substantive comparison and open qiraat issues on pages 21–30 [skip ci]",
+      "behind_main": 312,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v158-ar-ru-translation-collation",
+      "commit": "086ca732b6facd627ce320ef92f006557364bbe2",
+      "date": "2026-10-12 02:10:43 +0300",
+      "subject": "fix(v2): collate printed pages 13-20 and remove editorial intrusions",
+      "behind_main": 316,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v159-source-faithfulness-review",
+      "commit": "e352d0752bfd78dcf7fff907155b616c4ba9b609",
+      "date": "2026-10-12 01:38:30 +0300",
+      "subject": "docs(v2): document ten verified-in-electronic-source corrections and 231 unresolved page risks",
+      "behind_main": 320,
+      "ahead_of_main": 11
+    },
+    {
+      "ref": "origin/codex/madarij-v158-before-volume2-page-audit-20261012",
+      "commit": "c7b0e6700bebcd7ff92dda51ac7e0a5b8ece18ba",
+      "date": "2026-10-12 01:13:37 +0300",
+      "subject": "docs(v2): record true 657-page audit and partial substantive corrections; trigger APK from corrected assets HEAD",
+      "behind_main": 320,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v157-volume2-scholarly-audit",
+      "commit": "df7d6aadc65a6e4c85af701f7ae948d405910d14",
+      "date": "2026-10-12 01:01:47 +0300",
+      "subject": "fix(android): isolate v1.57 optimized release to protect existing readers from signing-key mismatch and data loss",
+      "behind_main": 330,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v156-volume2-pages621-659-final39-draft",
+      "commit": "a3524d1df644a6c8a19c195fb8a1a5ef06a0130c",
+      "date": "2026-10-12 00:34:07 +0300",
+      "subject": "docs(v2): record validated final 39-page integration and trigger exact HEAD v1.56 APK build",
+      "behind_main": 347,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v155-volume2-pages521-620-100page-batch",
+      "commit": "8d7b33f797ab40f8846c317529377aa9af763d33",
+      "date": "2026-10-12 00:20:35 +0300",
+      "subject": "docs(v2): record successful 100-page source-aligned integration and trigger exact-head v1.55 builds",
+      "behind_main": 367,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v154-volume2-pages421-520-100page-batch",
+      "commit": "474dd19ca34ce22e189a28978ee050c68828de6e",
+      "date": "2026-10-11 23:50:08 +0300",
+      "subject": "ci(v2): run optimized R8 Android unit and emulator QA on complete 100-page v1.54 bilingual draft",
+      "behind_main": 391,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v153-volume2-pages321-420-100page-batch",
+      "commit": "5b53b77a93196cb7a686a32836c15743117c01e7",
+      "date": "2026-10-11 22:36:18 +0300",
+      "subject": "ci(v2): test v1.53 100-page bilingual reader with R8 and Android emulator QA",
+      "behind_main": 416,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v152-volume2-pages221-320-100page-batch",
+      "commit": "55ade2f6e0595bc3271c27886a40476afd0fcd3c",
+      "date": "2026-10-11 19:47:18 +0300",
+      "subject": "ci(v2): run unit tests and optimized Android emulator QA for v1.52 100-page Russian batch",
+      "behind_main": 443,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v151-volume2-pages151-220-draft",
+      "commit": "c5c8db6b01bdd0d545d485dcfff9e21ac8a50ff5",
+      "date": "2026-10-11 18:25:54 +0300",
+      "subject": "ci(v2): require Kotlin R8 and Android emulator QA for v1.51 translated pages 151–220",
+      "behind_main": 465,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v150-install-alongside-safe-preview",
+      "commit": "fe2a84b31d832a28e425f2bba0df5d15ee97653d",
+      "date": "2026-10-11 18:03:54 +0300",
+      "subject": "fix(android): install v1.50 preview alongside existing app without removing bookmarks or notes",
+      "behind_main": 489,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v150-volume2-pages81-150-russian-draft",
+      "commit": "db1975c6d11b6e7ce659b8172d895ccda8c10816",
+      "date": "2026-10-11 17:59:08 +0300",
+      "subject": "ci(v2): run Android unit tests, optimized APK and emulator QA for v1.50 two-volume preview",
+      "behind_main": 491,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v149-volume2-70page-translation-batch-11-80",
+      "commit": "a4b3c5737645d1de24ceb97f9768a1c31fbbf33d",
+      "date": "2026-10-11 17:32:27 +0300",
+      "subject": "docs(v2): record editorial status and review risks for 70-page translation integrated into Android",
+      "behind_main": 508,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v148-volume2-machine-translation-evaluation",
+      "commit": "634d4db08631a8a6e51a27bf737bb83b8fa61a5a",
+      "date": "2026-10-11 17:02:43 +0300",
+      "subject": "test(v2): validate selected TOC headings without forcing one heading per paragraph",
+      "behind_main": 523,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v147-volume2-translation-editorial-preview",
+      "commit": "aaa605c1befc83b985aa9eeb2e983a5369c521dc",
+      "date": "2026-10-11 14:44:32 +0300",
+      "subject": "build(v2): distinguish expanded translated preview APK from v1.45",
+      "behind_main": 533,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v146-volume2-arabic-source-audit",
+      "commit": "4e3c4486441fbdbfc2fcded3ea2c59c7402acf6a",
+      "date": "2026-10-11 08:21:36 +0000",
+      "subject": "data(v2): preserve 659 printed source pages and 3210 review candidates; no translation approvals",
+      "behind_main": 540,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v145-volume2-bilingual-preview",
+      "commit": "d020d004d40a0520603a6acf7a8f1995c5a5331f",
+      "date": "2026-10-11 11:00:15 +0300",
+      "subject": "test(v2): accept per-volume reader ordinal while retaining navigation-body guard",
+      "behind_main": 550,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v144-calligraphy-reed-pen",
+      "commit": "118599964c81fa5f18032a66e892ee82d9160b11",
+      "date": "2026-10-11 09:57:38 +0300",
+      "subject": "style(home): render reed-pen reminder with bundled Marck Script Cyrillic",
+      "behind_main": 563,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v142-handwriting-centered-cards",
+      "commit": "9c3572da6d5a302964190d39717eee351f07a36e",
+      "date": "2026-10-11 09:55:56 +0300",
+      "subject": "layout: center icon and label reliably in unbounded LazyColumn item card constraints",
+      "behind_main": 576,
+      "ahead_of_main": 2
+    },
+    {
+      "ref": "origin/backup/madarij-v141-before-card-centering-final-2026-10-11",
+      "commit": "a6107950c6f5040706e76dbe3b5ce8b8e843229a",
+      "date": "2026-10-11 09:49:18 +0300",
+      "subject": "ui: retain Marck Script reed writing, center quick-access cards, unify leather CTA, hide unused backup/about section",
+      "behind_main": 576,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/codex/madarij-v141-handwriting-card-polish",
+      "commit": "a6107950c6f5040706e76dbe3b5ce8b8e843229a",
+      "date": "2026-10-11 09:49:18 +0300",
+      "subject": "ui: retain Marck Script reed writing, center quick-access cards, unify leather CTA, hide unused backup/about section",
+      "behind_main": 576,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/backup/madarij-v144-before-marck-font-2026-10-11",
+      "commit": "3286b2d9ca84363b951296191d0c0485860141f1",
+      "date": "2026-10-11 08:11:42 +0300",
+      "subject": "feat: Bad Script Cyrillic book reminders with punctuation-aware reed pen handwriting and licensed bundled font",
+      "behind_main": 564,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v141-centered-cards-leather",
+      "commit": "2e4d445bdecb0e8d6b88fdeb45910172cb15a0e9",
+      "date": "2026-10-11 02:45:07 +0300",
+      "subject": "ui: center quick-access icons and labels, reuse bottom leather for continue button, hide backup/device info",
+      "behind_main": 576,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/backup/madarij-v143-before-writing-font-2026-10-11",
+      "commit": "71f6f2f021aefec62a2c1247c1d761bb416dbed1",
+      "date": "2026-10-11 02:27:48 +0300",
+      "subject": "ui: optically center continue-reading label while retaining v142 leather and centered cards",
+      "behind_main": 565,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v143-centered-reading-cta",
+      "commit": "71f6f2f021aefec62a2c1247c1d761bb416dbed1",
+      "date": "2026-10-11 02:27:48 +0300",
+      "subject": "ui: optically center continue-reading label while retaining v142 leather and centered cards",
+      "behind_main": 565,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v142-before-cta-optical-centering-2026-10-11",
+      "commit": "e4896994850c1659830da1ca8b545b2813acf188",
+      "date": "2026-10-11 02:08:10 +0300",
+      "subject": "ui: center icon-label groups inside book cards; match leather CTA to nav; remove backup/about-device sections",
+      "behind_main": 566,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v142-center-cards-leather-nav",
+      "commit": "e4896994850c1659830da1ca8b545b2813acf188",
+      "date": "2026-10-11 02:08:10 +0300",
+      "subject": "ui: center icon-label groups inside book cards; match leather CTA to nav; remove backup/about-device sections",
+      "behind_main": 566,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v141-before-center-cards-2026-10-11",
+      "commit": "6a047575ee9096152b3c45cd5db4b034c6af9ff0",
+      "date": "2026-10-11 01:22:48 +0300",
+      "subject": "fix: complete v1.41 reed-pen animation with readable 5.5-12 second ink writing and no first-frame flash",
+      "behind_main": 567,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v141-final-reed-pen",
+      "commit": "6a047575ee9096152b3c45cd5db4b034c6af9ff0",
+      "date": "2026-10-11 01:22:48 +0300",
+      "subject": "fix: complete v1.41 reed-pen animation with readable 5.5-12 second ink writing and no first-frame flash",
+      "behind_main": 567,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v141-continuous-before-final-reed-pen-2026-10-11",
+      "commit": "ffb029147d367fa61be6f29f450a1eecaac31d79",
+      "date": "2026-10-11 01:06:57 +0300",
+      "subject": "test: preserve editorial-heading regression guard for aggregated chapter topics",
+      "behind_main": 568,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v141-continuous-sections-reminders",
+      "commit": "ffb029147d367fa61be6f29f450a1eecaac31d79",
+      "date": "2026-10-11 01:06:57 +0300",
+      "subject": "test: preserve editorial-heading regression guard for aggregated chapter topics",
+      "behind_main": 568,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v141-slow-readable-handwriting",
+      "commit": "b08630695da7767d7509ed51e019f8c1dc649799",
+      "date": "2026-10-11 00:41:49 +0300",
+      "subject": "ui: slow reed pen handwriting to readable 5.5-12s, enlarge Marck Script text and add timing tests",
+      "behind_main": 576,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/backup/madarij-v140-before-card-alignment-2026-10-11",
+      "commit": "269c82ebefbb795c20026b1c4d483c5a3b7a9ddf",
+      "date": "2026-10-11 00:10:41 +0300",
+      "subject": "fix: draw Compose text content using explicit ContentDrawScope inside handwriting clip mask",
+      "behind_main": 576,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v140-before-meaningful-sections-2026-10-11",
+      "commit": "269c82ebefbb795c20026b1c4d483c5a3b7a9ddf",
+      "date": "2026-10-11 00:10:41 +0300",
+      "subject": "fix: draw Compose text content using explicit ContentDrawScope inside handwriting clip mask",
+      "behind_main": 576,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v140-before-menu-and-card-polish-2026-10-11",
+      "commit": "269c82ebefbb795c20026b1c4d483c5a3b7a9ddf",
+      "date": "2026-10-11 00:10:41 +0300",
+      "subject": "fix: draw Compose text content using explicit ContentDrawScope inside handwriting clip mask",
+      "behind_main": 576,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v140-before-slow-ink-2026-10-11",
+      "commit": "269c82ebefbb795c20026b1c4d483c5a3b7a9ddf",
+      "date": "2026-10-11 00:10:41 +0300",
+      "subject": "fix: draw Compose text content using explicit ContentDrawScope inside handwriting clip mask",
+      "behind_main": 576,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v140-reed-pen-handwriting",
+      "commit": "269c82ebefbb795c20026b1c4d483c5a3b7a9ddf",
+      "date": "2026-10-11 00:10:41 +0300",
+      "subject": "fix: draw Compose text content using explicit ContentDrawScope inside handwriting clip mask",
+      "behind_main": 576,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v139-before-pen-writing-2026-10-11",
+      "commit": "755f0fe65f9cca2288c7adb3f49c4ad8d7bc747b",
+      "date": "2026-10-10 22:08:55 +0300",
+      "subject": "fix: keep editorial TOC labels out of prose, shorten reader toolbar title and avoid text under floating nav",
+      "behind_main": 578,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v139-reader-toc-layout",
+      "commit": "755f0fe65f9cca2288c7adb3f49c4ad8d7bc747b",
+      "date": "2026-10-10 22:08:55 +0300",
+      "subject": "fix: keep editorial TOC labels out of prose, shorten reader toolbar title and avoid text under floating nav",
+      "behind_main": 578,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v138-before-reader-layout-2026-10-10",
+      "commit": "78b0c87a1d6d150ae1268c944aaf24f78e7218f6",
+      "date": "2026-10-10 21:39:49 +0300",
+      "subject": "fix: use Compose layout scope for lightweight sand text effect",
+      "behind_main": 579,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v138-knowledge-sand-reminders",
+      "commit": "78b0c87a1d6d150ae1268c944aaf24f78e7218f6",
+      "date": "2026-10-10 21:39:49 +0300",
+      "subject": "fix: use Compose layout scope for lightweight sand text effect",
+      "behind_main": 579,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v137-before-knowledge-reminders-2026-10-10",
+      "commit": "70ddfe1b8462ecc0d7c57971a3d2831f987f0f9c",
+      "date": "2026-10-10 20:42:58 +0300",
+      "subject": "feat(native): embed approved generated antique bronze icons in home, bottom nav and book controls",
+      "behind_main": 582,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v137-generated-book-icons",
+      "commit": "70ddfe1b8462ecc0d7c57971a3d2831f987f0f9c",
+      "date": "2026-10-10 20:42:58 +0300",
+      "subject": "feat(native): embed approved generated antique bronze icons in home, bottom nav and book controls",
+      "behind_main": 582,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v136-before-generated-icons-2026-10-10",
+      "commit": "52dd5773204ebf9e44a62fc653b27fca13a71e4a",
+      "date": "2026-10-10 19:39:11 +0300",
+      "subject": "ui: add subtle embossed bronze treatment to bottom navigation glyphs",
+      "behind_main": 583,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v136-reference-library-home",
+      "commit": "52dd5773204ebf9e44a62fc653b27fca13a71e4a",
+      "date": "2026-10-10 19:39:11 +0300",
+      "subject": "ui: add subtle embossed bronze treatment to bottom navigation glyphs",
+      "behind_main": 583,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v135-before-reference-redesign-2026-10-10",
+      "commit": "ad5cdeb6afe85d89f3e6b5eb8b867603929076ab",
+      "date": "2026-10-10 18:49:05 +0300",
+      "subject": "refine: quieter aged-card edge texture, compact home actions, matte leather CTA, lighter navigation bar",
+      "behind_main": 586,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v135-book-art-direction",
+      "commit": "ad5cdeb6afe85d89f3e6b5eb8b867603929076ab",
+      "date": "2026-10-10 18:49:05 +0300",
+      "subject": "refine: quieter aged-card edge texture, compact home actions, matte leather CTA, lighter navigation bar",
+      "behind_main": 586,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v134-before-art-direction-2026-10-10",
+      "commit": "bef47a23eab844670d6561c578a5e2632792802d",
+      "date": "2026-10-10 18:18:50 +0300",
+      "subject": "feat: 130ms motion-safe content entrances across screens and page turns; restore warm fibrous sage paper",
+      "behind_main": 587,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v134-light-motion-warm-sage",
+      "commit": "bef47a23eab844670d6561c578a5e2632792802d",
+      "date": "2026-10-10 18:18:50 +0300",
+      "subject": "feat: 130ms motion-safe content entrances across screens and page turns; restore warm fibrous sage paper",
+      "behind_main": 587,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v133-before-smooth-animations-2026-10-10",
+      "commit": "f2eb9e62aca1b4ef2d23f21df8f7ac0a644cff4c",
+      "date": "2026-10-10 16:08:06 +0300",
+      "subject": "fix: reset reader LazyListState per chapter and render completion only when ready; unify paper cards and TOC volume title",
+      "behind_main": 588,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v133-reader-no-flash-paper-cards",
+      "commit": "f2eb9e62aca1b4ef2d23f21df8f7ac0a644cff4c",
+      "date": "2026-10-10 16:08:06 +0300",
+      "subject": "fix: reset reader LazyListState per chapter and render completion only when ready; unify paper cards and TOC volume title",
+      "behind_main": 588,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v132-before-reader-frames-2026-10-10",
+      "commit": "20729597d7c1757ca607d419deb276d7bcafd496",
+      "date": "2026-10-10 14:37:15 +0300",
+      "subject": "fix: restore antique fibers and worn edges in warm sage reading texture",
+      "behind_main": 589,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v132-paper-visual-fixes",
+      "commit": "20729597d7c1757ca607d419deb276d7bcafd496",
+      "date": "2026-10-10 14:37:15 +0300",
+      "subject": "fix: restore antique fibers and worn edges in warm sage reading texture",
+      "behind_main": 589,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v131-before-book-paper-2026-10-10",
+      "commit": "b7b596276b6d3fd8630fe210570eceb56c601f3f",
+      "date": "2026-10-10 13:47:02 +0300",
+      "subject": "ci: run emulator QA as a single shell script so APK path and package survive",
+      "behind_main": 592,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v131-native-performance-release",
+      "commit": "b7b596276b6d3fd8630fe210570eceb56c601f3f",
+      "date": "2026-10-10 13:47:02 +0300",
+      "subject": "ci: run emulator QA as a single shell script so APK path and package survive",
+      "behind_main": 592,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v130-before-performance-2026-10-10",
+      "commit": "65c2362d14f635965c94373c136f75627c996aa0",
+      "date": "2026-10-10 13:24:20 +0300",
+      "subject": "fix: eliminate route text translation and home reselect redraw; restore paper backdrop beneath library hero",
+      "behind_main": 595,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v130-static-pages-book-background",
+      "commit": "65c2362d14f635965c94373c136f75627c996aa0",
+      "date": "2026-10-10 13:24:20 +0300",
+      "subject": "fix: eliminate route text translation and home reselect redraw; restore paper backdrop beneath library hero",
+      "behind_main": 595,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v129-before-home-transition-fix-2026-10-10",
+      "commit": "3dba75f1a54cc9aa8810d716509d1b7e4cea7e3f",
+      "date": "2026-10-10 13:00:15 +0300",
+      "subject": "perf: remove screen-wide paper animation; move headers inside destinations and toc calculations to IO",
+      "behind_main": 596,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v129-transition-architecture",
+      "commit": "3dba75f1a54cc9aa8810d716509d1b7e4cea7e3f",
+      "date": "2026-10-10 13:00:15 +0300",
+      "subject": "perf: remove screen-wide paper animation; move headers inside destinations and toc calculations to IO",
+      "behind_main": 596,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v128-before-navigation-audit-2026-10-10",
+      "commit": "0f0d972fea865015f49cf5402dd8c004af8b7803",
+      "date": "2026-10-10 12:42:57 +0300",
+      "subject": "fix(native): soft opaque route reveal, stable app theme, desaturated ivory-sage paper v1.28",
+      "behind_main": 597,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v128-reading-sage-smooth",
+      "commit": "0f0d972fea865015f49cf5402dd8c004af8b7803",
+      "date": "2026-10-10 12:42:57 +0300",
+      "subject": "fix(native): soft opaque route reveal, stable app theme, desaturated ivory-sage paper v1.28",
+      "behind_main": 597,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v127-before-transitions-2026-10-10",
+      "commit": "52d89c869b54db9f87594e19f9d785d7ce60d759",
+      "date": "2026-10-10 12:22:25 +0300",
+      "subject": "perf(android): keep window drawable stable across all route changes",
+      "behind_main": 598,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v127-opaque-routes-floating-nav",
+      "commit": "52d89c869b54db9f87594e19f9d785d7ce60d759",
+      "date": "2026-10-10 12:22:25 +0300",
+      "subject": "perf(android): keep window drawable stable across all route changes",
+      "behind_main": 598,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v126-before-background-stack-2026-10-10",
+      "commit": "cbafd60214978728bdd230c57752f2b50149a68b",
+      "date": "2026-10-10 11:53:38 +0300",
+      "subject": "fix: resolve Kotlin syntax and padding overload in nav",
+      "behind_main": 600,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v126-smooth-paper-2026-10-10",
+      "commit": "cbafd60214978728bdd230c57752f2b50149a68b",
+      "date": "2026-10-10 11:53:38 +0300",
+      "subject": "fix: resolve Kotlin syntax and padding overload in nav",
+      "behind_main": 600,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v125-paper-transition-2026-10-10",
+      "commit": "aecc5b220fe715d263a5c9dbf56b52c338ac5345",
+      "date": "2026-10-10 10:49:46 +0300",
+      "subject": "fix: eliminate route bleed, floating paper navigation and light/sage reading backgrounds v1.25",
+      "behind_main": 603,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v125-soft-transitions-2026-10-10",
+      "commit": "a5d85e7606aec8eeed05c84552618c6515e24da0",
+      "date": "2026-10-10 10:49:33 +0300",
+      "subject": "fix: remove overlapping route transitions, unify parchment background, add sage reader choice",
+      "behind_main": 604,
+      "ahead_of_main": 1
+    },
+    {
+      "ref": "origin/backup/madarij-v124-before-reading-backgrounds-2026-10-10",
+      "commit": "dffef286ae39e6f80c3f95eb0ea8e22ee93745a2",
+      "date": "2026-10-10 10:09:16 +0300",
+      "subject": "fix: close floating bottom navigation callback lambda",
+      "behind_main": 604,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v124-before-transition-theme-2026-10-10",
+      "commit": "dffef286ae39e6f80c3f95eb0ea8e22ee93745a2",
+      "date": "2026-10-10 10:09:16 +0300",
+      "subject": "fix: close floating bottom navigation callback lambda",
+      "behind_main": 604,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v124-floating-paper-2026-10-10",
+      "commit": "dffef286ae39e6f80c3f95eb0ea8e22ee93745a2",
+      "date": "2026-10-10 10:09:16 +0300",
+      "subject": "fix: close floating bottom navigation callback lambda",
+      "behind_main": 604,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v123-before-floating-nav-2026-10-10",
+      "commit": "281aad2181e77a7f8f7c32d0a09673fd31b662e2",
+      "date": "2026-10-10 00:42:42 +0300",
+      "subject": "fix: unify parchment screens, replace generated book textures and keep native bottom navigation in reader",
+      "behind_main": 606,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-v123-native-paper-fix",
+      "commit": "281aad2181e77a7f8f7c32d0a09673fd31b662e2",
+      "date": "2026-10-10 00:42:42 +0300",
+      "subject": "fix: unify parchment screens, replace generated book textures and keep native bottom navigation in reader",
+      "behind_main": 606,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v122-before-parchment-fix-2026-10-10",
+      "commit": "309326193ecd7e2db73467cb10ab54e31f9b0e58",
+      "date": "2026-10-10 00:08:21 +0300",
+      "subject": "fix: compact book home cards, soften reading paper, correct book icons and slider thumb",
+      "behind_main": 607,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/madarij-visual-qa-2026-10-10",
+      "commit": "309326193ecd7e2db73467cb10ab54e31f9b0e58",
+      "date": "2026-10-10 00:08:21 +0300",
+      "subject": "fix: compact book home cards, soften reading paper, correct book icons and slider thumb",
+      "behind_main": 607,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v21-before-layout-qa-2026-10-10",
+      "commit": "45fb168249091532b4216921bae1b23195cd8474",
+      "date": "2026-10-10 00:02:41 +0300",
+      "subject": "ci: locate sdkmanager from installed Android cmdline tools",
+      "behind_main": 608,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/codex/antique-book-reference-2026-10-09",
+      "commit": "45fb168249091532b4216921bae1b23195cd8474",
+      "date": "2026-10-10 00:02:41 +0300",
+      "subject": "ci: locate sdkmanager from installed Android cmdline tools",
+      "behind_main": 608,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/cloud-v1-main-before-collation-20261015",
+      "commit": "0868bb2c3ba7211924f12fa83b71622fab1555e4",
+      "date": "2026-10-09 00:29:54 +0300",
+      "subject": "polish: smooth chapter transitions, night panel contrast and remove temporary image import",
+      "behind_main": 613,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-v19-before-ref-2026-10-09",
+      "commit": "0868bb2c3ba7211924f12fa83b71622fab1555e4",
+      "date": "2026-10-09 00:29:54 +0300",
+      "subject": "polish: smooth chapter transitions, night panel contrast and remove temporary image import",
+      "behind_main": 613,
+      "ahead_of_main": 0
+    },
+    {
+      "ref": "origin/backup/madarij-before-book-ui-2026-10-09",
+      "commit": "b7252aebfe80d554fccd7ed5485a728be8e845cb",
+      "date": "2026-10-08 23:57:09 +0300",
+      "subject": "ci: speed up Madarij design APK builds; make full checks manual",
+      "behind_main": 620,
+      "ahead_of_main": 0
+    }
+  ]
+}

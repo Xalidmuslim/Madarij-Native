@@ -1,0 +1,10 @@
+{
+  "base_commit": "2a3627f25b6efdaf75aa0b34108e33d411b174ab",
+  "sha256": {
+    "app/src/main/assets/corpus.json": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a",
+    "app/src/main/assets/structure.json": "a1071fccd392537921c49c2cf591af2364e670801ee5dd36066630e8d3e08cd0",
+    "app/src/main/assets/volume2-preview.json": "536a11ca3828a13a179109c18b5244a57116b17064537220f573d7cadb2a5eb4",
+    "app/src/main/assets/volume2-structure.json": "30e2111e3b52c5f8590440a236f699a4c17af942d62a0e8cbb169d998b7689ba",
+    "app/src/main/assets/content-manifest.json": "d44d25a574df356bbf86ae2c5673270cdbcecf6bee6f0eda235e3ca67368c546"
+  }
+}
