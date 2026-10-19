@@ -93,5 +93,15 @@
     ],
     "source_form_preserved": "يشاؤون",
     "reader_attribution_verified": false
+  },
+  "user_selected_control_pdf": {
+    "url": "https://d1.islamhouse.com/data/ar/ih_books/single-03/ar-Madarij-alSalikee-03.pdf",
+    "edition_confirmation": "User states title details match the required 2019 edition; not yet independently checked against the file",
+    "download_attempt_date": "2026-10-19",
+    "network_policy_state": "enforced",
+    "host_in_effective_allowed_hosts": false,
+    "result": "Proxy CONNECT returned HTTP 403; curl exit 22; zero bytes downloaded",
+    "visual_page_26_comparison": "not performed; awaiting attached PDF",
+    "previous_translation_preserved": true
   }
 }
