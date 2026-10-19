@@ -55,13 +55,20 @@ def validate(data=DATA, require_complete=False):
     require(translation["publication_ready"] is False and translation["translation_independently_verified"] is False,
             "Partial self-reviewed work must not be certified")
     used = []
+    translation_ids = set()
     for p in translation["paragraphs"]:
         refs = p["source_ids"]
         require(refs and all(s in source for s in refs), "Missing source paragraph or empty source refs")
+        require(p["id"] == refs[0] + "-ru" and p["id"] not in translation_ids, "Translation ID mismatch or duplicate")
+        translation_ids.add(p["id"])
+        expected_pages = sorted({int(s.split("-")[1][1:]) for s in refs})
+        require(p["printed_pages"] == expected_pages, f"Printed page identifiers mismatch: {refs}")
         require(isinstance(p["ru"], str) and p["ru"].strip(), f"Empty translation: {refs}")
         require("\ufffd" not in p["ru"] and not re.search(r"-\s*\n", p["ru"]), f"Damaged Russian text: {refs}")
         if "ar" in p:
             require(p["ar"] == " ".join(source[s]["ar"] for s in refs), f"Arabic mismatch: {refs}")
+        for verse in re.findall(r"\{[^{}]+\}", " ".join(source[s]["ar"] for s in refs)):
+            require(verse in p["ru"], f"Arabic Quran quotation missing/changed in Russian: {refs}")
         used.extend(refs)
     require(len(used) == len(set(used)), "Duplicate translated source paragraphs")
     # Drafting is strictly sequential. Extra boundary-source pages are allowed.
@@ -73,6 +80,7 @@ def validate(data=DATA, require_complete=False):
                 "Missing source pages inside the translated prefix")
     review_file = data / "self-review.json"
     reviewed = 0
+    literary_reviewed = 0
     if review_file.exists():
         review = json.loads(review_file.read_text())
         require(review["external_independent_review"] is False, "Unsupported independent-review claim")
@@ -85,14 +93,18 @@ def validate(data=DATA, require_complete=False):
             require(evidence["sha256"] == sha(ar + "\0" + p["ru"]), f"Stale review: {key}")
             stages = evidence["stages"]
             require(set(stages) == {"semantic", "literary", "back_comparison"}, f"Missing review stage: {key}")
-            require(all(v == "self_checked_against_web_transcription" for v in stages.values()),
-                    f"Unsupported review status: {key}")
-            reviewed += 1
+            require(stages["literary"] == "self_checked_russian_only", f"Unsupported literary status: {key}")
+            require(all(stages[s] in {"self_checked_against_web_transcription", "pending_contextual_review"}
+                        for s in ["semantic", "back_comparison"]), f"Unsupported review status: {key}")
+            literary_reviewed += 1
+            if all(stages[s] == "self_checked_against_web_transcription" for s in ["semantic", "back_comparison"]):
+                reviewed += 1
     missing_source = sorted(set(range(3, 585)) - set(numbers))
     missing_translation = sorted(set(range(3, 585)) - set(translated))
     report = {"source_pages_captured": len(pages), "translated_pages": translated,
               "translation_paragraphs": len(translation["paragraphs"]),
               "self_reviewed_paragraphs": reviewed, "visually_collated_pages": 0,
+              "literary_self_reviewed_paragraphs": literary_reviewed,
               "missing_source_pages": ranges(missing_source),
               "missing_translation_pages": ranges(missing_translation),
               "protected_assets_unchanged": len(protection["sha256"]),

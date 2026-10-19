@@ -1,0 +1,97 @@
+{
+  "checked_on": "2026-10-19",
+  "bibliography_confirmed_from_primary_site": true,
+  "source_url": "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j3-61",
+  "bibliographic_printed_pages": 584,
+  "provisional_author_pages": [
+    3,
+    584
+  ],
+  "provisional_author_page_count": 582,
+  "pdf_url": "https://ibnelqayem.com/assets/media/madarej-3143.pdf",
+  "pdf_total_file_pages_reported_by_firecrawl": 606,
+  "pdf_first_file_pages_extracted": 30,
+  "pdf_page_mapping_visually_verified": false,
+  "pdf_download_into_workspace": "HTTP 403",
+  "word_url": "https://ibnelqayem.com/ar/media/download/84",
+  "word_content_type_observed": "application/msword",
+  "word_full_extraction": "Transport closed; no complete Word text available",
+  "provisional_mapping": [
+    {
+      "file_page": 3,
+      "web_printed_page": 3,
+      "basis": "text-content comparison, not visual verification"
+    },
+    {
+      "file_page": 6,
+      "web_printed_page": 6,
+      "basis": "text-content comparison, not visual verification"
+    },
+    {
+      "file_page": 26,
+      "web_printed_page": 26,
+      "basis": "text-content comparison, not visual verification"
+    }
+  ],
+  "captured_web_author_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    584
+  ],
+  "source_status": "selected edition; no final control transcription established",
+  "modern_editorial_notes_reproduced": false,
+  "source_issues": [
+    {
+      "id": "VAR-006",
+      "page": 6,
+      "web_has_negation": true,
+      "pdf_extraction_has_negation": true,
+      "claim_that_2019_pdf_omits_negation": false,
+      "visual_verification": "pending"
+    },
+    {
+      "id": "QUR-026",
+      "page": 26,
+      "web_quote": "يسألونك ماذا ينفقون قل العفو العفو كذلك",
+      "pdf_extraction_quote": "يسألونك ماذا ينفقون قل العفو",
+      "normalization": "unvowelled comparison only; not a certified diplomatic transcription",
+      "status": "unresolved; translation stops before v3-p026-04"
+    }
+  ],
+  "quran_cross_check": {
+    "reference": "76:30",
+    "url": "https://quran.com/al-insan/30/qiraat",
+    "forms_listed": [
+      "تشاءون",
+      "يشاؤون"
+    ],
+    "source_form_preserved": "يشاؤون",
+    "reader_attribution_verified": false
+  }
+}

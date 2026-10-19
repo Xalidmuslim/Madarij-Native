@@ -30,7 +30,7 @@ class Volume3IntegrityTest(unittest.TestCase):
     def test_duplicate_translation_rejected(self):
         self.translation["paragraphs"].append(copy.deepcopy(self.translation["paragraphs"][0]))
         self.write_translation()
-        with self.assertRaisesRegex(ValueError, "Duplicate"):
+        with self.assertRaisesRegex(ValueError, "duplicate|Duplicate"):
             validate(self.data)
 
     def test_skipped_heading_rejected(self):
@@ -52,6 +52,24 @@ class Volume3IntegrityTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Duplicate or unordered"):
             validate(self.data)
 
+    def test_page_identifiers_cannot_be_reassigned(self):
+        self.translation["paragraphs"][0]["printed_pages"] = [4]
+        self.write_translation()
+        with self.assertRaisesRegex(ValueError, "page identifiers mismatch"):
+            validate(self.data)
+
+    def test_quran_arabic_cannot_be_removed_from_translation(self):
+        self.translation["paragraphs"][1]["ru"] = "Только русский перевод."
+        self.write_translation()
+        with self.assertRaisesRegex(ValueError, "Quran quotation"):
+            validate(self.data)
+
+    def test_changed_translation_invalidates_earlier_self_review(self):
+        self.translation["paragraphs"][0]["ru"] += " Изменение после проверки."
+        self.write_translation()
+        with self.assertRaisesRegex(ValueError, "Stale review"):
+            validate(self.data)
+
     def test_modern_notes_excluded_and_author_negation_kept(self):
         html = '''<div class="book-content-texts"><p class="selectionShareable">
         لمن لم <a title="Protected modern commentary" data-margin="1">(1)</a>
@@ -62,6 +80,16 @@ class Volume3IntegrityTest(unittest.TestCase):
         self.assertNotIn("commentary", json.dumps(row))
         with self.assertRaisesRegex(ValueError, "identity mismatch"):
             extract(html, 7)
+
+    def test_section_ornament_is_not_an_author_paragraph(self):
+        html = '''<div class="book-content-texts"><p class="selectionShareable">فصل</p>
+        <p class="selectionShareable">* * * *</p></div><input class="page-input" value="23">'''
+        self.assertEqual(len(extract(html, 23)["paragraphs"]), 1)
+
+    def test_plain_paragraph_and_linked_author_words_are_preserved(self):
+        html = '''<div class="book-content-texts"><p>ثم قال <a href="x">تعالى</a></p>
+        </div><input class="page-input" value="27">'''
+        self.assertEqual(extract(html, 27)["paragraphs"][0]["ar"], "ثم قال تعالى")
 
 
 if __name__ == "__main__":

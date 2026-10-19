@@ -42,10 +42,10 @@ class AuthorText(HTMLParser):
                 self.body_depth = 1
         if not self.body_depth:
             return
-        if tag == "p" and "selectionShareable" in classes:
+        if tag == "p":
             self.in_paragraph = True
             self.bits = []
-        if self.in_paragraph and tag == "a":
+        if self.in_paragraph and tag == "a" and ("data-margin" in attrs or "page-index" in classes):
             self.note_depth += 1
             self.excluded_note_refs += 1
         if self.in_paragraph and tag == "br":
@@ -57,7 +57,9 @@ class AuthorText(HTMLParser):
         if tag == "p" and self.in_paragraph:
             value = re.sub(r"\s+", " ", "".join(self.bits)).strip()
             value = re.sub(r" +([،؛:.])", r"\1", value)
-            if value:
+            # The site represents end-of-section ornaments as standalone p
+            # elements. They are layout marks, not untranslated author prose.
+            if value and not re.fullmatch(r"(?:\*\s*)+", value):
                 self.paragraphs.append(value)
             self.in_paragraph = False
         if tag == "div" and self.body_depth:
