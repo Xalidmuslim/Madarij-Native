@@ -1133,7 +1133,7 @@
       "pdf_file_page": 113,
       "author_body_sha256": "ee51ec07709c5f40630d0dc6ab922b1af8b8a4ddd609cfff2df27261323112a5",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
@@ -1475,6 +1475,105 @@
       "author_body_sha256": "010c16a9c2b271653cf3348bee06aabfa7d24682375091b5dcef2da833f5ffdc",
       "arabic_body_scan_comparison": "self_checked",
       "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 145,
+      "pdf_file_page": 145,
+      "author_body_sha256": "c498e48989e6f09834e5f31b7fecd46ca86d3346bc98e7472a52503523f0b39c",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 146,
+      "pdf_file_page": 146,
+      "author_body_sha256": "7041930c0d247f577b3e4379e2c64372a8ec50712ee36de0f6ed8d10ff8155a2",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 147,
+      "pdf_file_page": 147,
+      "author_body_sha256": "cfea055b0326b415ca9bc9a86bd16f7205839ec1cfb4e044d9fb564777d88268",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 148,
+      "pdf_file_page": 148,
+      "author_body_sha256": "8db04b997657255a781d8bfb695696e3d450f0df84360a2e0262d6675221ca79",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 149,
+      "pdf_file_page": 149,
+      "author_body_sha256": "3adb917fcdf6f715f166f588c3894b0258c0bd3e81d069be7f98ebeac5e513f1",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 150,
+      "pdf_file_page": 150,
+      "author_body_sha256": "e33ff9b3f56e73882371ba97d9922997a0908bb61134588b178e061b0ec21801",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 151,
+      "pdf_file_page": 151,
+      "author_body_sha256": "4e34172fc9040edd36292a0c8fea0d0f082a88559b58d2e9e2a9bfe8e1ce042e",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 152,
+      "pdf_file_page": 152,
+      "author_body_sha256": "24e9841d898e032d6b29785fa9cec19e406db30799e63acc5f90368d7f622923",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "self_checked",
+      "external_human_review": false,
+      "notes": [
+        "Direct visual transcription; editorial footnotes excluded."
+      ]
+    },
+    {
+      "printed_page": 153,
+      "pdf_file_page": 153,
+      "author_body_sha256": "b137935ac9857129f7e3bdc7f0cab770675b18127d6489fd1d80eb3d7c06599e",
+      "arabic_body_scan_comparison": "self_checked",
+      "russian_semantic_review": "translation_not_complete",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
