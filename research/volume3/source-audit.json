@@ -64,7 +64,7 @@
     30,
     584
   ],
-  "source_status": "selected edition; no final control transcription established",
+  "source_status": "Uploaded 2019 control PDF established; author-body comparison performed for pages 3–26; full translation unfinished",
   "modern_editorial_notes_reproduced": false,
   "source_issues": [
     {
@@ -81,7 +81,7 @@
       "web_quote": "يسألونك ماذا ينفقون قل العفو العفو كذلك",
       "pdf_extraction_quote": "يسألونك ماذا ينفقون قل العفو",
       "normalization": "unvowelled comparison only; not a certified diplomatic transcription",
-      "status": "unresolved; translation stops before v3-p026-04"
+      "status": "Resolved by visual reading of the uploaded printed page 26; see source-variants.json"
     }
   ],
   "quran_cross_check": {
@@ -103,5 +103,46 @@
     "result": "Proxy CONNECT returned HTTP 403; curl exit 22; zero bytes downloaded",
     "visual_page_26_comparison": "not performed; awaiting attached PDF",
     "previous_translation_preserved": true
+  },
+  "uploaded_control_pdf": {
+    "available": true,
+    "sha256": "8b40f810e8e365d98c036ceb1328eb683521147f7ecf68d2a5c304b04128e427",
+    "file_pages": 606,
+    "title_imprint_visually_verified": true,
+    "scan_contains_text_layer": false,
+    "author_pages": [
+      3,
+      584
+    ],
+    "contents_pages": [
+      585,
+      606
+    ],
+    "author_body_visually_compared_pages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ]
   }
 }

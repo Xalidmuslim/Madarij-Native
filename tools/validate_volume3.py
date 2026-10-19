@@ -94,16 +94,30 @@ def validate(data=DATA, require_complete=False):
             stages = evidence["stages"]
             require(set(stages) == {"semantic", "literary", "back_comparison"}, f"Missing review stage: {key}")
             require(stages["literary"] == "self_checked_russian_only", f"Unsupported literary status: {key}")
-            require(all(stages[s] in {"self_checked_against_web_transcription", "pending_contextual_review"}
+            require(all(stages[s] in {"self_checked_against_web_transcription", "self_checked_against_print", "pending_contextual_review"}
                         for s in ["semantic", "back_comparison"]), f"Unsupported review status: {key}")
             literary_reviewed += 1
-            if all(stages[s] == "self_checked_against_web_transcription" for s in ["semantic", "back_comparison"]):
+            if all(stages[s] in {"self_checked_against_web_transcription", "self_checked_against_print"} for s in ["semantic", "back_comparison"]):
                 reviewed += 1
     missing_source = sorted(set(range(3, 585)) - set(numbers))
     missing_translation = sorted(set(range(3, 585)) - set(translated))
+    collation_file = data / "print-collation.json"
+    collated_pages = []
+    if collation_file.exists():
+        collation = json.loads(collation_file.read_text())
+        collated_pages = [r["printed_page"] for r in collation["pages"]]
+        require(collated_pages == sorted(set(collated_pages)), "Duplicate or unordered scan collation pages")
+        by_page = {r["printed_page"]: r for r in pages}
+        for record in collation["pages"]:
+            n = record["printed_page"]
+            require(n in by_page, f"Collation without source page: {n}")
+            body = "\n".join(p["ar"] for p in by_page[n]["paragraphs"])
+            require(sha(body) == record["author_body_sha256"], f"Stale scan collation: {n}")
+            require(record["external_human_review"] is False, "Unsupported human review claim")
+            require(by_page[n].get("control_pdf_sha256") == collation["control_pdf"]["sha256"], f"Control PDF identity mismatch: {n}")
     report = {"source_pages_captured": len(pages), "translated_pages": translated,
               "translation_paragraphs": len(translation["paragraphs"]),
-              "self_reviewed_paragraphs": reviewed, "visually_collated_pages": 0,
+              "self_reviewed_paragraphs": reviewed, "visually_collated_pages": len(collated_pages),
               "literary_self_reviewed_paragraphs": literary_reviewed,
               "missing_source_pages": ranges(missing_source),
               "missing_translation_pages": ranges(missing_translation),
