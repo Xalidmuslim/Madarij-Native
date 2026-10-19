@@ -62,9 +62,33 @@
     28,
     29,
     30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
     584
   ],
-  "source_status": "Uploaded 2019 control PDF established; author-body comparison performed for pages 3–26; full translation unfinished",
+  "source_status": "Uploaded 2019 print control; author body pages 3–53 visually compared; Russian translation complete through page 52, first 50 author pages, AI self-review only",
   "modern_editorial_notes_reproduced": false,
   "source_issues": [
     {
@@ -82,6 +106,21 @@
       "pdf_extraction_quote": "يسألونك ماذا ينفقون قل العفو",
       "normalization": "unvowelled comparison only; not a certified diplomatic transcription",
       "status": "Resolved by visual reading of the uploaded printed page 26; see source-variants.json"
+    },
+    {
+      "id": "QUR-027",
+      "page": 27,
+      "status": "Resolved from scan: restored وإذا in quotation 25:63"
+    },
+    {
+      "id": "QUR-046",
+      "page": 46,
+      "status": "Resolved from scan: quotation 2:151–152 includes ولا تكفرون, extraneous opening verse number removed"
+    },
+    {
+      "id": "QUR-049",
+      "page": 49,
+      "status": "Resolved from scan: excerpt 2:153 starts استعينوا and ends الصابرين"
     }
   ],
   "quran_cross_check": {
@@ -142,7 +181,34 @@
       23,
       24,
       25,
-      26
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
     ]
   }
 }

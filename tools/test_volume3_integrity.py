@@ -14,10 +14,13 @@ class Volume3IntegrityTest(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.data = Path(self.temp.name)
-        for name in ["protected-assets.json", "source-pages.jsonl", "translation.json", "self-review.json"]:
+        for name in ["protected-assets.json", "source-pages.jsonl", "translation.json", "self-review.json", "print-collation.json"]:
             if (DATA / name).exists():
                 (self.data / name).write_bytes((DATA / name).read_bytes())
         self.translation = json.loads((self.data / "translation.json").read_text())
+        # Keep these fixtures a partial checkpoint when later blocks are added.
+        self.translation["paragraphs"] = [p for p in self.translation["paragraphs"] if min(p["printed_pages"]) <= 52]
+        self.write_translation()
 
     def write_translation(self):
         (self.data / "translation.json").write_text(json.dumps(self.translation))
@@ -69,6 +72,21 @@ class Volume3IntegrityTest(unittest.TestCase):
         self.write_translation()
         with self.assertRaisesRegex(ValueError, "Stale review"):
             validate(self.data)
+
+    def test_altered_scan_collation_hash_is_rejected(self):
+        p = self.data / "print-collation.json"
+        d = json.loads(p.read_text())
+        d["pages"][0]["author_body_sha256"] = "0" * 64
+        p.write_text(json.dumps(d))
+        with self.assertRaisesRegex(ValueError, "Stale scan collation"):
+            validate(self.data)
+
+    def test_fifty_author_pages_have_complete_self_review_evidence(self):
+        self.assertEqual(validate(self.data, through_page=52)["self_checked_prefix_through_page"], 52)
+
+    def test_next_incomplete_page_cannot_pass_the_block_gate(self):
+        with self.assertRaisesRegex(ValueError, "untranslated pages"):
+            validate(self.data, through_page=53)
 
     def test_modern_notes_excluded_and_author_negation_kept(self):
         html = '''<div class="book-content-texts"><p class="selectionShareable">

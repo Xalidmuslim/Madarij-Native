@@ -32,7 +32,7 @@ def ranges(numbers):
     return ", ".join(str(g[0]) if len(g) == 1 else f"{g[0]}–{g[-1]}" for g in result)
 
 
-def validate(data=DATA, require_complete=False):
+def validate(data=DATA, require_complete=False, through_page=None):
     protection = json.loads((data / "protected-assets.json").read_text())
     for file, digest in protection["sha256"].items():
         require(hashlib.sha256((ROOT / file).read_bytes()).hexdigest() == digest,
@@ -127,15 +127,29 @@ def validate(data=DATA, require_complete=False):
     if require_complete:
         require(report["complete"], "Volume INCOMPLETE; missing translations: " + ranges(missing_translation))
         require(reviewed == len(translation["paragraphs"]), "Missing self-review evidence")
+    if through_page is not None:
+        require(3 <= through_page <= 584, "Requested block outside author pages")
+        needed = set(range(3, through_page + 1))
+        require(needed.issubset(translated), "Requested block has untranslated pages")
+        require(needed.issubset(collated_pages), "Requested block has uncollated source pages")
+        require(review_file.exists(), "Missing self-review evidence")
+        for p in translation["paragraphs"]:
+            if min(p["printed_pages"]) > through_page:
+                continue
+            evidence = review["paragraphs"].get("+".join(p["source_ids"]), {})
+            require(all(evidence.get("stages", {}).get(stage) == "self_checked_against_print"
+                        for stage in ["semantic", "back_comparison"]), "Requested block has pending source comparison")
+        report["self_checked_prefix_through_page"] = through_page
     return report
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--require-complete", action="store_true")
+    ap.add_argument("--through-page", type=int, help="Require the translated, scan-collated and self-reviewed prefix")
     args = ap.parse_args()
     try:
-        print(json.dumps(validate(require_complete=args.require_complete), ensure_ascii=False, indent=2))
+        print(json.dumps(validate(require_complete=args.require_complete, through_page=args.through_page), ensure_ascii=False, indent=2))
     except (ValueError, KeyError, TypeError, OSError, json.JSONDecodeError) as exc:
         ap.exit(1, f"FAIL: {exc}\n")
 

@@ -107,7 +107,7 @@ def main():
         rows[number] = row
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text("".join(json.dumps(rows[n], ensure_ascii=False) + "\n" for n in sorted(rows)), encoding="utf-8")
-    print(f"Saved {len(rows)} source pages; none certified against scans")
+    print(f"Saved {len(rows)} source pages; this import does not certify newly imported text against scans")
 
 
 if __name__ == "__main__":
