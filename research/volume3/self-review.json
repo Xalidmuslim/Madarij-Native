@@ -2,7 +2,7 @@
   "date": "2026-10-19",
   "reviewer": "Codex, same-session self-review",
   "external_independent_review": false,
-  "source_basis": "Uploaded 2019 control PDF; direct visual reading through printed page 180. Same-session AI self-review only.",
+  "source_basis": "Uploaded 2019 control PDF; direct visual reading through printed page 196. Same-session AI self-review only.",
   "method": "Codex visual Arabic/scan/Russian semantic comparison; separate Russian-only literary read with revisions; back comparison to print. These are AI self-review passes, never independent human editing. Citation grades attributed by the author remain author assertions, not newly certified grades.",
   "paragraphs": {
     "v3-p003-01": {
@@ -8970,6 +8970,747 @@
     },
     "v3-p180-09": {
       "sha256": "7fdee6110a7ed3aaabb639e1ab54864e8cd34c0745f0e4ba91f006ce2e6407f8",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-01": {
+      "sha256": "d5176671d918a9b56ffd7169f37fc27f5458423ee23c521bb7fc31711c74c39f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-02": {
+      "sha256": "4f279da3b529ba6986c863b1e14b9d1bf60952601ad266f6aea03ec72ab65ce4",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-03": {
+      "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-04": {
+      "sha256": "059dd0dee1fe9bbdd519c956292d675712025065ec5b84cc109953bd620d6c86",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-05": {
+      "sha256": "30dabc7ac7ad8a401a48bef42b521b5cb08ffb28aece3dffed171cd122fe3d5d",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-06": {
+      "sha256": "4926cce4f06a0880862de9fee9b8ef3bf293aae5edb431f5e4323ceb1a59d73f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p181-07+v3-p182-01": {
+      "sha256": "5621f21c551ecad1e7eeac489adfdc531f07807ba73f68d47a46f925564841ed",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p182-02": {
+      "sha256": "2f775d66b00652c2e8a2873504a05613a36206f76930e6e8fea62ec20b323396",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p182-03": {
+      "sha256": "1e74d91a00b938c24592c94c321bb16f726dae2a525e8eb67dff738d9b91ac53",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p182-04": {
+      "sha256": "3eede31a1da7c8598ae97c2648401f63b3f8fca5deb59523881eba643f7da99f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p182-05": {
+      "sha256": "ab65200ec0e0938a9ae407ee2bcfb1445729e47ff9648b0526c96b1a13dbae9d",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p182-06": {
+      "sha256": "e24571da81bf237b3a545871e99388ecc7bfd52918176beca004c48de0247fc7",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p183-01": {
+      "sha256": "0fc9e78a66498a0c61bbea3a162ab79be9b43d4f85418404629550021da0aa8e",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p183-02": {
+      "sha256": "57cace557b3227c286154fc664e93dd4b4f48ae50a61cd545a72194faa77e106",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p183-03": {
+      "sha256": "dc372652e702d247aec14d33180886c86d83a5577b9c1da084c55ef92f0a1c41",
+      "stages": {
+        "semantic": "pending_contextual_review",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "pending_contextual_review"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "issue": "Printed ratio orders early states before later ones but the leaking-vessel comparison suggests the inverse. Russian follows contextual direction; final editorial resolution is still needed."
+    },
+    "v3-p183-04": {
+      "sha256": "c207605dda08a58049d93fb85e61ae1bd515fa353757f0c339dfbe6efe871238",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-01": {
+      "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-02": {
+      "sha256": "35105fe0dfe9f85dca85db5b08585c13cdad79d7743e4632474371a2bada466e",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-03": {
+      "sha256": "90873abed029041b5ad7561ab1b174d728fa5dce5c61d6d9f8611db2a9fd5375",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-04": {
+      "sha256": "4d472cb8c30205d9d38561b99ed543d7dea6817f3a4d14ad0e9725b81bb407f8",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-05": {
+      "sha256": "42bdc22cf89f3ad23c60ffb033b98fb0986779f8c7fbd7fbae81f2533996b880",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-06": {
+      "sha256": "2191146ee4180084a7ac41259622cc2b0a9ec36bef0d07975c6ae5b01c685f4f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-07": {
+      "sha256": "1f5686878a8bb5bbfd99270cf84f3b990e0f22f9c8f244307c081518e8680b90",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p184-08+v3-p185-01": {
+      "sha256": "d8a4a0832c13eeb67dcb2e924cfedda80d3f31f35939656aaf9583b4fe1cfa53",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-02": {
+      "sha256": "cff3bd1add64971bce0907706a992ed6741de7dbd913ef1bd308e8a9a4c780b2",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-03": {
+      "sha256": "e5b275f38758d0426820e3b0145c87825959a9ab502c9aa436c25eabd1e8b79f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-04": {
+      "sha256": "9892d5b2dd73704ca1274de9cef982576124b3654b535100f0dcc8f3973c5e57",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-05": {
+      "sha256": "6cdbb88df1f11fb5c53cb5ed03a17d78a267c8ff0ecc99c6fab296b139bb287a",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-06": {
+      "sha256": "1550c941888fa4c3548d8ccd44978a59240b1b2e83d56567f8c76fba9bdd50a0",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p185-07+v3-p186-01": {
+      "sha256": "8bae12942657d7989343bfb81821415ce35fe0cc4370a25457537c24b3dc4edf",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-02": {
+      "sha256": "1ca1280bd5e4eac9124295d9a8187f3d97b6ca479ea74546d256ee8355f8d238",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-03": {
+      "sha256": "d639a7973f014b843aa44583b44678261bd43582cbc0526d0b557e17f147497c",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-04": {
+      "sha256": "612c0653aa7d46d8cf97cb80448e094e5e5d63d5c6635681ecdaf2df629961c5",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-05": {
+      "sha256": "77f8a408d2dfe4481956d87e0a0216a00e3cc9abb7e41f2c896c34b76606460c",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-06": {
+      "sha256": "b6e40c8efa5355540af988375575319f8cfdee36fe50a57e2619b66ecff18b80",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p186-07+v3-p187-01": {
+      "sha256": "5cbd022dc26a91c762fb5771f000d27e1aa5d72859e765e4f38a560c06027e03",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p187-02": {
+      "sha256": "c581950712ff07fe552e91912d20cabcf5806b1ec9545d998f4c18894ff6c74a",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p187-03": {
+      "sha256": "7b2cd32ff7c7d104babece08635f7dbccb55d20ede588cc9489599693a9c470f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p187-04+v3-p188-01": {
+      "sha256": "93d6a51565f9a89c60bbc0f9db41cf24f8040ad63fd37097b26f7c6aa219f0b1",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p188-02": {
+      "sha256": "fd17e4667e461c34fcc9c45f2fc51525023dd8a7a0a69aa37fb5951b4044d188",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p188-03": {
+      "sha256": "b3120bf8f56e124140d93e53eaa77786e6ea00f6bbb38dd1be3cf79a7b6f4865",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p188-04": {
+      "sha256": "76314b1e173f202ae1678f4b91aafd080bc1a10691dd80c64efafc2ab55445e8",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p188-05+v3-p189-01": {
+      "sha256": "4e93122e4453adba8ebb5f65ffe79632fd06ec4f4d5b47670598e2e2ce018013",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p189-02": {
+      "sha256": "12754180efa273e07c0e732e24701c2e306052e112db82cac1e4f5dfe6ac5f83",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p189-03": {
+      "sha256": "2bb71cba007da1121b7c1c8f04e6b64c2320c766affe1b9f4965a8a828220283",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p189-04": {
+      "sha256": "3977aa293221639df26b91aad605e1336233dc391a9f5527a784919dc295f300",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p189-05": {
+      "sha256": "51fd1c79b9fd1b8b127ea9823725dd5e4f29cf01be9d4040db8ea2866236f49f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p189-06+v3-p190-01": {
+      "sha256": "30cc34fa68508bcd7e68b4b0bf662b1ef247666c528709f1de5c50b207533253",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p190-02": {
+      "sha256": "a5d086a943ea3d3ae723f64ae663b97da88ec97d15e18d9ddb40d98367230a7e",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p190-03": {
+      "sha256": "0eef52c34ac5a77b62a7d8d3f7a018c62e3ff7178513b26e60c7bd55cd50fb41",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p191-01": {
+      "sha256": "02b889289964003975a3d2dd1d63e29dc616be330570f218d0fd3d1540c20b7f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p191-02": {
+      "sha256": "a1a495690b2770c2b3a365969abb4ee4e7c793be16deda25014ea70562b1855f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p191-03": {
+      "sha256": "a15cfa2ed8b8a756ef49385157b97475b9b0f3fdfa4b9221b7bb6de164cbda40",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p192-01": {
+      "sha256": "b14311f0db4424ad1072034617cc13ca434faed30460193f11ab1059a811bcf7",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p192-02": {
+      "sha256": "7c318718ce28fee53b363f3f3a78bc97aefdf91c1070e904ef3b0e1e6f0233e7",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p192-03": {
+      "sha256": "7146e7af9f0a41a2057dc306af4836acc102faa087498c8a04c184e91c8d0110",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p192-04": {
+      "sha256": "607ed8cc6bebc8351acd01d9831c201128c83b8d9d000591d01547a9b3528a8c",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p192-05+v3-p193-01": {
+      "sha256": "b09b68181e25e52ce233169a3af9f0face3a41743090429dc80a287936860087",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p193-02": {
+      "sha256": "d538856f346375ed48719316b73a375de3f55280a6090b31f59597687a5a8802",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p193-03": {
+      "sha256": "950f20b9322086959af734382fecef7338d9efb184a9110267f4e6b17d4d68ea",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p193-04+v3-p194-01": {
+      "sha256": "6f206f216ed92fabde5997bbab0b85b4907f1914d74614eb051ea664811e756f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p194-02": {
+      "sha256": "9ad2b69887edc4b8be872d95ce24135c7d3e454e9d29d99050f3db379fabfc0b",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p194-03": {
+      "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p194-04": {
+      "sha256": "02f1d3ce2973cd2622a1e59bc63f71269188ac3077243e7b73851cce9e3d25d0",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p194-05": {
+      "sha256": "b1c72085c0d7d240587316c21a92d78a990b5bf20e17849f46031714fc825339",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p194-06+v3-p195-01": {
+      "sha256": "f8cb924a31b2047769d44a7b9f0c8771557647cdea9e3e7addb3ca58ae403382",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p195-02": {
+      "sha256": "c96c4eb06e7a582db6312cdec150b1296a2c4faa09fa14e3cc63e5e953399ca1",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p195-03": {
+      "sha256": "e492e41116cf5738611b37e70b5875be352ebb451dfd250d5ba0fb34782a22b1",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p195-04": {
+      "sha256": "1eae1883aa5d9c7c9f20b1bba2e593bb5e699ace4cdb91d351279c8978a13598",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p195-05": {
+      "sha256": "83f7ad64beabbafd1dad5fe03797b475d92396722b6611f62fee59223fc34775",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p195-06+v3-p196-01": {
+      "sha256": "62d3464db973055f658656f82a83deb14aad2dfc114df07b7a805ba1571085ab",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p196-02": {
+      "sha256": "fda72ee58f20bc22bdf6eb70ea9413f94f9309818393f0f38ef347b49e91e8b2",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p196-03": {
+      "sha256": "f3c6a26faf88d84eaad03e8ec61623bbbe05b4852594b85b308daef46f69c2a0",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+    },
+    "v3-p196-04": {
+      "sha256": "da7c96aab9333591edd1cf094016afa9fce8f7ca6f3645f0b771ccfb4997ca14",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
