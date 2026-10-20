@@ -24782,14 +24782,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p458-04": {
-      "sha256": "50e5611a5847f10d497793c2f200604a727a19d18e00dac28de9b37694411d2e",
+      "sha256": "c54592682b986ddeb4a14387a2a36bd1e5c40d67366ac6daa5bd525a772ff6d4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control 7x reads الولادة نوعان; existing Russian already says two kinds of birth. Arabic and Russian compared, Russian reread and then back-compared with print; same-agent only."
     },
     "v3-p458-05": {
       "sha256": "4763181b0e122b29de59c4574ea1d2d3343215f2ed41a020c56111d2bb99b5b3",
@@ -25082,14 +25083,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p464-04": {
-      "sha256": "d473150d9fbdc3e15dc96816170d712ea89c73393dd5acf8740a8a7b37423bb3",
+      "sha256": "fe9a59c47f23c225951d26f4e81478b2ecff2b7c8a99f712549b3503e10c7f40",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control 7x reads يعتقه ويحرره; existing Russian already conveys freeing and releasing. Arabic and Russian compared, Russian reread and then back-compared with print; same-agent only."
     },
     "v3-p464-05": {
       "sha256": "8dcf0cd739c33db08e692b1f0f105162307e5544ddcdcdc735597d5400332fd8",
@@ -26114,14 +26116,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p485-03": {
-      "sha256": "51500d5ea00f4234d7fcebc62d361988896af12190a6e58f8e17a26804b0947b",
+      "sha256": "c5baa5a92174746f844e8f254a42946ec4f160cf0086a5b3068916acc6449174",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control 8x reads غلظ حجاب, a thick veil; corrected Russian to preserve the author metaphor rather than merely saying deeply mistaken. Arabic and Russian compared, Russian reread and then back-compared with print; same-agent only."
     },
     "v3-p485-04+v3-p486-01": {
       "sha256": "a53fa715c7cf194c030c1ff3e0dd6affdcae14ab343f348fcc90c0fa37d25309",

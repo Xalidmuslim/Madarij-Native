@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-20",
+  "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
+  "package": "ru.madarij.nativeapp.qalocal",
+  "build": "debug, standard local test key; not an owner-signed release",
+  "apk_sha256": "dea794641a5c46a051d936fd46b57c2ed09fe09e7735071c29ab1e85b11fefb2",
+  "volume3_asset_sha256": "58f7da24c213318946544dabdc49a0edad9f466101daa8c8b7458fb065770cf9",
+  "zip_integrity_checked": true,
+  "apk_asset_matches_repository": true,
+  "signature_verified": "APK Signature Scheme v2",
+  "jvm_test_suites": 17,
+  "jvm_tests": 97,
+  "jvm_failures": 0,
+  "jvm_errors": 0,
+  "actual_database": {
+    "integrity_check": "ok",
+    "chapters_by_volume": {
+      "1": 90,
+      "2": 9,
+      "3": 32
+    },
+    "volume3_author_paragraphs": 3096,
+    "volume3_editor_notes": 7,
+    "all_3103_packaged_rows_exactly_match_database": true,
+    "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+    "final_paragraph_search_target": "v3-p584-05-ru"
+  },
+  "personal_data_update_check": {
+    "bookmarks": {
+      "rows_before": 1,
+      "rows_after": 1,
+      "unchanged": true
+    },
+    "positions": {
+      "rows_before": 3,
+      "rows_after": 3,
+      "unchanged": true
+    },
+    "notes": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "unchanged": true
+    },
+    "read_chapters": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "unchanged": true
+    }
+  },
+  "reading_preferences_unchanged": true,
+  "reading_preferences_sha256": "0f7e95211b7f39917c137619241ec5e84696dd463f00a523974dd527d8850af0",
+  "visually_exercised": [
+    "Third-volume TOC and first chapter, printed page 3",
+    "Bookmark creation in first chapter",
+    "Russian text search",
+    "Title-search opening the chapter on printed page 484 after fixing blank-reader regression",
+    "Book font and increased font size applied",
+    "Final author paragraph on printed page 584 opened and readable"
+  ],
+  "not_claimed": [
+    "All 186 TOC targets individually tapped on a device; targets are statically checked",
+    "Physical Android device testing",
+    "Owner-signed release build",
+    "Independent human translation editing",
+    "Full external hadith authentication"
+  ],
+  "publication_ready": false,
+  "independent_human_review": false
+}

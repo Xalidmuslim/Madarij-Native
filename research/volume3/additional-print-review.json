@@ -1,0 +1,2820 @@
+{
+  "control_pdf_sha256": "8b40f810e8e365d98c036ceb1328eb683521147f7ecf68d2a5c304b04128e427",
+  "method": "Additional same-agent visual comparison of selected differences against the uploaded 2019 print, enlarged where needed. A different edition only supplied candidate locations; its text was never automatically substituted.",
+  "independent_human_review": false,
+  "publication_ready": false,
+  "selection_limits": "These selections are additional to the earlier page-by-page self-collation and do not prove absence of other errors. The broad digital comparison contained 1551 differing units; not every difference was separately adjudicated.",
+  "selections": [
+    {
+      "name": "negations_and_function_words",
+      "candidates": 118,
+      "visually_checked_candidates": 118,
+      "items": [
+        {
+          "source_ids": [
+            "v3-p006-10"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p013-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p014-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p018-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p024-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p036-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p040-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p054-05",
+            "v3-p055-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p059-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p059-03",
+            "v3-p060-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p061-05",
+            "v3-p062-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p077-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p080-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p082-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p084-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p084-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p088-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p088-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p093-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p095-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p095-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p096-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p098-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p110-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p117-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p117-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p120-06",
+            "v3-p121-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p122-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p130-09",
+            "v3-p131-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p137-06",
+            "v3-p138-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p141-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p150-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p150-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p154-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p158-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p159-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p159-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p160-06",
+            "v3-p161-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p165-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p165-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p168-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p177-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p179-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p180-08"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p187-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p189-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p193-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p205-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p206-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p241-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p244-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p248-10"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p257-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p259-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p260-08",
+            "v3-p261-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p262-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p262-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p263-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p269-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p286-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p289-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p305-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p310-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p321-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p322-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p322-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p324-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p324-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p325-05",
+            "v3-p326-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p325-05",
+            "v3-p326-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p326-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p327-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p337-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p337-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p349-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p351-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p356-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p357-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p374-08"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p384-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p393-03",
+            "v3-p394-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p402-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p415-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p417-07",
+            "v3-p418-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p421-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p426-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p428-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p428-06",
+            "v3-p429-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p429-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p438-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p438-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p444-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p449-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p455-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p472-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p476-10"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p484-06",
+            "v3-p485-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p487-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p488-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p492-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p499-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p505-05",
+            "v3-p506-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p506-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p506-03",
+            "v3-p507-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p511-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p513-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p516-07",
+            "v3-p517-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p518-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p518-03",
+            "v3-p519-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p524-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p537-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p544-07",
+            "v3-p545-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p550-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p556-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p558-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p560-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p571-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p584-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        }
+      ]
+    },
+    {
+      "name": "short_lexical_replacements",
+      "candidates": 271,
+      "visually_checked_candidates": 271,
+      "items": [
+        {
+          "source_ids": [
+            "v3-p004-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p004-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p004-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p005-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p005-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p006-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p013-07",
+            "v3-p014-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p013-07",
+            "v3-p014-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p021-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p022-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p022-03",
+            "v3-p023-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p023-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p027-03",
+            "v3-p028-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p030-05",
+            "v3-p031-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p031-08",
+            "v3-p032-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p031-08",
+            "v3-p032-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p035-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p036-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p038-03",
+            "v3-p039-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p038-03",
+            "v3-p039-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p038-03",
+            "v3-p039-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p039-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p039-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p047-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p052-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p052-05",
+            "v3-p053-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p055-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p056-06",
+            "v3-p057-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p057-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p057-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p058-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p061-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p061-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p065-05",
+            "v3-p066-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p069-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p073-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p074-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p080-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p081-06",
+            "v3-p082-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p083-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p091-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p095-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p100-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p100-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p100-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p107-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p111-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p113-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p114-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p114-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p114-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p115-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p126-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p126-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p128-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p132-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p145-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p147-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p152-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p152-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p152-05",
+            "v3-p153-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p153-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p155-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p157-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p164-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p164-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p165-08",
+            "v3-p166-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p167-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p167-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p170-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p174-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p181-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p181-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p186-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p188-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p188-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p188-05",
+            "v3-p189-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p193-04",
+            "v3-p194-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p195-06",
+            "v3-p196-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p195-06",
+            "v3-p196-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p195-06",
+            "v3-p196-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p196-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p197-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p199-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p199-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p199-06",
+            "v3-p200-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p200-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p200-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p202-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p205-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p207-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p207-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p212-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p213-03",
+            "v3-p214-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p223-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p227-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p228-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p229-06",
+            "v3-p230-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p234-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p236-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p236-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p237-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p237-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p238-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p239-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p243-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p244-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p245-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p250-05",
+            "v3-p251-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p252-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p261-03",
+            "v3-p262-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p262-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p266-03",
+            "v3-p267-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p267-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p267-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p268-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p269-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p269-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p269-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p271-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p291-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p296-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p297-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p297-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p301-05",
+            "v3-p302-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p301-05",
+            "v3-p302-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p302-08"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p303-05",
+            "v3-p304-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p304-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p310-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p316-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p317-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p321-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p322-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p324-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p324-06",
+            "v3-p325-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p328-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p328-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p332-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p332-06",
+            "v3-p333-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p344-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p344-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p349-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p349-06",
+            "v3-p350-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p352-08",
+            "v3-p353-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p353-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p358-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p364-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p365-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p365-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p367-04",
+            "v3-p368-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p368-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p371-05",
+            "v3-p372-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p371-05",
+            "v3-p372-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p373-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p377-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p380-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p383-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p387-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p390-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p390-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p391-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p391-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p391-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p392-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p392-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p394-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p394-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p395-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p395-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p399-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p399-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p400-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p401-06",
+            "v3-p402-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p402-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p408-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p409-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p409-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p409-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p411-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p412-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p413-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p413-07",
+            "v3-p414-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p415-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p417-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p425-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p430-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p430-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p430-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p431-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p432-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p439-03",
+            "v3-p440-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p439-03",
+            "v3-p440-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p443-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p443-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p445-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p447-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p450-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p452-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p458-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p462-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p464-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p464-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p465-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p467-05",
+            "v3-p468-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p468-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p469-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p472-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p479-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p480-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p480-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p481-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p481-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p485-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p486-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p489-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p490-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p490-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p490-05",
+            "v3-p491-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p490-05",
+            "v3-p491-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p497-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p498-08",
+            "v3-p499-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p500-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p501-06",
+            "v3-p502-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p514-06",
+            "v3-p515-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p517-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p519-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p521-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p521-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p523-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p523-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p525-06",
+            "v3-p526-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p526-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p526-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p529-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p529-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p530-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p536-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p536-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p539-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p539-04",
+            "v3-p540-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p540-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p540-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p542-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p542-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p545-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p545-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p546-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p546-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p547-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p550-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p554-08"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p560-03",
+            "v3-p561-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p560-03",
+            "v3-p561-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p565-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": true
+        },
+        {
+          "source_ids": [
+            "v3-p568-04",
+            "v3-p569-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p568-04",
+            "v3-p569-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p569-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p570-07",
+            "v3-p571-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p573-06"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p573-07",
+            "v3-p574-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p574-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p575-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p576-03"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p578-02"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p578-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p581-01"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p581-05"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p581-07"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p582-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        },
+        {
+          "source_ids": [
+            "v3-p583-04"
+          ],
+          "print_comparison": "same_agent_visually_checked",
+          "transcription_correction_recorded": false
+        }
+      ]
+    }
+  ]
+}
