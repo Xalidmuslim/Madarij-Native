@@ -18889,14 +18889,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p356-06": {
-      "sha256": "5bef854dd9ce64bf8415b7f348b6aff3b5d2a584010435d7c3e12d477cbcf5bc",
+      "sha256": "2eb52ec2e1dbc632afe10eac49d5de3489c15c5f89974ddb1db3f918ddb0c9fe",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan: يقصرون ... عن ... ويقتصرون; former reading reversed the limitation on strenuous acts. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p357-01": {
       "sha256": "7ee35fb8ce64cf541ea2a49d65f106b8a8635ca944764d8dfd76f3936a72af33",
@@ -18929,14 +18930,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p357-04": {
-      "sha256": "8af5dcdda736717607116224ebe9e8c684334c52b7e51b486d73e7f30a5df6e9",
+      "sha256": "e247e98b76b2bde97c34a13946b0fd91403fe05b6c9e80ce64412e4bc8a842db",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7–12x control scan: لم تتجل الذات له, non-manifestation, not a conjectured statement of inability to endure. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p357-05": {
       "sha256": "185e1164bb1af2bc702f6c79adf79c57b49ba14c607e1dfee9b78b5fe24c741d",
@@ -26206,14 +26208,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p487-06": {
-      "sha256": "80ae5b5b8890937113666e20e1fbdf3effe0bd796a7cd88378da925085a932dd",
+      "sha256": "daa7b6bb1d50635c5f2aa4ae78fd7bffca49eff05ec768bfac16709854a9a705",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x print confirms القوة الدافعة and ويبقى على البدن والروح. Corrected Russian anatomical term and retained printed reading without substituting variant الذائقة. Russian reread, then back-compared; same-agent self-review only."
     },
     "v3-p487-07+v3-p488-01": {
       "sha256": "1e5c850b5e72c8aa2b81b482ff5116a8ec63535450e279244a21cf9ca9995137",
@@ -27656,14 +27659,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p518-03+v3-p519-01": {
-      "sha256": "f658bef627116ebb83ddf209b3ad725b09d4c3325c5039cc85596929142ee9bf",
+      "sha256": "7f02ed36086c9da5ce688ff3f96da61a0fc66bc7c73a63a8dec9ffdf78906a65",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control print p.518 at 7x explicitly لا يقوم إلا به: restored missing exception; this divine quality subsists only in Him. Arabic/Russian compared again, Russian reread separately, back-compared; same-agent self-review only."
     },
     "v3-p519-02": {
       "sha256": "eaca08d81033df28864aadc5f3ca376dbeb5fe6f6751d88ef4be7593c6f0f0ed",
