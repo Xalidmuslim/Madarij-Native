@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "dea794641a5c46a051d936fd46b57c2ed09fe09e7735071c29ab1e85b11fefb2",
-  "volume3_asset_sha256": "58f7da24c213318946544dabdc49a0edad9f466101daa8c8b7458fb065770cf9",
+  "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
+  "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -55,7 +55,11 @@
     "Russian text search",
     "Title-search opening the chapter on printed page 484 after fixing blank-reader regression",
     "Book font and increased font size applied",
-    "Final author paragraph on printed page 584 opened and readable"
+    "Final author paragraph on printed page 584 opened and readable",
+    "Arabic original displayed alongside Russian in volume 3",
+    "Saved bookmark reopened volume 3 first chapter after update",
+    "Last chapter footer disables Next",
+    "Previous from last chapter opens Time, printed pages 544–565"
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -65,5 +69,11 @@
     "Full external hadith authentication"
   ],
   "publication_ready": false,
-  "independent_human_review": false
+  "independent_human_review": false,
+  "personal_data_update_scope": {
+    "apk_sha256": "dea794641a5c46a051d936fd46b57c2ed09fe09e7735071c29ab1e85b11fefb2",
+    "volume3_asset_sha256": "58f7da24c213318946544dabdc49a0edad9f466101daa8c8b7458fb065770cf9",
+    "description": "Personal records and selected book font/size compared before/after this earlier corpus update. Later UI navigation and enabling Arabic intentionally changed positions/settings."
+  },
+  "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
 }

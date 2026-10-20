@@ -51,6 +51,17 @@
       "additional_primary_blob": "a5cc08d4e11bcccc26cd8c8b027658a2357b5815",
       "additional_location": "Digital PageV14P467–468: معاشرة الشاهد من الصبيان وغيرهم وسماع الأصوات والنغمات",
       "method": "Same-agent contextual reading of freely available classical Arabic digital sources; not independent human review or a visual collation of those other editions."
+    },
+    {
+      "source_ids": [
+        "v3-p487-06"
+      ],
+      "primary_path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.MiftahDarSacada/0751IbnQayyimJawziyya.MiftahDarSacada.Shamela0006840-ara1",
+      "blob": "64bcd05643406a0ec772331642417ed5ae0fac70",
+      "location": "Body between digital markers PageV01P275 and PageV01P276; discussion of the four faculties governing nutrition. Printed secondary pagination not visually verified.",
+      "author_text_excerpt": "ثم اعطى القوة الدافعة وهي التي تدفع ثقله ومالا منفعة فيه فتدفعه وتخرجه عن البدن",
+      "finding": "The same author explicitly defines the expulsive faculty as removing waste and what is not useful from the body. This supports Russian изгоняющая сила организма rather than a force moving the body. The unusual relation to tasting in the control Madarij sentence is not silently normalized to the alternative الذائقة.",
+      "method": "Targeted same-agent contextual lookup in classical author body; not independent human review. Modern apparatus not imported."
     }
   ]
 }
