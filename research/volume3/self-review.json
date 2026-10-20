@@ -2786,14 +2786,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p065-05+v3-p066-01": {
-      "sha256": "8ccdff2da8d26421ff6946547bf314ce0ee9f0414357dc3b46263fe3b5cd5d07",
+      "sha256": "b13662417cb78928ea28927515604823a9be35e979ef617757dfb56b948a47f5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "7x control print reads عداه بأداة, not passive عدي; Russian already conveys the construction without asserting passive voice. Arabic/Russian rechecked, Russian reread and back-compared; same-agent only."
     },
     "v3-p066-02": {
       "sha256": "a4bbdcb86442398c0f64c80a358a8559a7791b027220c3652bd10f202482df26",
@@ -5329,14 +5330,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p111-05": {
-      "sha256": "be6c307d9ec6c459202f935248e1b7e8bebc773ba315c08c067375cbfaf067cc",
+      "sha256": "b531acd62e988a492e7fccce432957ff31d4e2332e4b6a445159dd3758fbbb6f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "7x print explicitly بشبحك, bodily form, not natural disposition. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only."
     },
     "v3-p111-06": {
       "sha256": "1798ebaaf4fd97275229e558051ca0ea1d92500d57b9bfb0464d1625acb64e0e",
@@ -9586,14 +9588,15 @@
       "resolution": "Direct 7x control scan reads لا محالة من, not invented لإحالة. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p193-04+v3-p194-01": {
-      "sha256": "6f206f216ed92fabde5997bbab0b85b4907f1914d74614eb051ea664811e756f",
+      "sha256": "5ddbfc262cc14482b6464092640561147c4db0ecb9a4fe2d00b9c81043e2c1f8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged 2019 control print directly read; restored exact printed verb without semantic change to the Russian. Arabic/Russian reread and back-compared, same-agent only."
     },
     "v3-p194-02": {
       "sha256": "9ad2b69887edc4b8be872d95ce24135c7d3e454e9d29d99050f3db379fabfc0b",
@@ -10048,14 +10051,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p202-05": {
-      "sha256": "fd9513fcf8b241f9fd80a6d95fe6cf6dcb5df908ae1d9500563e4941a8057d2f",
+      "sha256": "8f04d7f26f1d0966cf2629d0cc7b3c9d748f00ddf9e52b8dbc2e884cb8d82aef",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "7x print explicitly نوع من الأسماء, referring to the divine names, not الهيام. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only."
     },
     "v3-p202-06": {
       "sha256": "ef2101f9aa1b896924373323a2ed0a6f9d17af1f9565415204e7b596fd2489fa",
@@ -13836,14 +13840,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p268-07": {
-      "sha256": "cdeb56dcd14b2458279be876c7467dd971f7e6d3dbe5f2803cd94f6e25415a0e",
+      "sha256": "4b0cca78feb3c0a509111d53139dee28188fcb6131ca3427b8aa4d6f1e4f2cf9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged 2019 control print directly read; restored exact printed verb without semantic change to the Russian. Arabic/Russian reread and back-compared, same-agent only."
     },
     "v3-p268-08": {
       "sha256": "ebf051126a93c2a1173b4f88ea36c375a5751f8d3d0aff20081b3cdcf2ff3357",
@@ -25437,14 +25442,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p472-02": {
-      "sha256": "85ac81d00fcdaf1e1a695314a4e4949d88438101d42f12d25582084cc4261ff5",
+      "sha256": "16105f56254b086a29963dd323472a9abd6a477006a724666c67e46cbe7be567",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "7x print explicitly المقصودة بالنزول فيها للمسافرين; removed invented phrase about exerting effort. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only."
     },
     "v3-p472-03": {
       "sha256": "c0a9f17685044e6f6f97ab52c9baa58167ae1a0bcb339127302e48dc63bdfabf",
@@ -29920,14 +29926,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p565-01": {
-      "sha256": "278eb60a6be8817cc5425ecbe1106148191a74ed4a4ea81b6c73b908252b0344",
+      "sha256": "09c8867a2fefb28f317c7ecda1211ba4e0849d327e25e8765235d92bceda2fca",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "9x print explicitly يُفني عن, not يغني عن. Kept this as the criticized opponent interpretation. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only."
     },
     "v3-p565-02": {
       "sha256": "939d562c640aa8e3c265a579d6248270b15c962937f88e8df68caad21e9bf87f",
