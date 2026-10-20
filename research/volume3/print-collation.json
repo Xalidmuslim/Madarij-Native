@@ -1078,7 +1078,7 @@
       "pdf_file_page": 108,
       "author_body_sha256": "094cd26f8164555a70348a19e9193c0235e86db83bc2c8ee90fdb18257cbff0c",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
@@ -1903,7 +1903,7 @@
       "pdf_file_page": 183,
       "author_body_sha256": "407f3989e772972912f7ac677e0d697c1bf2c6215270b9e767a92843f55a8573",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
@@ -3465,7 +3465,7 @@
       "pdf_file_page": 325,
       "author_body_sha256": "93e2e5187b473eefe346a6200a8819c0895c514f6c7b325d5984a751752724ea",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
@@ -3474,9 +3474,9 @@
     {
       "printed_page": 326,
       "pdf_file_page": 326,
-      "author_body_sha256": "ba9081b29a45162cbd85e4afa90c8f466d879dd3209fe41147b4f7acbc88f178",
+      "author_body_sha256": "85e84fa4950440feb0e97a80e8c002214702ffde9cf21b014062bd6de5375f1d",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
         "Direct visual transcription; editorial footnotes excluded."
@@ -4477,23 +4477,21 @@
       "pdf_file_page": 417,
       "author_body_sha256": "c7abbd7eadf58c8fbd2d1e67b049a14b9cdc5303a49f4858e1d924a18849485b",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Last-but-one verse of concluding poem pending syntactic clarification."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
       "printed_page": 418,
       "pdf_file_page": 418,
-      "author_body_sha256": "9439a8f260eb3d2b6521151440bf220b90eb48f5660dddceacf8de492d582eef",
+      "author_body_sha256": "c2f85b8b9597414ae11bff745366101baa8661a642109a7b07fac96c36d84bd7",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Last-but-one verse of concluding poem pending syntactic clarification."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -4512,11 +4510,10 @@
       "pdf_file_page": 420,
       "author_body_sha256": "c772fe75b202eb7351a9e50ae531d5ef33539b512b612b538744ba14ece47f6d",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Contextual lexical review remains pending; see self-review and editorial journal."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -4524,11 +4521,10 @@
       "pdf_file_page": 421,
       "author_body_sha256": "d14bcb9dffddfac79d000cf86a5c116c8f627b4637940377525d05f22d4f5dea",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Contextual lexical review remains pending; see self-review and editorial journal."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -4545,13 +4541,12 @@
     {
       "printed_page": 423,
       "pdf_file_page": 423,
-      "author_body_sha256": "3111ced935aff9368fa79daa18d4a076c4af59cf303ec09069bdcaa337ca8573",
+      "author_body_sha256": "fabfd422a8ad3c1d0edd8c7de60cbcbffa8af5dec2d95f221430055ce2c92aa2",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Contextual lexical review remains pending; see self-review and editorial journal."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -4911,11 +4906,10 @@
       "pdf_file_page": 456,
       "author_body_sha256": "5ba0005b15eaf4b4d54f91e9d71fb16cf9ca012eedc3ede22ed3f00205619d69",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "المواجد / المواجيد and stated order require contextual lexical review."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -6188,11 +6182,10 @@
       "pdf_file_page": 572,
       "author_body_sha256": "6cbc436feab17c4f24f9ecea3560a9a3aed9b9be1fab46890d64a1917cdf4ff2",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Four-couplet poem: مغبر المطالع قاتم pending lexical contextual clarification."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {
@@ -6200,11 +6193,10 @@
       "pdf_file_page": 573,
       "author_body_sha256": "73bee81f00dc191d56a8cb9be37c8c916d5703c215a45ffa3e4d65a6a12327bb",
       "arabic_body_scan_comparison": "self_checked",
-      "russian_semantic_review": "pending_contextual_review",
+      "russian_semantic_review": "self_checked",
       "external_human_review": false,
       "notes": [
-        "Direct visual transcription; editorial footnotes excluded.",
-        "Four-couplet poem: مغبر المطالع قاتم pending lexical contextual clarification."
+        "Direct visual transcription; editorial footnotes excluded."
       ]
     },
     {

@@ -2,7 +2,7 @@
   "date": "2026-10-19",
   "reviewer": "Codex, same-session self-review",
   "external_independent_review": false,
-  "source_basis": "Uploaded 2019 control PDF; direct visual reading through printed page 584. Same-session AI self-review only.",
+  "source_basis": "All author pages 3–584 visually compared with uploaded 2019 control PDF; selected cruxes enlarged to 6–10x and checked against context or disclosed secondary witnesses. Same-agent AI self-review, not independent human review.",
   "method": "Codex visual Arabic/scan/Russian semantic comparison; separate Russian-only literary read with revisions; back comparison to print. These are AI self-review passes, never independent human editing. Citation grades attributed by the author remain author assertions, not newly certified grades.",
   "paragraphs": {
     "v3-p003-01": {
@@ -5108,13 +5108,13 @@
     "v3-p108-03": {
       "sha256": "bf249cec435ca19bddcc8af971dccea8c8f5d660d49fd6ef2610b64515c16cad",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "open_issue": "Printed صوان على الحال requires textual/lexical resolution; Russian is a provisional contextual rendering, not final."
+      "resolution": "Printed صوان على الحال confirmed at 7x; صوان is a protective covering, and the author uses the exact construction فأدبهم صوان على أحوالهم in another passage (OpenITI Shamela0008370, V03P170, 1996 secondary transcription). Existing Russian preserves that sense; no replacement of control text."
     },
     "v3-p108-04": {
       "sha256": "7b1d5e618294fbc8904019c9a4ecb42f150325d1274378bc7f19f02407da5680",
@@ -5247,7 +5247,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p110-04": {
-      "sha256": "876cd11f42c07b9e2a0d3abbce1293aa6fd09e267e500e9cd80d8a884b13eaef",
+      "sha256": "696f76bb72263a7fb441f075780a9748a21b6f08351c94a19fee303b687957d7",
       "stages": {
         "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
@@ -5255,7 +5255,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "open_issue": "Printed وضد من أضدادها is retained; syntax and intended scope require contextual/textual review."
+      "open_issue": "Printed وضد من أضدادها is retained; syntax and intended scope require contextual/textual review.",
+      "resolution": "Unresolved: literal printed reading retained with separate explicit editorial note; unsupported smoothing removed. Both semantic stages remain pending."
     },
     "v3-p110-05": {
       "sha256": "3105e5e9cc3f83bdb4478a33db762d5619cb4881713b6c18d1e956bafb2d2f0e",
@@ -9121,13 +9122,13 @@
     "v3-p183-03": {
       "sha256": "dc372652e702d247aec14d33180886c86d83a5577b9c1da084c55ef92f0a1c41",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "Printed ratio orders early states before later ones but the leaking-vessel comparison suggests the inverse. Russian follows contextual direction; final editorial resolution is still needed."
+      "resolution": "Control Arabic retained; Russian follows the order attested in 1973 and 1996 secondary transcriptions, with an explicit separate translator note; no unlabelled conjecture."
     },
     "v3-p183-04": {
       "sha256": "c207605dda08a58049d93fb85e61ae1bd515fa353757f0c339dfbe6efe871238",
@@ -17200,15 +17201,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p325-05+v3-p326-01": {
-      "sha256": "805f112684eab5934a2116e8de6a5275b6358d84afba80bd5622f5d50643c776",
+      "sha256": "480db4fa8c78517f298a75c1f694abefb9c0410cf9606e6b23b473bc49206cfc",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "The elliptical clause فلم يدفع العلم الحكم بل الحكم بالمحكوم به requires further grammatical/contextual resolution. Full author paragraph preserved; Russian is a working reading, not final."
+      "resolution": "Resolved by direct 7x print reading: بل المحكوم به, not بل الحكم بالمحكوم به. Both source and Russian corrected and three self-review passes repeated."
     },
     "v3-p326-02": {
       "sha256": "088a95804f70547981b6f81ead063f965396598ea7011d3cea741dfcd086ee2a",
@@ -22342,15 +22343,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p417-07+v3-p418-01": {
-      "sha256": "8301051a13262baf6406a5830f3ef1c7dc3809b861d30a7beed10cad99935eb4",
+      "sha256": "60673e15f33fb6b929363104b220d70eee0cca24c21e5e62ed544b6236e60222",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "Printed verse ولو سخط الخلق في حبه لقال هوانا ولو بالتنسب: grammatical subject and sense of هوانا/بالتنسب need a further contextual lexical check; full working poem preserved, not final."
+      "resolution": "Whole poem re-read at 3x and cruxes at 7–10x. إلى / كمثل / بالنسِيب corrected. Human lover is subject of لقال, هوانا read in context as treating their anger as insignificant; kinsman reading fits subsequent هجر القريب. No divine first-person promise inserted."
     },
     "v3-p419-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -22473,15 +22474,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p420-08+v3-p421-01": {
-      "sha256": "9cf80b349253fae1f6d5394b39bbbde21ce5752c5068181b2672c5f8be90e815",
+      "sha256": "fccfa0ee944801dd4a3268f5867504d71cb17bd9130d8738a8dfb0f550137c7d",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "Print says ومن صيانته على ابتذاله; direction is deliberately preserved in working Russian as protecting self-giving against self-preservation, but contextual lexical confirmation of ابتذال is pending. Do not silently invert the printed pair."
+      "resolution": "Preserved printed direction من صيانته على ابتذاله. Context: guard humble self-giving from self-preservation, like the other contrasting pairs. No reversal of the original; whole paragraph re-edited and checked."
     },
     "v3-p421-02": {
       "sha256": "e932c4f3a8b30160ed6f674b01bb28cd44f7f100c689e642791d5dc2a59a0251",
@@ -22614,15 +22615,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p423-02": {
-      "sha256": "21772007155da55cd4c70128aa0437365f1fe16fc9d7ea17ed86730194ec2d3f",
+      "sha256": "0b76709fbd844ed0e2666bfbbbabaf1ce78ffc4a54d7e58496ecea573b29187b",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "قطع معلومهم is an idiom in the Shibli anecdote; working Russian customary maintenance/provision needs lexical/contextual confirmation."
+      "resolution": "Resolved by direct 6x print reading: وافقت أهلي في قطع شعورهم. Family cutting their hair, not stopping a stipend. Source and Russian corrected; full anecdote and following condemnation retained."
     },
     "v3-p423-03": {
       "sha256": "721f45c649b7311e64ddf784e3df63093f142a1dfcde846784c42dec8c9bed5b",
@@ -24627,13 +24628,13 @@
     "v3-p456-02": {
       "sha256": "22ee3ecc88c093be1b06139b9e8785ceedb4e718b094d6479319e9e1c1d44b73",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "Print uses المواجد above wajd here, then lists المواجيد below wajd on p.457. Spellings and both orders are preserved; clarify whether distinct terminology or print inconsistency before final review."
+      "resolution": "Both rankings preserved literally, not harmonized. Different printed spellings also preserved; separate source-consistency note explains the apparent tension. Secondary 1973/1996 texts also place المواجيد above الوجد in this paragraph. This is a source observation, not an independently proven unified taxonomy."
     },
     "v3-p456-03": {
       "sha256": "fa777fb69c8d54a60e8ccd710a571a2c99d448fc6080581ce27ffca7b04f51fa",
@@ -30326,15 +30327,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p572-05+v3-p573-01": {
-      "sha256": "d8f2ee2b7a69191b5c46c18ce4d18bd938928fc1aae2a8650358a6a53666bb0b",
+      "sha256": "48c19e5b2a20b7f7c01132e390ecc34e33249c0eec3486309e3d49d97526d2cc",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "issue": "Printed poetic phrase على كل مغبر المطالع قاتم needs a contextual lexical check of its referent; full four-couplet poem preserved, working Russian not final."
+      "resolution": "مطلع read in its topographical sense, an ascent/mountain pass; implied طريق supplied naturally in Russian. Replaced awkward places-of-rising wording with dark paths and dusty passes. All four couplets retained, repeated semantic/literary/back comparison."
     },
     "v3-p573-02": {
       "sha256": "7565bc8ef01d9fb9cac2c75a842dddd3e32ba3decaf18689c681cbcb68be6167",

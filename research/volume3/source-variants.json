@@ -55,5 +55,28 @@
       "v3-p584-04",
       "v3-p584-05"
     ]
+  },
+  {
+    "source_id": "v3-p183-03",
+    "control_print_ar": "فنسبة أحوالهم إلى أحوال من بعدهم الصّحيحة الكاملة: كنسبة ما يَرشَح من الظّرف والقِربة إلى ما في داخلها.",
+    "translated_reading_ar": "فنسبة أحوال من بعدهم الصحيحة الكاملة إلى أحوالهم: كنسبة ما يرشح من الظرف والقربة إلى ما في داخلها.",
+    "reason": "Control print comparison order contradicts preceding contrast; Russian follows the opposite order attested in two secondary digital transcriptions, disclosed separately as a translator note. Control Arabic not replaced.",
+    "secondary_witnesses": [
+      {
+        "repository": "OpenITI/RELEASE",
+        "ref": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+        "blob": "ca2a20769e49507ffdbb8a35606e93ea357c3d47",
+        "edition_metadata": "Dar al-Kitab al-Arabi, Muhammad al-Mutasim Billah al-Baghdadi, 1996",
+        "location": "V02P380"
+      },
+      {
+        "repository": "OpenITI/RELEASE",
+        "ref": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+        "blob": "2c60f59145bf75d79f4a3d558ee661b5814de74f",
+        "edition_metadata": "Dar al-Kitab al-Arabi, Muhammad Hamid al-Fiqi, 1973",
+        "location": "V02P405"
+      }
+    ],
+    "method": "Both are digital secondary witnesses, not visually verified copies of those editions; uploaded 2019 PDF remains control. Same-agent review, not human independent review."
   }
 ]
