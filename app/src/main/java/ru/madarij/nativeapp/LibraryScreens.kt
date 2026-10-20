@@ -91,7 +91,7 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
             if(query.isNotBlank() && found==0 && error.isBlank()) item { InfoCard("Ничего не найдено","Попробуйте более короткое слово, другую форму или фильтр «Всё».") }
             items(results,key={"p:${it.id}"}) { p ->
                 val c=chapters.find { it.id==p.chapterId }
-                AgedPaperCard(onClick={open(p.chapterId,p.id,query)},modifier=Modifier.fillMaxWidth()) {
+                AgedPaperCard(onClick={open(p.chapterId,p.id,if(filter=="title") "" else query)},modifier=Modifier.fillMaxWidth()) {
                     Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
                         Text(if(c==null) "Первый том" else structure.findTitle(c),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)
                         val arabicOnly=normalizedText(p.ar).text.contains(normalizedText(query).text) && !normalizedText(p.ru).text.contains(normalizedText(query).text)

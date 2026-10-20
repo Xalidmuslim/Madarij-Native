@@ -1,0 +1,41 @@
+{
+  "method": "Targeted same-agent digital primary text lookup; not independent human verification. Modern footnotes not imported.",
+  "independent_human_review": false,
+  "full_hadith_verification_complete": false,
+  "repository": "https://github.com/OpenITI/RELEASE",
+  "ref": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+  "records": [
+    {
+      "source_ids": [
+        "v3-p024-07"
+      ],
+      "primary_path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+      "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+      "location": "Muslim 746; PageV01P512–513",
+      "author_text_excerpt": "أن سعد بن هشام بن عامر ... من معك؟ قال: سعد بن هشام ... فإن خلق نبي الله صلى الله عليه وسلم كان القرآن",
+      "finding": "Report found; printed questioner name differs. Author original retained; own app note discloses difference. Search for this wording in the fetched Bukhari witness did not find it; that negative search is not proof of absence in every recension.",
+      "additional_bukhari_search_blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3"
+    },
+    {
+      "source_ids": [
+        "v3-p021-04",
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "primary_path": "data/0370IbnAhmadIbnKhalawayh/0370IbnAhmadIbnKhalawayh.HujjaFiQiraatSabca/0370IbnAhmadIbnKhalawayh.HujjaFiQiraatSabca.Shamela0026140-ara1",
+      "location": "Yusuf 12:62 (following digital page marker PageV01P196); al-Insan 76:30 (following digital page marker PageV01P359). Printed pagination of this secondary edition has not been visually verified.",
+      "finding": "Author explicitly records the ya/ta readings of وما تشاؤن and the ya/ta versus alif/nun plural forms in وقال لفتيانه. Control print variants retained; own notes added.",
+      "blob": "dd6859d4991216e6089a50f8b997e7d7ec600a09"
+    },
+    {
+      "source_ids": [
+        "v3-p458-05"
+      ],
+      "primary_path": "data/0774IbnKathir/0774IbnKathir.TafsirQuran/0774IbnKathir.TafsirQuran.Shamela0008473-ara1.mARkdown",
+      "blob": "aaf0b1d08189eb55f65fe695aa163ccc5c5334ae",
+      "location": "Commentary on Quran 33:6",
+      "author_text_excerpt": "وقد روي عن أبي بن كعب، وابن عباس أنهما قرآ: النبي أولى بالمؤمنين من أنفسهم وأزواجه أمهاتهم وهو أب لهم",
+      "finding": "Historical attributed reading reported in classical tafsir; extra words absent from the Hafs text checked in Tanzil. Not recast as the canonical Hafs verse and no independent isnad grading asserted."
+    }
+  ]
+}

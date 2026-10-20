@@ -1,0 +1,9427 @@
+{
+  "method": "Mechanical Arabic-text/reference comparison plus explicitly documented same-agent contextual checks; not independent human review or Russian semantic certification.",
+  "canonical_source": {
+    "project": "Tanzil, Simple Clean 1.1",
+    "url": "https://tanzil.net",
+    "license": "CC BY 3.0; source file retained unchanged, not bundled with the app",
+    "repository": "OpenITI/RELEASE",
+    "ref": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+    "blob": "8d0a6c806598d6c6afe6b7f9b20940ab1baeddee",
+    "sha256": "374d13c056285552edbde9fc1def53c7993a3e8434ec88cb5734fca87644e954"
+  },
+  "translation_sha256": "1fe4f14b842f161b34fbc757eb5f493f2b0daa1a8e616c4ef22ebcefb9dbe6d0",
+  "canonical_verse_count": 6236,
+  "brace_delimited_quotations": 356,
+  "quote_status_counts": {
+    "normalized_match": 354,
+    "attested_reading_variant": 2
+  },
+  "printed_reference_count": 280,
+  "russian_numeric_reference_count": 284,
+  "unresolved": [],
+  "quotes": [
+    {
+      "source_ids": [
+        "v3-p003-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p003-02"
+      ],
+      "quote": "وَيُؤْثِرُونَ عَلَى أَنْفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ وَمَنْ يُوقَ شُحَّ نَفْسِهِ فَأُولَئِكَ هُمُ الْمُفْلِحُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        59,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p004-04"
+      ],
+      "quote": "وَيُؤْثِرُونَ عَلَى أَنْفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        59,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "quote": "وَاَلْجُرُوحُ قِصَاصٌ فَمَنْ تَصَدَّقَ بِهِ فَهْوَ كَفَّارَةٌ لَهُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "quote": "وَجَزَاءُ سَيِّئَةٍ سَيِّئَةٌ مِثْلُهَا فَمَنْ عَفَا وَأَصْلَحَ فَأَجْرُهُ عَلَى اللَّهِ إِنَّهُ لَا يُحِبُّ الظَّالِمِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p020-03"
+      ],
+      "quote": "يَاأَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ (27) ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        89,
+        27
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p021-04"
+      ],
+      "quote": "وَمَا يَشَاءُونَ إِلَّا أَنْ يَشَاءَ اللَّهُ إِنَّ اللَّهَ كَانَ عَلِيمًا حَكِيمًا (30) يُدْخِلُ مَنْ يَشَاءُ فِي رَحْمَتِهِ وَالظَّالِمِينَ أَعَدَّ لَهُمْ عَذَابًا أَلِيمًا",
+      "status": "attested_reading_variant",
+      "first_matching_verse": [
+        76,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p024-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p024-03"
+      ],
+      "quote": "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        68,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p024-08"
+      ],
+      "quote": "خُذِ الْعَفْوَ وَأْمُرْ بِالْعُرْفِ وَأَعْرِضْ عَنِ الْجَاهِلِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        199
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p026-02"
+      ],
+      "quote": "خُذِ الْعَفْوَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        199
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p026-04"
+      ],
+      "quote": "يَسْأَلُونَكَ مَاذَا يُنْفِقُونَ قُلِ الْعَفْوُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        219
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p026-05"
+      ],
+      "quote": "وَأْمُرْ بِالْعُرْفِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        199
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p027-01"
+      ],
+      "quote": "وَأَعْرِضْ عَنِ الْجَاهِلِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        199
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p027-01"
+      ],
+      "quote": "وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        25,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p042-03",
+        "v3-p043-01"
+      ],
+      "quote": "وَفِي ذَلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        83,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "quote": "هُوَ الَّذِي بَعَثَ فِي الْأُمِّيِّينَ رَسُولًا مِنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِهِ وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَإِنْ كَانُوا مِنْ قَبْلُ لَفِي ضَلَالٍ مُبِينٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        62,
+        2
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "quote": "كَمَا أَرْسَلْنَا فِيكُمْ رَسُولًا مِنْكُمْ يَتْلُو عَلَيْكُمْ آيَاتِنَا وَيُزَكِّيكُمْ وَيُعَلِّمُكُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُعَلِّمُكُمْ مَا لَمْ تَكُونُوا تَعْلَمُونَ (151) فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        151
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p049-04"
+      ],
+      "quote": "اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        153
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p056-02"
+      ],
+      "quote": "وَأْمُرْ بِالْمَعْرُوفِ وَانْهَ عَنِ الْمُنْكَرِ وَاصْبِرْ عَلَى مَا أَصَابَكَ إِنَّ ذَلِكَ مِنْ عَزْمِ الْأُمُورِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        31,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p060-06"
+      ],
+      "quote": "وَالَّذِينَ يُؤْتُونَ مَا آتَوْا وَقُلُوبُهُمْ وَجِلَةٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        23,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p065-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p065-02"
+      ],
+      "quote": "وَعِبَادُ الرَّحْمَنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        25,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p065-04"
+      ],
+      "quote": "يَا أَيُّهَا الَّذِينَ آمَنُوا مَنْ يَرْتَدَّ مِنْكُمْ عَنْ دِينِهِ فَسَوْفَ يَأْتِي اللَّهُ بِقَوْمٍ يُحِبُّهُمْ وَيُحِبُّونَهُ أَذِلَّةٍ عَلَى الْمُؤْمِنِينَ أَعِزَّةٍ عَلَى الْكَافِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p066-02"
+      ],
+      "quote": "أَعِزَّةٍ عَلَى الْكَافِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p066-03"
+      ],
+      "quote": "أَشِدَّاءُ عَلَى الْكُفَّارِ رُحَمَاءُ بَيْنَهُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        48,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "quote": "ادْخُلُوا أَبْوَابَ جَهَنَّمَ خَالِدِينَ فِيهَا فَبِئْسَ مَثْوَى الْمُتَكَبِّرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        39,
+        72
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "quote": "فَادْخُلُوا أَبْوَابَ جَهَنَّمَ خَالِدِينَ فِيهَا فَلَبِئْسَ مَثْوَى الْمُتَكَبِّرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "quote": "أَلَيْسَ فِي جَهَنَّمَ مَثْوًى لِلْمُتَكَبِّرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        39,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-05"
+      ],
+      "quote": "كَذَلِكَ يَطْبَعُ اللَّهُ عَلَى كُلِّ قَلْبِ مُتَكَبِّرٍ جَبَّارٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        40,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-07",
+        "v3-p075-01"
+      ],
+      "quote": "إِنَّ اللَّهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        48
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "quote": "إِنَّهُمْ فِتْيَةٌ آمَنُوا بِرَبِّهِمْ وَزِدْنَاهُمْ هُدًى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "quote": "سَمِعْنَا فَتًى يَذْكُرُهُمْ يُقَالُ لَهُ إِبْرَاهِيمُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        21,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "quote": "وَدَخَلَ مَعَهُ السِّجْنَ فَتَيَانِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "quote": "وَقَالَ لِفِتْيَتِهِ اجْعَلُوا بِضَاعَتَهُمْ فِي رِحَالِهِمْ",
+      "status": "attested_reading_variant",
+      "first_matching_verse": [
+        12,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p096-02"
+      ],
+      "quote": "وَمَا أَصَابَكُمْ مِنْ مُصِيبَةٍ فَبِمَا كَسَبَتْ أَيْدِيكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p097-04"
+      ],
+      "quote": "أَفِي اللَّهِ شَكٌّ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        14,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p098-03"
+      ],
+      "quote": "وَأْتُوا الْبُيُوتَ مِنْ أَبْوَابِهَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        189
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p103-02"
+      ],
+      "quote": "أَفِي اللَّهِ شَكٌّ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        14,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p104-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-04"
+      ],
+      "quote": "إِنْ هِيَ إِلَّا فِتْنَتُكَ تُضِلُّ بِهَا مَنْ تَشَاءُ وَتَهْدِي مَنْ تَشَاءُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-04"
+      ],
+      "quote": "إِنْ هِيَ إِلَّا فِتْنَتُكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-05"
+      ],
+      "quote": "إِنْ هِيَ إِلَّا فِتْنَتُكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-05"
+      ],
+      "quote": "أَنْتَ وَلِيُّنَا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الْغَافِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "quote": "وَكَذَلِكَ فَتَنَّا بَعْضَهُمْ بِبَعْضٍ لِيَقُولُوا أَهَؤُلَاءِ مَنَّ اللَّهُ عَلَيْهِمْ مِنْ بَيْنِنَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "quote": "وَأَنْ لَوِ اسْتَقَامُوا عَلَى الطَّرِيقَةِ لَأَسْقَيْنَاهُمْ مَاءً غَدَقًا (16) لِنَفْتِنَهُمْ فِيهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        72,
+        16
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p116-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "quote": "وَلَا تَطْرُدِ الَّذِينَ يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ يُرِيدُونَ وَجْهَهُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "quote": "وَمَا لِأَحَدٍ عِنْدَهُ مِنْ نِعْمَةٍ تُجْزَى (19) إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        92,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "quote": "وَإِنْ كُنْتُنَّ تُرِدْنَ اللَّهَ وَرَسُولَهُ وَالدَّارَ الْآخِرَةَ فَإِنَّ اللَّهَ أَعَدَّ لِلْمُحْسِنَاتِ مِنْكُنَّ أَجْرًا عَظِيمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p125-05"
+      ],
+      "quote": "وَكُلًّا نَقُصُّ عَلَيْكَ مِنْ أَنْبَاءِ الرُّسُلِ مَا نُثَبِّتُ بِهِ فُؤَادَكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        11,
+        120
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "quote": "وَقَدْ خَابَ مَنِ افْتَرَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        61
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "quote": "وَسَيَعْلَمُ الَّذِينَ ظَلَمُوا أَيَّ مُنْقَلَبٍ يَنْقَلِبُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        26,
+        227
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-04"
+      ],
+      "quote": "قُلْ كُلٌّ يَعْمَلُ عَلَى شَاكِلَتِهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p140-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p140-02"
+      ],
+      "quote": "يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنْفُسَكُمْ وَأَهْلِيكُمْ نَارًا وَقُودُهَا النَّاسُ وَالْحِجَارَةُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        66,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "إِنْ كُنْتُ قُلْتُهُ فَقَدْ عَلِمْتَهُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        116
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "تَعْلَمُ مَا فِي نَفْسِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        116
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "وَلَا أَعْلَمُ مَا فِي نَفْسِكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        116
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        109
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "مَا قُلْتُ لَهُمْ إِلَّا مَا أَمَرْتَنِي بِهِ أَنِ اعْبُدُوا اللَّهَ رَبِّي وَرَبَّكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        117
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "وَكُنْتُ عَلَيْهِمْ شَهِيدًا مَا دُمْتُ فِيهِمْ فَلَمَّا تَوَفَّيْتَنِي كُنْتَ أَنْتَ الرَّقِيبَ عَلَيْهِمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        117
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "وَأَنْتَ عَلَى كُلِّ شَيْءٍ شَهِيدٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        117
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "quote": "إِنْ تُعَذِّبْهُمْ فَإِنَّهُمْ عِبَادُكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        118
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p146-01"
+      ],
+      "quote": "إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        109
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p146-02"
+      ],
+      "quote": "وَإِنْ تَغْفِرْ لَهُمْ فَإِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        118
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "quote": "وَاللَّهُ عَلِيمٌ حَلِيمٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "quote": "فَإِنَّ اللَّهَ كَانَ عَفُوًّا قَدِيرًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        149
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-03"
+      ],
+      "quote": "الَّذِي خَلَقَنِي فَهُوَ يَهْدِينِ (78) وَالَّذِي هُوَ يُطْعِمُنِي وَيَسْقِينِ (79) وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        26,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "quote": "فَأَرَدْتُ أَنْ أَعِيبَهَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "quote": "فَأَرَادَ رَبُّكَ أَنْ يَبْلُغَا أَشُدَّهُمَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        82
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-01"
+      ],
+      "quote": "وَأَنَّا لَا نَدْرِي أَشَرٌّ أُرِيدَ بِمَنْ فِي الْأَرْضِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        72,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-01"
+      ],
+      "quote": "أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        72,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-02"
+      ],
+      "quote": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-03"
+      ],
+      "quote": "رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-04"
+      ],
+      "quote": "مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        21,
+        83
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "quote": "هَذَا تَأْوِيلُ رُؤْيَايَ مِنْ قَبْلُ قَدْ جَعَلَهَا رَبِّي حَقًّا وَقَدْ أَحْسَنَ بِي إِذْ أَخْرَجَنِي مِنَ السِّجْنِ وَجَاءَ بِكُمْ مِنَ الْبَدْوِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        100
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "quote": "وَجَاءَ بِكُمْ مِنَ الْبَدْوِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        100
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "quote": "مِنْ بَعْدِ أَنْ نَزَغَ الشَّيْطَانُ بَيْنِي وَبَيْنَ إِخْوَتِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        100
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p149-05",
+        "v3-p150-01"
+      ],
+      "quote": "وَنَفْسٍ وَمَا سَوَّاهَا (7) فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا (8) قَدْ أَفْلَحَ مَنْ زَكَّاهَا (9) وَقَدْ خَابَ مَنْ دَسَّاهَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        91,
+        7
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p150-03"
+      ],
+      "quote": "مَا زَاغَ الْبَصَرُ وَمَا طَغَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        53,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p151-02"
+      ],
+      "quote": "مَا كَذَبَ الْفُؤَادُ مَا رَأَى (11) أَفَتُمَارُونَهُ عَلَى مَا يَرَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        53,
+        11
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p151-02"
+      ],
+      "quote": "مَا كَذَبَ الْفُؤَادُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        53,
+        11
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p152-05",
+        "v3-p153-01"
+      ],
+      "quote": "يس (1) وَالْقُرْآنِ الْحَكِيمِ (2) إِنَّكَ لَمِنَ الْمُرْسَلِينَ (3) عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        36,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p153-04"
+      ],
+      "quote": "خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p155-04",
+        "v3-p156-01"
+      ],
+      "quote": "الَّذِينَ هُمْ عَلَى صَلَاتِهِمْ دَائِمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        70,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p155-04",
+        "v3-p156-01"
+      ],
+      "quote": "الَّذِينَ هُمْ عَلَى صَلَاتِهِمْ دَائِمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        70,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p156-02"
+      ],
+      "quote": "وَالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        70,
+        34
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p158-04"
+      ],
+      "quote": "بَلْ قُلُوبُهُمْ فِي غَمْرَةٍ مِنْ هَذَا وَلَهُمْ أَعْمَالٌ مِنْ دُونِ ذَلِكَ هُمْ لَهَا عَامِلُونَ حَتَّى إِذَا أَخَذْنَا مُتْرَفِيهِمْ بِالْعَذَابِ إِذَا هُمْ يَجْأَرُونَ لَا تَجْأَرُوا الْيَوْمَ إِنَّكُمْ مِنَّا لَا تُنْصَرُونَ قَدْ كَانَتْ آيَاتِي تُتْلَى عَلَيْكُمْ فَكُنْتُمْ عَلَى أَعْقَابِكُمْ تَنْكِصُونَ مُسْتَكْبِرِينَ بِهِ سَامِرًا تَهْجُرُونَ أَفَلَمْ يَدَّبَّرُوا الْقَوْلَ أَمْ جَاءَهُمْ مَا لَمْ يَأْتِ آبَاءَهُمُ الْأَوَّلِينَ أَمْ لَمْ يَعْرِفُوا رَسُولَهُمْ فَهُمْ لَهُ مُنْكِرُونَ أَمْ يَقُولُونَ بِهِ جِنَّةٌ بَلْ جَاءَهُمْ بِالْحَقِّ وَأَكْثَرُهُمْ لِلْحَقِّ كَارِهُونَ وَلَوِ اتَّبَعَ الْحَقُّ أَهْوَاءَهُمْ لَفَسَدَتِ السَّمَاوَاتُ وَالْأَرْضُ وَمَنْ فِيهِنَّ بَلْ أَتَيْنَاهُمْ بِذِكْرِهِمْ فَهُمْ عَنْ ذِكْرِهِمْ مُعْرِضُونَ أَمْ تَسْأَلُهُمْ خَرْجًا فَخَرَاجُ رَبِّكَ خَيْرٌ وَهُوَ خَيْرُ الرَّازِقِينَ وَإِنَّكَ لَتَدْعُوهُمْ إِلَى صِرَاطٍ مُسْتَقِيمٍ وَإِنَّ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ عَنِ الصِّرَاطِ لَنَاكِبُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        23,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p159-02"
+      ],
+      "quote": "يَاأَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        49,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-03"
+      ],
+      "quote": "لَا تَجْعَلُوا دُعَاءَ الرَّسُولِ بَيْنَكُمْ كَدُعَاءِ بَعْضِكُمْ بَعْضًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "quote": "إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ آمَنُوا بِاللَّهِ وَرَسُولِهِ وَإِذَا كَانُوا مَعَهُ عَلَى أَمْرٍ جَامِعٍ لَمْ يَذْهَبُوا حَتَّى يَسْتَأْذِنُوهُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "quote": "فَاسْأَلُوا أَهْلَ الذِّكْرِ إِنْ كُنْتُمْ لَا تَعْلَمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        43
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-02"
+      ],
+      "quote": "وَجَعَلْنَا مِنْهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا لَمَّا صَبَرُوا وَكَانُوا بِآيَاتِنَا يُوقِنُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        32,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-03"
+      ],
+      "quote": "وَفِي الْأَرْضِ آيَاتٌ لِلْمُوقِنِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        51,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-04"
+      ],
+      "quote": "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنْزِلَ إِلَيْكَ وَمَا أُنْزِلَ مِنْ قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ أُولَئِكَ عَلَى هُدًى مِنْ رَبِّهِمْ وَأُولَئِكَ هُمُ الْمُفْلِحُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-05"
+      ],
+      "quote": "وَإِذَا قِيلَ إِنَّ وَعْدَ اللَّهِ حَقٌّ وَالسَّاعَةُ لَا رَيْبَ فِيهَا قُلْتُمْ مَا نَدْرِي مَا السَّاعَةُ إِنْ نَظُنُّ إِلَّا ظَنًّا وَمَا نَحْنُ بِمُسْتَيْقِنِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        45,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "quote": "فَتَوَكَّلْ عَلَى اللَّهِ إِنَّكَ عَلَى الْحَقِّ الْمُبِينِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        27,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "quote": "وَمَا لَنَا أَلَّا نَتَوَكَّلَ عَلَى اللَّهِ وَقَدْ هَدَانَا سُبُلَنَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        14,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p184-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p184-03"
+      ],
+      "quote": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        186
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "quote": "وَاللَّهُ أَخْرَجَكُمْ مِنْ بُطُونِ أُمَّهَاتِكُمْ لَا تَعْلَمُونَ شَيْئًا وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ لَعَلَّكُمْ تَشْكُرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "quote": "وَلَقَدْ مَكَّنَّاهُمْ فِيمَا إِنْ مَكَّنَّاكُمْ فِيهِ وَجَعَلْنَا لَهُمْ سَمْعًا وَأَبْصَارًا وَأَفْئِدَةً فَمَا أَغْنَى عَنْهُمْ سَمْعُهُمْ وَلَا أَبْصَارُهُمْ وَلَا أَفْئِدَتُهُمْ مِنْ شَيْءٍ إِذْ كَانُوا يَجْحَدُونَ بِآيَاتِ اللَّهِ وَحَاقَ بِهِمْ مَا كَانُوا بِهِ يَسْتَهْزِئُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        46,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "quote": "وَلَقَدْ ذَرَأْنَا لِجَهَنَّمَ كَثِيرًا مِنَ الْجِنِّ وَالْإِنْسِ لَهُمْ قُلُوبٌ لَا يَفْقَهُونَ بِهَا وَلَهُمْ أَعْيُنٌ لَا يُبْصِرُونَ بِهَا وَلَهُمْ آذَانٌ لَا يَسْمَعُونَ بِهَا أُولَئِكَ كَالْأَنْعَامِ بَلْ هُمْ أَضَلُّ أُولَئِكَ هُمُ الْغَافِلُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        179
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "quote": "صُمٌّ بُكْمٌ عُمْيٌ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "quote": "أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ فَتَكُونَ لَهُمْ قُلُوبٌ يَعْقِلُونَ بِهَا أَوْ آذَانٌ يَسْمَعُونَ بِهَا فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ وَلَكِنْ تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        22,
+        46
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "quote": "أَمْ تَحْسَبُ أَنَّ أَكْثَرَهُمْ يَسْمَعُونَ أَوْ يَعْقِلُونَ إِنْ هُمْ إِلَّا كَالْأَنْعَامِ بَلْ هُمْ أَضَلُّ سَبِيلًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        25,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "quote": "لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِي أَصْحَابِ السَّعِيرِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        67,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p189-02"
+      ],
+      "quote": "وَتَرَاهُمْ يَنْظُرُونَ إِلَيْكَ وَهُمْ لَا يُبْصِرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        198
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-02"
+      ],
+      "quote": "لَا يَمَسُّهُ إِلَّا الْمُطَهَّرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        56,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-05"
+      ],
+      "quote": "لَا يَمَسُّهُ إِلَّا الْمُطَهَّرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        56,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-05"
+      ],
+      "quote": "إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        222
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-07",
+        "v3-p199-01"
+      ],
+      "quote": "وَمَا تَنَزَّلَتْ بِهِ الشَّيَاطِينُ وَمَا يَنْبَغِي لَهُمْ وَمَا يَسْتَطِيعُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        26,
+        210
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p199-02"
+      ],
+      "quote": "فَمَنْ شَاءَ ذَكَرَهُ فِي صُحُفٍ مُكَرَّمَةٍ مَرْفُوعَةٍ مُطَهَّرَةٍ بِأَيْدِي سَفَرَةٍ كِرَامٍ بَرَرَةٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        80,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p199-03"
+      ],
+      "quote": "لَا يَمَسُّهُ إِلَّا الْمُطَهَّرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        56,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p203-02"
+      ],
+      "quote": "وَتَرَى الْجِبَالَ تَحْسَبُهَا جَامِدَةً وَهِيَ تَمُرُّ مَرَّ السَّحَابِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        27,
+        88
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p203-03"
+      ],
+      "quote": "وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ وَنُقَلِّبُهُمْ ذَاتَ الْيَمِينِ وَذَاتَ الشِّمَالِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p207-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "quote": "يَاأَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا هُوَ الَّذِي يُصَلِّي عَلَيْكُمْ وَمَلَائِكَتُهُ لِيُخْرِجَكُمْ مِنَ الظُّلُمَاتِ إِلَى النُّورِ وَكَانَ بِالْمُؤْمِنِينَ رَحِيمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        41
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "quote": "وَاذْكُرْ رَبَّكَ فِي نَفْسِكَ تَضَرُّعًا وَخِيفَةً",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "quote": "وَلَا تَكُنْ مِنَ الْغَافِلِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "quote": "وَلَا تَكُونُوا كَالَّذِينَ نَسُوا اللَّهَ فَأَنْسَاهُمْ أَنْفُسَهُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        59,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-07"
+      ],
+      "quote": "وَاذْكُرُوا اللَّهَ كَثِيرًا لَعَلَّكُمْ تُفْلِحُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        8,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-08"
+      ],
+      "quote": "إِنَّ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-08"
+      ],
+      "quote": "وَالذَّاكِرِينَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْرًا عَظِيمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-01"
+      ],
+      "quote": "يَاأَيُّهَا الَّذِينَ آمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ وَلَا أَوْلَادُكُمْ عَنْ ذِكْرِ اللَّهِ وَمَنْ يَفْعَلْ ذَلِكَ فَأُولَئِكَ هُمُ الْخَاسِرُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        63,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-02"
+      ],
+      "quote": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        152
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-03"
+      ],
+      "quote": "اتْلُ مَا أُوحِيَ إِلَيْكَ مِنَ الْكِتَابِ وَأَقِمِ الصَّلَاةَ إِنَّ الصَّلَاةَ تَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ وَلَذِكْرُ اللَّهِ أَكْبَرُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        29,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-02"
+      ],
+      "quote": "وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَى مَا هَدَاكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        185
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-03"
+      ],
+      "quote": "فَإِذَا قَضَيْتُمْ مَنَاسِكَكُمْ فَاذْكُرُوا اللَّهَ كَذِكْرِكُمْ آبَاءَكُمْ أَوْ أَشَدَّ ذِكْرًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        200
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-04"
+      ],
+      "quote": "فَإِذَا قَضَيْتُمُ الصَّلَاةَ فَاذْكُرُوا اللَّهَ قِيَامًا وَقُعُودًا وَعَلَى جُنُوبِكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        103
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-05"
+      ],
+      "quote": "فَإِذَا قُضِيَتِ الصَّلَاةُ فَانْتَشِرُوا فِي الْأَرْضِ وَابْتَغُوا مِنْ فَضْلِ اللَّهِ وَاذْكُرُوا اللَّهَ كَثِيرًا لَعَلَّكُمْ تُفْلِحُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        62,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-07"
+      ],
+      "quote": "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِأُولِي الْأَلْبَابِ الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَى جُنُوبِهِمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        190
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-08",
+        "v3-p213-01"
+      ],
+      "quote": "أَقِمِ الصَّلَاةَ لِذِكْرِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p213-02"
+      ],
+      "quote": "يَاأَيُّهَا الَّذِينَ آمَنُوا إِذَا لَقِيتُمْ فِئَةً فَاثْبُتُوا وَاذْكُرُوا اللَّهَ كَثِيرًا لَعَلَّكُمْ تُفْلِحُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        8,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p219-05",
+        "v3-p220-01"
+      ],
+      "quote": "وَاذْكُرْ رَبَّكَ إِذَا نَسِيتَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p223-02"
+      ],
+      "quote": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        152
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p224-05"
+      ],
+      "quote": "وَلَا تَكُنْ مِنَ الْغَافِلِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p225-03"
+      ],
+      "quote": "رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p231-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p231-04"
+      ],
+      "quote": "لِلْفُقَرَاءِ الَّذِينَ أُحْصِرُوا فِي سَبِيلِ اللَّهِ لَا يَسْتَطِيعُونَ ضَرْبًا فِي الْأَرْضِ يَحْسَبُهُمُ الْجَاهِلُ أَغْنِيَاءَ مِنَ التَّعَفُّفِ تَعْرِفُهُمْ بِسِيمَاهُمْ لَا يَسْأَلُونَ النَّاسَ إِلْحَافًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        273
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p232-02"
+      ],
+      "quote": "إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p232-03"
+      ],
+      "quote": "يَاأَيُّهَا النَّاسُ أَنْتُمُ الْفُقَرَاءُ إِلَى اللَّهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        35,
+        15
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p234-05"
+      ],
+      "quote": "وَوَجَدَكَ عَائِلًا فَأَغْنَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        93,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p237-04"
+      ],
+      "quote": "إِنَّ أَكْرَمَكُمْ عِنْدَ اللَّهِ أَتْقَاكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        49,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p237-05"
+      ],
+      "quote": "فَأَمَّا الْإِنْسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ كَلَّا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        89,
+        15
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p245-06"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p248-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p248-04"
+      ],
+      "quote": "وَوَجَدَكَ عَائِلًا فَأَغْنَى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        93,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p250-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "quote": "رَبِّ اشْرَحْ لِي صَدْرِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        25
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "quote": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        94,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-08",
+        "v3-p255-01"
+      ],
+      "quote": "وَمَا كُنْتَ تَرْجُو أَنْ يُلْقَى إِلَيْكَ الْكِتَابُ إِلَّا رَحْمَةً مِنْ رَبِّكَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        86
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p261-03",
+        "v3-p262-01"
+      ],
+      "quote": "وَجَزَاءُ سَيِّئَةٍ سَيِّئَةٌ مِثْلُهَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p261-03",
+        "v3-p262-01"
+      ],
+      "quote": "فَمَنْ عَفَا وَأَصْلَحَ فَأَجْرُهُ عَلَى اللَّهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p261-03",
+        "v3-p262-01"
+      ],
+      "quote": "إِنَّهُ لَا يُحِبُّ الظَّالِمِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-02"
+      ],
+      "quote": "وَإِنْ عَاقَبْتُمْ فَعَاقِبُوا بِمِثْلِ مَا عُوقِبْتُمْ بِهِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        126
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-02"
+      ],
+      "quote": "وَلَئِنْ صَبَرْتُمْ لَهُوَ خَيْرٌ لِلصَّابِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        126
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "quote": "وَإِنْ تُبْتُمْ فَلَكُمْ رُءُوسُ أَمْوَالِكُمْ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        279
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "quote": "لَا تَظْلِمُونَ وَلَا تُظْلَمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        279
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "quote": "وَإِنْ كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَى مَيْسَرَةٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        280
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "quote": "وَأَنْ تَصَدَّقُوا خَيْرٌ لَكُمْ إِنْ كُنْتُمْ تَعْلَمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        280
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-05"
+      ],
+      "quote": "هُوَ اجْتَبَاكُمْ وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        22,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p263-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p263-03"
+      ],
+      "quote": "هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        55,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p263-05"
+      ],
+      "quote": "هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        55,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p270-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p273-04"
+      ],
+      "quote": "وَإِنْ تُطِيعُوهُ تَهْتَدُوا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p283-03"
+      ],
+      "quote": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        114
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-01"
+      ],
+      "quote": "آتَيْنَاهُ رَحْمَةً مِنْ عِنْدِنَا وَعَلَّمْنَاهُ مِنْ لَدُنَّا عِلْمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        65
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "quote": "وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَلْ لِي مِنْ لَدُنْكَ سُلْطَانًا نَصِيرًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "quote": "هُوَ الَّذِي أَيَّدَكَ بِنَصْرِهِ وَبِالْمُؤْمِنِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        8,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "quote": "يُؤْتِي الْحِكْمَةَ مَنْ يَشَاءُ وَمَنْ يُؤْتَ الْحِكْمَةَ فَقَدْ أُوتِيَ خَيْرًا كَثِيرًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        269
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "quote": "وَأَنْزَلَ اللَّهُ عَلَيْكَ الْكِتَابَ وَالْحِكْمَةَ وَعَلَّمَكَ مَا لَمْ تَكُنْ تَعْلَمُ وَكَانَ فَضْلُ اللَّهِ عَلَيْكَ عَظِيمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        113
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "quote": "وَيُعَلِّمُهُ الْكِتَابَ وَالْحِكْمَةَ وَالتَّوْرَاةَ وَالْإِنْجِيلَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        48
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "quote": "وَأَنْزَلَ اللَّهُ عَلَيْكَ الْكِتَابَ وَالْحِكْمَةَ وَعَلَّمَكَ مَا لَمْ تَكُنْ تَعْلَمُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        113
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "quote": "كَمَا أَرْسَلْنَا فِيكُمْ رَسُولًا مِنْكُمْ يَتْلُو عَلَيْكُمْ آيَاتِنَا وَيُزَكِّيكُمْ وَيُعَلِّمُكُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُعَلِّمُكُمْ مَا لَمْ تَكُونُوا تَعْلَمُونَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        151
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-07"
+      ],
+      "quote": "إِنَّ اللَّهَ لَا يَظْلِمُ مِثْقَالَ ذَرَّةٍ وَإِنْ تَكُ حَسَنَةً يُضَاعِفْهَا وَيُؤْتِ مِنْ لَدُنْهُ أَجْرًا عَظِيمًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p296-02"
+      ],
+      "quote": "أَهَؤُلَاءِ مَنَّ اللَّهُ عَلَيْهِمْ مِنْ بَيْنِنَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p296-02"
+      ],
+      "quote": "أَلَيْسَ اللَّهُ بِأَعْلَمَ بِالشَّاكِرِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p297-07",
+        "v3-p298-01"
+      ],
+      "quote": "قُلْ هَذِهِ سَبِيلِي أَدْعُو إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        108
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p297-07",
+        "v3-p298-01"
+      ],
+      "quote": "وَمَنِ اتَّبَعَنِي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        108
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-03"
+      ],
+      "quote": "إِنَّ فِي ذَلِكَ لَآيَاتٍ لِلْمُتَوَسِّمِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        15,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-04"
+      ],
+      "quote": "وَلَوْ نَشَاءُ لَأَرَيْنَاكَهُمْ فَلَعَرَفْتَهُمْ بِسِيمَاهُمْ وَلَتَعْرِفَنَّهُمْ فِي لَحْنِ الْقَوْلِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        47,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-05"
+      ],
+      "quote": "وَلَتَعْرِفَنَّهُمْ فِي لَحْنِ الْقَوْلِ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        47,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p301-05",
+        "v3-p302-01"
+      ],
+      "quote": "إِنَّ فِي ذَلِكَ لَآيَاتٍ لِلْمُتَوَسِّمِينَ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        15,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "quote": "أَكْرِمِي مَثْوَاهُ عَسَى أَنْ يَنْفَعَنَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        21
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "quote": "اسْتَأْجِرْهُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "quote": "قُرَّتُ عَيْنٍ لِي وَلَكَ لَا تَقْتُلُوهُ عَسَى أَنْ يَنْفَعَنَا أَوْ نَتَّخِذَهُ وَلَدًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p306-02"
+      ],
+      "quote": "أَوَمَنْ كَانَ مَيْتًا فَأَحْيَيْنَاهُ وَجَعَلْنَا لَهُ نُورًا يَمْشِي بِهِ فِي النَّاسِ كَمَنْ مَثَلُهُ فِي الظُّلُمَاتِ لَيْسَ بِخَارِجٍ مِنْهَا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        122
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p318-03"
+      ],
+      "quote": "قَدْ جَعَلَ رَبُّكِ تَحْتَكِ سَرِيًّا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        19,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p319-02"
+      ],
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p319-04"
+      ],
+      "quote": "مَا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        71,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p320-08"
+      ],
+      "quote": "قُلْ يَاأَهْلَ الْكِتَابِ لَا تَغْلُوا فِي دِينِكُمْ غَيْرَ الْحَقِّ",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        77
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p330-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-04"
+      ],
+      "quote": "وقال لهم نبيهم إن آية ملكه أن يأتيكم التابوت فيه سكينة من ربكم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-05"
+      ],
+      "quote": "لقد نصركم الله في مواطن كثيرة ويوم حنين إذ أعجبتكم كثرتكم فلم تغن عنكم شيئا وضاقت عليكم الأرض بما رحبت ثم وليتم مدبرين ثم أنزل الله سكينته على رسوله وعلى المؤمنين وأنزل جنودا لم تروها",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        25
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-06"
+      ],
+      "quote": "إلا تنصروه فقد نصره الله إذ أخرجه الذين كفروا ثاني اثنين إذ هما في الغار إذ يقول لصاحبه لا تحزن إن الله معنا فأنزل الله سكينته عليه وأيده بجنود لم تروها",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-07"
+      ],
+      "quote": "هو الذي أنزل السكينة في قلوب المؤمنين ليزدادوا إيمانا مع إيمانهم ولله جنود السماوات والأرض وكان الله عليما حكيما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        48,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-08"
+      ],
+      "quote": "لقد رضي الله عن المؤمنين إذ يبايعونك تحت الشجرة فعلم ما في قلوبهم فأنزل السكينة عليهم وأثابهم فتحا قريبا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        48,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p332-01"
+      ],
+      "quote": "إذ جعل الذين كفروا في قلوبهم الحمية حمية الجاهلية فأنزل الله سكينته على رسوله وعلى المؤمنين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        48,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p335-03"
+      ],
+      "quote": "فيه سكينة من ربكم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p335-04"
+      ],
+      "quote": "وبقية مما ترك آل موسى وآل هارون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p335-04"
+      ],
+      "quote": "فيه سكينة",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p342-07"
+      ],
+      "quote": "ألم يأن للذين آمنوا أن تخشع قلوبهم لذكر الله وما نزل من الحق",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        57,
+        16
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p347-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "quote": "الذين آمنوا وتطمئن قلوبهم بذكر الله ألا بذكر الله تطمئن القلوب",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        13,
+        28
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "quote": "يا أيتها النفس المطمئنة ارجعي إلى ربك راضية مرضية فادخلي في عبادي وادخلي جنتي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        89,
+        27
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-01"
+      ],
+      "quote": "ومن يعش عن ذكر الرحمن نقيض له شيطانا فهو له قرين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        43,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-03"
+      ],
+      "quote": "ومن أعرض عن ذكري فإن له معيشة ضنكا ونحشره يوم القيامة أعمى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        124
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-04"
+      ],
+      "quote": "رب لم حشرتني أعمى وقد كنت بصيرا قال كذلك أتتك آياتنا فنسيتها وكذلك اليوم تنسى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        125
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-06",
+        "v3-p350-01"
+      ],
+      "quote": "يا أيتها النفس المطمئنة ارجعي إلى ربك",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        89,
+        27
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p360-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p360-03"
+      ],
+      "quote": "ما زاغ البصر وما طغى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        53,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p365-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p367-04",
+        "v3-p368-01"
+      ],
+      "quote": "أذلة على المؤمنين أعزة على الكافرين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-02"
+      ],
+      "quote": "قل إن كنتم تحبون الله فاتبعوني يحببكم الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-03"
+      ],
+      "quote": "يجاهدون في سبيل الله ولا يخافون لومة لائم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-04"
+      ],
+      "quote": "إن الله اشترى من المؤمنين أنفسهم وأموالهم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        111
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-06"
+      ],
+      "quote": "ولا تحسبن الذين قتلوا في سبيل الله أمواتا بل أحياء عند ربهم يرزقون فرحين بما آتاهم الله من فضله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        169
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p369-02"
+      ],
+      "quote": "إليه يصعد الكلم الطيب والعمل الصالح يرفعه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        35,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p385-03"
+      ],
+      "quote": "ومن الناس من يتخذ من دون الله أندادا يحبونهم كحب الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        165
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p385-04"
+      ],
+      "quote": "والذين آمنوا أشد حبا لله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        165
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p386-02"
+      ],
+      "quote": "يحبونهم كحب الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        165
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p386-07"
+      ],
+      "quote": "تالله إن كنا لفي ضلال مبين إذ نسويكم برب العالمين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        26,
+        97
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-01"
+      ],
+      "quote": "الحمد لله الذي خلق السماوات والأرض وجعل الظلمات والنور ثم الذين كفروا بربهم يعدلون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-03"
+      ],
+      "quote": "قل إن كنتم تحبون الله فاتبعوني يحببكم الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-03"
+      ],
+      "quote": "قل إن كنتم تحبون الله فاتبعوني",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-04"
+      ],
+      "quote": "يحببكم الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-05"
+      ],
+      "quote": "يا أيها الذين آمنوا من يرتد منكم عن دينه فسوف يأتي الله بقوم يحبهم ويحبونه أذلة على المؤمنين أعزة على الكافرين يجاهدون في سبيل الله ولا يخافون لومة لائم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        5,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p388-02"
+      ],
+      "quote": "أشداء على الكفار رحماء بينهم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        48,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p388-06",
+        "v3-p389-01"
+      ],
+      "quote": "أولئك الذين يدعون يبتغون إلى ربهم الوسيلة أيهم أقرب ويرجون رحمته ويخافون عذابه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p389-04"
+      ],
+      "quote": "ولا تطرد الذين يدعون ربهم بالغداة والعشي يريدون وجهه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p389-05"
+      ],
+      "quote": "إنما نطعمكم لوجه الله لا نريد منكم جزاء ولا شكورا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        76,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p390-01"
+      ],
+      "quote": "وما لأحد عنده من نعمة تجزى إلا ابتغاء وجه ربه الأعلى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        92,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p390-02"
+      ],
+      "quote": "وإن كنتن تردن الله ورسوله والدار الآخرة فإن الله أعد للمحسنات منكن أجرا عظيما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p392-02"
+      ],
+      "quote": "قل هو الله أحد",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        112,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "quote": "والله يحب الصابرين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        146
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "quote": "والله يحب المحسنين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        134
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "quote": "إن الله يحب التوابين ويحب المتطهرين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        222
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "quote": "إن الله يحب الذين يقاتلون في سبيله صفا كأنهم بنيان مرصوص",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        61,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "quote": "إن الله يحب المتقين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "quote": "والله لا يحب الفساد",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "quote": "والله لا يحب كل مختال فخور",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        57,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "quote": "والله لا يحب الظالمين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "quote": "إن الله لا يحب من كان مختالا فخورا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p397-01"
+      ],
+      "quote": "إن عذابها كان غراما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        25,
+        65
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p397-06"
+      ],
+      "quote": "قد شغفها حبا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p398-06"
+      ],
+      "quote": "ولا تحملنا ما لا طاقة لنا به",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        286
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "quote": "سبحان الذي أسرى بعبده",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "quote": "وأنه لما قام عبد الله يدعوه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        72,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "quote": "وإن كنتم في ريب مما نزلنا على عبدنا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p401-06",
+        "v3-p402-01"
+      ],
+      "quote": "يا إبراهيم قد صدقت الرؤيا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        37,
+        104
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p401-06",
+        "v3-p402-01"
+      ],
+      "quote": "إنا كذلك نجزي المحسنين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        37,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p401-06",
+        "v3-p402-01"
+      ],
+      "quote": "إن هذا لهو البلاء المبين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        37,
+        106
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p412-04"
+      ],
+      "quote": "فاتبعوني يحببكم الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p419-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p419-03"
+      ],
+      "quote": "قل إنما حرم ربي الفواحش ما ظهر منها وما بطن",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        33
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p420-02"
+      ],
+      "quote": "وإذا قرأت القرآن جعلنا بينك وبين الذين لا يؤمنون بالآخرة حجابا مستورا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p424-02"
+      ],
+      "quote": "وإن من شيء إلا يسبح بحمده",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p425-04"
+      ],
+      "quote": "ردوها علي فطفق مسحا بالسوق والأعناق",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        38,
+        33
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p426-04"
+      ],
+      "quote": "وفي ذلك فليتنافس المتنافسون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        83,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "quote": "كلوا واشربوا هنيئا بما أسلفتم في الأيام الخالية",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        69,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "quote": "ذلكم بما كنتم تفرحون في الأرض بغير الحق وبما كنتم تمرحون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        40,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p432-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p432-03"
+      ],
+      "quote": "من كان يرجو لقاء الله فإن أجل الله لآت",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        29,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p433-07"
+      ],
+      "quote": "توفني مسلما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p436-04"
+      ],
+      "quote": "وعجلت إليك رب لترضى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p438-03"
+      ],
+      "quote": "من كان يرجو لقاء الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        29,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p443-09",
+        "v3-p444-01"
+      ],
+      "quote": "وعجلت إليك رب لترضى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p447-02"
+      ],
+      "quote": "فلما جن عليه الليل رأى كوكبا قال هذا ربي",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p455-02"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p455-04"
+      ],
+      "quote": "وربطنا على قلوبهم إذ قاموا فقالوا ربنا رب السماوات والأرض لن ندعو من دونه إلها لقد قلنا إذا شططا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p455-04"
+      ],
+      "quote": "ربنا رب السماوات والأرض",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        18,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p459-01"
+      ],
+      "quote": "وأزواجه أمهاتهم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        33,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "أفلم يسيروا في الأرض فتكون لهم قلوب يعقلون بها أو آذان يسمعون بها فإنها لا تعمى الأبصار ولكن تعمى القلوب التي في الصدور",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        22,
+        46
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "أفلم يدبروا القول",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        23,
+        68
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "أفلا يتدبرون القرآن أم على قلوب أقفالها",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        47,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "قل انظروا ماذا في السماوات والأرض",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        10,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "ويتفكرون في خلق السماوات والأرض",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        191
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "أولم يتفكروا في أنفسهم ما خلق الله السماوات والأرض وما بينهما إلا بالحق وأجل مسمى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        30,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "quote": "وأنزلنا إليك الذكر لتبين للناس ما نزل إليهم ولعلهم يتفكرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p466-02"
+      ],
+      "quote": "فلما رأينه أكبرنه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p472-03"
+      ],
+      "quote": "وخر موسى صعقا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p476-03"
+      ],
+      "quote": "إياك نعبد وإياك نستعين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        1,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p476-05"
+      ],
+      "quote": "وهل أتاك حديث موسى إذ رأى نارا فقال لأهله امكثوا إني آنست نارا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p482-02"
+      ],
+      "quote": "قل بفضل الله وبرحمته فبذلك فليفرحوا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        10,
+        58
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p482-04",
+        "v3-p483-01"
+      ],
+      "quote": "اجعلني على خزائن الأرض إني حفيظ عليم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        12,
+        55
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "quote": "وذوقوا عذاب الحريق",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        8,
+        50
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "quote": "فذوقوا العذاب بما كنتم تكفرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        106
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "quote": "هذا فليذوقوه حميم وغساق",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        38,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "quote": "فأذاقها الله لباس الجوع والخوف بما كانوا يصنعون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        112
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p486-04"
+      ],
+      "quote": "هذا ذكر",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        21,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p486-05",
+        "v3-p487-01"
+      ],
+      "quote": "تذكروا فإذا هم مبصرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        201
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p487-02"
+      ],
+      "quote": "وإن للمتقين لحسن مآب جنات",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        38,
+        49
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "quote": "ووجد الله عنده",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        39
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "quote": "ومن يعمل سوءا أو يظلم نفسه ثم يستغفر الله يجد الله غفورا رحيما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        110
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "quote": "ألم يجدك يتيما فآوى ووجدك ضالا فهدى ووجدك عائلا فأغنى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        93,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "quote": "إنا وجدناه صابرا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        38,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p490-05",
+        "v3-p491-01"
+      ],
+      "quote": "قالت الأعراب آمنا قل لم تؤمنوا ولكن قولوا أسلمنا ولما يدخل الإيمان في قلوبكم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        49,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p490-05",
+        "v3-p491-01"
+      ],
+      "quote": "ولكن قولوا أسلمنا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        49,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p490-05",
+        "v3-p491-01"
+      ],
+      "quote": "لم تؤمنوا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        44,
+        21
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p493-05"
+      ],
+      "quote": "وعد الله المؤمنين والمؤمنات جنات تجري من تحتها الأنهار خالدين فيها ومساكن طيبة في جنات عدن ورضوان من الله أكبر",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        72
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "quote": "إنما نطعمكم لوجه الله لا نريد منكم جزاء ولا شكورا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        76,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "quote": "ولا تطرد الذين يدعون ربهم بالغداة والعشي يريدون وجهه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "quote": "وما لأحد عنده من نعمة تجزى إلا ابتغاء وجه ربه الأعلى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        92,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p500-01"
+      ],
+      "quote": "من شجرة مباركة زيتونة لا شرقية ولا غربية يكاد زيتها يضيء ولو لم تمسسه نار نور على نور يهدي الله لنوره من يشاء ويضرب الله الأمثال للناس والله بكل شيء عليم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p501-03"
+      ],
+      "quote": "يا أيتها النفس المطمئنة ارجعي إلى ربك راضية مرضية",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        89,
+        27
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p503-03"
+      ],
+      "quote": "ولكن انظر إلى الجبل فإن استقر مكانه فسوف تراني",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p503-04"
+      ],
+      "quote": "فلما تجلى ربه للجبل جعله دكا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "quote": "إن الذين سبقت لهم منا الحسنى أولئك عنها مبعدون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        21,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "quote": "ولقد سبقت كلمتنا لعبادنا المرسلين إنهم لهم المنصورون وإن جندنا لهم الغالبون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        37,
+        171
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "وقال ربكم ادعوني أستجب لكم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        40,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "وإذا سألك عبادي عني فإني قريب أجيب دعوة الداع إذا دعان فليستجيبوا لي وليؤمنوا بي لعلهم يرشدون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        186
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "واسألوا الله من فضله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "قل ما يعبأ بكم ربي لولا دعاؤكم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        25,
+        77
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "ادعوا ربكم تضرعا وخفية",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        55
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "quote": "وادعوه خوفا وطمعا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        56
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p513-05"
+      ],
+      "quote": "قل بفضل الله وبرحمته فبذلك فليفرحوا هو خير مما يجمعون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        10,
+        58
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-05"
+      ],
+      "quote": "كلا إن الإنسان ليطغى أن رآه استغنى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        96,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "quote": "وما بكم من نعمة فمن الله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        16,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "quote": "قل إن الأمر كله لله",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        3,
+        154
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "quote": "وإن يمسسك الله بضر فلا كاشف له إلا هو وإن يردك بخير فلا راد لفضله يصيب به من يشاء من عباده وهو الغفور الرحيم",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        10,
+        107
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "quote": "وما كنت ترجو أن يلقى إليك الكتاب إلا رحمة من ربك",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        86
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "quote": "ولولا فضل الله عليكم ورحمته ما زكى منكم من أحد أبدا ولكن الله يزكي من يشاء",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        21
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p515-03"
+      ],
+      "quote": "لنخرجنك يا شعيب والذين آمنوا معك من قريتنا أو لتعودن في ملتنا قال أولو كنا كارهين قد افترينا على الله كذبا إن عدنا في ملتكم بعد إذ نجانا الله منها وما يكون لنا أن نعود فيها إلا أن يشاء الله ربنا وسع ربنا كل شيء علما على الله توكلنا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        88
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p516-01"
+      ],
+      "quote": "ولا أخاف ما تشركون به إلا أن يشاء ربي شيئا وسع ربي كل شيء علما أفلا تتذكرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p516-02"
+      ],
+      "quote": "أفأمنوا مكر الله فلا يأمن مكر الله إلا القوم الخاسرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        7,
+        99
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "quote": "فلما نسوا ما ذكروا به فتحنا عليهم أبواب كل شيء حتى إذا فرحوا بما أوتوا أخذناهم بغتة",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "quote": "لا تفرح إن الله لا يحب الفرحين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "quote": "وكان الله شاكرا عليما",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        4,
+        147
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "quote": "إن ربنا لغفور شكور",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        35,
+        34
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "quote": "ولا تطرد الذين يدعون ربهم بالغداة والعشي يريدون وجهه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        6,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "quote": "وما لأحد عنده من نعمة تجزى إلا ابتغاء وجه ربه الأعلى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        92,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-05"
+      ],
+      "quote": "وجاهدوا في الله حق جهاده",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        22,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p540-03"
+      ],
+      "quote": "يخادعون الله والذين آمنوا وما يخدعون إلا أنفسهم وما يشعرون في قلوبهم مرض فزادهم الله مرضا ولهم عذاب أليم بما كانوا يكذبون وإذا قيل لهم لا تفسدوا في الأرض قالوا إنما نحن مصلحون ألا إنهم هم المفسدون ولكن لا يشعرون وإذا قيل لهم آمنوا كما آمن الناس قالوا أنؤمن كما آمن السفهاء ألا إنهم هم السفهاء ولكن لا يعلمون وإذا لقوا الذين آمنوا قالوا آمنا وإذا خلوا إلى شياطينهم قالوا إنا معكم إنما نحن مستهزئون الله يستهزئ بهم ويمدهم في طغيانهم يعمهون أولئك الذين اشتروا الضلالة بالهدى فما ربحت تجارتهم وما كانوا مهتدين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        2,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p544-03"
+      ],
+      "quote": "ثم جئت على قدر يا موسى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        20,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p544-07",
+        "v3-p545-01"
+      ],
+      "quote": "إن الذين أوتوا العلم من قبله إذا يتلى عليهم يخرون للأذقان سجدا ويقولون سبحان ربنا إن كان وعد ربنا لمفعولا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        107
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p548-04",
+        "v3-p549-01"
+      ],
+      "quote": "حتى إذا أخذت الأرض زخرفها وازينت وظن أهلها أنهم قادرون عليها أتاها أمرنا ليلا أو نهارا فجعلناها حصيدا كأن لم تغن بالأمس كذلك نفصل الآيات لقوم يتفكرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        10,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p551-06"
+      ],
+      "quote": "فلما قضى موسى الأجل وسار بأهله آنس من جانب الطور نارا قال لأهله امكثوا إني آنست نارا",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p553-03"
+      ],
+      "quote": "أولئك الذين يدعون يبتغون إلى ربهم الوسيلة أيهم أقرب ويرجون رحمته ويخافون عذابه",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        17,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p555-06",
+        "v3-p556-01"
+      ],
+      "quote": "يهب لمن يشاء إناثا ويهب لمن يشاء الذكور أو يزوجهم ذكرانا وإناثا ويجعل من يشاء عقيما إنه عليم قدير",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        42,
+        49
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p561-02"
+      ],
+      "quote": "ويأبى الله إلا أن يتم نوره ولو كره الكافرون",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        9,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p566-03"
+      ],
+      "quote": "وإنهم عندنا لمن المصطفين الأخيار",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        38,
+        47
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p569-05"
+      ],
+      "quote": "كسراب بقيعة يحسبه الظمآن ماء حتى إذا جاءه لم يجده شيئا ووجد الله عنده فوفاه حسابه والله سريع الحساب",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        24,
+        39
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "quote": "ويرى الذين أوتوا العلم الذي أنزل إليك من ربك هو الحق",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        34,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "quote": "أفمن يعلم أنما أنزل إليك من ربك الحق كمن هو أعمى",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        13,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p582-05"
+      ],
+      "quote": "ماذا أجبتم المرسلين",
+      "status": "normalized_match",
+      "first_matching_verse": [
+        28,
+        65
+      ]
+    }
+  ],
+  "printed_references": [
+    {
+      "source_ids": [
+        "v3-p003-02"
+      ],
+      "printed_label": "الحشر:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        59,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p004-04"
+      ],
+      "printed_label": "الحشر:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        59,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "printed_label": "المائدة:45",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        45,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "printed_label": "الشورى:40",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        42,
+        40,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p020-03"
+      ],
+      "printed_label": "الفجر:27",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        89,
+        27,
+        28
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p021-04"
+      ],
+      "printed_label": "الإنسان:30",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        76,
+        30,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p024-03"
+      ],
+      "printed_label": "القلم:4",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        68,
+        4,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p024-08"
+      ],
+      "printed_label": "الأعراف:199",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        199,
+        199
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p026-04"
+      ],
+      "printed_label": "البقرة:219",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        219,
+        219
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p027-01"
+      ],
+      "printed_label": "الفرقان:63",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        25,
+        63,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p042-03",
+        "v3-p043-01"
+      ],
+      "printed_label": "المطففين:26",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        83,
+        26,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "printed_label": "الجمعة:2",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        62,
+        2,
+        2
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "printed_label": "البقرة:151",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        151,
+        152
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p049-04"
+      ],
+      "printed_label": "البقرة:153",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        153,
+        153
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p056-02"
+      ],
+      "printed_label": "لقمان:17",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        31,
+        17,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p060-06"
+      ],
+      "printed_label": "المؤمنون:60",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        23,
+        60,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p065-02"
+      ],
+      "printed_label": "الفرقان:63",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        25,
+        63,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p065-04"
+      ],
+      "printed_label": "المائدة:54",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        54,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p066-03"
+      ],
+      "printed_label": "الفتح:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        48,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "printed_label": "آية:76",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        40,
+        76,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "printed_label": "آية:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "printed_label": "الزمر:60",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        39,
+        60,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-05"
+      ],
+      "printed_label": "غافر:35",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        40,
+        35,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p074-07",
+        "v3-p075-01"
+      ],
+      "printed_label": "النساء:48",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        48,
+        48
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "printed_label": "الكهف:13",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        13,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "printed_label": "الأنبياء:60",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        21,
+        60,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "printed_label": "يوسف:36",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        36,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "printed_label": "يوسف:62",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        62,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p096-02"
+      ],
+      "printed_label": "الشورى:30",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        42,
+        30,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p097-04"
+      ],
+      "printed_label": "إبراهيم:10",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        14,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p098-03"
+      ],
+      "printed_label": "البقرة:189",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        189,
+        189
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p103-02"
+      ],
+      "printed_label": "إبراهيم:10",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        14,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-04"
+      ],
+      "printed_label": "الأعراف:155",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        155,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-05"
+      ],
+      "printed_label": "الأعراف:155",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        155,
+        155
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "printed_label": "الأنعام:53",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        53,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "printed_label": "الجنّ:16",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        72,
+        16,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "printed_label": "الأنعام:52",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        52,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "printed_label": "الليل:19",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        92,
+        19,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "printed_label": "الأحزاب:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        33,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p125-05"
+      ],
+      "printed_label": "هود:120",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        11,
+        120,
+        120
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "printed_label": "طه:61",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        61,
+        61
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "printed_label": "الشعراء:227",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        26,
+        227,
+        227
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p132-04"
+      ],
+      "printed_label": "الإسراء:84",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        84,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p140-02"
+      ],
+      "printed_label": "التّحريم:6",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        66,
+        6,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "printed_label": "المائدة:116",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        116,
+        116
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "printed_label": "النساء:12",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        12,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "printed_label": "النساء:149",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        149,
+        149
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-03"
+      ],
+      "printed_label": "الشعراء:78",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        26,
+        78,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "printed_label": "الكهف:79",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        79,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "printed_label": "الكهف:82",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        82,
+        82
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-01"
+      ],
+      "printed_label": "الجنّ:10",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        72,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-02"
+      ],
+      "printed_label": "القصص:24",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-03"
+      ],
+      "printed_label": "الأعراف:23",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        23,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-04"
+      ],
+      "printed_label": "الأنبياء:83",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        21,
+        83,
+        83
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "printed_label": "يوسف:100",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        100,
+        100
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p149-05",
+        "v3-p150-01"
+      ],
+      "printed_label": "الشّمس:7",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        91,
+        7,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p150-03"
+      ],
+      "printed_label": "النّجم:17",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        53,
+        17,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p151-02"
+      ],
+      "printed_label": "النّجم:11",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        53,
+        11,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p152-05",
+        "v3-p153-01"
+      ],
+      "printed_label": "يس:1",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        36,
+        1,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p153-04"
+      ],
+      "printed_label": "الأعراف:31",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        31,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p155-04",
+        "v3-p156-01"
+      ],
+      "printed_label": "المعارج:23",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        70,
+        23,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p156-02"
+      ],
+      "printed_label": "المعارج:34",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        70,
+        34,
+        34
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p158-04"
+      ],
+      "printed_label": "المؤمنون:٦٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        23,
+        63,
+        74
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p159-02"
+      ],
+      "printed_label": "الحجرات:١",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        49,
+        1,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-03"
+      ],
+      "printed_label": "النور:٦٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        63,
+        63
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "printed_label": "النور:٦٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        62,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "printed_label": "النحل:٤٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        43,
+        43
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-02"
+      ],
+      "printed_label": "السجدة:٢٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        32,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-03"
+      ],
+      "printed_label": "الذاريات:٢٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        51,
+        20,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-04"
+      ],
+      "printed_label": "البقرة:٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p170-05"
+      ],
+      "printed_label": "الجاثية:٣٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        45,
+        32,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "printed_label": "النمل:٧٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        27,
+        79,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "printed_label": "إبراهيم:١٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        14,
+        12,
+        12
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p184-03"
+      ],
+      "printed_label": "البقرة:١٨٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        186,
+        186
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "printed_label": "النحل:٧٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        78,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "printed_label": "الأحقاف:٢٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        46,
+        26,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "printed_label": "الأعراف:١٧٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        179,
+        179
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "printed_label": "البقرة:١٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        18,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "printed_label": "الحج:٤٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        22,
+        46,
+        46
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "printed_label": "الفرقان:٤٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        25,
+        44,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "printed_label": "الملك:١٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        67,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p189-02"
+      ],
+      "printed_label": "الأعراف:١٩٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        198,
+        198
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-02"
+      ],
+      "printed_label": "الواقعة:٧٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        56,
+        79,
+        79
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-05"
+      ],
+      "printed_label": "البقرة:٢٢٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        222,
+        222
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p198-07",
+        "v3-p199-01"
+      ],
+      "printed_label": "الشعراء:٢١٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        26,
+        210,
+        211
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p199-02"
+      ],
+      "printed_label": "عبس:١٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        80,
+        12,
+        16
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p203-02"
+      ],
+      "printed_label": "النمل:٨٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        27,
+        88,
+        88
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p203-03"
+      ],
+      "printed_label": "الكهف:١٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        18,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "printed_label": "الأحزاب:٤١",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        33,
+        41,
+        43
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "printed_label": "الأعراف:٢٠٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        205,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "printed_label": "الأعراف:٢٠٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        205,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "printed_label": "الحشر:١٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        59,
+        19,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-07"
+      ],
+      "printed_label": "الجمعة:١٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        62,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p210-08"
+      ],
+      "printed_label": "الأحزاب:٣٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        33,
+        35,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-01"
+      ],
+      "printed_label": "المنافقون:٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        63,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-02"
+      ],
+      "printed_label": "البقرة:١٥٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        152,
+        152
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p211-03"
+      ],
+      "printed_label": "العنكبوت:٤٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        29,
+        45,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-02"
+      ],
+      "printed_label": "البقرة:١٨٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        185,
+        185
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-03"
+      ],
+      "printed_label": "البقرة:٢٠٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        200,
+        200
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-04"
+      ],
+      "printed_label": "النساء:١٠٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        103,
+        103
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-05"
+      ],
+      "printed_label": "الجمعة:١٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        62,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-07"
+      ],
+      "printed_label": "آل عمران:١٩٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        190,
+        191
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p212-08",
+        "v3-p213-01"
+      ],
+      "printed_label": "طه:١٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        14,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p213-02"
+      ],
+      "printed_label": "الأنفال:٤٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        8,
+        45,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p219-05",
+        "v3-p220-01"
+      ],
+      "printed_label": "الكهف:٢٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p223-02"
+      ],
+      "printed_label": "البقرة:١٥٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        152,
+        152
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p224-05"
+      ],
+      "printed_label": "الأعراف:٢٠٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        205,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p225-03"
+      ],
+      "printed_label": "الأعراف:٢٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        23,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p231-04"
+      ],
+      "printed_label": "البقرة:٢٧٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        273,
+        273
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p232-03"
+      ],
+      "printed_label": "فاطر:١٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        35,
+        15,
+        15
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p234-05"
+      ],
+      "printed_label": "الضحى:٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        93,
+        8,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p237-04"
+      ],
+      "printed_label": "الحجرات:١٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        49,
+        13,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p237-05"
+      ],
+      "printed_label": "الفجر:١٥",
+      "status": "abbreviated_printed_reference",
+      "actual_reference": [
+        89,
+        15,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p248-04"
+      ],
+      "printed_label": "الضحى:٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        93,
+        8,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "printed_label": "طه:٢٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        25,
+        25
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "printed_label": "الشرح:١",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        94,
+        1,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p254-08",
+        "v3-p255-01"
+      ],
+      "printed_label": "القصص:٨٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        86,
+        86
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p261-03",
+        "v3-p262-01"
+      ],
+      "printed_label": "الشورى:٤٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        42,
+        40,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-02"
+      ],
+      "printed_label": "النحل:١٢٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        126,
+        126
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "printed_label": "البقرة:٢٧٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        279,
+        280
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p262-05"
+      ],
+      "printed_label": "الحج:٧٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        22,
+        78,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p263-03"
+      ],
+      "printed_label": "الرحمن:٦٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        55,
+        60,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p273-04"
+      ],
+      "printed_label": "النور:٥٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        54,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p283-03"
+      ],
+      "printed_label": "طه:١١٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        114,
+        114
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-01"
+      ],
+      "printed_label": "الكهف:٦٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        65,
+        65
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "printed_label": "الإسراء:٨٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        80,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "printed_label": "الأنفال:٦٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        8,
+        62,
+        62
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "printed_label": "البقرة:٢٦٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        269,
+        269
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "printed_label": "النساء:١١٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        113,
+        113
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "printed_label": "آل عمران:٤٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        48,
+        48
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "printed_label": "النساء:١١٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        113,
+        113
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "printed_label": "البقرة:١٥١",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        151,
+        151
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p295-07"
+      ],
+      "printed_label": "النساء:٤٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        40,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p296-02"
+      ],
+      "printed_label": "الأنعام:٥٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        53,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p297-07",
+        "v3-p298-01"
+      ],
+      "printed_label": "يوسف:١٠٨",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        108,
+        108
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-03"
+      ],
+      "printed_label": "الحجر:٧٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        15,
+        75,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p300-04"
+      ],
+      "printed_label": "محمد:٣٠",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        47,
+        30,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p301-05",
+        "v3-p302-01"
+      ],
+      "printed_label": "الحجر:٧٥",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        15,
+        75,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "printed_label": "يوسف:٢١",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        21,
+        21
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "printed_label": "القصص:٢٦",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        26,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "printed_label": "القصص:٩",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p306-02"
+      ],
+      "printed_label": "الأنعام:١٢٢",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        122,
+        122
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p318-03"
+      ],
+      "printed_label": "مريم:٢٤",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        19,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p319-04"
+      ],
+      "printed_label": "نوح:١٣",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        71,
+        13,
+        13
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p320-08"
+      ],
+      "printed_label": "المائدة:٧٧",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        77,
+        77
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-04"
+      ],
+      "printed_label": "البقرة:248",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        248,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-05"
+      ],
+      "printed_label": "التوبة:25",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        25,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-06"
+      ],
+      "printed_label": "التوبة:40",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        40,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-07"
+      ],
+      "printed_label": "الفتح:4",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        48,
+        4,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p331-08"
+      ],
+      "printed_label": "الفتح:18",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        48,
+        18,
+        18
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p335-03"
+      ],
+      "printed_label": "البقرة:248",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        248,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p335-04"
+      ],
+      "printed_label": "البقرة:248",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        248,
+        248
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p342-07"
+      ],
+      "printed_label": "الحديد:16",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        57,
+        16,
+        16
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "printed_label": "الرعد:28",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        13,
+        28,
+        28
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "printed_label": "الفجر:27",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        89,
+        27,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-01"
+      ],
+      "printed_label": "الزخرف:36",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        43,
+        36,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-03"
+      ],
+      "printed_label": "طه:124",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        124,
+        124
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-04"
+      ],
+      "printed_label": "طه:125",
+      "status": "abbreviated_printed_reference",
+      "actual_reference": [
+        20,
+        125,
+        126
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p349-06",
+        "v3-p350-01"
+      ],
+      "printed_label": "الفجر:27",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        89,
+        27,
+        28
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p360-03"
+      ],
+      "printed_label": "النجم:17",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        53,
+        17,
+        17
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p367-04",
+        "v3-p368-01"
+      ],
+      "printed_label": "المائدة:54",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        54,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-02"
+      ],
+      "printed_label": "آل عمران:31",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        31,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-03"
+      ],
+      "printed_label": "المائدة:54",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        54,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-04"
+      ],
+      "printed_label": "التوبة:111",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        111,
+        111
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p368-06"
+      ],
+      "printed_label": "آل عمران:169",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        169,
+        170
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p369-02"
+      ],
+      "printed_label": "فاطر:10",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        35,
+        10,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p385-03"
+      ],
+      "printed_label": "البقرة:165",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        165,
+        165
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p385-04"
+      ],
+      "printed_label": "البقرة:165",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        165,
+        165
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p386-07"
+      ],
+      "printed_label": "الشعراء:97",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        26,
+        97,
+        98
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-01"
+      ],
+      "printed_label": "الأنعام:1",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        1,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-03"
+      ],
+      "printed_label": "آل عمران:31",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        31,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p387-05"
+      ],
+      "printed_label": "المائدة:54",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        5,
+        54,
+        54
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p388-02"
+      ],
+      "printed_label": "الفتح:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        48,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p388-06",
+        "v3-p389-01"
+      ],
+      "printed_label": "الإسراء:57",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        57,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p389-04"
+      ],
+      "printed_label": "الأنعام:52",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        52,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p389-05"
+      ],
+      "printed_label": "الإنسان:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        76,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p390-01"
+      ],
+      "printed_label": "الليل:19",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        92,
+        19,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p390-02"
+      ],
+      "printed_label": "الأحزاب:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        33,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "printed_label": "آل عمران:146",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        146,
+        146
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "printed_label": "آل عمران:134",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        134,
+        134
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "printed_label": "البقرة:222",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        222,
+        222
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "printed_label": "الصف:4",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        61,
+        4,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "printed_label": "التوبة:4",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        4,
+        4
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "printed_label": "البقرة:205",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        205,
+        205
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "printed_label": "الحديد:23",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        57,
+        23,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "printed_label": "آل عمران:57",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        57,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "printed_label": "النساء:36",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        36,
+        36
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p397-01"
+      ],
+      "printed_label": "الفرقان:65",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        25,
+        65,
+        65
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p397-06"
+      ],
+      "printed_label": "يوسف:30",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        30,
+        30
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p398-06"
+      ],
+      "printed_label": "البقرة:286",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        286,
+        286
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "printed_label": "الإسراء:1",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        1,
+        1
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "printed_label": "الجن:19",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        72,
+        19,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "printed_label": "البقرة:23",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        23,
+        23
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p401-06",
+        "v3-p402-01"
+      ],
+      "printed_label": "الصافات:104",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        37,
+        104,
+        106
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p412-04"
+      ],
+      "printed_label": "آل عمران:31",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        31,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p419-03"
+      ],
+      "printed_label": "الأعراف:33",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        33,
+        33
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p420-02"
+      ],
+      "printed_label": "الإسراء:45",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        45,
+        45
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p424-02"
+      ],
+      "printed_label": "الإسراء:44",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        44,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p425-04"
+      ],
+      "printed_label": "ص:33",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        33,
+        33
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p426-04"
+      ],
+      "printed_label": "المطففين:26",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        83,
+        26,
+        26
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "printed_label": "الحاقة:24",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        69,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "printed_label": "غافر:75",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        40,
+        75,
+        75
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p432-03"
+      ],
+      "printed_label": "العنكبوت:5",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        29,
+        5,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p433-07"
+      ],
+      "printed_label": "يوسف:101",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        101,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p436-04"
+      ],
+      "printed_label": "طه:84",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        84,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p438-03"
+      ],
+      "printed_label": "العنكبوت:5",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        29,
+        5,
+        5
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p443-09",
+        "v3-p444-01"
+      ],
+      "printed_label": "طه:84",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        84,
+        84
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p447-02"
+      ],
+      "printed_label": "الأنعام:76",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        76,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p455-04"
+      ],
+      "printed_label": "الكهف:14",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        18,
+        14,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p459-01"
+      ],
+      "printed_label": "الأحزاب:6",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        33,
+        6,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "الحج:46",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        22,
+        46,
+        46
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "المؤمنون:68",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        23,
+        68,
+        68
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "محمد:24",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        47,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "يونس:101",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        10,
+        101,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "آل عمران:191",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        191,
+        191
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "الروم:8",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        30,
+        8,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "printed_label": "النحل:44",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        44,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p466-02"
+      ],
+      "printed_label": "يوسف:31",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        31,
+        31
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p472-03"
+      ],
+      "printed_label": "الأعراف:143",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        143,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p476-05"
+      ],
+      "printed_label": "طه:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        9,
+        10
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p482-02"
+      ],
+      "printed_label": "يونس:58",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        10,
+        58,
+        58
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p482-04",
+        "v3-p483-01"
+      ],
+      "printed_label": "يوسف:55",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        12,
+        55,
+        55
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "printed_label": "الأنفال:50",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        8,
+        50,
+        50
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "printed_label": "آل عمران:106",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        106,
+        106
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "printed_label": "ص:57",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        57,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "printed_label": "النحل:112",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        112,
+        112
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p486-04"
+      ],
+      "printed_label": "ص:49",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        49,
+        49
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p486-05",
+        "v3-p487-01"
+      ],
+      "printed_label": "الأعراف:201",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        201,
+        201
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p487-02"
+      ],
+      "printed_label": "ص:49",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        49,
+        50
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "printed_label": "النور:39",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        39,
+        39
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "printed_label": "النساء:110",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        110,
+        110
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "printed_label": "الضحى:6",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        93,
+        6,
+        8
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "printed_label": "ص:44",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        44,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p490-05",
+        "v3-p491-01"
+      ],
+      "printed_label": "الحجرات:14",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        49,
+        14,
+        14
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p493-05"
+      ],
+      "printed_label": "التوبة:72",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        72,
+        72
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "printed_label": "الإنسان:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        76,
+        9,
+        9
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "printed_label": "الأنعام:52",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        52,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "printed_label": "الليل:19",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        92,
+        19,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p500-01"
+      ],
+      "printed_label": "النور:35",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        35,
+        35
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p501-03"
+      ],
+      "printed_label": "الفجر:27",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        89,
+        27,
+        28
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p503-03"
+      ],
+      "printed_label": "الأعراف:143",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        143,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p503-04"
+      ],
+      "printed_label": "الأعراف:143",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        143,
+        143
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "printed_label": "الأنبياء:101",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        21,
+        101,
+        101
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "printed_label": "الصافات:171",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        37,
+        171,
+        173
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "غافر:60",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        40,
+        60,
+        60
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "البقرة:186",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        186,
+        186
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "النساء:32",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        32,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "الفرقان:77",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        25,
+        77,
+        77
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "الأعراف:55",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        55,
+        55
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "printed_label": "الأعراف:56",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        56,
+        56
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p513-05"
+      ],
+      "printed_label": "يونس:58",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        10,
+        58,
+        58
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-05"
+      ],
+      "printed_label": "العلق:6",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        96,
+        6,
+        7
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "printed_label": "النحل:53",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        16,
+        53,
+        53
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "printed_label": "آل عمران:154",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        3,
+        154,
+        154
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "printed_label": "يونس:107",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        10,
+        107,
+        107
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "printed_label": "القصص:86",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        86,
+        86
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "printed_label": "النور:21",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        21,
+        21
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p515-03"
+      ],
+      "printed_label": "الأعراف:88",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        88,
+        89
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p516-01"
+      ],
+      "printed_label": "الأنعام:80",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        80,
+        80
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p516-02"
+      ],
+      "printed_label": "الأعراف:99",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        7,
+        99,
+        99
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "printed_label": "الأنعام:44",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        44,
+        44
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "printed_label": "القصص:76",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        76,
+        76
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "printed_label": "النساء:147",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        4,
+        147,
+        147
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "printed_label": "فاطر:34",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        35,
+        34,
+        34
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "printed_label": "الأنعام:52",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        6,
+        52,
+        52
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "printed_label": "الليل:19",
+      "status": "abbreviated_printed_reference",
+      "actual_reference": [
+        92,
+        19,
+        20
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p529-05"
+      ],
+      "printed_label": "الحج:78",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        22,
+        78,
+        78
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p540-03"
+      ],
+      "printed_label": "البقرة:9",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        2,
+        9,
+        16
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p544-03"
+      ],
+      "printed_label": "طه:40",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        20,
+        40,
+        40
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p544-07",
+        "v3-p545-01"
+      ],
+      "printed_label": "الإسراء:107",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        107,
+        108
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p548-04",
+        "v3-p549-01"
+      ],
+      "printed_label": "يونس:24",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        10,
+        24,
+        24
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p551-06"
+      ],
+      "printed_label": "القصص:29",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        29,
+        29
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p553-03"
+      ],
+      "printed_label": "الإسراء:57",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        17,
+        57,
+        57
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p555-06",
+        "v3-p556-01"
+      ],
+      "printed_label": "الشورى:49",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        42,
+        49,
+        50
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p561-02"
+      ],
+      "printed_label": "التوبة:32",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        9,
+        32,
+        32
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p566-03"
+      ],
+      "printed_label": "ص:47",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        38,
+        47,
+        47
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p569-05"
+      ],
+      "printed_label": "النور:39",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        24,
+        39,
+        39
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "printed_label": "سبأ:6",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        34,
+        6,
+        6
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "printed_label": "الرعد:19",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        13,
+        19,
+        19
+      ]
+    },
+    {
+      "source_ids": [
+        "v3-p582-05"
+      ],
+      "printed_label": "القصص:65",
+      "status": "matched_printed_range",
+      "actual_reference": [
+        28,
+        65,
+        65
+      ]
+    }
+  ],
+  "russian_references": [
+    {
+      "source_ids": [
+        "v3-p003-02"
+      ],
+      "reference": "59:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p004-04"
+      ],
+      "reference": "59:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "reference": "5:45",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p011-01"
+      ],
+      "reference": "42:40",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p020-03"
+      ],
+      "reference": "89:27–28",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p021-04"
+      ],
+      "reference": "76:30–31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p024-03"
+      ],
+      "reference": "68:4",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p024-08"
+      ],
+      "reference": "7:199",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p026-04"
+      ],
+      "reference": "2:219",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p027-01"
+      ],
+      "reference": "25:63",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p042-03",
+        "v3-p043-01"
+      ],
+      "reference": "83:26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "reference": "62:2",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "reference": "2:151–152",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p049-04"
+      ],
+      "reference": "2:153",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p056-02"
+      ],
+      "reference": "31:17",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p060-06"
+      ],
+      "reference": "23:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p065-02"
+      ],
+      "reference": "25:63",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p065-04"
+      ],
+      "reference": "5:54",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p066-03"
+      ],
+      "reference": "48:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "reference": "40:76",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "reference": "16:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "reference": "39:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p074-05"
+      ],
+      "reference": "40:35",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p074-07",
+        "v3-p075-01"
+      ],
+      "reference": "4:48",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "reference": "18:13",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "reference": "21:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "reference": "12:36",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "reference": "12:62",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p096-02"
+      ],
+      "reference": "42:30",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p097-04"
+      ],
+      "reference": "14:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p098-03"
+      ],
+      "reference": "2:189",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p103-02"
+      ],
+      "reference": "14:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p108-04"
+      ],
+      "reference": "7:155",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p108-05"
+      ],
+      "reference": "7:155",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "reference": "6:53",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p108-06",
+        "v3-p109-01"
+      ],
+      "reference": "72:16–17",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "reference": "6:52",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "reference": "92:19–20",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "reference": "33:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p125-05"
+      ],
+      "reference": "11:120",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "reference": "20:61",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "reference": "26:227",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p132-04"
+      ],
+      "reference": "17:84",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p140-02"
+      ],
+      "reference": "66:6",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p145-02"
+      ],
+      "reference": "5:116",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "reference": "4:12",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p147-02"
+      ],
+      "reference": "4:149",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p147-03"
+      ],
+      "reference": "26:78–80",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "reference": "18:79",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p147-04"
+      ],
+      "reference": "18:82",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p148-01"
+      ],
+      "reference": "72:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p148-02"
+      ],
+      "reference": "28:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p148-03"
+      ],
+      "reference": "7:23",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p148-04"
+      ],
+      "reference": "21:83",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "reference": "12:100",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p149-05",
+        "v3-p150-01"
+      ],
+      "reference": "91:7–10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p150-03"
+      ],
+      "reference": "53:17",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p151-02"
+      ],
+      "reference": "53:11–12",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p152-05",
+        "v3-p153-01"
+      ],
+      "reference": "36:1–4",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p153-04"
+      ],
+      "reference": "7:31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p155-04",
+        "v3-p156-01"
+      ],
+      "reference": "70:23",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p156-02"
+      ],
+      "reference": "70:34",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p158-04"
+      ],
+      "reference": "23:63–74",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p159-02"
+      ],
+      "reference": "49:1",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p160-03"
+      ],
+      "reference": "24:63",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "reference": "24:62",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p160-06",
+        "v3-p161-01"
+      ],
+      "reference": "16:43",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p170-02"
+      ],
+      "reference": "32:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p170-03"
+      ],
+      "reference": "51:20",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p170-04"
+      ],
+      "reference": "2:4–5",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p170-05"
+      ],
+      "reference": "45:32",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "reference": "27:79",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "reference": "14:12",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p184-03"
+      ],
+      "reference": "2:186",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "reference": "16:78",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "reference": "46:26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "reference": "7:179",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "reference": "2:18",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p187-02"
+      ],
+      "reference": "22:46",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "reference": "25:44",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p188-05",
+        "v3-p189-01"
+      ],
+      "reference": "67:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p189-02"
+      ],
+      "reference": "7:198",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p198-02"
+      ],
+      "reference": "56:79",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p198-05"
+      ],
+      "reference": "2:222",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p198-07",
+        "v3-p199-01"
+      ],
+      "reference": "26:210–211",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p199-02"
+      ],
+      "reference": "80:12–16",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p203-02"
+      ],
+      "reference": "27:88",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p203-03"
+      ],
+      "reference": "18:18",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "reference": "33:41–43",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "reference": "7:205",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "reference": "7:205",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "reference": "59:19",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-07"
+      ],
+      "reference": "62:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p210-08"
+      ],
+      "reference": "33:35",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p211-01"
+      ],
+      "reference": "63:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p211-02"
+      ],
+      "reference": "2:152",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p211-03"
+      ],
+      "reference": "29:45",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-02"
+      ],
+      "reference": "2:185",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-03"
+      ],
+      "reference": "2:200",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-04"
+      ],
+      "reference": "4:103",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-05"
+      ],
+      "reference": "62:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-07"
+      ],
+      "reference": "3:190–191",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p212-08",
+        "v3-p213-01"
+      ],
+      "reference": "20:14",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p213-02"
+      ],
+      "reference": "8:45",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p219-05",
+        "v3-p220-01"
+      ],
+      "reference": "18:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p223-02"
+      ],
+      "reference": "2:152",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p224-05"
+      ],
+      "reference": "7:205",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p225-03"
+      ],
+      "reference": "7:23",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p231-04"
+      ],
+      "reference": "2:273",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p232-02"
+      ],
+      "reference": "9:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p232-03"
+      ],
+      "reference": "35:15",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p234-05"
+      ],
+      "reference": "93:8",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p237-04"
+      ],
+      "reference": "49:13",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p237-05"
+      ],
+      "reference": "89:15–17",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p248-04"
+      ],
+      "reference": "93:8",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "reference": "20:25",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p254-05"
+      ],
+      "reference": "94:1",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p254-08",
+        "v3-p255-01"
+      ],
+      "reference": "28:86",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p261-03",
+        "v3-p262-01"
+      ],
+      "reference": "42:40",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p262-02"
+      ],
+      "reference": "16:126",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "reference": "2:279–280",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p262-05"
+      ],
+      "reference": "22:78",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p263-03"
+      ],
+      "reference": "55:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p273-04"
+      ],
+      "reference": "24:54",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p283-03"
+      ],
+      "reference": "20:114",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p289-01"
+      ],
+      "reference": "18:65",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "reference": "17:80",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "reference": "8:62",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "reference": "2:269",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "reference": "4:113",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "reference": "3:48",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "reference": "4:113",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p295-01"
+      ],
+      "reference": "2:151",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p295-07"
+      ],
+      "reference": "4:40",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p296-02"
+      ],
+      "reference": "6:53",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p297-07",
+        "v3-p298-01"
+      ],
+      "reference": "12:108",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p300-03"
+      ],
+      "reference": "15:75",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p300-04"
+      ],
+      "reference": "47:30",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p301-05",
+        "v3-p302-01"
+      ],
+      "reference": "15:75",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "reference": "12:21",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "reference": "28:26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p304-05"
+      ],
+      "reference": "28:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p306-02"
+      ],
+      "reference": "6:122",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p318-03"
+      ],
+      "reference": "19:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p319-04"
+      ],
+      "reference": "71:13",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p320-08"
+      ],
+      "reference": "5:77",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p331-04"
+      ],
+      "reference": "2:248",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p331-05"
+      ],
+      "reference": "9:25–26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p331-06"
+      ],
+      "reference": "9:40",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p331-07"
+      ],
+      "reference": "48:4",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p331-08"
+      ],
+      "reference": "48:18",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p332-01"
+      ],
+      "reference": "48:26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p335-03"
+      ],
+      "reference": "2:248",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p335-04"
+      ],
+      "reference": "2:248",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p342-07"
+      ],
+      "reference": "57:16",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "reference": "13:28",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "reference": "89:27–30",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p349-01"
+      ],
+      "reference": "43:36",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p349-03"
+      ],
+      "reference": "20:124",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p349-04"
+      ],
+      "reference": "20:125–126",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p349-06",
+        "v3-p350-01"
+      ],
+      "reference": "89:27–28",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p360-03"
+      ],
+      "reference": "53:17",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p367-04",
+        "v3-p368-01"
+      ],
+      "reference": "5:54",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p368-02"
+      ],
+      "reference": "3:31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p368-03"
+      ],
+      "reference": "5:54",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p368-04"
+      ],
+      "reference": "9:111",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p368-06"
+      ],
+      "reference": "3:169–170",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p369-02"
+      ],
+      "reference": "35:10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p385-03"
+      ],
+      "reference": "2:165",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p385-04"
+      ],
+      "reference": "2:165",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p386-07"
+      ],
+      "reference": "26:97–98",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p387-01"
+      ],
+      "reference": "6:1",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p387-03"
+      ],
+      "reference": "3:31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p387-05"
+      ],
+      "reference": "5:54",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p388-02"
+      ],
+      "reference": "48:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p388-06",
+        "v3-p389-01"
+      ],
+      "reference": "17:57",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p389-04"
+      ],
+      "reference": "6:52",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p389-05"
+      ],
+      "reference": "76:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p390-01"
+      ],
+      "reference": "92:19–20",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p390-02"
+      ],
+      "reference": "33:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p392-02"
+      ],
+      "reference": "112:1",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "reference": "3:146",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "reference": "3:134",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "reference": "2:222",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "reference": "61:4",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "reference": "9:4",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "reference": "2:205",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "reference": "57:23",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "reference": "3:57",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "reference": "4:36",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p397-01"
+      ],
+      "reference": "25:65",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p397-06"
+      ],
+      "reference": "12:30",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p398-06"
+      ],
+      "reference": "2:286",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "reference": "17:1",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "reference": "72:19",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "reference": "2:23",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p401-06",
+        "v3-p402-01"
+      ],
+      "reference": "37:104–106",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p412-04"
+      ],
+      "reference": "3:31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p419-03"
+      ],
+      "reference": "7:33",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p420-02"
+      ],
+      "reference": "17:45",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p424-02"
+      ],
+      "reference": "17:44",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p425-04"
+      ],
+      "reference": "38:33",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p426-04"
+      ],
+      "reference": "83:26",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "reference": "69:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p430-03"
+      ],
+      "reference": "40:75",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p432-03"
+      ],
+      "reference": "29:5",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p433-07"
+      ],
+      "reference": "12:101",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p436-04"
+      ],
+      "reference": "20:84",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p438-03"
+      ],
+      "reference": "29:5",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p443-09",
+        "v3-p444-01"
+      ],
+      "reference": "20:84",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p447-02"
+      ],
+      "reference": "6:76",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p455-04"
+      ],
+      "reference": "18:14",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p458-05"
+      ],
+      "reference": "33:6",
+      "status": "documented_historical_reading_not_Hafs_text"
+    },
+    {
+      "source_ids": [
+        "v3-p459-01"
+      ],
+      "reference": "33:6",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "22:46",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "23:68",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "47:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "10:101",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "3:191",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "30:8",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "reference": "16:44",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p466-02"
+      ],
+      "reference": "12:31",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p472-03"
+      ],
+      "reference": "7:143",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p476-05"
+      ],
+      "reference": "20:9–10",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p482-02"
+      ],
+      "reference": "10:58",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p482-04",
+        "v3-p483-01"
+      ],
+      "reference": "12:55",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "reference": "8:50",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "reference": "3:106",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "reference": "38:57",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "reference": "16:112",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p486-04"
+      ],
+      "reference": "38:49",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p486-05",
+        "v3-p487-01"
+      ],
+      "reference": "7:201",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p487-02"
+      ],
+      "reference": "38:49–50",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "reference": "24:39",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "reference": "4:110",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "reference": "93:6–8",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "reference": "38:44",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p490-05",
+        "v3-p491-01"
+      ],
+      "reference": "49:14",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p493-05"
+      ],
+      "reference": "9:72",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "reference": "76:9",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "reference": "6:52",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "reference": "92:19–20",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p500-01"
+      ],
+      "reference": "24:35",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p501-03"
+      ],
+      "reference": "89:27–28",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p503-03"
+      ],
+      "reference": "7:143",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p503-04"
+      ],
+      "reference": "7:143",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "reference": "21:101",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p506-02"
+      ],
+      "reference": "37:171–173",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "40:60",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "2:186",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "4:32",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "25:77",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "7:55",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "reference": "7:56",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p513-05"
+      ],
+      "reference": "10:58",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-05"
+      ],
+      "reference": "96:6–7",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "reference": "16:53",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "reference": "3:154",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "reference": "10:107",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "reference": "28:86",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p514-06",
+        "v3-p515-01"
+      ],
+      "reference": "24:21",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p515-03"
+      ],
+      "reference": "7:88–89",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p516-01"
+      ],
+      "reference": "6:80",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p516-02"
+      ],
+      "reference": "7:99",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "reference": "6:44",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p517-03"
+      ],
+      "reference": "28:76",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "reference": "4:147",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p518-03",
+        "v3-p519-01"
+      ],
+      "reference": "35:34",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "reference": "6:52",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "reference": "92:19–20",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p529-05"
+      ],
+      "reference": "22:78",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p540-03"
+      ],
+      "reference": "2:9–16",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p544-03"
+      ],
+      "reference": "20:40",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p544-07",
+        "v3-p545-01"
+      ],
+      "reference": "17:107–108",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p548-04",
+        "v3-p549-01"
+      ],
+      "reference": "10:24",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p551-06"
+      ],
+      "reference": "28:29",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p553-03"
+      ],
+      "reference": "17:57",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p555-06",
+        "v3-p556-01"
+      ],
+      "reference": "42:49–50",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p561-02"
+      ],
+      "reference": "9:32",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p566-03"
+      ],
+      "reference": "38:47",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p569-05"
+      ],
+      "reference": "24:39",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "reference": "34:6",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "reference": "13:19",
+      "status": "matches_quoted_text"
+    },
+    {
+      "source_ids": [
+        "v3-p582-05"
+      ],
+      "reference": "28:65",
+      "status": "matches_quoted_text"
+    }
+  ],
+  "independent_human_review": false
+}

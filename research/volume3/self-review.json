@@ -863,7 +863,7 @@
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "Non-Hafs Quran reading retained from control print; variant attested in Ibn Khalawayh Hujja fi al-qiraat al-sab, compared as a digital primary scholarly text; same-agent review only."
     },
     "v3-p021-05": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -1003,7 +1003,7 @@
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "Targeted same-agent lookup in Sahih Muslim 746 confirms the report but identifies Sad ibn Hisham ibn Amir, not the printed name; separate own note added. Full Bukhari attribution not confirmed."
     },
     "v3-p024-08": {
       "sha256": "554ae72731e9f585530a450acba846029e412e39b1a998e2499a88fb0752f727",
@@ -3903,7 +3903,7 @@
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "Non-Hafs Quran reading retained from control print; variant attested in Ibn Khalawayh Hujja fi al-qiraat al-sab, compared as a digital primary scholarly text; same-agent review only."
     },
     "v3-p087-02": {
       "sha256": "4a88a85bcde8a95ce0be1dca727e8bbdf18b5c9eabfd0f97412f47de138514d1",
@@ -6490,14 +6490,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p132-04": {
-      "sha256": "e56815d80d2cd8034590b96533453e9b885f3152528dbde9ed55fa21cc44f949",
+      "sha256": "16bd17933b452c34ea02e84fef31fd88c4575fdde9780ae3f13813f3211f2cc8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan and Quran 17:84 confirm قل كل, not erroneous فكل. Imperative restored in Arabic and Russian. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p132-05+v3-p133-01": {
       "sha256": "8ed1994808fb292667b6ca62e14c66706e5983633dba6118a358d554859978cf",
@@ -7810,14 +7811,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p158-04": {
-      "sha256": "1df1ff0578ce627492c28b23a2e8dac438e7f2b640cef86252df8f850a6cde67",
+      "sha256": "bc2aa89074f302f9d29ff4532965e7a3d4d77803ed59f5a9aca289cf11cddb3d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan confirms omitted coordinating و before أن. Russian negative scope clarified; ironic first-person opponent voice explicitly framed. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p158-05+v3-p159-01": {
       "sha256": "194f71e12564c75b3e5abd868664254f4ecfaeb1d441247b54193dc3c69a9514",
@@ -8980,24 +8982,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p181-01": {
-      "sha256": "d5176671d918a9b56ffd7169f37fc27f5458423ee23c521bb7fc31711c74c39f",
+      "sha256": "346b6773009c2f7d9862db3a338765ceb11779184c7a414f4a3fce3ca53b2a1e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p181-02": {
-      "sha256": "4f279da3b529ba6986c863b1e14b9d1bf60952601ad266f6aea03ec72ab65ce4",
+      "sha256": "c470b67ee355aff9c1824d2b99e9f291870d58629f09fa6068209a768977d10e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p181-03": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -9992,24 +9996,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p201-05": {
-      "sha256": "95d57e278b79cb007b9d37f8ab48127c261cde564ec527cda92d6eb648654bc3",
+      "sha256": "89e795b6d95fbc5c98a222538a1f2cd61914d845d85b19e53a960ff6cb50db8b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p201-06+v3-p202-01": {
-      "sha256": "505dbde66b670caf077e904fdbb5351e3168e248aea89142ca9c4ff089b5ae8d",
+      "sha256": "9d6c64d5c576f1bf639ec5fd10c3138629b67594a6dde7fcd7c6e37de61be0d7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p202-02": {
       "sha256": "441f5eb771dae0b2bda122f535920e554cf57aa5e227aaa16a306d0eedc4a58a",
@@ -10132,24 +10138,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p203-05": {
-      "sha256": "d9230bdbb00b3eb93a8bbbc55ffd192b24ddc9607a02816d8b993cf5e4c75248",
+      "sha256": "11b4594cedbda31e73cb97e44c538dd728b8cf38dd2fee60efd4d9392eb868fb",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p203-06": {
-      "sha256": "8e150f5a8f2650ec6ff7cdcbbd17b293ae7b4317e5def4d0b6ab3ce8be85439f",
+      "sha256": "e7c45ab7014ac650829f0b12ca9c08b0f3d962a285d9dc29b2ea6e291ea8cf5e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p203-07": {
       "sha256": "239fb892d35f7071822a44b25e727b7e06f0df12a22c6cd7ce800f130de8319e",
@@ -12332,24 +12340,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p242-02": {
-      "sha256": "2421f00ab1659459416cf3865bca339c040f7c512c36436bccfe5446d1659b4d",
+      "sha256": "20da94b76689a9622919e2984751f70dcee25e2298182560c0db671786b57f67",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p242-03": {
-      "sha256": "972fe8f326b851193f2226625cdb61153310ae695906c9f7385b4bc8f583d6f2",
+      "sha256": "2c7d077250f767064d9b88e183849e9e2a2f6364621b3bb117a6b191f5a9da48",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p242-04": {
       "sha256": "ea01ee05594af90dcbd10dd59f5f9643e5a2bb09273de1980078a4c377f5a39c",
@@ -13003,24 +13013,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p252-05": {
-      "sha256": "061f8540f5c9e5a3538fc08c65ef65139418f4c5e314e28d9d5042ce192248d0",
+      "sha256": "76c09c8ea3e5923661aeea7242c509d032f6388cc97732a44016a8791f6f66d2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p252-06": {
-      "sha256": "dc544ef809c934fc1fd0c80ff2992d3755d47eba0eacab0f678b585f7b972219",
+      "sha256": "b5ee44fa04d820de7272eb18bf801ec88024fc4694e3c78e2fbdabbfe0fadd47",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p252-07+v3-p253-01": {
       "sha256": "b22765cc86b3a04c8847143800d9eb736c74c279be6b574a37a548357799e80e",

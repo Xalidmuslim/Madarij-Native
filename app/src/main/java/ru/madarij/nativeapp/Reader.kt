@@ -204,8 +204,11 @@ fun Reader(
             exactTargetSettled = true
         }
     }
-    val searchTargetAvailable = query.isNotBlank() && anchor != null &&
-        visible.any { it.id == anchor }
+    val searchTargetAvailable = remember(query, anchor, visible, displayRussian) {
+        query.isNotBlank() && anchor != null && visible.firstOrNull { it.id == anchor }?.let {
+            readerSearchTargetExists(query, it.ar, displayRussian[it.id].orEmpty())
+        } == true
+    }
     val readerSettled = ready &&
         when {
             searchTargetAvailable -> matchRevealed
