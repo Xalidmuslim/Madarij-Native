@@ -1096,14 +1096,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p026-02": {
-      "sha256": "ef3ab45412de68f8cd0c7df8cb61cc12d21836d34cfcf94ea3a2c380b7ed3a67",
+      "sha256": "042411d26a49057f4c7be14691ea1e666d20dd359a6554ffaabc43add51109cd",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control p.26 has sentence stop after لنفسه; removed accidental duplicated comma before full stop. No change to Quran 2:219 or its established boundaries. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p026-03": {
       "sha256": "f9e24acdf98b0900b90dfc56540f7fab398b5a7ae82a0c3d7c2fd70cfc767fae",
@@ -19376,14 +19377,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p365-03": {
-      "sha256": "9cec67d2437afcddb3dd483bf709d528bc87a2b3c1f818a282385b8b8920c2f5",
+      "sha256": "1faecec5c6122263525a1b0b75ee8548cd585987ad926dac05020860ac5bf2a0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "7x control p.365 explicitly includes وإليها شخص العاملون وإلى علمها: restored omitted author clause and the image of the banner; all parallel clauses and their order retained. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p365-04": {
       "sha256": "627a4e64dbca447f12e6c0b80caa3db51b7f63ea894b690df89c51d4d9366098",

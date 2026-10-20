@@ -36,6 +36,21 @@
       "location": "Commentary on Quran 33:6",
       "author_text_excerpt": "وقد روي عن أبي بن كعب، وابن عباس أنهما قرآ: النبي أولى بالمؤمنين من أنفسهم وأزواجه أمهاتهم وهو أب لهم",
       "finding": "Historical attributed reading reported in classical tafsir; extra words absent from the Hafs text checked in Tanzil. Not recast as the canonical Hafs verse and no independent isnad grading asserted."
+    },
+    {
+      "source_ids": [
+        "v3-p044-05",
+        "v3-p045-01"
+      ],
+      "primary_path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.KalamCalaMasalatSamac/0751IbnQayyimJawziyya.KalamCalaMasalatSamac.Sham19Y0018318-ara1",
+      "blob": "4b3d7e071c0b70edc46518a7854da3604b1e274c",
+      "location": "Author body around digital PageV01P185–186 and PageV01P216–219. Modern editorial headings/footnotes excluded. Secondary printed pagination not visually verified.",
+      "author_text_excerpt": "سماع الأغاني المطربة من الشاهد المليح ... حضور الشاهد المليح والأصوات المطربة",
+      "finding": "The author himself joins الشاهد المليح with singing and attractive visible forms in the same listening context. This supports the contextual Russian певец-красавец on control p.45 (بنغمات الشاهد); the general equivalent witness is inappropriate here. No claim that this equivalent applies to every use of شاهد.",
+      "additional_primary_path": "data/0728IbnTaymiyya/0728IbnTaymiyya.MajmucFatawa/0728IbnTaymiyya.MajmucFatawa.Shamela0007289-ara1",
+      "additional_primary_blob": "a5cc08d4e11bcccc26cd8c8b027658a2357b5815",
+      "additional_location": "Digital PageV14P467–468: معاشرة الشاهد من الصبيان وغيرهم وسماع الأصوات والنغمات",
+      "method": "Same-agent contextual reading of freely available classical Arabic digital sources; not independent human review or a visual collation of those other editions."
     }
   ]
 }
