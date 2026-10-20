@@ -363,7 +363,7 @@ fun Reader(
                 ) {
                     ReaderControl("‹") { onBack() }
                     Column(Modifier.weight(1f).clickable { chapterPanel = true },horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("Том ${chapter.volume}",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
+                        Text("Том ${chapter.volume}" + if (chapter.volume == 3) " · черновик" else "",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
                         // Full editorial title belongs in the frontispiece / chapter
                         // contents. In this compact toolbar its ellipsis looked like
                         // a broken text transfer during scrolling.

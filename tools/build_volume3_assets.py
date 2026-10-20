@@ -58,6 +58,12 @@ def build():
     reviews = json.loads((DATA / "self-review.json").read_text())["paragraphs"]
     units = translation["paragraphs"]
     index = {ref: i for i, u in enumerate(units) for ref in u["source_ids"]}
+    introductions = set()
+    for u in units:
+        plain = re.sub("[\u064b-\u065f\u0670]", "", u["ar"])
+        if re.match(r"(?:ومن منازل .*?: منزلة |ومنها[: ]+منزلة |ومن ذلك: منزلة |ومنها الوقت\.)", plain):
+            introductions.add(u["source_ids"][0])
+    assert introductions == {ref for ref, _, _ in CHAPTERS}, "Unmapped or missing author chapter introduction"
     boundaries = []
     for ref, slug, title in CHAPTERS:
         pos = index[ref]

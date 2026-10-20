@@ -9571,14 +9571,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p193-03": {
-      "sha256": "950f20b9322086959af734382fecef7338d9efb184a9110267f4e6b17d4d68ea",
+      "sha256": "a9c7e4cf9d315ebede055f719e211c63d5d61da1df2c69d056c2aea3c8e86d78",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan reads لا محالة من, not invented لإحالة. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p193-04+v3-p194-01": {
       "sha256": "6f206f216ed92fabde5997bbab0b85b4907f1914d74614eb051ea664811e756f",
@@ -12431,14 +12432,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p244-02": {
-      "sha256": "803610a7aad1b9e59861480409b7f704fce4880db25d5dc81a96ba2a04075916",
+      "sha256": "f5728f015e23db971880e3eb091557dfabcfe35fb28257214bec13c944d5665f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan confirms وليست; Russian sense unchanged. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p244-03": {
       "sha256": "92bd8f2078b477976eaa2d3f829c7085572b261f6a434f9903613572ad767f42",
@@ -14842,14 +14844,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p286-04": {
-      "sha256": "babac692e7cd6ea7ee9a32e241a7f20b28af8300f4f994abbc8ab4fe7ac43d62",
+      "sha256": "311b2e684d35e29add732c284e10ee11e7af6330caec777f2edee6ca53a2ac3e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan confirms omitted ما after أشرف; Russian already conveyed the superlative correctly. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p286-05": {
       "sha256": "762a9c07c034eb51b3111d9bb8415bd0d934a828601772974807c40cac6f13f2",
@@ -17032,14 +17035,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p322-06": {
-      "sha256": "1ec99e953582bc67343e4817e7952893d2c7d52c82cc9c49b249fdeb19758159",
+      "sha256": "797947ff3af8bb79547bddd57e65a30065cd6f4e015132a1576d15002f75ce08",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control scan confirms omitted أن before جعلوا. The secondary extra ما شاء is absent in the control print and has not been imported. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p322-07": {
       "sha256": "0a2aacdc2a6d13542f9886103a61caae3b5eaf271366636e061a9dbf04d6b2d2",
