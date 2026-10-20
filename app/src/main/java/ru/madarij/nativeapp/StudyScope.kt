@@ -2,7 +2,7 @@ package ru.madarij.nativeapp
 
 /**
  * A topic (chapter) selection takes precedence over the volume tab.
- * Empty topic uses the selected volume; volume 0 means both volumes.
+ * Empty topic uses the selected volume; volume 0 means all volumes.
  * This is shared by all Study tabs and remains independent of progress.
  */
 internal fun studyScopeMatches(
@@ -25,5 +25,5 @@ internal fun selectedStudyChapterAfterVolumeChange(
     newVolume: Int,
     chapterVolumes: Map<String, Int>
 ): String = selectedChapterId.takeIf {
-    it.isNotEmpty() && newVolume in 1..2 && chapterVolumes[it] == newVolume
+    it.isNotEmpty() && newVolume > 0 && chapterVolumes[it] == newVolume
 } ?: ""

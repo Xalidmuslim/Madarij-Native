@@ -13421,14 +13421,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p260-08+v3-p261-01": {
-      "sha256": "00fe73a7f54481d979c541308aab5a8d27d87a3368bc456be03eb68ee85e15e3",
+      "sha256": "9da0d5e4b4d76538de59bc6a33662ac39fb8504f4feed046d9c8172cf254c581",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed 7x crop: ما عُجِّل; no لم تؤجل. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p261-02": {
       "sha256": "2cacf0f9ba72ad55041859a36f8e98bb2dc0c78ca7ec2ea07dd44ed183c6dd49",
@@ -22806,14 +22807,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p426-02": {
-      "sha256": "d98833a31c90ac90c4c1a645530e84c3e0815acecd51d25606900b176cb933bf",
+      "sha256": "6148c090f712732a87f4b0445d5e6bb275825cb29ebe430100a911bb664f3cad",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed 7x crop confirms omitted لا. Russian already conveyed exclusive scope correctly. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p426-03": {
       "sha256": "facbeddf3d7135d9b3eef55923f7bcfadc5fdfd8712bdd0a768ac6f6ca87b997",
@@ -25707,14 +25709,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p476-10": {
-      "sha256": "4e42119601e736270951d11818a2726efacfc4122223300042ec4a466589446a",
+      "sha256": "977a455dc971fa5de05e6cd265afd66e93776d4177fb2663d3f01a4920d94089",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct control scan confirms لا سبب له; former transcription invented من أسباب. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p477-01": {
       "sha256": "8227694e86049fedaaa303b04e0d57241415c16954f28d046b0416c0ec09dda3",

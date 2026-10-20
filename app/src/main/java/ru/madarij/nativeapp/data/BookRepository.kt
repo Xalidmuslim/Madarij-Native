@@ -14,25 +14,30 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         private set
     var importedVolume2Preview: Boolean = false
         private set
+    var importedVolume3Draft: Boolean = false
+        private set
     suspend fun importCorpus(): Boolean = withContext(Dispatchers.IO) {
         val bytes = context.assets.open("corpus.json").use { it.readBytes() }
         val structureBytes = try { context.assets.open("structure.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
         val volume2Bytes = try { context.assets.open("volume2-preview.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
         val structure2Bytes = try { context.assets.open("volume2-structure.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
+        val volume3Bytes = try { context.assets.open("volume3-draft.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
+        val structure3Bytes = try { context.assets.open("volume3-structure.json").use { it.readBytes() } } catch (_: java.io.FileNotFoundException) { ByteArray(0) }
         // Fast path for subsequent launches: Room already contains the exact
         // installed corpus. Avoid reparsing thousands of JSON paragraphs and
         // rebuilding search entries only to discover that nothing changed.
         // A new APK with changed book/TOC bytes still follows full validation.
         // Incremental SHA-256 avoids copying the entire bilingual corpus into
         // an additional multi-megabyte array on every cold start.
-        val hash = shaCombined(bytes, structureBytes, volume2Bytes, structure2Bytes)
+        val hash = shaCombined(bytes, structureBytes, volume2Bytes, structure2Bytes, volume3Bytes, structure3Bytes)
         if (dao.contentVersion()?.sha256 == hash) {
-            importedDraft = true // Current two-volume bundle contains the own literary draft.
+            importedDraft = true // The bundled volumes include an own working translation.
             importedVolume2Preview = volume2Bytes.isNotEmpty()
+            importedVolume3Draft = volume3Bytes.isNotEmpty()
             return@withContext true
         }
         val titles = HashMap<String, String>()
-        for (structure in listOf(structureBytes, structure2Bytes)) {
+        for (structure in listOf(structureBytes, structure2Bytes, structure3Bytes)) {
             if (structure.isEmpty()) continue
             val groups = JSONObject(structure.toString(Charsets.UTF_8)).getJSONArray("groups")
             for (g in 0 until groups.length()) {
@@ -50,21 +55,25 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         if (chapters.length() == 0 || (!reviewed && !authorizedDraft)) return@withContext false
         val expected = root.getJSONArray("expected_chapter_ids")
         require(expected.length() == chapters.length()) { "Chapter manifest mismatch" }
-        if (volume2Bytes.isNotEmpty()) {
-            require(structure2Bytes.isNotEmpty()) { "Volume 2 navigation missing" }
-            val second = JSONObject(volume2Bytes.toString(Charsets.UTF_8))
+        for ((volume, additionalBytes, navigationBytes) in listOf(
+            Triple(2, volume2Bytes, structure2Bytes), Triple(3, volume3Bytes, structure3Bytes)
+        )) {
+            if (additionalBytes.isEmpty()) continue
+            require(navigationBytes.isNotEmpty()) { "Volume $volume navigation missing" }
+            val second = JSONObject(additionalBytes.toString(Charsets.UTF_8))
             val secondEdition = second.getJSONObject("edition")
-            require(second.getInt("volume") == 2 &&
+            require(second.getInt("volume") == volume &&
                 secondEdition.optBoolean("draft") &&
                 secondEdition.optString("author_text_rights") == "public_domain" &&
                 secondEdition.optString("translation_rights") == "own_draft_not_independently_checked" &&
-                !second.optBoolean("translation_independently_verified")) { "Volume 2 preview must remain explicitly unverified" }
+                !second.optBoolean("translation_independently_verified")) { "Volume $volume draft must remain explicitly unverified" }
+            if (volume == 3) require(!second.getBoolean("publication_ready")) { "Volume 3 is not cleared for publication" }
             val additional = second.getJSONArray("chapters")
             val secondExpected = second.getJSONArray("expected_chapter_ids")
-            require(additional.length() > 0 && additional.length() == secondExpected.length()) { "Volume 2 manifest mismatch" }
+            require(additional.length() > 0 && additional.length() == secondExpected.length()) { "Volume $volume manifest mismatch" }
             for (n in 0 until additional.length()) {
                 val c = additional.getJSONObject(n)
-                require(c.getString("id") == secondExpected.getString(n) && c.getInt("volume") == 2 && c.getInt("order") == n) { "Volume 2 chapter mismatch" }
+                require(c.getString("id") == secondExpected.getString(n) && c.getInt("volume") == volume && c.getInt("order") == n) { "Volume $volume chapter mismatch" }
                 c.put("order", chapters.length())
                 chapters.put(c)
                 expected.put(c.getString("id"))
@@ -72,6 +81,7 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         }
         importedDraft = draft
         importedVolume2Preview = volume2Bytes.isNotEmpty()
+        importedVolume3Draft = volume3Bytes.isNotEmpty()
         val chapterRows = ArrayList<Chapter>()
         val paragraphRows = ArrayList<Paragraph>()
         val indexRows = ArrayList<SearchIndex>()

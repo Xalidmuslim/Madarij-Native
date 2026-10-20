@@ -37,4 +37,15 @@ class LogicalReadingSectionsTest {
         assertEquals(2, secondVolume.single().volume)
         assertEquals("Страницы 3–10", LogicalReadingSections.pageRange(secondVolume.single().id))
     }
+    @Test fun thirdVolumeAuthorChaptersDoNotMergeWithEachOtherOrEarlierVolumes() {
+        val earlier = Chapter("madarij-v2-p621-p659-translation-preview", 2, 98, "Конец тома 2", "")
+        val third = listOf(
+            Chapter("madarij-v3-p003-ithar", 3, 99, "Предпочтение других себе", ""),
+            Chapter("madarij-v3-p024-khuluq", 3, 100, "Добрый нрав", "")
+        )
+        val chapters = listOf(earlier) + third
+        assertEquals(chapters, LogicalReadingSections.roots(chapters))
+        assertEquals(listOf(earlier), LogicalReadingSections.members(chapters, earlier.id))
+        third.forEach { assertEquals(listOf(it), LogicalReadingSections.members(chapters, it.id)) }
+    }
 }

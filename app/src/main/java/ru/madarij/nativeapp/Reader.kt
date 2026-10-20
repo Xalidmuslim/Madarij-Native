@@ -296,7 +296,11 @@ fun Reader(
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
     fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + (if (settings.showArabic && p.ar.isNotBlank()) p.ar + "\n\n" else "") + p.ru
     fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\n" +
-        (if (chapter.volume == 2) "Литературная сверка завершена · научная проверка источников не завершена" else "Литературная сверка завершена · проверка источников отдельно") +
+        (when (chapter.volume) {
+            3 -> "Рабочий перевод · самопроверка ИИ · независимая редактура не выполнена; неясность на с. 110"
+            2 -> "Литературная сверка завершена · научная проверка источников не завершена"
+            else -> "Литературная сверка завершена · проверка источников отдельно"
+        }) +
         "\n\n" + paragraphs.joinToString("\n\n") { textFor(it) }
     fun copy(text: String) { (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText(chapter.title, text)); message = "Текст скопирован" }
     fun share(text: String) { context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_SUBJECT, chapter.title); putExtra(Intent.EXTRA_TEXT, text) }, "Поделиться текстом")) }
@@ -431,8 +435,16 @@ fun Reader(
                 Column(Modifier.fillMaxWidth()) {
                     ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
                         readerTitle,
-                        LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
+                        if (chapter.volume == 3) chapterStructure?.subtitle else LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
                         pageFragment = chapter.volume == 2)
+                    if (chapter.volume == 3) {
+                        Text(
+                            "Рабочий перевод по PDF 2019 года. Выполнена самопроверка ИИ; независимая редактура не выполнена. Неясность на с. 110 и разночтения отмечены в пояснениях.",
+                            Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                     if (chapter.volume == 2) {
                         val isContinuation = paragraphs.firstOrNull {
                             it.role !in listOf("editor_note", "edition_note")
@@ -865,7 +877,7 @@ fun Reader(
         }
     }
     if (panel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.onSurface, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
-    selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
+    selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { if (chapter.volume == 3) Text(p.source.substringBefore("; v3-"), style = MaterialTheme.typography.bodySmall); TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
     if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(paragraphs.firstOrNull { it.id == noteAnchor }?.chapterId ?: sectionId, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
     if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(paragraphs.firstOrNull { it.id == bookmarkAnchor }?.chapterId ?: sectionId, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
     if (sourceDialog) AlertDialog(onDismissRequest = { sourceDialog = false }, title = { Text("Источник раздела") }, text = { SelectionContainer { Text(chapter.source.ifBlank { "Источник требует редакционной сверки." }) } }, confirmButton = { TextButton(onClick = { sourceDialog = false }) { Text("Закрыть") } })

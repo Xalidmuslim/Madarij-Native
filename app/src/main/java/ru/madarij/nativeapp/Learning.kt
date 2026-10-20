@@ -186,7 +186,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                             chapterId.isNotBlank() -> "выбранная тема"
                             selectedVolume == 1 -> "первый том"
                             selectedVolume == 2 -> "второй том"
-                            else -> "оба тома"
+                            selectedVolume == 3 -> "третий том"
+                            else -> "все тома"
                         },
                         onStart = { beginSession() }
                     )
@@ -215,7 +216,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     selectedLabel = chapterTitles[chapterId] ?: when(selectedVolume) {
                         1 -> "Все разделы · том 1"
                         2 -> "Все разделы · том 2"
-                        else -> "Все разделы · оба тома"
+                        3 -> "Все разделы · том 3"
+                        else -> "Все разделы · все тома"
                     },
                     onChooseSection = {chapterMenu=true}
                 )

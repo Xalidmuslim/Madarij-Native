@@ -6,7 +6,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class StudyScopeTest {
-    private val volumes = mapOf("v1-a" to 1, "v1-b" to 1, "v2-a" to 2)
+    private val volumes = mapOf("v1-a" to 1, "v1-b" to 1, "v2-a" to 2, "v3-a" to 3)
 
     @Test fun wholeBookScopeIncludesBothVolumes() {
         assertTrue(studyScopeMatches("v1-a", "", 0, volumes))
@@ -48,5 +48,12 @@ class StudyScopeTest {
 
     @Test fun invalidChapterIsNotImplicitlyIncludedInVolume() {
         assertFalse(studyScopeMatches("unknown", "", 1, volumes))
+    }
+    @Test fun thirdVolumeScopeAndTopicSelectionArePreserved() {
+        assertTrue(studyScopeMatches("v3-a", "", 0, volumes))
+        assertTrue(studyScopeMatches("v3-a", "", 3, volumes))
+        assertFalse(studyScopeMatches("v2-a", "", 3, volumes))
+        assertEquals("v3-a", selectedStudyChapterAfterVolumeChange("v3-a", 3, volumes))
+        assertEquals("", selectedStudyChapterAfterVolumeChange("v3-a", 2, volumes))
     }
 }

@@ -60,7 +60,7 @@ internal fun StudyChapterPicker(
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(7.dp)) {
-                listOf(0 to "Оба тома", 1 to "Том 1", 2 to "Том 2").forEach { (volume, label) ->
+                (listOf(0 to "Все тома") + chapters.map { it.volume }.distinct().sorted().map { it to "Том $it" }).forEach { (volume, label) ->
                     FilterChip(
                         selected = pickerVolume == volume,
                         onClick = { pickerVolume = volume },
@@ -79,7 +79,7 @@ internal fun StudyChapterPicker(
             )
             Button(onClick = { onSelectAll(pickerVolume) },
                 modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {
-                Text(if (pickerVolume == 0) "Выбрать оба тома целиком"
+                Text(if (pickerVolume == 0) "Выбрать все тома целиком"
                      else "Выбрать весь том $pickerVolume")
             }
             HorizontalDivider(color = BookColors.gold.copy(alpha = .3f))
@@ -103,7 +103,7 @@ internal fun StudyChapterPicker(
                 contentPadding = PaddingValues(bottom = 24.dp),
                 verticalArrangement = Arrangement.spacedBy(3.dp)
             ) {
-                for (volume in 1..2) {
+                for (volume in chapters.map { it.volume }.distinct().sorted()) {
                     val pages = matches.filter { it.volume == volume }
                     val visiblePages = studyPickerPreview(
                         pages, searching = search.isNotBlank(), expanded = showAllChapters

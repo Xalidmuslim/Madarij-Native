@@ -91,11 +91,13 @@ internal object LogicalReadingSections {
         "madarij-v2-p521-p620-translation-preview" to (521 to 620),
         "madarij-v2-p621-p659-translation-preview" to (621 to 659)
     )
-    fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter { it.id in starts }
+    // Volume 3 is stored as author chapters, rather than the earlier page slices.
+    private fun isStart(chapter: Chapter): Boolean = chapter.volume == 3 || chapter.id in starts
+    fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter(::isStart)
     fun members(chapters: List<Chapter>, requestedId: String): List<Chapter> {
         val index = chapters.indexOfFirst { it.id == requestedId }
         if (index < 0) return emptyList()
-        val first = (index downTo 0).firstOrNull { chapters[it].id in starts } ?: 0
+        val first = (index downTo 0).firstOrNull { isStart(chapters[it]) } ?: 0
         val end = (indexOfNextStart(chapters, first + 1)).takeIf { it >= 0 } ?: chapters.size
         // A volume boundary is never merged into the preceding reader section.
         require(chapters.subList(first, end).all { it.volume == chapters[index].volume }) {
@@ -104,6 +106,6 @@ internal object LogicalReadingSections {
         return chapters.subList(first, end)
     }
     private fun indexOfNextStart(chapters: List<Chapter>, start: Int): Int =
-        (start until chapters.size).firstOrNull { chapters[it].id in starts } ?: -1
+        (start until chapters.size).firstOrNull { isStart(chapters[it]) } ?: -1
     fun pageRange(rootId: String): String? = pages[rootId]?.let { (a,b) -> "Страницы ${a}–${b}" }
 }

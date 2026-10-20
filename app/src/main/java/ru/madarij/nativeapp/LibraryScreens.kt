@@ -30,10 +30,12 @@ internal data class TocGroup(val id: String, val title: String, val provenance: 
 internal suspend fun loadStructure(context: Context): List<TocGroup> = withContext(Dispatchers.IO) {
     runCatching {
         val a = JSONObject(context.assets.open("structure.json").bufferedReader().use { it.readText() }).getJSONArray("groups")
-        val second = runCatching {
-            JSONObject(context.assets.open("volume2-structure.json").bufferedReader().use { it.readText() }).getJSONArray("groups")
-        }.getOrNull()
-        if (second != null) for (index in 0 until second.length()) a.put(second.getJSONObject(index))
+        for (file in listOf("volume2-structure.json", "volume3-structure.json")) {
+            val additional = runCatching {
+                JSONObject(context.assets.open(file).bufferedReader().use { it.readText() }).getJSONArray("groups")
+            }.getOrNull()
+            if (additional != null) for (index in 0 until additional.length()) a.put(additional.getJSONObject(index))
+        }
         (0 until a.length()).map { i -> val g = a.getJSONObject(i); val items = g.getJSONArray("items")
             TocGroup(g.getString("id"),g.getString("title"),g.optString("provenance"),(0 until items.length()).map { j -> val c=items.getJSONObject(j);val topics=c.optJSONArray("topics")
                 TocChapter(c.getString("chapterId"),c.getString("title"),c.optString("subtitle"),if(topics==null) emptyList() else (0 until topics.length()).map { k -> val t=topics.getJSONObject(k);TocTopic(t.getString("paragraphId"),t.getString("title"),t.optString("provenance"),t.optString("startText").takeIf { it.isNotBlank() }) },c.optString("entryParagraphId").takeIf { it.isNotBlank() },c.optString("entryNote").takeIf { it.isNotBlank() })
@@ -127,6 +129,7 @@ internal fun BookmarksScreen(vm:BookViewModel,open:(String,String?)->Unit) {
 
 @Composable
 private fun BookmarkExcerpt(vm: BookViewModel, bookmark: Bookmark) {
+    val chapters by vm.chapters.collectAsStateWithLifecycle()
     var paragraph by remember(bookmark.chapterId, bookmark.paragraphId) { mutableStateOf<Paragraph?>(null) }
     LaunchedEffect(bookmark.chapterId, bookmark.paragraphId) {
         paragraph = bookmark.paragraphId?.let { vm.repository.dao.paragraph(it) }
@@ -135,7 +138,7 @@ private fun BookmarkExcerpt(vm: BookViewModel, bookmark: Bookmark) {
     paragraph?.let { text ->
         Text(text.ru, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Serif),
             maxLines = 3, overflow = TextOverflow.Ellipsis)
-        Text("Том 1 · абзац ${text.ordinal + 1}", style = MaterialTheme.typography.labelSmall,
+        Text("Том ${chapters.find { it.id == bookmark.chapterId }?.volume ?: "—"} · абзац ${text.ordinal + 1}", style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
@@ -402,13 +405,14 @@ internal fun AboutScreen() {
     val context=LocalContext.current;var edition by remember {mutableStateOf<JSONObject?>(null)}
     LaunchedEffect(context) {edition=withContext(Dispatchers.IO) {runCatching {JSONObject(context.assets.open("corpus.json").bufferedReader().use {it.readText()}).getJSONObject("edition")}.getOrNull()}}
     LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {
-        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Тома 1 и 2")}
+        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Тома 1–3")}
         item {InfoCard("Автор","Ибн Каййим аль-Джаузийя (1292–1350). Книга посвящена ступеням духовного пути и построена вокруг осмысления слов суры «Аль-Фатиха».")}
         item {InfoCard("О происхождении русского перевода","Перевод подготовлен специально для данного приложения с применением искусственного интеллекта непосредственно по арабскому тексту. По сведениям составителя приложения, существующие русскоязычные переводы не использовались. Это самостоятельный рабочий перевод, не официальный и не академическое критическое издание.")}
-        item {InfoCard("Статус сверки перевода","Том 1: литературно-смысловая сверка страниц 3–610 (644 авторских блока). Том 2: литературно-смысловая сверка страниц 3–659 (676 единиц). Часть исправлений повторно проверена ИИ. Постатейная визуальная сверка со сканами издания 2019 года и независимая научная, хадисоведческая и источниковедческая экспертиза не проводились; содержание может нуждаться в исправлениях.")}
+        item {InfoCard("Статус сверки томов 1–2","Том 1: литературно-смысловая сверка страниц 3–610 (644 авторских блока). Том 2: литературно-смысловая сверка страниц 3–659 (676 единиц). Часть исправлений повторно проверена ИИ. Постатейная визуальная сверка со сканами издания 2019 года и независимая научная, хадисоведческая и источниковедческая экспертиза не проводились; содержание может нуждаться в исправлениях.")}
         item {InfoCard("Современное арабское издание и права","Текст труда Ибн аль-Каййима находится в общественном достоянии по сроку охраны автора. Использовано современное арабское издание 2019 года; редакторские примечания, подготовка текста и иные современные элементы издания могут иметь самостоятельную правовую охрану. Источниковедческая и правовая проверка этих материалов до публикации необходима.")}
+        item {InfoCard("Третий том","Полный рабочий перевод авторского текста: страницы 3–584, 582 страницы. Выполнены визуальная сверка с PDF 2019 года и смысловая, литературная и обратная самопроверка ИИ. Неясное место на с. 110 отмечено отдельно. Независимая человеческая редактура и полная внешняя проверка хадисов не выполнены; том не готов к публикации. Современные издательские примечания не включены.")}
         item {InfoCard("Арабский источник",edition?.optString("source_edition").orEmpty().ifBlank {"Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019"}+"\n"+edition?.optString("source_url").orEmpty())}
         item {InfoCard("Навигация и пояснения","Технические разделы для чтения не всегда совпадают с главами автора. Группы, темы и редакторские пояснения помогают ориентироваться; источник главы доступен из меню чтения. Вопросы и словарь составлены редакционно по тексту и требуют той же сверки.")}
-        item {Text("Мадаридж · Тома 1 и 2",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
+        item {Text("Мадаридж · Тома 1–3",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
     }
 }
