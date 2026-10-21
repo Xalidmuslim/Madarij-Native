@@ -22922,14 +22922,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p424-02": {
-      "sha256": "359d9d574b07ff2bc964dd003722d16edd73637baccefb0cc77e767438513b11",
+      "sha256": "2130cba2005233f11da573db12bdf83f408672c4ff401228da92b4e073b18873",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "عن رأس الغفلة describes thorough heedlessness, not literal Russian from depths. Keep reported speaker rationale distinct from author emphatic refutation and both repeated stab/poison quotations. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p424-03": {
       "sha256": "8bde6146efee944a4590df39290612e4dc2505c29054bcd5b67b3edf6289c7f4",
@@ -23113,14 +23114,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p426-08": {
-      "sha256": "f5c18913e3caf6acf324281ab304f9e522f1731f45687ebc574e44143ae6d1e7",
+      "sha256": "35028b814a9af052fbd305ef0d617e45349324336fb05dd1827fd3d1123b6f96",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "غيـرة العابد على ضائع here is zealous care for missed duties, not unidiomatic ревность об. Context427 explicitly explains restoration/compensation/strength; preserve all three repeated remedies. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p427-01": {
       "sha256": "09b15add55498efddfbf2013778c4498049bde75f0c83246cd2f2e7e70e6a5ad",
@@ -23183,14 +23185,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p427-07": {
-      "sha256": "83193ef5753b42fe4e3c5e16c7b233665b912899098a23e28135b103e74ac0f4",
+      "sha256": "945da98959661b9c1d1ace25831505d8c44005204f797b419cdbbee9a118f437",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace unnatural ревность об with causal из-за while keeping jealousy terminology, three mentions and complete quick/ungraspable/slow-return time triad. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p428-01": {
       "sha256": "7e429e838f0d9630c6e22f256a48bed455b2f878baf8844e1d396f0e75e35265",
@@ -23203,14 +23206,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p428-02": {
-      "sha256": "93fec7bc9c495e0eb88059e35efef5d74c8d6f6de1a6fa9fff78df8e80417bd2",
+      "sha256": "edf7c05302c8c582a5e870298112ad97f988f32490db0970f421e0eccdfc01b4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "مراء denotes doing worship to be seen. Replace colloquial показушник with precise natural literary predicate; do not conflate riyā with doctrinal hypocrisy, and preserve both reciprocal claims. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p428-03": {
       "sha256": "13b5a7102e725a13eb049120488a68dbce8bc48f2615679dddb6e5d8ed9e392b",
@@ -23293,14 +23297,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p429-06+v3-p430-01": {
-      "sha256": "c02db2f391a6a265c74403c694980d46aab64bbc7077a300fdbf7519cc9c556b",
+      "sha256": "cfae6ddf0de732a6b63afab7f93b28b4b0588bacf1585091888933bcd8ea6efd",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "رد الحسرات is averting/warding off regrets, not desirably bringing them back. Restore direction and full two contrasting conditional returns; عز التصبر means patience was difficult, not strictly impossible. All three couplets retained, including rejecting passions through patience/strength and ensuing delights. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p430-02": {
       "sha256": "7a603b02a5c79c72c4400286d27552af60f60fea810cca44c52ecbe4aadda1fb",
@@ -23333,24 +23338,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p430-05": {
-      "sha256": "1cf674b242353208d1461101ac0b01e859c13b66e006de3874b3c4547b70d674",
+      "sha256": "1704dc6daecda6444dcbee930bbea28e8de312f089a2a5b2946e5291739f3327",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Use contextual zealous care in natural Russian with all three objects: inner sight, secret, soul; preserve two kinds of attachment and either/or. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p431-01": {
-      "sha256": "f11adfb378040c3152f9f491c2bf3edfba53bc282a76114a40679543ffbed35d",
+      "sha256": "0d416ef5185b6ee747a8aab31a74b29c299506010bc03b726e40f6d977aa0b34",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render يغار على بصيرة and ستر أو حجاب in grammatical literary Russian, preserving both alternatives, thin covering and all three veil classes/degrees. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p431-02": {
       "sha256": "968967287947de08f311c66204d722f864917cfafb6460d03dade2645c4e796e",
@@ -23373,14 +23380,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p431-04": {
-      "sha256": "d45baba85ab9f8cc23b1810bfcca911140f587791f783cdbd6715f8bf671139e",
+      "sha256": "f9377e3527c1e5190c19bad4a5650ecbfd09fd65bbec28bd19d9634164afa16f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual repeated author quotation here uses والتفت, so restore and rather than harmonize to original430-05 أو; next431-05 repeats أو and remains or. Preserve separate-reward vs love-of-God comparison. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p431-05": {
       "sha256": "0fccb6f484319251b54e2600902633992e8021ab99184d7c815a8d598fa0d423",
@@ -23695,12 +23703,13 @@
     "v3-p436-05": {
       "sha256": "a373b5aa30a760791fd0209186ccf506f8ca8a31b4311eab820db8ecab9ad665",
       "stages": {
-        "semantic": "self_checked_against_print",
+        "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
+        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual print قرب retained against Qushayri موت. Pronouns وروده/سكراته may concern implicit death rather than closeness/ecstasy; teacher parallel alone cannot silently replace control. Current working Russian retained, not final. Needs contextual/source-witness resolution and literary/back comparison afterward."
     },
     "v3-p436-06": {
       "sha256": "8f035610caecfc2789d939043e8d7420abcbc681a06286fde1278435f71469db",

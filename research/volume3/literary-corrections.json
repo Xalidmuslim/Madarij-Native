@@ -1601,5 +1601,78 @@
     "corrected_ru": "Удивительно, что это считают его достоинством и добрым качеством. Самое большее, на что он может рассчитывать, — быть оправданным утратой власти над разумом. Это одна из самых отвратительных экстатических речей. Поминать Аллаха даже беспечно и при любых обстоятельствах лучше, чем совершенно забыть Его. Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Какой покой может найти в этом познавший? Разве это не самое тягостное и ненавистное для него?",
     "reason": "In author positive/negative contrast, محبوبه qualifies remembrance beloved to God, not a new relative God beloved to unnamed man. Teacher parallel Istiqama V2P16–17 expressly says such speech خير من العدم والله يحبه ويأمر به. Restore repeated ذكر in second clause and passive تمقت عليه, not turn it into active He becomes angry. Full preceding/following critique and author attribution retained.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p424-02"
+    ],
+    "previous_ru": "Подобное рассказывают и об Абу аль-Хусайне ан-Нури. Услышав человека, произносящего азан, он сказал: «Удар и смертельный яд». А услышав лай собаки, сказал: «Вот я перед Тобой и готов служить Тебе». Ему сказали: «Это оставление религии». И, клянусь Аллахом, они правы! О муэдзине, произносящем свидетельство, он говорит: «Удар и смертельный яд», — а на собачий лай отвечает, словно на призыв?! Он объяснил: «Тот поминал Аллаха из глубины беспечности, а о собаке Всевышний сказал: {وإن من شيء إلا يسبح بحمده} — “Нет ничего, что не прославляло бы Его хвалой”» (17:44).",
+    "corrected_ru": "Подобное рассказывают и об Абу аль-Хусайне ан-Нури. Услышав человека, произносящего азан, он сказал: «Удар и смертельный яд». А услышав лай собаки, сказал: «Вот я перед Тобой и готов служить Тебе». Ему сказали: «Это оставление религии». И, клянусь Аллахом, они правы! О муэдзине, произносящем свидетельство, он говорит: «Удар и смертельный яд», — а на собачий лай отвечает, словно на призыв?! Он объяснил: «Тот поминал Аллаха в полной беспечности, а о собаке Всевышний сказал: {وإن من شيء إلا يسبح بحمده} — “Нет ничего, что не прославляло бы Его хвалой”» (17:44).",
+    "reason": "عن رأس الغفلة describes thorough heedlessness, not literal Russian from depths. Keep reported speaker rationale distinct from author emphatic refutation and both repeated stab/poison quotations.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p426-08"
+    ],
+    "previous_ru": "«У неё три степени. Первая — ревность поклоняющегося об утраченном: он возвращает потерянное, восполняет упущенное и спешит поддержать свои силы».",
+    "corrected_ru": "«У неё три степени. Первая — ревностная забота поклоняющегося об утраченном: он возвращает потерянное, восполняет упущенное и спешит поддержать свои силы».",
+    "reason": "غيـرة العابد على ضائع here is zealous care for missed duties, not unidiomatic ревность об. Context427 explicitly explains restoration/compensation/strength; preserve all three repeated remedies.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p427-07"
+    ],
+    "previous_ru": "«Вторая степень — ревность стремящегося, мюрида. Это ревность об упущенном времени, и она губительна. Ведь время быстро проходит, недоступно для удержания и медлит с возвращением».",
+    "corrected_ru": "«Вторая степень — ревность стремящегося, мюрида. Это ревность из-за упущенного времени, и она губительна. Ведь время быстро проходит, недоступно для удержания и медлит с возвращением».",
+    "reason": "Replace unnatural ревность об with causal из-за while keeping jealousy terminology, three mentions and complete quick/ungraspable/slow-return time triad.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p428-02"
+    ],
+    "previous_ru": "Мюрид, который не поклоняется, — еретик, а поклоняющийся, который не стремится, — показушник.",
+    "corrected_ru": "Мюрид, который не поклоняется, — еретик; поклоняющийся без стремления совершает своё поклонение напоказ.",
+    "reason": "مراء denotes doing worship to be seen. Replace colloquial показушник with precise natural literary predicate; do not conflate riyā with doctrinal hypocrisy, and preserve both reciprocal claims.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p429-06",
+      "v3-p430-01"
+    ],
+    "previous_ru": "О сожаления, подобных которым не вернуть:\nБудь возможно вернуть их, сожалеть было бы легче.\nЭто те самые страсти, что обернулись\nСожалениями, когда терпение стало недоступно.\nЕсли бы их отразили терпением и силой,\nОни обернулись бы наслаждениями — разумный это видит.",
+    "corrected_ru": "О сожаления, от которых нет избавления!\nКогда бы их можно было отвести, легче было бы сожалеть.\nЭто те самые страсти, что обернулись\nСожалениями, когда терпение давалось с трудом.\nЕсли бы их отразили терпением и силой,\nОни обернулись бы наслаждениями — разумный это видит.",
+    "reason": "رد الحسرات is averting/warding off regrets, not desirably bringing them back. Restore direction and full two contrasting conditional returns; عز التصبر means patience was difficult, not strictly impossible. All three couplets retained, including rejecting passions through patience/strength and ensuing delights.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p430-05"
+    ],
+    "previous_ru": "«Третья степень — ревность познавшего о внутреннем зрении, которое покрыла дымка, о сокровенном, которое покрыл налёт, и о душе, привязавшейся к надежде или обратившейся к дару».",
+    "corrected_ru": "«Третья степень — ревностная забота познавшего о внутреннем зрении, которое покрыла дымка, о сокровенном, которое покрыл налёт, и о душе, привязавшейся к надежде или обратившейся к дару».",
+    "reason": "Use contextual zealous care in natural Russian with all three objects: inner sight, secret, soul; preserve two kinds of attachment and either/or.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p431-01"
+    ],
+    "previous_ru": "То есть он ревнует о внутреннем зрении, которое покрыло нечто скрывающее, завеса. Гайн — словно покрывало или завеса, очень тонкое покрытие. Плотнее него — гайм, облако, свойственное обычным верующим. Ещё плотнее — райн, или ран, налёт, свойственный неверующим.",
+    "corrected_ru": "То есть он ревностно оберегает внутреннее зрение, которое закрыл покров или завеса. Гайн — словно покрывало или завеса, очень тонкое покрытие. Плотнее него — гайм, облако, свойственное обычным верующим. Ещё плотнее — райн, или ран, налёт, свойственный неверующим.",
+    "reason": "Render يغار على بصيرة and ستر أو حجاب in grammatical literary Russian, preserving both alternatives, thin covering and all three veil classes/degrees.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p431-04"
+    ],
+    "previous_ru": "«О душе, привязавшейся к надежде или обратившейся к дару». Человек ревниво оберегает свою душу, если она привязалась к надежде на награду, отдельную от Самого Аллаха, а не к стремлению к Аллаху и любви к Нему. Ведь различие между двумя душами таково же, как различие между тем, к чему они привязаны.",
+    "corrected_ru": "«О душе, привязавшейся к надежде и обратившейся к дару». Человек ревниво оберегает свою душу, если она привязалась к надежде на награду, отдельную от Самого Аллаха, а не к стремлению к Аллаху и любви к Нему. Ведь различие между двумя душами таково же, как различие между тем, к чему они привязаны.",
+    "reason": "Actual repeated author quotation here uses والتفت, so restore and rather than harmonize to original430-05 أو; next431-05 repeats أو and remains or. Preserve separate-reward vs love-of-God comparison.",
+    "external_human_review": false
   }
 ]

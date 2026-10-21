@@ -3,10 +3,10 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "955603c1e3dbdae527a8aa9b06d677eababc90a3f6213d38c3d2e93383b8ab84",
-  "volume3_asset_sha256": "62278cfa792c54ae14b7cf1d082f0a812888cb40c253b999908b315e2a895c42",
+  "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
+  "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
   "zip_integrity_checked": true,
-  "apk_asset_matches_repository": true,
+  "apk_asset_matches_repository": false,
   "signature_verified": "APK Signature Scheme v2",
   "jvm_test_suites": 17,
   "jvm_tests": 97,
@@ -32,7 +32,14 @@
       "source"
     ],
     "extra_volume3_rows": 0,
-    "all_3109_packaged_rows_exactly_match_database": true
+    "all_3109_packaged_rows_exactly_match_database": true,
+    "unresolved_source_ids_in_checked_apk": [
+      "v3-p110-04",
+      "v3-p246-03",
+      "v3-p246-05",
+      "v3-p247-03",
+      "v3-p403-01+v3-p404-01"
+    ]
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -41,8 +48,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 12,
-      "rows_after": 12,
+      "rows_before": 13,
+      "rows_after": 13,
       "unchanged": true
     },
     "notes": {
@@ -59,8 +66,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Query Поистине поминанием gives one result in Умиротворённость.",
-    "Opened result v3-p347-03; settled reader image actually viewed, full13:28 Arabic/Russian shown including new affirmative Поистине, поминанием Аллаха успокаиваются сердца!, followed by89:27–30. Header remains draft."
+    "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
+    "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -72,17 +79,25 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "955603c1e3dbdae527a8aa9b06d677eababc90a3f6213d38c3d2e93383b8ab84",
-    "volume3_asset_sha256": "62278cfa792c54ae14b7cf1d082f0a812888cb40c253b999908b315e2a895c42",
-    "description": "Through370 update; full before/after snapshots with12 positions,1bookmark,empty notes/read_chapters, preferences exact. First complete after snapshot preceded final import transaction commit and had33 old rows: rejected. Device content_version then equalled packaged combined58ea0db76c9831ccbeca30d9b1f14b4e155f59944cccab080f3cbf9dd78c5527; second complete snapshot all3109 exact. Native SQLite checkpoint0|0|0, no record edits. Premature extraction of still-copying first archive produced EOF and was not accepted. Later intentional reader visit changes position outside this preservation comparison."
+    "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
+    "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
+    "description": "Through422 full snapshots preserve1bookmark,13positions,empty notes/read_chapters and preferences. Confirmed installed content_version1835118c5e0323b147312cc5f3d0b47a4704a033c246f86be3220e7c6bc4159b before post-import copy; native WAL checkpoint0|0|0; waited successful capture completion before comparison. Subsequent intentional search/scroll changes reading position outside preservation comparison."
   },
-  "latest_corpus_check": "All3109 rows exactly match through370 APK/embedded asset on seven fields, no extras, integrity ok, first two volumes and all recorded personal data unchanged; four pending source IDs retained.",
+  "latest_corpus_check": "All3109rows exactly match through422 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. Five then-open units including joined403–404 retained in APK metadata. Newly reopened436 is later source change, not covered by positive422.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional371–422 corrections; joined403–404 reopened semantic/back pending. All3109records retained.",
-    "current_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
+    "change": "Additional423–438 Russian corrections and sixth pending unit436-05 after positive422 APK. Record count3109 unchanged.",
+    "current_asset_sha256": "7230925b2f88ab949520e8e358c5f0016723aa6dc3759c5fa56f4b9c40700b89",
     "current_asset_runtime_checked": false,
-    "scope": "Positive runtime applies through370 with its four then-open units only. New371–422 bytes and fifth joined403–404 pending flag await APK/import."
+    "unresolved_source_ids": [
+      "v3-p110-04",
+      "v3-p246-03",
+      "v3-p246-05",
+      "v3-p247-03",
+      "v3-p403-01+v3-p404-01",
+      "v3-p436-05"
+    ],
+    "scope": "Positive runtime applies through422 and its five then-open units only. New423–438 bytes/sixth436 flag await another APK/import."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -107,10 +122,10 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through370 APK search and settled reader p347 actually viewed; no new all-target or physical-device claim.",
+  "visual_check_scope": "Through422 actual search and reader top/middle viewed; old cases historical. No all-target/physical-device claim.",
   "current_visual_checks": [
-    "Query Поистине поминанием gives one result in Умиротворённость.",
-    "Opened result v3-p347-03; settled reader image actually viewed, full13:28 Arabic/Russian shown including new affirmative Поистине, поминанием Аллаха успокаиваются сердца!, followed by89:27–30. Header remains draft."
+    "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
+    "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -853,6 +868,77 @@
     "current_visual_checks": [
       "Query аль-Каттани gives three matching results, second is new303-01 own note in Проницательность.",
       "Selected note303-01 opens under Пояснение редакции; top and scrolled tail actually viewed, including attribution difference, Arabic مكاشفة اليقين and preserved control author variant. Following author text remains separate."
+    ]
+  },
+  "historical_through370_2026_10_21": {
+    "apk_sha256": "955603c1e3dbdae527a8aa9b06d677eababc90a3f6213d38c3d2e93383b8ab84",
+    "volume3_asset_sha256": "62278cfa792c54ae14b7cf1d082f0a812888cb40c253b999908b315e2a895c42",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 13,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "all_3109_packaged_rows_exactly_match_database": true,
+      "unresolved_source_ids_in_checked_apk": [
+        "v3-p110-04",
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-03",
+        "v3-p403-01+v3-p404-01"
+      ]
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 12,
+        "rows_after": 12,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "visually_exercised": [
+      "Query Поистине поминанием gives one result in Умиротворённость.",
+      "Opened result v3-p347-03; settled reader image actually viewed, full13:28 Arabic/Russian shown including new affirmative Поистине, поминанием Аллаха успокаиваются сердца!, followed by89:27–30. Header remains draft."
+    ],
+    "personal_data_update_scope": {
+      "apk_sha256": "955603c1e3dbdae527a8aa9b06d677eababc90a3f6213d38c3d2e93383b8ab84",
+      "volume3_asset_sha256": "62278cfa792c54ae14b7cf1d082f0a812888cb40c253b999908b315e2a895c42",
+      "description": "Through370 update; full before/after snapshots with12 positions,1bookmark,empty notes/read_chapters, preferences exact. First complete after snapshot preceded final import transaction commit and had33 old rows: rejected. Device content_version then equalled packaged combined58ea0db76c9831ccbeca30d9b1f14b4e155f59944cccab080f3cbf9dd78c5527; second complete snapshot all3109 exact. Native SQLite checkpoint0|0|0, no record edits. Premature extraction of still-copying first archive produced EOF and was not accepted. Later intentional reader visit changes position outside this preservation comparison."
+    },
+    "latest_corpus_check": "All3109 rows exactly match through370 APK/embedded asset on seven fields, no extras, integrity ok, first two volumes and all recorded personal data unchanged; four pending source IDs retained.",
+    "visual_check_scope": "Through370 APK search and settled reader p347 actually viewed; no new all-target or physical-device claim.",
+    "current_visual_checks": [
+      "Query Поистине поминанием gives one result in Умиротворённость.",
+      "Opened result v3-p347-03; settled reader image actually viewed, full13:28 Arabic/Russian shown including new affirmative Поистине, поминанием Аллаха успокаиваются сердца!, followed by89:27–30. Header remains draft."
     ]
   }
 }

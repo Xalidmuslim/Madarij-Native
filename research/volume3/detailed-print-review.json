@@ -17055,8 +17055,676 @@
         }
       ],
       "finding": "Actual وغايته, وألسن, محبوبه, وتمقت عليه, شيء and وأكرهه. Direct teacher parallel reinforces author argument: incomplete remembrance is loved by God and preferable to abandoning it. Restore Russian antecedent and repeated remembrance plus passive reprehension. Entire criticism and both rhetorical questions retained; following second extremist quote422-08 read and kept separate."
+    },
+    {
+      "source_ids": [
+        "v3-p423-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كراهيته",
+          "secondary": "منع اخوانه من تعزيته ونيل ثوابها ومنها كراهته",
+          "tokens": 8
+        },
+        {
+          "tag": "delete",
+          "control": "اسم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual كراهيته and اسم present. Reject secondary alignment duplication of prior تعزية sentence; whole Shibli beard story and all four criticized actions423 retained."
+    },
+    {
+      "source_ids": [
+        "v3-p424-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يغفر",
+          "secondary": "تغفر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual masculine يغفر, not تغفر. Full forgiveness/clemency limitation and rejection of calling conduct praiseworthy retained."
+    },
+    {
+      "source_ids": [
+        "v3-p424-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طعنة",
+          "secondary": "طعنه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "طعنة",
+          "secondary": "طعنه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual twice طعنة with taa marbuta, not final ه. Both muadhdhin/dog quotes and speaker explanation retained separately from author condemnation; Russian heedlessness expression made natural."
+    },
+    {
+      "source_ids": [
+        "v3-p424-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual يواجه به includes به. Preserve Prophet/Umar hypothetical rebuke and separate rebuke of treating the act as virtue."
+    },
+    {
+      "source_ids": [
+        "v3-p424-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فقال",
+          "secondary": "قال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual فقال with ف. Complete adhan/two-testimonies quotation retained, not endorsed as author position."
+    },
+    {
+      "source_ids": [
+        "v3-p424-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "و",
+          "secondary": "ومحمد رسول الله من القرط ونحن نقول",
+          "tokens": 7
+        }
+      ],
+      "finding": "Actual abbreviated testimony has ومن القرط and author response begins425, no secondary duplicated cross-alignment introduced. Both polemical voices remain separate."
+    },
+    {
+      "source_ids": [
+        "v3-p425-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "عز وجل",
+          "secondary": "تعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله and عز وجل, not deleted prayer / normalized تعالى. Complete38:33 and chosen sword/horse interpretation425-05 retained according to author, not replaced by alternate tafsir."
+    },
+    {
+      "source_ids": [
+        "v3-p426-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "فيه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ورغبته فيه includes فيه. Whole price/desire/non-substitution explanation retained. Adjacent426-02 لا يذم ... سواه checked: only this patience/its means are criticized, negation not reversed."
+    },
+    {
+      "source_ids": [
+        "v3-p426-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تمدح",
+          "secondary": "يمدح",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual feminine تمدح twice, not يمدح. Both participation conditions, comparison with ghibta/envy, effort and two-line poem complete."
+    },
+    {
+      "source_ids": [
+        "v3-p426-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والمكرمات",
+          "secondary": "والمكرما ت",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual والمكرمات one word across poetic line, not a separate final ت. Both couplets retained. First-degree wording in Russian made natural without losing any of three remedies."
+    },
+    {
+      "source_ids": [
+        "v3-p427-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التقرب",
+          "secondary": "القرب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual التقرب, not القرب. All three replacement/repair actions, worship schedule and obligatory/voluntary cases retained."
+    },
+    {
+      "source_ids": [
+        "v3-p427-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استدركه",
+          "secondary": "استدركها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual masculine استدركه after zakat example, not secondary استدركها; no grammatical harmonization. Full same-kind/different-kind distinction and two legal examples retained."
+    },
+    {
+      "source_ids": [
+        "v3-p427-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او يتدارك",
+          "secondary": "ويتدارك",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أو يتدارك alternative, no added عنه. Both declining-strength and weakening-deed alternatives, zeal for/over action retained."
+    },
+    {
+      "source_ids": [
+        "v3-p428-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والعباد",
+          "secondary": "و العباد",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual والعباد connected orthographically; all reciprocal murid/abid assertions and specialized usage retained, colloquial показушник replaced by precise worship-for-show predicate."
+    },
+    {
+      "source_ids": [
+        "v3-p429-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الوحى الوحى اي",
+          "secondary": "الوحا الوحا",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual prayer رحمه الله, repeated الوحى الوحى with alif maqsura and explanatory أي. Full vocabulary of haste/revelation/quick coming retained."
+    },
+    {
+      "source_ids": [
+        "v3-p429-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "متصرم",
+          "secondary": "منصرم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual متصرم not منصرم. Entire time/failures/regrets/return/impossibility sequence retained."
+    },
+    {
+      "source_ids": [
+        "v3-p429-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "له",
+          "secondary": "لهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual له singular, not لهم. Full yesterday/new-day question and distant-taking analogy retained, no Quran canonical text substituted for author allusion."
+    },
+    {
+      "source_ids": [
+        "v3-p429-06",
+        "v3-p430-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مثلها",
+          "secondary": "مثله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تحولت",
+          "secondary": "تحولن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual مثلها and feminine تحولت, not مثله / تحولن. Across429–430 all three couplets retained. Russian رد now averting regrets, not bringing them back; difficulty of patience not asserted impossible."
+    },
+    {
+      "source_ids": [
+        "v3-p431-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual no added عز وجل. All two meanings of secret (perceptive faculty/state) and agonized appeal metaphor retained; Russian veil definition/rank naturalized in previous431-01, no deletion."
+    },
+    {
+      "source_ids": [
+        "v3-p432-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالرجا لتقطعت",
+          "secondary": "بالرجاء لقطعت",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وشوقا",
+          "secondary": "وتشوقا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual بالرجا without hamza in poetry, لتقطعت and وشوقا. All three couplets/hope/fire/meeting effects intact."
+    },
+    {
+      "source_ids": [
+        "v3-p433-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتلهب",
+          "secondary": "ومنها يتهيج ويتولد ويلهب",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "وتقطع",
+          "secondary": "ويقطع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وتلهب and وتقطع nouns, not secondary expanded verbs. All three images and author statement that love exceeds longing retained."
+    },
+    {
+      "source_ids": [
+        "v3-p433-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله after Yahya retained; complete weaning-limbs maxim."
+    },
+    {
+      "source_ids": [
+        "v3-p433-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "القرب",
+          "secondary": "الموت",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والامن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual رحمه الله and حب القرب, no inserted والأمن. Keep control closeness rather than old death variant; complete Joseph well/prison/success three cases and12:101 intact."
+    },
+    {
+      "source_ids": [
+        "v3-p433-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله after IbnKhafif retained. Complete wajd/meeting/proximity triad, not abridged."
+    },
+    {
+      "source_ids": [
+        "v3-p434-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لهيب",
+          "secondary": "لهب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual لهيب not لهب. Full flame/distance/meeting aphorism and subsequent disputed-view attribution retained."
+    },
+    {
+      "source_ids": [
+        "v3-p434-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اذا",
+          "secondary": "واذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual إذا without added و. Full asserted disappearance case and next contrary view read, including434–435 tent couplet."
+    },
+    {
+      "source_ids": [
+        "v3-p435-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمهما الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمهما الله joint prayer. Complete hearing/Junaid/Sari report and two realization clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p435-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الشوق",
+          "secondary": "شوق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual في الشوق with definite article. Conditional وعلى هذا keeps Paradise claim attached to preceding interpretation."
+    },
+    {
+      "source_ids": [
+        "v3-p435-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انك ترى",
+          "secondary": "انا نرى",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أنك ترى second person, no added به after وجده. Full tears and newly experienced longing argument retained."
+    },
+    {
+      "source_ids": [
+        "v3-p435-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يثيره",
+          "secondary": "تثيره",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual masculine يثيره not تثيره; no grammatical harmonization. Complete two kinds, resolving distinction and corresponding names preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p435-06",
+        "v3-p436-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله after Daqaq retained across435–436. Full contrast between subsiding/abiding longing and next poetry citation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p436-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رحمه الله للخلق كلهم",
+          "secondary": "للخلقكلهم",
+          "tokens": 4
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual رحمه الله, spaced للخلق كلهم and no added له at end. Full Nasrabadi saying kept as attributed, without new authenticity claim."
+    },
+    {
+      "source_ids": [
+        "v3-p436-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله and full20:84 with speaker explanation about concealed longing preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p436-05"
+      ],
+      "decision": "retain_control_translation_pending_context",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no added لهم. Enlarged print has يتحسّون (one written س) and حلاوة القرب, retained. Classical Qushayri parallel explicitly حلاوة الموت and different يتحسسون. Unexpressed referent of وروده/سكراته may be death rather than closeness/ecstasy: whole436-05 reopened pending contextual review; previous working Russian retained, no guessed mortality word inserted."
+    },
+    {
+      "source_ids": [
+        "v3-p437-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وانا حر",
+          "secondary": "واتاخر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual أنا أدخل الشوق without added في, وأنا حر عن جميعها, not malformed وأتأخر. Full freedom statement, horse/water poem and contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p437-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no added هي after old woman. Complete absent-husband return, relatives joy and her weeping/arrival-before-God comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p437-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ابق اثبتك",
+          "secondary": "ابقاثبتك",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual no inserted عليه السلام or تعالى, and correct word division آبق أثبتك. Preserve reported وقيل qualification and complete David/return/fugitive/slate story; no new prophetic authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p438-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يجري",
+          "secondary": "يجيء",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual يجري not يجيء and رحمه الله retained. Full alternative scope and author end-of-fana qualification438-07 read, with three modes of signification438-03 distinguished."
     }
   ],
-  "record_count": 823,
+  "record_count": 861,
   "unreviewed_candidates_remain": true
 }

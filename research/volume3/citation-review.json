@@ -2136,6 +2136,46 @@
       ],
       "finding": "Teacher explicitly rejects suppressing imperfect tongue remembrance, ranks heart/tongue remembrance, says الكلام خير من العدم والله يحبه ويأمر به, and rejects possessive jealousy excluding others from divine love/vision. Supports reading422-07 ذكر الله الذي هو محبوبه as remembrance God loves, not merely God whom the objector loves. Russian antecedent, second ذكر and passive تمقت restored. Exact quoted anecdotes vary: teacher061–062 cites one who refuses vision as تنزيه ذلك الجمال عن نظر مثلي; author422 generic wording retained, no insertion of an unprinted name or substitution of teacher quote. No embedded hadith is newly independently authenticated by this contextual lookup; modern apparatus excluded.",
       "method": "Same-agent complete bounded classical primary argument, actual2019 images and Russian reread/back comparison; no independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p428-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_primary_bodies_compared_no_new_authentication",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_location": "Complete10080 and10081 before10082, second includes source spelling Ibn/AbuMutawwis variation"
+        },
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "Complete723 before724, PageV02P093"
+        }
+      ],
+      "finding": "Full Musnad and Tirmidhi chains/bodies read. Author متعمدا من غير عذر differs from primary من غير رخصة رخصها الله له / من غير مرض ولا رخصة / من غير رخصة ولا مرض; control kept. Both primary versions contain non-compensation by lifetime fasting even if done. Tirmidhi reports this path only and Bukhari comment لا أعرف له غير هذا الحديث about AbuMutawwis; these statements were read, not converted into a new independent grade. No modern footnote assessment reproduced and no complete isnad study claimed. Author employs quotation in argument about irretrievable time; no new legal ruling inserted into Russian.",
+      "method": "Same-agent actual2019 image, complete classical primary bodies and Russian back comparison; no independent human editor."
+    },
+    {
+      "source_ids": [
+        "v3-p432-08",
+        "v3-p433-01",
+        "v3-p435-02",
+        "v3-p436-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_bounded_classical_parallel_read_pronominal_crux_opened",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "Before/afterPageV02P498: Daqaq99parts, proximity/tents, sweetness-of-death, complete Junayd/Sari chain/saying and AbuUthman29:5 interpretation"
+        }
+      ],
+      "finding": "Source explicitly assigns99parts saying to Daqaq; control generic قال بعضهم kept, not inserted into author. Junayd/Sari saying confirmed in primary body. Crucial436 source الموت versus control القرب: no silent replacement. Actual control يتحسّون versus primary يتحسسون also retained. Author final سكراته absent in this source may refer to implicit death throes or closeness/ecstasy; current Russian unresolved and both semantic stages reopened, not certified. No new isnad authentication, no modern footnote copied.",
+      "method": "Same-agent classical bounded body and actual enlarged2019 source; no independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

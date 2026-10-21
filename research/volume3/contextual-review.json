@@ -94,6 +94,23 @@
         "Possible spelling/spacing issue around بما للحبيب; no conjectural letter removed."
       ],
       "next_action": "Check actual control word shapes against a separate printed witness or full parallel author poem and establish case/direction before choosing final Russian; preserve all22 couplets."
+    },
+    {
+      "source_id": "v3-p436-05",
+      "status": "pending_contextual_review",
+      "control_reading": "إن أهل الشوق إلى لقاء الله يتحسون حلاوة القرب عند وروده ... فهم في سكراته في أعظم لذة وحلاوة.",
+      "control_pdf": "Actual436 and enlarged full paragraph/word inspected; يتحسّون one written س, القرب clear.",
+      "problem": "Working Russian connects arrival and intoxication to closeness. Classical source instead explicitly speaks of sweetness of death at its arrival; author added final سكراته clause may imply death throes. Need settle antecedent without substituting primary الموت for author القرب.",
+      "primary_witness": {
+        "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+        "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+        "digital_location": "AfterPageV02P498, وقيل إن المشتاقين يتحسسون حلاوة الموت عند وروده لما قد كشف لهم من روح الوصول أحلى من الشهد"
+      },
+      "hypotheses_not_adopted": [
+        "Implicit الموت carried over from source versus direct antecedent القرب with metaphorical intoxication.",
+        "Possible euphemistic proximity at death; do not insert death as certain without resolving control context."
+      ],
+      "next_action": "Compare a separate printed author witness and further internal treatment of death/longing; make chosen reference explicit with separate own note if supported. Retain complete current paragraph and clearly pending status."
     }
   ]
 }
