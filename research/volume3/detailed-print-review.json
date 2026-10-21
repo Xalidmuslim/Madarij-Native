@@ -20258,8 +20258,683 @@
         }
       ],
       "finding": "Actual500 حالة وصفة, not secondary وصفية. Explicit drive purity and exclusive seeking definition retained; full source quote not changed."
+    },
+    {
+      "source_ids": [
+        "v3-p501-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وذلك",
+          "secondary": "ذلك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual501 وذلك with initial و, not secondary ذلك. Full العزيز الحكيم / فضل الله phrasing retained."
+    },
+    {
+      "source_ids": [
+        "v3-p502-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "لفظ",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فانما",
+          "secondary": "فانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعدل",
+          "secondary": "تعدل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صلى الله عليه وسلم",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "صادرة",
+          "secondary": "وصادرة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الناس",
+          "secondary": "القوم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual502 لفظ before المناجاة; فإنما not فإنه; passive فلا يعدل not secondary تعدل; no extra salutation at comparison locus; صادرة without added و; الناس not القوم. Both prayer-addressing reports kept separately and author preference not overstated."
+    },
+    {
+      "source_ids": [
+        "v3-p503-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وتعالى له",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "على مفصل",
+          "secondary": "علىمفصل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "اتحدث بمثل",
+          "secondary": "اتحدثبمثلي",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ورواه",
+          "secondary": "رواه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual503 سبحانه وتعالى له present, على مفصل separate tokens, أتحدث بمثل هذا not malformed secondary بمثلي, ورواه with و. Complete Hammad/Thabit/Anas account and Humayd exchange retained. Author Hakim شرط مسلم approval remains author own evaluation, no new translator verdict."
+    },
+    {
+      "source_ids": [
+        "v3-p503-05",
+        "v3-p504-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "دكا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "موسى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual503–504 no inserted دكا or extra موسى at comparison loci. Full command/look/effect/falling sequence retained across page."
+    },
+    {
+      "source_ids": [
+        "v3-p504-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لمح مسترق",
+          "secondary": "لمحمسترق",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "بانه مسترق",
+          "secondary": "بانهمسترق",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "من حيث",
+          "secondary": "بحيث",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual504 لمح مسترق and بأنه مسترق spaced; من حيث not secondary بحيث, no appended به. First ungeminated passive mustaraq distinct from later doubled-qaf mustariqq reading."
+    },
+    {
+      "source_ids": [
+        "v3-p504-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فالناظر يسارقه",
+          "secondary": "فالناظريسارقه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يحده",
+          "secondary": "يحد نظره",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "شئت",
+          "secondary": "سئلت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged504 سئلت asked not own شئت wished. Actual فالناظر يسارقه separated and يحده no secondary نظره inserted. Source/RU restored both requested-description and reverent not-filling-eyes sense, not Russian cannot get enough of him."
+    },
+    {
+      "source_ids": [
+        "v3-p504-09",
+        "v3-p505-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقرا",
+          "secondary": "تقرا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "نظر",
+          "secondary": "نظرا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لانه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual504 ويجوز أن يقرأ masculine verb, نظر no accusative ا; actual505 لأنه ... له both present. Whole captivity/slavery explanation and mere-glance causation retained. Only opening505 continuation read here, rest505 awaits next full-page batch."
+    },
+    {
+      "source_ids": [
+        "v3-p505-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لحظ",
+          "secondary": "لاحظ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged505 إذا لاحظ بقلبه with ا, not own لحظ. Entire divine majesty/qualities/favors and special servitude preserved; لطف contextual care in RU."
+    },
+    {
+      "source_ids": [
+        "v3-p505-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتثبت",
+          "secondary": "وتنبت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged505 وتثبت internal ث, not secondary وتنبت. Whole three main effects plus all three exceptions retained, including right of attribute; do not harmonize by easier metaphor."
+    },
+    {
+      "source_ids": [
+        "v3-p505-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هاهنا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual505 no extra هاهنا at comparison locus. All quoted three-degree phrases and shared eye/insight term explanation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p507-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual507 no extra تعالى at compared repeated قال locus; all6Quran quotations40:60/2:186/4:32/25:77/7:55/7:56 complete. Full divine love of asking preserved, not merely hidden ritual."
+    },
+    {
+      "source_ids": [
+        "v3-p508-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من فضله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual508 first من فضله present but no repeated second من فضله in يحب أن يسأل. Do not import secondary phrase; two transmitted related primary wordings kept distinct in research record."
+    },
+    {
+      "source_ids": [
+        "v3-p508-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وسلوا",
+          "secondary": "واسالوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual508 وسلوا not secondary واسألوا; all breezes/expose oneself/conceal vulnerabilities/calm fears clauses intact. No inferred authenticity grade from modern footnotes."
+    },
+    {
+      "source_ids": [
+        "v3-p508-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "احدى",
+          "secondary": "احد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual508 إحدى ثلاث feminine, not secondary أحد. All3outcomes of prayer and final question/الله أكثر preserved. Classical Ahmad parallel differs second outcome, documented without substituting into author."
+    },
+    {
+      "source_ids": [
+        "v3-p509-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في الحديث القدسي",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "رسوله",
+          "secondary": "مسلم عن ابي ذر رضي الله عنه عن رسول الله",
+          "tokens": 10
+        }
+      ],
+      "finding": "Actual509 فيما رواه رسوله, no inserted في الحديث القدسي nor Muslim/AbuDharr attribution from secondary. Four address/reply pairs retained in author order hunger/nakedness/straying/sins; author ولا أبالي not removed despite absent in exact Muslim2577, variant recorded."
+    },
+    {
+      "source_ids": [
+        "v3-p509-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فيه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual509 فاجتهدوا في الدعاء no inserted فيه; complete short prostration/expection-of-response excerpt retained, not expanded with bowing instructions."
+    },
+    {
+      "source_ids": [
+        "v3-p509-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "احمل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual509 عمر بن الخطاب without extra رضي الله عنه here, no repeated أحمل after ولكن. Both concern/prayer/answer clauses kept and not falsely certified independent Umar chain."
+    },
+    {
+      "source_ids": [
+        "v3-p509-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نيل",
+          "secondary": "بذل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وامله",
+          "secondary": "واطلبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual509 نيل not بذل and وآمله not وأطلبه. Restore both hope/expectation verbs in RU instead of previous one; poetic hand/bounty and asking-training analogy complete."
+    },
+    {
+      "source_ids": [
+        "v3-p510-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "منه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual510 سبحانه no added وتعالى; شكواهم منه إليه includes both منه وإليه. Full need/complaint/refuge/fleeing list preserved without deleting anomalous-sounding from-Him/toward-Him structure."
+    },
+    {
+      "source_ids": [
+        "v3-p510-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بن عبد الله",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "تذكرت",
+          "secondary": "تذاكرت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual510 مطرف no added بن عبد الله and تذكرت not تذاكرت. Full AbdWahhab/Ishaq/Muttarrif attribution, fasting/prayer/good/asking chain retained, no manufactured external isnad verification."
+    },
+    {
+      "source_ids": [
+        "v3-p510-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقدر",
+          "secondary": "يكن قد قدر",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual510 وإن لم يقدر short form, not secondary إن لم يكن قد قدر. Both decreed/not-decreed hypothetical claims kept as first group words, not author final answer."
+    },
+    {
+      "source_ids": [
+        "v3-p510-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual510 تظاهرت بالدعاء ... وإنما تعبدنا الله به, no relocation of به from secondary. Full acknowledgment of texts yet denial causal role attributed to first group, no summary replacing reasoning."
+    },
+    {
+      "source_ids": [
+        "v3-p511-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "حصوله",
+          "secondary": "لحصوله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "شهودها",
+          "secondary": "شهودهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منها وبها وانها",
+          "secondary": "منهم وبهم وانهم هم الذين فعلوه وان نفوسهم",
+          "tokens": 8
+        },
+        {
+          "tag": "replace",
+          "control": "علمت",
+          "secondary": "علموا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عنها",
+          "secondary": "عنهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بها",
+          "secondary": "بهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منها",
+          "secondary": "منهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حركها",
+          "secondary": "حركهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual511 all feminine group pronouns شهودها/منها وبها/أنها/علمت/عنها/حركها and موجب حصوله no extra ل; no long secondary interpolation وأن نفوسهم. Full knowledge-versus-actual-attention distinction retained with all actions/motions/stillness/will."
+    },
+    {
+      "source_ids": [
+        "v3-p511-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كثف",
+          "secondary": "كثيف",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual511 كثف finite verb, not secondary كثيف; no extra سبحانه وتعالى. RU grammar corrected group as knowing subject, full causes/wisdom/law/decree contrast intact."
+    },
+    {
+      "source_ids": [
+        "v3-p511-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منته",
+          "secondary": "مننه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اجمعه",
+          "secondary": "اجمع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتحرك",
+          "secondary": "تتحرك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual511 منته singular, أجمعه with suffix and (enlarged) لا يتحرك masculine, not feminine normalization. Full no-independent-power/permission/will paragraph retained, glorification preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p511-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فلا",
+          "secondary": "لا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وان",
+          "secondary": "وانه ان",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual511 فلا and وإن, no secondary إنه إن or conjunction deletion; full first-group repetition retained before third-case answer."
+    },
+    {
+      "source_ids": [
+        "v3-p511-07",
+        "v3-p512-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الذي",
+          "secondary": "اللذين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وجد",
+          "secondary": "وجدا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عليه",
+          "secondary": "عليهما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual511 الذي إذا وجد وجد ما رتب عليه singular, no dual secondary replacements. Prayer/request and child/intercourse/crop/seed examples complete in joined512 ending, author clear third-case approval retained."
+    },
+    {
+      "source_ids": [
+        "v3-p512-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عليه",
+          "secondary": "على السبب",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وقطعه عن",
+          "secondary": "وقطع عنه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وان",
+          "secondary": "واذا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تصريفه",
+          "secondary": "تصرفه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يشاء",
+          "secondary": "شاء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual512 no added تعالى/سبحانه at loci, عليه not على السبب, وقطعه عن not وقطع عنه, وإن شاء, تصريفه, كيف يشاء all match print. Full removing efficacy/setting obstacle/producing opposite chain and concluding first reading retained. Entire joined second reading512–513 compared incl not permanent maqam caveat."
     }
   ],
-  "record_count": 982,
+  "record_count": 1010,
   "unreviewed_candidates_remain": true
 }

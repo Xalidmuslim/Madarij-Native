@@ -27207,14 +27207,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p501-03": {
-      "sha256": "672a50e57fe299b2006a3bd5d23289287418ede92368651ffdf3392fde2c3407",
+      "sha256": "54cda687766961eab843fcae2b07ea656d6fd45c47b912913fc8d4444a1e6bb8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore omitted عصا السير travel-staff image rather than only consequence stopped; all reaching/prostration/thanks/89:27–28 words kept. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p501-04": {
       "sha256": "5e8a90e971fbe8fe4dd5231ce6bf4557b4c46cc85dacc046b94e653509e5e40e",
@@ -27237,14 +27238,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p501-06+v3-p502-01": {
-      "sha256": "dea5526d7367b44e9d3d7240383d7a2164a580b3d3ceb142b386d0e2b08f89ef",
+      "sha256": "0279be5494b4424bc46e82cb623f26366213257244c868604ca8130357e8f001",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged501 ولا تنكر وصول, no own extra ه/doubled و or artificial sentence break. Restore single object verbal noun; RU remove invented extra coordinated object. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p502-02": {
       "sha256": "7424cd285a9d86f15708a91755620d9ea347cdb72966bec10a11c8cd1a472989",
@@ -27327,14 +27329,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p504-04": {
-      "sha256": "b0b8eafd13f73c3a9c61be9c9be2060e4eaceb636c964166768f28ac9cddeffb",
+      "sha256": "3b0769e727f2521cd546aa56c17e6b09c8a307e3dd57d989b269a0fc42d68d83",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged504 سُئلت passive asked, not own شئت wished. لم أكن أملأ عيني منه إجلالا means did not look fully from reverence, not insatiable desire to look. Preserve author repeated explanation; full Muslim121 confirms context/reading without substituting its longer wording. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p504-05": {
       "sha256": "30e9a2a403666e6c6a33113fd6a26d58aebcdbe810055390a41dedeeebf074f0",
@@ -27387,14 +27390,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p505-02": {
-      "sha256": "95bba0b404a248e171ed0810241d66880b04bb01abe40387bd2a224cb05736b0",
+      "sha256": "f2e81a6faa0de51b2d29eb38f93e0accf2f6dfedc2542eca5878f5fb7a124ed9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged505 لاحظ includes ا missing in own لحظ. Contextual لطف favor/kind care, not physical softness; full qualities/favors/enhanced servitude kept. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p505-03": {
       "sha256": "1040f120dab677d5a7b5462746eedc75108d949b42c886d193db498f886d5459",
@@ -27427,14 +27431,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p506-02": {
-      "sha256": "500b554e2aedd91066f278e73e99ef596388a021400df4a22ded96abef276f58",
+      "sha256": "43b1ef2a7022f2d32b3e4e900fc6c0e8b8d84be51bf344679d187e0ea2dee53d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged506 ما سبق به له التقدير includes به, omitted in own transcription. Existing RU predestined gift-to-servant meaning matches; no causal/prayer argument cut. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p506-03+v3-p507-01": {
       "sha256": "170181b868279262a77726305e4eeaecf6549414650eb9f36e68e14eb21e258f",
@@ -27557,14 +27562,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p509-06": {
-      "sha256": "cb469c0127511f3d245d8eaf241799589fec8e7f851a5276dda2f81ae2bc208f",
+      "sha256": "28fcf38ac63361e87e26ff0a104b4edaa827d42d4d105bce294956e00c1e624e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore separate أرجو وآمله rather than silently collapse repeated hope/expectation; both verse hemistichs and generous-hand image retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p510-01": {
       "sha256": "a5f66ac3414ebc321187c376b3578f74151fe433d65012d58394c8a118eda07e",
@@ -27647,24 +27653,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p511-02": {
-      "sha256": "782c0c847305582745dde93e1043a3e3edca7e5a83f9ac6ab30300df8e99d9e9",
+      "sha256": "191fee2d6da78307007f0fc3050a0388406e6e8da454f8280e8a9d73e4b427dc",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "محجوبتان عن الله spiritual barrier for people, not Russian hidden from God suggesting He does not know them. Full two-group blame retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p511-03": {
-      "sha256": "fd69e1b4e3efd378c7ab021279af98ab29160917a62a8be3e0db83c2730362e8",
+      "sha256": "1f5ee998a2ef3b0f0c2801ae092998dd9425d10abce8f455d26c7d0b99292b17",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Fix dangling Russian cognition subject: group cannot know owing to veil, veil does not itself know; past كثف and three law/command/decree objects retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p511-04": {
       "sha256": "af328828da4f4a958c195dbb729064d10a59c1b82574cce5d07f0c679ff6531e",
