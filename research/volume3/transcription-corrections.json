@@ -724,5 +724,16 @@
     "reason": "Enlarged printed 260 reads فتكملت; the apparatus reports فكملت as another witness, which is not the control. Preserve print without silently preferring secondary morphology.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p267-06",
+    "printed_page": 267,
+    "previous_ar": "ومن الفرقان أيضًا: أنّ كلَّ واردٍ استنار به القلب، وانشرح له الصّدر، وقوي به القلب= فهو إلهيٌّ ملَكيٌّ، وإلّا فهو شيطانيٌّ.",
+    "control_print_ar": "ومن الفرقان أيضًا: أنّ كلَّ واردٍ استنار به القلب، وانشرح له الصّدر، وقوي به القلب= فهو إلهيٌّ، وإلّا فهو شيطانيٌّ.",
+    "previous_ru": "Ещё одно различение: всякое воздействие, от которого сердце озаряется, грудь раскрывается и сердце укрепляется, — божественное, ангельское. Иначе — шайтанское.",
+    "corrected_ru": "Ещё одно различение: всякое воздействие, от которого сердце озаряется, грудь раскрывается и сердце укрепляется, — божественное. Иначе — шайтанское.",
+    "reason": "Actual enlarged267-06 contains فهو إلهي وإلا فهو شيطاني with no ملكي. Remove own insertion, apparently carried over from neighboring repeated paragraphs, from Arabic and Russian; do not mechanically harmonize repeated classifications.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

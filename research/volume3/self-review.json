@@ -13589,14 +13589,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p262-04": {
-      "sha256": "dd6c8815df7a7fa4b047d537b7404726f06d5a7b2b27cd798da1a0b3d7b05df2",
+      "sha256": "30e750c559a626d0089d14a2001b5eaa90252fb996933a4f3c7451807c855d24",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove broken nominal opening without shortening each prohibition/permission, mercy/punishment distinction, or three cumulative perfections. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p262-05": {
       "sha256": "6120ffe15558855a29e7c8af0c43c26271e6dfe30053fba79ca5c55464f76fda",
@@ -13669,14 +13670,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p264-02": {
-      "sha256": "c8440a7c58e9c2f7c1df7fb7cc030691f7ff41ba79f8ae4733a7791ebe5a0f9c",
+      "sha256": "b649fbff33d065196187ccb1b19b992c23604ff142886bd571cc1f8e9877441f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace unintelligible сделать чистым в состоянии with explicit referent established immediately in264-06 الحال مظهر القصد وثمرته. Three distinct علم/عزم/حال aspects retained; no new religious conclusion. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p264-03": {
       "sha256": "66d97f78c65d7893cdcc7ae2f3b37ae21ac9fcbc4f9c6e745c5b26b916d0bb01",
@@ -13689,14 +13691,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p264-04": {
-      "sha256": "f122fc42689f5a1814a43db6c2d926cd8d13e5a99f9439cf475250c68312577f",
+      "sha256": "006b8cf35814861d4e6f1ede6f44423cae1a795da1b4bf23d99fd90dd3d290f6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Correct Russian government намереваясь на and opaque bare доли; preserve subordinate knowledge criterion, purification and exact sharia command explanation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p264-05": {
       "sha256": "126de35ebb1f17fbd60238193d7d65d0dd598e530751dee0774a63700d82face",
@@ -13709,24 +13712,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p264-06": {
-      "sha256": "51a55823345a42ba931008c189346e1486feb3c752633e66468cf1bc54cde71e",
+      "sha256": "f721406f3f97c55069f4026495326c27e2eab8a7a97f57e347f63c829d93d2d3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Keep corresponding formulation of264-02 and full reciprocal causation, not state as only consequence; all muck/admixture and repeated purification distinctions retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p264-07": {
-      "sha256": "4e0210db3a04699051a8cb3bbb61c900dc2629473bedf74cb324d0b5426c0fe7",
+      "sha256": "2b7a411fbcd5fa89bc89f6ebd2bcb736a241e5fc39257c43ea982a7632aec5e1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Preserve direction تصحيح/تحقيق and repair awkward Russian participial object. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p265-01": {
       "sha256": "5d94fe3a553696b6bfe3790835aba3ea9e735311bfa24d378bd7005db0898e9d",
@@ -13799,14 +13804,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p266-02": {
-      "sha256": "742bf0928c5c5602abaf88348c41d0c7ec1012a54ebad8e15e997ecff692d5b9",
+      "sha256": "0b90974cd88111f5cdc928431cb441be2de64973723dda7a26e157034363b46e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Match repeated quote264-07 while preserving ensuing full effort/correction/purification explanation and mixed truth/error. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p266-03+v3-p267-01": {
       "sha256": "e1eaf22568880730c2598dd410296ae034b790398ee641eb10a3a9a72daffdca",
@@ -13819,84 +13825,92 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p267-02": {
-      "sha256": "f65316d268fffbaf72da74dc723b5a2cf349565933f7362475514f2e1cecba70",
+      "sha256": "7026d31e95f29c32e0ad60e7158831372bf8324f917907d230621af9ad702b35",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Contrasted نشيط مسرور نشوان versus خبيث النفس كسلان heavy limbs/spirit and torpor, preserving all five indications; خبث النفس in this mood contrast no longer mechanically moralized as corrupt soul. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-03": {
-      "sha256": "076e27bfc6fe0c16c17cb5392907950ce99d40ce6a71da61e691ff9ff2cf9ae6",
+      "sha256": "bf3677a871e96a0aa5f15dac0806c5ca055dda41119f2d6754a9effd66743acf",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Natural Russian for أنس and خلافه بخلافه; five inner effects and angelic/divine classification preserved. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-04": {
-      "sha256": "305277e14c5450e4fe039570de9a523986ef519f34228ed333b28e97a116f70e",
+      "sha256": "f543e9f8f79abc98482a49a8feda316d54774ce3929edf41b9d9b117f0b4746f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Clarify inner حضورا فيها in subsequent словно vision of Paradise/Hell, without asserting bodily entry. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-05": {
-      "sha256": "b8349dc5061e1be0b04ca722bd0ccf4b7bc8cf1f4f8092f2449bd2f30e51c902",
+      "sha256": "2e03d4be89af6e4d89c95a7f097b5970b916b1d3975683e71a1696e12888e7c1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-06": {
-      "sha256": "ce989afd0c2b18020e81855eaccb8d9b6d482ce993ac7cdde1f1379d0ec365f9",
+      "sha256": "bac4ffd020c14efdb0f23e0789d8e76d3344e66c39f2851c2da38c6911e24bda",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-07": {
-      "sha256": "fc72e0707de956a233fb314063dc9328609ffcfaf89e9dd59ba0d3ba5a6ff5fe",
+      "sha256": "87127676522b3091206ec7323c995b93f96e08543933fe544a15ab7b752095d0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p267-08+v3-p268-01": {
-      "sha256": "e222be0aa4336a6300a421c742111f7c1d22f8d04ae36998f24c4e569a9a4c35",
+      "sha256": "990b33eb8f4ff53e8d63c0acbe5ea1866b5d309fca84778edece7d5891229292",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Repair Russian word order while preserving cause and use restriction in both directions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p268-02": {
-      "sha256": "88f771e7f407f2e8550c18462ded46ac4b740e967eebec436bbacd95a876af4c",
+      "sha256": "ff277b977fc9f2388c7fda1b38779ec9c4ffb9bde03b9988f29b05d5613523ea",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Retain each repeated ومن الفرقان أيضا with natural Russian criterion wording, without merging repetitions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p268-03": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -14080,14 +14094,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p271-02": {
-      "sha256": "30877c58e670c50b563428044f2efdb0e77ae0876e154c82999154c953423074",
+      "sha256": "8300bac8127e81bb76a0523b80e505d5169552f679b49a4058d34c58cdf0a24a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove ambiguous от него; Russian feminine refers explicitly to preceding thought. Two just witnesses remain Book and Sunna, days and qualification retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p271-03": {
       "sha256": "f30ab0aab7fde9cc383c5ffd43bca829ed48831fd0afff6243a0b209cb8548ba",

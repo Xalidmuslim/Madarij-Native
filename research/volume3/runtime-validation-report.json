@@ -79,8 +79,8 @@
   "latest_corpus_check": "All3107 actual database rows exactly match latest packaged content through248, all seven fields, no extras; integrity_check ok. Both first volumes unchanged. APK also contains four explicit pending source statuses, not a publication-ready claim.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New print transcription/Russian corrections through260 after positive through248 APK.",
-    "current_asset_sha256": "4c0eb5f0bd146781fbf6f2242b10728abb8c38dbcc2c08dae2be652202674cfa",
+    "change": "Print/Russian corrections through272; added separately attributed own note265-06. Current expected3108 records, positive through248 DB3107 is historical.",
+    "current_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
     "current_asset_runtime_checked": false,
     "scope": "Root positive APK/DB hashes apply through248 only; new corpus bytes await next build/import. Four unresolved units unchanged."
   },

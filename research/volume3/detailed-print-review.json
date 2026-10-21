@@ -10596,8 +10596,457 @@
         }
       ],
       "finding": "Enlarged260 main text فتكملت; own فكملت corrected without preferring modern apparatus variant. Other printed منه and final إليه يرجع الأمر كله order retained. Entire first/second interpretations kept distinct."
+    },
+    {
+      "source_ids": [
+        "v3-p261-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "في",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual261 retains في دينهم; full author account and gospel examples compared, no secondary deletion. No independent historical verification of all claims inferred."
+    },
+    {
+      "source_ids": [
+        "v3-p262-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "هذا",
+          "secondary": "النحل فهذا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual262 تعالى, هذا إيجاب, final source reference النحل126 after second quote retained; canonical Arabic and Russian contrasted justice/forbearance intact."
+    },
+    {
+      "source_ids": [
+        "v3-p262-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "رءوس",
+          "secondary": "رؤس",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "هذا عدل",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "البقرة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "البقرة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual262 تعالى, هذا عدل, printed Quran spelling and single joint reference البقرة279–280 retained. Four consecutive quote/comment pairs and order preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p263-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual263 no separate الفاتحة in main paragraph; source quote and all encompassing-Ihsan sentences retained, no secondary word added."
+    },
+    {
+      "source_ids": [
+        "v3-p263-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنهما",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual263 رضي الله عنهما present. Russian keeps prayer for Ibn Abbas and father, full profession/obedience/paradise question."
+    },
+    {
+      "source_ids": [
+        "v3-p264-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الجامع",
+          "secondary": "الجامعة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual264 مع الله without added عز وجل, الجامع in masculine retained. All fear/love/knowledge/return/sincerity and all faith stations compared."
+    },
+    {
+      "source_ids": [
+        "v3-p264-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يجعل",
+          "secondary": "يجعله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual264 بأن يجعل without suffix ه retained. Russian personal-interest and grammatical fixes reread, not new source variant."
+    },
+    {
+      "source_ids": [
+        "v3-p264-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يراعيها",
+          "secondary": "تراعيها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويسترها",
+          "secondary": "وتسترها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويصححها",
+          "secondary": "وتصححها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual264 masculine يراعيها ويسترها ويصححها, not older addressee forms. Full three actions and motives retained in natural Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p265-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يكرم",
+          "secondary": "تكرم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual265 إن لم يكرم نزله, masculine verb retained; guest and hospitality analogy intact."
+    },
+    {
+      "source_ids": [
+        "v3-p265-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مالكة",
+          "secondary": "ملكة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يديه",
+          "secondary": "يده",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "طريق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual265 مالكة وشد يديه, no added طريق after قاطع. Entire possession/holding/robber analogy retained; no conjectural ملكة substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p265-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الملامة",
+          "secondary": "الملامتية",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ابو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual265 أصحاب الملامة and أبو عبد الله بن منازل printed. Retain author name, no silent modern apparatus replacement; biographical correctness is not established by print collation."
+    },
+    {
+      "source_ids": [
+        "v3-p266-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طريقه",
+          "secondary": "طريقته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual266 طريقه not طريقته; all three exceptions حجّة وحاجة وضرورة retained. No inferred removal of qualifications."
+    },
+    {
+      "source_ids": [
+        "v3-p267-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "في القلب معرفة بالله ومحبة له وانسا به وطمانينة بذكره وسكونا اليه",
+          "secondary": "صاحبه تقدما الى الله تعالى والدار الاخرة وحضورا فيها حتى كانه يشاهد الجنة قد ازلفت والجحيم قد سعرت",
+          "tokens": 18
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الهي",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الهي",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual267 independent full paragraph أعقب في القلب معرفة بالله...سكونا إليه. Candidate aligns incorrectly to following267-04; do not delete true complete paragraph or swap divine/angelic order."
+    },
+    {
+      "source_ids": [
+        "v3-p267-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual267 إلى الله والدار الآخرة without secondary تعالى. Full movement/presence/Paradise/Hell and opposite satanic/nafs contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p267-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "فهو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged267 confirms فهو إلهي وإلا فهو شيطاني, no ملكي unlike adjacent paragraphs. Removed own insertion from both languages; printed فهو retained."
+    },
+    {
+      "source_ids": [
+        "v3-p267-08",
+        "v3-p268-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ومصروفه",
+          "secondary": "ومصرفه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both leaves show مصروفه الأمر, not مصرفه. Cause and expenditure are each restricted to obedience/قربة, not one-sided rule."
+    },
+    {
+      "source_ids": [
+        "v3-p268-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التمكين",
+          "secondary": "التمكن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual268 أهل التمكين. Full soul-to-heart and heart-to-God two distances, bandit struggle and ability restriction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p269-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيقتبس",
+          "secondary": "ليقتبس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual269 فيرجع وراءه فيقتبس نورا, not ليقتبس. Threat, wall, Sirat and final divine aid retained; Quran57 allusion not converted to new direct quotation."
+    },
+    {
+      "source_ids": [
+        "v3-p270-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اثر",
+          "secondary": "اثار",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual270 أثر الرسول singular retained with all blocked paths/exception condition, no آثار harmonization."
+    },
+    {
+      "source_ids": [
+        "v3-p271-05",
+        "v3-p272-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual271 رحمه الله present; 272 continues exact exception إلا في تجريد التوحيد. Whole thirty years, severity, scholars disagreement and exception retained."
+    },
+    {
+      "source_ids": [
+        "v3-p272-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لزيارة بعض الزهاد",
+          "secondary": "لخادمه قم بنا الى هذا الرجل الذي قد شهر نفسه بالصلاح لنزوره",
+          "tokens": 12
+        },
+        {
+          "tag": "replace",
+          "control": "راه قد دخل",
+          "secondary": "دخلا عليه",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "ورمى ببصاقه",
+          "secondary": "تنخع ثم رمى بها",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual272 concise visit story, not expanded secondary version with servant invitation and reputation. Full mosque/spitting/qibla/return-without-greeting/saying retained, no expansion."
+    },
+    {
+      "source_ids": [
+        "v3-p272-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual272 no secondary تعالى/لي additions. Intention-question-abstention-later relief sequence and final wall/woman comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p272-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يرفع",
+          "secondary": "يرتفع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual272 أن يرفع في الهواء, not older يرتفع or إلى. Entire conditional wonder versus command/prohibition/limits/sharia test retained; passive Russian matches print."
     }
   ],
-  "record_count": 511,
+  "record_count": 534,
   "unreviewed_candidates_remain": true
 }

@@ -1808,6 +1808,90 @@
       ],
       "finding": "Ibn Umar report via Muslim ibn Abd Allah/Ismail ibn Ayyash begins إن لله ضنائن من خلقه يحييهم في عافية. Continuation is وإذا توفاهم إلى جنته with tribulations paragraph, not control ويميتهم في عافية. Preserve 2019 author wording and explicit يروى مرفوعا qualification, no primary tail imported and no new isnad/authenticity grade inferred. This is a related full report, not verbatim confirmation of whole author matn.",
       "method": "Same-agent actual2019 image comparison and free classical digital body lookup; no external human authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p265-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_kunya_differs_from_classical_biography_own_separate_reader_note_added",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "PageV01P119, complete Ibn Manazil biography and adjoining sayings"
+        }
+      ],
+      "finding": "Qushayri names أبو محمد عبد الله بن منازل شيخ الملامتية, companion of Hamdun, whereas2019 author says أبو عبد الله بن منازل. Author transcription/translation retained; original own note discloses this difference. Note written from directly read classical biography, not copied from modern publisher footnote. No new date or isnad judgement imported.",
+      "method": "Same-agent control2019 actual image, free classical digital full indicated record/context read and Russian compared; no independent human authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p266-03",
+        "v3-p267-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "three_hadith_wordings_located_not_entire_right_left_doctrine_authenticated",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_location": "168, full Aisha report"
+        },
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_location": "676, full Aisha chain/right sides of rows wording"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "2019/2020, all displayed Ibn Umar and Jabir variants"
+        }
+      ],
+      "finding": "Bukhari168 corroborates preference for right in footwear/hair/purification/all affairs; AbuDawud676 indeed contains ميامن الصفوف in fetched body; Muslim2020 explicitly eating/drinking left. Locate wording without importing any modern authentication grade. No assumption that right-row report has same transmission strength as Sahih reports. Spiritual incoming-influence rule, left share doctrine and toilet-entry rule are author discussion, not all newly authenticated as this matn.",
+      "method": "Same-agent control2019 actual image, free classical digital full indicated record/context read and Russian compared; no independent human authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p270-04",
+        "v3-p270-05",
+        "v3-p270-06",
+        "v3-p270-07",
+        "v3-p271-01",
+        "v3-p271-02",
+        "v3-p271-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_sufi_sayings_compared_print_variants_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "After PageV01P078 Junayd three sayings, before PageV01P069 AbuHafs saying, after PageV01P060 Darani report, before PageV01P060 Sahl saying"
+        }
+      ],
+      "finding": "Full Junayd path/Book-Sunna sayings found, primary extra هذا and ولم before يكتب plus بأصول versus printed بالأصول left unharmonized. AbuHafs primary فلا نعده differs author فلا يعد; same caution retained. Darani two witnesses and Sahl obedience/self pleasure contrast found in full. These are scholar sayings, not newly attributed prophetic hadiths. Russian Darani pronoun clarified.",
+      "method": "Same-agent control2019 actual image, free classical digital full indicated record/context read and Russian compared; no independent human authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p271-05",
+        "v3-p272-01",
+        "v3-p272-02",
+        "v3-p272-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "abu_yazid_full_related_reports_compared_not_expanded",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "PageV01P056–057, full thirty-years saying, visitor story and women-burden report"
+        }
+      ],
+      "finding": "Thirty-year learning/discipline and unity exception confirmed. Primary visit has quoted invitation and reputation, author concise version kept. Primary women-burden initial intention includes مؤنة الأكل, absent2019 author; do not insert eating-burden or extra honorifics. Complete intention/question/abstention/relief and woman/wall ending found. No external grading of chains or expansion of author excerpt.",
+      "method": "Same-agent control2019 actual image, free classical digital full indicated record/context read and Russian compared; no independent human authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
