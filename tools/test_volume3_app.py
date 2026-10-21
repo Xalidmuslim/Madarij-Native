@@ -22,7 +22,8 @@ class Volume3PackagingTest(unittest.TestCase):
         report = validate(self.bundle, self.structure)
         self.assertEqual(582, report["author_pages"])
         self.assertEqual(3096, report["author_paragraphs"])
-        self.assertEqual(["v3-p110-04"], report["unresolved_source_ids"])
+        self.assertEqual(["v3-p110-04", "v3-p246-03", "v3-p246-05", "v3-p247-03"],
+                         report["unresolved_source_ids"])
 
     def test_missing_chapter_is_rejected(self):
         self.rejected(lambda b, s: b["chapters"].pop(7))
@@ -45,13 +46,15 @@ class Volume3PackagingTest(unittest.TestCase):
     def test_unsupported_publication_claim_is_rejected(self):
         self.rejected(lambda b, s: b.update(publication_ready=True))
 
-    def test_unresolved_crux_cannot_be_relabelled_reviewed(self):
-        def change(b, s):
-            for c in b["chapters"]:
-                for p in c["paragraphs"]:
-                    if p["id"] == "v3-p110-04-ru":
-                        p["status"] = "draft_self_checked"
-        self.rejected(change)
+    def test_unresolved_passages_cannot_be_relabelled_reviewed(self):
+        for sid in self.bundle["unresolved_source_ids"]:
+            with self.subTest(source_id=sid):
+                def change(b, s):
+                    for c in b["chapters"]:
+                        for p in c["paragraphs"]:
+                            if p["id"] == sid + "-ru":
+                                p["status"] = "draft_self_checked"
+                self.rejected(change)
 
     def test_own_note_cannot_be_imported_as_author(self):
         def change(b, s):

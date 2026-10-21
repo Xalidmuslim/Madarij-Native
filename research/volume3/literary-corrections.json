@@ -575,5 +575,41 @@
     "corrected_ru": "Ибн Таймийя сказал: «Превосходство определяется не богатством и бедностью, а богобоязненностью. Если оба равны в богобоязненности, они равны и по степени». Я слышал, как он говорил это.",
     "reason": "Russian reply subject must be IbnTaymiyya, explicitly introduced at237 end and heard by author, not God who was just paraphrased in first person. Secondary inserted يعني ابن تيمية not adopted into control Arabic; Russian pronoun clarification only. Whole2019 Arabic passage read, Russian separately reread/back-compared, same-agent only.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p240-02"
+    ],
+    "previous_ru": "Бундар ибн аль-Хусайн, да помилует его Аллах, сказал: «Не спорь ради своей души: она не твоя. Оставь её её Владельцу — пусть делает с ней, что желает».",
+    "corrected_ru": "Бундар ибн аль-Хусайн, да помилует его Аллах, сказал: «Не спорь ради своей души: она не твоя. Оставь свою душу её Владельцу — пусть делает с ней, что желает».",
+    "reason": "Replace stuttering double её with explicit already established soul, preserving object and possessive relation. Russian separately reread and back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p243-04"
+    ],
+    "previous_ru": "К пагубным последствиям оставления и отказа брать относится также возникающая в нём гордыня, самолюбование и надменность. Они противодействуют отрешённости и оставлению мирского, как приниженность, униженность и смирение берущего противодействуют самому обретению. Беды есть и в обретении, и в отказе.",
+    "corrected_ru": "К пагубным последствиям оставления мирского и отказа брать его относятся также возникающие в человеке гордыня, самолюбование и надменность. Они служат противовесом отрешённости и оставлению мирского, как сокрушённость, униженность и смирение берущего служат противовесом самому обретению. Беды есть и в обретении, и в отказе.",
+    "reason": "Render repeated يقابل as counterweight in explicit balancing of acquiring/leaving perils; previous противодействуют could wrongly suggest humility prevents acquiring possessions. Whole242–243 context compared; author CuddatSabirin contextual parallels about pride in virtue and humility compatible with wealth examined, not treated as verbatim gloss. Russian separately reread and back-compared by same agent. Subject agreement/antecedent clarified; كسرة distinguished as brokenness rather than duplicate humiliation.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p240-07"
+    ],
+    "previous_ru": "Приверженцы калама разошлись о нём на два мнения, которые Абу аль-Хасан аль-Ашари, да помилует его Аллах, привёл в своих «Мнениях».",
+    "corrected_ru": "По этому вопросу у приверженцев калама было два различных мнения, которые Абу аль-Хасан аль-Ашари, да помилует его Аллах, привёл в своей книге «Мнения»:",
+    "reason": "Direct2019 p240: repair Russian разошлись о нём на два мнения, preserve two distinct opinions, named author/prayer/book and source colon leading to next-page list. Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p246-04"
+    ],
+    "previous_ru": "Крайняя нужда — созерцать совершенную необходимость и нужду и знанием, и состоянием.",
+    "corrected_ru": "Крайняя нужда — созерцать всю полноту своей потребности и нужды: осознавать их и переживать как состояние.",
+    "reason": "Direct2019 definition: شهود كمال الضرورة والفاقة علما وحالا. Render necessity as need rather than abstract obligation, and repair instrumental calque знанием и состоянием; preserve full need and two cognitive/experienced modes. Russian reread separately/back-compared, same-agent.",
+    "external_human_review": false
   }
 ]

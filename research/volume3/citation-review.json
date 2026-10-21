@@ -1743,6 +1743,39 @@
       ],
       "finding": "Read full local reports and chains.1865 through Umar ibn AbdAllah mawla Ghufra / Ayyub ibn Khalid / Jabir has gardens/gatherings, morning/evening remembrance, and complete final position-at-God comparison. It also includes introductory angel patrols and وذكروه بأنفسكم not quoted by author;2138 lacks فلينظر كيف منزلة الله عنده. Preserve author shorter wording without adding source matter. This finds full composite scene in AbuYala, but does not establish which specific المسند the author meant, nor literal identity with Ahmad. Modern editor grading not imported or independently adopted.",
       "method": "Same-agent 2019 print and classical source-body comparison; no full independent chain verification or modern protected note reproduction."
+    },
+    {
+      "source_ids": [
+        "v3-p243-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "same_author_context_compared_not_verbatim_commentary",
+      "checked_primary_records": [
+        {
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.CuddatSabirin/0751IbnQayyimJawziyya.CuddatSabirin.Shamela0011274-ara1",
+          "blob": "7fb9ec463d7758ca146d665205b5d920345d42bc",
+          "digital_location": "PageV01P065 post-deed patience paragraph; PageV01P175 second answer on humility/wealth"
+        }
+      ],
+      "finding": "Author warns that admiring and boasting in obedience can harm more than outward sins; separately states humility/brokenness of heart does not oppose wealth and does not require material poverty. This contextual check supports balancing harms/benefits in243-04; it is not an exact lexical commentary on يقابل and does not uniquely settle every shade. Russian counterweight keeps comparison without implying humility physically obstructs earning. No opponent claim or source hadith grading imported.",
+      "method": "Manual same-agent control print, classical source body, context and Russian comparison. Not independent human editing or full isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p242-05",
+        "v3-p243-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_rights_principle_compared_author_paraphrase_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "1968,1975"
+        }
+      ],
+      "finding": "Read full1968 and1975.1968 has Salman saying rights of Lord/self/family and give each right; Prophet approves صدق سلمان.1975 directly quotes Prophet on body/eye/wife/visitor rights. Control quotation uses self/wife/guest then give each right, so preserve as author transmission of sense, not certify all words as one verbatim primary matn. Do not add secondary ولربك absent in2019. No new chain-strength ruling or altered author attribution.",
+      "method": "Manual same-agent control print, classical source body, context and Russian comparison. Not independent human editing or full isnad authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

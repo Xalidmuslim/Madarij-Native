@@ -9680,8 +9680,382 @@
         }
       ],
       "finding": "Page break checked: control يحاج, not expanded يحاجج. All ownership/first-step distinctions and four negated self-defenses plus surrender retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p240-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Russian repeated object/possessive expressed naturally by explicit soul, no change in surrender to its owner."
+    },
+    {
+      "source_ids": [
+        "v3-p240-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no inserted على after أجمعت. Whole unanimity attributed to this group, path/door metaphor retained."
+    },
+    {
+      "source_ids": [
+        "v3-p240-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Russian bad government разошлись о ... repaired; exactly two differing opinions, named scholar/prayer/book and introductory colon preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p242-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لطلبها",
+          "secondary": "لتركها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ولتركها",
+          "secondary": "ولطلبها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تحجبه",
+          "secondary": "يحجبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control طلبها then تركها, and feminine تحجبه. All taking/seeking and leaving/disinclination pairs, inward/outward and no-veil condition preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p242-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "افاته",
+          "secondary": "الافة",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms singular definite الآفة, not own آفاتِه; source/Russian singular harm restored, both question alternatives retained."
+    },
+    {
+      "source_ids": [
+        "v3-p242-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "باللقمة",
+          "secondary": "بلقمة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بمجاهدتها ومدافعتها",
+          "secondary": "بمجاهدته ومدافعته",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "اعطاها",
+          "secondary": "اعطها",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms indefinite بلقمة, own definite article removed. Printed feminine بمجاهدتها ومدافعتها and past أعطاها retained. Complete human/not-angel qualification, needs, struggle, dog/morsel analogy, time and duty all retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p242-05",
+        "v3-p243-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولربك عليك حقا",
+          "tokens": 3
+        }
+      ],
+      "finding": "Page break checked: no secondary ولربك عليك حقا. Rights of self/wife/guest and each-right conclusion retained. Bukhari1968/1975 source comparison qualifies exact-wording and speaker differences in separate citation record."
+    },
+    {
+      "source_ids": [
+        "v3-p243-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يدخله",
+          "secondary": "يداخله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "التارك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control يدخله not يداخله and no inserted التارك. Whole pride/self-admiration/haughtiness list, asceticism counterweight and taking-side brokenness/humility comparison retained. Russian يقابل clarified as counterweight, not obstruction of earning; same-author broader context checked with limits documented."
+    },
+    {
+      "source_ids": [
+        "v3-p243-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رحمه الله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no inserted رحمه الله. Full quoted author phrase and following three commendation verbs retained."
+    },
+    {
+      "source_ids": [
+        "v3-p245-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يامرنا",
+          "secondary": "يامر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and يأمرنا retained. Full Wasiti question and reply on obedience/recognizing deficiency preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p245-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "منه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control both رحمه الله and أكمل منه retained. Full fana/baqa comparison and necessity of seeing deficiency preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p245-08",
+        "v3-p246-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "النيسابوري",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الجلاء",
+          "secondary": "الجلا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في الظاهر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both printed sides plus8x crops: first nisba النيسابوري retained without extra second occurrence; control ابن الجلا without hamza and في الظاهر restored from own omissions. Russian outward/inner contrast restored; whole deathbed story and Sunna exhortation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p246-03"
+      ],
+      "decision": "retain_control_translation_pending_context",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صحة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بيد",
+          "secondary": "يد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الوحداني والاحتباس",
+          "secondary": "الوجداني او الاحتباس",
+          "tokens": 3
+        }
+      ],
+      "finding": "Control صحة، بيد، الوحداني والاحتباس retained rather than older omissions/يد/الوجداني أو. Arabic print decision complete; Russian term choice explicitly reopened in contextual-review and semantic/back flags pending, not final."
+    },
+    {
+      "source_ids": [
+        "v3-p246-05"
+      ],
+      "decision": "retain_control_translation_pending_context",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بيد",
+          "secondary": "يد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الوحداني",
+          "secondary": "الوجداني",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بنفسها",
+          "secondary": "في نفسها",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "بيدها",
+          "secondary": "يدها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بيد، الوحداني، بنفسها، بيدها retained. Whole author explanation read; numeric-sounding Russian alone/oneness terminology not certified, semantic/back stages reopened pending contextual revision."
+    },
+    {
+      "source_ids": [
+        "v3-p247-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وسمى",
+          "secondary": "وسمي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control active وسمى retained. Whole constraint/abstraction explanation, alternative witnessing and author attribution preserved; related referent247-03 separately remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p247-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منهما",
+          "secondary": "منهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control dual منهما not older منهم; three positions, two named plus mutual-completion third and attribution to Sham preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p248-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضاه",
+          "secondary": "ارضاه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عما",
+          "secondary": "عن",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms رضاه and عن سواه. Own extra ما removed in source; Russian satisfaction and inner rather than material wealth retained."
+    },
+    {
+      "source_ids": [
+        "v3-p248-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "النوعين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control نوعي الغنى without older extra النوعين and no added به before من المال. Both heart and material enrichment retained, including author preference for third interpretation."
     }
   ],
-  "record_count": 471,
+  "record_count": 489,
   "unreviewed_candidates_remain": true
 }

@@ -12298,14 +12298,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p240-02": {
-      "sha256": "08690cc23b6ebd835f5b0f2fcd4bddb5d1a5b20b19b2165a98336f427c0837e3",
+      "sha256": "fddb099974ae4a134b79eb0afa19617539a6d1d844d62866305340ce2241b46e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace stuttering double её with explicit already established soul, preserving object and possessive relation. Russian separately reread and back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p240-03": {
       "sha256": "d10a35df13cd2e42062fc020d9d386d5dc8afa4044e2c4a79348fe9c99095b72",
@@ -12348,14 +12349,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p240-07": {
-      "sha256": "c1c7cec4fb819012b17659f47309a036ec1dab622893a6b047f5d3ae5c8dd89f",
+      "sha256": "091f3cab79816d7f5f4ecf00969774ba7f53074e731a05d9f8721eee6498588a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct2019 p240: repair Russian разошлись о нём на два мнения, preserve two distinct opinions, named author/prayer/book and source colon leading to next-page list. Russian separately reread/back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p241-01": {
       "sha256": "153565194d36637c41e4cd57f52c1376baab8d4654ffb4b97c66c24e4b773f9f",
@@ -12418,7 +12420,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p242-02": {
-      "sha256": "20da94b76689a9622919e2984751f70dcee25e2298182560c0db671786b57f67",
+      "sha256": "8a9c984ad7bb94faf57045e5812388320f32391282ab60919bcdd9a75b9ef054",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -12426,7 +12428,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
+      "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated.",
+      "resolution": "2019 full page and8x crop show singular definite الآفة, not own آفاتِه. Restore word and Russian singular general harm; both taking/seeking and leaving/turning-away pairs retained. Whole paragraph compared, Russian separately reread/back-compared by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p242-03": {
       "sha256": "2c7d077250f767064d9b88e183849e9e2a2f6364621b3bb117a6b191f5a9da48",
@@ -12440,14 +12443,15 @@
       "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p242-04": {
-      "sha256": "ea01ee05594af90dcbd10dd59f5f9643e5a2bb09273de1980078a4c377f5a39c",
+      "sha256": "c953de912783abb0b8fc10105d9020ea00e3acddd7a33d03f214d0bb8c7aaa4c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 full page and8x crop print indefinite بلقمة, not own باللقمة. Russian already accurately says одним куском пищи. Printed feminine بمجاهدتها ومدافعتها and past أعطاها retained, not harmonized to older witness. Whole paragraph compared, Russian separately reread/back-compared by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p242-05+v3-p243-01": {
       "sha256": "379e6e5dd613a2e567f332d1586a6b00d311ce44da601da707932e8129891843",
@@ -12480,14 +12484,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p243-04": {
-      "sha256": "b16226fdc4f8f7aeeaaf568b80be0c88c89c3a83f13197e554c654d6e4b46035",
+      "sha256": "034824419703e56a38aa11384771596db8f256cf59ac69a41ddb039e70db8e52",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render repeated يقابل as counterweight in explicit balancing of acquiring/leaving perils; previous противодействуют could wrongly suggest humility prevents acquiring possessions. Whole242–243 context compared; author CuddatSabirin contextual parallels about pride in virtue and humility compatible with wealth examined, not treated as verbatim gloss. Russian separately reread and back-compared by same agent. Subject agreement/antecedent clarified; كسرة distinguished as brokenness rather than duplicate humiliation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p243-05": {
       "sha256": "9b0f5821462e8659704e0a3635c1352a187d760eb45d199694f3c45e354354c6",
@@ -12641,14 +12646,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p245-08+v3-p246-01": {
-      "sha256": "0f3b911dad662ee1bfad1bda40eddb7f8879f6ab2ac12022dbf148ec66eb6b0c",
+      "sha256": "8488e28e1731731c4883871a3cab997db83a1f5e6d99a06de955e0fb9072dea7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full2019 p246 and8x crops clearly print ابن الجلا without final hamza and خلاف السنة في الظاهر علامة رياء في الباطن. Restore omitted outward qualifier, preserve outward/inner contrast in Russian; proper-name Russian unchanged. Entire joined245/246 paragraph reread/back-compared by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p246-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -12663,32 +12669,37 @@
     "v3-p246-03": {
       "sha256": "6bb009527916e92f46b1804aae1f66ac8fa4640be4b17cc89d187a713f4b4859",
       "stages": {
-        "semantic": "self_checked_against_print",
+        "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
+        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "open_issue": "Printed التقطع الوحداني retained; existing Russian единственного отрешения does not yet adequately settle monadic/isolated detachment in Herawi quotation. Reconcile term with IbnQayyim246-05 explanation and247 before final choice; do not replace by older الوجداني.",
+      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
     },
     "v3-p246-04": {
-      "sha256": "f1271ae8d1b0efc7728b1229f2569aae6f544c09e599924f8804d60d01cd0e4c",
+      "sha256": "0d2943e063c0c3b36ecf5a90497e1cc969fbfd2cb6715ece6d86bf0e83475ece",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct2019 definition: شهود كمال الضرورة والفاقة علما وحالا. Render necessity as need rather than abstract obligation, and repair instrumental calque знанием и состоянием; preserve full need and two cognitive/experienced modes. Russian reread separately/back-compared, same-agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p246-05": {
       "sha256": "57ed7c1c0c33dbb9d40b3379f6ec326ba808c51c23f7246910526f3ca2df00e7",
       "stages": {
-        "semantic": "self_checked_against_print",
+        "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
+        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "open_issue": "Same unresolved الوحداني / وحدانية بنفسها rendering as246-03. Author says no other things in this presence; current numeric-sounding Russian must be contextually revised, not silently certified.",
+      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
     },
     "v3-p246-06": {
       "sha256": "342f65b088ad2693946ef5b4dfd8eb81cc5deed5da578ec6db14692117bb027e",
@@ -12723,12 +12734,14 @@
     "v3-p247-03": {
       "sha256": "db136ca1b5a291d2e209b00aa7487520764e3993cede80d7f9a8be9956649e68",
       "stages": {
-        "semantic": "self_checked_against_print",
+        "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
+        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "open_issue": "Control فيه / معه are masculine while current Russian в ней / с ней refers to desert. Exact referent of constraint/abstraction/witnessing needs contextual decision; retain draft and do not mark back-comparison final.",
+      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
     },
     "v3-p247-04": {
       "sha256": "97401a2485800478854efcb1d4121d942bdca7255ecd0fefff1b3e22de6cee67",
@@ -12831,14 +12844,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p248-07": {
-      "sha256": "63983ae28cbd34ed1bf895779543a76aba591ee8a23b5599414c5e4848e7356a",
+      "sha256": "7e157f78eacdc73579bc175ec9f1752a56ce82be7227da39d9c79651a6c1dee3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 full p248 and8x crop print عن سواه without ما. Restore own added ما; retain printed رضاه rather than older أرضاه. Whole Russian inner-versus-material-wealth contrast reread/back-compared and already matches sense. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p248-08": {
       "sha256": "1bc48cb8ea6829f8a0bca0b0e8614be58f778aeec969cfbcbc23317228f69bce",
