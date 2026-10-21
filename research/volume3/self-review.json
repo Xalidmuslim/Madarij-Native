@@ -19898,14 +19898,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p371-03": {
-      "sha256": "a77fc49198920b04a48b81d061d3e935c1fc5578aeb81719db1d7d9ed2ff8f2d",
+      "sha256": "33ebce078cc02cbd10e1b102b95d1c5bbb974beb30db5112f4cda1183e716450",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Active participle حابّ has long a, distinct from حبّ. Mark vowel length in this explicit grammatical contrast; passive/active muhabb/muhibb distinction retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p371-04": {
       "sha256": "a6cf380d1c39d1f3bff268ca767bbdebbc198dbaa399987ab6c2444272465d6d",
@@ -20028,14 +20029,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p373-03": {
-      "sha256": "148e54d3958e5b0b6dbfef72048e67b0bfb572c8a8db532b213fde898c8a90e0",
+      "sha256": "6dd708bd135e0308e0dd4621aaf5b84cdbfd03e3bc3fe33623f6e20b62eccbd6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render أخذه منه as removal from self-occupation without the unnatural Russian отняла у себя самого, whose grammatical subject falsely becomes love taking from itself. Preserve both fana/perception and taking-away clauses, attribution and need for fuller explanation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p373-04": {
       "sha256": "49d62d1fb45e213ef29eecd4e254a76153c25c6e813f324c713227371f676123",
@@ -20299,14 +20301,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p376-06": {
-      "sha256": "db5cf36d98ae81401c731fbc4cd2728428097b1eb062cbc14d1d7f8455942089",
+      "sha256": "baa08c4d08cb72d888afceef37d5aa334dcf69ae966a437677847bd2766da9d5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "طيوفه is plural, not a singular phantom. Restore plurality with both verbs while retaining full two hemistichs and faded-remnant image. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p376-07": {
       "sha256": "d4a7cfedc737717d08e3b7c4378230ffa5ea61f7aa58b7141364ff0e4f18e23e",
@@ -20439,14 +20442,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p379-01": {
-      "sha256": "24ebf31a23ef235f0813035cc7d69f4317c6a35ca5b56c59f514ab43325b2f3a",
+      "sha256": "c3374cd6489983a35c1bb84477314dba8c121054af59c4aeb360e158dce4456f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed منهم وغيرهم من أهل العلم explicitly includes other learned people; restore omitted أهل العلم relationship in Russian. Preserve cause, author polemical attribution and all three condemned doctrines, not a new editorial judgment. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p379-02": {
       "sha256": "e4431d64753c5dbfe84550934286dc88db2a96fb8b32602a14105e568575f106",
@@ -20599,24 +20603,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p381-03": {
-      "sha256": "ad48fffc5698a96009c687a5d4a973c19ca6ec9e64446d631eefaa702e1edde7",
+      "sha256": "15dd0f866caa3b068826dac2b9738e9bf917c3a21093cb138ad92e61073ddd92",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "فهو بالله ولله ومع الله summarizes reliance, purpose and companionship. Replace ungrammatical Он — Аллахом with a natural Russian state-of-life predicate; retain all three prepositions, preceding speech/movement/rest clauses and reported Junayd attribution, without identifying creature with God. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p381-04": {
-      "sha256": "3186a18e249a37b9a9f7661a44e3f908b5cabb469b71212679ceb02c311a2f95",
+      "sha256": "f42190a79023874004eb4da7bb2dfb3ecc4d0cad2e6f28621c94706b05f5e8d9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "جبرك الله is a prayer of divine support/restoration. Do not add an unprinted prior depletion of physical strength; keep their tears and no-addition praise. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p381-05": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -20879,14 +20885,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p385-02": {
-      "sha256": "63ff3247a6ea1eb80fcb32956e3caa8c6b1960da2bab390014e39bdc2a157cc6",
+      "sha256": "9989ee1648ead0a12994d348e69d1520eddbcacab903e4353e66bdeac22d9f2f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Make feminine antecedent love explicit after paragraph transition; preserve exclusive devotion and all creator/lordship vs worship contrasts without a new interpretation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p385-03": {
       "sha256": "781c179b5a85f67df0275d58cc46e41c498df4771e3d2de27c24e004a0d39825",

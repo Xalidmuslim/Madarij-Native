@@ -15068,8 +15068,732 @@
         }
       ],
       "finding": "Actual صفاء المودة without added للمحبوب, لا تفارق without suffix, and singular إرادته. Complete correspondence of all five lexical senses in Russian retained, no deletion or normalization."
+    },
+    {
+      "source_ids": [
+        "v3-p371-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الشفهية",
+          "secondary": "الشفوية",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual الشفهية not secondary الشفوية; entire throat/lips explanation, two following poetic citations and love/beloved vowel distinctions retained. Russian حاب participle length clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p372-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في اللغة العربية",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual no added في اللغة العربية; read complete carrying/burden/tree/child continuation and language/value sentence."
+    },
+    {
+      "source_ids": [
+        "v3-p372-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الى الكلام",
+          "secondary": "اليه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual repeated إلى الكلام, not إليه. Complete heading and first three definitions retained."
+    },
+    {
+      "source_ids": [
+        "v3-p373-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يصحبه",
+          "secondary": "تصحبه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فمحبة",
+          "secondary": "فمحبته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual masculine يصحبه and فمحبة, not secondary تصحبه / فمحبته. Keep conditional criticism and restriction to sincere sound love."
+    },
+    {
+      "source_ids": [
+        "v3-p373-08",
+        "v3-p374-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو لابي",
+          "secondary": "وهذا قول ابي",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual وهو لأبي يزيد across373–374, not old expanded وهذا قول أبي. All seventh/eighth definitions and author qualifications retained."
+    },
+    {
+      "source_ids": [
+        "v3-p374-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واستحيا",
+          "secondary": "واستحيى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual واستحيا final alif, not secondary واستحيى. Both much/small actions vs beloved gifts contrasted in full."
+    },
+    {
+      "source_ids": [
+        "v3-p375-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وعزماتك",
+          "secondary": "وعزمك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual plural وعزماتك, not singular وعزمك. All six gifts, consecration and permitted taking retained."
+    },
+    {
+      "source_ids": [
+        "v3-p375-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منها",
+          "secondary": "فيها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual منها not فيها; preserve both deed and state, and attribution to IbnAta."
+    },
+    {
+      "source_ids": [
+        "v3-p377-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سلطان",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual سلطان present before الهيبة; entire alternative interpretation, quoted report and immediate author rebuttal read completely. Full AbuDawud5130 body/chain matched without new grading."
+    },
+    {
+      "source_ids": [
+        "v3-p377-05",
+        "v3-p378-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "يعمى ويصم عن سوى محبوبه وقد",
+          "secondary": "",
+          "tokens": 6
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "البكم العمي",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "البكم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both repeated blindness/deafness cases are printed before and after page break; no deletion of first from older witness. Actual ending الصم البكم without added العمي. Author denial of applying this description to love of God retained."
+    },
+    {
+      "source_ids": [
+        "v3-p378-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الى الشيء",
+          "secondary": "للشيء",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual ميلك إلى الشيء not للشيء. Complete four-stage twenty-first definition and both-name prayer retained."
+    },
+    {
+      "source_ids": [
+        "v3-p378-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المباحية",
+          "secondary": "الاباحية",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وطردهم",
+          "secondary": "فطردهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "انت كنت",
+          "secondary": "تكون",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وانفضح",
+          "secondary": "وافتضح",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual المباحية, وطردهم, أنت = كنت and وانفضح all visible. Keep teacher quote separate from opponent and ensuing author endorsement limited to divine religious/command will rather than universal decree."
+    },
+    {
+      "source_ids": [
+        "v3-p379-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "اهل",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أهل العلم is printed; restore explicit learned-people description omitted from Russian. All three author polemical terms and final protection formula retained."
+    },
+    {
+      "source_ids": [
+        "v3-p379-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والالفاظ المبتدعة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print has no added والألفاظ المبتدعة. Complete protection-of-love paragraph and double صدق preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p380-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اموره",
+          "secondary": "امورك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أموره not أمورك. Preserve all four following numbered definitions, related commentary and conditional claims."
+    },
+    {
+      "source_ids": [
+        "v3-p380-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هذا",
+          "secondary": "ذلك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ينقصها",
+          "secondary": "تنقصها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جاءه",
+          "secondary": "جاء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تشغله",
+          "secondary": "يشغله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يزول",
+          "secondary": "يزيل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لبره",
+          "secondary": "بره",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جمعت",
+          "secondary": "اجتمعت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لكان",
+          "secondary": "كان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وفي هذا, masculine ينقصها, جاءه, feminine تشغله, يزول, لبره, جمعت and لكان. Full objection, proposed explanation, continuing reservation and infinite knowledge/beneficence/love comparison intact."
+    },
+    {
+      "source_ids": [
+        "v3-p381-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "احرق",
+          "secondary": "احرقت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual رحمه الله present, no extra تعالى, أحرق masculine without ت. Complete Junayd report read, all three final بالله ولله ومع الله retained with idiomatic Russian predicate instead of instrumental Он — Аллахом; following tearful praise not omitted."
+    },
+    {
+      "source_ids": [
+        "v3-p382-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وميادينها",
+          "secondary": "ومباديها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وميادينها not ومبادئها. All name/attribute/action pathways and author criticism of three groups kept separate."
+    },
+    {
+      "source_ids": [
+        "v3-p382-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يديه",
+          "secondary": "يدي الله تعالى",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual بين يديه, not added يدي الله تعالى. Full seventh means and limitation of expression intact."
+    },
+    {
+      "source_ids": [
+        "v3-p382-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بادب العبودية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual والتأدب بين يديه without added بأدب العبودية; all retreat/recitation/presence/repentance clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p382-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كلماتهم",
+          "secondary": "كلامهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تنتقي",
+          "secondary": "ينتقي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual كلماتهم plural and تنتقي second-person; full fruit simile, conditions for speaking and benefit to others preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p383-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اطلق",
+          "secondary": "اطلقوا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual passive أطلق, no وا or extra بها. Keep reported deniers attribution, their reinterpretation and reward-as-end argument complete."
+    },
+    {
+      "source_ids": [
+        "v3-p383-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ثناءه",
+          "secondary": "بثنائه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ثناءه without added initial ب; all alternatives and following separate-result/will summary retained."
+    },
+    {
+      "source_ids": [
+        "v3-p383-08",
+        "v3-p384-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سميت رحمة وان تعلقت بالاحسان",
+          "secondary": "",
+          "tokens": 5
+        }
+      ],
+      "finding": "Complete رحمة / وإن تعلقت بالإحسان segment is printed across383–384. Reject secondary deletion. All five quoted will/object conditionals retained and distinctly attributed to criticized group."
+    },
+    {
+      "source_ids": [
+        "v3-p384-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "جعلها نفس الانعام والاحسان",
+          "secondary": "جعل محبته للعبد ثناءه عليه ومدحه له ردها الى صفة الكلام",
+          "tokens": 11
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من صفات الذات لا",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual ومن جعلها نفس الإنعام والإحسان, not duplicated preceding الكلام sentence. Keep three mutually contrasting attributions and complete negation of love in their view."
+    },
+    {
+      "source_ids": [
+        "v3-p384-07",
+        "v3-p385-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من ذلك",
+          "secondary": "لذلك",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وجدا",
+          "secondary": "وجدوا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual من ذلك, dual وجدا, خلقت به and تضمنه الأمر (no extra به). Read complete385 continuation; no plural foundوا or moved preposition substituted. Book identification and all creation/command/reward/punishment clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p385-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وانه",
+          "secondary": "وبانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتالهون",
+          "secondary": "يؤلهون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وأنه not وبأنه, يتألهون not يؤلهون. Full exclusive lordship vs worship distinction retained; Russian love antecedent clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p385-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في الربوبية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual قال تعالى without added الله, and no added في الربوبية after في الخلق والربوبية. Full2:165 excerpt and both distinct equalities retained."
+    },
+    {
+      "source_ids": [
+        "v3-p386-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "البقرة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no added تعالى after لله and no new printed البقرة label here. Full two alternative readings and two loves comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p386-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لله",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "شركوا",
+          "secondary": "يشركون",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اندادا والثاني ان المعنى يحبون",
+          "tokens": 5
+        }
+      ],
+      "finding": "Actual لله, past شركوا and complete next definition separately placed. No secondary inserted duplications or tense change."
+    },
+    {
+      "source_ids": [
+        "v3-p386-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شركوا",
+          "secondary": "اشركوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual شركوا not أشركوا; entire teacher quotation and single devotion conclusion retained."
+    },
+    {
+      "source_ids": [
+        "v3-p386-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هي",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "انهم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual هي and أنهم both present. Full26:97–98 quote and explanation of love/reverence vs creation/lordship retained."
+    },
+    {
+      "source_ids": [
+        "v3-p387-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "الحمد لله الذي خلق السماوات والارض وجعل الظلمات والنور",
+          "secondary": "",
+          "tokens": 9
+        }
+      ],
+      "finding": "Actual complete6:1 begins الحمد لله الذي خلق السماوات والأرض وجعل الظلمات والنور. Reject large secondary deletion; both interpretations and author linguistic critique retained."
+    },
+    {
+      "source_ids": [
+        "v3-p387-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وهذه تسمى اية المحبة",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual وهذه تسمى آية المحبة present. Distinct الحب/المحنة wordplay and both3:31 citations retained."
+    },
+    {
+      "source_ids": [
+        "v3-p387-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ال عمران",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "فلا",
+          "secondary": "فليست",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual honorific صلى الله عليه وسلم present, فلا محبتكم له حاصلة, no extra repeated سورة label. Preserve both absence-of-following consequences."
+    },
+    {
+      "source_ids": [
+        "v3-p387-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يا ايها",
+          "secondary": "ياايها",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فقد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual يا أيها and ذكر لهم without extra فقد. Full5:54 quote complete, next four signs to continue388."
     }
   ],
-  "record_count": 726,
+  "record_count": 762,
   "unreviewed_candidates_remain": true
 }

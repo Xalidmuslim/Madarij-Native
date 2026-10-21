@@ -2080,6 +2080,23 @@
       ],
       "finding": "Entry distinguishes news خبر from الخبر بالضم وهو العلم بالشيء and knowing/testing uses. In author comparison الخبر به is knowing/acquaintance with object, not a speech report. Russian сообщении corrected; no new Arabic vowel silently inserted.",
       "method": "Same-agent classical lexical entry and author paragraph read; not independent human editing."
+    },
+    {
+      "source_ids": [
+        "v3-p377-03",
+        "v3-p377-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_primary_report_read_no_independent_grade",
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_location": "Complete5130 before5131/bab al-shafaa, PageV04P334"
+        }
+      ],
+      "finding": "Full chain Haywa/Baqiyya/AbuBakr ibnAbiMaryam/Khalid ibnMuhammad/Bilal/AbuDarda and exact حبك الشيء يعمي ويصم read in classical primary body. Control attribution to Prophet retained as author text, not newly independently authenticated. Author explicit rejection of applying the report to requested love of God is unabridged and distinct from preceding view. No modern editor assessment copied, no new grade assigned.",
+      "method": "Same-agent primary body, actual2019 images and complete Russian reread/back comparison; no independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
