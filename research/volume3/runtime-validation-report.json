@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
-  "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
+  "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
+  "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -20,8 +20,8 @@
       "3": 32
     },
     "volume3_author_paragraphs": 3096,
-    "volume3_editor_notes": 7,
-    "all_3103_packaged_rows_exactly_match_database": true,
+    "volume3_editor_notes": 10,
+    "all_3106_packaged_rows_exactly_match_database": true,
     "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
     "final_paragraph_search_target": "v3-p584-05-ru"
   },
@@ -32,8 +32,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 3,
-      "rows_after": 3,
+      "rows_before": 4,
+      "rows_after": 4,
       "unchanged": true
     },
     "notes": {
@@ -48,7 +48,7 @@
     }
   },
   "reading_preferences_unchanged": true,
-  "reading_preferences_sha256": "0f7e95211b7f39917c137619241ec5e84696dd463f00a523974dd527d8850af0",
+  "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
     "Third-volume TOC and first chapter, printed page 3",
     "Bookmark creation in first chapter",
@@ -71,16 +71,43 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "dea794641a5c46a051d936fd46b57c2ed09fe09e7735071c29ab1e85b11fefb2",
-    "volume3_asset_sha256": "58f7da24c213318946544dabdc49a0edad9f466101daa8c8b7458fb065770cf9",
-    "description": "Personal records and selected book font/size compared before/after this earlier corpus update. Later UI navigation and enabling Arabic intentionally changed positions/settings."
+    "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
+    "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
+    "description": "Current 21 October update, before subsequent UI search navigation. Before/after copies retain bookmark, four reading positions and settings bytes; empty notes/read_chapters tables unchanged."
   },
-  "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata.",
+  "latest_corpus_check": "All 3106 rows exactly compared after 21 October edits, including Arabic/Russian, chapter IDs, ordinals, roles, source metadata. A live snapshot with WAL passed integrity_check. Earlier cold-start snapshots still had old corpus; they were not accepted as positive checks.",
   "current_source_update": {
     "date": "2026-10-21",
     "change": "Seven Russian paragraphs refined; three own citation notes added. Current corpus: 3096 author records and 10 notes.",
     "current_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
-    "current_asset_runtime_checked": false,
-    "scope": "Rebuilding and checking final current APK. Prior snapshots from an early cold-start import still contained the old 3103 rows; no positive runtime assertion is made for this new corpus yet."
-  }
+    "current_asset_runtime_checked": true,
+    "scope": "Current APK ZIP asset exactly matches repository; signature v2 verified. All current database rows exactly match; user data and volumes 1–2 compared against pre-update snapshot."
+  },
+  "historical_2026_10_20": {
+    "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
+    "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 7,
+      "all_3103_packaged_rows_exactly_match_database": true,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "final_paragraph_search_target": "v3-p584-05-ru"
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "dea794641a5c46a051d936fd46b57c2ed09fe09e7735071c29ab1e85b11fefb2",
+      "volume3_asset_sha256": "58f7da24c213318946544dabdc49a0edad9f466101daa8c8b7458fb065770cf9",
+      "description": "Personal records and selected book font/size compared before/after this earlier corpus update. Later UI navigation and enabling Arabic intentionally changed positions/settings."
+    },
+    "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
+  },
+  "visual_check_scope": "Historical visual scenarios listed below were exercised on 20 October. Current 21 October checks: successful startup, exact DB corpus import, preserved personal data, and search for впадающие locating the updated page 321 paragraph.",
+  "current_visual_checks": [
+    "Search for впадающие returns one result in volume 3 Почитание, with updated quotation and author explanation visible."
+  ]
 }
