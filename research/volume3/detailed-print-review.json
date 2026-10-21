@@ -8075,8 +8075,349 @@
         }
       ],
       "finding": "Control المصلي with final ي retained. Entire body/heart and House/Lord contrasts preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p201-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وباء",
+          "secondary": "او باء",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control وباء coordinated grammatical possibilities, no inserted أو. Russian preserves two possible senses, causal and association."
+    },
+    {
+      "source_ids": [
+        "v3-p202-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او مع قوة",
+          "secondary": "وقوة",
+          "tokens": 3
+        }
+      ],
+      "finding": "Control أو مع قوة, not older وقوة. Both alternative causes of hayaman and inability to restrain will retained."
+    },
+    {
+      "source_ids": [
+        "v3-p202-08"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تطالعه",
+          "secondary": "يطالع",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop shows يطالع مبادئ الفناء, not own تطالعه مبادئ. Active observer restored in Arabic/Russian; surrounding beginnings, waves and time-before-dominion unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p203-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "قوله",
+          "secondary": "فتلا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and قوله, retain. Quoted question, response and Quran reference compared in both languages."
+    },
+    {
+      "source_ids": [
+        "v3-p203-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "قوله تعالى",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control قوله تعالى retained; entire Quran quotation and Russian compared."
+    },
+    {
+      "source_ids": [
+        "v3-p203-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التقييدات",
+          "secondary": "التقيدات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control التقييدات retained. Russian mechanical вместимость refined as heart spaciousness; following قلبا supports context, all constraints/disclosure clauses preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p203-08",
+        "v3-p204-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واسع",
+          "secondary": "اوسع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Page break checked: control واسع, not older أوسع. Complete multi-clause knowledge/gnosis comparison retained in Russian refinement, and final no-constraints distinction retained for following rejection of antinomian reading."
+    },
+    {
+      "source_ids": [
+        "v3-p204-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يوقف",
+          "secondary": "يقف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control يوقف retained. Full denunciation of unlawful shedding of bounds and conclusion preserved; no silent doctrinal alteration."
+    },
+    {
+      "source_ids": [
+        "v3-p204-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in both languages; author attribution of correct intent preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p204-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بمطابق",
+          "secondary": "مطابقا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بمطابق with ب retained. Full supplication excerpt and author rejection of application to this degree retained."
+    },
+    {
+      "source_ids": [
+        "v3-p204-06",
+        "v3-p205-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "موجبا له",
+          "tokens": 2
+        }
+      ],
+      "finding": "Page break checked: control no added موجبا له after طيب الحياة; full request/negated fana/positive baqa opposition and four qualities preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p205-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained; full qualified interpretation and author final refusal to call it exact intended meaning preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p206-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no extra سبحانه وتعالى. Both indicating/expression pairs, three kinds surpassed, and final والله أعلم retained."
+    },
+    {
+      "source_ids": [
+        "v3-p207-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added الفاتحة label in this repetition. Russian restores greatest degree الكبرى; all provisions/trade/return images retained."
+    },
+    {
+      "source_ids": [
+        "v3-p208-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكما",
+          "secondary": "فكما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "خراب",
+          "secondary": "وخراب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control وكما and بور خراب without inserted و; all three bodily positions/timed versus untimed worship and two cultivation metaphors retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p208-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مذكوره",
+          "secondary": "المذكور",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والى",
+          "secondary": "الى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اشتياقا",
+          "secondary": "واشتياقا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لسانه",
+          "secondary": "للسانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms لمذكوره, own missing ل restored with correct genitive instead of wrong nominative. Printed وإلى، اشتياقا، لسانه retained; Russian remembering/remembered relationship agrees and awkward перед поминанием clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p208-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي",
+          "secondary": "رحمه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والذكر",
+          "secondary": "وفي الذكر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رضي الله عنه and والذكر; retain, all three practices and conditional sweetness/closed-door assertion preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p209-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "صرع",
+          "secondary": "صرعه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فتجتمع",
+          "secondary": "فيجتمع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control صرع without object suffix and فتجتمع feminine; retain. Russian Satan is the one struck, analogy and human possession irony preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p210-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فقوله",
+          "secondary": "فكقوله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control فقوله, not فكقوله, and no added تعالى at second quote. Both complete printed Quran quotations, translated meanings and refs retained."
     }
   ],
-  "record_count": 387,
+  "record_count": 406,
   "unreviewed_candidates_remain": true
 }

@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "60db120495af11b5e4a61efb7fc23d8c3f606e74aaca7a9c1243a857d06b8ea0",
-  "volume3_asset_sha256": "99e5a818e6f42fd0a4284f1f416bee6c6ded7fd56b1223483251909d37b09a79",
+  "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
+  "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -59,9 +59,7 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Home opens after update.",
-    "Exact multiword query всецело отдаться returns one updated p136 result.",
-    "Opening full phrase result displays complete corrected Arabic/Russian p136 quotation and draft header."
+    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -73,17 +71,17 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "60db120495af11b5e4a61efb7fc23d8c3f606e74aaca7a9c1243a857d06b8ea0",
-    "volume3_asset_sha256": "99e5a818e6f42fd0a4284f1f416bee6c6ded7fd56b1223483251909d37b09a79",
-    "description": "Before/after update snapshots through159, prior to search navigation. Bookmark, seven positions and settings identical; empty notes/read_chapters unchanged."
+    "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
+    "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+    "description": "Before/after update through200, prior to search navigation. Bookmark, seven positions, empty notes/read_chapters and settings bytes unchanged."
   },
-  "latest_corpus_check": "All 3107 packaged rows exactly match actual database including updated 151-02 and 156-04. Early snapshot still had two old rows and was not accepted; later live snapshot passed all seven fields, no extra rows, integrity_check ok. First two volumes unchanged.",
+  "latest_corpus_check": "All 3107 APK records exactly match actual database including 191/194/196 Arabic corrections and all Russian refinements through200; no extra rows, integrity_check ok. Protected first two volumes unchanged.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional Russian refinements 161–200 and restored own Arabic omissions/readings on191,194,196. Positive APK remains through159; latest asset pending next import.",
-    "current_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+    "change": "New 202-08 active verb and 208-02 preposition restored, Russian203/207/208 refinements after positive through200 APK.",
+    "current_asset_sha256": "ec698fa1b7d0f22f83921e2ccb8494c6366ee7ae31475159bc52f7a32161aaba",
     "current_asset_runtime_checked": false,
-    "scope": "Root positive APK hashes remain proof through159 only; later Russian bytes await subsequent build/import."
+    "scope": "Positive root hashes and database evidence apply through200 only; later new bytes require next build/import."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -108,11 +106,9 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Latest build home and full-phrase search actually inspected; earlier reading and broad scenarios remain historical.",
+  "visual_check_scope": "Current through200 search result actually inspected; prior full UI scenarios remain historical.",
   "current_visual_checks": [
-    "Home opens after update.",
-    "Exact multiword query всецело отдаться returns one updated p136 result.",
-    "Opening full phrase result displays complete corrected Arabic/Russian p136 quotation and draft header."
+    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -462,5 +458,108 @@
       "fix": "Use implicit FTS3 conjunction between individually quoted prefix tokens.",
       "verification": "Previously failing query всецело отдаться now returns exactly one current p136 result on Android API28. Individual query tokens remain normalized and quoted; no SQL syntax accepted from user input."
     }
-  ]
+  ],
+  "historical_2026_10_21_through159": {
+    "date": "2026-10-21",
+    "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
+    "package": "ru.madarij.nativeapp.qalocal",
+    "build": "debug, standard local test key; not an owner-signed release",
+    "apk_sha256": "60db120495af11b5e4a61efb7fc23d8c3f606e74aaca7a9c1243a857d06b8ea0",
+    "volume3_asset_sha256": "99e5a818e6f42fd0a4284f1f416bee6c6ded7fd56b1223483251909d37b09a79",
+    "zip_integrity_checked": true,
+    "apk_asset_matches_repository": true,
+    "signature_verified": "APK Signature Scheme v2",
+    "jvm_test_suites": 17,
+    "jvm_tests": 97,
+    "jvm_failures": 0,
+    "jvm_errors": 0,
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 11,
+      "all_3107_packaged_rows_exactly_match_database": true,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 7,
+        "rows_after": 7,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "reading_preferences_unchanged": true,
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "visually_exercised": [
+      "Home opens after update.",
+      "Exact multiword query всецело отдаться returns one updated p136 result.",
+      "Opening full phrase result displays complete corrected Arabic/Russian p136 quotation and draft header."
+    ],
+    "not_claimed": [
+      "All 186 TOC targets individually tapped on a device; targets are statically checked",
+      "Physical Android device testing",
+      "Owner-signed release build",
+      "Independent human translation editing",
+      "Full external hadith authentication"
+    ],
+    "publication_ready": false,
+    "independent_human_review": false,
+    "personal_data_update_scope": {
+      "apk_sha256": "60db120495af11b5e4a61efb7fc23d8c3f606e74aaca7a9c1243a857d06b8ea0",
+      "volume3_asset_sha256": "99e5a818e6f42fd0a4284f1f416bee6c6ded7fd56b1223483251909d37b09a79",
+      "description": "Before/after update snapshots through159, prior to search navigation. Bookmark, seven positions and settings identical; empty notes/read_chapters unchanged."
+    },
+    "latest_corpus_check": "All 3107 packaged rows exactly match actual database including updated 151-02 and 156-04. Early snapshot still had two old rows and was not accepted; later live snapshot passed all seven fields, no extra rows, integrity_check ok. First two volumes unchanged.",
+    "current_source_update": {
+      "date": "2026-10-21",
+      "change": "Additional Russian refinements 161–200 and restored own Arabic omissions/readings on191,194,196. Positive APK remains through159; latest asset pending next import.",
+      "current_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+      "current_asset_runtime_checked": false,
+      "scope": "Root positive APK hashes remain proof through159 only; later Russian bytes await subsequent build/import."
+    },
+    "visual_check_scope": "Latest build home and full-phrase search actually inspected; earlier reading and broad scenarios remain historical.",
+    "current_visual_checks": [
+      "Home opens after update.",
+      "Exact multiword query всецело отдаться returns one updated p136 result.",
+      "Opening full phrase result displays complete corrected Arabic/Russian p136 quotation and draft header."
+    ],
+    "jvm_test_scope": "All 97 JVM tests in 17 suites rerun for search code correction, zero errors/failures. Also 24 Python content/integrity tests passed.",
+    "open_runtime_issues": [],
+    "resolved_runtime_issues": [
+      {
+        "id": "fts-multiword-prefix",
+        "fix": "Use implicit FTS3 conjunction between individually quoted prefix tokens.",
+        "verification": "Previously failing query всецело отдаться now returns exactly one current p136 result on Android API28. Individual query tokens remain normalized and quoted; no SQL syntax accepted from user input."
+      }
+    ]
+  }
 }

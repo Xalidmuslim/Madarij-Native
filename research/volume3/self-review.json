@@ -10136,14 +10136,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p202-08": {
-      "sha256": "a4359e44344f8399f4649695256b3da4747eaf43d9e8eb9f3087f129bed4c635",
+      "sha256": "d1a106f77241a6ad8f007a3441727f92b365744885218c75c6559d7a07e73086",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 full page and 8x crop clearly print يطالع مبادئ الفناء, not own تطالعه مبادئ. Restore active observer as subject and corresponding Russian, keep surrounding beginnings, drowning-wave analogy and before/after relation. Whole Russian reread separately and back-compared; same-agent only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p202-09": {
       "sha256": "cbef15dd8183877825283548ee4abbe6ecf026506cdbd406921caaab98ec7592",
@@ -10218,24 +10219,26 @@
       "literary_resolution": "Standalone Russian paragraph syntax restored without merging IDs or moving source text; print pages 181, 201–203, 242, 252 re-read, semantic/literary/back-comparison self-check repeated."
     },
     "v3-p203-07": {
-      "sha256": "239fb892d35f7071822a44b25e727b7e06f0df12a22c6cd7ce800f130de8319e",
+      "sha256": "e33767989a56702b9f334c5701aa428fa085918c885880aa08df108d5976f5bd",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render metaphorical توسع بطانه as inner heart spaciousness, avoiding mechanical вместимость; following paragraph explicitly mentions قلبا. Preserve constraints, release and disclosure clauses. Direct 2019 full passage read; Russian separately reread and back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p203-08+v3-p204-01": {
-      "sha256": "93f198bf19045925ea16c1e3697bad22baea2aa495a627bcdfe5aed71b784630",
+      "sha256": "deb649dd7db2f00970f41cd339e6f1e63033d0ca65f1f88dc26f95a2319ad20f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace repeated unnatural вместительнее and ambiguous отношение with heart-space and relative-position comparison. Keep each comparative clause, repeated knowledge ranks, three light/knowledge expressions, and final contrast; this is author contextual exposition, not removal of lawful bounds. Direct 2019 full passage read; Russian separately reread and back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p204-02": {
       "sha256": "c990319e9d8a9629baa395c215af71b1aa885d9a29d5c5c9bc3c5f86d7c65fb5",
@@ -10398,14 +10401,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p207-02": {
-      "sha256": "543bf214f14a6595ee4f45bef26b25efe2e791d2832b6277cc9728573ca40064",
+      "sha256": "98f8c56c51460149c0deba5cdfe6744675cc20183418525ca4279d45736a0ed0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 p207: منزلة القوم الكبرى, restore elative sense rather than plain great. All three stock/trade/return clauses retained; separate Russian rereading/back-comparison, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p207-03": {
       "sha256": "658a300f67810f3f2ed444981635aa83f386a2999f084d42827187819e598b35",
@@ -10448,14 +10452,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p208-02": {
-      "sha256": "5dc617b348e672c16e64368bba65811f1f5fad172493f4859067ddd6eae4e85c",
+      "sha256": "c76120a0833b8ca3842bc4b6eac7023a707f47df10525a4260efe062076025ae",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 full page and 8x crop clearly print لمذكوره with ل; restore own omitted preposition and remove erroneous nominative case on remembered object. Russian love direction already correct, awkward temporal/comparative перед поминанием clarified without changing all three divine preservation/replacement clauses. Full Russian separately reread/back-compared; same-agent only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p208-03": {
       "sha256": "e785b164917f88f8eb6bac965298ccd8cc6a78bd109e4a7bd8956d4cf60cf0b4",
