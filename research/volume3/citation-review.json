@@ -1662,6 +1662,55 @@
       ],
       "finding": "Read full reading paragraph. Tabari explicitly names أبو جعفر القارئ among readers of كذب with doubling, contrasting majority light form, and explains أن الفؤاد لم يكذب الذي رأى ولكنه جعله حقا وصدقا. This independently locates the classical textual attestation, supports the named reading and sense in 2019 p151, without conflating it with standard Quran quote text. It is a source comparison by the same agent, not independent human review or a complete study of reading chains. Author Arabic/Russian reading distinction retained; no modern apparatus reproduced.",
       "method": "2019 printed passage compared with classical digital body, explicit named reading and semantic explanation checked."
+    },
+    {
+      "source_ids": [
+        "v3-p214-08"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_primary_report_compared_control_variants_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2676"
+        }
+      ],
+      "finding": "Complete primary report read: al-Ala, his father, Abu Hurayra; Mecca route/Jumdan, سبق المفردون, question and الذاكرون الله كثيرا والذاكرات all present. Control and Russian match cited body. Final author alternatives الموحدون / الآحاد الفرادى remain distinguished from hadith.",
+      "method": "Manual same-agent comparison of full local report, 2019 print and Russian. No new full isnad authentication or independent human editing."
+    },
+    {
+      "source_ids": [
+        "v3-p215-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_primary_report_compared_control_variants_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "21702, including two routes and Makki wording note"
+        }
+      ],
+      "finding": "Complete primary report read. Ahmad has الورق and repeats وخير لكم من أن, and answer ذكر الله عز وجل; control2019 has الفضة وأن and ذكر الله. Restore own control transcription to printed shorter coordination rather than harmonize to Ahmad. Main comparison, mutual fighting and remembrance answer retained in Russian. No isnad strength assigned.",
+      "method": "Manual same-agent comparison of full local report, 2019 print and Russian. No new full isnad authentication or independent human editing."
+    },
+    {
+      "source_ids": [
+        "v3-p215-04",
+        "v3-p216-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_core_parallel_found_different_questioner_and_wording",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.KhalqAfcal/0256Bukhari.KhalqAfcal.Shamela0009697-ara1",
+          "blob": "7b7b0cdc7b082482dbd128b8e7270ddf88dadc38",
+          "digital_location": "Text at PageV01P071–072: Muadh through Malik ibn Yukhamir / Jubayr ibn Nufayr / Makhul"
+        }
+      ],
+      "finding": "Full short report read. Muadh asks أي الأعمال أحب إلى الله أو أفضل and answer أن تموت ولسانك رطب من ذكر الله. Supports core death/remembrance statement, but control has anonymous bedouin and أن تفارق الدنيا. Retain author text and explicitly do not identify that bedouin as Muadh or certify exact attribution from this parallel. No new authenticity grade assigned.",
+      "method": "Same-agent 2019 printed passage, full classical digital report and Russian comparison; partial provenance support only, no full isnad authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

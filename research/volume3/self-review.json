@@ -10723,14 +10723,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p211-02": {
-      "sha256": "1637a2d424b55ef540c683a1a94ddab9c581c7853de1c0ad4c737700c534490f",
+      "sha256": "d2b59154d54ebc46f8f2c344c74cda9620eec788216da31c9e9ea0da5ce0c576",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 p211 full page and 8x crop clearly print جزاء لذكرهم with ل; restore own omitted preposition and corresponding noun form. Existing Russian reciprocal remembrance/reward meaning retained. Whole paragraph compared, Russian reread separately and back-compared; same-agent only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p211-03": {
       "sha256": "7ccb6c4dc95abd520880cd2a932fb0bb0312e0dc0b8cba3b543bdf093c0ac0c6",
@@ -10943,14 +10944,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p215-01": {
-      "sha256": "f774d1949e0083decfab247f49330481978e5115685090c78515ae7f7bd00328",
+      "sha256": "ad03bd992dda0eb6139f8332f8f65f1a14b356d0fda9ab000cce4f76368cd84a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 p215 full page and 8x crop have والفضة وأن تلقوا, without own extra repeated وخير لكم من. Restore control quotation, preserving both comparisons and reciprocal fighting. Ahmad21702 has repeated phrase and الورق, but that primary variant must not silently replace this edition. Full Russian syntactically coordinated without adding a second omitted phrase. Whole paragraph compared, Russian reread separately and back-compared; same-agent only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p215-02": {
       "sha256": "41abb2312414ae6576e0f890ed385ed526004b2cf989cc4cfbaab68f5c6a3b89",

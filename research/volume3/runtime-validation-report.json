@@ -59,7 +59,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result."
+    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
+    "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -78,8 +79,8 @@
   "latest_corpus_check": "All 3107 APK records exactly match actual database including 191/194/196 Arabic corrections and all Russian refinements through200; no extra rows, integrity_check ok. Protected first two volumes unchanged.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New 202-08 active verb and 208-02 preposition restored, Russian203/207/208 refinements after positive through200 APK.",
-    "current_asset_sha256": "ec698fa1b7d0f22f83921e2ccb8494c6366ee7ae31475159bc52f7a32161aaba",
+    "change": "Further211-02 preposition and215-01 removal of own inserted repetition after positive through200 APK; selected checks through216. New202/208 and other Russian refinements also not yet runtime checked.",
+    "current_asset_sha256": "20f0d4fe648e65aba300104d0822266aa72bf89da75fb74de3311da417d8918e",
     "current_asset_runtime_checked": false,
     "scope": "Positive root hashes and database evidence apply through200 only; later new bytes require next build/import."
   },
@@ -108,7 +109,8 @@
   },
   "visual_check_scope": "Current through200 search result actually inspected; prior full UI scenarios remain historical.",
   "current_visual_checks": [
-    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result."
+    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
+    "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",

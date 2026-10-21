@@ -8416,8 +8416,334 @@
         }
       ],
       "finding": "Control فقوله, not فكقوله, and no added تعالى at second quote. Both complete printed Quran quotations, translated meanings and refs retained."
+    },
+    {
+      "source_ids": [
+        "v3-p210-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وقوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تعالى retained and no extra وقوله between two citations. Both negative imperatives and refs compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p210-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تعالى retained. Full conditional-success Quran quotation and ref preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p210-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الاحزاب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no extra early الأحزاب label; final ref retained. Printed ellipsis via إلى قوله preserved, no omitted middle verse invented."
+    },
+    {
+      "source_ids": [
+        "v3-p211-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ذكرهم",
+          "secondary": "لذكرهم له",
+          "tokens": 2
+        }
+      ],
+      "finding": "8x crop confirms جزاء لذكرهم, own omitted ل restored and noun declension corrected. Russian reciprocal remembrance and whole verse already accurate."
+    },
+    {
+      "source_ids": [
+        "v3-p211-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added عنه. Entire cited verse, relative greatness claim and introduction of four opinions preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p211-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تبقى",
+          "secondary": "يبقى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "معصية وكل",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ومعصية",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تبقى and كل معصية وكل خطيئة retained. All negativity, completeness condition and two distinct wrongs preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p212-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولعلكم تشكرون",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control ends quotation على ما هداكم, without secondary ولعلكم تشكرون. Retain exact printed excerpt and reference, do not expand to full verse."
+    },
+    {
+      "source_ids": [
+        "v3-p212-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بقوله",
+          "secondary": "كقوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بقوله rather than كقوله. Whole prayer-ending command and three postures preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p212-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بقوله",
+          "secondary": "كقوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بقوله rather than كقوله. Whole Friday ending citation and success condition preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p212-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no extra تعالى. Both linked Quran verses and three postures/reference preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p212-08",
+        "v3-p213-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بقوله اقم",
+          "secondary": "كقوله واقم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "النبي",
+          "tokens": 4
+        }
+      ],
+      "finding": "Both printed sides: بقوله أقم without added و, and صلى الله عليه وسلم without inserted النبي. Full all-works / spirit of Hajj assertion and three named rites retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p214-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no extra على before محبوبه. Whole love/self comparison and stronger dearness retained."
+    },
+    {
+      "source_ids": [
+        "v3-p214-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control صلى الله عليه وسلم retained. Full Muslim2676 body directly compared, author explanation distinguished from quote."
+    },
+    {
+      "source_ids": [
+        "v3-p215-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وخير لكم من ان",
+          "secondary": "وان",
+          "tokens": 4
+        }
+      ],
+      "finding": "8x crop confirms والفضة وأن تلقوا without own additional repeated وخير لكم من. Restore control shorter coordination in Arabic/Russian. Ahmad21702 fuller wording explicitly noted in separate citation review; no silent harmonization."
+    },
+    {
+      "source_ids": [
+        "v3-p215-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control صلى الله عليه وسلم retained. Four outcomes and two companion names intact in both languages; prior Muslim2700 primary review preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p215-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no inserted رضي الله عنه after Muawiya; صلى الله عليه وسلم and عليه السلام retained. Full oath repetition, denied suspicion and Gabriel report retained; prior Muslim2701 comparison preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p215-04",
+        "v3-p216-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Both sides of printed page break checked; صلى الله عليه وسلم retained. Entire anonymous bedouin question and death/remembrance answer preserved; separate KhalqAfcal parallel has Muadh and slightly different wording, no invented identification."
+    },
+    {
+      "source_ids": [
+        "v3-p216-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "delete",
+          "control": "يا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "قال",
+          "secondary": "فقال",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "قال",
+          "secondary": "وقال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control honorific and يا retained; dialogue قال / قال as printed. Whole gatherings/gardens and morning/evening exhortation retained. This print check does not establish literal Ahmad attribution or chain strength."
     }
   ],
-  "record_count": 406,
+  "record_count": 424,
   "unreviewed_candidates_remain": true
 }
