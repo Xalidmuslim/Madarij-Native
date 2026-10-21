@@ -11125,14 +11125,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p219-02": {
-      "sha256": "02551cf963cc38da059ee9d8cf62a8dfe480ba99814a5a55794319749200e9e3",
+      "sha256": "033fd94b7a9d3f2ea282d818478f28cae8d4e7b571e72a91ebd5551bdaa8ae51",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore three distinct author mention clauses rather than merge first two, and replace unnatural countable ста польз with полезных свойств. Preserve title, all three remembrance types and their internal lists. Direct 2019 passage comparison, Russian separately reread and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p219-03": {
       "sha256": "05f9216d6fcea7d883467567b19bf2a20c5501d6a0c35799aa88e2194a9c868d",
@@ -11205,14 +11206,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p221-01": {
-      "sha256": "4d9b5b1451100d298bcbb5828a1b8b1799ef2766a0cbbbcb0b8acd60180557b5",
+      "sha256": "ec6b42c5ed35d44c4a67ca9bb297cd81e7d1f3c62d980b645d89303da2fbdb49",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify subject across preceding Quran exposition: reply belongs to Prophet, not nearest masculine noun ZulQarnayn. Control does not add النبي here; clarification is Russian antecedent resolution, not Arabic insertion. Direct 2019 passage comparison, Russian separately reread and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p221-02": {
       "sha256": "f0fee39aa7e9756c4fcd21202bcbae56f261d2df1178bb3f848149d88d8b9aaf",
@@ -11245,24 +11247,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p221-05": {
-      "sha256": "3b69896ec54a2ff30e8235e99dff007a4a461c41387f7176daa0b7cb5c3f3690",
+      "sha256": "e9e9e8233f1fb32e7652c787f5dce8cc159c96e49ddf864def51d511f520f92f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control2019 p221 clearly prints متى ذكرتها. Restore own mistranscription من; existing Russian когда вспомнишь accurately matches control. Full quoted sentence compared; separate Russian reread/back-comparison by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p221-06": {
-      "sha256": "4ad3e24042bf36207b737458277092dc626e812bfb9c47ee2ff0c3e9b163c531",
+      "sha256": "14bb6588311428de0a910f87d672840b886f5d9f81652108722c239c528e616f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore second author رحمه الله rather than silently omit repeated honorific. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p221-07": {
       "sha256": "5e99382379c8ed1fb3e5150d5860d4041200455b79772edf844e17ff8be8b5a8",
@@ -11435,14 +11439,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p224-06": {
-      "sha256": "944f1960b0a1eac17eb621cf9420a81ee88478cc43cb90d0b131abcef6f6ad41",
+      "sha256": "eece543eb9491ef59a8174baa6ca7b9bb6fae9d55d7c23eb7a81928fce889871",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual الرعاية term clarified using explicit author definition at225; preserve third category without unclear objectless соблюдение. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p225-01": {
       "sha256": "a32d5d202cf7cb177f909eafac0e47e151b8d0cd91fc354e7b81bd84b2f6f965",
@@ -11475,14 +11480,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p225-04": {
-      "sha256": "dc162a7df24a1505350c0e32da5d396fb9e9b22bf36ffb989ec46ae5062350ed",
+      "sha256": "e8f4dc4e2ec1a35359126cc52b38856baa28a2179e8a8ce8c81a03b21b50c5a8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render remembrance-of-care category naturally, supported by explicit رعاية لمصلحة القلب and all four following functions. Full three formulas and four purposes retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p225-05": {
       "sha256": "95f238a963dc4cc6051e79b9c67252cb40c5967157d7b98788e5f35e9531162b",
@@ -11505,24 +11511,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p226-02": {
-      "sha256": "f69d78c8c57392e65a76f7e9c689ff39a66bc2cd57b275a393d49e54b26b8a9d",
+      "sha256": "8f0849d1014d820679bdba57995c7bba0596881336ba1170892d5345f704837b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify subject/object relation in اكتفى من مخلوق بالثناء عليه من سؤاله; poet praises another creature instead of asking it. Final Lord-of-worlds comparison retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p226-03": {
-      "sha256": "ba78ef44ffc7ab56939ae98571c5f905e2ba555e18c04e1bb0cbf0717c4b35d8",
+      "sha256": "520c3a9722706b46da0e98219eedec28de210c156265f88a169f80ae8ad7c7e6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Same contextual الرعاية term across224–226; all following heart-benefit/heedlessness/whisper/Satan elements retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p226-04": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",

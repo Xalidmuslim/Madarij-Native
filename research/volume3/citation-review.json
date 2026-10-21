@@ -1711,6 +1711,38 @@
       ],
       "finding": "Full short report read. Muadh asks أي الأعمال أحب إلى الله أو أفضل and answer أن تموت ولسانك رطب من ذكر الله. Supports core death/remembrance statement, but control has anonymous bedouin and أن تفارق الدنيا. Retain author text and explicitly do not identify that bedouin as Muadh or certify exact attribution from this parallel. No new authenticity grade assigned.",
       "method": "Same-agent 2019 printed passage, full classical digital report and Russian comparison; partial provenance support only, no full isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p217-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "related_ahmad_report_located_wording_and_formula_differ",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "23552"
+        }
+      ],
+      "finding": "Read full report through AbuAyyub: Prophet passes Ibrahim on Isra, is told to command abundant planting in Paradise, its good soil and broad land; planting formula is لا حول ولا قوة إلا بالله. Related source behind Ahmad attribution is now located, but not verbatim the four formulas and sweet water in control/Tirmidhi3462. Previous not-located statement is superseded only for this related witness; no substitution or conflation, no new strength grade. Full four-formula control and Russian retained.",
+      "method": "Manual same-agent comparison of full classical digital report with 2019 author citation/Russian. Printed primary edition and full isnad not independently collated."
+    },
+    {
+      "source_ids": [
+        "v3-p216-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "full_jabir_source_found_abridged_author_wording_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0307AbuYaclaMawsili/0307AbuYaclaMawsili.Musnad/0307AbuYaclaMawsili.Musnad.Shamela0012520-ara1",
+          "blob": "c8af56be30f77b246fa3898dd6849bc7dc753676",
+          "digital_report_number": "1865 (1866 parallel route),2138"
+        }
+      ],
+      "finding": "Read full local reports and chains.1865 through Umar ibn AbdAllah mawla Ghufra / Ayyub ibn Khalid / Jabir has gardens/gatherings, morning/evening remembrance, and complete final position-at-God comparison. It also includes introductory angel patrols and وذكروه بأنفسكم not quoted by author;2138 lacks فلينظر كيف منزلة الله عنده. Preserve author shorter wording without adding source matter. This finds full composite scene in AbuYala, but does not establish which specific المسند the author meant, nor literal identity with Ahmad. Modern editor grading not imported or independently adopted.",
+      "method": "Same-agent 2019 print and classical source-body comparison; no full independent chain verification or modern protected note reproduction."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

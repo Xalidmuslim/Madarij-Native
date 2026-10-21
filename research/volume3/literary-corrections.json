@@ -475,5 +475,68 @@
     "corrected_ru": "Среди стоянок {إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ} — «Тебе одному мы поклоняемся и Тебя одного молим о помощи» — стоянка поминания. Это величайшая стоянка людей пути: здесь они запасаются в дорогу, здесь ведут свой торг и сюда постоянно возвращаются.",
     "reason": "Direct 2019 p207: منزلة القوم الكبرى, restore elative sense rather than plain great. All three stock/trade/return clauses retained; separate Russian rereading/back-comparison, same-agent only.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p219-02"
+    ],
+    "previous_ru": "В книге «Благодатный ливень и вознесение благого слова» мы назвали около ста польз поминания, раскрыли его тайны, великую пользу и благой плод. Там мы указали, что поминание бывает трёх видов: поминание имён, качеств и их смыслов, восхваление ими Аллаха и признание Его единственности через них; поминание велений и запретов, дозволенного и запретного; поминание благодеяний, милостей, даров и щедрот.",
+    "corrected_ru": "В книге «Благодатный ливень и вознесение благого слова» мы привели около ста полезных свойств поминания. Там мы говорили о тайнах поминания, его великой пользе и благом плоде. В ней мы указали, что поминание бывает трёх видов: поминание имён, качеств и их смыслов, восхваление ими Аллаха и признание Его единственности через них; поминание велений и запретов, дозволенного и запретного; поминание благодеяний, милостей, даров и щедрот.",
+    "reason": "Restore three distinct author mention clauses rather than merge first two, and replace unnatural countable ста польз with полезных свойств. Preserve title, all three remembrance types and their internal lists. Direct 2019 passage comparison, Russian separately reread and back-compared; same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p221-01"
+    ],
+    "previous_ru": "Толкователи единодушно передают следующее: жители Мекки спросили о духе, об обитателях пещеры и о Зу-ль-Карнайне. Он ответил: «Я сообщу вам завтра», — не добавив «если пожелает Аллах». Откровение задержалось на несколько дней, затем был ниспослан этот аят.",
+    "corrected_ru": "Толкователи единодушно передают следующее: жители Мекки спросили о духе, об обитателях пещеры и о Зу-ль-Карнайне. Пророк ответил: «Я сообщу вам завтра», — не добавив «если пожелает Аллах». Откровение задержалось на несколько дней, затем был ниспослан этот аят.",
+    "reason": "Clarify subject across preceding Quran exposition: reply belongs to Prophet, not nearest masculine noun ZulQarnayn. Control does not add النبي here; clarification is Russian antecedent resolution, not Arabic insertion. Direct 2019 passage comparison, Russian separately reread and back-compared; same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p221-06"
+    ],
+    "previous_ru": "Слова же автора «Ступеней», да помилует его Аллах, следует понимать как указание, а не как толкование аята. Он назвал четыре ступени.",
+    "corrected_ru": "Слова же автора «Ступеней», да помилует его Аллах, следует понимать как указание, а не как толкование аята. Он, да помилует его Аллах, назвал четыре ступени.",
+    "reason": "Restore second author رحمه الله rather than silently omit repeated honorific. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p224-06"
+    ],
+    "previous_ru": "Он сказал: «У него три степени. Первая — явное поминание: восхваление, мольба или заботливое соблюдение».",
+    "corrected_ru": "Он сказал: «У него три степени. Первая — явное поминание: восхваление, мольба или попечение о сердце».",
+    "reason": "Contextual الرعاية term clarified using explicit author definition at225; preserve third category without unclear objectless соблюдение. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p225-04"
+    ],
+    "previous_ru": "Поминание заботливого соблюдения — например, слова поминающего: «Аллах со мной; Аллах смотрит на меня; Аллах — мой Свидетель», — и подобные слова, которыми укрепляют присутствие с Аллахом. В них — забота о благе сердца, соблюдение учтивости перед Аллахом, предохранение от беспечности и защита от шайтана и собственной души.",
+    "corrected_ru": "Поминание ради попечения о сердце — например, слова поминающего: «Аллах со мной; Аллах смотрит на меня; Аллах — мой Свидетель», — и подобные слова, которыми укрепляют присутствие с Аллахом. В них — забота о благе сердца, соблюдение учтивости перед Аллахом, предохранение от беспечности и защита от шайтана и собственной души.",
+    "reason": "Render remembrance-of-care category naturally, supported by explicit رعاية لمصلحة القلب and all four following functions. Full three formulas and four purposes retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p226-03"
+    ],
+    "previous_ru": "Они заключают в себе и полноту заботливого соблюдения, благо сердца, предохранение от беспечности и защиту от наущений и шайтана.",
+    "corrected_ru": "Они заключают в себе и полноту попечения о сердце, благо сердца, предохранение от беспечности и защиту от наущений и шайтана.",
+    "reason": "Same contextual الرعاية term across224–226; all following heart-benefit/heedlessness/whisper/Satan elements retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p226-02"
+    ],
+    "previous_ru": "Вот творение, которому хватило хвалы другому творению вместо просьбы. Что же сказать о Господе миров?",
+    "corrected_ru": "Вот творение, которое довольствовалось хвалой другому творению вместо просьбы к нему. Что же сказать о Господе миров?",
+    "reason": "Clarify subject/object relation in اكتفى من مخلوق بالثناء عليه من سؤاله; poet praises another creature instead of asking it. Final Lord-of-worlds comparison retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
+    "external_human_review": false
   }
 ]

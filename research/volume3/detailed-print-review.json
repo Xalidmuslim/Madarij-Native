@@ -8742,8 +8742,342 @@
         }
       ],
       "finding": "Control honorific and يا retained; dialogue قال / قال as printed. Whole gatherings/gardens and morning/evening exhortation retained. This print check does not establish literal Ahmad attribution or chain strength."
+    },
+    {
+      "source_ids": [
+        "v3-p217-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "ليلة الاسراء",
+          "tokens": 4
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control both صلى الله عليه وسلم honorifics, no substituted ليلة الإسراء and no added له. Greeting, soil/water/plain and all four remembrances preserved. Earlier Tirmidhi3462 primary comparison retained; Ahmad23552 separately examined as related variant, not identical formula."
+    },
+    {
+      "source_ids": [
+        "v3-p217-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control صلى الله عليه وسلم retained. Both person and house wordings preserved as distinct; earlier Bukhari6407/Muslim779 comparison retained, no redundant rework."
+    },
+    {
+      "source_ids": [
+        "v3-p219-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control صلى الله عليه وسلم retained. Both self/assembly conditions and comparative better assembly preserved; earlier Bukhari7405/Muslim2675 primary comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p219-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كتاب",
+          "secondary": "كتابنا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control كتاب, no added نا. Full exact book title and three mention clauses compared. Russian restores three separate introductory statements and natural countable полезных свойств; all three classifications and their sublists retained."
+    },
+    {
+      "source_ids": [
+        "v3-p219-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يواطا",
+          "secondary": "يتواطا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الدرجة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control يواطأ without ت and no extra الدرجة before third. All three modes and ranks preserved, source not grammatically harmonized."
+    },
+    {
+      "source_ids": [
+        "v3-p219-05",
+        "v3-p220-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ذكرك",
+          "secondary": "ذكره",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed sides checked; control رحمه الله and repeated ذكرك, not older ذكره. Author of Manazil statement, all forgetting levels and final divine remembrance distinguished from following IbnQayyim critique."
+    },
+    {
+      "source_ids": [
+        "v3-p220-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "يعني",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control explicit يعني in quoted term and no additional من before الخلف; retain full denial and oath, no softening of critique."
+    },
+    {
+      "source_ids": [
+        "v3-p221-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "النبي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فلبث",
+          "secondary": "فتلبث",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no inserted النبي and فلبث, not older فتلبث. Arabic retained; Russian reply subject clarified as Prophet rather than nearest noun ZulQarnayn. Whole question list, no inshaAllah, delay and verse descent retained."
+    },
+    {
+      "source_ids": [
+        "v3-p221-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "متى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control prints متى ذكرتها; own من restored to متى. Russian existing когда вспомнишь retained. Attribution to both Dahhak/Suddi preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p221-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control both رحمه الله occurrences retained; restore second omitted Russian honorific. Difference between interpretive indication and verse exegesis plus four ranks preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p221-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added بها. Whole self-awareness and forgetting-everything-other-than-remembered explanation compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p222-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ذكرك",
+          "secondary": "ذكره",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control ذكرك, not older ذكره; explicit third rank and fana retained."
+    },
+    {
+      "source_ids": [
+        "v3-p222-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in both languages. Whole quoted DhulNun definition and verse lead-in preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p223-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control no inserted به after بعده; honorific retained. Both prior/subsequent divine remembrance, complete verse and hadith quote preserved. Causal explanation in Russian remains explicit, not an Arabic insertion."
+    },
+    {
+      "source_ids": [
+        "v3-p224-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added سبحانه at question opening. Full question and answer checked: created causes versus external influence, all divine attributes, negations and impossible/possible contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p225-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ويا",
+          "secondary": "و يا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control joined ويا, not spaced و يا; no lexical difference. Whole Quran supplication and Living/Sustainer appeal retained."
+    },
+    {
+      "source_ids": [
+        "v3-p225-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الله",
+          "secondary": "والله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control الله without added و. Whole three-formula care paragraph compared; contextual Russian الرعاية changed from unclear objectless compliance to попечение о сердце consistently224–226, preserving all stated purposes."
+    },
+    {
+      "source_ids": [
+        "v3-p225-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او التصريح",
+          "secondary": "والتصريح",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control أو التصريح, not older والتصريح. All three remembrance kinds, indirect/direct request, hadith praise and IbnUyayna/Umayya names/context retained."
+    },
+    {
+      "source_ids": [
+        "v3-p226-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اكتفى",
+          "secondary": "واكتفى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control اكتفى without added و. Whole created-to-created praise/request comparison checked; Russian dative recipient clarified, final Lord-of-worlds question retained."
     }
   ],
-  "record_count": 424,
+  "record_count": 443,
   "unreviewed_candidates_remain": true
 }
