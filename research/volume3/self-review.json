@@ -1577,14 +1577,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p036-02": {
-      "sha256": "d097915412bd5aa1618a89b63e025389df28c78ff002f03719b2da90b103724e",
+      "sha256": "6137bfb08a37a2e94bce5079c16d5f01b5093b661e0ccfb67726687988c5116e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Literary correction after rereading control p. 36: replace отвращение лица, являть людям приветливость and his dignity protects him with natural Russian. Retain all four first-extreme actions, all three effects of excess familiarity and all four positive middle-character clauses. No Arabic change. Final Russian read separately and back-compared to print; same-agent self-review only."
     },
     "v3-p036-03": {
       "sha256": "ee2262d8784a47090b41c9fa153937766ca02d1021d20dffc8a97bc6c5b51634",
@@ -31019,5 +31020,6 @@
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     }
-  }
+  },
+  "last_updated": "2026-10-21"
 }

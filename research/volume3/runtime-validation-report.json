@@ -78,10 +78,10 @@
   "latest_corpus_check": "All 3106 rows exactly compared after 21 October edits, including Arabic/Russian, chapter IDs, ordinals, roles, source metadata. A live snapshot with WAL passed integrity_check. Earlier cold-start snapshots still had old corpus; they were not accepted as positive checks.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Later added an own citation note at page 9; current source has 3096 author records and 11 notes.",
-    "current_asset_sha256": "a5987f618ebcbb8213ccea737e262f7fb35546ce1f3030d05722e7311762c8ca",
+    "change": "Later added an own note at page 9 and refined Russian p.36; current source has 3096 author records and 11 notes.",
+    "current_asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
     "current_asset_runtime_checked": false,
-    "scope": "All positive current APK/database evidence above applies to the recorded 10-note APK hash. Subsequent 11-note source awaits next build/import. No author prose changed after that APK."
+    "scope": "Positive earlier evidence applies to recorded 10-note APK. Current 11-note corpus and refined p.36 are being rebuilt; no claim of their runtime verification yet."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",

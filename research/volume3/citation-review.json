@@ -756,6 +756,281 @@
       ],
       "finding": "Ubada pledge includes ease/hardship, willingness/reluctance, preference and non-contestation. Author only quotes part of longer report, then explains its scope. Excluded continuation not imported into author text; printed primary pagination not visually checked.",
       "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p015-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "historical_report_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "1392"
+        }
+      ],
+      "finding": "Aisha explicitly says she wanted the burial place for herself and would prefer Umar to herself. Author historical allusion and Russian sense retained.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p016-10",
+        "v3-p017-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_discussion_not_direct_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author assessment of prophetic self-sacrifice, not a separately quoted hadith. Classified to distinguish a keyword candidate from an actual checked hadith; historical assertions not independently certified by this classification.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p024-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "quran_only",
+      "checked_primary_records": [],
+      "finding": "Quran 68:4, already in canonical Quran audit. Mention of Prophet does not turn this into a hadith quotation.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p025-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "partial_primary_match_full_narrative_pending",
+      "checked_primary_records": [
+        {
+          "path": "data/0774IbnKathir/0774IbnKathir.TafsirQuran/0774IbnKathir.TafsirQuran.Shamela0008473-ara1.mARkdown",
+          "blob": "aaf0b1d08189eb55f65fe695aa163ccc5c5334ae",
+          "digital_report_number": "Commentary on Quran 7:199, around PageV03P531"
+        }
+      ],
+      "finding": "Ibn Kathir transmits a shorter Gabriel explanation with all three ethical commands and explicitly discusses its disconnected transmission. The exact expanded dialogue لا أدري حتى أسأل and initial Jafar attribution have not been directly located in a primary witness in this pass. Preserve author’s qualified وقد ذكر, Russian Передаётся, and keep fuller source verification open.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p027-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6203; 1973; 6038"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "659; 2330; 2309"
+        }
+      ],
+      "finding": "Anas best-character, soft hand/fragrance, and ten years without reproach reports all found. Author joins related excerpts; not falsely asserted to be a single verbatim primary record.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p028-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "18006"
+        }
+      ],
+      "finding": "Wabisa report contains soul tranquillity and inner unrest; author shortens it and then explains. No new grade assigned.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p029-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2004"
+        }
+      ],
+      "finding": "Piety/character leading to Paradise and mouth/private parts leading to Fire found. Tirmidhi’s own صحيح غريب supports author statement he graded it; not our independent grading.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p029-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "1162"
+        }
+      ],
+      "finding": "Completeness of faith, best character and treatment of wives found, including Tirmidhi’s own حسن صحيح. This anaphoric continuation was missed by a simple Prophet/hadith keyword candidate filter; that filter is not exhaustive.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p029-05",
+        "v3-p030-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "4800"
+        }
+      ],
+      "finding": "All three houses, argument/truthfulness/jest/character conditions found. Author own صحيح assessment retained as author’s judgment, not a new isnad assessment.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p031-08",
+        "v3-p032-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2609"
+        }
+      ],
+      "finding": "Strength as self-mastery in anger found; author reasoning about courage and own Russian interpretation compared.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p036-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3638"
+        }
+      ],
+      "finding": "First sight/awe and acquaintance/love description found. This witness says معرفة, author عشرة; retained author wording. Tirmidhi himself notes ليس إسناده بمتصل; no unsupported authenticity claim added. Russian paragraph literary restructuring retains every contrast.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p041-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0213IbnHisham/0213IbnHisham.SiraNabawiyya/0213IbnHisham.SiraNabawiyya.JK000797-ara1",
+          "blob": "8ef262e181ea86a66fbf199a042bda8ded6e6146",
+          "digital_report_number": "Uhud narrative, Abu Dujana section between digital PageV04P012 and PageV04P013"
+        }
+      ],
+      "finding": "Ibn Ishaq report in Ibn Hisham has swagger between ranks and prophetic exception to condemned gait in battle. A different Shamela0007450 file ends before this event and was not used as evidence of absence. Classical narrative found; no independent chain grade assigned.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p042-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "23752"
+        }
+      ],
+      "finding": "Both battle and charity forms of liked pride found. Author’s uncertainty أظنه في المسند is retained in Russian even after finding a matching primary entry.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p042-03",
+        "v3-p043-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "73"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "815; 816"
+        }
+      ],
+      "finding": "Wealth/right expenditure and Quran/day-night devotion clauses found across related variants, wisdom/wealth in 73 and 816, Quran/wealth in 815. Author combined/shortened wording not rewritten into one variant.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p047-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "5225"
+        }
+      ],
+      "finding": "Ashajj’s two qualities, question about acquisition versus inborn nature, response and praise found. Direct support for distinguishing cultivated versus innate character, not a resolution of p.110 pronoun.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p047-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "771"
+        }
+      ],
+      "finding": "Prayer for best character and removal of bad character appears within opening prayer; author excerpt retained.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p052-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2588"
+        }
+      ],
+      "finding": "Forgiveness adding dignity found; author further experiential judgment is kept separate from quoted prophetic premise.",
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
     }
-  ]
+  ],
+  "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
 }
