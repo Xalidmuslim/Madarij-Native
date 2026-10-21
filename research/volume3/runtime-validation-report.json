@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
-  "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
+  "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
+  "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -20,8 +20,7 @@
       "3": 32
     },
     "volume3_author_paragraphs": 3096,
-    "volume3_editor_notes": 11,
-    "all_3107_packaged_rows_exactly_match_database": true,
+    "volume3_editor_notes": 12,
     "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
     "comparison_fields": [
       "id",
@@ -32,7 +31,8 @@
       "role",
       "source"
     ],
-    "extra_volume3_rows": 0
+    "extra_volume3_rows": 0,
+    "all_3108_packaged_rows_exactly_match_database": true
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -41,8 +41,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 8,
-      "rows_after": 8,
+      "rows_before": 9,
+      "rows_after": 9,
       "unchanged": true
     },
     "notes": {
@@ -59,8 +59,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
-    "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
+    "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
+    "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -72,17 +72,17 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
-    "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
-    "description": "After emulator restart, before/after update snapshots through248, prior to new UI navigation. Bookmark, eight positions, empty notes/read_chapters and settings bytes unchanged."
+    "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
+    "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
+    "description": "Update snapshots through272 taken before new UI navigation. Bookmark, nine positions, empty notes/read_chapters, preferences bytes identical. Early snapshot still old3107 rows rejected; later live complete import3108 exact."
   },
-  "latest_corpus_check": "All3107 actual database rows exactly match latest packaged content through248, all seven fields, no extras; integrity_check ok. Both first volumes unchanged. APK also contains four explicit pending source statuses, not a publication-ready claim.",
+  "latest_corpus_check": "All3108 exact database rows match packaged/repository through272, all seven fields, no extras, integrity ok, protected first two volumes unchanged. Four pending source statuses retained.",
   "current_source_update": {
     "date": "2026-10-21",
     "change": "Print/Russian corrections through272; added separately attributed own note265-06. Current expected3108 records, positive through248 DB3107 is historical.",
     "current_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
-    "current_asset_runtime_checked": false,
-    "scope": "Root positive APK/DB hashes apply through248 only; new corpus bytes await next build/import. Four unresolved units unchanged."
+    "current_asset_runtime_checked": true,
+    "scope": "Exact current through272 asset and complete database confirmed; four unresolved semantic units not cleared by technical proof."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -107,10 +107,10 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through248 APK: exact3107-row import, current phrase result and complete225-04 reader visually inspected; earlier broad scenarios remain historical.",
+  "visual_check_scope": "Through272 APK current note search/result-to-reader actually viewed, source hashes as recorded. Earlier scenarios remain historical.",
   "current_visual_checks": [
-    "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
-    "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
+    "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
+    "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -664,5 +664,68 @@
         "verification": "Previously failing query всецело отдаться now returns exactly one current p136 result on Android API28. Individual query tokens remain normalized and quoted; no SQL syntax accepted from user input."
       }
     ]
+  },
+  "historical_through248_2026_10_21": {
+    "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
+    "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 12,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "all_3108_packaged_rows_exactly_match_database": true
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 8,
+        "rows_after": 8,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
+      "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
+      "description": "After emulator restart, before/after update snapshots through248, prior to new UI navigation. Bookmark, eight positions, empty notes/read_chapters and settings bytes unchanged."
+    },
+    "visually_exercised": [
+      "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
+      "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
+    ],
+    "current_visual_checks": [
+      "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
+      "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
+    ],
+    "visual_check_scope": "Through248 APK: exact3107-row import, current phrase result and complete225-04 reader visually inspected; earlier broad scenarios remain historical.",
+    "latest_corpus_check": "All3107 actual database rows exactly match latest packaged content through248, all seven fields, no extras; integrity_check ok. Both first volumes unchanged. APK also contains four explicit pending source statuses, not a publication-ready claim."
   }
 }
