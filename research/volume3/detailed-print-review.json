@@ -1871,8 +1871,226 @@
         }
       ],
       "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p055-06",
+        "v3-p056-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Directly compared with 2019 printed pp.55–56; existing honorific, omission of extra الله and يرتقب twice match control. Russian compensation paragraph and continuation retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p056-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Directly compared with 2019 printed pp.55–56; existing honorific, omission of extra الله and يرتقب twice match control. Russian compensation paragraph and continuation retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p056-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يرتقب",
+          "secondary": "يترقب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يرتقب",
+          "secondary": "يترقب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Directly compared with 2019 printed pp.55–56; existing honorific, omission of extra الله and يرتقب twice match control. Russian compensation paragraph and continuation retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p057-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p058-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "شريف",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "شريف",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يؤذ به",
+          "secondary": "يؤذه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "موروثهم",
+          "secondary": "مورثهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p060-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعتذر",
+          "secondary": "يتعذر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "او شر",
+          "secondary": "وشر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p061-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "غاية الاعتذار",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وهو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p062-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ترى له",
+          "secondary": "يرى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "لزم",
+          "secondary": "لازم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p063-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الحق ومع",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "ومع الحق",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "الشيخ",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله تعالى",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p063-07",
+        "v3-p064-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
     }
   ],
-  "record_count": 83,
+  "record_count": 93,
   "unreviewed_candidates_remain": true
 }

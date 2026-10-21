@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
-  "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
+  "apk_sha256": "749b5502f1a7e9e2f5e0d3180f559ccf4f315c44f706f84454cbb77fc0eef084",
+  "volume3_asset_sha256": "f1bca7a1a2b159711444e6c870a2c931644b4d4b677733c22b1ad08f22fba288",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -20,10 +20,19 @@
       "3": 32
     },
     "volume3_author_paragraphs": 3096,
-    "volume3_editor_notes": 10,
-    "all_3106_packaged_rows_exactly_match_database": true,
+    "volume3_editor_notes": 11,
+    "all_3107_packaged_rows_exactly_match_database": true,
     "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
-    "final_paragraph_search_target": "v3-p584-05-ru"
+    "comparison_fields": [
+      "id",
+      "chapterId",
+      "ordinal",
+      "ar",
+      "ru",
+      "role",
+      "source"
+    ],
+    "extra_volume3_rows": 0
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -32,8 +41,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 4,
-      "rows_after": 4,
+      "rows_before": 5,
+      "rows_after": 5,
       "unchanged": true
     },
     "notes": {
@@ -71,17 +80,17 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
-    "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
-    "description": "Current 21 October update, before subsequent UI search navigation. Before/after copies retain bookmark, four reading positions and settings bytes; empty notes/read_chapters tables unchanged."
+    "apk_sha256": "749b5502f1a7e9e2f5e0d3180f559ccf4f315c44f706f84454cbb77fc0eef084",
+    "volume3_asset_sha256": "f1bca7a1a2b159711444e6c870a2c931644b4d4b677733c22b1ad08f22fba288",
+    "description": "Latest detailed-review update; before/after snapshots taken before subsequent UI search navigation. Bookmarks, five positions, empty notes/read_chapters and settings bytes unchanged."
   },
-  "latest_corpus_check": "All 3106 rows exactly compared after 21 October edits, including Arabic/Russian, chapter IDs, ordinals, roles, source metadata. A live snapshot with WAL passed integrity_check. Earlier cold-start snapshots still had old corpus; they were not accepted as positive checks.",
+  "latest_corpus_check": "All 3107 packaged rows exactly match the live database including WAL after latest p.36/40/55/81–82/152 edits; integrity_check ok. Root hashes identify this build.",
   "current_source_update": {
     "date": "2026-10-21",
     "change": "Latest source includes p.55, pp.81–82, p.152 corrections and Russian clarifications 036-04 / 040-03. Eleven notes remain.",
     "current_asset_sha256": "f1bca7a1a2b159711444e6c870a2c931644b4d4b677733c22b1ad08f22fba288",
-    "current_asset_runtime_checked": false,
-    "scope": "New APK built and installed; final actual database import comparison is still pending. Earlier positive runtime results apply only to their recorded hashes."
+    "current_asset_runtime_checked": true,
+    "scope": "Latest asset built, installed and all 3107 rows compared exactly with actual database. ZIP integrity, embedded asset equality and APK v2 signature verified."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -106,10 +115,11 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Historical full UI scenarios were exercised on 20 October. Current 21 October checks: startup, exact 3106-row DB import, preserved personal data, and new page 321 search/result-to-reader in Arabic/Russian.",
+  "visual_check_scope": "Earlier full UI scenarios and page321 navigation remain historical. Latest build: home opens, exact батусу search returns one updated result and opens page40 in reader; full revised Russian paragraph, Arabic tail and draft header visible.",
   "current_visual_checks": [
-    "Search for впадающие returns one result in volume 3 Почитание, with updated quotation and author explanation visible.",
-    "Opening that search result displays full updated Arabic/Russian page 321 paragraph in reader, with Том 3 · черновик header."
+    "Latest build home screen opens.",
+    "Search батусу returns one result, chapter Добрый нрав; corrected named term and author definition visible.",
+    "Opening the батусу result displays the full updated page40 Russian paragraph, the Arabic paragraph tail above it, and Том 3 · черновик / Добрый нрав header."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -117,5 +127,97 @@
     "actual_database_exact_rows": 3107,
     "integrity_check": "ok",
     "scope": "Includes p.36 refinement and 11 notes, before later p.55 Russian clarification. All APK rows exactly matched live database. This is not proof for later p.55 edits."
-  }
+  },
+  "historical_2026_10_21_before_detailed": {
+    "date": "2026-10-21",
+    "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
+    "package": "ru.madarij.nativeapp.qalocal",
+    "build": "debug, standard local test key; not an owner-signed release",
+    "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
+    "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
+    "zip_integrity_checked": true,
+    "apk_asset_matches_repository": true,
+    "signature_verified": "APK Signature Scheme v2",
+    "jvm_test_suites": 17,
+    "jvm_tests": 97,
+    "jvm_failures": 0,
+    "jvm_errors": 0,
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 10,
+      "all_3106_packaged_rows_exactly_match_database": true,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "final_paragraph_search_target": "v3-p584-05-ru"
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 4,
+        "rows_after": 4,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "reading_preferences_unchanged": true,
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "visually_exercised": [
+      "Third-volume TOC and first chapter, printed page 3",
+      "Bookmark creation in first chapter",
+      "Russian text search",
+      "Title-search opening the chapter on printed page 484 after fixing blank-reader regression",
+      "Book font and increased font size applied",
+      "Final author paragraph on printed page 584 opened and readable",
+      "Arabic original displayed alongside Russian in volume 3",
+      "Saved bookmark reopened volume 3 first chapter after update",
+      "Last chapter footer disables Next",
+      "Previous from last chapter opens Time, printed pages 544–565"
+    ],
+    "not_claimed": [
+      "All 186 TOC targets individually tapped on a device; targets are statically checked",
+      "Physical Android device testing",
+      "Owner-signed release build",
+      "Independent human translation editing",
+      "Full external hadith authentication"
+    ],
+    "publication_ready": false,
+    "independent_human_review": false,
+    "personal_data_update_scope": {
+      "apk_sha256": "1cc0e5009c3b2edb53bcd88863108f557ddbba134ad5d0b172e1b368329bfdc6",
+      "volume3_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
+      "description": "Current 21 October update, before subsequent UI search navigation. Before/after copies retain bookmark, four reading positions and settings bytes; empty notes/read_chapters tables unchanged."
+    },
+    "latest_corpus_check": "All 3106 rows exactly compared after 21 October edits, including Arabic/Russian, chapter IDs, ordinals, roles, source metadata. A live snapshot with WAL passed integrity_check. Earlier cold-start snapshots still had old corpus; they were not accepted as positive checks.",
+    "current_source_update": {
+      "date": "2026-10-21",
+      "change": "Latest source includes p.55, pp.81–82, p.152 corrections and Russian clarifications 036-04 / 040-03. Eleven notes remain.",
+      "current_asset_sha256": "f1bca7a1a2b159711444e6c870a2c931644b4d4b677733c22b1ad08f22fba288",
+      "current_asset_runtime_checked": false,
+      "scope": "New APK built and installed; final actual database import comparison is still pending. Earlier positive runtime results apply only to their recorded hashes."
+    },
+    "visual_check_scope": "Historical full UI scenarios were exercised on 20 October. Current 21 October checks: startup, exact 3106-row DB import, preserved personal data, and new page 321 search/result-to-reader in Arabic/Russian.",
+    "current_visual_checks": [
+      "Search for впадающие returns one result in volume 3 Почитание, with updated quotation and author explanation visible.",
+      "Opening that search result displays full updated Arabic/Russian page 321 paragraph in reader, with Том 3 · черновик header."
+    ]
+  },
+  "jvm_test_scope": "97 JVM tests passed earlier this session; latest changes are content/review data only, APK rebuilt offline; 24 content/integrity tests rerun."
 }
