@@ -1598,14 +1598,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p036-04+v3-p037-01": {
-      "sha256": "f4f0d7577a0543e2dac97600aaeea893e3160e2c11e9fa08232c5705cdf84700",
+      "sha256": "1129b3d74de11e32f2bd7270de4c417abe8c8fbe271eb9cd9c2037f09619fa6a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control pp.36–37 directly compared. يوصلُه عن قرب denotes reaching the goal soon, not merely drawing nearer. Preserve the indication of speed and arrival. Whole Russian paragraph reread separately and then back-compared; same-agent self-review."
     },
     "v3-p037-02": {
       "sha256": "6d3a3c7e41887659abf011ed1e13d4150b8d07812c0099f66151ef844da164fe",
@@ -1718,14 +1719,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p040-03": {
-      "sha256": "88e328c5e6767d4277121dd9914686ded40af299a06956f1897e370597fe6281",
+      "sha256": "f68902072b5f94aecf1222d88c80b4005c1ea4818a923b803d98bc67141ce4d5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control p.40 directly compared. Retain the named term الباطوس together with the author’s definition وهو جب القذر instead of silently collapsing term and explanation. Rest of the quotation unchanged; Russian reread and back-compared, same-agent self-review."
     },
     "v3-p040-04": {
       "sha256": "c058555b5886c9bd4a755dc0f9fa40328890125ea59871bc89c5c81554c830ea",

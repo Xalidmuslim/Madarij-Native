@@ -907,8 +907,972 @@
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p029-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عن عائشة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p029-05",
+        "v3-p030-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رواه الطبراني",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p031-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفحش",
+          "secondary": "الفحشاء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p032-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "الذي هو توسط بين الامساك والاسراف والتبذير وعلى خلق الحياء",
+          "secondary": "",
+          "tokens": 10
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p033-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ظالم عسوف جبار",
+          "secondary": "ظالما عنوفا جبارا",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "جبان",
+          "secondary": "جبانا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جريء",
+          "secondary": "جريئا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p034-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تولد",
+          "secondary": "يولد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تولد",
+          "secondary": "يولد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p034-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوسط",
+          "secondary": "التوسط",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p034-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وحجرية",
+          "secondary": "وتحجر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p036-04",
+        "v3-p037-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "قرب",
+          "secondary": "قريب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تغير",
+          "secondary": "تغيير",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "النفوس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p037-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منته",
+          "secondary": "ومنته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p037-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فلم",
+          "secondary": "فلا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويحمل",
+          "secondary": "ثم يحمل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p037-05",
+        "v3-p038-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الحال",
+          "secondary": "الحالة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المنبوع",
+          "secondary": "الينبوع",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المنبوع",
+          "secondary": "الينبوع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والعمارة وغراس",
+          "secondary": "والعمارات وغرس",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p038-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ضاعت",
+          "secondary": "ضاع",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "خراب",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وصرفوه",
+          "secondary": "فصرفوه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لهم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p039-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يؤول",
+          "secondary": "يئول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p039-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والتمزقات",
+          "secondary": "والتمرينات",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p040-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "في",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p040-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p041-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منه",
+          "secondary": "منها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words visually compared with the full 2019 print images on pp.29–34 and 36–41. Control Arabic retained. The ten-word omission in the older witness at 032-02 is present in print and our translation. Russian 036-04 clarified separately to preserve عن قرب; named term and definition restored in Russian 040-03. See literary-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p042-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p042-03",
+        "v3-p043-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ما يصيب المؤمن من هم ولا نصب ولا حزن الا كفر الله به من خطاياه فهذا يدل على انه مصيبة من الله يصيب بها العبد يكفر بها من سيئاته",
+          "tokens": 29
+        },
+        {
+          "tag": "replace",
+          "control": "حسد الا",
+          "secondary": "يدل على انه مقام ينبغي طلبه واستيطانه واما حديث هند بن ابي هالة",
+          "tokens": 13
+        },
+        {
+          "tag": "replace",
+          "control": "اثنتين رجل اتاه",
+          "secondary": "صفة النبي صلى",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "مالا فسلطه على هلكته في الحق ورجل اتاه الله القران فهو يقوم به اناء الليل واطراف النهار فالحسد يوصل الى المنافسة التي يحبها الله ويامر بها في قوله",
+          "secondary": "عليه وسلم انه كان متواصل الاحزان فحديث لا يثبت",
+          "tokens": 28
+        },
+        {
+          "tag": "replace",
+          "control": "ذلك فليتنافس المتنافسون المطففين فلا تعمل على اعدام هذا الخلق",
+          "secondary": "اسناده",
+          "tokens": 10
+        },
+        {
+          "tag": "delete",
+          "control": "نفسك بل اصرفه الى الحسد المحمود الحامل على المنافسة في الرتب العالية وتزاحم اهلها بالركب نعم",
+          "secondary": "",
+          "tokens": 16
+        },
+        {
+          "tag": "replace",
+          "control": "تتمن زوال نعمة",
+          "secondary": "يعرف وكيف يكون متواصل الاحزان وقد صانه",
+          "tokens": 7
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p043-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انفع الاخلاق واوصلها",
+          "secondary": "يرى انها لا تنجيه ولا تحصل له فلاحا ولا توصله",
+          "tokens": 10
+        },
+        {
+          "tag": "replace",
+          "control": "كل خير وشدة الطلب بحسب قوة الحرص فلا تعمل",
+          "secondary": "المقصود فيجرد عزمه للقيام بها حرصا واجتهادا ويفرغ قلبه من الاعتماد عليها والركون اليها تجريدا للتوكل واعتمادا",
+          "tokens": 17
+        },
+        {
+          "tag": "replace",
+          "control": "قطعها ولكن علقها بما ينفع النفس في معادها ويكملها ويزكيها كما قال",
+          "secondary": "الله وحده وقد جمع",
+          "tokens": 12
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بين هذين الاصلين في الحديث الصحيح حيث يقول",
+          "tokens": 8
+        },
+        {
+          "tag": "replace",
+          "control": "فقوة",
+          "secondary": "فامره بالحرص على الاسباب والاستعانة بالمسبب ونهاه عن العجز وهو نوعان تقصير في الاسباب وعدم",
+          "tokens": 15
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p043-04",
+        "v3-p044-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بخله وشحه بزمانه ووقته وانفاسه",
+          "secondary": "ظهره فيبيعها فيكف الله بها وجهه خير له من",
+          "tokens": 9
+        },
+        {
+          "tag": "replace",
+          "control": "يضيعها ويسمح بها لمن لا يساوي ويشح ايضا غاية الشح على حظه ونصيبه",
+          "secondary": "يسال الناس اعطوه او منعوه وفي الصحيحين عن ابي سعيد الخدري رضي الله عنه ان ناسا",
+          "tokens": 16
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الانصار سالوا رسول",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "ان يبيعه او يهبه لاحد",
+          "secondary": "صلى الله عليه وسلم فاعطاهم ثم سالوه فاعطاهم ثم سالوه فاعطاهم حتى نفد ما عنده فقال لهم حين انفق كل شيء بيده ما يكون عندي",
+          "tokens": 25
+        },
+        {
+          "tag": "replace",
+          "control": "الخلق ويشح ايضا بماله ويبخل به كل البخل ان لا يكون في ميزانه وان يتركه لغيره يتنعم به ويفوته هو اجره وثوابه فالشحيح بماله المحب له هو الذي لا يسمح به لغيره بل ياخذه بين يديه زادا لمعاده",
+          "secondary": "خير فلن ادخره عنكم",
+          "tokens": 38
+        },
+        {
+          "tag": "replace",
+          "control": "لا يحبه ولا له قدر عنده يرى ان يضيعه ويدعه للوارث او الجائحة والتلف ولا يستصحبه امامه فهذا هو الزاهد في المال والاول هو الراغب فيه المحب له وكان",
+          "secondary": "يستعفف يعفه الله ومن يستغن يغنه الله ومن يتصبر يصبره الله وما اعطي احد عطاء خيرا واوسع من الصبر وعن",
+          "tokens": 29
+        },
+        {
+          "tag": "replace",
+          "control": "اذا اعجبه شيء",
+          "secondary": "ان رسول الله صلى الله عليه وسلم قال وهو على المنبر وذكر الصدقة والتعفف والمسالة اليد العليا خير",
+          "tokens": 18
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p044-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "جميع الصفات والاخلاق فالرسل صلوات",
+          "secondary": "اربابها وجعلوهم مخالفين للشرع والعقل مدعين لانفسهم حالا اكمل من حال رسول",
+          "tokens": 12
+        },
+        {
+          "tag": "replace",
+          "control": "وسلامه عليهم جاؤوا بصرفها عن مجاريها المذمومة الى مجار محمودة وجاؤوا بصرف قوة الشهوة الى النكاح والتسري حتى كان لسليمان",
+          "secondary": "صلى الله",
+          "tokens": 20
+        },
+        {
+          "tag": "replace",
+          "control": "السلام مائة امراة ولداود عليه السلام تسع وتسعون وجمع",
+          "secondary": "وسلم واصحابه اذ لم يكن فيهم احد قط يفعل ذلك ولا اخل بشيء من الاسباب وقد ظاهر",
+          "tokens": 17
+        },
+        {
+          "tag": "replace",
+          "control": "تسع واباح للامة اربعا مما طاب لهم",
+          "secondary": "درعين يوم احد ولم يحضر الصف قط عريانا كما يفعله",
+          "tokens": 10
+        },
+        {
+          "tag": "replace",
+          "control": "النساء ومن السراري بلا حصر صرفا لقوة هذه الشهوة عن مجرى الحرام الى مجرى الحلال الذي يحبه",
+          "secondary": "لا علم عنده ولا معرفة واستاجر دليلا مشركا على دين قومه يدله على طريق الهجرة وقد هدى",
+          "tokens": 17
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به العالمين وعصمه من الناس اجمعين وكان يدخر لاهله قوت سنة",
+          "tokens": 11
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p044-05",
+        "v3-p045-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "على ابي موسى الاشعري رضي الله عنه واستمع قراءته",
+          "secondary": "الى صوته واثنى عليه بحسن الصوت",
+          "tokens": 9
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فقال له ابو موسى لو علمت انك استمعت لحبرته لك تحبيرا اي زينته لك وحسنته وبقوله صلى الله عليه وسلم زينوا القران باصواتكم وبقوله صلى الله عليه وسلم ليس منا من لم يتغن بالقران والصحيح انه من التغني بمعنى تحسين الصوت وبذلك فسره الامام احمد رحمه الله فقال يحسنه بصوته ما استطاع وبان النبي صلى الله عليه وسلم اقر عائشة على غناء القينتين يوم العيد وقال لابي بكر دعهما فان لكل قوم عيدا وهذا عيدنا اهل الاسلام وبانه صلى الله عليه وسلم اذن في العرس في الغناء وسماه لهوا وقد سمع رسول الله صلى الله عليه وسلم الحداء واذن فيه",
+          "tokens": 100
+        },
+        {
+          "tag": "replace",
+          "control": "عمر بن الخطاب رضي الله عنه يامره اذا حضر عنده مع الصحابة ان يسمعهم قراءته فيقرا",
+          "secondary": "يسمع انسا والصحابة",
+          "tokens": 16
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p045-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فالبصير العارف يستعملها",
+          "secondary": "فلو قدر ان ادم لم ياكل من الشجرة ولم يخرج من الجنة هو واولاده لم يكن شيء من تلك ولا ظهر من القوة الى الفعل ما كان كامنا",
+          "tokens": 28
+        },
+        {
+          "tag": "replace",
+          "control": "مواضعها النافعة له التي لا تحرم عليه دينا ولا تقطع عليه طريقا ولا تفسد عليه حاله مع",
+          "secondary": "قلب ابليس يعلمه",
+          "tokens": 17
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p045-03",
+        "v3-p046-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انفع فصول الكتاب لمن هو معتن بهذا الشان وعامل على صلاح قلبه وتزكية نفسه وانما دخل الداخل حيث ظن ان تزكية النفس وتهذيب الاخلاق يتيسر",
+          "secondary": "الخيلاء ما يحبها الله ومنها ما يبغضها الله فالخيلاء التي يحبها الله اختيال الرجل في الحرب وعند الصدقة فانظر كيف صارت الصفة المذمومة عبودية وكيف استحال القاطع موصلا فصاحب الرياضات والعامل",
+          "tokens": 31
+        },
+        {
+          "tag": "replace",
+          "control": "يوقع",
+          "secondary": "يوقعه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "صلوات الله وسلامه عليهم",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p046-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعالج",
+          "secondary": "عالج",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "دون",
+          "secondary": "واين يقع رايه من",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "صلاحها وتزكيتها",
+          "secondary": "تزكيتها وصلاحها",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "على",
+          "secondary": "من طريقهم وعلى",
+          "tokens": 3
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p046-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يكون",
+          "secondary": "يقع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full author paragraphs directly compared with 2019 images pp.42–46, including continuation. Control transcription and Russian retained. Large proposed replacements across pp.42–45 come from an unreliable secondary alignment window (different subject matter); they must not be accepted as established textual variants or as evidence that our control lost material. Several full opening phrases were not located by normalized search in the older digital text; this search does not establish absence in all editions."
+    },
+    {
+      "source_ids": [
+        "v3-p047-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p047-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p048-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وجماع",
+          "secondary": "وجميع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p048-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p049-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والجود والصبر فالعلم",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p049-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لحقوق",
+          "secondary": "بحقوق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p049-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "استعينوا",
+          "secondary": "واستعينوا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ان الله مع الصابرين",
+          "secondary": "وانها لكبيرة الا على الخاشعين",
+          "tokens": 5
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p049-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو تزكية",
+          "secondary": "وتزكية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p050-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يكون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p050-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p051-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يراه",
+          "secondary": "فيراه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p051-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتخلصه",
+          "secondary": "ويخلصه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اكثر",
+          "secondary": "اكبر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p053-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المحب",
+          "secondary": "المحبة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p053-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فاثبتها",
+          "secondary": "واثبتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p054-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وبر",
+          "secondary": "وبرد القلب فصل المشهد السادس مشهد السلامة وبرد",
+          "tokens": 8
+        },
+        {
+          "tag": "replace",
+          "control": "يشغل",
+          "secondary": "يشتغل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وبره",
+          "secondary": "وبرده",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويراه",
+          "secondary": "ويرى انه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "بالغبن",
+          "secondary": "بالغل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with 2019 printed page images pp.47–51 and 53–54. Existing Arabic matches control. In particular p.49 quotes 2:153, not the older witness’s different verse ending; p.54 prints بِرّ / بِرّه, not برد / برده. No automatic replacement from older witness."
     }
   ],
-  "record_count": 40,
+  "record_count": 83,
   "unreviewed_candidates_remain": true
 }
