@@ -878,5 +878,27 @@
     "reason": "Actual310 names الملقب بالمظفر الجاشنكير only. Remove own unsupported inserted ركن الدين بيبرس from author source/translation; printed المظفر retained despite secondary shorter بالجاشنكير. No historical biographical claim silently imported.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p313-02",
+    "printed_page": 313,
+    "previous_ar": "قال: (وهو على ثلاث درجاتٍ، الأولى: فراسةٌ طارقةٌ نادرةٌ، تسقط على لسان وحشيٍّ في العمر مرّةً لحاجة سمع مريدٍ صادقٍ إليها، لا يُوقف على مخرجها، ولا يُؤبَه لصاحبها. وهذا شيءٌ لا يخلص من الكهانة وما ضاهاها، لأنّها لم تَسْرِ عن عينٍ، ولم تصدر عن علمٍ، ولم تُسبق بوجودٍ).",
+    "control_print_ar": "قال: (وهي على ثلاث درجاتٍ، الأولى: فراسةٌ طارئةٌ نادرةٌ، تسقط على لسان وحشيٍّ في العمر مرّةً لحاجة سمع مريدٍ صادقٍ إليها، لا يُوقف على مخرجها، ولا يُؤبَه لصاحبها. وهذا شيءٌ لا يخلص من الكهانة وما ضاهاها، لأنّها لم تَسْرِ عن عينٍ، ولم تصدر عن علمٍ، ولم تُسبق بوجودٍ).",
+    "previous_ru": "Он сказал: «У неё три степени. Первая — редкая, внезапная проницательность: раз в жизни она попадает на отчуждённый язык, ибо искреннему мюриду нужно услышать её. Её источник неведом, а её обладателю не придают значения. Это не свободно от прорицательства и подобного ему: она не изошла из источника истины, не возникла из знания и не была предварена обретением».",
+    "corrected_ru": "Он сказал: «У неё три степени. Первая — редкая, внезапная проницательность: раз в жизни она попадает на отчуждённый язык, ибо искреннему мюриду нужно услышать её. Её источник неведом, а её обладателю не придают значения. Это не свободно от прорицательства и подобного ему: она не изошла из источника истины, не возникла из знания и не была предварена обретением».",
+    "reason": "Actual enlarged313 reads وهي and طارئة. Restore feminine reference and hamza/seat instead own ق. Keep printed لا يوقف and لم تسر, not secondary conjectures.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
+  },
+  {
+    "source_id": "v3-p313-03",
+    "printed_page": 313,
+    "previous_ar": "يريد بهذا النّوع: فراسةً تجري على ألسنة الغافلين الذين ليست لهم يقظةُ أرباب القلوب، فلذلك قال: (طارقةٌ نادرةٌ تسقط على لسان وحشيٍّ).",
+    "control_print_ar": "يريد بهذا النّوع: فراسةً تجري على ألسنة الغافلين الذين ليست لهم يقظةُ أرباب القلوب، فلذلك قال: (طارئةٌ نادرةٌ تسقط على لسان وحشيٍّ).",
+    "previous_ru": "Он подразумевает проницательность, проявляющуюся на языках беспечных, не обладающих бодрствованием людей сердца. Поэтому сказал: «Редкая, внезапная, попадающая на отчуждённый язык».",
+    "corrected_ru": "Он подразумевает проницательность, проявляющуюся на языках беспечных, не обладающих бодрствованием людей сердца. Поэтому сказал: «Редкая, внезапная, попадающая на отчуждённый язык».",
+    "reason": "Actual313 repeated first-degree description also طارئة نادرة; restore same hamza reading in author repeat without altering rare/spontaneous character.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

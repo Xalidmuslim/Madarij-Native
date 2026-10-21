@@ -1064,5 +1064,68 @@
     "corrected_ru": "Проницательность прежде всего связана с глазом: это зеркало сердца и знак того, что в нём. Затем — с языком, посланником и толмачом сердца. По голубизне глаз в сочетании с рыжеватыми волосами и светлой кожей судят о порочности человека, по видимому в них отчуждению — о дурном внутреннем и испорченности скрытых помыслов.",
     "reason": "Further classical lexical check: Jawhari Sihah شقر defines human حمرة صافية وبشرته مائلة إلى البياض, صهب explicitly شقرة في شعر الرأس; Mukhtar agrees. Expand classical phenotype meaning rather than narrower modern blonde-only rendering. Own incorrect eyelid sense stays removed. No claim physical features validate character inference;308 author limitations retained.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p313-02"
+    ],
+    "previous_ru": "Он сказал: «У неё три степени. Первая — редкая, внезапная проницательность: раз в жизни она попадает на отчуждённый язык, ибо искреннему мюриду нужно услышать её. Её источник неведом, а её обладателю не придают значения. Это не свободно от прорицательства и подобного ему: она не изошла из источника истины, не возникла из знания и не была предварена обретением».",
+    "corrected_ru": "Он сказал: «У неё три степени. Первая — редкая, внезапная проницательность: раз в жизни она срывается с отчуждённого языка, ибо искреннему мюриду нужно услышать её. Её источник неведом, а её обладателю не придают значения. Такая проницательность не свободна от примеси прорицательства и подобного ему: она не изошла из источника истины, не возникла из знания и не была предварена обретением».",
+    "reason": "Natural Russian speech metaphor for تسقط على لسان, preserving sudden occurrence, once-per-lifetime rarity, truthful seeker hearing need, unknown origin/insignificant speaker, lack of purity and all three denied sources. No unseen claim asserted as translator judgement.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p313-03"
+    ],
+    "previous_ru": "Он подразумевает проницательность, проявляющуюся на языках беспечных, не обладающих бодрствованием людей сердца. Поэтому сказал: «Редкая, внезапная, попадающая на отчуждённый язык».",
+    "corrected_ru": "Он подразумевает проницательность, проявляющуюся на языках беспечных, не обладающих бодрствованием людей сердца. Поэтому сказал: «Редкая, внезапная, срывающаяся с отчуждённого языка».",
+    "reason": "Match repeated speech metaphor313-02 while preserving full heedless/non-awakened qualifier.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p313-04"
+    ],
+    "previous_ru": "Отчуждённый язык — не привыкший к поминанию Аллаха; сердце его обладателя не успокоилось в Нём. Раз в жизни на такой язык попадает раскрытие. Это редкость, словно попадание неумелого стрелка.",
+    "corrected_ru": "Отчуждённый язык — не привыкший к поминанию Аллаха; сердце его обладателя не успокоилось в Нём. Раз в жизни с такого языка срываются слова, раскрывающие сокровенное. Это редкость, словно попадание неумелого стрелка.",
+    "reason": "Idiomatic Russian for disclosure occurring on tongue, preserving once-in-lifetime plus both rarity and unskilled archer comparison; language estranged from divine remembrance not reduced to ethnicity.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p315-04"
+    ],
+    "previous_ru": "Его слова: «Это не свободно от прорицательства».",
+    "corrected_ru": "Его слова: «Такая проницательность не свободна от примеси прорицательства».",
+    "reason": "Keep repeated quotation313-02 consistent; no omitted negation.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p317-02"
+    ],
+    "previous_ru": "Он сказал: «Вторая степень — проницательность, собранная с насаждения веры, восходящая из здравого состояния и сверкающая светом раскрытия».",
+    "corrected_ru": "Он сказал: «Вторая степень — проницательность, пожинаемая как плод древа веры, восходящая из здравого состояния и сверкающая светом раскрытия».",
+    "reason": "Render تجنى من غرس الإيمان harvest/tree metaphor naturally, retaining harvest, faith source, sound state and disclosure-light three features, not recasting as mere wisdom summary.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p317-03"
+    ],
+    "previous_ru": "Этот вид проницательности присущ лишь верующим, потому он сказал: «Собранная с насаждения веры». Он уподобил веру насаждению: она растёт и увеличивается, очищается и крепнет от полива, приносит плоды во всякое время с дозволения Господа; её корень крепок в земле, а ветвь — в небе. Кто посадил веру в благую, чистую почву сердца и поливал её водой искренности, правдивости и следования, получит одним из плодов такую проницательность.",
+    "corrected_ru": "Этот вид проницательности присущ лишь верующим, потому он сказал: «Пожинаемая как плод древа веры». Он уподобил веру насаждению: она растёт и увеличивается, пышнеет от полива, приносит плоды во всякое время с дозволения Господа; её корень крепок в земле, а ветвь — в небе. Кто посадил веру в благую, чистую почву сердца и поливал её водой искренности, правдивости и следования, получит одним из плодов такую проницательность.",
+    "reason": "Match repeated harvest image and take يزكو in immediate growing-tree irrigation context as flourishing, not add an assertion of purifying seedling. All growing/increasing/fruit timing/root/branch/soil/three waters retained.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p317-07"
+    ],
+    "previous_ru": "Свет раскрытия — одно из того, что рождает проницательность; более того, он её основа. Её сила соразмерна силе или слабости этого света, а сила и слабость света — силе и слабости его источника.",
+    "corrected_ru": "Свет раскрытия — один из источников проницательности; более того, основа проницательности — свет раскрытия. Сила проницательности зависит от силы или слабости этого света, а его сила и слабость — от силы и слабости его источника.",
+    "reason": "Restore explicit repeated نور الكشف rather than pronominal compression, improve broken одно из того, preserve both linked light/source strength and weakness pairs.",
+    "external_human_review": false
   }
 ]

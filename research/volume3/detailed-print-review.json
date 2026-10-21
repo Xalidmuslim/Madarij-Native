@@ -12585,8 +12585,297 @@
         }
       ],
       "finding": "Actual310 الملقب بالمظفر الجاشنكير الملك: own inserted ركن الدين بيبرس removed. Other printed قال, وفارقه, فقيل له and311 تقلب retained, not غلب from secondary. Full prostration gratitude, timing question, harnessed horses/turn of state, heard directly/through report distinction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p313-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "وهي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "طارقة",
+          "secondary": "طارئة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يوقف",
+          "secondary": "يتوقف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تسر",
+          "secondary": "تشر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged313 وهي / طارئة, not own وهو/طارقة. Keep printed يوقف and تسر; no secondary يتوقف/تشر inserted. Full once-in-lifetime, hearing seeker, unknown origin and three negations retained."
+    },
+    {
+      "source_ids": [
+        "v3-p313-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طارقة",
+          "secondary": "طارئة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual313 repeat طارئة not own طارقة. Full heedlessness/unawakened hearts contrast and repeated rare/spontaneous speech image preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p314-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هنالك قلب",
+          "secondary": "هناك قلت",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الطيرة",
+          "secondary": "التطير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وليتوكل",
+          "secondary": "بل يتوكل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual314 هنالك قلب, الطيرة and وليتوكل retained, not older هناك قلت /التطير/بل يتوكل. Good omen versus superstition distinction and non-obstruction/reliance rule retained in full."
+    },
+    {
+      "source_ids": [
+        "v3-p314-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الصحيح",
+          "secondary": "الصحيحين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual314 الصحيح singular, not الصحيحين. Attribution qualification already explicitly documented in own separate note and following author paragraph, no false new literal Bukhari/Muslim certification."
+    },
+    {
+      "source_ids": [
+        "v3-p314-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يدفعها",
+          "secondary": "الله يذهبها",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "جاء",
+          "secondary": "وجاء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual314 يدفعها and جاء ذلك مبينا, not alternate الله يذهبها /وجاء. Full author notice of IbnMasud interpolation remains, no removal of manuscript-truncated quote."
+    },
+    {
+      "source_ids": [
+        "v3-p314-05",
+        "v3-p315-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وشر",
+          "secondary": "وشرك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual315 وشر not وشرك. Whole angelic versus satanic list: good tidings/warning/alert versus sadness/fear/evil/obstructed aims retained, no harmonization to polytheism."
+    },
+    {
+      "source_ids": [
+        "v3-p315-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اليها",
+          "secondary": "اليه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يسوؤه",
+          "secondary": "يسوءه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولجا اليه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فقال",
+          "secondary": "وقال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual315 إليها, يسوؤه, no extra ولجأ إليه, and فقال retained. Full joy/hoping/gratitude/completion/help and negative-case refuge/trust/reliance/tawhid, both complete prayers retained."
+    },
+    {
+      "source_ids": [
+        "v3-p316-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منها",
+          "secondary": "عنها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الحق",
+          "secondary": "حق",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "هي",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual316 منها إلا الحق and هي غير متصلة retained. No flattening truth source to genericdivination or new translator theology."
+    },
+    {
+      "source_ids": [
+        "v3-p316-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "عن",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual316 لا عن علم includes عن. Both guess/conjecture versus knowledge/certainty and constant doubt/lack of insight retained."
+    },
+    {
+      "source_ids": [
+        "v3-p316-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يسبقها",
+          "secondary": "يسقها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "بو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual316 لم يسبقها and printed من in بل هو فارغ من غير واجد; no corrupted older بو. All no finding/deprived/not people of witnessing qualifications intact."
+    },
+    {
+      "source_ids": [
+        "v3-p317-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وفرعه",
+          "secondary": "وفروعه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual317 وفرعه singular, not فروعه. All agricultural analogy details and three irrigation sources preserved, Russian harvest and flourishing rendered naturally without deleting repeated definition."
+    },
+    {
+      "source_ids": [
+        "v3-p318-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual318 قوله without added تعالى/أي. Full ONE of two Quran19:24 interpretations explicitly qualified, noble-master/Messiah interpretation not declared unique canonical reading."
+    },
+    {
+      "source_ids": [
+        "v3-p318-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيكون",
+          "secondary": "فتكون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual318 فيكون masculine retained, not فتكون. Secret versus noble double reading and both morphology examples preserved. Transliteration317-09 intentionally keeps ambiguity until both author explanations."
+    },
+    {
+      "source_ids": [
+        "v3-p318-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual318 والله أعلم without inserted سبحانه وتعالى. Full direct/hint modes, conceal ownstate/protect truth fromcommon misuse/unfit audience/otherreasons all retained."
     }
   ],
-  "record_count": 609,
+  "record_count": 623,
   "unreviewed_candidates_remain": true
 }

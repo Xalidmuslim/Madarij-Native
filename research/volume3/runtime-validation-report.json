@@ -79,8 +79,8 @@
   "latest_corpus_check": "All3108 exact database rows match packaged/repository through272, all seven fields, no extras, integrity ok, protected first two volumes unchanged. Four pending source statuses retained.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New273–311 print/Russian corrections and separately attributed own303-01 note; current3109 rows.",
-    "current_asset_sha256": "b9944fc8671a6b2697621437c1bb8557e02aed890134af0598b858c23dd9cb6a",
+    "change": "New273–318 source/Russian revisions and303-01 own note, current3109 rows.",
+    "current_asset_sha256": "81542268c62689e25210cb705013b089583e710b70a4caefb229435cf92a29c2",
     "current_asset_runtime_checked": false,
     "scope": "Positive APK/DB evidence applies through272 with3108 rows. Current3109 corpus not yet rebuilt/imported. Four unresolved units preserved."
   },
