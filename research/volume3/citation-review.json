@@ -1776,6 +1776,22 @@
       ],
       "finding": "Read full1968 and1975.1968 has Salman saying rights of Lord/self/family and give each right; Prophet approves صدق سلمان.1975 directly quotes Prophet on body/eye/wife/visitor rights. Control quotation uses self/wife/guest then give each right, so preserve as author transmission of sense, not certify all words as one verbatim primary matn. Do not add secondary ولربك absent in2019. No new chain-strength ruling or altered author attribution.",
       "method": "Manual same-agent control print, classical source body, context and Russian comparison. Not independent human editing or full isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p254-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_scholar_quote_compared_causal_russian_bridge_restored",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "After PageV02P354, Murid/Murad Junayd question"
+        }
+      ],
+      "finding": "Complete local Junayd quotation read: knowledge governance/divine care and causal because seeker walks/sought flies/final pursuit question present. Primary has تتولاه and extra سبحانه, control2019 يتولاه without added honorific; retain control. Russian removes tautology and restores explicit لأن bridge. Nearby Daqaq/Musa context read but extra Quran examples absent from control not imported. Scholar saying, not newly authenticated hadith.",
+      "method": "Same-agent direct2019 print, classical source body and complete Russian reread/back-comparison; no independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

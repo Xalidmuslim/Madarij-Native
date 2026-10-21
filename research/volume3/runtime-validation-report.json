@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
-  "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+  "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
+  "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -41,8 +41,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 7,
-      "rows_after": 7,
+      "rows_before": 8,
+      "rows_after": 8,
       "unchanged": true
     },
     "notes": {
@@ -59,8 +59,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
-    "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
+    "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
+    "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -72,17 +72,17 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
-    "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
-    "description": "Before/after update through200, prior to search navigation. Bookmark, seven positions, empty notes/read_chapters and settings bytes unchanged."
+    "apk_sha256": "f37df98dfda2864ae731ce94c41a2d0f3a3e2f02660cf8cf147efcbb100d0ea3",
+    "volume3_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
+    "description": "After emulator restart, before/after update snapshots through248, prior to new UI navigation. Bookmark, eight positions, empty notes/read_chapters and settings bytes unchanged."
   },
-  "latest_corpus_check": "All 3107 APK records exactly match actual database including 191/194/196 Arabic corrections and all Russian refinements through200; no extra rows, integrity_check ok. Protected first two volumes unchanged.",
+  "latest_corpus_check": "All3107 actual database rows exactly match latest packaged content through248, all seven fields, no extras; integrity_check ok. Both first volumes unchanged. APK also contains four explicit pending source statuses, not a publication-ready claim.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Through248 source/Russian corrections and four explicitly unresolved units (110-04,246-03/05,247-03). Positive root APK remains through200.",
+    "change": "Through248 corrections, current four unresolved units110-04,246-03/05,247-03.",
     "current_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
-    "current_asset_runtime_checked": false,
-    "scope": "Latest bytes/status changes await next build/import; earlier exact database proof not applied to them."
+    "current_asset_runtime_checked": true,
+    "scope": "Fresh debug APK, ZIP/signaturev2, exact DB comparison after retained AVD restart; positive evidence only for root hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -107,10 +107,10 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Current through200 search result actually inspected; prior full UI scenarios remain historical.",
+  "visual_check_scope": "Through248 APK: exact3107-row import, current phrase result and complete225-04 reader visually inspected; earlier broad scenarios remain historical.",
   "current_visual_checks": [
-    "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
-    "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
+    "Phrase query ради попечения returns exactly one updated225-04 result in current through248 APK.",
+    "After transition completed,225-04 reader displays entire updated Russian care paragraph, highlighted query and Том3 черновик / Поминание header. Early blank transition frame was not treated as reading proof."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -553,6 +553,107 @@
       "Home opens after update.",
       "Exact multiword query всецело отдаться returns one updated p136 result.",
       "Opening full phrase result displays complete corrected Arabic/Russian p136 quotation and draft header."
+    ],
+    "jvm_test_scope": "All 97 JVM tests in 17 suites rerun for search code correction, zero errors/failures. Also 24 Python content/integrity tests passed.",
+    "open_runtime_issues": [],
+    "resolved_runtime_issues": [
+      {
+        "id": "fts-multiword-prefix",
+        "fix": "Use implicit FTS3 conjunction between individually quoted prefix tokens.",
+        "verification": "Previously failing query всецело отдаться now returns exactly one current p136 result on Android API28. Individual query tokens remain normalized and quoted; no SQL syntax accepted from user input."
+      }
+    ]
+  },
+  "historical_2026_10_21_through200": {
+    "date": "2026-10-21",
+    "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
+    "package": "ru.madarij.nativeapp.qalocal",
+    "build": "debug, standard local test key; not an owner-signed release",
+    "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
+    "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+    "zip_integrity_checked": true,
+    "apk_asset_matches_repository": true,
+    "signature_verified": "APK Signature Scheme v2",
+    "jvm_test_suites": 17,
+    "jvm_tests": 97,
+    "jvm_failures": 0,
+    "jvm_errors": 0,
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 11,
+      "all_3107_packaged_rows_exactly_match_database": true,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 7,
+        "rows_after": 7,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "reading_preferences_unchanged": true,
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "visually_exercised": [
+      "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
+      "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
+    ],
+    "not_claimed": [
+      "All 186 TOC targets individually tapped on a device; targets are statically checked",
+      "Physical Android device testing",
+      "Owner-signed release build",
+      "Independent human translation editing",
+      "Full external hadith authentication"
+    ],
+    "publication_ready": false,
+    "independent_human_review": false,
+    "personal_data_update_scope": {
+      "apk_sha256": "3e05177df722271d65735c58538eb124f39fe5e68bcae94a78c215143d6efbab",
+      "volume3_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
+      "description": "Before/after update through200, prior to search navigation. Bookmark, seven positions, empty notes/read_chapters and settings bytes unchanged."
+    },
+    "latest_corpus_check": "All 3107 APK records exactly match actual database including 191/194/196 Arabic corrections and all Russian refinements through200; no extra rows, integrity_check ok. Protected first two volumes unchanged.",
+    "current_source_update": {
+      "date": "2026-10-21",
+      "change": "Through248 source/Russian corrections and four explicitly unresolved units (110-04,246-03/05,247-03). Positive root APK remains through200.",
+      "current_asset_sha256": "1c785d25d12817c20bcd3da5360ebd233bb13d8ad582fecd8b18ddba07956651",
+      "current_asset_runtime_checked": false,
+      "scope": "Latest bytes/status changes await next build/import; earlier exact database proof not applied to them."
+    },
+    "visual_check_scope": "Current through200 search result actually inspected; prior full UI scenarios remain historical.",
+    "current_visual_checks": [
+      "Current through200 APK phrase search сердце рекой returns exactly one corrected196-02 result.",
+      "Search result opens current196-02 reader; restored river metaphor visible with draft header and corrected following imperative."
     ],
     "jvm_test_scope": "All 97 JVM tests in 17 suites rerun for search code correction, zero errors/failures. Also 24 Python content/integrity tests passed.",
     "open_runtime_issues": [],
