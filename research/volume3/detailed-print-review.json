@@ -5435,12 +5435,593 @@
     },
     {
       "source_ids": [
+        "v3-p140-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يا ايها",
+          "secondary": "ياايها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p140-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "وهي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يجمع",
+          "secondary": "يجتمع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p141-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p141-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تعامل الله",
+          "secondary": "تعامله سبحانه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p141-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p141-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p141-09",
+        "v3-p142-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p142-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "باداب",
+          "secondary": "بادب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p142-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المبارك رحمه الله",
+          "secondary": "مبارك",
+          "tokens": 3
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p142-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي",
+          "secondary": "رحمه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاداب",
+          "secondary": "الادب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p142-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "امر",
+          "secondary": "مراد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p142-08",
+        "v3-p143-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p143-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بايقاع",
+          "secondary": "وبايقاع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مجالسي",
+          "secondary": "مجالس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p143-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فاكثر",
+          "secondary": "فاكبر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p143-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الخصوصية فاكثر",
+          "secondary": "الدين فاكبر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p143-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.140–143 compared, continuations 141→142 and 142→143 included. Enlarged p142 confirms singular بأدب الله; own plural corrected, existing singular Russian retained. Other listed words, narrator names/honorifics and adab-category distinctions match control and are retained; older witness not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p143-08",
+        "v3-p144-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "اراد ان اصله معرفة النفس",
+          "secondary": "",
+          "tokens": 5
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p144-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p144-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p146-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المائدة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الجبرية",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p146-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المائدة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "قاله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ربه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p146-03",
+        "v3-p147-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فكان",
+          "secondary": "وكان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p148-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p148-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "وجاء بكم من البدو",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اخرجني",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يوسف",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يوسف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p149-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التزم",
+          "secondary": "الزم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ظاهر",
+          "secondary": "الظاهر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p149-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفرض",
+          "secondary": "الفرائض",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بالفرض",
+          "secondary": "بالفرائض",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p149-05",
+        "v3-p150-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاداب",
+          "secondary": "الادب",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "جعلها",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اليه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الدالة",
+          "secondary": "للدلالة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بالهامه",
+          "secondary": "نالها منه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p150-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.143–144,146–150 compared, both pages of continuations included. Listed author wording, honorifics, verse fragments and references match control; Arabic retained. Relevant full Russian units read and compared: no omission of corresponding author clauses. Existing 150-03 Quran/Qushayri check not repeated as new authentication. Modern editorial footnotes not imported."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 259,
+  "record_count": 287,
   "unreviewed_candidates_remain": true
 }

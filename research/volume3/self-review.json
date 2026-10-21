@@ -7105,14 +7105,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p142-02": {
-      "sha256": "2605f0e0bdbdd77c5f9449cfae5c052a0eb0ff06a8f1f3e4a5c72b06206d65bf",
+      "sha256": "82baaa2a842cf3f5d8bb454525c0700276d1b0afb7073aa9013322410fad8fa3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.142 crop confirms singular بأدب الله, not own plural بآداب الله. Preserve distinct forms elsewhere rather than harmonizing repetitions. Existing Russian uses singular учтивостью and is retained after rereading and comparison with full printed saying. Same-agent self-review, not independent human editing or theological certification. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p142-03": {
       "sha256": "7afcfeea1c8bac84e7224aba389279b6b6638ef622967c78307b2ec449b4bdff",
