@@ -116,5 +116,23 @@
     "corrected_ru": "То есть он продвигается к истинному состоянию. Это приходящее в сердце воздействие, возникающее от его отклика на служение: оно отнимает лень и вялость, влечёт человека в высшее общество — к тем, кого Аллах облагодетельствовал. Он переходит от степени знания к степени раскрытия, от внешних форм деяний — к их истинам, вкусам, переживаниям и состояниям, восходя от ислама к вере, а от веры — к ихсану.",
     "reason": "Contextual collective reading of الرفيق الأعلى: author explicitly glosses it by الذين أنعم الله عليهم on control p. 136. Compared with Bukhari 4435–4437 and existing volume 2 rendering высшее общество. Arabic control scans 49 and 136 inspected; final Russian reread separately and back-compared; same-agent self-review, not independent human editing.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p321-04"
+    ],
+    "previous_ru": "В «Сахихе» Муслима от него: «Погибли изощряющиеся». Он повторил это трижды. Это чрезмерно углубляющиеся и ужесточающие.",
+    "corrected_ru": "В «Сахихе» Муслима от него: «Погибли впадающие в крайности». Он повторил это трижды. Речь о тех, кто чрезмерно углубляется в вопросы и проявляет излишнюю строгость.",
+    "reason": "Replace unnatural participles изощряющиеся / ужесточающие by grammatical contextual Russian; preserve warning against excess and both author explanatory terms. Direct control scan reread; final Russian read separately and back-compared against Arabic; checked corresponding classical report. Same-agent self-review only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p392-01"
+    ],
+    "previous_ru": "В обоих «Сахихах» от него же передаётся, что Пророк, да благословит его Аллах и приветствует, сказал: «Когда Аллах любит раба, Он зовёт Джибриля и говорит: “Я люблю такого-то — полюби же его”. Джибриль любит его, затем возвещает на небе: “Аллах любит такого-то — полюбите же его”. Обитатели неба любят его, а затем ему даруется принятие на земле». Нечто подобное он упомянул и о ненависти.",
+    "corrected_ru": "В обоих «Сахихах» от него же передаётся, что Пророк, да благословит его Аллах и приветствует, сказал: «Когда Аллах любит раба, Он зовёт Джибриля и говорит: “Я люблю такого-то — полюби же его”. Джибриль любит его, затем возвещает на небе: “Аллах любит такого-то — полюбите же его”. Обитатели неба любят его, а затем ему даруется расположение людей на земле». Нечто подобное он упомянул и о ненависти.",
+    "reason": "Replace literal nominal принятие with contextual расположение людей; preserve divinely granted acceptance on earth, without claiming universal approval. Direct control scan reread; final Russian read separately and back-compared against Arabic; checked corresponding classical report. Same-agent self-review only.",
+    "external_human_review": false
   }
 ]

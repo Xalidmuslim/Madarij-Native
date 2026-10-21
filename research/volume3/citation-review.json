@@ -74,6 +74,298 @@
       "author_text_excerpt": "مع الذين أنعم الله عليهم / في الرفيق الأعلى",
       "finding": "The collective reading is explicit in the author’s p. 136 plural relative clause. Russian высшее общество also occurs in volume 2, pp. 248 and 489. Changed only two volume 3 Russian paragraphs, retaining all clauses and unmodified Arabic. This is a contextual choice, not a rule for every use of رفيق.",
       "method": "Same-agent semantic, Russian literary and back-comparison passes; no independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p358-01",
+        "v3-p358-02"
+      ],
+      "primary_path": "data/0405HakimNaysaburi/0405HakimNaysaburi.Mustadrak/0405HakimNaysaburi.Mustadrak.Shamela0002266-ara1",
+      "blob": "20cbf8a01429efb20244db785ae305cbaad195b0",
+      "location": "Digital report 3249; print pagination of this digital witness not visually checked. Control Madarij p. 358 inspected directly.",
+      "author_text_excerpt": "قال حماد: هكذا ووضع الإبهام على مفصل الخنصر الأيمن ... فضرب ثابت صدر حميد ضربة بيده",
+      "finding": "Basic report and al-Hakim’s own classification على شرط مسلم found. The digital Mustadrak assigns objection to Humayd and striking to Thabit; Madarij print assigns Humayd the transmitting role and says one companion objected. Control wording and translation retained; a separate own app note discloses the attribution difference. Digital phrase قال حميد بن ثابت may itself need witness checking and is not silently normalized or used to emend Madarij. No independent isnad grade assigned.",
+      "additional_primary_path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+      "additional_blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+      "additional_location": "Digital hadith 3074, PageV05P157; basic mountain report confirmed, accompanying dispute not present in this record.",
+      "method": "Targeted classical primary-body lookup and own author translation retained; modern editor apparatus excluded; same-agent review only."
+    },
+    {
+      "source_ids": [
+        "v3-p027-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2553"
+        }
+      ],
+      "finding": "Main text about righteousness and sin found; narrator and Russian sense compared.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p028-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6035"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2321"
+        }
+      ],
+      "finding": "Both sources contain the best-character report; minor إن / من wording differences retained as author quotation.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p066-05"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2865"
+        }
+      ],
+      "finding": "Revelation to be humble, not boast or oppress, found in the Iyad report.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p066-06",
+        "v3-p074-06"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "Book of Faith, chapter تحريم الكبر وبيانه, internal item 147; conventional 91"
+        }
+      ],
+      "finding": "Ibn Masud report about a speck of arrogance found; repeated author citation retained.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p067-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6071"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2853"
+        }
+      ],
+      "finding": "Both contain عتل جواظ مستكبر; author excerpt and Russian sense retained.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p067-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2620"
+        }
+      ],
+      "finding": "Core comparison and threat found. This witness has العز إزاره والكبرياء رداؤه and فمن ينازعني عذبته, whereas author recasts quoted speech in first person; author wording retained without treating it as exact identity.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p068-06"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "2568; shorter 5178"
+        }
+      ],
+      "finding": "Invitation and gift of foreleg/shoulder found; order كراع / ذراع differs slightly in first clause.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p193-04",
+        "v3-p194-01",
+        "v3-p391-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6502"
+        }
+      ],
+      "finding": "Core divine-speech report found. Author paraphrases opening; appendix فبي يسمع وبي يبصر وبي يبطش وبي يمشي on 193–194 absent from this digital 6502 record. Separate own reader note added to 193–194; no claim of invalidity in all transmissions.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p215-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2700"
+        }
+      ],
+      "finding": "Angels, mercy, tranquillity and divine mention all present; both narrators confirmed.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p215-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2701"
+        }
+      ],
+      "finding": "Muawiya narrative and Prophet dialogue found; preserved oath, denial of suspicion and Gabriel report.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p217-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6407"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "779"
+        }
+      ],
+      "finding": "Person wording in Bukhari and house wording in Muslim both found; author distinction retained.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p321-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2670"
+        }
+      ],
+      "finding": "Warning against excess and threefold repetition found. Russian literary wording refined against author’s own explanatory المتعمقون المتشددون.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p321-05"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "43"
+        }
+      ],
+      "finding": "Capacity and لا يمل الله حتى تملوا wording found; preserved author quotation without adding theological interpretation.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p333-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "4104; 4106"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1803"
+        }
+      ],
+      "finding": "Trench earth-carrying and Ibn Rawaha verses found; word variants in verses are not silently imported.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p391-02",
+        "v3-p455-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "16"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "43"
+        }
+      ],
+      "finding": "Three qualities and sweetness of faith found; fuller after-rescue wording in Muslim, shorter Bukhari 16. Author wording retained.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p392-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "3209"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2637"
+        }
+      ],
+      "finding": "Love and acceptance found in both; hatred continuation explicitly found in Muslim 2637. Russian acceptance phrase made natural without changing meaning.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p392-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "7375"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "813"
+        }
+      ],
+      "finding": "Detachment leader and love of al-Ikhlas found in both sources; author abbreviation retained.",
+      "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
     }
   ]
 }

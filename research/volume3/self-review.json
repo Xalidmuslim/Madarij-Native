@@ -16985,14 +16985,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p321-04": {
-      "sha256": "452c06e80505a3f0ac0a3853c18c4204e7c1b4d05223d68d0c7b552f9da83865",
+      "sha256": "e144c04e5f326a07b3da282d2c258cbc2e732644c6006fb2df6727cd34700071",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace unnatural participles изощряющиеся / ужесточающие by grammatical contextual Russian; preserve warning against excess and both author explanatory terms. Direct control scan reread; final Russian read separately and back-compared against Arabic; checked corresponding classical report. Same-agent self-review only."
     },
     "v3-p321-05": {
       "sha256": "92c42454c44e4ce459bc756b5c48706a82f1e41545100d7c79032e3296c9204f",
@@ -21001,14 +21002,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p392-01": {
-      "sha256": "50f04e3220b3363b20b94e1e8de09add1f3b240b666172980925f8e90f1b10e0",
+      "sha256": "525c70917bc859349508a7c1926ee298ba4c4927aed81e7db5306278003f581e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace literal nominal принятие with contextual расположение людей; preserve divinely granted acceptance on earth, without claiming universal approval. Direct control scan reread; final Russian read separately and back-compared against Arabic; checked corresponding classical report. Same-agent self-review only."
     },
     "v3-p392-02": {
       "sha256": "9c20b8eb8a90035d4ee2ef361285f7103e98e222c4850428091458f9451876f2",
