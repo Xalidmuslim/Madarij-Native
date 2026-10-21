@@ -24645,14 +24645,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p451-02": {
-      "sha256": "062fb829e9d62f09eb056a0b3dde6e7b7c3bb8cb275d1c8c7b6c5f784695894e",
+      "sha256": "e535d26cb0715ab6c196e057da84ae553b2b1a22e44fb741919dff0424f0aaab",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Correct subject of لا يعرج: the person, explicitly المشاهد in author452-05 explanation, not the disclosure itself. Preserve all three negatives. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p451-03": {
       "sha256": "1480297046871b9e47aad2079332f5cf50ba0e4ac3ebed68ac5b198e185ac1f0",
@@ -24705,24 +24706,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p451-08": {
-      "sha256": "d6ea8baffafa636d577ddfd2e684608819ef628102c4d4d3a53438377b6fb7f3",
+      "sha256": "4746d0798ec964283467f80dd95e2d727f3b7236adca8f0150cc8cc75a628578",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged451 ف in فكثيف, not own و. Preserve consequent enumeration dense/thin/intermediate; Russian already enumerates. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p452-01": {
-      "sha256": "c5b2307b260a9f6e70a34216234e6fe351c7510b4a5e390796c47b4dbbe8af64",
+      "sha256": "b446815d3b8d159649d77d260ae2c9824be29fe72a3fd883c3dc4b21049435af",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Accurate glorification for سبحانه, distinct from تعالى; quoted light/face-splendor hadith meaning and servant-side veil unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p452-02": {
       "sha256": "1eee00fede4245a3f01a7ac367dfaa21dc4b8e211f8da312f9236b9838b77c25",
@@ -24755,14 +24758,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p452-05+v3-p453-01": {
-      "sha256": "87cd472a0c096e000994ee15a3968a10fbc76e7202efc64694dc098809ad1b11",
+      "sha256": "57dc4a7bb5922cf83e340a2837877490795c4c483e09ab51cc427f91c1671392",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Align repeated quotation with corrected human subject451-02; preserve full gloss and subsequent453 rejection as separate author position. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p453-02": {
       "sha256": "37d69735698151b9578f87920ac9743800229da57d46e0b7ed946c76d4f5f81a",
@@ -24775,14 +24779,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p453-03": {
-      "sha256": "ceb0bfcebf062f4c52125f70c311fd4d9231daf8ce92d2729965b2f6890ae198",
+      "sha256": "b00b1df2d9d733465b00f8f896d02b75ee7d1f9aa69c48ef9d8afaca4bfe4555",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged453 unequivocal وصوله, not own الوصول. Restore possessive reference to wayfarer without adding direct vision. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p453-04": {
       "sha256": "ac5784bf80a0857bd7900dbd46d7fdec14e2e0b6129d8a34e67f5539dcc0037d",
@@ -24795,14 +24800,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p453-05": {
-      "sha256": "2b11936fcc38d3b13db84a2d6338653383e3a95c50c52f9a92a910aa30673d57",
+      "sha256": "f9ddcc82cdb292dea31677bea0ad36bda3b6d21ee823effd1965c844399b1fca",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged453 masculine initial ي in يغلب; no new صافية from secondary, printed ووقاره and بها retained. Existing Russian meaning matches. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p453-06+v3-p454-01": {
       "sha256": "d9036c3bd1814d3411b3ad26c29b5d38d678d835f7a7e1996f6522f9fbd6b8b9",
@@ -24865,24 +24871,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p455-04": {
-      "sha256": "7bc77990ae1b2a2134088dec9307e0d172098cee23cd7999c3cf205cbe6aba04",
+      "sha256": "c4686a976fff85f29e3e13506d2d8a6243a7eeca62c24a519eb9f53faebeb05a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged455 وباشر قلوبهم, not own وأثر بقلوبهم. Restore direct touching hearts; التوحيد retained against old التوفيق; full18:14 and later excerpt kept. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p455-05": {
-      "sha256": "2273cb04bb95a5f91e43cc8f85d997c3d3a401668529aeeed53b59ec6e9733a1",
+      "sha256": "245a525b262e7a418eccb34363abdfbbcd492aabaf4bb5e95c1f3af4f06806f5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural Russian for فروا بدينهم, retain flight to cave and preservation of religion, no added historical event. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p455-06+v3-p456-01": {
       "sha256": "f61f341ea36f064da1ecb4a5753b545d96c0574c5c715d424a94a614ffe52001",
@@ -24895,7 +24903,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p456-02": {
-      "sha256": "22ee3ecc88c093be1b06139b9e8785ceedb4e718b094d6479319e9e1c1d44b73",
+      "sha256": "9cefe6f6d6ade10d7386cfda5e294b34cb4febfa4d7505993265c4241da481e8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -24903,7 +24911,7 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Both rankings preserved literally, not harmonized. Different printed spellings also preserved; separate source-consistency note explains the apparent tension. Secondary 1973/1996 texts also place المواجيد above الوجد in this paragraph. This is a source observation, not an independently proven unified taxonomy."
+      "resolution": "Contextual awrad means regular devotional acts; preserve both printed plural spellings المواجد/المواجيد and apparent ranking inconsistency, already separate editorial note. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p456-03": {
       "sha256": "fa777fb69c8d54a60e8ccd710a571a2c99d448fc6080581ce27ffca7b04f51fa",
@@ -24926,14 +24934,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p456-05": {
-      "sha256": "c8b58f355c6055bf7f7dc2e5ca8ce2ea8333691320e341e8254c5412c5ad365f",
+      "sha256": "d3d5ce66e4f97b8177205527fea5492bf659c1ed0488add8003a371bf3d2119a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged456 وانصباغ with ن and no ط. Preserve author printed form, not own lexical normalization; Russian permeation image unchanged. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p456-06": {
       "sha256": "47f4b4afc27eb56174468231673494a37f2100fb9ffa3de72c0183b8e8a0504e",
@@ -24986,14 +24995,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p457-05": {
-      "sha256": "321d1947153fb643d00d0415b773ca521a8dcc62341e17f94343622326a5868a",
+      "sha256": "8d4bf39fe9fc580e6575b6e21d151141a367697febc924fe723a00075d51f951",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Consistent contextual awrad as regular devotional acts, not generic claim all worship has same role. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p457-06+v3-p458-01": {
       "sha256": "bd8b3011a80f4c08ecb891900eaf48633a1593baf0067fc7384d3354cd358173",
@@ -25157,14 +25167,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p460-04": {
-      "sha256": "1491c9d7595428ecac0b367cff11f48393b91d4687c3df7bda878e7b1f3f15b7",
+      "sha256": "2ec037b624d7760bc8d3b0bc5f40676f0fd67fcdd586cd1d3233f5028851f171",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه glorification corrected; all seven Quran excerpts/links retained including3:191 absent in secondary. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p460-05": {
       "sha256": "ed532f49f1ffd8093306bf75c21d3eb5dfa91ad259105651089d711894077390",
@@ -25177,14 +25188,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p460-06+v3-p461-01": {
-      "sha256": "ed8e5ca59e4d2bfcc97bd3a8cffb359215a15de6b18a39c570d37b98b3f4525e",
+      "sha256": "12b4c6cedf7909f454ca58c82f97bc49d62d222074dc3d5f5aec88e46cd7e5b2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged461 continuation all three present verbs causative يبقي final dotted ي, not own يبقى. All occur in461-01, after physical page break; existing joined RU already active leaving trace. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p461-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -25217,14 +25229,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p461-05": {
-      "sha256": "3dd88c9ce716cba11deeb11f4409eaee404615d9a46797d687768aaa3116e87e",
+      "sha256": "7b6d1675a2e1ca22de15368ea38c422b0f523469d313089819674a0f01a826fe",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged461 استنارت feminine agreement before الأسماع والأبصار, final ت omitted in own transcription. Retain full أتم استنارة against secondary shortening. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p461-06+v3-p462-01": {
       "sha256": "b33b6387815a5834ee1e2f904edcdbbafc175923816bdecc570dd1f9fccc13a5",
@@ -25237,14 +25250,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p462-02": {
-      "sha256": "36c84bb85c19bdd0511d023cbd7eaa60d9a2edcc7efd24cb5db91569e53a667e",
+      "sha256": "759c6cb8222c62e309818db910d2d3a4aaf7619387b0767e778273f92a9ccbe8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Correct Russian government for محارم الله; retain entire author hadith wording and two callers without conflating variants. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p462-03": {
       "sha256": "7937bb801b23b6da33411777ce998d81c724b778f13a928c936b118aff87877a",

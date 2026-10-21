@@ -18228,8 +18228,491 @@
         }
       ],
       "finding": "Actual450 includes له and العبد; no deletions. Entire obligation-before-departure argument and next three categories retained; لا يحب not unconditional prohibition."
+    },
+    {
+      "source_ids": [
+        "v3-p451-08"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكثيف",
+          "secondary": "فكثيف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged451 explicitly فكثيف, not own وكثيف. All preceding transform/hindrance clause and remaining النفس preserved; no modern note imported."
+    },
+    {
+      "source_ids": [
+        "v3-p452-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual452 وهو الحجاب الذي بينه هو وبين الله includes both هو. Retain repeated emphasis and dark/ego-side veil distinction."
+    },
+    {
+      "source_ids": [
+        "v3-p452-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هو",
+          "secondary": "وهو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual452 هو حجاب النور without secondary extra و. Entire clause وهذا الحجاب كاشف retained exactly, not conjecturally repaired; distinction from former blocking veil preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p453-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الوصول",
+          "secondary": "وصوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged453 confirms وإنما وصوله rather than own الوصول; printed text has neither added تعالى nor سبحانه here. Preserve categorical rejection of direct worldly vision and positive witness distinction, no doctrinal paraphrase."
+    },
+    {
+      "source_ids": [
+        "v3-p453-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تغلب",
+          "secondary": "يغلب",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الصافية",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ووقاره",
+          "secondary": "وتوقيره",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بها",
+          "secondary": "لها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged453 ما يغلب with ي, not own تغلب. Print has العارفة without extra الصافية, ووقاره not وتوقيره, and مشهودا بها not لها. All knowing-heart qualities and qualified protection clause retained."
+    },
+    {
+      "source_ids": [
+        "v3-p453-06",
+        "v3-p454-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ليسير",
+          "secondary": "لليسير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual454 ليسير من ذلك النور with one lām before يسير, no secondary extra definite ل. Full mountain/Musa comparison and joined paragraph kept."
+    },
+    {
+      "source_ids": [
+        "v3-p454-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ذل",
+          "secondary": "ذلك",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "السنة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual454 في ذل الحجاب, not secondary في ذلك الحجاب. Actual نور المحمدية without extra السنة. Preserve author double warning and evaluation as his words, not translator addition."
+    },
+    {
+      "source_ids": [
+        "v3-p455-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "والتوحيد",
+          "secondary": "والتوفيق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واثر بقلوبهم",
+          "secondary": "وباشر قلوبهم",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الكهف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged455 وباشر قلوبهم, not own وأثر بقلوبهم. Retain actual رحمه الله and والتوحيد versus old والتوفيق, no extra الكهف added to brief closing excerpt. Complete18:14/author explanation kept."
+    },
+    {
+      "source_ids": [
+        "v3-p456-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "و الوجد",
+          "secondary": "والوجد",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "و المواجد",
+          "secondary": "والمواجيد",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual456 رحمه الله and first المواجد without ي, later المواجيد with ي. Preserve printed difference and ranking tension relative457 as already separate own note; do not harmonize author."
+    },
+    {
+      "source_ids": [
+        "v3-p456-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واصطباغ",
+          "secondary": "وانصباغ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged456 unmistakable وانصباغ, not own واصطباغ. Entire knowledge/realization distinction and three examples longing/reliance/fear retained."
+    },
+    {
+      "source_ids": [
+        "v3-p457-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السلوك والسير",
+          "secondary": "السير والسلوك",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وتعمله",
+          "secondary": "ومن تامله",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يرصد",
+          "secondary": "رصد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "و التواجد",
+          "secondary": "والتواجد",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "و المواجيد لما ينازله",
+          "secondary": "والمواجيد لمن يتاوله",
+          "tokens": 4
+        }
+      ],
+      "finding": "Enlarged457 السلوك والسير, وتعمله, يرصد and لما ينازله all match control. Do not reorder or substitute secondary ومن تأمله/رصد/لمن يتاوله. Both opinions remain attributed, not author/translator verdict."
+    },
+    {
+      "source_ids": [
+        "v3-p458-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual458 includes صلى الله عليه وسلم after الرسول. Ubay reading plus own explanatory note already separated; not substituted into canonical33:6 or silently normalized."
+    },
+    {
+      "source_ids": [
+        "v3-p459-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "القراءة",
+          "secondary": "الاية والقراءة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "على",
+          "secondary": "عن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual459 هذه القراءة without extra الآية و; فرع على not secondary عن. Retain attributed explanation of Ubay reading and canonical33:6 excerpt."
+    },
+    {
+      "source_ids": [
+        "v3-p459-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "لهيب",
+          "secondary": "لهب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual459 رحمه الله and لهيب with ي, not secondary لهب; heading/gloss distinguished."
+    },
+    {
+      "source_ids": [
+        "v3-p459-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اللهيب",
+          "secondary": "اللهب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual459 اللهيب with ي; repeated لهيب and causality of passing witness/nonattainment/bewilderment all retained."
+    },
+    {
+      "source_ids": [
+        "v3-p460-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ينبهه",
+          "secondary": "ينتبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual460 ينبهه السمع causal hearing awakens him, not secondary ينتبه; internal/external prompt distinction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p460-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ويتفكرون في خلق السماوات والارض ال عمران وقال",
+          "secondary": "",
+          "tokens": 8
+        }
+      ],
+      "finding": "Actual460 no added الله at source comparison locus; entire3:191 excerpt ويتفكرون في خلق السماوات والأرض explicitly present. No deletion of author Quran quotation allowed. All seven excerpts and references kept."
+    },
+    {
+      "source_ids": [
+        "v3-p460-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وجد",
+          "secondary": "ووجد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وخرج",
+          "secondary": "خرج",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual460 وجد القلب... وخرج, no first extra و and no removal second و. Preserve result awakening versus sleep/heedlessness."
+    },
+    {
+      "source_ids": [
+        "v3-p460-06",
+        "v3-p461-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يبقى",
+          "secondary": "يبقي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يبقى",
+          "secondary": "يبقي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يبقى",
+          "secondary": "يبقي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged460–461 all three current verbs causative يبقي, dotted final ي; own transcription had يبقى. Correct source forms; Russian leaving an effect already correct. Trace may be obscured by opposite successor states, not denied."
+    },
+    {
+      "source_ids": [
+        "v3-p461-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اوصاف",
+          "secondary": "الاوصاف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual461 وهذه أوصاف no extra definite ال; full soul as bearer of hearing/sight/thought retained."
+    },
+    {
+      "source_ids": [
+        "v3-p461-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فعلو",
+          "secondary": "فلعل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اتم استنارة استنار",
+          "secondary": "ثم استنارت",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual enlarged461 فلعلو not own فعلو or secondary فلعل; also أتم استنارة استنارت بنورها with final ت absent in own transcription, no deleting repeated radiance. Restore exact body and compare complete Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p461-06",
+        "v3-p462-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاولي",
+          "secondary": "الازلي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اولي",
+          "secondary": "ازلي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يسمعه",
+          "secondary": "سمعه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اوليا",
+          "secondary": "ازليا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual461–462 all أولي forms not secondary أزلي; يسمعه present tense. Three alternatives distinguished: transmitted prophetic speech, angelic speech, imagined inward speech; preserve author cautions without adding condemnation elsewhere."
     }
   ],
-  "record_count": 887,
+  "record_count": 909,
   "unreviewed_candidates_remain": true
 }

@@ -2193,6 +2193,59 @@
       ],
       "finding": "Full AbuMuawiya/AbdMalik ibnAbjar/Thuwayr/IbnUmar chain/body read. Primary إن أفضلهم منزلة لينظر في وجه الله تعالى كل يوم مرتين supports substance of author abbreviated إن أعلى أهل الجنة من ينظر في وجه ربه كل يوم مرتين. Lower-level2000years/property/spouses/servants clauses are absent in author and not inserted. No independent chain grade/new authentication claimed; modern footnote grading excluded.",
       "method": "Same-agent complete classical body, actual439–440images and Russian reread/back comparison; not independent human editor."
+    },
+    {
+      "source_ids": [
+        "v3-p452-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_muslim_179_variants_read_author_excerpt_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "179 records293–295, complete chains/body after PageV01P161"
+        }
+      ],
+      "finding": "Full AbuMusa/AbuUbayda/AmribnMurra/Amash chains and body read. First complete179 version has حجابه النور with AbuBakr variant النار, and لأحرقت سبحات وجهه ما انتهى إليه بصره من خلقه. Next version omits من خلقه, third limited to four earlier clauses. Control2019 author نور and من خلقه retained; sleep/deeds clauses not inserted. No independent chain authentication or modern apparatus reproduced.",
+      "method": "Same-agent bounded classical-body comparison, actual452 image, Russian literary reread and back comparison; not human review."
+    },
+    {
+      "source_ids": [
+        "v3-p457-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_muslim_1763_body_read_second_athar_not_verified_here",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "1763 record58, PageV03P1383–1385 complete body/chain before1764"
+        }
+      ],
+      "finding": "Read complete Umar/IbnAbbas/AbuZumayl/Ikrima chain and full Badr account including crying after ransom. Primary singular أخبرني...وإن لم أجد بكاء تباكيت لبكائكما differs from author abbreviated أخبراني...وإلا تباكيت; control retained. No omitted military/history/Quran clauses inserted into author excerpt. Separate ابكوا فإن لم تبكوا فتباكوا athar in same paragraph not established by this lookup, no grade assigned.",
+      "method": "Same-agent complete bounded classical text read and actual457 control/Russian comparison; no independent human or chain authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p462-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_ahmad17634_17636_tirmidhi2859_read_author_combination_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_location": "complete17634 and17636 chains/body before17637"
+        },
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "complete2859 chain/body and compiler own remarks before2860, PageV04P539"
+        }
+      ],
+      "finding": "Full Nawwas/JubayribnNufayr versions read. Ahmad17634 has جنبتي/سوران/محارم الله/واعظ الله في قلب كل مسلم and added call to enter;17636 كتفي and كشف ستر الله;Tirmidhi2859 كنفي/حدود الله/واعظ ربه plus10:25 excerpt. Author control جنبتي/محارم الله/كل مؤمن combination retained, no modernization or insertion of variant clauses/Quran. Compiler حسن غريب is in primary but no new grade inserted into author text or independent authentication claimed.",
+      "method": "Same-agent complete bounded classical records plus actual462 visual control, Russian separate reread/back comparison; not independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
