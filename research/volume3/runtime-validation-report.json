@@ -79,10 +79,10 @@
   "latest_corpus_check": "All3108 exact database rows match packaged/repository through272, all seven fields, no extras, integrity ok, protected first two volumes unchanged. Four pending source statuses retained.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New manually collated source/Russian corrections273–289 after positive through272 build.",
-    "current_asset_sha256": "07d80143f2ec578c5934f8043b202bca52e5a5737cd70a01b506d91fb5811059",
+    "change": "Additional print/Russian corrections273–300 after positive through272 APK.",
+    "current_asset_sha256": "2845590988d687ec15efc4e73aa51cabe5b5a967442b484cc3f3c60edc2207fe",
     "current_asset_runtime_checked": false,
-    "scope": "Root positive APK/DB checks apply through272 only. New273–289 bytes pending next import; four open semantic units unchanged."
+    "scope": "Root positive checks apply through272 only. New273–300 content bytes require later import. Four semantic cruxes remain open."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",

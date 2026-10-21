@@ -11814,8 +11814,414 @@
         }
       ],
       "finding": "Actual289 both فهو and final لكن من لدن من question retained. Strong distinction genuine gifted knowledge versus self/satan remains author position, not translator conclusion."
+    },
+    {
+      "source_ids": [
+        "v3-p290-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "نبي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual290 موسى عليه السلام, no inserted نبي before بني إسرائيل. Full not-missioned/not-commanded/hypothetical migration/example dialogue retained."
+    },
+    {
+      "source_ids": [
+        "v3-p290-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليهما السلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual290 no added عليهما السلام after earlier Moses/Jesus pair; later عيسى ابن مريم عليهما السلام remains as printed. Whole universal mission and descent judged by Muhammad law retained."
+    },
+    {
+      "source_ids": [
+        "v3-p290-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وليشهد",
+          "secondary": "وليتشهد",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بذلك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged290 وليتشهد not own وليشهد. No secondary بذلك added; entire conditional profession, religion status and Satan affiliation remain author statements."
+    },
+    {
+      "source_ids": [
+        "v3-p291-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual291 both هو in طريق هذا العلم هو وجدانه ...غيره هو الإسناد retained. Immediate experiential finding versus chain-of-transmission distinction kept."
+    },
+    {
+      "source_ids": [
+        "v3-p291-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ودليله",
+          "secondary": "ودليل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الغيب",
+          "secondary": "الغيوب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual291 ودليله and singular الغيب. Entire إن/لم philosophical equivalence retained; Russian last pronoun clarified by immediate unseen-versus-lower-sciences contrast."
+    },
+    {
+      "source_ids": [
+        "v3-p291-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والشيطان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual291 no extra والشيطان in final invocation. Both contrasting fruits, obligations before voluntary acts and condemnation of whims retained."
+    },
+    {
+      "source_ids": [
+        "v3-p292-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual292 initial تعالى but no second secondary تعالى added. Three full Quran quotations and all references compared against image."
+    },
+    {
+      "source_ids": [
+        "v3-p292-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ومقرونة",
+          "secondary": "ومقترنة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual292 مقرونة not مقترنة. Separate versus Book-associated wisdom and full IbnAbbas list retained with all pairs."
+    },
+    {
+      "source_ids": [
+        "v3-p293-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كذلك",
+          "secondary": "وكذلك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual293 كذلك قال الشافعي no extra و. Three Sunnah/judgment/general-known alternatives and attributions preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p294-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعطى المرتبة",
+          "secondary": "تعطى كل مرتبة",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "لها",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتعدى",
+          "secondary": "تتعدى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيكون",
+          "secondary": "فتكون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يطلب",
+          "secondary": "تطلب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيخالف",
+          "secondary": "فتخالف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تاخيرها",
+          "secondary": "تؤخرها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged294 printed يعطى المرتبة ...لها, masculine يتعدى/فيكون/يطلب/فيخالف and source تأخيرها retained. No secondary كل or feminine recasting imported; Russian all limits/timing/rights dimensions checked."
+    },
+    {
+      "source_ids": [
+        "v3-p294-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او تاخيره",
+          "secondary": "وتاخيره",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual294 أو تأخيره, not وتأخيره. Food/drink/clothing, excess, early/late examples all preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p294-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الكامل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual294 فالرجل without inserted الكامل. Full inheritance/gender analogy retained as author wording, not rewritten to translator preference."
+    },
+    {
+      "source_ids": [
+        "v3-p295-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "منها",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual295 both منها in أوفرهم منها نصيبا and أقلهم منها ميراثا retained. Two extremes and disorder-in-world/person linkage not shortened."
+    },
+    {
+      "source_ids": [
+        "v3-p296-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الانعام",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual296 سبحانه at first clause and other placement as saved, no secondary extra or reference relocation. Full conditional wisdom, endless bounty, worldly ruin and disbelievers capacity/gratitude sequence compared; both Quran6:53 quotations intact."
+    },
+    {
+      "source_ids": [
+        "v3-p297-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وردها",
+          "secondary": "وردوها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual297 وردها singular as printed, not وردوها. Qadari position and author critique clearly distinguished; no religious conclusion supplied by translator."
+    },
+    {
+      "source_ids": [
+        "v3-p297-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وصفه القائم",
+          "secondary": "صفته القائمة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Enlarged297 reads صفته القائمة, not own وصفه القائم. Full praiseworthy aims, divine creation/command/decree and seven attributes preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p297-07",
+        "v3-p298-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "العلم",
+          "secondary": "العلماء",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يوسف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual297–298 العلم not العلماء. Entire Quran12:108 Arabic/ref and two grammatical parsing alternatives retained, as well as heart/eye analogy and Companions distinction."
+    },
+    {
+      "source_ids": [
+        "v3-p298-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الداعون",
+          "secondary": "الداعين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على بصيرة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual298 الداعون without added على بصيرة after إلى الله. Truth/conformity versus mere affiliation/claim distinctions and concessive وإن preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p299-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "والمطلوب",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بره",
+          "secondary": "بربه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهممهم",
+          "secondary": "وهمتهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اشاراتهم",
+          "secondary": "اشارتهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual299 المعروف والمطلوب, بقي بره, plural وهممهم وإشاراتهم present. Keep author fana/remaining religiously commanded will contrast and four mentions of indications, not older بربه substitution."
+    },
+    {
+      "source_ids": [
+        "v3-p300-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "للمتفرسين",
+          "secondary": "المتفرسين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual300 للمتفرسين with ل. All four named classical glosses and prayers preserved, Quran15:75 complete."
+    },
+    {
+      "source_ids": [
+        "v3-p300-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual300 فقال تعالى present. Conditional divine volition versus sworn unconditional recognition by speech kept, plus three distinct explanation terms تعريض/فحوى/مغزى."
     }
   ],
-  "record_count": 571,
+  "record_count": 592,
   "unreviewed_candidates_remain": true
 }

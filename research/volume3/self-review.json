@@ -15262,14 +15262,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p290-05": {
-      "sha256": "c9df6dc69a019a6ae6cbdd012427e05124a350557c2bd58ad265291348ed9613",
+      "sha256": "5cc05fc70bd078b42be81e7ce9ae617a29d0965dedb0b709b40440c5f3e974a1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged290 reads وليتشهد شهادة الحق; own transcription dropped ت. Preserve no extra بذلك from secondary; Russian profession of testimony already correct. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p290-06": {
       "sha256": "8ecb65670dac0ce9807f40decaf5618d4364f05e4983532fee4e887431021ecf",
@@ -15312,14 +15313,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p291-04": {
-      "sha256": "3eab8fe60dbcef7faf7a81af5b303d1b39dfc35daf91122ad7a87676aba4521b",
+      "sha256": "41c742be8f0499cde8af41cbf3a3270db0e23a567343688915cb16326084147e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify repeated الغيب contrast: lower sciences separated from unseen, not ambiguous claim that higher knowledge is screened from lower sciences. Full proof-from-effect/proof-from-cause equivalence retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p291-05": {
       "sha256": "9d7ce34baae45e75f1954ac24f84620122a45b5759b4707791f307bdc5ca61e7",
@@ -15472,14 +15474,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p294-02": {
-      "sha256": "6556efd245fbb5d367600e78ac9bd493c5544c168a074fbdf61b7b8a88f45bb3",
+      "sha256": "6c38ddb19595b238f6e0313cc2dfa253982502502612cb3533e7adbd24ee78ef",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Repair Russian воздать право calque while preserving generic rank and divinely assigned due, full three dimensions and both early/late violations; no source كل inserted. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p294-03": {
       "sha256": "2c32814d7517d2d0d5852181e2ed4da738d2b0f1149636dd4772b11ea3f9cd9b",
@@ -15632,14 +15635,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p296-03": {
-      "sha256": "3b0abf6893df16ed1a0d5ee33fdc766f44b01587a3d815379be9e8f2679edee8",
+      "sha256": "6f0f8c19a95dfecb8b8bb81c64357beff3cc4bc46f999599f4b3bfb3f2c20cf3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Classical gloss defines الشاكرين as الذين يعرفون...; remove unsupported accusative Russian quote opening Тех, preserving IbnTaymiyya attribution, knowledge of faith bounty and gratitude. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p296-04": {
       "sha256": "f1d21511e2e1af40bd63964f56b32e77bf1438876cd11afab7a34516f7c4840e",
@@ -15692,14 +15696,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p297-03": {
-      "sha256": "2de2ea0c868631cf050f7436ea81c87a87e24222ffd5dc2dc066d6b3a6a4b278",
+      "sha256": "ffb7b6189b3b5d0691261748b1af1041ba382072e7d41ae5e1a831ea4897da8b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged297 main print reads وهي صفته القائمة به, not own وصفه القائم. Restore both noun and agreeing adjective; Russian присущее Ему качество already conveys correct sense. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p297-04": {
       "sha256": "a8f9f6dcb4dc8c45324bb341965ecc58b39aaf9626f711396f137d4f87a11220",
