@@ -3411,8 +3411,367 @@
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p092-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وبشهود",
+          "secondary": "وشهود",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "شهود",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيه من",
+          "secondary": "في",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p093-07",
+        "v3-p094-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p094-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انك",
+          "secondary": "بان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يصفو",
+          "secondary": "ليصفو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p094-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وموادة",
+          "secondary": "ومودة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p097-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p097-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "دليل",
+          "secondary": "الدليل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لهم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p097-05",
+        "v3-p098-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويتقيد",
+          "secondary": "يتقيد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p098-05",
+        "v3-p099-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p099-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هي",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وجعله",
+          "secondary": "وجعلت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "في زمان",
+          "secondary": "من زمن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وتبرؤوا",
+          "secondary": "وتبرءوا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "طريقتهم",
+          "secondary": "طريقهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p099-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p099-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المتكلمون",
+          "secondary": "المتكلفون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p099-06",
+        "v3-p100-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وجود",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والاسولة",
+          "secondary": "والاسئلة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p100-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p101-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
+    },
+    {
+      "source_ids": [
+        "v3-p101-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يفوتها",
+          "secondary": "يفيتكها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يفوته ويفوتك",
+          "secondary": "يفيتكه ويفيتك",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وهكذا",
+          "secondary": "هكذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
+    },
+    {
+      "source_ids": [
+        "v3-p101-05",
+        "v3-p102-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يشترط",
+          "secondary": "يشرط",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
+    },
+    {
+      "source_ids": [
+        "v3-p102-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ويدفع",
+          "secondary": "ويشفع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
+    },
+    {
+      "source_ids": [
+        "v3-p102-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "في الفتيان",
+          "secondary": "للفتيان",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وجد",
+          "secondary": "موجود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
     }
   ],
-  "record_count": 157,
+  "record_count": 175,
   "unreviewed_candidates_remain": true
 }

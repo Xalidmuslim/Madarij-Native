@@ -4718,14 +4718,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p101-02": {
-      "sha256": "edfca3a44bda54702244f84ea758c0dfe200cb7eded74f07ed62ecb4755ae872",
+      "sha256": "5bb0cce23ec6eefbcf793fea554c8496eff3d8fd65b359f72f04f9ab49cb899e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.101 crop confirms لا يفيتكها and يفيتكه ويفيتك, not own يفوتها / يفوته ويفوتك. Restore causative verb forms and object pronouns exactly in substance, without importing secondary wording automatically. Russian first clause now explicitly preserves the recipient тебя and objects этих благ; all four servant examples unchanged. Full Russian paragraph reread separately, then compared back with control; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p101-03": {
       "sha256": "e81d8ea19d21c91deaeea4cdae5ec3788774883531c794e9407c1ceef5001b6e",

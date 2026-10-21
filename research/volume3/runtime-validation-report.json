@@ -87,10 +87,10 @@
   "latest_corpus_check": "All 3107 packaged rows exactly match the live database including WAL after latest p.36/40/55/81–82/152 edits; integrity_check ok. Root hashes identify this build.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Later precision fixes after checked APK: Russian singular eye 090-08, guests’ criticism of apparent delay 091-03, Arabic control فانتقم الله in 096-03 replacing own فعاقبك الله. Eleven notes unchanged.",
-    "current_asset_sha256": "3d0c7dac83c2a60b41c0296dab654a8b433dfbf12a8f845694309f4ede9c4a79",
+    "change": "Latest correction 101-02 restores printed causative verbs and object pronouns, and explicitly preserves тебя / этих благ in Russian. Earlier 090/091/096 changes have a separate positive intermediate APK check.",
+    "current_asset_sha256": "1049c843a8ec80e8c7e1e98656c43430e57aefa8ebbcc4d282b9572a7a80fd45",
     "current_asset_runtime_checked": false,
-    "scope": "APK 749b5502... and its exact database comparison cover earlier recorded bytes. Current 090/091/096 corrections await rebuilt APK/import."
+    "scope": "Latest 101 correction awaits refreshed APK/import. Intermediate 9441650d... and previous root 749b5502... checks remain tied to their packaged byte hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -219,5 +219,42 @@
       "Opening that search result displays full updated Arabic/Russian page 321 paragraph in reader, with Том 3 · черновик header."
     ]
   },
-  "jvm_test_scope": "97 JVM tests passed earlier this session; latest changes are content/review data only, APK rebuilt offline; 24 content/integrity tests rerun."
+  "jvm_test_scope": "97 JVM tests passed earlier this session; latest changes are content/review data only, APK rebuilt offline; 24 content/integrity tests rerun.",
+  "intermediate_p096_build": {
+    "apk_sha256": "9441650dd073e3988e4a0af4c13d08cfc45cc63729b8525022cc16b3f656a8b1",
+    "asset_sha256": "3d0c7dac83c2a60b41c0296dab654a8b433dfbf12a8f845694309f4ede9c4a79",
+    "integrity_check": "ok",
+    "rows": 3107,
+    "bad": [],
+    "extra_rows": 0,
+    "personal": {
+      "bookmarks": {
+        "before": 1,
+        "after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "before": 6,
+        "after": 6,
+        "unchanged": true
+      },
+      "notes": {
+        "before": 0,
+        "after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "before": 0,
+        "after": 0,
+        "unchanged": true
+      }
+    },
+    "protected_chapters": true,
+    "protected_paragraphs": true,
+    "settings_equal": true,
+    "matches_current_source": false,
+    "zip_integrity_checked": true,
+    "signature_verified": "APK Signature Scheme v2",
+    "scope": "Includes Russian 090/091 and Arabic 096 corrections, before later Arabic/Russian 101-02 correction. All packaged rows match actual DB; not proof for latest page101 bytes."
+  }
 }
