@@ -22174,14 +22174,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p410-03": {
-      "sha256": "42987b957a1cb52ff7e32c6fbd45e0ca87527406df065012d9a8031e63fbe43a",
+      "sha256": "e42ff728448beb38e85c83b1777eadff8d63803dc5c13e6e7c0815b804d08fc0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "As in388, لا كان من targets the person retaining a share, not the share itself. Preserve distinct second hemistich about divided thought/whispers and full poem. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p410-04": {
       "sha256": "a01feab878188bea78ec187d7edcbffce4469db45e87834df4b613321df66da7",
@@ -22294,14 +22295,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p412-05+v3-p413-01": {
-      "sha256": "bf1842a734cf05254e99ada4eadd905db831cf33f9877c2e7d374e00194fd6e7",
+      "sha256": "e31decf2ec41172519ed7510fb74f28808cf2a0bf1b48495be62cc50cc9cda81",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Preserve order الفقر والفاقة and intensity of second term, without negating existence of actual deeds. All responses/poverty/three exclamations remain. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p413-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -22354,14 +22356,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p413-07+v3-p414-01": {
-      "sha256": "4b9806da9bb4e554ccdcc9037bf07b5f48a62c9e44b9018077701144913ef176",
+      "sha256": "0565c5809c3405a59b97e198580422c396f54743e5548a24f6036ef642c7b56d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "التكييف concerns modality, not knowing attribute meaning (معرفتها / معرفة معانيها explicitly required in same author paragraph). Clarify how versus what; preserve all four conditions, meanings and author polemical conclusion. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p414-02": {
       "sha256": "42d2b257927ff861f00db7a474392188377a0ae42a0d5c1fb19e40d7d1d465a6",
@@ -22534,14 +22537,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p417-02": {
-      "sha256": "ed6ffb1671222d945326cf4f1a0d7c59ad657b966dac60b727517aba921aa44f",
+      "sha256": "266d7b10398d2e45142e5eee7c3368bd5693b8e4dce0eed49cf0a9d89078470b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render أخذ منه وغيب عنه as removal from self and loss of self-awareness, not unidiomatic taking a person from their own property. Retain explicit attribution to the school that treats fana as the goal, not author endorsement. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p417-03": {
       "sha256": "7973e9900f48021016f33efc0691d5843102b001c7053c49b1a6fdf1ece333f5",
@@ -22826,14 +22830,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p422-07": {
-      "sha256": "1084208a48b6a976e1d54bdfc38f68845a399e52deca38b4131fdee4fc902d29",
+      "sha256": "c4f429377f57863e9da6072869bf484cafc2a26318b44d7230547d34f8bcc6e8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "In author positive/negative contrast, محبوبه qualifies remembrance beloved to God, not a new relative God beloved to unnamed man. Teacher parallel Istiqama V2P16–17 expressly says such speech خير من العدم والله يحبه ويأمر به. Restore repeated ذكر in second clause and passive تمقت عليه, not turn it into active He becomes angry. Full preceding/following critique and author attribution retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p422-08": {
       "sha256": "6c41c7f5125a859a82bfca6e800ff70b6a711bf74eb7cfe44f15f2aab964cdd3",

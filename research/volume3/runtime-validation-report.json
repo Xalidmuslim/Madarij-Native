@@ -79,10 +79,10 @@
   "latest_corpus_check": "All3109 rows exactly match through370 APK/embedded asset on seven fields, no extras, integrity ok, first two volumes and all recorded personal data unchanged; four pending source IDs retained.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional371–409 corrections; joined403–404 reopened semantic/back pending. All3109records retained.",
-    "current_asset_sha256": "d98dd4a9ff273ec48bbc042446185fc0d8792cc5f03088b5fee427c4761946b7",
+    "change": "Additional371–422 corrections; joined403–404 reopened semantic/back pending. All3109records retained.",
+    "current_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
     "current_asset_runtime_checked": false,
-    "scope": "Positive runtime applies through370 with its four then-open units only. New371–409 bytes and fifth joined403–404 pending flag await APK/import."
+    "scope": "Positive runtime applies through370 with its four then-open units only. New371–422 bytes and fifth joined403–404 pending flag await APK/import."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",

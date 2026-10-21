@@ -2118,6 +2118,24 @@
       ],
       "finding": "Both complete Ammar chains/body read. 2019 author إذا كانت الحياة / كلمة الحق / نعيم لا ينفد differ from primary ما علمت الحياة / الحكم or العدل والحق / لا يبيد; control kept unchanged. Hakim digital record has النظر إلى لذة وجهك, IbnHibban has لذة النظر إلى وجهك matching control; no digital order silently imported. Control has repeated وأسألك before longing: restore second Russian прошу Тебя. Restore زينا بزينة with красотой веры. All prayer requests retained; modern footnote grades are excluded and no independent authentication assigned.",
       "method": "Same-agent actual2019 images, complete classical primary bodies, Russian literary reread and back comparison; no independent human editor."
+    },
+    {
+      "source_ids": [
+        "v3-p422-05",
+        "v3-p422-07",
+        "v3-p422-08"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "teacher_parallel_argument_read_contextual_pronoun_clarified",
+      "checked_primary_records": [
+        {
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.Istiqama/0728IbnTaymiyya.Istiqama.Shamela0006820-ara1",
+          "blob": "01f8bc3018356970dc58792f0b5759ba2aff689e",
+          "digital_location": "Full contextual primary body PageV02P015–018 and061–063, especially end016/begin017"
+        }
+      ],
+      "finding": "Teacher explicitly rejects suppressing imperfect tongue remembrance, ranks heart/tongue remembrance, says الكلام خير من العدم والله يحبه ويأمر به, and rejects possessive jealousy excluding others from divine love/vision. Supports reading422-07 ذكر الله الذي هو محبوبه as remembrance God loves, not merely God whom the objector loves. Russian antecedent, second ذكر and passive تمقت restored. Exact quoted anecdotes vary: teacher061–062 cites one who refuses vision as تنزيه ذلك الجمال عن نظر مثلي; author422 generic wording retained, no insertion of an unprinted name or substitution of teacher quote. No embedded hadith is newly independently authenticated by this contextual lookup; modern apparatus excluded.",
+      "method": "Same-agent complete bounded classical primary argument, actual2019 images and Russian reread/back comparison; no independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

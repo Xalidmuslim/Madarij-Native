@@ -16612,8 +16612,451 @@
         }
       ],
       "finding": "Actual ساقة أرباب, not malformed old بساقة أو باب. Opposite hierarchy and explicit author preference retained; entire hired-worker/slave contrast408 and knot/link/three effects409 read."
+    },
+    {
+      "source_ids": [
+        "v3-p410-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوسواس",
+          "secondary": "الوساوس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والوسواس يقتضي",
+          "secondary": "والوساوس تقتضي",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "والوسواس",
+          "secondary": "والوساوس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual repeated singular/generic الوسواس and masculine يقتضي, not plural secondary الوساوس/تقتضي. All remembrance/absence/whispers and forgetfulness contrast kept."
+    },
+    {
+      "source_ids": [
+        "v3-p410-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوسواس",
+          "secondary": "الوساوس",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الغير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual الوسواس without added الغير after الإعراض. Complete resolve/vacillation, occupied-heart argument and rhetorical question retained; following لا كان من Russian personal referent restored."
+    },
+    {
+      "source_ids": [
+        "v3-p411-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "منة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فعلقت",
+          "secondary": "فعلت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واقلعت",
+          "secondary": "وانقشعت",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الروح",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual منة تأهيله, له, فعلقت, وأقلعت and الروح present, not old deleted/replaced forms. Entire ability/light/self/aspiration/resolution/darkness/ascent chain and two poetry lines retained."
+    },
+    {
+      "source_ids": [
+        "v3-p412-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فكم",
+          "secondary": "وتفاوتهم فيه كتفاوت ما",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual فكم بين الزهرة والسهى, not expanded وتفاوتهم. Full sun/moon/star comparison and Venus/Suha contrast intact."
+    },
+    {
+      "source_ids": [
+        "v3-p412-05",
+        "v3-p413-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واعلاه من مشهد",
+          "tokens": 3
+        }
+      ],
+      "finding": "No printed addition وأعلاه من مشهد. Full deeds-with-empty-hands, dispossession, poverty and three distinct concluding exclamations across412–413 retained."
+    },
+    {
+      "source_ids": [
+        "v3-p413-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فانها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتجعل",
+          "secondary": "ويجعل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no inserted فإنها and feminine وتجعل, not ويجعل. Both preferential-love directions and cause of repeated remembrance retained."
+    },
+    {
+      "source_ids": [
+        "v3-p414-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "نعمه",
+          "secondary": "نعمته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no inserted سبحانه, plural نعمه not نعمته. Entire visible/heard signs list of perfection/majesty/lordship/godhood/wisdom/goodness/favour/care/generosity/mercy/blessings intact."
+    },
+    {
+      "source_ids": [
+        "v3-p414-06",
+        "v3-p415-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله prayer visible across414–415. Entire expression/sign qualification retained with subsequent attributive عندهم and explicit author correction415-05/06."
+    },
+    {
+      "source_ids": [
+        "v3-p415-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النهاية",
+          "secondary": "الغاية",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual النهاية not الغاية here. Complete no-form/name/sign claim attributed to group, not to author."
+    },
+    {
+      "source_ids": [
+        "v3-p415-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليهم الصلاة والسلام",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual no prayer after الأنبياء in415-05; full prayer appears in next paragraph415-06 and remains there. Love-tawhid vs fana-tawhid distinction complete."
+    },
+    {
+      "source_ids": [
+        "v3-p416-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "امير",
+          "secondary": "امين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أمير not أمين, no inserted كل. Enlarged next poetry line is printed passive يُبخّل, so existing Russian считается скупцом retained rather than guessed active revision. All supremacy/three after-state relations intact."
+    },
+    {
+      "source_ids": [
+        "v3-p416-06",
+        "v3-p417-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ذلك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "صاحبها",
+          "secondary": "فصاحبها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no inserted ذلك after أما ... فظاهر, and صاحبها without prefixed ف in earlier clause. Two subsidiary love kinds and soul/intellect pleasure explanation across416–417 complete."
+    },
+    {
+      "source_ids": [
+        "v3-p417-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وغيب",
+          "secondary": "وعيب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وغيب not وعيب; full withdrawal/self-absence claim remains attributed to their fana-as-goal premise. Russian adjusted; complete subsequent17-couplet417–418 poem read in order, all reasons/questions/contrasts and closing exhortation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p419-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual قال تعالى without additional الله; exact7:33 excerpt retained in both languages."
+    },
+    {
+      "source_ids": [
+        "v3-p419-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ومن",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ومن غيرته, not من without conjunction. Complete three jealousy/praise/excuse clauses and sending messengers retained; prior2760/1499 chain/body distinctions recorded, not declared single exact matn."
+    },
+    {
+      "source_ids": [
+        "v3-p420-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تدرون",
+          "secondary": "اتدرون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual تدرون without added initial hamza. All four excluded qualifications and screen between recipients/prophet/speech/unicity retained."
+    },
+    {
+      "source_ids": [
+        "v3-p420-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المتاخرون",
+          "secondary": "المتاخرين",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "اخر",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual nominative المتأخرون and آخر present. Full author reversal/misplacement/deception argument retained, not expanded to every Sufi."
+    },
+    {
+      "source_ids": [
+        "v3-p420-08",
+        "v3-p421-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صيانته على ابتذاله ومن",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual ومن صيانته على ابتذاله ومن visible across420–421. Preserve all five self/heart/distraction/aversion/protection/blameworthy-quality comparisons; no secondary deletion."
+    },
+    {
+      "source_ids": [
+        "v3-p421-06",
+        "v3-p422-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "لربه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual لربه at enmity statement retained; no inserted لله elsewhere. Full warning and distinct لله versus على الله carried through422; bracketed supplied [عبدا] earlier421 remains visible."
+    },
+    {
+      "source_ids": [
+        "v3-p422-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الموفق",
+          "secondary": "والموفق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual الموفق without added conjunction; full three divine actions and admonition retained."
+    },
+    {
+      "source_ids": [
+        "v3-p422-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من مشهوري الصوفية",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual generic عن واحد, no added من مشهوري الصوفية. Keep anonymous attribution and complete quoted refusal, then author disagreement."
+    },
+    {
+      "source_ids": [
+        "v3-p422-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وغايته",
+          "secondary": "وغاية هذا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "والسن",
+          "secondary": "والالسن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "محبوبه",
+          "secondary": "محبوبها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتمقت",
+          "secondary": "ويمقت",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "شيء",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واكرهه",
+          "secondary": "واكره",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وغايته, وألسن, محبوبه, وتمقت عليه, شيء and وأكرهه. Direct teacher parallel reinforces author argument: incomplete remembrance is loved by God and preferable to abandoning it. Restore Russian antecedent and repeated remembrance plus passive reprehension. Entire criticism and both rhetorical questions retained; following second extremist quote422-08 read and kept separate."
     }
   ],
-  "record_count": 801,
+  "record_count": 823,
   "unreviewed_candidates_remain": true
 }
