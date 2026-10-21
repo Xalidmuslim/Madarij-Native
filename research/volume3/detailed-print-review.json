@@ -10202,8 +10202,402 @@
         }
       ],
       "finding": "Both printed sides: رحمه الله retained. Quran text/ref preserved. Russian explicit اثنين and restrictive إنما restored, majority scope and chosen-people report retained without inventing authenticity grade."
+    },
+    {
+      "source_ids": [
+        "v3-p255-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وتعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "توصل",
+          "secondary": "توسل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual255 retains سبحانه وتعالى and توصل; secondary omission/توسل not substituted. Full RU causal introduction reread and corrected."
+    },
+    {
+      "source_ids": [
+        "v3-p255-05",
+        "v3-p256-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ضني",
+          "secondary": "ضنتي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual255 last line reads ضني بكسر الضاد; 256 continues أختص به وأضن بجودته...أضيعها. No ضنتي substituted; both leaves and lexical explanation compared."
+    },
+    {
+      "source_ids": [
+        "v3-p256-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المريد",
+          "secondary": "للمريد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتجهزوا",
+          "secondary": "يتجشموا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لقطع",
+          "secondary": "قطع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويجتهدوا",
+          "secondary": "وان يجتهدوا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "خيله ومماليكه",
+          "secondary": "خيلا له ومماليك",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "يعانوا",
+          "secondary": "يعانون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تقدموا بهم",
+          "secondary": "تقدموهم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وعنائه",
+          "secondary": "ووعثاء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged256 confirms يتجشموا إليه قطع, تقدموهم, وعناء السفر; own source corrected, printed المريد, خيله ومماليكه, يعانوا retained. Entire royal-travel analogy and Russian compared."
+    },
+    {
+      "source_ids": [
+        "v3-p256-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنده",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنده",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual256 order كأن المراد عنده هو المجذوب preserved; no extra هو or relocation عنده imported. Qualified كأن remains по-видимому."
+    },
+    {
+      "source_ids": [
+        "v3-p256-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المراد فصل",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فصل قال وللمراد ثلاث درجات الاولى ان يعصم العبد",
+          "tokens": 9
+        },
+        {
+          "tag": "replace",
+          "control": "يستشرف",
+          "secondary": "مستشرف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual256 single فصل and full first-degree quote present; selected secondary duplicates not inserted. Print يستشرف not مستشرف; принудительное safeguarding preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p257-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بمواقعة",
+          "secondary": "بموافقة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كالجلسة",
+          "secondary": "كالخلسة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged257 confirms بموافقة and كالخلسة, contrary to own بمواقعة/كالجلسة. Russian restores fleeting snatched pleasure simile; all degrees of mixed bitterness retained."
+    },
+    {
+      "source_ids": [
+        "v3-p257-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ونوح",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual257 quote lists آدم وداود ويونس without inserted نوح. Noah appears in author explanation on258; keep two distinct texts and order. Both negative لم يعتب and comparison كما عتب retained."
+    },
+    {
+      "source_ids": [
+        "v3-p258-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منع",
+          "secondary": "منعا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "احبائه",
+          "secondary": "احبابه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual258 printed منع and final أحبائه, not suggested accusative منعا or alternate أحبابه at that location. Full explanation contrasts forcible prevention with pardon and beneficial consequences, Russian first contrast clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p258-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وحملته",
+          "secondary": "فحملته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اشغله",
+          "secondary": "شغله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual258 رحمه الله, وحملته, أشغله all present. No witness harmonization or modern/editorial evaluation imported; author attribution and prayer retained."
+    },
+    {
+      "source_ids": [
+        "v3-p258-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صلى الله",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "السلام",
+          "secondary": "وسلم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعتبه",
+          "secondary": "يعاتبه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اكله",
+          "secondary": "اكل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في ابنه",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "في ابنه",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "اوريا",
+          "secondary": "اوربا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual258 عليه السلام, يعتبه, أكله, placement في ابنه, أوريا retained. Author sequence Moses/Adam/Noah/David/Jonah not rearranged or endorsed by new translator judgement."
+    },
+    {
+      "source_ids": [
+        "v3-p259-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الدرجة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual259 قال الثالثة without duplicate الدرجة. اجتباء and رسم معار quote retained, not imported commentary."
+    },
+    {
+      "source_ids": [
+        "v3-p259-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واحرزته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual259 جبيت الشيء إذا حزته إليك كجباية المال وغيره. Secondary وأحرزته not in print and not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p259-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "خالصا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "خالصا",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual259 عليه السلام and جعله له خالصا in this order. Full Moses selection paragraph and both denied prior entitlement/means retained."
+    },
+    {
+      "source_ids": [
+        "v3-p260-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تقدمه",
+          "secondary": "تقدم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual260 تقدمه بها محمد and raised above him by degrees. No secondary added عليه inserted. Tentative يحتمل remains possible, not categorical."
+    },
+    {
+      "source_ids": [
+        "v3-p260-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "منه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فكملت",
+          "secondary": "فتكملت",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يرجع",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "يرجع",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged260 main text فتكملت; own فكملت corrected without preferring modern apparatus variant. Other printed منه and final إليه يرجع الأمر كله order retained. Entire first/second interpretations kept distinct."
     }
   ],
-  "record_count": 496,
+  "record_count": 511,
   "unreviewed_candidates_remain": true
 }

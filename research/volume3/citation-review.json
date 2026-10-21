@@ -1792,6 +1792,22 @@
       ],
       "finding": "Complete local Junayd quotation read: knowledge governance/divine care and causal because seeker walks/sought flies/final pursuit question present. Primary has تتولاه and extra سبحانه, control2019 يتولاه without added honorific; retain control. Russian removes tautology and restores explicit لأن bridge. Nearby Daqaq/Musa context read but extra Quran examples absent from control not imported. Scholar saying, not newly authenticated hadith.",
       "method": "Same-agent direct2019 print, classical source body and complete Russian reread/back-comparison; no independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p255-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "related_primary_report_found_wording_differs_not_newly_authenticated",
+      "checked_primary_records": [
+        {
+          "path": "data/0360Tabarani/0360Tabarani.MucjamAwsat/0360Tabarani.MucjamAwsat.Shamela0028171-ara1",
+          "blob": "1bb7b8988a57ca29e8179c558a48fca4588cd1c4",
+          "digital_location": "Awsat6369, source digital [ص:265–266], full chain/report and following unique-transmitter note read"
+        }
+      ],
+      "finding": "Ibn Umar report via Muslim ibn Abd Allah/Ismail ibn Ayyash begins إن لله ضنائن من خلقه يحييهم في عافية. Continuation is وإذا توفاهم إلى جنته with tribulations paragraph, not control ويميتهم في عافية. Preserve 2019 author wording and explicit يروى مرفوعا qualification, no primary tail imported and no new isnad/authenticity grade inferred. This is a related full report, not verbatim confirmation of whole author matn.",
+      "method": "Same-agent actual2019 image comparison and free classical digital body lookup; no external human authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
