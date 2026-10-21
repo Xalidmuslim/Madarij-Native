@@ -350,5 +350,16 @@
     "reason": "Direct 10x control p.152 crop confirms مركوبه, his mount, not ركوبه, his riding. Existing Russian животное, на котором он ехал already matches the printed noun and is retained. Full paragraph and all four secondary candidate differences compared; printed به and تتخلف also retained despite older witness differences.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p096-03",
+    "printed_page": 96,
+    "previous_ar": "فإذا علمت أنّك بدأتَ بالجناية فعاقبك الله منك على يده= كنت في الحقيقة أولى بالاعتذار.",
+    "control_print_ar": "فإذا علمت أنّك بدأتَ بالجناية فانتقم الله منك على يده= كنت في الحقيقة أولى بالاعتذار.",
+    "previous_ru": "Если ты знаешь, что сам первым совершил проступок и Аллах за него наказал тебя через этого человека, то в действительности именно тебе прежде подобает просить извинения.",
+    "corrected_ru": "Если ты знаешь, что сам первым совершил проступок и Аллах за него наказал тебя через этого человека, то в действительности именно тебе прежде подобает просить извинения.",
+    "reason": "Direct enlarged 8x 2019 p.96 image confirms فانتقم الله منك على يده, not own transcription فعاقبك الله منك على يده. Older witness candidate فانتقم بالله is also not adopted: control reads الله. Existing Russian наказал тебя через этого человека conveys the control meaning and is retained after rereading and back-comparison of the full paragraph. Same-agent self-review only.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

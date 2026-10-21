@@ -1593,6 +1593,22 @@
       "checked_primary_records": [],
       "finding": "Three linked paragraphs explicitly framed as what author heard Ibn Taymiyya say. Russian keeps the teacher’s argument and its attribution; no independent authentication or new theological conclusion supplied.",
       "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p091-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_narrative_context_compared_russian_corrected",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "Futuwwa chapter, text following PageV02P383, story of the delayed meal and ants"
+        }
+      ],
+      "finding": "Read the full classical narrative. Guests say ليس من الفتوة أن يستخدم الرجل من يتعاصى عليه في تقديم السفرة كل هذا. This confirms criticism of apparent disobedience/delay. Control 2019 uses يخدم الرجل من يتعاطى معه; retained after direct printed comparison. Corrected Russian that could imply criticism of long service/labor. The attendant explains waiting for ants to leave and receives praise. This is a reported anecdote, not a newly authenticated hadith.",
+      "method": "Direct print comparison, classical contextual comparison, Russian-only rereading and back-comparison by the same agent; no independent human editing or chain authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

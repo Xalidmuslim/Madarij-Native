@@ -903,13 +903,6 @@
     },
     {
       "source_ids": [
-        "v3-p152-04"
-      ],
-      "decision": "correct_own_transcription",
-      "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
-    },
-    {
-      "source_ids": [
         "v3-p029-04"
       ],
       "decision": "retain_control",
@@ -2979,8 +2972,447 @@
         }
       ],
       "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p080-07",
+        "v3-p081-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بمن",
+          "secondary": "بما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتقبل",
+          "secondary": "وان تقبل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p081-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عبدا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p081-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ايفائه",
+          "secondary": "ايتائه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p083-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فمعناه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p083-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مفرق طرق",
+          "secondary": "مفترق الطرق",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p083-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اوجبه",
+          "secondary": "اوجب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p083-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "للعبد",
+          "secondary": "لعبده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p084-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شهود",
+          "secondary": "شهوده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 images pp.80–81,83–84. Existing بمن, وتقبل, إيفائه, مفرق طرق, أوجبه, للعبد and شهود match control; Arabic and corresponding Russian retained after comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p085-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كسبي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p086-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p086-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لتمام",
+          "secondary": "لاتمم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p086-06",
+        "v3-p087-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "فيه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "يوسف",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لفتيته",
+          "secondary": "لفتيانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p087-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "جعفر",
+          "secondary": "عفر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p088-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p089-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p089-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p090-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اشتكت",
+          "secondary": "اشتكيت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وبعد",
+          "secondary": "فبعد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p091-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وثالثا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "وثالثا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يخدم",
+          "secondary": "يستخدم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتعاطى معه",
+          "secondary": "يتعاصى عليه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p091-04",
+        "v3-p092-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي الله عنهما فتعلق",
+          "secondary": "فعلق",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "ايش",
+          "secondary": "اي شيء",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فقال",
+          "secondary": "قال",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p092-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full 2019 print images pp.85–92, including both page-spanning continuations. Arabic retained, including لتمام, لفتيته (attested Quran reading already documented) and يتعاطى معه. Russian 090-08 singular eye and 091-03 apparent delay in service corrected separately; full Russian reread and back-compared. See literary-corrections and citation-review for the classical narrative context."
+    },
+    {
+      "source_ids": [
+        "v3-p096-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فعاقبك الله",
+          "secondary": "فانتقم بالله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p096-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سماح",
+          "secondary": "سماحة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صريحا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p096-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فحينئذ اذا",
+          "secondary": "فاذا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيه",
+          "secondary": "منه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p152-04"
+      ],
+      "decision": "correct_own_transcription",
+      "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 134,
+  "record_count": 157,
   "unreviewed_candidates_remain": true
 }
