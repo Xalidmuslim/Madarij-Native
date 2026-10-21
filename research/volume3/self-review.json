@@ -5707,14 +5707,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p118-04": {
-      "sha256": "4177423f124b55259815d28b35b6e616e0f0c81255d82414fa345f461df9c6cb",
+      "sha256": "0e030e464261d77809283600fe47b2e4024b5df64e3dc7fb0795e49736cb55f7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.118 crop confirms فعزيمة صاحبه على استدامته وحفظه, not own فعزيمته صادقة. Restore control wording and remove unsupported sincerity adjective from Russian. Preserve both sustained continuation and safeguarding of the light; whole paragraph reread separately in Russian and back-compared. Same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p118-05": {
       "sha256": "3e0a017787247c632c539f678675e6e53523514197c06cbeff85492df11e9723",
@@ -5787,14 +5788,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p119-04": {
-      "sha256": "f856a529dbce17e01b6b63d42889d8857a4f0577eaf8836157c500d28f1b483f",
+      "sha256": "39a7abef0e0c60f7bb11c645f09550b03f03c4175e934d2dddc6a355eb2882cf",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control pp.119–120 inspected. Clarify literal calque قوى الاستقامة as powers for steadfast adherence to the straight path, retaining technical meaning, not interpersonal frankness. Compared volume1 geometric context fatiha-017/018 and volume2 spiritual station p368; those assets untouched. Full Russian passage reread separately, then back-compared; both quotation and its repeated explanation synchronized. Same-agent self-review."
     },
     "v3-p119-05": {
       "sha256": "957d208b9150066ab71bcc50aa00042b7b2449f2bdfab1b3d9f7a047524073b8",
@@ -5827,14 +5829,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p119-08+v3-p120-01": {
-      "sha256": "90eed410f49aa506fc9161047ff4eea85996477aa6aea968fdf22ef192100c22",
+      "sha256": "85f92f27bccbf426c23df9b8dec88eceb148fa54d151f7f8e32536706e0d6854",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Control pp.119–120 inspected. Clarify literal calque قوى الاستقامة as powers for steadfast adherence to the straight path, retaining technical meaning, not interpersonal frankness. Compared volume1 geometric context fatiha-017/018 and volume2 spiritual station p368; those assets untouched. Full Russian passage reread separately, then back-compared; both quotation and its repeated explanation synchronized. Same-agent self-review."
     },
     "v3-p120-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",

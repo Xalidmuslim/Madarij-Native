@@ -4308,12 +4308,229 @@
     },
     {
       "source_ids": [
+        "v3-p115-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "انبساط",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p116-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p116-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تحقيق",
+          "secondary": "فتحقيق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فقد",
+          "secondary": "قد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p117-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استعصاءه",
+          "secondary": "استعصاؤه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يابى",
+          "secondary": "تابى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p118-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ننكر",
+          "secondary": "ينكر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p118-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فعزيمته صادقة",
+          "secondary": "فعزيمة صاحبه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p118-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مبادي",
+          "secondary": "مبادئ",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تبدو",
+          "secondary": "تبدا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p118-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "للكمل",
+          "secondary": "للكل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.115–118 compared. Enlarged p118 crop confirms فعزيمة صاحبه; own substituted فعزيمته صادقة corrected, unsupported Russian искренне removed and both continuation/safeguarding preserved. Other candidates match print: no extra انبساط/الفاتحة, تحقيق, فقد, استعصاءه, يأبى, ننكر, مبادي, تبدو and للكمل; retained."
+    },
+    {
+      "source_ids": [
+        "v3-p119-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "راها وراى",
+          "secondary": "وراها راى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يتيقن",
+          "secondary": "تيقن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.119–120 comparison confirms رآها ورأى, يتيقن, يستجمع, لمشاهدة, أجري, علة العزم ثم and توحيد الفعل. Control Arabic retained. Russian quote/explanation of قوى الاستقامة clarified in 119-04 and 119-08→120-01 after checking spatial/spiritual contexts in volumes1–2; see literary-corrections and glossary. Whole relevant Russian units reread and back-compared."
+    },
+    {
+      "source_ids": [
+        "v3-p119-08",
+        "v3-p120-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يستجمع",
+          "secondary": "تستجمع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لمشاهدة",
+          "secondary": "لمشاهدته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اجري",
+          "secondary": "يجري",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.119–120 comparison confirms رآها ورأى, يتيقن, يستجمع, لمشاهدة, أجري, علة العزم ثم and توحيد الفعل. Control Arabic retained. Russian quote/explanation of قوى الاستقامة clarified in 119-04 and 119-08→120-01 after checking spatial/spiritual contexts in volumes1–2; see literary-corrections and glossary. Whole relevant Russian units reread and back-compared."
+    },
+    {
+      "source_ids": [
+        "v3-p120-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "علة العزم ثم",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Direct full 2019 pp.119–120 comparison confirms رآها ورأى, يتيقن, يستجمع, لمشاهدة, أجري, علة العزم ثم and توحيد الفعل. Control Arabic retained. Russian quote/explanation of قوى الاستقامة clarified in 119-04 and 119-08→120-01 after checking spatial/spiritual contexts in volumes1–2; see literary-corrections and glossary. Whole relevant Russian units reread and back-compared."
+    },
+    {
+      "source_ids": [
+        "v3-p120-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفعل",
+          "secondary": "الفضل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.119–120 comparison confirms رآها ورأى, يتيقن, يستجمع, لمشاهدة, أجري, علة العزم ثم and توحيد الفعل. Control Arabic retained. Russian quote/explanation of قوى الاستقامة clarified in 119-04 and 119-08→120-01 after checking spatial/spiritual contexts in volumes1–2; see literary-corrections and glossary. Whole relevant Russian units reread and back-compared."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 201,
+  "record_count": 213,
   "unreviewed_candidates_remain": true
 }
