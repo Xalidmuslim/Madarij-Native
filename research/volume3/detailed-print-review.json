@@ -13498,8 +13498,708 @@
         }
       ],
       "finding": "Actual334 رحمه الله retained. Full three-kind definition and distinct physical entity/abstract meaning alternatives and quoted attribution intact."
+    },
+    {
+      "source_ids": [
+        "v3-p335-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual335 طست من ذهب من الجنة, both من retained. Whole IbnAbbas attributed basin/hearts of prophets report retained as a reported view, not new authenticated doctrine."
+    },
+    {
+      "source_ids": [
+        "v3-p335-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بن منبه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يتكلم",
+          "secondary": "تتكلم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اخبرهم",
+          "secondary": "اخبرتهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual335 وعن وهب without inserted ابن منبه, masculine يتكلم and أخبرهم. Preserve control روح من روح الله; Russian no longer adds unprinted خلق explanatory adjective. Complete related primary5680 read, variant روح من الله not substituted into control."
+    },
+    {
+      "source_ids": [
+        "v3-p335-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "فيه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "في مجيئه",
+          "secondary": "ومجيئه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual335 فيه سكينة...أي في مجيئه, not deletion فيه or replacement ومجيئه. Distinct nonentity interpretation and coming of ark as cause of calm retained."
+    },
+    {
+      "source_ids": [
+        "v3-p335-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعرفون",
+          "secondary": "تعرفون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيسكنوا",
+          "secondary": "فتسكنون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual335 يعرفون / فيسكنوا, not second person or modern-source final ن. All two Quran2:248 parts, Ata and Qatada/Kalbi separately attributed, each interpretation preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p335-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النصرة",
+          "secondary": "النصر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual335 النصرة with ة. Full prophets miracle/kings honor/sign victory/voice terror and battle occasion retained; not misclassified as a prophetic authenticated matn."
+    },
+    {
+      "source_ids": [
+        "v3-p336-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفرق",
+          "secondary": "الفرقان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual336 الفرق, not الفرقان. Very numerous differences and placement in another book retained; no fabricated missing essay."
+    },
+    {
+      "source_ids": [
+        "v3-p336-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السنة",
+          "secondary": "لسان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تلقى",
+          "secondary": "تلقي",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "المحدثين",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual336 ألسنة plural, تلقى with ى, المحدثين repeated. Complete gifted speech versus ownership and angel/revelation analogy kept, no omission of those addressed."
+    },
+    {
+      "source_ids": [
+        "v3-p336-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "في",
+          "secondary": "على",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واكتست",
+          "secondary": "واكتسبت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual336 في القلب and واكتست, not على /واكتسبت. Full bodily calm/humility/dignity and six negative speech classes and IbnAbbas/Umar report kept."
+    },
+    {
+      "source_ids": [
+        "v3-p337-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الهوى",
+          "secondary": "الاهواء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ورسوله وعباده",
+          "secondary": "ولرسوله ولعباده المؤمنين",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual337 الهوى singular and ورسوله وعباده without added المؤمنين or repeated ل. Entire seeker/questioner/company needs, divine-directed desire, inner haste and removal of self retained."
+    },
+    {
+      "source_ids": [
+        "v3-p337-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "قدر",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual337 قدر منفعته includes قدر. Full tested benefit and reversal of heedless trust in many human sayings retained."
+    },
+    {
+      "source_ids": [
+        "v3-p338-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وروحا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بها",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ولذا",
+          "secondary": "ولهذا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تكشف",
+          "secondary": "تنكشف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual338 two روحا وروحا, feminine بها, ولذا, active تكشف. Complete ten guidance ranks, inner addressed person, reality/pointed centers/comfort/life/clearing doubts and scholars contrast preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p338-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انزلت في",
+          "secondary": "نزلت على",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "نورا وقوة",
+          "secondary": "قوة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ويستكين",
+          "secondary": "ويسكن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والجري",
+          "secondary": "والجرئ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged338 أنزلت في and full نورا وقوة وروحا, ويستكين and الجري no hamza. Three source constituents and all frightened/sad/restless/disobedient/bold/defiant cases retained; no missing نور invented or dropped."
+    },
+    {
+      "source_ids": [
+        "v3-p338-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ونطقه",
+          "secondary": "وتظفر",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "علم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual338 ونطقه and علم مجرد with علم retained. Full fine-sayings/curled fingers/heart knots and experience versus abstract knowledge contrast kept."
+    },
+    {
+      "source_ids": [
+        "v3-p339-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والرشاد",
+          "secondary": "والرشد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual339 والرشاد not والرشد. All four opposed pairs and proofs of faith/certainty facts retained."
+    },
+    {
+      "source_ids": [
+        "v3-p339-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والغنت",
+          "secondary": "والعنت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "النقائص",
+          "secondary": "النقائض",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual339 العنت not own الغنت. Printed النقائص retained versus secondary النقائض; whole courage/self-restraint/faith-increase sequence kept."
+    },
+    {
+      "source_ids": [
+        "v3-p340-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يتنبه",
+          "secondary": "ينتبه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يقظان",
+          "secondary": "يقظانا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual340 يتنبه and يقظان, no added alif. Complete three light/life/strength functions and three defeated adversaries preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p340-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سكينة الايمان في قلبه فلما سكنت",
+          "secondary": "",
+          "tokens": 6
+        },
+        {
+          "tag": "replace",
+          "control": "يعوضه",
+          "secondary": "يعيضه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فمنذ انزلت",
+          "secondary": "فاذا نزلت",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "بلذتها",
+          "secondary": "بذلتها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لذاته",
+          "secondary": "لذته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فاسلته",
+          "secondary": "فانسلب منها وحبس",
+          "tokens": 3
+        }
+      ],
+      "finding": "Enlarged340 يعيضه not own يعوضه. Keep full repeated heart-faith-calm phrase, actual فمنذ أنزلت, بلذتها, لذاته, فأسلته. Word crop explicitly الرُّوح; source triad النور والحياة والروح NOT normalized to قوة. Whole long delight/rest/longing/substitution/freed-body-pleasure sequence retained without shortening."
+    },
+    {
+      "source_ids": [
+        "v3-p341-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فانه",
+          "secondary": "فانها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للانقياد",
+          "secondary": "والانقياد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged print has فإنها, restoring omitted alif; full line has للانقياد not والانقياد. All three poetry examples and all effects of sakina retained."
+    },
+    {
+      "source_ids": [
+        "v3-p342-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Printed prayer رحمه الله is present after الشيخ; retain despite secondary omission."
+    },
+    {
+      "source_ids": [
+        "v3-p342-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ذكرنا",
+          "secondary": "ذكرناها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print reads التي ذكرنا without ها here, distinct from adjacent quotations ذكرناها. Keep repeated light/life/strength and sunlight comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p342-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "ولما كان الايمان موجبا للخشوع وداعيا اليه قال الله تعالى الم يان للذين امنوا ان تخشع قلوبهم لذكر الله وما نزل",
+          "tokens": 21
+        },
+        {
+          "tag": "replace",
+          "control": "يعبد الله كانه يراه فانه لا محالة يقوم بوقار الخدمة وخشوعها فعدم الخشوع والوقار يدل على انه اجنبي",
+          "secondary": "الحق الحديد دعاهم",
+          "tokens": 18
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الايمان الى مقام",
+          "tokens": 3
+        }
+      ],
+      "finding": "Entire من يعبد الله كأنه يراه paragraph and its negative conclusion are visible in print. Secondary alignment wrongly pairs this material with next Quran passage; no deletion."
+    },
+    {
+      "source_ids": [
+        "v3-p342-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print has قال تعالى, without extra الله; 57:16 Arabic and Russian retained."
+    },
+    {
+      "source_ids": [
+        "v3-p342-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print reads أن يصلوا الإحسان بالإيمان without added إلى; preserve movement from iman to ihsan and revealed reminder."
+    },
+    {
+      "source_ids": [
+        "v3-p343-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ووقاره",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لها",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print has one ووقاره before يكون, not an extra occurrence after تعظيمه لخدمته; both لها at the end are visible. All three clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p343-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النفس",
+          "secondary": "النفوس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print محاسبة النفس singular, not secondary النفوس. Keep all three means."
+    },
+    {
+      "source_ids": [
+        "v3-p343-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهي سكينة المعاملة",
+          "secondary": "للمعاملة",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتحصل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print has no added هي or وتحصل and explicitly وهي سكينة المعاملة. Read full Russian against paragraph; render العلم as guiding landmark rather than add a summit."
+    },
+    {
+      "source_ids": [
+        "v3-p343-09",
+        "v3-p344-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "زكاءها",
+          "secondary": "زكاتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Across pp343–344 print reads زكاءها, not زكاتها, followed by complete triple negation لا تزكو ولا تطهر ولا تصلح البتة إلا بمحاسبتها. No omitted continuation."
+    },
+    {
+      "source_ids": [
+        "v3-p344-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بكلمة كذا ما اردت باكلة ما اردت بمدخل كذا ومخرج كذا ما اردت",
+          "tokens": 13
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والله لا اعود الى هذا",
+          "tokens": 5
+        }
+      ],
+      "finding": "Actual p344 has رحمه الله (no عنه), two short self-questions and ونحو هذا من الكلام. Longer secondary questions and oath لا أعود are not in control and are not inserted."
+    },
+    {
+      "source_ids": [
+        "v3-p344-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاوليان",
+          "secondary": "الاولتان",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual print الدرجتان الأوليان, not الأولتان; both سبحانه without added وتعالى. Russian glorification corrected, all three ethical means and their relationships preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p345-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual print prayer رحمه الله retained; sobriety after intoxication and seeing flashes both retained."
+    },
+    {
+      "source_ids": [
+        "v3-p345-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بالقسم",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تطلع",
+          "secondary": "تتطلع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual repeated quotation تثبت الرضا without بالقسم here; full preceding quotation has بالقسم. Printed المقسوم له and تطلع retained, no extra ت."
+    },
+    {
+      "source_ids": [
+        "v3-p345-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يصدر",
+          "secondary": "تصدر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual prayer رحمه الله and masculine لم يصدر are visible. Keep both contrasted groups, causal absence/presence of sakina and all repeated shath statements."
+    },
+    {
+      "source_ids": [
+        "v3-p345-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتقف",
+          "secondary": "وتوقف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وتقف not وتوقف; preserve boundary of rank and repeated العبودية. Neighboring quote في قلب and repeated على قلب remain distinct; p346 gift/robe/document image and closing invocation complete."
     }
   ],
-  "record_count": 652,
+  "record_count": 685,
   "unreviewed_candidates_remain": true
 }
