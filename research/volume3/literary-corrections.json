@@ -820,5 +820,113 @@
     "corrected_ru": "Абу Суляйман ад-Дарани, да помилует его Аллах, сказал: «Порой одна из тонких мыслей людей пути остаётся в моём сердце несколько дней, но я принимаю её лишь тогда, когда за неё свидетельствуют два справедливых свидетеля: Писание и Сунна».",
     "reason": "Remove ambiguous от него; Russian feminine refers explicitly to preceding thought. Two just witnesses remain Book and Sunna, days and qualification retained.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p274-02"
+    ],
+    "previous_ru": "Мухаммад ибн Фадль аль-Балхи, один из великих шейхов людей пути, да помилует его Аллах, сказал: «Ислам исчезает из-за четырёх вещей: не поступают по тому, что знают; поступают по тому, чего не знают; не учатся тому, что делают; препятствуют людям учиться или учить».",
+    "corrected_ru": "Мухаммад ибн аль-Фадль аль-Балхи, один из великих шейхов людей пути, да помилует его Аллах, сказал: «Ислам исчезает из-за четырёх вещей: не поступают по тому, что знают; поступают по тому, чего не знают; не учатся тому, что делают; препятствуют людям учиться или учить».",
+    "reason": "Russian name aligns with restored printed definite article; full four sources of loss of Islam unchanged.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p273-04"
+    ],
+    "previous_ru": "Абу Усман также сказал: «Кто поставил Сунну повелевать своими словами и делами, тот говорит мудро. Кто поставил прихоть повелевать своими словами и делами, тот высказывает нововведения. Аллах, Всевышний, сказал: {وَإِنْ تُطِيعُوهُ تَهْتَدُوا} — „Если будете повиноваться ему, пойдёте верным путём“ [«Ан-Нур», 24:54]».",
+    "corrected_ru": "Абу Усман также сказал: «Кто подчинил Сунне свои слова и дела, тот говорит мудро. Кто подчинил прихоти свои слова и дела, тот высказывает нововведения. Аллах, Всевышний, сказал: {وَإِنْ تُطِيعُوهُ تَهْتَدُوا} — „Если будете повиноваться ему, пойдёте верным путём“ [«Ан-Нур», 24:54]».",
+    "reason": "Replace mechanically repeated поставил повелевать with idiomatic parallel subjection; both speech/deeds pairs and contrasting wisdom/innovation retained, Quran unchanged.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p274-03"
+    ],
+    "previous_ru": "Амр ибн Усман аль-Макки, да помилует его Аллах, сказал: «Знание ведёт впереди, страх гонит сзади, а душа между ними — упрямая, непокорная, обманчивая и изворотливая. Берегись её; управляй ею руководством знания и гони угрозой страха — получишь желаемое».",
+    "corrected_ru": "Амр ибн Усман аль-Макки, да помилует его Аллах, сказал: «Знание ведёт впереди, страх гонит сзади, а душа между ними — упрямая, непокорная, обманчивая и изворотливая. Берегись её; направляй её сообразно знанию и погоняй угрозой страха — получишь желаемое».",
+    "reason": "Remove управляй руководством tautology while retaining leader/driver/stubborn mount analogy, all four soul descriptors and both discipline instruments. Print ورعها not older وراعها.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p277-03"
+    ],
+    "previous_ru": "И сказал: «Суфизм — терпение под велениями и запретами».",
+    "corrected_ru": "И сказал: «Суфизм — терпеливая покорность повелениям и запретам».",
+    "reason": "Repair literal терпение под while retaining endurance and submission to both commands/prohibitions; no added practice or theological conclusion.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p278-01"
+    ],
+    "previous_ru": "Что же до передаваемых от некоторых слов, отвращающих от знания и утверждающих независимость от него, — например: «Мы берём знание от Живого, Который не умирает, а вы берёте его от живого, который умирает».",
+    "corrected_ru": "От некоторых же передают слова, отвращающие от знания и утверждающие, что без него можно обойтись. Например: «Мы берём знание от Живого, Который не умирает, а вы берёте его от живого, который умирает».",
+    "reason": "Repair incomplete dangling Что же до sentence while retaining reported opponents attribution, two claims and full quoted contrast; author rejection follows278-06 unchanged.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p279-02"
+    ],
+    "previous_ru": "Кто отсылает тебя к чему-то иному вместо «сообщил нам» и «рассказал нам», тот отсылает либо к суфийскому воображению, либо к философскому умозаключению, либо к собственному мнению души. За пределами Корана и переданных сообщений остаются лишь сомнительные доводы приверженцев калама, мнения гадающих, фантазии суфиев и умозаключения философствующих.",
+    "corrected_ru": "Кто отсылает тебя к чему-то иному вместо «сообщил нам» и «рассказал нам», тот отсылает либо к суфийскому воображению, либо к философскому умозаключению, либо к собственному мнению души. За пределами Корана, «сообщил нам» и «рассказал нам» остаются лишь сомнительные доводы приверженцев калама, мнения гадающих, фантазии суфиев и умозаключения философствующих.",
+    "reason": "Restore repeated explicit أخبرنا/حدثنا, previously reduced to general transmitted reports; preserve four categories and first triple alternative, no author repetition omitted.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p280-04"
+    ],
+    "previous_ru": "Знание ведёт, а правильное состояние следует его руководству. Знание — наследие и достояние пророков; обладающие им — их род и наследники. Оно — жизнь сердец, свет духовной зоркости, исцеление груди, сады разума, наслаждение духов, отрада отчуждённых и проводник растерянных.",
+    "corrected_ru": "Знание ведёт, а правильное состояние следует его руководству. Знание — наследие и достояние пророков; обладающие им — их род и наследники. Оно — жизнь сердец, свет духовной зоркости, исцеление сердец, сады разума, наслаждение духов, отрада одиноких и проводник растерянных.",
+    "reason": "صدر in inner healing context rendered idiomatically, not physical chest treatment; مستوحش lonely/desolate, not specifically detached ascetic. All eleven images/predicates and prophetic inheritance retained.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p280-07"
+    ],
+    "previous_ru": "Благодаря ему познают Аллаха и поклоняются Ему, поминают Его и признают Его единственность, хвалят и прославляют Его. Им идущие нашли дорогу к Нему, его путём достигшие пришли к Нему, через его дверь устремлённые вошли к Нему.",
+    "corrected_ru": "Благодаря ему познают Аллаха и поклоняются Ему, поминают Его и признают Его единственность, хвалят и прославляют Его. Благодаря ему идущие нашли дорогу к Нему, его путём достигшие пришли к Нему, через его дверь устремлённые вошли к Нему.",
+    "reason": "Replace instrumental calque Им идущие while preserving second به and all three path/arrival/door images, six worship predicates and divine pronouns.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p281-04"
+    ],
+    "previous_ru": "Обсуждать его — славословие, исследовать — джихад, искать — приближение, отдавать — милостыня. Совместное изучение его равно посту и ночной молитве, а нужда в нём сильнее нужды в питье и пище.",
+    "corrected_ru": "Обсуждать его — славословие, исследовать — джихад, искать — приближение, делиться им — милостыня. Совместное изучение его равно посту и ночной молитве, а нужда в нём сильнее нужды в питье и пище.",
+    "reason": "Natural Russian for بذله knowledge, preserving discussion/research/seeking/giving, communal study analogy and food/drink comparison.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p285-03"
+    ],
+    "previous_ru": "Второе: познание — знание, требования и следствия которого человек соблюдает. Это знание, соединённое с заботливым соблюдением.",
+    "corrected_ru": "Второе: познание — знание, требования и следствия которого человек соблюдает. Это знание, сопровождаемое заботой о соблюдении его требований.",
+    "reason": "Explicit contextual object of رعاية from preceding بموجبه ومقتضاه, unlike heart-care context224–226. No objectless соблюдение or mechanical glossary substitution.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p286-05"
+    ],
+    "previous_ru": "Они считают, что у тайны есть и другая тайна, которую не знает никто, кроме Истинного, Пречист Он и Возвышен. Сам человек её не знает, хотя свою тайну знает. Поэтому они говорят: тайна — то, что тебе доступно для наблюдения; тайна тайны — то, что не открыто никому, кроме Истинного, Пречист Он.",
+    "corrected_ru": "Они считают, что у тайны есть и другая тайна, которую не знает никто, кроме Истинного, Пречист Он и Возвышен. Сам человек её не знает, даже если знает собственную тайну. Поэтому они говорят: тайна — то, что тебе доступно для наблюдения; тайна тайны — то, что не открыто никому, кроме Истинного, Пречист Он.",
+    "reason": "Restore concessive conditional وإن اطلع, previously incorrectly asserted as an unconditional fact. Speaker attribution to people of path and different secret/secret-of-secret scopes retained.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p288-01"
+    ],
+    "previous_ru": "Их правдивость — чистота от примеси иного и собственных долей.",
+    "corrected_ru": "Их правдивость — чистота от примеси иного и личных интересов.",
+    "reason": "Contextual حظوظ as self-interest admixtures in breaths of love/remembrance, consistent264-04; preserve separate other-than-God and personal-interest categories.",
+    "external_human_review": false
   }
 ]

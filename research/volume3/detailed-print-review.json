@@ -11045,8 +11045,777 @@
         }
       ],
       "finding": "Actual272 أن يرفع في الهواء, not older يرتفع or إلى. Entire conditional wonder versus command/prohibition/limits/sharia test retained; passive Russian matches print."
+    },
+    {
+      "source_ids": [
+        "v3-p273-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رحمه الله",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ابطل",
+          "secondary": "فباطل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged273 clearly فباطل عمله, not own أبطل عمله; no secondary رحمه الله inserted. Russian full Sunni-following statement retained."
+    },
+    {
+      "source_ids": [
+        "v3-p274-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual274 رحمه الله present and no عز وجل after مع الله. Preserve entire claimed-state/exceeds-sharia/do-not-approach conditional."
+    },
+    {
+      "source_ids": [
+        "v3-p274-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فضل",
+          "secondary": "الفضل",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged274 محمد بن الفضل with article, source/Russian name corrected; رحمه الله and عن التعلم maintained. Four causes not collapsed or reordered."
+    },
+    {
+      "source_ids": [
+        "v3-p274-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ورعها",
+          "secondary": "وراعها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual274 رحمه الله and ورعها بسياسة العلم, not وراعها. Russian literal governance tautology clarified; full leader/driver/stubborn deceptive soul imagery preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p274-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual274 رحمه الله present; negative universal contrast preserved, not replaced with secondary omitted honorific."
+    },
+    {
+      "source_ids": [
+        "v3-p274-05",
+        "v3-p275-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ولا",
+          "secondary": "لا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual274 prayer and275 ولا مقام preserved; full commands/actions/character triple and following analogy intact."
+    },
+    {
+      "source_ids": [
+        "v3-p275-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سئلت",
+          "secondary": "سالت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual275 سئلت passive: what you are asked, not what you asked. Full science/wisdom/tawhid triple and final Satan dismissal compared."
+    },
+    {
+      "source_ids": [
+        "v3-p275-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "افكر",
+          "secondary": "اتفكر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual275 أفكر not أتفكر. Full beast/sniffing/no harm/release/question/remaining water response preserved; no animal spectacle invented."
+    },
+    {
+      "source_ids": [
+        "v3-p275-04",
+        "v3-p276-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واقواله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual275 رحمه الله and276 وأفعاله وأقواله continuation present. One occurrence of words retained, no duplicate inserted from comparison alignment; biographical parenthesis remains in author sequence."
+    },
+    {
+      "source_ids": [
+        "v3-p276-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمهما الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "نبيه",
+          "secondary": "رسوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual276 رحمهما الله and نبيه not رسوله. Full obedience/following paired test retained."
+    },
+    {
+      "source_ids": [
+        "v3-p277-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ابو",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual277 عمرو بن نجيد رحمه الله, without inserted أبو. Author name kept as printed; not a newly verified historical biography. Harm exceeds benefit comparison intact."
+    },
+    {
+      "source_ids": [
+        "v3-p278-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual278 علمنا عن الحي...تأخذونه عن حي, both عن retained. Opponent attribution remains explicit and author rejection follows; no promotion of criticized saying to author endorsement."
+    },
+    {
+      "source_ids": [
+        "v3-p278-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اخر",
+          "secondary": "الاخر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual278 وقول آخر without article الآخر. Full proposed journey and question preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p278-06",
+        "v3-p279-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "و حدثنا",
+          "secondary": "وحدثنا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both actual leaves retain two explicit reporting formulas أخبرنا وحدّثنا; orthographic punctuation not lexical omission. Full ignorant/excusable or ecstatic/self-acknowledged qualifications and transmission counterfactual retained."
+    },
+    {
+      "source_ids": [
+        "v3-p279-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "و حدثنا",
+          "secondary": "وحدثنا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "و اخبرنا و حدثنا",
+          "secondary": "واخبرنا وحدثنا",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "المتخرصين",
+          "secondary": "المنحرفين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وقياسات",
+          "secondary": "وقياس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual279 المتخرصين and plural قياسات retained, not المنحرفين/قياس. Repeated report formulas restored explicitly in Russian second clause, not generic paraphrase."
+    },
+    {
+      "source_ids": [
+        "v3-p279-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السنة والقران",
+          "secondary": "القران والسنة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual279 final السنة والقرآن order retained, different from earlier الكتاب والسنة in same paragraph. Do not flatten author order."
+    },
+    {
+      "source_ids": [
+        "v3-p279-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مركوب",
+          "secondary": "مركب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual279 مركوب لا يجارى, not مركب. Horse/rider/destruction imagery and linked repeated state examples retained."
+    },
+    {
+      "source_ids": [
+        "v3-p281-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual281 رضي الله عنه, no added تعالى. Entire Shafii additional-prayer comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p282-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual282 IbnWahb رحمه الله and Malik رضي الله عنه retained. Boards/standing/prayer/negative superiority and IbnAbdBarr attribution preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p282-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual282 والله أعلم without secondary سبحانه وتعالى insertion. Entire author hadith quotation retained as printed, not silently completed from common other wording; separate external source evaluation not established by print check."
+    },
+    {
+      "source_ids": [
+        "v3-p283-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تضع",
+          "secondary": "لتضع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "النملة",
+          "secondary": "النمل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "معلم",
+          "secondary": "معلمي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual283 تضع, النملة singular, معلم singular. Full moon/stars, wings/shade, heaven/earth/fish/ant, teaching blessing sequence all retained. Main source and modern notes not conflated."
+    },
+    {
+      "source_ids": [
+        "v3-p283-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السلام",
+          "secondary": "الصلاة والسلام",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "مسهم",
+          "secondary": "مسهما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سفرهم",
+          "secondary": "سفرهما",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual283 عليه السلام, plural مسهم/سفرهم retained, no additional من before الخلق. Moses/young companion/three issues/end exaltation all present."
+    },
+    {
+      "source_ids": [
+        "v3-p284-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "العلم له",
+          "secondary": "للعلم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual284 العلم له علامة قبله... not للعلم. Before evidence/after ignorance removal preserved and not merged."
+    },
+    {
+      "source_ids": [
+        "v3-p284-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او استفاضة",
+          "secondary": "واستفاضة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual284 أو استفاضة ...أو صحة تجربة, two alternatives retained, not conjunction واستفاضة. All three degrees/first-degree sources and subsequent reasoned critique intact."
+    },
+    {
+      "source_ids": [
+        "v3-p285-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "متعلقه",
+          "secondary": "متعلقها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual285 متعلقه masculine after علم خاص, not متعلقها. Knowledge/recognition/faith/ihsan analogy and two finer/more hidden comparisons retained."
+    },
+    {
+      "source_ids": [
+        "v3-p285-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فهو",
+          "secondary": "فهي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual285 فهو علم تتصل به الرعاية masculine. Russian explicitly supplies requirements from preceding بموجبه ومقتضاه as object of care, not generic incomplete соблюдение."
+    },
+    {
+      "source_ids": [
+        "v3-p285-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شاهدة",
+          "secondary": "شاهد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual285 شاهدة لنفسها feminine retained. No doubt/no departure both negative criteria and comparison كشف...أتم preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p285-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وظهر",
+          "secondary": "ويظهر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "في الاسماع الصاحية",
+          "secondary": "والاسماع الصاخية",
+          "tokens": 3
+        }
+      ],
+      "finding": "Enlarged285 confirms ويظهر, not own وظهر. Main quote ينبت, في الأسماع الصاحية retained, not secondary والأسماع الصاخية. Later288 sober-hearing explanation actually read; metaphor of sobriety not normalized to attentiveness variant."
+    },
+    {
+      "source_ids": [
+        "v3-p286-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "حصل",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "حصل له",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual286 بها حصل له الإدراك order retained. Entire four perception/love/will/knowledge faculties and spirit identification intact."
+    },
+    {
+      "source_ids": [
+        "v3-p286-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وغالب",
+          "secondary": "وغالبا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual286 وغالب ما يريدون به هذا المعنى, no inserted accusative غالبا. Spirit-to-body analogy and majority qualification preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p286-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وتعالى",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual286 سبحانه وتعالى retained; وإن اطلع concessive conditional restored in Russian, not unconditional personal knowledge. Other-secret and secret-of-secret scopes preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p286-07",
+        "v3-p287-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بقوله",
+          "secondary": "قوله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يعني",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتنشات",
+          "secondary": "وتنفسات",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وجه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تتجلى",
+          "secondary": "تنجلي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تتنفس",
+          "secondary": "تنفس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فواتها",
+          "secondary": "فوتها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فظهرت",
+          "secondary": "وظهرت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged286–287 confirms والمقصود قوله then يعني, وتنفّسات not own وتنشأت, فوتها without alif; source restored. Keep printed تتجلى, تتنفس, فظهرت and no inserted وجه. Mirror/breath/fog imagery restored in Russian; full worldly desire/fear/polishing/knowledge sequence retained."
+    },
+    {
+      "source_ids": [
+        "v3-p287-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الزاكية",
+          "secondary": "الزكية",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "التي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المختلفة الالوان والاذواق",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual287 زكت أرض القلب and whole full discipline paragraph compared; restrictive not beyond knowledge/not away from obligation/not abolishing Sunna triple retained, no authority passage shortened."
+    },
+    {
+      "source_ids": [
+        "v3-p287-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهي ما",
+          "secondary": "وما",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual287 both known-remembered and beloved-sought pairs, من الذاكر والمحب order retained. No invented personal mystical interpretation."
+    },
+    {
+      "source_ids": [
+        "v3-p289-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "و من",
+          "secondary": "ومن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ما",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مما",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واقرب مما عنده ولهذا قال تعالى واجعل لي",
+          "tokens": 8
+        },
+        {
+          "tag": "replace",
+          "control": "الذي عنده واقرب",
+          "secondary": "لدنك سلطانا نصيرا الاسراء",
+          "tokens": 4
+        },
+        {
+          "tag": "delete",
+          "control": "نصره",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual289 عنده/لدنه exact contrast and full Quran17:80/8:62 examples retained, including all quoted Arabic and Russian. Neither particular/direct and mediated support nor mercy/knowledge distinction collapsed."
+    },
+    {
+      "source_ids": [
+        "v3-p289-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رسوله من كتابه وسنة",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual289 full worship/following/sincerity/knowledge/obedience conditions and Ali quote read; author fragment retained, no primary full-report tail invented."
+    },
+    {
+      "source_ids": [
+        "v3-p289-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والهوى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual289 both فهو and final لكن من لدن من question retained. Strong distinction genuine gifted knowledge versus self/satan remains author position, not translator conclusion."
     }
   ],
-  "record_count": 534,
+  "record_count": 571,
   "unreviewed_candidates_remain": true
 }

@@ -14165,14 +14165,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p273-01": {
-      "sha256": "c743ccfa99bed66a558badcf14b750a535e9c3fea497429cf7daeb0124efa2e2",
+      "sha256": "22f3ede6e99f4bcfb3e383c82a44f68a0416575d166121f81ab4a26501037221",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged273 main text فباطل عمله, not own verbal أبطل. No extra رحمه الله from secondary inserted; Russian rejected-work sense already intact. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p273-02": {
       "sha256": "62946af191595fabcc2b13710640dd725b4423dc8a96ca096f62681665edc61f",
@@ -14195,14 +14196,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p273-04": {
-      "sha256": "69cf8c8476fa7f3723633305fd8b30460a2bff3cbb592b4eb17dec008cdeda5f",
+      "sha256": "eb68337fbd5ff0ebe2b3834a4d64eaa65f306b9c46574468ac77b04f8f9cb85c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace mechanically repeated поставил повелевать with idiomatic parallel subjection; both speech/deeds pairs and contrasting wisdom/innovation retained, Quran unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p274-01": {
       "sha256": "a7051ed65f8392a8ee495ee28c6b4d3baf8cec5af38da30edf777fc120cf1fb4",
@@ -14215,24 +14217,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p274-02": {
-      "sha256": "1baecbe49853cb6a3d40da445e10a0a3302cdcc5bcc0c79d938b9043f3ad7e22",
+      "sha256": "68bede2b978f38c43a5d69ce8e1f4857799d851b0f34dbc8773208a62f3f6cc6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Russian name aligns with restored printed definite article; full four sources of loss of Islam unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p274-03": {
-      "sha256": "634e1a6a6bf963fe7ec534cbd1916cd5ee31f0875d3409750207f2337cb7e181",
+      "sha256": "1a1b938c7d35fd9381aaa2235fba3be86449d042e5b6a972cb753bc0c4624d3f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove управляй руководством tautology while retaining leader/driver/stubborn mount analogy, all four soul descriptors and both discipline instruments. Print ورعها not older وراعها. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p274-04": {
       "sha256": "68e8e96d171f6fccb0f01cce8a097e3822a9d3d88c6b56221a482efb3f8135c3",
@@ -14345,14 +14349,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p277-03": {
-      "sha256": "bb1502015f90a30942e450b49465312aed5a7e99ea871b403fa30eb26bd90a00",
+      "sha256": "51695899442ee7e917736de2f46d3c63562a10401bbd333339742e644736d2a3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Repair literal терпение под while retaining endurance and submission to both commands/prohibitions; no added practice or theological conclusion. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p277-04": {
       "sha256": "7500e034b331b651ed965286f3a35a16562a5d6f1a04d0821c8eb159da95c191",
@@ -14365,14 +14370,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p278-01": {
-      "sha256": "c378b3d8e9144f0719d8da99e785dc9aaf6390ed0b5e4922dc030e2e38210208",
+      "sha256": "be5e862754c6e599ef975bd1c99771f6ca943b1fae4f5ff98bacf8729d13c277",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Repair incomplete dangling Что же до sentence while retaining reported opponents attribution, two claims and full quoted contrast; author rejection follows278-06 unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p278-02": {
       "sha256": "496f359345fd66c77d0e4dece1c43a519c52d29448c240052d6f25a403c87779",
@@ -14425,14 +14431,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p279-02": {
-      "sha256": "e9beece09d5343eb397bb22d122781940bd72e7a75d3b70d64154d4f87bfe205",
+      "sha256": "0a3e2dca93b539f2d949b1a4b218046e7578d6629c9e438f48a6aa7361a76c25",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore repeated explicit أخبرنا/حدثنا, previously reduced to general transmitted reports; preserve four categories and first triple alternative, no author repetition omitted. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p279-03": {
       "sha256": "0f3fdc34de953590f06cfcd0953c38af3717cd628eb7584483a51cc9e899466b",
@@ -14555,14 +14562,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p280-04": {
-      "sha256": "acf3c7f1ad70298946505f8e0a200d7127cf02886305852f8a2caa121cf3c568",
+      "sha256": "5a4d8b128a2e00d69222a5b924d4cfe119bdec8b16395853ea85b5021676b944",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "صدر in inner healing context rendered idiomatically, not physical chest treatment; مستوحش lonely/desolate, not specifically detached ascetic. All eleven images/predicates and prophetic inheritance retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p280-05": {
       "sha256": "c878d3459446c301ca333654ff481743abb58cc533b4e876a395dcd6c5a836a9",
@@ -14585,14 +14593,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p280-07": {
-      "sha256": "3c5f0e9e07ec11b122a53bf4deebd0e6b7bdbce627aba579f90df9e0bd6c5681",
+      "sha256": "c760ae9dc52d3494a6990351a4b54d048ab501065936330ba2d68f00f29306b3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace instrumental calque Им идущие while preserving second به and all three path/arrival/door images, six worship predicates and divine pronouns. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p281-01": {
       "sha256": "145dcfc9624ff9866806ee6dde8afb00301d781bc5347273460ea231e6adfcd5",
@@ -14625,14 +14634,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p281-04": {
-      "sha256": "0450570442d9c3e20c69baa3a80179f4c07fa5997cad382daabd5587b7176e1a",
+      "sha256": "05f55b3241bf97489a58765f0a79c1903e0aee1a50466ff49fadf1f7f3a78824",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural Russian for بذله knowledge, preserving discussion/research/seeking/giving, communal study analogy and food/drink comparison. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p281-05": {
       "sha256": "dc7fa3380646cd1bb55919adc38886814b9988467e359ffa65b54b42a585193b",
@@ -14885,14 +14895,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p285-03": {
-      "sha256": "2c6fc23115d6a5c5114d7aaf13477c6698d449bc361e6b63204177bddfaa7e65",
+      "sha256": "824c6b904e46dcda491cef5804e80bdb77ffcd0226ca3cf676071f9b3ce2c63e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Explicit contextual object of رعاية from preceding بموجبه ومقتضاه, unlike heart-care context224–226. No objectless соблюдение or mechanical glossary substitution. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p285-04": {
       "sha256": "15d2733a2eefa377b8b58a911782e2b27dbb28a7ac67213443c9822976776281",
@@ -14915,14 +14926,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p285-06": {
-      "sha256": "8dc500c321c2c1c15962d11bf097680f6f062242533e2270e504e24c73e08194",
+      "sha256": "7e55d8c97f5440c03c5513bf3d5b2e2633884860a48556103d1a47237716c200",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged285 main quote reads ويظهر, not own وظهر. Keep subsequent287 author restatement independently as printed; Russian present already matches. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p285-07": {
       "sha256": "5b303e9931397ba7b86733c39e23cf6e5464608dd85eea18845354b23d5c4486",
@@ -14986,14 +14998,15 @@
       "resolution": "Direct 7x control scan confirms omitted ما after أشرف; Russian already conveyed the superlative correctly. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p286-05": {
-      "sha256": "762a9c07c034eb51b3111d9bb8415bd0d934a828601772974807c40cac6f13f2",
+      "sha256": "1b6b637461eea9d1bec22eead16c77e4563ff349d588ac85397bbb30b6d44840",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore concessive conditional وإن اطلع, previously incorrectly asserted as an unconditional fact. Speaker attribution to people of path and different secret/secret-of-secret scopes retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p286-06": {
       "sha256": "eda411fa796ee954c2da4755292df31849d1f6e8f912eae2ade2c7b4064f69eb",
@@ -15006,14 +15019,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p286-07+v3-p287-01": {
-      "sha256": "f2abe7706bda0f07bf9f9a38dd572462de329507ee40b8c54da88d0b616e6c53",
+      "sha256": "96582d6248a4c8254d956efcfd1bc4214875616be4b61b1b51196751b74d4a6c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged287 confirms فوتها without inserted alif; Russian fear of losing worldly object unchanged. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p287-02": {
       "sha256": "4e917a693a80b5d89fe5d24f4bf39646ed3be64fa5d53e1fdf0481c36b7437f1",
@@ -15056,24 +15070,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p288-01": {
-      "sha256": "6dbeb7a4dcf1d6ed1570dea84e4183485001a5703f62dd468c44fb4ed1c5bd37",
+      "sha256": "77fb90787df9df48d3a55a4cbc6cd3ef71881b74dbe12b430441b4efd1dbb475",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual حظوظ as self-interest admixtures in breaths of love/remembrance, consistent264-04; preserve separate other-than-God and personal-interest categories. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p288-02": {
-      "sha256": "1c72c42262ff9f12232064446c42a876416253312ea043e47db8db491b35a83f",
+      "sha256": "a2d012d181c82048e5ae484c76458eb057d4a65b380d075d78c6e471c04534a6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual288 repeats quote with plural الهمم, unlike singular285 main quotation. Restore actual asymmetry and Russian plural, clarify لا تقف دون الله as exclusive ultimate goal while retaining travel/no pause and highest/widest distinct comparisons. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p288-03": {
       "sha256": "a5f21892954bc7db7f804e3c959ea82f9151794c3cb43e0a307741c16c3cf1ce",
