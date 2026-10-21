@@ -6415,8 +6415,207 @@
         }
       ],
       "finding": "Control رحمه الله and singular تعجل; retain. Full quoted Arabic saying and Russian checked."
+    },
+    {
+      "source_ids": [
+        "v3-p160-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "موجبا",
+          "secondary": "موجب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control both موجبا, retain accusative spellings; Russian rhetorical contrast compared."
+    },
+    {
+      "source_ids": [
+        "v3-p160-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "دعاؤه",
+          "secondary": "دعاءه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control دعاؤه with waw seat; retain; Russian opening and both later interpretative alternatives checked in context."
+    },
+    {
+      "source_ids": [
+        "v3-p160-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "دعاؤكم",
+          "secondary": "دعاءكم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control دعاؤكم; retain. Russian explanation of verbal noun and object accurately follows printed first alternative."
+    },
+    {
+      "source_ids": [
+        "v3-p161-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وللمراتب",
+          "secondary": "والمراتب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control وللمراتب retains initial ل. Russian syntactic clarification prepared for rank subdivisions and father among parents; all categories retained."
+    },
+    {
+      "source_ids": [
+        "v3-p162-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وللدخول وللخروج وللسفر وللاقامة وللنوم",
+          "secondary": "والدخول والخروج والسفر والاقامة والنوم",
+          "tokens": 5
+        }
+      ],
+      "finding": "Control repeats ل for each named activity and آداب for each group; all preserved. Russian parallel grouping restoration prepared, not source edition harmonization."
+    },
+    {
+      "source_ids": [
+        "v3-p162-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ومعثر",
+          "secondary": "ومغتر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "هو الذي ساقه",
+          "secondary": "هي التي ساقته",
+          "tokens": 3
+        }
+      ],
+      "finding": "Control معثر and هو الذي ساقه, not older مغتر / هي التي ساقته. Retain source and full Russian consequence."
+    },
+    {
+      "source_ids": [
+        "v3-p163-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وارضاه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وقال",
+          "secondary": "فقال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control وأرضاه and وقال; retain. Full comparison incl Prophet gesture, backward/forward metaphor and mounts; Russian accidental cognate repetition correction prepared."
+    },
+    {
+      "source_ids": [
+        "v3-p163-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله; retain Arabic; missing Russian author honorific restoration prepared. Entire quoted definition otherwise matches."
+    },
+    {
+      "source_ids": [
+        "v3-p164-03",
+        "v3-p165-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "فيهم",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جاؤوا",
+          "secondary": "جاءوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed pages checked: control فيهم and جاؤوا; retain all three contrasted groups and their actions in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p165-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "خوف",
+          "secondary": "الخوف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control indefinite خوف, retain full cause and condemned-fear conclusion."
+    },
+    {
+      "source_ids": [
+        "v3-p165-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added تعالى; mercy preceding anger and ignorance of it both retained."
+    },
+    {
+      "source_ids": [
+        "v3-p166-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اوصلت",
+          "secondary": "اوصلتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أوصلت without attached object suffix. Russian ship metaphor includes calm, excessive wind, moderate wind and desired goal."
     }
   ],
-  "record_count": 304,
+  "record_count": 316,
   "unreviewed_candidates_remain": true
 }
