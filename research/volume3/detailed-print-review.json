@@ -3350,70 +3350,6 @@
     },
     {
       "source_ids": [
-        "v3-p096-03"
-      ],
-      "decision": "correct_own_transcription",
-      "checked_differences": [
-        {
-          "tag": "replace",
-          "control": "فعاقبك الله",
-          "secondary": "فانتقم بالله",
-          "tokens": 2
-        }
-      ],
-      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
-    },
-    {
-      "source_ids": [
-        "v3-p096-06"
-      ],
-      "decision": "retain_control",
-      "checked_differences": [
-        {
-          "tag": "replace",
-          "control": "سماح",
-          "secondary": "سماحة",
-          "tokens": 1
-        },
-        {
-          "tag": "insert",
-          "control": "",
-          "secondary": "صريحا",
-          "tokens": 1
-        }
-      ],
-      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
-    },
-    {
-      "source_ids": [
-        "v3-p096-07"
-      ],
-      "decision": "retain_control",
-      "checked_differences": [
-        {
-          "tag": "replace",
-          "control": "فحينئذ اذا",
-          "secondary": "فاذا",
-          "tokens": 2
-        },
-        {
-          "tag": "replace",
-          "control": "فيه",
-          "secondary": "منه",
-          "tokens": 1
-        }
-      ],
-      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
-    },
-    {
-      "source_ids": [
-        "v3-p152-04"
-      ],
-      "decision": "correct_own_transcription",
-      "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
-    },
-    {
-      "source_ids": [
         "v3-p092-05"
       ],
       "decision": "retain_control",
@@ -3490,6 +3426,63 @@
         }
       ],
       "finding": "Candidate words directly compared with full 2019 print images pp.92–94 and 97–100, including continuations. Arabic retained: وبشهود, فيه من, أنك, يصفو, موادة, دليل, ويتقيد, السير, المتكلمون and الأسولة match print. Russian selected paragraphs on pp.92–94/99–100 also read and retained. No adoption of additions or substitutions from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p096-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فعاقبك الله",
+          "secondary": "فانتقم بالله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p096-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سماح",
+          "secondary": "سماحة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صريحا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p096-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فحينئذ اذا",
+          "secondary": "فاذا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيه",
+          "secondary": "منه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct control page96 comparison, enlarged to 8x for the punishment clause: print فانتقم الله منك, own فعاقبك الله منك corrected. Secondary فانتقم بالله also rejected. Other candidate wording سماح, absence of extra صريحا, فحينئذ إذا and فيه match print and are retained. Full Russian paragraphs compared; p096 Russian conveys punishment and is unchanged."
     },
     {
       "source_ids": [
@@ -3770,8 +3763,352 @@
         }
       ],
       "finding": "Direct full 2019 pp.101–102 visual comparison. Enlarged p101 crop confirms يفيتكها / يفيتكه / يفيتك and own transcription corrected; Russian preserves recipient and objects explicitly. Other listed candidates retained: absence of extra له, يشترط, ويدفع and في الفتيان / وجد match control."
+    },
+    {
+      "source_ids": [
+        "v3-p102-06",
+        "v3-p103-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تسير",
+          "secondary": "تشير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full control pp.102–104 comparison. Enlarged p103 crop confirms فإقرار الفطر and لم يوقفها; own construction/pronoun corrected, Russian clarified. Printed تستدل retained. Other candidates تسير, كانت and الاتصاف match control and are retained."
+    },
+    {
+      "source_ids": [
+        "v3-p103-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تستدل",
+          "secondary": "يستدل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فالاقرار بالفطر",
+          "secondary": "فاقرار الفطر",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يوقفه",
+          "secondary": "يوقفها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full control pp.102–104 comparison. Enlarged p103 crop confirms فإقرار الفطر and لم يوقفها; own construction/pronoun corrected, Russian clarified. Printed تستدل retained. Other candidates تسير, كانت and الاتصاف match control and are retained."
+    },
+    {
+      "source_ids": [
+        "v3-p104-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كانت",
+          "secondary": "كان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full control pp.102–104 comparison. Enlarged p103 crop confirms فإقرار الفطر and لم يوقفها; own construction/pronoun corrected, Russian clarified. Printed تستدل retained. Other candidates تسير, كانت and الاتصاف match control and are retained."
+    },
+    {
+      "source_ids": [
+        "v3-p104-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاتصاف",
+          "secondary": "الانصاف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full control pp.102–104 comparison. Enlarged p103 crop confirms فإقرار الفطر and لم يوقفها; own construction/pronoun corrected, Russian clarified. Printed تستدل retained. Other candidates تسير, كانت and الاتصاف match control and are retained."
+    },
+    {
+      "source_ids": [
+        "v3-p106-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تاخذه",
+          "secondary": "ياخذه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p106-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المروءة",
+          "secondary": "مروءة المرء",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "سرا",
+          "secondary": "قسرا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "مراعاة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اعتاد",
+          "secondary": "اراد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "علانيته وجهره",
+          "secondary": "جهره وعلانيته",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p106-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لنفسه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p106-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وصحبه",
+          "secondary": "وصاحبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p107-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رئي عند",
+          "secondary": "كما روي عن",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "انه كان له",
+          "tokens": 3
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p107-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "معرفة",
+          "secondary": "بمعرفة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تمرين",
+          "secondary": "بتمرين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p107-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المنزلة",
+          "secondary": "المسالة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنها",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ذكره",
+          "secondary": "ذكر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p108-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "حكاية",
+          "secondary": "حاكيا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "السلام انه قال",
+          "secondary": "الصلاة والسلام",
+          "tokens": 3
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p108-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الاعراف",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "والتملق",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p109-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "العصمة",
+          "secondary": "للعصمة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p109-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وقوته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p110-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتتكرم",
+          "secondary": "فتتكرم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 images pp.106–110 compared. Enlarged heading confirms مروءة المرء with own collapsed wording corrected; other differences retained according to print. Enlarged 106-01 confirms تأخذه. Candidate 110-03 matches control; this does not settle separate 110-04 crux, which remains pending."
+    },
+    {
+      "source_ids": [
+        "v3-p152-04"
+      ],
+      "decision": "correct_own_transcription",
+      "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 175,
+  "record_count": 191,
   "unreviewed_candidates_remain": true
 }

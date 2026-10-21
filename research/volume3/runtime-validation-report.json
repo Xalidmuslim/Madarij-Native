@@ -87,10 +87,10 @@
   "latest_corpus_check": "All 3107 packaged rows exactly match the live database including WAL after latest p.36/40/55/81–82/152 edits; integrity_check ok. Root hashes identify this build.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Latest correction 101-02 restores printed causative verbs and object pronouns, and explicitly preserves тебя / этих благ in Russian. Earlier 090/091/096 changes have a separate positive intermediate APK check.",
-    "current_asset_sha256": "1049c843a8ec80e8c7e1e98656c43430e57aefa8ebbcc4d282b9572a7a80fd45",
+    "change": "Latest changes after separately checked 090/091/096 APK: 101 causative forms/pronouns and Russian object, 103 innate-nature construction/pronoun and Russian linkage, 106 heading مروءة المرء. Eleven notes unchanged.",
+    "current_asset_sha256": "05a98129973a40148d2496e12bfa51a1bc75cbab2ca353951ba4a0e6e3a56bce",
     "current_asset_runtime_checked": false,
-    "scope": "Latest 101 correction awaits refreshed APK/import. Intermediate 9441650d... and previous root 749b5502... checks remain tied to their packaged byte hashes."
+    "scope": "Current 101/103/106 corrections await refreshed APK/import. Earlier exact DB checks remain historical and tied to their hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",

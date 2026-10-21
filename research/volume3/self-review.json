@@ -4809,14 +4809,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p103-02": {
-      "sha256": "6528a3aab1898dec9d453d778bf7c4131bf67fc6d3f2137ffa44514c2f31fa06",
+      "sha256": "30d6ae212d84626a13cf02b1019ee32c7f66ddc6e52f3709e6e165cc5b2411c5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.103 crop confirms فإقرار الفطر and لم يوقفها عليه, not own فالإقرار بالفطر / لم يوقفه. Correct construction and feminine-plural reference to الفطر. Russian renders generic human nature and absence of instruction naturally; author’s reasoning and surrounding claims retained. Entire Russian paragraph reread separately and back-compared; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p103-03": {
       "sha256": "ca2525577825e79b20a0c7e8fb47f857c1bdfffcee06360cab98a16aebdc53cd",
@@ -5019,14 +5020,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p106-02": {
-      "sha256": "bef6f44235305b8481677f822b554fedc2eb9a13638e5e76dbb691b84c24a6ed",
+      "sha256": "cd0ff2371bdc87e1ec27fdd0e21ff4d7476b79139ecdc23e0d70b49c07d6f438",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 7x control p.106 heading crop confirms مروءة المرء مع نفسه. Restore own collapsed المروءة مع نفسه to the printed construction. Same paragraph’s سرا, مراعاة, اعتاد and علانيته وجهره confirmed despite secondary differences. Existing Russian муруа в отношении самого себя naturally conveys the generic human reference and is retained after full Russian rereading and back-comparison; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p106-03": {
       "sha256": "4aaadd47dace1cab810dd78528ea27d4f95b918bc8ba09d4958ed451407f8031",
