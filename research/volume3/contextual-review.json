@@ -65,6 +65,14 @@
         "For247-03, constraint or abstraction/witnessing is possible masculine referent; current feminine desert reference is not certified."
       ],
       "conclusion": "Keep semantic/back stages pending, original Arabic unchanged and book not publication ready. Need stronger specialist contextual decision; same-agent review only."
+    },
+    {
+      "source_id": "v3-p323-06",
+      "status": "contextually_supported_marked_negative_completion_not_arabic_emendation",
+      "control_reading": "أن يبغى له عوج أو يدافع بعلم أو يرضى بعوض",
+      "evidence": "Actual323 main quote lacks لا; actual324-02 explicitly أحدها أن لا يبغى له عوج and325-03 أي لا يبغى للحكم عوج. Direct contextual author repetition supports negative sense. Arabic323 retained, Russian first [не] visibly marked, not an unmarked invented source reading. All three parallel negative restrictions supported by324–326 explanation.",
+      "independent_human_review": false,
+      "unresolved_critical_status_added": false
     }
   ]
 }

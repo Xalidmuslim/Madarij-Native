@@ -1127,5 +1127,50 @@
     "corrected_ru": "Свет раскрытия — один из источников проницательности; более того, основа проницательности — свет раскрытия. Сила проницательности зависит от силы или слабости этого света, а его сила и слабость — от силы и слабости его источника.",
     "reason": "Restore explicit repeated نور الكشف rather than pronominal compression, improve broken одно из того, preserve both linked light/source strength and weakness pairs.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p319-04"
+    ],
+    "previous_ru": "Всевышний сказал: {مَا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا} — «Почему вы не почитаете величия Аллаха?» [«Нух», 71:13]. Ибн Аббас и Муджахид сказали: «Не ожидаете от Аллаха величия». Саид ибн Джубайр: «Почему вы не возвеличиваете Аллаха сообразно Его величию?» Аль-Кальби: «Не страшитесь величия Аллаха».",
+    "corrected_ru": "Всевышний сказал: {مَا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا} — «Почему вы не почитаете величия Аллаха?» [«Нух», 71:13]. Ибн Аббас и Муджахид сказали: «Вы не страшитесь величия Аллаха». Саид ибн Джубайр: «Почему вы не возвеличиваете Аллаха сообразно Его величию?» Аль-Кальби: «Не страшитесь величия Аллаха».",
+    "reason": "Restore contextual رجاء under negation as خوف, explicitly explained by author immediately319-05 and Tabari Nooh71:13. Do not mechanistically take it as hoping to receive greatness from God. Later IbnKaysan319-05 still hope of reward, not same forced equivalent. Arabic differing reports retained verbatim.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p320-02"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Возвеличивание — познать величие и смириться перед ним. У него три степени. Первая — возвеличивать повеление и запрет: не противопоставлять им небрежное пользование послаблениями, не подвергать их ужесточению чрезмерного усердия и не объяснять причиной, ослабляющей покорность».",
+    "corrected_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Возвеличивание — познать величие и смириться перед ним. У него три степени. Первая — возвеличивать повеление и запрет: не противопоставлять им небрежное пользование послаблениями, не подвергать их чрезмерному ужесточению и не объяснять причиной, ослабляющей покорность».",
+    "reason": "Remove stacked genitive calque while preserving excessive strictness as second distinct violation, not lawful obligatory discipline. Three separate prohibitions remain.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p323-04"
+    ],
+    "previous_ru": "Всё это — отказ возвеличивать повеление и запрет. Отсюда проникло к многочисленным группам столько порчи, что знает лишь Аллах. Только Аллах знает, как ложные обоснования ослабили покорность: сколько Его повелений они упразднили, сколько запретного дозволили, сколько дозволенного запретили! Именно их предшественники единодушно порицали.",
+    "corrected_ru": "Всё это — отказ возвеличивать повеление и запрет. Из-за этого в многочисленные группы проникло столько порчи, что её меру знает лишь Аллах. Только Аллах знает, как ложные обоснования ослабили покорность: сколько Его повелений они упразднили, сколько запретного дозволили, сколько дозволенного запретили! Именно их предшественники единодушно порицали.",
+    "reason": "Repair incomplete что знает while preserving first divine-exclusive extent statement and subsequent distinct repeated divine-exclusive weakening statement, all three exclamations and Salaf censure.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p323-06"
+    ],
+    "previous_ru": "Он сказал: «Вторая степень — возвеличивать решение: [не] искать в нём кривизны, не отражать его знанием и не довольствоваться им ради возмещения».",
+    "corrected_ru": "Он сказал: «Вторая степень — возвеличивать решение: [не] искать в нём кривизны, не противодействовать ему знанием и не довольствоваться им ради возмещения».",
+    "reason": "Clear Russian for يدافع, preserve editorial [не] as context-supported completion:323 print lacks لا,324-02 and325-03 explicitly restore negative; all three author clauses not silently rewritten in Arabic.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p325-04"
+    ],
+    "previous_ru": "Его слова: «Не отражать его знанием», — труднее первых: знание предшествует предопределению и судит о нём, и нельзя отвергать знание решением.",
+    "corrected_ru": "Его слова: «Не противодействовать ему знанием», — труднее первых: знанию принадлежит первенство перед предопределением и судит о нём, и нельзя отвергать знание решением.",
+    "reason": "Keep quote323-06 consistent; مقدم means precedence in judging, not new temporal doctrine of knowledge before decree. Entire ensuing author criticism and restriction against rejecting knowledge preserved.",
+    "external_human_review": false
   }
 ]

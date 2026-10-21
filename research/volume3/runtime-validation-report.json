@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
-  "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
+  "apk_sha256": "10a9a86bd8fab1226ebc25290650f6f25cec752b8ccf6882c50d55c858bf9db9",
+  "volume3_asset_sha256": "81542268c62689e25210cb705013b089583e710b70a4caefb229435cf92a29c2",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
@@ -20,7 +20,7 @@
       "3": 32
     },
     "volume3_author_paragraphs": 3096,
-    "volume3_editor_notes": 12,
+    "volume3_editor_notes": 13,
     "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
     "comparison_fields": [
       "id",
@@ -32,7 +32,7 @@
       "source"
     ],
     "extra_volume3_rows": 0,
-    "all_3108_packaged_rows_exactly_match_database": true
+    "all_3109_packaged_rows_exactly_match_database": true
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -41,8 +41,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 9,
-      "rows_after": 9,
+      "rows_before": 11,
+      "rows_after": 11,
       "unchanged": true
     },
     "notes": {
@@ -59,8 +59,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
-    "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
+    "Query аль-Каттани gives three matching results, second is new303-01 own note in Проницательность.",
+    "Selected note303-01 opens under Пояснение редакции; top and scrolled tail actually viewed, including attribution difference, Arabic مكاشفة اليقين and preserved control author variant. Following author text remains separate."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -72,17 +72,17 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
-    "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
-    "description": "Update snapshots through272 taken before new UI navigation. Bookmark, nine positions, empty notes/read_chapters, preferences bytes identical. Early snapshot still old3107 rows rejected; later live complete import3108 exact."
+    "apk_sha256": "10a9a86bd8fab1226ebc25290650f6f25cec752b8ccf6882c50d55c858bf9db9",
+    "volume3_asset_sha256": "81542268c62689e25210cb705013b089583e710b70a4caefb229435cf92a29c2",
+    "description": "Through318 update snapshots, one bookmark/eleven positions/empty notes/read_chapters and preferences exact. Earlier partial plain/gzip captures rejected as incomplete. SQLite PRAGMA wal_checkpoint(TRUNCATE) succeeded0|0|0, no record edits, then complete snapshot and integrity verified. Later reader scrolling deliberately changes position, outside preservation comparison."
   },
-  "latest_corpus_check": "All3108 exact database rows match packaged/repository through272, all seven fields, no extras, integrity ok, protected first two volumes unchanged. Four pending source statuses retained.",
+  "latest_corpus_check": "All3109 rows exactly match through318 APK and its embedded asset, seven fields/no extras/integrity ok, protected first two volumes unchanged, four pending source IDs retained.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New273–318 source/Russian revisions and303-01 own note, current3109 rows.",
-    "current_asset_sha256": "81542268c62689e25210cb705013b089583e710b70a4caefb229435cf92a29c2",
+    "change": "New source/Russian319–328 corrections after positive through318 build.",
+    "current_asset_sha256": "7183305db06f9e9b4cbaaf6db6a5294c0cfccd1be50bce9855a32d1b32f06d4f",
     "current_asset_runtime_checked": false,
-    "scope": "Positive APK/DB evidence applies through272 with3108 rows. Current3109 corpus not yet rebuilt/imported. Four unresolved units preserved."
+    "scope": "Root positive proof through318 only, same3109 record count but different newer319–328 text bytes not imported. Four unresolved units remain."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -107,10 +107,10 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through272 APK current note search/result-to-reader actually viewed, source hashes as recorded. Earlier scenarios remain historical.",
+  "visual_check_scope": "Through318 APK actual search, new-note reader and scroll-to-tail inspected. Old scenarios historical.",
   "current_visual_checks": [
-    "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
-    "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
+    "Query аль-Каттани gives three matching results, second is new303-01 own note in Проницательность.",
+    "Selected note303-01 opens under Пояснение редакции; top and scrolled tail actually viewed, including attribution difference, Arabic مكاشفة اليقين and preserved control author variant. Following author text remains separate."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -727,5 +727,68 @@
     ],
     "visual_check_scope": "Through248 APK: exact3107-row import, current phrase result and complete225-04 reader visually inspected; earlier broad scenarios remain historical.",
     "latest_corpus_check": "All3107 actual database rows exactly match latest packaged content through248, all seven fields, no extras; integrity_check ok. Both first volumes unchanged. APK also contains four explicit pending source statuses, not a publication-ready claim."
+  },
+  "historical_through272_2026_10_21": {
+    "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
+    "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 13,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "all_3109_packaged_rows_exactly_match_database": true
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 9,
+        "rows_after": 9,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "fb2d8ce4407fc93fb64a357ba34896bf1c75eb64202354805954acb96a99e239",
+      "volume3_asset_sha256": "2fbb053e0c38d8358f6966bed683f814304772c47532ae1ba7ec367edd90a50b",
+      "description": "Update snapshots through272 taken before new UI navigation. Bookmark, nine positions, empty notes/read_chapters, preferences bytes identical. Early snapshot still old3107 rows rejected; later live complete import3108 exact."
+    },
+    "visually_exercised": [
+      "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
+      "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
+    ],
+    "current_visual_checks": [
+      "Unique query маламатийцев finds one new265-06 editorial note in Ihsan.",
+      "After completed transition, complete own note visible under Пояснение редакции · Скрыть and Том3 черновик / Ихсан header; author name retained and classical difference separately described."
+    ],
+    "visual_check_scope": "Through272 APK current note search/result-to-reader actually viewed, source hashes as recorded. Earlier scenarios remain historical.",
+    "latest_corpus_check": "All3108 exact database rows match packaged/repository through272, all seven fields, no extras, integrity ok, protected first two volumes unchanged. Four pending source statuses retained."
   }
 }

@@ -2008,6 +2008,23 @@
       ],
       "finding": "Full Kharrraz, Wasiti, unnamed spirits saying, ShahKirmani through AbuAmribnNujayd, Haddad, AbuHafs, Antaki and Junayd narrative found. Preserve print variants تمكّن vs classical تمكين, عبده vs عبد, عن vs على, تحسبون vs تحسون, head ordering, honorifics and no extra primary dream-introduction. Crucial303-01 Qushayri attributes saying to الكتاني and has مكاشفة اليقين;2019 author الداراني/مكاشفة النفس. Own separate note discloses both attribution/wording differences, without replacing author or copying modern apparatus prose. No new confirmation of supernatural fact or chain strength inferred.",
       "method": "Same-agent actual2019 print, free classical source full indicated passage read, Russian independently reread from Arabic then back-compared by same agent; not external human review."
+    },
+    {
+      "source_ids": [
+        "v3-p319-04",
+        "v3-p319-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_semantic_context_compared_negated_raja_as_fear",
+      "checked_primary_records": [
+        {
+          "path": "data/0310Tabari/0310Tabari.JamicBayan/0310Tabari.JamicBayan.Shamela0000043-ara1",
+          "blob": "28ce64e4bc371994c995a5017d3c3b8568743ff2",
+          "digital_location": "Nooh71:12–14 commentary, PageV23P633–635; all listed interpretations and final preference read; supporting earlier language note PageV09P174"
+        }
+      ],
+      "finding": "Tabari lists IbnAbbas greatness, Mujahid no regard/recognition of greatness, IbnAbbas viaSaid proper magnification, Qatada consequence and IbnZayd obedience, then prefers لا تخافون لله عظمة. He explicitly explains رجاء with preceding negation can mean fear. Combined with author319-05 explicit الرجاء بمعنى الخوف, correct Russian319-04 no longer wrongly says expect greatness FROM God. Preserve2019 IbnAbbas/Mujahid wording لا ترجون not silently replace with Tabari لا ترون. Later IbnKaysan hope of reward retains different context. This is semantic corroboration, not literal attestation of every source wording/chain.",
+      "method": "Same-agent direct2019 image, full targeted classical commentary, Russian-only reread and back-comparison; no independent human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

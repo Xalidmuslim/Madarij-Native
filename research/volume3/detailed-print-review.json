@@ -12874,8 +12874,461 @@
         }
       ],
       "finding": "Actual318 والله أعلم without inserted سبحانه وتعالى. Full direct/hint modes, conceal ownstate/protect truth fromcommon misuse/unfit audience/otherreasons all retained."
+    },
+    {
+      "source_ids": [
+        "v3-p319-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual319 no added تعالى after وقد ذم الله; first الرب تعالى remains. Full three divine proper-knowledge/describing/magnifying negations retained."
+    },
+    {
+      "source_ids": [
+        "v3-p319-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الخوف",
+          "secondary": "المخوف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعرفون",
+          "secondary": "تعرفون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يشكرون",
+          "secondary": "تشكرون",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual319 both رحمه الله, الخوف, third-person يعرفون/يشكرون. Regarded رجاء under prior negation interpreted fear by immediate author explanation and classical Tabari71:13, but later hope of reward IbnKaysan not forced to fear."
+    },
+    {
+      "source_ids": [
+        "v3-p319-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "العبودية",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "هذان بالثناء",
+          "secondary": "بهذين الثناء",
+          "tokens": 2
+        }
+      ],
+      "finding": "Enlarged319 فإذا اقترن بهذين الثناء, not own inverted هذان بالثناء. Printed العبودية retained; complete reverence/love/two inseparable/praise sequence preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p320-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعارض",
+          "secondary": "يعارضا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعرض لتشديد",
+          "secondary": "يعرضا لتشدد",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يحمل",
+          "secondary": "يحملا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged320 three dual verbs يعارضا/يعرضا/يحملا, restore own missing alifs. Print لتشديد retained not secondary لتشدد. Russian plural reference and three separate violations preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p320-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نزغتان",
+          "secondary": "نزعتان",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وسط",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والوادي",
+          "secondary": "كالوادي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الجبلين",
+          "secondary": "جبلين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وكما",
+          "secondary": "فكما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged320 نزعتان not own نزغتان. Keep actual والوادي بين الجبلين and وكما, no extra وسط added. Full valley/mountains, guidance/two misguidances, moderate/two censured extremes, and two kinds of wasted command preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p320-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "قل",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual320 full Quran5:77 begins قل. No secondary omission; prohibition of excess and two-kind division intact."
+    },
+    {
+      "source_ids": [
+        "v3-p320-09",
+        "v3-p321-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الجمرة",
+          "secondary": "الجمرات",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ونحو",
+          "secondary": "او نحو",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual320–321 الجمرة singular, ونحو ذلك عمدا. Extra prayerunit/lifelong fasting including forbidden days/oversized catapult stones/ten Safa-Marwa traversals and deliberate qualifier all retained."
+    },
+    {
+      "source_ids": [
+        "v3-p322-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "عليه",
+          "secondary": "عليهما",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اجاز",
+          "secondary": "جاز",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual322 عليه singular, no inserted من before ذلك and أجاز not جاز. Whole false wine-reasoning explanation distinguished from author criticism and quoted verses not endorsed."
+    },
+    {
+      "source_ids": [
+        "v3-p322-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ام",
+          "secondary": "او",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual322 أم خمر not أو. Full opposed water/wine poetic line and no-intoxication condition retained."
+    },
+    {
+      "source_ids": [
+        "v3-p323-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "حكمة",
+          "secondary": "حكم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "العبادات",
+          "secondary": "العبارات",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للامر",
+          "secondary": "الامر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اوهنت",
+          "secondary": "اذهبت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual323 حكمة, العبادات, بحمله للأمر, أوهنت. Whole heart-gathering claimed purpose versus abandoned prescribed practices preserved as criticized reasoning, no invented practice instruction."
+    },
+    {
+      "source_ids": [
+        "v3-p323-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تعظيم",
+          "secondary": "تعظم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual323 تعظيم not تعظم. All repeated divine-exclusive statements and three censure cases kept; incomplete Russian relative clause repaired."
+    },
+    {
+      "source_ids": [
+        "v3-p324-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "طريقا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual324 no added طريقا. Both opposing groups and second-more-deviant judgement, divine judgement versus object judged distinction all retained in author order."
+    },
+    {
+      "source_ids": [
+        "v3-p325-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "جاحد",
+          "secondary": "جاهل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للقدرة",
+          "secondary": "القدرة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual325 جاحد not جاهل, repeated للقدرة. All three wisdom/power/command-law denials and necessarily qualification preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p325-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اي",
+          "secondary": "ان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يبغى",
+          "secondary": "يبتغى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual325 أي لا يبغى not أن لا يبتغى. This explicit negative plus324-02 supports existing marked Russian [не] at323-06, whose control quote lacks لا; Arabic not silently emended."
+    },
+    {
+      "source_ids": [
+        "v3-p325-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يدافع",
+          "secondary": "يدفع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual325 يدافع not يدفع. Author explicitly finds phrase harder, not simply adopts it. Russian clarifies precedence of knowledge rather than temporal before-ness; original criticism retained."
+    },
+    {
+      "source_ids": [
+        "v3-p326-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual326 no added هو before مالكه الحق. Entire no-compensation, passive witnessing, standing/sitting/right/left, and no-self-earned-reward rationale retained as author charitable reading."
+    },
+    {
+      "source_ids": [
+        "v3-p326-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual326 والله أعلم without inserted سبحانه. Qualified can-understand-without-leaving-truth closing kept, not declared uniquely proven interpretation."
+    },
+    {
+      "source_ids": [
+        "v3-p327-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والذي",
+          "secondary": "والتي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتضمن",
+          "secondary": "تتضمن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual327 والذي and يتضمن masculine retained. Three levels command/judgement/judging God, NOT predetermined object, preserve distinction."
+    },
+    {
+      "source_ids": [
+        "v3-p327-06",
+        "v3-p328-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "حق",
+          "secondary": "حقا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يرى",
+          "secondary": "ترى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "له",
+          "secondary": "لله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واي",
+          "secondary": "اي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged327 حقا with final alif restored, keep printed third-person يرى, له not لله and وأي with و. Entire David Israeli-report wording/genre and question/three prior divine favors/right over fathers retained, no new authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p328-04",
+        "v3-p329-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "باختياره",
+          "secondary": "باختيار",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both leaves no added عز وجل/لك; printed باختياره ما اختاره retained. Divine command/religion versus decree distinctions preserved; no use of decreed sins as approval, explicitly excluded in following329-02."
     }
   ],
-  "record_count": 623,
+  "record_count": 643,
   "unreviewed_candidates_remain": true
 }
