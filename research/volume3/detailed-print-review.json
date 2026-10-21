@@ -17723,8 +17723,513 @@
         }
       ],
       "finding": "Actual يجري not يجيء and رحمه الله retained. Full alternative scope and author end-of-fana qualification438-07 read, with three modes of signification438-03 distinguished."
+    },
+    {
+      "source_ids": [
+        "v3-p440-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وافترى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "مبنى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "مبني",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no added وافترى / عز وجل, and مبني in its printed place. Full three objections439–440, all counterquestions and distinction between open vision vs partial heart witnessing retained."
+    },
+    {
+      "source_ids": [
+        "v3-p440-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "العمل",
+          "secondary": "الامل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يبعث",
+          "secondary": "ينبعث",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "امن",
+          "secondary": "امل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual العمل, يبعث and أمن, not old الأمل / ينبعث / أمل. Keep threefold security terms, necessity/absence condition and despair result; do not normalize security to hope."
+    },
+    {
+      "source_ids": [
+        "v3-p441-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "حزنه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "حزنه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وقعد به حزنه precedes ولكن إذا قعد به الحزن; do not move possessive noun to first sentence. All sadness/joy and sitting/standing parallel images retained."
+    },
+    {
+      "source_ids": [
+        "v3-p441-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اليمن",
+          "secondary": "المنن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual حافات اليمن in main441-04 quote. This is a different printed reading from442-01 المنن and is retained; complete prefatory rank statement intact."
+    },
+    {
+      "source_ids": [
+        "v3-p441-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no extra تعالى after first الله; existing تعالى at later reference retained. Full Paradise food/drink/houris vs divine-nearness comparison and two-degree claim intact."
+    },
+    {
+      "source_ids": [
+        "v3-p441-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فيه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اليمن",
+          "secondary": "المنن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no added فيه and actual اليمن in repeated441-06 quote; do not replace by older المنن or by neighboring442 reading. Complete cause favour/gifts account retained."
+    },
+    {
+      "source_ids": [
+        "v3-p442-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ينبت",
+          "secondary": "تنبت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اليمن",
+          "secondary": "المنن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المن",
+          "secondary": "المنن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ينبت, but enlarged word is المنن in both حافات المنن / جوانب المنن: restore own different اليمن and missing ن. Russian repeated quote favours corrected; original441 Yemen/auspiciousness and442-02 remain unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p442-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "باليمن",
+          "secondary": "بالمنن",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والمنان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual باليمن at442-02, no added والمنان in names list. All five names and restrictive scope retained, no global minan substitution."
+    },
+    {
+      "source_ids": [
+        "v3-p442-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعطل المعطلين",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual no added وتعطيل المعطلين; complete purification from two distortions and two reasons intact."
+    },
+    {
+      "source_ids": [
+        "v3-p442-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يفضله",
+          "secondary": "يفضل عليه به ويفضله",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual ما يفضله به على غيره, no inserted يفضل عليه به expansion. Full favour/benevolence/signs and distinction from general attributes retained."
+    },
+    {
+      "source_ids": [
+        "v3-p442-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يناله",
+          "secondary": "ينال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual يناله with suffix, not ينال. Both non-exclusive goal and drawn-in personal benefits clauses kept. Following lexical tugging explanation made precise in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p442-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يغلب",
+          "secondary": "يغلبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ولا يغلب without added ه, not ولا يغلبه. Source vocalization/context supports passive being defeated, Russian терпение...не будучи побеждённым retained; all contrast with third degree complete."
+    },
+    {
+      "source_ids": [
+        "v3-p443-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النار",
+          "secondary": "بالنار",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وشبه",
+          "secondary": "وشبهه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full page443: شبيه النار (no added ب); وشُبّه passive, no suffix ه. Pure love and inward burning clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p443-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والتنغيص",
+          "secondary": "و التنغيص",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print443 contiguous والتنغيص; secondary spacing supplies no missing clause. Separate analogy to التكدير kept; Russian reread smoothed."
+    },
+    {
+      "source_ids": [
+        "v3-p443-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والسلوة",
+          "secondary": "و السلوة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print443 contiguous والسلوة; all three explanations of relief from love retained, including deliberate forgetting."
+    },
+    {
+      "source_ids": [
+        "v3-p444-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تخليصه",
+          "secondary": "تخلصه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print444 includes رحمه الله and تخليصه with ي; no deletion or replacement by secondary تخلصه. Distinction from longing accompanied by patience retained."
+    },
+    {
+      "source_ids": [
+        "v3-p444-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يبقى",
+          "secondary": "يبقي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اتساع",
+          "secondary": "اتساعا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتعلقه",
+          "secondary": "وتعوقه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged actual444 shows final dotted ي in يبقي and unequivocal وتعوقه بأنفاسهم, not own وتعلقه. اتساع has no accusative alif. Correct both Arabic forms and Russian hindrance instead of attachment; preserve breathing metaphor."
+    },
+    {
+      "source_ids": [
+        "v3-p445-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بذكر",
+          "secondary": "بتذكر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual445 بذكر قدومه, not secondary بتذكر; sweetness of death and traveler returning to family remain complete."
+    },
+    {
+      "source_ids": [
+        "v3-p446-08"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يبقى",
+          "secondary": "يبقي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged446 has causative يُبقي with final dotted ي, not own يبقى. Correct source; existing causal Russian leaves no form already fits. No ontological claim added to reported disappearance in witnessing."
+    },
+    {
+      "source_ids": [
+        "v3-p447-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ذكره",
+          "secondary": "ذكر به",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual447 ذكره الماء, no secondary separate به. Preserve proposed thirst reading as author of Manazil interpretation, not IbnQayyim adoption; full6:76 and categorical next rejection retained."
+    },
+    {
+      "source_ids": [
+        "v3-p447-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "بالتعلق",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print447 includes بالتعلق; retain and naturalize Russian. Both rejected readings and subsequent alternatives447-04 preserved separately."
+    },
+    {
+      "source_ids": [
+        "v3-p448-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ولع",
+          "secondary": "اولع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged448 وقد وُلِع به, no initial أ in secondary أولع. Retain both lexical illustrations."
+    },
+    {
+      "source_ids": [
+        "v3-p448-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والشاهد محل",
+          "secondary": "على",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual448 والشاهد محل الاعتبار; do not replace by secondary على. Printed ولما opening has no explicit later جواب here; no invented author clause added to compensate."
+    },
+    {
+      "source_ids": [
+        "v3-p448-08",
+        "v3-p449-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فشديد",
+          "secondary": "فهو شديد",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الصادق",
+          "secondary": "عن الصادقين",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تثبتا",
+          "secondary": "تثبيتا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وبصيرة",
+          "secondary": "بصيرة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged448 confirms فهو شديد and يرويها عن الصادقين. Restore own missing هو/عن and plural; print تثبتا and وبصيرة retained against secondary. Whole449 continuation and two possible readings of يرويه compared, source bridge preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p449-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يعني",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فقرت",
+          "secondary": "فقرر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual449 فقرت عنده صحته with ت and no added يعني. Distinction الرواية/الري and explicit damma on initial ي retained; no normalization to secondary فقرر."
+    },
+    {
+      "source_ids": [
+        "v3-p450-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "العبد",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual450 includes له and العبد; no deletions. Entire obligation-before-departure argument and next three categories retained; لا يحب not unconditional prohibition."
     }
   ],
-  "record_count": 861,
+  "record_count": 887,
   "unreviewed_candidates_remain": true
 }
