@@ -328,5 +328,27 @@
     "reason": "Control p.26 has sentence stop after لنفسه; removed accidental duplicated comma before full stop. No change to Quran 2:219 or its established boundaries.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p152-04",
+    "printed_page": 152,
+    "previous_ar": "ولهذا كان ركوبه في مسراه يسبق خَطوُه الطّرْفَ، فيضع قدمه عند منتهى طرْفه، مشاكِلًا لحال راكبه، وتعدّى شأوه الذي سبق به العالم أجمع في سيره، فكان قدم البُراق لا تتخلّف عن موضع نظره، كما كان قدمه صلى الله عليه وسلم لا يتأخّر عن محلِّ معرفته.",
+    "control_print_ar": "ولهذا كان ركوبه في مسراه يسبق خَطوُه الطّرْفَ، فيضع قدمه عند منتهى طرْفه، مشاكِلًا لحال راكبه، وبُعْدِ شأوه الذي سبق به العالم أجمع في سيره، فكان قدم البُراق لا تتخلّف عن موضع نظره، كما كان قدمه صلى الله عليه وسلم لا يتأخّر عن محلِّ معرفته.",
+    "previous_ru": "Поэтому на его ночном пути животное, на котором он ехал, опережало взгляд своим шагом, ставя ногу там, где заканчивался взор. Это соответствовало состоянию всадника, который в своём движении далеко превзошёл весь мир. Нога Бурака не отставала от того места, куда достигал взгляд, как и шаг Пророка, да благословит его Аллах и приветствует, не отставал от достигнутого им познания.",
+    "corrected_ru": "Поэтому на его ночном пути животное, на котором он ехал, опережало взгляд своим шагом, ставя ногу там, где заканчивался взор. Это соответствовало состоянию всадника и тому, как далеко он опередил в своём движении весь мир. Нога Бурака не отставала от того места, куда достигал взгляд, как и шаг Пророка, да благословит его Аллах и приветствует, не отставал от достигнутого им познания.",
+    "reason": "Direct 7x control PDF p.152 confirms وبُعْدِ شأوه, a genitive noun coordinated with حال راكبه, not a finite verb وتعدّى. Russian now preserves both coordinated comparisons; first and last parts remain intact. Final Russian separately reread and back-compared against full print paragraph.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
+  },
+  {
+    "source_id": "v3-p152-04",
+    "printed_page": 152,
+    "previous_ar": "ولهذا كان ركوبه في مسراه يسبق خَطوُه الطّرْفَ، فيضع قدمه عند منتهى طرْفه، مشاكِلًا لحال راكبه، وبُعْدِ شأوه الذي سبق به العالم أجمع في سيره، فكان قدم البُراق لا تتخلّف عن موضع نظره، كما كان قدمه صلى الله عليه وسلم لا يتأخّر عن محلِّ معرفته.",
+    "control_print_ar": "ولهذا كان مركوبه في مسراه يسبق خَطوُه الطّرْفَ، فيضع قدمه عند منتهى طرْفه، مشاكِلًا لحال راكبه، وبُعْدِ شأوه الذي سبق به العالم أجمع في سيره، فكان قدم البُراق لا تتخلّف عن موضع نظره، كما كان قدمه صلى الله عليه وسلم لا يتأخّر عن محلِّ معرفته.",
+    "previous_ru": "Поэтому на его ночном пути животное, на котором он ехал, опережало взгляд своим шагом, ставя ногу там, где заканчивался взор. Это соответствовало состоянию всадника и тому, как далеко он опередил в своём движении весь мир. Нога Бурака не отставала от того места, куда достигал взгляд, как и шаг Пророка, да благословит его Аллах и приветствует, не отставал от достигнутого им познания.",
+    "corrected_ru": "Поэтому на его ночном пути животное, на котором он ехал, опережало взгляд своим шагом, ставя ногу там, где заканчивался взор. Это соответствовало состоянию всадника и тому, как далеко он опередил в своём движении весь мир. Нога Бурака не отставала от того места, куда достигал взгляд, как и шаг Пророка, да благословит его Аллах и приветствует, не отставал от достигнутого им познания.",
+    "reason": "Direct 10x control p.152 crop confirms مركوبه, his mount, not ركوبه, his riding. Existing Russian животное, на котором он ехал already matches the printed noun and is retained. Full paragraph and all four secondary candidate differences compared; printed به and تتخلف also retained despite older witness differences.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

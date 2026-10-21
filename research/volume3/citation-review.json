@@ -1282,6 +1282,317 @@
       "finding": "Bayhaqi 17632 explicitly records Abu Bakr proposal, Umar objection to blood money for Muslim battle deaths and subsequent agreement; Bayhaqi distinguishes return of extant property from compensation for destroyed property. This supports context and role/victim attachment for p.55 Russian clarification. Author wording/generalization preserved; not an independent proof of every blanket property claim or a new legal ruling. Bukhari 7221 is shorter and does not contain the entire compensation discussion; do not cite it as if it did.",
       "reviewed_on": "2026-10-21",
       "method": "Manual same-agent reading of classical primary-body parallels and author Arabic/Russian. Modern apparatus not imported; not independent human editing or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p076-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_definition_not_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author definition of humility toward religion, not separately quoted prophetic speech.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p078-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "pending_earlier_attribution_source",
+      "checked_primary_records": [],
+      "finding": "Author’s report of Shafii consensus dictum preserved exactly in meaning. A direct earlier source for this precise attribution not located in this pass; do not turn this entry into an authenticated chain.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p081-06",
+        "v3-p082-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "4418, Kab/Tabuk narrative"
+        }
+      ],
+      "finding": "Acceptance of outward excuses and entrusting inner secrets to God found. Russian inner-judgment clauses made natural without changing acceptance condition.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p084-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "7373"
+        }
+      ],
+      "finding": "Muadh question, worship/no shirk and non-punishment condition found; author adds بالنار within retained paraphrase. No new theological condition or promise added.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p086-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0360Tabarani/0360Tabarani.MucjamAwsat/0360Tabarani.MucjamAwsat.Shamela0028171-ara1",
+          "blob": "1bb7b8988a57ca29e8179c558a48fca4588cd1c4",
+          "digital_report_number": "6895"
+        }
+      ],
+      "finding": "Exact Yusuf ibn Muhammad/from father/from Jabir chain and noble-character/excellent-actions report located. Primary has بتمام ... وكمال; author لتمام ... ومحاسن. Failed searches in two other similarly titled collections were not accepted as evidence of absence. No new independent authenticity grade assigned.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p087-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_parallel_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_report_number": "Futuwwa section between digital PageV02P383–384"
+        }
+      ],
+      "finding": "Jafar/Shقيق narrative and all gratitude/patience/preference contrasts found. Source uses qualified وقيل and author فيذكر; Russian Передают retained, not recast as a verified historical fact.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p089-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_parallel_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_report_number": "Futuwwa section between digital PageV02P379–380"
+        }
+      ],
+      "finding": "Daqaq’s exact self-versus-community comparison found. Preserved attribution to Daqaq and embedded quoted expressions, not a new direct prophetic grading.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p093-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "769, night prayer"
+        }
+      ],
+      "finding": "Both litigation phrases found within night-prayer opening. Author applies them to futuwwa; Russian speaker and source-commentary boundary retained.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p095-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_eyewitness_discussion_not_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author personal evaluation of Ibn Taymiyya and an unnamed companion quote; preserved as author account without inventing a speaker name or independent confirmation.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p097-05",
+        "v3-p098-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_argument_with_unnamed_quote",
+      "checked_primary_records": [],
+      "finding": "Author discusses proof versus the Messenger as guide, with anonymous quoted saying. Not a direct prophetic hadith; no additional named attribution invented.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p114-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_theological_commentary_not_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author comparative evaluation of prophetic reverence and servant humility; not a distinct verbatim hadith quotation.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p127-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_parallel_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_report_number": "Junayd biography between digital PageV01P078–079"
+        }
+      ],
+      "finding": "Junayd Quran/hadith qualification and constrained-by-Book/Sunna maxim found. Author limited-versus-universal knowledge argument and Russian qualifications retained; no blanket dismissal of learning added.",
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p131-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_parallel_wording_differs",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2584"
+        }
+      ],
+      "finding": "Partisan Ansar/Muhajir fight during expedition and ما بال دعوى الجاهلية found; author adds وأنا بين أظهركم, not present in checked Muslim 2584. Retain author quotation, no claim of exact identity to one report. Muslim 1059 has legitimate battlefield summoning with similar calls in another setting and was not confused with the condemned partisan incident.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p131-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1661, including Zuhayr/Abu Muawiya variant"
+        }
+      ],
+      "finding": "Abu Dharr جاهلية statement and follow-up about advanced age found, with affirmative reply; all speaker roles and negation/affirmation preserved.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p148-06",
+        "v3-p149-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "4017"
+        }
+      ],
+      "finding": "Awrah covering, question about solitude and God more entitled to modesty found. Author applies report to adab; no new independent grade added.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p150-03",
+        "v3-p150-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_reference_and_author_commentary",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_report_number": "Adab section after digital PageV02P444"
+        }
+      ],
+      "finding": "Qushayri indeed opens Adab with Quran 53:17 and قيل حفظ آداب الحضرة. Author longer gaze/adab elaboration retained as commentary, not falsely attributed in full to a named tafsir authority.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p152-02",
+        "v3-p152-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_theological_commentary_not_direct_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author compares Musa and Muhammad and develops ascension/afterlife proximity imagery with Quran quotations. Speaker/temporal distinctions in Russian retained; classification does not independently authenticate every theological/historical claim or turn commentary into verbatim prophetic speech.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p152-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "control_author_ellipsis_primary_source_pending",
+      "checked_primary_records": [],
+      "finding": "Control p.152 visually confirms ellipsis immediately after أكرم الخلق على الله. Translator preserved the author/edition ellipsis and did not omit a printed continuation. Full earlier hadith source for this Musa fragment not directly compared in this pass; do not invent a completion or assign an authenticity grade from the modern editor footnote.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p152-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_core_and_control_transcription_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "162"
+        }
+      ],
+      "finding": "Buraq placing hoof at furthest reach of sight found; author adds own rider/speed analogy. Direct 7x control image revealed own transcription error وتعدّى شأوه, corrected to وبُعْدِ شأوه with matching Russian coordination. Arabic correction history and hashes updated; no secondary variant substituted for print.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p154-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "implicit_primary_text_allusion_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2819"
+        }
+      ],
+      "finding": "Divine love of seeing blessing’s trace found exactly; author then applies this to standing in prayer. Implicit allusion lacks Prophet/hadith keyword and demonstrates non-exhaustiveness of the automated candidate selection.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p154-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "428; 429"
+        }
+      ],
+      "finding": "Lifting eyes toward heaven during prayer prohibition found in both adjacent records; author succinct allusion retained.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p154-04",
+        "v3-p154-05",
+        "v3-p154-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_recollection_of_teacher_argument_not_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Three linked paragraphs explicitly framed as what author heard Ibn Taymiyya say. Russian keeps the teacher’s argument and its attribution; no independent authentication or new theological conclusion supplied.",
+      "method": "Manual same-agent comparison of classical source body with author text and Russian, or explicit incomplete/non-hadith classification as labeled. The recording script performs no semantic verification; no independent human review or full isnad assessment claimed."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

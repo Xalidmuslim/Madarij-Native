@@ -3682,14 +3682,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p081-06+v3-p082-01": {
-      "sha256": "3e89e39acdabff98c202527e6e2a5a5c053914f02dff85bab7e32cfbc3ea1c3a",
+      "sha256": "8e668cdb474f40db6be376b194e3a00a3072d12ee3c03c2c2903db06947723a9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify Russian entrusting of inner matters to God as leaving judgment of what is hidden to God, replacing unnatural nominal сокровенное предоставить. Both parallel clauses and acceptance regardless of truth/falsehood retained. Control pp.81–82 inspected, Russian reread separately, then back-compared; Bukhari 4418 classical narrative also compared. Same-agent self-review only."
     },
     "v3-p082-02": {
       "sha256": "6bfba635ddaab6d6096b5d40141fa2427244e93faf2366bce800692917c1578f",
@@ -7539,14 +7540,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p152-04": {
-      "sha256": "fa50b9a49eac163bdd283038e45d1a265f57e1bfa9a36d1070e6529ffe6abdd9",
+      "sha256": "76267e65c093f5013cff2ef7365cba6694c50bb87da63a5c14ca020f3a5d67c5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 10x control p.152 crop confirms مركوبه, his mount, not ركوبه, his riding. Existing Russian животное, на котором он ехал already matches the printed noun and is retained. Full paragraph and all four secondary candidate differences compared; printed به and تتخلف also retained despite older witness differences. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p152-05+v3-p153-01": {
       "sha256": "e074ff9e3bdd22343462710e7e9341e6b624388c0e06e333d661ebf2c703f713",
