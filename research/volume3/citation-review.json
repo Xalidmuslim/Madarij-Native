@@ -1945,6 +1945,69 @@
       ],
       "finding": "Both base reports support relative eloquence in presenting case. Muslim first وبعضكم أن يكون ألحن, author وبعضهم أن يكون ألحن; Muslim later بعضهم أن يكون أبلغ. Keep author ألحن/third-person wording without conflating variants. All courtroom judgement/fire warning outside author short lexical illustration not imported. No new independent authenticity grade.",
       "method": "Same-agent actual control image and full indicated free classical digital report read; no independent human editing or new isnad grade."
+    },
+    {
+      "source_ids": [
+        "v3-p307-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_lexical_range_checked_eye_transcription_error_corrected",
+      "checked_primary_records": [
+        {
+          "path": "data/0393IbnHammadJawhari/0393IbnHammadJawhari.SihahTajLugha/0393IbnHammadJawhari.SihahTajLugha.Shamela0023235-ara1",
+          "blob": "3dd28dab000dbc24e1d0e7e0d9c7402fe37e8eb8",
+          "digital_location": "Complete شقر entry and صهب entry"
+        },
+        {
+          "path": "data/0666IbnAbiBakrZaynDinRazi/0666IbnAbiBakrZaynDinRazi.MukhtarSihah/0666IbnAbiBakrZaynDinRazi.MukhtarSihah.JK000107-ara1",
+          "blob": "08c8b33915758e2cb4db8947e464c75bcc58f2e8",
+          "digital_location": "Complete ش ق ر entry"
+        }
+      ],
+      "finding": "Actual شقرة is redness/fair coloration, Sihah explicitly human pure redness and white-leaning skin, plus hair usage under صهب. Own earlier شترة eyelid eversion wrong. Russian uses reddish hair/fair skin rather than unqualified modern blonde or eyelid term. This lexical comparison does not endorse historical physiognomic claims, which author himself limits in308.",
+      "method": "Same-agent actual2019 print, free classical source full indicated passage read, Russian independently reread from Arabic then back-compared by same agent; not external human review."
+    },
+    {
+      "source_ids": [
+        "v3-p301-05",
+        "v3-p302-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "tirmidhi_report_and_author_source_checked_no_new_grade",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "3127, full AbuSaid/MusabibnSalam/AmribnQays/Atiyya chain and matn plus author remark"
+        }
+      ],
+      "finding": "Report wording and subsequent Quran15:75 found in Tirmidhi3127; body author calls it غريب and known only by this route. That reported classification is not an independent grade or proof of strong chain; no modern apparatus isnad conclusions imported into reader. Related Qushayri Firasa chapter opening also read with variant added تعالى, not substituted.",
+      "method": "Same-agent actual2019 print, free classical source full indicated passage read, Russian independently reread from Arabic then back-compared by same agent; not external human review."
+    },
+    {
+      "source_ids": [
+        "v3-p302-08",
+        "v3-p302-09",
+        "v3-p303-01",
+        "v3-p303-02",
+        "v3-p303-03",
+        "v3-p303-04",
+        "v3-p303-05",
+        "v3-p304-01",
+        "v3-p304-02",
+        "v3-p304-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_firasa_sayings_compared_variants_preserved_one_own_reader_note",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "PageV02P385–389 selected complete quoted sayings/chain contexts, Junayd account immediately before PageV02P396"
+        }
+      ],
+      "finding": "Full Kharrraz, Wasiti, unnamed spirits saying, ShahKirmani through AbuAmribnNujayd, Haddad, AbuHafs, Antaki and Junayd narrative found. Preserve print variants تمكّن vs classical تمكين, عبده vs عبد, عن vs على, تحسبون vs تحسون, head ordering, honorifics and no extra primary dream-introduction. Crucial303-01 Qushayri attributes saying to الكتاني and has مكاشفة اليقين;2019 author الداراني/مكاشفة النفس. Own separate note discloses both attribution/wording differences, without replacing author or copying modern apparatus prose. No new confirmation of supernatural fact or chain strength inferred.",
+      "method": "Same-agent actual2019 print, free classical source full indicated passage read, Russian independently reread from Arabic then back-compared by same agent; not external human review."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

@@ -12220,8 +12220,373 @@
         }
       ],
       "finding": "Actual300 فقال تعالى present. Conditional divine volition versus sworn unconditional recognition by speech kept, plus three distinct explanation terms تعريض/فحوى/مغزى."
+    },
+    {
+      "source_ids": [
+        "v3-p301-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المنطق في",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual301 فساد الإعراب وحقيقته تغيير الكلام with no المنطق في inserted. Third numbering retained as printed; not silently corrected from modern editorial suggestion."
+    },
+    {
+      "source_ids": [
+        "v3-p302-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وثوب",
+          "secondary": "كوثوب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged302 يثب على القلب كوثوب الأسد; missing ك restored. Full prey passive فعيلة/مفعولة and three noun-pattern examples preserved; no metaphor shortened."
+    },
+    {
+      "source_ids": [
+        "v3-p302-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "سواطع",
+          "secondary": "شعاشع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حملت",
+          "secondary": "جملة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual302 رحمه الله, سواطع, حملت السرائر, not secondary شعاشع/جملة. Full occult witnessing quote kept as attribution, Russian light and rooted-knowledge images made natural."
+    },
+    {
+      "source_ids": [
+        "v3-p303-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual303 رحمه الله and مكاشفة النفس; secondary omission and modern note alternative اليقين not imported. Full direct unseen/perception/faith-station predicate retained."
+    },
+    {
+      "source_ids": [
+        "v3-p303-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "ابو",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بدوام المراقبة",
+          "secondary": "بالمراقبة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual303 أبو عمرو and بدوام المراقبة, no omission of أبو or دوام. Complete five-condition maxim and never-error qualification kept."
+    },
+    {
+      "source_ids": [
+        "v3-p303-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اخر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual303 no extra آخر after معارض. Two hypothetical intrusive thought cases, same-kind condition and mere self-talk conclusion retained."
+    },
+    {
+      "source_ids": [
+        "v3-p304-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "رسول الله",
+          "secondary": "النبي",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "راسه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "راسه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual304 رحمه الله, رسول الله and رفع إليه رأسه order retained. Full disguised Christian youth/question/bowed head/command/conversion sequence kept."
+    },
+    {
+      "source_ids": [
+        "v3-p305-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual305 ما سألتك without extra عنه. Entire Swad/Umar exchange and final abbreviated story pointer retained; missing primary longer story not fabricated."
+    },
+    {
+      "source_ids": [
+        "v3-p306-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بالعلم والايمان",
+          "secondary": "الله بالايمان والعلم",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual306 تعالى first quote, later فأحياه بالعلم والإيمان without secondary added الله/order reversal. Quran6:122 and knowledge/faith versus Quran/faith pairings retain printed order."
+    },
+    {
+      "source_ids": [
+        "v3-p306-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تواريخهم",
+          "secondary": "تاريخهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual306 تواريخهم plural. Craft expertise/histories/reports/near-half medical science/experience all preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p307-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "على كبره",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وبجمود",
+          "secondary": "وبخمود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual307 وبكبره على كبره and وبجمود العين retained. Entire head/chest/eye observations preserved as historical author discussion, not turned into modern verified science; no rhetorical case omitted."
+    },
+    {
+      "source_ids": [
+        "v3-p307-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شترة",
+          "secondary": "شقرة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "داخلته",
+          "secondary": "داخله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged307 شقرة not own شترة: Russian eyelid eversion corrected to fair-hairedness. Printed داخلته retained; surrounding eye/tongue/mirror/sign analogies unchanged. Necessary caution follows308, retained in full."
+    },
+    {
+      "source_ids": [
+        "v3-p308-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وخلطتهم",
+          "secondary": "بخلطتهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual308 وخلطتهم not بخلطتهم. Full acquired habits overcome bodily constitution counterexample retained with habits/practice/character ending."
+    },
+    {
+      "source_ids": [
+        "v3-p308-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "للسيما",
+          "secondary": "للسيماء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وايمائه",
+          "secondary": "وايمانه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ينظر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual308 للسيما and وإيمائه not وإيمانه, no added ينظر. Full eye/ear/heart triple, all eight speech categories and two coin-assay analogies preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p309-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "بهم",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "نقدهم",
+          "secondary": "ناقدهم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual309 يمر بهم, نقدهم, no extra من before تحت. Isnad/matn and silver/alloy comparison retained without suggesting good-looking chain authenticates false matn."
+    },
+    {
+      "source_ids": [
+        "v3-p309-09",
+        "v3-p310-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هذا",
+          "secondary": "وهذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual309–310 ends هذا قبل without added و. Date699, breaking Muslim army, both non-general killing/captivity limits, wealth plunder and before invasion intention retained."
+    },
+    {
+      "source_ids": [
+        "v3-p310-05",
+        "v3-p311-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالمظفر ركن الدين بيبرس الجاشنكير",
+          "secondary": "بالجاشنكير",
+          "tokens": 5
+        },
+        {
+          "tag": "replace",
+          "control": "قال",
+          "secondary": "فقال",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وفارقه",
+          "secondary": "ومفارقة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تقلب",
+          "secondary": "تغلب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual310 الملقب بالمظفر الجاشنكير الملك: own inserted ركن الدين بيبرس removed. Other printed قال, وفارقه, فقيل له and311 تقلب retained, not غلب from secondary. Full prostration gratitude, timing question, harnessed horses/turn of state, heard directly/through report distinction retained."
     }
   ],
-  "record_count": 592,
+  "record_count": 609,
   "unreviewed_candidates_remain": true
 }

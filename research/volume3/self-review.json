@@ -15948,24 +15948,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p302-05": {
-      "sha256": "68c1a8b0ad3f7dce007d35555e8a7084342cbeb0bc35fa2008c7aa8fe3b2ee93",
+      "sha256": "cdb7e12fd9814121774ca29abbbf3fa588615c6dabaf799bdcc20a6ac79efc7b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Keep ornament metaphor الحالي/العاطل with contextual virtues explicit, not an unexplained jewelry distinction. Truth/falsehood and truthful/liar pairs unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p302-06": {
-      "sha256": "c781648ae7536b2ab39de7935704b7e5c8baa38c3bc32152d5789cd161a2c3b3",
+      "sha256": "fb7d42ad980e6d30b9e85fb0e31a2e52d2a7bab8c4fb01e44e148b5083baf689",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged302 reads يثب على القلب كوثوب الأسد, not own cognate accusative وثوب. Restore missing ك; Russian comparison как already present. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p302-07": {
       "sha256": "2f9d59e2d3dc7cf3dadb24d1aef5f00ff30d297d9e49a16e584c96cfad016600",
@@ -15978,24 +15980,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p302-08": {
-      "sha256": "2ac86505fc01c5dfbe586525ca5df5b71e13ab17abe567a319fb246fe88d157d",
+      "sha256": "b719843ba21350eb2dcef52a374226225b1428504404d6752b5e1d322beedda2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove Arabic прошедшее по языку calque; preserve true judgment and servant speaker, absence of distraction/error and quotation attribution. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p302-09": {
-      "sha256": "55b24374d80c8ba1c21aabb75865a7b4ebec8894afd1e97e7b26e925dd69f565",
+      "sha256": "e4ba04355710471995d630551b8bacf86afb40b91a49571abb7a98347bc860c0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "أنوار is lights, not fires; сواطع rendered shining rays. Firmly established knowledge تمكّن kept; full hidden-to-hidden journey, witnessing and divine showing retained, no independent endorsement of mystical theory. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p303-01": {
       "sha256": "f9a0b8352c308c8fd85541c13c6c752728c7379605f3d1a4279ed0d1e1bd531f",
@@ -16018,14 +16022,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p303-03": {
-      "sha256": "d0266a05b33db7a2fa4059f4d2d41a39d089d212d6d4440083502a055db4635a",
+      "sha256": "800790ba6e5c04901e8d23c2223ba1024cda66ff60bd784d58dfaaaa58031dd6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify nounless inner/outer Russian while preserving continual بدوام المراقبة, all five conditions and two assertions of unerring perception as quoted scholarly view. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p303-04": {
       "sha256": "e3cd7a7572a41f41d4105c51183af496895d0e381d0db5d2bc41c0c4388fdb03",
@@ -16108,14 +16113,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p305-03": {
-      "sha256": "72167c767d037080f0187f68549a1888c6de696c0d40553865a03881350d125f",
+      "sha256": "4b99b1006f6c8a297f819d23a5188180e994c2f255e278b0a6d92d81c137b7c9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore third printed repeated رضي الله عنه rather than omitting author repeated prayer; narrative and direct speech unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p306-01": {
       "sha256": "a5bb497a2b634d842bd4f8fce337ba50e9897f3c8c1c1d44e39c582f96d9a87a",
@@ -16148,24 +16154,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p306-04": {
-      "sha256": "61dc66c91bd6b81e94e1f396ae512679bf4d0471444d9aae86db5363121b0144",
+      "sha256": "ac27dc106057f89bf44e9b4356efc0ac70f35a330219d6aba40a3297a4d81e8d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual الرياضة denotes spiritual training here, not physical exercises. All four means, degree of unburdening, believers/disbelievers and neither faith nor sainthood inference preserved. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p306-05": {
-      "sha256": "429f8f9016f3466606338e20d7fede046f7a1689ee3ded6075c2fcfa50ca06a2",
+      "sha256": "64891e1984bcd3a54c7fea701695b3fc1be5692f20fb846516ba1cc878c47104",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "كشفها جزئي in author contrast means particular discoveries, not necessarily incomplete information; surrounding rulers/dream interpreters/doctors examples and both negations retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p306-06": {
       "sha256": "5bb41738242421b865fdcbf57e1e7a381bff14a9659f8a29dbcc7dcfe1d3ff5d",
@@ -16198,24 +16206,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p307-03": {
-      "sha256": "e3b0ab5f3d757377b28c8ef990815da8e2141ab7acf368a776af910335f04522",
+      "sha256": "f65f6c29b29691c0f5ef9dd93e0da4abf80cf303377b7725d087992713fc4914",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "خيانة is betrayal/treachery, not religious disbelief or an added changing quality. Preserve all eye shape/redness/movement signs and three inferred descriptors as historical author content. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p307-04": {
-      "sha256": "c489fa54557a4fea9cbec397b795a5f0d1d9974199eec3650ba2cf6164e315c2",
+      "sha256": "f4f0d9b7f377bd4d6adc199778669ad5fc17361958bf3301537670c375037743",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Further classical lexical check: Jawhari Sihah شقر defines human حمرة صافية وبشرته مائلة إلى البياض, صهب explicitly شقرة في شعر الرأس; Mukhtar agrees. Expand classical phenotype meaning rather than narrower modern blonde-only rendering. Own incorrect eyelid sense stays removed. No claim physical features validate character inference;308 author limitations retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p307-05": {
       "sha256": "80e9466e6c9912bf4a8445c99171316d462f5bcc6bcba17b3fecd9fb4dc58170",
@@ -16358,34 +16368,37 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p309-08": {
-      "sha256": "2717c8b581d98dc48c240df8b96f9be724a3211a91fdda29d3d37b40286f6ca1",
+      "sha256": "c82d8d0fe369ecf84fbe1b5b1e55a0b836813e06e9d21e5d9f3064bdc651b11c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore repeated emphatic أعظم وأعظم rather than compressing it; repair unidiomatic для ее случаев. Eyewitness versus unobserved reports distinction remains. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p309-09+v3-p310-01": {
-      "sha256": "3a76054346f225f071fd5f87b0712ff3aaf2883ab77bf0497f6ec53f36e73c71",
+      "sha256": "0d10a38a99d5c2e48011ff65683b095d3f4ee500e7b5fd178c8c4480bc7c6d14",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Make contextually implied Islamic chronology explicit for Russian reader, no Gregorian conversion or new historical date supplied. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p310-02": {
-      "sha256": "6dd569916a63ed01ab73c81f9cd178f5c3f153f4d6f5eb87b30b2bb88bbd3fc6",
+      "sha256": "5341fa9886a8f72880c0be2f0567e68799bb35dd6351a7196ae30dd34b811b3d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Same explicit Islamic chronology as699; retain all attributed foretelling, oath counts, first-hand heard testimony and two direct quotations. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p310-03": {
       "sha256": "d93eca59cf13a3111651f54a3f830c151f3b57d5e2d6bdbdba7d7df99356dce9",
@@ -16408,14 +16421,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p310-05+v3-p311-01": {
-      "sha256": "602a55e1efe828c410259bce43f4281eeff2ef8c78d68c426576c9bc15c22c88",
+      "sha256": "613c6d2b9cde5f790d17ce501be6289bc1714c9b1baccf2880973a93d7725a2b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual310 names الملقب بالمظفر الجاشنكير only. Remove own unsupported inserted ركن الدين بيبرس from author source/translation; printed المظفر retained despite secondary shorter بالجاشنكير. No historical biographical claim silently imported. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p311-02": {
       "sha256": "20690dde50d8ee3dc08901b21235f57592b48abd8e441eb44226d3eaad8d95af",
