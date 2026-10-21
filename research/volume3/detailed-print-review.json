@@ -4998,12 +4998,449 @@
     },
     {
       "source_ids": [
+        "v3-p131-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالمسلمين",
+          "secondary": "ب المسلمين",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "عباد",
+          "secondary": "وعباد",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الدعوى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كالفلانية",
+          "secondary": "ك الفلانية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p132-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "واحد",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المسؤول",
+          "secondary": "المسئول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p132-05",
+        "v3-p133-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p133-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "ما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "ما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p134-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لدواعي الحقيقة",
+          "secondary": "لداعي الحقيقية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p134-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مسمعة",
+          "secondary": "مستمعة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p135-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بصحبة",
+          "secondary": "بصحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p135-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "متى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والفقير",
+          "secondary": "الفقير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p135-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سلكهم",
+          "secondary": "مسلكهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p135-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p136-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والذلة",
+          "secondary": "والنذالة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عشرته",
+          "secondary": "عشرائه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p136-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بصحة",
+          "secondary": "بصحبة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p136-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقطع",
+          "secondary": "ينقطع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "صحة",
+          "secondary": "صحبة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تاثره",
+          "secondary": "تاثيره",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الجاذب",
+          "secondary": "الجالب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p136-06",
+        "v3-p137-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التكليف",
+          "secondary": "التكاليف",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وصارت",
+          "secondary": "فصارت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حملا",
+          "secondary": "عبئا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صلى الله عليه وسلم",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "و جعلت",
+          "secondary": "وجعلت",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p137-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فالقبض",
+          "secondary": "ف القبض",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تارة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p138-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوقت ويزول القبض",
+          "secondary": "الملك",
+          "tokens": 3
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p138-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "والاستقرار ولقيه بالثبات فان في هذا الوقت عليه خطرا عظيما فليحذر مكرا خفيا",
+          "secondary": "",
+          "tokens": 13
+        },
+        {
+          "tag": "replace",
+          "control": "عليه",
+          "secondary": "عليهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p138-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "صحة",
+          "secondary": "صحبة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p139-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p139-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رحمه",
+          "secondary": "قدس",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "تعالى وقدس",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p139-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ملازمة",
+          "secondary": "ملازمته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ذهوله",
+          "secondary": "ذهول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full 2019 images pp.131–139 directly compared, both sides of continuations included. Enlarged crops confirm singular لداعي in 134-05 and صحبة الحال / ينقطع in 136-04/05, صحبة الاستقامة in 138-05: own text corrected, corresponding Russian corrected/clarified. Other candidates retained according to print. Long 138-03 passage absent from secondary alignment is present in control and full Russian, not our omission. Russian selected passages reread and back-compared; 139-01/02/05 keep all author conditions, culpable voluntary cause and three safeguards. Same-agent self-review only."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 238,
+  "record_count": 259,
   "unreviewed_candidates_remain": true
 }

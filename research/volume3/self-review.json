@@ -6465,14 +6465,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p131-04": {
-      "sha256": "64afe8354381096ff8a61d0f0c96c4c58846da789f8962ccbd6f76bf1f6715dc",
+      "sha256": "ad35a8ee49d960b16a05f898e19d6cebabc25c896b2e7145c165effdf3f3daf1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 p.131 comparison: يتداعوا بالمسلمين والمؤمنين عباد الله concerns common appellations in a mutual appeal. Replace unnatural призывать ... как with clear naming of the three actual appellations. Quotation marks identify translated labels, not invented prophetic sentences; author’s contrast with partisan names retained. Full Russian paragraph reread separately and back-compared; same-agent self-review only."
     },
     "v3-p131-05": {
       "sha256": "79868dd358ecf4e16cde4094962deafc86a7891f9cfc7f838b8921a39214d0be",
@@ -6606,14 +6607,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p134-05": {
-      "sha256": "bcce55478ff482dc17d975655c835ab4a323a9ac7a22bd234149636947a7120e",
+      "sha256": "0cc6169cc2b72e1c31d51d5d9362b09b34ca67f239497c6fb90b8d0210620453",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.134 crop confirms singular لداعي الحقيقة, whereas p.133 earlier quotation has plural لدواعي. Restore the distinct printed repetition rather than harmonizing it. Older secondary الحقيقية also not adopted. Existing Russian зов истины naturally matches singular and is retained after full paragraph rereading and back-comparison; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p134-06": {
       "sha256": "4c7902b655e9d05a096dbd43d27b12a13ae04a3e56974b518c89d0f7d6d566f5",
@@ -6626,14 +6628,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p134-07": {
-      "sha256": "2bb43d97ea0de0db397dad638106e284c0e75aa49c5ddb593cf524ac4b5c5ccf",
+      "sha256": "7cc29e47544209e3dbd6b7a69fa66f5cf7214544d26612cb969faaf3fae03fd5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct control p.134 confirms دعوة مسمعة, an audible call, not the older مستمعة. Replace unnatural Russian дает себя услышать with exact adjective слышимый. All three conditions and repeated concluding clause retained. Russian paragraph reread separately and then back-compared; same-agent self-review only."
     },
     "v3-p134-08": {
       "sha256": "9a2cde298e174c07a37cba45c301ba0fd4d29b83838df247eac297898abf358d",
@@ -6746,17 +6749,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p136-04": {
-      "sha256": "2347da700e41185e48a6e65c20cb7cf0c551e70e132bf902c9140cc0659a0d30",
-      "stages": {
-        "semantic": "self_checked_against_print",
-        "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
-      },
-      "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
-    },
-    "v3-p136-05": {
-      "sha256": "ee95ae73da6a58e4c48226a03685a13c84f096ecaaf1cd48c801944746f86b0e",
+      "sha256": "ee196171f38148e23b5882bf4ac633554e078a53d7c538d23847842f8bdd77b2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -6764,7 +6757,18 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Contextual collective reading of الرفيق الأعلى: author explicitly glosses it by الذين أنعم الله عليهم on control p. 136. Compared with Bukhari 4435–4437 and existing volume 2 rendering высшее общество. Arabic control scans 49 and 136 inspected; final Russian reread separately and back-compared; same-agent self-review, not independent human editing."
+      "resolution": "Direct enlarged 8x 2019 p.136 crop confirms تقطع بصحبة الحال (nominal taqattuʿ), not own بصحة الحال / advancement with a true state. Read together with author’s immediate أي ينقطع إلى صحبة الحال: devotion/withdrawal to the company of the spiritual state. Russian uses parallel infinitives and retains all three elements. Whole Russian quote reread separately and back-compared; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
+    },
+    "v3-p136-05": {
+      "sha256": "39e1c5c342849a63d27a74bebce55a5b5bb53c23b21851734f0cfa0500b8ede9",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct enlarged 8x 2019 p.136 author explanation confirms أي ينقطع إلى صحبة الحال, restoring omitted nun and ba and correcting Russian that had advanced toward a true state. Existing من تأثره, الجاذب and whole subsequent argument retained; resolved высшее общество rendering unchanged. Full Russian paragraph reread independently of Arabic for this same-agent pass, then back-compared; no external independent human review. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p136-06+v3-p137-01": {
       "sha256": "014a2c18f1cd0ea2b6b4a7c37a3f1e6511594d553ae0a0143b406a077f09305b",
@@ -6857,34 +6861,37 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p138-05": {
-      "sha256": "df6c37a534e5295dcbf982b90c797455a2f433e7f76463f33dd81454b7dda29c",
+      "sha256": "27acd88319887ebcb187f906866353c688f6d59982cb68b98711ea44bd49adca",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.138 heading crop confirms صحبة الاستقامة, not own صحة الاستقامة. Restore companionship/accompaniment; remove unsupported Russian истинной and clarify spiritual istiqama as adherence to the straight path, consistently with pp.119–120 and author explanation p139. Both main members of quotation retained. Full Russian sentence reread separately and back-compared; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p139-01": {
-      "sha256": "5dba4361f5fdf2ed8f0142dccbbd8c1ed89a314dd84c520c25de29479c68123b",
+      "sha256": "b70d86401bdbac312c3b02eaf6bee7b1d369905057a992511c79f170c84182ca",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full 2019 p.139 image directly compared. Clarify spiritual الاستقامة as adherence to the straight path, matching corrected 138-05, not everyday directness. Preserve all conditions, source’s hypothetical best case of non-accountable madness, voluntary cause and blame in 139-02, and all three safeguards in 139-05. Russian reread separately and back-compared; same-agent self-review only."
     },
     "v3-p139-02": {
-      "sha256": "96b03a1b41703cf97c8272c80654f65a984a04c352184a18716f1f981de55da4",
+      "sha256": "412681565fe57d7024470ff1ff0d92fcbf1cf35fbd8d73508b2fb281471f1bb7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full 2019 p.139 image directly compared. Clarify spiritual الاستقامة as adherence to the straight path, matching corrected 138-05, not everyday directness. Preserve all conditions, source’s hypothetical best case of non-accountable madness, voluntary cause and blame in 139-02, and all three safeguards in 139-05. Russian reread separately and back-compared; same-agent self-review only."
     },
     "v3-p139-03": {
       "sha256": "b083301680a01374777a484aa01a26fbd206275bd14d0127c1620ace8191d10c",
@@ -6907,14 +6914,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p139-05": {
-      "sha256": "bede8b9c1d751548e6e7bb1765b2aa24acb4e8db1e5a13bc5e2fa240768f8965",
+      "sha256": "42855af25e352f23782c5aee054d6448b6160114958b1bcfd13241e1bf53cb6e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full 2019 p.139 image directly compared. Clarify spiritual الاستقامة as adherence to the straight path, matching corrected 138-05, not everyday directness. Preserve all conditions, source’s hypothetical best case of non-accountable madness, voluntary cause and blame in 139-02, and all three safeguards in 139-05. Russian reread separately and back-compared; same-agent self-review only."
     },
     "v3-p139-06": {
       "sha256": "ea9bb87a442935f4d98695a72a2755b98af2e81c754da43fecc591e7888e79b7",
