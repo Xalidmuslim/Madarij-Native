@@ -62,6 +62,18 @@
       "author_text_excerpt": "ثم اعطى القوة الدافعة وهي التي تدفع ثقله ومالا منفعة فيه فتدفعه وتخرجه عن البدن",
       "finding": "The same author explicitly defines the expulsive faculty as removing waste and what is not useful from the body. This supports Russian изгоняющая сила организма rather than a force moving the body. The unusual relation to tasting in the control Madarij sentence is not silently normalized to the alternative الذائقة.",
       "method": "Targeted same-agent contextual lookup in classical author body; not independent human review. Modern apparatus not imported."
+    },
+    {
+      "source_ids": [
+        "v3-p049-05",
+        "v3-p136-05"
+      ],
+      "primary_path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+      "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+      "location": "Hadiths 4435–4437, digital numbering; cross-read with author body on control Madarij p. 136.",
+      "author_text_excerpt": "مع الذين أنعم الله عليهم / في الرفيق الأعلى",
+      "finding": "The collective reading is explicit in the author’s p. 136 plural relative clause. Russian высшее общество also occurs in volume 2, pp. 248 and 489. Changed only two volume 3 Russian paragraphs, retaining all clauses and unmodified Arabic. This is a contextual choice, not a rule for every use of رفيق.",
+      "method": "Same-agent semantic, Russian literary and back-comparison passes; no independent human review."
     }
   ]
 }

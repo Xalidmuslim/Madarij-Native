@@ -2077,14 +2077,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p049-05": {
-      "sha256": "5b7e72d1bcb424bb7970ec4abe42d4be214a9ac639a5ff1a60cedabb96a091c8",
+      "sha256": "53bc563ca25b896a76899dc0404faa4c9d76a348ff6287d0d905b107b7fa0ffe",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual collective reading of الرفيق الأعلى: author explicitly glosses it by الذين أنعم الله عليهم on control p. 136. Compared with Bukhari 4435–4437 and existing volume 2 rendering высшее общество. Arabic control scans 49 and 136 inspected; final Russian reread separately and back-compared; same-agent self-review, not independent human editing."
     },
     "v3-p050-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -6734,14 +6735,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p136-05": {
-      "sha256": "d40d689a57bff0815a492071237da53fcd552c000076ebdc84536ea48f3f87a9",
+      "sha256": "ee95ae73da6a58e4c48226a03685a13c84f096ecaaf1cd48c801944746f86b0e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual collective reading of الرفيق الأعلى: author explicitly glosses it by الذين أنعم الله عليهم on control p. 136. Compared with Bukhari 4435–4437 and existing volume 2 rendering высшее общество. Arabic control scans 49 and 136 inspected; final Russian reread separately and back-compared; same-agent self-review, not independent human editing."
     },
     "v3-p136-06+v3-p137-01": {
       "sha256": "014a2c18f1cd0ea2b6b4a7c37a3f1e6511594d553ae0a0143b406a077f09305b",
