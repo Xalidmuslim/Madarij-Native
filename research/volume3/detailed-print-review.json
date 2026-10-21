@@ -7020,8 +7020,667 @@
         }
       ],
       "finding": "Control رحمه الله retained. Three bases of certainty preserved in full Russian list."
+    },
+    {
+      "source_ids": [
+        "v3-p176-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووثوقه",
+          "secondary": "وتوثقه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control ووثوقه not older وتوثقه; source retained. Russian initial calque refined while retaining both repose/trust and higher proof-based certainty."
+    },
+    {
+      "source_ids": [
+        "v3-p176-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "في القران",
+          "secondary": "والقران",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control في القرآن, not older والقرآن; all examples and two bases, third rank and denied Prophetic/Ali attribution retained. Russian generality wording avoids categorical все."
+    },
+    {
+      "source_ids": [
+        "v3-p176-03",
+        "v3-p177-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كيف",
+          "secondary": "وكيف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اوثق",
+          "secondary": "اثر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يخطئ",
+          "secondary": "يطغى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed sides: كيف without prefixed و, أوثق and يخطئ. All comparison and honorifics retained; no older يطغى substitution."
+    },
+    {
+      "source_ids": [
+        "v3-p177-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يحمل",
+          "secondary": "يحمله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control carries no object suffix on يحمل. Three clauses on certainty, advance and knowledge safeguard preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p177-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هذه",
+          "secondary": "هذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control هذه الطريق, retain feminine demonstrative. Russian author prayer and ordinary/elite contrast preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p178-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in both languages; three aspects introduction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p178-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فتلقاه",
+          "secondary": "فنتلقاه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control فتلقاه, no inserted ن. Author commands/prohibitions, acceptance, obedience and servitude retained; whole Russian compared."
+    },
+    {
+      "source_ids": [
+        "v3-p178-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتفاصيله",
+          "secondary": "وتفصيله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control plural تفاصيله. Russian sequence of afterlife, preceding events and barzakh compared without omission or reordering."
+    },
+    {
+      "source_ids": [
+        "v3-p178-06",
+        "v3-p179-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تصديقا وايمانا",
+          "secondary": "ايمانا وتصديقا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ريب",
+          "secondary": "تناس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تناس وغفلة",
+          "secondary": "غفلة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يستهلك بيقينه",
+          "secondary": "يهلك يقينه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both printed sides: تصديقا وإيمانا, separate ريب and تناس وغفلة, لم يستهلك بيقينه. Arabic preserved; Russian final pronouns clarified as doubts/forgetfulness/heedlessness consumed by certainty, rather than ambiguous все это which might suggest believed truths."
+    },
+    {
+      "source_ids": [
+        "v3-p179-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والتجهم",
+          "secondary": "والتهجم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control التجهم not older التهجم. All three opposed terms retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p180-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالاستدراك",
+          "secondary": "بالاستدلال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بالاستدراك, not secondary بالاستدلال; following explicit author explanation الإدراك والشهود confirms perceptive sense. Full Russian quotation compared."
+    },
+    {
+      "source_ids": [
+        "v3-p180-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الثلاث",
+          "secondary": "الثلاثة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control الثلاث, retain. Full honey three-stage analogy and named corresponding certainties preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p180-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "للمتقين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "للغاوين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control omits secondary للمتقين / للغاوين. Preserve author statement about creatures seeing Paradise and Hell; not treated as verbatim Quran quotation."
+    },
+    {
+      "source_ids": [
+        "v3-p180-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "دخل",
+          "secondary": "ادخل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control دخل, not أدخل. Both entered places and named third degree retained."
+    },
+    {
+      "source_ids": [
+        "v3-p181-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اجمعين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بعينيه",
+          "secondary": "بعينه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فكلمه",
+          "secondary": "وكلمه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no أجمعين or extra عليه السلام after Musa, dual بعينيه and فكلمه; retain source/Russian clauses without harmonization."
+    },
+    {
+      "source_ids": [
+        "v3-p182-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بشهود",
+          "secondary": "شهود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بشهود; retain attribution عنده to author of Manazil, not misattribute doctrinal statement as own final conclusion."
+    },
+    {
+      "source_ids": [
+        "v3-p182-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيزول",
+          "secondary": "فتزول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control فيزول masculine retained. Russian rights/duties calque corrected; burden removed, obligations not abolished; both metaphors retained."
+    },
+    {
+      "source_ids": [
+        "v3-p182-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "قد",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control قد retained. All phases of dates anecdote and both thrown-away clauses retained in Russian; no new hadith grade."
+    },
+    {
+      "source_ids": [
+        "v3-p183-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استغراق",
+          "secondary": "الاستغراق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يفنوا",
+          "secondary": "يفنون",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في فناء",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control استغراق indefinite, يفنوا and no added في فناء. All negated/positive contrasts retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p183-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "احوالهم الى",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الى احوالهم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control unusual ordering أحوالهم إلى أحوال من بعدهم confirmed. Existing explicit own editorial note about interpretive Russian order remains; no silent source rearrangement or claim of manuscript resolution."
+    },
+    {
+      "source_ids": [
+        "v3-p183-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الطريق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no proposed inserted الطريق after سبيل; entire author contrast and divine favor conclusion retained."
+    },
+    {
+      "source_ids": [
+        "v3-p184-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والاحسان",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "والاحسان",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تعالى",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control البر واللطف والإحسان in current order and تعالى without سبحان. Russian لطف clarified as benevolent care, full obedience/love/proximity/intimacy chain retained."
+    },
+    {
+      "source_ids": [
+        "v3-p185-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "شواهد",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control heading شواهد الحقيقة includes شواهد, retain. Definition of prevailing recollection and its visual analogy compared in full Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p185-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "العلم",
+          "secondary": "العمل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يكون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control العلم not العمل; final ومنهم من شاهده الخوف without extra يكون. All four witness states and loss/intimacy contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p185-07",
+        "v3-p186-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ولذاتها",
+          "secondary": "ولذتها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اشارتهم",
+          "secondary": "اشاراتهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both sides checked: plural لذاتها and singular إشارتهم. All negative descriptions and comparative distance/veil retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p186-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على صراطه المستقيم",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "منه",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فتجد",
+          "secondary": "فيجد",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no inserted على صراطه المستقيم or ولها; منه and فتجد retained. Entire intellectual/heart/spirit/body nourishment sequence compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p186-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سفليا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أرضيا without extra سفليا. Both types of food, six nonmaterial contents and two supports retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p186-07",
+        "v3-p187-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وغذاؤه",
+          "secondary": "وغذاء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بحاسة",
+          "secondary": "حاسة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Page break checked: غذاؤه and initial بحاسة, subsequent حاسة الذوق without ب, current source retained. All five senses and stronger hearing/sight relation compared."
+    },
+    {
+      "source_ids": [
+        "v3-p187-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "جدا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "جدا",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control جدا at current location after القرآن. All five sensory contrasts and three knowledge routes retained."
+    },
+    {
+      "source_ids": [
+        "v3-p189-06",
+        "v3-p190-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نشوؤها",
+          "secondary": "منشؤها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وزال",
+          "secondary": "ولزال",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed sides: نشوؤها, وزال and no extra من. Russian binding-proof idiom and awkward absence/abandonment phrase refined; all hypothetical outcomes retained."
+    },
+    {
+      "source_ids": [
+        "v3-p190-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ظهور",
+          "secondary": "لظهور",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يصلح",
+          "secondary": "يحصل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويتم",
+          "secondary": "فتتم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعاوض",
+          "secondary": "يعتاض",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "قبيح",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وخبث نقص",
+          "secondary": "خبث ونقص",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control ظهور، يصلح، ويتم، يعاوض, no added قبيح, وخبث نقص not خبث ونقص. Whole Arabic/Russian food/corruption comparison checked."
+    },
+    {
+      "source_ids": [
+        "v3-p190-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تؤدي",
+          "secondary": "يؤدي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يسوؤه",
+          "secondary": "يسوءه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تؤدي feminine and يسوؤه spelling retained. Full hearing/sight causal contrast and emotional voice adjectives compared with Russian."
     }
   ],
-  "record_count": 338,
+  "record_count": 370,
   "unreviewed_candidates_remain": true
 }

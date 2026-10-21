@@ -8747,24 +8747,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p176-01": {
-      "sha256": "6c73d1f0ab60ad5ed336bf298623f31bb07b3551b51ff2ee665f5eef847dae90",
+      "sha256": "86fe1ecd17dbb5085e8ebed7dae4b133cda060360a5af25d2684b7fe5cea33fd",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Replace unnatural literal Russian в сообщении while preserving repose and trust as two features. Full 2019 paragraph read, Russian reread separately and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p176-02": {
-      "sha256": "f053814968ed63464bb33b08e3809caf9ad3ea0cc78d443c7ed458174233b374",
+      "sha256": "a088037db4f32f608e3e425ecd7bcafd9d98dadadea4e82acb792b37062c6963",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Represent عامة as generality, avoiding unsupported categorical все. Full 2019 paragraph read, Russian reread separately and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p176-03+v3-p177-01": {
       "sha256": "7c78041efcf7d05ffc24676f33f70a5307651f6c5ba75f0f133b573466c6c7f6",
@@ -8887,14 +8889,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p178-06+v3-p179-01": {
-      "sha256": "e3b246343f0556d63ce3125ea9279fffa743c00c2b09e2b11626b996a9688d86",
+      "sha256": "0b167aae743631bd8bd87976f1a44677b3ef86650acff5574174374a37faff16",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify antecedent of harmful factor versus certainty across p178/179: all earlier suspicion/doubt/forgetfulness/heedlessness distinctions remain explicit; final clause does not refer to believed truths. Full 2019 paragraph read, Russian reread separately and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p179-02": {
       "sha256": "d98740253701e2657c91167a58b8cec41b3238b99eea8ae5a5b0a3b4ff5e363d",
@@ -9129,14 +9132,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p182-05": {
-      "sha256": "ab65200ec0e0938a9ae407ee2bcfb1445729e47ff9648b0526c96b1a13dbae9d",
+      "sha256": "935dfc9b5e8188af55324e5521de715fcbee5a3b95a6f698af82fc29bf1d21ff",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove unnatural Russian права обязанностей and clarify that performance becomes effortless; source removes burden, not duties. Preserve carrier/carried and walking/flying contrasts and final experiential caveat. Direct 2019 full paragraph comparison, Russian-only rereading and back-comparison; same-agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p182-06": {
       "sha256": "e24571da81bf237b3a545871e99388ecc7bfd52918176beca004c48de0247fc7",
@@ -9220,14 +9224,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p184-04": {
-      "sha256": "4d472cb8c30205d9d38561b99ed543d7dea6817f3a4d14ad0e9725b81bb407f8",
+      "sha256": "ef99c835e08f1b31cf48f3a81d05bf23285bde4b8469150a4000c9ae88d6d52c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Contextual لطف rendered as benevolent care rather than vague physical mildness, preserving three terms and full causal chain. Direct 2019 full paragraph comparison, Russian-only rereading and back-comparison; same-agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p184-05": {
       "sha256": "42bdc22cf89f3ad23c60ffb033b98fb0986779f8c7fbd7fbae81f2533996b880",
@@ -9500,14 +9505,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p189-06+v3-p190-01": {
-      "sha256": "30cc34fa68508bcd7e68b4b0bf662b1ef247666c528709f1de5c50b207533253",
+      "sha256": "8e6fba1fd538f4606a3cb508d6bafd2cddf3769e3f1c2c19e9828a00b71abb1b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 pp189–190: وبه قامت الحجة عليهم means proof established against them, not proof becoming obligatory; بمفارقة عدم السمع والعقل naturally expresses transition to hearing and understanding. Preserve sensory versus heart hearing distinction, sheep analogy, all hypothetical outcomes and counterfactual force. Russian separately reread and back-compared; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p190-02": {
       "sha256": "a5d086a943ea3d3ae723f64ae663b97da88ec97d15e18d9ddb40d98367230a7e",

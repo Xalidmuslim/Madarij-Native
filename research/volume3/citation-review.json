@@ -1646,6 +1646,22 @@
       ],
       "finding": "Read Tabari chain and complete local Musa scene: تزعم الناس أني أكرم الخلق على الله، فهذا أكرم على الله مني، ولو كان وحده لم أكن أبالي، ولكن كل نبي ومن تبعه من أمته. This locates the scene behind the author fragment; control wording تقول بنو إسرائيل differs and its printed ellipsis remains intentionally unexpanded. Ibn Kathir has related wording زعم بنو إسرائيل أني أكرم بني آدم على الله. Supersedes earlier primary-source-pending record only as to locating/comparing the scene. No authenticity grade assigned and no claim that primary wording is verbatim identical to control or that direct address رب العزة is a quote in Tabari. Russian quoted part/context retained.",
       "method": "Same-agent direct control-print and classical digital source comparison; neither manuscript collation nor full independent isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p151-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "named_qiraa_and_meaning_attested_in_classical_source",
+      "checked_primary_records": [
+        {
+          "path": "data/0310Tabari/0310Tabari.JamicBayan/0310Tabari.JamicBayan.Shamela0000043-ara1",
+          "blob": "28ce64e4bc371994c995a5017d3c3b8568743ff2",
+          "digital_location": "Najm53:11, reading paragraph immediately before PageV22P509"
+        }
+      ],
+      "finding": "Read full reading paragraph. Tabari explicitly names أبو جعفر القارئ among readers of كذب with doubling, contrasting majority light form, and explains أن الفؤاد لم يكذب الذي رأى ولكنه جعله حقا وصدقا. This independently locates the classical textual attestation, supports the named reading and sense in 2019 p151, without conflating it with standard Quran quote text. It is a source comparison by the same agent, not independent human review or a complete study of reading chains. Author Arabic/Russian reading distinction retained; no modern apparatus reproduced.",
+      "method": "2019 printed passage compared with classical digital body, explicit named reading and semantic explanation checked."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
