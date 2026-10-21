@@ -18711,8 +18711,955 @@
         }
       ],
       "finding": "Actual461–462 all أولي forms not secondary أزلي; يسمعه present tense. Three alternatives distinguished: transmitted prophetic speech, angelic speech, imagined inward speech; preserve author cautions without adding condemnation elsewhere."
+    },
+    {
+      "source_ids": [
+        "v3-p463-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تجرد وتقوى",
+          "secondary": "تتجرد ويقوى",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "ويضعف تعلقها",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يتلاشى",
+          "secondary": "قد تتلاشى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يقرن",
+          "secondary": "يقترن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيرجع من",
+          "secondary": "فيخرج عن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "خارجيا",
+          "secondary": "خارجا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual463 قد تجرد وتقوى... ويضعف تعلقها بل يتلاشى, يقرن without inserted ت, عن حسه, فيرجع من الأذن إليها, خطابا خارجيا. Preserve actual grammatical forms versus secondary smoothing. All internal-ear-return causal steps and role of deficient knowledge retained."
+    },
+    {
+      "source_ids": [
+        "v3-p463-05",
+        "v3-p464-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يختطف",
+          "secondary": "يخطف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual463 يختطف with ت, no shortening to secondary يخطف. Entire borrowed-form quote linked across464, water/clay and own-portion images retained."
+    },
+    {
+      "source_ids": [
+        "v3-p464-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يغيبه",
+          "secondary": "يغنيه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual464 يغيبه with ب not secondary يغنيه with ن; RU loss of witnessing, not enrichment, matches. Both worlds and maker distinction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p465-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نفسه وشهوته",
+          "secondary": "شهوته ونفسه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual465 نفسه وشهوته in this order, no secondary inversion. Three degrees of slavery/freedom/mukataba and full dirham analogy retained."
+    },
+    {
+      "source_ids": [
+        "v3-p465-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يشير",
+          "secondary": "ويشير",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual465 يشير without secondary extra و and يؤوب غائبها without inserted منها. Both quoted conditional cases and temporary borrowed form metaphor complete; self-loss Russian naturalized."
+    },
+    {
+      "source_ids": [
+        "v3-p466-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يعرض",
+          "secondary": "تعرض",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual466 وقد يعرض masculine initial ي, no secondary added من at comparison locus. Full denial of requested maqam, Yusuf31 and source introduction kept; generic beloved not given added divine identity."
+    },
+    {
+      "source_ids": [
+        "v3-p466-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مقصوده",
+          "secondary": "المقصود",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لهن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مفاجاتهن",
+          "secondary": "مفاجاته",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من عوارض الطريق",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual466 مقصوده, no inserted لهن; عند مفاجأتهن with suffix هن. No extra من عوارض الطريق inserted into first concluding clause. Three interpretive options and separate عوارض/منازل contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p467-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الذي يغلب",
+          "secondary": "التي تغلب على",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual467 all three يغلب without inserted على, final الحال masculine. Preserve distinct reason/patience/knowledge objects."
+    },
+    {
+      "source_ids": [
+        "v3-p467-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واذا",
+          "secondary": "فاذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual467 وإذا at second case, not secondary فإذا; either condition or knowledge may be defective, no automatic endorsement of state, full no-praise qualification retained."
+    },
+    {
+      "source_ids": [
+        "v3-p467-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او يشهق او يخرق",
+          "secondary": "ويشق",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "علمه",
+          "secondary": "عمله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لتعرض لابطالها",
+          "secondary": "فرض لابطلها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual467 أو يشهق أو يخرق explicit, not deletion; علمه not عمله and لتعرض لإبطالها not guessed reading. All four behaviors plus risk of invalidating prayer kept."
+    },
+    {
+      "source_ids": [
+        "v3-p468-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ياتيه",
+          "secondary": "ياتي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يرد",
+          "secondary": "يرده",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويخفو",
+          "secondary": "ويجفو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged468 ويجفو, not own ويخفو. Retain يأتيه, no extra به at secondary locus, and passive لم يُرَدّ فيه without inserted object ه. RU aloofness wording restored; temporary author exposition distinct from later warning."
+    },
+    {
+      "source_ids": [
+        "v3-p469-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ينشا عنده",
+          "secondary": "يغشاه عندهم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual enlarged469 يغشاه عنده بهتة, not own ينشأ عنده or secondary عندهم. Source/RU corrected; unmodified printed يستولي على فناء ... retained without conjectural clause."
+    },
+    {
+      "source_ids": [
+        "v3-p469-06",
+        "v3-p470-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ثلاث",
+          "secondary": "ثلاثة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جانب",
+          "secondary": "جناب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual469 ثلاث not ثلاثة; actual470 جناب not own جانب. All three modes plus future analysis and truth/falsehood distinction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p470-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "توجب",
+          "secondary": "وتوجب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "خاصا",
+          "secondary": "خالصا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual470 توجب without extra و, قربا خاصا not خالصا. Retain particular closeness and self-forgetting effects; fix Russian favor-government without changing thought."
+    },
+    {
+      "source_ids": [
+        "v3-p470-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيوجب",
+          "secondary": "فتوجب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual470 فيوجب masculine initial ي, no secondary feminine normalization. All abundance/variety and continuous lights clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p470-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بها",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "شبيها",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual470 no extra بها and شبيها expressly present: likeness to direct-vision longing, not direct worldly vision. Critical distinction and author conditional approval remain."
+    },
+    {
+      "source_ids": [
+        "v3-p471-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بطريق",
+          "secondary": "بطرائق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الملاحدة",
+          "secondary": "الملحدين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual471 بطريق الزنادقة الملاحدة, not secondary plural بطرائق/الملحدين, no added عز وجل. Entire warning about language and confusion preserved without translator endorsement or softened attribution."
+    },
+    {
+      "source_ids": [
+        "v3-p471-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لحفظ",
+          "secondary": "بحفظ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual471 لحفظ with ل, not secondary بحفظ. Three restoration clauses and counterfactual collapse retained; أعلامه Russian landmarks corrected."
+    },
+    {
+      "source_ids": [
+        "v3-p472-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الهائم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual472 no added الهائم; same author definition/entire explanatory gloss retained, semantically distinct from previous Musa argument."
+    },
+    {
+      "source_ids": [
+        "v3-p474-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لخسة",
+          "secondary": "خسة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سفال",
+          "secondary": "سفالة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual474 لخسة with ل and سفال without final ة. Three self-observations and explanatory glosses retained separately."
+    },
+    {
+      "source_ids": [
+        "v3-p474-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تحقيق",
+          "secondary": "تحقق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مستجدة",
+          "secondary": "مستعدة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual474 تحقيق العلم والمعرفة and twice مستجدة, not secondary تحقّق/مستعدة. Enlarged words directly viewed; repeated fresh insight/awakening complete."
+    },
+    {
+      "source_ids": [
+        "v3-p474-06",
+        "v3-p475-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الواجد",
+          "secondary": "الوجد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual475 هذا الواجد with ا, not secondary الوجد. Whole ending compared: Quran contemplation, individual readiness/capacity, spit-drop/sea comparison retained. Only opening continuation475 counted in this batch, not later475 discussion."
+    },
+    {
+      "source_ids": [
+        "v3-p475-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شهودا",
+          "secondary": "مشهودا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual475 شهودا, not secondary مشهودا. Whole condition disappearance from witnessing retained; no physical annihilation of creatures asserted by translator."
+    },
+    {
+      "source_ids": [
+        "v3-p475-07",
+        "v3-p476-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيظنها",
+          "secondary": "فيظنونها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عما",
+          "secondary": "عمن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual475 فيظنها singular and476 عن غير الرسل / عما اتفقت عليه الأمة; no secondary plural/from/person substitutions. Whole infallibility qualification and joined transition kept."
+    },
+    {
+      "source_ids": [
+        "v3-p476-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لمع",
+          "secondary": "لامع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual476 يشبه لمع البرق, not secondary لامع at end; first لامع earlier retained. Quran1:5 and lamp-light comparison complete."
+    },
+    {
+      "source_ids": [
+        "v3-p476-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual476 رحمه الله printed and retained. باكورة first-fruit metaphor and following definition complete."
+    },
+    {
+      "source_ids": [
+        "v3-p476-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيدعوه",
+          "secondary": "فتدعوه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual476 فيدعوه masculine at repeated quote, not secondary فتدعوه. Full beginner-versus-middle/end distinction retained, no harmonizing first quote فتدعوه."
+    },
+    {
+      "source_ids": [
+        "v3-p477-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لتاجج",
+          "secondary": "لتاجيج",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual477 no inserted به at comparison locus; لتأجج not secondary لتأجيج. Preserve complete strength/intensity of seeking explanation."
+    },
+    {
+      "source_ids": [
+        "v3-p477-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اذن",
+          "secondary": "اذنا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يصح",
+          "secondary": "يفسح",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged477 الإذن إنما يفسح للسالك, not own يصح. Actual إذن quoted then إذنا after يعني is already present; no unintended spelling replacement. Russian permission enables progress, not validity."
+    },
+    {
+      "source_ids": [
+        "v3-p477-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "على",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual477 وهو على ثلاث درجات, on-print على retained against secondary omission. Whole threefold gift/fatigue/decree description kept."
+    },
+    {
+      "source_ids": [
+        "v3-p477-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual477 ما وعد الله به أولياءه includes به; no deletion. This-world/encounter honors both retained."
+    },
+    {
+      "source_ids": [
+        "v3-p477-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ومرافقه",
+          "secondary": "من افقه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual477 ومرافقه not secondary من أفقه. Four promised reasons follow on478 in exact order; parenthetical nothing from God is small retained."
+    },
+    {
+      "source_ids": [
+        "v3-p478-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوعد",
+          "secondary": "الوعود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged478 برق الوعود plural, own singular الوعد corrected and RU plural restored. Full cause–effort–relief–comparison chain retained."
+    },
+    {
+      "source_ids": [
+        "v3-p478-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واذا",
+          "secondary": "فاذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual478 وإذا, not secondary فإذا. Entire البلاء definition and six comparisons/patient/truthful/faith/love/trust/turning retained. Closing478-08 requires immediate479 explanatory context before finalizing its Russian wording."
+    },
+    {
+      "source_ids": [
+        "v3-p479-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وعينه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وذلك",
+          "secondary": "وذاك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تغافصه",
+          "secondary": "تعافصه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للقاء",
+          "secondary": "لللقاء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual479 repeated وعينه, وذلك, تغافصه retained. Narrow10x final source لللقاء three lām corrected from own two-lām; all death/preparation/purification analogy clauses preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p479-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "العبد",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المحرم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "له",
+          "secondary": "لله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual479 no inserted العبد/المحرم at comparison loci and ثم يخلص له النية not لله. Full outward and inward preparation lists retained in exact order."
+    },
+    {
+      "source_ids": [
+        "v3-p480-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "اي",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ومناسبيه",
+          "secondary": "او مناسبيه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual480 أي and أقاربه ومناسبيه with و, no secondary أو. All relatives/neighbors/companions pairs complete; broader RU quote corrected to include people even when close."
+    },
+    {
+      "source_ids": [
+        "v3-p480-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الافتقار",
+          "secondary": "الافتخار",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual480 عين الافتقار ق, not secondary الافتخار خ. Need before God, not pride, explicitly retained; all other paths blocked clause intact."
+    },
+    {
+      "source_ids": [
+        "v3-p480-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تمنى المتمنون",
+          "secondary": "تعنى المتعنون",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "على",
+          "secondary": "في",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged480 تعنى المتعنون first, تمنى المتمنون second; own duplication corrected. Actual على غير هذه الطريق, not secondary في. Both exertion and wishes restored in full RU parallel, following Messenger exclusivity unchanged."
+    },
+    {
+      "source_ids": [
+        "v3-p481-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهز عطفه",
+          "secondary": "وهذه مخيلة محمودة",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "اعدائك",
+          "secondary": "اعدائه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged481 أعدائه not own أعدائك; وهز عطفه present versus secondary replacement by مخيلة. Restore possessive and bodily joy image in RU; no inserted به where secondary has it. Author explicit limited cases kept."
+    },
+    {
+      "source_ids": [
+        "v3-p482-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وان لم",
+          "secondary": "ولم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فكلا",
+          "secondary": "وكلا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual482 وإن لم / فكلا, no secondary deletion or conjunction change. Potential worthy pride versus actual nonboasting retained."
+    },
+    {
+      "source_ids": [
+        "v3-p482-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وشهد",
+          "secondary": "شهد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كان",
+          "secondary": "فكان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اسباب",
+          "secondary": "ابواب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سحاب",
+          "secondary": "سحائب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "السحاب",
+          "secondary": "السحائب",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بها",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "بها",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "امر",
+          "secondary": "نهر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فرح",
+          "secondary": "فرحا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual482 نهر الافتخار not own أمر: repeated river image restored. Print وشهد/كان/أسباب/سحاب/السحاب/بها/بل فرح retained against secondary; no insertion/deletion/morphology normalization. Whole10:58 retained."
+    },
+    {
+      "source_ids": [
+        "v3-p482-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كيف",
+          "secondary": "فكيف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual482 كيف without extra ف. Full لا فخر and author distinction selfpraise versus displaying favor kept; limited primary variants examined separately."
+    },
+    {
+      "source_ids": [
+        "v3-p482-04",
+        "v3-p483-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وصورتها",
+          "secondary": "وصورته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual483 وصورتها feminine, not secondary وصورته. Joined Yusuf55 excerpt and full intention/benefit conclusion checked, no arbitrary split."
     }
   ],
-  "record_count": 909,
+  "record_count": 953,
   "unreviewed_candidates_remain": true
 }

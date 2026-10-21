@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
-  "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
+  "apk_sha256": "0aec4a266b4376b4526612a7b80ab0c2459a3cf9ec529130e5ae26017f0df185",
+  "volume3_asset_sha256": "3bc98243d58560652c30ed958271ffc4f066a87955ed4c4359dbdcbbdae11eb0",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": false,
   "signature_verified": "APK Signature Scheme v2",
@@ -38,7 +38,8 @@
       "v3-p246-03",
       "v3-p246-05",
       "v3-p247-03",
-      "v3-p403-01+v3-p404-01"
+      "v3-p403-01+v3-p404-01",
+      "v3-p436-05"
     ]
   },
   "personal_data_update_check": {
@@ -48,8 +49,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 13,
-      "rows_after": 13,
+      "rows_before": 14,
+      "rows_after": 14,
       "unchanged": true
     },
     "notes": {
@@ -66,8 +67,8 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
-    "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
+    "Three-token query передаваемых от правдивых gives exactly one result in Томление.",
+    "Opened joined448–449 paragraph; top and scrolled middle actually viewed, including restored plural reports from truthful wayfarers and following new-state/other-murid explanation. Entire ending not individually screen-captured."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -79,15 +80,15 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
-    "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
-    "description": "Through422 full snapshots preserve1bookmark,13positions,empty notes/read_chapters and preferences. Confirmed installed content_version1835118c5e0323b147312cc5f3d0b47a4704a033c246f86be3220e7c6bc4159b before post-import copy; native WAL checkpoint0|0|0; waited successful capture completion before comparison. Subsequent intentional search/scroll changes reading position outside preservation comparison."
+    "apk_sha256": "0aec4a266b4376b4526612a7b80ab0c2459a3cf9ec529130e5ae26017f0df185",
+    "volume3_asset_sha256": "3bc98243d58560652c30ed958271ffc4f066a87955ed4c4359dbdcbbdae11eb0",
+    "description": "Through462 complete pre/post snapshots preserve1bookmark,14positions,empty notes/read_chapters and exact preferences. Confirmed installed content_version8f857b900d1650520c01cc31092f3ddb2b6952595d3131bc559d5a8bcf6b5673 before post capture; native WAL checkpoint0|0|0 and waited capture completion. Later deliberate reader navigation outside preservation comparison."
   },
-  "latest_corpus_check": "All3109rows exactly match through422 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. Five then-open units including joined403–404 retained in APK metadata. Newly reopened436 is later source change, not covered by positive422.",
+  "latest_corpus_check": "All3109rows exactly match through462 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. All six pending units including436 preserved in APK metadata. Canonical463–482 later changes not in this APK.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional423–462 Arabic/Russian corrections and sixth pending unit436-05 after positive422 APK. Record count3109 unchanged.",
-    "current_asset_sha256": "3bc98243d58560652c30ed958271ffc4f066a87955ed4c4359dbdcbbdae11eb0",
+    "change": "New463–482 Arabic/Russian corrections after positive462 APK;3109records unchanged.",
+    "current_asset_sha256": "799be7e2077206e5f1895bfa564fc99a4bd32da0d3fd7650d2d160918b895cd9",
     "current_asset_runtime_checked": false,
     "unresolved_source_ids": [
       "v3-p110-04",
@@ -97,7 +98,7 @@
       "v3-p403-01+v3-p404-01",
       "v3-p436-05"
     ],
-    "scope": "Positive runtime applies through422 and its five then-open units only. New423–462 bytes/sixth436 flag await another APK/import."
+    "scope": "Positive exact database comparison covers corrections through462 and all six pending units. New463–482 asset awaits next APK/import."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -122,10 +123,10 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through422 actual search and reader top/middle viewed; old cases historical. No all-target/physical-device claim.",
+  "visual_check_scope": "Through462 search and reader top/middle actually viewed for448–449; no all186targets/physical-device claim. Prior422 and earlier checks remain historical.",
   "current_visual_checks": [
-    "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
-    "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
+    "Three-token query передаваемых от правдивых gives exactly one result in Томление.",
+    "Opened joined448–449 paragraph; top and scrolled middle actually viewed, including restored plural reports from truthful wayfarers and following new-state/other-murid explanation. Entire ending not individually screen-captured."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -940,5 +941,78 @@
       "Query Поистине поминанием gives one result in Умиротворённость.",
       "Opened result v3-p347-03; settled reader image actually viewed, full13:28 Arabic/Russian shown including new affirmative Поистине, поминанием Аллаха успокаиваются сердца!, followed by89:27–30. Header remains draft."
     ]
+  },
+  "historical_through422_2026_10_21": {
+    "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
+    "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 13,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "all_3109_packaged_rows_exactly_match_database": true,
+      "unresolved_source_ids_in_checked_apk": [
+        "v3-p110-04",
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-03",
+        "v3-p403-01+v3-p404-01",
+        "v3-p436-05"
+      ]
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 13,
+        "rows_after": 13,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "8050b2c1f4afc03b06da2dd5bb74908b2e247ebc69c2fcc93d871abd5e3e66e0",
+      "volume3_asset_sha256": "52b910e5586b6876b3eedac4197e0acb4baebe9289f389b1b379d69c8a80259b",
+      "description": "Through422 full snapshots preserve1bookmark,13positions,empty notes/read_chapters and preferences. Confirmed installed content_version1835118c5e0323b147312cc5f3d0b47a4704a033c246f86be3220e7c6bc4159b before post-import copy; native WAL checkpoint0|0|0; waited successful capture completion before comparison. Subsequent intentional search/scroll changes reading position outside preservation comparison."
+    },
+    "latest_corpus_check": "All3109rows exactly match through422 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. Five then-open units including joined403–404 retained in APK metadata. Newly reopened436 is later source change, not covered by positive422.",
+    "visually_exercised": [
+      "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
+      "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
+    ],
+    "current_visual_checks": [
+      "Three-token query Языки оставив поминание gives exactly one result in Ревность.",
+      "Opened422-07; top and scrolled middle actually viewed, including Поминать Аллаха даже беспечно..., Языки, оставив поминание Аллаха, которое Он любит, займутся поминанием того, что Он ненавидит, и за это станут ненавистны Ему. Author questions remain below."
+    ],
+    "visual_check_scope": "Through422 actual search and reader top/middle viewed; old cases historical. No all-target/physical-device claim.",
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "apk_asset_matches_repository": false
   }
 }

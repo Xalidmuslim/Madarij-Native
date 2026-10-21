@@ -2246,6 +2246,48 @@
       ],
       "finding": "Full Nawwas/JubayribnNufayr versions read. Ahmad17634 has جنبتي/سوران/محارم الله/واعظ الله في قلب كل مسلم and added call to enter;17636 كتفي and كشف ستر الله;Tirmidhi2859 كنفي/حدود الله/واعظ ربه plus10:25 excerpt. Author control جنبتي/محارم الله/كل مؤمن combination retained, no modernization or insertion of variant clauses/Quran. Compiler حسن غريب is in primary but no new grade inserted into author text or independent authentication claimed.",
       "method": "Same-agent complete bounded classical records plus actual462 visual control, Russian separate reread/back comparison; not independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p481-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_abu_dawud2659_ahmad23752_body_read_author_gloss_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_location": "2659 complete chain/body and Musa variant before2660"
+        },
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_location": "23752 complete chain/body before23753"
+        }
+      ],
+      "finding": "Full Jabir ibnAtik chain/body read. Both distinguish jealousy suspicion/no suspicion and pride in combat/charity versus wrongful pride; AbuDawud Musa adds والفخر, Ahmad includes في الفخر والبغي. Author explanatory passage on Satan/reluctant soul kept separately, not labeled verbatim matn. Initial wrong-number Ahmad23347 lookup was unrelated and not accepted as evidence. No modern footnote grades or new chain authentication copied.",
+      "method": "Same-agent classical body/actual481 comparison and RU reread/back comparison; not independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p482-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_muslim2278_tirmidhi3615_read_no_fakhr_variant_distinguished",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "2278 complete chain/body before2279"
+        },
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "3615 complete chain/body/author compiler remark before3616"
+        }
+      ],
+      "finding": "Muslim AbuHurayra version أنا سيد ولد آدم يوم القيامة continues resurrection/intercession without ولا فخر. Tirmidhi AbuSaid version includes ولا فخر plus banner/prophets/resurrection. Control short quotation preserved; ولا فخر not falsely ascribed to exact Muslim matn. Omitted clauses not inserted, compiler remark not converted to new translator grade.",
+      "method": "Same-agent bounded primary body/actual482/Russian literary/back comparison, no independent human or full-isnad authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
