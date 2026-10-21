@@ -2089,8 +2089,898 @@
         }
       ],
       "finding": "Candidate words directly compared with printed 2019 pages 57–58 and 60–64, including the 63→64 continuation. Control text retained: يؤذَ به, موروثهم, يعتذر, أو شر, غاية الاعتذار, ترى له, لزم and author attribution wording match print. Russian paragraphs compared and retained."
+    },
+    {
+      "source_ids": [
+        "v3-p065-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p065-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p065-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يا ايها",
+          "secondary": "ياايها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p066-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المائدة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p067-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سعيد وعن ابي",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "عنه قال",
+          "secondary": "عنهما قالا",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "فقد",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p068-06",
+        "v3-p069-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ذراع او",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "او ذراع",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p069-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "تخضع",
+          "secondary": "يخضع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتنقاد",
+          "secondary": "وينقاد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتقبله",
+          "secondary": "ويقبله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p070-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رحمه الله",
+          "secondary": "البسطامي",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p070-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كطلب",
+          "secondary": "كتطلب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p070-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي",
+          "secondary": "رحمه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p070-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "عنه",
+          "secondary": "عنهما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "قلت",
+          "secondary": "فقلت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فاحببت",
+          "secondary": "فاردت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p071-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو يقول",
+          "secondary": "ويقول",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p071-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي الله عنه",
+          "secondary": "مرة",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنهما",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "زيد",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وقال",
+          "secondary": "فقال",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ان",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p071-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنهم",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ذلك",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عمر",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p071-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "بن علي",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "واطعمهم",
+          "secondary": "فاطعمهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لم يجدوا",
+          "secondary": "لا يجدون",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate Arabic words and attributions directly compared with 2019 page images pp.65–71, including the 68→69 continuation. Existing transcription matches control; no adoption of additions, different narrator attribution, pronouns or reordered words from older witness."
+    },
+    {
+      "source_ids": [
+        "v3-p072-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "انه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "نفسه وحلف",
+          "secondary": "بنفسه فحلف",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p072-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وقميصا",
+          "secondary": "وقمصا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p072-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اشتريت",
+          "secondary": "شريت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اكثر",
+          "secondary": "كثر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p072-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p072-05",
+        "v3-p073-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ناخذ",
+          "secondary": "فاخذ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p073-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "امرا",
+          "secondary": "امرءا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p073-06",
+        "v3-p074-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وسلم",
+          "secondary": "السلام",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عليه السلام",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p074-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المتكبر",
+          "secondary": "التكبر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المشرك",
+          "secondary": "الشرك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "متكبر",
+          "secondary": "يتكبر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with full control page images pp.72–74, including both page-spanning continuations. Control wording, pronouns, honorifics, speech order and noun forms retained. Russian 073-04, 073-06→074-01 and 074-03 read and compared; no new correction required."
+    },
+    {
+      "source_ids": [
+        "v3-p074-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الزمر وفي سورة",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "اية وقال في",
+          "secondary": "غافر وفي",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "اية وقال في",
+          "secondary": "النحل وفي",
+          "tokens": 3
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p074-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p074-07",
+        "v3-p075-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تنبيه",
+          "secondary": "تنبيها",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الله",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وصغره وحقره",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ويعاديه",
+          "secondary": "او يعاديه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تكبر",
+          "secondary": "تكبره",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p076-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ثلاثة",
+          "secondary": "بثلاثة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p076-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بشيء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p076-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "عزل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "عزل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p076-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النصوص",
+          "secondary": "والنصوص",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p077-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اذا",
+          "secondary": "فاذا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعبؤوا",
+          "secondary": "يعباوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p077-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المتهم",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "المتهم",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الماووف",
+          "secondary": "المافون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p078-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "ولو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed images pp.74–78, including the 74→75 continuation; Arabic and corresponding Russian retained. Printed repeated ولو ellipses are author text, not our omission. Verse names/wording in 074-04 and المأووف in 077-06 confirmed against control."
+    },
+    {
+      "source_ids": [
+        "v3-p078-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واجمع",
+          "secondary": "اجمع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p078-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وعند رسوله",
+          "secondary": "ورسوله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p078-05",
+        "v3-p079-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بطان",
+          "secondary": "بطلان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p079-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "العبد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p079-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ادام",
+          "secondary": "ادار",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتجرده",
+          "secondary": "وتجرد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p080-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "البينة",
+          "secondary": "والبينة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "فان الحجة",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p080-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يصير",
+          "secondary": "يصبر",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
+    },
+    {
+      "source_ids": [
+        "v3-p080-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "وهو",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words directly compared with 2019 printed pp.78–80; both sides of page-spanning paragraph inspected. Control wording and Russian retained, including metaphor بطان and يصير (not يصبر). Confirming quotation text in 078-02 does not resolve its separate outstanding early-source attribution task."
     }
   ],
-  "record_count": 93,
+  "record_count": 134,
   "unreviewed_candidates_remain": true
 }
