@@ -6016,12 +6016,407 @@
     },
     {
       "source_ids": [
+        "v3-p151-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "صلوات",
+          "secondary": "صلى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "وسلامه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وسلم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تواطا",
+          "secondary": "فتواطا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بصره",
+          "secondary": "ببصره",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "القلب",
+          "secondary": "الفؤاد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والبصرة",
+          "secondary": "والبصر",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "النجم",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "واعرض عما سواه بكليته",
+          "secondary": "",
+          "tokens": 4
+        },
+        {
+          "tag": "delete",
+          "control": "زيغ وطغيان كما للبصر",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "2019 full page and enlarged crops: restore final فتواطأ (initial تواطأ is printed without ف), explanatory أي following verse reference, and البصر instead of own البصرة. Control retains صلوات الله وسلامه, بصره, القلب, no added تعالى, and both concluding repeated clauses. Entire Russian paragraph separately reread and back-compared, explicit reading distinction and all logical clauses retained; same-agent self-review, not independent human editing."
+    },
+    {
+      "source_ids": [
+        "v3-p152-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رب العزة",
+          "secondary": "ربه فيه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تقول",
+          "secondary": "يقول",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اكرم",
+          "secondary": "كريم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control prints رب العزة، تقول and أكرم; ellipsis is visibly in author text, not own omission. Retain; full Arabic/Russian paragraph compared. No adoption of modern editor grading."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
+    },
+    {
+      "source_ids": [
+        "v3-p153-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من الادب",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control has والوضوء وغسل الجنابة without proposed extra من الأدب after الوضوء; later من الأدب retained; full Russian sequence agrees."
+    },
+    {
+      "source_ids": [
+        "v3-p154-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نهي",
+          "secondary": "نهى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Printed نهي is verbal noun following ومن الأدب; retain, Russian запрет agrees."
+    },
+    {
+      "source_ids": [
+        "v3-p154-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "على",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سماواته",
+          "secondary": "سمواته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control retains على and سماواته with full alef. Arabic/Russian author quotation compared; no source harmonization."
+    },
+    {
+      "source_ids": [
+        "v3-p155-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control initial إن القرآن without proposed هو; existing subsequent وهو كلام الله retained. Complete quotation compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p155-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اداب",
+          "secondary": "ادب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control has الوقوف without inserted في, and plural آداب; retain. Russian entire prayer-posture paragraph agrees."
+    },
+    {
+      "source_ids": [
+        "v3-p155-04",
+        "v3-p156-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المعارج",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both sides of printed page break checked. No added تعالى after قال الله or second سورة label after repeated verse. Chain, question, negation and three directions retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p156-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يسوي",
+          "secondary": "يستوي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged control prints يستوي, own يسوي corrected with missing ت. No proposed added تعالى. Russian even posture, magnification and self-abasement clauses retained after separate reread/back-comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p156-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تبارك وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no added تبارك وتعالى; entire definition and external/internal distinction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p156-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لاحد",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لاحد",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "معرفة به وباسمائه",
+          "secondary": "معرفته باسمائه",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "ومعرفة",
+          "secondary": "ومعرفته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control prints لأحد in current position, معرفة به وبأسمائه and ومعرفة; all three required things and three knowledge/action/state qualifications retained."
+    },
+    {
+      "source_ids": [
+        "v3-p157-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رسول الله",
+          "secondary": "الرسول",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رسول الله; retain complete honorific and Russian opening."
+    },
+    {
+      "source_ids": [
+        "v3-p157-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no proposed added سبحانه وتعالى after المرسل; entire two-part Arabic/Russian argument compared, author attribution preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p157-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وذي",
+          "secondary": "وذوي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control singular وذي; retain rather than older plural. Whole long paragraph and exception of shirk compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p158-05",
+        "v3-p159-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يرى",
+          "secondary": "فيرى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Page break checked: control يرى without ف. Russian conditional consequence retained; proverbial direct/indirect address preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p159-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي",
+          "secondary": "رحمه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رضي الله عنه, not older رحمه; quoted prohibition and temporal clause compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p159-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تعجل",
+          "secondary": "تعجلوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and singular تعجل; retain. Full quoted Arabic saying and Russian checked."
     }
   ],
-  "record_count": 287,
+  "record_count": 304,
   "unreviewed_candidates_remain": true
 }

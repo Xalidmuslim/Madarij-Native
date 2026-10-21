@@ -129,7 +129,9 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
             return@withContext dao.allChapters().filter { c -> tokens.all { normalize(c.title).contains(it) } }
                 .flatMap { dao.paragraphs(it.id).take(1) }
         }
-        dao.search(tokens.joinToString(" AND ") { "\"$it\"*" }).filter { p ->
+        // Use FTS3 implicit conjunction: explicit AND between quoted prefixes
+        // returned no matches for multiword Cyrillic queries on Android SQLite.
+        dao.search(tokens.joinToString(" ") { "\"$it\"*" }).filter { p ->
             when (filter) {
                 "note", "notes" -> p.role == "editor_note"
                 "ayat", "quran" -> p.role != "editor_note" && (p.ar.contains("قال تعالى") || p.ar.contains("قوله تعالى") || p.ar.contains("قال الله") || p.ru.contains("Всевышний сказал", true))

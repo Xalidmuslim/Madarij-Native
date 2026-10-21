@@ -7526,14 +7526,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p151-02": {
-      "sha256": "0e39306b4fa02e4f7c3cce294dd151b8ac8a244713c82ae7438a1719aff8a07b",
+      "sha256": "e07ed33c9ff820e684bfad37205e545151a21c850593e53006a242c8adafcc0e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full 2019 p151 and enlarged 6–8x crops compared. Restore printed final فتواطأ (initial تواطأ unchanged), omitted explanatory أي after verse reference, and البصر instead of own البصرة. Other secondary candidates checked and not adopted where control differs; all repeated concluding clauses preserved. Russian restores explicit explanation/causal bridge and vision faculty, clarifies awkward concordance clause while retaining explicit doubled/undoubled reading distinction. Whole Russian paragraph reread separately and back-compared; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p152-01": {
       "sha256": "ba7e72caca1d4ca37ef62cfc969eda2e1b232952cd2a767e30117348eb321421",
@@ -7737,14 +7738,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p156-04": {
-      "sha256": "ec912ad98121e0cdf3107f98c4943ecde8a5b3458a435c8a93920ba361604082",
+      "sha256": "eecca462ca8254170860cfd4a6c8d8cf774a8e3bce54a551f28e0d7aac650384",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 p156 enlarged 7x crop clearly prints يستوي with ت, restoring own omitted letter. Existing Russian держать спину ровно accurately expresses even posture in bowing; whole paragraph reread and back-compared, no new Russian claim. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p156-05": {
       "sha256": "da810b42f056b94f0db79e5c322e1fe8796e0c0c95006c73e1979f91aedc7caa",
