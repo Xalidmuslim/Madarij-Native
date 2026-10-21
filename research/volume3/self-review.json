@@ -15775,14 +15775,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p301-05+v3-p302-01": {
-      "sha256": "b48eab7201f3dafa17fcb6931611482b503d29430e4f604cf5a22bcc5f6824d3",
+      "sha256": "e5a54689a0e4526fdbcbb3869b2889864abe11af5ac83190d54055245f46c363",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Make the implicit addressee explicit to avoid confusing the Prophet with God; prior control p. 300 cites Quran 47:30 addressing the Prophet. Direct PDF inspection, Russian-only reread and final back-comparison performed; same-agent self-review only."
     },
     "v3-p302-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -26092,14 +26093,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p484-05": {
-      "sha256": "67386b998d4ec78a588b1f6903f7f49d79e44733d7c433ff160c1df60d24cac0",
+      "sha256": "a4dabb818850084109c17d9517c5083ee2607d9eb8872850f704c579438a3728",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove unnatural Russian root repetition while retaining the taste metaphor and all conditions of the hadith. Direct PDF inspection, Russian-only reread and final back-comparison performed; same-agent self-review only."
     },
     "v3-p484-06+v3-p485-01": {
       "sha256": "a17e6ca71750d094c8e36c45dba7eb4ca2dba36adfbb97fa6531e34f68833949",
@@ -27785,14 +27787,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p521-04": {
-      "sha256": "78b8d5e0a36f4bac678ea7d1edd1b4a1e2abe825e3cb82fbfaa9bbd4792c2e6c",
+      "sha256": "acdbd0ce5accfc5ee085f98af80696c9998cf0e9ed55a576b5ebf5af3b86cc23",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Correct the temporal reference: control print abbreviates قبل النهار / قبل الليل, and Muslim 179 explicitly reads قبل عمل النهار / قبل عمل الليل. The comparison concerns deeds, not a claim about their submission before dawn or dusk. Direct PDF inspection, Russian-only reread and final back-comparison performed; same-agent self-review only."
     },
     "v3-p521-05+v3-p522-01": {
       "sha256": "123abb1741d3001ac4419344b591687930877c987d67f08def1d5267627be73f",

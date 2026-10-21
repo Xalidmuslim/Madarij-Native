@@ -78,9 +78,9 @@
   "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Four Russian paragraphs refined; two own citation notes added. Current corpus has 3096 author records and 9 notes.",
-    "current_asset_sha256": "75eb06709dff47e2d0b1e371cc72d3e253acc47e95122c8b0c2cd982a0b157e9",
+    "change": "Seven Russian paragraphs refined; three own citation notes added. Current corpus: 3096 author records and 10 notes.",
+    "current_asset_sha256": "7e29f873958dc5498b9000156ec4ca98b2a9987727ffdef630e7b1df15c39237",
     "current_asset_runtime_checked": false,
-    "scope": "Historical evidence is tied to the previous recorded APK and asset hashes. Current APK rebuild/import pending."
+    "scope": "Rebuilding and checking final current APK. Prior snapshots from an early cold-start import still contained the old 3103 rows; no positive runtime assertion is made for this new corpus yet."
   }
 }

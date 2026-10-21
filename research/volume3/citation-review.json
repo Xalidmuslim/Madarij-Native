@@ -366,6 +366,262 @@
       ],
       "finding": "Detachment leader and love of al-Ikhlas found in both sources; author abbreviation retained.",
       "method": "Targeted manual same-agent comparison of classical digital report and author citation, with Russian sense checked. Not a complete isnad study or independent human verification; primary printed editions not visually collated."
+    },
+    {
+      "source_ids": [
+        "v3-p028-04",
+        "v3-p029-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2002"
+        }
+      ],
+      "finding": "Scale/character and obscene speech found; Tirmidhi’s own حسن صحيح confirmed, no new independent grade added.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p029-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "4798"
+        }
+      ],
+      "finding": "Exact core report about fasting and standing in prayer found in Abu Dawud. Author unspecified الصحيح not silently expanded into attribution to Bukhari or Muslim.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p030-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2018"
+        }
+      ],
+      "finding": "Nearness, verbosity, pompous speech and author explanation المتكبرون all present.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p067-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2000"
+        }
+      ],
+      "finding": "Self-aggrandizement report found; primary has في الجبارين, author has في ديوان الجبارين. Author formulation retained.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p068-05"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2488"
+        }
+      ],
+      "finding": "Fire/proximity/ease report found; this Tirmidhi witness has هين سهل, author has هين لين سهل. Author wording and reported grade retained.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p217-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3462"
+        }
+      ],
+      "finding": "Ibrahim’s greeting, good soil, sweet water, open plain and four remembrances found. Ahmad attribution not fully checked: targeted searches of this fetched Musnad for the soil/water phrases did not locate the same wording; this is not proof of absence in all recensions.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p219-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "7405"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2675"
+        }
+      ],
+      "finding": "Divine remembrance in self/assembly found in both; author conditional paraphrase preserved.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p301-05",
+        "v3-p302-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3127"
+        }
+      ],
+      "finding": "Firasat report and Quran 15:75 found. Tirmidhi’s own description غريب retained in research only; no newly assigned authenticity degree in author text. Russian antecedent clarified by preceding Quran 47:30.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p314-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "3910"
+        },
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "1614"
+        }
+      ],
+      "finding": "Core superstition report found. Tirmidhi transmits via Muhammad ibn Ismail Sulayman ibn Harb’s view that the final وما منا ... بالتوكل is Ibn Masud’s speech. Own app note records this qualified attribution; author quote retained. Generic author الصحيح not assumed to mean either of the two Sahih books.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p392-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3490"
+        }
+      ],
+      "finding": "David prayer about love and cold water found, with Abu Idris/Abu Darda chain; all requests retained in Russian.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p392-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3491"
+        }
+      ],
+      "finding": "Abd Allah ibn Yazid prayer about granted and withheld loved things found; pronouns and both parallel petitions compared.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p419-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2760, internal variants 32–35; compare 1499"
+        }
+      ],
+      "finding": "Ibn Masud report includes jealousy, praise and excuse clauses; variant 35 gives sending messengers, and 1499 contains مبشرين ومنذرين with another chain. Author wording and named chain retained; not asserted letter-for-letter identical to one digital variant.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p419-05"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2761"
+        }
+      ],
+      "finding": "Abu Salama/Abu Hurayra report found. Primary uses المؤمن, author العبد in final clause; author formulation retained.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p419-06",
+        "v3-p420-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1499"
+        }
+      ],
+      "finding": "Saad jealousy comparison found; author excerpt retained.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p462-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "2859"
+        },
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "17634; 17636"
+        }
+      ],
+      "finding": "Straight-path allegory found in both. Fuller Islam/walls/prohibited doors/Book/inner admonisher explanation in Ahmad 17634; shorter wording in Tirmidhi 2859 and Ahmad 17636. Author excerpt combines the reported explanation with own shortened form; no source variant silently substituted.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p484-05"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "34"
+        }
+      ],
+      "finding": "Taste-of-faith report found. Russian root repetition removed with all three objects of acceptance retained.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p521-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "179"
+        }
+      ],
+      "finding": "Sleep, scales, deeds, veil/light and all creation in sight found. Explicit قبل عمل النهار / قبل عمل الليل clarifies shortened Madarij wording. Russian changed from before onset of day/night to before day/night deeds; Arabic unchanged.",
+      "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
     }
   ]
 }
