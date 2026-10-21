@@ -16312,8 +16312,308 @@
         }
       ],
       "finding": "Actual كما صح عنه without additional أنه قال across400–401. Both full khalil quotes and both-in-Sahih statement retained; subsequent love/friendship comparison and soul/heart definition read. Cross-page401–402 next unit not yet marked checked here."
+    },
+    {
+      "source_ids": [
+        "v3-p401-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "محبوبه",
+          "secondary": "المحبوب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual محبوبه with possessive, not المحبوب. Definition, complete Khalil poem and full sacrificial-son continuation401–402 read; no source normalization."
+    },
+    {
+      "source_ids": [
+        "v3-p403-01",
+        "v3-p404-01"
+      ],
+      "decision": "retain_control_translation_pending_context",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سنا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "اذا ظلمة الليل انجلت بضيائها يعود لعينيه ظلاما كما هيا",
+          "secondary": "",
+          "tokens": 10
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اذا ظلمة الليل انجلت بضيائها يعود لعينيه ظلاما كما هيا",
+          "tokens": 10
+        },
+        {
+          "tag": "replace",
+          "control": "تعطك",
+          "secondary": "تعطيك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كما",
+          "secondary": "فما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تلف",
+          "secondary": "كلف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للحبيب",
+          "secondary": "لحبيب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واف",
+          "secondary": "بها وافى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الست",
+          "secondary": "فما لي",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "مناديا",
+          "secondary": "المناديا",
+          "tokens": 1
+        }
+      ],
+      "finding": "All22couplets and their control order403–404 inspected. Actual سنا, تعطك, كما, تلف, للحبيب, واف, ألست and مناديا retained. Restore semantically distinguishing vowels مُنْيَة then مَنِيّة and Russian order/parallel movement. Separate reluctant-giving line remains unresolved; whole joined unit reopened pending semantic/back review, not accepted as final."
+    },
+    {
+      "source_ids": [
+        "v3-p404-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الهمة",
+          "secondary": "المحبة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual first لأن الهمة, not المحبة. Complete two grounds for intensity/companionship, double generation and conclusion retained."
+    },
+    {
+      "source_ids": [
+        "v3-p405-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فناؤه",
+          "secondary": "فناءه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual فناؤه nominative spelling, not فناءه. Keep two meanings and limits to forgetting/witnessing self rather than new ontic annihilation claim."
+    },
+    {
+      "source_ids": [
+        "v3-p405-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منزلة",
+          "secondary": "منزل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual منزلة feminine plus فيه masculine retained as print, not normalize to منزل. Complete quoted ranks and both groups retained."
+    },
+    {
+      "source_ids": [
+        "v3-p405-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بسوى",
+          "secondary": "بما سوى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual بسوى without inserted ما. Both stages of thought fading and heart-draw inference retained."
+    },
+    {
+      "source_ids": [
+        "v3-p405-09",
+        "v3-p406-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووهبها",
+          "secondary": "وهبة وهبها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual عارية أعيرها ووهبها without secondary وهبة وهبها. Entire two-page list repeats all eight human/divine qualities, not collapsed; explicit counterfactual preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p406-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فاذا",
+          "secondary": "فاذن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged actual فإذًا with tanwin restored, not secondary final ن. Whole actions/attributes/names chain retained, Russian conclusive relation matches."
+    },
+    {
+      "source_ids": [
+        "v3-p406-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالصمم",
+          "secondary": "بالصم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual بالصمم double م; [ويثبت] printed brackets preserved in both languages. Full given-qualities/knowledge/non-use/five-privations account retained. سبحانه corrected in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p406-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بنفسه",
+          "secondary": "لنفسه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المنفرد",
+          "secondary": "المتفرد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual بنفسه and المنفرد, not لنفسه / المتفرد. Russian subsistence corrected to Сам по Себе rather than passive established by Himself; no self-causation introduced."
+    },
+    {
+      "source_ids": [
+        "v3-p407-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فوجوده",
+          "secondary": "فموجود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual فوجوده not فموجود. Entire independent/dependent existence distinction retained; glorification rendered accurately."
+    },
+    {
+      "source_ids": [
+        "v3-p407-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الشهود",
+          "secondary": "المشهد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "موجودا",
+          "secondary": "موجود",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual في الشهود and موجودا accusative, not secondary المشهد / موجود. Three witnessing clauses retained; author immediate rejection of eliminating created existence407-04 and disavowal407-05 complete."
+    },
+    {
+      "source_ids": [
+        "v3-p407-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منازل",
+          "secondary": "فمنازل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فعقاب",
+          "secondary": "فعقبات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual منازل without added ف and plural عقاب (mountain passes), not secondary عقبات. Unvocalized روح retained with contextual Russian отрада; no forced global spirit substitution. Love-as-goal contrast complete."
+    },
+    {
+      "source_ids": [
+        "v3-p407-10",
+        "v3-p408-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منزلة",
+          "secondary": "منزل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual منزلة at last rank not منزل. Full advance/rearguard explanation across407–408 retained, including final attribution هذا شرح كلامه."
+    },
+    {
+      "source_ids": [
+        "v3-p408-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ساقة ارباب",
+          "secondary": "بساقة او باب",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual ساقة أرباب, not malformed old بساقة أو باب. Opposite hierarchy and explicit author preference retained; entire hired-worker/slave contrast408 and knot/link/three effects409 read."
     }
   ],
-  "record_count": 786,
+  "record_count": 801,
   "unreviewed_candidates_remain": true
 }

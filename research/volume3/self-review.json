@@ -21747,14 +21747,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p403-01+v3-p404-01": {
-      "sha256": "183edcd8ce69269ed6abf7c8178a88a4ff093a4c64f6275943ea37f51565fac5",
+      "sha256": "58405204c914ccb9a5d0a151c3d87e55ffabbe0e46e6b0b1a96bed09236f638d",
       "stages": {
-        "semantic": "self_checked_against_print",
+        "semantic": "pending_contextual_review",
         "literary": "self_checked_russian_only",
-        "back_comparison": "self_checked_against_print"
+        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Unambiguous corrections recorded, but reluctant-giving hemistich بما للحبيب عنه يدعوه ذا ليا remains syntactically unresolved. Enlarged actual403 inspected, old secondary1996 بما لحبيب differs and does not settle it. Retain prior working Russian; no claim of final semantic/back verification for entire joined poem. Need settle spelling/spacing/preposition relation and direction of دعاه عنه; do not silently change عن to إلى or assume property ownership."
     },
     "v3-p404-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -21897,34 +21898,37 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p406-03": {
-      "sha256": "41b98e0c60451d63c711e152b549ac9e4fdd484d078c0ff138e03d0780821c0f",
+      "sha256": "6f8fe70d767884e7506707fe7592afde3bade267d1563fec17f64335d0574927",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged actual406 prints conclusive فإذًا with tanwin, not a conditional إذا without it. Preserve final-alif orthography rather than secondary فإذن. Russian Тем самым already renders conclusive relation. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p406-04": {
-      "sha256": "df0937e20d06d2ace9ee49951c70dec3af513d073ffd068ee3efdec41c030258",
+      "sha256": "54801b4b509be4790a68b74303530e687b5c51fa9749a8d4457a8ab0e31dccce",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه is glorification not تعالى. Printed editor-supplied [ويثبت] remains visibly bracketed in Arabic/Russian; complete five privations and author inference retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p406-05": {
-      "sha256": "87e2ecf14302b5be95e052b63a3e6590e3a4dfefd36dd64172cb7e64cd4c9eef",
+      "sha256": "ffc98aa06520aa87cadda8487abd4d829e5466e5de70699ffd0a34b3bda5e934",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "الثابت بنفسه means subsisting independently, not established/caused by Himself. Remove misleading passive instrumental construction; preserve necessity/truth/eternity/uniqueness and all preceding dependent-created-existence assertions. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p407-01": {
       "sha256": "b6066f21dfeaad5b9f7916174244c1f60893baa7a07014e6362e12d2342e88ce",
@@ -21937,24 +21941,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p407-02": {
-      "sha256": "b0b2a644cb9c2fa878387280e813a0824643f91600498b3cd8e233fe6bca7c42",
+      "sha256": "1a196d264719c3ffcc601ce09e1a36f0d5d1b9d8a0adfa461ffb5f9a45b94e71",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه glorification accurate; keep distinction of self-subsisting existence versus being brought into existence. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p407-03": {
-      "sha256": "2b247a4b5695ccbe87518d51a9098c661df3d59ea00ad62ef68bab2ce94831d8",
+      "sha256": "af8d8c90d0db13e2da70ebe6cfd344608db2869f3d9a307e0179dd550d9382ec",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه glorification, not تعالى. Keep three distinct negated objects of witnessing and explanatory absence of witnessing others, followed by explicit rejection of total ontic erasure. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p407-04": {
       "sha256": "46a3aa481f40ce6a257d5adab066298556e957cf89dd8bb97af92662348d3242",
@@ -22097,14 +22103,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p409-03": {
-      "sha256": "a0d4ba094937d87ecdef72d9473e52e21c8a299f9cc33434a4c0efcaef3a57f2",
+      "sha256": "8b47ac26c5817fb74227af9146969866d0d4ef66a1254f22de4c71f282e39548",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore جناح السفر wing/travel image in natural Russian, rather than omit the metaphor. Preserve departure, enduring journey, encounter and truth/external-forms contrast. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p409-04": {
       "sha256": "aa186687fb721f41f0cecc8b7bf06bfd3c3c23c51daa5e137dc51ecd3943fcf9",

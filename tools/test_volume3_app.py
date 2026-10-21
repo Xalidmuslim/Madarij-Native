@@ -22,7 +22,8 @@ class Volume3PackagingTest(unittest.TestCase):
         report = validate(self.bundle, self.structure)
         self.assertEqual(582, report["author_pages"])
         self.assertEqual(3096, report["author_paragraphs"])
-        self.assertEqual(["v3-p110-04", "v3-p246-03", "v3-p246-05", "v3-p247-03"],
+        self.assertEqual(["v3-p110-04", "v3-p246-03", "v3-p246-05", "v3-p247-03",
+                          "v3-p403-01+v3-p404-01"],
                          report["unresolved_source_ids"])
 
     def test_missing_chapter_is_rejected(self):
@@ -52,7 +53,7 @@ class Volume3PackagingTest(unittest.TestCase):
                 def change(b, s):
                     for c in b["chapters"]:
                         for p in c["paragraphs"]:
-                            if p["id"] == sid + "-ru":
+                            if "+".join(p.get("source_ids", [])) == sid:
                                 p["status"] = "draft_self_checked"
                 self.rejected(change)
 

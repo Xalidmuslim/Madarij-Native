@@ -73,6 +73,27 @@
       "evidence": "Actual323 main quote lacks لا; actual324-02 explicitly أحدها أن لا يبغى له عوج and325-03 أي لا يبغى للحكم عوج. Direct contextual author repetition supports negative sense. Arabic323 retained, Russian first [не] visibly marked, not an unmarked invented source reading. All three parallel negative restrictions supported by324–326 explanation.",
       "independent_human_review": false,
       "unresolved_critical_status_added": false
+    },
+    {
+      "source_ids": [
+        "v3-p403-01",
+        "v3-p404-01"
+      ],
+      "status": "pending_contextual_review",
+      "control_pdf": "Actual403–404 and narrow enlarged reluctant-giving line inspected.",
+      "control_reading": "أما يستحي من يدعي الحب باخلا ... بما للحبيب عنه يدعوه ذا ليا",
+      "problem": "Current working Russian к чему Возлюбленный зовёт may obscure the direction of عنه and the relation/spacing بما للحبيب. Initial-lam versus alif and syntactic construal require further comparison; no conjectural source emendation adopted. Whole joined poem marked pending, despite resolved wish/death order and restored parallel verbs.",
+      "additional_digital_sources": [
+        {
+          "file": "secondary-1996.txt",
+          "finding": "Has بما لحبيب عنه يدعوه ذا ليا; does not settle control grammar. Actual classical Rawdat al-Muhibbin local text lookup did not locate this same line."
+        }
+      ],
+      "contextual_hypotheses_not_adopted": [
+        "Calls to relinquish an attachment, compared with calls to give what belongs to beloved.",
+        "Possible spelling/spacing issue around بما للحبيب; no conjectural letter removed."
+      ],
+      "next_action": "Check actual control word shapes against a separate printed witness or full parallel author poem and establish case/direction before choosing final Russian; preserve all22 couplets."
     }
   ]
 }
