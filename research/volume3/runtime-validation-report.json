@@ -79,8 +79,8 @@
   "latest_corpus_check": "All 3107 APK records exactly match actual database including 191/194/196 Arabic corrections and all Russian refinements through200; no extra rows, integrity_check ok. Protected first two volumes unchanged.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "New221-05 source correction, Russian219/221/224–226 refinements and earlier202/208/211/215 corrections after tested through200 APK. Selected print queue through226.",
-    "current_asset_sha256": "f66ce18489250f6103a335e15b3ae23ae4d50eacd81744dbd58622f2af0928cc",
+    "change": "New229-05 causal preposition and pronoun restored, plus all202–226 edits; selected candidates through234. Positive root APK remains through200.",
+    "current_asset_sha256": "1a3c6001c176ce3381668c5e4e1f72590e6362a8177c734de582fe7a4cd511c7",
     "current_asset_runtime_checked": false,
     "scope": "Positive root hashes and database evidence apply through200 only; later new bytes require next build/import."
   },

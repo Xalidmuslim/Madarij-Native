@@ -9076,8 +9076,317 @@
         }
       ],
       "finding": "Control اكتفى without added و. Whole created-to-created praise/request comparison checked; Russian dative recipient clarified, final Lord-of-worlds question retained."
+    },
+    {
+      "source_ids": [
+        "v3-p227-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واستعطافا",
+          "secondary": "واستعظاما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهذه",
+          "secondary": "وهذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added هي, استعطافا not older استعظاما, and feminine وهذه. Preserve four modes of intimate speech and final generalization in Russian, no grammar harmonization of source."
+    },
+    {
+      "source_ids": [
+        "v3-p229-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يفنى بشهود",
+          "secondary": "بفناء شهود",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ويبقيه ويقطعه",
+          "secondary": "ويقتطعه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control يفنى بشهود and retains both ويبقيه ويقطعه. All death/life, self/Lord, fana/baqa and separation/connection pairs preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p229-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "جعل",
+          "secondary": "بجعل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "8x crop confirms بجعل الله له ذاكرا له. Restore causal ب and omitted second له, making grace and object of remembrance explicit in Russian. Whole repeated rhetorical defense, negated self-power and closing criticism retained."
+    },
+    {
+      "source_ids": [
+        "v3-p230-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "والادلة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويزعمون",
+          "secondary": "ولكنهم يزعمون",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وان",
+          "secondary": "وانما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control والأدلة among four road safeguards, ويزعمون, and وأن retained. Full contrast, attributed shorter-path claim, not-every-traveler qualification and final danger condition preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p231-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عند القوم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no extra الفاتحة label or عند القوم and includes من. Verse, three superlatives and all four spirit/secret/core/goal predicates retained."
+    },
+    {
+      "source_ids": [
+        "v3-p231-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تريده",
+          "secondary": "تريد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ثلاث",
+          "secondary": "ثلاثة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تريده and ثلاث, retain. Russian distinguishes narrower technical sense and three semantic contexts rather than falsely count all Quran lexical occurrences."
+    },
+    {
+      "source_ids": [
+        "v3-p231-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعرفهم بسيماهم لا يسالون الناس الحافا",
+          "secondary": "",
+          "tokens": 6
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الاية",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وكانوا",
+          "secondary": "كان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بالمدينة",
+          "secondary": "في المدينة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control includes entire تعرفهم بسيماهم لا يسألون الناس إلحافا tail, وكانوا and بالمدينة. All verse text, four-hundred approximation, two lacks, each expedition, Suffa and one-of-opinions qualification preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p231-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added تعالى after في الله. Whole opposed-enemies/fighting/livelihood explanation retained as reported interpretation."
+    },
+    {
+      "source_ids": [
+        "v3-p232-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انه",
+          "secondary": "انهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أنه impersonal rather than older أنهم, retained. All poverty/incapacity/weakness and chastity/dignity causes retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p233-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Essence/outer-form distinction and dependence solely on God versus means retained."
+    },
+    {
+      "source_ids": [
+        "v3-p233-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "احكامه",
+          "secondary": "الاحكام",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أحكامه retains suffix. Full religious/decretive scope and not-commanded-to-resist qualification preserved, no fatalistic generalization."
+    },
+    {
+      "source_ids": [
+        "v3-p233-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بما",
+          "secondary": "بم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وما",
+          "secondary": "ما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ان",
+          "secondary": "شيء",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بسوى",
+          "secondary": "سوى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بما، وما، أن، بسوى with no added به; retain even where older spelling/syntax differs. Russian complete question and answer retain same Lord and poverty."
+    },
+    {
+      "source_ids": [
+        "v3-p234-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كله",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "كله",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control كله before لله, no extra عز وجل. Full self/share/desire list and residual-self condition preserved in Russian."
     }
   ],
-  "record_count": 443,
+  "record_count": 456,
   "unreviewed_candidates_remain": true
 }

@@ -11713,14 +11713,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p229-05": {
-      "sha256": "19c3f62f01adf70ea95f1fd4271e1a809e1a186956f9cd0c8382ae51cc998d2e",
+      "sha256": "cd87bab02e304b2bca6fab650d885c349ac79729aef7985bc704fb8c10bb7594",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2019 full page and 8x crop confirm بجعل الله له ذاكرا له; restore omitted causal ب and second له. Russian causal relation and remembered object explicit, removing awkward preceding participial relative, retaining whole rhetorical defense and final criticism. Full paragraph compared, Russian separately reread/back-compared by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p229-06+v3-p230-01": {
       "sha256": "2c29dfb8e47041875660efd20d0efaafcb433ed98d669611024eca3341d7723f",
