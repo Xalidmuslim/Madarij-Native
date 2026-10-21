@@ -18542,14 +18542,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p347-03": {
-      "sha256": "8dadb48358960baaea19828a647d78326bd4abe0382a44122983cb5a91c74828",
+      "sha256": "1adb970eed3b99905d445ebdd7f313b0473640310251c84739bb45c109abecd9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Q13:28 ألا is an affirmative attention marker here, not an interrogative negative. Keep full Arabic and both Quran passages with exact references. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p347-04": {
       "sha256": "550b6d88a8459d87dda323972e8c7e1a7e35eec6fba27d799915de2ff10be6e6",
@@ -18662,14 +18663,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p349-05": {
-      "sha256": "f305abb2f0a2d5a328f4690120b43961f6d6a1a0527f599c009dae89c7fb9eda",
+      "sha256": "3e365b16e13f3e06b7eec0daf392da85161dfffca215be78d53a2bdaa41cd949",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed سبحانه is glorification, not تعالى. Preserve all four contrasted speaker classes and complete rejection of oath interpretation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p349-06+v3-p350-01": {
       "sha256": "889904d2ea770b5e831652cac9b9d2890be5451438d3d7d2249d87a3813b1f7e",
@@ -18812,14 +18814,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p352-05": {
-      "sha256": "4b8e9beaa72c30d6b82ff9b55953bb12b4c46117f540719204c4358dcc0673ee",
+      "sha256": "8a46328bd124550872aa6af28d09c9c106b03b96dfe2c4a3a292814471346af9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "الخبر به here is khubr, knowing/acquaintance with the object, not a speech report. Mukhtar al-Sihah خ ب ر explicitly distinguishes خبر news from الخبر بالضم وهو العلم بالشيء. Preserve all four domains, stronger/broader comparison and full Quran-governance sequence. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p352-06": {
       "sha256": "31dfa124eae28e923b13fa0bc25acab855ffd581a48243d67d54174e44f1b821",
@@ -18992,14 +18995,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p355-05": {
-      "sha256": "f09642193ddefa43c6cbce08688d3dd61f6f799e268c6c76f2c78be041edce3c",
+      "sha256": "ef1de8ca4ddd512e702796a18b4da4017f32c9eaed1e2fc9537e52cee554b59a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged p355 has initial dotted ف in فطمأنينتها, not own undotted و. Restore causal connective. Print وعلى محصوله retained despite awkwardness; do not replace with old وعد بحصوله. Russian causal relationship retained. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p355-06": {
       "sha256": "2c0c4d5046895a5b0a69f760dcfdafac37c236bf434afe99b7ebad8d1f45f2b1",
@@ -19083,24 +19087,26 @@
       "resolution": "Direct 7x control scan: يقصرون ... عن ... ويقتصرون; former reading reversed the limitation on strenuous acts. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
     },
     "v3-p357-01": {
-      "sha256": "7ee35fb8ce64cf541ea2a49d65f106b8a8635ca944764d8dfd76f3936a72af33",
+      "sha256": "283639b5ace0b7f0aee3b2f560d93b07c5afb684309afe842da029c7bc3fd65c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه glorifies God; not تعالى. Preserve stronger comparison between hearts/bodies and both signs. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p357-02": {
-      "sha256": "6633a5941c46704e1e1601e2e5d863a307c5718a13e59cfec66fb5596ee65659",
+      "sha256": "4053a3ad38e2f01c83b339c8108ebb3d9c2369667c26fb3a3ee5930cc9a4db09",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "وأفناه جملة is complete destruction, not merely loss of strength. Preserve both emphatic verbs, counterfactual condition, Musa/mountain comparison and سبحانه. Direct next author paragraph expressly excludes equivalence of present human experiences and was reread; do not change attribution or introduce a new theological assertion. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p357-03": {
       "sha256": "c7c0c341d4eb2f4859f2f0a415347ebe30ddaa57501daa1e841ab8f5967464c7",
@@ -19154,14 +19160,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p358-03": {
-      "sha256": "34de58591363129b4bf78a3501e95b1867ba6f28753f22a2e7558c1fdaced6fc",
+      "sha256": "063e5daf176a96f018e820c7c951d22ffdcf55aaa8462f344339207435a245fc",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "فلا تستوحش منها refers to not being unsettled by the hostile witness, not a new assertion of social estrangement. Preserve positive testimony and closing appeal. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p358-04": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -19174,14 +19181,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p358-05+v3-p359-01": {
-      "sha256": "cb18fd0532e9dedd8a635a69729810aa45164a995c2b6f440d7c0c91981b4224",
+      "sha256": "646ee084e13d424b5a76a2b18fa1d94cd041a103a59eb7417c28e98dc687bcf5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed سبحانه is glorification, not تعالى. Preserve all three acts, seeing vs existence distinctions, self-subsisting God vs things sustained by Him, and reversed final contrast. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p359-02": {
       "sha256": "8df982f91e7c90fd594b95183bf52e8af7a1928e45f98601d2e157d4f6938a6c",

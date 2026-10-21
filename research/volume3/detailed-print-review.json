@@ -14198,8 +14198,478 @@
         }
       ],
       "finding": "Actual وتقف not وتوقف; preserve boundary of rank and repeated العبودية. Neighboring quote في قلب and repeated على قلب remain distinct; p346 gift/robe/document image and closing invocation complete."
+    },
+    {
+      "source_ids": [
+        "v3-p347-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يا ايتها",
+          "secondary": "ياايتها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print قال الله تعالى in first introduction, وقال تعالى in second, without additional الله; Quran spelling يا أيتها retained. Full13:28/89:27–30 checked; affirmative ألا in Russian corrected."
+    },
+    {
+      "source_ids": [
+        "v3-p349-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ايضا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print وكذلك القولان في without extra أيضا here; preceding349-01 does contain أيضا, and remains distinct."
+    },
+    {
+      "source_ids": [
+        "v3-p349-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "على رسوله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print ذكره الذي أنزله وهو كتابه without secondary على رسوله. Arabic cite bracket20:125 covers printed125–126; Russian complete125–126 mapping retained, no author speech or verse removed."
+    },
+    {
+      "source_ids": [
+        "v3-p350-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيه",
+          "secondary": "في",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual رحمه الله present and فيه استراحة أنس not secondary في. Both differences and alternatives نعتا / حينا بعد حين remain complete."
+    },
+    {
+      "source_ids": [
+        "v3-p350-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "قوته بالامن",
+          "secondary": "قوة الامن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تفارق",
+          "secondary": "تفارقه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print مع قوته بالأمن and والطمأنينة لا تفارق, not secondary قوة الأمن / تفارقه. Full false-security vs enduring-tranquillity distinction and lexical derivation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p351-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منزل",
+          "secondary": "منزلة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print من الأمن and منزل الطمأنينة, not omitted من or feminine منزلة. Read both differences, complete three-state analogy and transition to heart states."
+    },
+    {
+      "source_ids": [
+        "v3-p352-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اقوى واعم",
+          "secondary": "اعم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "منها",
+          "secondary": "منه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Print أقوى وأعم, واكتفت به منها and جعلت له الولاية all visible. Preserve stronger comparison, feminine منها and له. الخبر به read as knowledge/acquaintance, not news/report, with classical lexical check. Final first-degree quote continues on353 and is not truncated."
+    },
+    {
+      "source_ids": [
+        "v3-p353-03",
+        "v3-p354-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "به",
+          "secondary": "بها",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المستقيم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "شاء",
+          "secondary": "يشاء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المخوف",
+          "secondary": "والمخوف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual به, صراطه without المستقيم, ما شاء and المحذور المخوف without additional conjunction. Long paragraph continues on354; all two judgments, two fears and both decreed/not-decreed cases retained."
+    },
+    {
+      "source_ids": [
+        "v3-p354-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "هذا النازل",
+          "secondary": "هذه النازلة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يعجز عنه",
+          "secondary": "يضجر عنها",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيه",
+          "secondary": "فيها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يجزع منه",
+          "secondary": "يضجر منها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual هذا النازل masculine, no added له, يعجز عنه and يجزع منه, not secondary feminine or يضجر. Preserve conditional ability/helplessness contrast."
+    },
+    {
+      "source_ids": [
+        "v3-p354-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يستبعد",
+          "secondary": "تستبعد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تغنيه",
+          "secondary": "تغيبه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تخفف",
+          "secondary": "تخففه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ولا يستبعد، تغنيه and تخفف عنه visible in enlarged medicine lines; no extra ه or secondary تغيبه. Complete reward/trial/medicine analogy retained."
+    },
+    {
+      "source_ids": [
+        "v3-p355-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "معاطبها ومناهيها وافاتها وهو",
+          "secondary": "ثلاثة اشياء هن منتهى كشف الصادقين ارباب البصائر احدها الكشف عن منازل السير والثاني",
+          "tokens": 14
+        }
+      ],
+      "finding": "Whole dangers/prohibitions/harms sentence visible at start355, no inserted three-item summary from unrelated secondary alignment. Preserve all three degrees across354–355."
+    },
+    {
+      "source_ids": [
+        "v3-p355-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تطمئن",
+          "secondary": "تظهر",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "حال",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وطمانينتها",
+          "secondary": "فطمانينتها",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وعلى محصوله",
+          "secondary": "وعد بحصوله",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تحصل",
+          "secondary": "يحصل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlargement confirms تطمئن في حال and initial فطمأنينتها: own و corrected to ف. Printed وعلى محصوله not replaced by conjectural وعد بحصوله. Actual تحصل feminine; promise/meeting/knowledge chain and subsequent hunger analogy retained."
+    },
+    {
+      "source_ids": [
+        "v3-p356-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual به at end لطف الله به retained. Attribution يريدون بها limits this terminology to the people being described."
+    },
+    {
+      "source_ids": [
+        "v3-p356-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "متعلقه",
+          "secondary": "تعلقه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للافعال",
+          "secondary": "الى الافعال",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual متعلقه and الجامعة للأفعال, not secondary تعلقه / إلى الأفعال. All three ranks remain complete."
+    },
+    {
+      "source_ids": [
+        "v3-p356-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الشهودات الثلاث",
+          "secondary": "الشهود الثلاثة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يفنيهم",
+          "secondary": "يغنيهم به",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual الشهودات الثلاث and يفنيهم عنهم, not secondary الشهود الثلاثة / يغنيهم به. Russian loss of self-awareness kept distinct from ontic annihilation; ensuing obligations/voluntary acts discussion complete."
+    },
+    {
+      "source_ids": [
+        "v3-p357-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "متوهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual لا يتوهم without added متوهم. Explicit denial that human earthly experience equals or even approaches mountain manifestation retained unabridged; preceding وأفناه جملة accurately restored in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p357-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "رضي الله عنهما",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual joint رضي الله عنهما after both Abdullah ibn Salam and Kab; رحمه الله after Suddi. No detached secondary honorific substituted; three transmitted explanations remain separate."
+    },
+    {
+      "source_ids": [
+        "v3-p358-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بمثل هذا",
+          "secondary": "بهذا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "او لا",
+          "secondary": "ولا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual بمثل هذا and أو لا أحدث به, not بهذا / ولا. Existing separately labelled own reader note and prior classical primary collation disclose Thabit/Humayd attribution difference; author control not silently emended."
+    },
+    {
+      "source_ids": [
+        "v3-p358-05",
+        "v3-p359-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تفني",
+          "secondary": "تعفي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الخلق",
+          "secondary": "القلب للخلق",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وكل",
+          "secondary": "ويرى كل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "قائم",
+          "secondary": "قائما",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولا يشهده",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual تفني الآثار, رؤية الخلق, وكل شيء قائم به, and final ولا يشهده are visible across358–359. No secondary القلب للخلق or missing/additional clauses substituted. Reread complete next paragraph on transition from fana to baqa, warning against neglecting obligations, and unchanged station/state argument."
+    },
+    {
+      "source_ids": [
+        "v3-p359-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "في",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual p359 has سبق بها في الأزل with في; do not omit it from older witness. Entire station/state contrast, unchanging prior decree and baqa-after-fana conclusion read in control and Russian without truncation."
     }
   ],
-  "record_count": 685,
+  "record_count": 705,
   "unreviewed_candidates_remain": true
 }

@@ -79,10 +79,10 @@
   "latest_corpus_check": "All3109 rows exactly match through318 APK and its embedded asset, seven fields/no extras/integrity ok, protected first two volumes unchanged, four pending source IDs retained.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional319–346 print/Russian corrections after positive318 APK, record count3109 unchanged.",
-    "current_asset_sha256": "b8465ba964cb4ceabe8ecb7c5fdbfbc9239617d5aac2b78a690ce25a6bae14dc",
+    "change": "Additional319–359 print/Russian corrections after positive318 APK, record count3109 unchanged.",
+    "current_asset_sha256": "c23d50698b160c4c64a96b23ad02b81ed77175e5da2205170606d04532423618",
     "current_asset_runtime_checked": false,
-    "scope": "Positive runtime evidence applies through318 only. New319–346 source bytes pending import; four semantic cruxes unchanged."
+    "scope": "Positive runtime evidence applies through318 only. New319–359 source bytes pending import; four semantic cruxes unchanged."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",

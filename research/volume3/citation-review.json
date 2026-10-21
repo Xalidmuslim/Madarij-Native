@@ -2043,6 +2043,43 @@
       ],
       "finding": "Basin/hearts report5678 matches substance,5679 has extra Moses/tablet material not in author and not imported. Wahb5680 says روح من الله يتكلم with extra تكلم before أخبرهم; author2019 روح من روح الله without repeated speech verb kept. Do not add unprinted created adjective to author quote or new divine-emanation assertion; reported-view attribution retained. Ata5682 has final-n يسكنون, author فيسكنوا retained; no primary grammatical harmonization. These are tafsir views with differing paths, not newly authenticated prophetic hadiths.",
       "method": "Same-agent actual2019 images, full named classical body records read, complete Russian reread/back comparison; no independent human verification."
+    },
+    {
+      "source_ids": [
+        "v3-p347-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_classical_hadith_records_read_author_excerpts_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "2518 complete first record before2518(m), PageV04P285–286"
+        },
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_location": "18001 complete Wabisa report before18002; related18006 read with different wording"
+        }
+      ],
+      "finding": "Tirmidhi2518 full Hasan ibn Ali report has فإن الصدق طمأنينة وإن الكذب ريبة after دع ما يريبك; control author excerpt remains without inserted chain/preamble. Tirmidhi own صحيح statement was read but is not a new independent grading. Ahmad18001 has exact البر ما اطمأن إليه القلب followed by soul/sin/fatwa clauses; author quotes only first clause and it is not expanded. 18006 differs النفس. Complete chains/body read; no independent isnad judgment or modern footnotes imported.",
+      "method": "Same-agent actual2019 images, classical full records, Russian reread and back comparison; not human independent editing."
+    },
+    {
+      "source_ids": [
+        "v3-p352-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_lexical_context_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0666IbnAbiBakrZaynDinRazi/0666IbnAbiBakrZaynDinRazi.MukhtarSihah/0666IbnAbiBakrZaynDinRazi.MukhtarSihah.JK000107-ara1",
+          "blob": "08c8b33915758e2cb4db8947e464c75bcc58f2e8",
+          "digital_location": "Complete خ ب ر entry, from الخبر واحد الأخبار through خيبر موضع بالحجاز"
+        }
+      ],
+      "finding": "Entry distinguishes news خبر from الخبر بالضم وهو العلم بالشيء and knowing/testing uses. In author comparison الخبر به is knowing/acquaintance with object, not a speech report. Russian сообщении corrected; no new Arabic vowel silently inserted.",
+      "method": "Same-agent classical lexical entry and author paragraph read; not independent human editing."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
