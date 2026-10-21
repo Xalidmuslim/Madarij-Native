@@ -1032,5 +1032,27 @@
     "reason": "Actual 6x line crop clearly shows ت in ولا تنظر, with pair of dots, before ن. Restore own omitted initial letter; the Russian prohibition already correct. Printed فابغي retains final ي; no grammatical normalization to secondary فابغ.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p394-05",
+    "printed_page": 394,
+    "previous_ar": "وكذلك «الحياء» في الحقيقة أهله حياء المحبين، فإنه يتولد من بين الحب والتعظيم. وأما ما لا يكون عن محبة فذاك خوف محض.",
+    "control_print_ar": "وكذلك «الحياء» في الحقيقة إنما هو حياء المحبين، فإنه يتولد من بين الحب والتعظيم. وأما ما لا يكون عن محبة فذاك خوف محض.",
+    "previous_ru": "Так и подлинная стыдливость — стыдливость любящих: она рождается из соединения любви и возвеличивания. То же, что не исходит из любви, — один лишь страх.",
+    "corrected_ru": "Так и подлинная стыдливость — стыдливость любящих: она рождается из соединения любви и возвеличивания. То же, что не исходит из любви, — один лишь страх.",
+    "reason": "Actual enlarged p394 line clearly prints إنما هو, not own malformed أهله. Restore two words; Russian already says true modesty is lovers modesty, no secondary source substituted.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
+  },
+  {
+    "source_id": "v3-p396-07",
+    "printed_page": 396,
+    "previous_ar": "الثالثة: الصبابة، وهي انصباب القلب إليه بحيث لا يملكه صاحبه، كانصباب الماء في الحدور. واسم الصفة منها صب، والفعل صبا يصبو صبا وصبابة، فعاقبوا بين المضاعف والمعتل، وجعلوا الفعل من المعتل والصفة من المضاعف. ويقال: صبا وصبوة وصبابة. فالصبا: أصل الميل، والصبوة: فوقه، والصبابة: الميل اللازم وانصباب القلب بكليته.",
+    "control_print_ar": "الثالثة: الصبابة، وهي انصباب القلب إليه بحيث لا يملكه صاحبه، كانصباب الماء في الحدور. واسم الصفة منها صب، والفعل صبا يصبو صبًّا وصبابة، فعاقبوا بين المضاعف والمعتل، وجعلوا الفعل من المعتل والصفة من المضاعف. ويقال: صبا وصبوة وصبابة. فالصبا: أصل الميل، والصبوة: فوقه، والصبابة: الميل اللازم وانصباب القلب بكليته.",
+    "previous_ru": "Третья — сабаба: сердце изливается к Нему так, что человек уже не владеет им, подобно воде, изливающейся по склону. Прилагательное от этого слова — «сабб», а глагол — «саба, ясбу» с отглагольными существительными «сабан» и «сабабатан». Здесь чередуются удвоенный и слабый корни: глагол образован от слабого корня, а прилагательное — от удвоенного. Говорят также «саба», «сабва» и «сабаба»: саба — само влечение, сабва — то, что выше него, а сабаба — неотступное влечение, когда сердце изливается целиком.",
+    "corrected_ru": "Третья — сабаба: сердце изливается к Нему так, что человек уже не владеет им, подобно воде, изливающейся по склону. Прилагательное от этого слова — «сабб», а глагол — «саба, ясбу» с отглагольными существительными «саббан» и «сабабатан». Здесь чередуются удвоенный и слабый корни: глагол образован от слабого корня, а прилагательное — от удвоенного. Говорят также «саба», «сабва» и «сабаба»: саба — само влечение, сабва — то, что выше него, а сабаба — неотступное влечение, когда сердце изливается целиком.",
+    "reason": "Actual enlarged396 explicitly has doubled source form صبًّا following weak صبا يصبو. Preserve this printed grammatical peculiarity, not normalize it to another masdar. Russian sabban restores b doubling; final explanatory الصبا remains a distinct undoubled form.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

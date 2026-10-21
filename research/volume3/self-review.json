@@ -21076,14 +21076,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p388-05": {
-      "sha256": "22b21e07641c46a7d12836e7a5c485ee6cc5cfd94e822600050bbd851848e55f",
+      "sha256": "6793613d323b19d6e8d8eb832a3a45473de74e6fda67caad3883ba6cd1676f53",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "لا كان من addresses the person who retains an attachment, not just a wish for the portion itself to disappear. Restore personal referent and full second hemistich; maintain author poetic devotional context. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p388-06+v3-p389-01": {
       "sha256": "b014b17ec9bdebc58dd17d99c52d872b51ee4bb744051255f410b035a8bd0a12",
@@ -21156,24 +21157,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p390-03": {
-      "sha256": "5930e4d848f62e6b0c9a21ea39644040045c599339ea1181aeec08da1e074c09",
+      "sha256": "02967fecf8725805813f601d7871eaad2dc3d6adbe0a75d62feeecf6d1cd7348",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore distinct repeated وأسألك before الشوق; do not collapse author prayer invocations. All other separate requests retained. Restore both adornment verb/noun in زينا بزينة الإيمان, not merely faith; no source variant inserted. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p390-04+v3-p391-01": {
-      "sha256": "78d1add6b86dc6c82716bdcd32c45df12b026e6429473d525253fa0fc4b6ae1a",
+      "sha256": "bca23981b06e1023effd7e8fe07096c15be2abcc559e4304f2b626808d018716",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه is glorification, not تعالى. Keep denial explicitly attributed to Jahmiyya, both asserted pleasures and entire objector quote unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p391-02": {
       "sha256": "9f0e9efa1c41c04ac054611cccca1c6212598621d0f596b2de2e53f103c9757d",
@@ -21237,14 +21240,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p393-01": {
-      "sha256": "6eb39b78d39b0e6babe3d11fe395983f61c5c0ec52d73c6a8837603d7ea568e1",
+      "sha256": "f78114bf4d08a69e10d34e3bc7ef14284509367d5034482a21adc2494bc9a8d4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed سبحانه glorification distinct from تعالى. Preserve full five Quran passages and references. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p393-02": {
       "sha256": "b070472bf970ab15e195846e9dc214f0aadf42edbe933f9a1c6f59cedbc282d2",
@@ -21257,14 +21261,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p393-03+v3-p394-01": {
-      "sha256": "46012604e4c54f79fbd8548a4b0bc08da2da614ec73c6015228b0948a0828a4d",
+      "sha256": "30c641df32e330f4f85f307c635dd9143b08adb1cd148177d6d70c80881cfc05",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore emphatic repetition أضعاف أضعاف, not collapse it to a single multiplier. All four hadith excerpts and complete joy/repentance continuation retained. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p394-02": {
       "sha256": "46a2dafc44ececd16624c058be02cdff4193e2d777fdd32e47c09e70bb63877a",
@@ -21277,14 +21282,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p394-03": {
-      "sha256": "ec35952874d253ac5ec439dff34eacd03611caa0c62c25f5bb8893a0fd8426e9",
+      "sha256": "aac478ddc9106e4b60c6f6cc35477602888867b2bef68a070c3277e1b87246fc",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Print has أو الخوف والرجاء, not simple و: preserve alternative connective, both rhetorical questions, plural lovers and plural reliance. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p394-04": {
       "sha256": "8e4a47625a9fcaee3fb24c788c6be78f36ea956388ed1ab547dd88e3da63b864",
@@ -21297,14 +21303,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p394-05": {
-      "sha256": "5a93557547e03294ec83a1a43f5477a3aaf1adc3dd3bb4d104fd887ae73f1ba5",
+      "sha256": "6134e45585b7e263cecba9e1d583b1780af39ee5253733fad2972e03baddbbb4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged p394 line clearly prints إنما هو, not own malformed أهله. Restore two words; Russian already says true modesty is lovers modesty, no secondary source substituted. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p394-06+v3-p395-01": {
       "sha256": "c15cd80e6e52ece9025f0e41790d1434577e242fa4bc5ae66bdfc33b608ccd1b",
@@ -21387,14 +21394,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p396-05": {
-      "sha256": "1160fbc2435f7e41d91c0c41b4a5c107d7189e36fdb04fe17e2e1cb0f07ca0d3",
+      "sha256": "e28cb6b6467a2ad58c9bff8efd157bed62d810e26ad35a4f80852a220bb80ded",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "أفنان رأسك denotes hair tufts/locks in grey-hair comparison. Replace unidiomatic literal branches of head with Russian locks, retaining rhetorical question, addressee, chronological clause and named plant. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p396-06": {
       "sha256": "733eb2e5f54a09842ed5b1415a9e914e3768dd18ce54ab1f7b0e2f57d84e8643",
@@ -21407,14 +21415,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p396-07": {
-      "sha256": "090bf200651a841beb85d0312aec482d970f4fb72df2aa0482879a9051abac81",
+      "sha256": "de57248abbaef6b16000d18ac312c7956df482e2d472960d86c2d20db5d0f999",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged396 explicitly has doubled source form صبًّا following weak صبا يصبو. Preserve this printed grammatical peculiarity, not normalize it to another masdar. Russian sabban restores b doubling; final explanatory الصبا remains a distinct undoubled form. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p397-01": {
       "sha256": "722b2200a4e0ddb3eeb90667854281490d856588ca8899efc66a6868ad184030",
@@ -21467,14 +21476,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p397-06": {
-      "sha256": "39576f69629cc1e9be6af7137bbbc53cf4bfeec72f8a78f73182f8df7363619b",
+      "sha256": "fe3547677ced87adea868cb7171ef6af792efe90444def77c48dd4588a3d4ab7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Correct accidentally Latin accented i to Cyrillic и with accent. Keep شغاف untranslated here before author explicitly presents three different interpretations on398; do not prematurely identify it only with covering, or add unprinted сокровенной. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p398-01": {
       "sha256": "27db325025babaff59314c105341243083085acf4e5042e13670f95517153779",

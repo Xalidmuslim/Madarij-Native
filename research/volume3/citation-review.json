@@ -2097,6 +2097,27 @@
       ],
       "finding": "Full chain Haywa/Baqiyya/AbuBakr ibnAbiMaryam/Khalid ibnMuhammad/Bilal/AbuDarda and exact حبك الشيء يعمي ويصم read in classical primary body. Control attribution to Prophet retained as author text, not newly independently authenticated. Author explicit rejection of applying the report to requested love of God is unabridged and distinct from preceding view. No modern editor assessment copied, no new grade assigned.",
       "method": "Same-agent primary body, actual2019 images and complete Russian reread/back comparison; no independent human review."
+    },
+    {
+      "source_ids": [
+        "v3-p390-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "both_named_primary_body_records_read_control_variants_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0405HakimNaysaburi/0405HakimNaysaburi.Mustadrak/0405HakimNaysaburi.Mustadrak.Shamela0002266-ara1",
+          "blob": "20cbf8a01429efb20244db785ae305cbaad195b0",
+          "digital_location": "Complete1923 Ammar report before1924, digitalms0631"
+        },
+        {
+          "path": "data/0739CalaDinIbnBalban/0739CalaDinIbnBalban.Ihsan/0739CalaDinIbnBalban.Ihsan.Sham19Y0001734-ara1",
+          "blob": "f56f3dbcebe88a95312a41054c3ad512d60b576b",
+          "digital_location": "Complete1971 before1972, PageV05P304, IbnHibban arranged by IbnBalban"
+        }
+      ],
+      "finding": "Both complete Ammar chains/body read. 2019 author إذا كانت الحياة / كلمة الحق / نعيم لا ينفد differ from primary ما علمت الحياة / الحكم or العدل والحق / لا يبيد; control kept unchanged. Hakim digital record has النظر إلى لذة وجهك, IbnHibban has لذة النظر إلى وجهك matching control; no digital order silently imported. Control has repeated وأسألك before longing: restore second Russian прошу Тебя. Restore زينا بزينة with красотой веры. All prayer requests retained; modern footnote grades are excluded and no independent authentication assigned.",
+      "method": "Same-agent actual2019 images, complete classical primary bodies, Russian literary reread and back comparison; no independent human editor."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

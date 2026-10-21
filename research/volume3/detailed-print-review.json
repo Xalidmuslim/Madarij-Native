@@ -15792,8 +15792,528 @@
         }
       ],
       "finding": "Actual يا أيها and ذكر لهم without extra فقد. Full5:54 quote complete, next four signs to continue388."
+    },
+    {
+      "source_ids": [
+        "v3-p388-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual رضي الله عنه prayer retained after Ata. First sign explanation, lion comparison encompassing second sign, and literal numbering الثالث والرابع are printed; do not invent a missing second heading."
+    },
+    {
+      "source_ids": [
+        "v3-p388-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ياخذهم",
+          "secondary": "تاخذهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اخذه",
+          "secondary": "ياخذه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual masculine يأخذهم and past أخذه, not secondary feminine or present. Full author condition retained; personal referent لا كان من restored in Russian poem."
+    },
+    {
+      "source_ids": [
+        "v3-p388-06",
+        "v3-p389-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ويرجون رحمته ويخافون عذابه",
+          "secondary": "الاسراء الى قوله محذورا",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual17:57 excerpt explicitly includes ويرجون رحمته ويخافون عذابه and ends there, not secondary إلى قوله محذورا. Complete three stations across388–389 retained."
+    },
+    {
+      "source_ids": [
+        "v3-p389-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انه",
+          "secondary": "انك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتنافس",
+          "secondary": "تتنافس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يحب",
+          "secondary": "تحب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يقرب",
+          "secondary": "تقرب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أنه, يتنافس, يحب and يقرب in third person, not second-person secondary readings. Both cause statements, two proximity negations and love/being-loved denial retained."
+    },
+    {
+      "source_ids": [
+        "v3-p389-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وضرب",
+          "secondary": "وضربت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حجاب",
+          "secondary": "حجب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويرمونه",
+          "secondary": "ويرمونهم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual وضرب and singular حجاب, ويرمونه, no added عز وجل. Complete extended criticism, life/pleasure list and concluding appeal retained without added doctrinal judgment."
+    },
+    {
+      "source_ids": [
+        "v3-p390-04",
+        "v3-p391-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "داع",
+          "secondary": "داعيا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "افتلذ",
+          "secondary": "افتلتذ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual داع without final يا and أفتلذ without extra ت, across390–391. Both affirmation clauses and entire objector quote retained; سبحانه corrected in Russian, no source harmonization. Full390 prayer read with all requests restored in Russian; established391 primary checks retained, no independent authentication claim."
+    },
+    {
+      "source_ids": [
+        "v3-p392-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "اللهم",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "لي",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual repeated اللهم and final لي retained, including both given/withheld requests. Existing complete Tirmidhi3491 record already compared, no repeat new grade claimed."
+    },
+    {
+      "source_ids": [
+        "v3-p393-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "المؤمنين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ال عمران",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "البقرة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الصف ان",
+          "secondary": "فان",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print من يحبه سبحانه من عباده without inserted الله / المؤمنين / تعالى. All five positive Quran excerpts and printed references retained; Russian سبحانه corrected."
+    },
+    {
+      "source_ids": [
+        "v3-p393-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "البقرة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "الحديد",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ال عمران",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "All four negative excerpts and references are visible, no omission of three named suras based on secondary alignment."
+    },
+    {
+      "source_ids": [
+        "v3-p394-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يمكن",
+          "secondary": "تمكن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "او الخوف",
+          "secondary": "والخوف",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فانهم",
+          "secondary": "فانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتوكلون",
+          "secondary": "يتوكل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual يمكن, أو الخوف, فإنهم and يتوكلون. Russian alternative or restored; both rhetorical questions and entire lovers reliance statement retained."
+    },
+    {
+      "source_ids": [
+        "v3-p394-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سواه",
+          "secondary": "سوى محبوبهم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual سواه not سوى محبوبهم; preserve cause لمحبته and repeated love wording."
+    },
+    {
+      "source_ids": [
+        "v3-p394-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اهله",
+          "secondary": "انما هو",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فذاك",
+          "secondary": "فذلك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged actual print إنما هو, not own أهله. Restore source two-word predicate. Actual فذاك, not فذلك; love/reverence origin vs pure fear contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p394-06",
+        "v3-p395-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهذا",
+          "secondary": "هذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وهذا after page break395, no omission of initial و. Full need-of-spirit/heart, exclusive love and irreplaceability chain retained. Entire subsequent loving friendship argument and historical execution report395 read without suppression or added endorsement."
+    },
+    {
+      "source_ids": [
+        "v3-p396-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واسم",
+          "secondary": "فاسم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اليه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual واسم not فاسم, no extra إليه after already stated انصباب. Printed صبًّا doubling confirmed in enlarged source/Russian; preserve weak/doubled-root discussion and all three intensity degrees."
+    },
+    {
+      "source_ids": [
+        "v3-p397-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "مراتبها عشرة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual fifth heading only الوداد; no inserted مراتبها عشرة. Keep purity/core sequence and both Wadud interpretations."
+    },
+    {
+      "source_ids": [
+        "v3-p397-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الودود في معنى",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اي اقتران الودود بالغفور",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "باسمه",
+          "secondary": "باسم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no expanded الودود في معنى or أي اقتران... and باسمه. Both meanings of pairing Ghafur/Wadud remain distinct, all causes/due shares intact."
+    },
+    {
+      "source_ids": [
+        "v3-p398-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "انه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أنه present. Preserve all three readings of shaghaf, respective attributions and separate nonstandard عين reading, without prematurely choosing one in397 Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p398-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual رحمه الله after Suddi present; entire thin-covering and reaching-heart wording retained."
+    },
+    {
+      "source_ids": [
+        "v3-p399-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "محركة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual no inserted محركة after plant name. Both derivations, wrapping-plant simile, divine/servant prohibition and intoxication qualification complete."
+    },
+    {
+      "source_ids": [
+        "v3-p399-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التيم",
+          "secondary": "التتيم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منفرد",
+          "secondary": "المنفرد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual التيم single first ت, and منفرد without added definite article. All servitude/etymology/orphan parallels, both brokenness images retained."
+    },
+    {
+      "source_ids": [
+        "v3-p400-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التيم",
+          "secondary": "التتيم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual التيم not التتيم, no extra هو before العبد. Complete ninth degree and perfected servitude retained."
+    },
+    {
+      "source_ids": [
+        "v3-p400-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "صلى الله عليه وسلم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual full prophet prayer صلى الله عليه وسلم present. All three Quran contexts/excerpts17:1,72:19,2:23 and primacy conclusion retained."
+    },
+    {
+      "source_ids": [
+        "v3-p400-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السلام",
+          "secondary": "الصلاة والسلام",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "السلام",
+          "secondary": "الصلاة والسلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual twice السلام without added الصلاة. Complete Messiah report, teacher explanation and perfect love/humility pair retained."
+    },
+    {
+      "source_ids": [
+        "v3-p400-07",
+        "v3-p401-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "انه قال",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual كما صح عنه without additional أنه قال across400–401. Both full khalil quotes and both-in-Sahih statement retained; subsequent love/friendship comparison and soul/heart definition read. Cross-page401–402 next unit not yet marked checked here."
     }
   ],
-  "record_count": 762,
+  "record_count": 786,
   "unreviewed_candidates_remain": true
 }
