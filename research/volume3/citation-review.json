@@ -1609,6 +1609,22 @@
       ],
       "finding": "Read the full classical narrative. Guests say ليس من الفتوة أن يستخدم الرجل من يتعاصى عليه في تقديم السفرة كل هذا. This confirms criticism of apparent disobedience/delay. Control 2019 uses يخدم الرجل من يتعاطى معه; retained after direct printed comparison. Corrected Russian that could imply criticism of long service/labor. The attendant explains waiting for ants to leave and receives praise. This is a reported anecdote, not a newly authenticated hadith.",
       "method": "Direct print comparison, classical contextual comparison, Russian-only rereading and back-comparison by the same agent; no independent human editing or chain authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p124-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_parallel_found_question_wording_differs",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "Text following PageV02P352, الإرادة chapter; Daqaq report via Duqqi"
+        }
+      ],
+      "finding": "Full short dialogue read. Qushayri digital wording: نهاية الإرادة أن تشير إلى الله تعالى فنجده مع الإشارة ... فايش يستوعب الإرادة ... أن تجد الله تعالى بلا إشارة. Control 2019 instead asks وأين تستوعبه الإرادة; an older Madarij witness has الإشارة. Retain control Arabic and translate its question grammatically; do not silently substitute another dialogue wording or add primary narrator attribution absent in author. Russian unclear где ... это refined; no chain authentication or independent human verification claimed.",
+      "method": "Same-agent direct 2019 print comparison plus classical digital body comparison; different question wording explicitly disclosed. This record is not a certification that witnesses are identical."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

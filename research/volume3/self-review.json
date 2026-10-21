@@ -6090,14 +6090,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p124-03": {
-      "sha256": "749cf00c57d4f202192249a0c61e785e638321e0e3f1c211345f7aac7f32d5a5",
+      "sha256": "3ec2e236dae1f645d354f1511aa07dfe65892f6ea85269e08c2493c6e0504b4f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed 2019 p.124 reads وأين تستوعبه الإرادة: render rhetorical question naturally and masculine object pronoun in its immediate الله context, replacing unclear Russian где ... это. Preserve control الإرادة rather than older secondary الإشارة. Qushayri digital parallel after PageV02P352 has differently worded فأيش يستوعب الإرادة, recorded separately, not harmonized into control. Whole Russian dialogue reread separately and back-compared; same-agent self-review, no independent human editing."
     },
     "v3-p124-04": {
       "sha256": "b69f4b9a32bd570dca2f3865bed67fedef52d2a4a444e765fe7fa8e495807d25",
@@ -6250,14 +6251,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p127-02": {
-      "sha256": "e191273b7fc847acfa777123ccfadbfea9cc87c0254ed7fbd48f9075c6e12e45",
+      "sha256": "6f11f9c76f254c9853984acc8ed8a4060e8ac53be13184f7c7afab5f721c7b03",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 p.127 print compared. Render مقيدة بالعلم / مقيد بالكتاب والسنة as governed by knowledge / Scripture and Sunna, retaining binding criterion and replacing awkward ограничен знанием / связано Писанием. Do not reduce مقيد to mere association. Entire long Russian paragraph reread separately and back-compared; author’s qualification частное, а не общее, his attribution confidence and quotation retained. Same-agent self-review only."
     },
     "v3-p127-03": {
       "sha256": "03ec49239063e322271a59842706eba50806b1ad8b10769a1b2460853cc63157",

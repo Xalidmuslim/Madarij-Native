@@ -4525,12 +4525,343 @@
     },
     {
       "source_ids": [
+        "v3-p121-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ترك",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ترك",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p122-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولسوف يرضى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p122-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وقالوا",
+          "secondary": "قالوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p123-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p123-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المريدين",
+          "secondary": "المريد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p124-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p124-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الارادة",
+          "secondary": "الاشارة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p124-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اشارة",
+          "secondary": "الاشارة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.121–124 images compared. Existing control wording retained, including الإرادة (not older الإشارة) in 124-03. Russian rhetorical question in 124-03 clarified; different wording in a Qushayri digital parallel explicitly recorded in citation-review, not imported. Other candidate additions, honorifics, number and word order retained according to print."
+    },
+    {
+      "source_ids": [
+        "v3-p124-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "انه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p125-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p125-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رضي الله عنه اشد شيء",
+          "secondary": "الورع الوقوف",
+          "tokens": 5
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p125-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "مجاراة",
+          "secondary": "مجازات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p125-06",
+        "v3-p126-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تحتاجان",
+          "secondary": "تحتاج كل منهما",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "عن علم",
+          "secondary": "من",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p126-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "جعفر",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p126-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اياه",
+          "secondary": "اياها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p127-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مشهور",
+          "secondary": "فمشهور",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p127-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الذي",
+          "secondary": "الذين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
+        "v3-p128-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يعني الجنيد",
+          "tokens": 2
+        }
+      ],
+      "finding": "Direct full 2019 pp.124–128 print images compared, both pages of continuation 125→126 included. Control wording retained. Proposed secondary replacement الورع الوقوف for 125-04 is an unreliable alignment to a different saying, not an established variant. Russian 127-02 clarified to preserve the binding criterion مقيد without awkward связано Писанием; whole paragraph reread and back-compared. Existing external citation check of Junayd’s statement not repeated."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 213,
+  "record_count": 231,
   "unreviewed_candidates_remain": true
 }

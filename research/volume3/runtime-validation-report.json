@@ -87,10 +87,10 @@
   "latest_corpus_check": "All 3107 packaged rows exactly match the live database including WAL after latest p.36/40/55/81–82/152 edits; integrity_check ok. Root hashes identify this build.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Latest source includes 101/103/106/114 corrections, 118-04 removal of own substituted sincerity wording, and Russian clarification of قوى الاستقامة on 119–120.",
-    "current_asset_sha256": "c67b059f64419d6364369761bd9d039b79755d23e3ea18e278e735cb23e2e853",
+    "change": "Latest source includes earlier pending 101–119 corrections and Russian dialogue/criterion clarifications 124-03,127-02. Eleven notes unchanged.",
+    "current_asset_sha256": "92de8b43befb3ea77b32b3b8882dc935c6bac20bba7e9fc304fb12af566bcf35",
     "current_asset_runtime_checked": false,
-    "scope": "Latest corpus awaits updated APK/import after current detailed-review group. Last exact positive 3107-row comparison is recorded for APK 9441650d... before these later changes."
+    "scope": "Accumulated detailed-review corrections await updated APK/import. Earlier positive runtime evidence remains bound to its APK/asset hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
