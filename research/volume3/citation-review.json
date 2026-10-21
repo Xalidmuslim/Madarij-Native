@@ -1625,6 +1625,27 @@
       ],
       "finding": "Full short dialogue read. Qushayri digital wording: نهاية الإرادة أن تشير إلى الله تعالى فنجده مع الإشارة ... فايش يستوعب الإرادة ... أن تجد الله تعالى بلا إشارة. Control 2019 instead asks وأين تستوعبه الإرادة; an older Madarij witness has الإشارة. Retain control Arabic and translate its question grammatically; do not silently substitute another dialogue wording or add primary narrator attribution absent in author. Russian unclear где ... это refined; no chain authentication or independent human verification claimed.",
       "method": "Same-agent direct 2019 print comparison plus classical digital body comparison; different question wording explicitly disclosed. This record is not a certification that witnesses are identical."
+    },
+    {
+      "source_ids": [
+        "v3-p152-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "classical_source_scene_found_earlier_pending_superseded",
+      "checked_primary_records": [
+        {
+          "path": "data/0310Tabari/0310Tabari.JamicBayan/0310Tabari.JamicBayan.Shamela0000043-ara1",
+          "blob": "28ce64e4bc371994c995a5017d3c3b8568743ff2",
+          "digital_location": "Isra 17:1 commentary, Abu Harun al-Abdi / Abu Said report via Mamar; Musa scene following PageV17P345"
+        },
+        {
+          "path": "data/0774IbnKathir/0774IbnKathir.TafsirQuran/0774IbnKathir.TafsirQuran.Shamela0008473-ara1.mARkdown",
+          "blob": "aaf0b1d08189eb55f65fe695aa163ccc5c5334ae",
+          "digital_location": "Isra commentary, parallel Musa scene following PageV05P035"
+        }
+      ],
+      "finding": "Read Tabari chain and complete local Musa scene: تزعم الناس أني أكرم الخلق على الله، فهذا أكرم على الله مني، ولو كان وحده لم أكن أبالي، ولكن كل نبي ومن تبعه من أمته. This locates the scene behind the author fragment; control wording تقول بنو إسرائيل differs and its printed ellipsis remains intentionally unexpanded. Ibn Kathir has related wording زعم بنو إسرائيل أني أكرم بني آدم على الله. Supersedes earlier primary-source-pending record only as to locating/comparing the scene. No authenticity grade assigned and no claim that primary wording is verbatim identical to control or that direct address رب العزة is a quote in Tabari. Russian quoted part/context retained.",
+      "method": "Same-agent direct control-print and classical digital source comparison; neither manuscript collation nor full independent isnad assessment."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

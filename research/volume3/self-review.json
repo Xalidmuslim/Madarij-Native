@@ -7990,24 +7990,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p161-04": {
-      "sha256": "f8537072d59e8e033b97a95f1eef1ca3af59fe06c5b0ea22dd90f727621f70b5",
+      "sha256": "a3c720b0462455c695d3890e533bdadcbe6f0840c4222f68ab37910750695d69",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p162-01": {
-      "sha256": "82fa3cc09e1fe7f480991309ed7a2a2e5c758280de1560530b857ea9e7d04d8b",
+      "sha256": "2fa84573f8ff007cd12c047c6b4b180f73bb62104e7cae94494605559fc73d92",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p162-02": {
       "sha256": "4a0f43d6e2e197c972d7b0165a69a2a27dc32788025ae39d1ea23e99f0c24bad",
@@ -8060,14 +8062,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p163-02": {
-      "sha256": "f506fd198ce627aa56af6199cf29f6e1907765a8a33a6005486c4e428ed4d2b7",
+      "sha256": "e8ff9d1c34bf9edfcd8d9b2079bb089110de397459ef8d471e1fddc584a86353",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p163-03": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -8080,14 +8083,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p163-04": {
-      "sha256": "5b0df101cd2181c6a0e052fdbcc639bbebc51ad68c9d6a4c644b29262a1a8a77",
+      "sha256": "f6ff6c558229b4edeea233492c0a67c236d8d71c92d6e0b4bcbea1c98f4c14b8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p163-05": {
       "sha256": "120ee4b9e94d0ed68b5981c786634e3a2cd5ad65450d13addcd37461c46c57e3",
@@ -8440,14 +8444,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p170-06": {
-      "sha256": "20b122d93247a43c43e6a273fb0b1614671f3fe4b0979663dd2576b2dad39af3",
+      "sha256": "d87157f91696cf55714478bd5751a0d58e8388cf1616aa6424567ecf915af8db",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 2019 p170 includes رحا; restore explicit millstone image alongside axis, retaining all heart/body and siddiqiyya clauses. Russian reread separately and back-compared. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p171-01": {
       "sha256": "8a400a67cfceb1a73cc92949dd9bb0cb5413b723ad7ee923a41cb49c629dc0c1",
@@ -8600,14 +8605,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p173-05": {
-      "sha256": "14ca453cd5f2f7b7d04ee63e0969aac34868f76289976f780d6687fea9415efe",
+      "sha256": "7fb51921288794f28de04c1bbbf4511888439aa8af6fa25727d28e4871d61665",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Printed لا يحول concerns unaltered knowledge, not physical displacement. Preserve all three parallel predicates. Direct print comparison; Russian reread separately and back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p173-06+v3-p174-01": {
       "sha256": "247748c96479fc33464ae9feca0cccf82bed5fde03c78384b8277b8a9a219375",
@@ -8630,14 +8636,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p174-03": {
-      "sha256": "d846a855af2824026bb269a802a6ed363e5880781cc3d27409dc1ac6b982c052",
+      "sha256": "8d7f0b720515aed103d360db5b852c8c7583b8670c71424de3f105434ed778eb",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify ambiguous Russian pronouns and the exact object-to-heart / visible-to-eye relation printed on p174. No change to final faith/ihsan assertion. Direct print comparison; Russian reread separately and back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p174-04": {
       "sha256": "9f8aec3914a0fb2ae47691512eaabc37b3ba2598f40ecad58f23f9e5ec6e1dc2",

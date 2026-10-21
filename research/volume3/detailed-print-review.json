@@ -6614,8 +6614,414 @@
         }
       ],
       "finding": "Control أوصلت without attached object suffix. Russian ship metaphor includes calm, excessive wind, moderate wind and desired goal."
+    },
+    {
+      "source_ids": [
+        "v3-p166-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "والنفس",
+          "secondary": "فالنفس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يدعها",
+          "secondary": "فيدعها",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للقلب",
+          "secondary": "القلب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بها",
+          "secondary": "به",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control والنفس, يدعها, موهبة للقلب and فصالت بها. No secondary في or substituted pronoun. Full long paragraph and Russian checked: gifts, stolen share, heart/spirit versus soul, money analogy and three deviations retained."
+    },
+    {
+      "source_ids": [
+        "v3-p167-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووارده",
+          "secondary": "وواراه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control ووارده, not older وواراه; preserve three objects of protection and irony of misplaced generosity. Whole Russian paragraph compared."
+    },
+    {
+      "source_ids": [
+        "v3-p167-04",
+        "v3-p168-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "عن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عن",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Page break checked: الخروج من الخوف and الترقي عن السرور, retain differing prepositions and all three steps."
+    },
+    {
+      "source_ids": [
+        "v3-p168-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منع",
+          "secondary": "مع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاياس والرجاء",
+          "secondary": "الياس ومع الرجاء",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "والسرور",
+          "secondary": "ومع السرور",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control منع الخوف and coordinate الرجاء / السرور without secondary مع. All three adverse outcomes retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p169-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اقامه",
+          "secondary": "اقامها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control من أقامه masculine object, retain; Russian distinct agent God/person and self-effacement carefully compared."
+    },
+    {
+      "source_ids": [
+        "v3-p169-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تغيبه",
+          "secondary": "غيبته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فناؤه",
+          "secondary": "ففناؤه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تغيبه and فناؤه without additional ف; whole interpretive explanation and heavy-burden metaphor retained."
+    },
+    {
+      "source_ids": [
+        "v3-p170-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بانتفاعهم",
+          "secondary": "بالانتفاع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control بانتفاعهم rather than older بالانتفاع. Whole sentence and verse reference checked."
+    },
+    {
+      "source_ids": [
+        "v3-p170-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no additional تعالى after وأخبر; verse and negative description retained."
+    },
+    {
+      "source_ids": [
+        "v3-p170-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحا",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control includes رحا. Arabic retained; explicit millstone image restored in Russian rather than axis alone; all other clauses retained after separate reread/back comparison."
+    },
+    {
+      "source_ids": [
+        "v3-p171-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بن مسعود",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اليك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control عبد الله without proposed بن مسعود and no added إليك. Full author chain and quoted prohibitions/contrasts compared, no modern footnote grading imported. This visual check is not independent chain authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p171-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control فالحق هو اليقين without extra الله. Both verse quotations, their refs and author linking statement retained."
+    },
+    {
+      "source_ids": [
+        "v3-p171-05",
+        "v3-p172-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed sides checked; control امتلأ به نورا retains به. All five removed afflictions and six positive states retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p172-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in Arabic and Russian; separate author sentence about acquired faith preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p173-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طاهر",
+          "secondary": "ظاهر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعارضه",
+          "secondary": "تعارضه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control طاهر and يعارضه retained; Russian name and knowledge/certainty contrast agree."
+    },
+    {
+      "source_ids": [
+        "v3-p173-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Full four-link causal sequence preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p173-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Russian non-spatial rendering of يحول refined separately, not source edition replacement."
+    },
+    {
+      "source_ids": [
+        "v3-p173-06",
+        "v3-p174-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Page break checked; control رحمه الله retained, all conditional measures and soul-separation clauses compared."
+    },
+    {
+      "source_ids": [
+        "v3-p174-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تصير",
+          "secondary": "يصير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تصير feminine with نسبة retained. Russian relation clarified: thing apparent to heart as visible thing to eye; both negated doubts retained."
+    },
+    {
+      "source_ids": [
+        "v3-p174-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وبالعقل",
+          "secondary": "بالعقل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and وبالعقل retained. Russian faith-completion, knowing God and understanding from God clauses all preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p174-08",
+        "v3-p175-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both sides of page break checked; control رحمه الله retained. Comparative superior certainty and death by thirst preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p175-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عنده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and single عنده, not a second near الرخاء; Arabic/Russian opposed valuation compared."
+    },
+    {
+      "source_ids": [
+        "v3-p175-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained. Three bases of certainty preserved in full Russian list."
     }
   ],
-  "record_count": 316,
+  "record_count": 338,
   "unreviewed_candidates_remain": true
 }
