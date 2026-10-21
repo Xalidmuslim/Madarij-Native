@@ -80,8 +80,8 @@
   "latest_corpus_check": "All 3107 packaged rows exactly match actual database including updated 151-02 and 156-04. Early snapshot still had two old rows and was not accepted; later live snapshot passed all seven fields, no extra rows, integrity_check ok. First two volumes unchanged.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Additional Russian refinements 161–190; selected candidates through190-03. Positive APK remains through159, latest asset pending next import.",
-    "current_asset_sha256": "dd0ddcb79442f61849fb010a2ad555053c94e7befce47cacd6cfc81e878f010b",
+    "change": "Additional Russian refinements 161–200 and restored own Arabic omissions/readings on191,194,196. Positive APK remains through159; latest asset pending next import.",
+    "current_asset_sha256": "ca1eb1f775c2e1c3983598ee117b455fbe7de75a1867872072b419c0a9c9b6d6",
     "current_asset_runtime_checked": false,
     "scope": "Root positive APK hashes remain proof through159 only; later Russian bytes await subsequent build/import."
   },

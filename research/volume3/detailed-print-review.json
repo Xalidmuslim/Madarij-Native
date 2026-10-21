@@ -7679,8 +7679,404 @@
         }
       ],
       "finding": "Control تؤدي feminine and يسوؤه spelling retained. Full hearing/sight causal contrast and emotional voice adjectives compared with Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p191-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لاشتغاله",
+          "secondary": "لاشتعاله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "باطنه",
+          "secondary": "لباطنه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وانقطعت",
+          "secondary": "وانقطعتا عن",
+          "tokens": 2
+        }
+      ],
+      "finding": "7x paragraph and 10x word crops confirm لباطنه and وانقطعت عن علائق البدن; restore own omitted ل and عن, retaining printed لاشتغاله and singular وانقطعت. Russian outward/inward wording clarified and bodily-ties meaning preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p191-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وحالا",
+          "secondary": "وحالة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "غيره",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حال",
+          "secondary": "حالة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control وحالا, no inserted غيره, and من حال أهل الجنة. Whole Arabic/Russian spiritual listening explanation and all conditions retained."
+    },
+    {
+      "source_ids": [
+        "v3-p192-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رؤية",
+          "secondary": "رؤيتهم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رؤية without attached pronoun and no added الله / سبحانه وتعالى. Seeing beloved face and hearing directly both retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p192-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control no added عز وجل. Author explicitly uncertain about mawquf/marfu attribution; Russian preserves uncertainty rather than grading or assigning narrator."
+    },
+    {
+      "source_ids": [
+        "v3-p192-05",
+        "v3-p193-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الرحمن",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لنا",
+          "secondary": "الماء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both sides of page break: control رحمه الله, عبد الرحمن and لنا; retain all names, question and repeated الله. No substitution of الماء."
+    },
+    {
+      "source_ids": [
+        "v3-p193-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اسمع ترى",
+          "secondary": "اسع تر",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control اسمع ترى, not older اسع تر. Russian sound-based reinterpretation and two sayings retained."
+    },
+    {
+      "source_ids": [
+        "v3-p194-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اثار",
+          "secondary": "افات",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ودواعي",
+          "secondary": "ودعوات",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "التي",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تسمع",
+          "secondary": "يسمع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بينه وبينها",
+          "secondary": "بينها وبينه",
+          "tokens": 2
+        }
+      ],
+      "finding": "7x crop confirms آفات, not own آثار; source corrected, Russian harm aspect restored. Control دواعي، التي لا تسمع، بينه وبينها retained."
+    },
+    {
+      "source_ids": [
+        "v3-p194-06",
+        "v3-p195-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اخطؤوا",
+          "secondary": "اخطاوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both printed sides: control أخطؤوا. All virtues and nourishment/garden/life images and left/back direction retained in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p195-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المنزلتين",
+          "secondary": "منزلتين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "رسومها وجلى",
+          "secondary": "رسومه وجلا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control المنزلتين، رسومها، وجلى. Source unchanged; Russian both heart/soul directions and all three final qualities retained."
+    },
+    {
+      "source_ids": [
+        "v3-p195-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "بين الناس",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control بين الناس retained. Russian restores second parallel نصيبه بين النصيبين phrase; all subsequent strong/weak and understanding/joy clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p196-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مجرى",
+          "secondary": "نهرا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وينصبه",
+          "secondary": "وينصب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تلقي",
+          "secondary": "كتلقي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "حبيب",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "حبيب",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يعطي",
+          "secondary": "يعطى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Full page and 8x crops confirm river نهرا, intransitive وينصبّ, comparative كتلقّي and حبيب منهم order. Four own transcription departures corrected; full Russian river/receiving analogy and imperative sequence reread and back-compared."
+    },
+    {
+      "source_ids": [
+        "v3-p196-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ارفع واعلى",
+          "secondary": "اعلى وارفع",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يندرج",
+          "secondary": "يدرج",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "توحيده",
+          "secondary": "وتوحيده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أرفع وأعلى, السير, يندرج and وتوحيده. Restore own omitted و in last coordination; Russian no longer turns tawhid/knowledge into predicate of preceding terms. All journey inclusion and comparative assertions retained."
+    },
+    {
+      "source_ids": [
+        "v3-p198-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الواقعة",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no inserted الواقعة reference at repetition and no added تعالى. Arabic distinction المطهرون / المتطهرون and both Quran quotations preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p198-07",
+        "v3-p199-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both sides of page break checked. No secondary added تعالى after كما قال. Complete rejection, two inaccessible clauses and two verse statements retained."
+    },
+    {
+      "source_ids": [
+        "v3-p199-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الواقعة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله and no repeated الواقعة label. Russian prayer, book title and Abasa parallel preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p200-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الظاهر",
+          "secondary": "الطاهر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control الظاهر, not الطاهر. Entire rhetorical sequence about external/internal purity, validity and qada retained; author argument not rewritten as independent ruling."
+    },
+    {
+      "source_ids": [
+        "v3-p200-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المصلي",
+          "secondary": "المصلى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control المصلي with final ي retained. Entire body/heart and House/Lord contrasts preserved in Russian."
     }
   ],
-  "record_count": 370,
+  "record_count": 387,
   "unreviewed_candidates_remain": true
 }
