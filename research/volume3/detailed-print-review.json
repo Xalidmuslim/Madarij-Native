@@ -9385,8 +9385,303 @@
         }
       ],
       "finding": "Control كله before لله, no extra عز وجل. Full self/share/desire list and residual-self condition preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p234-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "اذا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يكون",
+          "secondary": "تكون",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms printed إذا أن (without silently removing إذا) and ولا يكون لها. Retain source; Russian concluding Итак resolves contextual discourse sense, not a conditional insertion."
+    },
+    {
+      "source_ids": [
+        "v3-p234-06",
+        "v3-p235-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Both sides checked; second تعالى retained in source and restored in Russian. All-state permanence, each outward/inward particle and every respect retained."
+    },
+    {
+      "source_ids": [
+        "v3-p235-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شهوده",
+          "secondary": "لشهوده",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حقيقته",
+          "secondary": "حقيقة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control شهوده without added ل and حقيقته with suffix. Entire intrinsic-need versus renewed experience distinction checked; Russian reality calque refined as true nature."
+    },
+    {
+      "source_ids": [
+        "v3-p235-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in Arabic/Russian; no sufficiency except God preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p235-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "الله رحمه",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control full بن عبد الله رحمه الله retained. Whole question and present-only answer compared."
+    },
+    {
+      "source_ids": [
+        "v3-p235-09",
+        "v3-p236-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Page break checked; control رضي الله عنه retained. All three means and all-states/all-actions/halal qualifications retained."
+    },
+    {
+      "source_ids": [
+        "v3-p236-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفقير",
+          "secondary": "الفقر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فان",
+          "secondary": "فاذا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control الفقير not الفقر and فإن not فإذا. Whole no-desire and enough-only qualification preserved in Russian."
+    },
+    {
+      "source_ids": [
+        "v3-p237-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اتم",
+          "secondary": "افضل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الغنى",
+          "secondary": "الاستغناء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control رحمه الله, no added تعالى, أتم not أفضل, and final الغنى not الاستغناء. Full mutual completion comparison retained; Russian صح calque refined without collapsing sufficiency versus richness."
+    },
+    {
+      "source_ids": [
+        "v3-p237-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "كما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control no added تعالى after عند الله or كما before قال. Whole criterion of taqwa rather than wealth/poverty, verse and negated alternatives retained."
+    },
+    {
+      "source_ids": [
+        "v3-p238-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اعطيته ووسعت",
+          "secondary": "وسعت",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واعطيته",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يسلب",
+          "secondary": "يسلبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control أعطيته ووسعت order, no inserted الله, and يسلب without suffix. Whole divine first-person gloss distinguished from following commentator, plus four honor gifts and their loss retained."
+    },
+    {
+      "source_ids": [
+        "v3-p238-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يعني ابن تيمية",
+          "tokens": 3
+        }
+      ],
+      "finding": "Control no inserted يعني ابن تيمية. Russian subject explicitly IbnTaymiyya, confirmed by previous introduction and subsequent سمعته يقول ذلك; no misattribution of quoted commentary to God."
+    },
+    {
+      "source_ids": [
+        "v3-p238-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله retained in both languages. Tomorrow weighing contrast preserves poverty/wealth versus patience/gratitude."
+    },
+    {
+      "source_ids": [
+        "v3-p238-05",
+        "v3-p239-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يحيل",
+          "secondary": "يحكي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من الطاعات",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both printed sides: control يحيل, not older يحكي, and no added من الطاعات. Following two concrete cases support incompatibility of those particular branches rather than all gratitude/patience; complete donor/poor worshipper descriptions and either-way question retained. No modern note prose imported."
+    },
+    {
+      "source_ids": [
+        "v3-p239-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "درجتاهما",
+          "secondary": "درجاتهما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control dual درجتاهما, not plural درجاتهما. Both obedience criterion and equality condition retained; والله أعلم preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p239-07",
+        "v3-p240-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يحاج",
+          "secondary": "يحاجج",
+          "tokens": 1
+        }
+      ],
+      "finding": "Page break checked: control يحاج, not expanded يحاجج. All ownership/first-step distinctions and four negated self-defenses plus surrender retained in Russian."
     }
   ],
-  "record_count": 456,
+  "record_count": 471,
   "unreviewed_candidates_remain": true
 }

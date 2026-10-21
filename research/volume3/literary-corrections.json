@@ -538,5 +538,42 @@
     "corrected_ru": "Вот творение, которое довольствовалось хвалой другому творению вместо просьбы к нему. Что же сказать о Господе миров?",
     "reason": "Clarify subject/object relation in اكتفى من مخلوق بالثناء عليه من سؤاله; poet praises another creature instead of asking it. Final Lord-of-worlds comparison retained. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p234-06",
+      "v3-p235-01"
+    ],
+    "previous_ru": "Подлинный факр — непрестанная нужда в Аллахе, Всевышнем, во всяком состоянии, когда раб в каждой частице своего внешнего и внутреннего существа видит совершенную нужду в Аллахе во всех отношениях.",
+    "corrected_ru": "Подлинный факр — непрестанная нужда в Аллахе, Всевышнем, во всяком состоянии, когда раб в каждой частице своего внешнего и внутреннего существа видит совершенную нужду в Аллахе, Всевышнем, во всех отношениях.",
+    "reason": "Second printed تعالى across234/235 restored in Russian rather than omitting repeated title. Full2019 passage compared, Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p235-02"
+    ],
+    "previous_ru": "Нужда присуща самой сущности раба. Обновляется лишь её созерцание и переживание как состояния; сама же она составляет его действительность. Как сказал шейх аль-ислам Ибн Таймийя, да освятит Аллах его душу:",
+    "corrected_ru": "Нужда присуща самой сущности раба. Обновляется лишь её созерцание и переживание как состояния; сама же она составляет его истинную природу. Как сказал шейх аль-ислам Ибн Таймийя, да освятит Аллах его душу:",
+    "reason": "Nature/essence sense of حقيقته made natural in Russian; preserve intrinsic poverty versus renewed witnessing/experiencing as state. Full2019 passage compared, Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p237-03"
+    ],
+    "previous_ru": "Об этом спросили Мухаммада ибн Абдуллаха аль-Фаргани, да помилует его Аллах. Он ответил: «Если верна нужда в Аллахе, верно и довольствование Аллахом. Если верно довольствование Аллахом, богатство Им достигает полноты. Нельзя спрашивать, что полнее — нужда или богатство: это два состояния, каждое из которых совершенно лишь вместе с другим».",
+    "corrected_ru": "Об этом спросили Мухаммада ибн Абдуллаха аль-Фаргани, да помилует его Аллах. Он ответил: «Если нужда в Аллахе подлинна, то подлинно и довольствование Аллахом. Если довольствование Аллахом подлинно, богатство, обретаемое благодаря Ему, достигает полноты. Нельзя спрашивать, что полнее — нужда или богатство: это два состояния, каждое из которых совершенно лишь вместе с другим».",
+    "reason": "Natural Russian for صح الافتقار / صح الاستغناء, preserve distinction from completed الغنى به and both mutual-completion assertions. Whole2019 Arabic passage read, Russian separately reread/back-compared, same-agent only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p238-02"
+    ],
+    "previous_ru": "Он сказал: «Превосходство определяется не богатством и бедностью, а богобоязненностью. Если оба равны в богобоязненности, они равны и по степени». Я слышал, как он говорил это.",
+    "corrected_ru": "Ибн Таймийя сказал: «Превосходство определяется не богатством и бедностью, а богобоязненностью. Если оба равны в богобоязненности, они равны и по степени». Я слышал, как он говорил это.",
+    "reason": "Russian reply subject must be IbnTaymiyya, explicitly introduced at237 end and heard by author, not God who was just paraphrased in first person. Secondary inserted يعني ابن تيمية not adopted into control Arabic; Russian pronoun clarification only. Whole2019 Arabic passage read, Russian separately reread/back-compared, same-agent only.",
+    "external_human_review": false
   }
 ]

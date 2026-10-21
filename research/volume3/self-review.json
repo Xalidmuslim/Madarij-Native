@@ -12004,24 +12004,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p234-06+v3-p235-01": {
-      "sha256": "bb2bd1867ac006e26088d7467b972261a820ee746a74b8844002f7b13cb7f518",
+      "sha256": "f5556099d0f3bb9c260ffbde5af86c46bcd7af71abc240218f578c07a7805ede",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Second printed تعالى across234/235 restored in Russian rather than omitting repeated title. Full2019 passage compared, Russian separately reread/back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p235-02": {
-      "sha256": "bf50011d8e6596913e686ec60da2b004be017ae616cc1ab4a0bf84f32cc92e35",
+      "sha256": "db9bed97c8412285a73b4f01ccde873b9c3cbdaeed8d32ccfefd6ce38111db41",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Nature/essence sense of حقيقته made natural in Russian; preserve intrinsic poverty versus renewed witnessing/experiencing as state. Full2019 passage compared, Russian separately reread/back-compared by same agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p235-03": {
       "sha256": "6ef9a87f2f395ee02713acab75719c58f552c3298e9b29cd891e8bbf439ed407",
@@ -12154,14 +12156,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p237-03": {
-      "sha256": "186acfecc524fe7b00fd48f9faeba7535de78869c7aef64eae7350d1d8236093",
+      "sha256": "8405a3d6e9b12d515a0ab10006ebb511433c84acd077a7a5f48e47ee941525d5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural Russian for صح الافتقار / صح الاستغناء, preserve distinction from completed الغنى به and both mutual-completion assertions. Whole2019 Arabic passage read, Russian separately reread/back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p237-04": {
       "sha256": "685a555edcfc433b295719e050c709a3ab389845aecab50b0da2ac3accd17430",
@@ -12194,14 +12197,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p238-02": {
-      "sha256": "e4cf4999803717936fb3c001c5d3b39fc2ded0e809dd45d193a2613817b2c7a8",
+      "sha256": "e16a92c873e0ae68036f50061f2ac8366b14bed880be1077817a630630c94e9f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Russian reply subject must be IbnTaymiyya, explicitly introduced at237 end and heard by author, not God who was just paraphrased in first person. Secondary inserted يعني ابن تيمية not adopted into control Arabic; Russian pronoun clarification only. Whole2019 Arabic passage read, Russian separately reread/back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p238-03": {
       "sha256": "a0d6e4e0dbc009bd40b3713ffb9a429c67d7029cf881d2e6c5e20b8fb756e12b",
