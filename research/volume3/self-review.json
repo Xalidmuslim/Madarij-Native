@@ -19402,24 +19402,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p362-05": {
-      "sha256": "c132d919160b0e6b2ca3a0ea55e4dd222ce4521569e6955979eb47fe8b661156",
+      "sha256": "0df5827c617cafcac07420dfa0e68a948949b3f4790823b6a1d549ae688f86e8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "سبحانه is glorification, not تعالى. Preserve intrinsic permanence vs remaining by His sustaining, and the identification of latter with hereafter. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p362-06": {
-      "sha256": "7269dcf180ce437837daca18b88908d002444ac7d8690a88febca6fae8638864",
+      "sha256": "2db425209cf5930c6cd21ca84891aaa177bb8b92a53f5452f6db3848f9b3ea6c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore both author verbs تخلصه وتمحصه, freeing and purifying, rather than collapsing both into one. Preserve both defects and both consequences. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p362-07": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -19482,14 +19484,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p363-05": {
-      "sha256": "c8e8cdf1e0a1715f9883ace3f7711a560ce58ec23fb91a5485ac9d56a75d95bc",
+      "sha256": "9ee2f978420aa7848a40499b7f3b592856014341de130e2566cd5d997e150dec",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Remove own unprinted temporal уже; keep full contrast of flying vs walking and both causes of lethargy. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p364-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -19532,14 +19535,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p364-05": {
-      "sha256": "e190975994fcbb9a1b78969b9ab8bdcd38fe0eaed25dd3685854c65aee316998",
+      "sha256": "d4af2b26957628461d6edd586ffd2c61c7d5cffb257d112b3eadb5a385976d3c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual control p364 explicitly prints يقتصر with ت, not own يقصر. Russian does not limit already matches full verb. Repeated ولا الأسماء retained. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p365-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -19633,14 +19637,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p366-05": {
-      "sha256": "7fa16b743723a4447d806eef216cb27f87fef9c5fd616436e4bda92fbcd4d4f8",
+      "sha256": "307bbcabdf57316365dfe5fd8d7d8d9b048f22feb56848e1c5685d64e0fe3c51",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual 6x line crop clearly shows ت in ولا تنظر, with pair of dots, before ن. Restore own omitted initial letter; the Russian prohibition already correct. Printed فابغي retains final ي; no grammatical normalization to secondary فابغ. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p367-01": {
       "sha256": "c9dea07247b5e2b551855b0393e1d616df09bba86b30c2e13caaae4c994008e1",

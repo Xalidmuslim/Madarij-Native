@@ -14668,8 +14668,408 @@
         }
       ],
       "finding": "Actual p359 has سبق بها في الأزل with في; do not omit it from older witness. Entire station/state contrast, unchanging prior decree and baqa-after-fana conclusion read in control and Russian without truncation."
+    },
+    {
+      "source_ids": [
+        "v3-p360-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يقول الله تعالى",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual divine-tradition quotation begins إني after في بعض الآثار الإلهية without added يقول الله تعالى. Keep IbnTaymiyya transmission attribution, do not invent a new prophetic grade."
+    },
+    {
+      "source_ids": [
+        "v3-p361-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual prayer رحمه الله after author title retained; all definition clauses intact."
+    },
+    {
+      "source_ids": [
+        "v3-p361-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صادقا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "صادقا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سلطان الهمة",
+          "secondary": "سلطانه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual طلبا خالصا صادقا محضا in this order and سلطان الهمة, not shortened سلطانه. Full compulsion/delay/patience/requirements and obstacle relations retained."
+    },
+    {
+      "source_ids": [
+        "v3-p361-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تزهد",
+          "secondary": "يزهد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual تزهد with ت, not يزهد. Keep both world and adherents and both attracted/renouncing groups."
+    },
+    {
+      "source_ids": [
+        "v3-p362-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ينظرون اليها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print second balanced half والراغبون بالأبصار without repeated ينظرون إليها; full Russian parallel preserves sense. Poetry line complete."
+    },
+    {
+      "source_ids": [
+        "v3-p362-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وهو الحق سبحانه with initial و. Russian glorification corrected while preserving both kinds of permanence."
+    },
+    {
+      "source_ids": [
+        "v3-p362-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتمحضه",
+          "secondary": "وتمحصه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged وتمحصه with dotless ص: own ض corrected. Restore both cleansing verbs in Russian, not just one."
+    },
+    {
+      "source_ids": [
+        "v3-p363-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او نحو",
+          "secondary": "ونحو",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual أو نحو, not ونحو. All three possible defects and attribution فإنها عندهم علل retained."
+    },
+    {
+      "source_ids": [
+        "v3-p363-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وسعة مطلبه",
+          "secondary": "وسعت مطلوبه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تاتي",
+          "secondary": "ياتي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتستاصلها",
+          "secondary": "ويستاصلها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual وسعة مطلبه and feminine تأتي / تستأصلها. Both explanations and explicit author uncertainty about shaykh intent retained."
+    },
+    {
+      "source_ids": [
+        "v3-p363-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اصطبغ",
+          "secondary": "انصبغ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual اصطبغ not انصبغ. All named activity/rest, isolation/company and other states retained, with full qualification against abandoning deeds."
+    },
+    {
+      "source_ids": [
+        "v3-p363-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual فإن الثقة به with به retained. Russian temporal уже removed, flight/walking image intact."
+    },
+    {
+      "source_ids": [
+        "v3-p364-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقصر",
+          "secondary": "يقتصر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ولا الاسماء",
+          "secondary": "والاسماء",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual لا يقتصر with ت: restore omitted own letter. Print ولا الأسماء not secondary والأسماء; all three groupings and closing invocation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p365-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتبوئهم",
+          "secondary": "وتبوؤهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لولا هي",
+          "secondary": "لولاها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual وتبوئهم and لولا هي spaced as control. All three long parallel journeys/arrival/dwelling clauses present, no omission."
+    },
+    {
+      "source_ids": [
+        "v3-p365-06",
+        "v3-p366-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual أن المرء مع من أحب across365–366, without extra من from secondary. Oath, destiny, company and full exclamation preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p366-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ولقد",
+          "secondary": "وقد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual ولقد before تقدموا, not وقد. Complete opening couplet, night/morning/evening prose and all eight following couplets read; final word المشاعلا retained."
+    },
+    {
+      "source_ids": [
+        "v3-p366-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مؤذن",
+          "secondary": "منادي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "انفسهم",
+          "secondary": "نفوسهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مسراهم",
+          "secondary": "سراهم وشكروا مولاهم على ما اعطاهم",
+          "tokens": 6
+        }
+      ],
+      "finding": "Actual مؤذن and أنفسهم and مسراهم. Extra secondary وشكروا مولاهم على ما أعطاهم is not printed; do not add it. All night/morning/evening journey and dawn-praise clauses kept."
+    },
+    {
+      "source_ids": [
+        "v3-p366-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نظر",
+          "secondary": "تنظر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فابغي",
+          "secondary": "فابغ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged ولا تنظر has ت omitted from own source; restore. Actual فابغي has final ي. Complete eight couplets manually read with Russian, possessives/action corrected in prior saved audit."
+    },
+    {
+      "source_ids": [
+        "v3-p367-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وادي",
+          "secondary": "واد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فمنى",
+          "secondary": "فمتى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "وحي على يوم المزيد بجنة ال خلود فجد بالنفس ان كنت باذلا",
+          "secondary": "",
+          "tokens": 12
+        },
+        {
+          "tag": "replace",
+          "control": "ينتابها",
+          "secondary": "يفنى بها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Print وادي الأراك, فمنى (Mina place, not فمتى), and ينتابها. Day-of-increase complete couplet visibly present despite secondary omission; all eleven couplets retained."
+    },
+    {
+      "source_ids": [
+        "v3-p368-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بان لهم الجنة",
+          "tokens": 3
+        }
+      ],
+      "finding": "Print Quran excerpt stops at أنفسهم وأموالهم; secondary بأن لهم الجنة absent in control and not imported. Full author surrounding sales sequence retained across367–368."
+    },
+    {
+      "source_ids": [
+        "v3-p370-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فلم",
+          "secondary": "ولم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual فلم يقم with ف not secondary ولم. All five lexical senses, corresponding examples and quoted line retained."
+    },
+    {
+      "source_ids": [
+        "v3-p370-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "للمحبوب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تفارق",
+          "secondary": "تفارقه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وارادته",
+          "secondary": "واراداته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual صفاء المودة without added للمحبوب, لا تفارق without suffix, and singular إرادته. Complete correspondence of all five lexical senses in Russian retained, no deletion or normalization."
     }
   ],
-  "record_count": 705,
+  "record_count": 726,
   "unreviewed_candidates_remain": true
 }
