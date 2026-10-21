@@ -622,6 +622,140 @@
       ],
       "finding": "Sleep, scales, deeds, veil/light and all creation in sight found. Explicit قبل عمل النهار / قبل عمل الليل clarifies shortened Madarij wording. Russian changed from before onset of day/night to before day/night deeds; Arabic unchanged.",
       "method": "Targeted manual same-agent comparison of author Arabic/Russian with classical digital body; printed primary editions not visually collated. Not independent human verification or a complete isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p003-03"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "1698"
+        }
+      ],
+      "finding": "Warning against avarice and its commands to miserliness and kinship rupture found; primary also has depravity clause omitted by author. Author excerpt not expanded.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p004-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1061"
+        },
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "3163"
+        }
+      ],
+      "finding": "Ansar warning about preference for others and patience until the Pool found; Russian subject and temporal condition retained.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p007-05",
+        "v3-p008-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "83"
+        }
+      ],
+      "finding": "Sea-water purity and permissibility of its dead animals both present; author comment on answering more than asked retained.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p008-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "3359"
+        },
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "1225"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1554; 1555"
+        }
+      ],
+      "finding": "Dates decreasing when dry and consequent prohibition found; primary says فنهاه/فنهى, while author quotes فلا إذن. Fruit-calamity and withholding-fruit reasons found in Muslim. Author wording not treated as identical to one report.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p009-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "2989"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1009; compare 720"
+        }
+      ],
+      "finding": "All enumerated charity acts found in both main records. Opening wording يصبح على كل سلامى من أحدكم also appears in Muslim 720 with a different following list. Author quotation retained, not normalized to a single recension.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p009-05",
+        "v3-p010-01"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "blob": "cac9781b0308dae1aa920b8d007753cc060dcbf4",
+          "digital_report_number": "4886; 4887"
+        }
+      ],
+      "finding": "Abu Damdam report found, including remission of personal honour claims. Abu Dawud 4887 says رجل فيمن كان من قبلكم; author calls him a Companion. Separate own note added, preserving author formulation and avoiding a new independent isnad grade.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p011-02"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2626"
+        }
+      ],
+      "finding": "Not belittling kindness and greeting with a cheerful face found; author has face open to brother versus primary بوجه طلق. Russian sense compared.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p013-04"
+      ],
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "Book of rulership; PageV03P1470, internal item 42; this digital witness labels the repeated report 1709"
+        }
+      ],
+      "finding": "Ubada pledge includes ease/hardship, willingness/reluctance, preference and non-contestation. Author only quotes part of longer report, then explains its scope. Excluded continuation not imported into author text; printed primary pagination not visually checked.",
+      "method": "Manual same-agent source/citation and Russian sense comparison. Control author text preserved. Classical digital witnesses; no claim of independent human verification or complete hadith authentication."
     }
   ]
 }

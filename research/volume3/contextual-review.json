@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "independent_human_review": false,
+  "records": [
+    {
+      "source_id": "v3-p110-04",
+      "status": "pending_contextual_review",
+      "control_pdf": "2019 source unchanged; enlarged p. 110 inspected again.",
+      "control_reading": "وهذا من الفتوة والمروءة والتخلق، وضد من أضدادها.",
+      "additional_digital_sources": [
+        {
+          "url": "https://www.islamicbook.ws/amma/mdarj-alsalkin-004.html",
+          "location": "Author body around line 749",
+          "finding": "Has والتخلق ضد من أضدادها without the second waw; same old digital reading, not independent manuscript evidence."
+        },
+        {
+          "url": "https://ablibrary.net/book_content/b/9619/548?lang=ar",
+          "finding": "Metadata names Dar al-Kutub al-Ilmiyya and Abd al-Ghani Muhammad Ali al-Fasi; digital text again lacks second waw. Punctuation does not settle pronoun reference; printed page image not checked."
+        },
+        {
+          "url": "https://www.ibnalqayem.net/books/038-3.pdf",
+          "finding": "New potential printed comparator, 608 PDF leaves; bibliographic text layer says 1444 AH. Main body not visually inspected: web screenshot tool exposed only text placeholders. Not accepted as collation evidence."
+        }
+      ],
+      "contextual_hypotheses_not_adopted": [
+        "The feminine pronoun might refer back to الجبلة rather than the virtues: acquired conduct versus innate disposition. Context does not establish this reference uniquely.",
+        "In the old reading, possible new clause beginning والتخلق, opposing artifice to natural virtues; this requires punctuation/reading decisions and differs from control second waw.",
+        "Earlier missing-pronoun suggestion وضده remains conjecture, without manuscript confirmation."
+      ],
+      "conclusion": "No emendation or positive semantic/back-comparison flag made. Need stronger textological witness or a well-supported specialist grammatical resolution; do not present any hypothesis as established author text."
+    }
+  ]
+}
