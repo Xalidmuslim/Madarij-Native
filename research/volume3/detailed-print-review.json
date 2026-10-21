@@ -4856,12 +4856,154 @@
     },
     {
       "source_ids": [
+        "v3-p128-03",
+        "v3-p129-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مجرد الاشباح والقوالب",
+          "secondary": "بمجرد القوالب والاشباح",
+          "tokens": 3
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p129-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الصوفي",
+          "secondary": "الصوفية",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الفقير",
+          "secondary": "الفقراء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p129-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "على",
+          "secondary": "وعلى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p129-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وهؤلاء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يتبين",
+          "secondary": "تتبين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p130-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التحلي",
+          "secondary": "التفتي",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "خلق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p130-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رحمه الله",
+          "secondary": "الى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "له",
+          "secondary": "لله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ومحاراتها",
+          "secondary": "ومفازاتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
+        "v3-p130-08"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيدلونه",
+          "secondary": "فيدقونه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "طريقتهم",
+          "secondary": "طريقهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Direct full 2019 pp.128–130 images compared, including 128→129 continuation. Three p130 corrections confirmed by enlarged crops: التفتي (not own التحلي), المريد لله (not own له), فيدقونه (not own فيدلونه). Printed رحمه الله and ومحاراتها retained. Russian 130-04 restores nobility/futuwwa relation; 130-07 and 130-08 already convey the print and are retained. Other listed candidate number/order/wording matches control."
+    },
+    {
+      "source_ids": [
         "v3-p152-04"
       ],
       "decision": "correct_own_transcription",
       "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
     }
   ],
-  "record_count": 231,
+  "record_count": 238,
   "unreviewed_candidates_remain": true
 }

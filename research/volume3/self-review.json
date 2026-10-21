@@ -6382,14 +6382,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p130-04": {
-      "sha256": "699edd257913153d5edb7fdf48779a15deb0c03d1e3ddead7c9f17761b751a5c",
+      "sha256": "93934e212f80f5893b99ea09a6d09054b8cab2ea046ae0d923b0fe5f2a647ad2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.130 crop confirms التفتّي, derived from futuwwa, not own التحلي. Restore author term and its link to preceding definition of noble conduct (pp.86–87). Russian expresses nobility through all good qualities and withdrawal from every blameworthy one, retaining both members. Whole short Russian passage reread separately and back-compared; same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p130-05": {
       "sha256": "d9e24d9a2b1c64d6619944d226c844d72383edac527bef679d85c0c5a7820799",
@@ -6412,24 +6413,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p130-07": {
-      "sha256": "e8d26bfd05b5c5567b5e855ef5c8dc81a0d23a89f802aac47f7c247bff090f86",
+      "sha256": "743215cc19f4c2684a703ce3f1ba68d7b22642a29009429bc8004529adb277c1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.130 full-line crop confirms أن المريد لله بصدق. Restore missing lam in own له to printed لله. Printed رحمه الله and ومحاراتها retained; older witness is not substituted wholesale. Existing Russian искренне стремящемуся к Нему refers to God in preceding clause and is retained after full paragraph rereading and back-comparison. Same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p130-08": {
-      "sha256": "52613dba0566d1a768d39f0297d0c6d9079740bf75970fe74ac7329ba032128b",
+      "sha256": "a6388f91bbd79cb5780db5ff4c6288fe4e1641a5f3e9aa187468b2048fd1bee2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.130 crop confirms فيدقّونه بالعبادة ... دقّا, not own فيدلّونه. Existing Russian изнуряют его already conveys grinding/exhausting with worship and is retained after full paragraph rereading and back-comparison. Same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p130-09+v3-p131-01": {
       "sha256": "3a891872964f1e013f3d738ecf8dfab94697a4f594d97a124e3912e36ee3a320",

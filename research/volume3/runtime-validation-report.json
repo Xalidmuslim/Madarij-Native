@@ -87,10 +87,10 @@
   "latest_corpus_check": "All 3107 packaged rows exactly match the live database including WAL after latest p.36/40/55/81–82/152 edits; integrity_check ok. Root hashes identify this build.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Latest source includes earlier pending 101–119 corrections and Russian dialogue/criterion clarifications 124-03,127-02. Eleven notes unchanged.",
-    "current_asset_sha256": "92de8b43befb3ea77b32b3b8882dc935c6bac20bba7e9fc304fb12af566bcf35",
+    "change": "Latest corpus adds printed 130-04/07/08 corrections التفتي / لله / فيدقونه and matching Russian nobility term, after pending earlier 101–127 edits.",
+    "current_asset_sha256": "5b5eb7a69892a784d741a0c341537f8bcbf0995f4daf83cac08800a9331bb672",
     "current_asset_runtime_checked": false,
-    "scope": "Accumulated detailed-review corrections await updated APK/import. Earlier positive runtime evidence remains bound to its APK/asset hashes."
+    "scope": "Latest detailed-review corpus awaits updated APK/import. Earlier positive checks remain tied to their recorded packaged hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
