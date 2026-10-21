@@ -799,7 +799,7 @@
         "v3-p025-01"
       ],
       "reviewed_on": "2026-10-21",
-      "status": "partial_primary_match_full_narrative_pending",
+      "status": "superseded_by_follow_up",
       "checked_primary_records": [
         {
           "path": "data/0774IbnKathir/0774IbnKathir.TafsirQuran/0774IbnKathir.TafsirQuran.Shamela0008473-ara1.mARkdown",
@@ -808,7 +808,9 @@
         }
       ],
       "finding": "Ibn Kathir transmits a shorter Gabriel explanation with all three ethical commands and explicitly discusses its disconnected transmission. The exact expanded dialogue لا أدري حتى أسأل and initial Jafar attribution have not been directly located in a primary witness in this pass. Preserve author’s qualified وقد ذكر, Russian Передаётся, and keep fuller source verification open.",
-      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+      "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication.",
+      "status_at_initial_review": "partial_primary_match_full_narrative_pending",
+      "superseded_by": "primary-followup-2026-10-21-v3-p025-01"
     },
     {
       "source_ids": [
@@ -1030,6 +1032,256 @@
       ],
       "finding": "Forgiveness adding dignity found; author further experiential judgment is kept separate from quoted prophetic premise.",
       "method": "Manual same-agent author Arabic/Russian and classical digital-source comparison, or explicit non-hadith classification as labeled. Not independent human review or complete authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p043-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2664"
+        }
+      ],
+      "finding": "Benefit, seeking divine help and avoiding incapacity found; author excerpt retained without importing rest of hadith.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p044-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_historical_legal_discussion_not_independently_verified",
+      "checked_primary_records": [],
+      "finding": "Author discussion includes historical wife counts and juristic preference; no separate verbatim prophetic report. Kept as author statement, not newly authenticated history or a new religious conclusion.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p050-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "author_quran_commentary_not_hadith_quote",
+      "checked_primary_records": [],
+      "finding": "Author applies Quran instruction of taking pardon, already discussed under 7:199. Not an independent hadith quotation.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p055-05",
+        "v3-p055-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "superseded_by_follow_up",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "1352"
+        }
+      ],
+      "finding": "Meccan post-pilgrimage three-day residence limit found. Full author legal-historical claims about property/blood money and Abu Bakr/Umar decision have not been directly verified in a primary witness in this pass. Russian diya and victim attachment clarified from original p.55, not used as a new legal ruling.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment.",
+      "status_at_initial_review": "partial_primary_match_historical_claims_pending",
+      "superseded_by": "primary-followup-2026-10-21-v3-p055-06"
+    },
+    {
+      "source_ids": [
+        "v3-p058-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "3"
+        },
+        {
+          "path": "data/0213IbnHisham/0213IbnHisham.SiraNabawiyya/0213IbnHisham.SiraNabawiyya.JK000797-ara1",
+          "blob": "8ef262e181ea86a66fbf199a042bda8ded6e6146",
+          "digital_report_number": "Waraqa narrative between digital PageV02P073 and PageV02P074"
+        }
+      ],
+      "finding": "Waraqa opposition phrase in Bukhari; longer rejection/harm/expulsion form in Sira. Author reorders/shortens narrative; Russian preserves all stated ordeals.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p060-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_report_number": "3175"
+        }
+      ],
+      "finding": "Aisha question on Quran 23:60 and fasting/prayer/charity with fear of rejection found; author only cites fasting/charity here, retained.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p065-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+          "blob": "0eb18479b33e6931e3d00d7382e9ed58697cca14",
+          "digital_report_number": "17142, ending before 17143"
+        }
+      ],
+      "finding": "Believer/camel simile found as الجمل الأنف where author has الجمل الذلول. Literal word variants retained, shared docility sense compared, no new grade.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p067-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_parallel_wording_differs",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "2846, variants around internal 34–36"
+        }
+      ],
+      "finding": "Paradise/Fire debate and proud/tyrannical entrants found. Checked wording has Fire’s أوثرت بالمتكبرين ... statement while author presents it as a question with لا ... إلا. Author wording unchanged; no assertion of a word-for-word single-variant match.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p067-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6247"
+        }
+      ],
+      "finding": "Anas greeting children and following prophetic practice found.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p067-06"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_text_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "6072"
+        }
+      ],
+      "finding": "Madinan slave woman taking hand and leading where she wished found; author shorter form retained.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "source_ids": [
+        "v3-p071-02"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "superseded_by_follow_up",
+      "checked_primary_records": [],
+      "finding": "Zayd/Ibn Abbas stirrup and hand-kissing narrative not yet directly located in a primary witness in this pass. Author narrative and reported companions’ words retained; do not treat this record as completed external verification.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment.",
+      "status_at_initial_review": "pending_primary_source",
+      "superseded_by": "primary-followup-2026-10-21-v3-p071-02"
+    },
+    {
+      "source_ids": [
+        "v3-p075-04"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "primary_parallel_wording_differs",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_report_number": "Book of Faith, chapter تحريم الكبر وبيانه, internal 147; conventional 91"
+        }
+      ],
+      "finding": "Definition of arrogance found. Primary witness has غمط الناس, author غمص الناس; author wording and contempt sense retained. No silent normalization to another report.",
+      "method": "Manual same-agent comparison or explicitly incomplete/classified item. Classical digital body and control author text; not independent human verification or a full isnad assessment."
+    },
+    {
+      "id": "primary-followup-2026-10-21-v3-p025-01",
+      "source_ids": [
+        "v3-p025-01"
+      ],
+      "status": "classical_fuller_text_parallel_compared",
+      "checked_primary_records": [
+        {
+          "path": "data/0211CabdRazzaqSancani/0211CabdRazzaqSancani.Tafsir/0211CabdRazzaqSancani.Tafsir.Shamela0021791-ara1",
+          "blob": "69020e5865e7c6db75e52af0f8e3eec2edec658f",
+          "digital_report_number": "974"
+        },
+        {
+          "path": "data/0538JarAllahZamakhshari/0538JarAllahZamakhshari.Kashshaf/0538JarAllahZamakhshari.Kashshaf.Shamela0023627-ara1",
+          "blob": "27fd0e2627de0e35dffe0e24fc2c5938648ff922",
+          "digital_report_number": "Commentary on Quran 7:199, before 7:200; near PageV02P190"
+        }
+      ],
+      "finding": "Full ask-Gabriel/await-answer narrative located in Abd al-Razzaq 974. Kashshaf contains both the fuller dialogue and the Jafar al-Sadiq attribution. Author three commands and Russian meaning compared. The earlier gap was source-text location, now filled; transmission reliability not independently certified. Author qualified وقد ذكر / Russian Передаётся retained.",
+      "reviewed_on": "2026-10-21",
+      "method": "Manual same-agent reading of classical primary-body parallels and author Arabic/Russian. Modern apparatus not imported; not independent human editing or full isnad assessment."
+    },
+    {
+      "id": "primary-followup-2026-10-21-v3-p071-02",
+      "source_ids": [
+        "v3-p071-02"
+      ],
+      "status": "classical_fuller_text_parallel_compared",
+      "primary_url": "https://www.islamarchive.cc/ketab_content/1544/p-32",
+      "primary_author": "Ibn al-Muqri, الرخصة في تقبيل اليد",
+      "digital_report_number": "30; displayed page 32; primary print not visually checked",
+      "additional_primary_records": [
+        {
+          "path": "data/0405HakimNaysaburi/0405HakimNaysaburi.Mustadrak/0405HakimNaysaburi.Mustadrak.Shamela0002266-ara1",
+          "blob": "20cbf8a01429efb20244db785ae305cbaad195b0",
+          "digital_report_number": "5785, shorter opening only"
+        }
+      ],
+      "author_text_excerpt": "فأخرج يده، فقبلها فقال: هكذا أمرنا أن نفعل بأهل بيت نبينا",
+      "finding": "Read full classical body at page 32, report 30, not merely a search snippet or modern commentary. Contains both stirrup service and hand-kissing/family reply. All author actions and Russian speakers compared. No new chain grade or independent historical certification assigned.",
+      "reviewed_on": "2026-10-21",
+      "method": "Manual same-agent reading of classical primary-body parallels and author Arabic/Russian. Modern apparatus not imported; not independent human editing or full isnad assessment."
+    },
+    {
+      "id": "primary-followup-2026-10-21-v3-p055-06",
+      "source_ids": [
+        "v3-p055-05",
+        "v3-p055-06"
+      ],
+      "status": "historical_primary_parallel_compared_scope_limited",
+      "checked_primary_records": [
+        {
+          "path": "data/0458Bayhaqi/0458Bayhaqi.SunanKubra/0458Bayhaqi.SunanKubra.Shamela0007861-ara1",
+          "blob": "a12d910fac9f4252f74d5c5ea5d144c57b59ed92",
+          "digital_report_number": "17632; compare 16762"
+        },
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_report_number": "7221, short Buzakha-delegation report only"
+        }
+      ],
+      "finding": "Bayhaqi 17632 explicitly records Abu Bakr proposal, Umar objection to blood money for Muslim battle deaths and subsequent agreement; Bayhaqi distinguishes return of extant property from compensation for destroyed property. This supports context and role/victim attachment for p.55 Russian clarification. Author wording/generalization preserved; not an independent proof of every blanket property claim or a new legal ruling. Bukhari 7221 is shorter and does not contain the entire compensation discussion; do not cite it as if it did.",
+      "reviewed_on": "2026-10-21",
+      "method": "Manual same-agent reading of classical primary-body parallels and author Arabic/Russian. Modern apparatus not imported; not independent human editing or full isnad assessment."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

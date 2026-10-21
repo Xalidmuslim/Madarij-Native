@@ -2349,24 +2349,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p055-05": {
-      "sha256": "b9c5043d48a1d928bb257c21767b70bd80ceaf794589772f1855bc9e13db8c2a",
+      "sha256": "ee2d773d0fd2ab69ff71c07ee6b2e4b850c9fb4723d9bb73801226c9d69394ef",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify diya as compensation for killing, not a ransom; clarify victims as Muslims on God’s path. Pronoun هم still refers to unbelievers, supported by preceding personal-loss argument and following apostate compensation account; it is not switched to emigrants. Control p.55 and full context pp.54–56 read; final Russian separately reread and back-compared. Same-agent self-review only."
     },
     "v3-p055-06+v3-p056-01": {
-      "sha256": "7e0b878410e660309a2ebbfdb9117989e694d92a6992f5485e92e3e32cceedd7",
+      "sha256": "6ab185df021edc5b4e299269ab48c753e565bfae5fbe2bddec2ce74a98f46777",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Consistent legal meaning of diya in immediately connected author historical quotation; no new legal conclusion or authentication of this historical report. Control p.55 and full context pp.54–56 read; final Russian separately reread and back-compared. Same-agent self-review only."
     },
     "v3-p056-02": {
       "sha256": "6bfed7b597141e336c3bffda0247149c740d8aeca29668e1e26c546a6988c9b4",

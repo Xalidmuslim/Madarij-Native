@@ -78,10 +78,10 @@
   "latest_corpus_check": "All 3106 rows exactly compared after 21 October edits, including Arabic/Russian, chapter IDs, ordinals, roles, source metadata. A live snapshot with WAL passed integrity_check. Earlier cold-start snapshots still had old corpus; they were not accepted as positive checks.",
   "current_source_update": {
     "date": "2026-10-21",
-    "change": "Later added an own note at page 9 and refined Russian p.36; current source has 3096 author records and 11 notes.",
-    "current_asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
+    "change": "Current source includes later p.55 compensation/victim clarification in addition to p.36 and 11 notes.",
+    "current_asset_sha256": "e3e5f409f07ecb991c2b692a98ccdb3b95c02e660a5be60846d1358426b56cce",
     "current_asset_runtime_checked": false,
-    "scope": "Positive earlier evidence applies to recorded 10-note APK. Current 11-note corpus and refined p.36 are being rebuilt; no claim of their runtime verification yet."
+    "scope": "Current p.55 wording awaits next APK build/import. Intermediate 11-note APK/database evidence is separately recorded and tied to its exact hashes."
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -110,5 +110,12 @@
   "current_visual_checks": [
     "Search for впадающие returns one result in volume 3 Почитание, with updated quotation and author explanation visible.",
     "Opening that search result displays full updated Arabic/Russian page 321 paragraph in reader, with Том 3 · черновик header."
-  ]
+  ],
+  "intermediate_11_note_build": {
+    "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
+    "asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
+    "actual_database_exact_rows": 3107,
+    "integrity_check": "ok",
+    "scope": "Includes p.36 refinement and 11 notes, before later p.55 Russian clarification. All APK rows exactly matched live database. This is not proof for later p.55 edits."
+  }
 }
