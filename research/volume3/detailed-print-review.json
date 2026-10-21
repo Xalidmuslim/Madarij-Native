@@ -10054,8 +10054,156 @@
         }
       ],
       "finding": "Control نوعي الغنى without older extra النوعين and no added به before من المال. Both heart and material enrichment retained, including author preference for third interpretation."
+    },
+    {
+      "source_ids": [
+        "v3-p251-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المراياة",
+          "secondary": "المراءاة",
+          "tokens": 1
+        }
+      ],
+      "finding": "8x crop confirms printed المراياة, not secondary spelling المراءاة. Arabic retained; Russian barāa rendered as freedom with correct от governance, full any-deed/word and non-God intention definition retained."
+    },
+    {
+      "source_ids": [
+        "v3-p251-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "له",
+          "secondary": "لله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بحظوظها",
+          "secondary": "وحظوظها من غيره",
+          "tokens": 3
+        }
+      ],
+      "finding": "8x crop confirms واجدة لله, own omitted ل restored. Printed بحظوظها without added من غيره retained. All poverty clauses, negated istiqama, divine object, counterfactual condition and three consequences preserved; Russian negative steadiness clause clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p251-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تستتم",
+          "secondary": "تستقيم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لها",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "لها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Control تستتم, not secondary تستقيم; no added لها in repeated list. Russian all three completion/negative conditions preserved, person’s straight-path following clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p252-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ازلية",
+          "secondary": "اولية",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وفقير",
+          "secondary": "او فقير",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control أزلية and وفقير, retain despite earlier firstness phrasing elsewhere. Whole rich/poor universality and both questions preserved; predating all is not misrepresented as everyone already achieving spiritual contemplation."
+    },
+    {
+      "source_ids": [
+        "v3-p253-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يفهم",
+          "secondary": "يعلم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وجود الله",
+          "secondary": "وجوده لله عز وجل",
+          "tokens": 4
+        }
+      ],
+      "finding": "Control يفهم and وجود الله, not secondary يعلم / وجوده لله عز وجل. Full ash-on-head and weep-for-self exhortations retained; finding God sense follows immediately preceding finding/losing maxim, not proof-of-existence assertion."
+    },
+    {
+      "source_ids": [
+        "v3-p254-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يتولاه سياسة",
+          "secondary": "يتولى سياسته",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يتولاه رعاية",
+          "secondary": "يتولى رعايته",
+          "tokens": 2
+        }
+      ],
+      "finding": "Control رحمه الله and يتولاه سياسة / يتولاه رعاية retained; full Qushayri Junayd parallel read with its distinct feminine verb. Russian governance/care tautology and omitted لأن causal bridge repaired, walking/flying/pursuit analogy intact."
+    },
+    {
+      "source_ids": [
+        "v3-p254-08",
+        "v3-p255-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Both printed sides: رحمه الله retained. Quran text/ref preserved. Russian explicit اثنين and restrictive إنما restored, majority scope and chosen-people report retained without inventing authenticity grade."
     }
   ],
-  "record_count": 489,
+  "record_count": 496,
   "unreviewed_candidates_remain": true
 }

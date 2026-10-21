@@ -611,5 +611,42 @@
     "corrected_ru": "Крайняя нужда — созерцать всю полноту своей потребности и нужды: осознавать их и переживать как состояние.",
     "reason": "Direct2019 definition: شهود كمال الضرورة والفاقة علما وحالا. Render necessity as need rather than abstract obligation, and repair instrumental calque знанием и состоянием; preserve full need and two cognitive/experienced modes. Russian reread separately/back-compared, same-agent.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p251-05"
+    ],
+    "previous_ru": "Третье — непричастность к показному благочестию: к желанию посредством чего-либо из своих дел и слов угодить кому-то, кроме Аллаха.",
+    "corrected_ru": "Третье — свобода от показного благочестия, то есть от желания посредством чего-либо из своих дел и слов угодить кому-то, кроме Аллаха.",
+    "reason": "Natural spiritual براءة, retaining full definition and correct Russian governance. Control المراياة retained rather than normalized. Direct full2019 comparison, Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p251-07"
+    ],
+    "previous_ru": "Все три достигают полноты лишь у того, кто одолел собственную душу и обрёл свою Цель. Пока человек не обрёл своего Господа, Всевышнего, нет у него ни неуклонности пути, ни свободы от собственных долей, ни непричастности к показному благочестию.",
+    "corrected_ru": "Все три достигают полноты лишь у того, кто одолел собственную душу и обрёл свою Цель. Пока человек не обрёл своего Господа, Всевышнего, нет у него ни неуклонного следования прямому пути, ни свободы от собственных долей, ни чистоты от показного благочестия.",
+    "reason": "Clarify person’s istiqama and freedom from riya; all three negated conditions preserved. Printed تستتم and no extra لها retained. Direct full2019 comparison, Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p254-06"
+    ],
+    "previous_ru": "Аль-Джунайда, да помилует его Аллах, спросили о мюриде и мураде. Он ответил: «Мюрида ведёт руководство знания, мурада — забота Истинного. Мюрид идёт, мурад летит. Когда же идущий догонит летящего?»",
+    "corrected_ru": "Аль-Джунайда, да помилует его Аллах, спросили о мюриде и мураде. Он ответил: «Мюридом руководит знание, а мурадом — попечение Истинного. Ведь мюрид идёт, а мурад летит. Когда же идущий догонит летящего?»",
+    "reason": "Remove tautological ведёт руководство, preserve governance versus care and explicit لأن causal bridge, walking/flying and final pursuit question. Direct full2019 comparison, Russian separately reread/back-compared by same agent.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p254-08",
+      "v3-p255-01"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Глава о мураде. Аллах, Всевышний, сказал: {وَمَا كُنْتَ تَرْجُو أَنْ يُلْقَى إِلَيْكَ الْكِتَابُ إِلَّا رَحْمَةً مِنْ رَبِّكَ} — „Ты не надеялся, что тебе будет ниспослано Писание, но это — милость твоего Господа“ [«Аль-Касас», 28:86]. Большинство говоривших об этой науке различали мюрида и мурада и ставили стоянку мурада выше стоянки мюрида. Именем мурада они указывали на особо оберегаемых избранников, о которых передано сообщение».",
+    "corrected_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Глава о мураде. Аллах, Всевышний, сказал: {وَمَا كُنْتَ تَرْجُو أَنْ يُلْقَى إِلَيْكَ الْكِتَابُ إِلَّا رَحْمَةً مِنْ رَبِّكَ} — „Ты не надеялся, что тебе будет ниспослано Писание, но это — милость твоего Господа“ [«Аль-Касас», 28:86]. Большинство говоривших об этой науке считали мюрида и мурада двумя разными людьми и ставили стоянку мурада выше стоянки мюрида. Под словом „мурад“ они подразумевали лишь особо оберегаемых избранников, о которых передано сообщение».",
+    "reason": "Preserve explicit اثنين since following author discussion critiques separating the roles. Keep majority, hierarchy, Quran quote and cherished elect report. Direct full2019 comparison, Russian separately reread/back-compared by same agent. Explicit restrictive إنما restored with лишь; Arabic naming construction rendered naturally.",
+    "external_human_review": false
   }
 ]
