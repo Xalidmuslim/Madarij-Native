@@ -2288,6 +2288,81 @@
       ],
       "finding": "Muslim AbuHurayra version أنا سيد ولد آدم يوم القيامة continues resurrection/intercession without ولا فخر. Tirmidhi AbuSaid version includes ولا فخر plus banner/prophets/resurrection. Control short quotation preserved; ولا فخر not falsely ascribed to exact Muslim matn. Omitted clauses not inserted, compiler remark not converted to new translator grade.",
       "method": "Same-agent bounded primary body/actual482/Russian literary/back comparison, no independent human or full-isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p485-02",
+        "v3-p485-03"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_wisal_muslim1102_1104_bukhari1967_7241_read_exact_variants_not_harmonized",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "1102 complete55–56 variants;1104 complete59–60;related1103/1105 bodies read"
+        },
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_location": "complete1961–1963/1965–1967 and7241 before7242"
+        }
+      ],
+      "finding": "Complete chains/body: Muslim1102 إني لست كهيئتكم إني أطعم وأسقى;1104 إني أظل يطعمني ربي ويسقيني;Bukhari1967 إني أبيت لي مطعم يطعمني وساق يسقين;7241 إني أظل يطعمني ربي ويسقين. Author three abbreviated variants including أظل عند ربي kept rather than forced to any single collection text. No new claim exact عند ربي was found in these bodies. Permission until sahar and disciplinary continuations not inserted into author quote. His subsequent physical/spiritual-food interpretation kept as author reasoning, not matn; mouth mistranslation corrected from actual485. No new isnad grade.",
+      "method": "Same-agent complete bounded classical bodies with visual485 and RU reread/back comparison, no independent human certification."
+    },
+    {
+      "source_ids": [
+        "v3-p490-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_bukhari6306_body_read_excerpt_and_author_gloss_distinguished",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_location": "6306 complete chain/body including day/night certainty continuation before6307"
+        }
+      ],
+      "finding": "Full Shaddad/BashiribnKab/AbdAllahibnBurayda chain and entire سيد الاستغفار prayer/conditional promise read. وأنا على عهدك ووعدك ما استطعت exact short excerpt retained. Author explanation of promise/covenant as interpretation, not expanded matn. Other supplication sentences and conditional paradise assurance not inserted, no fresh chain grade. This lookup does not resolve anomalous prior وتحبسه عزيمته syntax, documented separately.",
+      "method": "Same-agent bounded classical body and actual490/Russian comparison, no independent human certification."
+    },
+    {
+      "source_ids": [
+        "v3-p494-05"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_tirmidhi2459_body_compiler_gloss_read_no_new_grading",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "2459 complete two chain routes/body/compiler gloss before next chapter, PageV04P246"
+        }
+      ],
+      "finding": "Full AbuBakribnAbiMaryam/Damra/Shaddad body read. Primary دان نفسه explains حاسب نفسه; RU requiring account retained. Primary وتمنى على الله without author final الأماني, preserved author term. RU corrected hope-on-God versus dreams-about-God. Compiler حسن read but no fresh grade/new independent authentication asserted; later modern criticism not copied.",
+      "method": "Same-agent bounded classical body/control494/RU reread/back comparison, not human editor."
+    },
+    {
+      "source_ids": [
+        "v3-p493-01"
+      ],
+      "reviewed_on": "2026-10-21",
+      "status": "complete_tirmidhi2377_muslim2858_bodies_read_control_variants_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "blob": "64612edfe30a8b45e639ce8fc3afaa68b28015e3",
+          "digital_location": "2377 complete chain/mat/body/compiler remarks before2378, PageV04P186"
+        },
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "2858 complete55 chain routes/body/narrator gesture variants before2859"
+        }
+      ],
+      "finding": "Tirmidhi IbnMasud mat-imprint account has ما أنا في الدنيا إلا كراكب استظل تحت شجرة;author إنما أنا كراكب قال retained (midday rest). Muslim Mustawrid has والله/يجعل/إصبعه هذه and index/thumb gesture differences; author ما الدنيا...كما يدخل retained, no inserted oath/gesture. Each metaphor and following author moisture explanation complete, no new grading.",
+      "method": "Same-agent complete bounded classical bodies and control493/Russian comparison, not independent human or manuscript verification."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."

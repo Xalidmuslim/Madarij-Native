@@ -19658,8 +19658,608 @@
         }
       ],
       "finding": "Actual483 وصورتها feminine, not secondary وصورته. Joined Yusuf55 excerpt and full intention/benefit conclusion checked, no arbitrary split."
+    },
+    {
+      "source_ids": [
+        "v3-p484-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او الباطنة",
+          "secondary": "والباطنة",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "او المنافر",
+          "secondary": "والمنافر",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual484 أو الباطنة and أو المنافر not secondary conjunction و; no extra الله at compared reference. All four Quran excerpts, references and verse112 clothing/taste relation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p484-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المخوف",
+          "secondary": "الخوف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual484 المخوف object of fear, not secondary الخوف feeling; RU distinguishes feared event expected versus directly suffered. Both taste/clothing implications complete."
+    },
+    {
+      "source_ids": [
+        "v3-p485-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فقال",
+          "secondary": "قال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual485 فقال, not secondary قال. All three report variants retained; feeding/drinking interpreted in next author paragraph not inserted into hadith text."
+    },
+    {
+      "source_ids": [
+        "v3-p485-04",
+        "v3-p486-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "خالط",
+          "secondary": "خالطت حلاوته",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "اذا خالط بشاشة",
+          "secondary": "خالطت بشاشته",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "دعوة",
+          "secondary": "دعوى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual485–486 both خالط بشاشة القلوب forms and دعوة with ت are printed; no replacing by secondary خالطت حلاوته/دعوى. Whole Heraclius inference preserved, no silent grammatical repair from modern footnote."
+    },
+    {
+      "source_ids": [
+        "v3-p486-05",
+        "v3-p487-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الشرب",
+          "secondary": "الشراب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "التذكير",
+          "secondary": "التذكر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual486 الشرب no inserted ا and التذكير with ي despite editorial suggested التذكر; print governs, no modern note imported. Whole487 verse201 and result kept."
+    },
+    {
+      "source_ids": [
+        "v3-p487-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تذكيرهم",
+          "secondary": "تذكرهم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged487 نشأ عن تذكّرهم, no ي, own تذكيرهم corrected. No new تعالى or extra سبحانه from secondary inserted; already actual سبحانه retained and now explicit in RU. Separate remembrance and contemplative meanings kept."
+    },
+    {
+      "source_ids": [
+        "v3-p488-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووجد",
+          "secondary": "فوجد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فقد",
+          "secondary": "بعد",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "ومن يعمل سوءا او يظلم نفسه",
+          "secondary": "",
+          "tokens": 6
+        },
+        {
+          "tag": "delete",
+          "control": "تعالى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "صلى الله عليه وسلم",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual488 ووجد and فقد, not secondary فوجد/بعد. Entire4:110 beginning ومن يعمل سوءا أو يظلم نفسه present; all24:39/4:110/93:6–8/38:44 chains complete. No extra salutation from secondary. Full root/masdar/obtaining argument retained."
+    },
+    {
+      "source_ids": [
+        "v3-p489-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ثبوت",
+          "secondary": "وثبوت",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه وتعالى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual489 وزيادة ثبوت واستقرار, no secondary extra و before ثبوت. Actual والله أعلم not expanded سبحانه وتعالى. Reported terminology and author rejection separate."
+    },
+    {
+      "source_ids": [
+        "v3-p489-07"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منع",
+          "secondary": "يمنع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والتشمير",
+          "secondary": "والسير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual489 منع past and والسير not own التشمير. Restore source/RU motion. Explicit ظن obstruction from earnest seeking and motion is immediate semantic evidence for unusual490 continuation, no new doctrinal inference."
+    },
+    {
+      "source_ids": [
+        "v3-p490-01"
+      ],
+      "decision": "retain_control_with_immediate_contextual_negative_scope",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتحبسه",
+          "secondary": "ويحبس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged490 actually وتحبسه عزيمته, do not silently emend to secondary ويحبس عزيمته. Preserve printed syntactic anomaly. RU continues negative force of لا يعارضه ظن using explicit adjacent489-07 منع الذائق أن يحبسه ظن عن الجد في الطلب والسير إلى ربه and490-02 الثبات; it does not claim determination positively prevents effort. This is same-agent contextual rendering, grammatical uncertainty remains documented for human review, not an independently resolved manuscript reading."
+    },
+    {
+      "source_ids": [
+        "v3-p491-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وخالطها",
+          "secondary": "وخالطتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual491 وخالطتها بشاشته feminine ت restored after own omission. Author49:14 distinctions intact, no portrayal of Muslims as unbelievers."
+    },
+    {
+      "source_ids": [
+        "v3-p491-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لطعم",
+          "secondary": "طعم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يصدق",
+          "secondary": "انما يحصل بصدق",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual491 لطعم with ل and فإن ذلك يصدق, no extra secondary إنما يحصل بصدق. Entire giving wealth/self and Hasan saying preserved; no expansion from other transmitted versions."
+    },
+    {
+      "source_ids": [
+        "v3-p492-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "امل",
+          "secondary": "امر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عرض",
+          "secondary": "غرض",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اعراضها",
+          "secondary": "اغراضها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged492 أمل دنيا and عرض من أعراضها all undotted ع, not secondary أمر/غرض/أغراضها. Preserve transient worldly good object distinct from hope; no false dot repair."
+    },
+    {
+      "source_ids": [
+        "v3-p492-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووشك انقضائه",
+          "secondary": "فيوشك انقطاعه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "سحاب",
+          "secondary": "سحابة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual492 ووشك انقضائه and سحاب صيف, no secondary فيوشك انقطاعه/سحابة. Entire phantom/cloud/shadow/star series retained."
+    },
+    {
+      "source_ids": [
+        "v3-p493-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يتعلق",
+          "secondary": "يعلق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged493 بما يعلق no ت, own يتعلق corrected. Author قال midday rest distinguished from parallel Tirmidhi استظل; sea/finger quote and author moisture gloss complete."
+    },
+    {
+      "source_ids": [
+        "v3-p493-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يديه",
+          "secondary": "يده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual493 يده singular, not own يديه. Correct AR/RU; author Umar attribution retained without imagined original-source authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p493-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عن",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual493 فضلا أن with no inserted عن and قال تعالى without inserted الله at compared locus. Whole complex relative comparison of eternal bliss/knowing-loving-God and complete9:72 author excerpt retained."
+    },
+    {
+      "source_ids": [
+        "v3-p494-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual494 no added الله before ما أعطاهم and no added سبحانه in second short report. Preserve two separate reports/wordings, no conflation or extra isnad grade."
+    },
+    {
+      "source_ids": [
+        "v3-p494-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رؤوس",
+          "secondary": "رءوس",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "او",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual494 رؤوس standard hamza on و and no added أو at comparison locus. Dream-capital and intoxicated false-images comparison retained in full."
+    },
+    {
+      "source_ids": [
+        "v3-p495-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يحسن",
+          "secondary": "يحسنه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual495 ما يحسن no appended ه; original people/knowers contrast retained. No added attribution to Ali from editorial apparatus."
+    },
+    {
+      "source_ids": [
+        "v3-p495-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يتعلق",
+          "secondary": "يعلق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged495 فلا يعلق به شاغل no ت, own يتعلق corrected. Three separate effects and desire/taste/familiarity statement complete."
+    },
+    {
+      "source_ids": [
+        "v3-p495-07",
+        "v3-p496-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تصديقه",
+          "secondary": "بتصديقه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual496 ذاق تصديقه no preceding ب. Preserve subject faith-as-confirmation tasting promise versus aspirant will tasting intimacy, not a generic same state."
+    },
+    {
+      "source_ids": [
+        "v3-p496-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "حال",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "حال",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الدرجة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual496 no extra حال twice nor repeated الدرجة from secondary at compared loci. Full divine intimacy greater than promised-garden pleasure argument preserved; glorification retained."
+    },
+    {
+      "source_ids": [
+        "v3-p496-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يتعلق",
+          "secondary": "يعلق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged496 quote فلا يعلق no ت, but immediate gloss لا يتعلق includes ت; only first corrected. Desire/strength/intimacy taste/sweetness chain retained."
+    },
+    {
+      "source_ids": [
+        "v3-p496-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكلما",
+          "secondary": "فكلما",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual496 وكلما first, no secondary ف; no inserted منه after أبعد. Both near/strong intimacy versus far/estrangement preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p496-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طلبه",
+          "secondary": "مطلبه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual496 دون مطلبه العالي with initial م, missing from own طلبه; correct source/RU sought high goal. Whole reprimand and distraction/barrier-road comparison kept."
+    },
+    {
+      "source_ids": [
+        "v3-p497-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السوى وان",
+          "secondary": "السوىوان",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "بقدر ارادتك",
+          "secondary": "بقدرارادتك",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual497 word spaces normal, no merged secondary tokens and no extra تعالى twice. Full76:9/6:52/92:19–20 excerpts retained. RU عارض obstruction cleared of unsupported added temporal perishability."
+    },
+    {
+      "source_ids": [
+        "v3-p500-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يوقد",
+          "secondary": "يتوقد",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "والله بكل شيء عليم",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual500 يوقد without inserted ت; whole والله بكل شيء عليم present at end24:35 excerpt. Do not truncate Quran from secondary omissions. Full lamp/east-west transition retained."
+    },
+    {
+      "source_ids": [
+        "v3-p500-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وصفة",
+          "secondary": "وصفية",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual500 حالة وصفة, not secondary وصفية. Explicit drive purity and exclusive seeking definition retained; full source quote not changed."
     }
   ],
-  "record_count": 953,
+  "record_count": 982,
   "unreviewed_candidates_remain": true
 }
