@@ -5536,14 +5536,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p114-05": {
-      "sha256": "166642117bdfeb5366551c017d23686f61f748ef100cc0ed78f69857faf399c1",
+      "sha256": "2363839e9ae761b32c1876318071754925b92dc7e844600a6453e46f1e9a1103",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct 8x 2019 p.114 last-line crop confirms المَيَعان (fluidity/melting), not own transposition المَعَيان. Printed فرحة, به, إليه, لهذا and لذاك also retained despite secondary differences. Existing Russian растеканию чувств conveys this metaphor and is unchanged after full paragraph rereading and back-comparison. Same-agent self-review only. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p115-01": {
       "sha256": "a0a1b73b0f02ccc7d0dd01c113a733df202474915387549c1127dc6a3d3c8711",
