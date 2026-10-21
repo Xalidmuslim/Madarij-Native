@@ -1,0 +1,914 @@
+{
+  "date": "2026-10-21",
+  "control": "2019 volume 3 PDF SHA256 8b40f810e8e365d98c036ceb1328eb683521147f7ecf68d2a5c304b04128e427",
+  "purpose": "Additional detailed visual adjudication of secondary-witness candidates after own transcription errors were found on page 152. Does not replace the control edition.",
+  "reviewer": "same-agent visual self-review; not independent human review",
+  "records": [
+    {
+      "source_ids": [
+        "v3-p003-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "في مدح اهله",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p003-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "شيء",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p003-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنه",
+          "secondary": "",
+          "tokens": 3
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p005-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "اخوانهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيظهر",
+          "secondary": "فتظهر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p006-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالرئاسة",
+          "secondary": "بالرياسة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "رئاسته",
+          "secondary": "رياسته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حاجة",
+          "secondary": "حاجات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p007-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "قدس الله روحه",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "عليه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p007-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نظيرها",
+          "secondary": "نظائرها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p007-05",
+        "v3-p008-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "التوضي",
+          "secondary": "المتوضئ",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "بعض",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p008-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ثمرا",
+          "secondary": "ثمرة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الذي",
+          "secondary": "التي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيه",
+          "secondary": "فيها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p009-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "النبي",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاثنين",
+          "secondary": "اثنين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p009-05",
+        "v3-p010-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فاتصدق",
+          "secondary": "اتصدق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p011-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "يسع الناس بماله ويمكنه ان",
+          "secondary": "",
+          "tokens": 5
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p011-03",
+        "v3-p012-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بترفيه",
+          "secondary": "بتركه",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "هو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p012-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ان",
+          "secondary": "وان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مالا",
+          "secondary": "ما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "باموالهم تزاحمهم",
+          "secondary": "بزهدك في اموالهم وما في ايديهم تفضل عليهم وتزاحمهم",
+          "tokens": 9
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p012-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مزية",
+          "secondary": "مزيد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "على الممسك",
+          "secondary": "للممسك",
+          "tokens": 2
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p012-06",
+        "v3-p013-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتخصيص من",
+          "secondary": "وتخصيصك لمن",
+          "tokens": 2
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p013-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استبداده",
+          "secondary": "استبداله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "استبد",
+          "secondary": "استبدل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p014-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بقوته ويتفرق",
+          "secondary": "بوقته ويفرق",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيتفرق",
+          "secondary": "فيفرق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويتشتت",
+          "secondary": "ويشتت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p015-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "في العلم",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الغالب",
+          "secondary": "والغالب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p015-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليك",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ووقتك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ابدا",
+          "secondary": "احدا فان اثرت به",
+          "tokens": 4
+        }
+      ],
+      "finding": "Compared candidate words directly with full 2019 printed page images. Existing transcription matches control; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p015-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "محرم",
+          "secondary": "حرام",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يؤثر",
+          "secondary": "يؤثره",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والامامة",
+          "secondary": "والاقامة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويرفهه",
+          "secondary": "ويرفعه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p015-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنها",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "عنهما بمدفنه",
+          "secondary": "عنه بدفنه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p016-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتقربه",
+          "secondary": "وبقربه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منه",
+          "secondary": "منها",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p016-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المقيت",
+          "secondary": "المقت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p016-10",
+        "v3-p017-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهذه هي",
+          "secondary": "وهي",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واعلاها للرسل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الصلاة والسلام",
+          "secondary": "صلوات الله وسلامه",
+          "tokens": 3
+        },
+        {
+          "tag": "delete",
+          "control": "محمد",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه وعليهم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "القريب والبعيد",
+          "secondary": "البعيد والقريب",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الجهاد",
+          "secondary": "جهاده",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من ربه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "ناله",
+          "secondary": "نال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p017-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عز وجل",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تحمله",
+          "secondary": "تحمل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p019-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بارئها",
+          "secondary": "ربها",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "قوله",
+          "secondary": "هذا المعنى",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في قوله",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "نفعا ولا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p020-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بطلب",
+          "secondary": "بطيب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p020-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وغرثهم",
+          "secondary": "وغرثاهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "للرجوع",
+          "secondary": "الرجوع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تلقلقه",
+          "secondary": "تقلقله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p021-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بيديه",
+          "secondary": "بيده",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يشاءون",
+          "secondary": "تشاءون",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p021-08",
+        "v3-p022-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "نفسه",
+          "secondary": "نفسك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p024-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ياتمر",
+          "secondary": "يامر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وينتهي",
+          "secondary": "وينهى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p024-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p025-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رضي الله عنهما",
+          "secondary": "",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فسال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p026-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تجسيس",
+          "secondary": "تخسيس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاعتذار",
+          "secondary": "الاعذار",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والبحث",
+          "secondary": "في البحث",
+          "tokens": 2
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p026-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الفضل",
+          "secondary": "الفاضل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يسالونك",
+          "secondary": "ويسالونك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p026-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الاعراف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p027-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الاعراف",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تسفه",
+          "secondary": "سفه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p027-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "قط",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "قط",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Candidate words compared directly with full control print images on pages 15–17, 19–22 and 24–27. Existing Arabic matches 2019 print; secondary reading not adopted."
+    },
+    {
+      "source_ids": [
+        "v3-p152-04"
+      ],
+      "decision": "correct_own_transcription",
+      "finding": "Enlarged control confirms مركوبه and وبُعْدِ شأوه. Corrected own ركوبه and وتعدّى شأوه. Printed به and تتخلف retained. Russian coordination clarified; complete paragraph reread and back-compared. See transcription-corrections.json."
+    }
+  ],
+  "record_count": 40,
+  "unreviewed_candidates_remain": true
+}
