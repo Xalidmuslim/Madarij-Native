@@ -17520,14 +17520,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p329-02": {
-      "sha256": "c67676537079b5a2b7e3c894e64162dcddf61df1d47e8b31a5146e08aa75dfc5",
+      "sha256": "b07d0619df4b8efa9343720baa1568a0108608f3e50914e4ac5380d1208ed696",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Clarify من عبده as desired FROM servant, not sin divinely chosen FOR him; preserve emphatic عين and divine decree versus approval distinction with all preceding negatives. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p330-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -17570,14 +17571,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p331-03": {
-      "sha256": "12f1e85f45bbd01217488ea0ae38bf51a5ec07d28817e4b0b2d3b91e5b8a0f7e",
+      "sha256": "e94f41327349bfeb392d6b5c4207e627ea7f1f27c8c4488c4a9bf8cbb4be06ac",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Render actual author honorific سبحانه precisely as transcendence/glory, not silently substitute تعالى; all gift-versus-earned distinction and six locations intact. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p331-04": {
       "sha256": "057420aed96a735bb37f60383314ee92f31f49dc9648a9590ebc5b5b92ff67cb",
@@ -17790,14 +17792,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p334-07": {
-      "sha256": "caaa98d3b78a169d4aeb8fc90b716b7e5d7f80cffc34927c7775d53719a38cee",
+      "sha256": "a29d35ca1d58d2a36de3de93bee5c7cf51aa983c298f00628a7bead7f820a13b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Enlarged334 has entire short critical-edition supply [وقيل: له], not an unmarked author وقيل. Restore missing له and editorial brackets; mirror bracketed supplied attribution in Russian, without importing modern footnote prose or asserting original author attribution as certain. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p335-01": {
       "sha256": "b62619d48bc3f45ea4d0db6236132bd9a69d90a1047a84e072e7f03a69260df4",

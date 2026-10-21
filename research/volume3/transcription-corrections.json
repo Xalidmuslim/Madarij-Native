@@ -944,5 +944,16 @@
     "reason": "Actual enlarged327 second explanation quotes حقا with final alif, matching earlier main degree327-02. Restore missing alif/case as print; do not import secondary ترى, لله or delete و in وأي, and do not silently normalize printed verb vocalization.",
     "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
     "external_human_review": false
+  },
+  {
+    "source_id": "v3-p334-07",
+    "printed_page": 334,
+    "previous_ar": "وقيل: عينان لهما شعاع، وجناحان من زمرد وزبرجد، فإذا سمعوا صوتها أيقنوا بالنصر.",
+    "control_print_ar": "[وقيل: له] عينان لهما شعاع، وجناحان من زمرد وزبرجد، فإذا سمعوا صوتها أيقنوا بالنصر.",
+    "previous_ru": "Говорили также: «У неё два сияющих глаза и два крыла из изумруда и хризолита. Услышав её голос, они обретали уверенность в победе».",
+    "corrected_ru": "[Говорили также, что у неё] два сияющих глаза и два крыла из изумруда и хризолита. Услышав её голос, они обретали уверенность в победе.",
+    "reason": "Enlarged334 has entire short critical-edition supply [وقيل: له], not an unmarked author وقيل. Restore missing له and editorial brackets; mirror bracketed supplied attribution in Russian, without importing modern footnote prose or asserting original author attribution as certain.",
+    "method": "Direct visual 2019 control print collation, enlarged where needed. Secondary witness supplies candidate only.",
+    "external_human_review": false
   }
 ]

@@ -13327,8 +13327,179 @@
         }
       ],
       "finding": "Both leaves no added عز وجل/لك; printed باختياره ما اختاره retained. Divine command/religion versus decree distinctions preserved; no use of decreed sins as approval, explicitly excluded in following329-02."
+    },
+    {
+      "source_ids": [
+        "v3-p329-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "ما",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عليه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عين",
+          "secondary": "غير",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual329 ما قدره عليه, عين اختياره and no added سبحانه before final والله أعلم. Opposing predestined sins explicitly required in author argument; do not turn divine decree into approval of sinful acts. Russian من عبده clarified."
+    },
+    {
+      "source_ids": [
+        "v3-p330-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفاتحة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual330 no added الفاتحة main text. Full five revelation/inspiration/understanding/address/true dream categories and reference to prior guidance discussion kept, not an omitted chapter."
+    },
+    {
+      "source_ids": [
+        "v3-p331-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "لقد نصركم الله في مواطن كثيرة ويوم حنين اذ اعجبتكم كثرتكم فلم تغن عنكم شيئا وضاقت عليكم الارض بما رحبت ثم وليتم مدبرين",
+          "secondary": "",
+          "tokens": 23
+        },
+        {
+          "tag": "delete",
+          "control": "وانزل جنودا لم تروها",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual331 includes entire quoted Quran9:25 and start9:26 through وأنزل جنودا لم تروها. Large secondary deletion is not evidence of own insertion; retained all printed Arabic/Russian and combined reference25–26."
+    },
+    {
+      "source_ids": [
+        "v3-p331-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "الا تنصروه فقد نصره الله اذ اخرجه الذين كفروا ثاني اثنين اذ هما في الغار",
+          "secondary": "",
+          "tokens": 15
+        }
+      ],
+      "finding": "Actual331 includes full printed Quran9:40 beginning إلا تنصروه and cave/companion prefix, not secondary truncated version. Entire printed quote through لم تروها retained; no automatic truncation from old digital witness."
+    },
+    {
+      "source_ids": [
+        "v3-p332-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الفتح",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual332 Quran48:26 quoted portion plus الآية and single reference. No extra الفتح inserted within main quote from secondary; Russian and onward-verse signal retained."
+    },
+    {
+      "source_ids": [
+        "v3-p332-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "والقوى",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اقرؤوا",
+          "secondary": "اقرءوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual332 تعجز العقول والقوى with القوى retained; اقرؤوا spelling kept. Complete attributed first-hand illness story, malicious spirits, relatives, verses, state removal and no ailment preserved, not independently diagnosed or authenticated."
+    },
+    {
+      "source_ids": [
+        "v3-p333-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "عنه",
+          "secondary": "عنهما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "جلد",
+          "secondary": "جلدة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged333 clearly جلد with fatḥa, NOT جلدة suggested by small image/secondary. Retain جلد and singular عنه; do not introduce false ة correction. Full trench/abdomen/poem-attribution introduction retained."
+    },
+    {
+      "source_ids": [
+        "v3-p333-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الالى",
+          "secondary": "الاولى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual333 إن الألى not الأولى. Full three couplets/six half-lines, conditional battle/sedition and resolve retained, no poetry rewritten to other report variant."
+    },
+    {
+      "source_ids": [
+        "v3-p334-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "رحمه الله",
+          "secondary": "",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual334 رحمه الله retained. Full three-kind definition and distinct physical entity/abstract meaning alternatives and quoted attribution intact."
     }
   ],
-  "record_count": 643,
+  "record_count": 652,
   "unreviewed_candidates_remain": true
 }
