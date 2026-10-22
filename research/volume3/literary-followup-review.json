@@ -24,11 +24,12 @@
     "v3-p580-02",
     "v3-p486-02",
     "v3-p488-04+v3-p489-01",
-    "v3-p489-07"
+    "v3-p489-07",
+    "v3-p491-03"
   ],
-  "changed_unit_count": 12,
+  "changed_unit_count": 13,
   "semantic_back_review": "Full Arabic of each changed unit compared with actual control print and final Russian after literary reread; source Arabic unchanged.",
-  "changes": "Nine initial and three additional manually chosen Russian corrections, full previous/new versions in literary-corrections.json. Restore morphological model مفاعلة; complete Russian conditional sentence576; quote boundaries; clearer definition581 and revelation antecedent582; natural taste and reward idioms; restore clear subject in489 and closest-interpretation syntax584.",
+  "changes": "Nine initial, three subsequent and one phrase-search manually chosen Russian corrections, full previous/new versions in literary-corrections.json. Restore morphological model مفاعلة; complete Russian conditional sentence576; quote boundaries; clearer definition581 and revelation antecedent582; natural taste and reward idioms; restore clear subject in489 and closest-interpretation syntax584.",
   "unchanged_after_source_check": [
     {
       "source_id": "v3-p487-06",
@@ -47,5 +48,9 @@
   ],
   "critical_pending_units_retained": 6,
   "publication_ready": false,
-  "independent_human_review": false
+  "independent_human_review": false,
+  "additional_targeted_units_inspected": [
+    "v3-p491-03"
+  ],
+  "systematic_followup": "Exact phrase scan found491-03 after12prior changes; actual print491 and whole Arabic checked, natural Russian necessity clause preserves taste/sweetness and final ذوق/وجد distinction. Short conditional scan yielded only valid clauses/verses besides corrected576; not auto-edited. Only one مفاعلة instance in corpus, now restored575. These scans are candidates only, not literary certification of all3096units."
 }

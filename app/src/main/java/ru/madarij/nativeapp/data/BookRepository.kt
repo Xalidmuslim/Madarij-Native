@@ -6,7 +6,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.security.MessageDigest
-import java.util.Locale
 
 class BookRepository(private val context: Context, private val db: BookDatabase) {
     val dao = db.dao()
@@ -29,7 +28,10 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         // A new APK with changed book/TOC bytes still follows full validation.
         // Incremental SHA-256 avoids copying the entire bilingual corpus into
         // an additional multi-megabyte array on every cold start.
-        val hash = shaCombined(bytes, structureBytes, volume2Bytes, structure2Bytes, volume3Bytes, structure3Bytes)
+        val hash = shaCombined(
+            SEARCH_INDEX_REVISION.toByteArray(Charsets.UTF_8),
+            bytes, structureBytes, volume2Bytes, structure2Bytes, volume3Bytes, structure3Bytes
+        )
         if (dao.contentVersion()?.sha256 == hash) {
             importedDraft = true // The bundled volumes include an own working translation.
             importedVolume2Preview = volume2Bytes.isNotEmpty()
@@ -140,9 +142,7 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
             }
         }
     }
-    private fun normalize(text: String): String = text.lowercase(Locale.ROOT)
-        .replace(Regex("[\u064B-\u065F\u0670\u0640\u06D6-\u06ED]"), "")
-        .replace(Regex("[أإآٱ]"), "ا").replace('ё', 'е')
+    private fun normalize(text: String): String = normalizeSearchText(text)
     private fun shaCombined(vararg parts: ByteArray): String {
         val digest = MessageDigest.getInstance("SHA-256")
         for (part in parts) digest.update(part)

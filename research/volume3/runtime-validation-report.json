@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
-  "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
+  "apk_sha256": "15a9c43b7a558b5791ca17f8650a3357ce06582a6bec71955d0ddf3635bcff31",
+  "volume3_asset_sha256": "90df097e2f2c45f41da6c3091504778b13cd7b1fe844c3ad5894010428e2b64c",
   "zip_integrity_checked": true,
-  "apk_asset_matches_repository": false,
+  "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
   "jvm_test_suites": 17,
   "jvm_tests": 97,
@@ -66,11 +66,7 @@
   },
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
-  "visually_exercised": [
-    "Two-word query сообщение аз-Зухри gives exactly one result in Мимолётный взгляд.",
-    "Opened own542 note; actual top and scrolled tail viewed, explicitly labeled Пояснение редакции with separate collapse/open control; says فيما بلغنا and no new authenticity assessment. Full note text additionally exact in DB comparison.",
-    "Three-token query либо никакого соотношения gives exactly one result in Чистота, matching corrected584-04. Actual settled search and opened reader584-04 top viewed, including explicit либо; no claim this top screenshot shows whole ending. Subsequent scrolled screen actually shows full remainder584-04 and start of final Arabic584-05. Further actual reader image shows complete Arabic584-05 ending والله سبحانه أعلم. Russian final584-05 top/middle actually viewed separately after Arabic, correct chapter header Чистота and draft state retained. Final settled image runtime-through584-reader-final-close22.png actually shows entire Russian584-05, closing Аллах, пречист Он, знает лучше. and Конец раздела."
-  ],
+  "visually_exercised": [],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
     "Physical Android device testing",
@@ -81,12 +77,12 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
-    "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
-    "description": "Through584 complete pre/post snapshots preserve1bookmark,16positions,empty notes/read_chapters and exact preferences. Confirmed content_version 04190c7459b33d1ed5224b645f281b351cbccac45c7cca8de2c5898e51ecc102 before native WAL checkpoint0|0|0; waited final archive completion then compared3110rows across seven fields. Later deliberate reader navigation outside preservation comparison."
+    "apk_sha256": "15a9c43b7a558b5791ca17f8650a3357ce06582a6bec71955d0ddf3635bcff31",
+    "volume3_asset_sha256": "90df097e2f2c45f41da6c3091504778b13cd7b1fe844c3ad5894010428e2b64c",
+    "description": "Literary23 before/after complete snapshots preserve1bookmark,16positions,empty notes/read_chapters and exact preferences. Confirmed content_version 8af4797de3421c3a19ca56c51db0825ba05048d102fabe3a79436d0146b45a88 before checkpoint0|0|0 and full archive completion; exact seven-field3110row comparison. Existing emulator cold-started without wiping; stale lock files only renamed after no live qemu found. Subsequent deliberate UI navigation outside preservation comparison."
   },
-  "latest_corpus_check": "All3110rows exactly match current through584 APK and repository asset across seven fields; no extras/integrityok; first two volumes and personal/preferences exact. Six pending units retained, publication_ready false.",
-  "current_source_update": "2026-10-23:12targeted Russian literary corrections after checked584 APK; new generated asset is not yet covered by runtime. Arabic/source IDs/count unchanged. Latest positive historical APK cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6.",
+  "latest_corpus_check": "All3110rows exactly match current13-correction literary23APK and repository asset across seven fields, no extras/integrityok, protected first two volumes and all personal/preferences exact. Six pending units retained; publication_ready false.",
+  "current_source_update": "Current13targeted Russian literary corrections are covered by actual runtime import/row comparison; Arabic/source IDs/count remain unchanged.",
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
     "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
@@ -110,12 +106,8 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through584 actual new-note search and reader checked, all3110database records exact. Does not claim all186targets manually tapped or physical-device testing.",
-  "current_visual_checks": [
-    "Two-word query сообщение аз-Зухри gives exactly one result in Мимолётный взгляд.",
-    "Opened own542 note; actual top and scrolled tail viewed, explicitly labeled Пояснение редакции with separate collapse/open control; says فيما بلغنا and no new authenticity assessment. Full note text additionally exact in DB comparison.",
-    "Three-token query либо никакого соотношения gives exactly one result in Чистота, matching corrected584-04. Actual settled search and opened reader584-04 top viewed, including explicit либо; no claim this top screenshot shows whole ending. Subsequent scrolled screen actually shows full remainder584-04 and start of final Arabic584-05. Further actual reader image shows complete Arabic584-05 ending والله سبحانه أعلم. Russian final584-05 top/middle actually viewed separately after Arabic, correct chapter header Чистота and draft state retained. Final settled image runtime-through584-reader-final-close22.png actually shows entire Russian584-05, closing Аллах, пречист Он, знает лучше. and Конец раздела."
-  ],
+  "visual_check_scope": "Literary23 current text imported exactly; actual UI found quoted-word search failure, now tracked explicitly. Representative successful new-text UI test awaits fix.",
+  "current_visual_checks": [],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
     "asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
@@ -354,7 +346,16 @@
     ],
     "jvm_test_scope": "97 JVM tests passed earlier this session; latest changes are content/review data only, APK rebuilt offline; 24 content/integrity tests rerun."
   },
-  "open_runtime_issues": [],
+  "open_runtime_issues": [
+    {
+      "id": "fts-unicode-punctuation-boundaries",
+      "status": "reproduced_fix_in_progress",
+      "trigger": "Bare муфааля or происходит аль-Вадуд queries after correct literary23 import return0 although current search-row text contains quoted words.",
+      "cause": "FTS default simple tokenizer keeps non-ASCII quotation/ornament/hyphen delimiters inside terms; old normalizer did not replace these with ASCII spaces.",
+      "evidence": "Actual Android screenshots and SQLite MATCH against full post-import snapshot; index row texts current, so not a stale-book import.",
+      "required_fix": "Same boundary normalization for index and query, plus index revision in import hash to rebuild already imported content."
+    }
+  ],
   "historical_2026_10_21_through150": {
     "date": "2026-10-21",
     "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
@@ -1144,5 +1145,76 @@
     ],
     "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
     "apk_asset_matches_repository": false
-  }
+  },
+  "historical_through584_2026_10_22": {
+    "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
+    "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 14,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "unresolved_source_ids_in_checked_apk": [
+        "v3-p110-04",
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-03",
+        "v3-p403-01+v3-p404-01",
+        "v3-p436-05"
+      ],
+      "all_3110_packaged_rows_exactly_match_database": true
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 16,
+        "rows_after": 16,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
+      "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
+      "description": "Through584 complete pre/post snapshots preserve1bookmark,16positions,empty notes/read_chapters and exact preferences. Confirmed content_version 04190c7459b33d1ed5224b645f281b351cbccac45c7cca8de2c5898e51ecc102 before native WAL checkpoint0|0|0; waited final archive completion then compared3110rows across seven fields. Later deliberate reader navigation outside preservation comparison."
+    },
+    "latest_corpus_check": "All3110rows exactly match current through584 APK and repository asset across seven fields; no extras/integrityok; first two volumes and personal/preferences exact. Six pending units retained, publication_ready false.",
+    "visual_check_scope": "Through584 actual new-note search and reader checked, all3110database records exact. Does not claim all186targets manually tapped or physical-device testing.",
+    "current_visual_checks": [
+      "Two-word query сообщение аз-Зухри gives exactly one result in Мимолётный взгляд.",
+      "Opened own542 note; actual top and scrolled tail viewed, explicitly labeled Пояснение редакции with separate collapse/open control; says فيما بلغنا and no new authenticity assessment. Full note text additionally exact in DB comparison.",
+      "Three-token query либо никакого соотношения gives exactly one result in Чистота, matching corrected584-04. Actual settled search and opened reader584-04 top viewed, including explicit либо; no claim this top screenshot shows whole ending. Subsequent scrolled screen actually shows full remainder584-04 and start of final Arabic584-05. Further actual reader image shows complete Arabic584-05 ending والله سبحانه أعلم. Russian final584-05 top/middle actually viewed separately after Arabic, correct chapter header Чистота and draft state retained. Final settled image runtime-through584-reader-final-close22.png actually shows entire Russian584-05, closing Аллах, пречист Он, знает лучше. and Конец раздела."
+    ],
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "apk_asset_matches_repository": false
+  },
+  "apk_code_matches_repository": false
 }
