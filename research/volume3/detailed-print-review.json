@@ -20933,8 +20933,929 @@
         }
       ],
       "finding": "Actual512 no added تعالى/سبحانه at loci, عليه not على السبب, وقطعه عن not وقطع عنه, وإن شاء, تصريفه, كيف يشاء all match print. Full removing efficacy/setting obstacle/producing opposite chain and concluding first reading retained. Entire joined second reading512–513 compared incl not permanent maqam caveat."
+    },
+    {
+      "source_ids": [
+        "v3-p513-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ويسر",
+          "secondary": "وان يسر",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "العبد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual513 no added الله twice or extra العبد; ويسر not secondary وأن يسر at compared locus. Full10:58 and repeated good-deed joy/grace/assistance/ease chain kept. Full513-03 repetition actually ويثبت with ي whereas505 quote وتثبت with ت; retain printed distinction."
+    },
+    {
+      "source_ids": [
+        "v3-p513-06",
+        "v3-p514-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ويطلبه منه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual513–514 no inserted ويطلبه منه. All human created-master care/ability/kindness/defense qualities retained, comparison stronger joy explicit."
+    },
+    {
+      "source_ids": [
+        "v3-p514-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ويلهيها",
+          "secondary": "وينميها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual514 ويلهيها not secondary وينميها; soul distracted/forgets three types of flaw, counterfactual awareness would interrupt joy retained."
+    },
+    {
+      "source_ids": [
+        "v3-p514-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ويشتغل بالحلة",
+          "secondary": "فيشتغل بالخلعة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Enlarged514 بالخلعة not own بالحلة; initial ويشتغل remains و not secondary ف. Robe/benefactor distinction and mouth/hand closeness image complete; مكر not narrowly reduced to lost possessions."
+    },
+    {
+      "source_ids": [
+        "v3-p514-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استرد",
+          "secondary": "مسترد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "غيرة",
+          "secondary": "عزة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واكبر",
+          "secondary": "واكثر",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "المقام",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يخاف",
+          "secondary": "خيف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged514 مسترد participle with م, own استرد corrected; خيف passive not own يخاف corrected. Actual غيرة not alternate عزة, وأكبر not وأكثر, المقام present. Full96:6–7 and conditional fear retained."
+    },
+    {
+      "source_ids": [
+        "v3-p515-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكسبه",
+          "secondary": "في كسبه",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "الملي الولي",
+          "secondary": "المليء الوفي",
+          "tokens": 2
+        }
+      ],
+      "finding": "Enlarged515 المليء الوفي, not own الملي الولي. Actual وكسبه no secondary في. Source/RU restored wealth-and-faithfulness metaphor; intrinsic human need/divine sufficiency full contrast retained."
+    },
+    {
+      "source_ids": [
+        "v3-p515-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "خير",
+          "secondary": "خيار",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يا شعيب",
+          "secondary": "ياشعيب",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وما يكون لنا ان نعود فيها الا ان يشاء الله ربنا وسع ربنا كل شيء علما",
+          "secondary": "الاعراف الى قوله",
+          "tokens": 16
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual515 خير not secondary خيار; full7:88–89 excerpt including وما يكون لنا...وسع ربنا... present, do not replace by إلى قوله. No extra تعالى in concluding locus. Entire etiquette/lordship/servanthood triad retained."
+    },
+    {
+      "source_ids": [
+        "v3-p516-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "قال",
+          "secondary": "وقال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual516 قال الإمام أحمد no secondary extra و. Full two contrasting prayers incl حتى تكون أنت تؤمني retained, not author/translator universal prohibition. Joined516-07/517-01 actually يجنده (ن/د) as current, not critical alternate يجذبه; current RU joins His army retained without guessing attraction reading."
+    },
+    {
+      "source_ids": [
+        "v3-p517-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "منه",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual517 no secondary added في twice at compared loci; أولج قلبي منه شيئا has منه. Full left/right hands/good/inability/untilGodplaces sequence retained."
+    },
+    {
+      "source_ids": [
+        "v3-p518-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فلائحة",
+          "secondary": "فمدحة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "فهو",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "به",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "في",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual518 فمدحة الشكر not own فلائحة. No extra هو at secondary locus, actual وهو/به/من كلامه retained against secondary فهو/deletion/في. Full divine gift/thanks and explicit servant-versus-Lord qualification intact."
+    },
+    {
+      "source_ids": [
+        "v3-p519-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لله",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual519 توليه لله with ل, no replacement by alternate الله. Full turning-to-God versus away-from-other contrast kept; two درجات distinguished."
+    },
+    {
+      "source_ids": [
+        "v3-p520-02"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فتنزل",
+          "secondary": "فتزل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وكذا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وكذا",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "عنايتهم بالمعاني اكثر من",
+          "secondary": "",
+          "tokens": 4
+        }
+      ],
+      "finding": "Actual520 فتزل not own فتنزل. Actual second/third يقتضي كذا only once, no extra وكذا inserted; full والقوم عنايتهم بالمعاني أكثر من عنايتهم بالألفاظ present. All three تجلي types/true-meaning versus mistaken direct-vision warning retained."
+    },
+    {
+      "source_ids": [
+        "v3-p520-04",
+        "v3-p521-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اضمحل",
+          "secondary": "انطمس",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مكانها هكذا",
+          "secondary": "اماكنها وهكذا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وقوي",
+          "secondary": "قوي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual520 انطمس not own اضمحل; actual مكانها singular (not secondary أماكنها), هكذا no extra و, وقوي with و. Full star continued-existence and hidden-by-sun explanation kept, joined521 heart/strength/removed-obstacles clauses complete. Only521 opening continuation read here; rest521 awaits full next batch."
+    },
+    {
+      "source_ids": [
+        "v3-p521-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "للناس",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "للناس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual521 للناس occurs only with day-of-resurrection comparison, no relocation to mountain clause from secondary. Glorification restored RU; whole rejection of mistaken literal vision preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p521-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عمل",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عمل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual521 no added سبحانه after الله and no repeated عمل after قبل in both timed-deed clauses. Full classical Muslim179 record read earlier452, no new lookup asserted; author shortened wording retained, no false omission repair."
+    },
+    {
+      "source_ids": [
+        "v3-p521-05",
+        "v3-p522-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "نور",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "سبحانه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual521 first نور الإسلام and every نور explicit, not secondary deletion;522 no added سبحانه at compared locus. Full non-inhabitation/non-union/non-mixture and Creator-creature distinction retained, no softening."
+    },
+    {
+      "source_ids": [
+        "v3-p522-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وتعصم",
+          "secondary": "ويعصم",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "السلوة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهو",
+          "secondary": "فان سلو القلب وغفلته عن ذكره هو",
+          "tokens": 7
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "عن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سلوه",
+          "secondary": "سلوته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual522 وتعصم feminine, no added السلوة; وهو من أعظم العيوب not secondary long interpolation فإن سلو القلب وغفلته عن ذكره هو; من عيب and سلوه correct. Whole beloved/life/bliss/love/closeness/remembrance and preserving-from-consolation explanation retained."
+    },
+    {
+      "source_ids": [
+        "v3-p523-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وانوار",
+          "secondary": "الانوار",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وشعب",
+          "secondary": "وشعاب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الناظرة",
+          "secondary": "الناظر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فسبق",
+          "secondary": "سبق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual523 كشف وأنوار with و not secondary الأنوار, وشعب without inserted ا; الناظرة feminine with ة; فسبق with ف. Full four divine names/paired negations/repeated first-last-high-encompassing clauses retained."
+    },
+    {
+      "source_ids": [
+        "v3-p524-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "زعم انه",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual524 no inserted زعم أنه after ذاق ذلك. Entire obligatory/sunna superiority claim retained as first group erroneous speech, not author conclusion; both poem lines read."
+    },
+    {
+      "source_ids": [
+        "v3-p524-05"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تعول",
+          "secondary": "تعمل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged524 ولا تعمل عليها, not own تعول. Source/RU failure to cultivate gatheredness restored; second group remains distinguished from first obligation-abandoning group."
+    },
+    {
+      "source_ids": [
+        "v3-p524-06",
+        "v3-p525-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "احدهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ضعفت",
+          "secondary": "ضعف",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فالفرض",
+          "secondary": "فالفرائض",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual524 no inserted أحدهم; فإن ضعفت feminine printed retained against secondary ضعف; no added ألم before التفرقة; فالفرض singular not الفرائض. Full joined525 ending right-of-Lord/own-share/prioritize distinction complete; Russian cramped idiom smoothed. Remaining525 discussion awaits next full-page batch."
+    },
+    {
+      "source_ids": [
+        "v3-p525-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تعوض",
+          "secondary": "تعوضه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فاتته",
+          "secondary": "فاتت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "النهار",
+          "secondary": "الليل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وفعل",
+          "secondary": "ونفل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual525 لا تعوض الجمعية عنها no extra ه; فاتته suffix present, النهار not secondary الليل; وفعل الجهاد not ونفل. All8types of more-beneficial acts retained and priorities not generalized beyond author."
+    },
+    {
+      "source_ids": [
+        "v3-p525-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "مصلحة",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والتبذل",
+          "secondary": "والغسل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual525 دون مصلحة الجمعية includes مصلحة; التبذل لحضور الجنائز not old والغسل. Full7examples incl القدس and author conditional detailed distinction retained, no own fatwa inserted."
+    },
+    {
+      "source_ids": [
+        "v3-p525-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وظهر",
+          "secondary": "فظهر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual525 وظهر not فظهر. Both strong gatheredness and weak gatheredness/strong sincerity cases intact, neither universally prioritized."
+    },
+    {
+      "source_ids": [
+        "v3-p526-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وهمه",
+          "secondary": "وهمته",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "قد",
+          "secondary": "وقد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual526 بعزمه وهمه (no extra ت) and مسافر جاد في سيره قد وصل (no preceding و). Actual الوحدانية...شهود عينها...انكشاف حقيقتها للقلب visually confirmed. Source and entire526/527/528 contrasting endpoint interpretations kept; disclosure RU made impersonal as source."
+    },
+    {
+      "source_ids": [
+        "v3-p527-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يغني الاشتغال",
+          "secondary": "معنى للاشتغال",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual527 فلا يغني الاشتغال بالوسيلة afterwards, not secondary فلا معنى للاشتغال. Full erroneous means/goal reasoning and knowledge/action example kept attributed, not author approval."
+    },
+    {
+      "source_ids": [
+        "v3-p527-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "السلف من",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual527 أهل الاستقامة من الشيوخ no added السلف من from secondary. Stronger denunciation and comparison with major-sin/low-desire persons retained as author statement."
+    },
+    {
+      "source_ids": [
+        "v3-p527-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طاعاته",
+          "secondary": "اعماله",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لكنه",
+          "secondary": "ولكنه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المجاهدة بما لاحظه من",
+          "secondary": "المجاهدات بملاحظة",
+          "tokens": 4
+        },
+        {
+          "tag": "replace",
+          "control": "ينقطع",
+          "secondary": "يقتطع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual527 طاعاته not أعماله, لكنه without added و; كد المجاهدة بما لاحظه من exact, ينقطع not يقتطع. All heart/spirit works versus no dropping obedience, full merciful-generous-king traveling image and second-stage service kept."
+    },
+    {
+      "source_ids": [
+        "v3-p528-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual528 إلى أن توفاه no explicit الله from secondary, no Arabic insertion. Whole no-stopping-while-alive counterclaim and stronger obedience through death/works of humans and jinn preserved; توحيده RU restored contextual tawhid."
+    },
+    {
+      "source_ids": [
+        "v3-p528-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "انقطع",
+          "secondary": "لانقطع",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual528 انقطع no secondary extra ل, full hypothetical loss of seeking/motion/will and stronger desire of sought servant kept."
+    },
+    {
+      "source_ids": [
+        "v3-p528-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "في",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سالك",
+          "secondary": "وسالك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual528 أقيم مقام الطلب without added في; كل واصل سالك وطالب no extra و before سالك. Both general conclusions and differing methods retained; joined528-05/529-01 only opening continuation covered, rest529 awaits next group."
+    },
+    {
+      "source_ids": [
+        "v3-p529-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "دائما",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "ولسوف يرضى",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual529 no added دائما/تعالى twice or ولسوف يرضى. Full author92:19–20 excerpt retained (print reference19 only; RU correctly19–20), not extended to21 from secondary. Religious-will qualification الديني explicit RU retained."
+    },
+    {
+      "source_ids": [
+        "v3-p529-06",
+        "v3-p530-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ينقل",
+          "secondary": "تنقل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاعمال",
+          "secondary": "الاحوال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual529 القرب الحقيقي ينقل masculine, and الأعمال الظاهرة not secondary الأحوال. Whole apostate opinion explicitly attributed, author opposite greater striving kept."
+    },
+    {
+      "source_ids": [
+        "v3-p530-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واخرجوهم",
+          "secondary": "فاخرجوهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual530 وأخرجوهم و not secondary فأخرجوهم. Full judgment is attributed to author/reporting scholars, capacity clause أي ما دام قادرا عليه preserved, no translator independent fatwa."
+    },
+    {
+      "source_ids": [
+        "v3-p530-08"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مشتبك",
+          "secondary": "متشبك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual530 مشتبك not secondary متشبك. Full Junayd name/leadership/salutation and hadith relationship retained."
+    },
+    {
+      "source_ids": [
+        "v3-p531-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النصراباذي",
+          "secondary": "النصرابادي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "سلكه",
+          "secondary": "سلك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual531 النصراباذي ذ not secondary د and ما سلكه الأولون with ه. All6principles and final earlier-path clause preserved; Qushayri related but longer/different enumeration not substituted."
+    },
+    {
+      "source_ids": [
+        "v3-p531-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ابطل",
+          "secondary": "فباطل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Enlarged531 فباطل عمله predicate, not own أبطل عمله. Source/RU corrected. Primary Qushayri full chain/body has من عمل عملا بلا اتباع سنة رسول الله ... فباطل عمله, author shorter quote preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p532-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "ابو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual532 أبو عبد الله الخياط includes أبو, not secondary omission; full earlier-inner-impulse versus prophet-law contrast retained, no guessing distinct scholar from kunyah."
+    },
+    {
+      "source_ids": [
+        "v3-p532-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "باطن",
+          "secondary": "الباطن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual532 من رياء باطن في القلب no added definite الباطن, full son AbuBakr tearing own shirt and father rebuke kept. Qushayri parallel في الباطن not copied over author في القلب."
+    },
+    {
+      "source_ids": [
+        "v3-p532-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ابي",
+          "secondary": "ابن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual532 أبي عثمان, not malformed secondary ابن عثمان. Whole safety-from-deception/path-of-predecessors/sharia maxim retained."
+    },
+    {
+      "source_ids": [
+        "v3-p532-05",
+        "v3-p533-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المبارك",
+          "secondary": "مبارك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual532 عبد الله بن مبارك no ال; own added article removed in source. Full533 lightless-striving/hidden-innovation continuation retained, not newly traced to independent IbnMubarak source by this visual check."
     }
   ],
-  "record_count": 1010,
+  "record_count": 1051,
   "unreviewed_candidates_remain": true
 }

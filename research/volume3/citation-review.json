@@ -2491,7 +2491,29 @@
       ],
       "finding": "Primary ليس شيء أكرم على الله تعالى من الدعاء, author shorter without تعالى retained. Compiler غريب only-known-marfu-through-Imran remark read, not converted to new translator authentication; other routes not claimed exhaustively assessed.",
       "method": "Same-agent bounded primary-body/control509/Russian comparison, not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p531-01",
+        "v3-p531-03",
+        "v3-p531-04",
+        "v3-p531-06",
+        "v3-p532-01",
+        "v3-p532-03"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "bounded_complete_qushayri_maxims_read_author_shorter_or_different_wording_preserved",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "Complete bounded maxims/available chains around V1P58 AbuYazid, V1P68 AhmadibnAbiHawari, V1P138 IbnNujayd, V1P145 Nasrabadi and final death narrative beginning لما تغيرت الحال على أبي عثمان الحيرى"
+        }
+      ],
+      "finding": "Read full matching maxims and locally present chains: Nasrabadi أصل التصوف...تعظيم حرمات المشايخ/رؤية أعذار الخلق/المداومة على الأوراد differs author enumeration, retained author;IbnNujayd الصبر تحت الأمر والنهي same;Ahmad فباطل عمله confirms print531 correction;AbuYazid يرتقى...أداء الشريعة differs author يرتفع...حفظ الحدود والشريعة, not normalized;Hayri في الباطن differs author باطن في القلب, preserved. Search after joining line breaks was necessary; earlier line-local missing hits not treated as proof source absent. Did not establish IbnNujayd531-02 ملازمة العبودية phrasing or all other sayings independently. No new isnad/hadith grades or modern footnotes imported.",
+      "method": "Same-agent bounded classical text/actual529–533 images/Russian literary/back self-review; no independent human certification."
     }
   ],
-  "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage."
+  "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage.",
+  "last_updated": "2026-10-22"
 }
