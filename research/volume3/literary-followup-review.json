@@ -36,7 +36,14 @@
       "finding": "Actual print is القوة الدافعة; retain historical physiological term, do not silently replace by secondary الذائقة or omit force as supposedly awkward Russian."
     }
   ],
-  "remaining_targeted_questions": [
+  "critical_pending_units_retained": 3,
+  "publication_ready": false,
+  "independent_human_review": false,
+  "additional_targeted_units_inspected": [
+    "v3-p491-03"
+  ],
+  "systematic_followup": "Exact phrase scan found491-03 after12prior changes; actual print491 and whole Arabic checked, natural Russian necessity clause preserves taste/sweetness and final ذوق/وجد distinction. Short conditional scan yielded only valid clauses/verses besides corrected576; not auto-edited. Only one مفاعلة instance in corpus, now restored575. These scans are candidates only, not literary certification of all3096units.",
+  "previous_remaining_targeted_questions": [
     {
       "source_id": "v3-p481-01",
       "finding": "Russian ветерок его северного ветра remains heavy; Arabic روح شمالهم contains plural possessive, determine antecedent before stylistic recast rather than insert imagined referent."
@@ -46,11 +53,82 @@
       "finding": "Russian потому что здесь устремление состояния is still heavy; printed لأنه همة حال unusual, needs contextual syntax rather than guessed smooth paraphrase."
     }
   ],
-  "critical_pending_units_retained": 6,
-  "publication_ready": false,
-  "independent_human_review": false,
-  "additional_targeted_units_inspected": [
-    "v3-p491-03"
-  ],
-  "systematic_followup": "Exact phrase scan found491-03 after12prior changes; actual print491 and whole Arabic checked, natural Russian necessity clause preserves taste/sweetness and final ذوق/وجد distinction. Short conditional scan yielded only valid clauses/verses besides corrected576; not auto-edited. Only one مفاعلة instance in corpus, now restored575. These scans are candidates only, not literary certification of all3096units."
+  "remaining_targeted_questions": [],
+  "historical_critical_pending_count": 6,
+  "continuation_2026_10_23": {
+    "scope": "Seven prose corrections in481/575/246–247 and48 title-only consistency corrections, not a second complete reading of582 pages. Same-agent self-review only.",
+    "full_changed_units": [
+      "v3-p481-01",
+      "v3-p575-02",
+      "v3-p246-03",
+      "v3-p246-05",
+      "v3-p247-02",
+      "v3-p247-03",
+      "v3-p247-04"
+    ],
+    "title_only_changed_units": [
+      "v3-p075-03",
+      "v3-p092-03",
+      "v3-p107-04",
+      "v3-p108-04",
+      "v3-p109-03",
+      "v3-p116-04",
+      "v3-p132-04",
+      "v3-p163-04",
+      "v3-p177-05",
+      "v3-p184-03",
+      "v3-p184-07",
+      "v3-p185-05",
+      "v3-p204-04",
+      "v3-p205-02",
+      "v3-p219-05+v3-p220-01",
+      "v3-p221-06",
+      "v3-p239-04",
+      "v3-p248-04",
+      "v3-p254-08+v3-p255-01",
+      "v3-p256-05",
+      "v3-p263-03",
+      "v3-p284-02",
+      "v3-p293-06",
+      "v3-p312-02",
+      "v3-p320-02",
+      "v3-p325-03",
+      "v3-p330-02",
+      "v3-p334-02",
+      "v3-p350-03",
+      "v3-p360-03",
+      "v3-p361-01",
+      "v3-p404-03",
+      "v3-p407-05",
+      "v3-p407-07",
+      "v3-p425-04",
+      "v3-p438-02",
+      "v3-p443-09+v3-p444-01",
+      "v3-p444-03",
+      "v3-p447-02",
+      "v3-p455-04",
+      "v3-p459-05",
+      "v3-p472-02",
+      "v3-p472-03",
+      "v3-p476-04",
+      "v3-p486-04",
+      "v3-p544-03",
+      "v3-p551-05",
+      "v3-p566-03"
+    ],
+    "full_prose_changed_count": 7,
+    "title_only_changed_count": 48,
+    "semantic_resolution_units": [
+      "v3-p246-03",
+      "v3-p246-05",
+      "v3-p247-03"
+    ],
+    "method": "All seven complete changed prose units compared to actual print, Russian-only reread and final Arabic/back comparison. Title-only changes checked narrowly against48 collated Arabic المنازل fragments and Russian context; no new full-unit review claimed. New bounded classical dictionary and author-source evidence in citation-review records163/164 (records are research notes, not hadith counts).",
+    "remaining_critical_units": [
+      "v3-p110-04",
+      "v3-p403-01+v3-p404-01",
+      "v3-p436-05"
+    ],
+    "independent_human_review": false
+  }
 }

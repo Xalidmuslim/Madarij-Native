@@ -2647,5 +2647,551 @@
     "corrected_ru": "Истинность этого вкушения они подтвердили тем, что ради довольства своего Всевышнего Господа отдали самое дорогое — имущество и самих себя. Такая самоотдача невозможна, если человек не ощутил вкуса веры и её сладости: она подтверждает и вкушение, и ощущение. Как сказал аль-Хасан: «Вера — не в мечтаниях и не во внешнем украшении: это то, что утвердилось в сердце и что подтвердили дела».",
     "reason": "2026-10-23 exact Russian phrase search found another вкушение вкуса calque in491-03. Actual printed491/complete Arabic read, revised Russian reread and back-compared. Natural necessity clause preserves both taste and sweetness, keeps final explicit distinction الذوق والوجد and complete Hasan quotation; no deletions or authenticity grade. Same-agent only.",
     "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p481-01"
+    ],
+    "previous_ru": "«Рождает облако радости» — вызывает у раба особую радость и ликование о Господе, каких прежде не бывало, которым нет подобия в земной жизни: дуновение райского блаженства и ветерок его северного ветра. Когда это облако возникает, оно проливает на него сладость упоения. Внутренний мир и сокровенная глубина души ликуют от пришедшего от Господина и Покровителя. Когда упоение усиливается, им течёт река гордости: Аллах отличил человека среди ему подобных тем, чем особо наделил его.",
+    "corrected_ru": "«Рождает облако радости» — вызывает у раба особую радость и ликование о Господе, каких прежде не бывало, которым нет подобия в земной жизни: дуновение райского блаженства и прохладное дыхание северного ветра, овевающего обитателей рая. Когда это облако возникает, оно проливает на него сладость упоения. Внутренний мир и сокровенная глубина души ликуют от пришедшего от Господина и Покровителя. Когда упоение усиливается, рекой льётся гордость своим отличием от себе подобных — тем, чем Аллах особо наделил его.",
+    "reason": "Actual control481 directly read in full; plural شمالهم refers contextually to Paradise inhabitants, supported by full Muslim2833 (Anas chain and body), not singular рай. Russian-only reread removes ветерок его северного ветра and им течёт, preserves distinct نفحة/نسمة, refreshment روح, cloud/rain/river, causal force and special distinction. Full Arabic/back comparison after final prose; no Arabic emendation or added hadith grading.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p575-02"
+    ],
+    "previous_ru": "Эта степень выше предыдущей, потому что здесь устремление состояния, а состояние — плод знания. Состояние очищается лишь благодаря чистоте знания, которое его рождает; примесь состояния соразмерна примеси знания. Когда состояние чисто, раб видит благодаря его чистоте следы истин — свидетельства в нём и в других, относящиеся к нему и к другим, — и ощущает сладость сокровенного обращения. Утвердившись на этой степени, он забывает мир и всё сотворённое в нём.",
+    "corrected_ru": "Эта степень выше предыдущей, поскольку на ней устремление связано с состоянием, а состояние — плод знания. Состояние очищается лишь благодаря чистоте знания, которое его рождает; примесь состояния соразмерна примеси знания. Когда состояние чисто, раб видит благодаря его чистоте следы истин — свидетельства в нём и в других, относящиеся к нему и к другим, — и ощущает сладость сокровенного обращения. Утвердившись на этой степени, он забывает мир и всё сотворённое в нём.",
+    "reason": "Actual control575 full paragraph and immediate574–576 context read. Render iḍāfa همة حال as устремление связано с состоянием rather than Russian nominal calque; causal hierarchy, state as fruit of knowledge, proportional impurity, four witness relations, sweetness and forgetting all retained on full back comparison. Printed masculine لأنه retained; no claimed manuscript resolution or inferred directional к состоянию. Same-agent literary clarification only.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p246-03"
+    ],
+    "previous_ru": "Он сказал: «Третья степень — истинность крайней нужды, вступление в пустыни единственного отрешения и заточение в пустыне уз освобождения от всего. Это факр суфиев».",
+    "corrected_ru": "Он сказал: «Третья степень — истинность крайней нужды, вступление в пустыни уединённой отрешённости и заточение в пустыне уз освобождения от всего. Это факр суфиев».",
+    "reason": "Replace numeric-sounding единственного отрешения with уединённой отрешённости. Direct control246/247 and entire quoted explanation back-compared; Lisan root وحد explicitly defines الوحداني as المنفرد بنفسه / الوحدة والانفراد, not ordinal единственный. Author TariqHijratayn digital26–31 independently discusses the same Ansari degree and locates this detachment in witnessing; no physical isolation, ontic annihilation or cessation of duties inserted. Preserve بيد desert plural and all parallel terms; no Arabic emendation.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p246-05"
+    ],
+    "previous_ru": "Под вступлением в пустыни единственного отрешения он подразумевает присутствие сосредоточения, в котором нет ничего иного: оно отсечено от всего иного и единственно само по себе. Вступить в его пустыни — отдаться ему, покориться и войти под его власть.",
+    "corrected_ru": "Под вступлением в пустыни уединённой отрешённости он подразумевает присутствие сосредоточения, в котором нет ничего иного: оно отделено от всего иного и обособлено само по себе. Вступить в его пустыни — отдаться ему, покориться и войти под его власть.",
+    "reason": "Carry identical term from246-03 into author explanation; وحدانية بنفسها as обособлено само по себе follows Lisan المنفرد بنفسه and immediate فهي منقطعة عن الأغيار. Entire control246–247 read and final Russian back-compared. TariqHijratayn26–31 clarifies witness-bound scope and distinction between reported qawm experience and author preferred worship. Keep حضرة الجمع and full surrender/submission/bondage sequence; Arabic unchanged.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p247-02"
+    ],
+    "previous_ru": "С узами он связал пустыню по двум причинам.",
+    "corrected_ru": "Он говорит о пустыне этих уз по двум причинам:",
+    "reason": "Clarify explicit masculine antecedent القيد in immediate introduction to two reasons without turning it into feminine desert. Actual247 and entire246–247 read. This is a prose rendering of جعل للقيد بيداء, not a new doctrinal comment.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p247-03"
+    ],
+    "previous_ru": "Первая: иное в ней гибнет и исчезает, и рядом с ней не остаётся ничего другого.",
+    "corrected_ru": "Первая: в них всё иное гибнет и исчезает, и наряду с ними не остаётся ничего другого.",
+    "reason": "Restore reference of فيه/معه to preceding القيد, rendered by Russian plural узы, rather than replace with feminine desert. Immediate جعل للقيد بيداء لوجهين and 247-01 قيد / التقيّد بشهود الحقيقة establish controlling grammatical topic. New author parallel TariqHijratayn30 explicitly صاحب توحيد الربوبية في قيد التجريد عن ملاحظة فاعل غير الله وهو مجرد عن ملاحظة وجوده supports constraint of witnessing; no God inserted as pronoun referent or literal annihilation asserted. All vanish/cease/no-other clauses retained, Russian-only reread then full print/back comparison.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p247-04"
+    ],
+    "previous_ru": "Вторая: её широта и простор. Созерцающий её пребывает в обширной пустыне, хотя и заточён в узах своего созерцания.",
+    "corrected_ru": "Вторая — их широта и простор. Пребывающий в таком созерцании находится в обширной пустыне, хотя и заключён в узы своего созерцания.",
+    "reason": "Parallel لسعته وفضائه and صاحب مشهده continue preceding masculine القيد topic, not feminine بيداء. Keep both breadth/space and deliberate paradox of expansive desert within fetter of witnessing. Entire Arabic247 and final Russian back-compared; no source emendation or ontic inference.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p075-03"
+    ],
+    "previous_ru": "Автор «Степеней» сказал, да помилует его Аллах: «Смирение — это смирение раба перед властью истины».",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал, да помилует его Аллах: «Смирение — это смирение раба перед властью истины».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p092-03"
+    ],
+    "previous_ru": "Автор «Степеней» сказал, да помилует его Аллах: «Суть футуввы — не созерцать за собой достоинства и не считать, что у тебя есть какое-либо право».",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал, да помилует его Аллах: «Суть футуввы — не созерцать за собой достоинства и не считать, что у тебя есть какое-либо право».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p107-04"
+    ],
+    "previous_ru": "Всё сказанное выше о степенях доброго нрава и футуввы в точности относится и к этой степени, поэтому мы ограничились здесь этим. Автор «Степеней», да помилует его Аллах, обошёлся без неё благодаря тому, что сказал о футувве. Аллах знает лучше.",
+    "corrected_ru": "Всё сказанное выше о степенях доброго нрава и футуввы в точности относится и к этой степени, поэтому мы ограничились здесь этим. Автор «Маназил ас-саирин», да помилует его Аллах, обошёлся без неё благодаря тому, что сказал о футувве. Аллах знает лучше.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p108-04"
+    ],
+    "previous_ru": "Автор «Степеней», да помилует его Аллах, ошибся, начав её словами Всевышнего, передающими речь Его собеседника Мусы, мир ему: {إِنْ هِيَ إِلَّا فِتْنَتُكَ تُضِلُّ بِهَا مَنْ تَشَاءُ وَتَهْدِي مَنْ تَشَاءُ} — «Это лишь Твоё испытание: им Ты вводишь в заблуждение кого пожелаешь и ведёшь верным путём кого пожелаешь» [«Аль-Араф», 7:155]. По-видимому, он усмотрел в этом обращении непринуждённость между Мусой и Всевышним Аллахом, побудившую его сказать: {إِنْ هِيَ إِلَّا فِتْنَتُكَ} — «Это лишь Твоё испытание».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, ошибся, начав её словами Всевышнего, передающими речь Его собеседника Мусы, мир ему: {إِنْ هِيَ إِلَّا فِتْنَتُكَ تُضِلُّ بِهَا مَنْ تَشَاءُ وَتَهْدِي مَنْ تَشَاءُ} — «Это лишь Твоё испытание: им Ты вводишь в заблуждение кого пожелаешь и ведёшь верным путём кого пожелаешь» [«Аль-Араф», 7:155]. По-видимому, он усмотрел в этом обращении непринуждённость между Мусой и Всевышним Аллахом, побудившую его сказать: {إِنْ هِيَ إِلَّا فِتْنَتُكَ} — «Это лишь Твоё испытание».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p109-03"
+    ],
+    "previous_ru": "Автор «Степеней» разделил её на три ступени: первая — с людьми, вторая и третья — с Аллахом. С помощью Аллаха и при Его содействии мы разъясним, что заключено в его словах.",
+    "corrected_ru": "Автор «Маназил ас-саирин» разделил её на три ступени: первая — с людьми, вторая и третья — с Аллахом. С помощью Аллаха и при Его содействии мы разъясним, что заключено в его словах.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p116-04"
+    ],
+    "previous_ru": "Второй — решимость идущего по пути. Эту степень автор «Степеней» поместил в середине книги, в разделе основ, сказав: «Это утверждение намерения добровольно или под принуждением».",
+    "corrected_ru": "Второй — решимость идущего по пути. Эту степень автор «Маназил ас-саирин» поместил в середине книги, в разделе основ, сказав: «Это утверждение намерения добровольно или под принуждением».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p132-04"
+    ],
+    "previous_ru": "Автор «Степеней» сказал, да помилует его Аллах: «Глава о стремлении. Всевышний Аллах сказал: {قُلْ كُلٌّ يَعْمَلُ عَلَى شَاكِلَتِهِ} — „Скажи: каждый поступает согласно своему складу“» [«Аль-Исра», 17:84].",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал, да помилует его Аллах: «Глава о стремлении. Всевышний Аллах сказал: {قُلْ كُلٌّ يَعْمَلُ عَلَى شَاكِلَتِهِ} — „Скажи: каждый поступает согласно своему складу“» [«Аль-Исра», 17:84].",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p163-04"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Учтивость — сохранять границу между чрезмерностью и небрежением, зная, какой вред причиняет преступание пределов».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Учтивость — сохранять границу между чрезмерностью и небрежением, зная, какой вред причиняет преступание пределов».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p177-05"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Убеждённость — верховое животное вступившего на этот путь. Она — предел степеней обычных людей; было сказано и так: первый шаг избранных».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Убеждённость — верховое животное вступившего на этот путь. Она — предел степеней обычных людей; было сказано и так: первый шаг избранных».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p184-03"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Это покой близости». Поэтому он открыл эту стоянку словами Всевышнего: {وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ} — «Когда Мои рабы спрашивают тебя обо Мне, то Я близок: отвечаю на зов молящегося, когда он взывает ко Мне» [«Аль-Бакара», 2:186].",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Это покой близости». Поэтому он открыл эту стоянку словами Всевышнего: {وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ} — «Когда Мои рабы спрашивают тебя обо Мне, то Я близок: отвечаю на зов молящегося, когда он взывает ко Мне» [«Аль-Бакара», 2:186].",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p184-07"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «У неё три степени. Первая степень — отрада свидетельств: находить сладость в поминании, питаться слушанием и постигать указания».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «У неё три степени. Первая степень — отрада свидетельств: находить сладость в поминании, питаться слушанием и постигать указания».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p185-05"
+    ],
+    "previous_ru": "Автор «Ступеней» имеет в виду первое свидетельство, в котором мюрид обретает отраду. Оно побуждает его находить сладость в поминании, стремясь обрести Поминаемого. Он ищет отраду в поминании, желая обрести отраду с Поминаемым, и питается слушанием, как тело питается едой и питьём.",
+    "corrected_ru": "Автор «Маназил ас-саирин» имеет в виду первое свидетельство, в котором мюрид обретает отраду. Оно побуждает его находить сладость в поминании, стремясь обрести Поминаемого. Он ищет отраду в поминании, желая обрести отраду с Поминаемым, и питается слушанием, как тело питается едой и питьём.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p204-04"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, указал на истинный, правильный смысл, на который указывали и шейхи людей пути.",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, указал на истинный, правильный смысл, на который указывали и шейхи людей пути.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p205-02"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, по-видимому, понял это как стремление к созерцанию, которое не одолевает разум и не лишает способности терпеливо выдерживать. Поэтому он связал слова «без губительной беды» с одолением разума, а «без вводящего в заблуждение испытания» — с отступлением от установлений знания. Самое большее, это можно извлечь как намёк хадиса, по обыкновению людей пути. Но утверждать, будто именно это и подразумевается в нём, нельзя.",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, по-видимому, понял это как стремление к созерцанию, которое не одолевает разум и не лишает способности терпеливо выдерживать. Поэтому он связал слова «без губительной беды» с одолением разума, а «без вводящего в заблуждение испытания» — с отступлением от установлений знания. Самое большее, это можно извлечь как намёк хадиса, по обыкновению людей пути. Но утверждать, будто именно это и подразумевается в нём, нельзя.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p219-05",
+      "v3-p220-01"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Аллах, Всевышний, сказал: {وَاذْكُرْ رَبَّكَ إِذَا نَسِيتَ} — „Помяни своего Господа, если забыл“ [«Аль-Кахф», 18:24]. Это означает: когда ты забыл всё, кроме Него, и забыл себя в своём поминании; затем забыл своё поминание в самом поминании; затем в поминании тебя Истинным забыл всякое поминание».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Аллах, Всевышний, сказал: {وَاذْكُرْ رَبَّكَ إِذَا نَسِيتَ} — „Помяни своего Господа, если забыл“ [«Аль-Кахф», 18:24]. Это означает: когда ты забыл всё, кроме Него, и забыл себя в своём поминании; затем забыл своё поминание в самом поминании; затем в поминании тебя Истинным забыл всякое поминание».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p221-06"
+    ],
+    "previous_ru": "Слова же автора «Ступеней», да помилует его Аллах, следует понимать как указание, а не как толкование аята. Он, да помилует его Аллах, назвал четыре ступени.",
+    "corrected_ru": "Слова же автора «Маназил ас-саирин», да помилует его Аллах, следует понимать как указание, а не как толкование аята. Он, да помилует его Аллах, назвал четыре ступени.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p239-04"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Факр — название непричастности к обладанию».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Факр — название непричастности к обладанию».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p248-04"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Глава о богатстве. Аллах, Всевышний, сказал: {وَوَجَدَكَ عَائِلًا فَأَغْنَى} — „Нашёл тебя нуждающимся и обогатил“ [«Ад-Духа», 93:8]».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Глава о богатстве. Аллах, Всевышний, сказал: {وَوَجَدَكَ عَائِلًا فَأَغْنَى} — „Нашёл тебя нуждающимся и обогатил“ [«Ад-Духа», 93:8]».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p254-08",
+      "v3-p255-01"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Глава о мураде. Аллах, Всевышний, сказал: {وَمَا كُنْتَ تَرْجُو أَنْ يُلْقَى إِلَيْكَ الْكِتَابُ إِلَّا رَحْمَةً مِنْ رَبِّكَ} — „Ты не надеялся, что тебе будет ниспослано Писание, но это — милость твоего Господа“ [«Аль-Касас», 28:86]. Большинство говоривших об этой науке считали мюрида и мурада двумя разными людьми и ставили стоянку мурада выше стоянки мюрида. Под словом „мурад“ они подразумевали лишь особо оберегаемых избранников, о которых передано сообщение».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Глава о мураде. Аллах, Всевышний, сказал: {وَمَا كُنْتَ تَرْجُو أَنْ يُلْقَى إِلَيْكَ الْكِتَابُ إِلَّا رَحْمَةً مِنْ رَبِّكَ} — „Ты не надеялся, что тебе будет ниспослано Писание, но это — милость твоего Господа“ [«Аль-Касас», 28:86]. Большинство говоривших об этой науке считали мюрида и мурада двумя разными людьми и ставили стоянку мурада выше стоянки мюрида. Под словом „мурад“ они подразумевали лишь особо оберегаемых избранников, о которых передано сообщение».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p256-05"
+    ],
+    "previous_ru": "Автор «Ступеней», по-видимому, считает мурадом того, кого влечёт к Себе Аллах, а мюридом — идущего по общей дороге пути.",
+    "corrected_ru": "Автор «Маназил ас-саирин», по-видимому, считает мурадом того, кого влечёт к Себе Аллах, а мюридом — идущего по общей дороге пути.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p263-03"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, привёл в подтверждение этой стоянки слова Всевышнего: {هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ} — «Есть ли воздаяние за добро, кроме добра?» [«Ар-Рахман», 55:60] — и сказал: «Ихсан объединяет все разделы истин: поклоняться Аллаху так, словно ты видишь Его».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, привёл в подтверждение этой стоянки слова Всевышнего: {هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ} — «Есть ли воздаяние за добро, кроме добра?» [«Ар-Рахман», 55:60] — и сказал: «Ихсан объединяет все разделы истин: поклоняться Аллаху так, словно ты видишь Его».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p284-02"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Знание — то, что основано на доказательстве и устраняет невежество».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Знание — то, что основано на доказательстве и устраняет невежество».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p293-06"
+    ],
+    "previous_ru": "Практическая же, как сказал автор «Ступеней», — «поставить вещь на надлежащее ей место».",
+    "corrected_ru": "Практическая же, как сказал автор «Маназил ас-саирин», — «поставить вещь на надлежащее ей место».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p312-02"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Проницательность — распознавание незримого решения».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Проницательность — распознавание незримого решения».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p320-02"
+    ],
+    "previous_ru": "Автор «Ступеней», да помилует его Аллах, сказал: «Возвеличивание — познать величие и смириться перед ним. У него три степени. Первая — возвеличивать повеление и запрет: не противопоставлять им небрежное пользование послаблениями, не подвергать их чрезмерному ужесточению и не объяснять причиной, ослабляющей покорность».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Возвеличивание — познать величие и смириться перед ним. У него три степени. Первая — возвеличивать повеление и запрет: не противопоставлять им небрежное пользование послаблениями, не подвергать их чрезмерному ужесточению и не объяснять причиной, ослабляющей покорность».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p325-03"
+    ],
+    "previous_ru": "Так следует понимать слова автора «Ступеней», да помилует его Аллах: не искать в решении кривизны.",
+    "corrected_ru": "Так следует понимать слова автора «Маназил ас-саирин», да помилует его Аллах: не искать в решении кривизны.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p330-02"
+    ],
+    "previous_ru": "К ступеням слов {إياك نعبد وإياك نستعين} — «Тебе одному мы поклоняемся и Тебя одного молим о помощи» — относятся внушение, дарованное понимание, откровение, обращённая к сердцу речь и правдивое сновидение. О них уже говорилось в начале книги, при рассмотрении ступеней руководства к прямому пути. Там же мы привели слова автора «Стоянок».",
+    "corrected_ru": "К ступеням слов {إياك نعبد وإياك نستعين} — «Тебе одному мы поклоняемся и Тебя одного молим о помощи» — относятся внушение, дарованное понимание, откровение, обращённая к сердцу речь и правдивое сновидение. О них уже говорилось в начале книги, при рассмотрении ступеней руководства к прямому пути. Там же мы привели слова автора «Маназил ас-саирин».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p334-02"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Сакина — название трёх вещей. Первая из них — сакина сынов Исраиля, которая была дана им в ковчеге. Толкователи Корана говорили, что это лёгкий веющий ветер, и приводили его описание».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Сакина — название трёх вещей. Первая из них — сакина сынов Исраиля, которая была дана им в ковчеге. Толкователи Корана говорили, что это лёгкий веющий ветер, и приводили его описание».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p350-03"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Туманина — покой, подкрепляемый подлинным чувством безопасности, подобным непосредственному видению. Между нею и сакиной два различия. Первое: сакина — властное воздействие, порою унимающее трепет, тогда как туманина — покой безопасности, в котором есть отрада близости. Второе: сакина бывает постоянным качеством, а бывает приходящей время от времени; туманина же не покидает того, кто ею наделён».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Туманина — покой, подкрепляемый подлинным чувством безопасности, подобным непосредственному видению. Между нею и сакиной два различия. Первое: сакина — властное воздействие, порою унимающее трепет, тогда как туманина — покой безопасности, в котором есть отрада близости. Второе: сакина бывает постоянным качеством, а бывает приходящей время от времени; туманина же не покидает того, кто ею наделён».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p360-03"
+    ],
+    "previous_ru": "Автор «Стоянок» предварил её словами Всевышнего: {ما زاغ البصر وما طغى} — «Взор не уклонился и не преступил предела» (53:17). Уже говорилось, что ими он предварил и главу об адабе; мы объяснили, почему. Здесь же он предварил ими главу о высшем устремлении, указывая, что устремление Пророка было обращено только к тому, что он созерцал, и к тому положению, в которое он был поставлен. Если бы его устремление вышло за этот предел, за ним последовал бы и взор.",
+    "corrected_ru": "Автор «Маназил ас-саирин» предварил её словами Всевышнего: {ما زاغ البصر وما طغى} — «Взор не уклонился и не преступил предела» (53:17). Уже говорилось, что ими он предварил и главу об адабе; мы объяснили, почему. Здесь же он предварил ими главу о высшем устремлении, указывая, что устремление Пророка было обращено только к тому, что он созерцал, и к тому положению, в которое он был поставлен. Если бы его устремление вышло за этот предел, за ним последовал бы и взор.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p361-01"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Высшее устремление целиком овладевает порывом к желанному, так что человек не может сдержать себя и не отворачивается от него».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Высшее устремление целиком овладевает порывом к желанному, так что человек не может сдержать себя и не отворачивается от него».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p404-03"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Любовь — привязанность сердца между высшим устремлением и отрадой близости».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Любовь — привязанность сердца между высшим устремлением и отрадой близости».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p407-05"
+    ],
+    "previous_ru": "Автор «Стоянок» и каждый приближённый к Аллаху непричастны к ним ни своим состоянием, ни убеждениями.",
+    "corrected_ru": "Автор «Маназил ас-саирин» и каждый приближённый к Аллаху непричастны к ним ни своим состоянием, ни убеждениями.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p407-07"
+    ],
+    "previous_ru": "Поскольку для автора «Стоянок» стоянки стирания и фана являются конечной целью, он назвал любовь перевалом, с которого к ним спускаются.",
+    "corrected_ru": "Поскольку для автора «Маназил ас-саирин» стоянки стирания и фана являются конечной целью, он назвал любовь перевалом, с которого к ним спускаются.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p425-04"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Глава о ревности. Всемогущий и Великий Аллах сказал, рассказывая о Своём пророке Сулаймане, мир ему: {ردوها علي فطفق مسحا بالسوق والأعناق} — “Верните их ко мне!” И он стал рассекать им голени и шеи» (38:33).",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Глава о ревности. Всемогущий и Великий Аллах сказал, рассказывая о Своём пророке Сулаймане, мир ему: {ردوها علي فطفق مسحا بالسوق والأعناق} — “Верните их ко мне!” И он стал рассекать им голени и шеи» (38:33).",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p438-02"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Томление — порыв сердца к отсутствующему. В учении этих людей томление имеет великий изъян: оно бывает лишь по отсутствующему, тогда как учение этих людей основано на созерцании. Из-за этого изъяна Коран и не упоминает его названия».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Томление — порыв сердца к отсутствующему. В учении этих людей томление имеет великий изъян: оно бывает лишь по отсутствующему, тогда как учение этих людей основано на созерцании. Из-за этого изъяна Коран и не упоминает его названия».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p443-09",
+      "v3-p444-01"
+    ],
+    "previous_ru": "Это томление может усилиться и освободиться от терпения; тогда его называют беспокойством, каляком. Так его назвал автор «Стоянок» и привёл в доказательство слова, передающие речь Мусы, с которым говорил Аллах: {وعجلت إليك رب لترضى} — «Я поспешил к Тебе, Господи, чтобы Ты был доволен» (20:84). По-видимому, он понял, что к поспешности Мусу побудило беспокойство, то есть чистое томление по встрече с Ним и по назначенному Им сроку.",
+    "corrected_ru": "Это томление может усилиться и освободиться от терпения; тогда его называют беспокойством, каляком. Так его назвал автор «Маназил ас-саирин» и привёл в доказательство слова, передающие речь Мусы, с которым говорил Аллах: {وعجلت إليك رب لترضى} — «Я поспешил к Тебе, Господи, чтобы Ты был доволен» (20:84). По-видимому, он понял, что к поспешности Мусу побудило беспокойство, то есть чистое томление по встрече с Ним и по назначенному Им сроку.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p444-03"
+    ],
+    "previous_ru": "Затем автор «Стоянок», да помилует его Аллах, определил его как «очищение томления путём устранения терпения»: избавление его от всякой примеси, так что терпение исчезает. Если же ему сопутствует терпение, оно остаётся томлением, шауком.",
+    "corrected_ru": "Затем автор «Маназил ас-саирин», да помилует его Аллах, определил его как «очищение томления путём устранения терпения»: избавление его от всякой примеси, так что терпение исчезает. Если же ему сопутствует терпение, оно остаётся томлением, шауком.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p447-02"
+    ],
+    "previous_ru": "Затем это беспокойство усиливается и возрастает, рождая в сердце состояние, подобное мучительной жажде разгорячённого и томящегося без воды. Автор «Стоянок» называет это состояние жаждой и приводит в доказательство слова Всевышнего об Ибрахиме, Его особом друге: {فلما جن عليه الليل رأى كوكبا قال هذا ربي} — «Когда его окутала ночь, он увидел звезду и сказал: “Это мой Господь”» (6:76). По-видимому, он извлёк из намёка аята следующее: из-за сильной жажды встречи с Возлюбленным, увидев звезду, Ибрахим сказал: «Это мой Господь». Ведь жаждущему мираж напоминает воду, и жажда его усиливается.",
+    "corrected_ru": "Затем это беспокойство усиливается и возрастает, рождая в сердце состояние, подобное мучительной жажде разгорячённого и томящегося без воды. Автор «Маназил ас-саирин» называет это состояние жаждой и приводит в доказательство слова Всевышнего об Ибрахиме, Его особом друге: {فلما جن عليه الليل رأى كوكبا قال هذا ربي} — «Когда его окутала ночь, он увидел звезду и сказал: “Это мой Господь”» (6:76). По-видимому, он извлёк из намёка аята следующее: из-за сильной жажды встречи с Возлюбленным, увидев звезду, Ибрахим сказал: «Это мой Господь». Ведь жаждущему мираж напоминает воду, и жажда его усиливается.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p455-04"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, привёл в доказательство слова Всевышнего об обитателях пещеры: {وربطنا على قلوبهم إذ قاموا فقالوا ربنا رب السماوات والأرض لن ندعو من دونه إلها لقد قلنا إذا شططا} — «Мы укрепили их сердца, когда они поднялись и сказали: “Наш Господь — Господь небес и земли! Мы никогда не станем взывать к иному божеству помимо Него, иначе мы сказали бы нечто далеко выходящее за пределы истины”» (18:14). Это прекрасное доказательство и свидетельство. Ведь они находились среди своего неверующего народа на службе у неверующего царя. Едва они обрели истину веры и единобожия, вкусили её сладость и она коснулась их сердец, как они поднялись из среды своего народа и сказали: {ربنا رب السماوات والأرض} — «Наш Господь — Господь небес и земли», — и далее до конца аята.",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, привёл в доказательство слова Всевышнего об обитателях пещеры: {وربطنا على قلوبهم إذ قاموا فقالوا ربنا رب السماوات والأرض لن ندعو من دونه إلها لقد قلنا إذا شططا} — «Мы укрепили их сердца, когда они поднялись и сказали: “Наш Господь — Господь небес и земли! Мы никогда не станем взывать к иному божеству помимо Него, иначе мы сказали бы нечто далеко выходящее за пределы истины”» (18:14). Это прекрасное доказательство и свидетельство. Ведь они находились среди своего неверующего народа на службе у неверующего царя. Едва они обрели истину веры и единобожия, вкусили её сладость и она коснулась их сердец, как они поднялись из среды своего народа и сказали: {ربنا رب السماوات والأرض} — «Наш Господь — Господь небес и земли», — и далее до конца аята.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p459-05"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Ваджд — пламя, разгорающееся от преходящего созерцания, вызывающего беспокойство».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Ваджд — пламя, разгорающееся от преходящего созерцания, вызывающего беспокойство».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p472-02"
+    ],
+    "previous_ru": "Когда в сердце путника приходят необычные смыслы и переживания, его может охватить столь сильное удивление, восхищение и наслаждение, что он теряет самообладание. Это рождает хайман, самозабвенное смятение. Однако оно не относится ни к стоянкам движения, ни к тем ступеням пути, на которых путники стремятся остановиться, — вопреки автору «Стоянок», который отнёс его к высшим ступеням и целям и назвал ступенью хаймана. Поэтому оно не упоминается ни в Коране, ни в Сунне, ни в речах ранних учителей этого пути.",
+    "corrected_ru": "Когда в сердце путника приходят необычные смыслы и переживания, его может охватить столь сильное удивление, восхищение и наслаждение, что он теряет самообладание. Это рождает хайман, самозабвенное смятение. Однако оно не относится ни к стоянкам движения, ни к тем ступеням пути, на которых путники стремятся остановиться, — вопреки автору «Маназил ас-саирин», который отнёс его к высшим ступеням и целям и назвал ступенью хаймана. Поэтому оно не упоминается ни в Коране, ни в Сунне, ни в речах ранних учителей этого пути.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p472-03"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, с натяжкой привёл в доказательство слова Всевышнего: {وخر موسى صعقا} — «И Муса пал без чувств» (7:143). Как далёк аят от того, что им хотят доказать! По-видимому, он решил, что Муса потерял самообладание из-за охватившего его при божественном обращении и разговоре переживания: оно породило хайман, от которого он лишился чувств. Но это не так. Муса пал без чувств, когда Всевышний Господь явился горе и она исчезла, рассыпавшись от Его явления.",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, с натяжкой привёл в доказательство слова Всевышнего: {وخر موسى صعقا} — «И Муса пал без чувств» (7:143). Как далёк аят от того, что им хотят доказать! По-видимому, он решил, что Муса потерял самообладание из-за охватившего его при божественном обращении и разговоре переживания: оно породило хайман, от которого он лишился чувств. Но это не так. Муса пал без чувств, когда Всевышний Господь явился горе и она исчезла, рассыпавшись от Его явления.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p476-04"
+    ],
+    "previous_ru": "Автор «Стоянок», да помилует его Аллах, сказал: «Зарница — первый плод, вспыхивающий перед рабом и зовущий его вступить на этот путь».",
+    "corrected_ru": "Автор «Маназил ас-саирин», да помилует его Аллах, сказал: «Зарница — первый плод, вспыхивающий перед рабом и зовущий его вступить на этот путь».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p486-04"
+    ],
+    "previous_ru": "Автор «Ступеней» сказал: «Глава о вкушении. Всевышний Аллах сказал: {هذا ذكر} — „Это — напоминание“ (38:49)».",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал: «Глава о вкушении. Всевышний Аллах сказал: {هذا ذكر} — „Это — напоминание“ (38:49)».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p544-03"
+    ],
+    "previous_ru": "Автор «Ступеней» сказал: «Глава о времени. Всевышний Аллах сказал: {ثم جئت على قدر يا موسى} — „Затем ты пришёл в предопределённый срок, о Муса“ (20:40). Время — название вместилища бытия. В этой главе оно обозначает три смысла на трёх степенях. Первый смысл — миг истинного ваджда: его предмет — отрадное видение сияния милости, привлечённого чистой надеждой; либо защищённость, привлечённая истинным страхом; либо пыл томления, привлечённый пламенем любви».",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал: «Глава о времени. Всевышний Аллах сказал: {ثم جئت على قدر يا موسى} — „Затем ты пришёл в предопределённый срок, о Муса“ (20:40). Время — название вместилища бытия. В этой главе оно обозначает три смысла на трёх степенях. Первый смысл — миг истинного ваджда: его предмет — отрадное видение сияния милости, привлечённого чистой надеждой; либо защищённость, привлечённая истинным страхом; либо пыл томления, привлечённый пламенем любви».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p551-05"
+    ],
+    "previous_ru": "Автор «Ступеней» сказал: «В этой главе время — название трёх смыслов. Первый смысл — миг истинного ваджда». То есть время истинного ваджда, когда он возникает в сердце, а человек искренен в нём, не вызывает его искусственно и не старается его произвести.",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал: «В этой главе время — название трёх смыслов. Первый смысл — миг истинного ваджда». То есть время истинного ваджда, когда он возникает в сердце, а человек искренен в нём, не вызывает его искусственно и не старается его произвести.",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p566-03"
+    ],
+    "previous_ru": "Автор «Ступеней» сказал: «Глава о чистоте. Аллах, Всемогущ Он и Велик, сказал: {وإنهم عندنا لمن المصطفين الأخيار} — „Поистине, они у Нас — среди избранных, лучших“ (38:47). Чистота — название свободы от примеси; в этой главе она означает исчезновение переменчивости».",
+    "corrected_ru": "Автор «Маназил ас-саирин» сказал: «Глава о чистоте. Аллах, Всемогущ Он и Велик, сказал: {وإنهم عندنا لمن المصطفين الأخيار} — „Поистине, они у Нас — среди избранных, лучших“ (38:47). Чистота — название свободы от примеси; в этой главе она означает исчезновение переменчивости».",
+    "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
+    "external_human_review": false,
+    "change_scope": "book_title_only"
   }
 ]

@@ -1,0 +1,50 @@
+[
+  {
+    "source_ids": [
+      "v3-p110-04"
+    ],
+    "previous_editorial_notes": [
+      {
+        "kind": "unresolved_print_reading",
+        "ru": "Неясное место в печатном оригинале (с. 110). Дословное чтение последней части противоречит первой части фразы и предшествующему рассуждению о предпочтении братьев собственному уединению. В PDF напечатано «وضدٌّ من أضدادها» — «и одна из их противоположностей». Возможна утрата местоимения в слове «وضدّه» — «а противоположное этому», однако подтверждения по рукописи нет. Здесь сохранён буквальный перевод печати; смысл фразы требует дополнительной проверки."
+      }
+    ],
+    "corrected_editorial_notes": [
+      {
+        "kind": "unresolved_print_reading",
+        "ru": "Неясное место в контрольной печати (с. 110): «وضدٌّ من أضدادها». Здесь есть второе «и», а отсылка местоимения «ها» («её/их») не установлена. При отнесении его к перечисленным добродетелям возникает противоречие. В двух старых цифровых текстах второе «и» отсутствует, но это не подтверждённое рукописное чтение и само по себе не решает вопроса. Буквальный рабочий перевод выше не является окончательным смысловым решением; требуется дополнительная текстологическая проверка."
+      }
+    ],
+    "reason": "Own note only, separated from author body. Discloses actual unresolved reading/reference and preserves author original/working translation. No conjecture promoted to source text. Previous note wording preserved in audit.",
+    "independent_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p403-01",
+      "v3-p404-01"
+    ],
+    "previous_editorial_notes": [],
+    "corrected_editorial_notes": [
+      {
+        "kind": "unresolved_print_reading",
+        "ru": "Строка о скупости в этом стихотворении требует уточнения. В контрольной печати: «بما للحبيب عنه يدعوه ذا ليا». Связь слов и направление, выраженное предлогом «عن», не установлены достаточно надёжно; рабочее «к чему Возлюбленный зовёт» может передавать их неточно. Иное цифровое чтение само по себе вопроса не решает. Все 22 двустишия сохранены, но перевод этой строки пока не окончателен."
+      }
+    ],
+    "reason": "Own note only, separated from author body. Discloses actual unresolved reading/reference and preserves author original/working translation. No conjecture promoted to source text. Previous note wording preserved in audit.",
+    "independent_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p436-05"
+    ],
+    "previous_editorial_notes": [],
+    "corrected_editorial_notes": [
+      {
+        "kind": "unresolved_print_reading",
+        "ru": "В контрольной печати здесь «сладость близости» (حلاوة القرب). В параллельном тексте «Рисалы» аль-Кушайри говорится о сладости смерти при её наступлении (حلاوة الموت عند وروده). Поэтому отсылки в последующих словах и смысл «سكراته» — упоение или предсмертные муки — требуют дополнительного уточнения. Слово «смерть» не подставлено вместо печатного «близость»; рабочий русский перевод не считается окончательным."
+      }
+    ],
+    "reason": "Own note only, separated from author body. Discloses actual unresolved reading/reference and preserves author original/working translation. No conjecture promoted to source text. Previous note wording preserved in audit.",
+    "independent_human_review": false
+  }
+]

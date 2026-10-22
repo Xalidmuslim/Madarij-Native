@@ -3314,14 +3314,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p075-03": {
-      "sha256": "3f9fe84b5566ea3375bb0d3878d5de9ee027e6966b4121ba4ef35762371e7ce5",
+      "sha256": "5032c69258e384ee1a7b668f97156f79f28d9e6c770f9e1d2ec09a49bc579a70",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p075-04+v3-p076-01": {
       "sha256": "795ca5a6eff5b520f63a2b63e257b6805a3036410930cd3a25e739f9b4e30d41",
@@ -4217,14 +4218,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p092-03": {
-      "sha256": "29f289967fefd16d8b2af8398bb559515934abe52b385c945e395902d11448b8",
+      "sha256": "d623de3d99699c136dbecc257832558e52b7ee81d44484ba3b52578a43349fb4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p092-04": {
       "sha256": "846eb2b1fc2a7920793d30c70a9a9844f109dd12471c1a2f4ab420b3b06dc683",
@@ -5091,14 +5093,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p107-04": {
-      "sha256": "34cd4f25272ab3bffac2b2cacba2fd97a7edd32707e639bb428090d301313e2b",
+      "sha256": "a09b6cad40dcb3b38adf81e9d022ebe15f713fa99c19e308bbcf40897dec190d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p108-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -5132,14 +5135,15 @@
       "resolution": "Printed صوان على الحال confirmed at 7x; صوان is a protective covering, and the author uses the exact construction فأدبهم صوان على أحوالهم in another passage (OpenITI Shamela0008370, V03P170, 1996 secondary transcription). Existing Russian preserves that sense; no replacement of control text."
     },
     "v3-p108-04": {
-      "sha256": "7b1d5e618294fbc8904019c9a4ecb42f150325d1274378bc7f19f02407da5680",
+      "sha256": "4918bc332d1b35f6824774e1cc75301b5fd0d3a755b3485b8007b8f01405f7df",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p108-05": {
       "sha256": "e33801361a5527237cdf1f658fdbc70b538a82eab5d876c8b879893fb08516b7",
@@ -5172,14 +5176,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p109-03": {
-      "sha256": "c2d34af8cbf739273dc64bb07eccfe2fe4d35accb7b548e0186eb1d398715e95",
+      "sha256": "dea646abc6e186524eacbad31e2d9ccd47aed03b7c2006056a9cee7798a8b93a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p109-04": {
       "sha256": "49041492b36f539d85fec82d209db68a37dd2a126b2e1fe2ae0a17467768c5ae",
@@ -5597,14 +5602,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p116-04": {
-      "sha256": "49e4b7dc6830a6f04ed755d95824ea3fc4103430abc90228a2ecc2d84f25b595",
+      "sha256": "c2ac48e54cdea1397223fa7542114dcf0d89f8f8c90c16f14be11efb91401a67",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p116-05": {
       "sha256": "af0a863b5dd83dd759733d061d0a9d1d0ec331917b369934ac5ec287ddc786c0",
@@ -6516,7 +6522,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p132-04": {
-      "sha256": "16bd17933b452c34ea02e84fef31fd88c4575fdde9780ae3f13813f3211f2cc8",
+      "sha256": "6d5f8e0bfe63a6e6a7659f82e85e18e2ac48598070b32f862aecbea8b1d8f7ff",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -6524,7 +6530,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Direct 7x control scan and Quran 17:84 confirm قل كل, not erroneous فكل. Imperative restored in Arabic and Russian. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only."
+      "resolution": "Direct 7x control scan and Quran 17:84 confirm قل كل, not erroneous فكل. Imperative restored in Arabic and Russian. Arabic/Russian re-compared; Russian reread separately; same-agent self-review only.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p132-05+v3-p133-01": {
       "sha256": "8ed1994808fb292667b6ca62e14c66706e5983633dba6118a358d554859978cf",
@@ -8083,7 +8090,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p163-04": {
-      "sha256": "f6ff6c558229b4edeea233492c0a67c236d8d71c92d6e0b4bcbea1c98f4c14b8",
+      "sha256": "d81bca4dbf8162b1795f9a9e5466123edf582177a4d4f68b975091d2f3d2426e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -8091,7 +8098,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Direct 2019 pp161–163 comparison; clarify rank/parent syntax, restore explicit repeated rules groups and author honorific, remove accidental Russian cognate repetition. Each change applies only to its specified unit; Russian separately reread and back-compared before applying. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p163-05": {
       "sha256": "120ee4b9e94d0ed68b5981c786634e3a2cd5ad65450d13addcd37461c46c57e3",
@@ -8809,14 +8817,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p177-05": {
-      "sha256": "bdbc26ae98331331370eb98a45dff9bef00c0c4b2fbd1192df1ac596c7fd296e",
+      "sha256": "b2cddc963a085fbe19d2d0a1e91c491ffeff24fb4df40378bba86a5b8969f337",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p177-06": {
       "sha256": "ee1b239e0fabfd21b8fcf47beb0f2145de39dac1e044ab66d7e343f9b3c4d71f",
@@ -9214,14 +9223,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p184-03": {
-      "sha256": "90873abed029041b5ad7561ab1b174d728fa5dce5c61d6d9f8611db2a9fd5375",
+      "sha256": "c3ebc2c8b8eb76b83ce12f011c9ce0dbbc139e2f790bf16a4e6af0ea456d23e9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p184-04": {
       "sha256": "ef99c835e08f1b31cf48f3a81d05bf23285bde4b8469150a4000c9ae88d6d52c",
@@ -9255,14 +9265,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p184-07": {
-      "sha256": "1f5686878a8bb5bbfd99270cf84f3b990e0f22f9c8f244307c081518e8680b90",
+      "sha256": "35fefb218ba35f06e618142b5d399c55ac964919e25f000fa9ba3834ada08abe",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p184-08+v3-p185-01": {
       "sha256": "d8a4a0832c13eeb67dcb2e924cfedda80d3f31f35939656aaf9583b4fe1cfa53",
@@ -9305,14 +9316,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p185-05": {
-      "sha256": "6cdbb88df1f11fb5c53cb5ed03a17d78a267c8ff0ecc99c6fab296b139bb287a",
+      "sha256": "22c76ddf827d0eb7e24edba9bc37f9506aedef0a1d0f609c884d0417a288491a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p185-06": {
       "sha256": "1550c941888fa4c3548d8ccd44978a59240b1b2e83d56567f8c76fba9bdd50a0",
@@ -10261,14 +10273,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p204-04": {
-      "sha256": "3184fee2eb0d7e9bbd19e2e0404b3a9bcea7b0683c9d7179aa372b6ab53fa4ad",
+      "sha256": "c2170fd5f726240676a70e26619f545036d800aa1e2351d76d49583beb40c169",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p204-05": {
       "sha256": "0f18d3c563b1ee024e051079bb9a43623f2bed84eec137955d351db501c50562",
@@ -10291,14 +10304,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p205-02": {
-      "sha256": "cdaef96fef64b37d660dc09bfbcd6bd24565eb46a9a6827d52434c9213b91eb3",
+      "sha256": "8778f8c4a08390745a590f6893208d262583203d494c6a09b1337418861347a3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p205-03": {
       "sha256": "3947a330e5baa6f616cf4fabfcc0a76c16c9a57691760f6882bab899b7905cec",
@@ -11156,14 +11170,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p219-05+v3-p220-01": {
-      "sha256": "75088eb846944c4262706fedd8b201701dd9a934fa54824a48b50532803b2aed",
+      "sha256": "f90638235cbe903ad7d174f302ce9847e8a961134e1e39be8e83e7ce1cc3bf0a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p220-02": {
       "sha256": "18dde974fa4735a78770c6dd22344b341e0d6e4f3cf049c30e60f4c790257841",
@@ -11258,7 +11273,7 @@
       "resolution": "Control2019 p221 clearly prints متى ذكرتها. Restore own mistranscription من; existing Russian когда вспомнишь accurately matches control. Full quoted sentence compared; separate Russian reread/back-comparison by same agent. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p221-06": {
-      "sha256": "14bb6588311428de0a910f87d672840b886f5d9f81652108722c239c528e616f",
+      "sha256": "818fef2eda78439c4c85030b234879ec9065086e0621d5fe3636184bed06b98a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -11266,7 +11281,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Restore second author رحمه الله rather than silently omit repeated honorific. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Restore second author رحمه الله rather than silently omit repeated honorific. Direct full 2019 passage comparison; Russian separately reread and back-compared, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p221-07": {
       "sha256": "5e99382379c8ed1fb3e5150d5860d4041200455b79772edf844e17ff8be8b5a8",
@@ -12258,14 +12274,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p239-04": {
-      "sha256": "256afcaba262e8a46bae1385b160c13f1e1bb5308b2fc53bd8821c95d1389309",
+      "sha256": "0a741637c76f8d655b8eef0b0c75013d2d2cc87bad1785810db0b1b31079119f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p239-05": {
       "sha256": "4c83f5c0256ecde11dabf6f9f165a88566e759af394f5d1aac2819eca64d5a80",
@@ -12667,16 +12684,16 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p246-03": {
-      "sha256": "6bb009527916e92f46b1804aae1f66ac8fa4640be4b17cc89d187a713f4b4859",
+      "sha256": "6a2208fe4aab7be3a13ac83df0839cf17207102018f7af355325ca3d897696b2",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "open_issue": "Printed التقطع الوحداني retained; existing Russian единственного отрешения does not yet adequately settle monadic/isolated detachment in Herawi quotation. Reconcile term with IbnQayyim246-05 explanation and247 before final choice; do not replace by older الوجداني.",
-      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
+      "resolution": "Replace numeric-sounding единственного отрешения with уединённой отрешённости. Direct control246/247 and entire quoted explanation back-compared; Lisan root وحد explicitly defines الوحداني as المنفرد بنفسه / الوحدة والانفراد, not ordinal единственный. Author TariqHijratayn digital26–31 independently discusses the same Ansari degree and locates this detachment in witnessing; no physical isolation, ontic annihilation or cessation of duties inserted. Preserve بيد desert plural and all parallel terms; no Arabic emendation. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained. Contextual lexical/grammatical issue resolved by supported translation choice; same-agent evidence, not independent human approval.",
+      "former_open_issue": "Printed التقطع الوحداني retained; existing Russian единственного отрешения does not yet adequately settle monadic/isolated detachment in Herawi quotation. Reconcile term with IbnQayyim246-05 explanation and247 before final choice; do not replace by older الوجداني."
     },
     "v3-p246-04": {
       "sha256": "0d2943e063c0c3b36ecf5a90497e1cc969fbfd2cb6715ece6d86bf0e83475ece",
@@ -12690,16 +12707,16 @@
       "resolution": "Direct2019 definition: شهود كمال الضرورة والفاقة علما وحالا. Render necessity as need rather than abstract obligation, and repair instrumental calque знанием и состоянием; preserve full need and two cognitive/experienced modes. Russian reread separately/back-compared, same-agent. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p246-05": {
-      "sha256": "57ed7c1c0c33dbb9d40b3379f6ec326ba808c51c23f7246910526f3ca2df00e7",
+      "sha256": "edd50cf56828c3abe6150f945e1e9ee63f843a6adf5b9a2cc6e30021989b7c69",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "open_issue": "Same unresolved الوحداني / وحدانية بنفسها rendering as246-03. Author says no other things in this presence; current numeric-sounding Russian must be contextually revised, not silently certified.",
-      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
+      "resolution": "Carry identical term from246-03 into author explanation; وحدانية بنفسها as обособлено само по себе follows Lisan المنفرد بنفسه and immediate فهي منقطعة عن الأغيار. Entire control246–247 read and final Russian back-compared. TariqHijratayn26–31 clarifies witness-bound scope and distinction between reported qawm experience and author preferred worship. Keep حضرة الجمع and full surrender/submission/bondage sequence; Arabic unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained. Contextual lexical/grammatical issue resolved by supported translation choice; same-agent evidence, not independent human approval.",
+      "former_open_issue": "Same unresolved الوحداني / وحدانية بنفسها rendering as246-03. Author says no other things in this presence; current numeric-sounding Russian must be contextually revised, not silently certified."
     },
     "v3-p246-06": {
       "sha256": "342f65b088ad2693946ef5b4dfd8eb81cc5deed5da578ec6db14692117bb027e",
@@ -12722,36 +12739,38 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p247-02": {
-      "sha256": "8eb7f7e4c01f065230101ad6d222b4e245d0793ad4621f77319fb81edb313d35",
+      "sha256": "f9175bb4fc3a8d3df7652b78b41606d00a1a6ea60080734b7cc3cfa33395a801",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
-      },
-      "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
-    },
-    "v3-p247-03": {
-      "sha256": "db136ca1b5a291d2e209b00aa7487520764e3993cede80d7f9a8be9956649e68",
-      "stages": {
-        "semantic": "pending_contextual_review",
-        "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "open_issue": "Control فيه / معه are masculine while current Russian в ней / с ней refers to desert. Exact referent of constraint/abstraction/witnessing needs contextual decision; retain draft and do not mark back-comparison final.",
-      "resolution": "Additional direct print/context pass reopened this draft. No unsupported Arabic emendation or final Russian replacement adopted. Original Russian-only reading flag records a pass, not final approval of unresolved terminology."
+      "resolution": "Clarify explicit masculine antecedent القيد in immediate introduction to two reasons without turning it into feminine desert. Actual247 and entire246–247 read. This is a prose rendering of جعل للقيد بيداء, not a new doctrinal comment. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
-    "v3-p247-04": {
-      "sha256": "97401a2485800478854efcb1d4121d942bdca7255ecd0fefff1b3e22de6cee67",
+    "v3-p247-03": {
+      "sha256": "e22886d7e4bc8561dad8f8c32dc04f25587fe6a5ba4dc10fcb1b5a5a9e5b9549",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Restore reference of فيه/معه to preceding القيد, rendered by Russian plural узы, rather than replace with feminine desert. Immediate جعل للقيد بيداء لوجهين and 247-01 قيد / التقيّد بشهود الحقيقة establish controlling grammatical topic. New author parallel TariqHijratayn30 explicitly صاحب توحيد الربوبية في قيد التجريد عن ملاحظة فاعل غير الله وهو مجرد عن ملاحظة وجوده supports constraint of witnessing; no God inserted as pronoun referent or literal annihilation asserted. All vanish/cease/no-other clauses retained, Russian-only reread then full print/back comparison. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained. Contextual lexical/grammatical issue resolved by supported translation choice; same-agent evidence, not independent human approval.",
+      "former_open_issue": "Control فيه / معه are masculine while current Russian в ней / с ней refers to desert. Exact referent of constraint/abstraction/witnessing needs contextual decision; retain draft and do not mark back-comparison final."
+    },
+    "v3-p247-04": {
+      "sha256": "95b37d953bb88213e666076b53dbc165d39de5140e100854fab6565bc3e80db7",
+      "stages": {
+        "semantic": "self_checked_against_print",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_print"
+      },
+      "print_collation": "self_checked",
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Parallel لسعته وفضائه and صاحب مشهده continue preceding masculine القيد topic, not feminine بيداء. Keep both breadth/space and deliberate paradox of expansive desert within fetter of witnessing. Entire Arabic247 and final Russian back-compared; no source emendation or ontic inference. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p247-05": {
       "sha256": "eebf70a40b989f715cd69b743b669dcf40bf792e2761ce696259e5252f0d3d7c",
@@ -12814,14 +12833,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p248-04": {
-      "sha256": "d1f99db863a54404393349aafb7b88ef0ba097e0ef7184581a26f1a656e82cfd",
+      "sha256": "01680f5b2b2541f9c8b0a1eafb8233690e3e991289719a5aec9296734c05ac20",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p248-05": {
       "sha256": "643afce18e218bdc7158a9b60c213c278efb86ed10d22734fb6361a046e097f5",
@@ -13221,7 +13241,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p254-08+v3-p255-01": {
-      "sha256": "8254b6b8054941c329c6d346f4a2a28cb5f14aa006e0994fd934b0ef36fa0fb9",
+      "sha256": "81236c8df288fa213aebcda65c759d17a55f5c89b48aab661576c601599d50b7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -13229,7 +13249,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Preserve explicit اثنين since following author discussion critiques separating the roles. Keep majority, hierarchy, Quran quote and cherished elect report. Direct full2019 comparison, Russian separately reread/back-compared by same agent. Explicit restrictive إنما restored with лишь; Arabic naming construction rendered naturally. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Preserve explicit اثنين since following author discussion critiques separating the roles. Keep majority, hierarchy, Quran quote and cherished elect report. Direct full2019 comparison, Russian separately reread/back-compared by same agent. Explicit restrictive إنما restored with лишь; Arabic naming construction rendered naturally. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p255-02": {
       "sha256": "3df35cf218481416aade223bbe2c2a1e34901ef5084e441ca5d52d746af1c5ba",
@@ -13304,14 +13325,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p256-05": {
-      "sha256": "157c84532f23566c5aac5c04d516ae9deaf192bd84d17027247738ef694036d2",
+      "sha256": "21267fa7c6dbb7dde7b56531ba413f5e8acab4c41bf4d6f9613886bcee64ba56",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p256-06": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -13630,14 +13652,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p263-03": {
-      "sha256": "e2c4c2653c67f76a84a9b961dbd79c693dd4db783302d628da4e42cb58a99a90",
+      "sha256": "9d11293b42c12e6dec9cb63fa13f641e751d34c7754830b22f5487267372e473",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p263-04": {
       "sha256": "400410e45c341c1d82d812c68392194ebda36bfbd784b4efcc418596e0b4f229",
@@ -14755,14 +14778,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p284-02": {
-      "sha256": "ef6d708ee23288734be341aa9219e3e0fb0d801a2862ce0944967a9105e550a1",
+      "sha256": "fa508da8c4e47e86bf88cd01501a0efbdc374a600c36ed9fb910b913ac8f82d4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p284-03": {
       "sha256": "78445bae68d7431e426915dcc5ad7d5e028fe12599d49b357dd17dfc0f788ab3",
@@ -15454,14 +15478,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p293-06": {
-      "sha256": "6d17570fa74af7ae748fa01fff83eab32cd2aa32f4380dcd754eac31374e80f7",
+      "sha256": "8757a38670dfdbe8ee46033ef3dcd2dfd88a7001f3ffe379e9bb56f4e9868300",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p294-01": {
       "sha256": "329e9f7b842e0945db250c86a75da7440bda5308ed0d73f539b91ed42e861862",
@@ -16492,14 +16517,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p312-02": {
-      "sha256": "4557d039926b965f05c7782c84371b95d71e1be49ddf33298a2aa54aff9ee716",
+      "sha256": "e0096b6a222c50f6cb4914b030e22ff8bac4336e23a3db4223d4f5fc54255cba",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p312-03": {
       "sha256": "d1842914fe68a21e7a2db72fd4151eb5372cd0ba1ce25e2ad245fbde1530a405",
@@ -17041,7 +17067,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p320-02": {
-      "sha256": "23e65c1717811c293abcc58dfc1834b603a7090be1b2f9288cc5e6796bce4eb3",
+      "sha256": "b43f907dbcefc69d48ee896dcce3fb94b63981c37d1d98176dfa7a2301f4a123",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -17049,7 +17075,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Remove stacked genitive calque while preserving excessive strictness as second distinct violation, not lawful obligatory discipline. Three separate prohibitions remain. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Remove stacked genitive calque while preserving excessive strictness as second distinct violation, not lawful obligatory discipline. Three separate prohibitions remain. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p320-03": {
       "sha256": "0acc634dd14169756fd8f071291bd96a0e4dcedb4983a7c5fd456cf6968b2f1d",
@@ -17367,14 +17394,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p325-03": {
-      "sha256": "cd1f92bf236a97284f4afa27c20bd309adc73ed55e8d98549bba8652fafbe0c0",
+      "sha256": "19d6acc14f95ac27a9b80078de742ded47d74d1e4707deaa2d6f2722e50e639f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p325-04": {
       "sha256": "756150cebbc64a93a5382b3b42965ce6f784e4c68f668cdbf9bbf2d6f958f831",
@@ -17541,14 +17569,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p330-02": {
-      "sha256": "88330622c2aace4d85a0df7b6ee875192ccd96ae9a1b5bf0bc48a1b752c4bcb3",
+      "sha256": "d2d685fd8f8ac53ceae0c210eead2fbefb8d1c4b06bf492d60664880c65eb0a0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p331-01": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -17742,14 +17771,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p334-02": {
-      "sha256": "04b46a3242d7cb9101b6ce3e26dd6fce6f4b34a85c0724e6285a4b2420c3526d",
+      "sha256": "88d7d2c761f487f36a4b7eed2291c12a56063e89b24c1eeaf108474570a3b158",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p334-03": {
       "sha256": "cfb1eb35bd0a7d0ee4c23836ddc0acf6ec0f8ea9b04223b10e1d5c359b5d602e",
@@ -18694,14 +18724,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p350-03": {
-      "sha256": "38034e02602f2b536240c69ce0cc911ec814288810a5094538232da13cb75640",
+      "sha256": "c2f2877fcdaa2f697c0615ad9aee03a9b63a31a78c4516028433ebf03723231f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p350-04": {
       "sha256": "df0fc34cbf23ce03ea81f5d592febf4c36109c297c292503ced0c1600e012cae",
@@ -19252,14 +19283,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p360-03": {
-      "sha256": "8e0dedb3c89b7184eff22ffe721dfc1ee19c270663e077a70b7bf7645f13a136",
+      "sha256": "c94e3dcbb478357a5478a152ff6b1bff001ff68033461d2a13e7a8fb58492b42",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p360-04": {
       "sha256": "af6a9ddb30055dcd2e241ded97ce83e811d27bc754f209acef0b78ea17d2fe9c",
@@ -19302,14 +19334,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p361-01": {
-      "sha256": "f0af9f0baf22f152554faed24f7c8af6e5c287a0d44a2b6b9a7fa7c7a5b4b558",
+      "sha256": "d9ba329f2832ef165ea36730315b447f15b9ade6577fc1f023a8472d50dff0d4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p361-02": {
       "sha256": "15c3d61bb93f4041008bb5bdf7851744de12f73e644b1473b0a108bafa5bf73b",
@@ -21768,14 +21801,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p404-03": {
-      "sha256": "4497fd48c50ef02442b6ec9ef301d2bda436a82802d3e1c2656bba864388e674",
+      "sha256": "0ca500fceb61eab60606b997b40550406831f08a6d70fea2931ef851756c0937",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p404-04": {
       "sha256": "3e2cbc96c65236c513da241da9b26f1ca580eacf396dab2142d0cb5b95a7609e",
@@ -21973,14 +22007,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p407-05": {
-      "sha256": "88ddb44b71123d152d22a03114bc9b01ebb562bc465bfc744aa151746abf1dfc",
+      "sha256": "19ad3faefee8743b457b5fda5e2626ee0d1bf5e8facc5091b5cc0d8e1dc75591",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p407-06": {
       "sha256": "d9db41dbeea9769dad77bd03285098d61746322d9eb74ae8526af4ea3cb3426c",
@@ -21993,14 +22028,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p407-07": {
-      "sha256": "919e2721b9ec748ee56b587e2eeacd7a4384be8cffc429181df4ffa2c59e2e0c",
+      "sha256": "98ba97d1dbef40d8622a2aa4926093b674ed417b6e5c2cac3a0317bf8877647a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p407-08": {
       "sha256": "4ad3c5895a39ef0d232237e11d5c5917f17141a10c024605740a7060cd151682",
@@ -23003,14 +23039,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p425-04": {
-      "sha256": "590f88496ae3920ca32e5a3889871d4ccc0e521b9b89bb1fc10f201d49227bf7",
+      "sha256": "311139aa96fb5bab95f467983bdfa6c5325ae78b6f7a3f0359bbe5faa5fd14d4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p425-05": {
       "sha256": "c1ad77b4c6ff9a9458a097bd0fea33018331f252ee62336aebdf5cecdf33b6f5",
@@ -23792,14 +23829,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p438-02": {
-      "sha256": "c0d92eef048c5cafc4830fddee9a9ba7972f50fed2fc6f7b764841a9b18eedf7",
+      "sha256": "a9a06b5c7d2490c42390a177342656f75021fd7fccd267f5aa8cd8e3141ac61b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p438-03": {
       "sha256": "0e2b18f9d4ed6a8a66c26d8e4f1094cb1115bf7e9285f958eccb843034425150",
@@ -24175,14 +24213,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p443-09+v3-p444-01": {
-      "sha256": "178a615a9fc61e6813ec89b96492a6dda60c3098c22b676900aa8aad7c93e263",
+      "sha256": "98784865c0ef1e49c236f775842d0ab4b4c012512040e6dbba256dc812d1a695",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p444-02": {
       "sha256": "a9b29899c14d2cb770318e9f4242db317fc3a11a3a85e79085239a94ee17d082",
@@ -24196,14 +24235,15 @@
       "resolution": "Restore explicit causal لأن in IbnTaymiyya quotation; no change to Quran or prayer-time argument. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p444-03": {
-      "sha256": "6f86cfdd8108b673f650b6c817b5631e67a76fc72967720f082111304ce60c72",
+      "sha256": "bddaa89b342fe98b70773fb3544ab1deae2470f7209ee9272eb131fd1bb102e3",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p444-04": {
       "sha256": "81e29a37be95c1e0e786752915b3ccab7b1fc28a1bd080cf35bf77135f113d80",
@@ -24400,14 +24440,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p447-02": {
-      "sha256": "b4201d286983ec33272550d173a1cca85d81dd155d9ddc7eb5d4a5c828b5cd73",
+      "sha256": "05166729d361dc3ad804190fe5d1bb47f44cae708f15525b375914ec08fac42e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p447-03": {
       "sha256": "88ac1fdb0cefac267a637ee1cb6dfe3663d30496b466d5a8f0afb2c0c1005f78",
@@ -24871,7 +24912,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p455-04": {
-      "sha256": "c4686a976fff85f29e3e13506d2d8a6243a7eeca62c24a519eb9f53faebeb05a",
+      "sha256": "52161bcb0feaf6248ff58d34828642dcb44d8cc9cbe9b29edf9057f0dd14240f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -24879,7 +24920,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual enlarged455 وباشر قلوبهم, not own وأثر بقلوبهم. Restore direct touching hearts; التوحيد retained against old التوفيق; full18:14 and later excerpt kept. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
+      "resolution": "Actual enlarged455 وباشر قلوبهم, not own وأثر بقلوبهم. Restore direct touching hearts; التوحيد retained against old التوفيق; full18:14 and later excerpt kept. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p455-05": {
       "sha256": "245a525b262e7a418eccb34363abdfbbcd492aabaf4bb5e95c1f3af4f06806f5",
@@ -25097,14 +25139,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p459-05": {
-      "sha256": "8d7fda494029986b5eb73438261d16acb2beaaf137b15568cc9e78a345f0596a",
+      "sha256": "f68a000edc4d89a95b03fd8baa9113797000c1bb706177c04a0a003fb1f816fd",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p459-06": {
       "sha256": "07b548f98b83a8aa1a1603a8f55030f61cb91aaeb7d6201690b18c0ec1876a38",
@@ -25713,7 +25756,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p472-02": {
-      "sha256": "16105f56254b086a29963dd323472a9abd6a477006a724666c67e46cbe7be567",
+      "sha256": "1f8dcafec73b3bda92c49af0a1a475bc2fc4b613b9b0552b32e0c2937f30dcb8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -25721,17 +25764,19 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "7x print explicitly المقصودة بالنزول فيها للمسافرين; removed invented phrase about exerting effort. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only."
+      "resolution": "7x print explicitly المقصودة بالنزول فيها للمسافرين; removed invented phrase about exerting effort. Arabic/Russian compared, Russian reread separately and then back-compared; same-agent self-review only.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p472-03": {
-      "sha256": "c0a9f17685044e6f6f97ab52c9baa58167ae1a0bcb339127302e48dc63bdfabf",
+      "sha256": "cff2b320ca367fcbf5924f3bfe5dc39d711d1badd7ddd103b0beaef0d7380741",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p472-04": {
       "sha256": "e664ef35ab930e86b56da59fd044948d710ebfc9dea3c53c7a295c2fe2902f87",
@@ -25947,14 +25992,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p476-04": {
-      "sha256": "048950a9d5706ebb0ece6cf4609d1bebb150c4d0e2778c7cf1bd0967b7ed1fda",
+      "sha256": "b2bcf3f14214656940282096296f5b95d965206196b7bbd7e80908fad3ba5ad8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p476-05": {
       "sha256": "57774d32e2ee507ec91fe9ab8b13c57fad38c17cd374342ab251f8fc22d65c13",
@@ -26265,14 +26311,15 @@
       "resolution": "Actual enlarged480 first تعنى المتعنون then تمنى المتمنون, distinct exertion and wishes, not own duplicated wishing. Preserve parallel clauses, no shortening. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p481-01": {
-      "sha256": "9f49ed0836e6d43239ef5cefc800f7a9ea2990024b0016977faad338515b2504",
+      "sha256": "441e35daccb9ee8f555cf69f2bf3c1ef22374613cd00ee0399e877a3ebb604d2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual control481 directly read in full; plural شمالهم refers contextually to Paradise inhabitants, supported by full Muslim2833 (Anas chain and body), not singular рай. Russian-only reread removes ветерок его северного ветра and им течёт, preserves distinct نفحة/نسمة, refreshment روح, cloud/rain/river, causal force and special distinction. Full Arabic/back comparison after final prose; no Arabic emendation or added hadith grading. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p481-02": {
       "sha256": "6714a5387d8ef47852b7231fc1679b70b69ae0508daedd6cb31534569e68495e",
@@ -26441,14 +26488,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p486-04": {
-      "sha256": "5ea0cc06fdcd68efa2d11b6a45cbba4491a7e954949f5ab938f8e622090cd411",
+      "sha256": "df4e085ab88c829b622e7b5a1427dfd3d02d3de3005f068814331e60fbd3f856",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p486-05+v3-p487-01": {
       "sha256": "25bbf2dc9838566a3faa252f67c520b6a1a16111bb52a1b72dca1893d49fc50c",
@@ -29208,7 +29256,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p544-03": {
-      "sha256": "880be2b5bb3784b4a145ca91348a799944ee1e9110b2a3dfe094a8c5a89054e8",
+      "sha256": "9de8fdbb8a38c943c783685759f55206403ec8d218a868990cda5a987ed43d36",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -29216,7 +29264,8 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained.",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p544-04": {
       "sha256": "8e726b8da335b01468e89554444871a4baaf5d79a386a7cb1ed581488aa6b33b",
@@ -29607,14 +29656,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p551-05": {
-      "sha256": "cc9bdb40b1dc2737a1afa78dca2bf8b459bc281dd6e03ed7bebcbf7760076e9e",
+      "sha256": "e8a0bbd9db944cb7764f9143721514e10727d92b1b3f8301419fea60cdab2a7d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p551-06": {
       "sha256": "ab816243d249603bceab058650d8bba3c88c87b19e73b9a9ee3dadac21c52308",
@@ -30369,14 +30419,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p566-03": {
-      "sha256": "341d099cdb878d3f160aed04ca09b377eb59c78b70a02d6805973ba6ed920727",
+      "sha256": "efa5a17b63a4fb91638c9e8bacdc2f88cb7213a7d41dbb1e05216274bbded713",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "bibliographic_consistency_2026_10_23": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review."
     },
     "v3-p566-04": {
       "sha256": "22bd4a1c33ce1705c49de182cbf827e45ea1d49721bf3721d0830005b1f46d58",
@@ -30848,14 +30899,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p575-02": {
-      "sha256": "0cb71ea96ec1df2f40c81eab3dfada1359be87c3197e0a0bfdf169e16afe0f53",
+      "sha256": "3cf0236baba816ee84e23cdde7786da33b7a2ec4422d60d4e4bdc14e88a49009",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual control575 full paragraph and immediate574–576 context read. Render iḍāfa همة حال as устремление связано с состоянием rather than Russian nominal calque; causal hierarchy, state as fruit of knowledge, proportional impurity, four witness relations, sweetness and forgetting all retained on full back comparison. Printed masculine لأنه retained; no claimed manuscript resolution or inferred directional к состоянию. Same-agent literary clarification only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p575-03": {
       "sha256": "73e320d25caeca3e32abf2742222d42bc10750c7577b3c2d78289710c02481c1",

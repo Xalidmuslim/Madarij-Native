@@ -2662,6 +2662,42 @@
       ],
       "finding": "Original Ansari in this digital witness has التقطع الوحداني, supporting not substituting older Madarij الوجداني. But reads يد/في قيد vs control بيد/في بيداء قيد; no automatic replacement. IbnQayyim110 disputed sentence not in original Ansari, so no pronoun resolution;247 reference likewise commentator own. Full bounded chapters read, six pending flags retained. Additional1444PDF download403, Opera connection unavailable: no printed comparator accepted.",
       "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p481-01"
+      ],
+      "primary_path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+      "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+      "location": "Muslim2833; digital PageV04P2178, chapter on Paradise market; full Anas chain and report read. Secondary print not visually collated.",
+      "author_text_excerpt": "ونسمة من روح شمالهم",
+      "finding": "Control481 actual image and complete paragraph read. Pluralهم is explained by inhabitants of Paradise; full Anas report describes northern wind blowing on their faces/clothes. Russian expands implicit antecedent obliquely rather than give a singular possessive to Paradise. Not a new isnad grading; author allusion retained, hadith not inserted in author body."
+    },
+    {
+      "source_ids": [
+        "v3-p246-03",
+        "v3-p246-05"
+      ],
+      "primary_path": "data/0711IbnManzurIfriqi/0711IbnManzurIfriqi.LisanCarab/0711IbnManzurIfriqi.LisanCarab.JK000880-ara1",
+      "blob": "a4a1b7458187c2eb8d7f37d9a40bb124b3af34f7",
+      "location": "root وحد, digital3:450–451; complete bounded definition of الوحداني and surrounding distinctions read. Secondary printed pagination not visually verified.",
+      "author_text_excerpt": "الوحداني ... المفارق للجماعة المنفرد بنفسه ... وهو منسوب إلى الوحدة والانفراد",
+      "finding": "Explicit lexical evidence supports solitary/isolated rather than numerical sole detachment. It does not import the moral judgment of the dictionary example into Ansari quotation. Chosen Russian уединённая отрешённость and обособлено само по себе checked against full control246–247 author explanation; no Arabic change or alleged manuscript solution."
+    },
+    {
+      "source_ids": [
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-01",
+        "v3-p247-02",
+        "v3-p247-03",
+        "v3-p247-04"
+      ],
+      "primary_path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.TariqHijratayn/0751IbnQayyimJawziyya.TariqHijratayn.Shamela0012029-ara1",
+      "blob": "22a21dd47573e83a78b63ec53ae690a1455054b5",
+      "location": "Third faqr degree discussion, after digital PageV01P026 through start of31; especially30. Author body read in full bounded discussion; no claim of visual print collation of this witness.",
+      "author_text_excerpt": "وصاحب توحيد الربوبية في قيد التجريد عن ملاحظة فاعل غير الله وهو مجرد عن ملاحظة وجوده",
+      "finding": "Same author explains exact Ansari degree, distinguishes losing awareness of oneself from worship, and describes قيد التجريد as restriction of witnessing. New evidence alongside Lisan and explicit control247 grammatical topic القيد supports three contextual translation resolutions; masculine/negative/parallel clause sequence restored in Russian247-03/04. No material annihilation, ending obligations, God as added pronoun referent or substitution of digital يد for control بيد."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage.",
