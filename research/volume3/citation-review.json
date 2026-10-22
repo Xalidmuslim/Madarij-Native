@@ -1301,7 +1301,23 @@
       "status": "pending_earlier_attribution_source",
       "checked_primary_records": [],
       "finding": "Author’s report of Shafii consensus dictum preserved exactly in meaning. A direct earlier source for this precise attribution not located in this pass; do not turn this entry into an authenticated chain.",
-      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment."
+      "method": "Manual same-agent author Arabic/Russian and classical source comparison, or explicit non-hadith classification/pending attribution as labeled. Not independent human verification or full isnad assessment.",
+      "additional_lookup_2026_10_22": {
+        "status": "earlier_parallel_meaning_found_exact_consensus_attribution_still_pending",
+        "checked_primary_records": [
+          {
+            "path": "data/0327IbnAbiHatimRazi/0327IbnAbiHatimRazi.AdabShafici/0327IbnAbiHatimRazi.AdabShafici.Shamela0001485-ara1",
+            "blob": "1379c443af56384e2fef11cc5ad8284e1b340482",
+            "location": "Complete Harmala chain/body كل ما قلت وكان عن النبي...خلاف قولي...ولا تقلدوني nearV1P50"
+          },
+          {
+            "path": "data/0458Bayhaqi/0458Bayhaqi.ManaqibShafici/0458Bayhaqi.ManaqibShafici.Sham19Y0022797-ara1",
+            "blob": "9ae5e5251d8ccda27cb6377e354138c9c0dabd02",
+            "location": "V1P471–472 complete two Rabii chains/maxims إذا وجدتم في كتابي.../إذا وجدتم سنة...فخذوا بالسنة"
+          }
+        ],
+        "finding": "Complete bounded earlier chains/short maxims directly read: clearly support preference for Prophetic Sunna over Shafii own opinion, but not exact وأجمع المسلمون على أن من استبانت له... quotation/consensus attribution. Exact tested normalized phrases no hit in these two files, not proof absent from every classical witness. Author78 retained, pending source status not upgraded. Modern footnote prose excluded."
+      }
     },
     {
       "source_ids": [
@@ -2561,6 +2577,91 @@
       ],
       "finding": "Read full bounded primary. Mountain passage introduced فيما بلغنا; author synopsis retained including وتطمئن vs primary وتقر. Own separate reader note distinguishes Zuhri balagh from uninterrupted Aisha report, no new authenticity grade, no modern apparatus copied. Neighboring541/542 reports not thereby fully traced.",
       "method": "Same-agent bounded full classical/control print/Russian semantic/literary/back self-review, not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p574-03"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_muslim489_rabia_body_read",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "489,digital226,complete Rabia chain/body before next chapter"
+        }
+      ],
+      "finding": "Full night service/wudu, سل, ask companionship in Paradise, أو غير ذلك/هو ذاك, aid through abundant prostrations read. Author says سلني and only short exchange; retained without harmonizing/adding omitted exhortation. No new grade.",
+      "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p581-05"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_muslim_umar_jibril_body_read_short_excerpt_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "First YahyaibnYamar/IbnUmar/Umar Jibril complete record, V1P36–37, commonly Muslim8; not numbered9 in this file"
+        }
+      ],
+      "finding": "Full Qadar-preface, Islam/faith/ihsan/hour/signs/Jibril identification read. Exact ihsan clause أن تعبد الله كأنك تراه retained, omitted فإن لم تكن تراه فإنه يراك not inserted. Not conflated with different AbuHurayra route commonlyMuslim9; modern control footnote not imported.",
+      "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p582-05"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_muslim222_two_routes_read_author_short_variant_retained",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "222,digital379–380,complete AbuSaid body/second route before kitabTaharah"
+        }
+      ],
+      "finding": "Full Adam call, أخرج بعث النار,999/1000, YaJuj/MaJuj, quarter/third/half Paradise and hair/mark analogy plus alternate omission read. Author قم فابعث is different short wording retained, not certified verbatim Muslim222; no omitted numbers/countertext added, no new grade.",
+      "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p580-01",
+        "v3-p580-02",
+        "v3-p580-03"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_zuhd_ahmad_376_498_349_chains_and_reports_read",
+      "checked_primary_records": [
+        {
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Zuhd/0241IbnHanbal.Zuhd.Shamela0008494-ara1.mARkdown",
+          "blob": "129672b036c93d08d7eab97678eab8856110154b",
+          "digital_location": "Complete349 Musa thanks,376 Dawud warning,498 Thabit seventy-year narrative"
+        }
+      ],
+      "finding": "All three full bounded chains and bodies read, lower attribution AbuJild/Thabit preserved rather than calling them Prophet hadiths. Primary اخبرنا vs author حدثنا, لا يجازي بها vs author لا يجازيها, فلما وفت vs author فلما فرغ وقته and يا رب vs رب retained without harmonizing.563-05 exact twice-born phrase not located by normalized tested phrases in this Zuhd file; no claim absent in every witness or authenticated. No new chain grade.",
+      "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
+    },
+    {
+      "source_ids": [
+        "v3-p110-04",
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-03"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "bounded_original_manazil_chapters_read_cruxes_not_resolved",
+      "checked_primary_records": [
+        {
+          "path": "data/0481AnsariHarawi/0481AnsariHarawi.ManazilSairin/0481AnsariHarawi.ManazilSairin.Shamela0006876-ara1.completed",
+          "blob": "7bf70ee1f6e4690e2c29fdf075ea7005d22371a4",
+          "digital_location": "Complete باب الانبساطV1P62–63and باب الفقرV1P71"
+        }
+      ],
+      "finding": "Original Ansari in this digital witness has التقطع الوحداني, supporting not substituting older Madarij الوجداني. But reads يد/في قيد vs control بيد/في بيداء قيد; no automatic replacement. IbnQayyim110 disputed sentence not in original Ansari, so no pronoun resolution;247 reference likewise commentator own. Full bounded chapters read, six pending flags retained. Additional1444PDF download403, Opera connection unavailable: no printed comparator accepted.",
+      "method": "Same-agent complete bounded primary/control/Russian comparison, not independent human editing or fresh isnad authentication."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage.",

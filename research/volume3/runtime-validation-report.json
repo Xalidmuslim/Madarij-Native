@@ -3,10 +3,10 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "00b555027d1dc0038b8e84f6029372a84db32ea9f7afe758247c2ba9de8de3af",
-  "volume3_asset_sha256": "f01ebc97509459947448202cca71e833aed8cacbbba38edfb60ffc366bbc7371",
+  "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
+  "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
   "zip_integrity_checked": true,
-  "apk_asset_matches_repository": false,
+  "apk_asset_matches_repository": true,
   "signature_verified": "APK Signature Scheme v2",
   "jvm_test_suites": 17,
   "jvm_tests": 97,
@@ -20,7 +20,7 @@
       "3": 32
     },
     "volume3_author_paragraphs": 3096,
-    "volume3_editor_notes": 13,
+    "volume3_editor_notes": 14,
     "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
     "comparison_fields": [
       "id",
@@ -32,7 +32,6 @@
       "source"
     ],
     "extra_volume3_rows": 0,
-    "all_3109_packaged_rows_exactly_match_database": true,
     "unresolved_source_ids_in_checked_apk": [
       "v3-p110-04",
       "v3-p246-03",
@@ -40,7 +39,8 @@
       "v3-p247-03",
       "v3-p403-01+v3-p404-01",
       "v3-p436-05"
-    ]
+    ],
+    "all_3110_packaged_rows_exactly_match_database": true
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -49,8 +49,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 15,
-      "rows_after": 15,
+      "rows_before": 16,
+      "rows_after": 16,
       "unchanged": true
     },
     "notes": {
@@ -67,8 +67,9 @@
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "Three-token query меня попросили описать returns exactly one result Мимолётный взгляд504.",
-    "Opened504-04, actual top and two scrolled positions viewed. Entire corrected AmribnAs block quote visibly includes twice не смотрел ... пристально and passive Если бы меня попросили описать, with closing quotation mark; following Arab fear-of-looked-at line visible."
+    "Two-word query сообщение аз-Зухри gives exactly one result in Мимолётный взгляд.",
+    "Opened own542 note; actual top and scrolled tail viewed, explicitly labeled Пояснение редакции with separate collapse/open control; says فيما بلغنا and no new authenticity assessment. Full note text additionally exact in DB comparison.",
+    "Three-token query либо никакого соотношения gives exactly one result in Чистота, matching corrected584-04. Actual settled search and opened reader584-04 top viewed, including explicit либо; no claim this top screenshot shows whole ending. Subsequent scrolled screen actually shows full remainder584-04 and start of final Arabic584-05. Further actual reader image shows complete Arabic584-05 ending والله سبحانه أعلم. Russian final584-05 top/middle actually viewed separately after Arabic, correct chapter header Чистота and draft state retained. Final settled image runtime-through584-reader-final-close22.png actually shows entire Russian584-05, closing Аллах, пречист Он, знает лучше. and Конец раздела."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -80,12 +81,12 @@
   "publication_ready": false,
   "independent_human_review": false,
   "personal_data_update_scope": {
-    "apk_sha256": "00b555027d1dc0038b8e84f6029372a84db32ea9f7afe758247c2ba9de8de3af",
-    "volume3_asset_sha256": "f01ebc97509459947448202cca71e833aed8cacbbba38edfb60ffc366bbc7371",
-    "description": "Through516 complete pre/post snapshots preserve1bookmark,15positions,empty notes/read_chapters and exact preferences. Confirmed installed content_versionfd98943684debaea097bc0b929d2ea2c78eb81a8268967aff8bc691421d2120f before final capture; native WAL checkpoint0|0|0, waited capture exit0, then exact7field comparison. Later deliberate reader navigation outside preservation comparison."
+    "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
+    "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
+    "description": "Through584 complete pre/post snapshots preserve1bookmark,16positions,empty notes/read_chapters and exact preferences. Confirmed content_version 04190c7459b33d1ed5224b645f281b351cbccac45c7cca8de2c5898e51ecc102 before native WAL checkpoint0|0|0; waited final archive completion then compared3110rows across seven fields. Later deliberate reader navigation outside preservation comparison."
   },
-  "latest_corpus_check": "All3109rows exactly match through516 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. All six pending units retained in metadata. New517–532 canonical changes not in checked APK.",
-  "current_source_update": "Manual detailed passage review completed through584;3110current asset rows include own542 balagh note. Positive runtime516 remains3109historical rows; new517–584 bytes/note not yet checked by runtime.",
+  "latest_corpus_check": "All3110rows exactly match current through584 APK and repository asset across seven fields; no extras/integrityok; first two volumes and personal/preferences exact. Six pending units retained, publication_ready false.",
+  "current_source_update": "Current generated asset through584 is covered by actual runtime exact-row comparison, including14th own542 balagh note. Later citation/contextual journals do not change packaged text.",
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
     "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
@@ -109,10 +110,11 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Through516 actual search and complete504-04 corrected block quote viewed. No all186targets/physical-device claim; prior462/422 and earlier results historical.",
+  "visual_check_scope": "Through584 actual new-note search and reader checked, all3110database records exact. Does not claim all186targets manually tapped or physical-device testing.",
   "current_visual_checks": [
-    "Three-token query меня попросили описать returns exactly one result Мимолётный взгляд504.",
-    "Opened504-04, actual top and two scrolled positions viewed. Entire corrected AmribnAs block quote visibly includes twice не смотрел ... пристально and passive Если бы меня попросили описать, with closing quotation mark; following Arab fear-of-looked-at line visible."
+    "Two-word query сообщение аз-Зухри gives exactly one result in Мимолётный взгляд.",
+    "Opened own542 note; actual top and scrolled tail viewed, explicitly labeled Пояснение редакции with separate collapse/open control; says فيما بلغنا and no new authenticity assessment. Full note text additionally exact in DB comparison.",
+    "Three-token query либо никакого соотношения gives exactly one result in Чистота, matching corrected584-04. Actual settled search and opened reader584-04 top viewed, including explicit либо; no claim this top screenshot shows whole ending. Subsequent scrolled screen actually shows full remainder584-04 and start of final Arabic584-05. Further actual reader image shows complete Arabic584-05 ending والله سبحانه أعلم. Russian final584-05 top/middle actually viewed separately after Arabic, correct chapter header Чистота and draft state retained. Final settled image runtime-through584-reader-final-close22.png actually shows entire Russian584-05, closing Аллах, пречист Он, знает лучше. and Конец раздела."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -1071,6 +1073,75 @@
       "Opened joined448–449 paragraph; top and scrolled middle actually viewed, including restored plural reports from truthful wayfarers and following new-state/other-murid explanation. Entire ending not individually screen-captured."
     ],
     "visual_check_scope": "Through462 search and reader top/middle actually viewed for448–449; no all186targets/physical-device claim. Prior422 and earlier checks remain historical.",
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "apk_asset_matches_repository": false
+  },
+  "historical_through516_2026_10_22": {
+    "apk_sha256": "00b555027d1dc0038b8e84f6029372a84db32ea9f7afe758247c2ba9de8de3af",
+    "volume3_asset_sha256": "f01ebc97509459947448202cca71e833aed8cacbbba38edfb60ffc366bbc7371",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 14,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "unresolved_source_ids_in_checked_apk": [
+        "v3-p110-04",
+        "v3-p246-03",
+        "v3-p246-05",
+        "v3-p247-03",
+        "v3-p403-01+v3-p404-01",
+        "v3-p436-05"
+      ],
+      "all_3110_packaged_rows_exactly_match_database": true
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 15,
+        "rows_after": 15,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      }
+    },
+    "personal_data_update_scope": {
+      "apk_sha256": "00b555027d1dc0038b8e84f6029372a84db32ea9f7afe758247c2ba9de8de3af",
+      "volume3_asset_sha256": "f01ebc97509459947448202cca71e833aed8cacbbba38edfb60ffc366bbc7371",
+      "description": "Through516 complete pre/post snapshots preserve1bookmark,15positions,empty notes/read_chapters and exact preferences. Confirmed installed content_versionfd98943684debaea097bc0b929d2ea2c78eb81a8268967aff8bc691421d2120f before final capture; native WAL checkpoint0|0|0, waited capture exit0, then exact7field comparison. Later deliberate reader navigation outside preservation comparison."
+    },
+    "latest_corpus_check": "All3109rows exactly match through516 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. All six pending units retained in metadata. New517–532 canonical changes not in checked APK.",
+    "visual_check_scope": "Through516 actual search and complete504-04 corrected block quote viewed. No all186targets/physical-device claim; prior462/422 and earlier results historical.",
+    "current_visual_checks": [
+      "Three-token query меня попросили описать returns exactly one result Мимолётный взгляд504.",
+      "Opened504-04, actual top and two scrolled positions viewed. Entire corrected AmribnAs block quote visibly includes twice не смотрел ... пристально and passive Если бы меня попросили описать, with closing quotation mark; following Arab fear-of-looked-at line visible."
+    ],
     "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
     "apk_asset_matches_repository": false
   }
