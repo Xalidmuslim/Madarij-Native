@@ -22317,8 +22317,1888 @@
         }
       ],
       "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p546-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالدنيا",
+          "secondary": "في الدنيا",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "سرور",
+          "secondary": "السرور",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p546-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يريدون بالوقت",
+          "secondary": "يريد ان الوقت",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "او الفقير",
+          "secondary": "والفقير",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p547-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "من",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p547-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "فيه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "فيه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p547-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وناكده وقته",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p548-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سبحانه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مجدون",
+          "secondary": "يجدون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واقفين",
+          "secondary": "واثقين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يقول",
+          "secondary": "ويقول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p548-04",
+        "v3-p549-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مفكرون",
+          "secondary": "متفكرون",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "صفاء",
+          "secondary": "صفا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وظهرت",
+          "secondary": "وتفتحت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اتاها امرنا ليلا او نهارا فجعلناها حصيدا كان لم تغن بالامس كذلك نفصل الايات لقوم",
+          "secondary": "يونس الى قوله",
+          "tokens": 15
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p550-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالفكر في السوابق",
+          "secondary": "بالسوابق",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "في العواقب",
+          "secondary": "بالعواقب",
+          "tokens": 2
+        },
+        {
+          "tag": "delete",
+          "control": "والفقير",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p550-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p550-05",
+        "v3-p551-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full545–550 and joined551 opening read.546 بالدنيا/سرور/يريدون بالوقت/أو الفقير;547 printed من/فيه and no وناكده وقته;548 سبحانه/مجدون/واقفين/مفكرون/وظهرت/full10:24;550 بالفكر في السوابق/في العواقب/والفقير and no inserted honorific or له. All four group distinctions, two548 couplets/three550 couplets and complete Quran retained. Russian reread separately/back-compared, self-review not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p551-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقدر",
+          "secondary": "قدر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p551-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "من",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p551-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p551-07",
+        "v3-p552-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لرؤية",
+          "secondary": "لرؤيته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p552-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يوهم",
+          "secondary": "توهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يخلصه من",
+          "secondary": "يخرجه عن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "مبتدئ",
+          "secondary": "مبتدئك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "استحقاق",
+          "secondary": "استحقاقك",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كل",
+          "secondary": "كلها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p552-06",
+        "v3-p553-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "معطوفة",
+          "secondary": "معطوف",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "او",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "او رؤية",
+          "secondary": "ورؤية",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p553-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "تذكر",
+          "secondary": "ستذكر",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "التلهب",
+          "secondary": "اللهيب",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اشتعل",
+          "secondary": "اشتعلت",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "منها",
+          "secondary": "عنها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p554-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فان الحال",
+          "secondary": "فالحال",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "يلونه",
+          "secondary": "بلونه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p554-09",
+        "v3-p555-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاخرون",
+          "secondary": "الاخر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p555-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "به العلم",
+          "secondary": "بهالعلم",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p555-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "منتقصا",
+          "secondary": "منقوصا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p555-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فهذا",
+          "secondary": "فهذه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنهم",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p555-06",
+        "v3-p556-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "شاء",
+          "secondary": "يشاء",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "شاء",
+          "secondary": "يشاء",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منهما",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p556-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لقوة",
+          "secondary": "بقوة",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "سيره",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "على",
+          "secondary": "هو",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عندهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الى",
+          "secondary": "عن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p556-04",
+        "v3-p557-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full551–556/557 continuation read:551 يقدر/no extra من/الله/لرؤية;552 يوهم/يخلصه/مبتدئ/استحقاق/كل/معطوفة/أو رؤية;553 تذكر/التلهب/اشتعل/منها;554 فإن الحال/يلونه/الآخرون;555 منتقصا/فهذا/شاء without added honorifics/منهما;556 لقوة/سيره/على/إلى retained. FullQ28:29/17:57/42:49–50 and repeated knowledge/state contrasts preserved. Russian literary and back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p557-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "بل ولا يشغل عنه العلم",
+          "secondary": "",
+          "tokens": 5
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p557-03"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المطالبين",
+          "secondary": "مطالبين",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p557-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والعين",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وانه",
+          "secondary": "فانه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اعتباره واستدلاله",
+          "secondary": "اعتبارا واستدلالا",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p558-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "احتجابه",
+          "secondary": "احتجاجه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p558-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يريه",
+          "secondary": "ويريه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهي حالة",
+          "secondary": "وهو حال",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p558-04",
+        "v3-p559-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النفس",
+          "secondary": "النفوس",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p559-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "درجات",
+          "secondary": "الدرجات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p560-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اطلقوا",
+          "secondary": "اطلق",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "للحق اذا اشتد استغراقه في وقت يتلاشى عنه وقته بالكلية وتقريب هذا الى الفهم انه",
+          "tokens": 15
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الحاضر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p561-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "هاهنا",
+          "secondary": "هنا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وغرتهم",
+          "secondary": "وغرهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "مشتبهة",
+          "secondary": "مشتبهات",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "كفرهم",
+          "secondary": "لكفرهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فظنوا",
+          "secondary": "وظنوا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p561-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هذا",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "هو",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p562-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تتلاشى في الكشف لا في الوجود العيني الخارجي فان تلاشيها في الوجود خلاف الحس والعيان وانما",
+          "secondary": "",
+          "tokens": 16
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p562-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "له",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p562-06",
+        "v3-p563-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "جميع",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وتصير",
+          "secondary": "ويصير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual557–562/563 continuation read:557 بل ولا يشغل عنه العلم and definite المطالبين retained; narrow crop corrects own وارِدُه vocalization, no secondary substitution.557 no added والعين/وأنه/اعتباره واستدلاله;558 احتجابه/يريه/وهي حالة/singular النفس;559 درجات;560 أطلقوا and no secondary added paragraph;561 هاهنا/وغرتهم/مشتبهة/كفرهم/فظنوا;562 full sixteen-word external-reality distinction retained, له and تصير/no جميع. All argument repetitions/9:32 kept. Contextual وجود technical vs ordinary distinction reflected in full Russian/back self-review, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p563-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النشات",
+          "secondary": "النشاة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p563-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "عن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "عن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p563-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "السماء",
+          "secondary": "السماوات",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p563-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رحمه الله",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "البطن",
+          "secondary": "البدن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p564-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وتعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p564-09"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "كشف",
+          "secondary": "الكشف",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p565-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اتحاد",
+          "secondary": "الحاد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p566-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "استشهاده",
+          "secondary": "الاستشهاد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p566-08",
+        "v3-p567-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وقت",
+          "secondary": "يوم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "غير",
+          "secondary": "ترك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p567-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "اوصى به القوم وحذروا من مفارقته واخرجوا من فارقه من اهل الطريق بالكلية وهو العلم الذي",
+          "secondary": "",
+          "tokens": 16
+        },
+        {
+          "tag": "replace",
+          "control": "الرسول صلوات",
+          "secondary": "رسول",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "وسلامه",
+          "secondary": "صلى الله",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p567-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "من",
+          "secondary": "فمن",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "ولم يكتب",
+          "secondary": "ويكتب",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فلا",
+          "secondary": "لا",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p567-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مشتبك",
+          "secondary": "متشبك",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p568-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بشاهدين",
+          "secondary": "بشاهدي عدل",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p568-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "النصراباذي",
+          "secondary": "النصرابادي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual563–568 and569 joined continuation read: plural النشآت, من twice, السماء/no added honorific, البطن retained;564 سبحانه/no وتعالى and كشف/no article;565 اتحاد not إلحاد;566 استشهاده;poem وقت/غير;567 full knowledge paragraph (secondary omitted16words), صلوات الله وسلامه عليه, من/ولم يكتب/فلا/مشتبك;568 بشاهدين/النصراباذي. All four births/complete duties argument/38:47/poem retained. Russian literary/back self-review only, not external human."
+    },
+    {
+      "source_ids": [
+        "v3-p569-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الوسائط",
+          "secondary": "الوسائل",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واسطة",
+          "secondary": "وساطة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p569-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "رسول الله فالله",
+          "secondary": "عبده ورسوله والله",
+          "tokens": 3
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "هو",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المقتدى",
+          "secondary": "المهتدى",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الرسول",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p569-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "مسدود",
+          "secondary": "مسدودة",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "رسول الله",
+          "secondary": "الرسول",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p570-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "طريقته",
+          "secondary": "طريقه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p571-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "بالبدن",
+          "secondary": "للبدن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p572-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "البهجة وحسن",
+          "secondary": "البهجةوحسن",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "للمسير",
+          "secondary": "للسير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اهلهم",
+          "secondary": "اهلوهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وعارضتهم",
+          "secondary": "وعارضهم الفهم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p572-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المسير",
+          "secondary": "السير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p572-05",
+        "v3-p573-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ارتهم",
+          "secondary": "تريهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p573-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "همتهم",
+          "secondary": "هممهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "المسير",
+          "secondary": "السير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "تنبه",
+          "secondary": "تثنية",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p573-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "السير",
+          "secondary": "المسير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بالسر",
+          "secondary": "بالمسير",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "وهم",
+          "secondary": "فهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p573-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "عمله",
+          "secondary": "علمه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "يشاهده ولم",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "كحالة",
+          "secondary": "كحال",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بوصوله",
+          "secondary": "وصوله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p574-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "رضي الله عنه",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p574-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete569–574 and joined575 opening read:569 الوسائط/واسطة/no هما/رسول الله فالله/المقتدى/مسدود;570 طريقته;571 بالبدن;572 للمسير/السير/أهلهم/وعارضتهم/المسير;four couplets572–573 أرتهم;573 همتهم/المسير/تنبه/بالسر/وهم/عمله/كحالة/بوصوله;574 no added honorific/تعالى. All five allegory groups with long kingdom description, full24:39 and poems retained. Additional noncandidate573-07 own اتصلت correction separately audited. Russian reread/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p575-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لانه",
+          "secondary": "لانها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p575-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "جاء",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "جاء",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بمشاهد",
+          "secondary": "بمشاهدة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p576-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "حلاوة",
+          "secondary": "حلاوته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p576-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يذاق",
+          "secondary": "تذاق",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p576-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "واستغرق",
+          "secondary": "واستغراق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "العباد",
+          "secondary": "العبد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p577-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "القلب",
+          "secondary": "قلبه",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فيشتغل",
+          "secondary": "يشتغل",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p577-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "سبحانه",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واصحاب",
+          "secondary": "وبين اصحاب",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "تفاوت عظيم",
+          "secondary": "تفاوتا عظيما",
+          "tokens": 2
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p577-06",
+        "v3-p578-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "المسير",
+          "secondary": "السير",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p578-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "تركيب",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p578-05",
+        "v3-p579-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "للصديق",
+          "secondary": "الصديق",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الاذن",
+          "secondary": "الاذان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p579-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فنسبوهم",
+          "secondary": "ونسبوهم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "لهم",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p579-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ووصال",
+          "secondary": "ووصالا",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "فكان",
+          "secondary": "وكان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p579-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والوصال",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p579-07"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيسقط",
+          "secondary": "فسقط",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete575–579/580 continuation read:575 لأنه/جاء/بمشاهد;576 حلاوة/يذاق/واستغرق/العباد;577 القلب/فيشتغل/سبحانه/وأصحاب/تفاوت عظيم with no inserted honorific;578 المسير/تركيب هذا التركيب/للصديق/no تعالى;579 singular الأذن/فنسبوهم/لهم/ووصال/فكان/no والوصال/فيسقط retained. All critic/opponent distinctions/2poemcouplets/extraordinary-state arguments complete. Own576-03 اشتعال separately audited after narrow crop; فطرة/كأن verified and retained. Russian literary/back self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p580-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الصديقين",
+          "secondary": "الصادقين",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عبادي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p580-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكان",
+          "secondary": "فكان",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p580-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وحدثنا",
+          "secondary": "بن حنبل حدثنا",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "نعمك",
+          "secondary": "نعمتك",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p581-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "ببدايات",
+          "secondary": "ب بدايات",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "المشاهد",
+          "secondary": "الشاهد",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p581-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يقوى",
+          "secondary": "يقوي القلب",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "للقلب",
+          "secondary": "الغيب",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p582-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "نداءه",
+          "secondary": "نداؤه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p582-06",
+        "v3-p583-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "قلبه",
+          "secondary": "بقلبه",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "به الكتب",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p583-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يلحقها",
+          "secondary": "تلحقها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p583-06"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "قيامها به",
+          "secondary": "قيامه بها",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p584-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "واوليته",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p584-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فينطوي",
+          "secondary": "فتنطوي",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual complete580–584 including all final author lines read against full bilingual.580 الصديقين/no added عبادي/وكان/وحدثنا/نعمك/no extra تعالى;581 المشاهد/no added الله/يقوى/للقلب;582 نداءه/قلبه/no به الكتب;583 يلحقها/قيامها به retained. Enlarged583-reward-tail22 confirms accusative العبدَ recipient with object ه referring reward in ما أعطاه العبدَ, Russian reward GIVEN TO servant retained; secondary adds الله للعبد but not imported.584 no added وأوليته/فينطوي. All34:6/13:19/28:65/author hadith excerpts, complete two explanations and final والله سبحانه أعلم retained. Russian literary/back self-review only, no independent human."
     }
   ],
-  "record_count": 1075,
+  "record_count": 1165,
   "unreviewed_candidates_remain": true
 }

@@ -29204,7 +29204,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p544-03": {
-      "sha256": "8a4ea8e9db249debf4d0323af6b2d969c776996b627fdffeb3e0f6e3671a49b8",
+      "sha256": "880be2b5bb3784b4a145ca91348a799944ee1e9110b2a3dfe094a8c5a89054e8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -29212,7 +29212,7 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p544-04": {
       "sha256": "8e726b8da335b01468e89554444871a4baaf5d79a386a7cb1ed581488aa6b33b",
@@ -29267,24 +29267,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p545-03": {
-      "sha256": "a967d230e6759f5732ce8500c762d2ccc574561ea5dc88a658da11f60dfe525e",
+      "sha256": "140250e45cbd0a363df11903bf7d0202c0c3540bddee7ee17efe8f0d66ca50c9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Complete actual545–550 with551 continuation read and Russian separately/back-compared.545 definition clarifies preceding544 technical الكون; passive avoids imposing unstated subject of يعمره; preserve هيهات هيهات repetition and explain context السوابق without omitting argument. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p545-04": {
-      "sha256": "9b02c5a9fdbdf2ca897c4221be4f9c847d951e23ac9cf538368e3eecffa74cdd",
+      "sha256": "baa667cb0dc00e23f532ebea5e1a778a0c04d2411b25c6f98b5ae6f8373e8244",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Complete actual545–550 with551 continuation read and Russian separately/back-compared.545 definition clarifies preceding544 technical الكون; passive avoids imposing unstated subject of يعمره; preserve هيهات هيهات repetition and explain context السوابق without omitting argument. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p546-01": {
       "sha256": "025e724e1e20525737f112999f2a4871225ad9f9db97daf4a5c244c7ff6936a0",
@@ -29317,14 +29319,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p546-04": {
-      "sha256": "5204f8d17b3fda7d41fbd1c99fc9efcac16d41664a84156fcb6ad559c21647bc",
+      "sha256": "da4712a63a8c5ec13e621d169aabfede01291bc26d022997fa3c09700d2ae278",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Complete actual545–550 with551 continuation read and Russian separately/back-compared.545 definition clarifies preceding544 technical الكون; passive avoids imposing unstated subject of يعمره; preserve هيهات هيهات repetition and explain context السوابق without omitting argument. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p546-05": {
       "sha256": "3f536ec9f2052be23e3b6023f6922d41e61afefca78d5a926973b70759dca3f2",
@@ -29407,34 +29410,37 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p548-01": {
-      "sha256": "4447201be83d93b98d6935cd4b7400cd5fe8a6bb3bdb683bf202135ce324265c",
+      "sha256": "cc0e3fef3d3051f9c297580f95994e3bf569b687c578063a7a9219949c11bab0",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Complete actual545–550 with551 continuation read and Russian separately/back-compared.545 definition clarifies preceding544 technical الكون; passive avoids imposing unstated subject of يعمره; preserve هيهات هيهات repetition and explain context السوابق without omitting argument. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p548-02": {
-      "sha256": "be9671e61180e5e3406b1b19ac43ac1198c3b8f8b56ecb41ac5451ebe4cc87de",
+      "sha256": "967ed228f09da5ca914b2cda0469fa3d045db973d26742cf33ee507829b31097",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural contextual Russian أنواع القرب; full non-reliance on works and effort retained; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p548-03": {
-      "sha256": "78b3593af53bfdc43ca77ea769d7ae4c8ff953b6272f74b8e9011ea1076e9ef8",
+      "sha256": "100f5475f1abbaa5ce75dd6e7c113041e1ec0634265a053c3c45db94b9123959",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Complete actual545–550 with551 continuation read and Russian separately/back-compared.545 definition clarifies preceding544 technical الكون; passive avoids imposing unstated subject of يعمره; preserve هيهات هيهات repetition and explain context السوابق without omitting argument. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p548-04+v3-p549-01": {
       "sha256": "638ed3c4ad3bdccf0a6ff560ceb175b7193e4f9a73a194a19929b6db724df7ac",
@@ -29607,14 +29613,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p551-06": {
-      "sha256": "56990bc5e532ee08a75d723711f0a5456c601f16c935f70ec5cb7a6f3878cd72",
+      "sha256": "ab816243d249603bceab058650d8bba3c88c87b19e73b9a9ee3dadac21c52308",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p551-07+v3-p552-01": {
       "sha256": "32337e458e583b6cd451fcab3aa7c43920817442396184878a3de1d94cc63a75",
@@ -29667,24 +29674,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p552-06+v3-p553-01": {
-      "sha256": "afa16b1d73ca448d71bdf48148251adcad9173ede5283107bda4488727ff9d28",
+      "sha256": "26b4a07928566c4caad43029110299f6edab8afd94c63a802b425bf6a5d2b801",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Direct553 author grammatical argument: ل not التعليل; remove misleading causal Russian от in quoted definition, preserve full grammatical explanation/all clauses; same-agent visual/literary/back only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p553-02": {
-      "sha256": "a2bd4c1459c0052a5a1777de6e3ecc86352205a91d2366a1136cd7c9941417b7",
+      "sha256": "bc36d5bd1fafd337888987e50c937e3a7a5f1b3409ba329dbbe5b7b8ab94348a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Align repeated Ansari quote to explicit preceding noncausal preposition discussion; complete subsequent flame discussion retained; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p553-03": {
       "sha256": "53e9176e454610ba0319b575758823c9d7133317cec74e0c58de067f76421373",
@@ -29797,14 +29806,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p555-02": {
-      "sha256": "9e1c296ca5394e437d7828870946d1796aa530e5c3ce0bd9692d7a129ac50d38",
+      "sha256": "cd6913286f613573c05fa9b3c99b75dc53d5b9eabedc3e36818fcf52d0f8a559",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p555-03": {
       "sha256": "1ad85201d9ffe04783c1080f247668c3b8878e6da8ce7cdd66dc52e31ea46df6",
@@ -29837,14 +29847,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p555-06+v3-p556-01": {
-      "sha256": "ef17137609081e5e6faa313cfceccf0e33efea3e290f7fabc1ac35a21f96e544",
+      "sha256": "c510d2a53dac116de7ab381a2cde23514eee0393f47aeafcbfb7edfb6b97a1e4",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p556-02": {
       "sha256": "f1bf37bc312b916b8711a0f96f830674a87a24c1ff37a757a3f0dfd12b1bcda1",
@@ -29857,14 +29868,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p556-03": {
-      "sha256": "fc6588e0b2f6b28473ff4cb3431351575ff802431736ba7b2726c62df0824401",
+      "sha256": "11620fd0c15d1c1ab31bfed699da370e3aae9f838b21d1e7aabca5b7fde1e37c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual551–556 including557 continuation and full Russian independently read then compared back.553 explicitly says ل not causal but object relation; align544 definition/551 quotation, retain all alternatives. Natural Russian knowledge/state argument; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p556-04+v3-p557-01": {
       "sha256": "ad77df3ea925bfd335c30a4435ec950c31ea1ed2118a7ab1ff95861be1d5c309",
@@ -29887,14 +29899,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p557-03": {
-      "sha256": "a954bb4757663b2ee123301c0963fd42cd4a18b0a202f05a5cbf56c69fba839b",
+      "sha256": "7cf75ae37c9af772ed7302d891718d06d51b30e7a2c1904ee30f08010d1cb563",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual narrow print557-warid-exact22.png: kasra under ر and damma over د in subject وارِدُه, own transcription misplaced kasra on د. Complete Russian already treats incoming experience as subject; unchanged. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p557-04": {
       "sha256": "d7e7e5548ae22b4f46b39844a4f40aec3032c96e1af16cb8a8f6b1961a1c97e6",
@@ -29957,14 +29970,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p558-04+v3-p559-01": {
-      "sha256": "d80bccbd2363271a7d7930cb156c22e23c18d683b998daa89884d950bd104b1d",
+      "sha256": "85c94bcb5c4e7be2dd463b5ffcf4c355f819191a2ad47f75b2f3b0861e88c55e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual557–562/563 continuation and full Russian separately/back-compared.562-05 explicitly distinguishes technical الكشف/الوجود stages; make repeated لا وجودا محضا consistent as pure obretenie, keeping separate562-03 explicit denial of external-world disappearance. Natural مادونه Russian, no doctrinal additions; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p559-02": {
       "sha256": "67970e0b3ae63e0490a301ad194f44350b1bd2783a0ca23cdd679c484e153c60",
@@ -29987,14 +30001,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p559-04": {
-      "sha256": "7b0b2efaf70e1088f3b18b21c69308c39b5d2c473d9fea1d5167dde24b96acbe",
+      "sha256": "45b3c99753e76e5947b34341bc9a5f19268c4764a57519da7daccfd86fa79682",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual557–562/563 continuation and full Russian separately/back-compared.562-05 explicitly distinguishes technical الكشف/الوجود stages; make repeated لا وجودا محضا consistent as pure obretenie, keeping separate562-03 explicit denial of external-world disappearance. Natural مادونه Russian, no doctrinal additions; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p559-05": {
       "sha256": "973f886b3a4bfdcc537bdbfa52083ab3ba45a55309b126f3d070cbd9261a5f64",
@@ -30057,14 +30072,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p562-01": {
-      "sha256": "710666d09f1ab2e5228dce40af74abc740d6715bf5038511850a447133589547",
+      "sha256": "a18d1136801bcefad2a2bf9218f32fb980f1e1df01c8b58ddcc96364e736b0f2",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual557–562/563 continuation and full Russian separately/back-compared.562-05 explicitly distinguishes technical الكشف/الوجود stages; make repeated لا وجودا محضا consistent as pure obretenie, keeping separate562-03 explicit denial of external-world disappearance. Natural مادونه Russian, no doctrinal additions; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p562-02": {
       "sha256": "99d68b25704663963176ef457a8c0a717afc7c01f45f25f292d0a8413fba1780",
@@ -30097,14 +30113,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p562-05": {
-      "sha256": "54c9827cd9904d093fe5f298a77ba6fc851354f3e05a02882768ae5cb7a5051a",
+      "sha256": "00814fe5579bc95b6ff0832aa45527e9db6a417a35fd1c77f76d256be6220063",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual557–562/563 continuation and full Russian separately/back-compared.562-05 explicitly distinguishes technical الكشف/الوجود stages; make repeated لا وجودا محضا consistent as pure obretenie, keeping separate562-03 explicit denial of external-world disappearance. Natural مادونه Russian, no doctrinal additions; self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p562-06+v3-p563-01": {
       "sha256": "34b78b907e9c9a8ac380810c9ad62a8f36fdda4e46ddbe0c00e7d0a55402269a",
@@ -30408,14 +30425,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p567-02": {
-      "sha256": "210f7f4e611b0d4227b868bdc6b1932ce28b8f9e595f5bd9ca3051f856d3fbb5",
+      "sha256": "a5427995240da9f660b7da446c52860928b2c7cef9f08a6b90c6c878b2059c0b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual563–568/569 continuation full read; Russian reread and back-compared.567 يهذب supplies natural Russian implicit human object, غاية as purpose not limit; natural exclusion construction, all clauses retained. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p567-03": {
       "sha256": "a0a0a1d9c8e0642ad7e13041f584ad3eaca17c0a3f37c7b3a2617923764becb6",
@@ -30428,14 +30446,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p567-04": {
-      "sha256": "456cc510f233757d4137dbdb915dd9bf567f9e445fa96b83fa7771ec56b88d20",
+      "sha256": "daa3682539c32b1c210d409a11d96c145bfbdb52546d7f4439b36a8477ceb795",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual563–568/569 continuation full read; Russian reread and back-compared.567 يهذب supplies natural Russian implicit human object, غاية as purpose not limit; natural exclusion construction, all clauses retained. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p567-05": {
       "sha256": "233da605b2fb8627c7cc2f84f067372cb9f0136b62c45db1ce0ea4f788ea698a",
@@ -30578,44 +30597,48 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p570-03": {
-      "sha256": "57ae49fdfda57077d58837d35e5322c364e366c63cfd3cdb53bc23066e853014",
+      "sha256": "256542f9a36679cbf8379371275d1b663378ea4ebd0a363f33efcc44023701f9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full569–574 and575 continuation read, Russian separately/back-compared. Keep contrast efforts/deviation, poem reiterates failure to leave place despite actual travel, consistent purpose غاية, restore omitted ولله الهمم exclamation; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p570-04": {
-      "sha256": "1226ab8d24ba90d50614046ceb4eb3d5359b8d0eea85ad13646dd03ec294b773",
+      "sha256": "b3e9040dcaa00f5d8ab7934fdf690adaa1e0122d0cdb9e9c27d2929a8aa3278a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full569–574 and575 continuation read, Russian separately/back-compared. Keep contrast efforts/deviation, poem reiterates failure to leave place despite actual travel, consistent purpose غاية, restore omitted ولله الهمم exclamation; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p570-05": {
-      "sha256": "c8278b63e286e913b9013b8a08863638ebae93e257c83f8d8dce02351c2dd73c",
+      "sha256": "634b310d6126301a5e34f25dcb69f389f1ba343c9c39d91253935a1deaa3958d",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full569–574 and575 continuation read, Russian separately/back-compared. Keep contrast efforts/deviation, poem reiterates failure to leave place despite actual travel, consistent purpose غاية, restore omitted ولله الهمم exclamation; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p570-06": {
-      "sha256": "ed71f039ef9ebc8b914ed6bae49db0f67d9d752b01d82c65e21922a1444c1902",
+      "sha256": "5dfbd3bde04795cda6313ce1c7e2170253937d201cf7a0539fe031c9ae18f402",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full569–574 and575 continuation read, Russian separately/back-compared. Keep contrast efforts/deviation, poem reiterates failure to leave place despite actual travel, consistent purpose غاية, restore omitted ولله الهمم exclamation; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p570-07+v3-p571-01": {
       "sha256": "80e92109aba2138ba4e1e627e2a580a7e441679bed19189171d61f5b9097c518",
@@ -30759,24 +30782,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p573-07+v3-p574-01": {
-      "sha256": "f327a2a62820531adba160d94a98743430f7e8a3f841be8cba53de523cc89fab",
+      "sha256": "5ecde6f7ad859f18468f7f16700df5281a8b09fb6006581c0df4c7c271dc0110",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged print573-ittasalat22.png first اتصلت vs second وأوصلت: own first أوصلت mistaken. Russian distinguishes orientation/connection in seeking from bringing creatures through call/advice, not ontological union. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p574-02": {
-      "sha256": "baf0de0aa82085549596248508c861cb6ff3b27822ec6d33b9d997f614d2f233",
+      "sha256": "1260995c632736f2d176d36ba636798d86a6f3ef05cae28e96ec029435efe906",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full569–574 and575 continuation read, Russian separately/back-compared. Keep contrast efforts/deviation, poem reiterates failure to leave place despite actual travel, consistent purpose غاية, restore omitted ولله الهمم exclamation; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p574-03": {
       "sha256": "032407b21d9a600ab0582418b64ed281c4c8d20752c2274ad668840f11900f8c",
@@ -30839,14 +30864,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p575-04": {
-      "sha256": "db6a85defcc7a8561cedd202a52502955fb921069d9d774fb5a2ab355a9091c4",
+      "sha256": "ae4d2c192434cc28656aa9b9c9868fb1ba44e52adf0556d40549d0abf7a5b9df",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual575–579/580 continuation and full Russian separately/back-compared: مشاهد person receiving realization, natural ear-filling metaphor, retain both أضعافه وأضعاف أضعافه multiplications instead of compressing into one. Author criticism vs quoted opposition separate, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p575-05": {
       "sha256": "8081ddffd793a334ea699c9a843e86374ff438745c6b3202844b7e19b456b3bc",
@@ -30879,14 +30905,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p576-03": {
-      "sha256": "6507e818c4bf86d02a3b54a47977225972600da1e08539d8d8a774af5e4473d2",
+      "sha256": "0db2620faede0a2f4400120627a88c2000b5c2b2e9f37b7e8bd637bbf9fa44f1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual narrow print576-flame22.png shows اشتعال undotted ع not own اشتغال غ. Restore flame of love, distinct from mere occupiedness; complete degree/intensity/portion clauses retained. Narrow577 confirms printed فطرة, not silently changed to قطرة;576 كأن retained despite unusual syntax. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p576-04": {
       "sha256": "fb4f47ad49a9cb147fad54b887463d074f81a90e1fd7e29a11d6feae47941306",
@@ -31009,14 +31036,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p578-05+v3-p579-01": {
-      "sha256": "e6fde2959075f32252cdeab4911e1206688cd2e05efe2e8b160337fbbaf60046",
+      "sha256": "7b3aae7a7a1599fc57f5f6b3acbbe8d9e6c1fdac98570b3386345e661ab3289e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual575–579/580 continuation and full Russian separately/back-compared: مشاهد person receiving realization, natural ear-filling metaphor, retain both أضعافه وأضعاف أضعافه multiplications instead of compressing into one. Author criticism vs quoted opposition separate, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p579-02": {
       "sha256": "099eca798abc200010b96a201042953bb9e72c2d0a5c17ca7fd230c494499d97",
@@ -31069,24 +31097,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p579-07": {
-      "sha256": "1606c5bef458111910b129917de75d61366e171b2f7d8c518d97020455b1da34",
+      "sha256": "4893938800b206f7d986985d458794603b2e52dce52c96a9fc2049b52056c979",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual575–579/580 continuation and full Russian separately/back-compared: مشاهد person receiving realization, natural ear-filling metaphor, retain both أضعافه وأضعاف أضعافه multiplications instead of compressing into one. Author criticism vs quoted opposition separate, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p580-01": {
-      "sha256": "c6ab6395b67bac9cdfb815103bdfb43cc344765c5f349dc4acb0f43a6835b000",
+      "sha256": "1a2d2d8371ecaed7b07c692e5eb47bc988556cd41211fb49c4fd9bebc512a808",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual580–584 complete print and full Russian read separately/back-compared: natural الخطائين equivalent and explicit alternative أو (not silent conjunction). All chains/comparison layers/quotes preserved; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p580-02": {
       "sha256": "9339806b6e4db7889917e95bb5deeaabf248de73b482587a155ba4b018e96940",
@@ -31329,14 +31359,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p584-04": {
-      "sha256": "bace27ed7433c1122cbead5312afa45e1a57c6ae8e3c3ad941c57eb0aa19dbca",
+      "sha256": "138fa521cad2766072a59028be0083459895cfe35df3dad717bb05705c49a10a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual580–584 complete print and full Russian read separately/back-compared: natural الخطائين equivalent and explicit alternative أو (not silent conjunction). All chains/comparison layers/quotes preserved; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p584-05": {
       "sha256": "43cbdc730ddb7e992d56350f1c5269b31b174f4677f7983d5a56b434cdee98e6",

@@ -85,7 +85,7 @@
     "description": "Through516 complete pre/post snapshots preserve1bookmark,15positions,empty notes/read_chapters and exact preferences. Confirmed installed content_versionfd98943684debaea097bc0b929d2ea2c78eb81a8268967aff8bc691421d2120f before final capture; native WAL checkpoint0|0|0, waited capture exit0, then exact7field comparison. Later deliberate reader navigation outside preservation comparison."
   },
   "latest_corpus_check": "All3109rows exactly match through516 APK on seven fields/no extras/integrityok; protected first two volumes and personal/settings exact. All six pending units retained in metadata. New517–532 canonical changes not in checked APK.",
-  "current_source_update": "Manual detailed corrections517–544 and new own542 balagh note generated as3110records; latest positive runtime516 still3109historical records, not current bytes.",
+  "current_source_update": "Manual detailed passage review completed through584;3110current asset rows include own542 balagh note. Positive runtime516 remains3109historical rows; new517–584 bytes/note not yet checked by runtime.",
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
     "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
