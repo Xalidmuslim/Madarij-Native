@@ -28726,24 +28726,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p534-01": {
-      "sha256": "2d33d08d6895e46c27887f36dcc0d70d0463ae4ff3211e363e7b8e4545aef96b",
+      "sha256": "6f71a43272e33fee83c3b4f29f1148bb7ebfded049ac0fdda4153cc976147900",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Separate actual printed sentence before الله أكبر, avoid making takbir object of acquiring. Elliptical يؤخذ فيه object not conjecturally expanded; full repeated prayer/death narrative kept. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p534-02": {
-      "sha256": "e3dc15814f05e76dbb43f238fa5ccdd338907b8fd532a279275a953bbd90ea4d",
+      "sha256": "03f94db4a54b59cbede72c28033f6a51ee6ea0951438b6f47eabecdc765f0f7a",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "يصلي إليها directional, not prayer addressed to pillow; retain exact front-of-him cushion without inventing ritual purpose or dropping clause. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p534-03": {
       "sha256": "13a2fd7167a0bf177eece76eb88ed2750a84a8216f6ba10536507a898e0a3660",
@@ -28776,14 +28778,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p535-02": {
-      "sha256": "60bc5c2b8ef213864858583e64c69cee05ac49445e76fdd180627e340aae3f27",
+      "sha256": "35f9965a1406679534b3f471e198c46bdb7afcdd32a218d49570bbb9b5be374f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural Russian for clothing/adornment simile على العارفين ... على رؤوس الملوك; explicit beauty and heads preserved, no shortened generic conclusion. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p535-03": {
       "sha256": "ff342ad8e70592126ce1bab74800181dffab0f1f8804eb3ab2ce84320ad69594",
@@ -28796,14 +28799,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p535-04": {
-      "sha256": "31a4174b46719e54d05e26d2d9ba14e062f34f60670ee70f4b67ab0d3faded1f",
+      "sha256": "7ab6c850a27afb826ee16367fa4891daa0785c298d4e6363781081886a468faf",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged535 فمتعن with no final ي (declined defective active participle), own extra ي removed. RU two exertion-versus-empty-wish halves retained. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p535-05+v3-p536-01": {
       "sha256": "a98adb7179241906cc623fb10de1dd72918965ba878685257f9c5b9a8970b7c8",
@@ -28856,14 +28860,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p536-06": {
-      "sha256": "f9dfbfa0a83239a654aeeab640de06ceb3acbf03ee0a8f21ed8d9a880d44bd8c",
+      "sha256": "520a0997dc5e756b5b02e0a3b9f78799df0bcad21d8882867126ed10841cdf0e",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual enlarged536 فيستسلم with ت/س missing from own فيسلم. RU submits to both rulings same meaning, no change to qualified uncommanded-opposition clause. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p536-07+v3-p537-01": {
       "sha256": "e07baf32e9a3ee1a63b71e004368bc1d4c1c41246f0130a6ab24a4fe6db144bd",
@@ -28986,14 +28991,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p539-04+v3-p540-01": {
-      "sha256": "f33be150f6457020ddf98c1b4c743e47503b50d35b1ce54cd28790514ada1af8",
+      "sha256": "d1f471319b8e2e32879d010121177bbd0bef37e3621cb98b093c2caf85375be7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Natural Russian for لا يصلح عليه دنيا ولا دين, preserving explicit double negative and foundation metaphor; rest long author criticism and verse allusion not shortened. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p540-02": {
       "sha256": "41b418dac7267f035778f13372bda0f99ce811846a7a64c60dbf68feec4200be",
@@ -29056,14 +29062,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p541-03": {
-      "sha256": "8af91d001fcd6e0121ee69996633b2197a9d5c30901b1135285f053c129ef63c",
+      "sha256": "64b8a6509de802e0326effb8150ef686d92a561ee7578495fcc2f175cd613ef7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p541-04": {
       "sha256": "564a8645a2e7b3da5bec83318023329abd926858dbb64d86d79d3a70cc0e2153",
@@ -29146,14 +29153,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p543-01": {
-      "sha256": "3e93a175892a788da0ed152f699fb1c6a948b4237e64adb863c0c15581f8de16",
+      "sha256": "901b7c351e44672e97ffe44ae088ac0715326431b0ed750b0e2cba0c910cb06f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p543-02": {
       "sha256": "aa699893db43721ffc6b2a60436efdc5d35c6cfd542596151f563fa623b428dd",
@@ -29196,34 +29204,37 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p544-03": {
-      "sha256": "881a44f5f0d919228284a6adc1565bc6eb8f3b5812555abf6dfa518ede751be5",
+      "sha256": "8a4ea8e9db249debf4d0323af6b2d969c776996b627fdffeb3e0f6e3671a49b8",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p544-04": {
-      "sha256": "c09b8a2706d5261c01dada1e4ab57c09c38d56fd1b5edb54e9f797f57cee2d6c",
+      "sha256": "8e726b8da335b01468e89554444871a4baaf5d79a386a7cb1ed581488aa6b33b",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p544-05": {
-      "sha256": "f01d2f67feabdce90f15c4ca36efbf441a5c46ebce8c69c9f03dc336c51297ef",
+      "sha256": "d102efdd8ff05f2928bb58317d383a7590a7e7816f49360c5bd42549b15b7f49",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Actual full printed541–544 and Russian read separately then compared back: natural Russian, intact metaphors/alternative أو and no author material shortened. Same-agent self-review only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p544-06": {
       "sha256": "ca5dc7db2e0df0ac1565a1dc096732f62703f84b0a5a6fc60645c3c64ae53871",

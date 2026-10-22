@@ -21854,8 +21854,471 @@
         }
       ],
       "finding": "Actual532 عبد الله بن مبارك no ال; own added article removed in source. Full533 lightless-striving/hidden-innovation continuation retained, not newly traced to independent IbnMubarak source by this visual check."
+    },
+    {
+      "source_ids": [
+        "v3-p533-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وصلت",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "وصلت",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual533 طريق به وصلت positioning matches control, not moved from secondary. Full Qushayri/Daqaq/rosary/Junayd response retained, not new translator recommendation."
+    },
+    {
+      "source_ids": [
+        "v3-p534-01"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "وكان",
+          "secondary": "فكان",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "حركته",
+          "secondary": "حركتها",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual534 وكان remains و, حركتها with feminine suffix restored from own حركته. Complete legs/swelling/prayer/takbir/Jariri/suggested lying down/death story retained; actual punctuation الله أكبر separated in RU from objectless يؤخذ فيه without invented missing object."
+    },
+    {
+      "source_ids": [
+        "v3-p534-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "هذا",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual534 هذا before شيء printed, no deletion. Full young visitor/face/swelling/cushion/prayer/response/death sequence retained; RU pillow is direction not invoked recipient."
+    },
+    {
+      "source_ids": [
+        "v3-p534-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "له",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual534 فقلت without inserted له. Whole Friday/Nowruz/time/sheet-folding context retained, not merged with other Junayd death accounts."
+    },
+    {
+      "source_ids": [
+        "v3-p535-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رؤوس",
+          "secondary": "رءوس",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual535 رؤوس conventional hamza on و, not secondary standalone hamza form. Entire earlier mistaken devotees/practices and crown simile retained, RU naturalized preserving heads."
+    },
+    {
+      "source_ids": [
+        "v3-p535-04"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فمتعني",
+          "secondary": "فمتعن",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged535 فمتعن no final ي; own فمتعني corrected. Both parallel from-effort/without-effort errors and source pun متعن/متمن preserved, no inference effort itself dispensable."
+    },
+    {
+      "source_ids": [
+        "v3-p536-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "لطريقته وطريقة",
+          "secondary": "لطريقة",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual536 لطريقته وطريقة أصحابه includes both path references; not secondary short لطريقة. Blessing/approval and two admiration clauses intact."
+    },
+    {
+      "source_ids": [
+        "v3-p536-06"
+      ],
+      "decision": "correct_own_transcription",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيسلم",
+          "secondary": "فيستسلم",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "يشهده",
+          "secondary": "تشهده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual enlarged536 فيستسلم (ت/س) not own فيسلم, and يشهده masculine initial ي retained against secondary تشهده. Full religious/cosmic rule qualifier الذي لم يأمر بمعارضته explicit, all4counterpositions opinion/reason/taste/prompt preserved."
+    },
+    {
+      "source_ids": [
+        "v3-p536-07",
+        "v3-p537-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيخلص",
+          "secondary": "فتخلص",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "السوء",
+          "secondary": "السوى",
+          "tokens": 1
+        },
+        {
+          "tag": "delete",
+          "control": "والخبر",
+          "secondary": "",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "والشبه",
+          "secondary": "والشبهة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual536 فيخلص masculine not secondary فتخلص; السوء hamza not السوى; both والخبر and بالشك والشبه plural present. Whole two opposition types/pure heart/meetingGod/author qualifying أهل الاستقامة retained across537."
+    },
+    {
+      "source_ids": [
+        "v3-p537-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "الاتحاد",
+          "secondary": "الالحاد",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "بما",
+          "secondary": "فيما",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "الخلائق",
+          "secondary": "الخلق",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "واذا",
+          "secondary": "فاذا",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليهم",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual537 أهل الاتحاد not الإلحاد, بما not فيما, الخلائق not الخلق, وإذا not فإذا; no inserted عليهم. Whole opponent theory stated as theirs, before author explicit rejection and two modes of divine will539."
+    },
+    {
+      "source_ids": [
+        "v3-p537-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "سر",
+          "secondary": "بسر",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual537 سر الله without secondary added ب. Author attributed anti-condemnation maxim kept as quoted opponent, no translator endorsement or unprinted personal name inserted."
+    },
+    {
+      "source_ids": [
+        "v3-p537-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "والالحاد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual537 عين الاتحاد والانسلاخ no secondary extra والإلحاد. Full author defense of شيخ الإسلام against opponent interpretation and divine/created-speech comparison retained."
+    },
+    {
+      "source_ids": [
+        "v3-p538-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "تعالى",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "اممهم",
+          "secondary": "من امن بهم",
+          "tokens": 3
+        }
+      ],
+      "finding": "Actual538 no added تعالى and أوصوا أممهم not secondary من آمن بهم. Complete prophets through death/enjoining community/three levels of condemnation/mustard seed argument retained, external full Muslim body read separately."
+    },
+    {
+      "source_ids": [
+        "v3-p538-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الله",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual538 no second extra الله at comparison locus; full hearts/faces/disagreement/curse/Israel comparison complete, not homogenized into earlier other hadith wording."
+    },
+    {
+      "source_ids": [
+        "v3-p539-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "اعلى",
+          "secondary": "على",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "انكار",
+          "secondary": "جهاد",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual539 أعلى with أ and وجهاد أهل العلم إنكار باللسان, not secondary على/جهاد. Whole rhetorical question and hand/tongue contrast kept as author claim, no added practical instructions."
+    },
+    {
+      "source_ids": [
+        "v3-p539-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "delete",
+          "control": "يعلم",
+          "secondary": "",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual539 المشاهد يعلم includes يعلم. Whole opponent quotation preserved before complete religious/cosmic-will distinction and examples539-03. Entire long540 Quran2:9–16 plus RU checked without dropping repeated ما يشعرون/لا يعلمون or other clauses."
+    },
+    {
+      "source_ids": [
+        "v3-p541-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يفيد صاحبه",
+          "secondary": "تفيد صاحبها",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "فيفيده",
+          "secondary": "فتفيده",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p541-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "منه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p541-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "رحمه الله واشوقا",
+          "secondary": "واشوقاه",
+          "tokens": 3
+        },
+        {
+          "tag": "replace",
+          "control": "فتقاضته",
+          "secondary": "فتقاضت",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p541-04"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "الصديق",
+          "tokens": 1
+        },
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "وارضاه",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p542-02"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "insert",
+          "control": "",
+          "secondary": "عليه السلام",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p543-01"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "فيلقي",
+          "secondary": "ويلقي",
+          "tokens": 1
+        },
+        {
+          "tag": "replace",
+          "control": "في الباب",
+          "secondary": "بالباب",
+          "tokens": 2
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p544-03"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "يا موسى",
+          "secondary": "ياموسى",
+          "tokens": 2
+        },
+        {
+          "tag": "replace",
+          "control": "لثلاث",
+          "secondary": "لثلاثة",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
+    },
+    {
+      "source_ids": [
+        "v3-p544-05"
+      ],
+      "decision": "retain_control",
+      "checked_differences": [
+        {
+          "tag": "replace",
+          "control": "او",
+          "secondary": "اذ",
+          "tokens": 1
+        }
+      ],
+      "finding": "Actual full541–544 images and545 continuation read against complete bilingual units. Print541 masculine يفيد صاحبه/فيفيده, no inserted منه, رحمه الله/واشوقا/فتقاضته, no added الصديق/وأرضاه;542 no extra عليه السلام;543 فيلقي/في الباب;544 لثلاث/أو retained. Russian revised separately and back-compared; modern footnotes excluded; self-review only."
     }
   ],
-  "record_count": 1051,
+  "record_count": 1075,
   "unreviewed_candidates_remain": true
 }

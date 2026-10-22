@@ -2512,6 +2512,55 @@
       ],
       "finding": "Read full matching maxims and locally present chains: Nasrabadi أصل التصوف...تعظيم حرمات المشايخ/رؤية أعذار الخلق/المداومة على الأوراد differs author enumeration, retained author;IbnNujayd الصبر تحت الأمر والنهي same;Ahmad فباطل عمله confirms print531 correction;AbuYazid يرتقى...أداء الشريعة differs author يرتفع...حفظ الحدود والشريعة, not normalized;Hayri في الباطن differs author باطن في القلب, preserved. Search after joining line breaks was necessary; earlier line-local missing hits not treated as proof source absent. Did not establish IbnNujayd531-02 ملازمة العبودية phrasing or all other sayings independently. No new isnad/hadith grades or modern footnotes imported.",
       "method": "Same-agent bounded classical text/actual529–533 images/Russian literary/back self-review; no independent human certification."
+    },
+    {
+      "source_ids": [
+        "v3-p533-06",
+        "v3-p535-03"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "bounded_qushayri_junayd_maxim_and_death_report_read_not_all_neighboring_stories_verified",
+      "checked_primary_records": [
+        {
+          "path": "data/0465IbnHawazinQushayri/0465IbnHawazinQushayri.RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.Shamela0009953-ara1",
+          "blob": "f187d52c74b16d2d9843ed3f44c69914480aa668",
+          "digital_location": "Junayd biography paragraph الطرق كلها مسدودة and concluding death paragraph وقيل دخل ابن عطاء على الجنيد وهو يجود بنفسه"
+        }
+      ],
+      "finding": "Read complete short الطرق كلها...إلا على من اقتفى أثر الرسول and death greeting-delay/apology فلقد كنت في وردي ثم مات. Author longer Sunni-path conditions and death turn-to-qibla/takbir retained, no inserting or omitting to harmonize. Lookup did not locate exact533 rosary or535 effort-pun quote with tested phrases; no claim these absent from whole classical literature or fully traced; neighboring four death versions not independently authenticated here.",
+      "method": "Same-agent bounded classical text, actual533–537 images and Russian literary/back self-review, not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p538-01"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_muslim_ibnmasud_three_levels_body_and_two_routes_read",
+      "checked_primary_records": [
+        {
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+          "digital_location": "digital80 complete two chain routes and AbuRafi/IbnUmar/IbnMasud encounter before chapter21/record81; commonly Muslim50"
+        }
+      ],
+      "finding": "Complete IbnMasud ما من نبي بعثه الله ... successors say not-do/do not-command ... by hand/tongue/heart ... وليس وراء ذلك من الإيمان حبة خردل plus encounter/second route read. Author general synopsis of three levels retained without inserting full hadith or encounter; no fresh authenticity/individual-application ruling. Neighboring538 other reports not claimed fully authenticated by this lookup.",
+      "method": "Same-agent complete bounded classical body/actual538–540/Russian literary/back self-review, not independent human."
+    },
+    {
+      "source_ids": [
+        "v3-p542-02"
+      ],
+      "reviewed_on": "2026-10-22",
+      "status": "complete_bukhari6982_read_zuhri_balagh_scope_disclosed_separately",
+      "checked_primary_records": [
+        {
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "blob": "2b5a3d6bd0fcc94da517650a0dce6c70d3ec52b3",
+          "digital_location": "Complete6982 chain and first-revelation/Waraqa/mountain narrative, including فيما بلغنا before mountain episode and concluding IbnAbbas gloss"
+        }
+      ],
+      "finding": "Read full bounded primary. Mountain passage introduced فيما بلغنا; author synopsis retained including وتطمئن vs primary وتقر. Own separate reader note distinguishes Zuhri balagh from uninterrupted Aisha report, no new authenticity grade, no modern apparatus copied. Neighboring541/542 reports not thereby fully traced.",
+      "method": "Same-agent bounded full classical/control print/Russian semantic/literary/back self-review, not independent human."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage.",
