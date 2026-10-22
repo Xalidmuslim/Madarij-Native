@@ -26420,14 +26420,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p486-02": {
-      "sha256": "707daa1cb12b2965bad15b85b45334aeb84fbf5f3e5be94fc66a45ed47ab3840",
+      "sha256": "0b1c7af31b9a2239f896b06dbf91c93d5cd19f0ba4f4179ae7b269ae15dba4a7",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 Russian-only reading480–489, then actual printed486/488/489 and whole Arabic back-compared. Natural Russian for ذوق طعم/فيـذوق طعمه retains sense/taste and repeated metaphor, no removal of author repetitions.489 بحيث لا يترجح عنده جانب التصديق: explicit Russian subject and belief alternative instead of dangling перевешивает в человеке, preserve prior lack-of-certainty clause. Same-agent only; six pending unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p486-03": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -26543,14 +26544,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p488-04+v3-p489-01": {
-      "sha256": "1a9c973ada33f56cf050c05bb9e46398e75533d2d73385d6461d1de3f2062a3c",
+      "sha256": "e23a87dedf471c685ada60256a3d2974912de7a4a228db46bd21ff94e27550cf",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 Russian-only reading480–489, then actual printed486/488/489 and whole Arabic back-compared. Natural Russian for ذوق طعم/فيـذوق طعمه retains sense/taste and repeated metaphor, no removal of author repetitions.489 بحيث لا يترجح عنده جانب التصديق: explicit Russian subject and belief alternative instead of dangling перевешивает в человеке, preserve prior lack-of-certainty clause. Same-agent only; six pending unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p489-02": {
       "sha256": "dcece4887b4f3806cf6e180ebafb8784cd323fcf52904b676c29f08f2d0fc4ee",
@@ -26603,7 +26605,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p489-07": {
-      "sha256": "19762316d215f03b9b3982a524cab84ed7f6b0969c1b2b48b601418294aab917",
+      "sha256": "91eaafabd9dc2468e60769f3bf3124f8ca866add9db0c01b4dc45b1fe85ac0d9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -26611,7 +26613,7 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual489 والسير, not own التشمير. Restore traveling-to-Lord expression; earlier previous unit terms not globally harmonized. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
+      "resolution": "2026-10-23 Russian-only reading480–489, then actual printed486/488/489 and whole Arabic back-compared. Natural Russian for ذوق طعم/فيـذوق طعمه retains sense/taste and repeated metaphor, no removal of author repetitions.489 بحيث لا يترجح عنده جانب التصديق: explicit Russian subject and belief alternative instead of dangling перевешивает в человеке, preserve prior lack-of-certainty clause. Same-agent only; six pending unchanged. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p490-01": {
       "sha256": "f111e4d7ac104dbc3eab08b107758a947319763e8a1d4d0cfc0a40e447eecede",
@@ -26624,14 +26626,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p490-02": {
-      "sha256": "e3580ac1fa81c718407ff7e32cad15f6e82cabc20fc3cfd47535f0490f8840fb",
+      "sha256": "1029e775454d06c47751df1fad08ac07e1dd5d065bbac3a44ee1bfcd5970a393",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Russian tautology вкушение вкуса replaced by ощущение вкуса both occurrences, preserving ذوق/طعم and repeated author phrase. Borrowed clothing remains borrowed, not stolen/owned. Full preceding promise/pledge contrast unchanged. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p490-03": {
       "sha256": "17231911f73dd513e429cba79c9d98c385e0cf260a7868c16423e7262aae9d21",
@@ -30875,14 +30878,15 @@
       "resolution": "Actual575–579/580 continuation and full Russian separately/back-compared: مشاهد person receiving realization, natural ear-filling metaphor, retain both أضعافه وأضعاف أضعافه multiplications instead of compressing into one. Author criticism vs quoted opposition separate, same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p575-05": {
-      "sha256": "8081ddffd793a334ea699c9a843e86374ff438745c6b3202844b7e19b456b3bc",
+      "sha256": "e09bfba5c2bfdedabdec0b078f99c2406a2bda6ea3e3b0d116960399aa01e229",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Restore printed grammatical model مفاعلة omitted in previous rendering; natural Russian for في سر العبد وباطنه retains both inner/socret descriptions. No new devotional ruling. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p576-01": {
       "sha256": "da555466671359ea832c9b90578831991e2a036609a76f551d1ce3dcd3a69fd5",
@@ -30905,7 +30909,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p576-03": {
-      "sha256": "0db2620faede0a2f4400120627a88c2000b5c2b2e9f37b7e8bd637bbf9fa44f1",
+      "sha256": "8ec28a887bce6730e43ad9f6d334bc5008c54d98f553a3acab8c1fd05cdf3067",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -30913,27 +30917,29 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual narrow print576-flame22.png shows اشتعال undotted ع not own اشتغال غ. Restore flame of love, distinct from mere occupiedness; complete degree/intensity/portion clauses retained. Narrow577 confirms printed فطرة, not silently changed to قطرة;576 كأن retained despite unusual syntax. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Clarify comparison لا أحلى منها ولا أطيب refers to delight, retain flame restored earlier and both بحسب clauses; avoid dangling nominal chain сообразно поглощённости/доле. No change to disputed لطف equivalence or God-name reading. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p576-04": {
-      "sha256": "fb4f47ad49a9cb147fad54b887463d074f81a90e1fd7e29a11d6feae47941306",
+      "sha256": "b58484e14c3e6c290ea5acc50640185a329343727e48d9e121fe6bfa076f5645",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Replace isolated conditional sentence fragment with Russian predicate pointing to immediately preceding described state. Preserve conditional إن كان, source attribution and paragraph IDs; unusual printed كأن not emended. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p576-05": {
-      "sha256": "d91d8a0a0b3471ac750a889d791483680f493718235b62b469868c733ba1cccb",
+      "sha256": "4a7c2a5c3f7b0edeeba0e35dd6acd44704e4388d5cf99287a393c85855f802ed",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Separate quoted Bukhari definition with quotation marks; preserve full subsequent condition/result without merging/dropping clauses. Completes preceding introductory colon. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p576-06": {
       "sha256": "eb317e997eb2a0da62cd6701fed3e8fb5630268c8f5f3fcf713a42ce326c6a2d",
@@ -31119,14 +31125,15 @@
       "resolution": "Actual580–584 complete print and full Russian read separately/back-compared: natural الخطائين equivalent and explicit alternative أو (not silent conjunction). All chains/comparison layers/quotes preserved; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p580-02": {
-      "sha256": "9339806b6e4db7889917e95bb5deeaabf248de73b482587a155ba4b018e96940",
+      "sha256": "894a73f07e7e94a0842bcdc0d2bf11997274ee85fc739b11501761ae53d381b6",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 actual580 chain/report viewed and complete Arabic back-compared after Russian-only reread: natural chain syntax retains all three narrators/حدثنا and Thabit attribution, explicit Russian reward object for استوفيت عملك, remove ungainly слышал о Тебе что. All seventy-year repetitions and prayer kept; no new authenticity grade. Same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p580-03": {
       "sha256": "4d36cdfbd5d4f5532f4f46d998af2c64d1c4bad27f76ca93bca55e4a957687c1",
@@ -31169,14 +31176,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p581-03": {
-      "sha256": "05f4cd1a9a837a9b44716bba09e1ef70e1133f0a6da5ab906472676dcec4595d",
+      "sha256": "b1c189ead1e121bafba6e7bf0398383c787588017dbc69e850b7ae8899d78c2c",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Natural Russian definition for وهو إدراك عين البصيرة لصحة الخبر وثبوت مخبره, retains inward-eye metaphor and two epistemic objects, not physical sensory vision. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p581-04": {
       "sha256": "00b571ffbf6222ed889e3179236a5677ce4af43124a7c0868aaa835dd2c32daa",
@@ -31219,14 +31227,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p582-01": {
-      "sha256": "d6f582e43dff46814820467107ee5df58e41a7dd046209e2b5e3b72e62b5f257",
+      "sha256": "7ec2c72bf7342b402a3782403375f54a1e2dad53f168c6938ec66034930fef00",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Replace unnatural говорит им со Своим рабом with explicit revelation antecedent. Retain two speech clauses and all command/kingdom/ascending/descending details; no theological stance changed. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p582-02": {
       "sha256": "09a41954f0cb3ff9dbfdbef9e982d3291be912a2baa1c9424c446d027bcc5303",
@@ -31370,15 +31379,16 @@
       "resolution": "Actual580–584 complete print and full Russian read separately/back-compared: natural الخطائين equivalent and explicit alternative أو (not silent conjunction). All chains/comparison layers/quotes preserved; same-agent only. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p584-05": {
-      "sha256": "43cbdc730ddb7e992d56350f1c5269b31b174f4677f7983d5a56b434cdee98e6",
+      "sha256": "8d7cea48e83a96088ce46c83fe6c13bcf88e521fd79e1365951b90501d327d1f",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "2026-10-23 targeted literary correction. Russian read separately, actual control print490/575/576/581/582/584 viewed and complete Arabic compared back. Remove calque ближайшее к приемлемому понимание: printed أقرب ما يحمل عليه كلامه has no independent word приемлемый. Retain author qualification مع قلقه and separate سوء تعبير, full duties comparison/final glorification. Same-agent self-review only; six pending units untouched. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     }
   },
-  "last_updated": "2026-10-21"
+  "last_updated": "2026-10-23"
 }

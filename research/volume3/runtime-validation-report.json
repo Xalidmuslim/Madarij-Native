@@ -6,7 +6,7 @@
   "apk_sha256": "cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6",
   "volume3_asset_sha256": "b3168429bb94f81833f093fb2d9306b592993c42cf3dabee1e343e88861d3aa6",
   "zip_integrity_checked": true,
-  "apk_asset_matches_repository": true,
+  "apk_asset_matches_repository": false,
   "signature_verified": "APK Signature Scheme v2",
   "jvm_test_suites": 17,
   "jvm_tests": 97,
@@ -86,7 +86,7 @@
     "description": "Through584 complete pre/post snapshots preserve1bookmark,16positions,empty notes/read_chapters and exact preferences. Confirmed content_version 04190c7459b33d1ed5224b645f281b351cbccac45c7cca8de2c5898e51ecc102 before native WAL checkpoint0|0|0; waited final archive completion then compared3110rows across seven fields. Later deliberate reader navigation outside preservation comparison."
   },
   "latest_corpus_check": "All3110rows exactly match current through584 APK and repository asset across seven fields; no extras/integrityok; first two volumes and personal/preferences exact. Six pending units retained, publication_ready false.",
-  "current_source_update": "Current generated asset through584 is covered by actual runtime exact-row comparison, including14th own542 balagh note. Later citation/contextual journals do not change packaged text.",
+  "current_source_update": "2026-10-23:12targeted Russian literary corrections after checked584 APK; new generated asset is not yet covered by runtime. Arabic/source IDs/count unchanged. Latest positive historical APK cce40a91389b1b24b12f37ed947f759c67d5538179e4f66c0bb33c9c58dd4bd6.",
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
     "volume3_asset_sha256": "bda70385476667531ab8c180f1553b32a4a84f928b0899cc96eec90905e8e837",
