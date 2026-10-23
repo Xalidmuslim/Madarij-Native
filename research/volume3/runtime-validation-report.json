@@ -3,8 +3,8 @@
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
   "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "8cfb7e0224c3b27e94664ec8cddf09d0bd83d94b22597904ae5278957f9fffda",
-  "volume3_asset_sha256": "6b68d0b70d185baa732200fc0bbd79e974a13df3081a276b3b030934de7210e2",
+  "apk_sha256": "9f5dd9c6f0653fb4d00d71a6d4975b5676f9f9aee2eefc1c0d903a490eae4650",
+  "volume3_asset_sha256": "0edfe9971bae04b363053844d620a9049d5854940b4b65a998479696b65353f2",
   "zip_integrity_checked": true,
   "apk_asset_matches_repository": true,
   "signature_verified": true,
@@ -34,7 +34,6 @@
     "extra_volume3_rows": 0,
     "unresolved_source_ids_in_checked_apk": [
       "v3-p110-04",
-      "v3-p403-01+v3-p404-01",
       "v3-p436-05"
     ],
     "all_3112_packaged_rows_exactly_match_database": true
@@ -46,8 +45,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 16,
-      "rows_after": 16,
+      "rows_before": 17,
+      "rows_after": 17,
       "unchanged": true
     },
     "notes": {
@@ -61,18 +60,17 @@
       "unchanged": true
     },
     "reading_history": {
-      "rows_before": 18,
-      "rows_after": 18,
-      "unchanged": true
+      "rows_before": 21,
+      "rows_after": 21,
+      "unchanged": false
     }
   },
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
   "visually_exercised": [
-    "After code-only reindex, exact query муфааля now gives1result Чистота575 where same APK asset before fix gave0; actual settled screenshot runtime-search23-model.png viewed.",
-    "Opened result575-05. Actual settled reader image runtime-search23-reader-model-settled.png shows complete corrected Russian paragraph, including model муфааля (مفاعلة), inner-address definition and first of three points. Draft/header Чистота preserved.",
-    "Previously failing multiword query происходит аль-Вадуд now gives1result Чистота576-04; actual settled runtime-search23-name.png viewed with complete corrected conditional/attribution preview.",
-    "Opened576-04; settled runtime-search23-reader-name.png shows complete corrected Russian conditional and attribution, corresponding Arabic above and next Arabic citation below."
+    "Actually viewed settled query медлить принадлежит:1result Любовь showing poem opening; opened result and viewed correct403 beginning with Том3·черновик header.",
+    "Actual runtime-comparison23-reader-poem-mid.png shows complete corrected опереди же истлевающие кости and neighbouring wish/death distinction.",
+    "Actual runtime-comparison23-reader-poem-giving.png and giving-full.png show complete separate divine-enabling sentence, entire corrected ownership/withholding/call/delay couplet through его?, and following rhetorical question. No claim that every22couplets was visually reread on Android; all22 were checked against controlPDF and all3112 records matched actualDB."
   ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
@@ -83,18 +81,18 @@
   ],
   "publication_ready": false,
   "independent_human_review": false,
-  "personal_data_update_scope": "Complete before/after tar snapshots around current APK import, before deliberate QA reading. content_version cc620b87... confirmed before WAL FULL checkpoint0|5969|5969; checkpoint fully written, no busy flag. Both tar-producing processes completed exit0 before read-only comparisons. Later intentional reader navigation excluded.",
-  "latest_corpus_check": "All 3112 packaged records exactly match actual SQLite rows across seven fields. All 55 changed Russian author units and16 own notes included; three critical pending retained. No Arabic, protected-volume or personal/preference change.",
+  "personal_data_update_scope": "Complete pre-install and post-new-import snapshots, both tar producers exit0 before comparison. New content version2e09a457... confirmed before WAL FULL0|5928|5928; no busy, all pages written. User history not byte-identical: one old daily436 QA note counter+60, no lost/added IDs; all other tested fields unchanged. Later deliberate reader navigation excluded.",
+  "latest_corpus_check": "All3112 records match actual SQLite across7fields, including ten changed Russian units, one corrected Arabic lam and own explanatory note. Two critical units remain. All4528 search-index records normalized correctly. No loss of protected volumes or user-data IDs.",
   "current_source_update": {
     "date": "2026-10-23",
-    "scope": "55 author Russian units (7 prose/48 titles) plus own-note update/additions; Arabic/IDs unchanged.",
-    "current_asset_sha256": "6b68d0b70d185baa732200fc0bbd79e974a13df3081a276b3b030934de7210e2",
+    "scope": "Ten Russian author units, one corrected transcription letter and own poem-note reclassification; sourceIDs/pages unchanged.",
+    "current_asset_sha256": "0edfe9971bae04b363053844d620a9049d5854940b4b65a998479696b65353f2",
     "author_records": 3096,
     "own_notes": 16,
     "reader_records": 3112,
-    "critical_pending": 3,
+    "critical_pending": 2,
     "new_runtime_import_checked": true,
-    "content_version": "cc620b87dd236bfe7e0f34c480d1a18b360177625593eeaf47ab1b31a588ec4c"
+    "content_version": "2e09a457a8d9b204593f2640b7107709c73f62276f34791ba2934ea78ed641af"
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -119,13 +117,11 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Actual post-import screens: detachment search and complete reader246-03; pronoun search and complete reader247-03. Other historical checks retained separately; no claim of manual opening of every changed paragraph/all186 targets. Also targeted new own-note436 search and upper reader card viewed; visibly distinct from author body.",
+  "visual_check_scope": "Current new source actually imported. Search-to-reader and all three revised poem locations visually checked on settled screenshots; not a full582-page device walkthrough.",
   "current_visual_checks": [
-    "Exact query уединённой отрешённости gives2results in Нужда вАллахе, corresponding246-03/05; actual settled runtime-context23-detachment-results.png viewed.",
-    "First result opened: runtime-context23-reader246.png directly viewed, complete original Arabic and corrected Russian246-03 visible, header Том3 черновик.",
-    "Query гибнет исчезает наряду gives1target247-03; actual runtime-context23-pronoun-search.png viewed with complete corrected Russian preview.",
-    "Settled reader247-03 directly viewed: complete Arabic and final Russian pronouns in runtime-context23-reader247-settled.png; following Arabic247-04 and start of Russian visible. Earlier two-second image was transient empty layout and not accepted as positive evidence.",
-    "Search параллельном кушайри gives1target v3-p436-05-ru-editor-note-1. Opened settled note436: runtime-context23-reader-note436.png directly viewed. Own text appears in distinct bordered Пояснение редакции card; its opening and alternative قرب/موت readings visible, author text not presented as note. Remaining lower note text was checked in exact seven-field database comparison, not claimed fully visible in this screenshot."
+    "Actually viewed settled query медлить принадлежит:1result Любовь showing poem opening; opened result and viewed correct403 beginning with Том3·черновик header.",
+    "Actual runtime-comparison23-reader-poem-mid.png shows complete corrected опереди же истлевающие кости and neighbouring wish/death distinction.",
+    "Actual runtime-comparison23-reader-poem-giving.png and giving-full.png show complete separate divine-enabling sentence, entire corrected ownership/withholding/call/delay couplet through его?, and following rhetorical question. No claim that every22couplets was visually reread on Android; all22 were checked against controlPDF and all3112 records matched actualDB."
   ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
@@ -225,7 +221,7 @@
       "Opening that search result displays full updated Arabic/Russian page 321 paragraph in reader, with Том 3 · черновик header."
     ]
   },
-  "jvm_test_scope": "101 JVM tests /18 suites passed after previous Unicode FTS code fix, zero failure/error; application/test JVM code unchanged during this text continuation. New assembleDebug succeeds with current texts. Current 24 Python tests pass after55 Russian edits and own-note updates.",
+  "jvm_test_scope": "101 tests/18 suites passed for preceding unchanged application code. No new Kotlin change in this book correction continuation;24 current Python tests passed.",
   "intermediate_p096_build": {
     "apk_sha256": "9441650dd073e3988e4a0af4c13d08cfc45cc63729b8525022cc16b3f656a8b1",
     "asset_sha256": "3d0c7dac83c2a60b41c0296dab654a8b433dfbf12a8f845694309f4ede9c4a79",
@@ -1325,75 +1321,24 @@
     "compared_index_rows": 4528,
     "bad_normalized_rows": [],
     "queries_volume3": {
+      "\"медлить\"* \"когда\"*": [
+        "v3-p361-03-ru",
+        "v3-p403-01-ru"
+      ],
       "\"уединенной\"* \"отрешенности\"*": [
         "v3-p246-03-ru",
         "v3-p246-05-ru"
       ],
-      "\"маназил\"* \"ас\"* \"саирин\"*": [
-        "v3-p075-03-ru",
-        "v3-p092-03-ru",
-        "v3-p107-04-ru",
-        "v3-p108-04-ru",
-        "v3-p109-03-ru",
-        "v3-p116-04-ru",
-        "v3-p132-04-ru",
-        "v3-p163-04-ru",
-        "v3-p177-05-ru",
-        "v3-p184-03-ru",
-        "v3-p184-07-ru",
-        "v3-p185-05-ru",
-        "v3-p204-04-ru",
-        "v3-p205-02-ru",
-        "v3-p219-05-ru",
-        "v3-p221-06-ru",
-        "v3-p239-04-ru",
-        "v3-p248-04-ru",
-        "v3-p254-08-ru",
-        "v3-p256-05-ru",
-        "v3-p263-03-ru",
-        "v3-p284-02-ru",
-        "v3-p293-06-ru",
-        "v3-p312-02-ru",
-        "v3-p320-02-ru",
-        "v3-p325-03-ru",
-        "v3-p330-02-ru",
-        "v3-p334-02-ru",
-        "v3-p350-03-ru",
-        "v3-p360-03-ru",
-        "v3-p361-01-ru",
-        "v3-p404-03-ru",
-        "v3-p407-05-ru",
-        "v3-p407-07-ru",
-        "v3-p425-04-ru",
-        "v3-p438-02-ru",
-        "v3-p443-09-ru",
-        "v3-p444-03-ru",
-        "v3-p447-02-ru",
-        "v3-p455-04-ru",
-        "v3-p459-05-ru",
-        "v3-p472-02-ru",
-        "v3-p472-03-ru",
-        "v3-p476-04-ru",
-        "v3-p486-04-ru",
-        "v3-p544-03-ru",
-        "v3-p551-05-ru",
-        "v3-p566-03-ru"
-      ],
-      "\"единственного\"* \"отрешения\"*": [],
       "\"муфааля\"*": [
         "v3-p575-05-ru"
-      ]
+      ],
+      "\"сбереги\"* \"истлевающие\"*": []
     },
-    "content_version": "cc620b87dd236bfe7e0f34c480d1a18b360177625593eeaf47ab1b31a588ec4c",
+    "content_version": "2e09a457a8d9b204593f2640b7107709c73f62276f34791ba2934ea78ed641af",
     "content_version_matches_expected": true,
-    "scope": "Read-only actual post-import snapshot. Entire index normalization and selected corrected text/title queries; not human literary certification."
+    "scope": "Actual read-only post-import snapshot, complete index normalization and selected searches; not literary certification."
   },
-  "reading_history_followup": {
-    "before": 18,
-    "after": 18,
-    "all_fields_unchanged": true,
-    "scope": "Current before/after import snapshots, before subsequent deliberate QA reading."
-  },
+  "reading_history_followup": "Not byte-identical: existing daily436 note entry330→390seconds, +60; all IDs/date/chapter/paragraph unchanged and no added/lost entries. Reader records elapsed time on lifecycle events. Observed change is compatible with active prior QA reader; exact causation not instrumented. Do not claim exact preservation of all history fields.",
   "historical_literary23_before_contextual_followup": {
     "date": "2026-10-23",
     "apk_sha256": "591ef044cb83d9e773667fd14ce78216327aca2e859b6fcdb2dd41f3492a68d3",
@@ -1506,5 +1451,182 @@
       "new_runtime_import_checked": false,
       "previous_positive_apk_not_current_text": true
     }
+  },
+  "historical_contextual23_before_comparison_followup": {
+    "date": "2026-10-23",
+    "apk_sha256": "8cfb7e0224c3b27e94664ec8cddf09d0bd83d94b22597904ae5278957f9fffda",
+    "volume3_asset_sha256": "6b68d0b70d185baa732200fc0bbd79e974a13df3081a276b3b030934de7210e2",
+    "actual_database": {
+      "integrity_check": "ok",
+      "chapters_by_volume": {
+        "1": 90,
+        "2": 9,
+        "3": 32
+      },
+      "volume3_author_paragraphs": 3096,
+      "volume3_editor_notes": 16,
+      "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+      "comparison_fields": [
+        "id",
+        "chapterId",
+        "ordinal",
+        "ar",
+        "ru",
+        "role",
+        "source"
+      ],
+      "extra_volume3_rows": 0,
+      "unresolved_source_ids_in_checked_apk": [
+        "v3-p110-04",
+        "v3-p403-01+v3-p404-01",
+        "v3-p436-05"
+      ],
+      "all_3112_packaged_rows_exactly_match_database": true
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 16,
+        "rows_after": 16,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "reading_history": {
+        "rows_before": 18,
+        "rows_after": 18,
+        "unchanged": true
+      }
+    },
+    "reading_preferences_unchanged": true,
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "personal_data_update_scope": "Complete before/after tar snapshots around current APK import, before deliberate QA reading. content_version cc620b87... confirmed before WAL FULL checkpoint0|5969|5969; checkpoint fully written, no busy flag. Both tar-producing processes completed exit0 before read-only comparisons. Later intentional reader navigation excluded.",
+    "latest_corpus_check": "All 3112 packaged records exactly match actual SQLite rows across seven fields. All 55 changed Russian author units and16 own notes included; three critical pending retained. No Arabic, protected-volume or personal/preference change.",
+    "current_source_update": {
+      "date": "2026-10-23",
+      "scope": "55 author Russian units (7 prose/48 titles) plus own-note update/additions; Arabic/IDs unchanged.",
+      "current_asset_sha256": "6b68d0b70d185baa732200fc0bbd79e974a13df3081a276b3b030934de7210e2",
+      "author_records": 3096,
+      "own_notes": 16,
+      "reader_records": 3112,
+      "critical_pending": 3,
+      "new_runtime_import_checked": true,
+      "content_version": "cc620b87dd236bfe7e0f34c480d1a18b360177625593eeaf47ab1b31a588ec4c"
+    },
+    "current_visual_checks": [
+      "Exact query уединённой отрешённости gives2results in Нужда вАллахе, corresponding246-03/05; actual settled runtime-context23-detachment-results.png viewed.",
+      "First result opened: runtime-context23-reader246.png directly viewed, complete original Arabic and corrected Russian246-03 visible, header Том3 черновик.",
+      "Query гибнет исчезает наряду gives1target247-03; actual runtime-context23-pronoun-search.png viewed with complete corrected Russian preview.",
+      "Settled reader247-03 directly viewed: complete Arabic and final Russian pronouns in runtime-context23-reader247-settled.png; following Arabic247-04 and start of Russian visible. Earlier two-second image was transient empty layout and not accepted as positive evidence.",
+      "Search параллельном кушайри gives1target v3-p436-05-ru-editor-note-1. Opened settled note436: runtime-context23-reader-note436.png directly viewed. Own text appears in distinct bordered Пояснение редакции card; its opening and alternative قرب/موت readings visible, author text not presented as note. Remaining lower note text was checked in exact seven-field database comparison, not claimed fully visible in this screenshot."
+    ],
+    "search_index_check": {
+      "compared_index_rows": 4528,
+      "bad_normalized_rows": [],
+      "queries_volume3": {
+        "\"уединенной\"* \"отрешенности\"*": [
+          "v3-p246-03-ru",
+          "v3-p246-05-ru"
+        ],
+        "\"маназил\"* \"ас\"* \"саирин\"*": [
+          "v3-p075-03-ru",
+          "v3-p092-03-ru",
+          "v3-p107-04-ru",
+          "v3-p108-04-ru",
+          "v3-p109-03-ru",
+          "v3-p116-04-ru",
+          "v3-p132-04-ru",
+          "v3-p163-04-ru",
+          "v3-p177-05-ru",
+          "v3-p184-03-ru",
+          "v3-p184-07-ru",
+          "v3-p185-05-ru",
+          "v3-p204-04-ru",
+          "v3-p205-02-ru",
+          "v3-p219-05-ru",
+          "v3-p221-06-ru",
+          "v3-p239-04-ru",
+          "v3-p248-04-ru",
+          "v3-p254-08-ru",
+          "v3-p256-05-ru",
+          "v3-p263-03-ru",
+          "v3-p284-02-ru",
+          "v3-p293-06-ru",
+          "v3-p312-02-ru",
+          "v3-p320-02-ru",
+          "v3-p325-03-ru",
+          "v3-p330-02-ru",
+          "v3-p334-02-ru",
+          "v3-p350-03-ru",
+          "v3-p360-03-ru",
+          "v3-p361-01-ru",
+          "v3-p404-03-ru",
+          "v3-p407-05-ru",
+          "v3-p407-07-ru",
+          "v3-p425-04-ru",
+          "v3-p438-02-ru",
+          "v3-p443-09-ru",
+          "v3-p444-03-ru",
+          "v3-p447-02-ru",
+          "v3-p455-04-ru",
+          "v3-p459-05-ru",
+          "v3-p472-02-ru",
+          "v3-p472-03-ru",
+          "v3-p476-04-ru",
+          "v3-p486-04-ru",
+          "v3-p544-03-ru",
+          "v3-p551-05-ru",
+          "v3-p566-03-ru"
+        ],
+        "\"единственного\"* \"отрешения\"*": [],
+        "\"муфааля\"*": [
+          "v3-p575-05-ru"
+        ]
+      },
+      "content_version": "cc620b87dd236bfe7e0f34c480d1a18b360177625593eeaf47ab1b31a588ec4c",
+      "content_version_matches_expected": true,
+      "scope": "Read-only actual post-import snapshot. Entire index normalization and selected corrected text/title queries; not human literary certification."
+    },
+    "visual_check_scope": "Actual post-import screens: detachment search and complete reader246-03; pronoun search and complete reader247-03. Other historical checks retained separately; no claim of manual opening of every changed paragraph/all186 targets. Also targeted new own-note436 search and upper reader card viewed; visibly distinct from author body.",
+    "visually_exercised": [
+      "After code-only reindex, exact query муфааля now gives1result Чистота575 where same APK asset before fix gave0; actual settled screenshot runtime-search23-model.png viewed.",
+      "Opened result575-05. Actual settled reader image runtime-search23-reader-model-settled.png shows complete corrected Russian paragraph, including model муфааля (مفاعلة), inner-address definition and first of three points. Draft/header Чистота preserved.",
+      "Previously failing multiword query происходит аль-Вадуд now gives1result Чистота576-04; actual settled runtime-search23-name.png viewed with complete corrected conditional/attribution preview.",
+      "Opened576-04; settled runtime-search23-reader-name.png shows complete corrected Russian conditional and attribution, corresponding Arabic above and next Arabic citation below."
+    ]
+  },
+  "reading_history_difference": {
+    "lost_ids": [],
+    "added_ids": [],
+    "changed": [
+      {
+        "before": [
+          "daily:2026-10-23:madarij-v3-p432-shawq",
+          "2026-10-23",
+          "madarij-v3-p432-shawq",
+          "v3-p436-05-ru-editor-note-1",
+          330
+        ],
+        "after": [
+          "daily:2026-10-23:madarij-v3-p432-shawq",
+          "2026-10-23",
+          "madarij-v3-p432-shawq",
+          "v3-p436-05-ru-editor-note-1",
+          390
+        ]
+      }
+    ]
   }
 }

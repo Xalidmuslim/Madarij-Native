@@ -3193,5 +3193,96 @@
     "reason": "Narrow title-only correction: three inconsistent Russian short names all denote Ansari المنازل, now Маназил ас-саирин. Original Arabic title fragment and final Russian context checked; other prose untouched. Earlier stage flags retained, no newly claimed full-unit/human review.",
     "external_human_review": false,
     "change_scope": "book_title_only"
+  },
+  {
+    "source_ids": [
+      "v3-p110-02"
+    ],
+    "previous_ru": "Он сказал: «У неё три ступени. Первая — непринуждённость с людьми: не удаляться от них, скупясь на себя или жалея свою долю; свободно делиться с ними своим благом, вмещать их широтой нрава и позволять им ступать по тебе, тогда как знание остаётся незыблемым, а созерцание внутреннего смысла — постоянным».",
+    "corrected_ru": "Он сказал: «У неё три ступени. Первая — непринуждённость с людьми: не удаляться от них, жалея для них себя или свою долю; свободно делиться с ними своим благом, проявлять к ним великодушие и позволять им ступать по тебе, тогда как знание остаётся незыблемым, а созерцание внутреннего смысла — постоянным».",
+    "reason": "Full110-02 print visually read. Russian жалея для них себя makes withholding oneself from others explicit rather than ambiguous скупясь на себя; two distinct objects oneself/one’s portion retained. وتسعهم بخلقك rendered idiomatically проявлять к ним великодушие, consistently with110-07 commentary; all clauses/qualifications preserved.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p110-07"
+    ],
+    "previous_ru": "«Вмещать их широтой нрава» — терпеливо перенося дурное обращение, которое они проявляют. Принимай от людей в их нраве то, что Аллах повелел принимать Своему Пророку, — снисхождение.",
+    "corrected_ru": "«Проявлять к ним великодушие» — значит терпеливо сносить дурное обращение с их стороны. Довольствуйся теми проявлениями их нрава, которые даются им без труда, как Аллах и повелел Своему Пророку.",
+    "reason": "Full110-07 control image read. Taking العفو من أخلاق الناس is accepting what comes easily to others, not receiving indulgence from them. Same-author explicit26-02/03 and50-05 support this; generosity quote matches110-02. Russian sentence separately reread and every Arabic clause back-compared; no Qur’an text/author Arabic changed.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p477-04"
+    ],
+    "previous_ru": "Он сказал: «У неё три степени. Первая — зарница, вспыхивающая со стороны обещания в самой надежде. При ней раб считает великим малое из дарованного, малым — многое из утомления и находит сладость в горечи предрешения».",
+    "corrected_ru": "Он сказал: «У неё три степени. Первая — зарница, вспыхивающая со стороны обещания в самой надежде. При ней даже малый дар кажется рабу великим, сильное утомление — незначительным, а горечь предрешения — сладостной».",
+    "reason": "Full477-04 read on control image. Replace unnatural малое из дарованного / многое из утомления with parallel natural predicates; preserve gift/effort/decree order and both opposed quantities/valuation. No compression of arguments; corresponding detailed478-05 retained and revised.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p478-05"
+    ],
+    "previous_ru": "Многое из утомления — то есть усталости и изнурения — кажется ему малым, потому что, увидев зарницу обещаний на горизонте надежды, он стал усердно стремиться и искать. Она сняла с него тяжесть пути, и он уже не испытывает усталости и изнурения так, как тот, кто не увидел её.",
+    "corrected_ru": "Даже сильное утомление — усталость и изнурение — кажется ему незначительным потому, что зарница обещаний, появившись на горизонте надежды, побудила его к усердию и исканию и облегчила ему тяготы пути. Поэтому он не чувствует усталости и изнурения так, как тот, кто её не увидел.",
+    "reason": "Full478-05 read on control image. Replace nominal calque Многое из утомления with strong weariness perceived as insignificant, preserve author’s weariness/exhaustion gloss, incentive to diligence/seeking, lightened journey burden, consequent contrasting experience and final comparator. Russian reread alone then back-compared; retains original positive self-review flags.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p478-08"
+    ],
+    "previous_ru": "Он сказал: «Вторая степень — зарница, вспыхивающая со стороны угрозы в самой настороженности. При ней раб сокращает долгие надежды, отрешается от людей, даже от близких и желает очистить сокровенную глубину души».",
+    "corrected_ru": "Он сказал: «Вторая степень — зарница, вспыхивающая со стороны угрозы в самой настороженности. При ней раб сокращает долгие надежды, отрешается от людей, даже от близких, и желает очистить сокровенную глубину души».",
+    "reason": "Full478-08 source read on control image and Russian read alone; close even-close-relatives insertion with comma before final coordinated желает. Punctuation only; no change to first interpretation/alternative explanation480-02.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p505-03"
+    ],
+    "previous_ru": "Он сказал: «В этой главе у него три степени. Первая — видеть, что милость предшествует. Это пресекает путь просьбе, кроме того смиренного обращения, которого требует господство; утверждает радость, кроме примешивающейся к ней боязни оказаться незаметно застигнутым; побуждает к благодарности, кроме того права, которое принадлежит Истинному, Всемогущ Он и Велик, в силу Его качества».",
+    "corrected_ru": "Он сказал: «В этой главе у него три степени. Первая — видеть, что милость предшествует. Это пресекает путь просьбе, кроме того смиренного обращения, которого требует господство; укрепляет радость, к которой примешивается лишь боязнь оказаться незаметно застигнутым; побуждает к благодарности, кроме того права, которое принадлежит Истинному, Всемогущ Он и Велик, в силу Его качества».",
+    "reason": "Full author Arabic read on control image 505-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p513-03"
+    ],
+    "previous_ru": "Его слова «утверждает радость, кроме примешивающейся к ней боязни оказаться незаметно застигнутым».",
+    "corrected_ru": "Его слова: «Укрепляет радость, к которой примешивается лишь боязнь оказаться незаметно застигнутым».",
+    "reason": "Full author Arabic read on control image 513-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p513-04"
+    ],
+    "previous_ru": "Он имеет в виду: такой взгляд раба утверждает в нём радость, когда тот узнаёт, что милость Господа была назначена ему прежде, чем Он создал его. При этом Господь во всех подробностях знал и его самого, и его состояния, и его упущения, но это знание не помешало Ему определить для него милость и благодеяние. Он лучше знает его и тогда, когда произвёл его из земли, и когда он был зародышем в материнской утробе. И всё же Он определил ему милость и щедрость без какой-либо причины с его стороны, даже зная, что человек станет совершать поступки, которые должны были бы пресечь эти дары и лишить его их.",
+    "corrected_ru": "Он имеет в виду: такой взгляд раба укрепляет в нём радость, когда тот узнаёт, что милость Господа была назначена ему прежде, чем Он создал его. При этом Господь во всех подробностях знал и его самого, и его состояния, и его упущения, но это знание не помешало Ему определить для него милость и благодеяние. Он лучше знает его и тогда, когда произвёл его из земли, и когда он был зародышем в материнской утробе. И всё же Он определил ему милость и щедрость без какой-либо причины с его стороны, даже зная, что человек станет совершать поступки, которые должны были бы пресечь эти дары и лишить его их.",
+    "reason": "Full author Arabic read on control image 513-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p514-03"
+    ],
+    "previous_ru": "Его слова «кроме примешивающейся к ней боязни оказаться незаметно застигнутым» — то есть боязни, смешанной с радостью. Радость и ликование раскрепощают душу, увлекают её и заставляют забыть собственные пороки, болезни и недостатки. Ведь если бы она видела и сознавала их, это отвлекало бы её от радости.",
+    "corrected_ru": "Его слова «к которой примешивается лишь боязнь оказаться незаметно застигнутым» означают, что эта боязнь смешивается с радостью. Радость и ликование раскрепощают душу, увлекают её и заставляют забыть собственные пороки, болезни и недостатки. Ведь если бы она видела и сознавала их, это отвлекало бы её от радости.",
+    "reason": "Full author Arabic read on control image 514-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree.",
+    "external_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p403-01",
+      "v3-p404-01"
+    ],
+    "previous_ru": "Разве не видишь следов отвержения в его состоянии?\nПожалей же его, если способен жалеть.\nЛетучих мышей ослепил сиянием день,\nНо им пришёлся впору клочок наступившей ночи.\nОни кружили и носились в нём, пока не показался\nСвет дня; тогда они спрятались и скрылись.\nКогда ночной мрак рассеян сиянием,\nДля его глаз всё вновь становится прежней тьмой.\nО горестная участь красавицы, отданной\nСлепцу и бессильному, не знающему томления!\nБереги её, если знаешь ей цену,\nПока не придёт к тебе достойный её.\nЗа неё нет иного брачного дара, кроме души.\nОтступи, трус: ты ей не ровня и не достоин её!\nВсегда иди там, где тронулись в путь вьючные животные любви,\nСовершая ночное странствие на спинах решимости.\nИди ночью, не страшись мрака:\nДовольно тебе лика любви, чтобы указать путь в ночи.\nПогоняй своих верховых поминанием Его:\nСладости этого поминания довольно им вместо песни погонщика.\nОбещай им отраду встречи — и они пойдут,\nКак пожелаешь; сбереги же истлевающие кости.\nСмело выступай: либо исполнение желания, либо смерть\nИзбавит тебя от жизни, которой ты недоволен.\nНет иного, кроме встречи или гибели ради них;\nДовольно и этого успеха, если ты понимаешь.\nРазве душа томящегося не устала от жизни,\nКогда по ночам её жгут раскалёнными клеймами разлуки?\nРазве смерть ради них — не жизнь, а смирение —\nНе честь и содействие успеху, всегда остающееся дорогим?\nНеужели не стыдно заявляющему о любви скупиться\nНа то, к чему Возлюбленный зовёт его, медля и уклоняясь?\nРазве это не заявление лжеца, чья доля в любви —\nОдни слова да пустые мечты?\nРазве души страстно любящих не принадлежат другим?\nВ этом все любящие издавна единодушны.\nРазве влюблённые не слышали слов возлюбленной,\nКоторой любящий жаловался, изнемогая от любви:\n«Когда я пожаловался на любовь, она сказала: “Ты лжёшь:\nРазве я не вижу, что плоть ещё покрывает твои члены?\nНет любви, пока сердце не прильнёт к внутренностям\nИ ты не онемеешь, перестав отвечать зовущему,\nПока не истончишься так, что страсть не оставит от тебя ничего,\nКроме глаза, которым ты плачешь и сокровенно беседуешь”».",
+    "corrected_ru": "Разве не видишь следов отвержения в его состоянии?\nПожалей же его, если способен жалеть.\nЛетучих мышей ослепил сиянием день,\nНо им пришёлся впору клочок наступившей ночи.\nОни кружили и носились в нём, пока не показался\nСвет дня; тогда они спрятались и скрылись.\nКогда ночной мрак рассеян сиянием,\nДля его глаз всё вновь становится прежней тьмой.\nО горестная участь красавицы, отданной\nСлепцу и бессильному, не знающему томления!\nБереги её, если знаешь ей цену,\nПока не придёт к тебе достойный её.\nЗа неё нет иного брачного дара, кроме души.\nОтступи, трус: ты ей не ровня и не достоин её!\nВсегда иди там, где тронулись в путь вьючные животные любви,\nСовершая ночное странствие на спинах решимости.\nИди ночью, не страшись мрака:\nДовольно тебе лика любви, чтобы указать путь в ночи.\nПогоняй своих верховых поминанием Его:\nСладости этого поминания довольно им вместо песни погонщика.\nОбещай им отраду встречи — и они пойдут,\nКак пожелаешь; опереди же истлевающие кости.\nСмело выступай: либо исполнение желания, либо смерть\nИзбавит тебя от жизни, которой ты недоволен.\nНет иного, кроме встречи или гибели ради них;\nДовольно и этого успеха, если ты понимаешь.\nРазве душа томящегося не устала от жизни,\nКогда по ночам её жгут раскалёнными клеймами разлуки?\nРазве смерть ради них — не жизнь, а смирение —\nНе честь? Содействие Аллаха всегда драгоценно.\nНеужели не стыдно заявляющему о любви из скупости не отдавать\nВозлюбленному то, что Ему принадлежит, и медлить, когда Он зовёт его?\nРазве это не заявление лжеца, чья доля в любви —\nОдни слова да пустые мечты?\nРазве души страстно любящих не принадлежат другим?\nВ этом все любящие издавна единодушны.\nРазве влюблённые не слышали слов возлюбленной,\nКоторой любящий жаловался, изнемогая от любви:\n«Когда я пожаловался на любовь, она сказала: “Ты лжёшь:\nРазве я не вижу, что плоть ещё покрывает твои члены?\nНет любви, пока сердце не прильнёт к внутренностям\nИ ты не онемеешь, перестав отвечать зовущему,\nПока не истончишься так, что страсть не оставит от тебя ничего,\nКроме глаза, которым ты плачешь и сокровенно беседуешь”».",
+    "reason": "Full22 couplets read on actual control403/404; Russian44 lines reread alone and finally back-compared. New direct close crop has بما لحبيب (one lam after بما), ownership expression; عن can govern باخلا (withholding from), as classical Qurtubi47:38 and modern lexical entries establish. Yasir Burhami2016 direct poem commentary explicitly supports giving the Beloved His own property, not treating عن as إلى. Russian restores ownership/withholding, call and claimant’s delay. Same new commentary interprets استبق as outstrip; Lisan سبق distinguishes racing from بقى preserving, control crop supports race; restore опереди while keeping decaying-bones metaphor rather than import modern gloss. Reattach independent والتوفيق ما زال غاليا to its own predicate, not coordinated with العز as predicate of humiliation. Other19couplets/earlier corrections/printed order and تلف unchanged, despite secondary reorder/kلف. No modern commentary reproduced as author text; same-agent assessment, no independent human review.",
+    "external_human_review": false
   }
 ]

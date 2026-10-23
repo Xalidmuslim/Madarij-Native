@@ -46,5 +46,22 @@
     ],
     "reason": "Own note only, separated from author body. Discloses actual unresolved reading/reference and preserves author original/working translation. No conjecture promoted to source text. Previous note wording preserved in audit.",
     "independent_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p403-01",
+      "v3-p404-01"
+    ],
+    "reviewed_on": "2026-10-23",
+    "previous_note": {
+      "kind": "unresolved_print_reading",
+      "ru": "Строка о скупости в этом стихотворении требует уточнения. В контрольной печати: «بما للحبيب عنه يدعوه ذا ليا». Связь слов и направление, выраженное предлогом «عن», не установлены достаточно надёжно; рабочее «к чему Возлюбленный зовёт» может передавать их неточно. Иное цифровое чтение само по себе вопроса не решает. Все 22 двустишия сохранены, но перевод этой строки пока не окончателен."
+    },
+    "corrected_note": {
+      "kind": "contextual_explanation",
+      "ru": "В строке о скупости «بما لحبيب» означает «то, что принадлежит возлюбленному». Здесь принят разбор, при котором «عنه» относится к «باخلا»: любящий из скупости удерживает от Возлюбленного принадлежащее Ему и медлит ответить на Его призыв. Такой разбор поддерживают словарное управление «بخل عن» и пояснение Ясира Бурхами к этому двустишию («Маратиб аль-махабба», 20 июня 2016 года). Это собственное пояснение к переводу."
+    },
+    "reason": "New direct control transcription, classical construction and direct modern poem explanation support contextual resolution. Note is own sourced explanation, no longer unresolved-reading warning; full prior note preserved here. No publisher footnote imported.",
+    "independent_human_review": false
   }
 ]

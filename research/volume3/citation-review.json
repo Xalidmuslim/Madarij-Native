@@ -2698,8 +2698,40 @@
       "location": "Third faqr degree discussion, after digital PageV01P026 through start of31; especially30. Author body read in full bounded discussion; no claim of visual print collation of this witness.",
       "author_text_excerpt": "وصاحب توحيد الربوبية في قيد التجريد عن ملاحظة فاعل غير الله وهو مجرد عن ملاحظة وجوده",
       "finding": "Same author explains exact Ansari degree, distinguishes losing awareness of oneself from worship, and describes قيد التجريد as restriction of witnessing. New evidence alongside Lisan and explicit control247 grammatical topic القيد supports three contextual translation resolutions; masculine/negative/parallel clause sequence restored in Russian247-03/04. No material annihilation, ending obligations, God as added pronoun referent or substitution of digital يد for control بيد."
+    },
+    {
+      "source_ids": [
+        "v3-p403-01",
+        "v3-p404-01"
+      ],
+      "reviewed_on": "2026-10-23",
+      "status": "contextual_poem_resolution_after_direct_print_and_lexical_comparison",
+      "checked_sources": [
+        {
+          "title": "Al-Qurtubi, tafsir47:38",
+          "url": "https://quran.ksu.edu.sa/tafseer/qortobi/sura47-aya38.html",
+          "scope": "Actual author commentary body read: يبخل عن نفسه explained as على نفسه / withholding; proof of governing construction, not the poem itself."
+        },
+        {
+          "title": "Muʿjam al-Lugha al-ʿArabiyya al-Muʿasira / al-Raid, entriesبخل",
+          "url": "https://www.alburaq.net/meaning/بخيل",
+          "scope": "Actual lexical entries read; بخل عن الشخص means withhold from him; not manuscript evidence."
+        },
+        {
+          "title": "Yasir Burhami, Maratib al-Mahabba,2016-06-20",
+          "url": "https://www.salafvoice.com/article.aspx?a=10035",
+          "scope": "Direct paragraphs following relevant couplets read. He interprets withholding what belongs to Beloved despite His request; استبق as outstripping. His altered order/كلف reading not adopted; no modern prose reproduced as author text."
+        },
+        {
+          "path": "data/0711IbnManzurIfriqi/0711IbnManzurIfriqi.LisanCarab/0711IbnManzurIfriqi.LisanCarab.JK000880-ara1",
+          "blob": "a4a1b7458187c2eb8d7f37d9a40bb124b3af34f7",
+          "scope": "Complete bounded rootسبق nearV10P151 distinguishes استباق / overtaking; rootبقى nearV14P79 describes preserving, not silently conflated."
+        }
+      ],
+      "finding": "Control403 close image corrects extra lam in transcription: بما لحبيب. Ownership/withholding/call/delay restored; عن unchanged and connected to باخلا. Outstrip decaying bones and separate divine enabling predicate corrected. Full22couplets kept in printed order,44Russian lines, wish/death distinction and تلف retained. Positive semantic/back self-review now justified for whole joined unit. No new hadith/isnad classification.",
+      "method": "Same Codex contextual source comparison, actual control images, Russian-only and back self-review; not independent human literary editing."
     }
   ],
   "coverage_limitation": "Targeted records do not form a complete inventory of all hadiths. A keyword scan found 227 candidates, including non-hadith author discussion and Quran-only units; it also missed anaphoric citations such as 029-03. Do not infer completeness from keyword coverage.",
-  "last_updated": "2026-10-22"
+  "last_updated": "2026-10-23"
 }

@@ -5247,14 +5247,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p110-02": {
-      "sha256": "c4087c8c9b2341392de67eabd13b471a006de16bb232768534eb39f9cd0387ec",
+      "sha256": "1e47433d26714cfb18bc3d3a54a1613a6a38c04bc549998c4debdae31804e254",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full110-02 print visually read. Russian жалея для них себя makes withholding oneself from others explicit rather than ambiguous скупясь на себя; two distinct objects oneself/one’s portion retained. وتسعهم بخلقك rendered idiomatically проявлять к ним великодушие, consistently with110-07 commentary; all clauses/qualifications preserved. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p110-03": {
       "sha256": "3120a55d3b6f3b40b1dafe565fc4f9dd193238318d133f46f60ac2dc86d308b4",
@@ -5299,14 +5300,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p110-07": {
-      "sha256": "0cc2643cd34658ba19e16a424252f2bd71ec70b7e59d8bf21ba0772c520fcb45",
+      "sha256": "f3fd4fdb8d8b0ba9ffeb9b9e3b4c77d1584698a603cd585422ae351e3a53f0e9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full110-07 control image read. Taking العفو من أخلاق الناس is accepting what comes easily to others, not receiving indulgence from them. Same-author explicit26-02/03 and50-05 support this; generosity quote matches110-02. Russian sentence separately reread and every Arabic clause back-compared; no Qur’an text/author Arabic changed. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p111-01": {
       "sha256": "dd342adac0a421068d633ebe0278f6b872a5c853b378004e9595347f6d0db084",
@@ -21780,15 +21782,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p403-01+v3-p404-01": {
-      "sha256": "58405204c914ccb9a5d0a151c3d87e55ffabbe0e46e6b0b1a96bed09236f638d",
+      "sha256": "043cf86fa3d427c82a37537aff5a94d6f85b9bcf50a4f25d8c6fc718091e66fa",
       "stages": {
-        "semantic": "pending_contextual_review",
+        "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
-        "back_comparison": "pending_contextual_review"
+        "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Unambiguous corrections recorded, but reluctant-giving hemistich بما للحبيب عنه يدعوه ذا ليا remains syntactically unresolved. Enlarged actual403 inspected, old secondary1996 بما لحبيب differs and does not settle it. Retain prior working Russian; no claim of final semantic/back verification for entire joined poem. Need settle spelling/spacing/preposition relation and direction of دعاه عنه; do not silently change عن to إلى or assume property ownership."
+      "resolution": "2026-10-23 poem decision: direct403/404 full print and native-resolution close crops; extra lam corrected to بما لحبيب. Ownership, withholding باخلا عنه and delayed response now accurately rendered using newly read Qurtubi47:38, dictionary construction and Yasir Burhami direct2016 couplet commentary. استبق outstripping and independent توفيق predicate corrected. Entire22couplets/44Russianlines reread alone and finally against print; original sequence, تلف, wish/death distinction, final quotations all retained. Own explanatory note cites contextual interpretation. Same Codex, not independent human editing or manuscript apparatus authentication."
     },
     "v3-p404-02": {
       "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f",
@@ -26095,14 +26097,15 @@
       "resolution": "Actual enlarged477 unequivocal يفسح, not own يصح. Permission gives room for movement, rather than is valid. Printed إذن noun then إذنا accusative after يعني preserved. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p477-04": {
-      "sha256": "82089d774b5f171d2f4e73b4530f6db1fe5353c1beabb22210305eae0f612654",
+      "sha256": "8902fddcc293ad8dfd051f3307c91a5326b0aec7ce05f410617635538b827dd5",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full477-04 read on control image. Replace unnatural малое из дарованного / многое из утомления with parallel natural predicates; preserve gift/effort/decree order and both opposed quantities/valuation. No compression of arguments; corresponding detailed478-05 retained and revised. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p477-05": {
       "sha256": "5b1ef9777288f1f71155d8088d1369f5660670a44abaf42bec278b94ae99084c",
@@ -26165,7 +26168,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p478-05": {
-      "sha256": "d5c06ba179686f3c2c89bd6198f640b7ee7d6c5980abfdf18d2dcfa1ddc874dd",
+      "sha256": "6e3a8d84fdace661543a9cb4924204e1813b5621f12f2a672df32bcbf6a09c31",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -26173,7 +26176,7 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Actual enlarged478 الوعود plural with second و, not own singular الوعد. Preserve distinct earlier العدة/وعد source wording, no global normalization. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
+      "resolution": "Full478-05 read on control image. Replace nominal calque Многое из утомления with strong weariness perceived as insignificant, preserve author’s weariness/exhaustion gloss, incentive to diligence/seeking, lightened journey burden, consequent contrasting experience and final comparator. Russian reread alone then back-compared; retains original positive self-review flags. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p478-06": {
       "sha256": "0b6e65b0c6e05595df4203d5cf7e075c7c7b9ca733632018b6d3a92463f3cec5",
@@ -26196,7 +26199,7 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p478-08": {
-      "sha256": "2872f951879b0acff6558144712636fef7e556cdd0f9b7a271844ee39c84b028",
+      "sha256": "9551a274849a2a3d4bf4a8d913230b2d5be6b0d4abde90339d50468b1285dd22",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
@@ -26204,7 +26207,7 @@
       },
       "print_collation": "self_checked",
       "citations_verification": "author_citations_preserved_external_verification_incomplete",
-      "resolution": "Read actual480 explanatory clauses: على القرب includes others even relatives/neighbors/companions, not solely close people. Preserve full scope and immediate temporal alternative separately. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
+      "resolution": "Full478-08 source read on control image and Russian read alone; close even-close-relatives insertion with comma before final coordinated желает. Punctuation only; no change to first interpretation/alternative explanation480-02. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p479-01": {
       "sha256": "41c1bfb1295c3d72751e8913ecf535ef6f5d08d12510469d796a7beb2ec1ceda",
@@ -27453,14 +27456,15 @@
       "resolution": "Actual enlarged505 لاحظ includes ا missing in own لحظ. Contextual لطف favor/kind care, not physical softness; full qualities/favors/enhanced servitude kept. Arabic and Russian compared; Russian reread separately, then back-compared; same-agent self-review only. Existing review stages retained."
     },
     "v3-p505-03": {
-      "sha256": "1040f120dab677d5a7b5462746eedc75108d949b42c886d193db498f886d5459",
+      "sha256": "d8a648130c50469186f74d156bf42a733c6f020c245ee5824bec850c7293b3b1",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full author Arabic read on control image 505-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p505-04": {
       "sha256": "c39d9d0bdcc70f24d4617bf07ec5c15e72a5ff717c0f417f3c960f8267c0c4c2",
@@ -27797,24 +27801,26 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p513-03": {
-      "sha256": "37e89183d3e2bf13e8bb57bee466b870beb35a8eb49fce485ad591ee33057a27",
+      "sha256": "b982b2932ee2e5a05aa7e35d28751d698f666ca4359433a534449512b618beac",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full author Arabic read on control image 513-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p513-04": {
-      "sha256": "31b4ff482b81d9890d8f29863f1d981eff66281bc6827cdcb8b3b6657350060c",
+      "sha256": "6b08bc2fe0bb0ba778f703a1816fc59dc5747dce3ad93bc88eaf94203bf2be95",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full author Arabic read on control image 513-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p513-05": {
       "sha256": "6625f18fcd5ea2c15d90babd2e22bc8f7003d624c25f8658e09966f53c14e008",
@@ -27847,14 +27853,15 @@
       "citations_verification": "author_citations_preserved_external_verification_incomplete"
     },
     "v3-p514-03": {
-      "sha256": "507bc600c6743a7fed06c741c73773c99d67608eedd22dbd680c70fe43a34ceb",
+      "sha256": "534f948da86c41972e9989160d6ef52622210447dc8b3bdb46493b61dbde08b9",
       "stages": {
         "semantic": "self_checked_against_print",
         "literary": "self_checked_russian_only",
         "back_comparison": "self_checked_against_print"
       },
       "print_collation": "self_checked",
-      "citations_verification": "author_citations_preserved_external_verification_incomplete"
+      "citations_verification": "author_citations_preserved_external_verification_incomplete",
+      "resolution": "Full author Arabic read on control image 514-, Russian reread separately and back-compared. وتثبت/ويثبت السرور becomes natural укрепляет радость; إلا ما يشوبه excludes only the admixture of caution, not caution as an object of joy or cancellation of joy. Literal кроме боязни produced an ill-formed connection; use к которой примешивается лишь боязнь. Explicit أي يمازجه and full514 explanation support this. Keep full author reasoning, three parallel505 clauses, warnings and named source; no Arabic/citation change. All three repeated quotations and513 explanation agree. Same-agent semantic/literary/back self-review, not external human editing; original stage flags retained."
     },
     "v3-p514-04": {
       "sha256": "1802e57fd78682098596648faf8d211bc0aa75200d003d6e6b8b0cd4951dfda0",

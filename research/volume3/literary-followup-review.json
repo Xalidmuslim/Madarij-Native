@@ -36,7 +36,7 @@
       "finding": "Actual print is القوة الدافعة; retain historical physiological term, do not silently replace by secondary الذائقة or omit force as supposedly awkward Russian."
     }
   ],
-  "critical_pending_units_retained": 3,
+  "critical_pending_units_retained": 2,
   "publication_ready": false,
   "independent_human_review": false,
   "additional_targeted_units_inspected": [
@@ -130,5 +130,66 @@
       "v3-p436-05"
     ],
     "independent_human_review": false
-  }
+  },
+  "comparison_followup_2026_10_23": {
+    "changed_units": [
+      "v3-p110-02",
+      "v3-p110-07",
+      "v3-p477-04",
+      "v3-p478-05",
+      "v3-p478-08",
+      "v3-p505-03",
+      "v3-p513-03",
+      "v3-p513-04",
+      "v3-p514-03",
+      "v3-p403-01+v3-p404-01"
+    ],
+    "changed_unit_count": 10,
+    "scope": "Full changed units reread as stated, not another full582-page editorial pass. Nine prose/quotation units plus one complete22-couplet joined poem.",
+    "russian_only_candidate_ranges": [
+      {
+        "from": 475,
+        "through": 486,
+        "excluding": "481-01 recently corrected"
+      },
+      {
+        "from": 430,
+        "through": 439,
+        "excluding": "436-05 open crux separately re-inspected"
+      },
+      {
+        "from": 508,
+        "through": 514
+      }
+    ],
+    "candidate_scope_limitation": "Russian-only candidate reading of ranges is not a newly claimed full Arabic/semantic/back check of every unchanged paragraph. Only accepted changed units have full new direct control/back evidence.",
+    "print_images_actually_read": [
+      110,
+      403,
+      404,
+      436,
+      477,
+      478,
+      480,
+      505,
+      513,
+      514
+    ],
+    "semantic_resolution_units": [
+      "v3-p403-01+v3-p404-01"
+    ],
+    "critical_pending_retained": [
+      "v3-p110-04",
+      "v3-p436-05"
+    ],
+    "findings": [
+      "110: do not demand indulgence from others; العفو is accepting what comes easily in their dispositions, explicitly explained by author26/50. Quoted generosity idiom matches explanation.",
+      "477/478: gifts/weariness/decree comparisons made natural; source argument order and parenthetic gloss intact.478-08 comma insertion only.",
+      "505/513/514: stable joy qualified by admixture of caution, not literal exception of fear as an object of joy; all repeated quotations and513 explanation aligned.",
+      "403/404: single extra lam in source transcription; ownership/withholding and delayed response restored after new contextual evidence. Outstrip, not preserve; توفيق predicate separated."
+    ],
+    "independent_human_review": false,
+    "publication_ready": false
+  },
+  "historical_critical_pending_count_before_comparison_followup": 3
 }
