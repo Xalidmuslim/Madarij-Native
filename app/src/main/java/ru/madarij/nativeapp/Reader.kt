@@ -72,6 +72,12 @@ fun Reader(
     var chapterTab by rememberSaveable(chapter.id) { mutableIntStateOf(0) }
     val context = LocalContext.current
     val actionScope = rememberCoroutineScope()
+    // Speech engine starts only after the user opens narration, never during cold
+    // start or scrolling. Keep the user's existing Room data and corpus unchanged.
+    val voicePrefs = remember(context) {
+        context.applicationContext.getSharedPreferences("madarij_ruvoice", Context.MODE_PRIVATE)
+    }
+    var audioOpen by remember(chapter.id) { mutableStateOf(false) }
     // A chapter transition must never inherit the previous chapter's end-of-list
     // position. Otherwise the 'Отметить прочитанным' footer flashes briefly.
     val chapters by vm.chapters.collectAsStateWithLifecycle()
@@ -80,6 +86,23 @@ fun Reader(
     }
     val memberIds = remember(members) { members.map { it.id } }
     val sectionKey = remember(memberIds) { memberIds.joinToString("|") }
+    var audioController by remember(sectionKey) { mutableStateOf<MadarijSpeechController?>(null) }
+    DisposableEffect(sectionKey, audioController) {
+        onDispose { audioController?.close() }
+    }
+    fun openAudio() {
+        if (audioController == null) {
+            val speaker = runCatching {
+                VoiceChoice.valueOf(voicePrefs.getString("speaker", VoiceChoice.DEFAULT.name) ?: VoiceChoice.DEFAULT.name)
+            }.getOrDefault(VoiceChoice.DEFAULT)
+            audioController = MadarijSpeechController(
+                context.applicationContext,
+                speaker,
+                voicePrefs.getFloat("speed", NATURAL_SPEECH_RATE),
+            )
+        }
+        audioOpen = true
+    }
     val sectionRoot = members.first()
     val sectionId = sectionRoot.id
     val logicalChapters = remember(chapters) { LogicalReadingSections.roots(chapters) }
@@ -381,6 +404,7 @@ fun Reader(
                         DropdownMenu(menu, { menu = false }) {
                             DropdownMenuItem({ Text("Настройки чтения") }, { panel = true; menu = false })
                             DropdownMenuItem({ Text("Содержание раздела") }, { chapterPanel = true; menu = false })
+                            DropdownMenuItem({ Text("Озвучка главы · RuVoice") }, { menu = false; openAudio() })
                             DropdownMenuItem({ Text("Закладка главы") }, { newBookmark(null); menu = false })
                             DropdownMenuItem({ Text("Заметка к главе") }, { newNote(null); menu = false })
                             DropdownMenuItem({ Text("Повторить раздел через 3 дня") }, {
@@ -403,6 +427,7 @@ fun Reader(
         }
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
+        audioController?.let { MadarijAudioMiniBar(controller = it, onOpen = ::openAudio) }
         if (loadingError.isNotEmpty()) { InfoCard("Текст недоступен", loadingError); TextButton(onClick = { retry++ }) { Text("Повторить") } }
         // The floating bottom bar overlays the paper image, but must NOT cover
         // actual reading text. Reserve its 62dp height, its outer 4dp gap, the
@@ -433,6 +458,14 @@ fun Reader(
                         readerTitle,
                         LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
                         pageFragment = chapter.volume == 2)
+                    Row(
+                        Modifier.fillMaxWidth().padding(horizontal = 24.dp),
+                        horizontalArrangement = Arrangement.Center,
+                    ) {
+                        TextButton(onClick = ::openAudio) {
+                            Text("▶ Слушать главу · RuVoice")
+                        }
+                    }
                     if (chapter.volume == 2) {
                         val isContinuation = paragraphs.firstOrNull {
                             it.role !in listOf("editor_note", "edition_note")
@@ -804,6 +837,24 @@ fun Reader(
             }
         }
         SnackbarHost(snackbar)
+    }
+    if (audioOpen) {
+        audioController?.let { voice ->
+            MadarijAudioSheet(
+                controller = voice,
+                canPlay = loaded && visible.isNotEmpty(),
+                onPlay = { voice.play(sectionRoot.title, visible) },
+                onSelectVoice = { selected ->
+                    voice.chooseVoice(selected)
+                    voicePrefs.edit().putString("speaker", selected.name).apply()
+                },
+                onSelectSpeed = { rate ->
+                    voice.changeSpeed(rate)
+                    voicePrefs.edit().putFloat("speed", rate).apply()
+                },
+                onClose = { audioOpen = false },
+            )
+        }
     }
     if (chapterPanel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) {
         androidx.activity.compose.BackHandler { chapterPanel = false }
