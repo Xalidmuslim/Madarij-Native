@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="ru.kost.ruvoice" />
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
     <application android:label="${appTitle}" android:theme="@style/AppTheme" android:icon="@drawable/ic_book"
         android:supportsRtl="true" android:allowBackup="false">
         <activity android:name=".MainActivity" android:exported="true">
