@@ -35,6 +35,7 @@ internal fun MadarijAudioSheet(
     onPlay: () -> Unit,
     onSelectVoice: (VoiceChoice) -> Unit,
     onSelectSpeed: (Float) -> Unit,
+    onRetry: () -> Unit,
     onClose: () -> Unit,
 ) {
     val context = LocalContext.current
@@ -48,6 +49,7 @@ internal fun MadarijAudioSheet(
                 style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             controller.error?.let {
                 Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                TextButton(onClick = onRetry) { Text("Повторить подключение") }
             }
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedButton(
