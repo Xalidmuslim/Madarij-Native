@@ -95,7 +95,7 @@ fun Reader(
     val sectionKey = remember(memberIds) { memberIds.joinToString("|") }
     val sectionRoot = members.first()
     val sectionId = sectionRoot.id
-    DisposableEffect(sectionId) {
+    DisposableEffect(chapter.id) {
         onDispose { audioController?.close() }
     }
     val logicalChapters = remember(chapters) { LogicalReadingSections.roots(chapters) }
