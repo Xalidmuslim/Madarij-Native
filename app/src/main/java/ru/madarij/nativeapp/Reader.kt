@@ -843,7 +843,7 @@ fun Reader(
             MadarijAudioSheet(
                 controller = voice,
                 canPlay = loaded && visible.isNotEmpty(),
-                onPlay = { voice.play(sectionRoot.title, visible, displayRussian) }
+                onPlay = { voice.play(sectionRoot.title, visible, displayRussian) },
                 onSelectVoice = { selected ->
                     voicePrefs.edit().putString("speaker", selected.name).apply()
                     if (selected == VoiceChoice.DEFAULT && voice.selectedVoice != VoiceChoice.DEFAULT) {
