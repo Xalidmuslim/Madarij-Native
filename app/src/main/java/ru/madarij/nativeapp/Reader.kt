@@ -71,6 +71,19 @@ fun Reader(
     var chapterPanel by rememberSaveable(chapter.id) { mutableStateOf(false) }
     var chapterTab by rememberSaveable(chapter.id) { mutableIntStateOf(0) }
     val context = LocalContext.current
+    // No TTS service is created until the reader explicitly opens audio controls.
+    val audioPreferences = remember(context) {
+        context.applicationContext.getSharedPreferences("madarij_ruvoice", Context.MODE_PRIVATE)
+    }
+    var preferredAudioVoice by remember {
+        mutableStateOf(
+            ChapterAudioVoice.entries.firstOrNull {
+                it.engineName == audioPreferences.getString("male_voice", ChapterAudioVoice.AIDAR.engineName)
+            } ?: ChapterAudioVoice.AIDAR
+        )
+    }
+    var audioOpen by remember(chapter.id) { mutableStateOf(false) }
+    var audioController by remember(chapter.id) { mutableStateOf<ChapterAudioController?>(null) }
     val actionScope = rememberCoroutineScope()
     // A chapter transition must never inherit the previous chapter's end-of-list
     // position. Otherwise the 'Отметить прочитанным' footer flashes briefly.
@@ -82,6 +95,9 @@ fun Reader(
     val sectionKey = remember(memberIds) { memberIds.joinToString("|") }
     val sectionRoot = members.first()
     val sectionId = sectionRoot.id
+    DisposableEffect(sectionId) {
+        onDispose { audioController?.close() }
+    }
     val logicalChapters = remember(chapters) { LogicalReadingSections.roots(chapters) }
     val chapterIndex = logicalChapters.indexOfFirst { it.id == sectionId }
     val listState = remember(sectionId) { androidx.compose.foundation.lazy.LazyListState() }
@@ -379,6 +395,7 @@ fun Reader(
                     Box {
                         ReaderControl("⋯") { menu = true }
                         DropdownMenu(menu, { menu = false }) {
+                            DropdownMenuItem({ Text("Озвучка раздела") }, { audioOpen = true; menu = false })
                             DropdownMenuItem({ Text("Настройки чтения") }, { panel = true; menu = false })
                             DropdownMenuItem({ Text("Содержание раздела") }, { chapterPanel = true; menu = false })
                             DropdownMenuItem({ Text("Закладка главы") }, { newBookmark(null); menu = false })
@@ -400,6 +417,28 @@ fun Reader(
                 }
             }
         }
+        }
+        if (audioOpen) {
+            ChapterAudioControls(
+                voice = preferredAudioVoice,
+                controller = audioController,
+                readyToPlay = loaded && paragraphs.isNotEmpty(),
+                onVoice = { voice ->
+                    preferredAudioVoice = voice
+                    audioPreferences.edit().putString("male_voice", voice.engineName).apply()
+                    audioController?.chooseVoice(voice)
+                },
+                onPlayPause = {
+                    val active = audioController
+                        ?.takeIf { it.status != ChapterAudioStatus.ERROR }
+                        ?: ChapterAudioController(context, preferredAudioVoice).also { audioController = it }
+                    if (active.status == ChapterAudioStatus.PLAYING) active.pause()
+                    else active.play(readerTitle, paragraphs)
+                },
+                onStop = { audioController?.stop() },
+                onSpeed = { audioController?.changeSpeed() },
+                onClose = { audioController?.stop(); audioOpen = false }
+            )
         }
         if (actionsMode) Text("Режим абзацев: закладки, заметки и копирование", Modifier.padding(horizontal = 20.dp, vertical = 4.dp), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().height(2.dp), color = MaterialTheme.colorScheme.primary, trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .14f))
