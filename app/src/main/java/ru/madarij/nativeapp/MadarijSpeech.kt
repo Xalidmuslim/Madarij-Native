@@ -35,7 +35,7 @@ internal fun isRuVoiceCatalog(voices: Collection<String>): Boolean =
 internal data class SpeechChunk(val text: String, val paragraphId: String?)
 
 /** Only visible Russian text is spoken; corpus, translations, notes and Arabic stay unchanged. */
-internal fun buildMadarijSpeech(title: String, paragraphs: List<Paragraph>, maxChars: Int = 650): List<SpeechChunk> {
+internal fun buildMadarijSpeech(title: String, paragraphs: List<Paragraph>, maxChars: Int = 650, displayed: Map<String, String> = emptyMap()): List<SpeechChunk> {
     require(maxChars >= 40)
     val result = ArrayList<SpeechChunk>()
     fun add(raw: String, id: String?) {
@@ -55,7 +55,10 @@ internal fun buildMadarijSpeech(title: String, paragraphs: List<Paragraph>, maxC
         }
     }
     add(title, null)
-    paragraphs.forEach { p -> if (p.ru.isNotBlank()) add(p.ru, p.id) }
+    paragraphs.forEach { p ->
+        val text = displayed[p.id].orEmpty().ifBlank { p.ru }
+        if (text.isNotBlank()) add(text, p.id)
+    }
     return result
 }
 
@@ -172,14 +175,14 @@ internal class MadarijSpeechController(context: Context, initialVoice: VoiceChoi
         tts?.setSpeechRate(rate)
     }
 
-    fun play(title: String, paragraphs: List<Paragraph>) {
+    fun play(title: String, paragraphs: List<Paragraph>, displayed: Map<String, String> = emptyMap()) {
         if (status == SpeechStatus.Paused) { resume(); return }
         if (status == SpeechStatus.Error) return
         stop()
         status = SpeechStatus.Preparing
         preparation = scope.launch {
             try {
-                val readyChunks = withContext(Dispatchers.Default) { buildMadarijSpeech(title, paragraphs) }
+                val readyChunks = withContext(Dispatchers.Default) { buildMadarijSpeech(title, paragraphs, displayed = displayed) }
                 if (closed) return@launch
                 if (readyChunks.isEmpty()) { fail("В разделе нет текста для чтения."); return@launch }
                 chunks = readyChunks
