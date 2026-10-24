@@ -24,7 +24,7 @@ internal const val RUVOICE_PACKAGE = "ru.kost.ruvoice"
 internal const val NATURAL_SPEECH_RATE = 1.0f
 
 internal enum class VoiceChoice(val label: String, val voiceName: String?) {
-    RUV0ICE("Как в RuVoice", null),
+    DEFAULT("Как в RuVoice", null),
     AIDAR("Aidar · мужской", "aidar-ru"),
     EUGENE("Eugene · мужской", "eugene-ru")
 }
