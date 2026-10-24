@@ -845,12 +845,28 @@ fun Reader(
                 canPlay = loaded && visible.isNotEmpty(),
                 onPlay = { voice.play(sectionRoot.title, visible, displayRussian) }
                 onSelectVoice = { selected ->
-                    voice.chooseVoice(selected)
                     voicePrefs.edit().putString("speaker", selected.name).apply()
+                    if (selected == VoiceChoice.DEFAULT && voice.selectedVoice != VoiceChoice.DEFAULT) {
+                        // A new TTS session removes an old explicit setVoice override.
+                        audioController?.close()
+                        audioController = MadarijSpeechController(
+                            context.applicationContext, VoiceChoice.DEFAULT, voice.speed
+                        )
+                    } else {
+                        voice.chooseVoice(selected)
+                    }
                 },
                 onSelectSpeed = { rate ->
                     voice.changeSpeed(rate)
                     voicePrefs.edit().putFloat("speed", rate).apply()
+                },
+                onRetry = {
+                    audioController?.close()
+                    audioController = MadarijSpeechController(
+                        context.applicationContext,
+                        voice.selectedVoice,
+                        voice.speed,
+                    )
                 },
                 onClose = { audioOpen = false },
             )
