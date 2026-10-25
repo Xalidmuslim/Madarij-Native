@@ -63,5 +63,21 @@
     },
     "reason": "New direct control transcription, classical construction and direct modern poem explanation support contextual resolution. Note is own sourced explanation, no longer unresolved-reading warning; full prior note preserved here. No publisher footnote imported.",
     "independent_human_review": false
+  },
+  {
+    "source_ids": [
+      "v3-p436-05"
+    ],
+    "reviewed_on": "2026-10-26",
+    "previous_note": {
+      "kind": "unresolved_print_reading",
+      "ru": "В контрольной печати здесь «сладость близости» (حلاوة القرب). В параллельном тексте «Рисалы» аль-Кушайри говорится о сладости смерти при её наступлении (حلاوة الموت عند وروده). Поэтому отсылки в последующих словах и смысл «سكراته» — упоение или предсмертные муки — требуют дополнительного уточнения. Слово «смерть» не подставлено вместо печатного «близость»; рабочий русский перевод не считается окончательным."
+    },
+    "corrected_note": {
+      "kind": "unresolved_print_reading",
+      "ru": "В контрольной печати здесь «сладость близости» (حلاوة القرب), а в параллельном тексте «Рисалы» аль-Кушайри — «сладость смерти» (حلاوة الموت). В «Натаидж аль-афкар аль-кудсийя» (т. 4, с. 189) основной комментарий объясняет этот оборот через настоящую смерть; пояснение аль-Аруси допускает также метафорическую смерть низменных страстей. Это толкования «Рисалы», а не доказанные чтения «Мадаридж». Они не устанавливают однозначно отсылки «عند وروده» и «في سكراته» в нашем тексте. «Слаще мёда» относится к вкушаемой сладости; отсылки и передача «سكراته» через упоение остаются рабочими. Слово «смерть» не подставлено вместо печатного «близость»."
+    },
+    "reason": "New directly read layered Qushayri commentary distinguishes literal/metaphorical death. Explicitly separate these from author Madarij and retain pending; comparator scope clarified. No modern publisher apparatus reproduced.",
+    "independent_human_review": false
   }
 ]

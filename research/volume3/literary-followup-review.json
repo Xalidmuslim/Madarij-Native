@@ -191,5 +191,17 @@
     "independent_human_review": false,
     "publication_ready": false
   },
-  "historical_critical_pending_count_before_comparison_followup": 3
+  "historical_critical_pending_count_before_comparison_followup": 3,
+  "continuation_2026_10_26": {
+    "changed_units": [
+      "v3-p436-05"
+    ],
+    "accepted_scope": "Comparator attachment only, full original image read and Russian/back self-review for this repair; whole-unit semantic/back flags still pending. New layered Qushayri commentary read, source readings not silently harmonized.",
+    "critical_pending_retained": [
+      "v3-p110-04",
+      "v3-p436-05"
+    ],
+    "publication_ready": false,
+    "independent_human_review": false
+  }
 }
