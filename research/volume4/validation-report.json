@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-27",
+  "scope": "Data integrity and protected-file comparison only, not literary or print certification.",
+  "draft_integrity_passed": true,
+  "digital_source_pages": [
+    3
+  ],
+  "source_units": 7,
+  "complete_digital_units": [
+    "v4-p003-01",
+    "v4-p003-02",
+    "v4-p003-04",
+    "v4-p003-05",
+    "v4-p003-06"
+  ],
+  "incomplete_or_blocked_units": [
+    "v4-p003-03",
+    "v4-p003-07"
+  ],
+  "complete_print_collated_pages": 0,
+  "protected_previous_volume_files_unchanged": 10,
+  "unexplained_missing_source_units": [],
+  "source_edition_completeness_verified": false,
+  "pdf_available": false,
+  "canonical_quran_used_only_in_separate_comparison_note": true,
+  "strict_completion_ready": false,
+  "publication_ready": false,
+  "independent_human_review": false
+}

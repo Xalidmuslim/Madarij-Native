@@ -1,0 +1,16 @@
+{
+  "base_commit": "e1af7982a347d22a1d4820e0f7a1f797f2a86c2f",
+  "method": "Freeze current previous-volume data; existing open review flags retained, no claim earlier volumes publication ready.",
+  "sha256": {
+    "app/src/main/assets/corpus.json": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a",
+    "app/src/main/assets/content-manifest.json": "d44d25a574df356bbf86ae2c5673270cdbcecf6bee6f0eda235e3ca67368c546",
+    "app/src/main/assets/structure.json": "a1071fccd392537921c49c2cf591af2364e670801ee5dd36066630e8d3e08cd0",
+    "app/src/main/assets/volume2-preview.json": "536a11ca3828a13a179109c18b5244a57116b17064537220f573d7cadb2a5eb4",
+    "app/src/main/assets/volume2-structure.json": "30e2111e3b52c5f8590440a236f699a4c17af942d62a0e8cbb169d998b7689ba",
+    "app/src/main/assets/volume3-draft.json": "02fbbb74a1849441d6baaf0210a4ca1781d8f099274fbbfbeec5cda88a850c41",
+    "app/src/main/assets/volume3-structure.json": "b353b1296370eaf6ee62febcc2ec86283150be5aea86f6fb20a1bfbfced5cc16",
+    "research/volume3/translation.json": "d415b2f8f807f6ad1134c94bd7bf25e0a4ba43c944a6cb251c0cee2f90bd1838",
+    "research/volume3/self-review.json": "741a2a66125b36777123d3b95a2f601d530c354a8bd7e29313216760031d0a8f",
+    "TRANSLATION_PROGRESS_VOLUME3.md": "ba706ff724bbb5fc495ad3846d3ec3cecc4435752456a5f35c87c2eefff4eecd"
+  }
+}

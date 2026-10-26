@@ -1,0 +1,141 @@
+{
+  "volume": 4,
+  "publication_ready": false,
+  "translation_independently_verified": false,
+  "source_visually_collated": false,
+  "status": "initial_partial_draft_blocked_on_control_pdf",
+  "paragraphs": [
+    {
+      "id": "v4-p003-01-ru",
+      "source_ids": [
+        "v4-p003-01"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "فصل",
+      "ru": "Раздел",
+      "draft_status": "complete_against_digital_witness",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "review": {
+        "semantic": "self_checked_against_digital_only",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_digital_only",
+        "sha256": "b37f4e5a901acb51383169ea61983724c52b8a7d32d6f2247642d854a9a3fb4f"
+      }
+    },
+    {
+      "id": "v4-p003-02-ru",
+      "source_ids": [
+        "v4-p003-02"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "ومنها السُّرور.",
+      "ru": "К ним относится и радость.",
+      "draft_status": "complete_against_digital_witness",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "review": {
+        "semantic": "self_checked_against_digital_only",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_digital_only",
+        "sha256": "c36ac97b31ac34b101020a4a5851ba4565afac82e91be6f17b9a2ac312e9fa71"
+      }
+    },
+    {
+      "id": "v4-p003-03-ru",
+      "source_ids": [
+        "v4-p003-03"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "قال صاحب «المنازل»: (باب السُّرور، قال الله تعالى: {(57) قُلْ بِفَضْلِ اللَّهِ وَبِرَحْمَتِهِ فَبِذَلِكَ فَلْيَفْرَحُوا هُوَ خَيْرٌ مِمَّا} [يونس: 58]).",
+      "ru": null,
+      "draft_status": "blocked_damaged_digital_quran_quote",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "ru_prefix": "Автор «Маназил ас-саирин» сказал: «Глава о радости. Всевышний Аллах сказал:",
+      "issue": "Web quote begins with unexpected(57), ends after مما without final verb. No reconstruction claimed as printed author quotation. Canonical10:58 supplied only in separate own comparison note."
+    },
+    {
+      "id": "v4-p003-04-ru",
+      "source_ids": [
+        "v4-p003-04"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "تصدير الباب بهذه الآية في غاية الحسن، فإنّ الله تعالى أمر عباده بالفرح بفضله ورحمته، وذلك تبَعٌ للفرح والسُّرور بصاحب الفضل والرّحمة. فإنّ من فرح بما يصل إليه من جوادٍ كريمٍ، محسنٍ، برٍّ= كان فرحُه بمن أوصل ذلك إليه أولى وأحرى.",
+      "ru": "Начать главу этим аятом чрезвычайно уместно. Всевышний Аллах велел Своим рабам радоваться Его милости и милосердию. Такая радость вторична по отношению к ликованию и радости о Самом Подателе милости и милосердия. Ведь если человек радуется тому, что получает от щедрого, великодушного и доброго благодетеля, то радость о самом дарителе тем более уместна и оправданна.",
+      "draft_status": "complete_against_digital_witness",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "review": {
+        "semantic": "self_checked_against_digital_only",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_digital_only",
+        "sha256": "d1ce08c95df14d0ff168e60acd32215b1b2c40b9bd586a9c59a049a60cca2d53"
+      }
+    },
+    {
+      "id": "v4-p003-05-ru",
+      "source_ids": [
+        "v4-p003-05"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "ونذكر ما في هذه الآية من المعنى. ثمّ نشرح كلام المصنِّف.",
+      "ru": "Рассмотрим смысл этого аята, а затем разъясним слова автора «Маназил ас-саирин».",
+      "draft_status": "complete_against_digital_witness",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "review": {
+        "semantic": "self_checked_against_digital_only",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_digital_only",
+        "sha256": "938fbd2c26e088a9d8408574ac67a4993693dc58dee7845180fb013b75c94ac1"
+      }
+    },
+    {
+      "id": "v4-p003-06-ru",
+      "source_ids": [
+        "v4-p003-06"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "فقال ابن عبّاسٍ، وقتادة، ومجاهدٌ، والحسن، وغيرهم: فضل الله: الإسلام، ورحمته: القرآن.",
+      "ru": "Ибн Аббас, Катада, Муджахид, аль-Хасан и другие говорили: «Милость Аллаха — это ислам, а Его милосердие — Коран».",
+      "draft_status": "complete_against_digital_witness",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "review": {
+        "semantic": "self_checked_against_digital_only",
+        "literary": "self_checked_russian_only",
+        "back_comparison": "self_checked_against_digital_only",
+        "sha256": "b6d288551ce998c30dbbcbe24fe023cfeb512cbc7e3f51a99386c23fc93ae6df"
+      }
+    },
+    {
+      "id": "v4-p003-07-ru",
+      "source_ids": [
+        "v4-p003-07"
+      ],
+      "printed_pages": [
+        3
+      ],
+      "ar": "فجعلوا رحمته أخصّ من فضله، فإنّ فضله الخاصّ عامٌّ على أهل",
+      "ru": null,
+      "draft_status": "incomplete_continues_on_unavailable_page4",
+      "print_collation": "not_performed_pdf_unavailable",
+      "independent_human_review": false,
+      "ru_prefix": "Они придавали понятию «Его милосердие» более узкий смысл, чем понятию «Его милость», ведь Его особая милость распространяется на всех…",
+      "issue": "أهل has missing complement on page4. Do not guess following word or label paragraph/page complete."
+    }
+  ]
+}
