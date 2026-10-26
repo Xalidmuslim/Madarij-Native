@@ -4,19 +4,49 @@
     {
       "id": "V4-QUR-003",
       "source_id": "v4-p003-03",
-      "status": "open_requires_control_print",
+      "status": "resolved_by_control_image",
       "finding": "Damaged digital quotation and unknown printed boundaries. Canonical reference is not substituted for uninspected printed author text.",
       "canonical_reference": "10:58",
       "canonical_ar_for_comparison_only": "قل بفضل الله وبرحمته فبذلك فليفرحوا هو خير مما يجمعون",
       "own_ru_for_comparison_only": "Скажи: «Пусть они радуются милости Аллаха и Его милосердию. Это лучше того, что они собирают».",
       "canonical_source": "OpenITI Tanzil Simple Clean1.1, unchanged file /workspace/scratch/volume3/primary-quran-tanzil.txt; verse10|58",
-      "canonical_source_sha256": "374d13c056285552edbde9fc1def53c7993a3e8434ec88cb5734fca87644e954"
+      "canonical_source_sha256": "374d13c056285552edbde9fc1def53c7993a3e8434ec88cb5734fca87644e954",
+      "resolution": "PDF leaf3 prints complete10:58 including يجمعون. Preserved damaged digital witness in source-web-page003.txt and initial JSON backups; author quote repaired from actual image, not guessed canonical filling."
     },
     {
       "id": "V4-BOUNDARY-003",
       "source_id": "v4-p003-07",
-      "status": "open_requires_page4",
-      "finding": "Last line ends على أهل. Following page4 inaccessible; no guessed complement or artificial paragraph completion."
+      "status": "resolved_by_control_image",
+      "finding": "Last line ends على أهل. Following page4 inaccessible; no guessed complement or artificial paragraph completion.",
+      "resolution": "Actual3/4 boundary visually read and complete paragraph joined in v4-p003-07-ru; original drafts preserved in history."
+    },
+    {
+      "id": "V4-TASDIQ-013",
+      "source_id": "v4-p013-04",
+      "status": "open_contextual_semantics",
+      "finding": "Control print visibly reads التصديق. Retained; translation of the figurative subject and subsequent pronouns needs further contextual review. Do not silently replace by الصديق from other witnesses or certify pages13–14 final."
+    },
+    {
+      "id": "V4-QIRAA-015",
+      "source_id": "v4-p015-03",
+      "status": "resolved_with_digital_primary_context",
+      "finding": "Print24:35 reads دري توقد with vowelled تَوَقَّدَ, not Hafs يوقد. Actual image retained; do not normalise print to Hafs. Scholarly reading comparison underway.",
+      "resolution": "Control reading retained. Ibn Khalawayh Hujja, sura24, PageV01P262 explains past active ta+tashdid verb, referring to star; Russian tense adjusted. Digital headword itself defective; explanatory paragraph is explicit, no reader name asserted.",
+      "primary_path": "data/0370IbnAhmadIbnKhalawayh/0370IbnAhmadIbnKhalawayh.HujjaFiQiraatSabca/0370IbnAhmadIbnKhalawayh.HujjaFiQiraatSabca.Shamela0026140-ara1",
+      "primary_file_sha256": "480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172",
+      "openiti_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c"
+    },
+    {
+      "id": "V4-REF-011",
+      "source_id": "v4-p011-06",
+      "status": "resolved_reference_span_clarification",
+      "finding": "Printed initial reference84:10 accompanies quote84:10–13; source unchanged, Russian span clarified."
+    },
+    {
+      "id": "V4-LEX-009",
+      "source_id": "v4-p009-02",
+      "status": "resolved_contextually",
+      "finding": "Native crop read رأسه، بطنه وظهره، أمه. أم الرأس understood as brain membrane in this wound-verb example; compared Lisan al-Arab digital primary text, lines187451–187482 of local primary-lisan-arab.txt; no modern apparatus reproduced."
     }
   ]
 }

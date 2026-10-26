@@ -6,17 +6,17 @@
   "official_catalog_url": "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j4-62",
   "catalog_edition": "الثانية1441/2019، دار عطاءات العلم / دار ابن حزم",
   "catalog_page_count": 556,
-  "catalog_editor_list_scope": "Collective list shown by catalog, not confirmed fourth-volume title page.",
+  "catalog_editor_list_scope": "All four names now visually confirmed on title page of uploaded volume4.",
   "catalog_editor_names": [
     "علي بن محمد العمران",
     "محمد عزير شمس",
     "نبيل بن نصار السندي",
     "محمد أجمل الإصلاحي"
   ],
-  "pdf_obtained": false,
-  "title_page_visually_checked": false,
-  "printed_pagination_verified": false,
-  "author_body_page_count": null,
+  "pdf_obtained": true,
+  "title_page_visually_checked": true,
+  "printed_pagination_verified": true,
+  "author_body_page_count": 554,
   "digital_pages_obtained": [
     3
   ],
@@ -34,5 +34,60 @@
   ],
   "official_page_download_controls": "PDF andWord controls present; both clicks internal error, no file or verified target obtained.",
   "page4_and5": "Direct website page requests unavailable; no older edition silently substituted.",
-  "copyright_scope": "Only public-domain author body drafted. Modern publisher footnotes not reproduced; damaged original digital evidence retained separately from editorial reconstruction."
+  "copyright_scope": "Only public-domain author body drafted. Modern publisher footnotes not reproduced; damaged original digital evidence retained separately from editorial reconstruction.",
+  "control_pdf": {
+    "user_attachment": "sediment://file_00000000117481f48f6773722fe13bb3",
+    "filename": "madarej_4.pdf",
+    "local_workspace_copy": "/workspace/scratch/volume4/control-2019-volume4.pdf",
+    "sha256": "450628e497dbfcbc5dd9cb13c6ca9e83b2b95121299c2f36c671352e56e0b758",
+    "pdf_leaves": 838,
+    "text_layer": false,
+    "edition": "Second edition1441/2019; first Dar Ibn Hazm printing, ISBN978-9959-858-02-3; visually read PDF leaves1–2.",
+    "author_printed_range": [
+      3,
+      556
+    ],
+    "author_end_visually_read": true,
+    "indices_begin_pdf_leaf": 557,
+    "excluded_service_and_index_leaves": [
+      [
+        1,
+        2
+      ],
+      [
+        557,
+        838
+      ]
+    ],
+    "modern_publisher_footnotes_imported": false,
+    "publisher_material_in_git": false,
+    "source_access_note": "Full scan retained in workspace and original user attachment; not republished in public repository with modern apparatus."
+  },
+  "visually_read_author_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    555,
+    556
+  ],
+  "boundary_evidence": "Full body images3–24 read; endpoints555–556, indices557–558 and837–838 read; do not infer all intermediate pages checked."
 }

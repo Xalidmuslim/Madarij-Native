@@ -1,0 +1,22 @@
+{
+  "volume": 4,
+  "issues": [
+    {
+      "id": "V4-QUR-003",
+      "source_id": "v4-p003-03",
+      "status": "open_requires_control_print",
+      "finding": "Damaged digital quotation and unknown printed boundaries. Canonical reference is not substituted for uninspected printed author text.",
+      "canonical_reference": "10:58",
+      "canonical_ar_for_comparison_only": "قل بفضل الله وبرحمته فبذلك فليفرحوا هو خير مما يجمعون",
+      "own_ru_for_comparison_only": "Скажи: «Пусть они радуются милости Аллаха и Его милосердию. Это лучше того, что они собирают».",
+      "canonical_source": "OpenITI Tanzil Simple Clean1.1, unchanged file /workspace/scratch/volume3/primary-quran-tanzil.txt; verse10|58",
+      "canonical_source_sha256": "374d13c056285552edbde9fc1def53c7993a3e8434ec88cb5734fca87644e954"
+    },
+    {
+      "id": "V4-BOUNDARY-003",
+      "source_id": "v4-p003-07",
+      "status": "open_requires_page4",
+      "finding": "Last line ends على أهل. Following page4 inaccessible; no guessed complement or artificial paragraph completion."
+    }
+  ]
+}

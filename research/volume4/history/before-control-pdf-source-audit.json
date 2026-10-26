@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-10-27",
+  "book": "مدارج السالكين في منازل السائرين",
+  "author": "ابن قيم الجوزية",
+  "volume": 4,
+  "official_catalog_url": "https://ibnelqayem.com/ar/books/mdarj-alsalkyn-j4-62",
+  "catalog_edition": "الثانية1441/2019، دار عطاءات العلم / دار ابن حزم",
+  "catalog_page_count": 556,
+  "catalog_editor_list_scope": "Collective list shown by catalog, not confirmed fourth-volume title page.",
+  "catalog_editor_names": [
+    "علي بن محمد العمران",
+    "محمد عزير شمس",
+    "نبيل بن نصار السندي",
+    "محمد أجمل الإصلاحي"
+  ],
+  "pdf_obtained": false,
+  "title_page_visually_checked": false,
+  "printed_pagination_verified": false,
+  "author_body_page_count": null,
+  "digital_pages_obtained": [
+    3
+  ],
+  "downloads": [
+    {
+      "url": "https://d1.islamhouse.com/data/ar/ih_books/single-03/ar-Madarij-alSalikee-04.pdf",
+      "url_status": "inferred candidate, not confirmed as correct file",
+      "result": "curl22 HTTP403, no PDF obtained; restricted proxy response does not prove origin server denial"
+    },
+    {
+      "url": "https://ibnelqayem.com/ar/media/download/87",
+      "url_status": "inferred candidate, not confirmed link target",
+      "result": "web tool inaccessible"
+    }
+  ],
+  "official_page_download_controls": "PDF andWord controls present; both clicks internal error, no file or verified target obtained.",
+  "page4_and5": "Direct website page requests unavailable; no older edition silently substituted.",
+  "copyright_scope": "Only public-domain author body drafted. Modern publisher footnotes not reproduced; damaged original digital evidence retained separately from editorial reconstruction."
+}
