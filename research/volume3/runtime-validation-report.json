@@ -2,19 +2,41 @@
   "date": "2026-10-26",
   "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
   "package": "ru.madarij.nativeapp.qalocal",
-  "build": "debug, standard local test key; not an owner-signed release",
-  "apk_sha256": "9f5dd9c6f0653fb4d00d71a6d4975b5676f9f9aee2eefc1c0d903a490eae4650",
-  "volume3_asset_sha256": "0edfe9971bae04b363053844d620a9049d5854940b4b65a998479696b65353f2",
+  "build": "debug; standard local test key, not owner-signed release; assembleDebug16s",
+  "apk_sha256": "641f383d7a1c72873014a72f93da33e887f04bf19993e29b7878418181f62839",
+  "volume3_asset_sha256": "02fbbb74a1849441d6baaf0210a4ca1781d8f099274fbbfbeec5cda88a850c41",
   "zip_integrity_checked": true,
-  "apk_asset_matches_repository": false,
+  "apk_asset_matches_repository": true,
   "signature_verified": true,
   "jvm_test_suites": 18,
   "jvm_tests": 101,
   "jvm_failures": 0,
   "jvm_errors": 0,
   "actual_database": {
-    "current_source_runtime_checked": false,
-    "previous_successful_snapshot": "historical_comparison23_before_oct26"
+    "integrity_check": "ok",
+    "chapters_by_volume": {
+      "1": 90,
+      "2": 9,
+      "3": 32
+    },
+    "volume3_author_paragraphs": 3096,
+    "volume3_editor_notes": 16,
+    "first_two_volumes_chapters_and_paragraphs_unchanged_across_update": true,
+    "comparison_fields": [
+      "id",
+      "chapterId",
+      "ordinal",
+      "ar",
+      "ru",
+      "role",
+      "source"
+    ],
+    "extra_volume3_rows": 0,
+    "unresolved_source_ids_in_checked_apk": [
+      "v3-p110-04",
+      "v3-p436-05"
+    ],
+    "all_3112_packaged_rows_exactly_match_database": true
   },
   "personal_data_update_check": {
     "bookmarks": {
@@ -23,8 +45,8 @@
       "unchanged": true
     },
     "positions": {
-      "rows_before": 17,
-      "rows_after": 17,
+      "rows_before": 18,
+      "rows_after": 18,
       "unchanged": true
     },
     "notes": {
@@ -38,14 +60,19 @@
       "unchanged": true
     },
     "reading_history": {
-      "rows_before": 21,
-      "rows_after": 21,
-      "unchanged": false
+      "rows_before": 22,
+      "rows_after": 22,
+      "unchanged": true
     }
   },
   "reading_preferences_unchanged": true,
   "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
-  "visually_exercised": [],
+  "visually_exercised": [
+    "Actual settled query эта сладость мёда gives1result Томление with corrected436 preview through causal clause; screenshot runtime-acceptance26-results.png viewed.",
+    "Actual settled runtime-acceptance26-reader436.png viewed: entire latest Russian436-05 (all3sentences, comparison with honey, causal explanation and final provisional intoxication wording) plus author Arabic tail and Том3·черновик header. Search result opens correct paragraph.",
+    "Actual runtime-acceptance26-note436.png viewed: latest paragraph tail, separate collapsed Пояснение редакции·Открыть control, then next author Arabic/Russian436-06; note not merged into author prose.",
+    "Clicked own-note control; actual runtime-acceptance26-note436-open.png shows Скрыть state and beginning of expanded note contrasting printed closeness with Qushayri death, in separate framed block. Lower new commentary detail not fully visible; full note content verified in exact database comparison."
+  ],
   "not_claimed": [
     "All 186 TOC targets individually tapped on a device; targets are statically checked",
     "Physical Android device testing",
@@ -55,17 +82,18 @@
   ],
   "publication_ready": false,
   "independent_human_review": false,
-  "personal_data_update_scope": "Complete pre-install and post-new-import snapshots, both tar producers exit0 before comparison. New content version2e09a457... confirmed before WAL FULL0|5928|5928; no busy, all pages written. User history not byte-identical: one old daily436 QA note counter+60, no lost/added IDs; all other tested fields unchanged. Later deliberate reader navigation excluded.",
-  "latest_corpus_check": "26October static package and24Python tests pass. Current436 change needs new Android runtime check; previous3112-row actual comparison preserved as historical.",
+  "personal_data_update_scope": "Cold-boot existing AVD, app force-stopped before baseline; no data wipe/uninstall. Both complete tar producers exit0 before comparison. New version2925ec5... observed before WAL FULL0|5920|5920 (no busy, all pages written). All user fields exact. Intentional reader navigation only after snapshot excluded.",
+  "latest_corpus_check": "Actual current26October APK import includes latest436 Russian and own note. All3112rows exact7fields,4528 normalized search rows correct;2criticalpending retained. All first2 text assets still match completed-pass snapshots.",
   "current_source_update": {
     "date": "2026-10-26",
-    "scope": "One narrow Russian comparator repair436-05 and own explanatory note. Arabic/IDs unchanged; both critical flags retained.",
+    "scope": "Actual runtime acceptance of latest436 comparator/own-note change; no new author-text revision in this acceptance continuation.",
     "current_asset_sha256": "02fbbb74a1849441d6baaf0210a4ca1781d8f099274fbbfbeec5cda88a850c41",
     "author_records": 3096,
     "own_notes": 16,
     "reader_records": 3112,
     "critical_pending": 2,
-    "new_runtime_import_checked": false
+    "new_runtime_import_checked": true,
+    "content_version": "2925ec5da560fc1e13a5cb3590790620b572803b1fe99ee451800b9392305c0e"
   },
   "historical_2026_10_20": {
     "apk_sha256": "8385db823877a18a3d8edb4bfe80b69fefeeadf66a0f2d595d38ecb4e1283e60",
@@ -90,8 +118,13 @@
     },
     "latest_corpus_check": "All 3103 rows exactly compared again after page 365 restoration, including Arabic/Russian text, chapter IDs, roles, ordinals and source metadata."
   },
-  "visual_check_scope": "Last actual reader checks belong to23October source; no current26October Android import or rendering claim.",
-  "current_visual_checks": [],
+  "visual_check_scope": "Actual current corpus imported; search-to-reader, full changed Russian paragraph and source tail visually checked, not all582pages/device/independent literary review.",
+  "current_visual_checks": [
+    "Actual settled query эта сладость мёда gives1result Томление with corrected436 preview through causal clause; screenshot runtime-acceptance26-results.png viewed.",
+    "Actual settled runtime-acceptance26-reader436.png viewed: entire latest Russian436-05 (all3sentences, comparison with honey, causal explanation and final provisional intoxication wording) plus author Arabic tail and Том3·черновик header. Search result opens correct paragraph.",
+    "Actual runtime-acceptance26-note436.png viewed: latest paragraph tail, separate collapsed Пояснение редакции·Открыть control, then next author Arabic/Russian436-06; note not merged into author prose.",
+    "Clicked own-note control; actual runtime-acceptance26-note436-open.png shows Скрыть state and beginning of expanded note contrasting printed closeness with Qushayri death, in separate framed block. Lower new commentary detail not fully visible; full note content verified in exact database comparison."
+  ],
   "intermediate_11_note_build": {
     "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
     "asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
@@ -1287,27 +1320,15 @@
     "apk_asset_matches_repository": true
   },
   "search_index_check": {
-    "compared_index_rows": 4528,
-    "bad_normalized_rows": [],
-    "queries_volume3": {
-      "\"медлить\"* \"когда\"*": [
-        "v3-p361-03-ru",
-        "v3-p403-01-ru"
-      ],
-      "\"уединенной\"* \"отрешенности\"*": [
-        "v3-p246-03-ru",
-        "v3-p246-05-ru"
-      ],
-      "\"муфааля\"*": [
-        "v3-p575-05-ru"
-      ],
-      "\"сбереги\"* \"истлевающие\"*": []
-    },
-    "content_version": "2e09a457a8d9b204593f2640b7107709c73f62276f34791ba2934ea78ed641af",
-    "content_version_matches_expected": true,
-    "scope": "Actual read-only post-import snapshot, complete index normalization and selected searches; not literary certification."
+    "index_rows": 4528,
+    "bad_rows": [],
+    "query": "\"эта\"* \"сладость\"* \"меда\"*",
+    "ids": [
+      "v3-p436-05-ru"
+    ],
+    "content_version": "2925ec5da560fc1e13a5cb3590790620b572803b1fe99ee451800b9392305c0e"
   },
-  "reading_history_followup": "Not byte-identical: existing daily436 note entry330→390seconds, +60; all IDs/date/chapter/paragraph unchanged and no added/lost entries. Reader records elapsed time on lifecycle events. Observed change is compatible with active prior QA reader; exact causation not instrumented. Do not claim exact preservation of all history fields.",
+  "reading_history_followup": "All22 history rows byte-for-field equal in current before/after snapshot; prior +60sec belonged to23October check.",
   "historical_literary23_before_contextual_followup": {
     "date": "2026-10-23",
     "apk_sha256": "591ef044cb83d9e773667fd14ce78216327aca2e859b6fcdb2dd41f3492a68d3",
@@ -1576,28 +1597,6 @@
       "Opened576-04; settled runtime-search23-reader-name.png shows complete corrected Russian conditional and attribution, corresponding Arabic above and next Arabic citation below."
     ]
   },
-  "reading_history_difference": {
-    "lost_ids": [],
-    "added_ids": [],
-    "changed": [
-      {
-        "before": [
-          "daily:2026-10-23:madarij-v3-p432-shawq",
-          "2026-10-23",
-          "madarij-v3-p432-shawq",
-          "v3-p436-05-ru-editor-note-1",
-          330
-        ],
-        "after": [
-          "daily:2026-10-23:madarij-v3-p432-shawq",
-          "2026-10-23",
-          "madarij-v3-p432-shawq",
-          "v3-p436-05-ru-editor-note-1",
-          390
-        ]
-      }
-    ]
-  },
   "historical_comparison23_before_oct26": {
     "date": "2026-10-23",
     "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
@@ -1700,6 +1699,204 @@
       "Actual runtime-comparison23-reader-poem-mid.png shows complete corrected опереди же истлевающие кости and neighbouring wish/death distinction.",
       "Actual runtime-comparison23-reader-poem-giving.png and giving-full.png show complete separate divine-enabling sentence, entire corrected ownership/withholding/call/delay couplet through его?, and following rhetorical question. No claim that every22couplets was visually reread on Android; all22 were checked against controlPDF and all3112 records matched actualDB."
     ],
+    "intermediate_11_note_build": {
+      "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
+      "asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",
+      "actual_database_exact_rows": 3107,
+      "integrity_check": "ok",
+      "scope": "Includes p.36 refinement and 11 notes, before later p.55 Russian clarification. All APK rows exactly matched live database. This is not proof for later p.55 edits."
+    },
+    "jvm_test_scope": "101 tests/18 suites passed for preceding unchanged application code. No new Kotlin change in this book correction continuation;24 current Python tests passed.",
+    "intermediate_p096_build": {
+      "apk_sha256": "9441650dd073e3988e4a0af4c13d08cfc45cc63729b8525022cc16b3f656a8b1",
+      "asset_sha256": "3d0c7dac83c2a60b41c0296dab654a8b433dfbf12a8f845694309f4ede9c4a79",
+      "integrity_check": "ok",
+      "rows": 3107,
+      "bad": [],
+      "extra_rows": 0,
+      "personal": {
+        "bookmarks": {
+          "before": 1,
+          "after": 1,
+          "unchanged": true
+        },
+        "positions": {
+          "before": 6,
+          "after": 6,
+          "unchanged": true
+        },
+        "notes": {
+          "before": 0,
+          "after": 0,
+          "unchanged": true
+        },
+        "read_chapters": {
+          "before": 0,
+          "after": 0,
+          "unchanged": true
+        }
+      },
+      "protected_chapters": true,
+      "protected_paragraphs": true,
+      "settings_equal": true,
+      "matches_current_source": false,
+      "zip_integrity_checked": true,
+      "signature_verified": "APK Signature Scheme v2",
+      "scope": "Includes Russian 090/091 and Arabic 096 corrections, before later Arabic/Russian 101-02 correction. All packaged rows match actual DB; not proof for latest page101 bytes."
+    },
+    "open_runtime_issues": [],
+    "resolved_runtime_issues": [
+      {
+        "id": "fts-multiword-prefix",
+        "fix": "Use implicit FTS3 conjunction between individually quoted prefix tokens.",
+        "verification": "Previously failing query всецело отдаться now returns exactly one current p136 result on Android API28. Individual query tokens remain normalized and quoted; no SQL syntax accepted from user input."
+      },
+      {
+        "id": "fts-unicode-punctuation-boundaries",
+        "status": "fixed_jvm_sqlite_and_both_actual_android_queries_passed",
+        "trigger": "Bare муфааля or происходит аль-Вадуд queries after correct literary23 import return0 although current search-row text contains quoted words.",
+        "cause": "FTS default simple tokenizer keeps non-ASCII quotation/ornament/hyphen delimiters inside terms; old normalizer did not replace these with ASCII spaces.",
+        "evidence": "Actual Android screenshots and SQLite MATCH against full post-import snapshot; index row texts current, so not a stale-book import.",
+        "required_fix": "Same boundary normalization for index and query, plus index revision in import hash to rebuild already imported content.",
+        "fix": "normalizeSearchText replaces nonletter/nondigit runs with ASCII spaces after existing Arabic/Russian folding; common index/query function. SEARCH_INDEX_REVISION prefix in corpus hash forces reindexing even for unchanged assets.",
+        "unit_test_evidence": "4SearchTextTest tests: old function3failures/1pass; new behavior full101tests/18suites pass. Actual SQLite/Android verification follows.",
+        "verification": {
+          "search_index_revision": "fts4-unicode-boundaries-v2",
+          "compared_rows": 4526,
+          "bad_normalized_rows": [],
+          "queries": {
+            "\"муфааля\"*": [
+              "v3-p575-05-ru"
+            ],
+            "\"происходит\"* \"аль\"* \"вадуд\"*": [
+              "v3-p576-04-ru"
+            ],
+            "\"مفاعلة\"*": [
+              "madarij-v2-p457-draft",
+              "v3-p575-05-ru"
+            ]
+          },
+          "scope": "Read-only complete post-import SQLite snapshot; all indexed paragraph/title/body text compared with normalization; exact representative query results. Not independent literary/hadith editing."
+        }
+      }
+    ],
+    "apk_code_matches_repository": true,
+    "search_index_check": {
+      "compared_index_rows": 4528,
+      "bad_normalized_rows": [],
+      "queries_volume3": {
+        "\"медлить\"* \"когда\"*": [
+          "v3-p361-03-ru",
+          "v3-p403-01-ru"
+        ],
+        "\"уединенной\"* \"отрешенности\"*": [
+          "v3-p246-03-ru",
+          "v3-p246-05-ru"
+        ],
+        "\"муфааля\"*": [
+          "v3-p575-05-ru"
+        ],
+        "\"сбереги\"* \"истлевающие\"*": []
+      },
+      "content_version": "2e09a457a8d9b204593f2640b7107709c73f62276f34791ba2934ea78ed641af",
+      "content_version_matches_expected": true,
+      "scope": "Actual read-only post-import snapshot, complete index normalization and selected searches; not literary certification."
+    },
+    "reading_history_followup": "Not byte-identical: existing daily436 note entry330→390seconds, +60; all IDs/date/chapter/paragraph unchanged and no added/lost entries. Reader records elapsed time on lifecycle events. Observed change is compatible with active prior QA reader; exact causation not instrumented. Do not claim exact preservation of all history fields.",
+    "reading_history_difference": {
+      "lost_ids": [],
+      "added_ids": [],
+      "changed": [
+        {
+          "before": [
+            "daily:2026-10-23:madarij-v3-p432-shawq",
+            "2026-10-23",
+            "madarij-v3-p432-shawq",
+            "v3-p436-05-ru-editor-note-1",
+            330
+          ],
+          "after": [
+            "daily:2026-10-23:madarij-v3-p432-shawq",
+            "2026-10-23",
+            "madarij-v3-p432-shawq",
+            "v3-p436-05-ru-editor-note-1",
+            390
+          ]
+        }
+      ]
+    }
+  },
+  "historical_oct26_before_runtime_acceptance": {
+    "date": "2026-10-26",
+    "environment": "Local Android API 28 x86_64 software emulator, no hardware acceleration",
+    "package": "ru.madarij.nativeapp.qalocal",
+    "build": "debug, standard local test key; not an owner-signed release",
+    "apk_sha256": "9f5dd9c6f0653fb4d00d71a6d4975b5676f9f9aee2eefc1c0d903a490eae4650",
+    "volume3_asset_sha256": "0edfe9971bae04b363053844d620a9049d5854940b4b65a998479696b65353f2",
+    "zip_integrity_checked": true,
+    "apk_asset_matches_repository": false,
+    "signature_verified": true,
+    "jvm_test_suites": 18,
+    "jvm_tests": 101,
+    "jvm_failures": 0,
+    "jvm_errors": 0,
+    "actual_database": {
+      "current_source_runtime_checked": false,
+      "previous_successful_snapshot": "historical_comparison23_before_oct26"
+    },
+    "personal_data_update_check": {
+      "bookmarks": {
+        "rows_before": 1,
+        "rows_after": 1,
+        "unchanged": true
+      },
+      "positions": {
+        "rows_before": 17,
+        "rows_after": 17,
+        "unchanged": true
+      },
+      "notes": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "read_chapters": {
+        "rows_before": 0,
+        "rows_after": 0,
+        "unchanged": true
+      },
+      "reading_history": {
+        "rows_before": 21,
+        "rows_after": 21,
+        "unchanged": false
+      }
+    },
+    "reading_preferences_unchanged": true,
+    "reading_preferences_sha256": "9396e4208a19709718e61cea5b92b3a987ba1e33c291eed36253e1ebd0b8a064",
+    "visually_exercised": [],
+    "not_claimed": [
+      "All 186 TOC targets individually tapped on a device; targets are statically checked",
+      "Physical Android device testing",
+      "Owner-signed release build",
+      "Independent human translation editing",
+      "Full external hadith authentication"
+    ],
+    "publication_ready": false,
+    "independent_human_review": false,
+    "personal_data_update_scope": "Complete pre-install and post-new-import snapshots, both tar producers exit0 before comparison. New content version2e09a457... confirmed before WAL FULL0|5928|5928; no busy, all pages written. User history not byte-identical: one old daily436 QA note counter+60, no lost/added IDs; all other tested fields unchanged. Later deliberate reader navigation excluded.",
+    "latest_corpus_check": "26October static package and24Python tests pass. Current436 change needs new Android runtime check; previous3112-row actual comparison preserved as historical.",
+    "current_source_update": {
+      "date": "2026-10-26",
+      "scope": "One narrow Russian comparator repair436-05 and own explanatory note. Arabic/IDs unchanged; both critical flags retained.",
+      "current_asset_sha256": "02fbbb74a1849441d6baaf0210a4ca1781d8f099274fbbfbeec5cda88a850c41",
+      "author_records": 3096,
+      "own_notes": 16,
+      "reader_records": 3112,
+      "critical_pending": 2,
+      "new_runtime_import_checked": false
+    },
+    "visual_check_scope": "Last actual reader checks belong to23October source; no current26October Android import or rendering claim.",
+    "current_visual_checks": [],
     "intermediate_11_note_build": {
       "apk_sha256": "f55753794569bf88facf36e1410e8add652edba89e23696875adfb2e74ea3f58",
       "asset_sha256": "204dde4a7ea6795f02a9b8b314f6776cefdfd1bd41f4992bd31379ffad24ddf9",

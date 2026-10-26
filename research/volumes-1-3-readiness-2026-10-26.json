@@ -1,0 +1,55 @@
+{
+  "checked_on": "2026-10-26",
+  "scope": "Evidence inventory and read-only integrity checks, not a new full literary or visual collation of volumes1/2",
+  "volumes": [
+    {
+      "volume": 1,
+      "asset": "app/src/main/assets/corpus.json",
+      "sha256": "7db3a81dc13f6ddba664242bf43b85054d218a40680978a3304af0fc4f62e97a",
+      "matches_completed_pass_snapshot": true,
+      "pass_report": "research/final-translation-collation/VOLUME1_REPORT.md",
+      "author_units": 644,
+      "reader_records": 740,
+      "publication_ready": false,
+      "independent_human_review": false,
+      "source_2019_full_visual_collation_complete": false,
+      "deferred_questions": [
+        {
+          "page": 317,
+          "topic": "comparative distance expression",
+          "review": "V1_P303_322_REVIEW.json"
+        },
+        {
+          "page": 361,
+          "topic": "rational basis of moral recompense versus knowing it",
+          "review": "V1_P343_362_REVIEW.json"
+        },
+        {
+          "page": 567,
+          "topic": "personified heart versus person as captive",
+          "review": "V1_P563_582_REVIEW.json"
+        }
+      ]
+    },
+    {
+      "volume": 2,
+      "asset": "app/src/main/assets/volume2-preview.json",
+      "sha256": "536a11ca3828a13a179109c18b5244a57116b17064537220f573d7cadb2a5eb4",
+      "matches_completed_pass_snapshot": true,
+      "pass_report": "research/final-translation-collation/VOLUME2_REPORT.md",
+      "author_units": 676,
+      "reader_records": 676,
+      "publication_ready": false,
+      "independent_human_review": false,
+      "source_2019_full_visual_collation_complete": false
+    }
+  ],
+  "legacy_checker": {
+    "path": "research/final-translation-collation/verify_integrity.py",
+    "result": "FAIL at structure.json historical baseline hash; not waived or rewritten",
+    "investigation": "All53 structural differences from bac689a are added fields:52 startText landmarks and1 entryParagraphId. Removing only those additions reproduces old structure exactly. Text assets match completed-pass hashes. Changes documented by existing commits8539b2d/1b0a458.",
+    "current_navigation_check": "tools/validate_toc_anchors.py PASS:229 targets,93 unique landmarks, no missing; not semantic certification of titles."
+  },
+  "volume2_reconstruction_check": "verify_volume2_integrity.py PASS:676units,554logged edits,557mirror updates; source/metadata unchanged",
+  "old_queue_warning": "Older translation_queue_audit and scholarly summary are earlier snapshots; their untranslated counts and quote-candidate counts must not be reported as current omissions without reconciliation."
+}
