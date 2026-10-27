@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    121
+    128
   ],
   "draft_complete_printed_range": [
     3,
-    121
+    127
   ],
-  "draft_complete_pages": 119,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p122-01",
-  "continuation_pdf_leaf_required": 122,
+  "draft_complete_pages": 125,
+  "partial_printed_page": 128,
+  "partial_translated_through_source_id": "v4-p128-03",
+  "next_source_id": "v4-p128-04",
+  "continuation_pdf_leaf_required": 129,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -131,7 +131,13 @@
     118,
     119,
     120,
-    121
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -152,12 +158,13 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "0e69ccd65ead4d39ec019855850bb4b5feecdd53",
-  "unsent_current_content": "Current checkpoint through121; confirm next push",
+  "last_confirmed_remote_content_commit": "c2d38fb0f91df83e88996efc63d9fea15881ae64",
+  "unsent_current_content": "Current checkpoint through127; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
-  "second_range_fully_final": false
+  "second_range_fully_final": false,
+  "next_fragment_opening": "أحدهما: أن ذلك ثابت في الخارج، وإنما هو في الذهن، ولكن لما صفا وارتاض، وانجلت عنه ظلمات الطبع، وغاب بمشهوده عن"
 }
