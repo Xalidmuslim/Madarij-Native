@@ -2690,6 +2690,69 @@
         13
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p181-04-ru",
+      "quote": "وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          65,
+          2
+        ],
+        [
+          65,
+          3
+        ]
+      ],
+      "printed_reference": [
+        65,
+        2,
+        2
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p182-01-ru",
+      "quote": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          152
+        ],
+        [
+          2,
+          152
+        ]
+      ],
+      "printed_reference": [
+        2,
+        152,
+        152
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p183-04-ru",
+      "quote": "فَأَمَّا إِنْ كَانَ مِنَ الْمُقَرَّبِينَ فَرَوْحٌ وَرَيْحَانٌ وَجَنَّتُ نَعِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          56,
+          88
+        ],
+        [
+          56,
+          89
+        ]
+      ],
+      "printed_reference": [
+        56,
+        88,
+        88
+      ],
+      "reference_status": "printed_start_only"
     }
   ]
 }

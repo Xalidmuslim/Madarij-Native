@@ -176,7 +176,14 @@
     174,
     175,
     176,
-    177
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184
   ],
   "draft_pages_complete": [
     3,
@@ -353,7 +360,13 @@
     174,
     175,
     176,
-    177
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -517,17 +530,18 @@
     174,
     175,
     176,
-    177
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    177,
     178,
     179,
     180,
     181,
     182,
-    183,
-    184,
+    183
+  ],
+  "untranslated_captured_fragments": [
+    "v4-p184-04"
+  ],
+  "remaining_author_pages_not_captured": [
     185,
     186,
     187,

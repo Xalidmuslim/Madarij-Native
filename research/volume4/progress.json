@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    177
+    184
   ],
   "draft_complete_printed_range": [
     3,
-    177
+    183
   ],
-  "draft_complete_pages": 175,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p178-01",
-  "continuation_pdf_leaf_required": 178,
+  "draft_complete_pages": 181,
+  "partial_printed_page": 184,
+  "partial_translated_through_source_id": "v4-p184-03",
+  "next_source_id": "v4-p184-04",
+  "continuation_pdf_leaf_required": 185,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -181,7 +181,13 @@
     174,
     175,
     176,
-    177
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -205,15 +211,15 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "204617b94d250ab2ff2e9a38928dfeeff98005b3",
-  "unsent_current_content": "Current checkpoint through177; confirm next push",
+  "last_confirmed_remote_content_commit": "468accd9042e95766e77ff550e2bb79b10ea4a0d",
+  "unsent_current_content": "Current checkpoint through183; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "новый лист ещё не записан",
+  "next_fragment_opening": "فالاجتهاد في هذا العمر القصير والمدة القليلة، والسعي والكدح،",
   "third_range": [
     103,
     152
