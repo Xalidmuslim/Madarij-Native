@@ -315,8 +315,8 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "6d9c11fd214a654da8fc565fb478d819f12d09d8",
-  "unsent_current_content": "Current checkpoint through290; confirm next push",
+  "last_confirmed_remote_content_commit": "7674af719eb56e352ed90a9ce02808ded3c92ef6",
+  "unsent_current_content": "Canonical checkpoint through290 and partial291 verified remotely. Further drafts are preserved separately; local runtime unavailable, working-tree synchronization cannot be checked.",
   "pending_review_units": [],
   "second_range": [
     53,
@@ -629,5 +629,24 @@
     289,
     290
   ],
-  "last_full_page_with_three_Codex_passes": 290
+  "last_full_page_with_three_Codex_passes": 290,
+  "emergency_recovery": {
+    "date": "2026-10-27",
+    "reason": "exec-server transport disconnected; execution environment unavailable",
+    "snapshot_path": "research/volume4/recovery/2026-10-27-pages292-295-draft.json",
+    "snapshot_commit": "180b40c7ec7a4e8877903c9a884246972cd6a482",
+    "snapshot_read_back_verified": true,
+    "canonical_data_not_advanced": true,
+    "draft_covers_remaining_page291_and_pages": [
+      292,
+      293,
+      294,
+      295
+    ],
+    "pending_review_and_canonical_import": true,
+    "next_resume_id": "v4-p291-03",
+    "next_new_translation_id": "v4-p296-01",
+    "control_images_actually_seen_through": 297,
+    "runtime_tests_after_drafts_not_run": true
+  }
 }
