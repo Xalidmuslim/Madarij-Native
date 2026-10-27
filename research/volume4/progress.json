@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    140
+    147
   ],
   "draft_complete_printed_range": [
     3,
-    140
+    146
   ],
-  "draft_complete_pages": 138,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p141-01",
-  "continuation_pdf_leaf_required": 141,
+  "draft_complete_pages": 144,
+  "partial_printed_page": 147,
+  "partial_translated_through_source_id": "v4-p147-03",
+  "next_source_id": "v4-p147-04",
+  "continuation_pdf_leaf_required": 148,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -148,7 +148,12 @@
     135,
     138,
     139,
-    140
+    140,
+    141,
+    142,
+    143,
+    144,
+    145
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -156,7 +161,8 @@
     "V4-HADITH-110",
     "V4-ATTRIBUTION-114",
     "V4-ATTRIBUTION-117",
-    "V4-PHIL-136-137"
+    "V4-PHIL-136-137",
+    "V4-ATTRIBUTION-146"
   ],
   "first_range": [
     3,
@@ -170,13 +176,13 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "620dd83cfd0da890dd8a4d7c41a3df10bc52b9b2",
-  "unsent_current_content": "Current checkpoint through140; confirm next push",
+  "last_confirmed_remote_content_commit": "acb125d13619b68964c9468a6737c6437da4a36b",
+  "unsent_current_content": "Current checkpoint through146; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "новый лист ещё не записан"
+  "next_fragment_opening": "فأول شواهد السائر إلى الله والدار الآخرة: أن يقوم به شاهد من الدنيا وحقارتها، وقلة وفائها، وكثرة جفائها، وخسة "
 }

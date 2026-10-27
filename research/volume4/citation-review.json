@@ -297,6 +297,52 @@
       ],
       "source": "Uploaded control136–137, native enlarged upper/lower body; author own explanation137",
       "result": "Control136–137 enlarged body read. Overall quoted identity doctrine and author rejection clear. Exact rendering of خلقيته أسماء مسمى ذاته وعوده إليه and referents of حقيقته / ذاته / طور صفاته remain provisional; present RU uses explanatory author137 for المنزه الأصل / الموهم الفرع. Need compare actual classical quoted commentary or another reliable full witness before finalising these two units. No freely verified commentary text obtained in this run; OpenITI path search not proof of its absence elsewhere. Preserve print; no conjectural Arabic substitution."
+    },
+    {
+      "units": [
+        "v4-p146-04-ru"
+      ],
+      "source": "Pinned primary Sahih Bukhari2805",
+      "actual_lines_read": [
+        24276,
+        24298
+      ],
+      "result": "Actual control146 names عبد الله بن حرام with smell-of-Paradise saying at Uhud. Directly read Bukhari2805 names أنس بن النضر with إني أجد ريحها من دون أحد. Control author name retained, not silently corrected; selected primary attribution differs, no claim every narration was checked."
+    },
+    {
+      "units": [
+        "v4-p144-05-ru"
+      ],
+      "source": "Pinned primary Sahih Muslim920, Umm Salama",
+      "actual_lines_read": [
+        15082,
+        15099
+      ],
+      "result": "Actual إن الروح إذا قبض تبعه البصر matches author phrase; spirit/nafs naming argument retained. No new grading."
+    },
+    {
+      "units": [
+        "v4-p146-04-ru"
+      ],
+      "source": "Pinned primary Sahih Muslim1742, Ibn Abi Awfa",
+      "actual_lines_read": [
+        31910,
+        31924
+      ],
+      "result": "Actual الجنة تحت ظلال السيوف read in its full report context; author shortened quotation retained. No added commands or grading."
+    },
+    {
+      "units": [
+        "v4-p142-02-ru"
+      ],
+      "source": "al-Harawi Manazil al-Sairin, digital primary /workspace/scratch/volume4/primary-manazil-sairin.txt",
+      "openiti_path": "data/0481AnsariHarawi/0481AnsariHarawi.ManazilSairin/0481AnsariHarawi.ManazilSairin.Shamela0006876-ara1.completed",
+      "sha256": "ad3e4300bb076703a879b11c4c2bbba9c15958dc4514e83c455f24e57fe1f89f",
+      "actual_lines_read": [
+        1250,
+        1268
+      ],
+      "result": "Free git witness read; supports لتناغي, gentle converse. Digital witness طهرت / سناء differs from selected control142 ظهرت / سنا; actual control retained, no replacement by easier electronic text and no reproduction of modern notes."
     }
   ],
   "additional_digital_witnesses": [

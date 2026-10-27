@@ -1931,6 +1931,162 @@
         23
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p141-02-ru",
+      "quote": "أَلَمْ تَرَ إِلَى رَبِّكَ كَيْفَ مَدَّ الظِّلَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          45
+        ],
+        [
+          25,
+          45
+        ]
+      ],
+      "printed_reference": [
+        25,
+        45,
+        45
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p141-04-ru",
+      "quote": "أَلَمْ تَرَ إِلَى رَبِّكَ كَيْفَ مَدَّ الظِّلَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          45
+        ],
+        [
+          25,
+          45
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p141-04-ru",
+      "quote": "أَلَمْ تَرَوْا كَيْفَ خَلَقَ اللَّهُ سَبْعَ سَمَاوَاتٍ طِبَاقًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          71,
+          15
+        ],
+        [
+          71,
+          15
+        ]
+      ],
+      "printed_reference": [
+        71,
+        15,
+        15
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p141-04-ru",
+      "quote": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          105,
+          1
+        ],
+        [
+          105,
+          1
+        ]
+      ],
+      "printed_reference": [
+        105,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p141-04-ru",
+      "quote": "أَلَمْ تَرَ إِلَى رَبِّكَ كَيْفَ مَدَّ الظِّلَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          45
+        ],
+        [
+          25,
+          45
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p143-01-ru",
+      "quote": "فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ وَلَكِنْ تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          46
+        ],
+        [
+          22,
+          46
+        ]
+      ],
+      "printed_reference": [
+        22,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p143-03-ru",
+      "quote": "إِنَّ فِي ذَلِكَ لَذِكْرَى لِمَنْ كَانَ لَهُ قَلْبٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          50,
+          37
+        ],
+        [
+          50,
+          37
+        ]
+      ],
+      "printed_reference": [
+        50,
+        37,
+        37
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p144-05-ru",
+      "quote": "اللَّهُ يَتَوَفَّى الْأَنْفُسَ حِينَ مَوْتِهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          42
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "printed_reference": [
+        39,
+        42,
+        42
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
