@@ -1329,6 +1329,299 @@
         105
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p087-02-ru",
+      "quote": "فَلَمَّا أَسْلَمَا وَتَلَّهُ لِلْجَبِينِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          103
+        ],
+        [
+          37,
+          103
+        ]
+      ],
+      "printed_reference": [
+        37,
+        103,
+        103
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p087-04-ru",
+      "quote": "فَلَمَّا أَسْلَمَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          103
+        ],
+        [
+          37,
+          103
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p087-05-ru",
+      "quote": "وَتَلَّهُ لِلْجَبِينِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          103
+        ],
+        [
+          37,
+          103
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p089-01-ru",
+      "quote": "إِنَّ عِبَادِي لَيْسَ لَكَ عَلَيْهِمْ سُلْطَانٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          15,
+          42
+        ],
+        [
+          15,
+          42
+        ]
+      ],
+      "printed_reference": [
+        15,
+        42,
+        42
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p089-01-ru",
+      "quote": "وَعِبَادُ الرَّحْمَنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          63
+        ],
+        [
+          25,
+          63
+        ]
+      ],
+      "printed_reference": [
+        25,
+        63,
+        63
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p089-01-ru",
+      "quote": "عَيْنًا يَشْرَبُ بِهَا عِبَادُ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          76,
+          6
+        ],
+        [
+          76,
+          6
+        ]
+      ],
+      "printed_reference": [
+        76,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p089-01-ru",
+      "quote": "يَاعِبَادِي لَا خَوْفٌ عَلَيْكُمُ الْيَوْمَ",
+      "status": "unmatched",
+      "printed_reference": [
+        43,
+        68,
+        68
+      ],
+      "reference_status": "unmatched"
+    },
+    {
+      "unit": "v4-p094-02-ru",
+      "quote": "وَتَوَلَّى عَنْهُمْ وَقَالَ يَاأَسَفَى عَلَى يُوسُفَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          12,
+          84
+        ],
+        [
+          12,
+          84
+        ]
+      ],
+      "printed_reference": [
+        12,
+        84,
+        84
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p094-03-ru",
+      "quote": "فَلَمَّا رَأَيْنَهُ أَكْبَرْنَهُ وَقَطَّعْنَ أَيْدِيَهُنَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          12,
+          31
+        ],
+        [
+          12,
+          31
+        ]
+      ],
+      "printed_reference": [
+        12,
+        31,
+        31
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p098-03-ru",
+      "quote": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          57,
+          3
+        ],
+        [
+          57,
+          3
+        ]
+      ],
+      "printed_reference": [
+        57,
+        3,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p099-02-ru",
+      "quote": "تَكَادُ السَّمَاوَاتُ يَتَفَطَّرْنَ مِنْهُ وَتَنْشَقُّ الْأَرْضُ وَتَخِرُّ الْجِبَالُ هَدًّا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          19,
+          90
+        ],
+        [
+          19,
+          90
+        ]
+      ],
+      "printed_reference": [
+        19,
+        90,
+        90
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p099-04-ru",
+      "quote": "هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ هُوَ الرَّحْمَنُ الرَّحِيمُ هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ لَهُ الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          59,
+          22
+        ],
+        [
+          59,
+          24
+        ]
+      ],
+      "printed_reference": [
+        59,
+        22,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p100-02-ru",
+      "quote": "وَلَا يَسْتَخِفَّنَّكَ الَّذِينَ لَا يُوقِنُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          60
+        ],
+        [
+          30,
+          60
+        ]
+      ],
+      "printed_reference": [
+        30,
+        60,
+        60
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p100-03-ru",
+      "quote": "فَاصْبِرْ إِنَّ وَعْدَ اللَّهِ حَقٌّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          60
+        ],
+        [
+          30,
+          60
+        ]
+      ],
+      "printed_reference": [
+        30,
+        60,
+        60
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p100-06-ru",
+      "quote": "قُلْ يَاقَوْمِ اعْمَلُوا عَلَى مَكَانَتِكُمْ إِنِّي عَامِلٌ فَسَوْفَ تَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          135
+        ],
+        [
+          6,
+          135
+        ]
+      ],
+      "printed_reference": [
+        39,
+        39,
+        39
+      ],
+      "reference_status": "unmatched"
     }
   ]
 }
