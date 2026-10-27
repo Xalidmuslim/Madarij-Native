@@ -3418,6 +3418,27 @@
           46
         ]
       ]
+    },
+    {
+      "unit": "v4-p214-01-ru",
+      "quote": "وَاصْطَنَعْتُكَ لِنَفْسِي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          41
+        ],
+        [
+          20,
+          41
+        ]
+      ],
+      "printed_reference": [
+        20,
+        41,
+        41
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
