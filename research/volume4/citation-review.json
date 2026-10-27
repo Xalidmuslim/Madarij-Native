@@ -542,6 +542,55 @@
       ],
       "source": "Actual control181 and184 references",
       "result": "Control references65:2 and56:88 include quotation through following verse; AR references retained, RU gives65:2–3 and56:88–89. Pending automatic literal comparison, not human editorial certification."
+    },
+    {
+      "units": [
+        "v4-p186-02-ru"
+      ],
+      "source": "Actual enlarged control q10word186.png; pinned Ibn Khalawayh Hujja, Yunus discussion V01P184",
+      "actual_lines_read": [
+        3937,
+        3962
+      ],
+      "result": "Printed10:45 نَحْشُرُهُمْ retained in source and RU Мы. Actual Hujja explicitly يقرأ بالياء والنون, no named reader assertion. Checker comparison-only aligns to unchanged Tanzil يحشرهم, seven focused tests passed including wrong-reference/extra-word/other-unit rejection."
+    },
+    {
+      "units": [
+        "v4-p186-03-ru"
+      ],
+      "source": "Actual control186–187 versus auxiliary other-edition Madarij witness",
+      "actual_auxiliary_lines_read": [
+        31148,
+        31161
+      ],
+      "result": "Opposite higher/lower preference confirmed; control retained, contextual expression provisional, V4-PREFERENCE-186-187 open. No claim auxiliary is controlling2019 edition or proof of a manuscript reading."
+    },
+    {
+      "units": [
+        "v4-p187-02-ru"
+      ],
+      "source": "Pinned primary Bukhari2795 and Muslim1877",
+      "actual_bukhari_lines_read": [
+        24199,
+        24204
+      ],
+      "actual_muslim_lines_read": [
+        34703,
+        34715
+      ],
+      "result": "Actual reports of deceased believer/martyr read; author combines shortened phrasing/كرامة, primary variants include فضل الشهادة / الكرامة and once / ten. Control retained, author explanation يعني ليقتل مرة أخرى kept outside quote. No new grade."
+    },
+    {
+      "units": [
+        "v4-p187-03-ru",
+        "v4-p188-02-ru",
+        "v4-p188-03-ru",
+        "v4-p189-02-ru",
+        "v4-p189-03-ru",
+        "v4-p189-04-ru"
+      ],
+      "source": "Actual control187–190",
+      "result": "Eight lines of criticized poem kept visibly separate from rebuttal; all paired moral contrasts188 retained. Continuation of reported speech marked as quoted paragraphs; do not mistake philosopher claim of equal fate for accepted author creed. Modern footnote poem expansions excluded."
     }
   ],
   "additional_digital_witnesses": [

@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    184
+    190
   ],
   "draft_complete_printed_range": [
     3,
-    183
+    189
   ],
-  "draft_complete_pages": 181,
-  "partial_printed_page": 184,
-  "partial_translated_through_source_id": "v4-p184-03",
-  "next_source_id": "v4-p184-04",
-  "continuation_pdf_leaf_required": 185,
+  "draft_complete_pages": 187,
+  "partial_printed_page": 190,
+  "partial_translated_through_source_id": "v4-p190-01",
+  "next_source_id": "v4-p190-02",
+  "continuation_pdf_leaf_required": 191,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -187,7 +187,11 @@
     180,
     181,
     182,
-    183
+    183,
+    184,
+    185,
+    188,
+    189
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -197,7 +201,8 @@
     "V4-ATTRIBUTION-117",
     "V4-PHIL-136-137",
     "V4-ATTRIBUTION-146",
-    "V4-SYNTAX-166"
+    "V4-SYNTAX-166",
+    "V4-PREFERENCE-186-187"
   ],
   "first_range": [
     3,
@@ -211,15 +216,15 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "468accd9042e95766e77ff550e2bb79b10ea4a0d",
-  "unsent_current_content": "Current checkpoint through183; confirm next push",
+  "last_confirmed_remote_content_commit": "f48d4738291f2f3b3db10333935a6dee80e31c56",
+  "unsent_current_content": "Current checkpoint through189; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "فالاجتهاد في هذا العمر القصير والمدة القليلة، والسعي والكدح،",
+  "next_fragment_opening": "وبالجملة: من نظر في الموجودات، ولم يقنع بمجرد النظر إليها = وجدها دالة على أن وراء هذه الحياة حياة أخرى أكمل م",
   "third_range": [
     103,
     152

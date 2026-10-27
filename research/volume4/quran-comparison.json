@@ -2753,6 +2753,133 @@
         88
       ],
       "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p186-02-ru",
+      "quote": "كَأَنَّهُمْ يَوْمَ يَرَوْنَ مَا يُوعَدُونَ لَمْ يَلْبَثُوا إِلَّا سَاعَةً مِنْ نَهَارٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          46,
+          35
+        ],
+        [
+          46,
+          35
+        ]
+      ],
+      "printed_reference": [
+        46,
+        35,
+        35
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p186-02-ru",
+      "quote": "وَيَوْمَ نَحْشُرُهُمْ كَأَنْ لَمْ يَلْبَثُوا إِلَّا سَاعَةً مِنَ النَّهَارِ يَتَعَارَفُونَ بَيْنَهُمْ",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          10,
+          45
+        ],
+        [
+          10,
+          45
+        ]
+      ],
+      "evidence": "Control leaf186, enlarged q10word186.png, reads نَحْشُرُهُمْ in10:45. Ibn Khalawayh Hujja, suraYunus discussion, PageV01P184, explicitly attests ya and nun. Comparison-only alignment to unchanged Tanzil يحشرهم; control Arabic and Russian Мы retained. No named reader attribution asserted.",
+      "printed_reference": [
+        10,
+        45,
+        45
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p186-02-ru",
+      "quote": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوا إِلَّا عَشِيَّةً أَوْ ضُحَاهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          79,
+          46
+        ],
+        [
+          79,
+          46
+        ]
+      ],
+      "printed_reference": [
+        79,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p186-02-ru",
+      "quote": "وَيَوْمَ تَقُومُ السَّاعَةُ يُقْسِمُ الْمُجْرِمُونَ مَا لَبِثُوا غَيْرَ سَاعَةٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          55
+        ],
+        [
+          30,
+          55
+        ]
+      ],
+      "printed_reference": [
+        30,
+        55,
+        55
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p186-02-ru",
+      "quote": "قَالَ كَمْ لَبِثْتُمْ فِي الْأَرْضِ عَدَدَ سِنِينَ قَالُوا لَبِثْنَا يَوْمًا أَوْ بَعْضَ يَوْمٍ فَاسْأَلِ الْعَادِّينَ قَالَ إِنْ لَبِثْتُمْ إِلَّا قَلِيلًا لَوْ أَنَّكُمْ كُنْتُمْ تَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          23,
+          112
+        ],
+        [
+          23,
+          114
+        ]
+      ],
+      "printed_reference": [
+        23,
+        112,
+        114
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p188-03-ru",
+      "quote": "أَمْ حَسِبَ الَّذِينَ اجْتَرَحُوا السَّيِّئَاتِ أَنْ نَجْعَلَهُمْ كَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَوَاءً مَحْيَاهُمْ وَمَمَاتُهُمْ سَاءَ مَا يَحْكُمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          45,
+          21
+        ],
+        [
+          45,
+          21
+        ]
+      ],
+      "printed_reference": [
+        45,
+        21,
+        21
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

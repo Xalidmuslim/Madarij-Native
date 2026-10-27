@@ -38,6 +38,10 @@ def compare(path):
                 candidate = raw.replace('لصالواالجحيم', 'لصالوالجحيم', 1)
                 orthography = True
                 evidence = 'Control leaf106, enlarged q83-word-page106.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
+            if u['id'] == 'v4-p186-02-ru' and raw.startswith('ويومنحشرهم'):
+                candidate = raw.replace('ويومنحشرهم', 'ويوميحشرهم', 1)
+                variant = True
+                evidence = 'Control leaf186, enlarged q10word186.png, reads نَحْشُرُهُمْ in10:45. Ibn Khalawayh Hujja, suraYunus discussion, PageV01P184, explicitly attests ya and nun. Comparison-only alignment to unchanged Tanzil يحشرهم; control Arabic and Russian Мы retained. No named reader attribution asserted.'
             pos = whole.find(candidate)
             if m[2]:
                 sur = names.get(normalized(m[2]))
