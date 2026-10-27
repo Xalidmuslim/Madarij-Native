@@ -1188,6 +1188,90 @@
         231
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p053-02-ru",
+      "quote": "فَلَمَّا أَفَاقَ قَالَ سُبْحَانَكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          143
+        ],
+        [
+          7,
+          143
+        ]
+      ],
+      "printed_reference": [
+        7,
+        143,
+        143
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p056-03-ru",
+      "quote": "يَا أَسَفَى عَلَى يُوسُفَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          12,
+          84
+        ],
+        [
+          12,
+          84
+        ]
+      ],
+      "printed_reference": [
+        12,
+        84,
+        84
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p056-03-ru",
+      "quote": "فَلَمَّا آسَفُونَا انْتَقَمْنَا مِنْهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          55
+        ],
+        [
+          43,
+          55
+        ]
+      ],
+      "printed_reference": [
+        43,
+        55,
+        55
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p057-02-ru",
+      "quote": "وَحِيلَ بَيْنَهُمْ وَبَيْنَ مَا يَشْتَهُونَ كَمَا فُعِلَ بِأَشْيَاعِهِمْ مِنْ قَبْلُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          34,
+          54
+        ],
+        [
+          34,
+          54
+        ]
+      ],
+      "printed_reference": [
+        34,
+        54,
+        54
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

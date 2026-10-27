@@ -62,6 +62,22 @@
       "local_file": "/workspace/scratch/volume3/primary-lisan-arab.txt",
       "result": "Read definition of excess refinement/ostentation with pride. Word46 remains contextual question; preliminary RU not final.",
       "file_sha256": "4d77d42d64e7ae4e95b37b27f514fd93c5710199794d361c933da720fcfd3257"
+    },
+    {
+      "units": [
+        "v4-p053-06-ru"
+      ],
+      "source": "Ibn Manzur Lisan al-Arab, rootنفش",
+      "local_file": "/workspace/scratch/volume3/primary-lisan-arab.txt",
+      "file_sha256": "4d77d42d64e7ae4e95b37b27f514fd93c5710199794d361c933da720fcfd3257",
+      "result": "Read106927–106937. Nafsh is stretching/separating wool fibres; RU распушение. Author phonetic argument preserved without importing modern commentary."
+    },
+    {
+      "units": [
+        "v4-p059-03-ru"
+      ],
+      "source": "Control print59, author introduces saying with كما قيل",
+      "result": "Anonymous quoted maxim retained as a saying, not labelled Quran, prophetic hadith or newly authenticated divine speech. Makar context: warning against reliance on other than Allah; no new doctrine introduced."
     }
   ]
 }
