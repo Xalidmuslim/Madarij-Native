@@ -202,7 +202,15 @@
     200,
     201,
     202,
-    203
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211
   ],
   "draft_pages_complete": [
     3,
@@ -404,7 +412,16 @@
     199,
     200,
     201,
-    202
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -591,20 +608,18 @@
     199,
     200,
     201,
-    202
-  ],
-  "untranslated_captured_fragments": [
-    "v4-p203-04"
-  ],
-  "remaining_author_pages_not_captured": [
+    202,
+    203,
     204,
     205,
-    206,
     207,
     208,
     209,
     210,
-    211,
+    211
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     212,
     213,
     214,

@@ -3274,6 +3274,150 @@
           5
         ]
       ]
+    },
+    {
+      "unit": "v4-p208-02-ru",
+      "quote": "ثُمَّ قَبَضْنَاهُ إِلَيْنَا قَبْضًا يَسِيرًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          46
+        ],
+        [
+          25,
+          46
+        ]
+      ],
+      "printed_reference": [
+        25,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p208-03-ru",
+      "quote": "أَلَمْ تَرَ إِلَى رَبِّكَ كَيْفَ مَدَّ الظِّلَّ وَلَوْ شَاءَ لَجَعَلَهُ سَاكِنًا ثُمَّ جَعَلْنَا الشَّمْسَ عَلَيْهِ دَلِيلًا ثُمَّ قَبَضْنَاهُ إِلَيْنَا قَبْضًا يَسِيرًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          45
+        ],
+        [
+          25,
+          46
+        ]
+      ],
+      "printed_reference": [
+        25,
+        45,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p209-03-ru",
+      "quote": "ثُمَّ قَبَضْنَاهُ إِلَيْنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          46
+        ],
+        [
+          25,
+          46
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p209-03-ru",
+      "quote": "قَبْضًا يَسِيرًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          46
+        ],
+        [
+          25,
+          46
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p209-03-ru",
+      "quote": "ذَلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          50,
+          44
+        ],
+        [
+          50,
+          44
+        ]
+      ],
+      "printed_reference": [
+        50,
+        44,
+        44
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p209-03-ru",
+      "quote": "قَبَضْنَاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          46
+        ],
+        [
+          25,
+          46
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p209-03-ru",
+      "quote": "أَتَى أَمْرُ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          1
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "printed_reference": [
+        16,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p211-01-ru",
+      "quote": "ثُمَّ قَبَضْنَاهُ إِلَيْنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          46
+        ],
+        [
+          25,
+          46
+        ]
+      ]
     }
   ]
 }

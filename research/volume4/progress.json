@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    203
+    211
   ],
   "draft_complete_printed_range": [
     3,
-    202
+    211
   ],
-  "draft_complete_pages": 200,
-  "partial_printed_page": 203,
-  "partial_translated_through_source_id": "v4-p203-03",
-  "next_source_id": "v4-p203-04",
-  "continuation_pdf_leaf_required": 204,
+  "draft_complete_pages": 209,
+  "partial_printed_page": null,
+  "partial_translated_through_source_id": null,
+  "next_source_id": "v4-p212-01",
+  "continuation_pdf_leaf_required": 212,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -204,7 +204,15 @@
     199,
     200,
     201,
-    202
+    202,
+    203,
+    204,
+    205,
+    207,
+    208,
+    209,
+    210,
+    211
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -215,7 +223,8 @@
     "V4-PHIL-136-137",
     "V4-ATTRIBUTION-146",
     "V4-SYNTAX-166",
-    "V4-PREFERENCE-186-187"
+    "V4-PREFERENCE-186-187",
+    "V4-NUMBER-206"
   ],
   "first_range": [
     3,
@@ -229,15 +238,15 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "bf4df44ba741a01527df0b8b54ffaea9067ef826",
-  "unsent_current_content": "Current checkpoint through202; confirm next push",
+  "last_confirmed_remote_content_commit": "a6705e717935fda99afe67487798cff1a89b40da",
+  "unsent_current_content": "Current checkpoint through211; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "ولعمر الله إن نفس الافتقار هو هذا النفس أو من نوعه، لكن الشيخ جعلهما نفسين، فجعل نفس الاضطرار بداية، ونفس الاف",
+  "next_fragment_opening": "новый лист ещё не записан",
   "third_range": [
     103,
     152
