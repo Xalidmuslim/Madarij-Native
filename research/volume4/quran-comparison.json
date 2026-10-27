@@ -4475,6 +4475,693 @@
         16
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-02-ru",
+      "quote": "وَإِذَا سَمِعُوا مَا أُنْزِلَ إِلَى الرَّسُولِ تَرَىٰ أَعْيُنَهُمْ تَفِيضُ مِنَ الدَّمْعِ مِمَّا عَرَفُوا مِنَ الْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          83
+        ],
+        [
+          5,
+          83
+        ]
+      ],
+      "printed_reference": [
+        5,
+        83,
+        83
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-03-ru",
+      "quote": "مِمَّا عَرَفُوا مِنَ الْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          83
+        ],
+        [
+          5,
+          83
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p277-03-ru",
+      "quote": "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          146
+        ],
+        [
+          2,
+          146
+        ]
+      ],
+      "printed_reference": [
+        2,
+        146,
+        146
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          47,
+          19
+        ],
+        [
+          47,
+          19
+        ]
+      ],
+      "printed_reference": [
+        47,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "printed_reference": [
+        3,
+        18,
+        18
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَالَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْلَمُونَ أَنَّهُ مُنَزَّلٌ مِنْ رَبِّكَ بِالْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          114
+        ],
+        [
+          6,
+          114
+        ]
+      ],
+      "printed_reference": [
+        6,
+        114,
+        114
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          114
+        ],
+        [
+          20,
+          114
+        ]
+      ],
+      "printed_reference": [
+        20,
+        114,
+        114
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "أَفَمَنْ يَعْلَمُ أَنَّمَا أُنْزِلَ إِلَيْكَ مِنْ رَبِّكَ الْحَقُّ كَمَنْ هُوَ أَعْمَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          19
+        ],
+        [
+          13,
+          19
+        ]
+      ],
+      "printed_reference": [
+        13,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          9
+        ],
+        [
+          39,
+          9
+        ]
+      ],
+      "printed_reference": [
+        39,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَقَالَ الَّذِينَ أُوتُوا الْعِلْمَ وَالْإِيمَانَ لَقَدْ لَبِثْتُمْ فِي كِتَابِ اللَّهِ إِلَىٰ يَوْمِ الْبَعْثِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          56
+        ],
+        [
+          30,
+          56
+        ]
+      ],
+      "printed_reference": [
+        30,
+        56,
+        56
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَقَالَ الَّذِينَ أُوتُوا الْعِلْمَ وَيْلَكُمْ ثَوَابُ اللَّهِ خَيْرٌ لِمَنْ آمَنَ وَعَمِلَ صَالِحًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          80
+        ],
+        [
+          28,
+          80
+        ]
+      ],
+      "printed_reference": [
+        28,
+        80,
+        80
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَتِلْكَ الْأَمْثَالُ نَضْرِبُهَا لِلنَّاسِ وَمَا يَعْقِلُهَا إِلَّا الْعَالِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          43
+        ],
+        [
+          29,
+          43
+        ]
+      ],
+      "printed_reference": [
+        29,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "قَالَ الَّذِي عِنْدَهُ عِلْمٌ مِنَ الْكِتَابِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          40
+        ],
+        [
+          27,
+          40
+        ]
+      ],
+      "printed_reference": [
+        27,
+        40,
+        40
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "اعْلَمُوا أَنَّ اللَّهَ يُحْيِي الْأَرْضَ بَعْدَ مَوْتِهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          57,
+          17
+        ],
+        [
+          57,
+          17
+        ]
+      ],
+      "printed_reference": [
+        57,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "اعْلَمُوا أَنَّمَا الْحَيَاةُ الدُّنْيَا لَعِبٌ وَلَهْوٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          57,
+          20
+        ],
+        [
+          57,
+          20
+        ]
+      ],
+      "printed_reference": [
+        57,
+        20,
+        20
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "وَاتَّقُوا اللَّهَ وَاعْلَمُوا أَنَّكُمْ مُلَاقُوهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          223
+        ],
+        [
+          2,
+          223
+        ]
+      ],
+      "printed_reference": [
+        2,
+        223,
+        223
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p277-04-ru",
+      "quote": "فَاعْلَمُوا أَنَّمَا أُنْزِلَ بِعِلْمِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          14
+        ],
+        [
+          11,
+          14
+        ]
+      ],
+      "printed_reference": [
+        11,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p278-03-ru",
+      "quote": "ذَٰلِكَ بِأَنَّ مِنْهُمْ قِسِّيسِينَ وَرُهْبَانًا وَأَنَّهُمْ لَا يَسْتَكْبِرُونَ وَإِذَا سَمِعُوا مَا أُنْزِلَ إِلَى الرَّسُولِ تَرَىٰ أَعْيُنَهُمْ تَفِيضُ مِنَ الدَّمْعِ مِمَّا عَرَفُوا مِنَ الْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          82
+        ],
+        [
+          5,
+          83
+        ]
+      ],
+      "printed_reference": [
+        5,
+        82,
+        83
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p278-03-ru",
+      "quote": "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          146
+        ],
+        [
+          2,
+          146
+        ]
+      ],
+      "printed_reference": [
+        2,
+        146,
+        146
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-03-ru",
+      "quote": "فَعَرَفَهُمْ وَهُمْ لَهُ مُنْكِرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          12,
+          58
+        ],
+        [
+          12,
+          58
+        ]
+      ],
+      "printed_reference": [
+        12,
+        58,
+        58
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-03-ru",
+      "quote": "يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          146
+        ],
+        [
+          2,
+          146
+        ]
+      ],
+      "printed_reference": [
+        2,
+        146,
+        146
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-03-ru",
+      "quote": "فَإِنْ عَلِمْتُمُوهُنَّ مُؤْمِنَاتٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          60,
+          10
+        ],
+        [
+          60,
+          10
+        ]
+      ],
+      "printed_reference": [
+        60,
+        10,
+        10
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-03-ru",
+      "quote": "وَآخَرِينَ مِنْ دُونِهِمْ لَا تَعْلَمُونَهُمُ اللَّهُ يَعْلَمُهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          60
+        ],
+        [
+          8,
+          60
+        ]
+      ],
+      "printed_reference": [
+        8,
+        60,
+        60
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-05-ru",
+      "quote": "فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          47,
+          19
+        ],
+        [
+          47,
+          19
+        ]
+      ],
+      "printed_reference": [
+        47,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-05-ru",
+      "quote": "اعْلَمُوا أَنَّ اللَّهَ شَدِيدُ الْعِقَابِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          98
+        ],
+        [
+          5,
+          98
+        ]
+      ],
+      "printed_reference": [
+        5,
+        98,
+        98
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p279-05-ru",
+      "quote": "فَاعْلَمُوا أَنَّمَا أُنْزِلَ بِعِلْمِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          14
+        ],
+        [
+          11,
+          14
+        ]
+      ],
+      "printed_reference": [
+        11,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p280-02-ru",
+      "quote": "وَيَوْمَ يَحْشُرُهُمْ كَأَنْ لَمْ يَلْبَثُوا إِلَّا سَاعَةً مِنَ النَّهَارِ يَتَعَارَفُونَ بَيْنَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          45
+        ],
+        [
+          10,
+          45
+        ]
+      ],
+      "printed_reference": [
+        10,
+        45,
+        45
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p280-02-ru",
+      "quote": "وَجَاءَ إِخْوَةُ يُوسُفَ فَدَخَلُوا عَلَيْهِ فَعَرَفَهُمْ وَهُمْ لَهُ مُنْكِرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          12,
+          58
+        ],
+        [
+          12,
+          58
+        ]
+      ],
+      "printed_reference": [
+        12,
+        58,
+        58
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p280-02-ru",
+      "quote": "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          146
+        ],
+        [
+          2,
+          146
+        ]
+      ],
+      "printed_reference": [
+        2,
+        146,
+        146
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p280-04-ru",
+      "quote": "وَكَانُوا مِنْ قَبْلُ يَسْتَفْتِحُونَ عَلَى الَّذِينَ كَفَرُوا فَلَمَّا جَاءَهُمْ مَا عَرَفُوا كَفَرُوا بِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          89
+        ],
+        [
+          2,
+          89
+        ]
+      ],
+      "printed_reference": [
+        2,
+        89,
+        89
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p281-01-ru",
+      "quote": "يَعْرِفُونَ نِعْمَتَ اللَّهِ ثُمَّ يُنْكِرُونَهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          83
+        ],
+        [
+          16,
+          83
+        ]
+      ],
+      "printed_reference": [
+        16,
+        83,
+        83
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p281-05-ru",
+      "quote": "يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِهِ عِلْمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          110
+        ],
+        [
+          20,
+          110
+        ]
+      ],
+      "printed_reference": [
+        20,
+        110,
+        110
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p283-04-ru",
+      "quote": "إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          35,
+          28
+        ],
+        [
+          35,
+          28
+        ]
+      ],
+      "printed_reference": [
+        35,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
