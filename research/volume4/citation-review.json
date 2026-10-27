@@ -225,6 +225,34 @@
         2288
       ],
       "result": "Control114 names Musa in Ahmad Zuhd quotation. Actual cached primary Ahmad Zuhd376 read2268–2288 names Dawud, transmitted from Abu al-Jild, with fuller wording. Preserve actual author Musa; selected primary difference documented, not exhaustive claim of no other narration and not a grading as authenticated revelation."
+    },
+    {
+      "units": [
+        "v4-p116-06-ru"
+      ],
+      "source": "Pinned primary Sahih Bukhari1354/5758 and Sahih Muslim1681",
+      "actual_lines_read": {
+        "Bukhari1354": [
+          11598,
+          11624
+        ],
+        "Bukhari5758": [
+          51456,
+          51483
+        ],
+        "Muslim1681": [
+          30802,
+          30818
+        ]
+      },
+      "result": "Control117 quotes إنما أنت من إخوان الكهان to Ibn Sayyad. Actual Bukhari1354 encounter has اخسأ فلن تعدو قدرك. Actual Bukhari5758/Muslim1681 use إنما هذا من إخوان الكهان in a different case, a compensation dispute and rhymed speech. Keep author attribution117; whole quote to Ibn Sayyad not confirmed in these selected witnesses, not an assertion no other narration exists."
+    },
+    {
+      "units": [
+        "v4-p115-03-ru"
+      ],
+      "source": "Author himself, actual control115; main quote110 and explanation116/121",
+      "result": "Preserve both handwritten-copy readings author reports: وهي أن تكون مستدامة / وهي لا تكون مستديمة, and his explicit preference for negated version. Third degree is explicitly الثالثة on116/118; second degree is already defined as sustained first degree. No silently renumbered or skipped degree. Modern footnotes not imported."
     }
   ],
   "additional_digital_witnesses": [

@@ -113,6 +113,12 @@
       "source_id": "v4-p114-03",
       "status": "open_primary_attribution_difference",
       "finding": "Control114 names Musa in Ahmad Zuhd quotation. Actual cached primary Ahmad Zuhd376 read2268–2288 names Dawud, transmitted from Abu al-Jild, with fuller wording. Preserve actual author Musa; selected primary difference documented, not exhaustive claim of no other narration and not a grading as authenticated revelation."
+    },
+    {
+      "id": "V4-ATTRIBUTION-117",
+      "source_id": "v4-p117-01",
+      "status": "open_primary_attribution_difference",
+      "finding": "Control117 quotes إنما أنت من إخوان الكهان to Ibn Sayyad. Actual Bukhari1354 encounter has اخسأ فلن تعدو قدرك. Actual Bukhari5758/Muslim1681 use إنما هذا من إخوان الكهان in a different case, a compensation dispute and rhymed speech. Keep author attribution117; whole quote to Ibn Sayyad not confirmed in these selected witnesses, not an assertion no other narration exists."
     }
   ]
 }

@@ -113,7 +113,14 @@
     111,
     112,
     113,
-    114
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121
   ],
   "draft_pages_complete": [
     3,
@@ -226,7 +233,15 @@
     110,
     111,
     112,
-    113
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -335,19 +350,15 @@
     109,
     111,
     112,
-    113
-  ],
-  "untranslated_captured_fragments": [
-    "v4-p114-07"
-  ],
-  "remaining_author_pages_not_captured": [
+    113,
     115,
-    116,
-    117,
     118,
     119,
     120,
-    121,
+    121
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     122,
     123,
     124,

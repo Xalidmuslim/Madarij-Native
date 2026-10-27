@@ -1796,6 +1796,84 @@
         42
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p119-04-ru",
+      "quote": "لَا تُدْرِكُهُ الْأَبْصَارُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          103
+        ],
+        [
+          6,
+          103
+        ]
+      ],
+      "printed_reference": [
+        6,
+        103,
+        103
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p119-05-ru",
+      "quote": "مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          35
+        ],
+        [
+          24,
+          35
+        ]
+      ],
+      "printed_reference": [
+        24,
+        35,
+        35
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p119-05-ru",
+      "quote": "وَمَنْ لَمْ يَجْعَلِ اللَّهُ لَهُ نُورًا فَمَا لَهُ مِنْ نُورٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          40
+        ],
+        [
+          24,
+          40
+        ]
+      ],
+      "printed_reference": [
+        24,
+        40,
+        40
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p120-05-ru",
+      "quote": "وَمَنْ لَمْ يَجْعَلِ اللَّهُ لَهُ نُورًا فَمَا لَهُ مِنْ نُورٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          40
+        ],
+        [
+          24,
+          40
+        ]
+      ]
     }
   ]
 }
