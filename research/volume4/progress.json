@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    228
+    235
   ],
   "draft_complete_printed_range": [
     3,
-    228
+    235
   ],
-  "draft_complete_pages": 226,
+  "draft_complete_pages": 233,
   "partial_printed_page": null,
   "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p229-01",
-  "continuation_pdf_leaf_required": 229,
+  "next_source_id": "v4-p236-01",
+  "continuation_pdf_leaf_required": 236,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -229,7 +229,14 @@
     225,
     226,
     227,
-    228
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -255,8 +262,8 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "c3d5c9812122c444c7514916a364a44fad353372",
-  "unsent_current_content": "Current checkpoint through228; confirm next push",
+  "last_confirmed_remote_content_commit": "9643f709247735acd792e3c3edf2a6706fd33620",
+  "unsent_current_content": "Current checkpoint through235; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,

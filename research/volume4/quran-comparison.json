@@ -3649,6 +3649,132 @@
         24
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p229-02-ru",
+      "quote": "رَبِّ أَرِنِي أَنْظُرْ إِلَيْكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          143
+        ],
+        [
+          7,
+          143
+        ]
+      ],
+      "printed_reference": [
+        7,
+        143,
+        143
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p229-06-ru",
+      "quote": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَقْرَبُوا الصَّلَاةَ وَأَنْتُمْ سُكَارَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          43
+        ],
+        [
+          4,
+          43
+        ]
+      ],
+      "printed_reference": [
+        4,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p229-06-ru",
+      "quote": "وَتَرَى النَّاسَ سُكَارَى وَمَا هُمْ بِسُكَارَى وَلَكِنَّ عَذَابَ اللَّهِ شَدِيدٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          2
+        ]
+      ],
+      "printed_reference": [
+        22,
+        2,
+        2
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p230-02-ru",
+      "quote": "لَعَمْرُكَ إِنَّهُمْ لَفِي سَكْرَتِهِمْ يَعْمَهُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          15,
+          72
+        ],
+        [
+          15,
+          72
+        ]
+      ],
+      "printed_reference": [
+        15,
+        72,
+        72
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p231-03-ru",
+      "quote": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَقْرَبُوا الصَّلَاةَ وَأَنْتُمْ سُكَارَى حَتَّى تَعْلَمُوا مَا تَقُولُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          43
+        ],
+        [
+          4,
+          43
+        ]
+      ],
+      "printed_reference": [
+        4,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p232-03-ru",
+      "quote": "وَتَرَى النَّاسَ سُكَارَى وَمَا هُمْ بِسُكَارَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          2
+        ]
+      ],
+      "printed_reference": [
+        22,
+        2,
+        2
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
