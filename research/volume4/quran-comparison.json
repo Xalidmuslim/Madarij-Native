@@ -4307,6 +4307,174 @@
         103
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p264-03-ru",
+      "quote": "وَمِنْ آيَاتِهِ اللَّيْلُ وَالنَّهَارُ وَالشَّمْسُ وَالْقَمَرُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          37
+        ],
+        [
+          41,
+          37
+        ]
+      ],
+      "printed_reference": [
+        41,
+        37,
+        37
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p264-03-ru",
+      "quote": "أَفِي اللَّهِ شَكٌّ فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          10
+        ]
+      ],
+      "printed_reference": [
+        14,
+        10,
+        10
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p266-04-ru",
+      "quote": "وَعَنَتِ الْوُجُوهُ لِلْحَيِّ الْقَيُّومِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          111
+        ],
+        [
+          20,
+          111
+        ]
+      ],
+      "printed_reference": [
+        20,
+        111,
+        111
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p267-02-ru",
+      "quote": "وَيُحَذِّرُكُمُ اللَّهُ نَفْسَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          28
+        ],
+        [
+          3,
+          28
+        ]
+      ],
+      "printed_reference": [
+        3,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p267-04-ru",
+      "quote": "وَإِذْ قُلْنَا لِلْمَلَائِكَةِ اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ كَانَ مِنَ الْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِ أَفَتَتَّخِذُونَهُ وَذُرِّيَّتَهُ أَوْلِيَاءَ مِنْ دُونِي وَهُمْ لَكُمْ عَدُوٌّ بِئْسَ لِلظَّالِمِينَ بَدَلًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          50
+        ],
+        [
+          18,
+          50
+        ]
+      ],
+      "printed_reference": [
+        18,
+        50,
+        50
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p268-02-ru",
+      "quote": "وَإِذَا قَرَأْتَ الْقُرْآنَ جَعَلْنَا بَيْنَكَ وَبَيْنَ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ حِجَابًا مَسْتُورًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          45
+        ],
+        [
+          17,
+          45
+        ]
+      ],
+      "printed_reference": [
+        17,
+        45,
+        45
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p270-05-ru",
+      "quote": "إِنَّنِي بَرَاءٌ مِمَّا تَعْبُدُونَ إِلَّا الَّذِي فَطَرَنِي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          26
+        ],
+        [
+          43,
+          27
+        ]
+      ],
+      "printed_reference": [
+        43,
+        26,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p270-05-ru",
+      "quote": "وَإِذِ اعْتَزَلْتُمُوهُمْ وَمَا يَعْبُدُونَ إِلَّا اللَّهَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          16
+        ],
+        [
+          18,
+          16
+        ]
+      ],
+      "printed_reference": [
+        18,
+        16,
+        16
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
