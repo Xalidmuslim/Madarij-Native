@@ -127,7 +127,14 @@
     125,
     126,
     127,
-    128
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135
   ],
   "draft_pages_complete": [
     3,
@@ -254,7 +261,15 @@
     124,
     125,
     126,
-    127
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -374,19 +389,18 @@
     124,
     125,
     126,
-    127
-  ],
-  "untranslated_captured_fragments": [
-    "v4-p128-04"
-  ],
-  "remaining_author_pages_not_captured": [
+    127,
+    128,
     129,
     130,
     131,
     132,
     133,
     134,
-    135,
+    135
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     136,
     137,
     138,

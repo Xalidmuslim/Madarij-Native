@@ -264,6 +264,31 @@
         8074
       ],
       "result": "Full actual narration from Aisha read; لا أحصي ثناء عليك أنت كما أثنيت على نفسك matches author quoted phrase. Translation retains inability to enumerate praise; no new grade added."
+    },
+    {
+      "units": [
+        "v4-p130-03-ru"
+      ],
+      "source": "Sahih Bukhari1458 and7372, pinned unchanged primary witness",
+      "actual_lines_read": {
+        "1458": [
+          12579,
+          12600
+        ],
+        "7372": [
+          64562,
+          64579
+        ]
+      },
+      "result": "Actual1458 has first invitation عبادة الله and فإذا عرفوا الله;7372 has أن يوحدوا الله and فإذا عرفوا ذلك. Author130 شهادة...عرفوا الله retained. The key عرفوا الله underpinning author argument confirmed in1458, not an assertion entire author wording matches either inspected recension and no new grade."
+    },
+    {
+      "units": [
+        "v4-p129-06-ru",
+        "v4-p132-01-ru"
+      ],
+      "source": "Actual author explanation132, native quote-page129.png; context131–132",
+      "result": "منيخة بفناء الجمع is encamping in courtyard of collection, not gift and not annihilation: author explicitly compares traveler dismounting camel at courtyard of house. Source working transcription left unvocalized as scanned prose, meaning fixed by author own explanation."
     }
   ],
   "additional_digital_witnesses": [
