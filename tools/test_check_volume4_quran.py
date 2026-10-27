@@ -17,6 +17,8 @@ class QuranComparisonTests(unittest.TestCase):
             (6, 135): checker.normalized(self.repeated),
             (39, 39): checker.normalized(self.repeated),
             (43, 68): checker.normalized('يا عباد لا خوف عليكم اليوم'),
+            (83, 15): checker.normalized('كلا إنهم عن ربهم يومئذ لمحجوبون'),
+            (83, 16): checker.normalized('ثم إنهم لصالو الجحيم'),
         }
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -49,6 +51,12 @@ class QuranComparisonTests(unittest.TestCase):
         self.assertEqual(result['status'], 'unmatched')
         result = self.compare('other', self.with_ya, 'الزخرف: 68')
         self.assertEqual(result['status'], 'unmatched')
+
+    def test_printed_silent_alif_keeps_full_multi_verse_reference(self):
+        result = self.compare('v4-p106-03-ru', 'كلا إنهم عن ربهم يومئذ لمحجوبون ثم إنهم لصالوا الجحيم', 'المطففين: 15–16')
+        self.assertEqual(result['status'], 'printed_orthography_with_control_image')
+        self.assertEqual(result['actual_span'], [[83, 15], [83, 16]])
+        self.assertEqual(result['reference_status'], 'full_span')
 
 
 if __name__ == '__main__':

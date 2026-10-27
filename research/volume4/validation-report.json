@@ -101,7 +101,12 @@
     99,
     100,
     101,
-    102
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
   ],
   "draft_pages_complete": [
     3,
@@ -203,7 +208,12 @@
     99,
     100,
     101,
-    102
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -302,15 +312,15 @@
     99,
     100,
     101,
-    102
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    102,
     103,
     104,
     105,
     106,
-    107,
+    107
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     108,
     109,
     110,

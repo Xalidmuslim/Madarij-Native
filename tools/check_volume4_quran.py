@@ -25,6 +25,7 @@ def compare(path):
             quote = m[1]
             raw = normalized(quote)
             candidate = raw
+            orthography = False
             variant = u['id'] == 'v4-p015-03-ru' and 'توقد' in raw
             if variant:
                 candidate = raw.replace('توقد', 'يوقد', 1)
@@ -33,6 +34,10 @@ def compare(path):
                 candidate = raw.replace('ياعباديلاخوف', 'ياعبادلاخوف', 1)
                 variant = True
                 evidence = 'Control leaf89 enlarged q43-page89.png retains ya in يا عبادي. Ibn Khalawayh Hujja, sura43 discussion, PageV01P322–323 explicitly attests both retention and omission of ya. Comparison-only omission; printed author source and Russian quotation unchanged. No named reader attribution asserted.'
+            if u['id'] == 'v4-p106-03-ru' and 'لصالواالجحيم' in raw:
+                candidate = raw.replace('لصالواالجحيم', 'لصالوالجحيم', 1)
+                orthography = True
+                evidence = 'Control leaf106, enlarged q83-word-page106.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
             pos = whole.find(candidate)
             if m[2]:
                 sur = names.get(normalized(m[2]))
@@ -50,8 +55,10 @@ def compare(path):
             if pos >= 0:
                 begin = bisect.bisect_right(starts, pos)-1
                 end = bisect.bisect_right(starts, pos+len(candidate)-1)-1
-                record.update(status='printed_reading_with_digital_scholarly_attestation' if variant else 'normalised_letters_match', actual_span=[list(sequence[begin]),list(sequence[end])])
-                if variant:
+                status = ('printed_reading_with_digital_scholarly_attestation' if variant else
+                          'printed_orthography_with_control_image' if orthography else 'normalised_letters_match')
+                record.update(status=status, actual_span=[list(sequence[begin]),list(sequence[end])])
+                if variant or orthography:
                     record['evidence']=evidence
             if m[2]:
                 record['printed_reference']=[sur,first,last]

@@ -1633,6 +1633,70 @@
         39
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p106-02-ru",
+      "quote": "وَإِنْ يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          17
+        ],
+        [
+          6,
+          17
+        ]
+      ],
+      "printed_reference": [
+        6,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p106-03-ru",
+      "quote": "كَلَّا إِنَّهُمْ عَنْ رَبِّهِمْ يَوْمَئِذٍ لَمَحْجُوبُونَ ثُمَّ إِنَّهُمْ لَصَالُوا الْجَحِيمِ",
+      "status": "printed_orthography_with_control_image",
+      "actual_span": [
+        [
+          83,
+          15
+        ],
+        [
+          83,
+          16
+        ]
+      ],
+      "evidence": "Control leaf106, enlarged q83-word-page106.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.",
+      "printed_reference": [
+        83,
+        15,
+        16
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p106-05-ru",
+      "quote": "فَتَزِلَّ قَدَمٌ بَعْدَ ثُبُوتِهَا وَتَذُوقُوا السُّوءَ بِمَا صَدَدْتُمْ عَنْ سَبِيلِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          94
+        ],
+        [
+          16,
+          94
+        ]
+      ],
+      "printed_reference": [
+        16,
+        94,
+        94
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
