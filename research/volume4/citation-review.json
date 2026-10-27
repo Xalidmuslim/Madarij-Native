@@ -1,0 +1,67 @@
+{
+  "scope": "Selected actual manual contextual comparisons, not exhaustive authentication or independent human review. No modern publisher commentary reproduced.",
+  "openiti_snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+  "references": [
+    {
+      "units": [
+        "v4-p013-04-ru"
+      ],
+      "source": "Same author volume3 control-PDF-derived saved source489–494",
+      "read_source_ids": [
+        "v3-p489-04",
+        "v3-p489-05",
+        "v3-p489-07",
+        "v3-p490-01",
+        "v3-p492-02",
+        "v3-p492-03",
+        "v3-p494-03"
+      ],
+      "result": "Internal author reference resolves التصديق and hope/doubt meanings; earlier files left unchanged."
+    },
+    {
+      "units": [
+        "v4-p009-02-ru"
+      ],
+      "source": "Ibn Manzur Lisan al-Arab, root أمم, brain-membrane wound verb",
+      "local_file": "/workspace/scratch/volume3/primary-lisan-arab.txt",
+      "result": "Read187451–187482; أم الرأس membrane holding brain. Contextual lexical evidence, not new medical gloss in author text.",
+      "file_sha256": "4d77d42d64e7ae4e95b37b27f514fd93c5710199794d361c933da720fcfd3257"
+    },
+    {
+      "units": [
+        "v4-p015-03-ru"
+      ],
+      "source": "Ibn Khalawayh Hujja fi al-qiraat al-sab, sura24, PageV01P262",
+      "local_file": "/workspace/scratch/volume3/primary-qiraat-hujja.txt",
+      "result": "Read explicit past active ta+tashdid explanation; headword in digital witness defective. No named reader attributed; print retained.",
+      "file_sha256": "480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172"
+    },
+    {
+      "units": [
+        "v4-p034-04-ru"
+      ],
+      "source": "Bukhari2427, lost-camel report",
+      "local_file": "/workspace/scratch/volume3/primary-sahih-bukhari.txt",
+      "result": "Author alludes to camel footwear/waterskin. Retained own author wording and no new collection-grade claim.",
+      "file_sha256": "16f95173b9ea1927b577ff85dc7e2a8351b8287e4ea9863782c4c5fc87ac8132"
+    },
+    {
+      "units": [
+        "v4-p035-02-ru"
+      ],
+      "source": "Tirmidhi2453",
+      "local_file": "/workspace/scratch/volume3/primary-sunan-tirmidhi.txt",
+      "result": "Author wording differs slightly; no harmonisation or imported authenticity grade. Narrator explanation kept distinct.",
+      "file_sha256": "8ac7c1a66705c26ab2c968a691c885c008735def6d748995e747dee44375f270"
+    },
+    {
+      "units": [
+        "v4-p046-03-ru"
+      ],
+      "source": "Ibn Manzur Lisan al-Arab, rootصلف, PageV09P196",
+      "local_file": "/workspace/scratch/volume3/primary-lisan-arab.txt",
+      "result": "Read definition of excess refinement/ostentation with pride. Word46 remains contextual question; preliminary RU not final.",
+      "file_sha256": "4d77d42d64e7ae4e95b37b27f514fd93c5710199794d361c933da720fcfd3257"
+    }
+  ]
+}

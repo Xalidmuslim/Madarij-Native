@@ -915,6 +915,279 @@
         23
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p027-03-ru",
+      "quote": "اللَّهُ أَعْلَمُ بِمَا فِي أَنْفُسِهِمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          31
+        ],
+        [
+          11,
+          31
+        ]
+      ],
+      "printed_reference": [
+        11,
+        31,
+        31
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p027-04-ru",
+      "quote": "أَهَؤُلَاءِ مَنَّ اللَّهُ عَلَيْهِمْ مِنْ بَيْنِنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          53
+        ],
+        [
+          6,
+          53
+        ]
+      ],
+      "printed_reference": [
+        6,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p027-04-ru",
+      "quote": "لَا أَقُولُ لَكُمْ عِنْدِي خَزَائِنُ اللَّهِ وَلَا أَعْلَمُ الْغَيْبَ وَلَا أَقُولُ إِنِّي مَلَكٌ وَلَا أَقُولُ لِلَّذِينَ تَزْدَرِي أَعْيُنُكُمْ لَنْ يُؤْتِيَهُمُ اللَّهُ خَيْرًا اللَّهُ أَعْلَمُ بِمَا فِي أَنْفُسِهِمْ إِنِّي إِذًا لَمِنَ الظَّالِمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          31
+        ],
+        [
+          11,
+          31
+        ]
+      ],
+      "printed_reference": [
+        11,
+        31,
+        31
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p028-02-ru",
+      "quote": "وَكَذَلِكَ فَتَنَّا بَعْضَهُمْ بِبَعْضٍ لِيَقُولُوا أَهَؤُلَاءِ مَنَّ اللَّهُ عَلَيْهِمْ مِنْ بَيْنِنَا أَلَيْسَ اللَّهُ بِأَعْلَمَ بِالشَّاكِرِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          53
+        ],
+        [
+          6,
+          53
+        ]
+      ],
+      "printed_reference": [
+        6,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p032-07-ru",
+      "quote": "وَغَرَّهُمْ فِي دِينِهِمْ مَا كَانُوا يَفْتَرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          24
+        ],
+        [
+          3,
+          24
+        ]
+      ],
+      "printed_reference": [
+        3,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p032-07-ru",
+      "quote": "وَزَيَّنَ لَهُمُ الشَّيْطَانُ مَا كَانُوا يَعْمَلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          43
+        ],
+        [
+          6,
+          43
+        ]
+      ],
+      "printed_reference": [
+        6,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p034-02-ru",
+      "quote": "يُرِيدُونَ وَجْهَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          52
+        ],
+        [
+          6,
+          52
+        ]
+      ],
+      "printed_reference": [
+        6,
+        52,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p034-02-ru",
+      "quote": "بُيُوتٍ أَذِنَ اللَّهُ أَنْ تُرْفَعَ وَيُذْكَرَ فِيهَا اسْمُهُ يُسَبِّحُ لَهُ فِيهَا بِالْغُدُوِّ وَالْآصَالِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          36
+        ],
+        [
+          24,
+          36
+        ]
+      ],
+      "printed_reference": [
+        24,
+        36,
+        36
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p039-04-ru",
+      "quote": "فَسَوْفَ يَأْتِي اللَّهُ بِقَوْمٍ يُحِبُّهُمْ وَيُحِبُّونَهُ أَذِلَّةٍ عَلَى الْمُؤْمِنِينَ أَعِزَّةٍ عَلَى الْكَافِرِينَ يُجَاهِدُونَ فِي سَبِيلِ اللَّهِ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          54
+        ],
+        [
+          5,
+          54
+        ]
+      ],
+      "printed_reference": [
+        5,
+        54,
+        54
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p042-01-ru",
+      "quote": "يُجَاهِدُونَ فِي سَبِيلِ اللَّهِ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          54
+        ],
+        [
+          5,
+          54
+        ]
+      ],
+      "printed_reference": [
+        5,
+        54,
+        54
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p048-04-ru",
+      "quote": "يَا أَيُّهَا النَّاسُ اذْكُرُوا نِعْمَتَ اللَّهِ عَلَيْكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          35,
+          3
+        ],
+        [
+          35,
+          3
+        ]
+      ],
+      "printed_reference": [
+        35,
+        3,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p048-04-ru",
+      "quote": "فَاذْكُرُوا آلَاءَ اللَّهِ لَعَلَّكُمْ تُفْلِحُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          69
+        ],
+        [
+          7,
+          69
+        ]
+      ],
+      "printed_reference": [
+        7,
+        69,
+        69
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p049-01-ru",
+      "quote": "وَاذْكُرُوا نِعْمَتَ اللَّهِ عَلَيْكُمْ وَمَا أَنْزَلَ عَلَيْكُمْ مِنَ الْكِتَابِ وَالْحِكْمَةِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          231
+        ],
+        [
+          2,
+          231
+        ]
+      ],
+      "printed_reference": [
+        2,
+        231,
+        231
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

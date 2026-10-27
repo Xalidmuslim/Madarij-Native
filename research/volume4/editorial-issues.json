@@ -23,8 +23,19 @@
     {
       "id": "V4-TASDIQ-013",
       "source_id": "v4-p013-04",
-      "status": "open_contextual_semantics",
-      "finding": "Control print visibly reads التصديق. Retained; translation of the figurative subject and subsequent pronouns needs further contextual review. Do not silently replace by الصديق from other witnesses or certify pages13–14 final."
+      "status": "resolved_by_author_explicit_cross_reference",
+      "finding": "Control print visibly reads التصديق. Retained; translation of the figurative subject and subsequent pronouns needs further contextual review. Do not silently replace by الصديق from other witnesses or certify pages13–14 final.",
+      "resolution": "Read author explanation in volume3,489-04–07,490-01,492-02–03,494-03 from preserved source with recorded control-PDF provenance. التصديق retained; subject rendered as believing recipient, ظن as doubt, أمل as hope for worldly things that interrupts pursuit. Printed form not silently emended.",
+      "context_source_ids": [
+        "v3-p489-04",
+        "v3-p489-05",
+        "v3-p489-07",
+        "v3-p490-01",
+        "v3-p492-02",
+        "v3-p492-03",
+        "v3-p494-03"
+      ],
+      "previous_volume_modified": false
     },
     {
       "id": "V4-QIRAA-015",
@@ -47,6 +58,32 @@
       "source_id": "v4-p009-02",
       "status": "resolved_contextually",
       "finding": "Native crop read رأسه، بطنه وظهره، أمه. أم الرأس understood as brain membrane in this wound-verb example; compared Lisan al-Arab digital primary text, lines187451–187482 of local primary-lisan-arab.txt; no modern apparatus reproduced."
+    },
+    {
+      "id": "V4-ALUSION-034",
+      "source_id": "v4-p034-04",
+      "status": "resolved_primary_allusion_identified",
+      "finding": "Author alludes to lost-camel hadith. Compared Bukhari2427 and additional occurrences; footwear/waterskin are camel images, not human literal clothing. Kept author allusion and quoted wording; own note separated from translation. No new authenticity grade added."
+    },
+    {
+      "id": "V4-HADITH-035",
+      "source_id": "v4-p035-02",
+      "status": "compared_with_primary_collection_variant_retained",
+      "finding": "Compared Tirmidhi2453 digital primary: إن لكل شيء شرة / فارجوه / فلا تعدوه differs slightly from author ولكل عامل etc. Kept author wording and separate narrator explanation; did not silently harmonise or import collection grading."
+    },
+    {
+      "id": "V4-LEX-046",
+      "source_id": "v4-p046-03",
+      "status": "open_contextual_lexical_question",
+      "finding": "Control print reads الصلف. Lisan rootصلف gives excessive refinement/ostentation with pride. Preliminary literal Russian заносчивость needs contextual decision against positive social-courtesy discussion44–46. Do not silently replace print, use dictionary antonym, or certify page46 final.",
+      "preliminary_ru": "нарочитая изысканность",
+      "context_compared": "Author44–46 distinguishes courtesy as help from overindulgence as obstacle. Lisan rootصلف, PageV09P196, directly read142149–142155; normal meaning includes excess and pride. Preliminary rendering avoids claiming unconditional approval of arrogance; issue remains open for final contextual review."
+    },
+    {
+      "id": "V4-SYNTAX-039",
+      "source_id": "v4-p039-05",
+      "status": "resolved_by_paragraph_contrast",
+      "finding": "المغترين بهم rendered passively as those by whom people are deluded, matching critique of status building opposed to deliberate concealment. Contracted participle permits passive; source consonants unchanged. Earlier active Russian retained in revisions."
     }
   ]
 }
