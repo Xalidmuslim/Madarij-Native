@@ -1272,6 +1272,42 @@
         54
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p067-02-ru",
+      "quote": "فَلَوْلَا كَانَ مِنَ الْقُرُونِ مِنْ قَبْلِكُمْ أُولُو بَقِيَّةٍ يَنْهَوْنَ عَنِ الْفَسَادِ فِي الْأَرْضِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          116
+        ],
+        [
+          11,
+          116
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p070-02-ru",
+      "quote": "وَإِنْ تُطِعْ أَكْثَرَ مَنْ فِي الْأَرْضِ يُضِلُّوكَ عَنْ سَبِيلِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          116
+        ],
+        [
+          6,
+          116
+        ]
+      ],
+      "printed_reference": [
+        6,
+        116,
+        116
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
