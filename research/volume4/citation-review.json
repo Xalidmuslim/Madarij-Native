@@ -858,6 +858,26 @@
       ],
       "source": "Actual control234–235 body",
       "result": "All three poetic bayts (one then two, including bracketed first of latter) preserved as love/wine illustrations, not reattributed to God. حب الصور context not modern photographs, no addition of explicit sexuality. No invented poet name."
+    },
+    {
+      "units": [
+        "v4-p236-05-ru",
+        "v4-p237-02-ru"
+      ],
+      "source": "Actual control236–237; Bayhaqi Bacth373 lines3481–3489 actually read, selected AbdAllahAhmad Sunna normalized targeted searches",
+      "result": "Base Dawud story confirmed as MalikibnDinar report in Bayhaqi, not converted into verified prophetic hadith. Variants and unlocated exact Sunna formula explicitly open V4-REPORTS-236-237; limited selected witness search not global absence. No borrowed modern footnote grading asserted as own verification."
+    },
+    {
+      "units": [
+        "v4-p237-03-ru",
+        "v4-p238-02-ru",
+        "v4-p238-03-ru",
+        "v4-p238-04-ru",
+        "v4-p238-05-ru",
+        "v4-p239-04-ru"
+      ],
+      "source": "Actual control237–239; actual ZuhdAhmad680 lines4053–4055",
+      "result": "Control237 صفة and صوب retained, not alternate editorial صوت/صيب. All five concluding analogies retained. تغنيهم sufficiency without need, not invented memory loss. Fana subjective absorption distinct from ontological identity; residual self/experience contrasted. Fana highest maqam attributed to shaykh عنده, not silently universal author assertion. Uthman meaning corroborated; author قلوبنا/شبعت vs selected primary قلوبكم/شبعتم retained. No new grade/isnad continuity claim."
     }
   ],
   "additional_digital_witnesses": [
@@ -892,6 +912,22 @@
       "bytes": 15826162,
       "sha256": "888450dca26f07e26cd095f1123efd7b3911acab07ff584db64227631d547964",
       "scope": "Digital scholarly comparison, not substitute for the2019 control PDF. Full secondary texts not republished in project."
+    },
+    {
+      "repo_path": "data/0290IbnAhmadIbnHanbal/0290IbnAhmadIbnHanbal.Sunna/0290IbnAhmadIbnHanbal.Sunna.Shamela0000323-ara1",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-sunna-abdallah-ahmad.txt",
+      "bytes": 801493,
+      "sha256": "ba2475df3e177727713b4508ab5d2eb95fd46293c42257440e8175e7aab760dd",
+      "scope": "Free primary digital collation; not replacement for uploaded2019 print, not republished whole in public project."
+    },
+    {
+      "repo_path": "data/0458Bayhaqi/0458Bayhaqi.BacthWaNushur/0458Bayhaqi.BacthWaNushur.JK011320-ara1",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-bacth-nushur-bayhaqi.txt",
+      "bytes": 620821,
+      "sha256": "af27383e4c452232d0fe01aada648f7d108ca03f01ec64651a9fc40123d776ff",
+      "scope": "Free primary digital collation; not replacement for uploaded2019 print, not republished whole in public project."
     }
   ]
 }

@@ -3775,6 +3775,27 @@
         2
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p236-05-ru",
+      "quote": "رَبِّ أَرِنِي أَنْظُرْ إِلَيْكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          143
+        ],
+        [
+          7,
+          143
+        ]
+      ],
+      "printed_reference": [
+        7,
+        143,
+        143
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

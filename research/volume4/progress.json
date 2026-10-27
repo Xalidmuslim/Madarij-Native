@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    235
+    239
   ],
   "draft_complete_printed_range": [
     3,
-    235
+    239
   ],
-  "draft_complete_pages": 233,
+  "draft_complete_pages": 237,
   "partial_printed_page": null,
   "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p236-01",
-  "continuation_pdf_leaf_required": 236,
+  "next_source_id": "v4-p240-01",
+  "continuation_pdf_leaf_required": 240,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -236,7 +236,9 @@
     232,
     233,
     234,
-    235
+    235,
+    238,
+    239
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -248,7 +250,8 @@
     "V4-ATTRIBUTION-146",
     "V4-SYNTAX-166",
     "V4-PREFERENCE-186-187",
-    "V4-NUMBER-206"
+    "V4-NUMBER-206",
+    "V4-REPORTS-236-237"
   ],
   "first_range": [
     3,
@@ -262,8 +265,8 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "9643f709247735acd792e3c3edf2a6706fd33620",
-  "unsent_current_content": "Current checkpoint through235; confirm next push",
+  "last_confirmed_remote_content_commit": "fad281b0b5671cba1fa83be03d05d602c7783015",
+  "unsent_current_content": "Current checkpoint through239; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
