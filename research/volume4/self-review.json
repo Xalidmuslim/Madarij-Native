@@ -4108,8 +4108,9 @@
       "russian_only_reading": "performed_by_Codex",
       "final_back_comparison": "performed_by_Codex",
       "independent_human_review": false,
-      "context_question_open": true,
-      "review_date": "2026-10-27"
+      "context_question_open": false,
+      "review_date": "2026-10-27",
+      "context_resolution": "Ajurri exact consonants plus Tuhfa parallel explanation and author own introductory Quran context; documented lexical decision, no control-vowel claim."
     },
     {
       "id": "v4-p067-04-ru",
@@ -4373,6 +4374,120 @@
       ],
       "ar_sha256": "0a3a0f6a3403c405bdc67323380621d640136bfaa54cfc0c7a0a960e0083ed78",
       "ru_sha256": "192146a3e37bf7543f7223418940f97b1c695b1fc7b96e0ee8fd2dd57cf70b80",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p073-04-ru",
+      "source_ids": [
+        "v4-p073-04",
+        "v4-p074-01"
+      ],
+      "ar_sha256": "0708b7c92a5da11866d49eaceffe8e6167497394831ae5757ea1f6c9413df684",
+      "ru_sha256": "a5aa2c157ff9fced03b47667709e50a531fafc611edbae15bba28d9f0b9ed913",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p074-02-ru",
+      "source_ids": [
+        "v4-p074-02"
+      ],
+      "ar_sha256": "d665806f477be1bab2c32871db6822b5a78e74daab9a2e92d2898bfccf128cee",
+      "ru_sha256": "492a6d9072a9ba67a16edec9dea99d48b66683090a2ffdeaa661752aa87f39ca",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p074-03-ru",
+      "source_ids": [
+        "v4-p074-03"
+      ],
+      "ar_sha256": "f452af531ddb8befd54c3d935e80b82884cfab081a5da525611e22f01e9df1bf",
+      "ru_sha256": "e4cfc992f149280bb8c43af64d091c7921f84b1a866ab1d714e8a4c4dec67e59",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p074-04-ru",
+      "source_ids": [
+        "v4-p074-04",
+        "v4-p075-01"
+      ],
+      "ar_sha256": "8d1a895b4bfc5f45bbd982d226a74b7166b815330d4935fec7426245e4bbc35b",
+      "ru_sha256": "a2b42af905eeecd0c450522bfac8392bc48e4b3009e08928538606862f596dd2",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p075-02-ru",
+      "source_ids": [
+        "v4-p075-02"
+      ],
+      "ar_sha256": "264a549ec5e8d3733c4405cb25c299827ee0c6505a133461151d82392279c399",
+      "ru_sha256": "707da715a7e6e07c8b4c1257901f246d4bf24599748f1d166beac1ab46b214a9",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p075-03-ru",
+      "source_ids": [
+        "v4-p075-03"
+      ],
+      "ar_sha256": "120dad9dae80657fab81751d40f5221c4697455bcd6236927661b2823169b85f",
+      "ru_sha256": "cb1766a5bf1d88b63ea9a8df141e2093f2c06aa3954a688a862e49bb4089f083",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p076-01-ru",
+      "source_ids": [
+        "v4-p076-01"
+      ],
+      "ar_sha256": "fe1574cbac1bddf5a583f10b36e553e3abfd44e9bcd653cf57078a2a6f275b42",
+      "ru_sha256": "f4f03817b90ab77fd517328ce3e53b9d7ee520d612fddbcd07c7f74d34ec63d4",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p076-02-ru",
+      "source_ids": [
+        "v4-p076-02"
+      ],
+      "ar_sha256": "8c7fa400f54f60e66daccf111bf421eb633c7441142f84b43e8548ef745d547b",
+      "ru_sha256": "520a5cacd99bf4f1570108aaa1e2554362d3bc6a4b3e71d3ee2427818b64589e",
       "semantic_comparison": "performed_by_Codex",
       "russian_only_reading": "performed_by_Codex",
       "final_back_comparison": "performed_by_Codex",

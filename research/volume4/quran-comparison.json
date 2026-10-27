@@ -1308,6 +1308,27 @@
         116
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p075-03-ru",
+      "quote": "يَا أَيُّهَا الَّذِينَ آمَنُوا عَلَيْكُمْ أَنْفُسَكُمْ لَا يَضُرُّكُمْ مَنْ ضَلَّ إِذَا اهْتَدَيْتُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          105
+        ],
+        [
+          5,
+          105
+        ]
+      ],
+      "printed_reference": [
+        5,
+        105,
+        105
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

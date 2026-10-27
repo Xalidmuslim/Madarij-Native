@@ -130,6 +130,69 @@
       ],
       "source": "Control69 chain as printed",
       "result": "Kept Abdullah ibn Amr and companion statement; did not elevate it to prophetic speech. Collection-level name/citation review not yet performed; no authenticity claim."
+    },
+    {
+      "units": [
+        "v4-p075-03-ru"
+      ],
+      "source": "Sunan Tirmidhi3058; directly read local primary-sunan-tirmidhi.txt38133–38135",
+      "result": "Compared command/prohibition, four adverse conditions, turning to self, days of patience,50 workers and final منكم. Printed author has مثل عمله, digital collection مثل عملكم and differs in transmission of final question. Kept author quote, did not add grading. Author shorter preceding quote retains لا يدا as actually printed, sense inability; no silent grammatical emendation."
+    },
+    {
+      "units": [
+        "v4-p067-03-ru"
+      ],
+      "source": "al-Ajurri Ghuraba PageV01P015, lines45–52; Tuhfat al-Ahwadhi under2629/2630, PageV07P318–319, lines93665–93670/93710–93714",
+      "result": "Ajurri independently prints يصلحون إذا فسد الناس without full vowels. Tuhfa explains parallel reforming-corrupted-Sunna wording as practising it and making it manifest according to ability. Together with author introduction ينهون عن الفساد supports chosen active rendering исправляет порчу. This is a reasoned contextual reading, not proof the control vowelled the verb or independent grading."
+    },
+    {
+      "units": [
+        "v4-p068-04-ru"
+      ],
+      "source": "Ahmad Zuhd digital record404, lines2437–2441",
+      "result": "Agrees on companion attribution Abdullah ibn Amr and flight with religion/gathering to Isa. Some chain details differ (Haytham ibn Hamid vs printed author Haytham ibn Jamil), and gathered/gather differ. Retained2019 author wording and names; no elevation to prophetic report and no authenticity verdict."
+    },
+    {
+      "units": [
+        "v4-p067-04-ru",
+        "v4-p068-01-ru"
+      ],
+      "source": "Targeted digital searches in fetched Musnad Ahmad, Zuhd Ahmad and Ajurri Ghuraba",
+      "result": "Did not locate matching rise/decline wording or relevant Muttalib chain in the specific digital witnesses searched. This is not proof of absence from tradition. The actual2019 printed difference remains OPEN; author explanation retained, no silent correction."
+    }
+  ],
+  "additional_digital_witnesses": [
+    {
+      "repo_path": "data/1353IbnCabdRahimMubarakfuri/1353IbnCabdRahimMubarakfuri.TuhfatAhwadhi/1353IbnCabdRahimMubarakfuri.TuhfatAhwadhi.Shamela0021662-ara1",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-tuhfat-ahwadhi.txt",
+      "bytes": 12891893,
+      "sha256": "5b015396926892587a53bacfd175e264c48d3e8390066348df34ac86dc4b5266",
+      "scope": "Digital scholarly comparison, not substitute for the2019 control PDF. Full secondary texts not republished in project."
+    },
+    {
+      "repo_path": "data/0360AbuBakrAjurri/0360AbuBakrAjurri.Ghuraba/0360AbuBakrAjurri.Ghuraba.Shamela0013045-ara1",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-ghuraba-ajurri.txt",
+      "bytes": 66775,
+      "sha256": "2162a706c03065d806ae4544213c5a9dd00dd02090ee51e975c05a2983b13d4d",
+      "scope": "Digital scholarly comparison, not substitute for the2019 control PDF. Full secondary texts not republished in project."
+    },
+    {
+      "repo_path": "data/0241IbnHanbal/0241IbnHanbal.Zuhd/0241IbnHanbal.Zuhd.Shamela0008494-ara1.mARkdown",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-zuhd-ahmad.txt",
+      "bytes": 1190581,
+      "sha256": "625ec5d34b67183e7e0dd44bbdde4f3d2a2f51aa2636853c864a742c6f0a8292",
+      "scope": "Digital scholarly comparison, not substitute for the2019 control PDF. Full secondary texts not republished in project."
+    },
+    {
+      "repo_path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0013157-ara1",
+      "snapshot": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+      "local_file": "/workspace/scratch/volume4/primary-musnad-ahmad.txt",
+      "bytes": 15826162,
+      "sha256": "888450dca26f07e26cd095f1123efd7b3911acab07ff584db64227631d547964",
+      "scope": "Digital scholarly comparison, not substitute for the2019 control PDF. Full secondary texts not republished in project."
     }
   ]
 }
