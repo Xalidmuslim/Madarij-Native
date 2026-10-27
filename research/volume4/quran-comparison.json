@@ -2669,6 +2669,27 @@
         22
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p172-02-ru",
+      "quote": "حَلَّافٍ مَهِينٍ هَمَّازٍ مَشَّاءٍ بِنَمِيمٍ مَنَّاعٍ لِلْخَيْرِ مُعْتَدٍ أَثِيمٍ عُتُلٍّ بَعْدَ ذَلِكَ زَنِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          68,
+          10
+        ],
+        [
+          68,
+          13
+        ]
+      ],
+      "printed_reference": [
+        68,
+        10,
+        13
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
