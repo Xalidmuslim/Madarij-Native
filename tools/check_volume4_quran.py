@@ -34,10 +34,10 @@ def compare(path):
                 candidate = raw.replace('ياعباديلاخوف', 'ياعبادلاخوف', 1)
                 variant = True
                 evidence = 'Control leaf89 enlarged q43-page89.png retains ya in يا عبادي. Ibn Khalawayh Hujja, sura43 discussion, PageV01P322–323 explicitly attests both retention and omission of ya. Comparison-only omission; printed author source and Russian quotation unchanged. No named reader attribution asserted.'
-            if u['id'] == 'v4-p106-03-ru' and 'لصالواالجحيم' in raw:
+            if u['id'] in ('v4-p106-03-ru', 'v4-p198-04-ru') and 'لصالواالجحيم' in raw:
                 candidate = raw.replace('لصالواالجحيم', 'لصالوالجحيم', 1)
                 orthography = True
-                evidence = 'Control leaf106, enlarged q83-word-page106.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
+                evidence = 'Control leaves106/199, enlarged q83-word-page106.png and q83word199.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
             if u['id'] == 'v4-p186-02-ru' and raw.startswith('ويومنحشرهم'):
                 candidate = raw.replace('ويومنحشرهم', 'ويوميحشرهم', 1)
                 variant = True
@@ -69,6 +69,12 @@ def compare(path):
                 record['reference_status']='unmatched'
                 if pos >= 0 and sur == sequence[begin][0] and first == sequence[begin][1]:
                     record['reference_status']='full_span' if last == sequence[end][1] else 'printed_start_only' if last == first else 'range_needs_review'
+                    if (u['id'] == 'v4-p195-04-ru' and (sur, first, last) == (89, 21, 26)
+                            and sequence[end] == (89, 24)
+                            and re.search(r'\(89:21[–—-]24\)', u.get('ru', ''))):
+                        record['reference_status'] = 'printed_range_error_documented'
+                        record['corrected_russian_reference'] = [89, 21, 24]
+                        record['reference_evidence'] = 'Actual control195 enlarged q89ref195.png prints21–26, but quotation ends with89:24 يقول يا ليتني قدمت لحياتي. Printed AR reference retained, RU corrected to21–24 and mechanically checked. Missing25–26 not inserted into author text; this status documents a source reference error, not a correct printed full span.'
             records.append(record)
     return {'method':'Read-only normalized Arabic letter and reference comparison. Printed variants retained. Does not certify Russian meaning or independent human review.', 'canonical_sha256':CANONICAL_SHA256,'canonical_verses_loaded':len(verses),'records':records}
 

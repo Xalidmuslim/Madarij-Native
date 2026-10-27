@@ -146,6 +146,12 @@
       "source_id": "v4-p187-01",
       "status": "open_opposite_preference_in_auxiliary",
       "finding": "Native enlarged preference187.png confirms control تؤثر الأعلى على الأدنى after lament فيا حسرتاه. Auxiliary other-edition witness at31153–31155 has تؤثر الأدنى على الأعلى. Control retained, not silently reversed. RU expression of longing is provisional; exact rhetorical force requires further reliable contextual/print comparison. Do not treat unit186-03+187-01 as final."
+    },
+    {
+      "id": "V4-REFERENCE-195",
+      "source_id": "v4-p195-04",
+      "status": "resolved_ru_reference_corrected_ar_retained",
+      "finding": "Actual q89ref195.png prints89:21–26, quotation ends89:24. Source AR citation retained, RU corrected to89:21–24. Checker reports printed_range_error_documented, not full_span; exact-span plus corrected-RU condition and negative cases tested. No absent25–26 added to author quote."
     }
   ]
 }

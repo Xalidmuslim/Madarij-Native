@@ -1669,7 +1669,7 @@
           16
         ]
       ],
-      "evidence": "Control leaf106, enlarged q83-word-page106.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.",
+      "evidence": "Control leaves106/199, enlarged q83-word-page106.png and q83word199.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.",
       "printed_reference": [
         83,
         15,
@@ -3088,6 +3088,160 @@
         25,
         2,
         2
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p194-04-ru",
+      "quote": "وَلَا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          169
+        ],
+        [
+          3,
+          169
+        ]
+      ],
+      "printed_reference": [
+        3,
+        169,
+        169
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p194-04-ru",
+      "quote": "وَلَا تَقُولُوا لِمَنْ يُقْتَلُ فِي سَبِيلِ اللَّهِ أَمْوَاتٌ بَلْ أَحْيَاءٌ وَلَكِنْ لَا تَشْعُرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          154
+        ],
+        [
+          2,
+          154
+        ]
+      ],
+      "printed_reference": [
+        2,
+        154,
+        154
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p195-04-ru",
+      "quote": "إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنْسَانُ وَأَنَّى لَهُ الذِّكْرَى يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          89,
+          21
+        ],
+        [
+          89,
+          24
+        ]
+      ],
+      "printed_reference": [
+        89,
+        21,
+        26
+      ],
+      "reference_status": "printed_range_error_documented",
+      "corrected_russian_reference": [
+        89,
+        21,
+        24
+      ],
+      "reference_evidence": "Actual control195 enlarged q89ref195.png prints21–26, but quotation ends with89:24 يقول يا ليتني قدمت لحياتي. Printed AR reference retained, RU corrected to21–24 and mechanically checked. Missing25–26 not inserted into author text; this status documents a source reference error, not a correct printed full span."
+    },
+    {
+      "unit": "v4-p195-04-ru",
+      "quote": "وَمَا هَذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ لَوْ كَانُوا يَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          64
+        ],
+        [
+          29,
+          64
+        ]
+      ],
+      "printed_reference": [
+        29,
+        64,
+        64
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p196-06-ru",
+      "quote": "قُلْ بِئْسَمَا يَأْمُرُكُمْ بِهِ إِيمَانُكُمْ إِنْ كُنْتُمْ مُؤْمِنِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          93
+        ],
+        [
+          2,
+          93
+        ]
+      ],
+      "printed_reference": [
+        2,
+        93,
+        93
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p198-04-ru",
+      "quote": "لِلَّذِينَ أَحْسَنُوا الْحُسْنَى وَزِيَادَةٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          26
+        ],
+        [
+          10,
+          26
+        ]
+      ],
+      "printed_reference": [
+        10,
+        26,
+        26
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p198-04-ru",
+      "quote": "كَلَّا إِنَّهُمْ عَنْ رَبِّهِمْ يَوْمَئِذٍ لَمَحْجُوبُونَ ثُمَّ إِنَّهُمْ لَصَالُوا الْجَحِيمِ",
+      "status": "printed_orthography_with_control_image",
+      "actual_span": [
+        [
+          83,
+          15
+        ],
+        [
+          83,
+          16
+        ]
+      ],
+      "evidence": "Control leaves106/199, enlarged q83-word-page106.png and q83word199.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.",
+      "printed_reference": [
+        83,
+        15,
+        16
       ],
       "reference_status": "full_span"
     }
