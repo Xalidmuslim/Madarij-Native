@@ -15,6 +15,7 @@ class QuranComparisonTests(unittest.TestCase):
     def compare(self, unit, quote, reference, ru=''):
         verses = {
             (6, 135): checker.normalized(self.repeated),
+            (10, 30): checker.normalized('هنالك تبلو كل نفس ما أسلفت وردوا إلى الله مولاهم الحق وضل عنهم ما كانوا يفترون'),
             (10, 45): checker.normalized('ويوم يحشرهم كأن لم يلبثوا إلا ساعة من النهار يتعارفون بينهم'),
             (39, 39): checker.normalized(self.repeated),
             (43, 68): checker.normalized('يا عباد لا خوف عليكم اليوم'),
@@ -63,6 +64,20 @@ class QuranComparisonTests(unittest.TestCase):
             self.assertEqual(result['status'], 'printed_orthography_with_control_image')
             self.assertEqual(result['actual_span'], [[83, 15], [83, 16]])
             self.assertEqual(result['reference_status'], 'full_span')
+
+    yunus30 = 'هنالك تبلوا كل نفس ما أسلفت وردوا إلى الله مولاهم الحق وضل عنهم ما كانوا يفترون'
+
+    def test_yunus30_printed_silent_alif_is_compared_without_mutation(self):
+        result = self.compare('v4-p246-03-ru', self.yunus30, 'يونس: 30')
+        self.assertEqual(result['status'], 'printed_orthography_with_control_image')
+        self.assertEqual(result['actual_span'], [[10, 30], [10, 30]])
+        self.assertEqual(result['reference_status'], 'full_span')
+
+    def test_yunus30_alignment_cannot_hide_other_errors(self):
+        self.assertEqual(self.compare('other', self.yunus30, 'يونس: 30')['status'], 'unmatched')
+        self.assertEqual(self.compare('v4-p246-03-ru', self.yunus30 + ' زائد', 'يونس: 30')['status'], 'unmatched')
+        self.assertEqual(self.compare('v4-p246-03-ru', self.yunus30.replace('كل نفس', 'كل روح'), 'يونس: 30')['status'], 'unmatched')
+        self.assertEqual(self.compare('v4-p246-03-ru', self.yunus30, 'يونس: 31')['reference_status'], 'unmatched')
 
     def test_attested_nun_reading_of_gathering_is_preserved(self):
         quote = 'ويوم نحشرهم كأن لم يلبثوا إلا ساعة من النهار يتعارفون بينهم'

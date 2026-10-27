@@ -3796,6 +3796,28 @@
         143
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p246-03-ru",
+      "quote": "هُنَالِكَ تَبْلُوا كُلُّ نَفْسٍ مَا أَسْلَفَتْ وَرُدُّوا إِلَى اللَّهِ مَوْلَاهُمُ الْحَقِّ وَضَلَّ عَنْهُمْ مَا كَانُوا يَفْتَرُونَ",
+      "status": "printed_orthography_with_control_image",
+      "actual_span": [
+        [
+          10,
+          30
+        ],
+        [
+          10,
+          30
+        ]
+      ],
+      "evidence": "Control leaf246, enlarged q1030-246.png, prints تبلوا with a silent-alif zero mark in10:30; unchanged Tanzil Simple Clean has تبلو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.",
+      "printed_reference": [
+        10,
+        30,
+        30
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

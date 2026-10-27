@@ -13592,6 +13592,413 @@
       "independent_human_review": false,
       "context_question_open": false,
       "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p240-01-ru",
+      "source_ids": [
+        "v4-p240-01"
+      ],
+      "ar_sha256": "e2f586e517ed7fd0d6db81273f2b128e5f600ee73ed5834e3b8558bbd74aaae5",
+      "ru_sha256": "df754f4b1d35cf8374ec1767f58f1d7e86b06d8ee3ac5360e0d5fe28d3101c3d",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p240-02-ru",
+      "source_ids": [
+        "v4-p240-02"
+      ],
+      "ar_sha256": "a6eb0abcba19ffe8dfed891003ef9231b6762009d737f16f73c6a4c485d2bc7d",
+      "ru_sha256": "7470aceea650cfddbbd62f58e1943f787020d6475af126f7e628d22baa876436",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p240-03-ru",
+      "source_ids": [
+        "v4-p240-03"
+      ],
+      "ar_sha256": "19998ab7485c91bf426d63f7692cc161ce38a1557ab12feefd369eed3b2c2fe7",
+      "ru_sha256": "4aca20a73f192c66fa03a69e719ab7f2dc195d1ed94f742a75444a3486f8954e",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p241-01-ru",
+      "source_ids": [
+        "v4-p241-01"
+      ],
+      "ar_sha256": "ef7fdf6d232661d5f07bd4b92cdc0f2d0a870f8de320763646e5a1939e932eb9",
+      "ru_sha256": "bd77a23b1bf142644c3f95ade8879527a6265590b963909b1d646a51738fbd8e",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p241-02-ru",
+      "source_ids": [
+        "v4-p241-02"
+      ],
+      "ar_sha256": "95f70af38c364acd93a84d5808f474670b7d673eda2df711a6800ac5b242b0b3",
+      "ru_sha256": "1ce57a4326883a8da75d0a221a702af013e18e32c0179949fb756dfed99d793d",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p241-03-ru",
+      "source_ids": [
+        "v4-p241-03"
+      ],
+      "ar_sha256": "41da7d2e9a866979f8e54751cfac94b15990175863b6dc78039fd8db19a79283",
+      "ru_sha256": "c5981768fe2f66fbe899946168f5d9ef2aa4767a79b809827513571bbebab960",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p242-01-ru",
+      "source_ids": [
+        "v4-p242-01"
+      ],
+      "ar_sha256": "02dd7439964fa0fd2adfea8bee05f01d030726e486d64f891fa170ee0a1e7561",
+      "ru_sha256": "ca425e431a2cd09630d47473511b151848798bbd2169283a443557e8919a06f9",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p242-02-ru",
+      "source_ids": [
+        "v4-p242-02"
+      ],
+      "ar_sha256": "d5d368b4f981a17d54401615b3bfe6184b0920b8f8c07917b0af26d53eb80ab0",
+      "ru_sha256": "47e9f091921dabcc8e6c32ecbf7d93ab8d195a54b2b3f57d737aeb7167ea37de",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p242-03-ru",
+      "source_ids": [
+        "v4-p242-03"
+      ],
+      "ar_sha256": "b7d1a6def15bddab541005ff25ba5d16671cdc8de4e000ab6c9a69e71f879048",
+      "ru_sha256": "a9eb38b90d217cc6cf16ee11582f2ce2a9fd11219d33bf2f4d6fd76ff5e56cf9",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p242-04-ru",
+      "source_ids": [
+        "v4-p242-04"
+      ],
+      "ar_sha256": "165c6e981491483bb2fc233900e3ff9c454eddc38ec2fbe96a84f2ccec7e1648",
+      "ru_sha256": "b140054db18079c2e693cb6496c30e66dfd54a7a811e996979cc838d45d9184b",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p242-05-ru",
+      "source_ids": [
+        "v4-p242-05"
+      ],
+      "ar_sha256": "9d5171ddcf4863b4760fd2036c437c5a76387243f723718d1464f95878d42304",
+      "ru_sha256": "eb22f26b966d28fc00ffbcceab247a948093464929a2ba828cea02f1a74ca88a",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p243-01-ru",
+      "source_ids": [
+        "v4-p243-01"
+      ],
+      "ar_sha256": "a8364f67616f7ab8cfed1dc72f6c50d2ac122ec0f672cbca85ca290f8881d2aa",
+      "ru_sha256": "a26f8dc1080df391c79292e0cd9e559d3e1a791de44982b6c4ef0655c8a8de59",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p243-02-ru",
+      "source_ids": [
+        "v4-p243-02"
+      ],
+      "ar_sha256": "d3282546f5943ef1591f98602c490dbd830f58fbc8d4102b4bc4cff94ef2ca02",
+      "ru_sha256": "789a53943626d78cd81c967d0ff7e8a9d480d28d20f618fb7c126a5f30e495c6",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p243-03-ru",
+      "source_ids": [
+        "v4-p243-03"
+      ],
+      "ar_sha256": "41d42078e3ceb75f5fd8e63eeb65de7f599f5adce217103899756eae8355bb04",
+      "ru_sha256": "d6bc8eb942b60e7fc67a92c829f4121df9e707743dd75df4abd064aa14297ed2",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p243-04-ru",
+      "source_ids": [
+        "v4-p243-04"
+      ],
+      "ar_sha256": "abc6500129069c6c07e7c06dd0114d213a0ab2ea1387b30c46b751ef91d522cf",
+      "ru_sha256": "2ac8e2643e84eae80e85c818f3661a375196fc6615360408deea62a9de69fa9a",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p243-05-ru",
+      "source_ids": [
+        "v4-p243-05"
+      ],
+      "ar_sha256": "f10fde810eaef00451c357d7167d1b7f9d8e0e92b651a89f71984041eb240a2d",
+      "ru_sha256": "e07acfd6a74f227ef03d08fde5d799f844f2d393a53070140fe267f14653ab7c",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p244-01-ru",
+      "source_ids": [
+        "v4-p244-01"
+      ],
+      "ar_sha256": "2ef40a752baa307daa6139dc392b4f4ee0ef333befd789fd323f3a7d9e8943d7",
+      "ru_sha256": "a5880ededc1521960400df47506a51fcf660d6515b0a97e58be57d1b423dcc26",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p244-02-ru",
+      "source_ids": [
+        "v4-p244-02"
+      ],
+      "ar_sha256": "e338cdd8064f4d822c6491d505c3fed36f2d527af2ffd833a33fb158563e20d7",
+      "ru_sha256": "c6994c653415922f181cba5bd6e0e8edf7dbcd82763d1be66920ed4ac84ce5f6",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p244-03-ru",
+      "source_ids": [
+        "v4-p244-03"
+      ],
+      "ar_sha256": "25bc633f5e8249483afd6daa726831d82bcf6518676882d69ea1a596895545c6",
+      "ru_sha256": "150713face9b41f625a58d5fe1301b4dc94f6187172f15b93074f1b3e12e907c",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p244-04-ru",
+      "source_ids": [
+        "v4-p244-04"
+      ],
+      "ar_sha256": "b49f3272d1285351bf7133ab2c06226dc40add57ffaa93640c1229091ed83968",
+      "ru_sha256": "015f5694c7ab42775be47462b45b5f13865bf7951a2d0b1ae0d11dee137ab67d",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-01-ru",
+      "source_ids": [
+        "v4-p245-01"
+      ],
+      "ar_sha256": "e3b597ddc9236715ac8510fc9469da779c1b719dfb7956d85757e8d497dd0942",
+      "ru_sha256": "45aa628b73cd301a881a957aefd8a4bcc56dea47cfacc407cfbf4eccc5e3bb2d",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-02-ru",
+      "source_ids": [
+        "v4-p245-02"
+      ],
+      "ar_sha256": "669fce5890a72072344fc354235b95e77aa77c8252a85bd061019472810e13d4",
+      "ru_sha256": "d80e30f5aec8f269e4963a1cda8fd91115a98c5e7c8c54309f028db96ff605ec",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-03-ru",
+      "source_ids": [
+        "v4-p245-03"
+      ],
+      "ar_sha256": "41d764ffb1191e59fdfa3fc2274cce42260d4c6fab87e26f54e08c65a87d8db1",
+      "ru_sha256": "2ee048446424e33ff9e2bc9b9e698e6e21cca773d22903ace1c98a3ce22b9253",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-04-ru",
+      "source_ids": [
+        "v4-p245-04"
+      ],
+      "ar_sha256": "325f299a51f43974810cef2b64fe78904aac26572b7647c7447ab4d0f51dd5c6",
+      "ru_sha256": "1c059b8609d6372ba07e382d0c606e10ee15c5b6016fe8e2a0b724cc64bf223f",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-05-ru",
+      "source_ids": [
+        "v4-p245-05"
+      ],
+      "ar_sha256": "76cee802c5e7e32006df4529848b5d51767787bf343d1f4d0cd01d1a9abe0616",
+      "ru_sha256": "53a15d3b19c5792555d4ca7c67707d7fef0d4c4e4d77edd51eb78e33faee17a7",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-06-ru",
+      "source_ids": [
+        "v4-p245-06"
+      ],
+      "ar_sha256": "0ecc129f98d3454816d03061ca03fafb7fe2fe103d0a062379a215af53d5f50f",
+      "ru_sha256": "8a537ad9b97001be2b63fb1d310c3c1ccf0dfe386eb6c5b0f18db66d5b9718d7",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p245-07-ru",
+      "source_ids": [
+        "v4-p245-07",
+        "v4-p246-01"
+      ],
+      "ar_sha256": "59d6c7ca19ab46244754e55024e7199260dcb8b922a60eb85e5b1e10b36266e2",
+      "ru_sha256": "210e2e621bf3413ce47f0e89bc7efac8cc4ad2d0ef759fffdf8d4983cd524c7e",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p246-02-ru",
+      "source_ids": [
+        "v4-p246-02"
+      ],
+      "ar_sha256": "aa73a056f0ba22794df21acffaf36bcd098c6efc69d96d4c18f6f9ee67cdaca6",
+      "ru_sha256": "2f3329e2d7555eaceb2050cb4c4afa06d3834d3cb252f8eef42e8c3be6fb8655",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
+    },
+    {
+      "id": "v4-p246-03-ru",
+      "source_ids": [
+        "v4-p246-03"
+      ],
+      "ar_sha256": "c8776bf26fab9ad9687b740ee1dcb8f20e71a29fd8b69fa68ca3084c803e1037",
+      "ru_sha256": "c6c96a7a611b494eada0122f4442c2cbd787180cbd66f009b0be041a25175e77",
+      "semantic_comparison": "performed_by_Codex",
+      "russian_only_reading": "performed_by_Codex",
+      "final_back_comparison": "performed_by_Codex",
+      "independent_human_review": false,
+      "context_question_open": false,
+      "review_date": "2026-10-27"
     }
   ]
 }

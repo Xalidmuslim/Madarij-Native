@@ -38,6 +38,10 @@ def compare(path):
                 candidate = raw.replace('لصالواالجحيم', 'لصالوالجحيم', 1)
                 orthography = True
                 evidence = 'Control leaves106/199, enlarged q83-word-page106.png and q83word199.png: لصالوا with a silent-alif zero mark in printed Quran orthography; unchanged Tanzil Simple Clean has لصالو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
+            if u['id'] == 'v4-p246-03-ru' and raw.startswith('هنالكتبلواكلنفس'):
+                candidate = raw.replace('هنالكتبلواكلنفس', 'هنالكتبلوكلنفس', 1)
+                orthography = True
+                evidence = 'Control leaf246, enlarged q1030-246.png, prints تبلوا with a silent-alif zero mark in10:30; unchanged Tanzil Simple Clean has تبلو. Comparison-only spelling alignment, not a different reading. Control Arabic retained.'
             if u['id'] == 'v4-p186-02-ru' and raw.startswith('ويومنحشرهم'):
                 candidate = raw.replace('ويومنحشرهم', 'ويوميحشرهم', 1)
                 variant = True
