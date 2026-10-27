@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    199
+    203
   ],
   "draft_complete_printed_range": [
     3,
-    198
+    202
   ],
-  "draft_complete_pages": 196,
-  "partial_printed_page": 199,
-  "partial_translated_through_source_id": "v4-p199-06",
-  "next_source_id": "v4-p199-07",
-  "continuation_pdf_leaf_required": 200,
+  "draft_complete_pages": 200,
+  "partial_printed_page": 203,
+  "partial_translated_through_source_id": "v4-p203-03",
+  "next_source_id": "v4-p203-04",
+  "continuation_pdf_leaf_required": 204,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -200,7 +200,11 @@
     195,
     196,
     197,
-    198
+    198,
+    199,
+    200,
+    201,
+    202
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -219,24 +223,29 @@
   ],
   "first_range_fully_final": false,
   "next_checkpoint_range": [
-    153,
-    202
+    203,
+    252
   ],
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "99f68042c55976fbd46d9f82ef46dcce45825e61",
-  "unsent_current_content": "Current checkpoint through198; confirm next push",
+  "last_confirmed_remote_content_commit": "bf4df44ba741a01527df0b8b54ffaea9067ef826",
+  "unsent_current_content": "Current checkpoint through202; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "فإن بادر إلى كشفه وإلا تكاثف حتى صار حجاب بدع قولية واعتقادية؛",
+  "next_fragment_opening": "ولعمر الله إن نفس الافتقار هو هذا النفس أو من نوعه، لكن الشيخ جعلهما نفسين، فجعل نفس الاضطرار بداية، ونفس الاف",
   "third_range": [
     103,
     152
   ],
-  "third_range_fully_final": false
+  "third_range_fully_final": false,
+  "fourth_range": [
+    153,
+    202
+  ],
+  "fourth_range_fully_final": false
 }

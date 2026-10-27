@@ -3244,6 +3244,36 @@
         16
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p203-03-ru",
+      "quote": "إِيَّاكَ نَعْبُدُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p203-03-ru",
+      "quote": "إِيَّاكَ نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
     }
   ]
 }
