@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    283
+    291
   ],
   "draft_complete_printed_range": [
     3,
-    283
+    290
   ],
-  "draft_complete_pages": 281,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p284-01",
-  "continuation_pdf_leaf_required": 284,
+  "draft_complete_pages": 288,
+  "partial_printed_page": 291,
+  "partial_translated_through_source_id": "v4-p291-02",
+  "next_source_id": "v4-p291-03",
+  "continuation_pdf_leaf_required": 292,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -280,7 +280,14 @@
     278,
     279,
     281,
-    282
+    282,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -308,15 +315,15 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "91186849da9ef9319d607698595b5afe9b625a44",
-  "unsent_current_content": "Current checkpoint through283; confirm next push",
+  "last_confirmed_remote_content_commit": "6d9c11fd214a654da8fc565fb478d819f12d09d8",
+  "unsent_current_content": "Current checkpoint through290; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "новый лист ещё не записан",
+  "next_fragment_opening": "وقوله: (ولا تحمله كثرة نعم الله على هتك أستار محارم الله)، كثرة النعم تطغي العبد، وتحمله على أن يصرفها في وجهه",
   "third_range": [
     103,
     152
@@ -613,7 +620,14 @@
     280,
     281,
     282,
-    283
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290
   ],
-  "last_full_page_with_three_Codex_passes": 283
+  "last_full_page_with_three_Codex_passes": 290
 }

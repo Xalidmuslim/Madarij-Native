@@ -282,7 +282,15 @@
     280,
     281,
     282,
-    283
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291
   ],
   "draft_pages_complete": [
     3,
@@ -565,7 +573,14 @@
     280,
     281,
     282,
-    283
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -828,18 +843,19 @@
     278,
     279,
     281,
-    282
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    282,
     284,
     285,
     286,
     287,
     288,
     289,
-    290,
-    291,
+    290
+  ],
+  "untranslated_captured_fragments": [
+    "v4-p291-03"
+  ],
+  "remaining_author_pages_not_captured": [
     292,
     293,
     294,
