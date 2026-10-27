@@ -134,6 +134,12 @@
       "source_id": "v4-p146-04",
       "status": "open_primary_attribution_difference",
       "finding": "Actual control146 names عبد الله بن حرام with smell-of-Paradise saying at Uhud. Directly read Bukhari2805 names أنس بن النضر with إني أجد ريحها من دون أحد. Control author name retained, not silently corrected; selected primary attribution differs, no claim every narration was checked."
+    },
+    {
+      "id": "V4-SYNTAX-166",
+      "source_id": "v4-p166-01",
+      "status": "open_control_syntax_variant",
+      "finding": "Actual enlarged life166.png reads وإذا كانت الحياة بين الحس والحركة وملزومهما. Auxiliary other-edition OpenITI witness reads الحياة هي الحس والحركة وملزومهما at30816–30818. Control بين retained, not silently emended; exact syntax/relationship in definition and ملزومهما remains provisional in RU165-04+166-01. Main no-knowledge/no-faith heart argument clear. Auxiliary is not a substitute 2019 control."
     }
   ]
 }

@@ -158,7 +158,15 @@
     156,
     157,
     158,
-    159
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167
   ],
   "draft_pages_complete": [
     3,
@@ -317,7 +325,14 @@
     156,
     157,
     158,
-    159
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -465,18 +480,17 @@
     156,
     157,
     158,
-    159
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    159,
     160,
     161,
     162,
     163,
-    164,
-    165,
-    166,
-    167,
+    164
+  ],
+  "untranslated_captured_fragments": [
+    "v4-p167-04"
+  ],
+  "remaining_author_pages_not_captured": [
     168,
     169,
     170,

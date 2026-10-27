@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    159
+    167
   ],
   "draft_complete_printed_range": [
     3,
-    159
+    166
   ],
-  "draft_complete_pages": 157,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p160-01",
-  "continuation_pdf_leaf_required": 160,
+  "draft_complete_pages": 164,
+  "partial_printed_page": 167,
+  "partial_translated_through_source_id": "v4-p167-03",
+  "next_source_id": "v4-p167-04",
+  "continuation_pdf_leaf_required": 168,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -165,7 +165,12 @@
     156,
     157,
     158,
-    159
+    159,
+    160,
+    161,
+    162,
+    163,
+    164
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -174,7 +179,8 @@
     "V4-ATTRIBUTION-114",
     "V4-ATTRIBUTION-117",
     "V4-PHIL-136-137",
-    "V4-ATTRIBUTION-146"
+    "V4-ATTRIBUTION-146",
+    "V4-SYNTAX-166"
   ],
   "first_range": [
     3,
@@ -188,15 +194,15 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "b165d0478b62a08bfc011ad8bc2f490dfc863800",
-  "unsent_current_content": "Current checkpoint through159; confirm next push",
+  "last_confirmed_remote_content_commit": "1cb9969168122628d8d57180658e4a9b4590cb6c",
+  "unsent_current_content": "Current checkpoint through166; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "новый лист ещё не записан",
+  "next_fragment_opening": "المرتبة السادسة: حياة الإرادة والهمة والمحبة، فإن فتور الهمة وضعف الإرادة والطلب من ضعف حياة القلب، وكلما كان ",
   "third_range": [
     103,
     152

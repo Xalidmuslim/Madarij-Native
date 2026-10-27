@@ -405,6 +405,61 @@
       ],
       "source": "Actual uploaded control142,157–158, including native enlarged quote157.png",
       "result": "Control142 quotes لتناغي;157 quotes لتعاين;158 explicitly discusses لتناغي as variant and prefers لتعاين for this chapter. Both author quotations and discussion retained; no silent harmonisation of earlier text."
+    },
+    {
+      "units": [
+        "v4-p166-02-ru"
+      ],
+      "source": "Pinned primary Ahmad al-Zuhd, Luqman report552 in this digital witness",
+      "actual_lines_read": [
+        3364,
+        3370
+      ],
+      "result": "Actually read جالس العلماء وزاحمهم بركبتيك...بنور الحكمة. Digital primary has الأرض الميتة بوابل السماء; author control الأرض بوابل القطر retained. No new grade; modern control note number559 not substituted for digital552."
+    },
+    {
+      "units": [
+        "v4-p160-04-ru"
+      ],
+      "source": "Pinned primary Tafsir al-Tabari on40:15 and Tafsir Ibn Kathir on40:15",
+      "actual_tabari_lines_read": [
+        233612,
+        233650
+      ],
+      "actual_ibn_kathir_lines_read": [
+        105265,
+        105285
+      ],
+      "result": "Tabari explicitly explains روح as revelation/book/prophethood, aligned with author. Ibn Kathir explains greatness/exaltedness here; Russian رفيع الدرجات revised to Высокий степенями rather than adding an unprinted recipient of raised degrees. Other historical details in commentary not imported into author text."
+    },
+    {
+      "units": [
+        "v4-p162-07-ru"
+      ],
+      "source": "Actual control163 direct quotation with printed reference25:48",
+      "result": "Quoted words continue through beginning25:49; author AR reference48 retained, RU reference48–49 gives actual span. Pending automatic literal comparison, not a claim of independent literary review."
+    },
+    {
+      "units": [
+        "v4-p166-03-ru"
+      ],
+      "source": "Actual author control166–167",
+      "result": "Full Muadh quotation and author preference for mawquf retained. الموقوف أصح is Ibn al-Qayyim’s judgment translated as such; not a new Codex hadith grading. Modern editorial footnotes on transmitters excluded."
+    },
+    {
+      "units": [
+        "v4-p165-04-ru",
+        "v4-p164-03-ru"
+      ],
+      "source": "Auxiliary Madarij from another edition, not governing2019 original",
+      "openiti_path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.MadarijSalikin/0751IbnQayyimJawziyya.MadarijSalikin.Shamela0008370-ara1",
+      "sha256": "bedb9f721dbdc23ac7c65c952f75b4a789901a9cb46d3a56ae5eed32d4c617f0",
+      "actual_lines_read": [
+        30809,
+        30823
+      ],
+      "additional_search_hit": 30791,
+      "result": "Control166 بين vs auxiliary هي documented, syntax left open; no control emendation. Auxiliary search also corroborates bi in وبتفرق164, independently directly read in native crop. Full other-edition text kept private workspace, not copied wholesale."
     }
   ],
   "additional_digital_witnesses": [

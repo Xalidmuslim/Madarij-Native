@@ -2297,6 +2297,378 @@
         43
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p160-02-ru",
+      "quote": "أَوَمَنْ كَانَ مَيْتًا فَأَحْيَيْنَاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          122
+        ],
+        [
+          6,
+          122
+        ]
+      ],
+      "printed_reference": [
+        6,
+        122,
+        122
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p160-03-ru",
+      "quote": "أَوَمَنْ كَانَ مَيْتًا فَأَحْيَيْنَاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          122
+        ],
+        [
+          6,
+          122
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p160-03-ru",
+      "quote": "إِنَّكَ لَا تُسْمِعُ الْمَوْتَى وَلَا تُسْمِعُ الصُّمَّ الدُّعَاءَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          80
+        ],
+        [
+          27,
+          80
+        ]
+      ],
+      "printed_reference": [
+        27,
+        80,
+        80
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p160-04-ru",
+      "quote": "وَكَذَلِكَ أَوْحَيْنَا إِلَيْكَ رُوحًا مِنْ أَمْرِنَا مَا كُنْتَ تَدْرِي مَا الْكِتَابُ وَلَا الْإِيمَانُ وَلَكِنْ جَعَلْنَاهُ نُورًا نَهْدِي بِهِ مَنْ نَشَاءُ مِنْ عِبَادِنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          52
+        ],
+        [
+          42,
+          52
+        ]
+      ],
+      "printed_reference": [
+        42,
+        52,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p160-04-ru",
+      "quote": "يُنَزِّلُ الْمَلَائِكَةَ بِالرُّوحِ مِنْ أَمْرِهِ عَلَى مَنْ يَشَاءُ مِنْ عِبَادِهِ أَنْ أَنْذِرُوا أَنَّهُ لَا إِلَهَ إِلَّا أَنَا فَاتَّقُونِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          2
+        ]
+      ],
+      "printed_reference": [
+        16,
+        2,
+        2
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p160-04-ru",
+      "quote": "رَفِيعُ الدَّرَجَاتِ ذُو الْعَرْشِ يُلْقِي الرُّوحَ مِنْ أَمْرِهِ عَلَى مَنْ يَشَاءُ مِنْ عِبَادِهِ لِيُنْذِرَ يَوْمَ التَّلَاقِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          40,
+          15
+        ],
+        [
+          40,
+          15
+        ]
+      ],
+      "printed_reference": [
+        40,
+        15,
+        15
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p161-02-ru",
+      "quote": "مَنْ عَمِلَ صَالِحًا مِنْ ذَكَرٍ أَوْ أُنْثَى وَهُوَ مُؤْمِنٌ فَلَنُحْيِيَنَّهُ حَيَاةً طَيِّبَةً وَلَنَجْزِيَنَّهُمْ أَجْرَهُمْ بِأَحْسَنِ مَا كَانُوا يَعْمَلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          97
+        ],
+        [
+          16,
+          97
+        ]
+      ],
+      "printed_reference": [
+        16,
+        97,
+        97
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p162-01-ru",
+      "quote": "لِلَّذِينَ أَحْسَنُوا فِي هَذِهِ الدُّنْيَا حَسَنَةٌ وَلَدَارُ الْآخِرَةِ خَيْرٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          30
+        ],
+        [
+          16,
+          30
+        ]
+      ],
+      "printed_reference": [
+        16,
+        30,
+        30
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p162-01-ru",
+      "quote": "وَأَنِ اسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ يُمَتِّعْكُمْ مَتَاعًا حَسَنًا إِلَى أَجَلٍ مُسَمًّى وَيُؤْتِ كُلَّ ذِي فَضْلٍ فَضْلَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "printed_reference": [
+        11,
+        3,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p162-07-ru",
+      "quote": "وَاللَّهُ أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَحْيَا بِهِ الْأَرْضَ بَعْدَ مَوْتِهَا إِنَّ فِي ذَلِكَ لَآيَةً لِقَوْمٍ يَسْمَعُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          65
+        ],
+        [
+          16,
+          65
+        ]
+      ],
+      "printed_reference": [
+        16,
+        65,
+        65
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p162-07-ru",
+      "quote": "وَأَحْيَيْنَا بِهِ بَلْدَةً مَيْتًا كَذَلِكَ الْخُرُوجُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          50,
+          11
+        ],
+        [
+          50,
+          11
+        ]
+      ],
+      "printed_reference": [
+        50,
+        11,
+        11
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p162-07-ru",
+      "quote": "وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا لِنُحْيِيَ بِهِ بَلْدَةً مَيْتًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          48
+        ],
+        [
+          25,
+          49
+        ]
+      ],
+      "printed_reference": [
+        25,
+        48,
+        48
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p163-03-ru",
+      "quote": "وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          21,
+          30
+        ],
+        [
+          21,
+          30
+        ]
+      ],
+      "printed_reference": [
+        21,
+        30,
+        30
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p164-05-ru",
+      "quote": "يُسَبِّحُونَ اللَّيْلَ وَالنَّهَارَ لَا يَفْتُرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          21,
+          20
+        ],
+        [
+          21,
+          20
+        ]
+      ],
+      "printed_reference": [
+        21,
+        20,
+        20
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p165-04-ru",
+      "quote": "أَوَمَنْ كَانَ مَيْتًا فَأَحْيَيْنَاهُ وَجَعَلْنَا لَهُ نُورًا يَمْشِي بِهِ فِي النَّاسِ كَمَنْ مَثَلُهُ فِي الظُّلُمَاتِ لَيْسَ بِخَارِجٍ مِنْهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          122
+        ],
+        [
+          6,
+          122
+        ]
+      ],
+      "printed_reference": [
+        6,
+        122,
+        122
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p165-04-ru",
+      "quote": "إِنْ هُوَ إِلَّا ذِكْرٌ وَقُرْآنٌ مُبِينٌ لِيُنْذِرَ مَنْ كَانَ حَيًّا وَيَحِقَّ الْقَوْلُ عَلَى الْكَافِرِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          36,
+          69
+        ],
+        [
+          36,
+          70
+        ]
+      ],
+      "printed_reference": [
+        36,
+        69,
+        70
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p165-04-ru",
+      "quote": "إِنَّكَ لَا تُسْمِعُ الْمَوْتَى وَلَا تُسْمِعُ الصُّمَّ الدُّعَاءَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          80
+        ],
+        [
+          27,
+          80
+        ]
+      ],
+      "printed_reference": [
+        27,
+        80,
+        80
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p165-04-ru",
+      "quote": "إِنَّ اللَّهَ يُسْمِعُ مَنْ يَشَاءُ وَمَا أَنْتَ بِمُسْمِعٍ مَنْ فِي الْقُبُورِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          35,
+          22
+        ],
+        [
+          35,
+          22
+        ]
+      ],
+      "printed_reference": [
+        35,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
