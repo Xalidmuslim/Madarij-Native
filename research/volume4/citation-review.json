@@ -343,6 +343,59 @@
         1268
       ],
       "result": "Free git witness read; supports لتناغي, gentle converse. Digital witness طهرت / سناء differs from selected control142 ظهرت / سنا; actual control retained, no replacement by easier electronic text and no reproduction of modern notes."
+    },
+    {
+      "units": [
+        "v4-p148-02-ru"
+      ],
+      "source": "Pinned primary Sahih Muslim2858",
+      "actual_lines_read": [
+        51226,
+        51237
+      ],
+      "result": "Finger in sea comparison actually read. Author shortened wording/ending ترجع retained; no added oath or narrator detail."
+    },
+    {
+      "units": [
+        "v4-p147-04-ru"
+      ],
+      "source": "Pinned Lisan al-Arab rootبدع V08P007",
+      "actual_lines_read": [
+        122107,
+        122123
+      ],
+      "result": "Lexical context قطع به وخذله ولم يقم بحاجته supports betrayal/letting down sense in ruin of world lovers. Control بدعت بهم retained; lexicon is meaning support, not a claim identical verb form appears here in dictionary."
+    },
+    {
+      "units": [
+        "v4-p149-05-ru"
+      ],
+      "source": "Pinned Lisan al-Arab rootقصب V01P675–676",
+      "actual_lines_read": [
+        19736,
+        19747
+      ],
+      "result": "قصب من الجوهر: مستطيل أجوف, أنابيب من جوهر. Replaced botanical pearl stems with hollow pearl sections; not ordinary reeds."
+    },
+    {
+      "units": [
+        "v4-p150-02-ru"
+      ],
+      "source": "Primary Sunan Ibn Majah184, newly read free OpenITI witness",
+      "openiti_path": "data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.Shamela0001198-ara1",
+      "sha256": "a8ca427804457198efc8cb516bb5ad91da500a9d8fe1a697a7e11e5239a07782",
+      "actual_lines_read": [
+        1234,
+        1243
+      ],
+      "result": "Actual light/Paradise report read. Digital primary has ويبقى نوره وبركته عليهم; selected author control رحمته وبركته retained. Author shortening/quote preserved without importing omitted primary words or assigning new authenticity grade."
+    },
+    {
+      "units": [
+        "v4-p148-04-ru"
+      ],
+      "source": "Pinned Tanzil6236 simple clean, actual line6558,37:24",
+      "result": "Author embeds قفوهم إنهم مسئولون in prose without initial verse waw. Added same Arabic words to RU direct call with37:24; actual verse read وقفوهم إنهم مسئولون. Not an extra author sentence or modern publisher note."
     }
   ],
   "additional_digital_witnesses": [
