@@ -3818,6 +3818,69 @@
         30
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p247-02-ru",
+      "quote": "حَتَّى إِذَا فُزِّعَ عَنْ قُلُوبِهِمْ قَالُوا مَاذَا قَالَ رَبُّكُمْ قَالُوا الْحَقَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          34,
+          23
+        ],
+        [
+          34,
+          23
+        ]
+      ],
+      "printed_reference": [
+        34,
+        23,
+        23
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p249-04-ru",
+      "quote": "وَاعْبُدْ رَبَّكَ حَتَّى يَأْتِيَكَ الْيَقِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          15,
+          99
+        ],
+        [
+          15,
+          99
+        ]
+      ],
+      "printed_reference": [
+        15,
+        99,
+        99
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p252-02-ru",
+      "quote": "وَإِبْرَاهِيمَ الَّذِي وَفَّى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          37
+        ],
+        [
+          53,
+          37
+        ]
+      ],
+      "printed_reference": [
+        53,
+        37,
+        37
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
