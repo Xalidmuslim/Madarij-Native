@@ -1910,6 +1910,27 @@
           4
         ]
       ]
+    },
+    {
+      "unit": "v4-p138-02-ru",
+      "quote": "وَقَضَى رَبُّكَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          23
+        ],
+        [
+          17,
+          23
+        ]
+      ],
+      "printed_reference": [
+        17,
+        23,
+        23
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
