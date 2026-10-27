@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    107
+    114
   ],
   "draft_complete_printed_range": [
     3,
-    107
+    113
   ],
-  "draft_complete_pages": 105,
-  "partial_printed_page": null,
-  "partial_translated_through_source_id": null,
-  "next_source_id": "v4-p108-01",
-  "continuation_pdf_leaf_required": 108,
+  "draft_complete_pages": 111,
+  "partial_printed_page": 114,
+  "partial_translated_through_source_id": "v4-p114-06",
+  "next_source_id": "v4-p114-07",
+  "continuation_pdf_leaf_required": 115,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -121,11 +121,18 @@
     104,
     105,
     106,
-    107
+    107,
+    108,
+    109,
+    111,
+    112,
+    113
   ],
   "open_issue_ids": [
     "V4-LEX-046",
-    "V4-WORDING-067-068"
+    "V4-WORDING-067-068",
+    "V4-HADITH-110",
+    "V4-ATTRIBUTION-114"
   ],
   "first_range": [
     3,
@@ -139,8 +146,8 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "b4418ab117f34ced335757ba537d498811defe50",
-  "unsent_current_content": "Current checkpoint through107; confirm next push",
+  "last_confirmed_remote_content_commit": "fc9173dc15c5af2e24bd5dff867609bf48413a89",
+  "unsent_current_content": "Current checkpoint through113; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,

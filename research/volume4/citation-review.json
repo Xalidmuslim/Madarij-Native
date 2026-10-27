@@ -197,6 +197,34 @@
       ],
       "source": "Uploaded control106, native q83-word-page106.png; unchanged Tanzil83:15–16",
       "result": "Print لصالوا has silent-alif zero mark; Tanzil Simple Clean لصالو. Orthographic alignment only for whole-quote comparison, not a reading variant; control AR kept. Russian participle clarified as burning."
+    },
+    {
+      "units": [
+        "v4-p110-04-ru"
+      ],
+      "source": "Sahih Muslim2702 and Sahih Bukhari6307; pinned unchanged primary digital witnesses already recorded",
+      "actual_lines_read": {
+        "Muslim": [
+          48580,
+          48603
+        ],
+        "Bukhari": [
+          55778,
+          55789
+        ]
+      },
+      "result": "Control110 quotes ghayn on heart with أكثر من سبعين مرة. Actual Muslim2702 read48580–48603 says مائة مرة; Bukhari6307 read55778–55789 says أكثر من سبعين مرة with a different opening. Author retained verbatim; no inspected witness yet confirms the whole combined formula. No new hadith grade and no automatic correction to100."
+    },
+    {
+      "units": [
+        "v4-p114-03-ru"
+      ],
+      "source": "Ahmad Zuhd376, pinned primary-zuhd-ahmad.txt",
+      "actual_lines_read": [
+        2268,
+        2288
+      ],
+      "result": "Control114 names Musa in Ahmad Zuhd quotation. Actual cached primary Ahmad Zuhd376 read2268–2288 names Dawud, transmitted from Abu al-Jild, with fuller wording. Preserve actual author Musa; selected primary difference documented, not exhaustive claim of no other narration and not a grading as authenticated revelation."
     }
   ],
   "additional_digital_witnesses": [

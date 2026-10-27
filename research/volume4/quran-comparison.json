@@ -1697,6 +1697,105 @@
         94
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p108-02-ru",
+      "quote": "فَأَوْحَى إِلَى عَبْدِهِ مَا أَوْحَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          10
+        ],
+        [
+          53,
+          10
+        ]
+      ],
+      "printed_reference": [
+        53,
+        10,
+        10
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p108-04-ru",
+      "quote": "مَا أَوْحَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          163
+        ],
+        [
+          4,
+          163
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p108-04-ru",
+      "quote": "فَغَشِيَهُمْ مِنَ الْيَمِّ مَا غَشِيَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          78
+        ],
+        [
+          20,
+          78
+        ]
+      ],
+      "printed_reference": [
+        20,
+        78,
+        78
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p111-01-ru",
+      "quote": "كَلَّا بَلْ رَانَ عَلَى قُلُوبِهِمْ مَا كَانُوا يَكْسِبُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          83,
+          14
+        ],
+        [
+          83,
+          14
+        ]
+      ],
+      "printed_reference": [
+        83,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p112-07-ru",
+      "quote": "وَأَنَّ إِلَى رَبِّكَ الْمُنْتَهَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          42
+        ],
+        [
+          53,
+          42
+        ]
+      ],
+      "printed_reference": [
+        53,
+        42,
+        42
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

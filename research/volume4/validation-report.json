@@ -106,7 +106,14 @@
     104,
     105,
     106,
-    107
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114
   ],
   "draft_pages_complete": [
     3,
@@ -213,7 +220,13 @@
     104,
     105,
     106,
-    107
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -317,17 +330,17 @@
     104,
     105,
     106,
-    107
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    107,
     108,
     109,
-    110,
     111,
     112,
-    113,
-    114,
+    113
+  ],
+  "untranslated_captured_fragments": [
+    "v4-p114-07"
+  ],
+  "remaining_author_pages_not_captured": [
     115,
     116,
     117,
