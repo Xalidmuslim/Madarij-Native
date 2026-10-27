@@ -1447,13 +1447,24 @@
     {
       "unit": "v4-p089-01-ru",
       "quote": "يَاعِبَادِي لَا خَوْفٌ عَلَيْكُمُ الْيَوْمَ",
-      "status": "unmatched",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          43,
+          68
+        ],
+        [
+          43,
+          68
+        ]
+      ],
+      "evidence": "Control leaf89 enlarged q43-page89.png retains ya in يا عبادي. Ibn Khalawayh Hujja, sura43 discussion, PageV01P322–323 explicitly attests both retention and omission of ya. Comparison-only omission; printed author source and Russian quotation unchanged. No named reader attribution asserted.",
       "printed_reference": [
         43,
         68,
         68
       ],
-      "reference_status": "unmatched"
+      "reference_status": "full_span"
     },
     {
       "unit": "v4-p094-02-ru",
@@ -1608,12 +1619,12 @@
       "status": "normalised_letters_match",
       "actual_span": [
         [
-          6,
-          135
+          39,
+          39
         ],
         [
-          6,
-          135
+          39,
+          39
         ]
       ],
       "printed_reference": [
@@ -1621,7 +1632,7 @@
         39,
         39
       ],
-      "reference_status": "unmatched"
+      "reference_status": "full_span"
     }
   ]
 }

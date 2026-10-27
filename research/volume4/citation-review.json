@@ -178,6 +178,18 @@
         6805
       ],
       "result": "Directly read full context: فإن الله تبارك وتعالى قال على لسان نبيه ... سمع الله لمن حمده. Muslim notes Abu Kamil narration specificity and another قضى wording. Author abbreviated formula retained exactly, no new grade assigned."
+    },
+    {
+      "units": [
+        "v4-p089-01-ru"
+      ],
+      "source": "Ibn Khalawayh Hujja, sura43, PageV01P322–323; pinned OpenITI witness primary-qiraat-hujja.txt already recorded",
+      "actual_lines_read": [
+        6960,
+        6990
+      ],
+      "control_evidence": "Actual enlarged PDF89 q43-page89.png prints يا عبادي with ya",
+      "result": "Scholarly text explicitly says يقرأ بإثبات الياء وحذفها. Retain printed source; normalize only comparison candidate against Hafs. No named reader attribution, no replacement of control text."
     }
   ],
   "additional_digital_witnesses": [
