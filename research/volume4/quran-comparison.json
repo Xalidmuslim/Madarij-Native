@@ -3439,6 +3439,216 @@
         41
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p220-02-ru",
+      "quote": "يَذْرَؤُكُمْ فِيهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          11
+        ],
+        [
+          42,
+          11
+        ]
+      ],
+      "printed_reference": [
+        42,
+        11,
+        11
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p220-04-ru",
+      "quote": "وَنُنْشِئَكُمْ فِي مَا لَا تَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          56,
+          61
+        ],
+        [
+          56,
+          61
+        ]
+      ],
+      "printed_reference": [
+        56,
+        61,
+        61
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p221-04-ru",
+      "quote": "يَا بَنِي آدَمَ قَدْ أَنْزَلْنَا عَلَيْكُمْ لِبَاسًا يُوَارِي سَوْآتِكُمْ وَرِيشًا وَلِبَاسُ التَّقْوَى ذَلِكَ خَيْرٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          26
+        ],
+        [
+          7,
+          26
+        ]
+      ],
+      "printed_reference": [
+        7,
+        26,
+        26
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p221-05-ru",
+      "quote": "فِيهِنَّ خَيْرَاتٌ حِسَانٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          55,
+          70
+        ],
+        [
+          55,
+          70
+        ]
+      ],
+      "printed_reference": [
+        55,
+        70,
+        70
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p222-01-ru",
+      "quote": "وَلَقَّاهُمْ نَضْرَةً وَسُرُورًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          76,
+          11
+        ],
+        [
+          76,
+          11
+        ]
+      ],
+      "printed_reference": [
+        76,
+        11,
+        11
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p222-02-ru",
+      "quote": "وُجُوهٌ يَوْمَئِذٍ نَاضِرَةٌ إِلَى رَبِّهَا نَاظِرَةٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          75,
+          22
+        ],
+        [
+          75,
+          23
+        ]
+      ],
+      "printed_reference": [
+        75,
+        22,
+        22
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p222-03-ru",
+      "quote": "وَحُلُّوا أَسَاوِرَ مِنْ فِضَّةٍ وَسَقَاهُمْ رَبُّهُمْ شَرَابًا طَهُورًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          76,
+          21
+        ],
+        [
+          76,
+          21
+        ]
+      ],
+      "printed_reference": [
+        76,
+        21,
+        21
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p222-04-ru",
+      "quote": "إِنَّا زَيَّنَّا السَّمَاءَ الدُّنْيَا بِزِينَةٍ الْكَوَاكِبِ وَحِفْظًا مِنْ كُلِّ شَيْطَانٍ مَارِدٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          6
+        ],
+        [
+          37,
+          7
+        ]
+      ],
+      "printed_reference": [
+        37,
+        6,
+        7
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p223-04-ru",
+      "quote": "فَبِمَا رَحْمَةٍ مِنَ اللَّهِ لِنْتَ لَهُمْ وَلَوْ كُنْتَ فَظًّا غَلِيظَ الْقَلْبِ لَانْفَضُّوا مِنْ حَوْلِكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          159
+        ],
+        [
+          3,
+          159
+        ]
+      ],
+      "printed_reference": [
+        3,
+        159,
+        159
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p228-02-ru",
+      "quote": "وَجَعَلْنَا مِنْهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا لَمَّا صَبَرُوا وَكَانُوا بِآيَاتِنَا يُوقِنُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          32,
+          24
+        ],
+        [
+          32,
+          24
+        ]
+      ],
+      "printed_reference": [
+        32,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
