@@ -252,7 +252,17 @@
     250,
     251,
     252,
-    253
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263
   ],
   "draft_pages_complete": [
     3,
@@ -505,7 +515,17 @@
     250,
     251,
     252,
-    253
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -739,10 +759,8 @@
     249,
     250,
     251,
-    252
-  ],
-  "untranslated_captured_fragments": [],
-  "remaining_author_pages_not_captured": [
+    252,
+    253,
     254,
     255,
     256,
@@ -752,7 +770,10 @@
     260,
     261,
     262,
-    263,
+    263
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     264,
     265,
     266,

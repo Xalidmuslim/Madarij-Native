@@ -3881,6 +3881,432 @@
         37
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p255-02-ru",
+      "quote": "ثُمَّ دَنَا فَتَدَلَّىٰ فَكَانَ قَابَ قَوْسَيْنِ أَوْ أَدْنَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          8
+        ],
+        [
+          53,
+          9
+        ]
+      ],
+      "printed_reference": [
+        53,
+        8,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p255-02-ru",
+      "quote": "أَوْ أَدْنَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          9
+        ],
+        [
+          53,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p255-03-ru",
+      "quote": "وَلَقَدْ رَآهُ نَزْلَةً أُخْرَىٰ عِنْدَ سِدْرَةِ الْمُنْتَهَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          13
+        ],
+        [
+          53,
+          14
+        ]
+      ],
+      "printed_reference": [
+        53,
+        13,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p255-04-ru",
+      "quote": "عَلَّمَهُ شَدِيدُ الْقُوَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          5
+        ],
+        [
+          53,
+          5
+        ]
+      ],
+      "printed_reference": [
+        53,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p255-04-ru",
+      "quote": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ ذِي قُوَّةٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          81,
+          19
+        ],
+        [
+          81,
+          20
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p255-05-ru",
+      "quote": "ذُو مِرَّةٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          6
+        ],
+        [
+          53,
+          6
+        ]
+      ],
+      "printed_reference": [
+        53,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p256-02-ru",
+      "quote": "فَاسْتَوَىٰ وَهُوَ بِالْأُفُقِ الْأَعْلَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          6
+        ],
+        [
+          53,
+          7
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-03-ru",
+      "quote": "ثُمَّ دَنَا فَتَدَلَّىٰ فَكَانَ قَابَ قَوْسَيْنِ أَوْ أَدْنَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          8
+        ],
+        [
+          53,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-05-ru",
+      "quote": "وَلَقَدْ رَآهُ نَزْلَةً أُخْرَىٰ عِنْدَ سِدْرَةِ الْمُنْتَهَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          13
+        ],
+        [
+          53,
+          14
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-06-ru",
+      "quote": "وَلَقَدْ رَآهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          13
+        ],
+        [
+          53,
+          13
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-06-ru",
+      "quote": "ثُمَّ دَنَا فَتَدَلَّىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          8
+        ],
+        [
+          53,
+          8
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-06-ru",
+      "quote": "فَاسْتَوَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          48,
+          29
+        ],
+        [
+          48,
+          29
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p256-06-ru",
+      "quote": "وَهُوَ بِالْأُفُقِ الْأَعْلَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          7
+        ],
+        [
+          53,
+          7
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p257-04-ru",
+      "quote": "ذُو مِرَّةٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          6
+        ],
+        [
+          53,
+          6
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p258-01-ru",
+      "quote": "ثُمَّ دَنَا فَتَدَلَّىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          8
+        ],
+        [
+          53,
+          8
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p258-03-ru",
+      "quote": "صَاحِبُكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          2
+        ],
+        [
+          53,
+          2
+        ]
+      ],
+      "printed_reference": [
+        53,
+        2,
+        2
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p259-01-ru",
+      "quote": "لَقَدْ رَأَىٰ مِنْ آيَاتِ رَبِّهِ الْكُبْرَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          18
+        ],
+        [
+          53,
+          18
+        ]
+      ],
+      "printed_reference": [
+        53,
+        18,
+        18
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p259-02-ru",
+      "quote": "أَوْ أَدْنَىٰ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          53,
+          9
+        ],
+        [
+          53,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p259-03-ru",
+      "quote": "أَوْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p259-04-ru",
+      "quote": "وَأَرْسَلْنَاهُ إِلَىٰ مِائَةِ أَلْفٍ أَوْ يَزِيدُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          147
+        ],
+        [
+          37,
+          147
+        ]
+      ],
+      "printed_reference": [
+        37,
+        147,
+        147
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p260-02-ru",
+      "quote": "وَاعْتَصِمُوا بِاللَّهِ هُوَ مَوْلَاكُمْ فَنِعْمَ الْمَوْلَىٰ وَنِعْمَ النَّصِيرُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          78
+        ],
+        [
+          22,
+          78
+        ]
+      ],
+      "printed_reference": [
+        22,
+        78,
+        78
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p260-02-ru",
+      "quote": "وَمَنْ يَعْتَصِمْ بِاللَّهِ فَقَدْ هُدِيَ إِلَىٰ صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          101
+        ],
+        [
+          3,
+          101
+        ]
+      ],
+      "printed_reference": [
+        3,
+        101,
+        101
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p260-02-ru",
+      "quote": "إِلَّا الَّذِينَ تَابُوا وَأَصْلَحُوا وَاعْتَصَمُوا بِاللَّهِ وَأَخْلَصُوا دِينَهُمْ لِلَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          146
+        ],
+        [
+          4,
+          146
+        ]
+      ],
+      "printed_reference": [
+        4,
+        146,
+        146
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p260-02-ru",
+      "quote": "وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          103
+        ],
+        [
+          3,
+          103
+        ]
+      ],
+      "printed_reference": [
+        3,
+        103,
+        103
+      ],
+      "reference_status": "full_span"
     }
   ]
 }
