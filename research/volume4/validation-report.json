@@ -75,7 +75,17 @@
     73,
     74,
     75,
-    76
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
   ],
   "draft_pages_complete": [
     3,
@@ -150,7 +160,18 @@
     72,
     73,
     74,
-    75
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
   ],
   "self_reviewed_pages_without_open_context_questions": [
     3,
@@ -222,12 +243,8 @@
     72,
     73,
     74,
-    75
-  ],
-  "untranslated_captured_fragments": [
-    "v4-p076-03"
-  ],
-  "remaining_author_pages_not_captured": [
+    75,
+    76,
     77,
     78,
     79,
@@ -237,7 +254,10 @@
     83,
     84,
     85,
-    86,
+    86
+  ],
+  "untranslated_captured_fragments": [],
+  "remaining_author_pages_not_captured": [
     87,
     88,
     89,
