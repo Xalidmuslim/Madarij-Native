@@ -7,17 +7,17 @@
   ],
   "source_pages_captured": [
     3,
-    296
+    303
   ],
   "draft_complete_printed_range": [
     3,
-    295
+    302
   ],
-  "draft_complete_pages": 293,
-  "partial_printed_page": 296,
-  "partial_translated_through_source_id": "v4-p296-04",
-  "next_source_id": "v4-p296-05",
-  "continuation_pdf_leaf_required": 297,
+  "draft_complete_pages": 300,
+  "partial_printed_page": 303,
+  "partial_translated_through_source_id": "v4-p303-02",
+  "next_source_id": "v4-p303-03",
+  "continuation_pdf_leaf_required": 303,
   "all_three_Codex_passes_performed_through_draft": true,
   "pages_without_open_context_questions": [
     3,
@@ -292,7 +292,12 @@
     292,
     293,
     294,
-    295
+    295,
+    296,
+    297,
+    298,
+    299,
+    300
   ],
   "open_issue_ids": [
     "V4-LEX-046",
@@ -306,7 +311,8 @@
     "V4-PREFERENCE-186-187",
     "V4-NUMBER-206",
     "V4-REPORTS-236-237",
-    "V4-HADITH-280-283"
+    "V4-HADITH-280-283",
+    "V4-ATTRIBUTION-301"
   ],
   "first_range": [
     3,
@@ -314,21 +320,21 @@
   ],
   "first_range_fully_final": false,
   "next_checkpoint_range": [
-    253,
-    302
+    303,
+    352
   ],
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "f7a33d670d12345e950e8550e889685cf2ed29bc",
-  "unsent_current_content": "Current checkpoint through295; confirm next push",
+  "last_confirmed_remote_content_commit": "39f93015ec5380ff2e21b20493495c8041ed2c35",
+  "unsent_current_content": "Current checkpoint through302; confirm next push",
   "pending_review_units": [],
   "second_range": [
     53,
     102
   ],
   "second_range_fully_final": false,
-  "next_fragment_opening": "وقد جعل الله سبحانه منكر صفاته مسيء الظن به، وتوعده بما لم يتوعد",
+  "next_fragment_opening": "فسبحان من حال بين المعطلة وبين محبته ومعرفته، والسرور والفرح به، والشوق إلى لقائه، وانتظار لذة النظر إلى وجهه،",
   "third_range": [
     103,
     152
@@ -637,9 +643,16 @@
     292,
     293,
     294,
-    295
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302
   ],
-  "last_full_page_with_three_Codex_passes": 295,
+  "last_full_page_with_three_Codex_passes": 302,
   "emergency_recovery": {
     "date": "2026-10-27",
     "reason": "exec-server transport disconnected; execution environment unavailable",
@@ -660,5 +673,12 @@
     "runtime_tests_after_drafts_not_run": true,
     "resolved_on": "2026-10-29",
     "resolution": "Snapshot matched and imported; corrections applied, actual passes and automated checks completed through295 plus296-01/04."
-  }
+  },
+  "sixth_range": [
+    253,
+    302
+  ],
+  "sixth_range_fully_final": false,
+  "source_capture_partial_last_page": 303,
+  "partial_last_source_fragment_id": "v4-p303-03"
 }
