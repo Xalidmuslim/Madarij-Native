@@ -1,0 +1,22 @@
+{
+  "provenance": "historical_tool_inputs_replay",
+  "not_a_backup": true,
+  "not_original_git_commit": true,
+  "replay_only_change": "Redirect /workspace/scratch/volume4 to recovery/agent339/replayed; generated prefix range/output file names reconstructed by the exact historical transformations.",
+  "outputs": [
+    {
+      "file": "replayed/batch549-556.json",
+      "pages": 8,
+      "units": 22,
+      "sha256": "ad3f4921bd503c510ecfae9e3ee03e02e736cd43aafb5e1f0d3d05a79f1f1a4b",
+      "historical_body": "original/batch549-556.body.original.py",
+      "historical_finalize": "original/batch549-556.finalize.original.py"
+    }
+  ],
+  "missing_bodies": [
+    "batch339-348",
+    "batch389-398",
+    "batch439-448",
+    "batch499-508"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "provenance": "historical_tool_inputs_replay",
+  "not_backup": true,
+  "not_recovered_commit": true,
+  "prior_commit_sha_verified": false,
+  "historical_final_file_hash_available": false,
+  "execution_path_substitution": {
+    "from": "/workspace/scratch/volume4",
+    "to": "/workspace/recovery/agent329/replayed-scratch"
+  },
+  "historical_review_notes_preserved": true,
+  "new_visual_or_translation_review_performed": false,
+  "batches": [
+    {
+      "file": "batch539-548.json",
+      "sha256_now": "9f81289c351f2d29a07cb5e58703013fa0c9156ba93446541f971a38b9828fd8",
+      "pages": 10,
+      "fragments": 49,
+      "units": 44,
+      "completed": true,
+      "validation": "sha256_ar, source_ids exact assembly and coverage, Quran ar/ru equality"
+    }
+  ],
+  "remaining_historical_payloads_visible_in_context": [
+    "329-338",
+    "379-388",
+    "429-438",
+    "489-498"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "provenance": "historical_tool_inputs_replay",
+  "original_git_commit_recovered": false,
+  "baseline_commit": "3d1e443b2dba9339255bbe875d1600301c609022",
+  "root_payloads": [
+    "continue.py",
+    "finish308.py",
+    "checkpoint.py self_review status scope",
+    "fix305.py source/RU correction"
+  ],
+  "pages": [
+    303,
+    308
+  ],
+  "units": 20,
+  "earlier_translation_units_unchanged": true,
+  "old303_01_02_not_duplicated": true,
+  "recovery_validation": "SHA/source-pair/brace/ID multiplicity checks passed; no new semantic certification",
+  "file_sha256": "101d5cbc6493b9a5ec10224f480d174c31aad5335db53d5ac647a52cd463a1d2"
+}
