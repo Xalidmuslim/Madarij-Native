@@ -1,0 +1,40 @@
+{
+  "unit": {
+    "id": "v4-p528-04-ru",
+    "source_ids": [
+      "v4-p528-04",
+      "v4-p529-01"
+    ],
+    "printed_pages": [
+      528,
+      529
+    ],
+    "ar": "ولم يقل لهم: لا تشهدوا في التوحيد دليلا، ولا في النجاة وسيلة؛ بل كان من أسباب مباهاة الله بهم ملائكته: شهودهم سبب التوحيد، ووسيلة النجاة، وأنها من منن الله عليهم وفضله، كما قال تعالى: {لقد من الله على المؤمنين إذ بعث فيهم رسولا من أنفسهم يتلو عليهم آياته ويزكيهم ويعلمهم الْكِتَابَ وَالْحِكْمَةَ} [آل عمران: 164]. فكيف يكون كمالهم في أن لا يشهدوا الدليل الذي يزكّيهم ويعلّمهم ويهديهم، ويسقطونه من الشهود والسببيّة؟",
+    "ru": "Он не сказал им: «Не созерцайте в единобожии доказательства и в спасении средства». Напротив, среди причин того, что Аллах хвалится ими перед Своими ангелами, были их созерцание причины единобожия и средства спасения, а также того, что это — милости Аллаха к ним и Его щедрость. Как сказал Всевышний: {لقد من الله على المؤمنين إذ بعث فيهم رسولا من أنفسهم يتلو عليهم آياته ويزكيهم ويعلمهم الْكِتَابَ وَالْحِكْمَةَ} — «Аллах оказал милость верующим, послав среди них Посланника из них самих, который читает им Его аяты, очищает их и учит их Писанию и мудрости» [«Аль Имран», 3:164]. Как же их совершенство может заключаться в том, чтобы не созерцать проводника, который очищает, обучает и ведёт их, устраняя его из созерцания и из числа причин?",
+    "draft_status": "self_reviewed",
+    "print_collation": "control_image_read",
+    "independent_human_review": false
+  },
+  "review_notes": [
+    {
+      "pass": "semantic",
+      "performed": true,
+      "note": "Compared full528–529 unit to both rendered control images;author assertion/question and complete3:164 quotation retained."
+    },
+    {
+      "pass": "russian_only",
+      "performed": true,
+      "note": "Read full joined Russian; supplied complete Quran meaning outside closed Arabic braces, replacing duplicated fragment translation."
+    },
+    {
+      "pass": "final_reverse",
+      "performed": true,
+      "note": "Recompared full Arabic/Russian, exact source joins and identical complete curly quotation;adjoining translator confirms528-04 unchanged through own reviews."
+    }
+  ],
+  "completed": true,
+  "source_snapshot_sha256": {
+    "v4-p528-04": "f77f6b4ffc1cd7370bef30049d4b6ee51307a17f7e9955d23c2f3be88bf90768",
+    "v4-p529-01": "957b789dbbc8cd50b8e42a5418957ea9ffd018dab49e066cad935e3f0142918a"
+  }
+}

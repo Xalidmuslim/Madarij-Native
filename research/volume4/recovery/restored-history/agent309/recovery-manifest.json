@@ -1,0 +1,202 @@
+{
+  "status": "five_range_json_files_replayed",
+  "provenance": "Retained historical tool-call data literals and mutation statements copied from this agent conversation. Creation/append payloads were preserved; successive edit payload mutation segments are concatenated in .04 scripts, with diagnostic print/read-only loops omitted. No new translation or semantic revision performed.",
+  "path_adapter": "replay.py redirects only /workspace/scratch/volume4/batch* open paths into /workspace/recovery/agent309.",
+  "historical_review_metadata": true,
+  "new_source_image_review_performed": false,
+  "old_final_blob_hash_available": false,
+  "byte_equality_with_lost_old_files_claimed": false,
+  "repository_modified": false,
+  "published": false,
+  "files": [
+    {
+      "range": "309-318",
+      "path": "/workspace/recovery/agent309/batch309-318.json",
+      "bytes": 89615,
+      "sha256": "6a149ccd4999ef8d139574575fdba150f2191a7839ff3382bf9b6968bc5040cb",
+      "pages": 10,
+      "sources": 40,
+      "units": 33,
+      "complete_quran_quotes": 8,
+      "open_quran_tails": 0,
+      "checks_passed": true
+    },
+    {
+      "range": "359-368",
+      "path": "/workspace/recovery/agent309/batch359-368.json",
+      "bytes": 102546,
+      "sha256": "a8e4343f2871bb85a3e05ad9b773fb1b48577175516f20abe39da4aef6ecae5c",
+      "pages": 10,
+      "sources": 50,
+      "units": 43,
+      "complete_quran_quotes": 9,
+      "open_quran_tails": 0,
+      "checks_passed": true
+    },
+    {
+      "range": "409-418",
+      "path": "/workspace/recovery/agent309/batch409-418.json",
+      "bytes": 91441,
+      "sha256": "ef0eefe65fe42b910b0adc207137c226d3e58263d81e2fc97bfaec44002b3b6c",
+      "pages": 10,
+      "sources": 42,
+      "units": 34,
+      "complete_quran_quotes": 7,
+      "open_quran_tails": 0,
+      "checks_passed": true
+    },
+    {
+      "range": "469-478",
+      "path": "/workspace/recovery/agent309/batch469-478.json",
+      "bytes": 97165,
+      "sha256": "3e533da54dce33ba7af8986a393f297a08dee73de6ac0491d4da39cc1b991702",
+      "pages": 10,
+      "sources": 38,
+      "units": 34,
+      "complete_quran_quotes": 13,
+      "open_quran_tails": 0,
+      "checks_passed": true
+    },
+    {
+      "range": "519-528",
+      "path": "/workspace/recovery/agent309/batch519-528.json",
+      "bytes": 99516,
+      "sha256": "10f40ff562d46fdc96e0094679c377d0f44b13358cbc667ee66f2e2b485da12d",
+      "pages": 10,
+      "sources": 41,
+      "units": 33,
+      "complete_quran_quotes": 22,
+      "open_quran_tails": 1,
+      "checks_passed": true
+    }
+  ],
+  "extracted_scripts": [
+    {
+      "path": "/workspace/recovery/agent309/inputs/309-318.01.py",
+      "bytes": 20100,
+      "sha256": "2aac4a5809524d8f541d96106f37e34ee01fa0fd1c172bf63bf734dc0729e6a1"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/309-318.02.py",
+      "bytes": 16779,
+      "sha256": "ce98129168976e6a0fae749b2c5963b9739ccb28246d8013793c811e681636a9"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/309-318.03.py",
+      "bytes": 12177,
+      "sha256": "42d4ffe3f770929b1e715c377a8e6e539488e3ea295961f74c4fe46b5fce88e6"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/309-318.04.py",
+      "bytes": 8253,
+      "sha256": "bf4fc2b199cca10ee914c3cf5ba735cba4ff14c906f822040ca17f3ce679cbc7"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/359-368.01.py",
+      "bytes": 15234,
+      "sha256": "19c7e4c4e67d734f0483b5be7a6a3674aa530f057b4f7b3468ca1a4d8db76924"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/359-368.02.py",
+      "bytes": 19793,
+      "sha256": "552ee3cfb3990a43f905d9edcebd716938d979beb6bc8186df9ee7785bde7e26"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/359-368.03.py",
+      "bytes": 17163,
+      "sha256": "c771e033b4851e9791538002c095afda26b8c794f2119c7a810454f33afdb8d7"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/359-368.04.py",
+      "bytes": 4409,
+      "sha256": "f428a788b29bb83701653641acbdc719fe737b5982e7840f3385a28b9ba2fdd0"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/359-368.05.py",
+      "bytes": 8174,
+      "sha256": "63c46129739416bf971d6a17a08e98799f0422a28abcca87bc6bfa564a6cf5f2"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/409-418.01.py",
+      "bytes": 16591,
+      "sha256": "d48d75c8e2ef9ffccaec6fdb0da601e77d8b4bd42e4dca2df9b035627b41dabf"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/409-418.02.py",
+      "bytes": 14809,
+      "sha256": "fa85be26c5559cddf853efd9a8b02e0775d49d39b347178c1a2aed9167483884"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/409-418.03.py",
+      "bytes": 15571,
+      "sha256": "93523095e9b878e49b3e212e268cd84c72e65855522a8fca2d54e764bf0c7797"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/409-418.04.py",
+      "bytes": 3694,
+      "sha256": "10fc948cb9e6f9d61e490005e45b9e2f63a0ea86a7a2a6cfb5ba94c93a1928b9"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/409-418.05.py",
+      "bytes": 8772,
+      "sha256": "0e61f1a49bfd74cbd6319d1053619d31680f9cfceae47302b650474d876ebe41"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/469-478.01.py",
+      "bytes": 14775,
+      "sha256": "e3ef3bea8dba5546a67839a3d24f45e9318c959e40ecc273803c9ab86cb18e59"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/469-478.02.py",
+      "bytes": 15662,
+      "sha256": "0ea4e3778116c40b7a9f4d991b9ba6b4906dd1d376b5ffdd34d8c5c7fc444583"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/469-478.03.py",
+      "bytes": 21442,
+      "sha256": "c6dbb4628d58b6a1435e631f8f9d4c58181c6932ead1105cd9ecf1eabc1d0a37"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/469-478.04.py",
+      "bytes": 3060,
+      "sha256": "a59a1b6fecd649969eb07be5cace6d5edfbf8216ba367b0c4c239de377d818de"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/469-478.05.py",
+      "bytes": 8872,
+      "sha256": "5654d2b20e9b1b583cdeae164814c82b312103e7d15161d6713e1017757fbe67"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/519-528.01.py",
+      "bytes": 17180,
+      "sha256": "d14a0861f8d6950fa4e28c4a555fc766d4121ddfb484f216186e517c99b5c3a1"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/519-528.02.py",
+      "bytes": 18103,
+      "sha256": "30253cae172f87621f9bba11bf0edb89632fc3337fd70f2207f8267773e2db28"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/519-528.03.py",
+      "bytes": 16798,
+      "sha256": "df0ddbf6e19b07381d1507b79c7145769156cdd438c1ec64adac083bd89fd286"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/519-528.04.py",
+      "bytes": 2292,
+      "sha256": "1569f67c4fc4fd3dd6f6725149d5f8e0ed84c7307c2e86488274f646f55e91f8"
+    },
+    {
+      "path": "/workspace/recovery/agent309/inputs/519-528.05.py",
+      "bytes": 10852,
+      "sha256": "9a759d94988afeb17cf27fc595a17a2471fafcb8049b0e44800d93d54fd41f48"
+    }
+  ],
+  "limits": [
+    "These are original range packages before any later parent integration, external boundary merges, or later audited edits.",
+    "All source SHA checks are internal consistency checks against the historical replayed literals; the lost original final blobs are not available for independent byte comparison.",
+    "Review notes and completed flags are replayed historical metadata, not new source-review claims.",
+    "batch519-528 intentionally has the open3:164 tail awaiting its historical neighbor merge.",
+    "The earlier full409-418-independent-check.json and external merge528-529.json were not authored in this subthread and are not reconstructed here."
+  ]
+}

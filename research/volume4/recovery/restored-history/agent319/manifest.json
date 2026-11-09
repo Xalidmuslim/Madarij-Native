@@ -1,0 +1,166 @@
+{
+  "provenance": "replay_from_historical_tool_inputs",
+  "agent": "v4_319_328",
+  "recovery_root": "/workspace/recovery/agent319",
+  "not_a_found_backup": true,
+  "method": "Literal historical add(...) Arabic/Russian data and correction/review/finalize payloads were transcribed from the agent conversation context and replayed deterministically. No new translation or PDF/OCR reconstruction was used.",
+  "wrapper_adaptations": [
+    "Output paths redirected from /workspace/scratch/volume4 to recovery/agent319/artifacts.",
+    "Sequential historical heredocs coalesced into one replay script per batch; identical add() definition and imports retained once; redundant JSON reloads and read-only print/image commands omitted.",
+    "Historical merge528-529 dependency528-04 reconstructed from its literal historical tool OUTPUT snapshot because the original batch519-528 file was absent in this workspace; no other part of that neighboring batch is claimed recovered."
+  ],
+  "historical_corrections_in_order": {
+    "319-328": [
+      "Initial319–321 data and boundary note",
+      "322–325 data",
+      "326–328 data",
+      "Intermediate-cause term substitutions and Russian corrections + semantic/Russian review records",
+      "Restore inadvertently replaced substrings in непосредственно/посредством",
+      "Final reverse-review record;self_reviewed;completed:true"
+    ],
+    "369-378": [
+      "Initial369–371 data and boundary note",
+      "372–374 data",
+      "375–376 data",
+      "377–378 data",
+      "Arabic عاذ/بينه corrections + Russian373 + semantic review record",
+      "Russian369 clause subject,376 companions/comparative,372 syntax + Russian review record",
+      "Final reverse-review record;self_reviewed;completed:true"
+    ],
+    "419-428": [
+      "Initial419–421 data",
+      "422–424 data",
+      "425–428 data and boundary note",
+      "421 indication syntax,425 named prayer,419 naming + semantic review record",
+      "Russian idiom/comma/superlative;427 likeness;428 logic nouns + Russian review record",
+      "422 source وعه,review count28;final reverse-review record;self_reviewed;completed:true"
+    ],
+    "479-488": [
+      "Initial479–481 data",
+      "482–484 data",
+      "485–487 data",
+      "488 data and boundary note",
+      "481 بكماله,485 واتضح,482 Russian referent + semantic review record",
+      "480/483 idioms,485 list comma + Russian review record",
+      "Final reverse-review record;self_reviewed;completed:true"
+    ],
+    "529-538": [
+      "Initial529–531 data and boundary note",
+      "532–534 data including immediate negation join correction",
+      "535–537 data",
+      "538 data",
+      "Coordinator530-03 explicit ‘илال term correction",
+      "531 source فنفى,533 term + semantic review record",
+      "Russian manifestation/pronoun/list/hostility changes + Russian review record",
+      "Final reverse-review record;self_reviewed;completed:true"
+    ],
+    "merge528-529": [
+      "Literal528-04 historical output snapshot +529-01",
+      "Exact Arabic single-space join and full Russian Quran meaning outside Arabic braces",
+      "Historical three review notes,dependency hashes;self_reviewed;completed:true"
+    ]
+  },
+  "artifacts": [
+    {
+      "file": "artifacts/batch319-328.json",
+      "pages": [
+        319,
+        328
+      ],
+      "source_fragments": 32,
+      "translation_units": 25,
+      "sha256": "72004b59761d80378804a54e0656dba3d90b14912228e7b781d9f0aa3b9ee411",
+      "checks": "completed, sequential pages, counts, source hashes, source coverage, joined Arabic, complete Quran brace identity, historical review status"
+    },
+    {
+      "file": "artifacts/batch369-378.json",
+      "pages": [
+        369,
+        378
+      ],
+      "source_fragments": 37,
+      "translation_units": 29,
+      "sha256": "3f4e5a02ab944ab0c9bccd8f4aa6dfea292887b0a5f4626f6270f4cb24028ecf",
+      "checks": "completed, sequential pages, counts, source hashes, source coverage, joined Arabic, complete Quran brace identity, historical review status"
+    },
+    {
+      "file": "artifacts/batch419-428.json",
+      "pages": [
+        419,
+        428
+      ],
+      "source_fragments": 34,
+      "translation_units": 28,
+      "sha256": "913144e313c888c756899b2382f6cd3cd63cee66f8ca8bdecda49c420626fe5f",
+      "checks": "completed, sequential pages, counts, source hashes, source coverage, joined Arabic, complete Quran brace identity, historical review status"
+    },
+    {
+      "file": "artifacts/batch479-488.json",
+      "pages": [
+        479,
+        488
+      ],
+      "source_fragments": 39,
+      "translation_units": 32,
+      "sha256": "1c5b853b3c3edd13eef4605e7fe73f71a12c944ac254bd2ed199927391be5d2f",
+      "checks": "completed, sequential pages, counts, source hashes, source coverage, joined Arabic, complete Quran brace identity, historical review status"
+    },
+    {
+      "file": "artifacts/batch529-538.json",
+      "pages": [
+        529,
+        538
+      ],
+      "source_fragments": 57,
+      "translation_units": 49,
+      "sha256": "9f503e343fe00220b7b5cea3f24bac93a2c09864d344b0388bc168c5049f6e88",
+      "checks": "completed, sequential pages, counts, source hashes, source coverage, joined Arabic, complete Quran brace identity, historical review status"
+    },
+    {
+      "file": "artifacts/merge528-529.json",
+      "source_ids": [
+        "v4-p528-04",
+        "v4-p529-01"
+      ],
+      "sha256": "472339779284239efb06f244c12ee19e63b2c811feef445dd421f1aba45a26c4",
+      "checks": "exact dependency joins, complete Arabic-only brace equality, dependency SHA256, completed"
+    }
+  ],
+  "scripts": [
+    {
+      "file": "scripts/replay319.py",
+      "sha256": "be6bf3302401eb2b5b99e489260b825aa0c195f4e782cf142d74c74b5c14352e"
+    },
+    {
+      "file": "scripts/replay369.py",
+      "sha256": "e4465c1c5331390050caab38be172999667c0b59e73b57b89d612c58279a4d56"
+    },
+    {
+      "file": "scripts/replay419.py",
+      "sha256": "4b13a5ef4f223c02e74592f57dc25265c7d0309c41c82c556a70ee8ea4c127d5"
+    },
+    {
+      "file": "scripts/replay479.py",
+      "sha256": "313dbd158064798345c9092c66f44882c3a60adcbd45fa3835beb9c2cc696f97"
+    },
+    {
+      "file": "scripts/replay529.py",
+      "sha256": "94bc6228c53720ba2b100b9716c2d7cb958120698480a0fe58d4302259019494"
+    },
+    {
+      "file": "scripts/replaymerge528.py",
+      "sha256": "ae024b5f6c57dbbd28050b0c667a37af7cb40e85c574a1556034636e76feba68"
+    }
+  ],
+  "dependency_snapshot": {
+    "file": "upstream528_snapshot.json",
+    "sha256": "3c00acb489274e806ab3bdaf604118974e7513143db65e686095394c880bb8a7",
+    "provenance": "historical_tool_output_literal_snapshot"
+  },
+  "replay_determinism_verified": true,
+  "limits": [
+    "Original pre-reset final-file byte hashes were not available, so current hashes establish recovered artifact identity and deterministic replay, not independent comparison against a found old backup.",
+    "Historical self_reviewed/image-inspection statements are preserved historical metadata; recovery performed structural/deterministic checks only and does not claim new image or human/theological verification.",
+    "No repository edits, commit, push or publication performed by this recovery agent."
+  ]
+}
