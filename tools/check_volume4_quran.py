@@ -21,6 +21,8 @@ def compare(path):
     names = {normalized(n.replace('_', ' ')): i+1 for i, n in enumerate(SURAS)}
     records = []
     for u in json.loads((ROOT/'research/volume4/translation.json').read_text())['paragraphs']:
+        unit_record_start = len(records)
+        previous_quote_end = 0
         for m in re.finditer(r'\{([^{}]+)\}(?:\s*\[([^:\]]+):\s*(\d+)(?:\s*[–—\-ـ]+\s*(\d+))?\])?', u['ar']):
             quote = m[1]
             raw = normalized(quote)
@@ -79,7 +81,22 @@ def compare(path):
                         record['reference_status'] = 'printed_range_error_documented'
                         record['corrected_russian_reference'] = [89, 21, 24]
                         record['reference_evidence'] = 'Actual control195 enlarged q89ref195.png prints21–26, but quotation ends with89:24 يقول يا ليتني قدمت لحياتي. Printed AR reference retained, RU corrected to21–24 and mechanically checked. Missing25–26 not inserted into author text; this status documents a source reference error, not a correct printed full span.'
+                # A shared range can refer to two quotations separated by the
+                # author's explicit "up to his saying", rather than just the last.
+                if (pos >= 0 and len(records) > unit_record_start
+                        and re.fullmatch(r'\s*إلى أن قال:\s*', u['ar'][previous_quote_end:m.start()])):
+                    previous = records[-1]
+                    if (previous['status'] != 'unmatched'
+                            and 'printed_reference' not in previous
+                            and previous['actual_span'][0] == [sur, first]
+                            and previous['actual_span'][1][0] == sur
+                            and previous['actual_span'][1][1] < sequence[begin][1]
+                            and list(sequence[begin]) == [sur, last]
+                            and list(sequence[end]) == [sur, last]):
+                        record['reference_status'] = 'grouped_span'
+                        record['group_actual_span'] = [previous['actual_span'][0], list(sequence[end])]
             records.append(record)
+            previous_quote_end = m.end()
     return {'method':'Read-only normalized Arabic letter and reference comparison. Printed variants retained. Does not certify Russian meaning or independent human review.', 'canonical_sha256':CANONICAL_SHA256,'canonical_verses_loaded':len(verses),'records':records}
 
 if __name__ == '__main__':

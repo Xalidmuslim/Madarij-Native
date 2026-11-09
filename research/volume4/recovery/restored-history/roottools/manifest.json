@@ -1,0 +1,71 @@
+{
+  "provenance": "historical_tool_inputs_replay",
+  "repo_changed": false,
+  "old_git_commits_recovered": false,
+  "scripts": [
+    {
+      "file": "scripts/01_grouped_span_tests.original.py",
+      "bytes": 2398,
+      "sha256": "01eeedd3047cb8829f3f290f571692e1929a7d12df3982c9165a99f74a4e695d",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/02_grouped_span_logic.original.py",
+      "bytes": 1481,
+      "sha256": "b222c9ded9c82e75b4f9e27d804b1fbacd48891ac0c4e17559921ff11ca816a1",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/03_saba_tests.original.py",
+      "bytes": 1329,
+      "sha256": "759bdf5d933a8684c9b0cc88ed92c221048cf71cac28af3cf399be4163b2ee3c",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/04_saba_logic.original.py",
+      "bytes": 763,
+      "sha256": "4abc54e95031bd43892e336fe69b1fc663a120822f602dbbc8a266025bf60a97",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/05_exact21_evidence_and_markers.original.py",
+      "bytes": 1246,
+      "sha256": "624e79e9c17d16f70d51971828162cefab7a3873f45034e764a4f2c3bb2c2792",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/06_source331.original.py",
+      "bytes": 1743,
+      "sha256": "66086bc4e7ddd7fc12db1bf02dab1db40f5f753b51d684bb55e511df63b3f1e6",
+      "extraction": "historical_python_tool_payload"
+    },
+    {
+      "file": "scripts/07_source404.literal_extract.py",
+      "bytes": 1788,
+      "sha256": "d13521e077eeb4f4d59c3b2887d39760d0ec7d5c0959ff0d3c88b8c527ed2314",
+      "extraction": "selected_literal_corrective_lines_with_path_adapter"
+    },
+    {
+      "file": "scripts/08_russian468.literal_extract.py",
+      "bytes": 1524,
+      "sha256": "248533e561698a7912cd3ed669e309b925069c734e5a563ca011c4e81b1dc4e3",
+      "extraction": "selected_literal_corrective_lines_with_path_adapter"
+    },
+    {
+      "file": "scripts/09_source510.original.py",
+      "bytes": 2168,
+      "sha256": "ec30947ffb9c3b4e01d9c68547ba852d71803e96e2d69f54217835930a22f23e",
+      "extraction": "historical_python_tool_payload"
+    }
+  ],
+  "application_order": [
+    "01_grouped_span_tests.original.py",
+    "02_grouped_span_logic.original.py",
+    "agent339_recovery_15_to_22_patch",
+    "03_saba_tests.original.py",
+    "04_saba_logic.original.py",
+    "05_exact21_evidence_and_markers.original.py"
+  ],
+  "source_correction_dependencies": "06–09 require assembled source/translation plus corresponding self-review entries and working Markdown;07/08 contain only exact requested corrective subsets, excluding unrelated396/461 checkpoint operations. Paths adapted to target CWD. Do not reapply if corrected content already present.",
+  "validation": "01 tests replayed in recovery/base: expected15test RED with1failure, then02 GREEN15/15. All9 recovered scripts AST parsed.03–05 await agent339 patch before execution.06–09 not executed; no assembled dataset yet."
+}
