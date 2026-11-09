@@ -1,0 +1,21 @@
+{
+  "repository": "Xalidmuslim/Madarij-Native",
+  "branch": "codex/volume4-2019-translation",
+  "confirmed_remote_translation_commit": "fa4fd72a9ac2a8363e4e4bd50a50da508567a68a",
+  "verification": "git push succeeded; git ls-remote returned the exact local commit SHA",
+  "volume4_author_range": [
+    3,
+    556
+  ],
+  "volume4_author_pages": 554,
+  "translation_units": 2137,
+  "source_fragments": 2487,
+  "quran_quotations_checked": 578,
+  "prior_volumes_preserved": true,
+  "original_local_commits_restored": false,
+  "data_recovery_method": "historical_tool_inputs_replay",
+  "application_changed": false,
+  "apk_built": false,
+  "main_merged": false,
+  "editorial_readiness": false
+}

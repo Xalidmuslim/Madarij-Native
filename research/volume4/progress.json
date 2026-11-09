@@ -575,8 +575,8 @@
   "independent_human_review": false,
   "entire_volume_complete": false,
   "app_integrated": false,
-  "last_confirmed_remote_content_commit": "3d1e443b2dba9339255bbe875d1600301c609022",
-  "unsent_current_content": "Recovered full canonical files awaiting final GitHub push confirmation.",
+  "last_confirmed_remote_content_commit": "fa4fd72a9ac2a8363e4e4bd50a50da508567a68a",
+  "unsent_current_content": null,
   "pending_review_units": [],
   "second_range": [
     53,
@@ -1185,5 +1185,6 @@
   "author_body_translation_complete": true,
   "review_provenance": "Historical Codex passes retained; current recovery reran mechanical integrity and canonical comparisons only.",
   "github_branch": "codex/volume4-2019-translation",
-  "original_local_git_commit_unavailable": "38a3437"
+  "original_local_git_commit_unavailable": "38a3437",
+  "github_save_status": "confirmed; full translation payload saved in referenced commit"
 }
