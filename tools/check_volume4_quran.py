@@ -8,6 +8,20 @@ from pathlib import Path
 import re
 from check_volume3_quran import load_canonical, normalized, SURAS, CANONICAL_SHA256
 ROOT = Path(__file__).resolve().parents[1]
+HUJJA_WITNESS = ('Ibn Khalawayh Hujja, OpenITI/RELEASE '
+                 'cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0026140-ara1; '
+                 'SHA256480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172. ')
+
+PRINTED_RANGE_ERRORS = {
+    'v4-p500-06-ru': (
+        (39, 64, 65), ((39, 64), (39, 66)),
+        r'(?:\[(?:«аз-Зумар»,\s*)?39:64[–—-]66\]|\(39:64[–—-]66\))',
+        'Control leaves500–501 print الزمر:64–65, but the complete quotation ends with39:66 بل الله فاعبد وكن من الشاكرين.'),
+    'v4-p502-02-ru': (
+        (36, 23, 23), ((36, 22), (36, 23)),
+        r'(?:\[(?:«Йа син»,\s*)?36:22[–—-]23\]|\(36:22[–—-]23\))',
+        'Control leaf502 prints يس:23, but the complete quotation begins with36:22 وما لي لا أعبد الذي فطرني وإليه ترجعون.'),
+}
 
 def compare(path):
     verses = load_canonical(path)
@@ -48,6 +62,25 @@ def compare(path):
                 candidate = raw.replace('ويومنحشرهم', 'ويوميحشرهم', 1)
                 variant = True
                 evidence = 'Control leaf186, enlarged q10word186.png, reads نَحْشُرُهُمْ in10:45. Ibn Khalawayh Hujja, suraYunus discussion, PageV01P184, explicitly attests ya and nun. Comparison-only alignment to unchanged Tanzil يحشرهم; control Arabic and Russian Мы retained. No named reader attribution asserted.'
+            if u['id'] in ('v4-p472-03-ru', 'v4-p499-01-ru'):
+                wording = ('الارجالايوحياليهم' if u['id'] == 'v4-p472-03-ru'
+                           else 'منرسولالايوحياليه')
+                if wording in raw:
+                    candidate = raw.replace(wording, wording.replace('يوحي', 'نوحي'), 1)
+                    variant = True
+                    evidence = HUJJA_WITNESS + (
+                        'Control leaf473 prints يوحى إليهم in16:43–44; personally read primary lines4487–4489, between OpenITI markers PageV01P211/P212: يقرأ بالياء وفتح الحاء وبالنون وكسر الحاء. '
+                        if u['id'] == 'v4-p472-03-ru' else
+                        'Control leaf499 prints يُوحَى إليه in21:25. Direct exact-verse attestation: Ibn Mujahid Sabca, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0005530-ara1, lines6954–6956, heading quotes singular وما أرسلنا من قبلك من رسول إلا نوحي إليه and explicitly verse25; following lines attest active nun and passive ya. SHA2567cbe25b667f87bdf8a8bd4fa8dfa4a3ff9e4b85715c089b240aefc07f29ab45f, Gitblobb8325cca414dbe2c77da82442ce8c413099ca6b3. Hujja plural headword alone is not used as exact-verse evidence. '
+                    ) + 'Comparison-only passive-ya to active-nun alignment to unchanged Tanzil; printed AR and passive Russian wording retained. No named reader attribution asserted.'
+            if u['id'] == 'v4-p508-04-ru' and 'ورجلاسالمالرجل' in raw:
+                candidate = raw.replace('ورجلاسالمالرجل', 'ورجلاسلمالرجل', 1)
+                variant = True
+                evidence = HUJJA_WITNESS + 'Control leaf508, enlarged image and crop, prints سَالِمًا in39:29. Personally read primary lines6665–6668, PageV01P308–309: يقرأ بإثبات الألف وكسر اللام وبحذفها وفتح اللام. Comparison-only alif omission to unchanged Tanzil سلما; printed AR and RU retained. No named reader attribution asserted.'
+            if u['id'] == 'v4-p521-02-ru' and raw.startswith('وهليجزيالاالكفور'):
+                candidate = raw.replace('وهليجزيالاالكفور', 'وهلنجازيالاالكفور', 1)
+                variant = True
+                evidence = HUJJA_WITNESS + ('Sura34:17, lines6318–6324, between OpenITI markers PageV01P293/P294 explicitly attest passive ya/fatha and active nun/kasra. Actual enlarged control521 has يُجَٰزَى with dagger alif, retained as printed. Alignment to Tanzil active نجازي is comparison-only; no named reader attribution.')
             pos = whole.find(candidate)
             if m[2]:
                 sur = names.get(normalized(m[2]))
@@ -81,6 +114,21 @@ def compare(path):
                         record['reference_status'] = 'printed_range_error_documented'
                         record['corrected_russian_reference'] = [89, 21, 24]
                         record['reference_evidence'] = 'Actual control195 enlarged q89ref195.png prints21–26, but quotation ends with89:24 يقول يا ليتني قدمت لحياتي. Printed AR reference retained, RU corrected to21–24 and mechanically checked. Missing25–26 not inserted into author text; this status documents a source reference error, not a correct printed full span.'
+                documented = PRINTED_RANGE_ERRORS.get(u['id'])
+                if documented and pos >= 0:
+                    printed, span, russian_reference, reference_evidence = documented
+                    actual_first, actual_last = span
+                    # These two control errors quote complete verses. Require
+                    # their entire text, not merely matching start/end numbers.
+                    complete_quote = ''.join(verses.get((actual_first[0], n), '')
+                                             for n in range(actual_first[1], actual_last[1] + 1))
+                    if ((sur, first, last) == printed
+                            and (sequence[begin], sequence[end]) == span
+                            and candidate == complete_quote
+                            and re.search(russian_reference, u.get('ru', ''))):
+                        record['reference_status'] = 'printed_range_error_documented'
+                        record['corrected_russian_reference'] = [actual_first[0], actual_first[1], actual_last[1]]
+                        record['reference_evidence'] = reference_evidence + ' Printed AR retained; corrected RU range mechanically checked. This documents a printed reference error, not a correct printed full span.'
                 # A shared range can refer to two quotations separated by the
                 # author's explicit "up to his saying", rather than just the last.
                 if (pos >= 0 and len(records) > unit_record_start

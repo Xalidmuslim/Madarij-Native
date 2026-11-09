@@ -1,0 +1,6 @@
+*** Begin Patch
+*** Update File: /workspace/Madarij-Native/tools/test_check_volume4_quran.py
+@@
+-                for corrupt in (quote + ' زائد', quote.replace('الله', 'الرحمن', 1)):
++                for corrupt in (quote + ' زائد', quote[0] + 'س' + quote[1:]):
+*** End Patch

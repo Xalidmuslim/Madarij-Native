@@ -1,0 +1,8 @@
+*** Begin Patch
+*** Update File: /workspace/Madarij-Native/tools/test_check_volume4_quran.py
+@@
+-            for ru in ('', '[39:64–65]', '[36:23]', '[39:64–66] лишняя цифра [36:23–24]'):
+-                if unit == 'v4-p500-06-ru' and '39:64–66' in ru:
+-                    continue
++            for ru in ('', '[39:64–65]', '[36:23]', '[39:63–66]', '[36:22–24]'):
+*** End Patch

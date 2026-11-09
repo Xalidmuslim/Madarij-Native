@@ -11,11 +11,25 @@
       "sha256": "ad3f4921bd503c510ecfae9e3ee03e02e736cd43aafb5e1f0d3d05a79f1f1a4b",
       "historical_body": "original/batch549-556.body.original.py",
       "historical_finalize": "original/batch549-556.finalize.original.py"
+    },
+    {
+      "file": "replayed/batch339-348.json",
+      "pages": 10,
+      "units": 35,
+      "sha256": "ed0003c980a34f7701047b4caf6a946599ec30f2f8259d8d5853dce93d37c8fd",
+      "historical_body": "original/batch339-348.body.original.py",
+      "historical_finalize": "original/batch339-348.finalize.original.py"
+    },
+    {
+      "file": "replayed/batch389-398.json",
+      "pages": 10,
+      "units": 41,
+      "sha256": "d3a99dd2721929116eb97f83a38a75e6e02df78315d3691c82fd2bc87ebdded2",
+      "historical_body": "original/batch389-398.body.original.py",
+      "historical_finalize": "original/batch389-398.finalize.original.py"
     }
   ],
   "missing_bodies": [
-    "batch339-348",
-    "batch389-398",
     "batch439-448",
     "batch499-508"
   ]
