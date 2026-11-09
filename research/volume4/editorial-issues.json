@@ -182,6 +182,44 @@
       ],
       "status": "open_attribution_witness",
       "finding": "Control301 names Aisha; actual AhmadZuhd1596 lines8968–8975 attributes departure/return brick/banner saying to Hasan. Preserve control attribution and full quote. No global absence claim or new authenticity grade; additional reliable Aisha witness needed."
+    },
+    {
+      "id": "V4-WORDING-355",
+      "source_ids": [
+        "v4-p355-04"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "Printed المشهود retained; historical review records unresolved wording in the argument distinguishing seeing from the Seen.",
+      "recovered_from": "prior task record; no new semantic review asserted"
+    },
+    {
+      "id": "V4-SYNTAX-396",
+      "source_ids": [
+        "v4-p396-05",
+        "v4-p397-01"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "Printed وعدم الغفلات retained; historical Russian interpretation uses a separate predication. Syntactic question remains open.",
+      "recovered_from": "prior task record; no new semantic review asserted"
+    },
+    {
+      "id": "V4-TERM-551",
+      "source_ids": [
+        "v4-p551-04",
+        "v4-p552-01"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "شهود الأزلية والحكم: historical Russian terminology remains provisional.",
+      "recovered_from": "prior task record; no new semantic review asserted"
+    },
+    {
+      "id": "V4-LEX-554",
+      "source_ids": [
+        "v4-p554-02"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "غير مكفي: historically chosen interpretation retained; alternative traditional analyses require editorial resolution.",
+      "recovered_from": "prior task record; no new semantic review asserted"
     }
   ]
 }

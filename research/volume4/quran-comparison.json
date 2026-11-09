@@ -5351,6 +5351,6323 @@
         87
       ],
       "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p303-03-ru",
+      "quote": "وكذلك فتنا بعضهم ببعض ليقولوا أهؤلاء من الله عليهم من بيننا أليس الله بأعلم بالشاكرين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          53
+        ],
+        [
+          6,
+          53
+        ]
+      ],
+      "printed_reference": [
+        6,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p303-03-ru",
+      "quote": "وإذا جاءتهم آية قالوا لن نؤمن حتى نؤتى مثل ما أوتي رسل الله الله أعلم حيث يجعل رسالته",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          124
+        ],
+        [
+          6,
+          124
+        ]
+      ],
+      "printed_reference": [
+        6,
+        124,
+        124
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p303-03-ru",
+      "quote": "أهم يقسمون رحمت ربك نحن قسمنا بينهم معيشتهم في الحياة الدنيا ورفعنا بعضهم فوق بعض درجات ليتخذ بعضهم بعضا سخريا ورحمت ربك خير مما يجمعون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          32
+        ],
+        [
+          43,
+          32
+        ]
+      ],
+      "printed_reference": [
+        43,
+        32,
+        32
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p306-02-ru",
+      "quote": "هل ينظرون إلا أن تأتيهم الملائكة أو يأتي ربك أو يأتي بعض آيات ربك",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          158
+        ],
+        [
+          6,
+          158
+        ]
+      ],
+      "printed_reference": [
+        6,
+        158,
+        158
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p306-03-ru",
+      "quote": "إنا أوحينا إليك كما أوحينا إلى نوح والنبيين من بعده",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          163
+        ],
+        [
+          4,
+          163
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p306-03-ru",
+      "quote": "وكلم الله موسى تكليما",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          164
+        ],
+        [
+          4,
+          164
+        ]
+      ],
+      "printed_reference": [
+        4,
+        163,
+        164
+      ],
+      "reference_status": "grouped_span",
+      "group_actual_span": [
+        [
+          4,
+          163
+        ],
+        [
+          4,
+          164
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p306-03-ru",
+      "quote": "وما كان لبشر أن يكلمه الله إلا وحيا أو من وراء حجاب أو يرسل رسولا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          51
+        ],
+        [
+          42,
+          51
+        ]
+      ],
+      "printed_reference": [
+        42,
+        51,
+        51
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p306-03-ru",
+      "quote": "إني اصطفيتك على الناس برسالاتي وبكلامي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          144
+        ],
+        [
+          7,
+          144
+        ]
+      ],
+      "printed_reference": [
+        7,
+        144,
+        144
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p309-02-ru",
+      "quote": "وفي أنفسكم أفلا تبصرون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          51,
+          21
+        ],
+        [
+          51,
+          21
+        ]
+      ],
+      "printed_reference": [
+        51,
+        21,
+        21
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p310-03-ru",
+      "quote": "ويتفكرون في خلق السماوات والأرض",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          191
+        ],
+        [
+          3,
+          191
+        ]
+      ],
+      "printed_reference": [
+        3,
+        191,
+        191
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p310-03-ru",
+      "quote": "أولم يتفكروا في أنفسهم ما خلق الله السماوات والأرض وما بينهما إلا بالحق",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          8
+        ],
+        [
+          30,
+          8
+        ]
+      ],
+      "printed_reference": [
+        30,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p310-03-ru",
+      "quote": "كذلك يبين الله لكم الآيات لعلكم تتفكرون في الدنيا والآخرة",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          219
+        ],
+        [
+          2,
+          220
+        ]
+      ],
+      "printed_reference": [
+        2,
+        219,
+        220
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p310-03-ru",
+      "quote": "ومن آياته أن خلق لكم من أنفسكم أزواجا لتسكنوا إليها وجعل بينكم مودة ورحمة إن في ذلك لآيات لقوم يتفكرون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          21
+        ],
+        [
+          30,
+          21
+        ]
+      ],
+      "printed_reference": [
+        30,
+        21,
+        21
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p311-04-ru",
+      "quote": "فاعتبروا يا أولي الأبصار",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          59,
+          2
+        ],
+        [
+          59,
+          2
+        ]
+      ],
+      "printed_reference": [
+        59,
+        2,
+        2
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p312-03-ru",
+      "quote": "سنريهم آياتنا في الآفاق وفي أنفسهم حتى يتبين لهم أنه الحق",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          53
+        ],
+        [
+          41,
+          53
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p312-03-ru",
+      "quote": "أولم يكف بربك أنه على كل شيء شهيد",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          53
+        ],
+        [
+          41,
+          53
+        ]
+      ],
+      "printed_reference": [
+        41,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p319-02-ru",
+      "quote": "اللَّهُ خَالِقُ كُلِّ شَيْءٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          16
+        ],
+        [
+          13,
+          16
+        ]
+      ],
+      "printed_reference": [
+        13,
+        16,
+        16
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p319-03-ru",
+      "quote": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          57,
+          3
+        ],
+        [
+          57,
+          3
+        ]
+      ],
+      "printed_reference": [
+        57,
+        3,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p323-03-ru",
+      "quote": "وَلَئِنْ شِئْنَا لَنَذْهَبَنَّ بِالَّذِي أَوْحَيْنَا إِلَيْكَ ثُمَّ لَا تَجِدُ لَكَ بِهِ عَلَيْنَا وَكِيلًا إِلَّا رَحْمَةً مِنْ رَبِّكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          86
+        ],
+        [
+          17,
+          87
+        ]
+      ],
+      "printed_reference": [
+        17,
+        86,
+        87
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p323-03-ru",
+      "quote": "قُلْ أَرَأَيْتُمْ إِنْ أَخَذَ اللَّهُ سَمْعَكُمْ وَأَبْصَارَكُمْ وَخَتَمَ عَلَى قُلُوبِكُمْ مَنْ إِلَهٌ غَيْرُ اللَّهِ يَأْتِيكُمْ بِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          46
+        ],
+        [
+          6,
+          46
+        ]
+      ],
+      "printed_reference": [
+        6,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p323-03-ru",
+      "quote": "قُلْ لَوْ شَاءَ اللَّهُ مَا تَلَوْتُهُ عَلَيْكُمْ وَلَا أَدْرَاكُمْ بِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          16
+        ],
+        [
+          10,
+          16
+        ]
+      ],
+      "printed_reference": [
+        10,
+        16,
+        16
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p325-02-ru",
+      "quote": "فَإِنْ آنَسْتُمْ مِنْهُمْ رُشْدًا فَادْفَعُوا إِلَيْهِمْ أَمْوَالَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "printed_reference": [
+        4,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p325-02-ru",
+      "quote": "إِنِّي آنَسْتُ نَارًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          10
+        ],
+        [
+          20,
+          10
+        ]
+      ],
+      "printed_reference": [
+        20,
+        10,
+        10
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-02-ru",
+      "quote": "كُلُّ مَنْ عَلَيْهَا فَانٍ وَيَبْقَى وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          55,
+          26
+        ],
+        [
+          55,
+          27
+        ]
+      ],
+      "printed_reference": [
+        55,
+        26,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-03-ru",
+      "quote": "إِنَّكَ مَيِّتٌ وَإِنَّهُمْ مَيِّتُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          30
+        ],
+        [
+          39,
+          30
+        ]
+      ],
+      "printed_reference": [
+        39,
+        30,
+        30
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-03-ru",
+      "quote": "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          185
+        ],
+        [
+          3,
+          185
+        ]
+      ],
+      "printed_reference": [
+        3,
+        185,
+        185
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-03-ru",
+      "quote": "كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          88
+        ],
+        [
+          28,
+          88
+        ]
+      ],
+      "printed_reference": [
+        28,
+        88,
+        88
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-04-ru",
+      "quote": "كُلُّ مَنْ عَلَيْهَا فَانٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          55,
+          26
+        ],
+        [
+          55,
+          26
+        ]
+      ],
+      "printed_reference": [
+        55,
+        26,
+        26
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-04-ru",
+      "quote": "وَيَبْقَى وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          55,
+          27
+        ],
+        [
+          55,
+          27
+        ]
+      ],
+      "printed_reference": [
+        55,
+        27,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p329-04-ru",
+      "quote": "كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          88
+        ],
+        [
+          28,
+          88
+        ]
+      ],
+      "printed_reference": [
+        28,
+        88,
+        88
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p331-04-ru",
+      "quote": "قَالَ يَا قَوْمِ إِنِّي لَكُمْ نَذِيرٌ مُبِينٌ أَنِ اعْبُدُوا اللَّهَ وَاتَّقُوهُ وَأَطِيعُونِ يَغْفِرْ لَكُمْ مِنْ ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَى أَجَلٍ مُسَمًّى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          71,
+          2
+        ],
+        [
+          71,
+          4
+        ]
+      ],
+      "printed_reference": [
+        71,
+        2,
+        4
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p351-02-ru",
+      "quote": "وَاللَّهُ خَيْرٌ وَأَبْقَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          73
+        ]
+      ],
+      "printed_reference": [
+        20,
+        73,
+        73
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p357-02-ru",
+      "quote": "قَالَ أَوَلَمْ تُؤْمِنْ قَالَ بَلَى وَلَكِنْ لِيَطْمَئِنَّ قَلْبِي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          260
+        ],
+        [
+          2,
+          260
+        ]
+      ],
+      "printed_reference": [
+        2,
+        260,
+        260
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p357-03-ru",
+      "quote": "رَبِّ أَرِنِي كَيْفَ تُحْيِي الْمَوْتَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          260
+        ],
+        [
+          2,
+          260
+        ]
+      ],
+      "printed_reference": [
+        2,
+        260,
+        260
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p357-04-ru",
+      "quote": "الَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو رَبِّهِمْ وَأَنَّهُمْ إِلَيْهِ رَاجِعُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          46
+        ],
+        [
+          2,
+          46
+        ]
+      ],
+      "printed_reference": [
+        2,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p357-04-ru",
+      "quote": "الَّذِينَ يَظُنُّونَ أَنَّهُمْ مُلَاقُو اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          249
+        ],
+        [
+          2,
+          249
+        ]
+      ],
+      "printed_reference": [
+        2,
+        249,
+        249
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p357-04-ru",
+      "quote": "وَاعْلَمُوا أَنَّكُمْ مُلَاقُوهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          223
+        ],
+        [
+          2,
+          223
+        ]
+      ],
+      "printed_reference": [
+        2,
+        223,
+        223
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p361-03-ru",
+      "quote": "ماذا أجبتم قالوا لا علم لنا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          109
+        ],
+        [
+          5,
+          109
+        ]
+      ],
+      "printed_reference": [
+        5,
+        109,
+        109
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p364-02-ru",
+      "quote": "وللبسنا عليهم ما يلبسون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "printed_reference": [
+        6,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p364-04-ru",
+      "quote": "لولا أنزل عليه ملك",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "printed_reference": [
+        6,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p364-04-ru",
+      "quote": "ولو أنزلنا ملكا لقضي الأمر ثم لا ينظرون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "printed_reference": [
+        6,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p364-04-ru",
+      "quote": "ولو جعلناه ملكا لجعلناه رجلا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p364-04-ru",
+      "quote": "وللبسنا عليهم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p364-04-ru",
+      "quote": "ما يلبسون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "printed_reference": [
+        6,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p365-05-ru",
+      "quote": "ولا تلبسوا الحق بالباطل",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          42
+        ],
+        [
+          2,
+          42
+        ]
+      ],
+      "printed_reference": [
+        2,
+        42,
+        42
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p367-02-ru",
+      "quote": "وللبسنا عليهم ما يلبسون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "printed_reference": [
+        6,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p372-02-ru",
+      "quote": "إِنَّ فِي ذَلِكَ لَآيَاتٍ لِلْمُتَوَسِّمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          15,
+          75
+        ],
+        [
+          15,
+          75
+        ]
+      ],
+      "printed_reference": [
+        15,
+        75,
+        75
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p375-02-ru",
+      "quote": "وَجَعَلْنَا مِنْهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          32,
+          24
+        ],
+        [
+          32,
+          24
+        ]
+      ],
+      "printed_reference": [
+        32,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p375-02-ru",
+      "quote": "وَجَعَلْنَاهُمْ أَئِمَّةً يَدْعُونَ إِلَى النَّارِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          41
+        ],
+        [
+          28,
+          41
+        ]
+      ],
+      "printed_reference": [
+        28,
+        41,
+        41
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p375-02-ru",
+      "quote": "رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          128
+        ],
+        [
+          2,
+          128
+        ]
+      ],
+      "printed_reference": [
+        2,
+        128,
+        128
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p375-02-ru",
+      "quote": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          14,
+          40
+        ],
+        [
+          14,
+          40
+        ]
+      ],
+      "printed_reference": [
+        14,
+        40,
+        40
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p375-02-ru",
+      "quote": "هُوَ الَّذِي يُسَيِّرُكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          22
+        ],
+        [
+          10,
+          22
+        ]
+      ],
+      "printed_reference": [
+        10,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p378-06-ru",
+      "quote": "وَلَلَبَسْنَا عَلَيْهِمْ مَا يَلْبِسُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "printed_reference": [
+        6,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-02-ru",
+      "quote": "يَجِدِ اللَّهَ غَفُورًا رَحِيمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          110
+        ],
+        [
+          4,
+          110
+        ]
+      ],
+      "printed_reference": [
+        4,
+        110,
+        110
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-02-ru",
+      "quote": "لَوَجَدُوا اللَّهَ تَوَّابًا رَحِيمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          64
+        ],
+        [
+          4,
+          64
+        ]
+      ],
+      "printed_reference": [
+        4,
+        64,
+        64
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-02-ru",
+      "quote": "وَوَجَدَ اللَّهَ عِنْدَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          39
+        ],
+        [
+          24,
+          39
+        ]
+      ],
+      "printed_reference": [
+        24,
+        39,
+        39
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-03-ru",
+      "quote": "وَلَوْ أَنَّهُمْ إِذْ ظَلَمُوا أَنْفُسَهُمْ جَاءُوكَ فَاسْتَغْفَرُوا اللَّهَ وَاسْتَغْفَرَ لَهُمُ الرَّسُولُ لَوَجَدُوا اللَّهَ تَوَّابًا رَحِيمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          64
+        ],
+        [
+          4,
+          64
+        ]
+      ],
+      "printed_reference": [
+        4,
+        64,
+        64
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-03-ru",
+      "quote": "وَمَنْ يَعْمَلْ سُوءًا أَوْ يَظْلِمْ نَفْسَهُ ثُمَّ يَسْتَغْفِرِ اللَّهَ يَجِدِ اللَّهَ غَفُورًا رَحِيمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          110
+        ],
+        [
+          4,
+          110
+        ]
+      ],
+      "printed_reference": [
+        4,
+        110,
+        110
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p387-03-ru",
+      "quote": "وَوَجَدَ اللَّهَ عِنْدَهُ فَوَفَّاهُ حِسَابَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          39
+        ],
+        [
+          24,
+          39
+        ]
+      ],
+      "printed_reference": [
+        24,
+        39,
+        39
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p393-04-ru",
+      "quote": "أَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنْتُمْ مِنْ وُجْدِكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          65,
+          6
+        ],
+        [
+          65,
+          6
+        ]
+      ],
+      "printed_reference": [
+        65,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p393-04-ru",
+      "quote": "وَمَا وَجَدْنَا لِأَكْثَرِهِمْ مِنْ عَهْدٍ وَإِنْ وَجَدْنَا أَكْثَرَهُمْ لَفَاسِقِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          102
+        ],
+        [
+          7,
+          102
+        ]
+      ],
+      "printed_reference": [
+        7,
+        102,
+        102
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p394-02-ru",
+      "quote": "وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          51,
+          47
+        ],
+        [
+          51,
+          47
+        ]
+      ],
+      "printed_reference": [
+        51,
+        47,
+        47
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p394-02-ru",
+      "quote": "وَمَتِّعُوهُنَّ عَلَى الْمُوسِعِ قَدَرُهُ وَعَلَى الْمُقْتِرِ قَدَرُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          236
+        ],
+        [
+          2,
+          236
+        ]
+      ],
+      "printed_reference": [
+        2,
+        236,
+        236
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p398-02-ru",
+      "quote": "فَاخْلَعْ نَعْلَيْكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          12
+        ],
+        [
+          20,
+          12
+        ]
+      ],
+      "printed_reference": [
+        20,
+        12,
+        12
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p401-02-ru",
+      "quote": "وَيَعْلَمُونَ أَنَّ اللَّهَ هُوَ الْحَقُّ الْمُبِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          24,
+          25
+        ],
+        [
+          24,
+          25
+        ]
+      ],
+      "printed_reference": [
+        24,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p407-07-ru",
+      "quote": "وَادْعُ إِلَى رَبِّكَ وَلَا تَكُونَنَّ مِنَ الْمُشْرِكِينَ وَلَا تَدْعُ مَعَ اللَّهِ إِلَهًا آخَرَ لَا إِلَهَ إِلَّا هُوَ كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          87
+        ],
+        [
+          28,
+          88
+        ]
+      ],
+      "printed_reference": [
+        28,
+        87,
+        88
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p409-02-ru",
+      "quote": "وما رميت إذ رميت ولكن الله رمى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          17
+        ]
+      ],
+      "printed_reference": [
+        8,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p410-02-ru",
+      "quote": "فلم تقتلوهم ولكن الله قتلهم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          17
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p410-02-ru",
+      "quote": "وما رميت إذ رميت ولكن الله رمى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          17
+        ]
+      ],
+      "printed_reference": [
+        8,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p413-04-ru",
+      "quote": "فاستفتهم أهم أشد خلقا أم من خلقنا إنا خلقناهم من طين لازب",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          11
+        ],
+        [
+          37,
+          11
+        ]
+      ],
+      "printed_reference": [
+        37,
+        11,
+        11
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p413-04-ru",
+      "quote": "من ماء مهين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          32,
+          8
+        ],
+        [
+          32,
+          8
+        ]
+      ],
+      "printed_reference": [
+        32,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p417-04-ru",
+      "quote": "وعلمناه من لدنا علما",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          65
+        ],
+        [
+          18,
+          65
+        ]
+      ],
+      "printed_reference": [
+        18,
+        65,
+        65
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p417-04-ru",
+      "quote": "علم الإنسان ما لم يعلم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          96,
+          5
+        ],
+        [
+          96,
+          5
+        ]
+      ],
+      "printed_reference": [
+        96,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p419-02-ru",
+      "quote": "وَيَقُولُونَ هُوَ مِنْ عِنْدِ اللَّهِ وَمَا هُوَ مِنْ عِنْدِ اللَّهِ وَيَقُولُونَ عَلَى اللَّهِ الْكَذِبَ وَهُمْ يَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          78
+        ],
+        [
+          3,
+          78
+        ]
+      ],
+      "printed_reference": [
+        3,
+        78,
+        78
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p419-02-ru",
+      "quote": "فَوَيْلٌ لِلَّذِينَ يَكْتُبُونَ الْكِتَابَ بِأَيْدِيهِمْ ثُمَّ يَقُولُونَ هَذَا مِنْ عِنْدِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          79
+        ],
+        [
+          2,
+          79
+        ]
+      ],
+      "printed_reference": [
+        2,
+        79,
+        79
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p419-02-ru",
+      "quote": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَى عَلَى اللَّهِ كَذِبًا أَوْ قَالَ أُوحِيَ إِلَيَّ وَلَمْ يُوحَ إِلَيْهِ شَيْءٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          93
+        ],
+        [
+          6,
+          93
+        ]
+      ],
+      "printed_reference": [
+        6,
+        93,
+        93
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p423-04-ru",
+      "quote": "لَقَدْ تَابَ اللَّهُ عَلَى النَّبِيِّ وَالْمُهَاجِرِينَ وَالْأَنْصَارِ الَّذِينَ اتَّبَعُوهُ فِي سَاعَةِ الْعُسْرَةِ مِنْ بَعْدِ مَا كَادَ يَزِيغُ قُلُوبُ فَرِيقٍ مِنْهُمْ ثُمَّ تَابَ عَلَيْهِمْ إِنَّهُ بِهِمْ رَءُوفٌ رَحِيمٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          9,
+          117
+        ],
+        [
+          9,
+          117
+        ]
+      ],
+      "printed_reference": [
+        9,
+        117,
+        117
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p423-05-ru",
+      "quote": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          110,
+          1
+        ],
+        [
+          110,
+          3
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p426-02-ru",
+      "quote": "قُلْ مَا أَسْأَلُكُمْ عَلَيْهِ مِنْ أَجْرٍ وَمَا أَنَا مِنَ الْمُتَكَلِّفِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          38,
+          86
+        ],
+        [
+          38,
+          86
+        ]
+      ],
+      "printed_reference": [
+        38,
+        86,
+        86
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p433-01-ru",
+      "quote": "سُبْحَانَ الَّذِي أَسْرَى بِعَبْدِهِ لَيْلًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "printed_reference": [
+        17,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p433-01-ru",
+      "quote": "وَأَنَّهُ لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          72,
+          19
+        ],
+        [
+          72,
+          19
+        ]
+      ],
+      "printed_reference": [
+        72,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p433-01-ru",
+      "quote": "وَإِنْ كُنْتُمْ فِي رَيْبٍ مِمَّا نَزَّلْنَا عَلَى عَبْدِنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          23
+        ],
+        [
+          2,
+          23
+        ]
+      ],
+      "printed_reference": [
+        2,
+        23,
+        23
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p433-01-ru",
+      "quote": "تَبَارَكَ الَّذِي نَزَّلَ الْفُرْقَانَ عَلَى عَبْدِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          1
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "printed_reference": [
+        25,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p434-04-ru",
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "printed_reference": [
+        1,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p434-04-ru",
+      "quote": "إِيَّاكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p434-04-ru",
+      "quote": "نَعْبُدُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p434-04-ru",
+      "quote": "نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p439-02-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "printed_reference": [
+        3,
+        18,
+        18
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p439-03-ru",
+      "quote": "لَقَدْ أَرْسَلْنَا نُوحًا إِلَى قَوْمِهِ فَقَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَهٍ غَيْرُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          59
+        ],
+        [
+          7,
+          59
+        ]
+      ],
+      "printed_reference": [
+        7,
+        59,
+        59
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p439-03-ru",
+      "quote": "اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَهٍ غَيْرُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          65
+        ],
+        [
+          7,
+          65
+        ]
+      ],
+      "printed_reference": [
+        7,
+        65,
+        65
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p439-03-ru",
+      "quote": "اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَهٍ غَيْرُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          73
+        ],
+        [
+          7,
+          73
+        ]
+      ],
+      "printed_reference": [
+        7,
+        73,
+        73
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p439-03-ru",
+      "quote": "اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَهٍ غَيْرُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          85
+        ],
+        [
+          7,
+          85
+        ]
+      ],
+      "printed_reference": [
+        7,
+        85,
+        85
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p439-03-ru",
+      "quote": "وَلَقَدْ بَعَثْنَا فِي كُلِّ أُمَّةٍ رَسُولًا أَنِ اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          36
+        ],
+        [
+          16,
+          36
+        ]
+      ],
+      "printed_reference": [
+        16,
+        36,
+        36
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p442-07-ru",
+      "quote": "لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          11
+        ],
+        [
+          42,
+          11
+        ]
+      ],
+      "printed_reference": [
+        42,
+        11,
+        11
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p449-05-ru",
+      "quote": "قُلْ يَاأَهْلَ الْكِتَابِ تَعَالَوْا إِلَى كَلِمَةٍ سَوَاءٍ بَيْنَنَا وَبَيْنَكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          64
+        ],
+        [
+          3,
+          64
+        ]
+      ],
+      "printed_reference": [
+        3,
+        64,
+        64
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "الْحَمْدُ لِلَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "رَبِّ الْعَالَمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "الرَّحْمَنِ الرَّحِيمِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "مَالِكِ يَوْمِ الدِّينِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "إِيَّاكَ نَعْبُدُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-02-ru",
+      "quote": "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p450-03-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ لَا إِلَهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          19
+        ]
+      ],
+      "printed_reference": [
+        3,
+        18,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p451-04-ru",
+      "quote": "إِلَّا مَنْ شَهِدَ بِالْحَقِّ وَهُمْ يَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          86
+        ],
+        [
+          43,
+          86
+        ]
+      ],
+      "printed_reference": [
+        43,
+        86,
+        86
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p452-01-ru",
+      "quote": "قُلْ هَلُمَّ شُهَدَاءَكُمُ الَّذِينَ يَشْهَدُونَ أَنَّ اللَّهَ حَرَّمَ هَذَا فَإِنْ شَهِدُوا فَلَا تَشْهَدْ مَعَهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          150
+        ],
+        [
+          6,
+          150
+        ]
+      ],
+      "printed_reference": [
+        6,
+        150,
+        150
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p452-01-ru",
+      "quote": "وَجَعَلُوا الْمَلَائِكَةَ الَّذِينَ هُمْ عِبَادُ الرَّحْمَنِ إِنَاثًا أَشَهِدُوا خَلْقَهُمْ سَتُكْتَبُ شَهَادَتُهُمْ وَيُسْأَلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          19
+        ],
+        [
+          43,
+          19
+        ]
+      ],
+      "printed_reference": [
+        43,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p452-02-ru",
+      "quote": "وَاجْتَنِبُوا قَوْلَ الزُّورِ حُنَفَاءَ لِلَّهِ غَيْرَ مُشْرِكِينَ بِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          30
+        ],
+        [
+          22,
+          31
+        ]
+      ],
+      "printed_reference": [
+        22,
+        30,
+        31
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p452-03-ru",
+      "quote": "يَاأَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ بِالْقِسْطِ شُهَدَاءَ لِلَّهِ وَلَوْ عَلَى أَنْفُسِكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          135
+        ],
+        [
+          4,
+          135
+        ]
+      ],
+      "printed_reference": [
+        4,
+        135,
+        135
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p452-03-ru",
+      "quote": "قَالُوا شَهِدْنَا عَلَى أَنْفُسِنَا وَغَرَّتْهُمُ الْحَيَاةُ الدُّنْيَا وَشَهِدُوا عَلَى أَنْفُسِهِمْ أَنَّهُمْ كَانُوا كَافِرِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          130
+        ],
+        [
+          6,
+          130
+        ]
+      ],
+      "printed_reference": [
+        6,
+        130,
+        130
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p456-03-ru",
+      "quote": "مَا كَانَ لِلْمُشْرِكِينَ أَنْ يَعْمُرُوا مَسَاجِدَ اللَّهِ شَاهِدِينَ عَلَى أَنْفُسِهِمْ بِالْكُفْرِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          9,
+          17
+        ],
+        [
+          9,
+          17
+        ]
+      ],
+      "printed_reference": [
+        9,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p456-04-ru",
+      "quote": "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّى يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          53
+        ],
+        [
+          41,
+          53
+        ]
+      ],
+      "printed_reference": [
+        41,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p457-03-ru",
+      "quote": "وَقَضَى رَبُّكَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          23
+        ],
+        [
+          17,
+          23
+        ]
+      ],
+      "printed_reference": [
+        17,
+        23,
+        23
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p457-03-ru",
+      "quote": "وَقَالَ اللَّهُ لَا تَتَّخِذُوا إِلَهَيْنِ اثْنَيْنِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          51
+        ],
+        [
+          16,
+          51
+        ]
+      ],
+      "printed_reference": [
+        16,
+        51,
+        51
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p457-03-ru",
+      "quote": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          98,
+          5
+        ],
+        [
+          98,
+          5
+        ]
+      ],
+      "printed_reference": [
+        98,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p457-03-ru",
+      "quote": "لَا تَجْعَلْ مَعَ اللَّهِ إِلَهًا آخَرَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          22
+        ],
+        [
+          17,
+          22
+        ]
+      ],
+      "printed_reference": [
+        17,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p457-03-ru",
+      "quote": "فَلَا تَدْعُ مَعَ اللَّهِ إِلَهًا آخَرَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          26,
+          213
+        ],
+        [
+          26,
+          213
+        ]
+      ],
+      "printed_reference": [
+        26,
+        213,
+        213
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p458-03-ru",
+      "quote": "أَلَا إِنَّهُمْ مِنْ إِفْكِهِمْ لَيَقُولُونَ وَلَدَ اللَّهُ وَإِنَّهُمْ لَكَاذِبُونَ أَصْطَفَى الْبَنَاتِ عَلَى الْبَنِينَ مَا لَكُمْ كَيْفَ تَحْكُمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          151
+        ],
+        [
+          37,
+          154
+        ]
+      ],
+      "printed_reference": [
+        37,
+        151,
+        154
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p458-03-ru",
+      "quote": "أَفَنَجْعَلُ الْمُسْلِمِينَ كَالْمُجْرِمِينَ مَا لَكُمْ كَيْفَ تَحْكُمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          68,
+          35
+        ],
+        [
+          68,
+          36
+        ]
+      ],
+      "printed_reference": [
+        68,
+        35,
+        35
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p459-03-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p460-02-ru",
+      "quote": "وَمَا خَلَقْنَا السَّمَاءَ وَالْأَرْضَ وَمَا بَيْنَهُمَا بَاطِلًا ذَلِكَ ظَنُّ الَّذِينَ كَفَرُوا فَوَيْلٌ لِلَّذِينَ كَفَرُوا مِنَ النَّارِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          38,
+          27
+        ],
+        [
+          38,
+          27
+        ]
+      ],
+      "printed_reference": [
+        38,
+        27,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p460-02-ru",
+      "quote": "حم تَنْزِيلُ الْكِتَابِ مِنَ اللَّهِ الْعَزِيزِ الْحَكِيمِ مَا خَلَقْنَا السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا إِلَّا بِالْحَقِّ وَأَجَلٍ مُسَمًّى وَالَّذِينَ كَفَرُوا عَمَّا أُنْذِرُوا مُعْرِضُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          46,
+          1
+        ],
+        [
+          46,
+          3
+        ]
+      ],
+      "printed_reference": [
+        46,
+        1,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p460-02-ru",
+      "quote": "هُوَ الَّذِي جَعَلَ الشَّمْسَ ضِيَاءً وَالْقَمَرَ نُورًا وَقَدَّرَهُ مَنَازِلَ لِتَعْلَمُوا عَدَدَ السِّنِينَ وَالْحِسَابَ مَا خَلَقَ اللَّهُ ذَلِكَ إِلَّا بِالْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          5
+        ]
+      ],
+      "printed_reference": [
+        10,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p460-02-ru",
+      "quote": "أَوَلَمْ يَتَفَكَّرُوا فِي أَنْفُسِهِمْ مَا خَلَقَ اللَّهُ السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا إِلَّا بِالْحَقِّ وَأَجَلٍ مُسَمًّى وَإِنَّ كَثِيرًا مِنَ النَّاسِ بِلِقَاءِ رَبِّهِمْ لَكَافِرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          8
+        ],
+        [
+          30,
+          8
+        ]
+      ],
+      "printed_reference": [
+        30,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p460-02-ru",
+      "quote": "وَمَا خَلَقْنَا السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا لَاعِبِينَ مَا خَلَقْنَاهُمَا إِلَّا بِالْحَقِّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          44,
+          38
+        ],
+        [
+          44,
+          39
+        ]
+      ],
+      "printed_reference": [
+        44,
+        38,
+        39
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p461-03-ru",
+      "quote": "إِنِّي تَوَكَّلْتُ عَلَى اللَّهِ رَبِّي وَرَبِّكُمْ مَا مِنْ دَابَّةٍ إِلَّا هُوَ آخِذٌ بِنَاصِيَتِهَا إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          56
+        ],
+        [
+          11,
+          56
+        ]
+      ],
+      "printed_reference": [
+        11,
+        56,
+        56
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p461-03-ru",
+      "quote": "وَتَمَّتْ كَلِمَتُ رَبِّكَ صِدْقًا وَعَدْلًا لَا مُبَدِّلَ لِكَلِمَاتِهِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          115
+        ],
+        [
+          6,
+          115
+        ]
+      ],
+      "printed_reference": [
+        6,
+        115,
+        115
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p461-03-ru",
+      "quote": "وَاللَّهُ يَقُولُ الْحَقَّ وَهُوَ يَهْدِي السَّبِيلَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          33,
+          4
+        ],
+        [
+          33,
+          4
+        ]
+      ],
+      "printed_reference": [
+        33,
+        4,
+        4
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p461-04-ru",
+      "quote": "وَضَرَبَ اللَّهُ مَثَلًا رَجُلَيْنِ أَحَدُهُمَا أَبْكَمُ لَا يَقْدِرُ عَلَى شَيْءٍ وَهُوَ كَلٌّ عَلَى مَوْلَاهُ أَيْنَمَا يُوَجِّهْهُ لَا يَأْتِ بِخَيْرٍ هَلْ يَسْتَوِي هُوَ وَمَنْ يَأْمُرُ بِالْعَدْلِ وَهُوَ عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          76
+        ],
+        [
+          16,
+          76
+        ]
+      ],
+      "printed_reference": [
+        16,
+        76,
+        76
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p462-02-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p462-02-ru",
+      "quote": "إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          56
+        ],
+        [
+          11,
+          56
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p462-03-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p462-03-ru",
+      "quote": "شَهِدَ اللَّهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          204
+        ],
+        [
+          2,
+          204
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p462-03-ru",
+      "quote": "هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          8
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p463-01-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p463-02-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p463-04-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p464-02-ru",
+      "quote": "قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p464-04-ru",
+      "quote": "قَائِمًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p464-04-ru",
+      "quote": "بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p466-01-ru",
+      "quote": "الْعَزِيزُ الْحَكِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          129
+        ],
+        [
+          2,
+          129
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p472-03-ru",
+      "quote": "لقد أرسلنا رسلنا بالبينات وأنزلنا معهم الكتاب والميزان ليقوم الناس بالقسط",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          57,
+          25
+        ],
+        [
+          57,
+          25
+        ]
+      ],
+      "printed_reference": [
+        57,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p472-03-ru",
+      "quote": "وما أرسلنا من قبلك إلا رجالا يوحى إليهم فاسألوا أهل الذكر إن كنتم لا تعلمون بالبينات والزبر",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          16,
+          43
+        ],
+        [
+          16,
+          44
+        ]
+      ],
+      "evidence": "Ibn Khalawayh Hujja, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0026140-ara1; SHA256480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172. Control leaf473 prints يوحى إليهم in16:43–44; personally read primary lines4487–4489, between OpenITI markers PageV01P211/P212: يقرأ بالياء وفتح الحاء وبالنون وكسر الحاء. Comparison-only passive-ya to active-nun alignment to unchanged Tanzil; printed AR and passive Russian wording retained. No named reader attribution asserted.",
+      "printed_reference": [
+        16,
+        43,
+        43
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p472-03-ru",
+      "quote": "قد جاءكم رسل من قبلي بالبينات وبالذي قلتم فلم قتلتموهم إن كنتم صادقين فإن كذبوك فقد كذب رسل من قبلك جاءوا بالبينات والزبر والكتاب المنير",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          183
+        ],
+        [
+          3,
+          184
+        ]
+      ],
+      "printed_reference": [
+        3,
+        183,
+        184
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p472-03-ru",
+      "quote": "وإن يكذبوك فقد كذب الذين من قبلهم جاءتهم رسلهم بالبينات وبالزبر وبالكتاب المنير",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          35,
+          25
+        ],
+        [
+          35,
+          25
+        ]
+      ],
+      "printed_reference": [
+        35,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p473-02-ru",
+      "quote": "يا هود ما جئتنا ببينة",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          53
+        ],
+        [
+          11,
+          53
+        ]
+      ],
+      "printed_reference": [
+        11,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p473-02-ru",
+      "quote": "قال إني أشهد الله واشهدوا أني بريء مما تشركون من دونه فكيدوني جميعا ثم لا تنظرون إني توكلت على الله ربي وربكم ما من دابة إلا هو آخذ بناصيتها إن ربي على صراط مستقيم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          54
+        ],
+        [
+          11,
+          56
+        ]
+      ],
+      "printed_reference": [
+        11,
+        54,
+        56
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p475-03-ru",
+      "quote": "سنريهم آياتنا في الآفاق وفي أنفسهم حتى يتبين لهم أنه الحق",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          53
+        ],
+        [
+          41,
+          53
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p475-03-ru",
+      "quote": "قل أرأيتم إن كان من عند الله",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          52
+        ],
+        [
+          41,
+          52
+        ]
+      ],
+      "printed_reference": [
+        41,
+        52,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p475-03-ru",
+      "quote": "أولم يكف بربك أنه على كل شيء شهيد",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          53
+        ],
+        [
+          41,
+          53
+        ]
+      ],
+      "printed_reference": [
+        41,
+        53,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p478-01-ru",
+      "quote": "ولو تقول علينا بعض الأقاويل لأخذنا منه باليمين ثم لقطعنا منه الوتين فما منكم من أحد عنه حاجزين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          69,
+          44
+        ],
+        [
+          69,
+          47
+        ]
+      ],
+      "printed_reference": [
+        69,
+        44,
+        47
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p478-02-ru",
+      "quote": "أم يقولون افترى على الله كذبا فإن يشأ الله يختم على قلبك",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          24
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "printed_reference": [
+        42,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p478-03-ru",
+      "quote": "وما قدروا الله حق قدره إذ قالوا ما أنزل الله على بشر من شيء",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          91
+        ],
+        [
+          6,
+          91
+        ]
+      ],
+      "printed_reference": [
+        6,
+        91,
+        91
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p478-04-ru",
+      "quote": "هو الله الذي لا إله إلا هو عالم الغيب والشهادة هو الرحمن الرحيم هو الله الذي لا إله إلا هو الملك القدوس السلام المؤمن المهيمن العزيز الجبار المتكبر سبحان الله عما يشركون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          59,
+          22
+        ],
+        [
+          59,
+          23
+        ]
+      ],
+      "printed_reference": [
+        59,
+        22,
+        23
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p479-01-ru",
+      "quote": "وَإِذَا فَعَلُوا فَاحِشَةً قَالُوا وَجَدْنَا عَلَيْهَا آبَاءَنَا وَاللَّهُ أَمَرَنَا بِهَا قُلْ إِنَّ اللَّهَ لَا يَأْمُرُ بِالْفَحْشَاءِ أَتَقُولُونَ عَلَى اللَّهِ مَا لَا تَعْلَمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          28
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "printed_reference": [
+        7,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p479-01-ru",
+      "quote": "كُلُّ ذَلِكَ كَانَ سَيِّئُهُ عِنْدَ رَبِّكَ مَكْرُوهًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          38
+        ],
+        [
+          17,
+          38
+        ]
+      ],
+      "printed_reference": [
+        17,
+        38,
+        38
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p479-02-ru",
+      "quote": "أَفَمَنْ كَانَ عَلَى بَيِّنَةٍ مِنْ رَبِّهِ وَيَتْلُوهُ شَاهِدٌ مِنْهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          17
+        ],
+        [
+          11,
+          17
+        ]
+      ],
+      "printed_reference": [
+        11,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p479-03-ru",
+      "quote": "أَوَلَمْ يَكْفِهِمْ أَنَّا أَنْزَلْنَا عَلَيْكَ الْكِتَابَ يُتْلَى عَلَيْهِمْ إِنَّ فِي ذَلِكَ لَرَحْمَةً وَذِكْرَى لِقَوْمٍ يُؤْمِنُونَ قُلْ كَفَى بِاللَّهِ بَيْنِي وَبَيْنَكُمْ شَهِيدًا يَعْلَمُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَالَّذِينَ آمَنُوا بِالْبَاطِلِ وَكَفَرُوا بِاللَّهِ أُولَئِكَ هُمُ الْخَاسِرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          51
+        ],
+        [
+          29,
+          52
+        ]
+      ],
+      "printed_reference": [
+        29,
+        51,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p479-03-ru",
+      "quote": "قُلْ كَفَى بِاللَّهِ بَيْنِي وَبَيْنَكُمْ شَهِيدًا يَعْلَمُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          52
+        ],
+        [
+          29,
+          52
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p480-04-ru",
+      "quote": "وَيَقُولُ الَّذِينَ كَفَرُوا لَسْتَ مُرْسَلًا قُلْ كَفَى بِاللَّهِ شَهِيدًا بَيْنِي وَبَيْنَكُمْ وَمَنْ عِنْدَهُ عِلْمُ الْكِتَابِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          43
+        ],
+        [
+          13,
+          43
+        ]
+      ],
+      "printed_reference": [
+        13,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "قُلْ أَيُّ شَيْءٍ أَكْبَرُ شَهَادَةً قُلِ اللَّهُ شَهِيدٌ بَيْنِي وَبَيْنَكُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          19
+        ],
+        [
+          6,
+          19
+        ]
+      ],
+      "printed_reference": [
+        6,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "لَكِنِ اللَّهُ يَشْهَدُ بِمَا أَنْزَلَ إِلَيْكَ أَنْزَلَهُ بِعِلْمِهِ وَالْمَلَائِكَةُ يَشْهَدُونَ وَكَفَى بِاللَّهِ شَهِيدًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          166
+        ],
+        [
+          4,
+          166
+        ]
+      ],
+      "printed_reference": [
+        4,
+        166,
+        166
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "يس وَالْقُرْآنِ الْحَكِيمِ إِنَّكَ لَمِنَ الْمُرْسَلِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          36,
+          1
+        ],
+        [
+          36,
+          3
+        ]
+      ],
+      "printed_reference": [
+        36,
+        1,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "تِلْكَ آيَاتُ اللَّهِ نَتْلُوهَا عَلَيْكَ بِالْحَقِّ وَإِنَّكَ لَمِنَ الْمُرْسَلِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          252
+        ],
+        [
+          2,
+          252
+        ]
+      ],
+      "printed_reference": [
+        2,
+        252,
+        252
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "وَاللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          63,
+          1
+        ],
+        [
+          63,
+          1
+        ]
+      ],
+      "printed_reference": [
+        63,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-01-ru",
+      "quote": "مُحَمَّدٌ رَسُولُ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          48,
+          29
+        ],
+        [
+          48,
+          29
+        ]
+      ],
+      "printed_reference": [
+        48,
+        29,
+        29
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p481-03-ru",
+      "quote": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَى وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ وَكَفَى بِاللَّهِ شَهِيدًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          48,
+          28
+        ],
+        [
+          48,
+          28
+        ]
+      ],
+      "printed_reference": [
+        48,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p482-02-ru",
+      "quote": "لَكِنِ اللَّهُ يَشْهَدُ بِمَا أَنْزَلَ إِلَيْكَ أَنْزَلَهُ بِعِلْمِهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          166
+        ],
+        [
+          4,
+          166
+        ]
+      ],
+      "printed_reference": [
+        4,
+        166,
+        166
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p482-02-ru",
+      "quote": "أَمْ يَقُولُونَ افْتَرَاهُ قُلْ فَأْتُوا بِعَشْرِ سُوَرٍ مِثْلِهِ مُفْتَرَيَاتٍ وَادْعُوا مَنِ اسْتَطَعْتُمْ مِنْ دُونِ اللَّهِ إِنْ كُنْتُمْ صَادِقِينَ فَإِلَّمْ يَسْتَجِيبُوا لَكُمْ فَاعْلَمُوا أَنَّمَا أُنْزِلَ بِعِلْمِ اللَّهِ وَأَنْ لَا إِلَهَ إِلَّا هُوَ فَهَلْ أَنْتُمْ مُسْلِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          14
+        ]
+      ],
+      "printed_reference": [
+        11,
+        13,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p482-02-ru",
+      "quote": "قُلْ أَنْزَلَهُ الَّذِي يَعْلَمُ السِّرَّ فِي السَّمَاوَاتِ وَالْأَرْضِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          6
+        ],
+        [
+          25,
+          6
+        ]
+      ],
+      "printed_reference": [
+        25,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p482-02-ru",
+      "quote": "افْتَرَاهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          25,
+          4
+        ],
+        [
+          25,
+          4
+        ]
+      ],
+      "printed_reference": [
+        25,
+        4,
+        4
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-02-ru",
+      "quote": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ وَلَوْ كَانَ مِنْ عِنْدِ غَيْرِ اللَّهِ لَوَجَدُوا فِيهِ اخْتِلَافًا كَثِيرًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          82
+        ],
+        [
+          4,
+          82
+        ]
+      ],
+      "printed_reference": [
+        4,
+        82,
+        82
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-02-ru",
+      "quote": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ أَمْ عَلَى قُلُوبٍ أَقْفَالُهَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          47,
+          24
+        ],
+        [
+          47,
+          24
+        ]
+      ],
+      "printed_reference": [
+        47,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "بَلْ هُوَ آيَاتٌ بَيِّنَاتٌ فِي صُدُورِ الَّذِينَ أُوتُوا الْعِلْمَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          49
+        ],
+        [
+          29,
+          49
+        ]
+      ],
+      "printed_reference": [
+        29,
+        49,
+        49
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "وَيَرَى الَّذِينَ أُوتُوا الْعِلْمَ الَّذِي أُنْزِلَ إِلَيْكَ مِنْ رَبِّكَ هُوَ الْحَقَّ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          34,
+          6
+        ],
+        [
+          34,
+          6
+        ]
+      ],
+      "printed_reference": [
+        34,
+        6,
+        6
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "أَفَمَنْ يَعْلَمُ أَنَّمَا أُنْزِلَ إِلَيْكَ مِنْ رَبِّكَ الْحَقُّ كَمَنْ هُوَ أَعْمَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          19
+        ],
+        [
+          13,
+          19
+        ]
+      ],
+      "printed_reference": [
+        13,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "وَيَقُولُ الَّذِينَ كَفَرُوا لَوْلَا أُنْزِلَ عَلَيْهِ آيَةٌ مِنْ رَبِّهِ قُلْ إِنَّ اللَّهَ يُضِلُّ مَنْ يَشَاءُ وَيَهْدِي إِلَيْهِ مَنْ أَنَابَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          27
+        ],
+        [
+          13,
+          27
+        ]
+      ],
+      "printed_reference": [
+        13,
+        27,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          28
+        ],
+        [
+          13,
+          28
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p483-04-ru",
+      "quote": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          28
+        ],
+        [
+          13,
+          28
+        ]
+      ],
+      "printed_reference": [
+        13,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p485-01-ru",
+      "quote": "وَبُرِّزَتِ الْجَحِيمُ لِمَنْ يَرَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          79,
+          36
+        ],
+        [
+          79,
+          36
+        ]
+      ],
+      "printed_reference": [
+        79,
+        36,
+        36
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p486-04-ru",
+      "quote": "وَكَذَلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          143
+        ],
+        [
+          2,
+          143
+        ]
+      ],
+      "printed_reference": [
+        2,
+        143,
+        143
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p486-04-ru",
+      "quote": "هُوَ سَمَّاكُمُ الْمُسْلِمِينَ مِنْ قَبْلُ وَفِي هَذَا لِيَكُونَ الرَّسُولُ شَهِيدًا عَلَيْكُمْ وَتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          78
+        ],
+        [
+          22,
+          78
+        ]
+      ],
+      "printed_reference": [
+        22,
+        78,
+        78
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p486-05-ru",
+      "quote": "إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          19
+        ]
+      ],
+      "printed_reference": [
+        3,
+        19,
+        19
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p486-06-ru",
+      "quote": "إِنَّا كُنَّا مِنْ قَبْلُ نَدْعُوهُ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          52,
+          28
+        ],
+        [
+          52,
+          28
+        ]
+      ],
+      "printed_reference": [
+        52,
+        28,
+        28
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p487-03-ru",
+      "quote": "إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p487-03-ru",
+      "quote": "أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p487-03-ru",
+      "quote": "أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p488-02-ru",
+      "quote": "ثَلَاثَةٌ رَابِعُهُمْ كَلْبُهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          22
+        ],
+        [
+          18,
+          22
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p488-02-ru",
+      "quote": "خَمْسَةٌ سَادِسُهُمْ كَلْبُهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          22
+        ],
+        [
+          18,
+          22
+        ]
+      ],
+      "printed_reference": [
+        18,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p488-02-ru",
+      "quote": "وَيَقُولُونَ سَبْعَةٌ وَثَامِنُهُمْ كَلْبُهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          22
+        ],
+        [
+          18,
+          22
+        ]
+      ],
+      "printed_reference": [
+        18,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p488-03-ru",
+      "quote": "أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p489-02-ru",
+      "quote": "وَاتَّقُوا اللَّهَ وَاعْلَمُوا أَنَّ اللَّهَ شَدِيدُ الْعِقَابِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          196
+        ],
+        [
+          2,
+          196
+        ]
+      ],
+      "printed_reference": [
+        2,
+        196,
+        196
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-02-ru",
+      "quote": "وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          69
+        ],
+        [
+          8,
+          69
+        ]
+      ],
+      "printed_reference": [
+        8,
+        69,
+        69
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-02-ru",
+      "quote": "وَالَّذِينَ يُمَسِّكُونَ بِالْكِتَابِ وَأَقَامُوا الصَّلَاةَ إِنَّا لَا نُضِيعُ أَجْرَ الْمُصْلِحِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          170
+        ],
+        [
+          7,
+          170
+        ]
+      ],
+      "printed_reference": [
+        7,
+        170,
+        170
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-03-ru",
+      "quote": "إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p489-03-ru",
+      "quote": "وَمَنْ يَبْتَغِ غَيْرَ الْإِسْلَامِ دِينًا فَلَنْ يُقْبَلَ مِنْهُ وَهُوَ فِي الْآخِرَةِ مِنَ الْخَاسِرِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          85
+        ],
+        [
+          3,
+          85
+        ]
+      ],
+      "printed_reference": [
+        3,
+        85,
+        85
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "فَإِنْ تَوَلَّيْتُمْ فَمَا سَأَلْتُكُمْ مِنْ أَجْرٍ إِنْ أَجْرِيَ إِلَّا عَلَى اللَّهِ وَأُمِرْتُ أَنْ أَكُونَ مِنَ الْمُسْلِمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          72
+        ],
+        [
+          10,
+          72
+        ]
+      ],
+      "printed_reference": [
+        10,
+        72,
+        72
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          128
+        ],
+        [
+          2,
+          128
+        ]
+      ],
+      "printed_reference": [
+        2,
+        128,
+        128
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "وَوَصَّى بِهَا إِبْرَاهِيمُ بَنِيهِ وَيَعْقُوبُ يَا بَنِيَّ إِنَّ اللَّهَ اصْطَفَى لَكُمُ الدِّينَ فَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          132
+        ],
+        [
+          2,
+          132
+        ]
+      ],
+      "printed_reference": [
+        2,
+        132,
+        132
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "مَا تَعْبُدُونَ مِنْ بَعْدِي قَالُوا نَعْبُدُ إِلَهَكَ وَإِلَهَ آبَائِكَ إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَاقَ إِلَهًا وَاحِدًا وَنَحْنُ لَهُ مُسْلِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          133
+        ],
+        [
+          2,
+          133
+        ]
+      ],
+      "printed_reference": [
+        2,
+        133,
+        133
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p489-04-ru",
+      "quote": "يَا قَوْمِ إِنْ كُنْتُمْ آمَنْتُمْ بِاللَّهِ فَعَلَيْهِ تَوَكَّلُوا إِنْ كُنْتُمْ مُسْلِمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          84
+        ],
+        [
+          10,
+          84
+        ]
+      ],
+      "printed_reference": [
+        10,
+        84,
+        84
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p490-02-ru",
+      "quote": "فَلَمَّا أَحَسَّ عِيسَى مِنْهُمُ الْكُفْرَ قَالَ مَنْ أَنْصَارِي إِلَى اللَّهِ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنْصَارُ اللَّهِ آمَنَّا بِاللَّهِ وَاشْهَدْ بِأَنَّا مُسْلِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          52
+        ],
+        [
+          3,
+          52
+        ]
+      ],
+      "printed_reference": [
+        3,
+        52,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p490-02-ru",
+      "quote": "رَبِّ إِنِّي ظَلَمْتُ نَفْسِي وَأَسْلَمْتُ مَعَ سُلَيْمَانَ لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          44
+        ],
+        [
+          27,
+          44
+        ]
+      ],
+      "printed_reference": [
+        27,
+        44,
+        44
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p497-02-ru",
+      "quote": "أُولَئِكَ الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ وَالْحُكْمَ وَالنُّبُوَّةَ فَإِنْ يَكْفُرْ بِهَا هَؤُلَاءِ فَقَدْ وَكَّلْنَا بِهَا قَوْمًا لَيْسُوا بِهَا بِكَافِرِينَ أُولَئِكَ الَّذِينَ هَدَى اللَّهُ فَبِهُدَاهُمُ اقْتَدِهْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          89
+        ],
+        [
+          6,
+          90
+        ]
+      ],
+      "printed_reference": [
+        6,
+        89,
+        89
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p497-03-ru",
+      "quote": "إِنِّي جَاعِلُكَ لِلنَّاسِ إِمَامًا قَالَ وَمِنْ ذُرِّيَّتِي قَالَ لَا يَنَالُ عَهْدِي الظَّالِمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          124
+        ],
+        [
+          2,
+          124
+        ]
+      ],
+      "printed_reference": [
+        2,
+        124,
+        124
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p498-03-ru",
+      "quote": "وَمَنْ يَرْغَبُ عَنْ مِلَّةِ إِبْرَاهِيمَ إِلَّا مَنْ سَفِهَ نَفْسَهُ وَلَقَدِ اصْطَفَيْنَاهُ فِي الدُّنْيَا وَإِنَّهُ فِي الْآخِرَةِ لَمِنَ الصَّالِحِينَ إِذْ قَالَ لَهُ رَبُّهُ أَسْلِمْ قَالَ أَسْلَمْتُ لِرَبِّ الْعَالَمِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          130
+        ],
+        [
+          2,
+          131
+        ]
+      ],
+      "printed_reference": [
+        2,
+        130,
+        131
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p498-04-ru",
+      "quote": "يَا أَيُّهَا الرُّسُلُ كُلُوا مِنَ الطَّيِّبَاتِ وَاعْمَلُوا صَالِحًا إِنِّي بِمَا تَعْمَلُونَ عَلِيمٌ وَأَنَّ هَذِهِ أُمَّتُكُمْ أُمَّةً وَاحِدَةً وَأَنَا رَبُّكُمْ فَاتَّقُونِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          23,
+          51
+        ],
+        [
+          23,
+          52
+        ]
+      ],
+      "printed_reference": [
+        23,
+        51,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p499-01-ru",
+      "quote": "وما أرسلنا من قبلك من رسول إلا يُوحَى إليه أنه لا إله إلا أنا فاعبدون",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          21,
+          25
+        ],
+        [
+          21,
+          25
+        ]
+      ],
+      "evidence": "Ibn Khalawayh Hujja, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0026140-ara1; SHA256480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172. Control leaf499 prints يُوحَى إليه in21:25. Direct exact-verse attestation: Ibn Mujahid Sabca, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0005530-ara1, lines6954–6956, heading quotes singular وما أرسلنا من قبلك من رسول إلا نوحي إليه and explicitly verse25; following lines attest active nun and passive ya. SHA2567cbe25b667f87bdf8a8bd4fa8dfa4a3ff9e4b85715c089b240aefc07f29ab45f, Gitblobb8325cca414dbe2c77da82442ce8c413099ca6b3. Hujja plural headword alone is not used as exact-verse evidence. Comparison-only passive-ya to active-nun alignment to unchanged Tanzil; printed AR and passive Russian wording retained. No named reader attribution asserted.",
+      "printed_reference": [
+        21,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p499-02-ru",
+      "quote": "واسأل من أرسلنا من قبلك من رسلنا أجعلنا من دون الرحمن آلهة يعبدون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          45
+        ],
+        [
+          43,
+          45
+        ]
+      ],
+      "printed_reference": [
+        43,
+        45,
+        45
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p499-03-ru",
+      "quote": "أم اتخذوا آلهة من الأرض هم ينشرون لو كان فيهما آلهة إلا الله لفسدتا فسبحان الله رب العرش عما يصفون لا يسأل عما يفعل وهم يسألون أم اتخذوا من دونه آلهة قل هاتوا برهانكم هذا ذكر من معي وذكر من قبلي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          21,
+          21
+        ],
+        [
+          21,
+          24
+        ]
+      ],
+      "printed_reference": [
+        21,
+        21,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p499-04-ru",
+      "quote": "ولقد بعثنا في كل أمة رسولا أن اعبدوا الله واجتنبوا الطاغوت",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          36
+        ],
+        [
+          16,
+          36
+        ]
+      ],
+      "printed_reference": [
+        16,
+        36,
+        36
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p500-01-ru",
+      "quote": "اعبدوا الله ما لكم من إله غيره",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          59
+        ],
+        [
+          7,
+          59
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p500-03-ru",
+      "quote": "قل أغير الله أتخذ وليا فاطر السماوات والأرض",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          14
+        ]
+      ],
+      "printed_reference": [
+        6,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p500-04-ru",
+      "quote": "أفغير الله أبتغي حكما",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          114
+        ],
+        [
+          6,
+          114
+        ]
+      ],
+      "printed_reference": [
+        6,
+        114,
+        114
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p500-05-ru",
+      "quote": "قل أغير الله أبغي ربا وهو رب كل شيء",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          164
+        ],
+        [
+          6,
+          164
+        ]
+      ],
+      "printed_reference": [
+        6,
+        164,
+        164
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p500-06-ru",
+      "quote": "قل أفغير الله تأمروني أعبد أيها الجاهلون ولقد أوحي إليك وإلى الذين من قبلك لئن أشركت ليحبطن عملك ولتكونن من الخاسرين بل الله فاعبد وكن من الشاكرين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          64
+        ],
+        [
+          39,
+          66
+        ]
+      ],
+      "printed_reference": [
+        39,
+        64,
+        65
+      ],
+      "reference_status": "printed_range_error_documented",
+      "corrected_russian_reference": [
+        39,
+        64,
+        66
+      ],
+      "reference_evidence": "Control leaves500–501 print الزمر:64–65, but the complete quotation ends with39:66 بل الله فاعبد وكن من الشاكرين. Printed AR retained; corrected RU range mechanically checked. This documents a printed reference error, not a correct printed full span."
+    },
+    {
+      "unit": "v4-p501-02-ru",
+      "quote": "قل إنني هداني ربي إلى صراط مستقيم دينا قيما ملة إبراهيم حنيفا وما كان من المشركين قل إن صلاتي ونسكي ومحياي ومماتي لله رب العالمين لا شريك له وبذلك أمرت وأنا أول المسلمين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          161
+        ],
+        [
+          6,
+          163
+        ]
+      ],
+      "printed_reference": [
+        6,
+        161,
+        163
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-03-ru",
+      "quote": "فلا تدع مع الله إلها آخر فتكون من المعذبين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          26,
+          213
+        ],
+        [
+          26,
+          213
+        ]
+      ],
+      "printed_reference": [
+        26,
+        213,
+        213
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-04-ru",
+      "quote": "لا تجعل مع الله إلها آخر فتقعد مذموما مخذولا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          22
+        ],
+        [
+          17,
+          22
+        ]
+      ],
+      "printed_reference": [
+        17,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-05-ru",
+      "quote": "ولا تجعل مع الله إلها آخر فتلقى في جهنم ملوما مدحورا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          39
+        ],
+        [
+          17,
+          39
+        ]
+      ],
+      "printed_reference": [
+        17,
+        39,
+        39
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-06-ru",
+      "quote": "ولا تدع مع الله إلها آخر لا إله إلا هو كل شيء هالك إلا وجهه",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          88
+        ],
+        [
+          28,
+          88
+        ]
+      ],
+      "printed_reference": [
+        28,
+        88,
+        88
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-07-ru",
+      "quote": "قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته قل حسبي الله عليه يتوكل المتوكلون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          38
+        ],
+        [
+          39,
+          38
+        ]
+      ],
+      "printed_reference": [
+        39,
+        38,
+        38
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p501-08-ru",
+      "quote": "وإن يمسسك الله بضر فلا كاشف له إلا هو وإن يردك بخير فلا راد لفضله",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          107
+        ],
+        [
+          10,
+          107
+        ]
+      ],
+      "printed_reference": [
+        10,
+        107,
+        107
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-01-ru",
+      "quote": "إنا أنزلنا إليك الكتاب بالحق فاعبد الله مخلصا له الدين ألا لله الدين الخالص",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          2
+        ],
+        [
+          39,
+          3
+        ]
+      ],
+      "printed_reference": [
+        39,
+        2,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-02-ru",
+      "quote": "ربنا رب السماوات والأرض لن ندعو من دونه إلها لقد قلنا إذا شططا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          18,
+          14
+        ],
+        [
+          18,
+          14
+        ]
+      ],
+      "printed_reference": [
+        18,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-02-ru",
+      "quote": "وما لي لا أعبد الذي فطرني وإليه ترجعون أأتخذ من دونه آلهة إن يردن الرحمن بضر لا تغن عني شفاعتهم شيئا ولا ينقذون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          36,
+          22
+        ],
+        [
+          36,
+          23
+        ]
+      ],
+      "printed_reference": [
+        36,
+        23,
+        23
+      ],
+      "reference_status": "printed_range_error_documented",
+      "corrected_russian_reference": [
+        36,
+        22,
+        23
+      ],
+      "reference_evidence": "Control leaf502 prints يس:23, but the complete quotation begins with36:22 وما لي لا أعبد الذي فطرني وإليه ترجعون. Printed AR retained; corrected RU range mechanically checked. This documents a printed reference error, not a correct printed full span."
+    },
+    {
+      "unit": "v4-p502-02-ru",
+      "quote": "أم اتخذوا من دونه أولياء فالله هو الولي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          9
+        ],
+        [
+          42,
+          9
+        ]
+      ],
+      "printed_reference": [
+        42,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-03-ru",
+      "quote": "أم اتخذوا من دون الله شفعاء قل أولو كانوا لا يملكون شيئا ولا يعقلون قل لله الشفاعة جميعا له ملك السماوات والأرض ثم إليه ترجعون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          43
+        ],
+        [
+          39,
+          44
+        ]
+      ],
+      "printed_reference": [
+        39,
+        43,
+        44
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-04-ru",
+      "quote": "يا أيها الناس ضرب مثل فاستمعوا له إن الذين تدعون من دون الله لن يخلقوا ذبابا ولو اجتمعوا له وإن يسلبهم الذباب شيئا لا يستنقذوه منه ضعف الطالب والمطلوب ما قدروا الله حق قدره إن الله لقوي عزيز",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          73
+        ],
+        [
+          22,
+          74
+        ]
+      ],
+      "printed_reference": [
+        22,
+        73,
+        74
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p502-05-ru",
+      "quote": "واعبدوا الله ولا تشركوا به شيئا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          36
+        ],
+        [
+          4,
+          36
+        ]
+      ],
+      "printed_reference": [
+        4,
+        36,
+        36
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p503-01-ru",
+      "quote": "قد كانت لكم أسوة حسنة في إبراهيم والذين معه إذ قالوا لقومهم إنا برآء منكم ومما تعبدون من دون الله كفرنا بكم وبدا بيننا وبينكم العداوة والبغضاء أبدا حتى تؤمنوا بالله وحده",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          60,
+          4
+        ],
+        [
+          60,
+          4
+        ]
+      ],
+      "printed_reference": [
+        60,
+        4,
+        4
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p503-02-ru",
+      "quote": "وإذ قال إبراهيم لأبيه وقومه إنني براء مما تعبدون إلا الذي فطرني فإنه سيهدين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          43,
+          26
+        ],
+        [
+          43,
+          27
+        ]
+      ],
+      "printed_reference": [
+        43,
+        26,
+        26
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p503-03-ru",
+      "quote": "واتل عليهم نبأ إبراهيم إذ قال لأبيه وقومه ما تعبدون قالوا نعبد أصناما فنظل لها عاكفين قال هل يسمعونكم إذ تدعون أو ينفعونكم أو يضرون قالوا بل وجدنا آباءنا كذلك يفعلون قال أفرأيتم ما كنتم تعبدون أنتم وآباؤكم الأقدمون فإنهم عدو لي إلا رب العالمين الذي خلقني فهو يهدين والذي هو يطعمني ويسقين وإذا مرضت فهو يشفين والذي يميتني ثم يحيين والذي أطمع أن يغفر لي خطيئتي يوم الدين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          26,
+          69
+        ],
+        [
+          26,
+          82
+        ]
+      ],
+      "printed_reference": [
+        26,
+        69,
+        82
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p508-04-ru",
+      "quote": "ضرب الله مثلا رجلا فيه شركاء متشاكسون ورجلا سَالِمًا لرجل هل يستويان مثلا الحمد لله بل أكثرهم لا يعلمون",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          39,
+          29
+        ],
+        [
+          39,
+          29
+        ]
+      ],
+      "evidence": "Ibn Khalawayh Hujja, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0026140-ara1; SHA256480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172. Control leaf508, enlarged image and crop, prints سَالِمًا in39:29. Personally read primary lines6665–6668, PageV01P308–309: يقرأ بإثبات الألف وكسر اللام وبحذفها وفتح اللام. Comparison-only alif omission to unchanged Tanzil سلما; printed AR and RU retained. No named reader attribution asserted.",
+      "printed_reference": [
+        39,
+        29,
+        29
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p508-04-ru",
+      "quote": "ضرب الله مثلا عبدا مملوكا لا يقدر على شيء ومن رزقناه منا رزقا حسنا فهو ينفق منه سرا وجهرا هل يستوون الحمد لله بل أكثرهم لا يعلمون وضرب الله مثلا رجلين أحدهما أبكم لا يقدر على شيء وهو كل على مولاه أينما يوجهه لا يأت بخير هل يستوي هو ومن يأمر بالعدل وهو على صراط مستقيم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          75
+        ],
+        [
+          16,
+          76
+        ]
+      ],
+      "printed_reference": [
+        16,
+        75,
+        76
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p508-04-ru",
+      "quote": "يا أيها الناس ضرب مثل فاستمعوا له إن الذين تدعون من دون الله لن يخلقوا ذبابا ولو اجتمعوا له وإن يسلبهم الذباب شيئا لا يستنقذوه منه ضعف الطالب والمطلوب ما قدروا الله حق قدره إن الله لقوي عَزِيزٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          73
+        ],
+        [
+          22,
+          74
+        ]
+      ],
+      "printed_reference": [
+        22,
+        73,
+        73
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p509-02-ru",
+      "quote": "وَمَا كُنَّا مُعَذِّبِينَ حَتَّى نَبْعَثَ رَسُولًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          15
+        ],
+        [
+          17,
+          15
+        ]
+      ],
+      "printed_reference": [
+        17,
+        15,
+        15
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-02-ru",
+      "quote": "كُلَّمَا أُلْقِيَ فِيهَا فَوْجٌ سَأَلَهُمْ خَزَنَتُهَا أَلَمْ يَأْتِكُمْ نَذِيرٌ قَالُوا بَلَى قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          67,
+          8
+        ],
+        [
+          67,
+          9
+        ]
+      ],
+      "printed_reference": [
+        67,
+        8,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-02-ru",
+      "quote": "وَمَا كَانَ رَبُّكَ مُهْلِكَ الْقُرَى حَتَّى يَبْعَثَ فِي أُمِّهَا رَسُولًا يَتْلُو عَلَيْهِمْ آيَاتِنَا وَمَا كُنَّا مُهْلِكِي الْقُرَى إِلَّا وَأَهْلُهَا ظَالِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          59
+        ],
+        [
+          28,
+          59
+        ]
+      ],
+      "printed_reference": [
+        28,
+        59,
+        59
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-02-ru",
+      "quote": "وَمَا كَانَ رَبُّكَ لِيُهْلِكَ الْقُرَى بِظُلْمٍ وَأَهْلُهَا مُصْلِحُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          11,
+          117
+        ],
+        [
+          11,
+          117
+        ]
+      ],
+      "printed_reference": [
+        11,
+        117,
+        117
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-03-ru",
+      "quote": "وَلَوْلَا أَنْ تُصِيبَهُمْ مُصِيبَةٌ بِمَا قَدَّمَتْ أَيْدِيهِمْ فَيَقُولُوا رَبَّنَا لَوْلَا أَرْسَلْتَ إِلَيْنَا رَسُولًا فَنَتَّبِعَ آيَاتِكَ وَنَكُونَ مِنَ الْمُؤْمِنِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          47
+        ],
+        [
+          28,
+          47
+        ]
+      ],
+      "printed_reference": [
+        28,
+        47,
+        47
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-03-ru",
+      "quote": "رُسُلًا مُبَشِّرِينَ وَمُنْذِرِينَ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَى اللَّهِ حُجَّةٌ بَعْدَ الرُّسُلِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          165
+        ],
+        [
+          4,
+          165
+        ]
+      ],
+      "printed_reference": [
+        4,
+        165,
+        165
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-03-ru",
+      "quote": "وَهَذَا كِتَابٌ أَنْزَلْنَاهُ مُبَارَكٌ فَاتَّبِعُوهُ وَاتَّقُوا لَعَلَّكُمْ تُرْحَمُونَ أَنْ تَقُولُوا إِنَّمَا أُنْزِلَ الْكِتَابُ عَلَى طَائِفَتَيْنِ مِنْ قَبْلِنَا وَإِنْ كُنَّا عَنْ دِرَاسَتِهِمْ لَغَافِلِينَ أَوْ تَقُولُوا لَوْ أَنَّا أُنْزِلَ عَلَيْنَا الْكِتَابُ لَكُنَّا أَهْدَى مِنْهُمْ فَقَدْ جَاءَكُمْ بَيِّنَةٌ مِنْ رَبِّكُمْ وَهُدًى وَرَحْمَةٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          6,
+          155
+        ],
+        [
+          6,
+          157
+        ]
+      ],
+      "printed_reference": [
+        6,
+        155,
+        157
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p509-03-ru",
+      "quote": "أَنْ تَقُولَ نَفْسٌ يَاحَسْرَتَى عَلَى مَا فَرَّطْتُ فِي جَنْبِ اللَّهِ وَإِنْ كُنْتُ لَمِنَ السَّاخِرِينَ أَوْ تَقُولَ لَوْ أَنَّ اللَّهَ هَدَانِي لَكُنْتُ مِنَ الْمُتَّقِينَ أَوْ تَقُولَ حِينَ تَرَى الْعَذَابَ لَوْ أَنَّ لِي كَرَّةً فَأَكُونَ مِنَ الْمُحْسِنِينَ بَلَى قَدْ جَاءَتْكَ آيَاتِي فَكَذَّبْتَ بِهَا وَاسْتَكْبَرْتَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          56
+        ],
+        [
+          39,
+          59
+        ]
+      ],
+      "printed_reference": [
+        39,
+        56,
+        59
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p511-03-ru",
+      "quote": "أَفَلَا تَعْقِلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          44
+        ],
+        [
+          2,
+          44
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p511-03-ru",
+      "quote": "أَفَلَا تَذَكَّرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p511-03-ru",
+      "quote": "صُمٌّ بُكْمٌ عُمْيٌ فَهُمْ لَا يَعْقِلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          171
+        ],
+        [
+          2,
+          171
+        ]
+      ],
+      "printed_reference": [
+        2,
+        171,
+        171
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-02-ru",
+      "quote": "انْظُرُوا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          137
+        ],
+        [
+          3,
+          137
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p512-02-ru",
+      "quote": "اعْتَبِرُوا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          59,
+          2
+        ],
+        [
+          59,
+          2
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p512-02-ru",
+      "quote": "سِيرُوا فِي الْأَرْضِ فَانْظُرُوا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          137
+        ],
+        [
+          3,
+          137
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "وَلَقَدْ ضَرَبْنَا لِلنَّاسِ فِي هَذَا الْقُرْآنِ مِنْ كُلِّ مَثَلٍ لَعَلَّهُمْ يَتَذَكَّرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          39,
+          27
+        ],
+        [
+          39,
+          27
+        ]
+      ],
+      "printed_reference": [
+        39,
+        27,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "وَتِلْكَ الْأَمْثَالُ نَضْرِبُهَا لِلنَّاسِ وَمَا يَعْقِلُهَا إِلَّا الْعَالِمُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          43
+        ],
+        [
+          29,
+          43
+        ]
+      ],
+      "printed_reference": [
+        29,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "إِنَّ فِي ذَلِكَ لَذِكْرَى لِمَنْ كَانَ لَهُ قَلْبٌ أَوْ أَلْقَى السَّمْعَ وَهُوَ شَهِيدٌ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          50,
+          37
+        ],
+        [
+          50,
+          37
+        ]
+      ],
+      "printed_reference": [
+        50,
+        37,
+        37
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ فَتَكُونَ لَهُمْ قُلُوبٌ يَعْقِلُونَ بِهَا أَوْ آذَانٌ يَسْمَعُونَ بِهَا فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ وَلَكِنْ تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          46
+        ],
+        [
+          22,
+          46
+        ]
+      ],
+      "printed_reference": [
+        22,
+        46,
+        46
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "كَذَلِكَ يُبَيِّنُ اللَّهُ لَكُمُ الْآيَاتِ لَعَلَّكُمْ تَتَفَكَّرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          219
+        ],
+        [
+          2,
+          219
+        ]
+      ],
+      "printed_reference": [
+        2,
+        219,
+        219
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "قُلِ انْظُرُوا مَاذَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَمَا تُغْنِي الْآيَاتُ وَالنُّذُرُ عَنْ قَوْمٍ لَا يُؤْمِنُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          101
+        ],
+        [
+          10,
+          101
+        ]
+      ],
+      "printed_reference": [
+        10,
+        101,
+        101
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-03-ru",
+      "quote": "وَيَضْرِبُ اللَّهُ الْأَمْثَالَ لِلنَّاسِ لَعَلَّهُمْ يَتَذَكَّرُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          14,
+          25
+        ],
+        [
+          14,
+          25
+        ]
+      ],
+      "printed_reference": [
+        14,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-04-ru",
+      "quote": "وَعَادًا وَثَمُودَ وَقَدْ تَبَيَّنَ لَكُمْ مِنْ مَسَاكِنِهِمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          38
+        ],
+        [
+          29,
+          38
+        ]
+      ],
+      "printed_reference": [
+        29,
+        38,
+        38
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-04-ru",
+      "quote": "فَتِلْكَ بُيُوتُهُمْ خَاوِيَةً بِمَا ظَلَمُوا إِنَّ فِي ذَلِكَ لَآيَةً لِقَوْمٍ يَعْلَمُونَ وَأَنْجَيْنَا الَّذِينَ آمَنُوا وَكَانُوا يَتَّقُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          52
+        ],
+        [
+          27,
+          53
+        ]
+      ],
+      "printed_reference": [
+        27,
+        52,
+        53
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-04-ru",
+      "quote": "إِنَّا مُنْزِلُونَ عَلَى أَهْلِ هَذِهِ الْقَرْيَةِ رِجْزًا مِنَ السَّمَاءِ بِمَا كَانُوا يَفْسُقُونَ وَلَقَدْ تَرَكْنَا مِنْهَا آيَةً بَيِّنَةً لِقَوْمٍ يَعْقِلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          34
+        ],
+        [
+          29,
+          35
+        ]
+      ],
+      "printed_reference": [
+        29,
+        34,
+        35
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-04-ru",
+      "quote": "إِنَّ فِي ذَلِكَ لَآيَاتٍ لِلْمُتَوَسِّمِينَ وَإِنَّهَا لَبِسَبِيلٍ مُقِيمٍ إِنَّ فِي ذَلِكَ لَآيَةً لِلْمُؤْمِنِينَ وَإِنْ كَانَ أَصْحَابُ الْأَيْكَةِ لَظَالِمِينَ فَانْتَقَمْنَا مِنْهُمْ وَإِنَّهُمَا لَبِإِمَامٍ مُبِينٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          15,
+          75
+        ],
+        [
+          15,
+          79
+        ]
+      ],
+      "printed_reference": [
+        15,
+        75,
+        79
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p512-04-ru",
+      "quote": "وَإِنَّكُمْ لَتَمُرُّونَ عَلَيْهِمْ مُصْبِحِينَ وَبِاللَّيْلِ أَفَلَا تَعْقِلُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          137
+        ],
+        [
+          37,
+          138
+        ]
+      ],
+      "printed_reference": [
+        37,
+        137,
+        138
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p513-02-ru",
+      "quote": "إِنَّ فِي ذَلِكَ لَآيَةً وَمَا كَانَ أَكْثَرُهُمْ مُؤْمِنِينَ وَإِنَّ رَبَّكَ لَهُوَ الْعَزِيزُ الرَّحِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          26,
+          8
+        ],
+        [
+          26,
+          9
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p514-04-ru",
+      "quote": "وَأَمَّا ثَمُودُ فَهَدَيْنَاهُمْ فَاسْتَحَبُّوا الْعَمَى عَلَى الْهُدَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          41,
+          17
+        ],
+        [
+          41,
+          17
+        ]
+      ],
+      "printed_reference": [
+        41,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p514-04-ru",
+      "quote": "وَزَيَّنَ لَهُمُ الشَّيْطَانُ أَعْمَالَهُمْ فَصَدَّهُمْ عَنِ السَّبِيلِ وَكَانُوا مُسْتَبْصِرِينَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          29,
+          38
+        ],
+        [
+          29,
+          38
+        ]
+      ],
+      "printed_reference": [
+        29,
+        38,
+        38
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p514-04-ru",
+      "quote": "وَمَا كَانَ اللَّهُ لِيُضِلَّ قَوْمًا بَعْدَ إِذْ هَدَاهُمْ حَتَّى يُبَيِّنَ لَهُمْ مَا يَتَّقُونَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          9,
+          115
+        ],
+        [
+          9,
+          115
+        ]
+      ],
+      "printed_reference": [
+        9,
+        115,
+        115
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p514-04-ru",
+      "quote": "وَجَحَدُوا بِهَا وَاسْتَيْقَنَتْهَا أَنْفُسُهُمْ ظُلْمًا وَعُلُوًّا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          27,
+          14
+        ],
+        [
+          27,
+          14
+        ]
+      ],
+      "printed_reference": [
+        27,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p514-05-ru",
+      "quote": "الْحَمْدُ لِلَّهِ الَّذِي هَدَانَا لِهَذَا وَمَا كُنَّا لِنَهْتَدِيَ لَوْلَا أَنْ هَدَانَا اللَّهُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          43
+        ],
+        [
+          7,
+          43
+        ]
+      ],
+      "printed_reference": [
+        7,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p514-05-ru",
+      "quote": "وَاللَّهُ يَدْعُو إِلَى دَارِ السَّلَامِ وَيَهْدِي مَنْ يَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          25
+        ],
+        [
+          10,
+          25
+        ]
+      ],
+      "printed_reference": [
+        10,
+        25,
+        25
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p515-05-ru",
+      "quote": "وَالَّذِينَ اهْتَدَوْا زَادَهُمْ هُدًى وَآتَاهُمْ تَقْوَاهُمْ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          47,
+          17
+        ],
+        [
+          47,
+          17
+        ]
+      ],
+      "printed_reference": [
+        47,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p515-05-ru",
+      "quote": "وَيَزِيدُ اللَّهُ الَّذِينَ اهْتَدَوْا هُدًى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          19,
+          76
+        ],
+        [
+          19,
+          76
+        ]
+      ],
+      "printed_reference": [
+        19,
+        76,
+        76
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p515-05-ru",
+      "quote": "فَأَمَّا الَّذِينَ آمَنُوا فَزَادَتْهُمْ إِيمَانًا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          9,
+          124
+        ],
+        [
+          9,
+          124
+        ]
+      ],
+      "printed_reference": [
+        9,
+        124,
+        124
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "فأنزلنا به الماء فأخرجنا به من كل الثمرات",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          57
+        ],
+        [
+          7,
+          57
+        ]
+      ],
+      "printed_reference": [
+        7,
+        57,
+        57
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "فأحيا به الأرض بعد موتها",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          164
+        ],
+        [
+          2,
+          164
+        ]
+      ],
+      "printed_reference": [
+        2,
+        164,
+        164
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "يهدي به الله من اتبع رضوانه سبل السلام",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          16
+        ]
+      ],
+      "printed_reference": [
+        5,
+        16,
+        16
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "بما كنتم تعملون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          43
+        ],
+        [
+          7,
+          43
+        ]
+      ],
+      "printed_reference": [
+        7,
+        43,
+        43
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "بما كنتم تكسبون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          7,
+          39
+        ],
+        [
+          7,
+          39
+        ]
+      ],
+      "printed_reference": [
+        7,
+        39,
+        39
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p520-05-ru",
+      "quote": "ذلك بما قدمت يداك",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          22,
+          10
+        ],
+        [
+          22,
+          10
+        ]
+      ],
+      "printed_reference": [
+        22,
+        10,
+        10
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-02-ru",
+      "quote": "وذلك جزاء الظالمين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          5,
+          29
+        ],
+        [
+          5,
+          29
+        ]
+      ],
+      "printed_reference": [
+        5,
+        29,
+        29
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-02-ru",
+      "quote": "وهل يُجَٰزَى إلا الكفور",
+      "status": "printed_reading_with_digital_scholarly_attestation",
+      "actual_span": [
+        [
+          34,
+          17
+        ],
+        [
+          34,
+          17
+        ]
+      ],
+      "evidence": "Ibn Khalawayh Hujja, OpenITI/RELEASE cfc4157a3cf2054c0888f133970a4eaa3e22e58c, Shamela0026140-ara1; SHA256480cfe92bde0c1674d08d4020c57be808ea3a5d93a338b06c8d412b6813d3172. Sura34:17, lines6318–6324, between OpenITI markers PageV01P293/P294 explicitly attest passive ya/fatha and active nun/kasra. Actual enlarged control521 has يُجَٰزَى with dagger alif, retained as printed. Alignment to Tanzil active نجازي is comparison-only; no named reader attribution.",
+      "printed_reference": [
+        34,
+        17,
+        17
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-02-ru",
+      "quote": "وما منعنا أن نرسل بالآيات إلا أن كذب بها الأولون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          17,
+          59
+        ],
+        [
+          17,
+          59
+        ]
+      ],
+      "printed_reference": [
+        17,
+        59,
+        59
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "إن الذين آمنوا وعملوا الصالحات يهديهم ربهم بإيمانهم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          9
+        ],
+        [
+          10,
+          9
+        ]
+      ],
+      "printed_reference": [
+        10,
+        9,
+        9
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "الر كتاب أنزلناه إليك لتخرج الناس من الظلمات إلى النور بإذن ربهم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          14,
+          1
+        ],
+        [
+          14,
+          1
+        ]
+      ],
+      "printed_reference": [
+        14,
+        1,
+        1
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "كلوا واشربوا هنيئا بما أسلفتم في الأيام الخالية",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          69,
+          24
+        ],
+        [
+          69,
+          24
+        ]
+      ],
+      "printed_reference": [
+        69,
+        24,
+        24
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "ومن يتق الله يجعل له مخرجا ويرزقه من حيث لا يحتسب",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          65,
+          2
+        ],
+        [
+          65,
+          3
+        ]
+      ],
+      "printed_reference": [
+        65,
+        2,
+        3
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "ومن يتق الله يكفر عنه سيئاته",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          65,
+          5
+        ],
+        [
+          65,
+          5
+        ]
+      ],
+      "printed_reference": [
+        65,
+        5,
+        5
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "ومن يتق الله يجعل له من أمره يسرا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          65,
+          4
+        ],
+        [
+          65,
+          4
+        ]
+      ],
+      "printed_reference": [
+        65,
+        4,
+        4
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "إن تتقوا الله يجعل لكم فرقانا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          8,
+          29
+        ],
+        [
+          8,
+          29
+        ]
+      ],
+      "printed_reference": [
+        8,
+        29,
+        29
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "وإن تصبروا وتتقوا لا يضركم كيدهم شيئا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          120
+        ],
+        [
+          3,
+          120
+        ]
+      ],
+      "printed_reference": [
+        3,
+        120,
+        120
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p521-03-ru",
+      "quote": "فبظلم من الذين هادوا حرمنا عليهم طيبات أحلت لهم وبصدهم عن سبيل الله كثيرا وأخذهم الربا وقد نهوا عنه وأكلهم أموال الناس بالباطل",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          4,
+          160
+        ],
+        [
+          4,
+          161
+        ]
+      ],
+      "printed_reference": [
+        4,
+        160,
+        160
+      ],
+      "reference_status": "printed_start_only"
+    },
+    {
+      "unit": "v4-p527-02-ru",
+      "quote": "وإنك لتهدي إلى صراط مستقيم",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          52
+        ],
+        [
+          42,
+          52
+        ]
+      ],
+      "printed_reference": [
+        42,
+        52,
+        52
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p527-02-ru",
+      "quote": "ولكل قوم هاد",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "printed_reference": [
+        13,
+        7,
+        7
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p527-03-ru",
+      "quote": "إنك لا تهدي من أحببت",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          28,
+          56
+        ],
+        [
+          28,
+          56
+        ]
+      ],
+      "printed_reference": [
+        28,
+        56,
+        56
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p527-03-ru",
+      "quote": "فإن الله يضل من يشاء ويهدي من يشاء",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          35,
+          8
+        ],
+        [
+          35,
+          8
+        ]
+      ],
+      "printed_reference": [
+        35,
+        8,
+        8
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p528-04-ru",
+      "quote": "لقد من الله على المؤمنين إذ بعث فيهم رسولا من أنفسهم يتلو عليهم آياته ويزكيهم ويعلمهم الْكِتَابَ وَالْحِكْمَةَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          164
+        ],
+        [
+          3,
+          164
+        ]
+      ],
+      "printed_reference": [
+        3,
+        164,
+        164
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p533-05-ru",
+      "quote": "إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          2,
+          275
+        ],
+        [
+          2,
+          275
+        ]
+      ],
+      "printed_reference": [
+        2,
+        275,
+        275
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "إِيَّاكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "نَعْبُدُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "وَإِيَّاكَ نَسْتَعِينُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "إِيَّاكَ نَعْبُدُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p537-06-ru",
+      "quote": "إِيَّاكَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p538-02-ru",
+      "quote": "اهْدِنَا",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "unit": "v4-p539-08-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "printed_reference": [
+        3,
+        18,
+        18
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p539-08-ru",
+      "quote": "إِنَّنِي أَنَا اللَّهُ لَا إِلَهَ إِلَّا أَنَا فَاعْبُدْنِي",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          20,
+          14
+        ],
+        [
+          20,
+          14
+        ]
+      ],
+      "printed_reference": [
+        20,
+        14,
+        14
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p539-08-ru",
+      "quote": "هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          59,
+          22
+        ],
+        [
+          59,
+          22
+        ]
+      ],
+      "printed_reference": [
+        59,
+        22,
+        22
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p544-04-ru",
+      "quote": "وَلَهُ الْمَثَلُ الْأَعْلَى فِي السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          30,
+          27
+        ],
+        [
+          30,
+          27
+        ]
+      ],
+      "printed_reference": [
+        30,
+        27,
+        27
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p544-04-ru",
+      "quote": "لِلَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ مَثَلُ السَّوْءِ وَلِلَّهِ الْمَثَلُ الْأَعْلَى",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          16,
+          60
+        ],
+        [
+          16,
+          60
+        ]
+      ],
+      "printed_reference": [
+        16,
+        60,
+        60
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p548-02-ru",
+      "quote": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "printed_reference": [
+        3,
+        18,
+        18
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p551-04-ru",
+      "quote": "وردوا إلى الله مولاهم الحق وضل عنهم ما كانوا يفترون",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          10,
+          30
+        ],
+        [
+          10,
+          30
+        ]
+      ],
+      "printed_reference": [
+        10,
+        30,
+        30
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p553-04-ru",
+      "quote": "سبحان الله عما يصفون إلا عباد الله المخلصين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          159
+        ],
+        [
+          37,
+          160
+        ]
+      ],
+      "printed_reference": [
+        37,
+        159,
+        160
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p553-04-ru",
+      "quote": "سبحان ربك رب العزة عما يصفون وسلام على المرسلين والحمد لله رب العالمين",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          37,
+          180
+        ],
+        [
+          37,
+          182
+        ]
+      ],
+      "printed_reference": [
+        37,
+        180,
+        182
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p555-04-ru",
+      "quote": "ولو اتبع الحق أهواءهم لفسدت السماوات والأرض ومن فيهن",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          23,
+          71
+        ],
+        [
+          23,
+          71
+        ]
+      ],
+      "printed_reference": [
+        23,
+        71,
+        71
+      ],
+      "reference_status": "full_span"
+    },
+    {
+      "unit": "v4-p555-04-ru",
+      "quote": "فلذلك فادع واستقم كما أمرت ولا تتبع أهواءهم وقل آمنت بما أنزل الله من كتاب وأمرت لأعدل بينكم الله ربنا وربكم لنا أعمالنا ولكم أعمالكم لا حجة بيننا وبينكم الله يجمع بيننا وإليه المصير",
+      "status": "normalised_letters_match",
+      "actual_span": [
+        [
+          42,
+          15
+        ],
+        [
+          42,
+          15
+        ]
+      ],
+      "printed_reference": [
+        42,
+        15,
+        15
+      ],
+      "reference_status": "full_span"
     }
   ]
 }

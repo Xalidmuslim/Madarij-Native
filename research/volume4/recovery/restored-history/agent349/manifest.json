@@ -1,0 +1,289 @@
+{
+  "method": "historical_tool_inputs_replay",
+  "recovery_date": "2026-11-09",
+  "agent": "v4_349_358",
+  "provenance": "Historical create/append/finalizer tool-input bodies copied from retained conversation context, with filesystem paths redirected. No new translation. No lost-output hash baseline exists, so byte identity to lost JSON is not independently proved.",
+  "steps": [
+    {
+      "path": "/workspace/recovery/agent349/steps/001-batch349-358-create.sh",
+      "bytes": 31886,
+      "sha256": "6caede84adca71cc20cd3db8a035c025b58674122e8671d0e2b6571e65f6118a",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/002-batch349-358-append.sh",
+      "bytes": 18264,
+      "sha256": "8a215e0eb4e92419e02546597d0e4ece3ce08f453f77bf42663f503e4f1432a7",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/003-batch349-358-finalize.sh",
+      "bytes": 4367,
+      "sha256": "964c2ef8c33a21c3f30be5927a9067e249ebe1bfda51d03105644c59621397b2",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/004-batch349-358-final-ru-fix.sh",
+      "bytes": 466,
+      "sha256": "d5ea7164b3a617a7e86b99788c9780838de679abddce775675629a8f4f480846",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/005-batch399-408-create.sh",
+      "bytes": 29934,
+      "sha256": "2a7840604143ce89f0f54d89b8da655eff46494cb38eb1534c63e5d686fa99b8",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/006-batch399-408-append.sh",
+      "bytes": 15162,
+      "sha256": "09b11207f81e77399414f9bbb3c459ee1b9f9bc0fcde5d3519f9087de4e8f4b1",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/007-batch399-408-finalize.sh",
+      "bytes": 6021,
+      "sha256": "a1a786cdb5dd28a3ebf482c98f9be00b7d58199018de47545347acde57e8e261",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/008-batch399-408-review-count-fix.sh",
+      "bytes": 401,
+      "sha256": "8412e041f78e52d361d253e3d8e2185389da7340e4fbb840ede5bd27d77d4406",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/009-batch449-458-create.sh",
+      "bytes": 16851,
+      "sha256": "68a25bfbbae7ca1ee2dd91e6399424a611593c70de1d181454edd1f94ddfb569",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/010-batch449-458-append452-455.sh",
+      "bytes": 17691,
+      "sha256": "64f6e6e24fbd128f28a7c5b0578da22288746be65f893e96d122715e07d1a8e6",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/011-batch449-458-append456-458.sh",
+      "bytes": 14479,
+      "sha256": "edb063f3873556c98c700599f83c3c4ac112e787b746dc4a658f4b3c355089c3",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/012-batch449-458-finalize.sh",
+      "bytes": 5584,
+      "sha256": "ef13a758cf5ab80fc868f0f24b221bb66bf5ac1667d5f37777a08fc0926442cc",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/013-batch459-468-create.sh",
+      "bytes": 23497,
+      "sha256": "2b905eb619e4e61794f76197db51bf6e8f0592cf2cf23d4fbbfd54b2883d8ac0",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/014-batch459-468-append.sh",
+      "bytes": 26875,
+      "sha256": "cad21f91d2e6a0bd6e7e7e5689b6267fbf6318778e32247369fd10b01cca8deb",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/015-merge458-459.sh",
+      "bytes": 1899,
+      "sha256": "c91c9330c78ff5f49e72a2e8dfc9f628979e29a4e6559a390a6d4acf6cd6899e",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/016-batch459-468-finalize.sh",
+      "bytes": 5467,
+      "sha256": "637961d568ac8d93618c8b4fd0a41e9ee21ef6118ae717125bdef79ed94e058d",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/017-batch509-518-create.sh",
+      "bytes": 20237,
+      "sha256": "d9fee3569ed0388fa719b1df7d1c236f5f438b6e6ca27370ab8b2364234c75d0",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/018-batch509-518-append512-515.sh",
+      "bytes": 26213,
+      "sha256": "903b7ab0409648e0c14d5e948910d600e2bef60f4846233f74304ac392ce6234",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/019-batch509-518-append516-518.sh",
+      "bytes": 14930,
+      "sha256": "29eeb8726e0654622d61b9167456bb9ef1b3cedde1c25f7366494d22763b33f4",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/020-batch509-518-finalize.sh",
+      "bytes": 6736,
+      "sha256": "98f3de63d7c53223f0fbd0530630f7d407ca8cc849e495d7297e2c42f7801f69",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    },
+    {
+      "path": "/workspace/recovery/agent349/steps/021-merge508-509.sh",
+      "bytes": 2450,
+      "sha256": "a2a3f1ff9e8431412ffa577ba372b3823fec576eb7c3bf675e35362f95736f09",
+      "status": "executed_successfully",
+      "original_target_root": "/workspace/scratch/volume4",
+      "redirected_target_root": "/workspace/recovery/agent349/output"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/workspace/recovery/agent349/output/batch349-358.json",
+      "bytes": 97620,
+      "sha256": "e9f6fd5c9bf5004722f26270596fc6e7fca116cfb04903ce31ba084630e8ba60",
+      "pages": 10,
+      "source_fragments": 49,
+      "units": 47,
+      "completed": null,
+      "structural_checks": "pass"
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/batch399-408.json",
+      "bytes": 86421,
+      "sha256": "0f6424864d07149825ef7127cb34e240e531b597e0571c0799994a9c8b4f68a6",
+      "pages": 10,
+      "source_fragments": 39,
+      "units": 34,
+      "completed": true,
+      "structural_checks": "pass"
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/batch449-458.json",
+      "bytes": 92990,
+      "sha256": "3c4041e51ad5f642e7eec0496e711c3b1956294ef3f7bee2bae2f5fbf56e0794",
+      "pages": 10,
+      "source_fragments": 44,
+      "units": 39,
+      "completed": true,
+      "structural_checks": "pass"
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/batch459-468.json",
+      "bytes": 95224,
+      "sha256": "2cf578bd8c326e9d87667fe2845743933999466d149bf0e81f04bdff18f70b94",
+      "pages": 10,
+      "source_fragments": 41,
+      "units": 35,
+      "completed": true,
+      "structural_checks": "pass"
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/batch509-518.json",
+      "bytes": 106474,
+      "sha256": "36e569e739ee77d943d6f88c78001e60ad74dd5798bcd4bf00e4abea4b2ddce5",
+      "pages": 10,
+      "source_fragments": 36,
+      "units": 30,
+      "completed": true,
+      "structural_checks": "pass"
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/merge458-459.json",
+      "bytes": 3302,
+      "sha256": "7b1b5560a71e17a3029a9b39371b06b57eb4726c0fbe7590b087134bc0c00575",
+      "source_ids": [
+        "v4-p458-03",
+        "v4-p459-01"
+      ],
+      "units": 1
+    },
+    {
+      "path": "/workspace/recovery/agent349/output/merge508-509.json",
+      "bytes": 5521,
+      "sha256": "ed3b23001d15fcf09c55287f6e8049b3f78f6fa8a86f7a9aac6283f4c1434d9d",
+      "source_ids": [
+        "v4-p508-04",
+        "v4-p509-01"
+      ],
+      "units": 1
+    }
+  ],
+  "dependency": {
+    "merge508-509_input": {
+      "path": "/workspace/recovery/agent339/replayed/batch499-508.json",
+      "bytes": 114679,
+      "sha256": "dc68894dfafcc8fc3affde866723673d581eeb23ab61ef9d8dc30c0c1c576e0f"
+    }
+  },
+  "totals": {
+    "pages": 50,
+    "source_fragments": 209,
+    "batch_units": 185,
+    "merges": 2
+  },
+  "recovery_execution_notes": [
+    "Steps001–016 were already present and successful before this resumed turn; they were inspected and not recreated.",
+    "Step017 already existed complete; resumed by executing it.",
+    "First020 attempt failed Quran equality: recovery-copy512-03 Russian embedded Arabic had لعلهم where the Arabic payload had لعلكم. Corrected that single copied word in018 to match its Arabic counterpart, then replayed017–021 successfully. This exception is disclosed rather than claimed as independently located raw historical bytes.",
+    "An initial merge021 was produced before finalizer success; it was regenerated after successful020.",
+    "All hashes/coverage/AR source joins/Quran AR-RU equality verified structurally. Historical review notes and self_reviewed statuses are retained historical statements, not new image or semantic checks."
+  ],
+  "parent_owned_late_corrections_not_applied": [
+    {
+      "location": "404",
+      "description": "Parent later confirmed مطالعة rather than historical مطاوعة; RU покорное согласие to постижение, remove false variant note. Exact parent patch not replayed here."
+    },
+    {
+      "location": "510",
+      "description": "Historical payload retains unsupported canonical ending وكنت من الكافرين and its Russian meaning; parent separately restores exact removal and ياحسرتا to printed ياحسرتى."
+    },
+    {
+      "location": "source_complete",
+      "description": "Historical false values on cross-page fragments preserved; parent later clarified source_complete means fully transcribed page fragment and owns standardization."
+    }
+  ],
+  "scope": {
+    "repo_edited": false,
+    "push_performed": false,
+    "new_translation": false,
+    "new_image_verification": false
+  },
+  "missing_payloads": []
+}
