@@ -4,27 +4,122 @@
   "not_recovered_commit": true,
   "prior_commit_sha_verified": false,
   "historical_final_file_hash_available": false,
+  "archive_form": "Python heredoc create/append bodies concatenated in historical order; subsequent data mutations and review_notes replayed in historical order. Shell wrappers, image-view calls and stdout-only loops are not executable archive content. No new translation or semantic reconstruction.",
   "execution_path_substitution": {
     "from": "/workspace/scratch/volume4",
     "to": "/workspace/recovery/agent329/replayed-scratch"
   },
   "historical_review_notes_preserved": true,
   "new_visual_or_translation_review_performed": false,
+  "completion_metadata_added": false,
   "batches": [
+    {
+      "file": "batch329-338.json",
+      "sha256_now": "a0fcc5aaaf72fd2494fddd5c25e91ddf9ab87dc8d68c348adf535a930132af4c",
+      "pages": 10,
+      "source_fragments": 44,
+      "translation_units": 36,
+      "completed": null,
+      "completed_field_historically_present": false,
+      "historical_review_note_count": 5,
+      "validated": "full page range; self_reviewed; SHA-256 Arabic; exact unit/source assembly; unique complete source coverage; Quran ar/ru equality"
+    },
+    {
+      "file": "batch379-388.json",
+      "sha256_now": "e19d2928a380cb4318c8eaaa8fa1c2a36328b9deefa79f7466fd1e5d3cba1fc1",
+      "pages": 10,
+      "source_fragments": 42,
+      "translation_units": 36,
+      "completed": true,
+      "completed_field_historically_present": true,
+      "historical_review_note_count": 5,
+      "validated": "full page range; self_reviewed; SHA-256 Arabic; exact unit/source assembly; unique complete source coverage; Quran ar/ru equality"
+    },
+    {
+      "file": "batch429-438.json",
+      "sha256_now": "db12d754d7a353537e8124b4f0f4a9f52f1cd05e09f7ead132f352d455143927",
+      "pages": 10,
+      "source_fragments": 33,
+      "translation_units": 28,
+      "completed": true,
+      "completed_field_historically_present": true,
+      "historical_review_note_count": 5,
+      "validated": "full page range; self_reviewed; SHA-256 Arabic; exact unit/source assembly; unique complete source coverage; Quran ar/ru equality"
+    },
+    {
+      "file": "batch489-498.json",
+      "sha256_now": "12655da025a72e65dfc81a6624d0e6c92d546e1d5389ba9eef17b56179f1b0b8",
+      "pages": 10,
+      "source_fragments": 45,
+      "translation_units": 37,
+      "completed": true,
+      "completed_field_historically_present": true,
+      "historical_review_note_count": 7,
+      "validated": "full page range; self_reviewed; SHA-256 Arabic; exact unit/source assembly; unique complete source coverage; Quran ar/ru equality"
+    },
     {
       "file": "batch539-548.json",
       "sha256_now": "9f81289c351f2d29a07cb5e58703013fa0c9156ba93446541f971a38b9828fd8",
       "pages": 10,
-      "fragments": 49,
-      "units": 44,
+      "source_fragments": 49,
+      "translation_units": 44,
       "completed": true,
-      "validation": "sha256_ar, source_ids exact assembly and coverage, Quran ar/ru equality"
+      "completed_field_historically_present": true,
+      "historical_review_note_count": 5,
+      "validated": "full page range; self_reviewed; SHA-256 Arabic; exact unit/source assembly; unique complete source coverage; Quran ar/ru equality"
     }
   ],
-  "remaining_historical_payloads_visible_in_context": [
-    "329-338",
-    "379-388",
-    "429-438",
-    "489-498"
+  "historical_external_corrections_not_replayed": [
+    {
+      "source_id": "v4-p331-04",
+      "reason": "Parent historical message specified {فقال→{قال and parent-side audit/RU correction; exact parent tool payload is outside this agent history. Parent confirmed it is available at recovery/roottools/scripts/06_source331.original.py and will apply it separately."
+    }
+  ],
+  "remaining_agent_payloads": [],
+  "input_archives": [
+    {
+      "file": "original/build329.py",
+      "sha256": "eb90b82580b4378ceba7658a6a75dfb45ed723f5d306f0d19b122c74a5a921cd"
+    },
+    {
+      "file": "original/build379.py",
+      "sha256": "a0e51caa739697a2fd702889d13f46a5845aeb150aac83b35741f1d4a0721d08"
+    },
+    {
+      "file": "original/build429.py",
+      "sha256": "78a0a89dbe4b6ef8c057ba625df6cac943c34123548c1355274a2369404ddc47"
+    },
+    {
+      "file": "original/build489.py",
+      "sha256": "d75e26b34d6270e3c9024298eb358e2b344abf58d56b9224e342e85f79a0290c"
+    },
+    {
+      "file": "original/build539.py",
+      "sha256": "85c415a86fae5eab3bf55f4af1e479e2bcd2a886d67ed8677986c8e7a09dae28"
+    },
+    {
+      "file": "original/finalize329.py",
+      "sha256": "73f3a25a7e40efd0ffb8c6081c25268602280b19691d35b4bbbf628ccd996bf4"
+    },
+    {
+      "file": "original/finalize379.py",
+      "sha256": "fb3259ecb8778111843edd4158d4c002043e4bedbaa436b068d3a95d0d1095cd"
+    },
+    {
+      "file": "original/finalize429.py",
+      "sha256": "e1b5011f76611139c283448281a97f1b73249c5f337db16895c61e8fb210115c"
+    },
+    {
+      "file": "original/finalize489.py",
+      "sha256": "5e4844fc5feea1a78e19d91027632eee32edcc3582c9e7e4c8eb9e8c6e02d1ab"
+    },
+    {
+      "file": "original/finalize539.py",
+      "sha256": "aa9a5683c953111bc2562e7eed3f1bc2263a47a6027c7b40ae445b76f96f559d"
+    },
+    {
+      "file": "original/patch_build429.py",
+      "sha256": "ca8bc548ea8aa374b7d5fe6b55dc8351ad1ff6f8487aa0875e56c62e2f5202e3"
+    }
   ]
 }
