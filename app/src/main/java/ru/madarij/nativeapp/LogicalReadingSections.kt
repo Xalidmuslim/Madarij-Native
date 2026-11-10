@@ -92,7 +92,7 @@ internal object LogicalReadingSections {
         "madarij-v2-p621-p659-translation-preview" to (621 to 659)
     )
     // Volume 3 is stored as author chapters, rather than the earlier page slices.
-    private fun isStart(chapter: Chapter): Boolean = chapter.volume == 3 || chapter.id in starts
+    private fun isStart(chapter: Chapter): Boolean = chapter.volume >= 3 || chapter.id in starts
     fun roots(chapters: List<Chapter>): List<Chapter> = chapters.filter(::isStart)
     fun members(chapters: List<Chapter>, requestedId: String): List<Chapter> {
         val index = chapters.indexOfFirst { it.id == requestedId }
