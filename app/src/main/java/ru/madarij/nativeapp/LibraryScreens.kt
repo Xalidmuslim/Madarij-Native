@@ -30,7 +30,7 @@ internal data class TocGroup(val id: String, val title: String, val provenance: 
 internal suspend fun loadStructure(context: Context): List<TocGroup> = withContext(Dispatchers.IO) {
     runCatching {
         val a = JSONObject(context.assets.open("structure.json").bufferedReader().use { it.readText() }).getJSONArray("groups")
-        for (file in listOf("volume2-structure.json", "volume3-structure.json")) {
+        for (file in listOf("volume2-structure.json", "volume3-structure.json", "volume4-structure.json")) {
             val additional = runCatching {
                 JSONObject(context.assets.open(file).bufferedReader().use { it.readText() }).getJSONArray("groups")
             }.getOrNull()
@@ -340,7 +340,7 @@ internal fun ProgressScreen(vm: BookViewModel,open:(String,String?)->Unit,naviga
                 }
             }
         } else {
-            item { HeritageSectionHeading("Главы двух томов",trailing="Прочитано ${readIds.size} / ${chapters.size}") }
+            item { HeritageSectionHeading("Главы четырёх томов",trailing="Прочитано ${readIds.size} / ${chapters.size}") }
             items(chapters,key={it.id}) { chapter ->
                 AgedPaperCard(Modifier.fillMaxWidth(),
                     border=androidx.compose.foundation.BorderStroke(.7.dp,
@@ -405,7 +405,7 @@ internal fun AboutScreen() {
     val context=LocalContext.current;var edition by remember {mutableStateOf<JSONObject?>(null)}
     LaunchedEffect(context) {edition=withContext(Dispatchers.IO) {runCatching {JSONObject(context.assets.open("corpus.json").bufferedReader().use {it.readText()}).getJSONObject("edition")}.getOrNull()}}
     LazyColumn(contentPadding=PaddingValues(start=20.dp,top=20.dp,end=20.dp,bottom=124.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {
-        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Тома 1–3")}
+        item {ScreenHeading("Мадаридж ас-саликин","Степени идущих · Тома 1–4")}
         item {InfoCard("Автор","Ибн Каййим аль-Джаузийя (1292–1350). Книга посвящена ступеням духовного пути и построена вокруг осмысления слов суры «Аль-Фатиха».")}
         item {InfoCard("О происхождении русского перевода","Перевод подготовлен специально для данного приложения с применением искусственного интеллекта непосредственно по арабскому тексту. По сведениям составителя приложения, существующие русскоязычные переводы не использовались. Это самостоятельный рабочий перевод, не официальный и не академическое критическое издание.")}
         item {InfoCard("Статус сверки томов 1–2","Том 1: литературно-смысловая сверка страниц 3–610 (644 авторских блока). Том 2: литературно-смысловая сверка страниц 3–659 (676 единиц). Часть исправлений повторно проверена ИИ. Постатейная визуальная сверка со сканами издания 2019 года и независимая научная, хадисоведческая и источниковедческая экспертиза не проводились; содержание может нуждаться в исправлениях.")}
@@ -413,6 +413,7 @@ internal fun AboutScreen() {
         item {InfoCard("Третий том","Полный рабочий перевод авторского текста: страницы 3–584, 582 страницы. Выполнены визуальная сверка с PDF 2019 года и смысловая, литературная и обратная самопроверка ИИ. Неясное место на с. 110 отмечено отдельно. Независимая человеческая редактура и полная внешняя проверка хадисов не выполнены; том не готов к публикации. Современные издательские примечания не включены.")}
         item {InfoCard("Арабский источник",edition?.optString("source_edition").orEmpty().ifBlank {"Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019"}+"\n"+edition?.optString("source_url").orEmpty())}
         item {InfoCard("Навигация и пояснения","Технические разделы для чтения не всегда совпадают с главами автора. Группы, темы и редакторские пояснения помогают ориентироваться; источник главы доступен из меню чтения. Вопросы и словарь составлены редакционно по тексту и требуют той же сверки.")}
-        item {Text("Мадаридж · Тома 1–3",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
+        item {InfoCard("Четвёртый том","Авторский текст страниц 3–556 (554 страницы) включён как полный рабочий черновик. Некоторые фрагменты имеют открытые вопросы редакционной сверки; независимая человеческая редактура не выполнена. Группы в оглавлении разбиты по страницам, а не по подтверждённым авторским главам. Для публикации том не готов.")}
+        item {Text("Мадаридж · Тома 1–4",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
     }
 }
