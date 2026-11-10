@@ -53,7 +53,7 @@ jobs:
           python3 -m unittest -v tools.test_volume4_app
       - name: Validate existing third-volume reader (regression)
         run: |
-          python3 tools/validate_volume3_app.py
+          python3 -m tools.validate_volume3_app
           python3 -m unittest -v tools.test_volume3_app
       - name: Prepare licensed Russian handwriting font
         run: python3 tools/prepare_handwriting_font.py
