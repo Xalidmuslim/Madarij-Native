@@ -46,6 +46,15 @@ jobs:
         run: python3 tools/validate_toc_anchors.py
       - name: Test volume-2 corrections and previous repairs
         run: python3 -m unittest -v tools/test_volume2_pages003_005.py tools/test_volume2_pages006_009.py tools/test_volume2_pages010_012.py tools/test_volume2_pages013_020.py tools/test_volume2_collation_4pages.py
+      - name: Assemble and verify preserved fourth-volume author text
+        run: |
+          python3 tools/build_volume4_assets.py
+          python3 tools/validate_volume4.py
+          python3 -m unittest -v tools.test_volume4_app
+      - name: Validate existing third-volume reader (regression)
+        run: |
+          python3 tools/validate_volume3_app.py
+          python3 -m unittest -v tools.test_volume3_app
       - name: Prepare licensed Russian handwriting font
         run: python3 tools/prepare_handwriting_font.py
 
@@ -101,6 +110,28 @@ jobs:
           assert 'как утверждает автор' not in p['madarij-v2-p015-draft']['ru']
           assert not x['publication_ready']
           print('PASS: unchanged, verifiable volume-two printed text in R8 Release')
+          PY
+      - name: Verify all four translated volume assets in optimized Release APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=app/build/outputs/apk/release/app-release.apk
+          for name in corpus.json volume2-preview.json volume3-draft.json volume4-draft.json; do
+            unzip -p "$APK" "assets/$name" > "/tmp/$name"
+            test -s "/tmp/$name"
+          done
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          files = ['corpus.json', 'volume2-preview.json', 'volume3-draft.json', 'volume4-draft.json']
+          books = [json.loads((Path('/tmp') / filename).read_text()) for filename in files]
+          assert [sorted({c['volume'] for c in book['chapters']}) for book in books] == [[1], [2], [3], [4]]
+          assert sum(len(c['paragraphs']) for c in books[3]['chapters']) == 2137
+          assert {p for c in books[3]['chapters'] for item in c['paragraphs'] for p in item['printed_pages']} == set(range(3, 557))
+          assert books[3]['publication_ready'] is False
+          for book in books:
+            assert book['chapters'] and len(book['expected_chapter_ids']) == len(book['chapters'])
+          print('PASS: four offline reading volumes in release APK; volume4 remains clearly marked draft')
           PY
       - name: Upload installable optimized Release APK (not Debug)
         uses: actions/upload-artifact@v4
