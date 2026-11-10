@@ -366,7 +366,7 @@ fun Reader(
                 ) {
                     ReaderControl("‹") { onBack() }
                     Column(Modifier.weight(1f).clickable { chapterPanel = true },horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("Том ${chapter.volume}" + if (chapter.volume == 3) " · черновик" else "",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
+                        Text("Том ${chapter.volume}" + if (chapter.volume >= 3) " · черновик" else "",style = MaterialTheme.typography.bodySmall.copy(fontFamily = BookSerif),color = MaterialTheme.colorScheme.onSurface)
                         // Full editorial title belongs in the frontispiece / chapter
                         // contents. In this compact toolbar its ellipsis looked like
                         // a broken text transfer during scrolling.
@@ -438,11 +438,19 @@ fun Reader(
                 Column(Modifier.fillMaxWidth()) {
                     ReaderFrontispiece(logicalChapters.take(chapterIndex + 1).count { it.volume == chapter.volume },
                         readerTitle,
-                        if (chapter.volume == 3) chapterStructure?.subtitle else LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
+                        if (chapter.volume >= 3) chapterStructure?.subtitle else LogicalReadingSections.pageRange(sectionId), settings.theme == "dark",
                         pageFragment = chapter.volume == 2)
                     if (chapter.volume == 3) {
                         Text(
                             "Рабочий перевод по PDF 2019 года. Выполнена самопроверка ИИ; независимая редактура не выполнена. Неясность на с. 110 и разночтения отмечены в пояснениях.",
+                            Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    if (chapter.volume == 4) {
+                        Text(
+                            "Четвёртый том: полный рабочий черновик авторского текста. Диапазоны страниц не обозначают новые авторские главы. Есть нерешённые редакционные вопросы; независимая проверка не выполнена.",
                             Modifier.padding(horizontal = 24.dp, vertical = 5.dp),
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
