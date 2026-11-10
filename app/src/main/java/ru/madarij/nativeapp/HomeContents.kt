@@ -210,7 +210,7 @@ internal fun HomeScreen(
             item {
                 Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     HomeAction("Оглавление", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
-                    HomeAction("Поиск", "По двум томам", "search", Modifier.weight(1f)) { navigate("search") }
+                    HomeAction("Поиск", "По четырём томам", "search", Modifier.weight(1f)) { navigate("search") }
                 }
             }
             item {
