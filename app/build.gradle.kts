@@ -26,10 +26,10 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 58
-        versionName = "1.58-volume2-pages3-659-translation-collation"
+        versionCode = 59
+        versionName = "1.59-four-volume-working-draft"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.58"
+        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.59"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
         storeFile = file(releaseKey)
@@ -87,6 +87,10 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.7")
     testImplementation("junit:junit:4.13.2")
 }
+val packageVolume4Draft by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/build_volume4_assets.py")
+}
 val generateSoftPaperFrames by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_soft_paper_frames.py")
@@ -114,7 +118,7 @@ val prepareStudySupplement by tasks.registering(Exec::class) {
     commandLine("python3", "tools/generate_study_supplement.py")
 }
 tasks.matching { it.name == "preBuild" }.configureEach {
-    dependsOn(generateBookTextures, generateSoftPaperFrames, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont)
+    dependsOn(generateBookTextures, generateSoftPaperFrames, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont, packageVolume4Draft)
 }
 // Production Play uploads are forbidden until edition/editorial rights,
 // Arabic collation, scholarly references and Data Safety are documented.
