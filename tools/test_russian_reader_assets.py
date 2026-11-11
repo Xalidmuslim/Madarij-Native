@@ -1,4 +1,4 @@
-"""Regression checks: five editorial sections and no Arabic script in APK assets."""
+"""Regression checks: all saved editorial batches and no Arabic script in future reader assets."""
 import copy
 import hashlib
 import json
@@ -70,9 +70,13 @@ class RussianReaderPackagingTest(unittest.TestCase):
             self.assertIn("высеченными кирками человеческих мнений",
                           first["madarij-v1-opening-011"])
             self.assertIn("Первое доказательство", first["madarij-v1-fatiha-006"])
-            # Outside the requested first five, only Arabic letter removal is permitted.
-            self.assertEqual(original["chapters"][5]["paragraphs"][0]["ru"],
-                             book1["chapters"][5]["paragraphs"][0]["ru"])
+            # The second batch has also been included, but no later sections
+            # receive unapproved Russian literary changes.
+            self.assertIn("возвышеннейшая из просьб",
+                          book1["chapters"][5]["paragraphs"][0]["ru"])
+            self.assertIn("То, как пять Имён", book1["chapters"][6]["paragraphs"][0]["ru"])
+            self.assertEqual(original["chapters"][10]["paragraphs"][0]["ru"],
+                             book1["chapters"][10]["paragraphs"][0]["ru"])
             # Only the generated copy changes.
             self.assertEqual(canonical_sha, {
                 name: hashlib.sha256((SOURCE / name).read_bytes()).hexdigest()
