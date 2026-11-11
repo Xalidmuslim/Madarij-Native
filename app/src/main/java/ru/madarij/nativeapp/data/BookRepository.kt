@@ -5,6 +5,7 @@ import androidx.room.withTransaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
+import ru.madarij.nativeapp.russianOnlyText
 import java.security.MessageDigest
 
 class BookRepository(private val context: Context, private val db: BookDatabase) {
@@ -119,7 +120,7 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
                     require(p.optString("status") in setOf("draft_unchecked", "draft_self_checked", "literary_reviewed_v1", "reviewed")) { "Unknown editorial status at $i/$j" }
                 }
                 paragraphRows.add(Paragraph(pid, id, j, ar, ru, p.getString("role"), p.getString("source")))
-                indexRows.add(SearchIndex(pid, normalize(chapter.title + " " + ar + " " + ru)))
+                indexRows.add(SearchIndex(pid, normalize(chapter.title + " " + russianOnlyText(ru))))
             }
         }
         db.withTransaction {
