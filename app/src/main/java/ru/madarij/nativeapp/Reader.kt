@@ -297,7 +297,7 @@ fun Reader(
     }
     LaunchedEffect(chapter.id, ready) { if (ready) while (true) { delay(30_000); recordTime() } }
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
-    fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + ("") + russianOnlyText(p.ru)
+    fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + russianOnlyText(p.ru)
     fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\n" +
         (when (chapter.volume) {
             4 -> "Полный рабочий черновик · независимая редактура не выполнена"
