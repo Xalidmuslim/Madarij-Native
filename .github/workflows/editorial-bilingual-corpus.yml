@@ -1,0 +1,62 @@
+name: Literary Arabic-Russian corpus (no APK)
+
+on:
+  push:
+    branches:
+      - 'editorial/**'
+    paths:
+      - 'research/editorial/**'
+      - 'tools/build_reviewed_bilingual.py'
+      - 'tools/render_reviewed_bilingual.py'
+      - 'tools/test_reviewed_bilingual.py'
+      - '.github/workflows/editorial-bilingual-corpus.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: madarij-literary-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bilingual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout protected canonical corpus and editable manifests
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate bilingual integrity and all literary corrections
+        run: python3 -m unittest -v tools.test_reviewed_bilingual
+      - name: Generate full-volume bilingual JSON and offline comparison HTML
+        run: |
+          python3 tools/build_reviewed_bilingual.py
+          python3 -m tools.render_reviewed_bilingual
+      - name: Package comparison files only (never compile Android)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p editorial-download
+          cp research/editorial/volume1/working-bilingual-corpus.json editorial-download/
+          cp research/editorial/volume1/working-bilingual-compare.html editorial-download/
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('editorial-download/working-bilingual-corpus.json').read_text())
+          assert len(data['chapters'])==90
+          assert sum(len(ch['paragraphs']) for ch in data['chapters'])==740
+          assert all(p['ar'] and p['ru'] for ch in data['chapters']
+                     for p in ch['paragraphs'] if p['role']!='editor_note')
+          print('PASS: all 90 sections, 740 paragraph IDs, original Arabic and edited Russian')
+          PY
+      - name: Upload full first volume for direct comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Volume1-Bilingual-Literary-Sections01-10
+          path: editorial-download/
+          if-no-files-found: error
+          retention-days: 90
