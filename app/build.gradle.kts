@@ -26,10 +26,10 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 60
-        versionName = "1.60-four-volumes-russian-only"
+        versionCode = 61
+        versionName = "1.61-v1-literary-batch01"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.60"
+        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.61"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
         storeFile = file(releaseKey)
@@ -70,6 +70,11 @@ android {
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true }
+    // The user's APK has Russian text only. Keep canonical bilingual assets in
+    // the repository for authorial source checks and subsequent literary editing.
+    sourceSets.getByName("main").assets.setSrcDirs(
+        listOf(layout.buildDirectory.dir("generated/russian-only-assets").get().asFile)
+    )
 }
 kapt { arguments { arg("room.schemaLocation", "$projectDir/schemas") } }
 dependencies {
@@ -116,6 +121,14 @@ val prepareCuratedReminders by tasks.registering(Exec::class) {
 val prepareStudySupplement by tasks.registering(Exec::class) {
     workingDir(rootProject.projectDir)
     commandLine("python3", "tools/generate_study_supplement.py")
+}
+val prepareRussianReaderAssets by tasks.registering(Exec::class) {
+    workingDir(rootProject.projectDir)
+    commandLine("python3", "tools/prepare_russian_reader_assets.py")
+    dependsOn(packageVolume4Draft, prepareCuratedReminders, prepareStudySupplement)
+}
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Assets") }.configureEach {
+    dependsOn(prepareRussianReaderAssets)
 }
 tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generateBookTextures, generateSoftPaperFrames, verifyKnowledgeReminders, prepareCuratedReminders, prepareStudySupplement, prepareHandwritingFont, packageVolume4Draft)

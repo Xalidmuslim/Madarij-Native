@@ -112,7 +112,7 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
                 val pid = p.getString("id")
                 require(pid == expectedPs.getString(j) && p.getInt("order") == j && paragraphIds.add(pid)) { "Invalid paragraph manifest at $i/$j" }
                 val ar = p.getString("ar"); val ru = p.getString("ru")
-                require(ru.isNotBlank() && (ar.isNotBlank() || (draft && p.optString("role") == "editor_note"))) { "Empty text at $i/$j" }
+                require(ru.isNotBlank() && (draft || ar.isNotBlank())) { "Empty Russian translation at $i/$j" }
                 if (!draft) {
                     require(p.getString("status") == "reviewed" && p.getString("reviewer").isNotBlank())
                     require(sha((ar + "\u0000" + ru).toByteArray(Charsets.UTF_8)) == p.getString("reviewed_sha256"))
@@ -145,8 +145,8 @@ class BookRepository(private val context: Context, private val db: BookDatabase)
         dao.search(tokens.joinToString(" ") { "\"$it\"*" }).filter { p ->
             when (filter) {
                 "note", "notes" -> p.role == "editor_note"
-                "ayat", "quran" -> p.role != "editor_note" && (p.ar.contains("قال تعالى") || p.ar.contains("قوله تعالى") || p.ar.contains("قال الله") || p.ru.contains("Всевышний сказал", true))
-                "hadith" -> p.role != "editor_note" && (p.ar.contains("رسول الله") || p.ar.contains("النبي") || p.ru.contains("Посланник Аллаха", true) || p.ru.contains("Пророк", true))
+                "ayat", "quran" -> p.role != "editor_note" && (p.source.contains("[search:ayat]") || p.ru.contains("Всевышний сказал", true))
+                "hadith" -> p.role != "editor_note" && (p.source.contains("[search:hadith]") || p.ru.contains("Посланник Аллаха", true) || p.ru.contains("Пророк", true))
                 else -> true
             }
         }
