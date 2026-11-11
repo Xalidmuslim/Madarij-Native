@@ -158,7 +158,7 @@ internal fun HomeScreen(
                             ReedPenWritingText(
                                 modifier = Modifier.fillMaxWidth()
                                     .padding(top = 4.dp, bottom = 12.dp),
-                                text = reminder.text,
+                                text = russianOnlyText(reminder.text),
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontFamily = FontFamily(Font(R.font.bad_script)),
                                     fontWeight = FontWeight.Bold,

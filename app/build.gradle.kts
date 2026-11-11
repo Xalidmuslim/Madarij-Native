@@ -26,10 +26,10 @@ android {
         applicationId = "ru.madarij.nativeapp"
         minSdk = 26
         targetSdk = 36
-        versionCode = 59
-        versionName = "1.59-four-volume-working-draft"
+        versionCode = 60
+        versionName = "1.60-four-volumes-russian-only"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.59"
+        manifestPlaceholders["appTitle"] = "Степени идущих · Тест 1.60"
     }
     if (releaseKey != null) signingConfigs.create("owner") {
         storeFile = file(releaseKey)

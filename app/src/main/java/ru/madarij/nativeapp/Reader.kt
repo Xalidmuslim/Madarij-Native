@@ -206,7 +206,7 @@ fun Reader(
     }
     val searchTargetAvailable = remember(query, anchor, visible, displayRussian) {
         query.isNotBlank() && anchor != null && visible.firstOrNull { it.id == anchor }?.let {
-            readerSearchTargetExists(query, it.ar, displayRussian[it.id].orEmpty())
+            readerSearchTargetExists(query, "", displayRussian[it.id].orEmpty())
         } == true
     }
     val readerSettled = ready &&
@@ -297,9 +297,10 @@ fun Reader(
     }
     LaunchedEffect(chapter.id, ready) { if (ready) while (true) { delay(30_000); recordTime() } }
     LaunchedEffect(message) { if (message.isNotEmpty()) { snackbar.showSnackbar(message); message = "" } }
-    fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + (if (settings.showArabic && p.ar.isNotBlank()) p.ar + "\n\n" else "") + p.ru
+    fun textFor(p: Paragraph): String = (when (p.role) { "editor_note" -> "[Пояснение редакции приложения]\n"; "edition_note" -> "[Примечание издания]\n"; else -> "" }) + russianOnlyText(p.ru)
     fun fullChapter() = "Степени идущих — Мадаридж ас-саликин\nИбн аль-Каййим\nТом ${chapter.volume} · ${chapterStructure?.title ?: sectionRoot.title}\n" +
         (when (chapter.volume) {
+            4 -> "Полный рабочий черновик · независимая редактура не выполнена"
             3 -> "Рабочий перевод · самопроверка ИИ · независимая редактура не выполнена; неясность на с. 110"
             2 -> "Литературная сверка завершена · научная проверка источников не завершена"
             else -> "Литературная сверка завершена · проверка источников отдельно"
@@ -540,10 +541,9 @@ fun Reader(
                                             color = MaterialTheme.colorScheme.primary)
                                     }
                                     if (expanded) {
-                                        if (settings.showArabic && p.ar.isNotBlank()) SelectionContainer { ArabicText(p.ar, settings) }
                                         SelectionContainer { SearchAnchorText(
-                                            highlight(p.ru, query, MaterialTheme.colorScheme.primary),
-                                            p.ru, query, readerStyle(readerSettings),
+                                            highlight(russianOnlyText(p.ru), query, MaterialTheme.colorScheme.primary),
+                                            russianOnlyText(p.ru), query, readerStyle(readerSettings),
                                             ready && p.id==anchor && !matchRevealed) {matchRevealed=true} }
                                     }
 
@@ -552,24 +552,7 @@ fun Reader(
                         }
                     } else {
                         val displayRu = displayRussian[p.id].orEmpty()
-                        val arabicMatch = p.id == anchor && normalizedQuery.isNotBlank() && normalizedText(p.ar).text.contains(normalizedQuery) && !normalizedText(displayRu).text.contains(normalizedQuery)
-                        val arabicBlocks = remember(p.id, p.ar) { splitReaderText(p.ar, "فصل", "فصل") }
                         val russianBlocks = remember(p.id, displayRu) { splitReaderText(displayRu, "Раздел", "Раздел") }
-                        if ((settings.showArabic || arabicMatch) && p.ar.isNotBlank()) SelectionContainer {
-                            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                                arabicBlocks.forEach { block ->
-                                    when (block) {
-                                        is ReaderTextBlock.Section -> ReaderSectionCard(block, settings, arabic = true)
-                                        is ReaderTextBlock.Body -> readerParagraphs(block.text).forEach { paragraph ->
-                                            if (arabicMatch) SearchAnchorText(highlight(paragraph, query, MaterialTheme.colorScheme.primary), paragraph, query,
-                                                androidx.compose.ui.text.TextStyle(fontFamily = androidx.compose.ui.text.font.FontFamily(androidx.compose.ui.text.font.Font(if(settings.arabicFont=="alternate") R.font.arabic_naskh_alt else R.font.naskh)),fontSize=settings.arabicSize.sp,lineHeight=(settings.arabicSize*1.85f).sp,textDirection=androidx.compose.ui.text.style.TextDirection.Rtl,textAlign=androidx.compose.ui.text.style.TextAlign.Right),
-                                                ready && !matchRevealed) { matchRevealed = true }
-                                            else ArabicText(paragraph, settings)
-                                        }
-                                    }
-                                }
-                            }
-                        }
                         SelectionContainer {
                             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                                 russianBlocks.forEach { block ->
@@ -602,9 +585,9 @@ fun Reader(
                                                                 color = MaterialTheme.colorScheme.onSurface)
                                                         }
                                                     }
-                                                    ReaderSectionCard(block, settings, arabic = false)
+                                                    ReaderSectionCard(block, settings)
                                                 }
-                                             } else ReaderSectionCard(block, settings, arabic = false)
+                                             } else ReaderSectionCard(block, settings)
                                         }
                                         is ReaderTextBlock.Body -> {
                                             // The editor's TOC may point to a new authorial
@@ -651,7 +634,7 @@ fun Reader(
                                                 terms = terms,
                                                 // Search results alone use the second
                                                 // intra-paragraph bringIntoView pass.
-                                                reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed && !arabicMatch,
+                                                reveal = ready && query.isNotBlank() && p.id == anchor && !matchRevealed,
                                                 onRevealed = { matchRevealed = true },
                                                 onOpenTerm = { termDialog = it },
                                                 temporarySpotlight = if (p.id == anchor && showQuoteSpotlight) homeQuote else null,
@@ -888,15 +871,15 @@ fun Reader(
         }
     }
     if (panel) MaterialTheme(colorScheme = MaterialTheme.colorScheme) { ModalBottomSheet(onDismissRequest = { panel = false }, containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.onSurface, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) { DarkSheetSystemBars(); Box(Modifier.fillMaxHeight(.9f)) { SettingsPanel(settings, vm::settings) } } }
-    selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { if (chapter.volume == 3) Text(p.source.substringBefore("; v3-"), style = MaterialTheme.typography.bodySmall); TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
+    selected?.let { p -> AlertDialog(onDismissRequest = { selected = null }, title = { Text("Действия с абзацем") }, text = { Column { if (chapter.volume >= 3) Text("Рабочий перевод; сведения об издании — в разделе «О книге».", style = MaterialTheme.typography.bodySmall); TextButton(onClick = { newBookmark(p); selected = null }) { Text("Добавить закладку") }; TextButton(onClick = { newNote(p); selected = null }) { Text("Написать заметку") }; TextButton(onClick = { copy(textFor(p)); selected = null }) { Text("Копировать абзац") }; TextButton(onClick = { share(textFor(p)); selected = null }) { Text("Поделиться абзацем") } } }, confirmButton = { TextButton(onClick = { selected = null }) { Text("Закрыть") } }) }
     if (noteDialog) AlertDialog(onDismissRequest = { noteDialog = false }, title = { Text(if (noteAnchor == null) "Заметка к разделу" else "Заметка к абзацу") }, text = { OutlinedTextField(noteText, { noteText = it }, label = { Text("Ваши мысли") }, modifier = Modifier.fillMaxWidth(), minLines = 5) }, confirmButton = { TextButton(onClick = { vm.addNote(paragraphs.firstOrNull { it.id == noteAnchor }?.chapterId ?: sectionId, noteAnchor, noteText); noteDialog = false; message = "Заметка сохранена" }, enabled = noteText.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { noteDialog = false }) { Text("Отмена") } })
     if (bookmarkDialog) AlertDialog(onDismissRequest = { bookmarkDialog = false }, title = { Text("Сохранить закладку") }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { OutlinedTextField(bookmarkTitle, { bookmarkTitle = it }, label = { Text("Название") }, modifier = Modifier.fillMaxWidth()); OutlinedTextField(bookmarkNote, { bookmarkNote = it }, label = { Text("Комментарий · необязательно") }, modifier = Modifier.fillMaxWidth(), minLines = 3) } }, confirmButton = { TextButton(onClick = { vm.bookmarkParagraph(paragraphs.firstOrNull { it.id == bookmarkAnchor }?.chapterId ?: sectionId, bookmarkAnchor, bookmarkTitle, bookmarkNote); bookmarkDialog = false; message = "Закладка сохранена" }, enabled = bookmarkTitle.isNotBlank()) { Text("Сохранить") } }, dismissButton = { TextButton(onClick = { bookmarkDialog = false }) { Text("Отмена") } })
-    if (sourceDialog) AlertDialog(onDismissRequest = { sourceDialog = false }, title = { Text("Источник раздела") }, text = { SelectionContainer { Text(chapter.source.ifBlank { "Источник требует редакционной сверки." }) } }, confirmButton = { TextButton(onClick = { sourceDialog = false }) { Text("Закрыть") } })
-    termDialog?.let { term -> AlertDialog(onDismissRequest = { termDialog = null }, title = { Text(term.transcript) }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { ArabicText(term.ar, settings); Text(term.definition); Text("Пояснение редакции к этому фрагменту", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }, confirmButton = { TextButton(onClick = { val id = term.sourceParagraphId; termDialog = null; onOpenParagraph(id) }) { Text("Исходный контекст") } }, dismissButton = { TextButton(onClick = { termDialog = null }) { Text("Закрыть") } }) }
+    if (sourceDialog) AlertDialog(onDismissRequest = { sourceDialog = false }, title = { Text("Источник раздела") }, text = { SelectionContainer { Text("Сведения об издании и статусе перевода приведены в разделе «О книге».") } }, confirmButton = { TextButton(onClick = { sourceDialog = false }) { Text("Закрыть") } })
+    termDialog?.let { term -> AlertDialog(onDismissRequest = { termDialog = null }, title = { Text(term.transcript) }, text = { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { Text(russianOnlyText(term.definition)); Text("Пояснение редакции к этому фрагменту", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }, confirmButton = { TextButton(onClick = { val id = term.sourceParagraphId; termDialog = null; onOpenParagraph(id) }) { Text("Исходный контекст") } }, dismissButton = { TextButton(onClick = { termDialog = null }) { Text("Закрыть") } }) }
 }
 
 @Composable
-private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingSettings, arabic: Boolean) {
+private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingSettings) {
     val sourceTitle = block.title?.takeIf { it.isNotBlank() }
     if (sourceTitle == null) {
         // The source has a section break but no heading. Rendering the word
@@ -923,12 +906,10 @@ private fun ReaderSectionCard(block: ReaderTextBlock.Section, settings: ReadingS
             Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 5.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
-            if (arabic) ArabicText(block.label, settings, Modifier.heightIn(min = 28.dp))
-            else Text(block.label.uppercase(),
+            Text(block.label.uppercase(),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary)
-            if (arabic) ArabicText(sourceTitle, settings)
-            else Text(sourceTitle, style = MaterialTheme.typography.titleMedium,
+            Text(sourceTitle, style = MaterialTheme.typography.titleMedium,
                 fontFamily = russianFamily(settings),
                 color = MaterialTheme.colorScheme.onSurface)
         }
@@ -1222,7 +1203,7 @@ private fun buildReaderDisplayRussian(paragraphs: List<Paragraph>): Map<String, 
         adjusted[current.id] = left
         adjusted[next.id] = right
     }
-    return adjusted
+    return adjusted.mapValues { (_, text) -> russianOnlyText(text) }
 }
 
 private fun needsContinuation(left: String, right: String): Boolean {

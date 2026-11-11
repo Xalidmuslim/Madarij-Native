@@ -3,7 +3,7 @@ package ru.madarij.nativeapp.data
 import java.util.Locale
 
 // Import must rebuild FTS entries when normalization changes, even if book bytes do not.
-internal const val SEARCH_INDEX_REVISION = "fts4-unicode-boundaries-v2"
+internal const val SEARCH_INDEX_REVISION = "fts5-russian-only-display-v1"
 
 internal fun normalizeSearchText(text: String): String = text.lowercase(Locale.ROOT)
     .replace(Regex("[\u064B-\u065F\u0670\u0640\u06D6-\u06ED]"), "")

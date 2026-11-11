@@ -245,7 +245,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     category = if (q.id.startsWith("book-recognition-")) "Узнайте фрагмент" else "Понимание смысла"
                 )
                 Spacer(Modifier.height(9.dp))
-                Text(q.prompt, style = MaterialTheme.typography.titleLarge)
+                Text(russianOnlyText(q.prompt), style = MaterialTheme.typography.titleLarge)
             }
             val indices=optionOrder.split(",").mapNotNull{it.toIntOrNull()}
                 .filter{it in q.options.indices}.ifEmpty {q.options.indices.toList()}
@@ -256,14 +256,14 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     onClick={answer=index},
                     enabled=!submitted && !saving,
                     modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics {
-                        contentDescription="Вариант $label. ${option.text}${if(answer==index) ". Выбран" else ""}"
+                        contentDescription="Вариант $label. ${russianOnlyText(option.text)}${if(answer==index) ". Выбран" else ""}"
                     },
                     colors=ButtonDefaults.outlinedButtonColors(
                         containerColor=if(answer==index) MaterialTheme.colorScheme.primaryContainer
                             else MaterialTheme.colorScheme.surface.copy(alpha=.35f)
                     )
                 ) {
-                    Text("$label. ${if(answer==index) "✓ " else ""}${option.text}",
+                    Text("$label. ${if(answer==index) "✓ " else ""}${russianOnlyText(option.text)}",
                         modifier=Modifier.fillMaxWidth())
                 }
             }
@@ -297,9 +297,9 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     StudyAnswerFeedback(
                         isCorrect=good,
                         detail=buildString {
-                            if(!good && correct!=null) append("Правильный вариант: ${correct.text}\n\n")
-                            append(if(good) correct?.explanation.orEmpty()
-                                else selected?.explanation.orEmpty())
+                            if(!good && correct!=null) append("Правильный вариант: ${russianOnlyText(correct.text)}\n\n")
+                            append(russianOnlyText(if(good) correct?.explanation.orEmpty()
+                                else selected?.explanation.orEmpty()))
                         },
                         onSource={onOpenParagraph(q.sourceParagraphId)},
                         onContinue={
@@ -318,8 +318,8 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     )
                     Spacer(Modifier.height(9.dp))
                     Text("Опорный фрагмент",style=MaterialTheme.typography.titleSmall)
-                    Text(q.sourceExcerpt.take(420) +
-                        if(q.sourceExcerpt.length>420) "…" else "",
+                    Text(russianOnlyText(q.sourceExcerpt).take(420) +
+                        if(russianOnlyText(q.sourceExcerpt).length>420) "…" else "",
                         style=MaterialTheme.typography.bodySmall,
                         color=MaterialTheme.colorScheme.onSurfaceVariant)
                 }
@@ -462,12 +462,12 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     style=MaterialTheme.typography.bodySmall)}
                 val exercises=repo.exercises.filter{inStudyScope(it.chapterId)}
                 if(exercise==null) {
-                    items(exercises.take(visibleExercises),key={it.id}) { e ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(11.dp)) {Text(chapterTitles[e.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(e.prompt);TextButton(onClick={exerciseId=e.id;reflection="";hintVisible=false;noteSaved=false}) {Text("Написать ответ")}}} }
+                    items(exercises.take(visibleExercises),key={it.id}) { e ->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(11.dp)) {Text(chapterTitles[e.chapterId] ?: "Раздел",style=MaterialTheme.typography.labelLarge);Text(russianOnlyText(e.prompt));TextButton(onClick={exerciseId=e.id;reflection="";hintVisible=false;noteSaved=false}) {Text("Написать ответ")}}} }
                     if(exercises.size>visibleExercises) item {TextButton(onClick={visibleExercises+=15}) {Text("Показать ещё · ${exercises.size-visibleExercises}")}}
                 }
                 else {
-                    item {Text(exercise.prompt,style=MaterialTheme.typography.titleLarge);OutlinedTextField(reflection,{reflection=it;noteSaved=false},label={Text("Ваш ответ")},modifier=Modifier.fillMaxWidth(),minLines=5)}
-                    item {Button(enabled=reflection.isNotBlank() && !noteSaved,onClick={vm.addNote(exercise.chapterId,exercise.sourceParagraphId,"Задание: ${exercise.prompt}\n\n$reflection");noteSaved=true}) {Text(if(noteSaved) "Сохранено в заметках" else "Сохранить ответ")};TextButton(enabled=reflection.trim().isNotEmpty(),onClick={hintVisible=true}) {Text("Показать ориентир после ответа")};if(hintVisible) Text(exercise.hint);TextButton(onClick={onOpenParagraph(exercise.sourceParagraphId)}) {Text("Открыть опорный абзац")};TextButton(onClick={exerciseId=""}) {Text("К заданиям")}}
+                    item {Text(russianOnlyText(exercise.prompt),style=MaterialTheme.typography.titleLarge);OutlinedTextField(reflection,{reflection=it;noteSaved=false},label={Text("Ваш ответ")},modifier=Modifier.fillMaxWidth(),minLines=5)}
+                    item {Button(enabled=reflection.isNotBlank() && !noteSaved,onClick={vm.addNote(exercise.chapterId,exercise.sourceParagraphId,"Задание: ${russianOnlyText(exercise.prompt)}\n\n$reflection");noteSaved=true}) {Text(if(noteSaved) "Сохранено в заметках" else "Сохранить ответ")};TextButton(enabled=reflection.trim().isNotEmpty(),onClick={hintVisible=true}) {Text("Показать ориентир после ответа")};if(hintVisible) Text(russianOnlyText(exercise.hint));TextButton(onClick={onOpenParagraph(exercise.sourceParagraphId)}) {Text("Открыть опорный абзац")};TextButton(onClick={exerciseId=""}) {Text("К заданиям")}}
                     items(notes.filter{it.chapterId==exercise.chapterId && it.paragraphId==exercise.sourceParagraphId},key={"note:${it.id}"}) {note ->Card {Text(note.text,Modifier.padding(16.dp))} }
                 }
             }
@@ -589,7 +589,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                                 "Узнайте фрагмент · Базовый" else levelLabel(item.level),
                                 style=MaterialTheme.typography.labelSmall,
                                 color=MaterialTheme.colorScheme.onSurfaceVariant)
-                            Text(item.prompt,style=MaterialTheme.typography.bodyLarge)
+                            Text(russianOnlyText(item.prompt),style=MaterialTheme.typography.bodyLarge)
                             attempts[item.id]?.let { a ->
                                 Text("Попыток: ${a.count} · ошибок: ${a.errors} · повторить: ${date(a.due)}",
                                     style=MaterialTheme.typography.bodySmall)
@@ -616,7 +616,7 @@ fun StudyScreen(vm: BookViewModel, onOpenParagraph: (String) -> Unit, initialCha
                     if(showFutureReviews) {
                         items(future.take(visibleQuestions),key={"future:${it.id}"}) {item ->
                             Column {
-                                Text(item.prompt,style=MaterialTheme.typography.bodySmall)
+                                Text(russianOnlyText(item.prompt),style=MaterialTheme.typography.bodySmall)
                                 Text("${date(attempts.getValue(item.id).due)}",style=MaterialTheme.typography.labelMedium)
                                 TextButton(onClick={start(item)}) {Text("Повторить раньше")}
                             }
@@ -643,6 +643,6 @@ fun GlossaryScreen(onOpenParagraph: (String) -> Unit) {
     LazyColumn(Modifier.fillMaxSize().padding(16.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp),contentPadding=PaddingValues(bottom=124.dp)) {
         item {Text("Термины",style=MaterialTheme.typography.headlineSmall);Text("Редакторские пояснения к переводу. Значение терминов уточняется по контексту и первоисточникам.");OutlinedTextField(query,{query=it},label={Text("Поиск термина")},modifier=Modifier.fillMaxWidth())}
         if(!loaded) item {Text(if(error) "Не удалось загрузить термины." else "Загрузка…")}
-        else items(repo.terms.filter{query.isBlank() || "${it.ar} ${it.transcript} ${it.definition}".contains(query,ignoreCase=true)},key={it.id}) {term->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(term.ar,fontFamily=FontFamily(Font(R.font.naskh)),fontSize=28.sp);Text(term.transcript,style=MaterialTheme.typography.titleMedium);Text(term.definition);TextButton(onClick={expanded=if(expanded==term.id) "" else term.id}) {Text(if(expanded==term.id) "Свернуть" else "Подробности и связи")};if(expanded==term.id) {Text(term.extendedDefinition);term.relatedTerms.mapNotNull{id->repo.terms.find{it.id==id}}.forEach{related->TextButton(onClick={query=related.transcript;expanded=related.id}) {Text("Связанный термин: ${related.transcript}")}}};term.sourceParagraphIds.ifEmpty{listOf(term.sourceParagraphId)}.forEachIndexed { i,pid->TextButton(onClick={onOpenParagraph(pid)}) {Text(if(i==0) "Открыть контекст" else "Другой фрагмент ${i+1}")}}}} }
+        else items(repo.terms.filter{query.isBlank() || "${it.transcript} ${it.definition}".contains(query,ignoreCase=true)},key={it.id}) {term->AgedPaperCard(Modifier.fillMaxWidth()) {Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {Text(term.transcript,style=MaterialTheme.typography.titleMedium);Text(russianOnlyText(term.definition));TextButton(onClick={expanded=if(expanded==term.id) "" else term.id}) {Text(if(expanded==term.id) "Свернуть" else "Подробности и связи")};if(expanded==term.id) {Text(russianOnlyText(term.extendedDefinition));term.relatedTerms.mapNotNull{id->repo.terms.find{it.id==id}}.forEach{related->TextButton(onClick={query=related.transcript;expanded=related.id}) {Text("Связанный термин: ${related.transcript}")}}};term.sourceParagraphIds.ifEmpty{listOf(term.sourceParagraphId)}.forEachIndexed { i,pid->TextButton(onClick={onOpenParagraph(pid)}) {Text(if(i==0) "Открыть контекст" else "Другой фрагмент ${i+1}")}}}} }
     }
 }

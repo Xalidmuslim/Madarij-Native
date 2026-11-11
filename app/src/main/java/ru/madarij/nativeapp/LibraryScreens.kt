@@ -78,14 +78,14 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
         finally {loading=false}
     }
     val ownNotes=if(filter=="note" && query.isNotBlank()) notes.filter { normalizedText(it.text).text.contains(normalizedText(query).text) } else emptyList()
-    val terms=if(filter=="term" && query.isNotBlank()) learning.terms.filter { normalizedText("${it.transcript} ${it.ar} ${it.definition}").text.contains(normalizedText(query).text) } else emptyList()
+    val terms=if(filter=="term" && query.isNotBlank()) learning.terms.filter { normalizedText("${it.transcript} ${it.definition}").text.contains(normalizedText(query).text) } else emptyList()
     val found=results.size+ownNotes.size+terms.size
     Column(Modifier.fillMaxSize().padding(horizontal=16.dp)) {
         VintageSearchField(query,{query=it},modifier=Modifier.fillMaxWidth().padding(top=8.dp),placeholder="Слово или фраза")
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(top=6.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
             listOf("all" to "Всё","title" to "Заголовки","ayat" to "Фрагменты с аятами","hadith" to "Фрагменты с хадисами","term" to "Термины","note" to "Заметки").forEach { (key,label) -> FilterChip(filter==key,{filter=key},{Text(label)},modifier=Modifier.heightIn(min=48.dp)) }
         }
-        Text(when {loading -> "Поиск…";error.isNotBlank() -> error;query.isBlank() -> "Ищите в русском и арабском тексте. Огласовки и регистр не влияют на поиск.";else -> "Найдено: $found"},Modifier.padding(vertical=7.dp),style=MaterialTheme.typography.bodyMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(when {loading -> "Поиск…";error.isNotBlank() -> error;query.isBlank() -> "Ищите по русскому переводу всех четырёх томов.";else -> "Найдено: $found"},Modifier.padding(vertical=7.dp),style=MaterialTheme.typography.bodyMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)
         if(filter=="ayat" || filter=="hadith") Text("Фильтр находит упоминания по словам исходного текста. Он не заменяет проверку цитаты и её атрибуции.",Modifier.padding(bottom=8.dp),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
         if(!loading) LazyColumn(state=state,modifier=Modifier.weight(1f),contentPadding=PaddingValues(bottom=124.dp),verticalArrangement=Arrangement.spacedBy(CompactUi.listGapDp.dp)) {
             if(query.isNotBlank() && found==0 && error.isBlank()) item { InfoCard("Ничего не найдено","Попробуйте более короткое слово, другую форму или фильтр «Всё».") }
@@ -94,14 +94,12 @@ internal fun SearchScreen(vm:BookViewModel,open:(String,String?,String)->Unit) {
                 AgedPaperCard(onClick={open(p.chapterId,p.id,if(filter=="title") "" else query)},modifier=Modifier.fillMaxWidth()) {
                     Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
                         Text(if(c==null) "Первый том" else structure.findTitle(c),style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)
-                        val arabicOnly=normalizedText(p.ar).text.contains(normalizedText(query).text) && !normalizedText(p.ru).text.contains(normalizedText(query).text)
-                        if(arabicOnly) Text(highlight(searchExcerpt(p.ar,query),query,MaterialTheme.colorScheme.primary),maxLines=5,style=textDirectionStyle(),overflow=TextOverflow.Ellipsis)
-                        else Text(highlight(searchExcerpt(p.ru,query),query,MaterialTheme.colorScheme.primary),maxLines=5,overflow=TextOverflow.Ellipsis)
+                        Text(highlight(searchExcerpt(russianOnlyText(p.ru),query),query,MaterialTheme.colorScheme.primary),maxLines=5,overflow=TextOverflow.Ellipsis)
                     }
                 }
             }
             items(ownNotes,key={"n:${it.id}"}) { n -> AgedPaperCard(onClick={open(n.chapterId,n.paragraphId,query)},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp)) {Text("Моя заметка",style=MaterialTheme.typography.labelLarge);Text(highlight(searchExcerpt(n.text,query),query,MaterialTheme.colorScheme.primary),maxLines=5,overflow=TextOverflow.Ellipsis)}} }
-            items(terms,key={"t:${it.transcript}"}) { t -> val scope=rememberCoroutineScope();AgedPaperCard(onClick={scope.launch {vm.repository.dao.paragraph(t.sourceParagraphId)?.let {open(it.chapterId,it.id,query)}}},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text("${t.transcript} · ${t.ar}",style=MaterialTheme.typography.titleMedium);Text(t.definition);Text("Открыть исходный контекст",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)}} }
+            items(terms,key={"t:${it.transcript}"}) { t -> val scope=rememberCoroutineScope();AgedPaperCard(onClick={scope.launch {vm.repository.dao.paragraph(t.sourceParagraphId)?.let {open(it.chapterId,it.id,query)}}},modifier=Modifier.fillMaxWidth()) {Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {Text(t.transcript,style=MaterialTheme.typography.titleMedium);Text(russianOnlyText(t.definition));Text("Открыть исходный контекст",style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.primary)}} }
         }
     }
 }
@@ -112,8 +110,6 @@ private fun searchExcerpt(text:String,query:String):String {
     val start=(rawIndex-60).coerceAtLeast(0);val end=(start+600).coerceAtMost(text.length)
     return (if(start>0) "…" else "")+text.substring(start,end)+(if(end<text.length) "…" else "")
 }
-
-private fun textDirectionStyle()=androidx.compose.ui.text.TextStyle(textDirection=androidx.compose.ui.text.style.TextDirection.Rtl,fontFamily=FontFamily(androidx.compose.ui.text.font.Font(R.font.naskh)))
 
 @Composable
 internal fun BookmarksScreen(vm:BookViewModel,open:(String,String?)->Unit) {
@@ -136,7 +132,7 @@ private fun BookmarkExcerpt(vm: BookViewModel, bookmark: Bookmark) {
             ?: vm.repository.dao.paragraphs(bookmark.chapterId).firstOrNull()
     }
     paragraph?.let { text ->
-        Text(text.ru, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Serif),
+        Text(russianOnlyText(text.ru), style = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Serif),
             maxLines = 3, overflow = TextOverflow.Ellipsis)
         Text("Том ${chapters.find { it.id == bookmark.chapterId }?.volume ?: "—"} · абзац ${text.ordinal + 1}", style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -411,7 +407,7 @@ internal fun AboutScreen() {
         item {InfoCard("Статус сверки томов 1–2","Том 1: литературно-смысловая сверка страниц 3–610 (644 авторских блока). Том 2: литературно-смысловая сверка страниц 3–659 (676 единиц). Часть исправлений повторно проверена ИИ. Постатейная визуальная сверка со сканами издания 2019 года и независимая научная, хадисоведческая и источниковедческая экспертиза не проводились; содержание может нуждаться в исправлениях.")}
         item {InfoCard("Современное арабское издание и права","Текст труда Ибн аль-Каййима находится в общественном достоянии по сроку охраны автора. Использовано современное арабское издание 2019 года; редакторские примечания, подготовка текста и иные современные элементы издания могут иметь самостоятельную правовую охрану. Источниковедческая и правовая проверка этих материалов до публикации необходима.")}
         item {InfoCard("Третий том","Полный рабочий перевод авторского текста: страницы 3–584, 582 страницы. Выполнены визуальная сверка с PDF 2019 года и смысловая, литературная и обратная самопроверка ИИ. Неясное место на с. 110 отмечено отдельно. Независимая человеческая редактура и полная внешняя проверка хадисов не выполнены; том не готов к публикации. Современные издательские примечания не включены.")}
-        item {InfoCard("Арабский источник",edition?.optString("source_edition").orEmpty().ifBlank {"Дар Атаат аль-Ильм / Дар Ибн Хазм, 2019"}+"\n"+edition?.optString("source_url").orEmpty())}
+        item {InfoCard("Источник издания","Использовано арабоязычное издание 2019 года. Оригинал сохранён для сверки, но не отображается в режиме чтения.\n"+edition?.optString("source_url").orEmpty())}
         item {InfoCard("Навигация и пояснения","Технические разделы для чтения не всегда совпадают с главами автора. Группы, темы и редакторские пояснения помогают ориентироваться; источник главы доступен из меню чтения. Вопросы и словарь составлены редакционно по тексту и требуют той же сверки.")}
         item {InfoCard("Четвёртый том","Авторский текст страниц 3–556 (554 страницы) включён как полный рабочий черновик. Некоторые фрагменты имеют открытые вопросы редакционной сверки; независимая человеческая редактура не выполнена. Группы в оглавлении разбиты по страницам, а не по подтверждённым авторским главам. Для публикации том не готов.")}
         item {Text("Мадаридж · Тома 1–4",style=MaterialTheme.typography.labelMedium,color=MaterialTheme.colorScheme.onSurfaceVariant)}
