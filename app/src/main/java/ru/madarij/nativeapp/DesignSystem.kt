@@ -306,17 +306,6 @@ internal fun readerStyle(value: ReadingSettings) = TextStyle(
     textAlign = when (value.alignment) { "justify" -> TextAlign.Justify; "center" -> TextAlign.Center; else -> TextAlign.Start }
 )
 
-@Composable
-internal fun ArabicText(text: String, settings: ReadingSettings, modifier: Modifier = Modifier) {
-    androidx.compose.runtime.CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
-        Text(text, modifier.fillMaxWidth(), style = TextStyle(
-            fontFamily = FontFamily(Font(if (settings.arabicFont == "alternate") R.font.arabic_naskh_alt else R.font.naskh)),
-            fontSize = settings.arabicSize.sp, lineHeight = (settings.arabicSize * 1.85f).sp,
-            textDirection = TextDirection.Rtl, textAlign = TextAlign.Start
-        ))
-    }
-}
-
 internal data class NormalizedText(val text: String, val offsets: List<Int>)
 internal fun normalizedText(value: String): NormalizedText {
     val output = StringBuilder(); val offsets = mutableListOf<Int>()
@@ -552,26 +541,6 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
             }
         }
         item {
-            HeritageSectionHeading("Арабский оригинал")
-            SettingsGroup("Арабский текст") {
-                SettingSwitch("Показывать арабский текст", value.showArabic,
-                    { update(value.copy(showArabic = it)) },
-                    "Оригинал на арабском рядом с русским переводом")
-                if (value.showArabic) {
-                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        HeritageChoice("Насх", value.arabicFont == "naskh", Modifier.weight(1f)) {
-                            update(value.copy(arabicFont = "naskh"))
-                        }
-                        HeritageChoice("Насх · второй", value.arabicFont == "alternate", Modifier.weight(1f)) {
-                            update(value.copy(arabicFont = "alternate"))
-                        }
-                    }
-                    ReadingSlider("Размер арабского текста", "${value.arabicSize.toInt()}",
-                        value.arabicSize, 20f..44f, { update(value.copy(arabicSize = it)) })
-                }
-            }
-        }
-        item {
             HeritageSectionHeading("Дополнительно")
             SettingsGroup("Настройки чтения") {
                 SettingSwitch("Примечания редакции", value.showNotes,
@@ -594,8 +563,6 @@ fun SettingsPanel(value: ReadingSettings, update: (ReadingSettings) -> Unit) {
                 Text("Чтение помогает остановиться, вдуматься и вернуться к смыслу текста.",
                     Modifier.fillMaxWidth(value.textWidth),
                     style = readerStyle(value), color = MaterialTheme.colorScheme.onSurface)
-                if(value.showArabic) ArabicText("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", value,
-                    Modifier.fillMaxWidth(value.textWidth))
             }
         }
         item { TextButton(onClick = { update(ReadingSettings()) }) { Text("Сбросить настройки") } }
