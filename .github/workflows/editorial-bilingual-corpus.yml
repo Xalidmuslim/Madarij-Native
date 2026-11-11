@@ -9,6 +9,8 @@ on:
       - 'tools/build_reviewed_bilingual.py'
       - 'tools/render_reviewed_bilingual.py'
       - 'tools/test_reviewed_bilingual.py'
+      - 'tools/prepare_russian_reader_assets.py'
+      - 'tools/test_russian_reader_assets.py'
       - '.github/workflows/editorial-bilingual-corpus.yml'
   workflow_dispatch:
 
@@ -32,6 +34,10 @@ jobs:
           python-version: '3.11'
       - name: Validate bilingual integrity and all literary corrections
         run: python3 -m unittest -v tools.test_reviewed_bilingual
+      - name: Test next APK's Russian-only assets without compiling an APK
+        run: |
+          python3 tools/build_volume4_assets.py
+          python3 -m unittest -v tools.test_russian_reader_assets
       - name: Generate full-volume bilingual JSON and offline comparison HTML
         run: |
           python3 tools/build_reviewed_bilingual.py
