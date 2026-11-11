@@ -17,8 +17,8 @@ class ReaderSearchTargetTest {
         assertTrue(readerSearchTargetExists("ВКУШЕНИЯ", "فصل", "К ним относится и ступень вкушения."))
     }
 
-    @Test fun vocalizedArabicMatchKeepsLocatorEnabled() {
-        assertTrue(readerSearchTargetExists("العلم", "العِلْم", "Знание"))
+    @Test fun ArabicSourceMatchDoesNotEnableInvisibleLocator() {
+        assertFalse(readerSearchTargetExists("العلم", "العِلْم", "Знание"))
         assertFalse(readerSearchTargetExists("   ", "العلم", "Знание"))
     }
 }
