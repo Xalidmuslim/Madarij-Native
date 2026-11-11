@@ -39,8 +39,23 @@ class NaturalPaperUiTest {
         assertTrue(frame.contains("Spacer(Modifier.width(13.dp))"))
         assertTrue(design.contains("Text(\"Aa\""))
         val home=File(root,"HomeContents.kt").readText()
-        assertTrue(home.contains("Text(\"Aa\", fontFamily = BookSerif"))
-        assertTrue(home.contains("contentDescription = \"Настройки чтения\""))
-        assertTrue(home.contains("val ink = Color(0xFF725034)"))
+        assertTrue(home.contains("painterResource(R.drawable.settings_gear_brass)"))
+        assertTrue(home.contains("contentDescription = \"Настройки\""))
+        assertTrue(home.contains("navigate(\"settings\")"))
+        assertTrue(!home.contains(".vintageFrame(VintageFrameKind.FONT_SETTINGS)"))
     }
+    @Test fun quickAccessIsFramelessTwoRowsWithSixSmallIcons() {
+        val home = File(root, "HomeContents.kt").readText()
+        val grid = home.substringAfter("item(key = \"home-quick-access\")")
+            .substringBefore("item(key = \"home-reading-stats\")")
+        assertTrue(grid.contains("HorizontalDivider"))
+        assertTrue(grid.contains("VerticalDivider"))
+        assertTrue(Regex("HomeQuickAction\\(").findAll(grid).count() == 6)
+        val quick = home.substringAfter("private fun HomeQuickAction(")
+            .substringBefore("// Printed-page labels")
+        assertTrue(quick.contains("Modifier.size(28.dp)"))
+        assertTrue(quick.contains(".clickable(onClick = onClick)"))
+        assertTrue(!quick.contains("Soft3DPanel"))
+    }
+
 }
