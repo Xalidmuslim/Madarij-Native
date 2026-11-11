@@ -115,34 +115,18 @@ internal fun HomeScreen(
                                     fontSize = 18.sp, lineHeight = 22.sp),
                                 color = Color(0xFFEFC489))
                         }
-                        Box(Modifier.size(width = 80.dp, height = 42.dp)
-                            .vintageFrame(VintageFrameKind.FONT_SETTINGS)
-                            .clickable { navigate("settings") }
-                            .semantics { contentDescription = "Настройки чтения" },
-                            contentAlignment = Alignment.Center) {
-                            Row(
-                                Modifier.fillMaxWidth().padding(horizontal = 9.dp),
-                                horizontalArrangement = Arrangement.SpaceBetween,
-                                verticalAlignment = Alignment.CenterVertically
-                            ) {
-                                Text("Aa", fontFamily = BookSerif, fontSize = 17.sp,
-                                    color = Color(0xFF533A27))
-                                androidx.compose.foundation.Canvas(
-                                    Modifier.size(width = 20.dp, height = 18.dp)
-                                ) {
-                                    val ink = Color(0xFF725034)
-                                    repeat(3) { n ->
-                                        val y = size.height * (.22f + n * .28f)
-                                        drawLine(ink, androidx.compose.ui.geometry.Offset(0f, y),
-                                            androidx.compose.ui.geometry.Offset(size.width, y),
-                                            strokeWidth = 1.35.dp.toPx())
-                                        drawCircle(ink, radius = 2.dp.toPx(),
-                                            center = androidx.compose.ui.geometry.Offset(
-                                                size.width * (if (n == 1) .72f else .34f), y
-                                            ))
-                                    }
-                                }
-                            }
+                        Box(
+                            Modifier.size(48.dp)
+                                .clickable { navigate("settings") }
+                                .semantics { contentDescription = "Настройки" },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Image(
+                                painter = painterResource(R.drawable.settings_gear_brass),
+                                contentDescription = null,
+                                modifier = Modifier.size(42.dp),
+                                contentScale = ContentScale.Fit
+                            )
                         }
                     }
                 }
@@ -207,25 +191,30 @@ internal fun HomeScreen(
                     style = MaterialTheme.typography.titleLarge.copy(fontFamily = BookSerif, fontSize = 24.sp, lineHeight = 29.sp),
                     color = BookColors.ink)
             }
-            item {
-                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    HomeAction("Оглавление", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
-                    HomeAction("Поиск", "По четырём томам", "search", Modifier.weight(1f)) { navigate("search") }
+            item(key = "home-quick-access") {
+                Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp)) {
+                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                        HomeQuickAction("Оглавление", "Главы и темы", "contents", Modifier.weight(1f)) { navigate("contents") }
+                        VerticalDivider(Modifier.height(76.dp), thickness = .7.dp,
+                            color = BookColors.gold.copy(alpha = .36f))
+                        HomeQuickAction("Поиск", "По четырём томам", "search", Modifier.weight(1f)) { navigate("search") }
+                        VerticalDivider(Modifier.height(76.dp), thickness = .7.dp,
+                            color = BookColors.gold.copy(alpha = .36f))
+                        HomeQuickAction("Изучение", "Проверки и задания", "study", Modifier.weight(1f)) { navigate("study") }
+                    }
+                    HorizontalDivider(thickness = .7.dp, color = BookColors.gold.copy(alpha = .36f))
+                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                        HomeQuickAction("Словарь", "Термины и контекст", "glossary", Modifier.weight(1f)) { navigate("glossary") }
+                        VerticalDivider(Modifier.height(76.dp), thickness = .7.dp,
+                            color = BookColors.gold.copy(alpha = .36f))
+                        HomeQuickAction("Закладки", "Сохранено · ${bookmarks.size}", "bookmarks", Modifier.weight(1f)) { navigate("bookmarks") }
+                        VerticalDivider(Modifier.height(76.dp), thickness = .7.dp,
+                            color = BookColors.gold.copy(alpha = .36f))
+                        HomeQuickAction("Заметки", "Личные записи · ${notes.size}", "notes", Modifier.weight(1f)) { navigate("notes") }
+                    }
                 }
             }
-            item {
-                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    HomeAction("Изучение", "Проверки и задания", "study", Modifier.weight(1f)) { navigate("study") }
-                    HomeAction("Словарь", "Термины и контекст", "glossary", Modifier.weight(1f)) { navigate("glossary") }
-                }
-            }
-            item {
-                Row(Modifier.padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    HomeAction("Закладки", "Сохранено · ${bookmarks.size}", "bookmarks", Modifier.weight(1f)) { navigate("bookmarks") }
-                    HomeAction("Заметки", "Личные записи · ${notes.size}", "notes", Modifier.weight(1f)) { navigate("notes") }
-                }
-            }
-            item {
+            item(key = "home-reading-stats") {
                 Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 5.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     listOf(
@@ -249,41 +238,33 @@ internal fun HomeScreen(
 }
 
 @Composable
-private fun AntiqueHomeIcon(glyph: String) {
-    // The user's generated brass-and-leather icon, not doubled vector outlines.
-    AntiqueBookIcon(glyph, Modifier.size(31.dp))
-}
-
-@Composable
-private fun HomeAction(title: String, subtitle: String, glyph: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
-    Soft3DPanel(
-        modifier = modifier.heightIn(min = 66.dp),
-        shape = RoundedCornerShape(AppRadius.medium),
-        elevation = AppElevation.level3,
-        warm = true,
-        onClick = onClick
+private fun HomeQuickAction(
+    title: String,
+    subtitle: String,
+    glyph: String,
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
+) {
+    Column(
+        modifier = modifier.heightIn(min = 98.dp)
+            .clickable(onClick = onClick)
+            .padding(horizontal = 2.dp, vertical = 8.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(3.dp)
     ) {
-        // Soft3DPanel is a BoxScope; Center anchors the ENTIRE icon/text/arrow
-        // row inside each aged-paper card instead of placing it at the top.
-        Row(
-            Modifier.align(Alignment.Center).fillMaxWidth()
-                .padding(horizontal = 9.dp, vertical = 7.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(6.dp)
-        ) {
-            AntiqueHomeIcon(glyph)
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(1.dp)) {
-                Text(title,
-                    style = MaterialTheme.typography.titleSmall.copy(
-                        fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp),
-                    color = BookColors.ink, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                Text(subtitle,
-                    style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp, lineHeight = 13.sp),
-                    color = BookColors.muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
-            }
-            Text("›", fontFamily = BookSerif, fontSize = 20.sp,
-                color = BookColors.gold.copy(alpha = .86f))
-        }
+        AntiqueBookIcon(glyph, Modifier.size(28.dp))
+        Text(
+            title, fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp,
+            color = BookColors.ink, maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+        )
+        Text(
+            subtitle, fontSize = 10.sp, lineHeight = 12.sp,
+            color = BookColors.muted, maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+        )
     }
 }
 
