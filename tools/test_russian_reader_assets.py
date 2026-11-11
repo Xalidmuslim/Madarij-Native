@@ -50,6 +50,18 @@ class RussianReaderPackagingTest(unittest.TestCase):
                     [p["id"] for c in packaged_book["chapters"] for p in c["paragraphs"]])
                 self.assertTrue(all(not p["ar"] for ch in packaged_book["chapters"]
                                     for p in ch["paragraphs"]))
+                # Removing the Arabic book must not silently disable existing
+                # verse/hadith search filters; preserve classification metadata.
+                old = {p["id"]: p for ch in source_book["chapters"] for p in ch["paragraphs"]}
+                for ch in packaged_book["chapters"]:
+                    for p in ch["paragraphs"]:
+                        original_ar = old[p["id"]]["ar"]
+                        ayat = any(marker in original_ar for marker in
+                                   ("قال تعالى", "قوله تعالى", "قال الله"))
+                        hadith = any(marker in original_ar for marker in
+                                     ("رسول الله", "النبي"))
+                        self.assertEqual(ayat, "[search:ayat]" in p["source"], p["id"])
+                        self.assertEqual(hadith, "[search:hadith]" in p["source"], p["id"])
             for asset in output.rglob("*.json"):
                 self.assertFalse(ARABIC.search(asset.read_text(encoding="utf-8")), str(asset))
             book1 = json.loads((output / "corpus.json").read_text(encoding="utf-8"))
