@@ -3,7 +3,7 @@
 
 The canonical bilingual JSON files remain in src/main/assets for Arabic
 collation and protected-hash validation. Android packages ONLY the generated
-assets. The first five Russian literary revisions are applied to the generated
+assets. All saved Russian literary batches are applied to the generated
 first volume, with strict anchors and stable paragraph/chapter identifiers.
 """
 from __future__ import annotations
@@ -14,6 +14,11 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+import sys
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.build_reviewed_bilingual import reviewed_corpus
+
 SOURCE = ROOT / "app/src/main/assets"
 DEST = ROOT / "app/build/generated/russian-only-assets"
 EDITIONS = ROOT / "research/editorial/volume1/batch01_pages003_034.json"
@@ -83,15 +88,14 @@ def apply_first_batch(book: dict, manifest: dict) -> int:
 def build(source: Path = SOURCE, target: Path = DEST, edits: Path = EDITIONS) -> dict:
     if source.resolve() == target.resolve() or source in target.parents:
         raise ValueError("Refusing to overwrite canonical bilingual originals")
-    manifest = json.loads(edits.read_text(encoding="utf-8"))
     if target.exists():
         shutil.rmtree(target)
     shutil.copytree(source, target)
     if any(not (target / name).is_file() for name in BOOKS):
         raise ValueError("Missing one of four book assets; generate volume4 before packaging")
 
-    first_volume = json.loads((target / "corpus.json").read_text(encoding="utf-8"))
-    changed = apply_first_batch(first_volume, manifest)
+    first_volume, report = reviewed_corpus(source / "corpus.json")
+    changed = sum(batch["edited_paragraphs"] for batch in report["batches"])
     paragraphs = {}
     for name in BOOKS:
         path = target / name
