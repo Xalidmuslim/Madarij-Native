@@ -17,6 +17,8 @@ data class ReadingSettings(
     fun bounded() = copy(
         theme = theme.takeIf { it in setOf("system", "light", "dark", "sepia", "sage") } ?: "system",
         paperTone = paperTone.takeIf { it in setOf("warm", "light", "sage") } ?: "warm",
+        // Previous installations may have persisted true: enforce Russian-only regardless.
+        showArabic = false,
         russianSize = russianSize.finiteOr(16f).coerceIn(14f, 36f),
         arabicSize = arabicSize.finiteOr(26f).coerceIn(20f, 44f),
         lineHeight = lineHeight.finiteOr(1.48f).coerceIn(1.3f, 2.2f),
@@ -57,7 +59,7 @@ class SettingsRepository(private val context: Context) {
         context.settingsStore.edit {
             it[theme] = v.theme; it[russian] = v.russianSize; it[arabic] = v.arabicSize
             it[line] = v.lineHeight; it[lineHeightRevision] = 1
-            it[font] = v.russianFont; it[showArabic] = v.showArabic
+            it[font] = v.russianFont; it[showArabic] = false
             it[arabicFont] = v.arabicFont; it[brightness] = v.brightness; it[motion] = v.reducedMotion
             it[showNotes] = v.showNotes; it[width] = v.textWidth; it[alignment] = v.alignment
             it[paperToneKey] = v.paperTone
