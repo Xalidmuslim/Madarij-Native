@@ -97,6 +97,19 @@ def build(source: Path = SOURCE, target: Path = DEST, edits: Path = EDITIONS) ->
         path = target / name
         book = first_volume if name == "corpus.json" else json.loads(path.read_text(encoding="utf-8"))
         original_ids = [(ch["id"], [p["id"] for p in ch["paragraphs"]]) for ch in book["chapters"]]
+        # Existing ayat/hadith filters rely on Arabic source markers.
+        # Preserve those classifications as non-Arabic metadata before
+        # stripping the original writing from the packaged book.
+        for chapter in book["chapters"]:
+            for p in chapter["paragraphs"]:
+                source_ar = p["ar"]
+                markers = []
+                if any(k in source_ar for k in ("قال تعالى", "قوله تعالى", "قال الله")):
+                    markers.append("[search:ayat]")
+                if any(k in source_ar for k in ("رسول الله", "النبي")):
+                    markers.append("[search:hadith]")
+                if markers:
+                    p["source"] += "; " + "; ".join(markers)
         book = remove_arabic(book)
         assert [(ch["id"], [p["id"] for p in ch["paragraphs"]]) for ch in book["chapters"]] == original_ids
         assert all(p["ru"].strip() and not p["ar"] for ch in book["chapters"] for p in ch["paragraphs"])
