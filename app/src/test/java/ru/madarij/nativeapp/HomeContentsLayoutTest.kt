@@ -66,7 +66,7 @@ class HomeContentsLayoutTest {
         assertTrue("The actual generated bronze artwork must be packaged", file.isFile)
         val bitmap = javax.imageio.ImageIO.read(file)
         assertTrue(bitmap != null)
-        assertTrue(bitmap.width == 256 && bitmap.height == 256)
+        assertTrue(bitmap.width == 208 && bitmap.height == 208)
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
         assertTrue(components.contains("when (symbol)"))
         assertTrue(components.contains("'↳' -> 12"))
