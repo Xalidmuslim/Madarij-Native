@@ -23,10 +23,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-/** Atlas: four columns and four rows of 52px transparent PNG tiles.
- * 0..9 are digits, tile 10 is ›, tile 11 is ⌄, tile 12 is ↳.
- * Rendered graphics are bundled locally; no per-frame gradients or network calls.
- */
+/** The common marker column keeps titles aligned for 1, 2 and 3 digit labels. */
+private val TOC_MARKER_WIDTH = 44.dp
+private const val TOC_ATLAS_TILE = 96
+
 private fun bronzeGlyphIndex(symbol: Char): Int = when (symbol) {
     in '0'..'9' -> symbol - '0'
     '›' -> 10
@@ -35,11 +35,19 @@ private fun bronzeGlyphIndex(symbol: Char): Int = when (symbol) {
     else -> -1
 }
 
+/** Text-width compensation for a single graphic and compact multi-digit numbers. */
+private fun glyphSlotWidth(count: Int): Dp = when {
+    count <= 1 -> 21.dp
+    count == 2 -> 15.dp
+    else -> 11.dp
+}
+
+/** Single uniformly rendered 384px atlas; crop away transparent tile margins. */
 @Composable
 private fun HeritageBronzeGlyph(
     label: String,
     modifier: Modifier = Modifier,
-    size: Dp = 30.dp,
+    size: Dp = TOC_MARKER_WIDTH,
     isArrow: Boolean = false
 ) {
     val glyphs = label.map(::bronzeGlyphIndex)
@@ -51,20 +59,24 @@ private fun HeritageBronzeGlyph(
     }
     val atlas = ImageBitmap.imageResource(R.drawable.toc_bronze_sprite)
     Canvas(modifier.size(size)) {
-        val count = glyphs.size
-        // Keep two-digit page/chapter numbers readable in the fixed marker column.
-        val slot = this.size.width / count
-        val widthPx = (slot * .98f).roundToInt().coerceAtLeast(1)
-        val heightPx = (this.size.height * .96f).roundToInt().coerceAtLeast(1)
-        val leftPx = ((this.size.width - widthPx * count) / 2f).roundToInt()
-        val topPx = ((this.size.height - heightPx) / 2f).roundToInt()
+        val oneWidth = glyphSlotWidth(glyphs.size).toPx()
+        val gap = if (glyphs.size > 1) .6.dp.toPx() else 0f
+        val desired = glyphs.size * oneWidth + (glyphs.size - 1) * gap
+        val fit = (this.size.width * .91f / desired).coerceAtMost(1f)
+        val glyphWidth = (oneWidth * fit).roundToInt().coerceAtLeast(1)
+        val glyphHeight = (27.dp.toPx() * fit).roundToInt().coerceAtLeast(1)
+        val spacing = (gap * fit).roundToInt()
+        val rowWidth = glyphWidth * glyphs.size + spacing * (glyphs.size - 1)
+        val firstX = ((this.size.width - rowWidth) / 2f).roundToInt()
+        val firstY = ((this.size.height - glyphHeight) / 2f).roundToInt()
         glyphs.forEachIndexed { i, index ->
             drawImage(
                 image = atlas,
-                srcOffset = IntOffset((index % 4) * 52, (index / 4) * 52),
-                srcSize = IntSize(52, 52),
-                dstOffset = IntOffset(leftPx + i * widthPx, topPx),
-                dstSize = IntSize(widthPx, heightPx),
+                srcOffset = IntOffset((index % 4) * TOC_ATLAS_TILE + 16,
+                    (index / 4) * TOC_ATLAS_TILE + 8),
+                srcSize = IntSize(64, 80),
+                dstOffset = IntOffset(firstX + i * (glyphWidth + spacing), firstY),
+                dstSize = IntSize(glyphWidth, glyphHeight),
                 filterQuality = FilterQuality.Medium
             )
         }
@@ -112,7 +124,7 @@ internal fun TocSectionRow(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(11.dp)
         ) {
-            HeritageBronzeGlyph(number.toString(), size = if (number >= 10) 38.dp else 30.dp)
+            HeritageBronzeGlyph(number.toString(), size = TOC_MARKER_WIDTH)
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 Text(
                     title,
@@ -155,10 +167,10 @@ internal fun TocChapterRow(
             horizontalArrangement = Arrangement.spacedBy(7.dp)
         ) {
             Box(
-                Modifier.size(44.dp).clickable(onClick = onToggle),
+                Modifier.size(TOC_MARKER_WIDTH).clickable(onClick = onToggle),
                 contentAlignment = Alignment.Center
             ) {
-                HeritageBronzeGlyph(marker, size = if (marker.length > 1) 38.dp else 30.dp, isArrow = marker == "↳")
+                HeritageBronzeGlyph(marker, size = TOC_MARKER_WIDTH, isArrow = marker == "↳")
             }
             Column(
                 Modifier.weight(1f).clickable(onClick = onToggle),
