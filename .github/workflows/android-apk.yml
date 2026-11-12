@@ -61,7 +61,9 @@ jobs:
         run: python3 tools/prepare_handwriting_font.py
 
       - name: Install Pillow for pre-rendered static paper assets
-        run: python3 -m pip install --user Pillow==11.3.0
+        run: python3 -m pip install --user Pillow==11.3.0 numpy==2.2.6
+      - name: Regenerate unified 3D bronze TOC atlas before compilation
+        run: python3 tools/generate_toc_bronze_sprite.py
       - name: Development signing for test-only builds
         shell: bash
         run: |
