@@ -86,7 +86,7 @@ class HomeContentsLayoutTest {
         assertTrue(components.contains("size = TOC_MARKER_WIDTH"))
         assertFalse(components.contains("size = if (number >= 10) 38.dp"))
         assertFalse(components.contains("size = if (marker.length > 1) 38.dp"))
-        assertTrue(components.contains("Box(Modifier.size(TOC_MARKER_WIDTH)"))
+        assertTrue(Regex("""Box\\(\\s*Modifier\\.size\\(TOC_MARKER_WIDTH\\)""").containsMatchIn(components))
         assertTrue(components.contains("HorizontalDivider("))
     }
 
