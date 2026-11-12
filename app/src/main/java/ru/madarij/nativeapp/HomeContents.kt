@@ -177,8 +177,7 @@ internal fun HomeScreen(
                     }) {
                     Row(Modifier.fillMaxSize().padding(horizontal=22.dp).offset(y = (-4).dp),
                         verticalAlignment=Alignment.CenterVertically) {
-                        NavigationGlyph("contents",selected=true,modifier=Modifier.size(22.dp),
-                            tint=BookColors.lightGold)
+                        ContinueReadingQuillIcon(modifier=Modifier.size(28.dp).offset(y = 4.dp))
                         Spacer(Modifier.width(11.dp))
                         Text("Продолжить чтение", Modifier.weight(1f),
                             style=MaterialTheme.typography.titleSmall.copy(
