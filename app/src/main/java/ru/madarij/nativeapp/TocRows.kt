@@ -1,20 +1,13 @@
 package ru.madarij.nativeapp
 
-import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -25,110 +18,68 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 /**
- * A small manuscript cartouche, not a circular medallion.
- * Geometry is intentionally native and reusable for any chapter number,
- * including two-digit numbers and the continuation arrow.
+ * Refined navigation-style bronze numerals, without medallions or plaques.
+ * An offset dark imprint beneath a warm metallic gradient creates the same
+ * restrained embossed depth as the bottom navigation's miniature icons.
  */
-private fun bookplatePath(width: Float, height: Float, inset: Float): Path {
-    val w = (width - inset * 2f).coerceAtLeast(1f)
-    val h = (height - inset * 2f).coerceAtLeast(1f)
-    fun x(v: Float) = inset + w * v
-    fun y(v: Float) = inset + h * v
-
-    return Path().apply {
-        moveTo(x(.19f), y(.09f))
-        lineTo(x(.38f), y(.09f))
-        quadraticBezierTo(x(.50f), y(.005f), x(.62f), y(.09f))
-        lineTo(x(.81f), y(.09f))
-        quadraticBezierTo(x(.86f), y(.09f), x(.86f), y(.15f))
-        lineTo(x(.86f), y(.22f))
-        quadraticBezierTo(x(.97f), y(.32f), x(.97f), y(.39f))
-        lineTo(x(.97f), y(.61f))
-        quadraticBezierTo(x(.97f), y(.68f), x(.86f), y(.78f))
-        lineTo(x(.86f), y(.85f))
-        quadraticBezierTo(x(.86f), y(.91f), x(.81f), y(.91f))
-        lineTo(x(.62f), y(.91f))
-        quadraticBezierTo(x(.50f), y(.995f), x(.38f), y(.91f))
-        lineTo(x(.19f), y(.91f))
-        quadraticBezierTo(x(.14f), y(.91f), x(.14f), y(.85f))
-        lineTo(x(.14f), y(.78f))
-        quadraticBezierTo(x(.03f), y(.68f), x(.03f), y(.61f))
-        lineTo(x(.03f), y(.39f))
-        quadraticBezierTo(x(.03f), y(.32f), x(.14f), y(.22f))
-        lineTo(x(.14f), y(.15f))
-        quadraticBezierTo(x(.14f), y(.09f), x(.19f), y(.09f))
-        close()
-    }
-}
-
 @Composable
-private fun HeritageBookplateBadge(
+private fun HeritageBronzeGlyph(
     label: String,
     modifier: Modifier = Modifier,
-    size: Dp = 35.dp,
+    size: Dp = 30.dp,
     isArrow: Boolean = false
 ) {
+    val fontSize = when {
+        isArrow -> 21.sp
+        label.length > 1 -> 16.sp
+        else -> 19.sp
+    }
+    val glyphStyle = MaterialTheme.typography.bodyMedium.copy(
+        fontFamily = BookSerif,
+        fontSize = fontSize,
+        lineHeight = 23.sp,
+        fontWeight = FontWeight.SemiBold,
+        platformStyle = androidx.compose.ui.text.PlatformTextStyle(includeFontPadding = false)
+    )
     Box(modifier.size(size), contentAlignment = Alignment.Center) {
-        Canvas(Modifier.fillMaxSize()) {
-            // Matte aged parchment, restrained metallic line, and a tiny inner etching.
-            // No repeated bitmap decoding, round backgrounds, gradients on the whole row,
-            // or separate geometry for the different volumes.
-            val outer = bookplatePath(this.size.width, this.size.height, 1.dp.toPx())
-            val inner = bookplatePath(this.size.width, this.size.height, 3.1.dp.toPx())
-            drawPath(
-                outer,
-                brush = Brush.verticalGradient(
-                    listOf(Color(0xFFFFE8C2), Color(0xFFE9CCA1), Color(0xFFDDB98B))
-                )
-            )
-            drawPath(outer, color = Color(0xFF926B43), style = Stroke(width = 1.dp.toPx()))
-            drawPath(
-                inner,
-                color = Color(0xFFBF9258).copy(alpha = .8f),
-                style = Stroke(width = .55.dp.toPx())
-            )
-        }
         Text(
             label,
-            style = MaterialTheme.typography.bodyMedium.copy(
-                fontFamily = BookSerif,
-                fontSize = if (isArrow) 18.sp else if (label.length > 2) 14.sp else 17.sp,
-                lineHeight = 20.sp,
-                fontWeight = FontWeight.Medium,
-                platformStyle = androidx.compose.ui.text.PlatformTextStyle(
-                    includeFontPadding = false
+            modifier = Modifier.offset(x = .6.dp, y = 1.2.dp),
+            style = glyphStyle,
+            color = Color(0xFF4C2D1A),
+            textAlign = TextAlign.Center,
+            maxLines = 1
+        )
+        Text(
+            label,
+            style = glyphStyle.copy(
+                brush = Brush.verticalGradient(
+                    listOf(Color(0xFFE4BC76), Color(0xFFA96D31), Color(0xFF80502B))
                 )
             ),
-            color = Color(0xFF4C301F),
             textAlign = TextAlign.Center,
             maxLines = 1
         )
     }
 }
 
-/** Small parchment read action – distinct from navigation, with at least 44dp hit height. */
+/** The read action remains a 44dp touch target but has no decorative frame. */
 @Composable
 private fun TocReadButton(onClick: () -> Unit) {
-    val corners = RoundedCornerShape(7.dp)
     Box(
-        Modifier.widthIn(min = 78.dp).heightIn(min = 44.dp)
-            .clip(corners)
-            .background(
-                Brush.verticalGradient(listOf(Color(0xFFFBE9CA), Color(0xFFEBD0A9))),
-                corners
-            )
-            .border(.75.dp, Color(0xFFC19B67).copy(alpha = .75f), corners)
+        Modifier.widthIn(min = 62.dp).heightIn(min = 44.dp)
             .clickable(role = Role.Button, onClick = onClick)
             .semantics { contentDescription = "Читать" }
-            .padding(horizontal = 9.dp, vertical = 5.dp),
+            .padding(horizontal = 5.dp, vertical = 5.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
             "Читать",
             style = MaterialTheme.typography.labelMedium.copy(
-                fontFamily = BookSerif, fontSize = 13.sp
+                fontFamily = BookSerif,
+                fontSize = 13.sp
             ),
-            color = Color(0xFF573B27),
+            color = Color(0xFF654326),
             maxLines = 1
         )
     }
@@ -153,7 +104,7 @@ internal fun TocSectionRow(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(11.dp)
         ) {
-            HeritageBookplateBadge(number.toString(), size = 36.dp)
+            HeritageBronzeGlyph(number.toString(), size = 30.dp)
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 Text(
                     title,
@@ -164,7 +115,7 @@ internal fun TocSectionRow(
                 )
                 Text(meta, style = MaterialTheme.typography.labelSmall, color = heritageMuted())
             }
-            HeritageBookplateBadge(if (expanded) "⌄" else "›", size = 30.dp, isArrow = true)
+            HeritageBronzeGlyph(if (expanded) "⌄" else "›", size = 30.dp, isArrow = true)
         }
         HorizontalDivider(
             thickness = .7.dp,
@@ -199,7 +150,7 @@ internal fun TocChapterRow(
                 Modifier.size(44.dp).clickable(onClick = onToggle),
                 contentAlignment = Alignment.Center
             ) {
-                HeritageBookplateBadge(marker, size = 35.dp, isArrow = marker == "↳")
+                HeritageBronzeGlyph(marker, size = 30.dp, isArrow = marker == "↳")
             }
             Column(
                 Modifier.weight(1f).clickable(onClick = onToggle),
