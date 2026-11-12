@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-/** Atlas: four columns and four rows of 64px tiles.
+/** Atlas: four columns and four rows of 52px transparent PNG tiles.
  * 0..9 are digits, tile 10 is ›, tile 11 is ⌄, tile 12 is ↳.
  * Rendered graphics are bundled locally; no per-frame gradients or network calls.
  */
@@ -61,8 +61,8 @@ private fun HeritageBronzeGlyph(
         glyphs.forEachIndexed { i, index ->
             drawImage(
                 image = atlas,
-                srcOffset = IntOffset((index % 4) * 64, (index / 4) * 64),
-                srcSize = IntSize(64, 64),
+                srcOffset = IntOffset((index % 4) * 52, (index / 4) * 52),
+                srcSize = IntSize(52, 52),
                 dstOffset = IntOffset(leftPx + i * widthPx, topPx),
                 dstSize = IntSize(widthPx, heightPx),
                 filterQuality = FilterQuality.Medium
