@@ -44,10 +44,11 @@ class HomeContentsLayoutTest {
     }
 
     @Test fun bronzeMarkerIsSharedByGroupNumbersChaptersAndContinuationArrows() {
-        val components = source.substringAfter("private fun HeritageCircleBadge(")
-            .substringBefore("internal fun ContentsScreen(")
-        assertTrue(components.contains("Brush.verticalGradient("))
-        assertTrue(components.contains("CircleShape"))
+        val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
+        val bronzeBadge = components.substringAfter("private fun HeritageCircleBadge(")
+            .substringBefore("internal fun TocSectionRow(")
+        assertTrue(bronzeBadge.contains("Brush.verticalGradient("))
+        assertTrue(bronzeBadge.contains("CircleShape"))
         assertTrue(components.contains("TocSectionRow("))
         assertTrue(components.contains("TocChapterRow("))
         assertTrue(components.contains("TocTopicRow("))
