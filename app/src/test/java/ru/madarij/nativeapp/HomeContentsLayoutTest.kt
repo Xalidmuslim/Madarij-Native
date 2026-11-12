@@ -43,18 +43,31 @@ class HomeContentsLayoutTest {
         assertTrue(bookRows.contains("groupPageLabel(group)"))
     }
 
-    @Test fun bronzeMarkerIsSharedByGroupNumbersChaptersAndContinuationArrows() {
+    @Test fun manuscriptBookplatesReplaceAllRoundBadges() {
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
-        val bronzeBadge = components.substringAfter("private fun HeritageCircleBadge(")
-            .substringBefore("internal fun TocSectionRow(")
-        assertTrue(bronzeBadge.contains("Brush.verticalGradient("))
-        assertTrue(bronzeBadge.contains("CircleShape"))
+        assertTrue(components.contains("private fun HeritageBookplateBadge("))
+        assertTrue(components.contains("private fun bookplatePath("))
+        assertTrue(components.contains("quadraticBezierTo("))
+        assertTrue(components.contains("Brush.verticalGradient("))
+        assertTrue(components.contains("Stroke(width ="))
+        assertTrue(components.contains("HeritageBookplateBadge(number.toString()"))
+        assertTrue(components.contains("HeritageBookplateBadge(marker"))
+        assertTrue(components.contains("HeritageBookplateBadge(if (expanded)"))
+        assertFalse(components.contains("HeritageCircleBadge("))
+        assertFalse(components.contains("CircleShape"))
         assertTrue(components.contains("TocSectionRow("))
         assertTrue(components.contains("TocChapterRow("))
         assertTrue(components.contains("TocTopicRow("))
-        assertTrue(components.contains("HeritageCircleBadge("))
+    }
+
+    @Test fun readingActionsMatchAntiqueReferenceWithoutReplacingRowNavigation() {
+        val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
+        assertTrue(components.contains("private fun TocReadButton("))
+        assertTrue(components.contains("Role.Button"))
+        assertTrue(components.contains("TocReadButton(onClick = onRead)"))
+        assertTrue(components.contains("onToggle"))
         assertTrue(components.contains("HorizontalDivider("))
-        assertTrue(components.contains("TextButton(onClick = onRead"))
+        assertTrue(components.contains("if (percent > 0) LinearProgressIndicator("))
     }
 
     @Test fun volumeTabsSearchAndFiltersStayOutsideRedesign() {
