@@ -43,23 +43,36 @@ class HomeContentsLayoutTest {
         assertTrue(bookRows.contains("groupPageLabel(group)"))
     }
 
-    @Test fun compactUnframedBronze3dGlyphsMatchNavigationStyling() {
+    @Test fun generatedBronzeAtlasIsUsedInsteadOfTextGradients() {
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
         val glyph = components.substringAfter("private fun HeritageBronzeGlyph(")
             .substringBefore("private fun TocReadButton(")
-        assertTrue(glyph.contains("Brush.verticalGradient("))
-        assertTrue(glyph.contains("Modifier.offset("))
-        assertTrue(glyph.contains("fontFamily = BookSerif"))
-        assertTrue(glyph.contains("size: Dp = 30.dp"))
-        assertFalse(glyph.contains("Canvas("))
+        assertTrue(glyph.contains("ImageBitmap.imageResource(R.drawable.toc_bronze_sprite)"))
+        assertTrue(glyph.contains("drawImage("))
+        assertTrue(glyph.contains("srcOffset = IntOffset("))
+        assertTrue(glyph.contains("srcSize = IntSize("))
+        assertTrue(glyph.contains("FilterQuality.Medium"))
+        assertFalse(glyph.contains("Brush.verticalGradient("))
+        assertFalse(glyph.contains("Modifier.offset("))
         assertFalse(glyph.contains(".background("))
         assertFalse(glyph.contains(".border("))
-        assertFalse(components.contains("HeritageBookplateBadge("))
-        assertFalse(components.contains("HeritageCircleBadge("))
-        assertFalse(components.contains("bookplatePath("))
         assertTrue(components.contains("HeritageBronzeGlyph(number.toString()"))
         assertTrue(components.contains("HeritageBronzeGlyph(if (expanded)"))
         assertTrue(components.contains("HeritageBronzeGlyph(marker"))
+    }
+
+    @Test fun generatedAtlasIncludesAllDigitsAndActionsForFourVolumes() {
+        val file = File("src/main/res/drawable-nodpi/toc_bronze_sprite.png")
+        assertTrue("The actual generated bronze artwork must be packaged", file.isFile)
+        val bitmap = javax.imageio.ImageIO.read(file)
+        assertTrue(bitmap != null)
+        assertTrue(bitmap.width == 256 && bitmap.height == 256)
+        val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
+        assertTrue(components.contains("when (symbol)"))
+        assertTrue(components.contains("'↳' -> 12"))
+        assertTrue(components.contains("'⌄' -> 11"))
+        assertTrue(components.contains("'›' -> 10"))
+        assertTrue(components.contains("symbol - '0'"))
     }
 
     @Test fun readingAndExpansionRemainSeparateAndUnframed() {
