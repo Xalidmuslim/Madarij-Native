@@ -68,13 +68,26 @@ class HomeContentsLayoutTest {
         assertTrue("PNG header must be present", bytes.size > 24)
         assertTrue(bytes[0] == 0x89.toByte() && bytes[1] == 0x50.toByte())
         val header = java.nio.ByteBuffer.wrap(bytes).order(java.nio.ByteOrder.BIG_ENDIAN)
-        assertTrue(header.getInt(16) == 208 && header.getInt(20) == 208)
+        assertTrue(header.getInt(16) == 384 && header.getInt(20) == 384)
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
         assertTrue(components.contains("when (symbol)"))
         assertTrue(components.contains("'↳' -> 12"))
         assertTrue(components.contains("'⌄' -> 11"))
         assertTrue(components.contains("'›' -> 10"))
         assertTrue(components.contains("symbol - '0'"))
+    }
+
+    @Test fun numbersKeepOneAlignedColumnAndNaturalDigitWidths() {
+        val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
+        assertTrue(components.contains("private val TOC_MARKER_WIDTH = 44.dp"))
+        assertTrue(components.contains("private val TOC_ATLAS_TILE = 96"))
+        assertTrue(components.contains("private fun glyphSlotWidth("))
+        assertTrue(components.contains("srcSize = IntSize(64, 80)"))
+        assertTrue(components.contains("size = TOC_MARKER_WIDTH"))
+        assertFalse(components.contains("size = if (number >= 10) 38.dp"))
+        assertFalse(components.contains("size = if (marker.length > 1) 38.dp"))
+        assertTrue(components.contains("Box(Modifier.size(TOC_MARKER_WIDTH)"))
+        assertTrue(components.contains("HorizontalDivider("))
     }
 
     @Test fun readingAndExpansionRemainSeparateAndUnframed() {
