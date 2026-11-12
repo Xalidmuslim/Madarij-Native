@@ -80,7 +80,7 @@ class HomeContentsLayoutTest {
     @Test fun numbersKeepOneAlignedColumnAndNaturalDigitWidths() {
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
         assertTrue(components.contains("private val TOC_MARKER_WIDTH = 44.dp"))
-        assertTrue(components.contains("private val TOC_ATLAS_TILE = 96"))
+        assertTrue(components.contains("private const val TOC_ATLAS_TILE = 96"))
         assertTrue(components.contains("private fun glyphSlotWidth("))
         assertTrue(components.contains("srcSize = IntSize(64, 80)"))
         assertTrue(components.contains("size = TOC_MARKER_WIDTH"))
