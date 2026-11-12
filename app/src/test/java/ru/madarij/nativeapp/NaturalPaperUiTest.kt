@@ -20,8 +20,8 @@ class NaturalPaperUiTest {
     }
     @Test fun chapterNumberAndArrowAreIndependentNativeElements() {
         val toc=File(root,"HomeContents.kt").readText()
-        assertTrue(toc.contains("HeritageManuscriptNumber("))
-        assertTrue(toc.contains("if (expanded) \"⌄\" else \"›\""))
+        assertTrue(toc.contains("TocSectionRow("))
+        assertTrue(File(root, "TocRows.kt").readText().contains("if (expanded) \"⌄\" else \"›\""))
         assertTrue(!toc.contains("Arrow is embedded"))
     }
     @Test fun menuCategoriesUseOnePaperSurface() {
