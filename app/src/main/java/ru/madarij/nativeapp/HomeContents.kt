@@ -175,14 +175,16 @@ internal fun HomeScreen(
                     .clickable(enabled=chapters.isNotEmpty()) {
                         (last?.chapterId ?: chapters.firstOrNull()?.id)?.let { open(it,null) }
                     }) {
-                    Row(Modifier.fillMaxSize().padding(horizontal=22.dp),
+                    Row(Modifier.fillMaxSize().padding(horizontal=22.dp).offset(y = (-4).dp),
                         verticalAlignment=Alignment.CenterVertically) {
                         NavigationGlyph("contents",selected=true,modifier=Modifier.size(22.dp),
                             tint=BookColors.lightGold)
                         Spacer(Modifier.width(11.dp))
-                        Text("Продолжить чтение", Modifier.weight(1f).offset(y = (-1).dp),
+                        Text("Продолжить чтение", Modifier.weight(1f),
                             style=MaterialTheme.typography.titleSmall.copy(
-                                fontFamily=BookSerif,fontSize=17.sp),color=Color(0xFFF8E7CE))
+                                fontFamily=BookSerif,fontSize=17.sp,lineHeight=20.sp,
+                                platformStyle = androidx.compose.ui.text.PlatformTextStyle(includeFontPadding = false)),
+                            color=Color(0xFFF8E7CE))
                         Text("›",style=MaterialTheme.typography.headlineSmall,color=Color(0xFFF8E7CE))
                     }
                 }
@@ -473,53 +475,22 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
             item(key = "group:${group.id}") {
                 val expanded = group.id in openedGroups || query.isNotBlank()
                 val count = group.items.count { it.chapterId in readIds }
-                Column(
-                    modifier = Modifier.fillMaxWidth().animateItem(
+                TocSectionRow(
+                    number = matching.indexOfFirst { it.id == group.id } + 1,
+                    title = groupDisplayTitle(group),
+                    meta = "$count из ${group.items.size} прочитано" +
+                        (groupPageLabel(group)?.let { " · $it" } ?: ""),
+                    expanded = expanded,
+                    modifier = Modifier.animateItem(
                         fadeInSpec = tween(if (reducedMotion) 0 else 140),
                         placementSpec = tween(if (reducedMotion) 0 else 175),
                         fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                    )
-                ) {
-                    Row(
-                        Modifier.fillMaxWidth()
-                            .clickable {
-                                openedGroups = if (group.id in openedGroups)
-                                    openedGroups - group.id else openedGroups + group.id
-                            }
-                            .heightIn(min = CompactUi.contentsGroupMinHeightDp.dp)
-                            .padding(horizontal = 11.dp, vertical = 8.dp),
-                        horizontalArrangement = Arrangement.spacedBy(10.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        HeritageManuscriptNumber(
-                            matching.indexOfFirst { it.id == group.id } + 1
-                        )
-                        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                            Text(
-                                groupDisplayTitle(group),
-                                style = MaterialTheme.typography.titleMedium.copy(
-                                    fontFamily = BookSerif, fontSize = 17.sp, lineHeight = 21.sp
-                                ),
-                                color = heritageInk()
-                            )
-                            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                Text("$count из ${group.items.size} прочитано",
-                                    style = MaterialTheme.typography.labelSmall,
-                                    color = heritageMuted())
-                                groupPageLabel(group)?.let { page ->
-                                    Text("· $page", style = MaterialTheme.typography.labelSmall,
-                                        color = heritageMuted())
-                                }
-                            }
-                        }
-                        Text(if (expanded) "⌄" else "›", fontSize = 22.sp,
-                            color = BookColors.gold, modifier = Modifier.padding(end = 4.dp))
+                    ),
+                    onClick = {
+                        openedGroups = if (group.id in openedGroups) openedGroups - group.id
+                        else openedGroups + group.id
                     }
-                    HorizontalDivider(
-                        thickness = .7.dp,
-                        color = BookColors.gold.copy(alpha = .34f)
-                    )
-                }
+                )
             }
             if (group.id in openedGroups || query.isNotBlank()) group.items.forEach { chapter ->
                 item(key = "chapter:${chapter.chapterId}") {
@@ -528,69 +499,44 @@ internal fun ContentsScreen(vm: BookViewModel, open: (String, String?) -> Unit, 
                     val sectionStartId = readingMembers.firstOrNull()?.id ?: chapter.chapterId
                     val isPageContinuation = sectionStartId != chapter.chapterId && chapter.entryParagraphId == null
                     val ordinal = LogicalReadingSections.roots(chapters).indexOfFirst { it.id == sectionStartId } + 1
-                    val light = true
-                    val ink = if (light) BookColors.ink else BookColors.text
-                    Box(Modifier.fillMaxWidth().padding(start = 12.dp).animateItem(
-                        fadeInSpec = tween(if (reducedMotion) 0 else 140),
-                        placementSpec = tween(if (reducedMotion) 0 else 175),
-                        fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                    )) {
-                        Column {
-                            Row(Modifier.fillMaxWidth().heightIn(min = 62.dp).padding(start = 10.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                                Box(Modifier.size(30.dp).clip(androidx.compose.foundation.shape.CircleShape).background(if(light) Color(0xFF9D713E) else BookColors.gold.copy(alpha = .22f)), contentAlignment = Alignment.Center) {
-                                    Text(if (isPageContinuation) "↳" else "$ordinal",
-                                        style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif),
-                                        color = Color(0xFFFFF3DC))
-                                }
-                                Column(Modifier.weight(1f).clickable { if (chapter.topics.isNotEmpty()) openedChapters = if(expanded) openedChapters - chapter.chapterId else openedChapters + chapter.chapterId else open(chapter.chapterId, chapter.entryParagraphId) }) {
-                                    if (isPageContinuation) Text("ПРОДОЛЖЕНИЕ ТЕКСТА", style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                                    Text(chapter.title, style = MaterialTheme.typography.bodyMedium.copy(fontFamily = BookSerif, fontSize = 15.sp, lineHeight = 19.sp), color = ink)
-                                    if(chapter.topics.isNotEmpty()) Text("${if(expanded) "⌄" else "›"} Содержание · ${chapter.topics.size}", style = MaterialTheme.typography.labelSmall, color = ink.copy(alpha = .7f))
-                                }
-                                TextButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }, modifier = Modifier.semantics { contentDescription = "Читать" }) { Text("Читать", style = MaterialTheme.typography.labelMedium, color = BookColors.gold) }
-                            }
-                            chapterPageLabel(chapter)?.let { page ->
-                                Text(page, modifier = Modifier.fillMaxWidth().padding(end = 12.dp, bottom = 5.dp),
-                                    textAlign = androidx.compose.ui.text.style.TextAlign.End,
-                                    style = MaterialTheme.typography.labelSmall, color = BookColors.muted)
-                            }
-                            val percent = percents[chapter.chapterId] ?: 0
-                            if(percent > 0) LinearProgressIndicator(progress = {percent / 100f}, modifier = Modifier.fillMaxWidth().height(1.dp), color = BookColors.gold, trackColor = Color.Transparent)
-                            HorizontalDivider(
-                                modifier = Modifier.padding(start = 42.dp, top = 5.dp),
-                                thickness = .7.dp,
-                                color = BookColors.gold.copy(alpha = .28f)
-                            )
-                        }
-                    }
-                }
-
-                if (chapter.chapterId in openedChapters || query.isNotBlank()) items(chapter.topics, key = { "topic:${chapter.chapterId}:${it.paragraphId}:${it.title}" }) { topic ->
-                    Column(
-                        Modifier.fillMaxWidth().animateItem(
+                    TocChapterRow(
+                        marker = if (isPageContinuation) "↳" else "$ordinal",
+                        title = chapter.title,
+                        isContinuation = isPageContinuation,
+                        topicCount = chapter.topics.size,
+                        expanded = expanded,
+                        page = chapterPageLabel(chapter),
+                        percent = percents[chapter.chapterId] ?: 0,
+                        modifier = Modifier.animateItem(
                             fadeInSpec = tween(if (reducedMotion) 0 else 140),
                             placementSpec = tween(if (reducedMotion) 0 else 175),
                             fadeOutSpec = tween(if (reducedMotion) 0 else 105)
-                        )
-                            .padding(start = 32.dp)
-                            .clickable { open(chapter.chapterId, topic.paragraphId) }
-                            .padding(horizontal = 11.dp, vertical = 9.dp),
-                        verticalArrangement = Arrangement.spacedBy(3.dp)
-                    ) {
-                        Text(
-                            if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА",
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.primary
-                        )
-                        Text(topic.title, style = MaterialTheme.typography.bodyMedium, color = heritageInk())
-                        tocPage(topic.paragraphId)?.let { page ->
-                            Text("стр. $page", modifier = Modifier.fillMaxWidth(),
-                                textAlign = androidx.compose.ui.text.style.TextAlign.End,
-                                style = MaterialTheme.typography.labelSmall, color = heritageMuted())
-                        }
-                        HorizontalDivider(
-                            thickness = .7.dp,
-                            color = BookColors.gold.copy(alpha = .24f)
+                        ),
+                        onToggle = {
+                            if (chapter.topics.isNotEmpty()) {
+                                openedChapters = if (expanded) openedChapters - chapter.chapterId
+                                else openedChapters + chapter.chapterId
+                            } else {
+                                open(chapter.chapterId, chapter.entryParagraphId)
+                            }
+                        },
+                        onRead = { open(chapter.chapterId, chapter.entryParagraphId) }
+                    )
+                }
+                if (chapter.chapterId in openedChapters || query.isNotBlank()) {
+                    items(chapter.topics,
+                        key = { "topic:${chapter.chapterId}:${it.paragraphId}:${it.title}" }
+                    ) { topic ->
+                        TocTopicRow(
+                            label = if (topic.provenance == "source_heading") "ТЕМА КНИГИ" else "ТЕМА",
+                            title = topic.title,
+                            page = tocPage(topic.paragraphId)?.let { "стр. $it" },
+                            modifier = Modifier.animateItem(
+                                fadeInSpec = tween(if (reducedMotion) 0 else 140),
+                                placementSpec = tween(if (reducedMotion) 0 else 175),
+                                fadeOutSpec = tween(if (reducedMotion) 0 else 105)
+                            ),
+                            onClick = { open(chapter.chapterId, topic.paragraphId) }
                         )
                     }
                 }
