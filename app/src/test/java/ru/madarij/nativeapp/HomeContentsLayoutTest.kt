@@ -5,39 +5,64 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 
-/** Regression checks for the approved home and contents reference. */
+/** Guard the four-volume TOC design and the optical center of the home CTA. */
 class HomeContentsLayoutTest {
     private val source = File("src/main/java/ru/madarij/nativeapp/HomeContents.kt").readText()
 
-    @Test fun settingsGearIsRaisedWithoutMovingTheBookArtwork() {
+    @Test fun settingsGearRemainsRaisedAndFunctional() {
         val homeHeader = source.substringBefore("item(key = \"knowledge-reminder\")")
         assertTrue(homeHeader.contains(".offset(y = (-24).dp)"))
         assertTrue(homeHeader.contains("painterResource(R.drawable.settings_gear_brass)"))
         assertTrue(homeHeader.contains("navigate(\"settings\")"))
     }
 
-    @Test fun continueReadingContentsAreCenteredWithinTheirOwnFrame() {
-        val continueReading = source.substringAfter("item(key = \"knowledge-reminder\")")
+    @Test fun continueReadingUsesOneOpticallyCenteredContentRow() {
+        val cta = source.substringAfter("item(key = \"knowledge-reminder\")")
             .substringBefore("item(key = \"home-quick-access\")")
-        assertTrue(continueReading.contains(".height(58.dp).vintageFrame(VintageFrameKind.DARK_WIDE)"))
-        assertTrue(continueReading.contains("Modifier.fillMaxSize().padding(horizontal=22.dp)"))
-        assertTrue(continueReading.contains("verticalAlignment=Alignment.CenterVertically"))
+        assertTrue(cta.contains(".height(58.dp).vintageFrame(VintageFrameKind.DARK_WIDE)"))
+        assertTrue(cta.contains("Modifier.fillMaxSize().padding(horizontal=22.dp)"))
+        assertTrue(cta.contains(".offset(y = (-4).dp)"))
+        assertTrue(cta.contains("verticalAlignment=Alignment.CenterVertically"))
+        assertFalse(cta.contains("Modifier.weight(1f).offset("))
+        assertTrue(cta.contains("Text(\"Продолжить чтение\""))
     }
 
-    @Test fun onlyBookSectionRowsLoseTheirFramedCards() {
+    @Test fun identicalSectionChapterAndTopicComponentsServeAllFourVolumes() {
+        val content = source.substringAfter("internal fun ContentsScreen(")
+        assertTrue(content.contains("availableVolumes.forEach { volume ->"))
+        assertTrue(content.contains("chapter.chapterId in selectedChapterIds"))
+        val bookRows = content.substringAfter("matching.forEach { group ->")
+        assertTrue(bookRows.contains("TocSectionRow("))
+        assertTrue(bookRows.contains("TocChapterRow("))
+        assertTrue(bookRows.contains("TocTopicRow("))
+        assertFalse(bookRows.contains("AgedPaperCard("))
+        assertFalse(bookRows.contains(".vintageFrame("))
+        assertTrue(bookRows.contains("open(chapter.chapterId, chapter.entryParagraphId)"))
+        assertTrue(bookRows.contains("open(chapter.chapterId, topic.paragraphId)"))
+        assertTrue(bookRows.contains("chapterPageLabel(chapter)"))
+        assertTrue(bookRows.contains("groupPageLabel(group)"))
+    }
+
+    @Test fun bronzeMarkerIsSharedByGroupNumbersChaptersAndContinuationArrows() {
+        val components = source.substringAfter("private fun HeritageCircleBadge(")
+            .substringBefore("internal fun ContentsScreen(")
+        assertTrue(components.contains("Brush.verticalGradient("))
+        assertTrue(components.contains("CircleShape"))
+        assertTrue(components.contains("TocSectionRow("))
+        assertTrue(components.contains("TocChapterRow("))
+        assertTrue(components.contains("TocTopicRow("))
+        assertTrue(components.contains("HeritageCircleBadge("))
+        assertTrue(components.contains("HorizontalDivider("))
+        assertTrue(components.contains("TextButton(onClick = onRead"))
+    }
+
+    @Test fun volumeTabsSearchAndFiltersStayOutsideRedesign() {
         val controls = source.substringAfter("internal fun ContentsScreen(")
             .substringBefore("matching.forEach { group ->")
         assertTrue(controls.contains("HeritageTocVolumeTab("))
         assertTrue(controls.contains("VintageSearchField("))
         assertTrue(controls.contains("HeritageTocFilterTab("))
         assertTrue(controls.contains("HeritageSectionHeading(\"Разделы книги\""))
-        val bookRows = source.substringAfter("matching.forEach { group ->")
-        assertFalse(bookRows.contains("VintageFrameKind.SECTION_NUMBERED"))
-        assertFalse(bookRows.contains(".vintageFrame(VintageFrameKind.LIGHT_WIDE)"))
-        assertFalse(bookRows.contains("AgedPaperCard("))
-        assertTrue(bookRows.contains("HorizontalDivider("))
-        assertTrue(bookRows.contains("HeritageManuscriptNumber("))
-        assertTrue(bookRows.contains("TextButton(onClick = { open(chapter.chapterId, chapter.entryParagraphId) }"))
-        assertTrue(bookRows.contains("open(chapter.chapterId, topic.paragraphId)"))
+        assertTrue(controls.contains("Продолжить с места остановки"))
     }
 }
