@@ -1,14 +1,20 @@
 package ru.madarij.nativeapp
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.FilterQuality
+import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntSize
+import kotlin.math.roundToInt
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
@@ -17,11 +23,18 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-/**
- * Refined navigation-style bronze numerals, without medallions or plaques.
- * An offset dark imprint beneath a warm metallic gradient creates the same
- * restrained embossed depth as the bottom navigation's miniature icons.
+/** Atlas: four columns and four rows of 64px tiles.
+ * 0..9 are digits, tile 10 is ›, tile 11 is ⌄, tile 12 is ↳.
+ * Rendered graphics are bundled locally; no per-frame gradients or network calls.
  */
+private fun bronzeGlyphIndex(symbol: Char): Int = when (symbol) {
+    in '0'..'9' -> symbol - '0'
+    '›' -> 10
+    '⌄' -> 11
+    '↳' -> 12
+    else -> -1
+}
+
 @Composable
 private fun HeritageBronzeGlyph(
     label: String,
@@ -29,37 +42,32 @@ private fun HeritageBronzeGlyph(
     size: Dp = 30.dp,
     isArrow: Boolean = false
 ) {
-    val fontSize = when {
-        isArrow -> 21.sp
-        label.length > 1 -> 16.sp
-        else -> 19.sp
+    val glyphs = label.map(::bronzeGlyphIndex)
+    if (glyphs.isEmpty() || glyphs.any { it < 0 }) {
+        Text(label, modifier = modifier.size(size),
+            fontFamily = BookSerif, fontSize = if (isArrow) 18.sp else 17.sp,
+            color = Color(0xFF724B2A), textAlign = TextAlign.Center)
+        return
     }
-    val glyphStyle = MaterialTheme.typography.bodyMedium.copy(
-        fontFamily = BookSerif,
-        fontSize = fontSize,
-        lineHeight = 23.sp,
-        fontWeight = FontWeight.SemiBold,
-        platformStyle = androidx.compose.ui.text.PlatformTextStyle(includeFontPadding = false)
-    )
-    Box(modifier.size(size), contentAlignment = Alignment.Center) {
-        Text(
-            label,
-            modifier = Modifier.offset(x = .6.dp, y = 1.2.dp),
-            style = glyphStyle,
-            color = Color(0xFF4C2D1A),
-            textAlign = TextAlign.Center,
-            maxLines = 1
-        )
-        Text(
-            label,
-            style = glyphStyle.copy(
-                brush = Brush.verticalGradient(
-                    listOf(Color(0xFFE4BC76), Color(0xFFA96D31), Color(0xFF80502B))
-                )
-            ),
-            textAlign = TextAlign.Center,
-            maxLines = 1
-        )
+    val atlas = ImageBitmap.imageResource(R.drawable.toc_bronze_sprite)
+    Canvas(modifier.size(size)) {
+        val count = glyphs.size
+        // Keep two-digit page/chapter numbers readable in the fixed marker column.
+        val slot = this.size.width / count
+        val widthPx = (slot * .98f).roundToInt().coerceAtLeast(1)
+        val heightPx = (this.size.height * .96f).roundToInt().coerceAtLeast(1)
+        val leftPx = ((this.size.width - widthPx * count) / 2f).roundToInt()
+        val topPx = ((this.size.height - heightPx) / 2f).roundToInt()
+        glyphs.forEachIndexed { i, index ->
+            drawImage(
+                image = atlas,
+                srcOffset = IntOffset((index % 4) * 64, (index / 4) * 64),
+                srcSize = IntSize(64, 64),
+                dstOffset = IntOffset(leftPx + i * widthPx, topPx),
+                dstSize = IntSize(widthPx, heightPx),
+                filterQuality = FilterQuality.Medium
+            )
+        }
     }
 }
 
@@ -104,7 +112,7 @@ internal fun TocSectionRow(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(11.dp)
         ) {
-            HeritageBronzeGlyph(number.toString(), size = 30.dp)
+            HeritageBronzeGlyph(number.toString(), size = if (number >= 10) 38.dp else 30.dp)
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                 Text(
                     title,
@@ -150,7 +158,7 @@ internal fun TocChapterRow(
                 Modifier.size(44.dp).clickable(onClick = onToggle),
                 contentAlignment = Alignment.Center
             ) {
-                HeritageBronzeGlyph(marker, size = 30.dp, isArrow = marker == "↳")
+                HeritageBronzeGlyph(marker, size = if (marker.length > 1) 38.dp else 30.dp, isArrow = marker == "↳")
             }
             Column(
                 Modifier.weight(1f).clickable(onClick = onToggle),
