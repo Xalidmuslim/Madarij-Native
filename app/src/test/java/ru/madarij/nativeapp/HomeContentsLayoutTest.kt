@@ -27,6 +27,23 @@ class HomeContentsLayoutTest {
         assertTrue(cta.contains("Text(\"Продолжить чтение\""))
     }
 
+    @Test fun resumeButtonUsesDistinctSmallBronzeQuillAndInkpotIcon() {
+        val cta = source.substringAfter("item(key = \\"knowledge-reminder\\")")
+            .substringBefore("item(key = \\"home-quick-access\\")")
+        assertTrue(cta.contains("ContinueReadingQuillIcon("))
+        assertTrue(cta.contains("Modifier.size(28.dp).offset(y = 4.dp)"))
+        assertFalse(cta.contains("NavigationGlyph(\\"contents\\",selected=true"))
+        assertTrue(cta.contains("Text(\\"Продолжить чтение\\""))
+        assertTrue(cta.contains(".height(58.dp).vintageFrame(VintageFrameKind.DARK_WIDE)"))
+        val icon = File("src/main/java/ru/madarij/nativeapp/ContinueReadingQuillIcon.kt").readText()
+        assertTrue(icon.contains("internal fun ContinueReadingQuillIcon("))
+        assertTrue(icon.contains("Canvas("))
+        assertTrue(icon.contains("Brush.verticalGradient("))
+        assertTrue(icon.contains("drawPath("))
+        assertTrue(icon.contains("drawOval("))
+        assertFalse(icon.contains("NavigationGlyph(\\"contents\\""))
+    }
+
     @Test fun identicalSectionChapterAndTopicComponentsServeAllFourVolumes() {
         val content = source.substringAfter("internal fun ContentsScreen(")
         assertTrue(content.contains("availableVolumes.forEach { volume ->"))
