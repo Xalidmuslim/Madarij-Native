@@ -50,7 +50,7 @@ class HomeContentsLayoutTest {
         assertTrue(glyph.contains("Brush.verticalGradient("))
         assertTrue(glyph.contains("Modifier.offset("))
         assertTrue(glyph.contains("fontFamily = BookSerif"))
-        assertTrue(glyph.contains("size = 30.dp"))
+        assertTrue(glyph.contains("size: Dp = 30.dp"))
         assertFalse(glyph.contains("Canvas("))
         assertFalse(glyph.contains(".background("))
         assertFalse(glyph.contains(".border("))
