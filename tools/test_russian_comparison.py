@@ -12,15 +12,15 @@ class RussianBeforeAfterTest(unittest.TestCase):
         report = collect_changes()
         self.assertEqual(report["totalSections"], 90)
         self.assertEqual(report["totalParagraphs"], 740)
-        self.assertEqual(report["reviewedSections"], 55)
-        self.assertEqual(report["corrections"], 711)
-        self.assertEqual(report["editedParagraphs"], 369)
-        self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11})
-        self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 369)
+        self.assertEqual(report["reviewedSections"], 60)
+        self.assertEqual(report["corrections"], 779)
+        self.assertEqual(report["editedParagraphs"], 396)
+        self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12})
+        self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 396)
         self.assertTrue(all(c["oldRussian"] != c["newRussian"] and c["reasons"]
                             for c in report["changes"]))
         self.assertTrue(all("ar" not in c for c in report["changes"]))
-        self.assertTrue(all(c["section"] <= 55 for c in report["changes"]))
+        self.assertTrue(all(c["section"] <= 60 for c in report["changes"]))
         changed = {c["paragraphId"]: c for c in report["changes"]}
         self.assertIn("списки Корана", changed["madarij-v1-p113-draft"]["oldRussian"])
         self.assertIn("экземпляры Корана", changed["madarij-v1-p113-draft"]["newRussian"])
@@ -54,15 +54,15 @@ class RussianBeforeAfterTest(unittest.TestCase):
             data = json.loads((out / "compare.json").read_text(encoding="utf-8"))
             page = (out / "compare.html").read_text(encoding="utf-8")
             self.assertEqual(data["changes"], report["changes"])
-            self.assertEqual(page.count('<article>'), 369)
-            self.assertEqual(page.count('<details class="batch"'), 11)
+            self.assertEqual(page.count('<article>'), 396)
+            self.assertEqual(page.count('<details class="batch"'), 12)
             self.assertIn("БЫЛО — русский перевод", page)
             self.assertIn("СТАЛО — русский перевод", page)
             self.assertIn("экземпляры Корана", page)
             self.assertIn("убудийи", page)  # highlighted spans split the exact phrase in HTML
             self.assertNotIn("Арабский оригинал", page)
             self.assertNotIn('lang="ar"', page)
-            self.assertLess(page.index('id="batch-11"'), page.index('id="batch-10"'))
+            self.assertLess(page.index('id="batch-12"'), page.index('id="batch-11"'))
 
 
 if __name__ == "__main__":
