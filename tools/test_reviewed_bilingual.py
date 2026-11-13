@@ -11,15 +11,15 @@ from tools.render_reviewed_bilingual import render
 
 
 class BilingualLiteraryCorpusTest(unittest.TestCase):
-    def test_six_batches_keep_all_source_arabic_and_unreviewed_russian(self):
+    def test_seven_batches_keep_all_source_arabic_and_unreviewed_russian(self):
         raw = SOURCE.read_bytes()
         original = json.loads(raw)
         compiled, report = reviewed_corpus()
         self.assertEqual(len(compiled["chapters"]), 90)
         self.assertEqual(sum(len(ch["paragraphs"]) for ch in compiled["chapters"]), 740)
-        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76])
-        self.assertEqual([x["edited_paragraphs"] for x in report["batches"]], [20,30,28,36,39,40])
-        self.assertEqual([x["reviewed_paragraphs"] for x in report["batches"]], [78,38,40,42,50,41])
+        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76,70])
+        self.assertEqual([x["edited_paragraphs"] for x in report["batches"]], [20,30,28,36,39,40,31])
+        self.assertEqual([x["reviewed_paragraphs"] for x in report["batches"]], [78,38,40,42,50,41,32])
         altered = []
         for i, (before, after) in enumerate(zip(original["chapters"], compiled["chapters"])):
             self.assertEqual(before["id"], after["id"])
@@ -30,9 +30,9 @@ class BilingualLiteraryCorpusTest(unittest.TestCase):
                 for key in set(a) - {"ru"}:
                     self.assertEqual(a[key], b[key], f"{a['id']}:{key}")
                 if a["ru"] != b["ru"]:
-                    self.assertLess(i, 30)
+                    self.assertLess(i, 35)
                     altered.append(a["id"])
-        self.assertEqual(len(altered), 193)
+        self.assertEqual(len(altered), 224)
         self.assertEqual(hashlib.sha256(raw).hexdigest(), report["base_source_sha256"])
         self.assertTrue(any(x["id"] == "madarij-v1-p067-draft"
                             for ch in compiled["chapters"] for x in ch["paragraphs"]))
@@ -58,7 +58,7 @@ class BilingualLiteraryCorpusTest(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             self.assertEqual(text.count('<article class="pair'), 740)
             self.assertEqual(text.count('<details id="part-'), 90)
-            self.assertEqual(text.count('Литературно просмотрено'), 30)
+            self.assertEqual(text.count('Литературно просмотрено'), 35)
             self.assertIn("فصل", text)
             self.assertIn("свидетельство о причастности к пророческому наследию", text)
             self.assertIn("Над сновидениями поставлен ангел", text)
