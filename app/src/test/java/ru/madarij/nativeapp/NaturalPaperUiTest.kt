@@ -32,6 +32,18 @@ class NaturalPaperUiTest {
         assertTrue(content.contains("heightIn(min = 61.dp)"))
         assertTrue(content.contains("HorizontalDivider"))
     }
+    @Test fun aboutBookInfoIconUsesPaddedNativeGeometryInsteadOfClippedFontGlyph() {
+        val source = File(root, "HeritageUi.kt").readText()
+        val icon = source.substringAfter("private fun HeritageMenuIcon(kind: String)")
+            .substringBefore("internal fun HeritageMenuGroup(")
+        assertTrue(icon.contains("\"about\" -> Canvas(Modifier.size(26.dp))"))
+        assertTrue(icon.contains("drawCircle("))
+        assertTrue(icon.contains("drawLine("))
+        assertTrue(icon.contains("val r = size.minDimension * .32f"))
+        assertFalse(icon.contains("Text(\"ⓘ\""))
+        assertTrue(source.contains("Box(Modifier.size(31.dp), contentAlignment = Alignment.Center)"))
+    }
+
     @Test fun searchAndFontControlsAreNotRasterizedPictograms() {
         val frame=File(root,"VintageFrame.kt").readText()
         val design=File(root,"DesignSystem.kt").readText()
