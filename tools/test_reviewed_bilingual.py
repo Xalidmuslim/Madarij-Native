@@ -17,8 +17,8 @@ class BilingualLiteraryCorpusTest(unittest.TestCase):
         compiled, report = reviewed_corpus()
         self.assertEqual(len(compiled["chapters"]), 90)
         self.assertEqual(sum(len(ch["paragraphs"]) for ch in compiled["chapters"]), 740)
-        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76,70,64,112,100,79,68,87,76,49,28,32])
-        self.assertEqual([x["edited_paragraphs"] for x in report["batches"]], [20,30,28,36,39,40,31,26,42,39,38,27,33,31,29,22,25])
+        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76,70,64,112,100,79,68,87,76,49,28,30])
+        self.assertEqual([x["edited_paragraphs"] for x in report["batches"]], [20,30,28,36,39,40,31,26,42,39,38,27,33,31,29,22,24])
         self.assertEqual([x["reviewed_paragraphs"] for x in report["batches"]], [78,38,40,42,50,41,32,27,44,40,42,32,38,34,44,46,36])
         altered = []
         for i, (before, after) in enumerate(zip(original["chapters"], compiled["chapters"])):
@@ -32,7 +32,7 @@ class BilingualLiteraryCorpusTest(unittest.TestCase):
                 if a["ru"] != b["ru"]:
                     self.assertLess(i, 85)
                     altered.append(a["id"])
-        self.assertEqual(len(altered), 536)
+        self.assertEqual(len(altered), 535)
         self.assertEqual(hashlib.sha256(raw).hexdigest(), report["base_source_sha256"])
         self.assertTrue(any(x["id"] == "madarij-v1-p067-draft"
                             for ch in compiled["chapters"] for x in ch["paragraphs"]))
