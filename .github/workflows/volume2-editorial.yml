@@ -1,0 +1,86 @@
+name: Volume 2 literary Russian comparison (no APK)
+
+on:
+  push:
+    branches:
+      - editorial/volume2-russian-literary
+    paths:
+      - 'research/editorial/volume2/**'
+      - 'tools/build_reviewed_bilingual_volume2.py'
+      - 'tools/render_volume2_editorial.py'
+      - 'tools/test_volume2_literary.py'
+      - 'tools/prepare_russian_reader_assets.py'
+      - 'tools/test_russian_reader_assets.py'
+      - '.github/workflows/volume2-editorial.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: volume2-literary-review
+  cancel-in-progress: true
+
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout canonical bilingual assets and literary manifests
+        uses: actions/checkout@v4
+      - name: Use Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify volume 2 literary scope and protected text
+        run: |
+          python3 -m unittest -v tools.test_volume2_literary
+      - name: Regression check Russian-only assets and first volume
+        run: |
+          python3 tools/build_volume4_assets.py
+          python3 -m unittest -v tools.test_russian_reader_assets tools.test_reviewed_bilingual tools.test_russian_comparison
+      - name: Generate bilingual JSON and Russian comparison files
+        run: |
+          python3 tools/build_reviewed_bilingual_volume2.py
+          python3 -m tools.render_volume2_editorial
+      - name: Verify exports and immutability of canonical source
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+          root=Path('research/editorial/volume2')
+          original=Path('app/src/main/assets/volume2-preview.json')
+          manifest=json.loads((root/'batch01_pages003_010.json').read_text())
+          assert hashlib.sha256(original.read_bytes()).hexdigest()==manifest['source_sha256']
+          old=json.loads(original.read_text(encoding='utf-8'))
+          revised=json.loads((root/'working-bilingual-corpus.json').read_text(encoding='utf-8'))
+          diff=json.loads((root/'russian-before-after.json').read_text(encoding='utf-8'))
+          assert len(old['chapters'])==len(revised['chapters'])==9
+          assert sum(len(c['paragraphs']) for c in revised['chapters'])==676
+          assert diff['reviewedParagraphs']==27
+          assert diff['corrections']==15
+          assert diff['editedParagraphs']==13
+          assert all('ar' not in item for item in diff['changes'])
+          assert sum(
+              a['ar'] != b['ar'] for ca,cb in zip(old['chapters'],revised['chapters'])
+              for a,b in zip(ca['paragraphs'],cb['paragraphs'])
+          )==0
+          assert (root/'working-bilingual-compare.html').read_text(encoding='utf-8').count('<article class="bilingual-pair">')==676
+          assert (root/'russian-before-after.html').read_text(encoding='utf-8').count('<article>')==13
+          print('PASS: source Arabic preserved; 676 bilingual pairs; 15 anchored Russian changes in 13 blocks')
+          PY
+      - name: Package review-only artifacts (without APK)
+        run: |
+          mkdir -p editorial-download
+          cp research/editorial/volume2/russian-before-after.html editorial-download/
+          cp research/editorial/volume2/russian-before-after.json editorial-download/
+          cp research/editorial/volume2/working-bilingual-corpus.json editorial-download/
+          cp research/editorial/volume2/working-bilingual-compare.html editorial-download/
+      - name: Upload literary comparison and full bilingual corpus
+        uses: actions/upload-artifact@v4
+        with:
+          name: Madarij-Volume2-Literary-Comparison-Pages003-010
+          path: editorial-download/
+          if-no-files-found: error
+          retention-days: 90

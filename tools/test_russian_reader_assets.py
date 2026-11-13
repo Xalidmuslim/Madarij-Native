@@ -125,6 +125,20 @@ class RussianReaderPackagingTest(unittest.TestCase):
                              book1["chapters"][85]["paragraphs"][0]["ru"])
             self.assertNotEqual(original["chapters"][89]["paragraphs"][0]["ru"],
                                 book1["chapters"][89]["paragraphs"][0]["ru"])
+            second = json.loads((output / "volume2-preview.json").read_text(encoding="utf-8"))
+            old_second = json.loads((SOURCE / "volume2-preview.json").read_text(encoding="utf-8"))
+            self.assertNotEqual(
+                old_second["chapters"][0]["paragraphs"][3]["ru"],
+                second["chapters"][0]["paragraphs"][3]["ru"]
+            )
+            self.assertIn(
+                "добровольно он не уступит ни одной из них",
+                second["chapters"][0]["paragraphs"][3]["ru"]
+            )
+            self.assertEqual(
+                old_second["chapters"][1]["paragraphs"][0]["ru"],
+                second["chapters"][1]["paragraphs"][0]["ru"]
+            )
             # Only the generated copy changes.
             self.assertEqual(canonical_sha, {
                 name: hashlib.sha256((SOURCE / name).read_bytes()).hexdigest()

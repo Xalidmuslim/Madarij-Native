@@ -18,6 +18,7 @@ import sys
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from tools.build_reviewed_bilingual import reviewed_corpus
+from tools.build_reviewed_bilingual_volume2 import reviewed_corpus as reviewed_volume2
 
 SOURCE = ROOT / "app/src/main/assets"
 DEST = ROOT / "app/build/generated/russian-only-assets"
@@ -99,7 +100,13 @@ def build(source: Path = SOURCE, target: Path = DEST, edits: Path = EDITIONS) ->
     paragraphs = {}
     for name in BOOKS:
         path = target / name
-        book = first_volume if name == "corpus.json" else json.loads(path.read_text(encoding="utf-8"))
+        # Apply the already approved literary changes to generated resources only.
+        if name == "corpus.json":
+            book = first_volume
+        elif name == "volume2-preview.json":
+            book, _ = reviewed_volume2(source / name)
+        else:
+            book = json.loads(path.read_text(encoding="utf-8"))
         original_ids = [(ch["id"], [p["id"] for p in ch["paragraphs"]]) for ch in book["chapters"]]
         # Existing ayat/hadith filters rely on Arabic source markers.
         # Preserve those classifications as non-Arabic metadata before
