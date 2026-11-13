@@ -58,14 +58,14 @@ jobs:
           from pathlib import Path
           data=json.loads(Path('editorial-download/russian-before-after.json').read_text())
           assert data['totalSections']==90 and data['totalParagraphs']==740
-          assert data['reviewedSections']==35 and data['editedParagraphs']==224
-          assert data['corrections']==356 and all('ar' not in c for c in data['changes'])
-          print('PASS: old and new Russian only; 224 revised paragraphs; 356 anchored edits')
+          assert data['reviewedSections']==40 and data['editedParagraphs']==250
+          assert data['corrections']==420 and all('ar' not in c for c in data['changes'])
+          print('PASS: old and new Russian only; 250 revised paragraphs; 420 anchored edits')
           PY
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume1-Russian-BeforeAfter-Sections01-35
+          name: Madarij-Volume1-Russian-BeforeAfter-Sections01-40
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90
