@@ -58,17 +58,17 @@ jobs:
           diff=json.loads((root/'russian-before-after.json').read_text(encoding='utf-8'))
           assert len(old['chapters'])==len(revised['chapters'])==9
           assert sum(len(c['paragraphs']) for c in revised['chapters'])==676
-          assert diff['reviewedParagraphs']==27
-          assert diff['corrections']==15
-          assert diff['editedParagraphs']==13
+          assert diff['reviewedParagraphs']==37
+          assert diff['corrections']==23
+          assert diff['editedParagraphs']==19
           assert all('ar' not in item for item in diff['changes'])
           assert sum(
               a['ar'] != b['ar'] for ca,cb in zip(old['chapters'],revised['chapters'])
               for a,b in zip(ca['paragraphs'],cb['paragraphs'])
           )==0
           assert (root/'working-bilingual-compare.html').read_text(encoding='utf-8').count('<article class="bilingual-pair">')==676
-          assert (root/'russian-before-after.html').read_text(encoding='utf-8').count('<article>')==13
-          print('PASS: source Arabic preserved; 676 bilingual pairs; 15 anchored Russian changes in 13 blocks')
+          assert (root/'russian-before-after.html').read_text(encoding='utf-8').count('<article>')==19
+          print('PASS: source Arabic preserved; 676 bilingual pairs; 23 anchored Russian changes in 19 blocks')
           PY
       - name: Package review-only artifacts (without APK)
         run: |
@@ -80,7 +80,7 @@ jobs:
       - name: Upload literary comparison and full bilingual corpus
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume2-Literary-Comparison-Pages003-010
+          name: Madarij-Volume2-Literary-Comparison-Pages003-020
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90

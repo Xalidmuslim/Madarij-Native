@@ -135,9 +135,13 @@ class RussianReaderPackagingTest(unittest.TestCase):
                 "добровольно он не уступит ни одной из них",
                 second["chapters"][0]["paragraphs"][3]["ru"]
             )
-            self.assertEqual(
+            self.assertNotEqual(
                 old_second["chapters"][1]["paragraphs"][0]["ru"],
                 second["chapters"][1]["paragraphs"][0]["ru"]
+            )
+            self.assertEqual(
+                old_second["chapters"][1]["paragraphs"][10]["ru"],
+                second["chapters"][1]["paragraphs"][10]["ru"]
             )
             # Only the generated copy changes.
             self.assertEqual(canonical_sha, {

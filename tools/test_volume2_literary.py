@@ -22,10 +22,10 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
         self.assertEqual(report["source_sha256"], hashlib.sha256(raw).hexdigest())
         self.assertEqual(len(revised["chapters"]), 9)
         self.assertEqual(sum(len(c["paragraphs"]) for c in revised["chapters"]), 676)
-        self.assertEqual(len(report["batches"]), 1)
-        self.assertEqual(report["reviewed_paragraphs"], 27)
-        self.assertEqual(report["replacements"], 15)
-        self.assertEqual(report["edited_paragraphs"], 13)
+        self.assertEqual(len(report["batches"]), 2)
+        self.assertEqual(report["reviewed_paragraphs"], 37)
+        self.assertEqual(report["replacements"], 23)
+        self.assertEqual(report["edited_paragraphs"], 19)
         self.assertEqual(report["batches"][0]["rejected_candidates"], 1)
         self.assertEqual(
             {k: v for k, v in original.items() if k != "chapters"},
@@ -45,9 +45,9 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
                     {k: v for k, v in q.items() if k != "ru"},
                 )
                 if p["ru"] != q["ru"]:
-                    self.assertEqual(i, 0)
+                    self.assertIn(i, (0, 1))
                     changed_ids.append(p["id"])
-        self.assertEqual(len(changed_ids), 13)
+        self.assertEqual(len(changed_ids), 19)
         self.assertEqual(SOURCE.read_bytes(), raw)
 
     def test_invalid_anchor_rejected(self):
@@ -91,13 +91,14 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
             )
             self.assertEqual(report["totalChapters"], 9)
             self.assertEqual(report["totalParagraphs"], 676)
-            self.assertEqual(report["reviewedParagraphs"], 27)
-            self.assertEqual(report["corrections"], 15)
-            self.assertEqual(report["editedParagraphs"], 13)
-            self.assertEqual(len(report["changes"]), 13)
+            self.assertEqual(report["reviewedParagraphs"], 37)
+            self.assertEqual(report["corrections"], 23)
+            self.assertEqual(report["editedParagraphs"], 19)
+            self.assertEqual(len(report["changes"]), 19)
             self.assertEqual(
-                len({r["paragraphId"] for r in report["changes"]}), 13
+                len({r["paragraphId"] for r in report["changes"]}), 19
             )
+            self.assertIn("наставить кого-либо или ввести его в заблуждение", json.loads(SOURCE.read_text(encoding="utf-8"))["chapters"][1]["paragraphs"][3]["ru"])
             self.assertTrue(all(
                 "oldRussian" in r and "newRussian" in r and r["reasons"]
                 for r in report["changes"]
@@ -105,7 +106,7 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
             self.assertTrue(all("ar" not in r for r in report["changes"]))
             russian = (dest / "ru.html").read_text(encoding="utf-8")
             bilingual = (dest / "bilingual.html").read_text(encoding="utf-8")
-            self.assertEqual(russian.count('<article>'), 13)
+            self.assertEqual(russian.count('<article>'), 19)
             self.assertEqual(bilingual.count('<article class="bilingual-pair">'), 676)
             self.assertIn('lang="ar"', bilingual)
             self.assertNotIn('lang="ar"', russian)
