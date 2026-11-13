@@ -62,7 +62,7 @@ jobs:
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume1-Bilingual-Literary-Sections01-10
+          name: Madarij-Volume1-Bilingual-Literary-Sections01-15
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90
