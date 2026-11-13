@@ -12,15 +12,15 @@ class RussianBeforeAfterTest(unittest.TestCase):
         report = collect_changes()
         self.assertEqual(report["totalSections"], 90)
         self.assertEqual(report["totalParagraphs"], 740)
-        self.assertEqual(report["reviewedSections"], 40)
-        self.assertEqual(report["corrections"], 420)
-        self.assertEqual(report["editedParagraphs"], 250)
-        self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8})
-        self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 250)
+        self.assertEqual(report["reviewedSections"], 45)
+        self.assertEqual(report["corrections"], 532)
+        self.assertEqual(report["editedParagraphs"], 292)
+        self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8, 9})
+        self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 292)
         self.assertTrue(all(c["oldRussian"] != c["newRussian"] and c["reasons"]
                             for c in report["changes"]))
         self.assertTrue(all("ar" not in c for c in report["changes"]))
-        self.assertTrue(all(c["section"] <= 40 for c in report["changes"]))
+        self.assertTrue(all(c["section"] <= 45 for c in report["changes"]))
         changed = {c["paragraphId"]: c for c in report["changes"]}
         self.assertIn("списки Корана", changed["madarij-v1-p113-draft"]["oldRussian"])
         self.assertIn("экземпляры Корана", changed["madarij-v1-p113-draft"]["newRussian"])
@@ -32,6 +32,9 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertIn("действительного внешнего существования", changed["madarij-v1-p233-draft"]["newRussian"])
         self.assertIn("Он един по Своей сущности", changed["madarij-v1-p242-draft"]["newRussian"])
         self.assertIn("тауба находится между двумя самоотчётами", changed["madarij-v1-p259-draft"]["newRussian"])
+        self.assertIn("Стоянка таубы сопровождает начало пути", changed["madarij-v1-p274-draft"]["newRussian"])
+        self.assertIn("Сущность таубы включает три составляющие", changed["madarij-v1-p280-draft"]["newRussian"])
+        self.assertIn("когда задеты его собственные права", changed["madarij-v1-p306-draft"]["newRussian"])
 
     def test_diff_marks_old_and_new_text_without_losing_words(self):
         before, after = highlighted("Это был прежний текст.", "Это стал новый текст.")
@@ -48,15 +51,15 @@ class RussianBeforeAfterTest(unittest.TestCase):
             data = json.loads((out / "compare.json").read_text(encoding="utf-8"))
             page = (out / "compare.html").read_text(encoding="utf-8")
             self.assertEqual(data["changes"], report["changes"])
-            self.assertEqual(page.count('<article>'), 250)
-            self.assertEqual(page.count('<details class="batch"'), 8)
+            self.assertEqual(page.count('<article>'), 292)
+            self.assertEqual(page.count('<details class="batch"'), 9)
             self.assertIn("БЫЛО — русский перевод", page)
             self.assertIn("СТАЛО — русский перевод", page)
             self.assertIn("экземпляры Корана", page)
             self.assertIn("убудийи", page)  # highlighted spans split the exact phrase in HTML
             self.assertNotIn("Арабский оригинал", page)
             self.assertNotIn('lang="ar"', page)
-            self.assertLess(page.index('id="batch-8"'), page.index('id="batch-7"'))
+            self.assertLess(page.index('id="batch-9"'), page.index('id="batch-8"'))
 
 
 if __name__ == "__main__":
