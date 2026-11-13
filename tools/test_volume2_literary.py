@@ -53,7 +53,7 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
     def test_invalid_anchor_rejected(self):
         with tempfile.TemporaryDirectory() as folder:
             manifest = json.loads(
-                next(MANIFEST_DIR.glob("batch[0-9][0-9]_pages*.json")).read_text()
+                (MANIFEST_DIR / "batch01_pages003_010.json").read_text()
             )
             manifest["replacements"][0]["find"] = "Фраза, отсутствующая в источнике."
             temp = Path(folder)
@@ -66,7 +66,7 @@ class Volume2LiteraryReviewTest(unittest.TestCase):
     def test_quoted_text_cannot_be_edited(self):
         with tempfile.TemporaryDirectory() as folder:
             manifest = json.loads(
-                next(MANIFEST_DIR.glob("batch[0-9][0-9]_pages*.json")).read_text()
+                (MANIFEST_DIR / "batch01_pages003_010.json").read_text()
             )
             manifest["replacements"].append({
                 "paragraphId": "madarij-v2-p005-05",
