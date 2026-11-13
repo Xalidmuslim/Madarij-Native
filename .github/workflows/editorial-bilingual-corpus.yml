@@ -53,6 +53,8 @@ jobs:
           mkdir -p editorial-download
           cp research/editorial/volume1/russian-before-after.html editorial-download/
           cp research/editorial/volume1/russian-before-after.json editorial-download/
+          cp research/editorial/volume1/working-bilingual-corpus.json editorial-download/
+          cp research/editorial/volume1/working-bilingual-compare.html editorial-download/
           python3 - <<'PY'
           import json
           from pathlib import Path
@@ -60,12 +62,19 @@ jobs:
           assert data['totalSections']==90 and data['totalParagraphs']==740
           assert data['reviewedSections']==45 and data['editedParagraphs']==292
           assert data['corrections']==532 and all('ar' not in c for c in data['changes'])
-          print('PASS: old and new Russian only; 292 revised paragraphs; 532 anchored edits')
+          book=json.loads(Path('editorial-download/working-bilingual-corpus.json').read_text())
+          assert len(book['chapters'])==90
+          assert sum(len(c['paragraphs']) for c in book['chapters'])==740
+          assert all(p['ar'] for c in book['chapters'] for p in c['paragraphs'] if p['role']!='editor_note')
+          html=Path('editorial-download/working-bilingual-compare.html').read_text()
+          assert html.count('<article class="pair')==740
+          assert '<div class="ar" lang="ar"' in html
+          print('PASS: Russian before/after plus full bilingual first volume; 292 revised paragraphs; 532 anchored edits')
           PY
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume1-Russian-BeforeAfter-Sections01-45
+          name: Madarij-Volume1-Bilingual-and-Russian-Comparison-Sections01-45
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90
