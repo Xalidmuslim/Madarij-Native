@@ -60,8 +60,8 @@ jobs:
           from pathlib import Path
           data=json.loads(Path('editorial-download/russian-before-after.json').read_text())
           assert data['totalSections']==90 and data['totalParagraphs']==740
-          assert data['reviewedSections']==65 and data['editedParagraphs']==429
-          assert data['corrections']==866 and all('ar' not in c for c in data['changes'])
+          assert data['reviewedSections']==70 and data['editedParagraphs']==460
+          assert data['corrections']==942 and all('ar' not in c for c in data['changes'])
           book=json.loads(Path('editorial-download/working-bilingual-corpus.json').read_text())
           assert len(book['chapters'])==90
           assert sum(len(c['paragraphs']) for c in book['chapters'])==740
@@ -69,12 +69,12 @@ jobs:
           html=Path('editorial-download/working-bilingual-compare.html').read_text()
           assert html.count('<article class="pair')==740
           assert '<div class="ar" lang="ar"' in html
-          print('PASS: Russian before/after plus full bilingual first volume; 429 revised paragraphs; 866 anchored edits')
+          print('PASS: Russian before/after plus full bilingual first volume; 460 revised paragraphs; 942 anchored edits')
           PY
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume1-Bilingual-and-Russian-Comparison-Sections01-65
+          name: Madarij-Volume1-Bilingual-and-Russian-Comparison-Sections01-70
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90
