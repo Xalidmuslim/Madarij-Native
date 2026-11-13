@@ -249,8 +249,25 @@ private fun HeritageMenuIcon(kind: String) {
                     strokeWidth=3.3.dp.toPx(),cap=StrokeCap.Round)
             }
         }
-        "about" -> Text("ⓘ",fontSize=26.sp,color=BookColors.gold,
-            fontFamily=BookSerif)
+        "about" -> Canvas(Modifier.size(26.dp)) {
+            // The original font's circled-i glyph overflowed its 31dp menu slot.
+            // Native geometry stays entirely within this canvas at every font scale.
+            val bronze = BookColors.gold
+            val c = Offset(size.width / 2f, size.height / 2f)
+            val r = size.minDimension * .32f
+            drawCircle(bronze, radius = r, center = c, style = Stroke(1.6.dp.toPx()))
+            drawCircle(
+                bronze, radius = 1.25.dp.toPx(),
+                center = Offset(c.x, c.y - r * .45f)
+            )
+            drawLine(
+                bronze,
+                start = Offset(c.x, c.y - r * .09f),
+                end = Offset(c.x, c.y + r * .49f),
+                strokeWidth = 1.8.dp.toPx(),
+                cap = StrokeCap.Round
+            )
+        }
         else -> NavigationGlyph(kind, modifier=Modifier.size(26.dp), tint=BookColors.gold)
     }
 }
