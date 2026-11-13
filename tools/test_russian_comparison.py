@@ -49,7 +49,7 @@ class RussianBeforeAfterTest(unittest.TestCase):
             self.assertIn("БЫЛО — русский перевод", page)
             self.assertIn("СТАЛО — русский перевод", page)
             self.assertIn("экземпляры Корана", page)
-            self.assertIn("В знании различаются две степени убудийи", page)
+            self.assertIn("убудийи", page)  # highlighted spans split the exact phrase in HTML
             self.assertNotIn("Арабский оригинал", page)
             self.assertNotIn('lang="ar"', page)
             self.assertLess(page.index('id="batch-5"'), page.index('id="batch-4"'))
