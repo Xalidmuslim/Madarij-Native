@@ -1,6 +1,7 @@
 package ru.madarij.nativeapp
 
 import org.junit.Assert.assertTrue
+import org.junit.Assert.assertFalse
 import org.junit.Test
 import java.io.File
 
