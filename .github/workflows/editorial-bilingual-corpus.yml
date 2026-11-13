@@ -1,4 +1,4 @@
-name: Literary Arabic-Russian corpus (no APK)
+name: Literary Russian before-after review (no APK)
 
 on:
   push:
@@ -9,6 +9,8 @@ on:
       - 'tools/build_reviewed_bilingual.py'
       - 'tools/render_reviewed_bilingual.py'
       - 'tools/test_reviewed_bilingual.py'
+      - 'tools/render_russian_changes.py'
+      - 'tools/test_russian_comparison.py'
       - 'tools/prepare_russian_reader_assets.py'
       - 'tools/test_russian_reader_assets.py'
       - '.github/workflows/editorial-bilingual-corpus.yml'
@@ -32,8 +34,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Validate bilingual integrity and all literary corrections
-        run: python3 -m unittest -v tools.test_reviewed_bilingual
+      - name: Validate all editorial changes and Russian before-after comparison
+        run: python3 -m unittest -v tools.test_reviewed_bilingual tools.test_russian_comparison
       - name: Test next APK's Russian-only assets without compiling an APK
         run: |
           python3 tools/build_volume4_assets.py
@@ -42,27 +44,28 @@ jobs:
         run: |
           python3 tools/build_reviewed_bilingual.py
           python3 -m tools.render_reviewed_bilingual
+      - name: Generate Russian before-after JSON and offline HTML
+        run: python3 -m tools.render_russian_changes
       - name: Package comparison files only (never compile Android)
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p editorial-download
-          cp research/editorial/volume1/working-bilingual-corpus.json editorial-download/
-          cp research/editorial/volume1/working-bilingual-compare.html editorial-download/
+          cp research/editorial/volume1/russian-before-after.html editorial-download/
+          cp research/editorial/volume1/russian-before-after.json editorial-download/
           python3 - <<'PY'
           import json
           from pathlib import Path
-          data=json.loads(Path('editorial-download/working-bilingual-corpus.json').read_text())
-          assert len(data['chapters'])==90
-          assert sum(len(ch['paragraphs']) for ch in data['chapters'])==740
-          assert all(p['ar'] and p['ru'] for ch in data['chapters']
-                     for p in ch['paragraphs'] if p['role']!='editor_note')
-          print('PASS: all 90 sections, 740 paragraph IDs, original Arabic and edited Russian')
+          data=json.loads(Path('editorial-download/russian-before-after.json').read_text())
+          assert data['totalSections']==90 and data['totalParagraphs']==740
+          assert data['reviewedSections']==20 and data['editedParagraphs']==114
+          assert data['corrections']==144 and all('ar' not in c for c in data['changes'])
+          print('PASS: old and new Russian only; 114 revised paragraphs; 144 anchored edits')
           PY
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
         with:
-          name: Madarij-Volume1-Bilingual-Literary-Sections01-15
+          name: Madarij-Volume1-Russian-BeforeAfter-Sections01-20
           path: editorial-download/
           if-no-files-found: error
           retention-days: 90
