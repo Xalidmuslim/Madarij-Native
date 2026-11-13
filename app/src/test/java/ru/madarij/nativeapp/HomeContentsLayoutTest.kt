@@ -107,6 +107,17 @@ class HomeContentsLayoutTest {
         assertTrue(components.contains("HorizontalDivider("))
     }
 
+    @Test fun bronzeNumbersAreCompactWhileArrowsKeepTheirPreviousScale() {
+        val glyphs = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
+        assertTrue(glyphs.contains("count <= 1 -> 17.dp"))
+        assertTrue(glyphs.contains("count == 2 -> 15.dp"))
+        assertTrue(glyphs.contains("else -> 10.dp"))
+        assertTrue(glyphs.contains("if (isArrow) 27.dp"))
+        assertTrue(glyphs.contains("else if (glyphs.size > 1) 21.dp else 22.dp"))
+        assertTrue(glyphs.contains("private val TOC_MARKER_WIDTH = 44.dp"))
+        assertTrue(glyphs.contains("dstSize = IntSize(glyphWidth, glyphHeight)"))
+    }
+
     @Test fun readingAndExpansionRemainSeparateAndUnframed() {
         val components = File("src/main/java/ru/madarij/nativeapp/TocRows.kt").readText()
         val readButton = components.substringAfter("private fun TocReadButton(")
