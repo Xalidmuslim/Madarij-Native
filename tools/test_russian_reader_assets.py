@@ -70,7 +70,7 @@ class RussianReaderPackagingTest(unittest.TestCase):
             self.assertIn("высеченными кирками человеческих мнений",
                           first["madarij-v1-opening-011"])
             self.assertIn("Первое доказательство", first["madarij-v1-fatiha-006"])
-            # All five approved batches have been included, but later sections
+            # All six approved batches have been included, but later sections
             # receive no unapproved Russian literary changes.
             self.assertIn("возвышеннейшая из просьб",
                           book1["chapters"][5]["paragraphs"][0]["ru"])
@@ -87,8 +87,12 @@ class RussianReaderPackagingTest(unittest.TestCase):
                                 book1["chapters"][20]["paragraphs"][0]["ru"])
             self.assertIn("По их мнению, поклонение совершается лишь потому",
                           book1["chapters"][20]["paragraphs"][0]["ru"])
-            self.assertEqual(original["chapters"][25]["paragraphs"][0]["ru"],
-                             book1["chapters"][25]["paragraphs"][0]["ru"])
+            self.assertNotEqual(original["chapters"][25]["paragraphs"][0]["ru"],
+                                book1["chapters"][25]["paragraphs"][0]["ru"])
+            self.assertIn("Другая группа утверждала",
+                          book1["chapters"][25]["paragraphs"][0]["ru"])
+            self.assertEqual(original["chapters"][30]["paragraphs"][0]["ru"],
+                             book1["chapters"][30]["paragraphs"][0]["ru"])
             # Only the generated copy changes.
             self.assertEqual(canonical_sha, {
                 name: hashlib.sha256((SOURCE / name).read_bytes()).hexdigest()
