@@ -37,9 +37,9 @@ private fun bronzeGlyphIndex(symbol: Char): Int = when (symbol) {
 
 /** Text-width compensation for a single graphic and compact multi-digit numbers. */
 private fun glyphSlotWidth(count: Int): Dp = when {
-    count <= 1 -> 21.dp
-    count == 2 -> 18.dp
-    else -> 12.dp
+    count <= 1 -> 17.dp
+    count == 2 -> 15.dp
+    else -> 10.dp
 }
 
 /** Single uniformly rendered 384px atlas; crop away transparent tile margins. */
@@ -64,7 +64,7 @@ private fun HeritageBronzeGlyph(
         val desired = glyphs.size * oneWidth + (glyphs.size - 1) * gap
         val fit = (this.size.width * .91f / desired).coerceAtMost(1f)
         val glyphWidth = (oneWidth * fit).roundToInt().coerceAtLeast(1)
-        val glyphHeight = ((if (glyphs.size > 1) 25.dp else 27.dp).toPx() * fit)
+        val glyphHeight = ((if (isArrow) 27.dp else if (glyphs.size > 1) 21.dp else 22.dp).toPx() * fit)
             .roundToInt().coerceAtLeast(1)
         val spacing = (gap * fit).roundToInt()
         val rowWidth = glyphWidth * glyphs.size + spacing * (glyphs.size - 1)
