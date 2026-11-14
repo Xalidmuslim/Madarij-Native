@@ -39,6 +39,22 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertIn("Настоящий муж", changed["madarij-v1-p311-draft"]["newRussian"])
         self.assertIn("которому ничто не подобно", changed["madarij-v1-p339-draft"]["newRussian"])
 
+    def test_preserve_exact_citation_and_causal_necessity(self):
+        """The literary pass must not paraphrase protected quotations or soften causality."""
+        changes = {entry["paragraphId"]: entry for entry in collect_changes()["changes"]}
+        self.assertIn(
+            "«От негодования можно избавиться лишь посредством довольства»",
+            changes["madarij-v1-p169-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "предопределил грех причиной, требующей своего следствия — наказания",
+            changes["madarij-v1-p341-draft"]["newRussian"],
+        )
+        self.assertNotIn(
+            "может следовать наказание",
+            changes["madarij-v1-p341-draft"]["newRussian"],
+        )
+
     def test_diff_marks_old_and_new_text_without_losing_words(self):
         before, after = highlighted("Это был прежний текст.", "Это стал новый текст.")
         self.assertIn("removed", before)
