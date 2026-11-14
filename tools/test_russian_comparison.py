@@ -55,6 +55,30 @@ class RussianBeforeAfterTest(unittest.TestCase):
             changes["madarij-v1-p341-draft"]["newRussian"],
         )
 
+    def test_literary_edit_preserves_author_details_on_pages_300_329_333_334(self):
+        """Do not drop independent clauses, qualified assertions, or theological contrasts."""
+        changes = {entry["paragraphId"]: entry for entry in collect_changes()["changes"]}
+        self.assertIn(
+            "совершит против тебя преступление",
+            changes["madarij-v1-p300-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "их умы слишком слабы, чтобы вместить это",
+            changes["madarij-v1-p329-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "повинуется и служит ему",
+            changes["madarij-v1-p333-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "благости, благодеяния и щедрости",
+            changes["madarij-v1-p334-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "гнева, отмщения и наказания",
+            changes["madarij-v1-p334-draft"]["newRussian"],
+        )
+
     def test_diff_marks_old_and_new_text_without_losing_words(self):
         before, after = highlighted("Это был прежний текст.", "Это стал новый текст.")
         self.assertIn("removed", before)
