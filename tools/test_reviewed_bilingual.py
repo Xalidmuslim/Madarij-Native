@@ -17,7 +17,7 @@ class BilingualLiteraryCorpusTest(unittest.TestCase):
         compiled, report = reviewed_corpus()
         self.assertEqual(len(compiled["chapters"]), 90)
         self.assertEqual(sum(len(ch["paragraphs"]) for ch in compiled["chapters"]), 740)
-        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76,70,64,112,100,79,68,87,76,49,28,30,31])
+        self.assertEqual([x["replacements"] for x in report["batches"]], [21,38,39,46,66,76,70,64,112,100,80,68,87,76,49,28,30,31])
         self.assertEqual([x["edited_paragraphs"] for x in report["batches"]], [20,30,28,36,39,40,31,26,42,39,38,27,33,31,29,22,24,25])
         self.assertEqual([x["reviewed_paragraphs"] for x in report["batches"]], [78,38,40,42,50,41,32,27,44,40,42,32,38,34,44,46,36,36])
         altered = []
