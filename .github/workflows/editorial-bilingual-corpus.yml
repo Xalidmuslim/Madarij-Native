@@ -61,7 +61,7 @@ jobs:
           data=json.loads(Path('editorial-download/russian-before-after.json').read_text())
           assert data['totalSections']==90 and data['totalParagraphs']==740
           assert data['reviewedSections']==90 and data['editedParagraphs']==560
-          assert data['corrections']==1081 and all('ar' not in c for c in data['changes'])
+          assert data['corrections']==1084 and all('ar' not in c for c in data['changes'])
           book=json.loads(Path('editorial-download/working-bilingual-corpus.json').read_text())
           assert len(book['chapters'])==90
           assert sum(len(c['paragraphs']) for c in book['chapters'])==740
@@ -69,7 +69,7 @@ jobs:
           html=Path('editorial-download/working-bilingual-compare.html').read_text()
           assert html.count('<article class="pair')==740
           assert '<div class="ar" lang="ar"' in html
-          print('PASS: Russian before/after plus full bilingual first volume; 560 revised paragraphs; 1081 anchored edits')
+          print('PASS: Russian before/after plus full bilingual first volume; 560 revised paragraphs; 1084 anchored edits')
           PY
       - name: Upload full first volume for direct comparison
         uses: actions/upload-artifact@v4
