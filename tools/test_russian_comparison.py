@@ -91,6 +91,27 @@ class RussianBeforeAfterTest(unittest.TestCase):
             changes["madarij-v1-p202-draft"]["newRussian"],
         )
 
+    def test_owner_approved_three_page_resolutions(self):
+        """Respect owner review of pages 317, 361, 567 without touching other prose."""
+        changes = {row["paragraphId"]: row for row in collect_changes()["changes"]}
+        self.assertIn(
+            "Эти два состояния так же далеки друг от друга, как небо от земли.",
+            changes["madarij-v1-p317-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "Достаточно ли суждения разума, чтобы за добрый поступок полагалась награда, а за дурной — наказание? "
+            "И следует ли воздаяние уже на этом основании или лишь в силу шариата?",
+            changes["madarij-v1-p361-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "как сам оказался пленником, ковыляющим в оковах среди тех шатров",
+            changes["madarij-v1-p567-draft"]["newRussian"],
+        )
+        self.assertNotIn(
+            "как оно оказалось пленником",
+            changes["madarij-v1-p567-draft"]["newRussian"],
+        )
+
     def test_diff_marks_old_and_new_text_without_losing_words(self):
         before, after = highlighted("Это был прежний текст.", "Это стал новый текст.")
         self.assertIn("removed", before)
