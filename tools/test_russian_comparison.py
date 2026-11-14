@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from tools.render_russian_changes import build, collect_changes, highlighted, render
+from tools.build_reviewed_bilingual import reviewed_corpus
 
 
 class RussianBeforeAfterTest(unittest.TestCase):
@@ -13,7 +14,7 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertEqual(report["totalSections"], 90)
         self.assertEqual(report["totalParagraphs"], 740)
         self.assertEqual(report["reviewedSections"], 90)
-        self.assertEqual(report["corrections"], 1080)
+        self.assertEqual(report["corrections"], 1081)
         self.assertEqual(report["editedParagraphs"], 560)
         self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18})
         self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 560)
@@ -110,6 +111,27 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertNotIn(
             "как оно оказалось пленником",
             changes["madarij-v1-p567-draft"]["newRussian"],
+        )
+
+    def test_owner_approved_deferred_readings_pages_317_361_567(self):
+        """Keep the approved distance simile, clarify recompense, preserve the human captive."""
+        rows = {entry["paragraphId"]: entry for entry in collect_changes()["changes"]}
+        self.assertIn(
+            "Эти два состояния так же далеки друг от друга, как небо от земли.",
+            rows["madarij-v1-p317-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "Достаточно ли суждения разума, чтобы за добрый поступок полагалась награда, а за дурной — наказание?",
+            rows["madarij-v1-p361-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "И следует ли воздаяние уже на этом основании или лишь в силу шариата?",
+            rows["madarij-v1-p361-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "как сам оказался пленником",
+            rows["madarij-v1-p567-draft"]["newRussian"] if "madarij-v1-p567-draft" in rows else
+            next(p["ru"] for chapter in reviewed_corpus()[0]["chapters"] for p in chapter["paragraphs"] if p["id"] == "madarij-v1-p567-draft"),
         )
 
     def test_diff_marks_old_and_new_text_without_losing_words(self):
