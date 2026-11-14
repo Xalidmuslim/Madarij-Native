@@ -13,7 +13,7 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertEqual(report["totalSections"], 90)
         self.assertEqual(report["totalParagraphs"], 740)
         self.assertEqual(report["reviewedSections"], 90)
-        self.assertEqual(report["corrections"], 1081)
+        self.assertEqual(report["corrections"], 1084)
         self.assertEqual(report["editedParagraphs"], 560)
         self.assertEqual({c["batch"] for c in report["changes"]}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18})
         self.assertEqual(len({c["paragraphId"] for c in report["changes"]}), 560)
@@ -110,6 +110,26 @@ class RussianBeforeAfterTest(unittest.TestCase):
         self.assertNotIn(
             "как оно оказалось пленником",
             changes["madarij-v1-p567-draft"]["newRussian"],
+        )
+
+    def test_necessary_consequence_not_rewritten_as_prior_condition(self):
+        """The Arabic logical pair الملزوم / لازمه is not a cause/condition inversion."""
+        changes = {row["paragraphId"]: row for row in collect_changes()["changes"]}
+        self.assertIn(
+            "Если одно предполагает другое с необходимостью, первое не может существовать без второго.",
+            changes["madarij-v1-p323-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "неотъемлемо связано с этим состоянием:",
+            changes["madarij-v1-p325-draft"]["newRussian"],
+        )
+        self.assertIn(
+            "отсутствие этого состояния и того, что неотъемлемо с ним связано",
+            changes["madarij-v1-p325-draft"]["newRussian"],
+        )
+        self.assertNotIn(
+            "обусловленного без его необходимого условия",
+            changes["madarij-v1-p323-draft"]["newRussian"],
         )
 
     def test_diff_marks_old_and_new_text_without_losing_words(self):
