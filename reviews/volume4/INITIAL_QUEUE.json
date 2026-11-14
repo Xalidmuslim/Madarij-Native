@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "purpose": "Initial non-executable inventory. Do not use as confirmed review or translation output.",
+  "source_repo": "Xalidmuslim/Madarij-Native",
+  "source_ref": "943f2449774a6f780707efe5ac013b042ea92619",
+  "author_pages_total": 554,
+  "drafted_pages": 554,
+  "approved_by_human": false,
+  "open_issue_count": 17,
+  "reviewer_workflow": ".github/workflows/volume4-autoreview.yml",
+  "results_branch": "automation/madarij-v4-review-state",
+  "initial_queue": [
+    {
+      "sequence": 1,
+      "id": "V4-LEX-046",
+      "source_ids": [
+        "v4-p046-03"
+      ],
+      "status": "open_contextual_lexical_question",
+      "finding": "Control print reads الصلف. Lisan rootصلف gives excessive refinement/ostentation with pride. Preliminary literal Russian заносчивость needs contextual decision against positive social-courtesy discussion44–46. Do not silently replace print, use dictionary anton",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 2,
+      "id": "V4-WORDING-067-068",
+      "source_ids": [
+        "v4-p067-04",
+        "v4-p068-01"
+      ],
+      "status": "open_printed_wording_comparison",
+      "finding": "Actual control print67 quotes الذين يزيدون إذا نقص الناس;68 commentary quotes الذين ينقصون إذا زاد الناس. Both were visually read and retained separately. Author explicitly discusses possible reversal and explains growth in good, faith and piety; no silent har",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 3,
+      "id": "V4-HADITH-110",
+      "source_ids": [
+        "v4-p110-04"
+      ],
+      "status": "open_citation_wording_difference",
+      "finding": "Control110 quotes ghayn on heart with أكثر من سبعين مرة. Actual Muslim2702 read48580–48603 says مائة مرة; Bukhari6307 read55778–55789 says أكثر من سبعين مرة with a different opening. Author retained verbatim; no inspected witness yet confirms the whole combine",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 4,
+      "id": "V4-ATTRIBUTION-114",
+      "source_ids": [
+        "v4-p114-03"
+      ],
+      "status": "open_primary_attribution_difference",
+      "finding": "Control114 names Musa in Ahmad Zuhd quotation. Actual cached primary Ahmad Zuhd376 read2268–2288 names Dawud, transmitted from Abu al-Jild, with fuller wording. Preserve actual author Musa; selected primary difference documented, not exhaustive claim of no oth",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 5,
+      "id": "V4-ATTRIBUTION-117",
+      "source_ids": [
+        "v4-p117-01"
+      ],
+      "status": "open_primary_attribution_difference",
+      "finding": "Control117 quotes إنما أنت من إخوان الكهان to Ibn Sayyad. Actual Bukhari1354 encounter has اخسأ فلن تعدو قدرك. Actual Bukhari5758/Muslim1681 use إنما هذا من إخوان الكهان in a different case, a compensation dispute and rhymed speech. Keep author attribution117;",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 6,
+      "id": "V4-PHIL-136-137",
+      "source_ids": [
+        "v4-p136-03",
+        "v4-p137-02"
+      ],
+      "status": "open_philosophical_quote_pronoun_chain",
+      "finding": "Control136–137 enlarged body read. Overall quoted identity doctrine and author rejection clear. Exact rendering of خلقيته أسماء مسمى ذاته وعوده إليه and referents of حقيقته / ذاته / طور صفاته remain provisional; present RU uses explanatory author137 for المنزه",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 7,
+      "id": "V4-ATTRIBUTION-146",
+      "source_ids": [
+        "v4-p146-04"
+      ],
+      "status": "open_primary_attribution_difference",
+      "finding": "Actual control146 names عبد الله بن حرام with smell-of-Paradise saying at Uhud. Directly read Bukhari2805 names أنس بن النضر with إني أجد ريحها من دون أحد. Control author name retained, not silently corrected; selected primary attribution differs, no claim eve",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 8,
+      "id": "V4-SYNTAX-166",
+      "source_ids": [
+        "v4-p166-01"
+      ],
+      "status": "open_control_syntax_variant",
+      "finding": "Actual enlarged life166.png reads وإذا كانت الحياة بين الحس والحركة وملزومهما. Auxiliary other-edition OpenITI witness reads الحياة هي الحس والحركة وملزومهما at30816–30818. Control بين retained, not silently emended; exact syntax/relationship in definition and",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 9,
+      "id": "V4-PREFERENCE-186-187",
+      "source_ids": [
+        "v4-p187-01"
+      ],
+      "status": "open_opposite_preference_in_auxiliary",
+      "finding": "Native enlarged preference187.png confirms control تؤثر الأعلى على الأدنى after lament فيا حسرتاه. Auxiliary other-edition witness at31153–31155 has تؤثر الأدنى على الأعلى. Control retained, not silently reversed. RU expression of longing is provisional; exact",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 10,
+      "id": "V4-NUMBER-206",
+      "source_ids": [
+        "v4-p206-03"
+      ],
+      "status": "open_internal_breath_number",
+      "finding": "Control206 calls the breath that kills ailments النفس الثاني, while quoted first breath on205/Manazil1272 is الهيبة وهو يميت الاعتلال. Actual auxiliary also says الثاني31514. AR and RU second retained, not silently changed to first. Additional reliable context",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 11,
+      "id": "V4-REPORTS-236-237",
+      "source_ids": [
+        "v4-p236-05"
+      ],
+      "status": "open_exact_report_witnesses",
+      "finding": "Control236–237 Dawud report and237-02 AbdAllahAhmad Sunna attribution retained. Actual Bayhaqi Bacth373 from MalikibnDinar supports base story, with سلبتنيه vs control أذهبته المعصية and سأرده...اليوم vs control أرده; exact full control variant not independent",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 12,
+      "id": "V4-HADITH-280-283",
+      "source_ids": [
+        "v4-p280-03",
+        "v4-p283-04"
+      ],
+      "status": "open_lexical_hadith_witnesses",
+      "finding": "Control280 أتعرف الزمان versus actually read Muslim186 lines3612–3620, Tirmidhi2595 lines32859–32865, Ahmad3595 lines26312–26321 أتذكر الزمان. Control283 أنا أعرفكم بالله versus actually read Bukhari6101/7301 and Muslim2356 أعلمهم بالله. Author’s lexical choic",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 13,
+      "id": "V4-ATTRIBUTION-301",
+      "source_ids": [
+        "v4-p301-04",
+        "v4-p302-01"
+      ],
+      "status": "open_attribution_witness",
+      "finding": "Control301 names Aisha; actual AhmadZuhd1596 lines8968–8975 attributes departure/return brick/banner saying to Hasan. Preserve control attribution and full quote. No global absence claim or new authenticity grade; additional reliable Aisha witness needed.",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 14,
+      "id": "V4-WORDING-355",
+      "source_ids": [
+        "v4-p355-04"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "Printed المشهود retained; historical review records unresolved wording in the argument distinguishing seeing from the Seen.",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 15,
+      "id": "V4-SYNTAX-396",
+      "source_ids": [
+        "v4-p396-05",
+        "v4-p397-01"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "Printed وعدم الغفلات retained; historical Russian interpretation uses a separate predication. Syntactic question remains open.",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 16,
+      "id": "V4-TERM-551",
+      "source_ids": [
+        "v4-p551-04",
+        "v4-p552-01"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "شهود الأزلية والحكم: historical Russian terminology remains provisional.",
+      "requires_human_review": true
+    },
+    {
+      "sequence": 17,
+      "id": "V4-LEX-554",
+      "source_ids": [
+        "v4-p554-02"
+      ],
+      "status": "open_historical_editorial_question",
+      "finding": "غير مكفي: historically chosen interpretation retained; alternative traditional analyses require editorial resolution.",
+      "requires_human_review": true
+    }
+  ]
+}
