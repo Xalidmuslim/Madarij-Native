@@ -1,0 +1,35 @@
+name: Madarij Volume 4 reviewer tests
+
+on:
+  pull_request:
+    paths:
+      - 'tools/volume4_auto_review.py'
+      - 'tests/test_volume4_auto_review.py'
+      - '.github/workflows/volume4-autoreview.yml'
+      - '.github/workflows/volume4-review-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: runner
+      - uses: actions/checkout@v4
+        with:
+          ref: 943f2449774a6f780707efe5ac013b042ea92619
+          path: source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests - no model requests
+        run: |
+          cd runner
+          python3 -m unittest discover -s tests -p 'test_volume4_auto_review.py' -v
+      - name: Check all actual editorial issues against actual Arabic and Russian data
+        run: python3 runner/tools/volume4_auto_review.py --source-root source --state-root runner --validate-inputs

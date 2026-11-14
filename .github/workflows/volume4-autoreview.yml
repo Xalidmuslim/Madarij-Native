@@ -1,0 +1,65 @@
+name: Madarij Volume 4 half-hour editorial review
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: madarij-volume4-review-state
+  cancel-in-progress: false
+
+jobs:
+  review:
+    if: vars.MADARIJ_AUTOREVIEW_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout reviewed automation code
+        uses: actions/checkout@v4
+        with:
+          path: runner
+          persist-credentials: false
+      - name: Checkout frozen manuscript data
+        uses: actions/checkout@v4
+        with:
+          ref: 943f2449774a6f780707efe5ac013b042ea92619
+          path: source
+          persist-credentials: false
+      - name: Checkout dedicated checkpoint branch
+        uses: actions/checkout@v4
+        with:
+          ref: automation/madarij-v4-review-state
+          path: state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run offline tests
+        run: |
+          cd runner
+          python3 -m unittest discover -s tests -p 'test_volume4_auto_review.py' -v
+      - name: Process one open editorial issue
+        env:
+          MADARIJ_AUTOREVIEW_ENABLED: ${{ vars.MADARIJ_AUTOREVIEW_ENABLED }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: python3 runner/tools/volume4_auto_review.py --source-root source --state-root state
+      - name: Save checkpoint outside main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C state config user.name 'github-actions[bot]'
+          git -C state config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -d state/reviews/volume4 ]; then
+            git -C state add -A -- reviews/volume4
+          fi
+          if git -C state diff --cached --quiet; then
+            echo 'No new reports to save.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git -C state commit -m 'review(volume4): checkpoint independent editorial review'
+          git -C state push origin HEAD:automation/madarij-v4-review-state
+          echo 'Saved one report requiring human review.' >> "$GITHUB_STEP_SUMMARY"
