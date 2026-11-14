@@ -79,6 +79,18 @@ class RussianBeforeAfterTest(unittest.TestCase):
             changes["madarij-v1-p334-draft"]["newRussian"],
         )
 
+    def test_preserve_opening_spring_and_obstacle_cause(self):
+        """Do not replace a fountain's emergence with drinking, or a cause with attachment."""
+        changes = {row["paragraphId"]: row for row in collect_changes()["changes"]}
+        self.assertIn(
+            "они открывают его источник",
+            changes["madarij-v1-opening-005"]["newRussian"],
+        )
+        self.assertIn(
+            "причину, препятствующую достижению цели",
+            changes["madarij-v1-p202-draft"]["newRussian"],
+        )
+
     def test_diff_marks_old_and_new_text_without_losing_words(self):
         before, after = highlighted("Это был прежний текст.", "Это стал новый текст.")
         self.assertIn("removed", before)
