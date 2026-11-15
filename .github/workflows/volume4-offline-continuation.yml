@@ -1,0 +1,62 @@
+name: Madarij Volume 4 offline continuation (no AI keys)
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: madarij-volume4-review-state
+  cancel-in-progress: false
+
+jobs:
+  next-packet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout scripts
+        uses: actions/checkout@v4
+        with:
+          path: runner
+          persist-credentials: false
+      - name: Checkout frozen research source
+        uses: actions/checkout@v4
+        with:
+          path: source
+          ref: 943f2449774a6f780707efe5ac013b042ea92619
+          persist-credentials: false
+      - name: Checkout checkpoint branch
+        uses: actions/checkout@v4
+        with:
+          path: state
+          ref: automation/madarij-v4-review-state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify deterministic offline tests
+        run: |
+          cd runner
+          python3 -m unittest discover -s tests -p 'test_volume4_offline_queue.py' -v
+      - name: Continue exactly one queued issue
+        run: |
+          python3 runner/tools/volume4_offline_queue.py --source-root source --state-root state | tee /tmp/offline-result.txt
+          cat /tmp/offline-result.txt >> "$GITHUB_STEP_SUMMARY"
+      - name: Persist to state branch without touching main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C state config user.name 'github-actions[bot]'
+          git -C state config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -d state/reviews/volume4/offline-packets ]; then
+            git -C state add -A -- reviews/volume4/offline-packets
+          fi
+          if git -C state diff --cached --quiet; then
+            echo 'No new checkpoints.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git -C state commit -m 'chore(volume4): checkpoint next offline editorial issue'
+          git -C state push origin HEAD:automation/madarij-v4-review-state
+          echo 'Saved structural packet, NOT an AI review.' >> "$GITHUB_STEP_SUMMARY"

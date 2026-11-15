@@ -1,0 +1,36 @@
+name: Madarij Volume 4 offline continuation tests
+
+on:
+  pull_request:
+    paths:
+      - 'tools/volume4_offline_queue.py'
+      - 'tests/test_volume4_offline_queue.py'
+      - '.github/workflows/volume4-offline-continuation.yml'
+      - '.github/workflows/volume4-offline-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: runner
+      - uses: actions/checkout@v4
+        with:
+          path: source
+          ref: 943f2449774a6f780707efe5ac013b042ea92619
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Offline tests without API
+        run: |
+          cd runner
+          python3 -m unittest discover -s tests -p 'test_volume4_auto_review.py' -v
+          python3 -m unittest discover -s tests -p 'test_volume4_offline_queue.py' -v
+      - name: Validate real research references
+        run: python3 runner/tools/volume4_auto_review.py --source-root source --state-root runner --validate-inputs
